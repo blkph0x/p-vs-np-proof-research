@@ -521,6 +521,10 @@ The theorem-backed pebble-game bridge now resolves this finite cap frontier.
 For the standard PHP(5,4) encoding, the five-pebble fixed point is empty, so
 Atserias-Dalmau's characterization certifies that a width-4 refutation exists;
 the complete width-3 closure has no empty clause. The exact minimum width is
-therefore 4 for this 20-variable instance. The next open width question is
-uniform behavior as the pigeonhole parameter grows, where the pebble-state
-space remains exponential and no P-versus-NP conclusion follows.
+therefore 4 for this 20-variable instance. The uniform family question is now
+settled for ordinary resolution by the constructive
+[`PHP_WIDTH_REPORT.md`](resolution_width_lab/PHP_WIDTH_REPORT.md): the exact
+minimum width is `n` for every standard PHP(n+1,n) with `n >= 2`, and the
+certificate size is `2^{O(n log n)}`. The remaining research question is how
+this proof-complexity boundary interacts with stronger proof systems and
+algorithmic representations; it is not a general SAT lower bound.

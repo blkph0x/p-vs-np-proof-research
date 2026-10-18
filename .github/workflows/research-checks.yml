@@ -32,6 +32,11 @@ jobs:
             exit "$status"
           fi
           python verify_holographic_artifacts.py
+      - name: Replay uniform PHP width certificate
+        working-directory: resolution_width_lab
+        run: |
+          python run_php_width.py
+          python review_php_width_proof.py
       - name: Run the self-contained full audit
         run: |
           set +e

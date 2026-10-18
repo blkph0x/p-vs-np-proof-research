@@ -405,7 +405,7 @@ keeping the auxiliaries preserves its polynomial solving route.
 
 ## Evidence and practical limits
 
-The current frozen integration run passes **390 tests across 37 suites**, with
+The current frozen integration run passes **394 tests across 37 suites**, with
 unchanged source hashes throughout. The canonical audit now includes the
 51-test labelled-join and perturbation certificate suite in
 `labelled_join_certified`. [TEST_SUMMARY.json](TEST_SUMMARY.json) and
@@ -589,6 +589,15 @@ complete width-3 closure contains no empty clause. The standard 20-variable,
 75-clause encoding therefore has exact minimum resolution width 4. The result
 is independently replayed in `resolution_width_lab/PEBBLE_REVIEW.json` and
 does not generalize to a polynomial algorithm for SAT.
+
+The uniform [PHP width certificate](resolution_width_lab/PHP_WIDTH_REPORT.md)
+now extends this finite checkpoint to the standard PHP(n+1,n) family. The
+constructive stage proof has maximum width `n` and exactly
+`n * sum_k n!/(n-k)!` resolution steps; the independent replay checks the
+saved PHP(6,5) certificate. The all-false assignment gives the matching width
+lower bound for every `n >= 2`, while PHP(2,1) is the explicit width-two edge
+case. This remains a resolution-family theorem and does not resolve P versus
+NP.
 
 The ultimate goal remains active. These findings sharpen the question and
 remove incorrect shortcuts; they do not answer P versus NP.

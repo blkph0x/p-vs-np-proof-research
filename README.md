@@ -15,7 +15,7 @@
 - Use [`CITATIONS.md`](CITATIONS.md) and [`PUBLIC_SOURCES.md`](PUBLIC_SOURCES.md)
   for public sources and the reports that use them.
 - Follow [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) to replay the checks from a
-  fresh checkout. The current frozen run has 390 passing methods across 37
+  fresh checkout. The current frozen run has 394 passing methods across 37
   suites; the full audit is intentionally separate from the lighter continuous
   integration checks, and all of its suite dependencies are included in this
   repository.
@@ -76,6 +76,14 @@ the 5-pebble game has an empty fixed point, certifying a width-4 refutation,
 while the complete width-3 closure has no empty clause. The standard 20-variable,
 75-clause encoding therefore has exact minimum resolution width 4. This finite
 bridge does not provide a general polynomial SAT algorithm or settle P versus NP.
+
+The follow-up [uniform PHP width report](resolution_width_lab/PHP_WIDTH_REPORT.md)
+implements Dantchev's all-`n` stage construction and independently replays a
+complete certificate. For standard PHP(n+1,n), the exact minimum resolution
+width is `n` for `n >= 2` (PHP(2,1) has width two), with exactly
+`n * sum_k n!/(n-k)!` resolution steps in this construction. The proof size is
+`2^{O(n log n)}` in the pigeonhole parameter, so this is a uniform
+resolution result rather than a polynomial SAT algorithm.
 
 Start with the [grouping and global recognition report](AFFINE_RECOGNITION_PHASE_REPORT.md):
 verified grouping brings the stress set to 19/22 exact original counts, recovering

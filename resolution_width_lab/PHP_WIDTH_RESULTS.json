@@ -1,0 +1,120 @@
+{
+  "certificate": "PHP_WIDTH_CERTIFICATE_N5.json",
+  "certificate_sha256": "37faafb8591d330859481b3a20e67cef24dacfab9ff56e9f41bd4caa799a66d9",
+  "family": "standard PHP(n+1,n)",
+  "independent_replay": {
+    "certificate_sha256": "37faafb8591d330859481b3a20e67cef24dacfab9ff56e9f41bd4caa799a66d9",
+    "event_count": 1711,
+    "final_clause": [],
+    "holes": 5,
+    "max_width": 5,
+    "resolution_steps": 1630,
+    "stage_resolution_counts": {
+      "0": 5,
+      "1": 25,
+      "2": 100,
+      "3": 300,
+      "4": 600,
+      "5": 600
+    },
+    "status": "PASS"
+  },
+  "rows": [
+    {
+      "certificate_status": "PASS",
+      "event_count": 5,
+      "expected_resolution_steps": 2,
+      "final_clause": [],
+      "holes": 1,
+      "max_width": 2,
+      "pigeons": 2,
+      "resolution_steps": 2,
+      "stage_counts": [
+        1,
+        1
+      ],
+      "variables": 2
+    },
+    {
+      "certificate_status": "PASS",
+      "event_count": 19,
+      "expected_resolution_steps": 10,
+      "final_clause": [],
+      "holes": 2,
+      "max_width": 2,
+      "pigeons": 3,
+      "resolution_steps": 10,
+      "stage_counts": [
+        1,
+        2,
+        2
+      ],
+      "variables": 6
+    },
+    {
+      "certificate_status": "PASS",
+      "event_count": 70,
+      "expected_resolution_steps": 48,
+      "final_clause": [],
+      "holes": 3,
+      "max_width": 3,
+      "pigeons": 4,
+      "resolution_steps": 48,
+      "stage_counts": [
+        1,
+        3,
+        6,
+        6
+      ],
+      "variables": 12
+    },
+    {
+      "certificate_status": "PASS",
+      "event_count": 305,
+      "expected_resolution_steps": 260,
+      "final_clause": [],
+      "holes": 4,
+      "max_width": 4,
+      "pigeons": 5,
+      "resolution_steps": 260,
+      "stage_counts": [
+        1,
+        4,
+        12,
+        24,
+        24
+      ],
+      "variables": 20
+    },
+    {
+      "certificate_status": "PASS",
+      "event_count": 1711,
+      "expected_resolution_steps": 1630,
+      "final_clause": [],
+      "holes": 5,
+      "max_width": 5,
+      "pigeons": 6,
+      "resolution_steps": 1630,
+      "stage_counts": [
+        1,
+        5,
+        20,
+        60,
+        120,
+        120
+      ],
+      "variables": 30
+    }
+  ],
+  "schema": "php_width_results_v1",
+  "source_hashes": {
+    "PHP_WIDTH_REPORT.md": "e802c74fb9a95681f256ad49409808e68c33fc4bd9c3ca52f98f244c690055d7",
+    "THEOREM.md": "85dbc50df14f8f68d1c574c1b267b05fef7116171d3d03d7f6411a2fc3ce8e79",
+    "php_width_proof.py": "8d7ded4425ba06efcecc4ade10b3b8329189560e442ae3573240b70f2728a197",
+    "review_php_width_proof.py": "c54cd5d0a6d2d6ec424556d7445d3963db10ff2da1acc35250a66119f1c5a61a",
+    "run_php_width.py": "d5e1775a9940c4d3b1b89a429ff26fa92cd31c33cc91a0226d8cc5693cec093c",
+    "test_resolution.py": "941916c3a3695c00fefb67f6809a40a630c2bd255e361a2baf89eaeb167f5e85"
+  },
+  "status": "PASS",
+  "theorem": "minimum resolution refutation width is n for n >= 2 (PHP(2,1) has width 2)"
+}

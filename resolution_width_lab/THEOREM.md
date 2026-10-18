@@ -116,3 +116,33 @@ therefore an incomplete search frontier, not evidence against a width-4 proof.
 
 This is a finite proof-complexity result for one encoding. It does not produce
 a polynomial SAT algorithm, and it does not resolve P versus NP.
+
+## Uniform PHP width theorem
+
+The standard PHP(n+1,n) encoding has exact minimum resolution width `n` for
+every `n >= 2`. The upper bound is constructive: for each injection
+`pi:[k] -> [n]`, define the stage clause
+`{not p_(1,pi(1)), ..., not p_(k,pi(k))}`. There are `n!/(n-k)!` such clauses.
+Starting with the positive axiom for the next pigeon, resolve against the
+hole-exclusivity axioms for the already-used holes, then resolve away each
+remaining positive literal using the stage `k+1` clause for the corresponding
+injection extension. Stage `n` is derived from the extra pigeon, and stage
+zero is the empty clause. Every intermediate clause has width at most `n`.
+
+The construction uses exactly
+`n * sum(k=0..n) n!/(n-k)! = 2^{O(n log n)}` resolution steps. The repository
+generates the complete DAG in `php_width_proof.py`; the independent
+`review_php_width_proof.py` reconstructs the formula, validates every axiom,
+parent reference, pivot, conclusion, stage count, and width. The full saved
+`PHP(6,5)` certificate and the `n=1..5` summary are in
+`PHP_WIDTH_CERTIFICATE_N5.json`, `PHP_WIDTH_RESULTS.json`, and
+`PHP_WIDTH_REVIEW.json`.
+
+For the lower bound when `n >= 2`, every positive input axiom has width `n`.
+If a width-`<n` refutation omitted all positive axioms, its remaining negative
+axioms would be satisfied by the all-false assignment, and sound weakening and
+resolution could not derive the empty clause. Thus width `n` is optimal. The
+degenerate PHP(2,1) instance has minimum width two because its
+hole-exclusivity axiom is binary. This uniform theorem concerns resolution
+proofs only; its super-polynomial certificate size in the parameter does not
+provide a polynomial SAT algorithm or settle P versus NP.

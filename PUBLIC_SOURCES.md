@@ -5,7 +5,7 @@ public URL found in the repository's source, reports, and saved metadata,
 along with the local files that cite or preserve it. The curated primary
 sources and citation rules are in [`CITATIONS.md`](CITATIONS.md).
 
-Indexed URLs: **62**.
+Indexed URLs: **63**.
 
 | URL | Local provenance |
 | --- | --- |
@@ -56,11 +56,12 @@ Indexed URLs: **62**.
 | <https://quantum-journal.org/papers/q-2026-07-29-2179/> | `AFFINE_CANCELLATION_LITERATURE_SCOPE.md`, `PUBLIC_SOURCES.md` |
 | <https://theory.stanford.edu/~trevisan/cs172-07/karp.pdf> | `PUBLIC_SOURCES.md`, `multiobjective_matching_limits/THEOREM.md`, `packed_cost_exact_matching/THEOREM.md` |
 | <https://www-users.cse.umn.edu/~reiner/Talks/Vienna05/Lectures.pdf> | `PUBLIC_SOURCES.md`, `labelled_join_certified/COVERAGE_INDEPENDENT_REVIEW.md` |
+| <https://www.brics.dk/DS/02/2/BRICS-DS-02-2.pdf> | `CITATIONS.md`, `resolution_width_lab/PHP_WIDTH_REPORT.md` |
 | <https://www.claymath.org/millennium/p-vs-np/> | `CITATIONS.md`, `EXTERNAL_STATUS_AUDIT_2026_10_18.md`, `PUBLIC_SOURCES.md`, `RESOLUTION_STANDARD.md` |
 | <https://www.combinatorics.org/ojs/index.php/eljc/article/download/v32i3p36/pdf> | `PUBLIC_SOURCES.md`, `graph_order_hardness_lab/THEOREM.md` |
 | <https://www.cs.cornell.edu/~rdz/Papers/KZ-PAMI04.pdf> | `PUBLIC_SOURCES.md`, `gadget_limits/THEOREM.md` |
 | <https://www.cs.toronto.edu/~sacook/homepage/cook_reckhow.pdf> | `INDEPENDENT_AUDIT.md`, `PUBLIC_SOURCES.md` |
-| <https://www.cs.upc.edu/~atserias/papers/width/ccc03.pdf> | `CITATIONS.md`, `resolution_width_lab/PEBBLE_REPORT.md`, `resolution_width_lab/THEOREM.md` |
+| <https://www.cs.upc.edu/~atserias/papers/width/ccc03.pdf> | `CITATIONS.md`, `PUBLIC_SOURCES.md`, `resolution_width_lab/PEBBLE_REPORT.md`, `resolution_width_lab/THEOREM.md` |
 | <https://www.ee.iitm.ac.in/~andrew/ee512/projects/LinearProgrammingDecoding.pdf> | `PUBLIC_SOURCES.md`, `THEORY_REVIEW.md` |
 | <https://www.ijcai.org/Proceedings/03/Papers/168.pdf> | `AFFINE_DECOMPOSITION_NEXT_REVIEW.md`, `PUBLIC_SOURCES.md` |
 | <https://www.khoury.northeastern.edu/home/lieber/courses/csg260/f06/materials/papers/max-sat/p216-schaefer.pdf> | `INDEPENDENT_AUDIT.md`, `PUBLIC_SOURCES.md`, `typed_merge_planner_lab/THEOREMS.md` |

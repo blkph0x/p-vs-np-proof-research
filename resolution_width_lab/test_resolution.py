@@ -1,4 +1,5 @@
 """Controls for complete bounded-width resolution closure."""
+import copy
 import json
 from itertools import product
 from pathlib import Path
@@ -9,6 +10,8 @@ from incremental import run_ladder
 from indexed import IndexedBoundedResolution
 from bitset import BitsetBoundedResolution
 from pebble import BooleanPebbleGame
+from php_width_proof import build_php_width_proof, expected_resolution_steps
+from review_php_width_proof import replay, review_saved_results
 
 
 HERE = Path(__file__).resolve().parent
@@ -220,6 +223,46 @@ class ResolutionWidthTests(unittest.TestCase):
         self.assertTrue(review["php_5_4_spoiler_width4_bridge"])
         self.assertTrue(review["php_5_4_width3_closure_bridge"])
         self.assertTrue(review["source_hashes_match"])
+
+    def test_uniform_php_width_construction_replays_at_n_four(self):
+        proof = build_php_width_proof(4)
+        self.assertEqual(proof["status"], "PASS")
+        self.assertEqual(proof["max_width"], 4)
+        self.assertEqual(proof["events"][proof["final_event"]]["clause"], [])
+        self.assertEqual(proof["resolution_steps"], expected_resolution_steps(4))
+        self.assertEqual(proof["stage_counts"], [1, 4, 12, 24, 24])
+
+    def test_uniform_php_width_construction_replays_at_n_six(self):
+        proof = build_php_width_proof(6)
+        replayed = replay(proof)
+        self.assertEqual(replayed["status"], "PASS")
+        self.assertEqual(replayed["max_width"], 6)
+        self.assertEqual(replayed["resolution_steps"], expected_resolution_steps(6))
+        self.assertEqual(proof["stage_counts"], [1, 6, 30, 120, 360, 720, 720])
+
+    def test_uniform_php_width_review_rejects_tampered_pivot(self):
+        proof = build_php_width_proof(4)
+        tampered = copy.deepcopy(proof)
+        event = next(event for event in tampered["events"]
+                     if event["kind"] == "resolve")
+        event["pivot"] = 0
+        with self.assertRaises(AssertionError):
+            replay(tampered)
+
+    def test_saved_uniform_php_width_review_passed(self):
+        artifact = json.loads((HERE / "PHP_WIDTH_RESULTS.json").read_text(encoding="utf-8"))
+        review = json.loads((HERE / "PHP_WIDTH_REVIEW.json").read_text(encoding="utf-8"))
+        self.assertEqual(artifact["status"], "PASS")
+        self.assertEqual(artifact["theorem"],
+                         "minimum resolution refutation width is n for n >= 2 (PHP(2,1) has width 2)")
+        self.assertEqual([row["holes"] for row in artifact["rows"]], [1, 2, 3, 4, 5])
+        self.assertEqual([row["max_width"] for row in artifact["rows"]], [2, 2, 3, 4, 5])
+        self.assertTrue(all(row["final_clause"] == [] for row in artifact["rows"]))
+        self.assertEqual(review["status"], "PASS")
+        self.assertEqual(review["certificate"]["max_width"], 5)
+        self.assertEqual(review["certificate"]["final_clause"], [])
+        self.assertEqual(review["certificate"]["resolution_steps"], 1630)
+        self.assertTrue(review_saved_results()["source_hashes_match"])
 
 
 if __name__ == "__main__":

@@ -1,271 +1,271 @@
 {
   "all_suites_passed": true,
   "source_unchanged_during_tests": true,
-  "started_utc": "2026-10-18T17:59:57.289921+00:00",
-  "finished_utc": "2026-10-18T18:06:08.252526+00:00",
+  "started_utc": "2026-10-18T18:34:11.442574+00:00",
+  "finished_utc": "2026-10-18T18:40:25.135364+00:00",
   "python": "3.10.10 | packaged by conda-forge | (main, Mar 24 2023, 20:00:38) [MSC v.1934 64 bit (AMD64)]",
   "suites": [
     {
       "suite": "test_adaptive_fragment_synthesis",
       "returncode": 0,
       "test_methods": 11,
-      "seconds": 0.16054070042446256,
+      "seconds": 0.16101390030235052,
       "passed": true
     },
     {
       "suite": "test_all_dual_lp_barrier",
       "returncode": 0,
       "test_methods": 6,
-      "seconds": 5.106692899949849,
+      "seconds": 5.100605799816549,
       "passed": true
     },
     {
       "suite": "test_certified_residual_quotient",
       "returncode": 0,
       "test_methods": 6,
-      "seconds": 0.13296649977564812,
+      "seconds": 0.1355455000884831,
       "passed": true
     },
     {
       "suite": "test_coefficient_complexity_barrier",
       "returncode": 0,
       "test_methods": 6,
-      "seconds": 0.3794633997604251,
+      "seconds": 0.39110990008339286,
       "passed": true
     },
     {
       "suite": "test_complete_graph_frontier_integration",
       "returncode": 0,
       "test_methods": 8,
-      "seconds": 11.524901099968702,
+      "seconds": 11.517813400365412,
       "passed": true
     },
     {
       "suite": "test_degree_three_barrier",
       "returncode": 0,
       "test_methods": 10,
-      "seconds": 0.2925468999892473,
+      "seconds": 0.2956230998970568,
       "passed": true
     },
     {
       "suite": "test_degree_two_min_distance_integration",
       "returncode": 0,
       "test_methods": 3,
-      "seconds": 0.1358746001496911,
+      "seconds": 0.1377809001132846,
       "passed": true
     },
     {
       "suite": "test_fourier_spectrum_boundary_integration",
       "returncode": 0,
       "test_methods": 7,
-      "seconds": 0.9211877998895943,
+      "seconds": 0.940677700098604,
       "passed": true
     },
     {
       "suite": "test_macro_assisted_subdag",
       "returncode": 0,
       "test_methods": 5,
-      "seconds": 2.774143799673766,
+      "seconds": 2.815863600000739,
       "passed": true
     },
     {
       "suite": "test_matching_certificate",
       "returncode": 0,
       "test_methods": 9,
-      "seconds": 15.738363299984485,
+      "seconds": 15.825496800243855,
       "passed": true
     },
     {
       "suite": "test_native_coset_solver",
       "returncode": 0,
       "test_methods": 13,
-      "seconds": 99.77962169982493,
+      "seconds": 101.17804490029812,
       "passed": true
     },
     {
       "suite": "test_projection_barrier",
       "returncode": 0,
       "test_methods": 7,
-      "seconds": 0.8073476999998093,
+      "seconds": 0.8237944999709725,
       "passed": true
     },
     {
       "suite": "test_projection_discovery_barrier",
       "returncode": 0,
       "test_methods": 6,
-      "seconds": 0.17859959974884987,
+      "seconds": 0.18689490016549826,
       "passed": true
     },
     {
       "suite": "test_proof_portfolio_bridge",
       "returncode": 0,
       "test_methods": 5,
-      "seconds": 0.15134860016405582,
+      "seconds": 0.1495660999789834,
       "passed": true
     },
     {
       "suite": "test_quadratic_code_family_integration",
       "returncode": 0,
       "test_methods": 6,
-      "seconds": 2.130990699864924,
+      "seconds": 2.133455399889499,
       "passed": true
     },
     {
       "suite": "test_randomized_isolation",
       "returncode": 0,
       "test_methods": 6,
-      "seconds": 53.65312550030649,
+      "seconds": 53.88224559975788,
       "passed": true
     },
     {
       "suite": "test_rank_native_solver",
       "returncode": 0,
       "test_methods": 9,
-      "seconds": 94.30526440031826,
+      "seconds": 94.56937880022451,
       "passed": true
     },
     {
       "suite": "test_regular_ldpc_audit_integration",
       "returncode": 0,
       "test_methods": 4,
-      "seconds": 0.456012099981308,
+      "seconds": 0.4627143000252545,
       "passed": true
     },
     {
       "suite": "test_repeated_subdag_templates",
       "returncode": 0,
       "test_methods": 7,
-      "seconds": 1.7665738998912275,
+      "seconds": 1.769257599953562,
       "passed": true
     },
     {
       "suite": "test_residual_equivalence_barrier",
       "returncode": 0,
       "test_methods": 4,
-      "seconds": 0.13973140018060803,
+      "seconds": 0.1426945999264717,
       "passed": true
     },
     {
       "suite": "test_row_basis_discovery",
       "returncode": 0,
       "test_methods": 9,
-      "seconds": 0.35921369958668947,
+      "seconds": 0.36420270008966327,
       "passed": true
     },
     {
       "suite": "test_row_basis_escape",
       "returncode": 0,
       "test_methods": 7,
-      "seconds": 0.3785382998175919,
+      "seconds": 0.38616999983787537,
       "passed": true
     },
     {
       "suite": "test_semantic_frontier_expander_integration",
       "returncode": 0,
       "test_methods": 3,
-      "seconds": 0.339896900113672,
+      "seconds": 0.3382329000160098,
       "passed": true
     },
     {
       "suite": "test_structural_probe",
       "returncode": 0,
       "test_methods": 9,
-      "seconds": 0.38459220016375184,
+      "seconds": 0.3948872000910342,
       "passed": true
     },
     {
       "suite": "test_symbolic_suffix_template",
       "returncode": 0,
       "test_methods": 6,
-      "seconds": 0.9371154000982642,
+      "seconds": 0.9443009998649359,
       "passed": true
     },
     {
       "suite": "test_symbolic_unit_template",
       "returncode": 0,
       "test_methods": 6,
-      "seconds": 0.3429446998052299,
+      "seconds": 0.34905820013955235,
       "passed": true
     },
     {
       "suite": "typed_merge_planner",
       "returncode": 0,
       "test_methods": 59,
-      "seconds": 14.068764400202781,
+      "seconds": 14.12190579995513,
       "passed": true
     },
     {
       "suite": "charged_work_core",
       "returncode": 0,
       "test_methods": 21,
-      "seconds": 0.5825765002518892,
+      "seconds": 0.5760029000230134,
       "passed": true
     },
     {
       "suite": "direct_fano_core",
       "returncode": 0,
       "test_methods": 3,
-      "seconds": 0.1502598999068141,
+      "seconds": 0.1508939997293055,
       "passed": true
     },
     {
       "suite": "high_width_core",
       "returncode": 0,
       "test_methods": 9,
-      "seconds": 0.808403099887073,
+      "seconds": 0.8429511999711394,
       "passed": true
     },
     {
       "suite": "horn_cdclt",
       "returncode": 0,
       "test_methods": 20,
-      "seconds": 12.131567199714482,
+      "seconds": 12.17727839993313,
       "passed": true
     },
     {
       "suite": "proof_producing_cdcl",
       "returncode": 0,
       "test_methods": 7,
-      "seconds": 0.2054848000407219,
+      "seconds": 0.21207570005208254,
       "passed": true
     },
     {
       "suite": "proof_complexity_scaling",
       "returncode": 0,
       "test_methods": 7,
-      "seconds": 0.9801249001175165,
+      "seconds": 0.9912394001148641,
       "passed": true
     },
     {
       "suite": "proof_complexity_frontier",
       "returncode": 0,
       "test_methods": 10,
-      "seconds": 3.9335173000581563,
+      "seconds": 3.948576200287789,
       "passed": true
     },
     {
       "suite": "resolution_width",
       "returncode": 0,
-      "test_methods": 16,
-      "seconds": 29.418630700092763,
+      "test_methods": 20,
+      "seconds": 29.821409299969673,
       "passed": true
     },
     {
       "suite": "weighted_boundary",
       "returncode": 0,
       "test_methods": 9,
-      "seconds": 0.1944093001075089,
+      "seconds": 0.2019012998789549,
       "passed": true
     },
     {
       "suite": "labelled_join_certified",
       "returncode": 0,
       "test_methods": 51,
-      "seconds": 15.143925399985164,
+      "seconds": 15.181235000025481,
       "passed": true
     }
   ],
-  "test_methods_total": 390,
+  "test_methods_total": 394,
   "implementation_sha256": {
     "overnight_research_2026_10_18/adaptive_fragment_synthesis.py": "4d4efd9818aca74e8c26842d75fb571c31b516155091b82de73843ab6c611b79",
     "overnight_research_2026_10_18/AFFINE_ONE_PIECE_RECOGNITION_REVIEW.py": "4f54e10ba9e710d18a474dda21ababada5f12320f5a0c2e0c0beeada597f372e",
@@ -361,18 +361,21 @@
     "overnight_research_2026_10_18/resolution_width_lab/incremental.py": "dcc96c6fb4375e6c544cc76230b741a96631f6101f01ade01e077e9094c44db8",
     "overnight_research_2026_10_18/resolution_width_lab/indexed.py": "437441356f0e3cd308664969d05197c6c7ed9d9a0eedd5ee58d9c1b5980e1ccc",
     "overnight_research_2026_10_18/resolution_width_lab/pebble.py": "f479306a747beb558135d4a5af02310ee010303ffd2d9ca02a30e02fd1b68447",
+    "overnight_research_2026_10_18/resolution_width_lab/php_width_proof.py": "8d7ded4425ba06efcecc4ade10b3b8329189560e442ae3573240b70f2728a197",
     "overnight_research_2026_10_18/resolution_width_lab/resolution.py": "f6d45054901f4684b98c584c230f213a44fcf4d730293e564325154ca07005b1",
     "overnight_research_2026_10_18/resolution_width_lab/review.py": "2be2bf379ad76477aa8da262fac618862058e2a646ee65ca67c3ef455f171cc1",
     "overnight_research_2026_10_18/resolution_width_lab/review_bitset.py": "6dc011bad99b262a62d7df32559793d4d0f60ef98afd8e28886588a4e0a90078",
     "overnight_research_2026_10_18/resolution_width_lab/review_incremental.py": "fa4c4a7075efa2074720cf28edc9a589e237096fec52bbf645594a496606dbb6",
     "overnight_research_2026_10_18/resolution_width_lab/review_indexed.py": "f186353e62e146776389025df08726812c76938b492a9c9366abf0bcb0837864",
     "overnight_research_2026_10_18/resolution_width_lab/review_pebble.py": "e429575a53315c9750643942f5cde91ea35a7e8943266c89fa6d37959c9b4b45",
+    "overnight_research_2026_10_18/resolution_width_lab/review_php_width_proof.py": "c54cd5d0a6d2d6ec424556d7445d3963db10ff2da1acc35250a66119f1c5a61a",
     "overnight_research_2026_10_18/resolution_width_lab/run_audit.py": "d509dcbc55074439035006d996ce17ecd1e6b3c9f55340fb56f7b8bfe425277a",
     "overnight_research_2026_10_18/resolution_width_lab/run_bitset.py": "ea361030bdc00e8afc71096a9f3e44c6b20539147113b1e93171e2a37de9f854",
     "overnight_research_2026_10_18/resolution_width_lab/run_incremental.py": "becd8a9a4c6ef0bd6f53eb19c346a5fe7261fd89cafff18281db8fd0646aaf3f",
     "overnight_research_2026_10_18/resolution_width_lab/run_indexed.py": "a83c994a4a811ab6734571423d00e8e84f49ede0115c01ff02b4103b1768021f",
     "overnight_research_2026_10_18/resolution_width_lab/run_pebble.py": "fdbdabfec83d47dfedd0ba533e3c900a72717ba35dbd2d257cb48d213281c400",
-    "overnight_research_2026_10_18/resolution_width_lab/test_resolution.py": "9475bbfd4fe31b4bb093ed07edc64302f1675e5ce8200aafc8abc75a2befc875",
+    "overnight_research_2026_10_18/resolution_width_lab/run_php_width.py": "d5e1775a9940c4d3b1b89a429ff26fa92cd31c33cc91a0226d8cc5693cec093c",
+    "overnight_research_2026_10_18/resolution_width_lab/test_resolution.py": "941916c3a3695c00fefb67f6809a40a630c2bd255e361a2baf89eaeb167f5e85",
     "overnight_research_2026_10_18/row_basis_discovery.py": "375a0387f6ab201ece76835b6188cd612aab25a724c920eca13e40e8c037f0b7",
     "overnight_research_2026_10_18/row_basis_escape.py": "37d9914b25f8a313b3350c9d01e201c02f4ec646f117a096ed136f4b5614565c",
     "overnight_research_2026_10_18/run_affine_boundary_phase_checks.py": "eb85e4c08687fec98aba5105ca23f2d4c626b76dad80666bc218f741822d53ef",
