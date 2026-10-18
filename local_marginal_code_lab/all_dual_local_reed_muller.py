@@ -80,7 +80,7 @@ def make_certificate(s: int, *, pin: int = 0, word_limit: int = 1 << 20) -> dict
     through_pin = gaussian_binomial(info["m"], info["r"])
     incidence = gaussian_binomial(info["m"] - 1, info["r"])
     certificate = {
-        "schema": "reed_muller_all_dual_local_v1",
+        "schema": "reed_muller_all_dual_local_v2",
         "family": "RM(s,2s+1)",
         **info,
         "pin": pin,
@@ -114,7 +114,7 @@ def make_certificate(s: int, *, pin: int = 0, word_limit: int = 1 << 20) -> dict
 def verify_certificate(certificate: dict, *, word_limit: int = 1 << 20) -> dict:
     """Verify arithmetic and theorem fields without trusting saved derivations."""
     try:
-        if not isinstance(certificate, dict) or certificate.get("schema") != "reed_muller_all_dual_local_v1":
+        if not isinstance(certificate, dict) or certificate.get("schema") != "reed_muller_all_dual_local_v2":
             raise ValueError("invalid schema")
         info = parameters(certificate["s"])
         for key, value in info.items():

@@ -1,309 +1,309 @@
 {
   "all_suites_passed": true,
   "source_unchanged_during_tests": true,
-  "started_utc": "2026-10-18T21:59:02.541468+00:00",
-  "finished_utc": "2026-10-18T22:05:23.345888+00:00",
+  "started_utc": "2026-10-18T22:10:45.171444+00:00",
+  "finished_utc": "2026-10-18T22:17:06.679118+00:00",
   "python": "3.10.10 | packaged by conda-forge | (main, Mar 24 2023, 20:00:38) [MSC v.1934 64 bit (AMD64)]",
   "suites": [
     {
       "suite": "test_adaptive_fragment_synthesis",
       "returncode": 0,
       "test_methods": 11,
-      "seconds": 0.20035509997978806,
+      "seconds": 0.1715235998854041,
       "passed": true
     },
     {
       "suite": "test_all_dual_lp_barrier",
       "returncode": 0,
       "test_methods": 6,
-      "seconds": 5.118828000035137,
+      "seconds": 5.1740596001036465,
       "passed": true
     },
     {
       "suite": "test_certified_residual_quotient",
       "returncode": 0,
       "test_methods": 6,
-      "seconds": 0.13932689977809787,
+      "seconds": 0.13753720000386238,
       "passed": true
     },
     {
       "suite": "test_coefficient_complexity_barrier",
       "returncode": 0,
       "test_methods": 6,
-      "seconds": 0.3850830001756549,
+      "seconds": 0.37987060006707907,
       "passed": true
     },
     {
       "suite": "test_complete_graph_frontier_integration",
       "returncode": 0,
       "test_methods": 8,
-      "seconds": 11.50570059986785,
+      "seconds": 11.70856609987095,
       "passed": true
     },
     {
       "suite": "test_degree_three_barrier",
       "returncode": 0,
       "test_methods": 10,
-      "seconds": 0.2954565999098122,
+      "seconds": 0.3018590002320707,
       "passed": true
     },
     {
       "suite": "test_degree_two_min_distance_integration",
       "returncode": 0,
       "test_methods": 3,
-      "seconds": 0.1410079002380371,
+      "seconds": 0.14070909982547164,
       "passed": true
     },
     {
       "suite": "test_fourier_spectrum_boundary_integration",
       "returncode": 0,
       "test_methods": 7,
-      "seconds": 0.9395814999006689,
+      "seconds": 0.9365178002044559,
       "passed": true
     },
     {
       "suite": "test_fwht_cost_audit",
       "returncode": 0,
       "test_methods": 2,
-      "seconds": 0.1707616001367569,
+      "seconds": 0.1684762998484075,
       "passed": true
     },
     {
       "suite": "test_indirect_ite",
       "returncode": 0,
       "test_methods": 3,
-      "seconds": 0.1546701998449862,
+      "seconds": 0.1575096999295056,
       "passed": true
     },
     {
       "suite": "test_indirect_xor",
       "returncode": 0,
       "test_methods": 3,
-      "seconds": 0.15338149992749095,
+      "seconds": 0.15000140015035868,
       "passed": true
     },
     {
       "suite": "test_macro_assisted_subdag",
       "returncode": 0,
       "test_methods": 5,
-      "seconds": 2.9250521999783814,
+      "seconds": 2.894922799896449,
       "passed": true
     },
     {
       "suite": "test_matching_certificate",
       "returncode": 0,
       "test_methods": 9,
-      "seconds": 15.929945699870586,
+      "seconds": 16.00056269997731,
       "passed": true
     },
     {
       "suite": "test_native_coset_solver",
       "returncode": 0,
       "test_methods": 13,
-      "seconds": 101.101409799885,
+      "seconds": 101.12414800003171,
       "passed": true
     },
     {
       "suite": "test_projection_barrier",
       "returncode": 0,
       "test_methods": 7,
-      "seconds": 0.8245788002386689,
+      "seconds": 0.8258826998062432,
       "passed": true
     },
     {
       "suite": "test_projection_discovery_barrier",
       "returncode": 0,
       "test_methods": 6,
-      "seconds": 0.19244589982554317,
+      "seconds": 0.18945130007341504,
       "passed": true
     },
     {
       "suite": "test_proof_portfolio_bridge",
       "returncode": 0,
       "test_methods": 5,
-      "seconds": 0.15029980009421706,
+      "seconds": 0.15337989991530776,
       "passed": true
     },
     {
       "suite": "test_quadratic_code_family_integration",
       "returncode": 0,
       "test_methods": 6,
-      "seconds": 2.132514299824834,
+      "seconds": 2.1416295003145933,
       "passed": true
     },
     {
       "suite": "test_randomized_isolation",
       "returncode": 0,
       "test_methods": 6,
-      "seconds": 53.95697379997,
+      "seconds": 54.09035680023953,
       "passed": true
     },
     {
       "suite": "test_rank_native_solver",
       "returncode": 0,
       "test_methods": 9,
-      "seconds": 95.54569850023836,
+      "seconds": 95.85923549998552,
       "passed": true
     },
     {
       "suite": "test_regular_ldpc_audit_integration",
       "returncode": 0,
       "test_methods": 4,
-      "seconds": 0.4736325000412762,
+      "seconds": 0.46415779972448945,
       "passed": true
     },
     {
       "suite": "test_repeated_subdag_templates",
       "returncode": 0,
       "test_methods": 7,
-      "seconds": 1.7722773998975754,
+      "seconds": 1.7958673001267016,
       "passed": true
     },
     {
       "suite": "test_residual_equivalence_barrier",
       "returncode": 0,
       "test_methods": 4,
-      "seconds": 0.1470308001153171,
+      "seconds": 0.14617650024592876,
       "passed": true
     },
     {
       "suite": "test_row_basis_discovery",
       "returncode": 0,
       "test_methods": 9,
-      "seconds": 0.37002670019865036,
+      "seconds": 0.37447559973225,
       "passed": true
     },
     {
       "suite": "test_row_basis_escape",
       "returncode": 0,
       "test_methods": 7,
-      "seconds": 0.41994279995560646,
+      "seconds": 0.39439160004258156,
       "passed": true
     },
     {
       "suite": "test_semantic_frontier_expander_integration",
       "returncode": 0,
       "test_methods": 3,
-      "seconds": 0.3376094000414014,
+      "seconds": 0.33899870002642274,
       "passed": true
     },
     {
       "suite": "test_sequential_counter",
       "returncode": 0,
       "test_methods": 4,
-      "seconds": 4.165923200082034,
+      "seconds": 4.1410556002520025,
       "passed": true
     },
     {
       "suite": "test_structural_probe",
       "returncode": 0,
       "test_methods": 9,
-      "seconds": 0.40098939975723624,
+      "seconds": 0.3965376000851393,
       "passed": true
     },
     {
       "suite": "test_symbolic_suffix_template",
       "returncode": 0,
       "test_methods": 6,
-      "seconds": 0.9385219998657703,
+      "seconds": 0.9320740001276135,
       "passed": true
     },
     {
       "suite": "test_symbolic_unit_template",
       "returncode": 0,
       "test_methods": 6,
-      "seconds": 0.35173929994925857,
+      "seconds": 0.353645000141114,
       "passed": true
     },
     {
       "suite": "test_xor_closure",
       "returncode": 0,
       "test_methods": 3,
-      "seconds": 0.15407129982486367,
+      "seconds": 0.15364679973572493,
       "passed": true
     },
     {
       "suite": "typed_merge_planner",
       "returncode": 0,
       "test_methods": 59,
-      "seconds": 14.069425099994987,
+      "seconds": 14.119699100032449,
       "passed": true
     },
     {
       "suite": "charged_work_core",
       "returncode": 0,
       "test_methods": 21,
-      "seconds": 0.5846784999594092,
+      "seconds": 0.5826174998655915,
       "passed": true
     },
     {
       "suite": "direct_fano_core",
       "returncode": 0,
       "test_methods": 3,
-      "seconds": 0.15166409965604544,
+      "seconds": 0.15312750032171607,
       "passed": true
     },
     {
       "suite": "high_width_core",
       "returncode": 0,
       "test_methods": 9,
-      "seconds": 0.8345741000957787,
+      "seconds": 0.826422399841249,
       "passed": true
     },
     {
       "suite": "horn_cdclt",
       "returncode": 0,
       "test_methods": 20,
-      "seconds": 12.227198800072074,
+      "seconds": 12.275263500399888,
       "passed": true
     },
     {
       "suite": "proof_producing_cdcl",
       "returncode": 0,
       "test_methods": 7,
-      "seconds": 0.21370919980108738,
+      "seconds": 0.21102080028504133,
       "passed": true
     },
     {
       "suite": "proof_complexity_scaling",
       "returncode": 0,
       "test_methods": 7,
-      "seconds": 0.9857721999287605,
+      "seconds": 0.9738063998520374,
       "passed": true
     },
     {
       "suite": "proof_complexity_frontier",
       "returncode": 0,
       "test_methods": 10,
-      "seconds": 4.007231399882585,
+      "seconds": 3.99081900017336,
       "passed": true
     },
     {
       "suite": "resolution_width",
       "returncode": 0,
       "test_methods": 20,
-      "seconds": 30.02835729997605,
+      "seconds": 30.044176700059325,
       "passed": true
     },
     {
       "suite": "weighted_boundary",
       "returncode": 0,
       "test_methods": 9,
-      "seconds": 0.20802799984812737,
+      "seconds": 0.2039213003590703,
       "passed": true
     },
     {
       "suite": "local_marginal_code",
       "returncode": 0,
       "test_methods": 26,
-      "seconds": 0.6845113001763821,
+      "seconds": 0.6669348999857903,
       "passed": true
     },
     {
       "suite": "labelled_join_certified",
       "returncode": 0,
       "test_methods": 51,
-      "seconds": 15.237664800137281,
+      "seconds": 15.184418099932373,
       "passed": true
     }
   ],
@@ -363,20 +363,20 @@
     "overnight_research_2026_10_18/labelled_join_certified/test_sparse_lift_normal_form.py": "32fe3eff30033feadb49745d041111a5be70058695e8892771292845941af744",
     "overnight_research_2026_10_18/labelled_join_certified/verify_perturbation_coverage.py": "2d0d002a2241ae12490b8e65daa4e3df79c44d9c78d44b473acc5576f00aa41c",
     "overnight_research_2026_10_18/labelled_join_certified/verify_small_terminal_results.py": "a4bd6b3669bff4c3c907058b6a036635fa2751d9a68c9efcb36018578f6a53c3",
-    "overnight_research_2026_10_18/local_marginal_code_lab/all_dual_local_reed_muller.py": "689b439df42006ce94a2d3eb609fd888fce27fa7175c736c7f50f8c48443b3e1",
+    "overnight_research_2026_10_18/local_marginal_code_lab/all_dual_local_reed_muller.py": "75819af584f8be3a8175653b3918d464df3ca39b553a809445bffefbabf8feaa",
     "overnight_research_2026_10_18/local_marginal_code_lab/all_dual_reed_muller.py": "131835b9594c3daa47e5ab21ed6b95617674c100e3106571755ef34b85cc8e57",
     "overnight_research_2026_10_18/local_marginal_code_lab/INDEPENDENT_REVIEW.py": "608489e4181967b18a4c22e96413a7a4cbc06de4b04c91e5985e3a7bc0a4b06c",
     "overnight_research_2026_10_18/local_marginal_code_lab/local_marginal.py": "106c486d4eb868be2af4db7b781fac4631d42b2b12f1b94a9dba20d0477c3919",
     "overnight_research_2026_10_18/local_marginal_code_lab/random_code_bound.py": "3bfe3faec2059c21f516e63a3a293519a2f6ad32f572c65e6a26359262384845",
     "overnight_research_2026_10_18/local_marginal_code_lab/reed_muller.py": "5061249e8726aeb90124717848cc84e1dfbf6ca9da927ca9540e5db596323671",
     "overnight_research_2026_10_18/local_marginal_code_lab/REED_MULLER_ALL_DUAL_INDEPENDENT_REVIEW.py": "30415488055bbb51d7ae42a597fcf998e18c8e4124f78288c080028c5c737bc3",
-    "overnight_research_2026_10_18/local_marginal_code_lab/REED_MULLER_ALL_DUAL_LOCAL_INDEPENDENT_REVIEW.py": "8f3681a8b675fcd7897067d3bd79030ac3023a01ba1452158c9cd025f6f1950e",
+    "overnight_research_2026_10_18/local_marginal_code_lab/REED_MULLER_ALL_DUAL_LOCAL_INDEPENDENT_REVIEW.py": "7ad47eb47fd4007f79794c5c20bd1919aae3caa2b3fd55a795ff05b640140223",
     "overnight_research_2026_10_18/local_marginal_code_lab/REED_MULLER_INDEPENDENT_REVIEW.py": "4a1891b875b0e187fedd69d8f1b5a7b908cc7450ffdd1b246f493167126623a2",
-    "overnight_research_2026_10_18/local_marginal_code_lab/run_all_dual_local_reed_muller.py": "4f3301de79e58e157f1b8c5d7ac9e2cc4cf2a5e52a1538c90067a32831081366",
+    "overnight_research_2026_10_18/local_marginal_code_lab/run_all_dual_local_reed_muller.py": "98b2db05645e7453b4f8aa79e4c043dd1f76eb1ee3545544a82864c32d5abbef",
     "overnight_research_2026_10_18/local_marginal_code_lab/run_all_dual_reed_muller.py": "45d93793256c31ea84370ee003fc30f74e569f2f4eeaddddc7148e0673338de0",
     "overnight_research_2026_10_18/local_marginal_code_lab/run_experiments.py": "473e7cca9abaa9d506377ea6e1e196963719ff022af40453336936b7d384dffd",
     "overnight_research_2026_10_18/local_marginal_code_lab/run_reed_muller.py": "179e40bd83fa45a46ef0abd28bd2d2dc166112cecd2ed3bc5a154fcdfb9cd676",
-    "overnight_research_2026_10_18/local_marginal_code_lab/test_all_dual_local_reed_muller.py": "2cd63255d399705116f4a5a56b9d2b980bc61b9843fa5e3de67782e582c877f9",
+    "overnight_research_2026_10_18/local_marginal_code_lab/test_all_dual_local_reed_muller.py": "ccc3fe46015f981c17d181131d49a751333b1834afe621f9a5a9c3f5419b6938",
     "overnight_research_2026_10_18/local_marginal_code_lab/test_all_dual_reed_muller.py": "5c3be55cbcfc64f4d8c601905645d3521365ec4b269ab7a3d9fda2995c1931d7",
     "overnight_research_2026_10_18/local_marginal_code_lab/test_local_marginal.py": "cbd64e35fc3c932f7a8659ac44f8272794c157c0fd9bebefdbf3430d08887078",
     "overnight_research_2026_10_18/local_marginal_code_lab/test_reed_muller.py": "ef07d73ed9db512b2fdeb1dc9c542ffea5ccdca08323526d175c0b3537779122",

@@ -211,11 +211,11 @@ def replay_certificate(certificate: dict) -> dict:
 
 def main() -> None:
     payload = json.loads(INPUT.read_text(encoding="utf-8"))
-    if payload.get("schema") != "reed_muller_all_dual_local_results_v1":
+    if payload.get("schema") != "reed_muller_all_dual_local_results_v2":
         raise ValueError("invalid results schema")
     reviews = [replay_certificate(record["certificate"]) for record in payload["records"]]
     result = {
-        "schema": "reed_muller_all_dual_local_independent_review_v1",
+        "schema": "reed_muller_all_dual_local_independent_review_v2",
         "valid": True,
         "records": reviews,
     }

@@ -24,7 +24,7 @@ def main() -> None:
             raise AssertionError(f"self-verification failed for s={s}: {verification}")
         records.append({"status": "FOUND", "certificate": certificate, "verification": verification})
     payload = {
-        "schema": "reed_muller_all_dual_local_results_v1",
+        "schema": "reed_muller_all_dual_local_results_v2",
         "description": "All-dual parity plus level-(dual-distance-2) local marginal certificates",
         "records": records,
     }

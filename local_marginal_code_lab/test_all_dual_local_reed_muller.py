@@ -23,7 +23,7 @@ ROOT = Path(__file__).resolve().parent
 class AllDualLocalReedMullerTests(unittest.TestCase):
     def test_saved_results_replay(self):
         payload = json.loads((ROOT / "REED_MULLER_ALL_DUAL_LOCAL_RESULTS.json").read_text())
-        self.assertEqual(payload["schema"], "reed_muller_all_dual_local_results_v1")
+        self.assertEqual(payload["schema"], "reed_muller_all_dual_local_results_v2")
         self.assertEqual(len(payload["records"]), 3)
         for record in payload["records"]:
             self.assertTrue(verify_certificate(record["certificate"])["valid"])

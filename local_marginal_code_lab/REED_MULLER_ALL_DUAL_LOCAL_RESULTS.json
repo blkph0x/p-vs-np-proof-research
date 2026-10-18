@@ -194,7 +194,7 @@
         },
         "r": 1,
         "s": 1,
-        "schema": "reed_muller_all_dual_local_v1",
+        "schema": "reed_muller_all_dual_local_v2",
         "scope_count": 93,
         "witness_kind": "one-hot local marginals plus all-dual parity mixtures",
         "word_replay": {
@@ -1027,7 +1027,7 @@
         },
         "r": 2,
         "s": 2,
-        "schema": "reed_muller_all_dual_local_v1",
+        "schema": "reed_muller_all_dual_local_v2",
         "scope_count": 4514873,
         "witness_kind": "one-hot local marginals plus all-dual parity mixtures",
         "word_replay": {
@@ -4580,7 +4580,7 @@
         },
         "r": 3,
         "s": 3,
-        "schema": "reed_muller_all_dual_local_v1",
+        "schema": "reed_muller_all_dual_local_v2",
         "scope_count": 15193868137021842033,
         "witness_kind": "one-hot local marginals plus all-dual parity mixtures",
         "word_replay": {
@@ -4603,5 +4603,5 @@
       }
     }
   ],
-  "schema": "reed_muller_all_dual_local_results_v1"
+  "schema": "reed_muller_all_dual_local_results_v2"
 }
