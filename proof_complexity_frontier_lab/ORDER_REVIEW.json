@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "case_count": 4,
+  "recurrence_matches": true,
+  "orders_are_permutations": true,
+  "source_hashes_match": true
+}

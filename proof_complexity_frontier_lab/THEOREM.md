@@ -36,3 +36,14 @@ either quantity lower-bounds every polynomial-time SAT algorithm.
 
 All stored textual source hashes use canonical LF line endings before hashing;
 this keeps the replay invariant across the Windows producer and Linux CI.
+
+The order extension uses the exact recurrence
+
+    D(S) = min_{v in S} max(D(S - {v}), boundary(S)).
+
+Every order has a final variable v, so induction on |S| proves this recurrence
+finds the minimum possible maximum boundary for the primal graph. The saved
+controls exhaust all subsets for 2, 6, 12, and 20 variables. Their exact
+optima are 1, 3, 7, and 11, compared with row-major widths 1, 4, 9, and 16.
+Those four values are finite order certificates; they do not establish an
+asymptotic formula or a polynomial order-discovery algorithm.

@@ -39,6 +39,18 @@ class FrontierComparisonTests(unittest.TestCase):
         self.assertTrue(review["closed_forms_match"])
         self.assertTrue(review["source_hashes_match"])
 
+    def test_exact_small_order_optima(self):
+        artifact = json.loads((HERE / "ORDER_RESULTS.json").read_text(encoding="utf-8"))
+        self.assertEqual([row["optimal_width"] for row in artifact["rows"]], [1, 3, 7, 11])
+        self.assertEqual([row["row_major_width"] for row in artifact["rows"]], [1, 4, 9, 16])
+
+    def test_order_review_passed(self):
+        review = json.loads((HERE / "ORDER_REVIEW.json").read_text(encoding="utf-8"))
+        self.assertEqual(review["status"], "PASS")
+        self.assertTrue(review["recurrence_matches"])
+        self.assertTrue(review["orders_are_permutations"])
+        self.assertTrue(review["source_hashes_match"])
+
 
 if __name__ == "__main__":
     unittest.main()

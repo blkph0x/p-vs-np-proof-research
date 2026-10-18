@@ -112,6 +112,12 @@ those state counts beside the CDCL conflict and resolution counts while
 preserving the distinction between a supplied representation and a universal
 SAT lower bound.
 
+The order-discovery extension exhausts all subsets through 20 variables and
+replays exact minimum primal-boundary widths 1, 3, 7, and 11 for the first four
+pigeonhole controls, compared with row-major widths 1, 4, 9, and 16. This
+quantifies the favorable-order escape on small instances while charging the
+2^n subset recurrence; it supplies no scalable order-discovery theorem.
+
 The [bounded-width resolution lab](resolution_width_lab/THEOREM.md) provides a
 second proof-complexity lens. It computes the complete finite closure under
 weakening and width-preserving resolution, replaying either an empty-clause
@@ -399,7 +405,7 @@ keeping the auxiliaries preserves its polynomial solving route.
 
 ## Evidence and practical limits
 
-The current frozen integration run passes **374 tests across 37 suites**, with
+The current frozen integration run passes **376 tests across 37 suites**, with
 unchanged source hashes throughout. The canonical audit now includes the
 51-test labelled-join and perturbation certificate suite in
 `labelled_join_certified`. [TEST_SUMMARY.json](TEST_SUMMARY.json) and

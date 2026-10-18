@@ -14,6 +14,8 @@ Run:
 
     python run_frontier.py
     python review_frontier.py
+    python run_orders.py
+    python review_orders.py
     python -m unittest -v test_frontier.py
 
 The all-assignment family is included as a control whose input already has
@@ -22,3 +24,7 @@ polynomial-size CNFs in the number of holes and a direct injection proof of
 unsatisfiability.  The measured frontier width and this particular CDCL
 resolution trace are separate quantities.  Their finite correlation does not
 lower-bound arbitrary SAT algorithms or resolve P versus NP.
+
+The small-order extension exhausts every variable order through 20 variables.
+It records the exact minimum primal vertex-boundary width and keeps the
+exponential subset cost explicit.

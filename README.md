@@ -15,7 +15,7 @@
 - Use [`CITATIONS.md`](CITATIONS.md) and [`PUBLIC_SOURCES.md`](PUBLIC_SOURCES.md)
   for public sources and the reports that use them.
 - Follow [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) to replay the checks from a
-  fresh checkout. The current frozen run has 374 passing methods across 37
+  fresh checkout. The current frozen run has 376 passing methods across 37
   suites; the full audit is intentionally separate from the lighter continuous
   integration checks, and all of its suite dependencies are included in this
   repository.
@@ -289,6 +289,12 @@ CDCL conflicts and resolution steps. The all-assignment identities and the
 pigeonhole h^2 row-major frontier width are proved for their stated families;
 the comparison remains a finite representation study, not a lower bound for
 all algorithms.
+
+Its order-discovery extension exhausts every subset for the 2-, 6-, 12-, and
+20-variable pigeonhole primal graphs. The exact minimum widths are 1, 3, 7,
+and 11, versus row-major widths 1, 4, 9, and 16. See
+[ORDER_REPORT.md](proof_complexity_frontier_lab/ORDER_REPORT.md); these
+finite optima do not imply an asymptotic order formula.
 
 The [bounded-width resolution lab](resolution_width_lab/README.md) separately
 closes every weakening and resolution consequence up to width `w`. A fixed

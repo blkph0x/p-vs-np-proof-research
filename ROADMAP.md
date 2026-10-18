@@ -471,3 +471,9 @@ frontier width for the pigeonhole controls. Its compact table aligns those
 measurements with the replayed CDCL conflicts and resolution steps. This
 strengthens the finite adversarial record while leaving order discovery,
 alternative proof systems, and arbitrary SAT lower bounds open.
+
+The same lab now exhausts the primal-order recurrence through 20 variables.
+For the first four pigeonhole controls it reduces row-major widths
+1,4,9,16 to exact optima 1,3,7,11, with an independent recurrence replay.
+This separates an order artifact from the underlying formula controls, while
+the 2^n subset cost keeps the order-discovery step outside a polynomial claim.

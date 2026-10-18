@@ -1,0 +1,192 @@
+{
+  "format": "small-primal-order-discovery-v1",
+  "rows": [
+    {
+      "name": "pigeonhole_2_1",
+      "holes": 1,
+      "pigeons": 2,
+      "nvars": 2,
+      "clause_count": 3,
+      "row_major_width": 1,
+      "row_major_prefix_widths": [
+        1,
+        0
+      ],
+      "optimal_width": 1,
+      "optimal_order": [
+        1,
+        0
+      ],
+      "optimal_prefix_widths": [
+        1,
+        0
+      ]
+    },
+    {
+      "name": "pigeonhole_3_2",
+      "holes": 2,
+      "pigeons": 3,
+      "nvars": 6,
+      "clause_count": 12,
+      "row_major_width": 4,
+      "row_major_prefix_widths": [
+        1,
+        2,
+        3,
+        4,
+        3,
+        0
+      ],
+      "optimal_width": 3,
+      "optimal_order": [
+        5,
+        4,
+        3,
+        1,
+        2,
+        0
+      ],
+      "optimal_prefix_widths": [
+        1,
+        2,
+        3,
+        3,
+        3,
+        0
+      ]
+    },
+    {
+      "name": "pigeonhole_4_3",
+      "holes": 3,
+      "pigeons": 4,
+      "nvars": 12,
+      "clause_count": 34,
+      "row_major_width": 9,
+      "row_major_prefix_widths": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        7,
+        5,
+        0
+      ],
+      "optimal_width": 7,
+      "optimal_order": [
+        11,
+        10,
+        9,
+        8,
+        7,
+        5,
+        2,
+        6,
+        4,
+        3,
+        1,
+        0
+      ],
+      "optimal_prefix_widths": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        6,
+        6,
+        7,
+        7,
+        5,
+        0
+      ]
+    },
+    {
+      "name": "pigeonhole_5_4",
+      "holes": 4,
+      "pigeons": 5,
+      "nvars": 20,
+      "clause_count": 75,
+      "row_major_width": 16,
+      "row_major_prefix_widths": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        13,
+        10,
+        7,
+        0
+      ],
+      "optimal_width": 11,
+      "optimal_order": [
+        19,
+        18,
+        17,
+        16,
+        15,
+        14,
+        13,
+        11,
+        7,
+        3,
+        12,
+        10,
+        6,
+        2,
+        9,
+        8,
+        5,
+        4,
+        1,
+        0
+      ],
+      "optimal_prefix_widths": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        9,
+        9,
+        10,
+        11,
+        10,
+        11,
+        10,
+        11,
+        10,
+        7,
+        0
+      ]
+    }
+  ],
+  "all_orders_exact": true,
+  "source_sha256": {
+    "proof_complexity_frontier_lab/order_dp.py": "a41fcf919080cf7322694f5e95af161dc19dbe963282355308bb2ca6d24c2fc4",
+    "proof_complexity_frontier_lab/run_orders.py": "ac03d263c151cf9ff02f5a8c2de57e7cfaa40fdc886d11ec04ad144168fd6c71",
+    "proof_complexity_frontier_lab/review_orders.py": "8a5e78b49313098816ca20c4105db2d7c5ff1feceffe1d2d1a8d9172149e4fe7",
+    "proof_complexity_frontier_lab/THEOREM.md": "65b4c7ab8314ea421aa234f33be0e20b6ae52fe53064fe27c4b41e87eceb53eb"
+  }
+}
