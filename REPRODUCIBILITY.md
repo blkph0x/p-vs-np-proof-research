@@ -4,6 +4,16 @@ The repository is a research checkpoint. Run commands from the repository root
 with Python 3.11 or newer. The checks use deterministic seeds and exact integer
 or rational arithmetic where the report says so.
 
+Install the pinned runtime dependencies before replaying the audit:
+
+```powershell
+python -m pip install -r requirements.txt
+```
+
+NetworkX is used for the blossom matching routine whose dual output is checked
+by `matching_certificate.py`; SymPy is used only for the algebraic
+corroboration suite.
+
 All suites used by the full audit, including the proof-portfolio and charged
 work controls, are vendored under this repository. A fresh checkout does not
 depend on a neighboring checkpoint directory.

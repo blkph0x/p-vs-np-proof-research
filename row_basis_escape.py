@@ -187,7 +187,7 @@ def _solve_and_replay(checks, n, transform, reference_distance):
 
 def run_experiments():
     root = Path(__file__).resolve().parent
-    checkpoint = root.parent
+    checkpoint = root
     baseline_path = root / 'ROW_BASIS_RESULTS.json'
     baseline_bytes = baseline_path.read_bytes()
     baseline = json.loads(baseline_bytes)

@@ -1,0 +1,5 @@
+# Runtime dependencies used by the certificate-producing research suites.
+# Pins keep NetworkX's inspected blossom implementation and SymPy's
+# corroboration environment reproducible across local and CI audits.
+networkx==3.2.1
+sympy==1.14.0

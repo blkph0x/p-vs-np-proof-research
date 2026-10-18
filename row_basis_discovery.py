@@ -292,8 +292,8 @@ def _enumerate(generator):
 def run_stored_experiments(max_candidate_evaluations=30000, seed=20261018):
     from native_coset_solver import solve_native, verify_native_result
     root = Path(__file__).resolve().parent
-    checkpoint = root.parent
-    helper_path = checkpoint / 'non_graphic_core_lab' / 'deletion_solver.py'
+    checkpoint = root
+    helper_path = checkpoint / 'charged_work_core_lab' / 'deletion_solver.py'
     spec = spec_from_file_location('_row_basis_helpers', helper_path)
     helper = module_from_spec(spec)
     spec.loader.exec_module(helper)

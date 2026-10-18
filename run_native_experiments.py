@@ -21,11 +21,11 @@ from native_coset_solver import solve_native, verify_native_result
 
 
 ROOT = Path(__file__).resolve().parent
-CHECKPOINT = ROOT.parent
+CHECKPOINT = ROOT
 
 
 def load_sibling(name):
-    path = CHECKPOINT / 'non_graphic_core_lab' / f'{name}.py'
+    path = CHECKPOINT / 'charged_work_core_lab' / f'{name}.py'
     spec = spec_from_file_location(f'_native_experiment_{name}', path)
     module = module_from_spec(spec)
     spec.loader.exec_module(module)
@@ -237,7 +237,7 @@ def run(args):
     started = perf_counter()
     implementation = [ROOT / name for name in ('run_native_experiments.py', 'native_coset_solver.py',
                                                'matching_certificate.py')]
-    implementation += [CHECKPOINT / 'non_graphic_core_lab' / name
+    implementation += [CHECKPOINT / 'charged_work_core_lab' / name
                        for name in ('deletion_solver.py', 'fano_certificate.py')]
     archives = [CHECKPOINT / 'high_width_core_stress_lab' / name
                 for name in ('random_code_audits.json', 'random_code_results.json')]

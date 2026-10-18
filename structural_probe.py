@@ -185,7 +185,7 @@ def decompose_columns(columns, basis_indices=None):
 
 
 def _deletion_helpers():
-    path = Path(__file__).resolve().parents[1] / 'non_graphic_core_lab' / 'deletion_solver.py'
+    path = Path(__file__).resolve().parent / 'charged_work_core_lab' / 'deletion_solver.py'
     spec = spec_from_file_location('_structural_probe_deletion_helpers', path)
     module = module_from_spec(spec)
     spec.loader.exec_module(module)
@@ -223,7 +223,7 @@ def probe_stored_codes(max_delete=2):
     """Check every D of size <=2 on the stored fixtures without cut enumeration."""
     if type(max_delete) is not int or not 0 <= max_delete <= 2:
         raise ValueError('this bounded probe requires max_delete in {0,1,2}')
-    source = Path(__file__).resolve().parents[1] / 'high_width_core_stress_lab' / 'random_code_audits.json'
+    source = Path(__file__).resolve().parent / 'high_width_core_stress_lab' / 'random_code_audits.json'
     records = json.loads(source.read_text(encoding='utf-8'))
     helper = _deletion_helpers()
     started = perf_counter()
