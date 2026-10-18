@@ -1,0 +1,21 @@
+{
+  "MANIFEST.json": "37599a833cc6d12cb1f09f44b32d9ac31a293fc283ef8d1488814bc9bef85050",
+  "POLY_SCORECARD.md": "60a203818512e00538b798b03fafa3c4a7a19c2bb8dd933551b24a6ecf655e78",
+  "PROOF_FRAGMENT_INTEGRATION.json": "c156759f43719b62a84e5819c180596b35b42d7689ef0dc3ab5693c5286694bf",
+  "README.md": "a73133767e94bbd0eb2e4a62f61e733c2a1d1ac29765c608ba8ec27742e270e4",
+  "REPORT.md": "ca68643744fcc5a783579aa239b67f1f616f9348ab322b7e61c8ecd3aaa102b3",
+  "RESULTS.json": "29b375b0790d64292082ca704e33e32d7ba10cdd3a25fcc8488920d91e4eee10",
+  "ROADMAP.md": "0e622c07e895484bffda070fb9bb634b1812828a5a283a0ea1b10768063312d8",
+  "SCALING.json": "fa1231eca436072d83d35cc8bfa4988cfc1d13d309cd66a7e71e575179e18ae2",
+  "TEST_OUTPUT.txt": "183941425085b874017f6dfab6e1cb14d4c63cdb3796893bf0cfed39a5c13522",
+  "THEOREMS.md": "e59e2449b659bdb9cfeaac5ffdb4636f685d7ac329c72ab550e6299d27679dc9",
+  "__pycache__/engine.cpython-313.pyc": "d50c29d6a69f0675d8026647e96ae64b59f7dd63a08f7eadb569526bb37e31f2",
+  "__pycache__/proof_motif_miner.cpython-313.pyc": "0938d42243d492d1ced83b444182de7d1c38a94e6863e470b1201b3d48d9190c",
+  "__pycache__/test_lab.cpython-313.pyc": "184a433718bf6b3ded4de08cb76549e12d9a96b3efe3c29e2fb88a3327691276",
+  "engine.py": "3ce2cc8b65eea7e7943057557a213347390816afbda916adcd7f494877b2bfc2",
+  "grouping_measurements.csv": "8d4c5081964c507de3350d3b00fac5cd4ce50ef7c0dd29ac0f47be45d63c31d2",
+  "proof_fragment_integration.csv": "5f74aca8ae6c9cd1827f0f4a4ae0dc84bc0e8debc2dabb67595423e00e87180e",
+  "proof_motif_miner.py": "9a25fc415d633a8174160d96502dbb13b548a95364951212e40e663dcad7c228",
+  "scaling_measurements.csv": "9943011f0903a44477c0fa8fc9b1286f2cf71ff9f688f21204b848f771b737d9",
+  "test_lab.py": "b0666f5f9b47509bcac9cb81835987c8e640453c13e2c9839c09978b4062de1a"
+}

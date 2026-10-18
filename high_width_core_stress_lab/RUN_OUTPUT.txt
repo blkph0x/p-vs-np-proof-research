@@ -1,0 +1,17 @@
+random 18 balanced LB 4 internal4 True trellis greedy states 128
+random 20 balanced LB 5 internal4 True trellis greedy states 128
+random 22 balanced LB 6 internal4 True trellis greedy states 256
+random 24 balanced LB 6 internal4 True trellis greedy states 512
+random 26 balanced LB 7 internal4 True trellis greedy states 1024
+random 28 balanced LB 8 internal4 False trellis greedy states 2048
+graphic K 5 n 10 width>= 2 width<= 3 native min 4 3
+graphic K 6 n 15 width>= 3 width<= 4 native min 5 3
+graphic K 8 n 28 width>= 3 width<= 6 native min 7 3
+graphic K 10 n 45 width>= 5 width<= 8 native min 9 3
+graphic K 12 n 66 width>= 5 width<= 10 native min 11 3
+graphic K 16 n 120 width>= 7 width<= 14 native min 15 3
+graphic K 32 n 496 width>= 13 width<= 30 native min 31 3
+graphic K 64 n 2016 width>= 27 width<= 62 native min 63 3
+graphic K 128 n 8128 width>= 53 width<= 126 native min 127 3
+graphic K 256 n 32640 width>= 107 width<= 254 native min 255 3
+Tests: random 6 graphic 10 native mincut crosschecks 75

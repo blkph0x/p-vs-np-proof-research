@@ -1,0 +1,46 @@
+[
+  {
+    "groups": 8,
+    "subdag_width": 4,
+    "normalized_signature_recurrence": 8,
+    "invented_relation_ids": 1,
+    "invented_best_kind": "CIRCUIT",
+    "ignored_coordinates": 3,
+    "fixed_coordinates": 1,
+    "relation_occurrences": 8,
+    "net_saving": -4
+  },
+  {
+    "groups": 32,
+    "subdag_width": 4,
+    "normalized_signature_recurrence": 32,
+    "invented_relation_ids": 1,
+    "invented_best_kind": "CIRCUIT",
+    "ignored_coordinates": 3,
+    "fixed_coordinates": 1,
+    "relation_occurrences": 32,
+    "net_saving": 20
+  },
+  {
+    "groups": 64,
+    "subdag_width": 5,
+    "normalized_signature_recurrence": 64,
+    "invented_relation_ids": 1,
+    "invented_best_kind": "COORD_QUOTIENT",
+    "ignored_coordinates": 4,
+    "fixed_coordinates": 1,
+    "relation_occurrences": 64,
+    "net_saving": 243
+  },
+  {
+    "groups": 128,
+    "subdag_width": 5,
+    "normalized_signature_recurrence": 128,
+    "invented_relation_ids": 1,
+    "invented_best_kind": "COORD_QUOTIENT",
+    "ignored_coordinates": 4,
+    "fixed_coordinates": 1,
+    "relation_occurrences": 128,
+    "net_saving": 499
+  }
+]

@@ -1,0 +1,105 @@
+{
+  "format": "two-bridge-horn-affine-exhaustive-v1",
+  "target": "positive-exact-one-3",
+  "target_points": [
+    1,
+    2,
+    4
+  ],
+  "records": [
+    {
+      "left_kind": "HORN",
+      "left_arity": 3,
+      "right_kind": "AFFINE",
+      "right_arity": 4,
+      "layout": "ONE_LEFT",
+      "left_relation_count": 122,
+      "right_relation_count": 308,
+      "factor_pairs": 37576,
+      "distinct_projected_relations": 252,
+      "target_pair_count": 8,
+      "target_representable": true
+    },
+    {
+      "left_kind": "AFFINE",
+      "left_arity": 3,
+      "right_kind": "HORN",
+      "right_arity": 4,
+      "layout": "ONE_LEFT",
+      "left_relation_count": 52,
+      "right_relation_count": 4960,
+      "factor_pairs": 257920,
+      "distinct_projected_relations": 230,
+      "target_pair_count": 2,
+      "target_representable": true
+    },
+    {
+      "left_kind": "HORN",
+      "left_arity": 4,
+      "right_kind": "AFFINE",
+      "right_arity": 3,
+      "layout": "TWO_LEFT",
+      "left_relation_count": 4960,
+      "right_relation_count": 52,
+      "factor_pairs": 257920,
+      "distinct_projected_relations": 230,
+      "target_pair_count": 2,
+      "target_representable": true
+    },
+    {
+      "left_kind": "AFFINE",
+      "left_arity": 4,
+      "right_kind": "HORN",
+      "right_arity": 3,
+      "layout": "TWO_LEFT",
+      "left_relation_count": 308,
+      "right_relation_count": 122,
+      "factor_pairs": 37576,
+      "distinct_projected_relations": 252,
+      "target_pair_count": 8,
+      "target_representable": true
+    }
+  ],
+  "all_orientations_represent": true,
+  "all_orientations_reject": false,
+  "explicit_witness": {
+    "layout": "ONE_LEFT",
+    "left_kind": "HORN",
+    "right_kind": "AFFINE",
+    "left_points": [
+      0,
+      3,
+      4
+    ],
+    "right_points": [
+      2,
+      4,
+      9,
+      15
+    ],
+    "left_equations": [
+      "x = z0",
+      "x -> not z1"
+    ],
+    "right_equations": [
+      "y xor z1 = 0",
+      "w xor z0 xor z1 = 1"
+    ],
+    "projection": [
+      1,
+      2,
+      4
+    ]
+  },
+  "source_sha256": {
+    "two_bridge_factorization.py": "82bcc134f2db038dd21f25c61ecacc972a4c7f571e73d6fe5449cab7141c23ff",
+    "run_two_bridge_factorization.py": "a40547caa0c85ddb0bd2277b9460dc73f2e350d73f001ce909615dc517aeb006",
+    "TWO_BRIDGE_FACTOR_THEOREM.md": "93ec0daeef9495ab25af6f4cec5ee3263e4eba6583966ff4defac2c91695def7",
+    "TWO_BRIDGE_FACTOR_REVIEW.py": "8e88d6ae7c72210a148001218021259266bf2b618cd70fdfeb13a535366ea72b",
+    "test_two_bridge_factorization.py": "32b57ff0b32e13c37c74ad96d02858d549104778c329f7ae13dda51e882bdf52",
+    "mixed_horn_affine_reduction.py": "51413df3070205817cf1e3ac92a9fc66808384ec8a0b893bc666a218f1defc4c",
+    "test_mixed_horn_affine_reduction.py": "3f885d3607595a8b9a3e5d2b770ee26182ea514def5d3a497f9d27a7572ea3e6",
+    "MIXED_REDUCTION_REVIEW.py": "958b88feb4f7210d6057def75f537b9604f925f6f8ffdab57d63abda588b164f"
+  },
+  "scope": "Two existential Boolean bridges, two factors, one Horn and one affine; no claim about three or more bridges or other languages."
+}

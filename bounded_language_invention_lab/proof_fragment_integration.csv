@@ -1,0 +1,5 @@
+groups,subdag_width,normalized_signature_recurrence,invented_relation_ids,invented_best_kind,ignored_coordinates,fixed_coordinates,relation_occurrences,net_saving
+8,4,8,1,CIRCUIT,3,1,8,-4
+32,4,32,1,CIRCUIT,3,1,32,20
+64,5,64,1,COORD_QUOTIENT,4,1,64,243
+128,5,128,1,COORD_QUOTIENT,4,1,128,499

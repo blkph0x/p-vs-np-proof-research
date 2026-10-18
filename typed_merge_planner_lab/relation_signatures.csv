@@ -1,0 +1,8 @@
+relation,arity,signature
+implication,2,AND;MAJ;ONE;OR;ZERO
+equality,2,AND;MAJ;MIN;ONE;OR;ZERO
+parity-even3,3,MIN;ZERO
+parity-odd3,3,MIN;ONE
+AMO3,3,AND;MAJ;ZERO
+EXACT1-3,3,
+NAE3,3,

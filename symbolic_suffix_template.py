@@ -291,7 +291,7 @@ def build_artifact():
     from pathlib import Path
     import sys
     root=Path(__file__).resolve().parent
-    proof_dir=root.parent / "proof_portfolio_integration_lab"
+    proof_dir=root / "proof_portfolio_integration_lab"
     if str(proof_dir) not in sys.path:
         sys.path.insert(0,str(proof_dir))
     import proof_engine

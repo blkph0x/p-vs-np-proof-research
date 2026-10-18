@@ -1,0 +1,74 @@
+[
+  {
+    "groups": 2,
+    "width": 4,
+    "proof_entries": 17,
+    "source_clauses_seen": 8,
+    "or_macros_discovered": 2,
+    "largest_proof_motif_recurrence": 2,
+    "derived_units": 2,
+    "receiver_cert_kind": "AFFINE",
+    "selected_candidate": "XOR_INTERPOLANT",
+    "candidate_support": 2
+  },
+  {
+    "groups": 4,
+    "width": 4,
+    "proof_entries": 33,
+    "source_clauses_seen": 16,
+    "or_macros_discovered": 4,
+    "largest_proof_motif_recurrence": 4,
+    "derived_units": 4,
+    "receiver_cert_kind": "AFFINE",
+    "selected_candidate": "XOR_INTERPOLANT",
+    "candidate_support": 4
+  },
+  {
+    "groups": 8,
+    "width": 4,
+    "proof_entries": 65,
+    "source_clauses_seen": 32,
+    "or_macros_discovered": 8,
+    "largest_proof_motif_recurrence": 8,
+    "derived_units": 8,
+    "receiver_cert_kind": "AFFINE",
+    "selected_candidate": "XOR_INTERPOLANT",
+    "candidate_support": 8
+  },
+  {
+    "groups": 16,
+    "width": 8,
+    "proof_entries": 257,
+    "source_clauses_seen": 128,
+    "or_macros_discovered": 16,
+    "largest_proof_motif_recurrence": 16,
+    "derived_units": 16,
+    "receiver_cert_kind": "AFFINE",
+    "selected_candidate": "XOR_INTERPOLANT",
+    "candidate_support": 16
+  },
+  {
+    "groups": 64,
+    "width": 8,
+    "proof_entries": 1025,
+    "source_clauses_seen": 512,
+    "or_macros_discovered": 64,
+    "largest_proof_motif_recurrence": 64,
+    "derived_units": 64,
+    "receiver_cert_kind": "AFFINE",
+    "selected_candidate": "XOR_INTERPOLANT",
+    "candidate_support": 64
+  },
+  {
+    "groups": 256,
+    "width": 8,
+    "proof_entries": 4097,
+    "source_clauses_seen": 2048,
+    "or_macros_discovered": 256,
+    "largest_proof_motif_recurrence": 256,
+    "derived_units": 256,
+    "receiver_cert_kind": "AFFINE",
+    "selected_candidate": "XOR_INTERPOLANT",
+    "candidate_support": 256
+  }
+]

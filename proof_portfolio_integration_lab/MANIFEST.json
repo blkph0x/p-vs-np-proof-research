@@ -1,0 +1,18 @@
+{
+  "POLY_SCORECARD.md": "bdf25137af7a40dc1392dd498f27d08ed252142c55efe5e28bdb03f6034fcae1",
+  "README.md": "1e8d56d29fd1b5ffb4e708952a72bcbbef0470458c0431e80e1c63d78aeb61de",
+  "REPORT.md": "8037f8d6b7ae55c1f027b6c0f2af781e857d40760e335a287ee6036cccd50941",
+  "RESULTS.json": "7efa14fbc23a80ac20dbd352959e719fce3dd79262fd00ea5710de2c4fb069b7",
+  "ROADMAP.md": "2af73c9dcc9112c9482df901d7c41cf31e1e86f1ed9a2712b6971e081f97f459",
+  "TEST_OUTPUT.txt": "83f1ae078e5f84ae47861a9b4a3c96c10cb1b9b3f663438ddedf3ffe7e31d5ba",
+  "THEOREMS.md": "7f362bccdfac2862f9861405840b5d9a9a5cdedaaa33b5d865851c96d16d6e94",
+  "__pycache__/interp_engine.cpython-313.pyc": "a8f867bafc9d9acf4f597a10aeb4d4184c6d3e1d648035361d5bd0e4e72b237c",
+  "__pycache__/portfolio.cpython-313.pyc": "4c351d7c39153d340dff5b848f57b8f92d5467954eb16350600dac2ba919ee3c",
+  "__pycache__/proof_engine.cpython-313.pyc": "aee2efcb8b4674e857988affa1b03181c4e979787aa38e54a55eadffbb00a161",
+  "__pycache__/test_lab.cpython-313.pyc": "f26a369bef4d0e2a5207a92d9520b022176a6b24fa3e2b173b510a12ff579dd2",
+  "interp_engine.py": "29d3d86883de0dffc6764eb7ac3a19f9985efc299509aa0633dfbe48ea0cbee9",
+  "measurements.csv": "7b86e59dcf55d5470b20f80f2b94e35f2d80085117d087fca206ef672b417437",
+  "portfolio.py": "78954032a86ecfa9ad2b93e049dec32822f90a727cf3ae6e6aaa6b707d064330",
+  "proof_engine.py": "aecfddab9a057125bdf97e71daebdad04768f83c9bd3366c95d7a190f926c18c",
+  "test_lab.py": "69b32035e147f0067f0668d83a73d5d2cc1a98b45a85b3950f238642fa6fff09"
+}

@@ -18,8 +18,8 @@ from itertools import product
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-PROOF_DIR = ROOT.parent / "proof_portfolio_integration_lab"
-MOTIF_DIR = ROOT.parent / "proof_motif_candidate_lab"
+PROOF_DIR = ROOT / "proof_portfolio_integration_lab"
+MOTIF_DIR = ROOT / "proof_motif_candidate_lab"
 if str(PROOF_DIR) not in sys.path:
     sys.path.insert(0, str(PROOF_DIR))
 if str(MOTIF_DIR) not in sys.path:

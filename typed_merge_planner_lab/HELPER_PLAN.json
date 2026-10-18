@@ -1,0 +1,143 @@
+{
+  "regions": [
+    {
+      "name": "H0",
+      "type": "HORN",
+      "scope_size": 1027
+    },
+    {
+      "name": "H1",
+      "type": "HORN",
+      "scope_size": 1024
+    },
+    {
+      "name": "A0",
+      "type": "AFFINE",
+      "scope_size": 1027
+    },
+    {
+      "name": "A1",
+      "type": "AFFINE",
+      "scope_size": 1024
+    }
+  ],
+  "input_scale": 4106,
+  "bad_tree_feasible": false,
+  "good_tree": {
+    "cost": 2062,
+    "max_explicit_width": 3,
+    "history": {
+      "kind": "EXPLICIT_TT_BRIDGE",
+      "width": 3,
+      "states": 8,
+      "left": {
+        "kind": "POLY_COMMON",
+        "common": [
+          "AND"
+        ],
+        "left": {
+          "leaf": "H0",
+          "type": "HORN"
+        },
+        "right": {
+          "leaf": "H1",
+          "type": "HORN"
+        },
+        "union_width": 1027
+      },
+      "right": {
+        "kind": "POLY_COMMON",
+        "common": [
+          "MIN"
+        ],
+        "left": {
+          "leaf": "A0",
+          "type": "AFFINE"
+        },
+        "right": {
+          "leaf": "A1",
+          "type": "AFFINE"
+        },
+        "union_width": 1027
+      }
+    }
+  },
+  "exact": {
+    "cost": 2062,
+    "max_explicit_width": 3,
+    "history": {
+      "kind": "EXPLICIT_TT_BRIDGE",
+      "width": 3,
+      "states": 8,
+      "left": {
+        "kind": "POLY_COMMON",
+        "common": [
+          "AND"
+        ],
+        "left": {
+          "leaf": "H0",
+          "type": "HORN"
+        },
+        "right": {
+          "leaf": "H1",
+          "type": "HORN"
+        },
+        "union_width": 1027
+      },
+      "right": {
+        "kind": "POLY_COMMON",
+        "common": [
+          "MIN"
+        ],
+        "left": {
+          "leaf": "A0",
+          "type": "AFFINE"
+        },
+        "right": {
+          "leaf": "A1",
+          "type": "AFFINE"
+        },
+        "union_width": 1027
+      }
+    }
+  },
+  "greedy": {
+    "cost": 2062,
+    "max_explicit_width": 3,
+    "history": {
+      "kind": "EXPLICIT_TT_BRIDGE",
+      "width": 3,
+      "states": 8,
+      "left": {
+        "kind": "POLY_COMMON",
+        "common": [
+          "AND"
+        ],
+        "left": {
+          "leaf": "H0",
+          "type": "HORN"
+        },
+        "right": {
+          "leaf": "H1",
+          "type": "HORN"
+        },
+        "union_width": 1027
+      },
+      "right": {
+        "kind": "POLY_COMMON",
+        "common": [
+          "MIN"
+        ],
+        "left": {
+          "leaf": "A0",
+          "type": "AFFINE"
+        },
+        "right": {
+          "leaf": "A1",
+          "type": "AFFINE"
+        },
+        "union_width": 1027
+      }
+    }
+  }
+}

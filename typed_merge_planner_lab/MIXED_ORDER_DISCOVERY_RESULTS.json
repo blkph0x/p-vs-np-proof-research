@@ -1,0 +1,334 @@
+{
+  "format": "mixed-order-discovery-v1",
+  "formula_count": 16,
+  "rows": [
+    {
+      "mask": 0,
+      "clause_count": 0,
+      "variables": 4,
+      "width": 0,
+      "order": [
+        3,
+        2,
+        1,
+        0
+      ],
+      "search_subsets": 16,
+      "search_transitions": 32,
+      "sat": true,
+      "frontier_states": 1
+    },
+    {
+      "mask": 1,
+      "clause_count": 1,
+      "variables": 6,
+      "width": 3,
+      "order": [
+        5,
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "search_subsets": 64,
+      "search_transitions": 192,
+      "sat": true,
+      "frontier_states": 8
+    },
+    {
+      "mask": 2,
+      "clause_count": 1,
+      "variables": 6,
+      "width": 3,
+      "order": [
+        5,
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "search_subsets": 64,
+      "search_transitions": 192,
+      "sat": true,
+      "frontier_states": 8
+    },
+    {
+      "mask": 3,
+      "clause_count": 2,
+      "variables": 8,
+      "width": 3,
+      "order": [
+        7,
+        6,
+        3,
+        1,
+        0,
+        5,
+        4,
+        2
+      ],
+      "search_subsets": 256,
+      "search_transitions": 1024,
+      "sat": true,
+      "frontier_states": 8
+    },
+    {
+      "mask": 4,
+      "clause_count": 1,
+      "variables": 6,
+      "width": 3,
+      "order": [
+        5,
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "search_subsets": 64,
+      "search_transitions": 192,
+      "sat": true,
+      "frontier_states": 8
+    },
+    {
+      "mask": 5,
+      "clause_count": 2,
+      "variables": 8,
+      "width": 3,
+      "order": [
+        7,
+        6,
+        3,
+        2,
+        0,
+        5,
+        4,
+        1
+      ],
+      "search_subsets": 256,
+      "search_transitions": 1024,
+      "sat": true,
+      "frontier_states": 8
+    },
+    {
+      "mask": 6,
+      "clause_count": 2,
+      "variables": 8,
+      "width": 3,
+      "order": [
+        7,
+        6,
+        3,
+        2,
+        0,
+        5,
+        4,
+        1
+      ],
+      "search_subsets": 256,
+      "search_transitions": 1024,
+      "sat": true,
+      "frontier_states": 8
+    },
+    {
+      "mask": 7,
+      "clause_count": 3,
+      "variables": 10,
+      "width": 5,
+      "order": [
+        9,
+        8,
+        3,
+        2,
+        0,
+        7,
+        6,
+        1,
+        5,
+        4
+      ],
+      "search_subsets": 1024,
+      "search_transitions": 5120,
+      "sat": true,
+      "frontier_states": 8
+    },
+    {
+      "mask": 8,
+      "clause_count": 1,
+      "variables": 6,
+      "width": 3,
+      "order": [
+        5,
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "search_subsets": 64,
+      "search_transitions": 192,
+      "sat": true,
+      "frontier_states": 8
+    },
+    {
+      "mask": 9,
+      "clause_count": 2,
+      "variables": 8,
+      "width": 3,
+      "order": [
+        7,
+        6,
+        3,
+        2,
+        1,
+        5,
+        4,
+        0
+      ],
+      "search_subsets": 256,
+      "search_transitions": 1024,
+      "sat": true,
+      "frontier_states": 8
+    },
+    {
+      "mask": 10,
+      "clause_count": 2,
+      "variables": 8,
+      "width": 3,
+      "order": [
+        7,
+        6,
+        3,
+        2,
+        1,
+        5,
+        4,
+        0
+      ],
+      "search_subsets": 256,
+      "search_transitions": 1024,
+      "sat": true,
+      "frontier_states": 8
+    },
+    {
+      "mask": 11,
+      "clause_count": 3,
+      "variables": 10,
+      "width": 4,
+      "order": [
+        9,
+        8,
+        3,
+        2,
+        1,
+        7,
+        6,
+        0,
+        5,
+        4
+      ],
+      "search_subsets": 1024,
+      "search_transitions": 5120,
+      "sat": true,
+      "frontier_states": 8
+    },
+    {
+      "mask": 12,
+      "clause_count": 2,
+      "variables": 8,
+      "width": 3,
+      "order": [
+        7,
+        6,
+        3,
+        1,
+        2,
+        5,
+        4,
+        0
+      ],
+      "search_subsets": 256,
+      "search_transitions": 1024,
+      "sat": true,
+      "frontier_states": 8
+    },
+    {
+      "mask": 13,
+      "clause_count": 3,
+      "variables": 10,
+      "width": 4,
+      "order": [
+        9,
+        8,
+        3,
+        2,
+        1,
+        7,
+        6,
+        0,
+        5,
+        4
+      ],
+      "search_subsets": 1024,
+      "search_transitions": 5120,
+      "sat": true,
+      "frontier_states": 8
+    },
+    {
+      "mask": 14,
+      "clause_count": 3,
+      "variables": 10,
+      "width": 4,
+      "order": [
+        9,
+        8,
+        3,
+        2,
+        1,
+        7,
+        6,
+        0,
+        5,
+        4
+      ],
+      "search_subsets": 1024,
+      "search_transitions": 5120,
+      "sat": true,
+      "frontier_states": 8
+    },
+    {
+      "mask": 15,
+      "clause_count": 4,
+      "variables": 12,
+      "width": 5,
+      "order": [
+        11,
+        10,
+        3,
+        2,
+        1,
+        9,
+        8,
+        0,
+        7,
+        6,
+        5,
+        4
+      ],
+      "search_subsets": 4096,
+      "search_transitions": 24576,
+      "sat": false,
+      "frontier_states": 8
+    }
+  ],
+  "all_orders_optimal": true,
+  "source_sha256": {
+    "mixed_order_discovery.py": "4930e9dcde09afbea08eccdc1df9b1848d2201df1af75a7c1844726f2cc1dfa5",
+    "run_mixed_order_discovery.py": "3826e7fd2fb22372803ae0f6ade49c6dafeb30822010adfb3ac5952ebde000a6",
+    "MIXED_ORDER_DISCOVERY_THEOREM.md": "47d0501c659bce49945d03d2fd20541dff71a198f1592e2f363dd0aca6b65f80",
+    "MIXED_ORDER_DISCOVERY_REVIEW.py": "e670e8adda97ef1fdf445d8554665268f495005d051db63db2b6aca4a767e5d2",
+    "test_mixed_order_discovery.py": "1dd3c894bcfb36c0879a3c8b2a34c46ced7d337011aa8aa8d928a5829d209bf7"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "review": {
+    "common_counts_expected": true,
+    "all_common_are_projections": true,
+    "named_matrix_replayed": true,
+    "all_arity_symbolic_singletons": true,
+    "all_checks_passed": true
+  },
+  "matrix": {
+    "AND": {
+      "arity": 2,
+      "table": 8,
+      "preserves_H": true,
+      "preserves_A": false
+    },
+    "OR": {
+      "arity": 2,
+      "table": 14,
+      "preserves_H": false,
+      "preserves_A": false
+    },
+    "MAJORITY": {
+      "arity": 3,
+      "table": 232,
+      "preserves_H": true,
+      "preserves_A": false
+    },
+    "MINORITY_XOR": {
+      "arity": 3,
+      "table": 150,
+      "preserves_H": false,
+      "preserves_A": true
+    },
+    "CONST_0": {
+      "arity": 1,
+      "table": 0,
+      "preserves_H": true,
+      "preserves_A": false
+    },
+    "CONST_1": {
+      "arity": 1,
+      "table": 3,
+      "preserves_H": false,
+      "preserves_A": true
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "common_counts_expected": true,
+  "all_common_are_projections": true,
+  "named_matrix_replayed": true,
+  "all_arity_symbolic_singletons": true,
+  "all_checks_passed": true
+}

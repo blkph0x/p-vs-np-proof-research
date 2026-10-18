@@ -1,0 +1,9 @@
+{
+  "fixtures_all_three_color_controls_unsat": true,
+  "fixtures_status_match": true,
+  "fixtures_all_proofs_replay": true,
+  "small_status_match": true,
+  "small_proofs_replay": true,
+  "complete_proofs_replay": true,
+  "all_checks_passed": true
+}

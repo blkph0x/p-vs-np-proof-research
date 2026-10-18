@@ -1,0 +1,7 @@
+fixture,nvars,catalog,closing,selected,selected_bits
+UNIT-or-collapse,48,8,1,UNIT,15
+EQUALITY,20,4,1,EQUALITY,33
+AMO-PB,32,1,1,PB_AMO,173
+XOR3,30,10,1,XOR,24
+ITE,40,10,1,ITE,32
+MIXED,216,49,2,XOR,33

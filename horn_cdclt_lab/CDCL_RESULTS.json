@@ -1,0 +1,836 @@
+{
+  "status": "clause-learning audit; no P=NP result",
+  "fixtures": [
+    {
+      "name": "K4",
+      "vertices": 4,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "positive_one_in_three_clauses": 22,
+      "encoded_variables": 74,
+      "independent_three_colorable": false,
+      "dfs_sat": false,
+      "cdcl_sat": false,
+      "dfs_nodes": 11,
+      "dfs_decisions": 10,
+      "dfs_conflicts": 6,
+      "dfs_certificates": 247,
+      "dfs_seconds": 0.020740199834108353,
+      "cdcl_decisions": 6,
+      "cdcl_conflicts": 6,
+      "cdcl_learned_clauses": 5,
+      "cdcl_resolution_steps": 90,
+      "cdcl_theory_lemmas": 130,
+      "cdcl_proof_events": 226,
+      "max_theory_lemma_width": 3,
+      "max_learned_clause_width": 3,
+      "total_proof_literals": 325,
+      "cdcl_replay": {
+        "events": 226,
+        "all_events_valid": true,
+        "database_clauses_replayed": 135,
+        "solver_clauses": 135,
+        "database_size_matches": true
+      }
+    },
+    {
+      "name": "sparse_12",
+      "vertices": 12,
+      "edges": [
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          3,
+          10
+        ],
+        [
+          3,
+          11
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          4,
+          11
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          7,
+          10
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          9,
+          11
+        ],
+        [
+          10,
+          11
+        ]
+      ],
+      "positive_one_in_three_clauses": 72,
+      "encoded_variables": 240,
+      "independent_three_colorable": false,
+      "dfs_sat": false,
+      "cdcl_sat": false,
+      "dfs_nodes": 287,
+      "dfs_decisions": 286,
+      "dfs_conflicts": 144,
+      "dfs_certificates": 9239,
+      "dfs_seconds": 2.2156559000723064,
+      "cdcl_decisions": 29,
+      "cdcl_conflicts": 9,
+      "cdcl_learned_clauses": 8,
+      "cdcl_resolution_steps": 123,
+      "cdcl_theory_lemmas": 301,
+      "cdcl_proof_events": 433,
+      "max_theory_lemma_width": 3,
+      "max_learned_clause_width": 3,
+      "total_proof_literals": 733,
+      "cdcl_replay": {
+        "events": 433,
+        "all_events_valid": true,
+        "database_clauses_replayed": 309,
+        "solver_clauses": 309,
+        "database_size_matches": true
+      }
+    },
+    {
+      "name": "sparse_14",
+      "vertices": 14,
+      "edges": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          0,
+          11
+        ],
+        [
+          0,
+          13
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          12
+        ],
+        [
+          1,
+          13
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          10
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          5,
+          9
+        ],
+        [
+          5,
+          12
+        ],
+        [
+          7,
+          10
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          7,
+          12
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          8,
+          13
+        ],
+        [
+          9,
+          12
+        ],
+        [
+          10,
+          12
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          11,
+          13
+        ]
+      ],
+      "positive_one_in_three_clauses": 95,
+      "encoded_variables": 313,
+      "independent_three_colorable": false,
+      "dfs_sat": false,
+      "cdcl_sat": false,
+      "dfs_nodes": 491,
+      "dfs_decisions": 490,
+      "dfs_conflicts": 246,
+      "dfs_certificates": 12450,
+      "dfs_seconds": 4.553748100064695,
+      "cdcl_decisions": 88,
+      "cdcl_conflicts": 55,
+      "cdcl_learned_clauses": 54,
+      "cdcl_resolution_steps": 776,
+      "cdcl_theory_lemmas": 694,
+      "cdcl_proof_events": 1525,
+      "max_theory_lemma_width": 3,
+      "max_learned_clause_width": 7,
+      "total_proof_literals": 1880,
+      "cdcl_replay": {
+        "events": 1525,
+        "all_events_valid": true,
+        "database_clauses_replayed": 748,
+        "solver_clauses": 748,
+        "database_size_matches": true
+      }
+    }
+  ],
+  "complete_triple_scaling": [
+    {
+      "target_variables": 3,
+      "clauses": 1,
+      "sat": true,
+      "decisions": 2,
+      "conflicts": 0,
+      "learned_clauses": 0,
+      "resolution_steps": 0,
+      "max_theory_lemma_width": 3,
+      "max_learned_clause_width": 0,
+      "total_proof_literals": 7,
+      "replay": {
+        "events": 3,
+        "all_events_valid": true,
+        "database_clauses_replayed": 3,
+        "solver_clauses": 3,
+        "database_size_matches": true
+      }
+    },
+    {
+      "target_variables": 4,
+      "clauses": 4,
+      "sat": false,
+      "decisions": 1,
+      "conflicts": 2,
+      "learned_clauses": 1,
+      "resolution_steps": 3,
+      "max_theory_lemma_width": 5,
+      "max_learned_clause_width": 1,
+      "total_proof_literals": 34,
+      "replay": {
+        "events": 18,
+        "all_events_valid": true,
+        "database_clauses_replayed": 14,
+        "solver_clauses": 14,
+        "database_size_matches": true
+      }
+    },
+    {
+      "target_variables": 5,
+      "clauses": 10,
+      "sat": false,
+      "decisions": 1,
+      "conflicts": 2,
+      "learned_clauses": 1,
+      "resolution_steps": 3,
+      "max_theory_lemma_width": 5,
+      "max_learned_clause_width": 1,
+      "total_proof_literals": 59,
+      "replay": {
+        "events": 29,
+        "all_events_valid": true,
+        "database_clauses_replayed": 25,
+        "solver_clauses": 25,
+        "database_size_matches": true
+      }
+    },
+    {
+      "target_variables": 6,
+      "clauses": 20,
+      "sat": false,
+      "decisions": 1,
+      "conflicts": 2,
+      "learned_clauses": 1,
+      "resolution_steps": 3,
+      "max_theory_lemma_width": 5,
+      "max_learned_clause_width": 1,
+      "total_proof_literals": 93,
+      "replay": {
+        "events": 44,
+        "all_events_valid": true,
+        "database_clauses_replayed": 40,
+        "solver_clauses": 40,
+        "database_size_matches": true
+      }
+    },
+    {
+      "target_variables": 7,
+      "clauses": 35,
+      "sat": false,
+      "decisions": 1,
+      "conflicts": 2,
+      "learned_clauses": 1,
+      "resolution_steps": 3,
+      "max_theory_lemma_width": 5,
+      "max_learned_clause_width": 1,
+      "total_proof_literals": 136,
+      "replay": {
+        "events": 63,
+        "all_events_valid": true,
+        "database_clauses_replayed": 59,
+        "solver_clauses": 59,
+        "database_size_matches": true
+      }
+    },
+    {
+      "target_variables": 8,
+      "clauses": 56,
+      "sat": false,
+      "decisions": 1,
+      "conflicts": 2,
+      "learned_clauses": 1,
+      "resolution_steps": 3,
+      "max_theory_lemma_width": 5,
+      "max_learned_clause_width": 1,
+      "total_proof_literals": 188,
+      "replay": {
+        "events": 86,
+        "all_events_valid": true,
+        "database_clauses_replayed": 82,
+        "solver_clauses": 82,
+        "database_size_matches": true
+      }
+    },
+    {
+      "target_variables": 9,
+      "clauses": 84,
+      "sat": false,
+      "decisions": 1,
+      "conflicts": 2,
+      "learned_clauses": 1,
+      "resolution_steps": 3,
+      "max_theory_lemma_width": 5,
+      "max_learned_clause_width": 1,
+      "total_proof_literals": 249,
+      "replay": {
+        "events": 113,
+        "all_events_valid": true,
+        "database_clauses_replayed": 109,
+        "solver_clauses": 109,
+        "database_size_matches": true
+      }
+    },
+    {
+      "target_variables": 10,
+      "clauses": 120,
+      "sat": false,
+      "decisions": 1,
+      "conflicts": 2,
+      "learned_clauses": 1,
+      "resolution_steps": 3,
+      "max_theory_lemma_width": 5,
+      "max_learned_clause_width": 1,
+      "total_proof_literals": 319,
+      "replay": {
+        "events": 144,
+        "all_events_valid": true,
+        "database_clauses_replayed": 140,
+        "solver_clauses": 140,
+        "database_size_matches": true
+      }
+    }
+  ],
+  "small_corpus": [
+    {
+      "clauses": [],
+      "direct_sat": true,
+      "cdcl_sat": true,
+      "replay": {
+        "events": 0,
+        "all_events_valid": true,
+        "database_clauses_replayed": 0,
+        "solver_clauses": 0,
+        "database_size_matches": true
+      }
+    },
+    {
+      "clauses": [
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "direct_sat": true,
+      "cdcl_sat": true,
+      "replay": {
+        "events": 3,
+        "all_events_valid": true,
+        "database_clauses_replayed": 3,
+        "solver_clauses": 3,
+        "database_size_matches": true
+      }
+    },
+    {
+      "clauses": [
+        [
+          1,
+          2,
+          4
+        ]
+      ],
+      "direct_sat": true,
+      "cdcl_sat": true,
+      "replay": {
+        "events": 3,
+        "all_events_valid": true,
+        "database_clauses_replayed": 3,
+        "solver_clauses": 3,
+        "database_size_matches": true
+      }
+    },
+    {
+      "clauses": [
+        [
+          1,
+          3,
+          4
+        ]
+      ],
+      "direct_sat": true,
+      "cdcl_sat": true,
+      "replay": {
+        "events": 3,
+        "all_events_valid": true,
+        "database_clauses_replayed": 3,
+        "solver_clauses": 3,
+        "database_size_matches": true
+      }
+    },
+    {
+      "clauses": [
+        [
+          2,
+          3,
+          4
+        ]
+      ],
+      "direct_sat": true,
+      "cdcl_sat": true,
+      "replay": {
+        "events": 3,
+        "all_events_valid": true,
+        "database_clauses_replayed": 3,
+        "solver_clauses": 3,
+        "database_size_matches": true
+      }
+    },
+    {
+      "clauses": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          2,
+          4
+        ]
+      ],
+      "direct_sat": true,
+      "cdcl_sat": true,
+      "replay": {
+        "events": 6,
+        "all_events_valid": true,
+        "database_clauses_replayed": 6,
+        "solver_clauses": 6,
+        "database_size_matches": true
+      }
+    },
+    {
+      "clauses": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          3,
+          4
+        ]
+      ],
+      "direct_sat": true,
+      "cdcl_sat": true,
+      "replay": {
+        "events": 6,
+        "all_events_valid": true,
+        "database_clauses_replayed": 6,
+        "solver_clauses": 6,
+        "database_size_matches": true
+      }
+    },
+    {
+      "clauses": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          2,
+          3,
+          4
+        ]
+      ],
+      "direct_sat": true,
+      "cdcl_sat": true,
+      "replay": {
+        "events": 6,
+        "all_events_valid": true,
+        "database_clauses_replayed": 6,
+        "solver_clauses": 6,
+        "database_size_matches": true
+      }
+    },
+    {
+      "clauses": [
+        [
+          1,
+          2,
+          4
+        ],
+        [
+          1,
+          3,
+          4
+        ]
+      ],
+      "direct_sat": true,
+      "cdcl_sat": true,
+      "replay": {
+        "events": 6,
+        "all_events_valid": true,
+        "database_clauses_replayed": 6,
+        "solver_clauses": 6,
+        "database_size_matches": true
+      }
+    },
+    {
+      "clauses": [
+        [
+          1,
+          2,
+          4
+        ],
+        [
+          2,
+          3,
+          4
+        ]
+      ],
+      "direct_sat": true,
+      "cdcl_sat": true,
+      "replay": {
+        "events": 6,
+        "all_events_valid": true,
+        "database_clauses_replayed": 6,
+        "solver_clauses": 6,
+        "database_size_matches": true
+      }
+    },
+    {
+      "clauses": [
+        [
+          1,
+          3,
+          4
+        ],
+        [
+          2,
+          3,
+          4
+        ]
+      ],
+      "direct_sat": true,
+      "cdcl_sat": true,
+      "replay": {
+        "events": 5,
+        "all_events_valid": true,
+        "database_clauses_replayed": 5,
+        "solver_clauses": 5,
+        "database_size_matches": true
+      }
+    },
+    {
+      "clauses": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          2,
+          4
+        ],
+        [
+          1,
+          3,
+          4
+        ]
+      ],
+      "direct_sat": true,
+      "cdcl_sat": true,
+      "replay": {
+        "events": 17,
+        "all_events_valid": true,
+        "database_clauses_replayed": 14,
+        "solver_clauses": 14,
+        "database_size_matches": true
+      }
+    },
+    {
+      "clauses": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          2,
+          4
+        ],
+        [
+          2,
+          3,
+          4
+        ]
+      ],
+      "direct_sat": true,
+      "cdcl_sat": true,
+      "replay": {
+        "events": 10,
+        "all_events_valid": true,
+        "database_clauses_replayed": 10,
+        "solver_clauses": 10,
+        "database_size_matches": true
+      }
+    },
+    {
+      "clauses": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          3,
+          4
+        ],
+        [
+          2,
+          3,
+          4
+        ]
+      ],
+      "direct_sat": true,
+      "cdcl_sat": true,
+      "replay": {
+        "events": 8,
+        "all_events_valid": true,
+        "database_clauses_replayed": 8,
+        "solver_clauses": 8,
+        "database_size_matches": true
+      }
+    },
+    {
+      "clauses": [
+        [
+          1,
+          2,
+          4
+        ],
+        [
+          1,
+          3,
+          4
+        ],
+        [
+          2,
+          3,
+          4
+        ]
+      ],
+      "direct_sat": true,
+      "cdcl_sat": true,
+      "replay": {
+        "events": 8,
+        "all_events_valid": true,
+        "database_clauses_replayed": 8,
+        "solver_clauses": 8,
+        "database_size_matches": true
+      }
+    },
+    {
+      "clauses": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          2,
+          4
+        ],
+        [
+          1,
+          3,
+          4
+        ],
+        [
+          2,
+          3,
+          4
+        ]
+      ],
+      "direct_sat": false,
+      "cdcl_sat": false,
+      "replay": {
+        "events": 18,
+        "all_events_valid": true,
+        "database_clauses_replayed": 14,
+        "solver_clauses": 14,
+        "database_size_matches": true
+      }
+    }
+  ]
+}

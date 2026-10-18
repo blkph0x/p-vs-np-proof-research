@@ -1,0 +1,22 @@
+{
+  "AUTO_REGION_INTEGRATION.json": "486d06cc0ec4fb69587181b7939b48f16a16f53b82a6c22e87e312e928c2dedf",
+  "GREEDY_FAILURE.json": "d0d5d15854e5294bea0bbd590a5ff0cb25ed2ef36fdbb4c0190f37726d8af489",
+  "GREEDY_TRAP.json": "b0719fdfb3c5a0dec4b08a4de83449aa0194942a00f1bc2b9046dc44d6a29d1a",
+  "HELPER_PLAN.json": "a0d0d9de5b1d8fc7fc7fb9fc41ac9320a18de29660869d2b9f18b40088af515f",
+  "POLY_SCORECARD.md": "57bbcfd2d3e3a2a3e273858fd99ce95f062a6a28fa93f8d851e449a1488d1ef8",
+  "README.md": "afba353a744a082b4d381d22c6a86840743f1dde2e455efebe4cdbbd71f0cf39",
+  "REPORT.md": "1b7a6b80ad50b183ef8bf92e1004e172dc47beb3de3e9097507aeb3bf9b12ee3",
+  "RESULTS.json": "3228199e8c6567254b02d28187a39ea91cc86bbb13e993670f1719962c6d559e",
+  "ROADMAP.md": "8f44d1ddfb85504261f3ce0078a5286f8444f2733a168681776bb346188dcac0",
+  "TEST_OUTPUT.txt": "9dfc21d0312bf58d1639cadc3a11f78f0edd908c4f97ac541f181c772bf458ba",
+  "THEOREMS.md": "4395c280d5e2b81514b00b4b5a583421a8719da61f08abf53a84d05f5d5a188e",
+  "__pycache__/engine.cpython-313.pyc": "3c03915f3412d221b0d84fa4ad319d5ee7f81aa2a972e52bf0ab9e3b020b3a8e",
+  "__pycache__/test_lab.cpython-313.pyc": "435403a9f503eb4e0f0811e0573578d92ab57ff77a49a21e354794d26c8234e1",
+  "bridge_assessments.csv": "141ec2c0a5daf887556ceb86ad9f2be0446c777f2015057767ba50e477f1d61a",
+  "engine.py": "5401bc350a59f5709d079bc9b382394c774a08f10a7671720378f6cb95f7b379",
+  "native_pair_matrix.csv": "5d8ccdc695d8695b322c467c7972e5c57df74332b81ef2dc1708a2b525c91c4f",
+  "planner_scaling.csv": "2b6f2a61757c760ba380854e0c052934597e86aea336b36bc8f962f8fa12bc20",
+  "relation_pair_matrix.csv": "583986459722672921ad9ba67e504cd08fd6123cdbf93f21b5c5fb295c86d2ee",
+  "relation_signatures.csv": "9cf3773d1e7c3c8d6a36bf0e0ad91d88e1bb0ac636790031731d0c3b20230c56",
+  "test_lab.py": "04cf4a923a1d3acdaa78ee1cffdd13a7efdcdcf9ca2732f94de9a09ff8faee4c"
+}

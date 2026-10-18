@@ -1,0 +1,122 @@
+[
+  {
+    "control": "near-AMO-missing-edge",
+    "size": 4,
+    "expected_reject": "AMO",
+    "detected": 0
+  },
+  {
+    "control": "near-AMO-missing-edge",
+    "size": 8,
+    "expected_reject": "AMO",
+    "detected": 0
+  },
+  {
+    "control": "near-AMO-missing-edge",
+    "size": 16,
+    "expected_reject": "AMO",
+    "detected": 0
+  },
+  {
+    "control": "near-AMO-missing-edge",
+    "size": 32,
+    "expected_reject": "AMO",
+    "detected": 0
+  },
+  {
+    "control": "near-AMO-missing-edge",
+    "size": 64,
+    "expected_reject": "AMO",
+    "detected": 0
+  },
+  {
+    "control": "one-way-fake-equivalence",
+    "size": 4,
+    "expected_reject": "EQUALITY",
+    "detected": 0
+  },
+  {
+    "control": "one-way-fake-equivalence",
+    "size": 32,
+    "expected_reject": "EQUALITY",
+    "detected": 0
+  },
+  {
+    "control": "one-way-fake-equivalence",
+    "size": 128,
+    "expected_reject": "EQUALITY",
+    "detected": 0
+  },
+  {
+    "control": "same-count-support-nonparity",
+    "size": 200,
+    "expected_reject": "XOR",
+    "detected": 0
+  },
+  {
+    "control": "same-count-support-nonITE",
+    "size": 150,
+    "expected_reject": "ITE",
+    "detected": 0
+  },
+  {
+    "control": "repeated-proof-with-10-broken",
+    "size": 100,
+    "expected_reject": "10 OR macros",
+    "detected": 90
+  },
+  {
+    "control": "untrusted-affine-cert",
+    "size": 32,
+    "expected_reject": "XOR interpolant",
+    "detected": 0
+  },
+  {
+    "control": "trusted-but-compatible-affine",
+    "size": 32,
+    "expected_reject": "XOR interpolant",
+    "detected": 0
+  },
+  {
+    "control": "trusted-but-compatible-PB",
+    "size": 32,
+    "expected_reject": "PB interpolant",
+    "detected": 0
+  },
+  {
+    "control": "XOR-one-clause-missing",
+    "size": 1,
+    "expected_reject": "1 block",
+    "detected": 0
+  },
+  {
+    "control": "XOR-one-clause-missing",
+    "size": 8,
+    "expected_reject": "1 block",
+    "detected": 7
+  },
+  {
+    "control": "XOR-one-clause-missing",
+    "size": 64,
+    "expected_reject": "1 block",
+    "detected": 63
+  },
+  {
+    "control": "ITE-one-clause-missing",
+    "size": 1,
+    "expected_reject": "1 block",
+    "detected": 0
+  },
+  {
+    "control": "ITE-one-clause-missing",
+    "size": 8,
+    "expected_reject": "1 block",
+    "detected": 7
+  },
+  {
+    "control": "ITE-one-clause-missing",
+    "size": 32,
+    "expected_reject": "1 block",
+    "detected": 31
+  }
+]

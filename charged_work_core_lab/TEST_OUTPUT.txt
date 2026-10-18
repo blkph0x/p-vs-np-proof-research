@@ -1,0 +1,24 @@
+test_all_deleted_needs_no_transitions_and_filters_infeasible_assignments (test_deletion_solver.DeletionSolverTest) ... ok
+test_chooser_limits_and_exact_candidate_boundary (test_deletion_solver.DeletionSolverTest) ... ok
+test_chooser_scores_match_independent_profiles (test_deletion_solver.DeletionSolverTest) ... ok
+test_every_code_through_four_coordinates_and_every_deletion (test_deletion_solver.DeletionSolverTest) ... ok
+test_exact_transition_budget_boundary (test_deletion_solver.DeletionSolverTest) ... ok
+test_fixed_coordinate_weight_and_supported_word_are_preserved (test_deletion_solver.DeletionSolverTest) ... ok
+test_invalid_inputs_are_rejected (test_deletion_solver.DeletionSolverTest) ... ok
+test_no_budget_reports_no_completed_witness (test_deletion_solver.DeletionSolverTest) ... ok
+test_partial_branch_upper_bounds_match_independent_cosets (test_deletion_solver.DeletionSolverTest) ... ok
+test_partial_witness_is_only_an_upper_bound (test_deletion_solver.DeletionSolverTest) ... ok
+test_profile_matches_independent_extension_classes_and_actual_peak (test_deletion_solver.DeletionSolverTest) ... ok
+test_zero_code_empty_code_full_space_and_dependent_rows (test_deletion_solver.DeletionSolverTest) ... ok
+test_all_saved_random_cores (test_fano_certificate.FanoCertificateTests) ... ok
+test_changed_columns_and_higher_ambient_coordinates (test_fano_certificate.FanoCertificateTests) ... ok
+test_graphic_negative_control_is_unknown (test_fano_certificate.FanoCertificateTests) ... ok
+test_input_validation (test_fano_certificate.FanoCertificateTests) ... ok
+test_literal_fano_and_explicit_contraction (test_fano_certificate.FanoCertificateTests) ... ok
+test_reject_malformed_certificates (test_fano_certificate.FanoCertificateTests) ... ok
+test_zero_budget_and_small_input_are_unknown (test_fano_certificate.FanoCertificateTests) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.416s
+
+OK

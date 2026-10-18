@@ -1,0 +1,10 @@
+w,input_scale,exact_found,exact_cost,exact_max_explicit_width,greedy_found,greedy_cost,greedy_max_explicit_width,bad_tree_feasible,good_tree_feasible,good_tree_max_explicit_width
+4,26,True,22,3,True,22,3,False,True,3
+8,42,True,30,3,True,30,3,False,True,3
+16,74,True,46,3,True,46,3,False,True,3
+32,138,True,78,3,True,78,3,False,True,3
+64,266,True,142,3,True,142,3,False,True,3
+128,522,True,270,3,True,270,3,False,True,3
+256,1034,True,526,3,True,526,3,False,True,3
+512,2058,True,1038,3,True,1038,3,False,True,3
+1024,4106,True,2062,3,True,2062,3,False,True,3

@@ -1,0 +1,112 @@
+[
+  {
+    "n": 4,
+    "kind": "heterogeneous-sat",
+    "raw_clauses": 63,
+    "raw_matrix_vars": 16,
+    "matching_interface": 3,
+    "affine_support": 3,
+    "structural_boundary": 3,
+    "merge_route": "EXPLICIT_TT_BRIDGE",
+    "bridge_states": 8
+  },
+  {
+    "n": 4,
+    "kind": "heterogeneous-unsat",
+    "raw_clauses": 63,
+    "raw_matrix_vars": 16,
+    "matching_interface": 3,
+    "affine_support": 3,
+    "structural_boundary": 3,
+    "merge_route": "EXPLICIT_TT_BRIDGE",
+    "bridge_states": 8
+  },
+  {
+    "n": 8,
+    "kind": "heterogeneous-sat",
+    "raw_clauses": 471,
+    "raw_matrix_vars": 64,
+    "matching_interface": 3,
+    "affine_support": 3,
+    "structural_boundary": 3,
+    "merge_route": "EXPLICIT_TT_BRIDGE",
+    "bridge_states": 8
+  },
+  {
+    "n": 8,
+    "kind": "heterogeneous-unsat",
+    "raw_clauses": 471,
+    "raw_matrix_vars": 64,
+    "matching_interface": 3,
+    "affine_support": 3,
+    "structural_boundary": 3,
+    "merge_route": "EXPLICIT_TT_BRIDGE",
+    "bridge_states": 8
+  },
+  {
+    "n": 16,
+    "kind": "heterogeneous-sat",
+    "raw_clauses": 3879,
+    "raw_matrix_vars": 256,
+    "matching_interface": 3,
+    "affine_support": 3,
+    "structural_boundary": 3,
+    "merge_route": "EXPLICIT_TT_BRIDGE",
+    "bridge_states": 8
+  },
+  {
+    "n": 16,
+    "kind": "heterogeneous-unsat",
+    "raw_clauses": 3879,
+    "raw_matrix_vars": 256,
+    "matching_interface": 3,
+    "affine_support": 3,
+    "structural_boundary": 3,
+    "merge_route": "EXPLICIT_TT_BRIDGE",
+    "bridge_states": 8
+  },
+  {
+    "n": 32,
+    "kind": "heterogeneous-sat",
+    "raw_clauses": 31815,
+    "raw_matrix_vars": 1024,
+    "matching_interface": 3,
+    "affine_support": 3,
+    "structural_boundary": 3,
+    "merge_route": "EXPLICIT_TT_BRIDGE",
+    "bridge_states": 8
+  },
+  {
+    "n": 32,
+    "kind": "heterogeneous-unsat",
+    "raw_clauses": 31815,
+    "raw_matrix_vars": 1024,
+    "matching_interface": 3,
+    "affine_support": 3,
+    "structural_boundary": 3,
+    "merge_route": "EXPLICIT_TT_BRIDGE",
+    "bridge_states": 8
+  },
+  {
+    "n": 64,
+    "kind": "heterogeneous-sat",
+    "raw_clauses": 258183,
+    "raw_matrix_vars": 4096,
+    "matching_interface": 3,
+    "affine_support": 3,
+    "structural_boundary": 3,
+    "merge_route": "EXPLICIT_TT_BRIDGE",
+    "bridge_states": 8
+  },
+  {
+    "n": 64,
+    "kind": "heterogeneous-unsat",
+    "raw_clauses": 258183,
+    "raw_matrix_vars": 4096,
+    "matching_interface": 3,
+    "affine_support": 3,
+    "structural_boundary": 3,
+    "merge_route": "EXPLICIT_TT_BRIDGE",
+    "bridge_states": 8
+  }
+]

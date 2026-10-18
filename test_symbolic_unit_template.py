@@ -20,7 +20,7 @@ class TestSymbolicUnitTemplate(unittest.TestCase):
         clauses,_=symbolic.pattern_for_width(256); result=symbolic.recognize_unit_template(clauses,representative=1); self.assertEqual(len(result["certificate"]["nodes"]),513); self.assertEqual(result["discovery_work"],511)
 
     def test_matches_actual_width_eight_proof_fragment(self):
-        proof_dir=ROOT.parent / "proof_portfolio_integration_lab"
+        proof_dir=ROOT / "proof_portfolio_integration_lab"
         sys.path.insert(0, str(proof_dir))
         import proof_engine
         from adaptive_fragment_synthesis import extract_proof_leaves

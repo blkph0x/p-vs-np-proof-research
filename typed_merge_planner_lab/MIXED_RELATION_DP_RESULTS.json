@@ -1,0 +1,127 @@
+{
+  "format": "mixed-relation-frontier-dp-v1",
+  "variables": 4,
+  "formula_count": 16,
+  "rows": [
+    {
+      "mask": 0,
+      "clause_count": 0,
+      "sat": true,
+      "max_width": 0,
+      "max_states": 1
+    },
+    {
+      "mask": 1,
+      "clause_count": 1,
+      "sat": true,
+      "max_width": 4,
+      "max_states": 16
+    },
+    {
+      "mask": 2,
+      "clause_count": 1,
+      "sat": true,
+      "max_width": 4,
+      "max_states": 16
+    },
+    {
+      "mask": 3,
+      "clause_count": 2,
+      "sat": true,
+      "max_width": 5,
+      "max_states": 32
+    },
+    {
+      "mask": 4,
+      "clause_count": 1,
+      "sat": true,
+      "max_width": 4,
+      "max_states": 16
+    },
+    {
+      "mask": 5,
+      "clause_count": 2,
+      "sat": true,
+      "max_width": 5,
+      "max_states": 32
+    },
+    {
+      "mask": 6,
+      "clause_count": 2,
+      "sat": true,
+      "max_width": 5,
+      "max_states": 32
+    },
+    {
+      "mask": 7,
+      "clause_count": 3,
+      "sat": true,
+      "max_width": 5,
+      "max_states": 32
+    },
+    {
+      "mask": 8,
+      "clause_count": 1,
+      "sat": true,
+      "max_width": 4,
+      "max_states": 16
+    },
+    {
+      "mask": 9,
+      "clause_count": 2,
+      "sat": true,
+      "max_width": 5,
+      "max_states": 32
+    },
+    {
+      "mask": 10,
+      "clause_count": 2,
+      "sat": true,
+      "max_width": 5,
+      "max_states": 32
+    },
+    {
+      "mask": 11,
+      "clause_count": 3,
+      "sat": true,
+      "max_width": 5,
+      "max_states": 32
+    },
+    {
+      "mask": 12,
+      "clause_count": 2,
+      "sat": true,
+      "max_width": 5,
+      "max_states": 32
+    },
+    {
+      "mask": 13,
+      "clause_count": 3,
+      "sat": true,
+      "max_width": 5,
+      "max_states": 32
+    },
+    {
+      "mask": 14,
+      "clause_count": 3,
+      "sat": true,
+      "max_width": 5,
+      "max_states": 32
+    },
+    {
+      "mask": 15,
+      "clause_count": 4,
+      "sat": false,
+      "max_width": 5,
+      "max_states": 32
+    }
+  ],
+  "all_results_match_direct": true,
+  "source_sha256": {
+    "mixed_relation_dp.py": "846fbdd1489bf0781b5b3234d209eb4cdc1037aff482c6f303d297073df9dbf1",
+    "run_mixed_relation_dp.py": "422a13d7d6ae2121419f0eb2732da457fb112efedeb505ccca51059e64633c8f",
+    "MIXED_RELATION_DP_THEOREM.md": "10f4abcc454c1825e14097c480f3f5b9cbcf5fd5d7bd2fd1dc666a9a9a302af6",
+    "MIXED_RELATION_DP_REVIEW.py": "c5473c4e2898480092942a354a50c0de97fa41d380fdc58984452f59821ac54a",
+    "test_mixed_relation_dp.py": "66ba18575eeb9223d8cc0c65edecf3c2fd6ccb52d2dcf1a31e61e563516981f5"
+  }
+}

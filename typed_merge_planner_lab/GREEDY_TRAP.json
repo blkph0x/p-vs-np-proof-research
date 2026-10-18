@@ -1,0 +1,189 @@
+{
+  "checked": 9,
+  "trap": {
+    "case": 8,
+    "regions": [
+      {
+        "name": "R0",
+        "type": "HORN",
+        "scope": [
+          1,
+          6,
+          7
+        ]
+      },
+      {
+        "name": "R1",
+        "type": "HORN",
+        "scope": [
+          0,
+          1,
+          3,
+          5
+        ]
+      },
+      {
+        "name": "R2",
+        "type": "HORN",
+        "scope": [
+          3,
+          4,
+          6,
+          7
+        ]
+      },
+      {
+        "name": "R3",
+        "type": "HORN",
+        "scope": [
+          1,
+          3,
+          4,
+          5,
+          9
+        ]
+      },
+      {
+        "name": "R4",
+        "type": "AFFINE",
+        "scope": [
+          5,
+          7,
+          8
+        ]
+      },
+      {
+        "name": "R5",
+        "type": "HORN",
+        "scope": [
+          0,
+          2,
+          7,
+          8
+        ]
+      }
+    ],
+    "exact": {
+      "cost": 27,
+      "max_explicit_width": 3,
+      "history": {
+        "kind": "EXPLICIT_TT_BRIDGE",
+        "width": 3,
+        "states": 8,
+        "left": {
+          "kind": "POLY_COMMON",
+          "common": [
+            "AND"
+          ],
+          "left": {
+            "kind": "POLY_COMMON",
+            "common": [
+              "AND"
+            ],
+            "left": {
+              "kind": "POLY_COMMON",
+              "common": [
+                "AND"
+              ],
+              "left": {
+                "kind": "POLY_COMMON",
+                "common": [
+                  "AND"
+                ],
+                "left": {
+                  "leaf": "R0",
+                  "type": "HORN"
+                },
+                "right": {
+                  "leaf": "R2",
+                  "type": "HORN"
+                },
+                "union_width": 5
+              },
+              "right": {
+                "leaf": "R3",
+                "type": "HORN"
+              },
+              "union_width": 5
+            },
+            "right": {
+              "leaf": "R1",
+              "type": "HORN"
+            },
+            "union_width": 5
+          },
+          "right": {
+            "leaf": "R5",
+            "type": "HORN"
+          },
+          "union_width": 4
+        },
+        "right": {
+          "leaf": "R4",
+          "type": "AFFINE"
+        }
+      }
+    },
+    "greedy": {
+      "cost": 31,
+      "max_explicit_width": 3,
+      "history": {
+        "kind": "EXPLICIT_TT_BRIDGE",
+        "width": 3,
+        "states": 8,
+        "left": {
+          "leaf": "R4",
+          "type": "AFFINE"
+        },
+        "right": {
+          "kind": "POLY_COMMON",
+          "common": [
+            "AND"
+          ],
+          "left": {
+            "kind": "POLY_COMMON",
+            "common": [
+              "AND"
+            ],
+            "left": {
+              "leaf": "R1",
+              "type": "HORN"
+            },
+            "right": {
+              "leaf": "R3",
+              "type": "HORN"
+            },
+            "union_width": 5
+          },
+          "right": {
+            "kind": "POLY_COMMON",
+            "common": [
+              "AND"
+            ],
+            "left": {
+              "leaf": "R5",
+              "type": "HORN"
+            },
+            "right": {
+              "kind": "POLY_COMMON",
+              "common": [
+                "AND"
+              ],
+              "left": {
+                "leaf": "R0",
+                "type": "HORN"
+              },
+              "right": {
+                "leaf": "R2",
+                "type": "HORN"
+              },
+              "union_width": 5
+            },
+            "union_width": 6
+          },
+          "union_width": 7
+        }
+      }
+    }
+  }
+}

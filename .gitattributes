@@ -11,3 +11,10 @@ simultaneous_basis_lab/independent_review.py -text
 simultaneous_basis_lab/THEOREM.md -text
 ALGEBRAIC_CROSSCHECK.json -text
 affine_compression_stress_lab/RESULTS.json filter=lfs diff=lfs merge=lfs -text
+typed_merge_planner_lab/** -text
+high_width_core_stress_lab/** -text
+horn_cdclt_lab/** -text
+charged_work_core_lab/** -text
+proof_portfolio_integration_lab/** -text
+proof_motif_candidate_lab/** -text
+bounded_language_invention_lab/** -text

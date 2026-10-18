@@ -7,7 +7,7 @@ ROOT=Path(__file__).resolve().parent
 sys.path.insert(0,str(ROOT))
 import symbolic_suffix_template as producer
 import verify_symbolic_suffix_template as verifier
-sys.path.insert(0,str(ROOT.parent / "proof_portfolio_integration_lab"))
+sys.path.insert(0,str(ROOT / "proof_portfolio_integration_lab"))
 import proof_engine
 import repeated_subdag_templates as templates
 

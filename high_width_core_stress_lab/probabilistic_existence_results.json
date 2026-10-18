@@ -1,0 +1,79 @@
+[
+  {
+    "n": 28,
+    "dimension": 14,
+    "rank_deficiency_threshold_t": 6,
+    "certified_existence_lambda_lower_bound": 4,
+    "at_least_trellis_states": 16,
+    "bad_balanced_cut_probability_upper": 0.03125,
+    "full_rank_failure_probability_upper": 6.103515625e-05,
+    "positive_probability_of_full_rank_good_code": true,
+    "asymptotic_bound": "k - 2*ceil(sqrt(2k+6)) + 2 = k-O(sqrt(k))"
+  },
+  {
+    "n": 40,
+    "dimension": 20,
+    "rank_deficiency_threshold_t": 7,
+    "certified_existence_lambda_lower_bound": 8,
+    "at_least_trellis_states": 256,
+    "bad_balanced_cut_probability_upper": 0.015625,
+    "full_rank_failure_probability_upper": 9.5367431640625e-07,
+    "positive_probability_of_full_rank_good_code": true,
+    "asymptotic_bound": "k - 2*ceil(sqrt(2k+6)) + 2 = k-O(sqrt(k))"
+  },
+  {
+    "n": 80,
+    "dimension": 40,
+    "rank_deficiency_threshold_t": 10,
+    "certified_existence_lambda_lower_bound": 22,
+    "at_least_trellis_states": 4194304,
+    "bad_balanced_cut_probability_upper": 7.62939453125e-06,
+    "full_rank_failure_probability_upper": 9.094947017729282e-13,
+    "positive_probability_of_full_rank_good_code": true,
+    "asymptotic_bound": "k - 2*ceil(sqrt(2k+6)) + 2 = k-O(sqrt(k))"
+  },
+  {
+    "n": 200,
+    "dimension": 100,
+    "rank_deficiency_threshold_t": 15,
+    "certified_existence_lambda_lower_bound": 72,
+    "at_least_trellis_states": 4722366482869645213696,
+    "bad_balanced_cut_probability_upper": 2.384185791015625e-07,
+    "full_rank_failure_probability_upper": 7.888609052210118e-31,
+    "positive_probability_of_full_rank_good_code": true,
+    "asymptotic_bound": "k - 2*ceil(sqrt(2k+6)) + 2 = k-O(sqrt(k))"
+  },
+  {
+    "n": 512,
+    "dimension": 256,
+    "rank_deficiency_threshold_t": 23,
+    "certified_existence_lambda_lower_bound": 212,
+    "at_least_trellis_states": 6582018229284824168619876730229402019930943462534319453394436096,
+    "bad_balanced_cut_probability_upper": 6.103515625e-05,
+    "full_rank_failure_probability_upper": 8.636168555094445e-78,
+    "positive_probability_of_full_rank_good_code": true,
+    "asymptotic_bound": "k - 2*ceil(sqrt(2k+6)) + 2 = k-O(sqrt(k))"
+  },
+  {
+    "n": 1000,
+    "dimension": 500,
+    "rank_deficiency_threshold_t": 32,
+    "certified_existence_lambda_lower_bound": 438,
+    "at_least_trellis_states": 709803441694928604052074031140629428079727891296209043243642772637343054798240159498233447962659731992932150006119314388217384402944,
+    "bad_balanced_cut_probability_upper": 4.76837158203125e-07,
+    "full_rank_failure_probability_upper": 3.054936363499605e-151,
+    "positive_probability_of_full_rank_good_code": true,
+    "asymptotic_bound": "k - 2*ceil(sqrt(2k+6)) + 2 = k-O(sqrt(k))"
+  },
+  {
+    "n": 2000,
+    "dimension": 1000,
+    "rank_deficiency_threshold_t": 45,
+    "certified_existence_lambda_lower_bound": 912,
+    "at_least_trellis_states": 34622310392506957584946940144288832324819178359103260074178033026772100877957520390515409281853501465865381150278099185099233529659567999369251322492547208112268029722558797196081988742442283240850996127872528443254245182193766350116513179157596502523218400437714157458948096,
+    "bad_balanced_cut_probability_upper": 2.384185791015625e-07,
+    "full_rank_failure_probability_upper": 9.332636185032189e-302,
+    "positive_probability_of_full_rank_good_code": true,
+    "asymptotic_bound": "k - 2*ceil(sqrt(2k+6)) + 2 = k-O(sqrt(k))"
+  }
+]

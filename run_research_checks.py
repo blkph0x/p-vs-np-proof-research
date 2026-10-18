@@ -20,11 +20,11 @@ ROOT = Path(__file__).resolve().parent
 
 def main():
     suites = [(path.stem, ROOT, ["-v", path.stem]) for path in sorted(ROOT.glob("test_*.py"))]
-    suites += [("typed_merge_planner", ROOT.parent / "typed_merge_planner_lab", ["discover", "-v"]),
-              ("non_graphic_core", ROOT.parent / "non_graphic_core_lab", ["discover", "-v"]),
+    suites += [("typed_merge_planner", ROOT / "typed_merge_planner_lab", ["discover", "-v"]),
+              ("charged_work_core", ROOT / "charged_work_core_lab", ["discover", "-v"]),
               ("direct_fano_core", ROOT / "non_graphic_core_lab", ["discover", "-v"]),
-              ("high_width_core", ROOT.parent / "high_width_core_stress_lab", ["-v", "test_lab"]),
-              ("horn_cdclt", ROOT.parent / "horn_cdclt_lab", ["-v", "test_lab"])]
+              ("high_width_core", ROOT / "high_width_core_stress_lab", ["-v", "test_lab"]),
+              ("horn_cdclt", ROOT / "horn_cdclt_lab", ["-v", "test_lab"])]
     def hashes():
         paths = sorted({p for _, directory, _ in suites for p in directory.glob("*.py")})
         return {p.relative_to(ROOT.parent).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest()

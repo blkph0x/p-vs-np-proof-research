@@ -1,0 +1,84 @@
+{
+  "format": "one-bridge-horn-affine-exhaustive-v1",
+  "target": "positive-exact-one-3",
+  "target_tuples": [
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      0
+    ]
+  ],
+  "records": [
+    {
+      "left_kind": "HORN",
+      "left_arity": 3,
+      "right_kind": "AFFINE",
+      "right_arity": 2,
+      "layout": "TWO_LEFT",
+      "left_relation_count": 122,
+      "right_relation_count": 12,
+      "factor_pairs": 1464,
+      "distinct_projected_relations": 170,
+      "target_pair_count": 0,
+      "target_representable": false
+    },
+    {
+      "left_kind": "AFFINE",
+      "left_arity": 3,
+      "right_kind": "HORN",
+      "right_arity": 2,
+      "layout": "TWO_LEFT",
+      "left_relation_count": 52,
+      "right_relation_count": 14,
+      "factor_pairs": 728,
+      "distinct_projected_relations": 88,
+      "target_pair_count": 0,
+      "target_representable": false
+    },
+    {
+      "left_kind": "HORN",
+      "left_arity": 2,
+      "right_kind": "AFFINE",
+      "right_arity": 3,
+      "layout": "TWO_RIGHT",
+      "left_relation_count": 14,
+      "right_relation_count": 52,
+      "factor_pairs": 728,
+      "distinct_projected_relations": 88,
+      "target_pair_count": 0,
+      "target_representable": false
+    },
+    {
+      "left_kind": "AFFINE",
+      "left_arity": 2,
+      "right_kind": "HORN",
+      "right_arity": 3,
+      "layout": "TWO_RIGHT",
+      "left_relation_count": 12,
+      "right_relation_count": 122,
+      "factor_pairs": 1464,
+      "distinct_projected_relations": 170,
+      "target_pair_count": 0,
+      "target_representable": false
+    }
+  ],
+  "all_orientations_reject": true,
+  "source_sha256": {
+    "bridge_factorization.py": "bf35dc463db2d64ef72cb8ac2ab96904f638be2f376f038f54e7870af1a97561",
+    "run_bridge_factorization.py": "b6c55d7f0a6000aaea7118d07e5fede7a81d545131b26d141a28488296c59362",
+    "BRIDGE_FACTOR_THEOREM.md": "9ed6a7c42ff7945519a3d4250a30e4a6c3cf95ba0f5242460ced51d68bda7943",
+    "BRIDGE_FACTOR_REVIEW.py": "f49acb8020fb3c6880d8864b71b359f8b7912706b6ca6c3a5ee4e9508b907723",
+    "test_bridge_factorization.py": "74209d395be49aefaf6a0f412265828d8f94a26fe73e428dc7edfac29f6d2d85"
+  },
+  "scope": "One existential Boolean bridge, two factors, one Horn and one affine; no claim about more bridges or other languages."
+}

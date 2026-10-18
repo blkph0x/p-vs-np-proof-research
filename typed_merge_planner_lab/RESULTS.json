@@ -1,0 +1,606 @@
+{
+  "relation_signatures": [
+    {
+      "relation": "implication",
+      "arity": 2,
+      "signature": "AND;MAJ;ONE;OR;ZERO"
+    },
+    {
+      "relation": "equality",
+      "arity": 2,
+      "signature": "AND;MAJ;MIN;ONE;OR;ZERO"
+    },
+    {
+      "relation": "parity-even3",
+      "arity": 3,
+      "signature": "MIN;ZERO"
+    },
+    {
+      "relation": "parity-odd3",
+      "arity": 3,
+      "signature": "MIN;ONE"
+    },
+    {
+      "relation": "AMO3",
+      "arity": 3,
+      "signature": "AND;MAJ;ZERO"
+    },
+    {
+      "relation": "EXACT1-3",
+      "arity": 3,
+      "signature": ""
+    },
+    {
+      "relation": "NAE3",
+      "arity": 3,
+      "signature": ""
+    }
+  ],
+  "relation_pair_matrix": [
+    {
+      "a": "implication",
+      "b": "implication",
+      "status": "POLY_COMMON_SCHAEFER",
+      "common": "AND;MAJ;ONE;OR;ZERO"
+    },
+    {
+      "a": "implication",
+      "b": "equality",
+      "status": "POLY_COMMON_SCHAEFER",
+      "common": "AND;MAJ;ONE;OR;ZERO"
+    },
+    {
+      "a": "implication",
+      "b": "parity-even3",
+      "status": "POLY_COMMON_SCHAEFER",
+      "common": "ZERO"
+    },
+    {
+      "a": "implication",
+      "b": "parity-odd3",
+      "status": "POLY_COMMON_SCHAEFER",
+      "common": "ONE"
+    },
+    {
+      "a": "implication",
+      "b": "AMO3",
+      "status": "POLY_COMMON_SCHAEFER",
+      "common": "AND;MAJ;ZERO"
+    },
+    {
+      "a": "implication",
+      "b": "EXACT1-3",
+      "status": "NP_COMPLETE_FIXED_LANGUAGE",
+      "common": ""
+    },
+    {
+      "a": "implication",
+      "b": "NAE3",
+      "status": "NP_COMPLETE_FIXED_LANGUAGE",
+      "common": ""
+    },
+    {
+      "a": "equality",
+      "b": "equality",
+      "status": "POLY_COMMON_SCHAEFER",
+      "common": "AND;MAJ;MIN;ONE;OR;ZERO"
+    },
+    {
+      "a": "equality",
+      "b": "parity-even3",
+      "status": "POLY_COMMON_SCHAEFER",
+      "common": "MIN;ZERO"
+    },
+    {
+      "a": "equality",
+      "b": "parity-odd3",
+      "status": "POLY_COMMON_SCHAEFER",
+      "common": "MIN;ONE"
+    },
+    {
+      "a": "equality",
+      "b": "AMO3",
+      "status": "POLY_COMMON_SCHAEFER",
+      "common": "AND;MAJ;ZERO"
+    },
+    {
+      "a": "equality",
+      "b": "EXACT1-3",
+      "status": "NP_COMPLETE_FIXED_LANGUAGE",
+      "common": ""
+    },
+    {
+      "a": "equality",
+      "b": "NAE3",
+      "status": "NP_COMPLETE_FIXED_LANGUAGE",
+      "common": ""
+    },
+    {
+      "a": "parity-even3",
+      "b": "parity-even3",
+      "status": "POLY_COMMON_SCHAEFER",
+      "common": "MIN;ZERO"
+    },
+    {
+      "a": "parity-even3",
+      "b": "parity-odd3",
+      "status": "POLY_COMMON_SCHAEFER",
+      "common": "MIN"
+    },
+    {
+      "a": "parity-even3",
+      "b": "AMO3",
+      "status": "POLY_COMMON_SCHAEFER",
+      "common": "ZERO"
+    },
+    {
+      "a": "parity-even3",
+      "b": "EXACT1-3",
+      "status": "NP_COMPLETE_FIXED_LANGUAGE",
+      "common": ""
+    },
+    {
+      "a": "parity-even3",
+      "b": "NAE3",
+      "status": "NP_COMPLETE_FIXED_LANGUAGE",
+      "common": ""
+    },
+    {
+      "a": "parity-odd3",
+      "b": "parity-odd3",
+      "status": "POLY_COMMON_SCHAEFER",
+      "common": "MIN;ONE"
+    },
+    {
+      "a": "parity-odd3",
+      "b": "AMO3",
+      "status": "NP_COMPLETE_FIXED_LANGUAGE",
+      "common": ""
+    },
+    {
+      "a": "parity-odd3",
+      "b": "EXACT1-3",
+      "status": "NP_COMPLETE_FIXED_LANGUAGE",
+      "common": ""
+    },
+    {
+      "a": "parity-odd3",
+      "b": "NAE3",
+      "status": "NP_COMPLETE_FIXED_LANGUAGE",
+      "common": ""
+    },
+    {
+      "a": "AMO3",
+      "b": "AMO3",
+      "status": "POLY_COMMON_SCHAEFER",
+      "common": "AND;MAJ;ZERO"
+    },
+    {
+      "a": "AMO3",
+      "b": "EXACT1-3",
+      "status": "NP_COMPLETE_FIXED_LANGUAGE",
+      "common": ""
+    },
+    {
+      "a": "AMO3",
+      "b": "NAE3",
+      "status": "NP_COMPLETE_FIXED_LANGUAGE",
+      "common": ""
+    },
+    {
+      "a": "EXACT1-3",
+      "b": "EXACT1-3",
+      "status": "NP_COMPLETE_FIXED_LANGUAGE",
+      "common": ""
+    },
+    {
+      "a": "EXACT1-3",
+      "b": "NAE3",
+      "status": "NP_COMPLETE_FIXED_LANGUAGE",
+      "common": ""
+    },
+    {
+      "a": "NAE3",
+      "b": "NAE3",
+      "status": "NP_COMPLETE_FIXED_LANGUAGE",
+      "common": ""
+    }
+  ],
+  "native_pair_matrix": [
+    {
+      "a": "HORN",
+      "b": "HORN",
+      "status": "POLY_CLOSED",
+      "common": "AND",
+      "reason": ""
+    },
+    {
+      "a": "HORN",
+      "b": "DUALHORN",
+      "status": "UNKNOWN_GENERAL",
+      "common": "",
+      "reason": ""
+    },
+    {
+      "a": "HORN",
+      "b": "BIJUNCTIVE",
+      "status": "UNKNOWN_GENERAL",
+      "common": "",
+      "reason": ""
+    },
+    {
+      "a": "HORN",
+      "b": "AFFINE",
+      "status": "KNOWN_NP_HARD",
+      "common": "",
+      "reason": "SCHAEFER/HORN_AFFINE"
+    },
+    {
+      "a": "HORN",
+      "b": "CARDINALITY",
+      "status": "UNKNOWN_GENERAL",
+      "common": "",
+      "reason": ""
+    },
+    {
+      "a": "HORN",
+      "b": "MATCHING",
+      "status": "UNKNOWN_GENERAL",
+      "common": "",
+      "reason": ""
+    },
+    {
+      "a": "HORN",
+      "b": "GENERIC",
+      "status": "UNKNOWN_GENERAL",
+      "common": "",
+      "reason": ""
+    },
+    {
+      "a": "DUALHORN",
+      "b": "DUALHORN",
+      "status": "POLY_CLOSED",
+      "common": "OR",
+      "reason": ""
+    },
+    {
+      "a": "DUALHORN",
+      "b": "BIJUNCTIVE",
+      "status": "UNKNOWN_GENERAL",
+      "common": "",
+      "reason": ""
+    },
+    {
+      "a": "DUALHORN",
+      "b": "AFFINE",
+      "status": "UNKNOWN_GENERAL",
+      "common": "",
+      "reason": ""
+    },
+    {
+      "a": "DUALHORN",
+      "b": "CARDINALITY",
+      "status": "UNKNOWN_GENERAL",
+      "common": "",
+      "reason": ""
+    },
+    {
+      "a": "DUALHORN",
+      "b": "MATCHING",
+      "status": "UNKNOWN_GENERAL",
+      "common": "",
+      "reason": ""
+    },
+    {
+      "a": "DUALHORN",
+      "b": "GENERIC",
+      "status": "UNKNOWN_GENERAL",
+      "common": "",
+      "reason": ""
+    },
+    {
+      "a": "BIJUNCTIVE",
+      "b": "BIJUNCTIVE",
+      "status": "POLY_CLOSED",
+      "common": "MAJ",
+      "reason": ""
+    },
+    {
+      "a": "BIJUNCTIVE",
+      "b": "AFFINE",
+      "status": "UNKNOWN_GENERAL",
+      "common": "",
+      "reason": ""
+    },
+    {
+      "a": "BIJUNCTIVE",
+      "b": "CARDINALITY",
+      "status": "UNKNOWN_GENERAL",
+      "common": "",
+      "reason": ""
+    },
+    {
+      "a": "BIJUNCTIVE",
+      "b": "MATCHING",
+      "status": "UNKNOWN_GENERAL",
+      "common": "",
+      "reason": ""
+    },
+    {
+      "a": "BIJUNCTIVE",
+      "b": "GENERIC",
+      "status": "UNKNOWN_GENERAL",
+      "common": "",
+      "reason": ""
+    },
+    {
+      "a": "AFFINE",
+      "b": "AFFINE",
+      "status": "POLY_CLOSED",
+      "common": "MIN",
+      "reason": ""
+    },
+    {
+      "a": "AFFINE",
+      "b": "CARDINALITY",
+      "status": "KNOWN_NP_HARD",
+      "common": "",
+      "reason": "MINIMUM_DISTANCE"
+    },
+    {
+      "a": "AFFINE",
+      "b": "MATCHING",
+      "status": "UNKNOWN_GENERAL",
+      "common": "",
+      "reason": ""
+    },
+    {
+      "a": "AFFINE",
+      "b": "GENERIC",
+      "status": "UNKNOWN_GENERAL",
+      "common": "",
+      "reason": ""
+    },
+    {
+      "a": "CARDINALITY",
+      "b": "CARDINALITY",
+      "status": "UNKNOWN_GENERAL",
+      "common": "",
+      "reason": ""
+    },
+    {
+      "a": "CARDINALITY",
+      "b": "MATCHING",
+      "status": "UNKNOWN_GENERAL",
+      "common": "",
+      "reason": ""
+    },
+    {
+      "a": "CARDINALITY",
+      "b": "GENERIC",
+      "status": "UNKNOWN_GENERAL",
+      "common": "",
+      "reason": ""
+    },
+    {
+      "a": "MATCHING",
+      "b": "MATCHING",
+      "status": "UNKNOWN_GENERAL",
+      "common": "",
+      "reason": ""
+    },
+    {
+      "a": "MATCHING",
+      "b": "GENERIC",
+      "status": "UNKNOWN_GENERAL",
+      "common": "",
+      "reason": ""
+    },
+    {
+      "a": "GENERIC",
+      "b": "GENERIC",
+      "status": "UNKNOWN_GENERAL",
+      "common": "",
+      "reason": ""
+    }
+  ],
+  "planner_scaling": [
+    {
+      "w": 4,
+      "input_scale": 26,
+      "exact_found": true,
+      "exact_cost": 22,
+      "exact_max_explicit_width": 3,
+      "greedy_found": true,
+      "greedy_cost": 22,
+      "greedy_max_explicit_width": 3,
+      "bad_tree_feasible": false,
+      "good_tree_feasible": true,
+      "good_tree_max_explicit_width": 3
+    },
+    {
+      "w": 8,
+      "input_scale": 42,
+      "exact_found": true,
+      "exact_cost": 30,
+      "exact_max_explicit_width": 3,
+      "greedy_found": true,
+      "greedy_cost": 30,
+      "greedy_max_explicit_width": 3,
+      "bad_tree_feasible": false,
+      "good_tree_feasible": true,
+      "good_tree_max_explicit_width": 3
+    },
+    {
+      "w": 16,
+      "input_scale": 74,
+      "exact_found": true,
+      "exact_cost": 46,
+      "exact_max_explicit_width": 3,
+      "greedy_found": true,
+      "greedy_cost": 46,
+      "greedy_max_explicit_width": 3,
+      "bad_tree_feasible": false,
+      "good_tree_feasible": true,
+      "good_tree_max_explicit_width": 3
+    },
+    {
+      "w": 32,
+      "input_scale": 138,
+      "exact_found": true,
+      "exact_cost": 78,
+      "exact_max_explicit_width": 3,
+      "greedy_found": true,
+      "greedy_cost": 78,
+      "greedy_max_explicit_width": 3,
+      "bad_tree_feasible": false,
+      "good_tree_feasible": true,
+      "good_tree_max_explicit_width": 3
+    },
+    {
+      "w": 64,
+      "input_scale": 266,
+      "exact_found": true,
+      "exact_cost": 142,
+      "exact_max_explicit_width": 3,
+      "greedy_found": true,
+      "greedy_cost": 142,
+      "greedy_max_explicit_width": 3,
+      "bad_tree_feasible": false,
+      "good_tree_feasible": true,
+      "good_tree_max_explicit_width": 3
+    },
+    {
+      "w": 128,
+      "input_scale": 522,
+      "exact_found": true,
+      "exact_cost": 270,
+      "exact_max_explicit_width": 3,
+      "greedy_found": true,
+      "greedy_cost": 270,
+      "greedy_max_explicit_width": 3,
+      "bad_tree_feasible": false,
+      "good_tree_feasible": true,
+      "good_tree_max_explicit_width": 3
+    },
+    {
+      "w": 256,
+      "input_scale": 1034,
+      "exact_found": true,
+      "exact_cost": 526,
+      "exact_max_explicit_width": 3,
+      "greedy_found": true,
+      "greedy_cost": 526,
+      "greedy_max_explicit_width": 3,
+      "bad_tree_feasible": false,
+      "good_tree_feasible": true,
+      "good_tree_max_explicit_width": 3
+    },
+    {
+      "w": 512,
+      "input_scale": 2058,
+      "exact_found": true,
+      "exact_cost": 1038,
+      "exact_max_explicit_width": 3,
+      "greedy_found": true,
+      "greedy_cost": 1038,
+      "greedy_max_explicit_width": 3,
+      "bad_tree_feasible": false,
+      "good_tree_feasible": true,
+      "good_tree_max_explicit_width": 3
+    },
+    {
+      "w": 1024,
+      "input_scale": 4106,
+      "exact_found": true,
+      "exact_cost": 2062,
+      "exact_max_explicit_width": 3,
+      "greedy_found": true,
+      "greedy_cost": 2062,
+      "greedy_max_explicit_width": 3,
+      "bad_tree_feasible": false,
+      "good_tree_feasible": true,
+      "good_tree_max_explicit_width": 3
+    }
+  ],
+  "bridge_assessments": [
+    {
+      "scenario": "matching-affine-small",
+      "a": "MATCHING",
+      "b": "AFFINE",
+      "width": 3,
+      "input_size": 100000,
+      "quotient_states": "",
+      "route": "EXPLICIT_TT_BRIDGE",
+      "pair_status": "UNKNOWN_GENERAL",
+      "states": 8,
+      "reason": "",
+      "cost": "poly"
+    },
+    {
+      "scenario": "counting-wide-quotient",
+      "a": "CARDINALITY",
+      "b": "CARDINALITY",
+      "width": 2048,
+      "input_size": 10000000,
+      "quotient_states": 2049,
+      "route": "EXTENSION_QUOTIENT",
+      "pair_status": "UNKNOWN_GENERAL",
+      "states": 2049,
+      "reason": "",
+      "cost": "poly"
+    },
+    {
+      "scenario": "affine-card-hard",
+      "a": "AFFINE",
+      "b": "CARDINALITY",
+      "width": 40,
+      "input_size": 1000,
+      "quotient_states": "",
+      "route": "HARD_BARRIER",
+      "pair_status": "KNOWN_NP_HARD",
+      "states": "",
+      "reason": "MINIMUM_DISTANCE",
+      "cost": "superpoly-unless-parameterized"
+    },
+    {
+      "scenario": "horn-affine-small",
+      "a": "HORN",
+      "b": "AFFINE",
+      "width": 3,
+      "input_size": 1000,
+      "quotient_states": "",
+      "route": "EXPLICIT_TT_BRIDGE",
+      "pair_status": "KNOWN_NP_HARD",
+      "states": 8,
+      "reason": "",
+      "cost": "poly"
+    },
+    {
+      "scenario": "horn-affine-wide",
+      "a": "HORN",
+      "b": "AFFINE",
+      "width": 40,
+      "input_size": 1000,
+      "quotient_states": "",
+      "route": "HARD_BARRIER",
+      "pair_status": "KNOWN_NP_HARD",
+      "states": "",
+      "reason": "SCHAEFER/HORN_AFFINE",
+      "cost": "superpoly-unless-parameterized"
+    },
+    {
+      "scenario": "affine-affine-wide",
+      "a": "AFFINE",
+      "b": "AFFINE",
+      "width": 4096,
+      "input_size": 1000,
+      "quotient_states": "",
+      "route": "NATIVE_CLOSED",
+      "pair_status": "POLY_CLOSED",
+      "states": "",
+      "reason": "",
+      "cost": "poly"
+    }
+  ]
+}

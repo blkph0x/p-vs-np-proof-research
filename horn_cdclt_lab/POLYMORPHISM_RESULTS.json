@@ -1,0 +1,270 @@
+{
+  "status": "finite polymorphism audit; no P=NP result",
+  "relations": {
+    "H": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "A": [
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        1
+      ]
+    ]
+  },
+  "common_operations_by_arity": {
+    "1": [
+      2
+    ],
+    "2": [
+      10,
+      12
+    ],
+    "3": [
+      170,
+      204,
+      240
+    ],
+    "4": [
+      43690,
+      52428,
+      61680,
+      65280
+    ]
+  },
+  "common_counts": {
+    "1": 1,
+    "2": 2,
+    "3": 3,
+    "4": 4
+  },
+  "common_are_projections": {
+    "1": true,
+    "2": true,
+    "3": true,
+    "4": true
+  },
+  "named_matrix": {
+    "AND": {
+      "arity": 2,
+      "table": 8,
+      "preserves_H": true,
+      "preserves_A": false
+    },
+    "OR": {
+      "arity": 2,
+      "table": 14,
+      "preserves_H": false,
+      "preserves_A": false
+    },
+    "MAJORITY": {
+      "arity": 3,
+      "table": 232,
+      "preserves_H": true,
+      "preserves_A": false
+    },
+    "MINORITY_XOR": {
+      "arity": 3,
+      "table": 150,
+      "preserves_H": false,
+      "preserves_A": true
+    },
+    "CONST_0": {
+      "arity": 1,
+      "table": 0,
+      "preserves_H": true,
+      "preserves_A": false
+    },
+    "CONST_1": {
+      "arity": 1,
+      "table": 3,
+      "preserves_H": false,
+      "preserves_A": true
+    }
+  },
+  "all_arity_symbolic_candidates": {
+    "1": {
+      "count": 1,
+      "supports": [
+        1
+      ],
+      "all_singletons": true
+    },
+    "2": {
+      "count": 2,
+      "supports": [
+        1,
+        2
+      ],
+      "all_singletons": true
+    },
+    "3": {
+      "count": 3,
+      "supports": [
+        1,
+        2,
+        4
+      ],
+      "all_singletons": true
+    },
+    "4": {
+      "count": 4,
+      "supports": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "all_singletons": true
+    },
+    "5": {
+      "count": 5,
+      "supports": [
+        1,
+        2,
+        4,
+        8,
+        16
+      ],
+      "all_singletons": true
+    },
+    "6": {
+      "count": 6,
+      "supports": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32
+      ],
+      "all_singletons": true
+    },
+    "7": {
+      "count": 7,
+      "supports": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "all_singletons": true
+    },
+    "8": {
+      "count": 8,
+      "supports": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128
+      ],
+      "all_singletons": true
+    },
+    "9": {
+      "count": 9,
+      "supports": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "all_singletons": true
+    },
+    "10": {
+      "count": 10,
+      "supports": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        512
+      ],
+      "all_singletons": true
+    },
+    "11": {
+      "count": 11,
+      "supports": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        1024
+      ],
+      "all_singletons": true
+    },
+    "12": {
+      "count": 12,
+      "supports": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        1024,
+        2048
+      ],
+      "all_singletons": true
+    }
+  }
+}

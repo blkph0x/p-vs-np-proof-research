@@ -1,0 +1,6 @@
+n,k,shared_edge_vars,A_clauses,B_clauses,A_all_candidates,B_all_candidates,A_shared_candidates,B_shared_candidates,A_AMO_detected,B_AMO_detected,A_XOR_detected,B_XOR_detected,A_ITE_detected,B_ITE_detected,edge_separation_verified
+4,3,6,69,20,0,0,0,0,0,0,0,0,0,0,True
+5,3,10,108,30,0,0,0,0,0,0,0,0,0,0,True
+6,3,15,156,42,0,0,0,0,0,0,0,0,0,0,True
+5,4,10,194,50,0,5,0,0,0,5,0,0,0,0,True
+6,4,15,280,69,0,6,0,0,0,6,0,0,0,0,True

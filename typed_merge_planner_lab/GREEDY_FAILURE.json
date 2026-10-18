@@ -1,0 +1,142 @@
+{
+  "checked": 180,
+  "trap": {
+    "case": 179,
+    "regions": [
+      {
+        "name": "R0",
+        "type": "BIJUNCTIVE",
+        "scope": [
+          1,
+          3,
+          7
+        ]
+      },
+      {
+        "name": "R1",
+        "type": "DUALHORN",
+        "scope": [
+          5,
+          6,
+          11
+        ]
+      },
+      {
+        "name": "R2",
+        "type": "BIJUNCTIVE",
+        "scope": [
+          3,
+          5,
+          7,
+          11
+        ]
+      },
+      {
+        "name": "R3",
+        "type": "BIJUNCTIVE",
+        "scope": [
+          0,
+          3,
+          5,
+          6
+        ]
+      },
+      {
+        "name": "R4",
+        "type": "BIJUNCTIVE",
+        "scope": [
+          1,
+          3,
+          7,
+          10
+        ]
+      },
+      {
+        "name": "R5",
+        "type": "BIJUNCTIVE",
+        "scope": [
+          5,
+          9,
+          12
+        ]
+      },
+      {
+        "name": "R6",
+        "type": "DUALHORN",
+        "scope": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7
+        ]
+      }
+    ],
+    "exact": {
+      "cost": 109,
+      "max_explicit_width": 5,
+      "history": {
+        "kind": "EXPLICIT_TT_BRIDGE",
+        "width": 1,
+        "states": 2,
+        "left": {
+          "kind": "EXPLICIT_TT_BRIDGE",
+          "width": 3,
+          "states": 8,
+          "left": {
+            "kind": "EXPLICIT_TT_BRIDGE",
+            "width": 5,
+            "states": 32,
+            "left": {
+              "kind": "EXPLICIT_TT_BRIDGE",
+              "width": 5,
+              "states": 32,
+              "left": {
+                "kind": "EXPLICIT_TT_BRIDGE",
+                "width": 5,
+                "states": 32,
+                "left": {
+                  "kind": "POLY_COMMON",
+                  "common": [
+                    "MAJ"
+                  ],
+                  "left": {
+                    "leaf": "R0",
+                    "type": "BIJUNCTIVE"
+                  },
+                  "right": {
+                    "leaf": "R4",
+                    "type": "BIJUNCTIVE"
+                  },
+                  "union_width": 3
+                },
+                "right": {
+                  "leaf": "R6",
+                  "type": "DUALHORN"
+                }
+              },
+              "right": {
+                "leaf": "R2",
+                "type": "BIJUNCTIVE"
+              }
+            },
+            "right": {
+              "leaf": "R3",
+              "type": "BIJUNCTIVE"
+            }
+          },
+          "right": {
+            "leaf": "R1",
+            "type": "DUALHORN"
+          }
+        },
+        "right": {
+          "leaf": "R5",
+          "type": "BIJUNCTIVE"
+        }
+      }
+    }
+  }
+}

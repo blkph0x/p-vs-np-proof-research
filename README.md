@@ -17,7 +17,8 @@
 - Follow [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) to replay the checks from a
   fresh checkout. The current frozen run has 260 passing methods across 31
   suites; the full audit is intentionally separate from the lighter continuous
-  integration checks.
+  integration checks, and all of its suite dependencies are included in this
+  repository.
 - The latest external status check is
   [`EXTERNAL_STATUS_AUDIT_2026_10_18.md`](EXTERNAL_STATUS_AUDIT_2026_10_18.md).
 

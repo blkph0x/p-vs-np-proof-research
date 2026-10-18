@@ -5,63 +5,66 @@ public URL found in the repository's source, reports, and saved metadata,
 along with the local files that cite or preserve it. The curated primary
 sources and citation rules are in [`CITATIONS.md`](CITATIONS.md).
 
-Indexed URLs: **56**.
+Indexed URLs: **59**.
 
 | URL | Local provenance |
 | --- | --- |
-| <http://xplorestaging.ieee.org/ielx8/11716742/11716745/11717448.pdf?arnumber=11717448> | `VOHRA_CROSSREF_METADATA.json` |
-| <https://api.crossref.org/works/10.1109/ASSIC70037.2026.11717448> | `VOHRA_CROSSREF_METADATA.json`, `save_vohra_metadata.py` |
-| <https://arxiv.org/abs/1307.7430> | `AFFINE_DECOMPOSITION_NEXT_REVIEW.md`, `CITATIONS.md`, `NEXT_HOLOGRAPHIC_BRIEF.md`, `holographic_tractability_lab/THEOREM.md` |
-| <https://arxiv.org/abs/1808.00128> | `AFFINE_CANCELLATION_LITERATURE_SCOPE.md` |
-| <https://arxiv.org/abs/2004.03387> | `ALL_DUAL_LP_THEOREM.md` |
-| <https://arxiv.org/abs/2211.12862> | `PERTURBATION_ROUTE_REVIEW.md` |
-| <https://arxiv.org/abs/2508.04726> | `ALGEBRAIC_LITERATURE_CHECK.md` |
-| <https://arxiv.org/abs/2606.23161> | `CITATIONS.md`, `EXTERNAL_STATUS_AUDIT_2026_10_18.md`, `REGULAR_LDPC_MINIMUM_DISTANCE_SCOPE.md` |
-| <https://arxiv.org/abs/2608.16298> | `PERTURBATION_ROUTE_REVIEW.md` |
-| <https://arxiv.org/html/1303.6729> | `HOLOGRAPHIC_LITERATURE_CHECK.md`, `crossing_sign_lab/THEOREM.md` |
-| <https://arxiv.org/html/1303.6729#S2> | `crossing_sign_lab/INDEPENDENT_REVIEW.md`, `simultaneous_basis_lab/THEOREM.md` |
-| <https://arxiv.org/html/1307.7430#S2> | `simultaneous_basis_lab/THEOREM.md` |
-| <https://arxiv.org/html/2503.04101v3#S3> | `AFFINE_CANCELLATION_LITERATURE_SCOPE.md` |
-| <https://arxiv.org/html/2601.01390v1> | `ALGEBRAIC_LITERATURE_CHECK.md` |
-| <https://arxiv.org/html/2610.06819v1> | `AFFINE_REPRESENTATION_LITERATURE_SCOPE.md` |
-| <https://arxiv.org/pdf/1307.7430> | `HOLOGRAPHIC_LITERATURE_CHECK.md`, `affine_boundary_lab/THEOREM.md`, `holographic_tractability_lab/INDEPENDENT_REVIEW.md`, `tensor_basis_lab/THEOREM.md` |
-| <https://arxiv.org/pdf/1504.07647> | `PERTURBATION_ROUTE_REVIEW.md`, `labelled_join_certified/COVERAGE_AUDIT.md` |
-| <https://arxiv.org/pdf/1602.03124> | `matching_gadget_limits/THEOREM.md` |
-| <https://arxiv.org/pdf/2106.03214> | `AFFINE_REPRESENTATION_LITERATURE_SCOPE.md` |
-| <https://arxiv.org/pdf/2110.07781> | `AFFINE_REPRESENTATION_LITERATURE_SCOPE.md` |
-| <https://arxiv.org/pdf/2207.09797> | `PERTURBATION_ROUTE_REVIEW.md` |
-| <https://arxiv.org/pdf/2610.20742> | `ALGEBRAIC_LITERATURE_CHECK.md` |
-| <https://doi.org/10.1007/BF00264290> | `CITATIONS.md` |
-| <https://doi.org/10.1007/BF01580113> | `THEORY_REVIEW.md` |
-| <https://doi.org/10.1016/0304-3975> | `THEORY_REVIEW.md` |
-| <https://doi.org/10.1016/S0012-365X> | `matching_gadget_limits/THEOREM.md` |
-| <https://doi.org/10.1109/ASSIC70037.2026.11717448> | `CITATIONS.md` |
-| <https://doi.org/10.1109/assic70037.2026.11717448> | `VOHRA_CROSSREF_METADATA.json` |
-| <https://doi.org/10.1145/258533.258559> | `VARDY_MINIMUM_DISTANCE_SCOPE.md`, `labelled_join_certified/COVERAGE_AUDIT.md` |
-| <https://doi.org/10.1287/moor.7.1.67> | `THEORY_REVIEW.md` |
-| <https://ece.iisc.ac.in/~nkashyap/Papers/code_decomp_final.pdf> | `ALL_DUAL_LP_THEOREM.md` |
-| <https://github.com/blkph0x/p-vs-np-proof-research> | `CITATION.cff` |
-| <https://homepages.inf.ed.ac.uk/hguo/papers/HA-general.pdf> | `AFFINE_BOUNDARY_DESIGN.md`, `holographic_tractability_lab/RESULTS.json`, `holographic_tractability_lab/THEOREM.md`, `holographic_tractability_lab/run_experiments.py` |
-| <https://ics.uci.edu/~dechter/publications/r76A.pdf> | `coefficient_structure_lab/THEOREM.md` |
-| <https://ieeexplore.ieee.org/document/11717448> | `REPORT.md` |
-| <https://ieeexplore.ieee.org/document/11717448/> | `VOHRA_CROSSREF_METADATA.json` |
-| <https://link.springer.com/article/10.1007/s00453-015-0090-y> | `HOLOGRAPHIC_LITERATURE_CHECK.md` |
-| <https://link.springer.com/chapter/10.1007/978-1-4684-2001-2_9> | `multiobjective_matching_limits/THEOREM.md` |
-| <https://pages.cs.wisc.edu/~jyc/papers/signature-thy.pdf> | `NEXT_HOLOGRAPHIC_BRIEF.md` |
-| <https://quantum-journal.org/papers/q-2022-04-20-692/> | `AFFINE_REPRESENTATION_LITERATURE_SCOPE.md` |
-| <https://quantum-journal.org/papers/q-2026-07-29-2179/> | `AFFINE_CANCELLATION_LITERATURE_SCOPE.md` |
-| <https://theory.stanford.edu/~trevisan/cs172-07/karp.pdf> | `multiobjective_matching_limits/THEOREM.md`, `packed_cost_exact_matching/THEOREM.md` |
-| <https://www-users.cse.umn.edu/~reiner/Talks/Vienna05/Lectures.pdf> | `labelled_join_certified/COVERAGE_INDEPENDENT_REVIEW.md` |
-| <https://www.claymath.org/millennium/p-vs-np/> | `CITATIONS.md`, `EXTERNAL_STATUS_AUDIT_2026_10_18.md`, `RESOLUTION_STANDARD.md` |
-| <https://www.combinatorics.org/ojs/index.php/eljc/article/download/v32i3p36/pdf> | `graph_order_hardness_lab/THEOREM.md` |
-| <https://www.cs.cornell.edu/~rdz/Papers/KZ-PAMI04.pdf> | `gadget_limits/THEOREM.md` |
-| <https://www.cs.toronto.edu/~sacook/homepage/cook_reckhow.pdf> | `INDEPENDENT_AUDIT.md` |
-| <https://www.ee.iitm.ac.in/~andrew/ee512/projects/LinearProgrammingDecoding.pdf> | `THEORY_REVIEW.md` |
-| <https://www.ijcai.org/Proceedings/03/Papers/168.pdf> | `AFFINE_DECOMPOSITION_NEXT_REVIEW.md` |
-| <https://www.khoury.northeastern.edu/home/lieber/courses/csg260/f06/materials/papers/max-sat/p216-schaefer.pdf> | `INDEPENDENT_AUDIT.md` |
-| <https://www.math.uwaterloo.ca/~bguenin/matroid.html> | `labelled_join_certified/COVERAGE_AUDIT.md` |
-| <https://www.math.uwaterloo.ca/~jfgeelen/Publications/regular.pdf> | `THEORY_REVIEW.md` |
-| <https://www.researchgate.net/profile/Alexander-Vardy/publication/221591825_Algorithmic_Complexity_in_Coding_Theory_and_the_Minimum_Distance_Problem/links/00463517a8f459b272000000/Algorithmic-Complexity-in-Coding-Theory-and-the-Minimum-Distance-Problem.pdf> | `VARDY_MINIMUM_DISTANCE_SCOPE.md` |
-| <https://www.sciencedirect.com/science/article/pii/002001909290234M> | `graph_order_hardness_lab/THEOREM.md` |
-| <https://www.sciencedirect.com/science/article/pii/S0022000010000899> | `NEXT_HOLOGRAPHIC_BRIEF.md` |
-| <https://www2.seas.gwu.edu/~simhaweb/champalg/tsp/papers/KarpOriginal.pdf> | `INDEPENDENT_AUDIT.md`, `packed_cost_exact_matching/REVIEW.md` |
+| <http://xplorestaging.ieee.org/ielx8/11716742/11716745/11717448.pdf?arnumber=11717448> | `PUBLIC_SOURCES.md`, `VOHRA_CROSSREF_METADATA.json` |
+| <https://api.crossref.org/works/10.1109/ASSIC70037.2026.11717448> | `PUBLIC_SOURCES.md`, `VOHRA_CROSSREF_METADATA.json`, `save_vohra_metadata.py` |
+| <https://arxiv.org/abs/1307.7430> | `AFFINE_DECOMPOSITION_NEXT_REVIEW.md`, `CITATIONS.md`, `NEXT_HOLOGRAPHIC_BRIEF.md`, `PUBLIC_SOURCES.md`, `holographic_tractability_lab/THEOREM.md` |
+| <https://arxiv.org/abs/1808.00128> | `AFFINE_CANCELLATION_LITERATURE_SCOPE.md`, `PUBLIC_SOURCES.md` |
+| <https://arxiv.org/abs/2004.03387> | `ALL_DUAL_LP_THEOREM.md`, `PUBLIC_SOURCES.md` |
+| <https://arxiv.org/abs/2211.12862> | `PERTURBATION_ROUTE_REVIEW.md`, `PUBLIC_SOURCES.md` |
+| <https://arxiv.org/abs/2508.04726> | `ALGEBRAIC_LITERATURE_CHECK.md`, `PUBLIC_SOURCES.md` |
+| <https://arxiv.org/abs/2606.23161> | `CITATIONS.md`, `EXTERNAL_STATUS_AUDIT_2026_10_18.md`, `PUBLIC_SOURCES.md`, `REGULAR_LDPC_MINIMUM_DISTANCE_SCOPE.md` |
+| <https://arxiv.org/abs/2608.16298> | `PERTURBATION_ROUTE_REVIEW.md`, `PUBLIC_SOURCES.md` |
+| <https://arxiv.org/html/1303.6729> | `HOLOGRAPHIC_LITERATURE_CHECK.md`, `PUBLIC_SOURCES.md`, `crossing_sign_lab/THEOREM.md` |
+| <https://arxiv.org/html/1303.6729#S2> | `PUBLIC_SOURCES.md`, `crossing_sign_lab/INDEPENDENT_REVIEW.md`, `simultaneous_basis_lab/THEOREM.md` |
+| <https://arxiv.org/html/1307.7430#S2> | `PUBLIC_SOURCES.md`, `simultaneous_basis_lab/THEOREM.md` |
+| <https://arxiv.org/html/2503.04101v3#S3> | `AFFINE_CANCELLATION_LITERATURE_SCOPE.md`, `PUBLIC_SOURCES.md` |
+| <https://arxiv.org/html/2601.01390v1> | `ALGEBRAIC_LITERATURE_CHECK.md`, `PUBLIC_SOURCES.md` |
+| <https://arxiv.org/html/2610.06819v1> | `AFFINE_REPRESENTATION_LITERATURE_SCOPE.md`, `PUBLIC_SOURCES.md` |
+| <https://arxiv.org/pdf/1307.7430> | `HOLOGRAPHIC_LITERATURE_CHECK.md`, `PUBLIC_SOURCES.md`, `affine_boundary_lab/THEOREM.md`, `holographic_tractability_lab/INDEPENDENT_REVIEW.md`, `tensor_basis_lab/THEOREM.md` |
+| <https://arxiv.org/pdf/1504.07647> | `PERTURBATION_ROUTE_REVIEW.md`, `PUBLIC_SOURCES.md`, `labelled_join_certified/COVERAGE_AUDIT.md` |
+| <https://arxiv.org/pdf/1602.03124> | `PUBLIC_SOURCES.md`, `matching_gadget_limits/THEOREM.md` |
+| <https://arxiv.org/pdf/2106.03214> | `AFFINE_REPRESENTATION_LITERATURE_SCOPE.md`, `PUBLIC_SOURCES.md` |
+| <https://arxiv.org/pdf/2110.07781> | `AFFINE_REPRESENTATION_LITERATURE_SCOPE.md`, `PUBLIC_SOURCES.md` |
+| <https://arxiv.org/pdf/2207.09797> | `PERTURBATION_ROUTE_REVIEW.md`, `PUBLIC_SOURCES.md` |
+| <https://arxiv.org/pdf/2610.20742> | `ALGEBRAIC_LITERATURE_CHECK.md`, `PUBLIC_SOURCES.md` |
+| <https://doi.org/10.1002/jgt.20037> | `charged_work_core_lab/FANO_NOTES.md` |
+| <https://doi.org/10.1007/BF00264290> | `CITATIONS.md`, `PUBLIC_SOURCES.md` |
+| <https://doi.org/10.1007/BF01580113> | `PUBLIC_SOURCES.md`, `THEORY_REVIEW.md` |
+| <https://doi.org/10.1016/0304-3975> | `PUBLIC_SOURCES.md`, `THEORY_REVIEW.md` |
+| <https://doi.org/10.1016/S0012-365X> | `PUBLIC_SOURCES.md`, `matching_gadget_limits/THEOREM.md` |
+| <https://doi.org/10.1109/18.641542> | `high_width_core_stress_lab/REPORT.md` |
+| <https://doi.org/10.1109/ASSIC70037.2026.11717448> | `CITATIONS.md`, `PUBLIC_SOURCES.md` |
+| <https://doi.org/10.1109/assic70037.2026.11717448> | `PUBLIC_SOURCES.md`, `VOHRA_CROSSREF_METADATA.json` |
+| <https://doi.org/10.1145/258533.258559> | `PUBLIC_SOURCES.md`, `VARDY_MINIMUM_DISTANCE_SCOPE.md`, `labelled_join_certified/COVERAGE_AUDIT.md` |
+| <https://doi.org/10.1287/moor.7.1.67> | `PUBLIC_SOURCES.md`, `THEORY_REVIEW.md` |
+| <https://ece.iisc.ac.in/~nkashyap/Papers/code_decomp_final.pdf> | `ALL_DUAL_LP_THEOREM.md`, `PUBLIC_SOURCES.md` |
+| <https://epubs.siam.org/doi/10.1137/070691152> | `high_width_core_stress_lab/REPORT.md` |
+| <https://github.com/blkph0x/p-vs-np-proof-research> | `CITATION.cff`, `PUBLIC_SOURCES.md` |
+| <https://homepages.inf.ed.ac.uk/hguo/papers/HA-general.pdf> | `AFFINE_BOUNDARY_DESIGN.md`, `PUBLIC_SOURCES.md`, `holographic_tractability_lab/RESULTS.json`, `holographic_tractability_lab/THEOREM.md`, `holographic_tractability_lab/run_experiments.py` |
+| <https://ics.uci.edu/~dechter/publications/r76A.pdf> | `PUBLIC_SOURCES.md`, `coefficient_structure_lab/THEOREM.md` |
+| <https://ieeexplore.ieee.org/document/11717448> | `PUBLIC_SOURCES.md`, `REPORT.md` |
+| <https://ieeexplore.ieee.org/document/11717448/> | `PUBLIC_SOURCES.md`, `VOHRA_CROSSREF_METADATA.json` |
+| <https://link.springer.com/article/10.1007/s00453-015-0090-y> | `HOLOGRAPHIC_LITERATURE_CHECK.md`, `PUBLIC_SOURCES.md` |
+| <https://link.springer.com/chapter/10.1007/978-1-4684-2001-2_9> | `PUBLIC_SOURCES.md`, `multiobjective_matching_limits/THEOREM.md` |
+| <https://pages.cs.wisc.edu/~jyc/papers/signature-thy.pdf> | `NEXT_HOLOGRAPHIC_BRIEF.md`, `PUBLIC_SOURCES.md` |
+| <https://quantum-journal.org/papers/q-2022-04-20-692/> | `AFFINE_REPRESENTATION_LITERATURE_SCOPE.md`, `PUBLIC_SOURCES.md` |
+| <https://quantum-journal.org/papers/q-2026-07-29-2179/> | `AFFINE_CANCELLATION_LITERATURE_SCOPE.md`, `PUBLIC_SOURCES.md` |
+| <https://theory.stanford.edu/~trevisan/cs172-07/karp.pdf> | `PUBLIC_SOURCES.md`, `multiobjective_matching_limits/THEOREM.md`, `packed_cost_exact_matching/THEOREM.md` |
+| <https://www-users.cse.umn.edu/~reiner/Talks/Vienna05/Lectures.pdf> | `PUBLIC_SOURCES.md`, `labelled_join_certified/COVERAGE_INDEPENDENT_REVIEW.md` |
+| <https://www.claymath.org/millennium/p-vs-np/> | `CITATIONS.md`, `EXTERNAL_STATUS_AUDIT_2026_10_18.md`, `PUBLIC_SOURCES.md`, `RESOLUTION_STANDARD.md` |
+| <https://www.combinatorics.org/ojs/index.php/eljc/article/download/v32i3p36/pdf> | `PUBLIC_SOURCES.md`, `graph_order_hardness_lab/THEOREM.md` |
+| <https://www.cs.cornell.edu/~rdz/Papers/KZ-PAMI04.pdf> | `PUBLIC_SOURCES.md`, `gadget_limits/THEOREM.md` |
+| <https://www.cs.toronto.edu/~sacook/homepage/cook_reckhow.pdf> | `INDEPENDENT_AUDIT.md`, `PUBLIC_SOURCES.md` |
+| <https://www.ee.iitm.ac.in/~andrew/ee512/projects/LinearProgrammingDecoding.pdf> | `PUBLIC_SOURCES.md`, `THEORY_REVIEW.md` |
+| <https://www.ijcai.org/Proceedings/03/Papers/168.pdf> | `AFFINE_DECOMPOSITION_NEXT_REVIEW.md`, `PUBLIC_SOURCES.md` |
+| <https://www.khoury.northeastern.edu/home/lieber/courses/csg260/f06/materials/papers/max-sat/p216-schaefer.pdf> | `INDEPENDENT_AUDIT.md`, `PUBLIC_SOURCES.md`, `typed_merge_planner_lab/THEOREMS.md` |
+| <https://www.math.uwaterloo.ca/~bguenin/matroid.html> | `PUBLIC_SOURCES.md`, `labelled_join_certified/COVERAGE_AUDIT.md` |
+| <https://www.math.uwaterloo.ca/~jfgeelen/Publications/regular.pdf> | `PUBLIC_SOURCES.md`, `THEORY_REVIEW.md`, `charged_work_core_lab/FANO_NOTES.md` |
+| <https://www.researchgate.net/profile/Alexander-Vardy/publication/221591825_Algorithmic_Complexity_in_Coding_Theory_and_the_Minimum_Distance_Problem/links/00463517a8f459b272000000/Algorithmic-Complexity-in-Coding-Theory-and-the-Minimum-Distance-Problem.pdf> | `PUBLIC_SOURCES.md`, `VARDY_MINIMUM_DISTANCE_SCOPE.md` |
+| <https://www.sciencedirect.com/science/article/pii/002001909290234M> | `PUBLIC_SOURCES.md`, `graph_order_hardness_lab/THEOREM.md` |
+| <https://www.sciencedirect.com/science/article/pii/S0022000010000899> | `NEXT_HOLOGRAPHIC_BRIEF.md`, `PUBLIC_SOURCES.md` |
+| <https://www2.seas.gwu.edu/~simhaweb/champalg/tsp/papers/KarpOriginal.pdf> | `INDEPENDENT_AUDIT.md`, `PUBLIC_SOURCES.md`, `packed_cost_exact_matching/REVIEW.md` |

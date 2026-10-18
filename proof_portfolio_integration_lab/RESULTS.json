@@ -1,0 +1,230 @@
+{
+  "integration": [
+    {
+      "groups": 2,
+      "group_width": 3,
+      "boolean_vars": 6,
+      "proof_nodes": 13,
+      "raw_interpolant_literals": 2,
+      "candidate_languages": "CNF-conjunction;XOR;PB",
+      "selected_language": "CNF-conjunction",
+      "selected_message_bits": 10,
+      "raw_message_bits": 10,
+      "a_local_vars_eliminated": 4
+    },
+    {
+      "groups": 3,
+      "group_width": 3,
+      "boolean_vars": 9,
+      "proof_nodes": 19,
+      "raw_interpolant_literals": 3,
+      "candidate_languages": "CNF-conjunction;XOR;PB",
+      "selected_language": "XOR",
+      "selected_message_bits": 15,
+      "raw_message_bits": 18,
+      "a_local_vars_eliminated": 6
+    },
+    {
+      "groups": 4,
+      "group_width": 3,
+      "boolean_vars": 12,
+      "proof_nodes": 25,
+      "raw_interpolant_literals": 4,
+      "candidate_languages": "CNF-conjunction;XOR;PB",
+      "selected_language": "XOR",
+      "selected_message_bits": 17,
+      "raw_message_bits": 28,
+      "a_local_vars_eliminated": 8
+    },
+    {
+      "groups": 4,
+      "group_width": 4,
+      "boolean_vars": 16,
+      "proof_nodes": 33,
+      "raw_interpolant_literals": 4,
+      "candidate_languages": "CNF-conjunction;XOR;PB",
+      "selected_language": "XOR",
+      "selected_message_bits": 17,
+      "raw_message_bits": 28,
+      "a_local_vars_eliminated": 12
+    },
+    {
+      "groups": 6,
+      "group_width": 3,
+      "boolean_vars": 18,
+      "proof_nodes": 37,
+      "raw_interpolant_literals": 6,
+      "candidate_languages": "CNF-conjunction;XOR;PB",
+      "selected_language": "XOR",
+      "selected_message_bits": 27,
+      "raw_message_bits": 48,
+      "a_local_vars_eliminated": 12
+    },
+    {
+      "groups": 8,
+      "group_width": 2,
+      "boolean_vars": 16,
+      "proof_nodes": 33,
+      "raw_interpolant_literals": 8,
+      "candidate_languages": "CNF-conjunction;XOR;PB",
+      "selected_language": "XOR",
+      "selected_message_bits": 33,
+      "raw_message_bits": 72,
+      "a_local_vars_eliminated": 8
+    },
+    {
+      "groups": 8,
+      "group_width": 4,
+      "boolean_vars": 32,
+      "proof_nodes": 65,
+      "raw_interpolant_literals": 8,
+      "candidate_languages": "CNF-conjunction;XOR;PB",
+      "selected_language": "XOR",
+      "selected_message_bits": 33,
+      "raw_message_bits": 72,
+      "a_local_vars_eliminated": 24
+    },
+    {
+      "groups": 16,
+      "group_width": 4,
+      "boolean_vars": 64,
+      "proof_nodes": 129,
+      "raw_interpolant_literals": 16,
+      "candidate_languages": "CNF-conjunction;XOR;PB",
+      "selected_language": "XOR",
+      "selected_message_bits": 73,
+      "raw_message_bits": 176,
+      "a_local_vars_eliminated": 48
+    },
+    {
+      "groups": 32,
+      "group_width": 4,
+      "boolean_vars": 128,
+      "proof_nodes": 257,
+      "raw_interpolant_literals": 32,
+      "candidate_languages": "CNF-conjunction;XOR;PB",
+      "selected_language": "XOR",
+      "selected_message_bits": 169,
+      "raw_message_bits": 416,
+      "a_local_vars_eliminated": 96
+    },
+    {
+      "groups": 64,
+      "group_width": 4,
+      "boolean_vars": 256,
+      "proof_nodes": 513,
+      "raw_interpolant_literals": 64,
+      "candidate_languages": "CNF-conjunction;XOR;PB",
+      "selected_language": "XOR",
+      "selected_message_bits": 393,
+      "raw_message_bits": 960,
+      "a_local_vars_eliminated": 192
+    },
+    {
+      "groups": 128,
+      "group_width": 4,
+      "boolean_vars": 512,
+      "proof_nodes": 1025,
+      "raw_interpolant_literals": 128,
+      "candidate_languages": "CNF-conjunction;XOR;PB",
+      "selected_language": "XOR",
+      "selected_message_bits": 905,
+      "raw_message_bits": 2176,
+      "a_local_vars_eliminated": 384
+    },
+    {
+      "groups": 256,
+      "group_width": 8,
+      "boolean_vars": 2048,
+      "proof_nodes": 4097,
+      "raw_interpolant_literals": 256,
+      "candidate_languages": "CNF-conjunction;XOR;PB",
+      "selected_language": "XOR",
+      "selected_message_bits": 2057,
+      "raw_message_bits": 4864,
+      "a_local_vars_eliminated": 1792
+    }
+  ],
+  "reuse": [
+    {
+      "repetitions": 1,
+      "buy_at": 1,
+      "threshold": 0,
+      "online_cost": 2313.0,
+      "offline_cost": 2313.0,
+      "ratio": 1.0
+    },
+    {
+      "repetitions": 2,
+      "buy_at": 1,
+      "threshold": 0,
+      "online_cost": 4370.0,
+      "offline_cost": 4370.0,
+      "ratio": 1.0
+    },
+    {
+      "repetitions": 4,
+      "buy_at": 1,
+      "threshold": 0,
+      "online_cost": 8484.0,
+      "offline_cost": 8484.0,
+      "ratio": 1.0
+    },
+    {
+      "repetitions": 8,
+      "buy_at": 1,
+      "threshold": 0,
+      "online_cost": 16712.0,
+      "offline_cost": 16712.0,
+      "ratio": 1.0
+    },
+    {
+      "repetitions": 16,
+      "buy_at": 1,
+      "threshold": 0,
+      "online_cost": 33168.0,
+      "offline_cost": 33168.0,
+      "ratio": 1.0
+    },
+    {
+      "repetitions": 32,
+      "buy_at": 1,
+      "threshold": 0,
+      "online_cost": 66080.0,
+      "offline_cost": 66080.0,
+      "ratio": 1.0
+    },
+    {
+      "repetitions": 64,
+      "buy_at": 1,
+      "threshold": 0,
+      "online_cost": 131904.0,
+      "offline_cost": 131904.0,
+      "ratio": 1.0
+    },
+    {
+      "repetitions": 128,
+      "buy_at": 1,
+      "threshold": 0,
+      "online_cost": 263552.0,
+      "offline_cost": 263552.0,
+      "ratio": 1.0
+    },
+    {
+      "repetitions": 256,
+      "buy_at": 1,
+      "threshold": 0,
+      "online_cost": 526848.0,
+      "offline_cost": 526848.0,
+      "ratio": 1.0
+    },
+    {
+      "repetitions": 512,
+      "buy_at": 1,
+      "threshold": 0,
+      "online_cost": 1053440.0,
+      "offline_cost": 1053440.0,
+      "ratio": 1.0
+    }
+  ]
+}

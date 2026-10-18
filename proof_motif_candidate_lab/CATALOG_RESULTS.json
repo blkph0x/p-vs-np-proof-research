@@ -1,0 +1,50 @@
+[
+  {
+    "fixture": "UNIT-or-collapse",
+    "nvars": 48,
+    "catalog": 8,
+    "closing": 1,
+    "selected": "UNIT",
+    "selected_bits": 15
+  },
+  {
+    "fixture": "EQUALITY",
+    "nvars": 20,
+    "catalog": 4,
+    "closing": 1,
+    "selected": "EQUALITY",
+    "selected_bits": 33
+  },
+  {
+    "fixture": "AMO-PB",
+    "nvars": 32,
+    "catalog": 1,
+    "closing": 1,
+    "selected": "PB_AMO",
+    "selected_bits": 173
+  },
+  {
+    "fixture": "XOR3",
+    "nvars": 30,
+    "catalog": 10,
+    "closing": 1,
+    "selected": "XOR",
+    "selected_bits": 24
+  },
+  {
+    "fixture": "ITE",
+    "nvars": 40,
+    "catalog": 10,
+    "closing": 1,
+    "selected": "ITE",
+    "selected_bits": 32
+  },
+  {
+    "fixture": "MIXED",
+    "nvars": 216,
+    "catalog": 49,
+    "closing": 2,
+    "selected": "XOR",
+    "selected_bits": 33
+  }
+]

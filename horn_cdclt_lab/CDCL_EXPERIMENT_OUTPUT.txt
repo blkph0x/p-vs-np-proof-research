@@ -1,0 +1,40 @@
+{
+  "review": {
+    "fixtures_all_three_color_controls_unsat": true,
+    "fixtures_status_match": true,
+    "fixtures_all_proofs_replay": true,
+    "small_status_match": true,
+    "small_proofs_replay": true,
+    "complete_proofs_replay": true,
+    "all_checks_passed": true
+  },
+  "fixture_summary": [
+    {
+      "name": "K4",
+      "vertices": 4,
+      "dfs_nodes": 11,
+      "cdcl_decisions": 6,
+      "cdcl_conflicts": 6,
+      "cdcl_learned_clauses": 5,
+      "cdcl_resolution_steps": 90
+    },
+    {
+      "name": "sparse_12",
+      "vertices": 12,
+      "dfs_nodes": 287,
+      "cdcl_decisions": 29,
+      "cdcl_conflicts": 9,
+      "cdcl_learned_clauses": 8,
+      "cdcl_resolution_steps": 123
+    },
+    {
+      "name": "sparse_14",
+      "vertices": 14,
+      "dfs_nodes": 491,
+      "cdcl_decisions": 88,
+      "cdcl_conflicts": 55,
+      "cdcl_learned_clauses": 54,
+      "cdcl_resolution_steps": 776
+    }
+  ]
+}

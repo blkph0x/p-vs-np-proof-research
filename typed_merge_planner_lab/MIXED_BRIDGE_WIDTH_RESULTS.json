@@ -1,0 +1,111 @@
+{
+  "format": "two-bridge-primal-width-v1",
+  "variables": 4,
+  "formula_count": 16,
+  "rows": [
+    {
+      "mask": 0,
+      "clause_count": 0,
+      "original_pathwidth": 0,
+      "transformed_pathwidth": 0
+    },
+    {
+      "mask": 1,
+      "clause_count": 1,
+      "original_pathwidth": 2,
+      "transformed_pathwidth": 3
+    },
+    {
+      "mask": 2,
+      "clause_count": 1,
+      "original_pathwidth": 2,
+      "transformed_pathwidth": 3
+    },
+    {
+      "mask": 3,
+      "clause_count": 2,
+      "original_pathwidth": 2,
+      "transformed_pathwidth": 3
+    },
+    {
+      "mask": 4,
+      "clause_count": 1,
+      "original_pathwidth": 2,
+      "transformed_pathwidth": 3
+    },
+    {
+      "mask": 5,
+      "clause_count": 2,
+      "original_pathwidth": 2,
+      "transformed_pathwidth": 3
+    },
+    {
+      "mask": 6,
+      "clause_count": 2,
+      "original_pathwidth": 2,
+      "transformed_pathwidth": 3
+    },
+    {
+      "mask": 7,
+      "clause_count": 3,
+      "original_pathwidth": 3,
+      "transformed_pathwidth": 5
+    },
+    {
+      "mask": 8,
+      "clause_count": 1,
+      "original_pathwidth": 2,
+      "transformed_pathwidth": 3
+    },
+    {
+      "mask": 9,
+      "clause_count": 2,
+      "original_pathwidth": 2,
+      "transformed_pathwidth": 3
+    },
+    {
+      "mask": 10,
+      "clause_count": 2,
+      "original_pathwidth": 2,
+      "transformed_pathwidth": 3
+    },
+    {
+      "mask": 11,
+      "clause_count": 3,
+      "original_pathwidth": 3,
+      "transformed_pathwidth": 4
+    },
+    {
+      "mask": 12,
+      "clause_count": 2,
+      "original_pathwidth": 2,
+      "transformed_pathwidth": 3
+    },
+    {
+      "mask": 13,
+      "clause_count": 3,
+      "original_pathwidth": 3,
+      "transformed_pathwidth": 4
+    },
+    {
+      "mask": 14,
+      "clause_count": 3,
+      "original_pathwidth": 3,
+      "transformed_pathwidth": 4
+    },
+    {
+      "mask": 15,
+      "clause_count": 4,
+      "original_pathwidth": 3,
+      "transformed_pathwidth": 5
+    }
+  ],
+  "all_bounds_hold": true,
+  "source_sha256": {
+    "mixed_bridge_width.py": "af22940b1ef12410558105ad04df04258de4f45cfa2c72ebcf02fa7bf8fa0421",
+    "run_mixed_bridge_width.py": "5e6cebea86cd4ff8d226afde723c39a5eab0a6b98e2b8b35d2fb36340d499594",
+    "MIXED_BRIDGE_WIDTH_THEOREM.md": "85185e9724bd05b8e0228a31e52f72ed77d2b5c0b2409f5d920d7cd903a94f5b",
+    "MIXED_BRIDGE_WIDTH_REVIEW.py": "2ab9093e4399c1097d655ce14c71daebc93e3af90231b4ecbe82055acf72be11",
+    "test_mixed_bridge_width.py": "e99552b522a9e60e70d913bb35deed9bb86b231b1321b0060bd928832c6210fc"
+  }
+}

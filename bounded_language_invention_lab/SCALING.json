@@ -1,0 +1,56 @@
+[
+  {
+    "k": 2,
+    "truth_table_bits": 4,
+    "log2_number_of_kary_relations": 4,
+    "permutations": 2,
+    "direct_cnf_clauses": 2,
+    "projection_seconds": 3.665400004138064e-05,
+    "canonicalization_seconds": 1.7286000002059154e-05
+  },
+  {
+    "k": 3,
+    "truth_table_bits": 8,
+    "log2_number_of_kary_relations": 8,
+    "permutations": 6,
+    "direct_cnf_clauses": 5,
+    "projection_seconds": 3.3048999966922565e-05,
+    "canonicalization_seconds": 3.11360001887806e-05
+  },
+  {
+    "k": 4,
+    "truth_table_bits": 16,
+    "log2_number_of_kary_relations": 16,
+    "permutations": 24,
+    "direct_cnf_clauses": 8,
+    "projection_seconds": 5.7544999890524196e-05,
+    "canonicalization_seconds": 0.0002684280000266881
+  },
+  {
+    "k": 5,
+    "truth_table_bits": 32,
+    "log2_number_of_kary_relations": 32,
+    "permutations": 120,
+    "direct_cnf_clauses": 15,
+    "projection_seconds": 0.00017212500006280607,
+    "canonicalization_seconds": 0.0025531710000450403
+  },
+  {
+    "k": 6,
+    "truth_table_bits": 64,
+    "log2_number_of_kary_relations": 64,
+    "permutations": 720,
+    "direct_cnf_clauses": 35,
+    "projection_seconds": 0.0006329979999009083,
+    "canonicalization_seconds": 0.0344128520000595
+  },
+  {
+    "k": 7,
+    "truth_table_bits": 128,
+    "log2_number_of_kary_relations": 128,
+    "permutations": 5040,
+    "direct_cnf_clauses": 63,
+    "projection_seconds": 0.0022532559999035584,
+    "canonicalization_seconds": 0.5352472209999632
+  }
+]

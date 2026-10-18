@@ -1,0 +1,21 @@
+control,size,expected_reject,detected
+near-AMO-missing-edge,4,AMO,0
+near-AMO-missing-edge,8,AMO,0
+near-AMO-missing-edge,16,AMO,0
+near-AMO-missing-edge,32,AMO,0
+near-AMO-missing-edge,64,AMO,0
+one-way-fake-equivalence,4,EQUALITY,0
+one-way-fake-equivalence,32,EQUALITY,0
+one-way-fake-equivalence,128,EQUALITY,0
+same-count-support-nonparity,200,XOR,0
+same-count-support-nonITE,150,ITE,0
+repeated-proof-with-10-broken,100,10 OR macros,90
+untrusted-affine-cert,32,XOR interpolant,0
+trusted-but-compatible-affine,32,XOR interpolant,0
+trusted-but-compatible-PB,32,PB interpolant,0
+XOR-one-clause-missing,1,1 block,0
+XOR-one-clause-missing,8,1 block,7
+XOR-one-clause-missing,64,1 block,63
+ITE-one-clause-missing,1,1 block,0
+ITE-one-clause-missing,8,1 block,7
+ITE-one-clause-missing,32,1 block,31

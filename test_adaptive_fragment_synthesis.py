@@ -5,8 +5,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).parent
 sys.path.insert(0, str(ROOT))
-sys.path.insert(0, str(ROOT.parent / "proof_motif_candidate_lab"))
-sys.path.insert(0, str(ROOT.parent / "bounded_language_invention_lab"))
+sys.path.insert(0, str(ROOT / "proof_motif_candidate_lab"))
+sys.path.insert(0, str(ROOT / "bounded_language_invention_lab"))
 
 from adaptive_fragment_synthesis import synthesize_fragment, verify_synthesis, result_dict, extract_proof_leaves
 import miner

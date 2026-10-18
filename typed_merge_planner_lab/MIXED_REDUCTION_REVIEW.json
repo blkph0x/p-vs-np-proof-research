@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "formula_count": 16,
+  "all_answers_match": true,
+  "source_sha256": {
+    "two_bridge_factorization.py": "82bcc134f2db038dd21f25c61ecacc972a4c7f571e73d6fe5449cab7141c23ff",
+    "mixed_horn_affine_reduction.py": "51413df3070205817cf1e3ac92a9fc66808384ec8a0b893bc666a218f1defc4c",
+    "MIXED_REDUCTION_REVIEW.py": "958b88feb4f7210d6057def75f537b9604f925f6f8ffdab57d63abda588b164f",
+    "test_mixed_horn_affine_reduction.py": "3f885d3607595a8b9a3e5d2b770ee26182ea514def5d3a497f9d27a7572ea3e6"
+  }
+}

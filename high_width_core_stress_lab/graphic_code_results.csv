@@ -1,0 +1,11 @@
+t_clique_vertices,n_code_coordinates,internally4_proved_all_t_ge5,cut_code_dimension,dual_cycle_code_dimension,certified_width_lower_bound,certified_width_upper_bound,certified_exact_pathwidth,exact_optimal_max_trellis_states_power_of_2,at_least_trellis_states_power_of_2,mincut_minweight,cycle_girth_minweight,trellis_dp_states_if_executed,trellis_dp_seconds_if_executed
+5,10,True,4,6,2,3,3,2^3,2^2,4,3,8,8.3e-05
+6,15,True,5,10,3,4,4,2^4,2^3,5,3,16,0.000252
+8,28,True,7,21,3,6,6,2^6,2^3,7,3,64,0.001288
+10,45,True,9,36,5,8,8,2^8,2^5,9,3,256,0.009791
+12,66,True,11,55,5,10,10,2^10,2^5,11,3,1024,0.072332
+16,120,True,15,105,7,14,14,2^14,2^7,15,3,,
+32,496,True,31,465,13,30,30,2^30,2^13,31,3,,
+64,2016,True,63,1953,27,62,62,2^62,2^27,63,3,,
+128,8128,True,127,8001,53,126,126,2^126,2^53,127,3,,
+256,32640,True,255,32385,107,254,254,2^254,2^107,255,3,,

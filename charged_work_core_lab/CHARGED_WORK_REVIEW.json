@@ -1,0 +1,230 @@
+{
+  "format": "coordinate-conditioning-charged-work-v1",
+  "records": [
+    {
+      "n": 18,
+      "case": "natural",
+      "original_width": 9,
+      "charged_operations": 3083,
+      "lower_bound": 512,
+      "bound_holds": true,
+      "status": "EXACT"
+    },
+    {
+      "n": 18,
+      "case": "greedy",
+      "original_width": 7,
+      "charged_operations": 1489,
+      "lower_bound": 128,
+      "bound_holds": true,
+      "status": "EXACT"
+    },
+    {
+      "n": 18,
+      "case": "greedy_fix_1",
+      "original_width": 7,
+      "charged_operations": 1676,
+      "lower_bound": 128,
+      "bound_holds": true,
+      "status": "EXACT"
+    },
+    {
+      "n": 18,
+      "case": "greedy_fix_2",
+      "original_width": 7,
+      "charged_operations": 2110,
+      "lower_bound": 128,
+      "bound_holds": true,
+      "status": "EXACT"
+    },
+    {
+      "n": 20,
+      "case": "natural",
+      "original_width": 9,
+      "charged_operations": 5133,
+      "lower_bound": 512,
+      "bound_holds": true,
+      "status": "EXACT"
+    },
+    {
+      "n": 20,
+      "case": "greedy",
+      "original_width": 7,
+      "charged_operations": 1727,
+      "lower_bound": 128,
+      "bound_holds": true,
+      "status": "EXACT"
+    },
+    {
+      "n": 20,
+      "case": "greedy_fix_1",
+      "original_width": 7,
+      "charged_operations": 1834,
+      "lower_bound": 128,
+      "bound_holds": true,
+      "status": "EXACT"
+    },
+    {
+      "n": 20,
+      "case": "greedy_fix_2",
+      "original_width": 7,
+      "charged_operations": 2240,
+      "lower_bound": 128,
+      "bound_holds": true,
+      "status": "EXACT"
+    },
+    {
+      "n": 22,
+      "case": "natural",
+      "original_width": 9,
+      "charged_operations": 6673,
+      "lower_bound": 512,
+      "bound_holds": true,
+      "status": "EXACT"
+    },
+    {
+      "n": 22,
+      "case": "greedy",
+      "original_width": 8,
+      "charged_operations": 2773,
+      "lower_bound": 256,
+      "bound_holds": true,
+      "status": "EXACT"
+    },
+    {
+      "n": 22,
+      "case": "greedy_fix_1",
+      "original_width": 8,
+      "charged_operations": 2896,
+      "lower_bound": 256,
+      "bound_holds": true,
+      "status": "EXACT"
+    },
+    {
+      "n": 22,
+      "case": "greedy_fix_2",
+      "original_width": 8,
+      "charged_operations": 3718,
+      "lower_bound": 256,
+      "bound_holds": true,
+      "status": "EXACT"
+    },
+    {
+      "n": 24,
+      "case": "natural",
+      "original_width": 11,
+      "charged_operations": 18449,
+      "lower_bound": 2048,
+      "bound_holds": true,
+      "status": "EXACT"
+    },
+    {
+      "n": 24,
+      "case": "greedy",
+      "original_width": 9,
+      "charged_operations": 5845,
+      "lower_bound": 512,
+      "bound_holds": true,
+      "status": "EXACT"
+    },
+    {
+      "n": 24,
+      "case": "greedy_fix_1",
+      "original_width": 9,
+      "charged_operations": 5968,
+      "lower_bound": 512,
+      "bound_holds": true,
+      "status": "EXACT"
+    },
+    {
+      "n": 24,
+      "case": "greedy_fix_2",
+      "original_width": 9,
+      "charged_operations": 6278,
+      "lower_bound": 512,
+      "bound_holds": true,
+      "status": "EXACT"
+    },
+    {
+      "n": 26,
+      "case": "natural",
+      "original_width": 11,
+      "charged_operations": 24599,
+      "lower_bound": 2048,
+      "bound_holds": true,
+      "status": "EXACT"
+    },
+    {
+      "n": 26,
+      "case": "greedy",
+      "original_width": 10,
+      "charged_operations": 16919,
+      "lower_bound": 1024,
+      "bound_holds": true,
+      "status": "EXACT"
+    },
+    {
+      "n": 26,
+      "case": "greedy_fix_1",
+      "original_width": 10,
+      "charged_operations": 17426,
+      "lower_bound": 1024,
+      "bound_holds": true,
+      "status": "EXACT"
+    },
+    {
+      "n": 26,
+      "case": "greedy_fix_2",
+      "original_width": 10,
+      "charged_operations": 18952,
+      "lower_bound": 1024,
+      "bound_holds": true,
+      "status": "EXACT"
+    },
+    {
+      "n": 28,
+      "case": "natural",
+      "original_width": 13,
+      "charged_operations": 73749,
+      "lower_bound": 8192,
+      "bound_holds": true,
+      "status": "EXACT"
+    },
+    {
+      "n": 28,
+      "case": "greedy",
+      "original_width": 11,
+      "charged_operations": 26139,
+      "lower_bound": 2048,
+      "bound_holds": true,
+      "status": "EXACT"
+    },
+    {
+      "n": 28,
+      "case": "greedy_fix_1",
+      "original_width": 11,
+      "charged_operations": 28694,
+      "lower_bound": 2048,
+      "bound_holds": true,
+      "status": "EXACT"
+    },
+    {
+      "n": 28,
+      "case": "greedy_fix_2",
+      "original_width": 11,
+      "charged_operations": 30732,
+      "lower_bound": 2048,
+      "bound_holds": true,
+      "status": "EXACT"
+    }
+  ],
+  "exact_records": 24,
+  "all_exact_bounds_hold": true,
+  "source_sha256": {
+    "results.json": "a5f93a37fd9531b0a7310b772f7e3f2ec9e0768883e0fffde4d69a1ae610ed54",
+    "deletion_solver.py": "5209adc399a05cbf5b7d1fd61cc4343d921cfdad609b4dbab90a1cc9f6223f6d",
+    "THEOREMS.md": "7567fa18c69773dbb6ed7991fd97ac7c08ca7b44f6b330f89cf168e399e05d45",
+    "charged_work_review.py": "262fb976e66329449fe99bc3c4ff3be88b0ef2402334c90e6d1f2c8368ae3d07"
+  },
+  "scope": "Fixed supplied order and coordinate conditioning only; branch enumeration and transitions are both charged."
+}

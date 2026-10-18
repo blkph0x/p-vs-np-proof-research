@@ -1,0 +1,7 @@
+groups,width,proof_entries,source_clauses_seen,or_macros_discovered,largest_proof_motif_recurrence,derived_units,receiver_cert_kind,selected_candidate,candidate_support
+2,4,17,8,2,2,2,AFFINE,XOR_INTERPOLANT,2
+4,4,33,16,4,4,4,AFFINE,XOR_INTERPOLANT,4
+8,4,65,32,8,8,8,AFFINE,XOR_INTERPOLANT,8
+16,8,257,128,16,16,16,AFFINE,XOR_INTERPOLANT,16
+64,8,1025,512,64,64,64,AFFINE,XOR_INTERPOLANT,64
+256,8,4097,2048,256,256,256,AFFINE,XOR_INTERPOLANT,256

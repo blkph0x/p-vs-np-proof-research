@@ -1,0 +1,12 @@
+{
+  "independent_reviewer": "run_experiments.py replay_horn/replay_affine",
+  "projection_ok": true,
+  "small_corpus_ok": {
+    "formula_count": 16,
+    "all_sat_statuses_match": true,
+    "all_solutions_valid": true,
+    "all_certificates_replay": true
+  },
+  "scaling_ok": true,
+  "all_checks_passed": true
+}

@@ -1,0 +1,13 @@
+groups,group_width,boolean_vars,proof_nodes,raw_interpolant_literals,candidate_languages,selected_language,selected_message_bits,raw_message_bits,a_local_vars_eliminated
+2,3,6,13,2,CNF-conjunction;XOR;PB,CNF-conjunction,10,10,4
+3,3,9,19,3,CNF-conjunction;XOR;PB,XOR,15,18,6
+4,3,12,25,4,CNF-conjunction;XOR;PB,XOR,17,28,8
+4,4,16,33,4,CNF-conjunction;XOR;PB,XOR,17,28,12
+6,3,18,37,6,CNF-conjunction;XOR;PB,XOR,27,48,12
+8,2,16,33,8,CNF-conjunction;XOR;PB,XOR,33,72,8
+8,4,32,65,8,CNF-conjunction;XOR;PB,XOR,33,72,24
+16,4,64,129,16,CNF-conjunction;XOR;PB,XOR,73,176,48
+32,4,128,257,32,CNF-conjunction;XOR;PB,XOR,169,416,96
+64,4,256,513,64,CNF-conjunction;XOR;PB,XOR,393,960,192
+128,4,512,1025,128,CNF-conjunction;XOR;PB,XOR,905,2176,384
+256,8,2048,4097,256,CNF-conjunction;XOR;PB,XOR,2057,4864,1792

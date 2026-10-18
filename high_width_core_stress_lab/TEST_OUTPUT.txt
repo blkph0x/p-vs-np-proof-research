@@ -1,0 +1,13 @@
+test_balanced_bound_exact_arithmetic (test_lab.LabTest.test_balanced_bound_exact_arithmetic) ... ok
+test_graph_algorithm_exact_small (test_lab.LabTest.test_graph_algorithm_exact_small) ... ok
+test_graphic_incidences (test_lab.LabTest.test_graphic_incidences) ... ok
+test_native_complete_graph_distances (test_lab.LabTest.test_native_complete_graph_distances) ... ok
+test_probabilistic_existence (test_lab.LabTest.test_probabilistic_existence) ... ok
+test_random_cpp_certificate_witnesses (test_lab.LabTest.test_random_cpp_certificate_witnesses) ... ok
+test_small_exhaustive_internal4 (test_lab.LabTest.test_small_exhaustive_internal4) ... ok
+test_trellis_matches_brute (test_lab.LabTest.test_trellis_matches_brute) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.243s
+
+OK

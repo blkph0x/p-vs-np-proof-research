@@ -1,0 +1,7 @@
+scenario,a,b,width,input_size,quotient_states,route,pair_status,states,reason,cost
+matching-affine-small,MATCHING,AFFINE,3,100000,,EXPLICIT_TT_BRIDGE,UNKNOWN_GENERAL,8,,poly
+counting-wide-quotient,CARDINALITY,CARDINALITY,2048,10000000,2049,EXTENSION_QUOTIENT,UNKNOWN_GENERAL,2049,,poly
+affine-card-hard,AFFINE,CARDINALITY,40,1000,,HARD_BARRIER,KNOWN_NP_HARD,,MINIMUM_DISTANCE,superpoly-unless-parameterized
+horn-affine-small,HORN,AFFINE,3,1000,,EXPLICIT_TT_BRIDGE,KNOWN_NP_HARD,8,,poly
+horn-affine-wide,HORN,AFFINE,40,1000,,HARD_BARRIER,KNOWN_NP_HARD,,SCHAEFER/HORN_AFFINE,superpoly-unless-parameterized
+affine-affine-wide,AFFINE,AFFINE,4096,1000,,NATIVE_CLOSED,POLY_CLOSED,,,poly

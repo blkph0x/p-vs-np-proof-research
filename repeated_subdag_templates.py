@@ -25,7 +25,7 @@ from pathlib import Path
 import sys
 
 ROOT = Path(__file__).resolve().parent
-PROOF_DIR = ROOT.parent / "proof_portfolio_integration_lab"
+PROOF_DIR = ROOT / "proof_portfolio_integration_lab"
 if str(PROOF_DIR) not in sys.path:
     sys.path.insert(0, str(PROOF_DIR))
 
