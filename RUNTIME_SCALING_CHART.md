@@ -7,11 +7,14 @@ containing `x`, `dimension`, `runtime_seconds`, `status`, and `label`, then the
 axis selector, log-scale toggle, tooltips, and accessible table update without
 changing the chart code.
 
-The checked data is generated from `NATIVE_RESULTS.json`. `EXACT` and `UNKNOWN`
-records use separate symbols. UNKNOWN means that the native branch cap stopped
-the run; it must not be read as an exact answer, a lower bound, or evidence of
-an asymptotic runtime class. Measurements are wall-clock observations from the
-saved producer artifact and are not a polynomial-time proof.
+The checked data combines `NATIVE_RESULTS.json` with the proof-producing CDCL
+campaign in `proof_complexity_scaling_lab/SCALING_RESULTS.json`; both source
+hashes are saved in the chart data. `EXACT` and `UNKNOWN` records use separate
+symbols. UNKNOWN means that the native branch cap stopped the run; it must not
+be read as an exact answer, a lower bound, or evidence of an asymptotic runtime
+class. Measurements are wall-clock observations from the saved producer
+artifacts and are not a polynomial-time proof. The CDCL series are replayed
+resolution traces for one deterministic implementation.
 
 When a new artifact is accepted:
 

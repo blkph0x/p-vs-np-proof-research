@@ -21,6 +21,7 @@ or P≠NP has been proved.
 | Recent public Vohra P=NP claim | Unverified | [`EXTERNAL_STATUS_AUDIT_2026_10_18.md`](EXTERNAL_STATUS_AUDIT_2026_10_18.md) and [`VOHRA_CROSSREF_METADATA.json`](VOHRA_CROSSREF_METADATA.json). Public metadata and abstract were checked; the full proof and bit-complexity argument were not accessible. |
 | Adaptive frontier SAT solver | Proved for bounded order discovery | [`typed_merge_planner_lab/ADAPTIVE_FRONTIER_THEOREM.md`](typed_merge_planner_lab/ADAPTIVE_FRONTIER_THEOREM.md), replayable primal-graph/order/frontier certificates, and explicit order/state caps. |
 | General proof-producing CDCL | Proved for finite CNF runs | [`proof_producing_cdcl_lab/THEOREM.md`](proof_producing_cdcl_lab/THEOREM.md), independently replayed first-UIP resolution traces, checked SAT models, and explicit resource caps. |
+| Proof-complexity scaling campaign | Proved for the stated finite families and solver traces | [`proof_complexity_scaling_lab/THEOREM.md`](proof_complexity_scaling_lab/THEOREM.md) and [`proof_complexity_scaling_lab/SCALING_REPORT.md`](proof_complexity_scaling_lab/SCALING_REPORT.md), with independent family reconstruction, proof replay, and exact all-assignment trace identities. |
 | Bounded-width resolution closure | Proved for the stated width-bounded proof system | [`resolution_width_lab/THEOREM.md`](resolution_width_lab/THEOREM.md), complete weakening/resolution closure with replayable refutations and explicit clause/step caps. |
 
 ## Evidence vocabulary

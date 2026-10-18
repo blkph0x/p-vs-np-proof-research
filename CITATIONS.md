@@ -10,6 +10,8 @@ provenance.
 | --- | --- |
 | [Clay Mathematics Institute: P versus NP](https://www.claymath.org/millennium/p-vs-np/) | Official problem statement and current public status. |
 | [Cook, *The complexity of theorem-proving procedures*](https://doi.org/10.1007/BF00264290) | NP-completeness context and SAT as the canonical target. |
+| [Haken, *The intractability of resolution*](https://www.sciencedirect.com/science/article/pii/0304397585901446) | Primary resolution lower-bound source for the pigeonhole principle; the finite CDCL traces here are a replayable experimental connection, not a reproof of Haken's all-size theorem. |
+| [Ben-Sasson and Wigderson, *Short proofs are narrow—resolution made simple*](https://people.inf.ethz.ch/emo/SatSem05/Papers/BensassonWidgerson01.pdf) | Primary width-versus-size proof-complexity source motivating the separate bounded-width closure and scaling records. |
 | [Cai, Guo and Williams, *A note on the complexity of counting perfect matchings*](https://arxiv.org/abs/1307.7430) | Matchgate/holographic basis and product-type obstruction context. The exact theorem used here is cited in `simultaneous_basis_lab/THEOREM.md`. |
 | [Jia et al., *The minimum distance problem for regular LDPC codes is NP-complete*](https://arxiv.org/abs/2606.23161) | Current preprint used for the regular-LDPC boundary audit; the finite replays do not replace its all-size proof. |
 | [Vohra, *The Vohra Duality: A Polynomial-Time Algebraic Framework Proving P=NP*](https://doi.org/10.1109/ASSIC70037.2026.11717448) | Public claim logged for audit only. The paper was not available in full through the access paths checked, so the claim remains unverified. |

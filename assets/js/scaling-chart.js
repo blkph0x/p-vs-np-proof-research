@@ -7,6 +7,7 @@
   const svg = root.querySelector("[data-chart-svg]");
   const status = root.querySelector("[data-chart-status]");
   const details = root.querySelector("[data-chart-details]");
+  const legend = root.querySelector("[data-chart-legend]");
   const tableBody = root.querySelector("[data-chart-table-body]");
   const axisSelect = root.querySelector("[data-chart-axis]");
   const unknownToggle = root.querySelector("[data-chart-unknown]");
@@ -91,6 +92,17 @@
     svg.appendChild(element("line", {x1: plot.x, x2: plot.x + plot.width, y1: plot.y + plot.height, y2: plot.y + plot.height, class: "chart-axis"}));
     text(svg, data.x_axes[axis], {x: plot.x + plot.width / 2, y: height - 14, "text-anchor": "middle", class: "chart-label"});
     text(svg, `${data.y_axis}${logarithmic ? " · logarithmic" : ""}`, {x: 17, y: plot.y + plot.height / 2, transform: `rotate(-90 17 ${plot.y + plot.height / 2})`, "text-anchor": "middle", class: "chart-label"});
+
+    legend.replaceChildren();
+    data.datasets.forEach((dataset, datasetIndex) => {
+      const item = document.createElement("span");
+      item.className = `chart-legend-item chart-legend-${datasetIndex}`;
+      const swatch = document.createElement("span");
+      swatch.className = "chart-legend-swatch";
+      swatch.setAttribute("aria-hidden", "true");
+      item.append(swatch, document.createTextNode(dataset.label));
+      legend.appendChild(item);
+    });
 
     data.datasets.forEach((dataset, datasetIndex) => {
       const visible = dataset.points.filter(point => showUnknown || point.status === "EXACT").sort((a, b) => a[axis] - b[axis]);

@@ -458,4 +458,7 @@ The new width sweep independently certifies the first refutation width on the
 small controls (1 for contradictory units, 2 for 3-by-2 pigeonhole, and 3 for
 the three-variable all-assignment contradiction). The next comparison is to
 correlate these width certificates with CDCL proof length and frontier state
-growth, keeping every cap and proof-system scope explicit.
+growth, keeping every cap and proof-system scope explicit. The first CDCL
+scaling bridge is now saved in `proof_complexity_scaling_lab`; it replays ten
+all-assignment and eight pigeonhole traces and records exact deterministic
+trace identities where they are proved.

@@ -25,7 +25,7 @@ python run_research_checks.py
 ```
 
 The command regenerates `TEST_OUTPUT.txt` and `TEST_SUMMARY.json`, then checks
-all registered suites. The current checkpoint passes 35 suites and 364 methods
+all registered suites. The current checkpoint passes 36 suites and 370 methods
 with unchanged source hashes. A full run can take several
 minutes because it includes exhaustive finite controls and native rank checks.
 
@@ -37,10 +37,16 @@ python fourier_spectrum_boundary_lab\verify_fourier_boundary.py
 python -m unittest -v test_fourier_spectrum_boundary_integration.py
 python run_holographic_phase_checks.py
 python verify_holographic_artifacts.py
+python proof_complexity_scaling_lab\run_scaling.py
+python proof_complexity_scaling_lab\review_scaling.py
+Push-Location proof_complexity_scaling_lab
+python -m unittest -v test_scaling.py
+Pop-Location
 ```
 
 These commands cover the newest Fourier span result and the simultaneous-basis
-certificate. The GitHub Actions workflow runs this focused set on every push.
+certificate, plus the proof-producing CDCL scaling bridge. The GitHub Actions
+workflow runs the focused set on every push.
 
 ## Updating a result
 

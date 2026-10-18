@@ -1,11 +1,17 @@
 {
-  "schema": "runtime_scaling_v1",
-  "generated_from": "NATIVE_RESULTS.json",
-  "source_sha256": "2820f7b32c2cf5dbe0d1caba65cee3435cbc60f74bfe2e008059e728d8d24be2",
+  "schema": "runtime_scaling_v2",
+  "generated_from": [
+    "NATIVE_RESULTS.json",
+    "proof_complexity_scaling_lab/SCALING_RESULTS.json"
+  ],
+  "source_sha256": {
+    "NATIVE_RESULTS.json": "2820f7b32c2cf5dbe0d1caba65cee3435cbc60f74bfe2e008059e728d8d24be2",
+    "proof_complexity_scaling_lab/SCALING_RESULTS.json": "dac988e1b55fa028c886a073a55ff7b82633fe4eb54d034fe8806bd53d5a3f9f"
+  },
   "generated_utc": "2026-10-18T00:00:00Z",
   "x_axes": {
-    "n": "Encoded coordinates (n)",
-    "dimension": "Code dimension (k)"
+    "n": "Variables / encoded coordinates (n)",
+    "dimension": "Code dimension / family parameter"
   },
   "y_axis": "Wall-clock solve time (seconds)",
   "datasets": [
@@ -128,7 +134,199 @@
           "distance": null
         }
       ]
+    },
+    {
+      "id": "cdcl-all-assignments",
+      "label": "Proof-producing CDCL | all-assignment family (EXACT)",
+      "points": [
+        {
+          "x": 1,
+          "dimension": 1,
+          "runtime_seconds": 3.310013562440872e-05,
+          "status": "EXACT",
+          "label": "CDCL all-assignment n=1",
+          "proof_events": 1,
+          "decisions": 0,
+          "resolution_steps": 1
+        },
+        {
+          "x": 2,
+          "dimension": 2,
+          "runtime_seconds": 7.389998063445091e-05,
+          "status": "EXACT",
+          "label": "CDCL all-assignment n=2",
+          "proof_events": 2,
+          "decisions": 1,
+          "resolution_steps": 3
+        },
+        {
+          "x": 3,
+          "dimension": 3,
+          "runtime_seconds": 0.0002109999768435955,
+          "status": "EXACT",
+          "label": "CDCL all-assignment n=3",
+          "proof_events": 4,
+          "decisions": 3,
+          "resolution_steps": 7
+        },
+        {
+          "x": 4,
+          "dimension": 4,
+          "runtime_seconds": 0.0006715999916195869,
+          "status": "EXACT",
+          "label": "CDCL all-assignment n=4",
+          "proof_events": 8,
+          "decisions": 7,
+          "resolution_steps": 15
+        },
+        {
+          "x": 5,
+          "dimension": 5,
+          "runtime_seconds": 0.0021565002389252186,
+          "status": "EXACT",
+          "label": "CDCL all-assignment n=5",
+          "proof_events": 16,
+          "decisions": 15,
+          "resolution_steps": 31
+        },
+        {
+          "x": 6,
+          "dimension": 6,
+          "runtime_seconds": 0.007992899976670742,
+          "status": "EXACT",
+          "label": "CDCL all-assignment n=6",
+          "proof_events": 32,
+          "decisions": 31,
+          "resolution_steps": 63
+        },
+        {
+          "x": 7,
+          "dimension": 7,
+          "runtime_seconds": 0.027474400121718645,
+          "status": "EXACT",
+          "label": "CDCL all-assignment n=7",
+          "proof_events": 64,
+          "decisions": 63,
+          "resolution_steps": 127
+        },
+        {
+          "x": 8,
+          "dimension": 8,
+          "runtime_seconds": 0.10328340018168092,
+          "status": "EXACT",
+          "label": "CDCL all-assignment n=8",
+          "proof_events": 128,
+          "decisions": 127,
+          "resolution_steps": 255
+        },
+        {
+          "x": 9,
+          "dimension": 9,
+          "runtime_seconds": 0.4013803997077048,
+          "status": "EXACT",
+          "label": "CDCL all-assignment n=9",
+          "proof_events": 256,
+          "decisions": 255,
+          "resolution_steps": 511
+        },
+        {
+          "x": 10,
+          "dimension": 10,
+          "runtime_seconds": 1.5212268000468612,
+          "status": "EXACT",
+          "label": "CDCL all-assignment n=10",
+          "proof_events": 512,
+          "decisions": 511,
+          "resolution_steps": 1023
+        }
+      ]
+    },
+    {
+      "id": "cdcl-pigeonhole",
+      "label": "Proof-producing CDCL | pigeonhole family (EXACT)",
+      "points": [
+        {
+          "x": 2,
+          "dimension": 1,
+          "runtime_seconds": 3.389967605471611e-05,
+          "status": "EXACT",
+          "label": "CDCL PHP 2 into 1",
+          "proof_events": 1,
+          "decisions": 0,
+          "resolution_steps": 2
+        },
+        {
+          "x": 6,
+          "dimension": 2,
+          "runtime_seconds": 0.00018349988386034966,
+          "status": "EXACT",
+          "label": "CDCL PHP 3 into 2",
+          "proof_events": 2,
+          "decisions": 1,
+          "resolution_steps": 10
+        },
+        {
+          "x": 12,
+          "dimension": 3,
+          "runtime_seconds": 0.0012423000298440456,
+          "status": "EXACT",
+          "label": "CDCL PHP 4 into 3",
+          "proof_events": 6,
+          "decisions": 6,
+          "resolution_steps": 42
+        },
+        {
+          "x": 20,
+          "dimension": 4,
+          "runtime_seconds": 0.008101100102066994,
+          "status": "EXACT",
+          "label": "CDCL PHP 5 into 4",
+          "proof_events": 18,
+          "decisions": 24,
+          "resolution_steps": 164
+        },
+        {
+          "x": 30,
+          "dimension": 5,
+          "runtime_seconds": 0.04663940006867051,
+          "status": "EXACT",
+          "label": "CDCL PHP 6 into 5",
+          "proof_events": 50,
+          "decisions": 80,
+          "resolution_steps": 590
+        },
+        {
+          "x": 42,
+          "dimension": 6,
+          "runtime_seconds": 0.25640320032835007,
+          "status": "EXACT",
+          "label": "CDCL PHP 7 into 6",
+          "proof_events": 130,
+          "decisions": 240,
+          "resolution_steps": 1962
+        },
+        {
+          "x": 56,
+          "dimension": 7,
+          "runtime_seconds": 1.3843501000665128,
+          "status": "EXACT",
+          "label": "CDCL PHP 8 into 7",
+          "proof_events": 322,
+          "decisions": 672,
+          "resolution_steps": 6104
+        },
+        {
+          "x": 72,
+          "dimension": 8,
+          "runtime_seconds": 7.728615100029856,
+          "status": "EXACT",
+          "label": "CDCL PHP 9 into 8",
+          "proof_events": 770,
+          "decisions": 1792,
+          "resolution_steps": 17992
+        }
+      ]
     }
   ],
-  "interpretation": "Measured producer solve time only. EXACT and UNKNOWN points are shown with different symbols; UNKNOWN is not an exact answer and no asymptotic claim is inferred."
+  "interpretation": "Measured producer solve time only. EXACT and UNKNOWN points are shown with different symbols; UNKNOWN is not an exact answer and no asymptotic claim is inferred. The CDCL series are proof traces for the stated deterministic implementation."
 }

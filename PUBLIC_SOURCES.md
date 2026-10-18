@@ -5,7 +5,7 @@ public URL found in the repository's source, reports, and saved metadata,
 along with the local files that cite or preserve it. The curated primary
 sources and citation rules are in [`CITATIONS.md`](CITATIONS.md).
 
-Indexed URLs: **59**.
+Indexed URLs: **61**.
 
 | URL | Local provenance |
 | --- | --- |
@@ -51,6 +51,7 @@ Indexed URLs: **59**.
 | <https://link.springer.com/article/10.1007/s00453-015-0090-y> | `HOLOGRAPHIC_LITERATURE_CHECK.md`, `PUBLIC_SOURCES.md` |
 | <https://link.springer.com/chapter/10.1007/978-1-4684-2001-2_9> | `PUBLIC_SOURCES.md`, `multiobjective_matching_limits/THEOREM.md` |
 | <https://pages.cs.wisc.edu/~jyc/papers/signature-thy.pdf> | `NEXT_HOLOGRAPHIC_BRIEF.md`, `PUBLIC_SOURCES.md` |
+| <https://people.inf.ethz.ch/emo/SatSem05/Papers/BensassonWidgerson01.pdf> | `CITATIONS.md`, `PUBLIC_SOURCES.md` |
 | <https://quantum-journal.org/papers/q-2022-04-20-692/> | `AFFINE_REPRESENTATION_LITERATURE_SCOPE.md`, `PUBLIC_SOURCES.md` |
 | <https://quantum-journal.org/papers/q-2026-07-29-2179/> | `AFFINE_CANCELLATION_LITERATURE_SCOPE.md`, `PUBLIC_SOURCES.md` |
 | <https://theory.stanford.edu/~trevisan/cs172-07/karp.pdf> | `PUBLIC_SOURCES.md`, `multiobjective_matching_limits/THEOREM.md`, `packed_cost_exact_matching/THEOREM.md` |
@@ -66,5 +67,6 @@ Indexed URLs: **59**.
 | <https://www.math.uwaterloo.ca/~jfgeelen/Publications/regular.pdf> | `PUBLIC_SOURCES.md`, `THEORY_REVIEW.md`, `charged_work_core_lab/FANO_NOTES.md` |
 | <https://www.researchgate.net/profile/Alexander-Vardy/publication/221591825_Algorithmic_Complexity_in_Coding_Theory_and_the_Minimum_Distance_Problem/links/00463517a8f459b272000000/Algorithmic-Complexity-in-Coding-Theory-and-the-Minimum-Distance-Problem.pdf> | `PUBLIC_SOURCES.md`, `VARDY_MINIMUM_DISTANCE_SCOPE.md` |
 | <https://www.sciencedirect.com/science/article/pii/002001909290234M> | `PUBLIC_SOURCES.md`, `graph_order_hardness_lab/THEOREM.md` |
+| <https://www.sciencedirect.com/science/article/pii/0304397585901446> | `CITATIONS.md` |
 | <https://www.sciencedirect.com/science/article/pii/S0022000010000899> | `NEXT_HOLOGRAPHIC_BRIEF.md`, `PUBLIC_SOURCES.md` |
 | <https://www2.seas.gwu.edu/~simhaweb/champalg/tsp/papers/KarpOriginal.pdf> | `INDEPENDENT_AUDIT.md`, `PUBLIC_SOURCES.md`, `packed_cost_exact_matching/REVIEW.md` |

@@ -93,6 +93,16 @@ and explicit decision caps are retained as controls. The implementation has no
 polynomial bound on decisions, conflicts, learned clauses, or proof steps, so
 this is a certified universal baseline rather than a P=NP algorithm.
 
+The [proof-complexity scaling campaign](proof_complexity_scaling_lab/THEOREM.md)
+now runs that baseline on ten all-assignment formulas and eight pigeonhole
+formulas. Every trace is independently replayed. The all-assignment rows obey
+the exact identities `decisions = 2^(n-1)-1`, `conflicts = 2^(n-1)`, and
+`resolution_steps = 2^n-1` for this deterministic implementation. Because the
+all-assignment input itself has `n*2^n` literal occurrences, this is not a
+super-polynomial-in-input-size lower bound. The pigeonhole rows retain the
+independent injection-counting proof and expose scaling inside resolution;
+they do not lower-bound algorithms outside that proof system.
+
 The [bounded-width resolution lab](resolution_width_lab/THEOREM.md) provides a
 second proof-complexity lens. It computes the complete finite closure under
 weakening and width-preserving resolution, replaying either an empty-clause
@@ -380,7 +390,7 @@ keeping the auxiliaries preserves its polynomial solving route.
 
 ## Evidence and practical limits
 
-The current frozen integration run passes **364 tests across 35 suites**, with
+The current frozen integration run passes **370 tests across 36 suites**, with
 unchanged source hashes throughout. The canonical audit now includes the
 51-test labelled-join and perturbation certificate suite in
 `labelled_join_certified`. [TEST_SUMMARY.json](TEST_SUMMARY.json) and

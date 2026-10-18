@@ -15,7 +15,7 @@
 - Use [`CITATIONS.md`](CITATIONS.md) and [`PUBLIC_SOURCES.md`](PUBLIC_SOURCES.md)
   for public sources and the reports that use them.
 - Follow [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) to replay the checks from a
-  fresh checkout. The current frozen run has 364 passing methods across 35
+  fresh checkout. The current frozen run has 370 passing methods across 36
   suites; the full audit is intentionally separate from the lighter continuous
   integration checks, and all of its suite dependencies are included in this
   repository.
@@ -273,6 +273,13 @@ first-UIP resolution chains for UNSAT results, checks models for SAT results,
 and returns `UNKNOWN` under explicit decision, conflict, or proof-size caps.
 Its proof traces establish finite-run correctness but do not supply a
 polynomial worst-case bound.
+
+The [`proof_complexity_scaling_lab`](proof_complexity_scaling_lab/README.md)
+extends that baseline to all-assignment and pigeonhole families through
+independently replayed proof traces. It checks exact trace identities for the
+all-assignment campaign and preserves the injection-counting proof for the
+pigeonhole campaign. These are resolution/CDCL scaling controls, not lower
+bounds against arbitrary SAT algorithms.
 
 The [bounded-width resolution lab](resolution_width_lab/README.md) separately
 closes every weakening and resolution consequence up to width `w`. A fixed

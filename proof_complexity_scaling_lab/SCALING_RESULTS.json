@@ -1,0 +1,390 @@
+{
+  "format": "proof-producing-cdcl-scaling-v1",
+  "rows": [
+    {
+      "name": "all_assignments_n1",
+      "family": "all_assignments",
+      "parameter": 1,
+      "nvars": 1,
+      "clause_count": 2,
+      "input_literals": 2,
+      "status": "UNSAT",
+      "proof_events": 1,
+      "elapsed_seconds": 3.310013562440872e-05,
+      "stats": {
+        "decisions": 0,
+        "boolean_props": 1,
+        "conflicts": 1,
+        "learned_clauses": 0,
+        "learned_literals": 0,
+        "resolution_steps": 1,
+        "backjumps": 0
+      }
+    },
+    {
+      "name": "all_assignments_n2",
+      "family": "all_assignments",
+      "parameter": 2,
+      "nvars": 2,
+      "clause_count": 4,
+      "input_literals": 8,
+      "status": "UNSAT",
+      "proof_events": 2,
+      "elapsed_seconds": 7.389998063445091e-05,
+      "stats": {
+        "decisions": 1,
+        "boolean_props": 3,
+        "conflicts": 2,
+        "learned_clauses": 1,
+        "learned_literals": 1,
+        "resolution_steps": 3,
+        "backjumps": 1
+      }
+    },
+    {
+      "name": "all_assignments_n3",
+      "family": "all_assignments",
+      "parameter": 3,
+      "nvars": 3,
+      "clause_count": 8,
+      "input_literals": 24,
+      "status": "UNSAT",
+      "proof_events": 4,
+      "elapsed_seconds": 0.0002109999768435955,
+      "stats": {
+        "decisions": 3,
+        "boolean_props": 7,
+        "conflicts": 4,
+        "learned_clauses": 3,
+        "learned_literals": 5,
+        "resolution_steps": 7,
+        "backjumps": 3
+      }
+    },
+    {
+      "name": "all_assignments_n4",
+      "family": "all_assignments",
+      "parameter": 4,
+      "nvars": 4,
+      "clause_count": 16,
+      "input_literals": 64,
+      "status": "UNSAT",
+      "proof_events": 8,
+      "elapsed_seconds": 0.0006715999916195869,
+      "stats": {
+        "decisions": 7,
+        "boolean_props": 15,
+        "conflicts": 8,
+        "learned_clauses": 7,
+        "learned_literals": 17,
+        "resolution_steps": 15,
+        "backjumps": 7
+      }
+    },
+    {
+      "name": "all_assignments_n5",
+      "family": "all_assignments",
+      "parameter": 5,
+      "nvars": 5,
+      "clause_count": 32,
+      "input_literals": 160,
+      "status": "UNSAT",
+      "proof_events": 16,
+      "elapsed_seconds": 0.0021565002389252186,
+      "stats": {
+        "decisions": 15,
+        "boolean_props": 31,
+        "conflicts": 16,
+        "learned_clauses": 15,
+        "learned_literals": 49,
+        "resolution_steps": 31,
+        "backjumps": 15
+      }
+    },
+    {
+      "name": "all_assignments_n6",
+      "family": "all_assignments",
+      "parameter": 6,
+      "nvars": 6,
+      "clause_count": 64,
+      "input_literals": 384,
+      "status": "UNSAT",
+      "proof_events": 32,
+      "elapsed_seconds": 0.007992899976670742,
+      "stats": {
+        "decisions": 31,
+        "boolean_props": 63,
+        "conflicts": 32,
+        "learned_clauses": 31,
+        "learned_literals": 129,
+        "resolution_steps": 63,
+        "backjumps": 31
+      }
+    },
+    {
+      "name": "all_assignments_n7",
+      "family": "all_assignments",
+      "parameter": 7,
+      "nvars": 7,
+      "clause_count": 128,
+      "input_literals": 896,
+      "status": "UNSAT",
+      "proof_events": 64,
+      "elapsed_seconds": 0.027474400121718645,
+      "stats": {
+        "decisions": 63,
+        "boolean_props": 127,
+        "conflicts": 64,
+        "learned_clauses": 63,
+        "learned_literals": 321,
+        "resolution_steps": 127,
+        "backjumps": 63
+      }
+    },
+    {
+      "name": "all_assignments_n8",
+      "family": "all_assignments",
+      "parameter": 8,
+      "nvars": 8,
+      "clause_count": 256,
+      "input_literals": 2048,
+      "status": "UNSAT",
+      "proof_events": 128,
+      "elapsed_seconds": 0.10328340018168092,
+      "stats": {
+        "decisions": 127,
+        "boolean_props": 255,
+        "conflicts": 128,
+        "learned_clauses": 127,
+        "learned_literals": 769,
+        "resolution_steps": 255,
+        "backjumps": 127
+      }
+    },
+    {
+      "name": "all_assignments_n9",
+      "family": "all_assignments",
+      "parameter": 9,
+      "nvars": 9,
+      "clause_count": 512,
+      "input_literals": 4608,
+      "status": "UNSAT",
+      "proof_events": 256,
+      "elapsed_seconds": 0.4013803997077048,
+      "stats": {
+        "decisions": 255,
+        "boolean_props": 511,
+        "conflicts": 256,
+        "learned_clauses": 255,
+        "learned_literals": 1793,
+        "resolution_steps": 511,
+        "backjumps": 255
+      }
+    },
+    {
+      "name": "all_assignments_n10",
+      "family": "all_assignments",
+      "parameter": 10,
+      "nvars": 10,
+      "clause_count": 1024,
+      "input_literals": 10240,
+      "status": "UNSAT",
+      "proof_events": 512,
+      "elapsed_seconds": 1.5212268000468612,
+      "stats": {
+        "decisions": 511,
+        "boolean_props": 1023,
+        "conflicts": 512,
+        "learned_clauses": 511,
+        "learned_literals": 4097,
+        "resolution_steps": 1023,
+        "backjumps": 511
+      }
+    },
+    {
+      "name": "pigeonhole_2_1",
+      "family": "pigeonhole",
+      "parameter": 1,
+      "nvars": 2,
+      "clause_count": 3,
+      "input_literals": 4,
+      "status": "UNSAT",
+      "proof_events": 1,
+      "elapsed_seconds": 3.389967605471611e-05,
+      "stats": {
+        "decisions": 0,
+        "boolean_props": 2,
+        "conflicts": 1,
+        "learned_clauses": 0,
+        "learned_literals": 0,
+        "resolution_steps": 2,
+        "backjumps": 0
+      },
+      "pigeons": 2,
+      "holes": 1
+    },
+    {
+      "name": "pigeonhole_3_2",
+      "family": "pigeonhole",
+      "parameter": 2,
+      "nvars": 6,
+      "clause_count": 12,
+      "input_literals": 24,
+      "status": "UNSAT",
+      "proof_events": 2,
+      "elapsed_seconds": 0.00018349988386034966,
+      "stats": {
+        "decisions": 1,
+        "boolean_props": 11,
+        "conflicts": 2,
+        "learned_clauses": 1,
+        "learned_literals": 1,
+        "resolution_steps": 10,
+        "backjumps": 1
+      },
+      "pigeons": 3,
+      "holes": 2
+    },
+    {
+      "name": "pigeonhole_4_3",
+      "family": "pigeonhole",
+      "parameter": 3,
+      "nvars": 12,
+      "clause_count": 34,
+      "input_literals": 72,
+      "status": "UNSAT",
+      "proof_events": 6,
+      "elapsed_seconds": 0.0012423000298440456,
+      "stats": {
+        "decisions": 6,
+        "boolean_props": 47,
+        "conflicts": 6,
+        "learned_clauses": 5,
+        "learned_literals": 11,
+        "resolution_steps": 42,
+        "backjumps": 5
+      },
+      "pigeons": 4,
+      "holes": 3
+    },
+    {
+      "name": "pigeonhole_5_4",
+      "family": "pigeonhole",
+      "parameter": 4,
+      "nvars": 20,
+      "clause_count": 75,
+      "input_literals": 160,
+      "status": "UNSAT",
+      "proof_events": 18,
+      "elapsed_seconds": 0.008101100102066994,
+      "stats": {
+        "decisions": 24,
+        "boolean_props": 181,
+        "conflicts": 18,
+        "learned_clauses": 17,
+        "learned_literals": 65,
+        "resolution_steps": 164,
+        "backjumps": 17
+      },
+      "pigeons": 5,
+      "holes": 4
+    },
+    {
+      "name": "pigeonhole_6_5",
+      "family": "pigeonhole",
+      "parameter": 5,
+      "nvars": 30,
+      "clause_count": 141,
+      "input_literals": 300,
+      "status": "UNSAT",
+      "proof_events": 50,
+      "elapsed_seconds": 0.04663940006867051,
+      "stats": {
+        "decisions": 80,
+        "boolean_props": 639,
+        "conflicts": 50,
+        "learned_clauses": 49,
+        "learned_literals": 289,
+        "resolution_steps": 590,
+        "backjumps": 49
+      },
+      "pigeons": 6,
+      "holes": 5
+    },
+    {
+      "name": "pigeonhole_7_6",
+      "family": "pigeonhole",
+      "parameter": 6,
+      "nvars": 42,
+      "clause_count": 238,
+      "input_literals": 504,
+      "status": "UNSAT",
+      "proof_events": 130,
+      "elapsed_seconds": 0.25640320032835007,
+      "stats": {
+        "decisions": 240,
+        "boolean_props": 2091,
+        "conflicts": 130,
+        "learned_clauses": 129,
+        "learned_literals": 1089,
+        "resolution_steps": 1962,
+        "backjumps": 129
+      },
+      "pigeons": 7,
+      "holes": 6
+    },
+    {
+      "name": "pigeonhole_8_7",
+      "family": "pigeonhole",
+      "parameter": 7,
+      "nvars": 56,
+      "clause_count": 372,
+      "input_literals": 784,
+      "status": "UNSAT",
+      "proof_events": 322,
+      "elapsed_seconds": 1.3843501000665128,
+      "stats": {
+        "decisions": 672,
+        "boolean_props": 6425,
+        "conflicts": 322,
+        "learned_clauses": 321,
+        "learned_literals": 3681,
+        "resolution_steps": 6104,
+        "backjumps": 321
+      },
+      "pigeons": 8,
+      "holes": 7
+    },
+    {
+      "name": "pigeonhole_9_8",
+      "family": "pigeonhole",
+      "parameter": 8,
+      "nvars": 72,
+      "clause_count": 549,
+      "input_literals": 1152,
+      "status": "UNSAT",
+      "proof_events": 770,
+      "elapsed_seconds": 7.728615100029856,
+      "stats": {
+        "decisions": 1792,
+        "boolean_props": 18761,
+        "conflicts": 770,
+        "learned_clauses": 769,
+        "learned_literals": 11521,
+        "resolution_steps": 17992,
+        "backjumps": 769
+      },
+      "pigeons": 9,
+      "holes": 8
+    }
+  ],
+  "all_cases_unsat": true,
+  "source_sha256": {
+    "proof_complexity_scaling_lab/families.py": "c0fc23e87446466e335ab42aecfadaf48d0fec72b0a26ff7a443977b34544f49",
+    "proof_complexity_scaling_lab/run_scaling.py": "b49fb89238f07bdee78f3d28ad19720a2c430d2a5eb10c1f75930827694414d6",
+    "proof_complexity_scaling_lab/review_scaling.py": "526cf7599146dcc06d86ec453f43d0178352698c38e127a69e10c1d93ea9fef8",
+    "proof_complexity_scaling_lab/test_scaling.py": "508036163efcccee8a7ecb16ae5ccc416b15af9d436b380c661f35ad8074494f",
+    "proof_complexity_scaling_lab/THEOREM.md": "2bbe24f1aa0155a544999e3c25b4b6310de8198f6cc5676140c06d4536d9b965",
+    "proof_producing_cdcl_lab/cdcl.py": "4740cc51c6ea0f13f777351ab7fdb19ae3e5eb4ae099274868e18c84846ad57f"
+  }
+}
