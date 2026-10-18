@@ -14,7 +14,7 @@
         -1
       ]
     ],
-    "elapsed_seconds": 3.310013562440872e-05,
+    "elapsed_seconds": 3.6700163036584854e-05,
     "result": {
       "status": "UNSAT",
       "model": null,
@@ -82,7 +82,7 @@
         -2
       ]
     ],
-    "elapsed_seconds": 7.389998063445091e-05,
+    "elapsed_seconds": 7.760012522339821e-05,
     "result": {
       "status": "UNSAT",
       "model": null,
@@ -228,7 +228,7 @@
         -3
       ]
     ],
-    "elapsed_seconds": 0.0002109999768435955,
+    "elapsed_seconds": 0.00021789968013763428,
     "result": {
       "status": "UNSAT",
       "model": null,
@@ -560,7 +560,7 @@
         -4
       ]
     ],
-    "elapsed_seconds": 0.0006715999916195869,
+    "elapsed_seconds": 0.0006970004178583622,
     "result": {
       "status": "UNSAT",
       "model": null,
@@ -1324,7 +1324,7 @@
         -5
       ]
     ],
-    "elapsed_seconds": 0.0021565002389252186,
+    "elapsed_seconds": 0.002224100288003683,
     "result": {
       "status": "UNSAT",
       "model": null,
@@ -3072,7 +3072,7 @@
         -6
       ]
     ],
-    "elapsed_seconds": 0.007992899976670742,
+    "elapsed_seconds": 0.00802359962835908,
     "result": {
       "status": "UNSAT",
       "model": null,
@@ -7028,7 +7028,7 @@
         -7
       ]
     ],
-    "elapsed_seconds": 0.027474400121718645,
+    "elapsed_seconds": 0.02783469995483756,
     "result": {
       "status": "UNSAT",
       "model": null,
@@ -15880,7 +15880,7 @@
         -8
       ]
     ],
-    "elapsed_seconds": 0.10328340018168092,
+    "elapsed_seconds": 0.10377309983596206,
     "result": {
       "status": "UNSAT",
       "model": null,
@@ -35484,7 +35484,7 @@
         -9
       ]
     ],
-    "elapsed_seconds": 0.4013803997077048,
+    "elapsed_seconds": 0.4026029002852738,
     "result": {
       "status": "UNSAT",
       "model": null,
@@ -78512,7 +78512,7 @@
         -10
       ]
     ],
-    "elapsed_seconds": 1.5212268000468612,
+    "elapsed_seconds": 1.528325299732387,
     "result": {
       "status": "UNSAT",
       "model": null,
@@ -145614,7 +145614,7 @@
         -2
       ]
     ],
-    "elapsed_seconds": 3.389967605471611e-05,
+    "elapsed_seconds": 3.310013562440872e-05,
     "result": {
       "status": "UNSAT",
       "model": null,
@@ -145732,7 +145732,7 @@
         -6
       ]
     ],
-    "elapsed_seconds": 0.00018349988386034966,
+    "elapsed_seconds": 0.0001850002445280552,
     "result": {
       "status": "UNSAT",
       "model": null,
@@ -146113,7 +146113,7 @@
         -12
       ]
     ],
-    "elapsed_seconds": 0.0012423000298440456,
+    "elapsed_seconds": 0.0012575001455843449,
     "result": {
       "status": "UNSAT",
       "model": null,
@@ -147418,7 +147418,7 @@
         -20
       ]
     ],
-    "elapsed_seconds": 0.008101100102066994,
+    "elapsed_seconds": 0.008125499822199345,
     "result": {
       "status": "UNSAT",
       "model": null,
@@ -152267,7 +152267,7 @@
         -30
       ]
     ],
-    "elapsed_seconds": 0.04663940006867051,
+    "elapsed_seconds": 0.047433600295335054,
     "result": {
       "status": "UNSAT",
       "model": null,
@@ -171110,7 +171110,7 @@
         -42
       ]
     ],
-    "elapsed_seconds": 0.25640320032835007,
+    "elapsed_seconds": 0.2579346001148224,
     "result": {
       "status": "UNSAT",
       "model": null,
@@ -243448,7 +243448,7 @@
         -56
       ]
     ],
-    "elapsed_seconds": 1.3843501000665128,
+    "elapsed_seconds": 1.3830520999617875,
     "result": {
       "status": "UNSAT",
       "model": null,
@@ -509558,7 +509558,7 @@
         -72
       ]
     ],
-    "elapsed_seconds": 7.728615100029856,
+    "elapsed_seconds": 7.6407693000510335,
     "result": {
       "status": "UNSAT",
       "model": null,

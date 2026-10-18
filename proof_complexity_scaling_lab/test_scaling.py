@@ -11,6 +11,11 @@ from review_scaling import expected_all_assignment_stats, replay
 HERE = Path(__file__).resolve().parent
 
 
+def normalized_sha256(path):
+    text = path.read_text(encoding="utf-8")
+    return hashlib.sha256(text.replace("\r\n", "\n").replace("\r", "\n").encode()).hexdigest()
+
+
 class ScalingTests(unittest.TestCase):
     def test_family_sizes_are_exact(self):
         self.assertEqual(len(all_assignment_clauses(5)), 32)
@@ -48,8 +53,14 @@ class ScalingTests(unittest.TestCase):
 
     def test_runtime_chart_tracks_scaling_artifact(self):
         chart = json.loads((HERE.parent / "assets/data/scaling-runtime.json").read_text(encoding="utf-8"))
-        digest = hashlib.sha256((HERE / "SCALING_RESULTS.json").read_bytes()).hexdigest()
-        self.assertEqual(chart["source_sha256"]["proof_complexity_scaling_lab/SCALING_RESULTS.json"], digest)
+        self.assertEqual(
+            chart["source_sha256"]["proof_complexity_scaling_lab/SCALING_RESULTS.json"],
+            normalized_sha256(HERE / "SCALING_RESULTS.json"),
+        )
+        self.assertEqual(
+            chart["source_sha256"]["NATIVE_RESULTS.json"],
+            normalized_sha256(HERE.parent / "NATIVE_RESULTS.json"),
+        )
         self.assertTrue(any(dataset["id"] == "cdcl-pigeonhole" for dataset in chart["datasets"]))
 
 

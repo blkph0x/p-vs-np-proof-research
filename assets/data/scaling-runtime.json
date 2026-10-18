@@ -5,8 +5,8 @@
     "proof_complexity_scaling_lab/SCALING_RESULTS.json"
   ],
   "source_sha256": {
-    "NATIVE_RESULTS.json": "2820f7b32c2cf5dbe0d1caba65cee3435cbc60f74bfe2e008059e728d8d24be2",
-    "proof_complexity_scaling_lab/SCALING_RESULTS.json": "dac988e1b55fa028c886a073a55ff7b82633fe4eb54d034fe8806bd53d5a3f9f"
+    "NATIVE_RESULTS.json": "370dc2b313b7c47052b9da3030c892611b12713bc8626b707cf64734589a4002",
+    "proof_complexity_scaling_lab/SCALING_RESULTS.json": "26c86346df659fa68e4dcbf2d524e25a4c89de723a7e59fd6c1a6cf0d73f2f3d"
   },
   "generated_utc": "2026-10-18T00:00:00Z",
   "x_axes": {
@@ -142,7 +142,7 @@
         {
           "x": 1,
           "dimension": 1,
-          "runtime_seconds": 3.310013562440872e-05,
+          "runtime_seconds": 3.6700163036584854e-05,
           "status": "EXACT",
           "label": "CDCL all-assignment n=1",
           "proof_events": 1,
@@ -152,7 +152,7 @@
         {
           "x": 2,
           "dimension": 2,
-          "runtime_seconds": 7.389998063445091e-05,
+          "runtime_seconds": 7.760012522339821e-05,
           "status": "EXACT",
           "label": "CDCL all-assignment n=2",
           "proof_events": 2,
@@ -162,7 +162,7 @@
         {
           "x": 3,
           "dimension": 3,
-          "runtime_seconds": 0.0002109999768435955,
+          "runtime_seconds": 0.00021789968013763428,
           "status": "EXACT",
           "label": "CDCL all-assignment n=3",
           "proof_events": 4,
@@ -172,7 +172,7 @@
         {
           "x": 4,
           "dimension": 4,
-          "runtime_seconds": 0.0006715999916195869,
+          "runtime_seconds": 0.0006970004178583622,
           "status": "EXACT",
           "label": "CDCL all-assignment n=4",
           "proof_events": 8,
@@ -182,7 +182,7 @@
         {
           "x": 5,
           "dimension": 5,
-          "runtime_seconds": 0.0021565002389252186,
+          "runtime_seconds": 0.002224100288003683,
           "status": "EXACT",
           "label": "CDCL all-assignment n=5",
           "proof_events": 16,
@@ -192,7 +192,7 @@
         {
           "x": 6,
           "dimension": 6,
-          "runtime_seconds": 0.007992899976670742,
+          "runtime_seconds": 0.00802359962835908,
           "status": "EXACT",
           "label": "CDCL all-assignment n=6",
           "proof_events": 32,
@@ -202,7 +202,7 @@
         {
           "x": 7,
           "dimension": 7,
-          "runtime_seconds": 0.027474400121718645,
+          "runtime_seconds": 0.02783469995483756,
           "status": "EXACT",
           "label": "CDCL all-assignment n=7",
           "proof_events": 64,
@@ -212,7 +212,7 @@
         {
           "x": 8,
           "dimension": 8,
-          "runtime_seconds": 0.10328340018168092,
+          "runtime_seconds": 0.10377309983596206,
           "status": "EXACT",
           "label": "CDCL all-assignment n=8",
           "proof_events": 128,
@@ -222,7 +222,7 @@
         {
           "x": 9,
           "dimension": 9,
-          "runtime_seconds": 0.4013803997077048,
+          "runtime_seconds": 0.4026029002852738,
           "status": "EXACT",
           "label": "CDCL all-assignment n=9",
           "proof_events": 256,
@@ -232,7 +232,7 @@
         {
           "x": 10,
           "dimension": 10,
-          "runtime_seconds": 1.5212268000468612,
+          "runtime_seconds": 1.528325299732387,
           "status": "EXACT",
           "label": "CDCL all-assignment n=10",
           "proof_events": 512,
@@ -248,7 +248,7 @@
         {
           "x": 2,
           "dimension": 1,
-          "runtime_seconds": 3.389967605471611e-05,
+          "runtime_seconds": 3.310013562440872e-05,
           "status": "EXACT",
           "label": "CDCL PHP 2 into 1",
           "proof_events": 1,
@@ -258,7 +258,7 @@
         {
           "x": 6,
           "dimension": 2,
-          "runtime_seconds": 0.00018349988386034966,
+          "runtime_seconds": 0.0001850002445280552,
           "status": "EXACT",
           "label": "CDCL PHP 3 into 2",
           "proof_events": 2,
@@ -268,7 +268,7 @@
         {
           "x": 12,
           "dimension": 3,
-          "runtime_seconds": 0.0012423000298440456,
+          "runtime_seconds": 0.0012575001455843449,
           "status": "EXACT",
           "label": "CDCL PHP 4 into 3",
           "proof_events": 6,
@@ -278,7 +278,7 @@
         {
           "x": 20,
           "dimension": 4,
-          "runtime_seconds": 0.008101100102066994,
+          "runtime_seconds": 0.008125499822199345,
           "status": "EXACT",
           "label": "CDCL PHP 5 into 4",
           "proof_events": 18,
@@ -288,7 +288,7 @@
         {
           "x": 30,
           "dimension": 5,
-          "runtime_seconds": 0.04663940006867051,
+          "runtime_seconds": 0.047433600295335054,
           "status": "EXACT",
           "label": "CDCL PHP 6 into 5",
           "proof_events": 50,
@@ -298,7 +298,7 @@
         {
           "x": 42,
           "dimension": 6,
-          "runtime_seconds": 0.25640320032835007,
+          "runtime_seconds": 0.2579346001148224,
           "status": "EXACT",
           "label": "CDCL PHP 7 into 6",
           "proof_events": 130,
@@ -308,7 +308,7 @@
         {
           "x": 56,
           "dimension": 7,
-          "runtime_seconds": 1.3843501000665128,
+          "runtime_seconds": 1.3830520999617875,
           "status": "EXACT",
           "label": "CDCL PHP 8 into 7",
           "proof_events": 322,
@@ -318,7 +318,7 @@
         {
           "x": 72,
           "dimension": 8,
-          "runtime_seconds": 7.728615100029856,
+          "runtime_seconds": 7.6407693000510335,
           "status": "EXACT",
           "label": "CDCL PHP 9 into 8",
           "proof_events": 770,

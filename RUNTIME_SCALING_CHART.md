@@ -14,7 +14,9 @@ symbols. UNKNOWN means that the native branch cap stopped the run; it must not
 be read as an exact answer, a lower bound, or evidence of an asymptotic runtime
 class. Measurements are wall-clock observations from the saved producer
 artifacts and are not a polynomial-time proof. The CDCL series are replayed
-resolution traces for one deterministic implementation.
+resolution traces for one deterministic implementation. Source hashes use the
+normalized UTF-8 text with LF line endings so the check is stable across
+Windows and Linux checkouts.
 
 When a new artifact is accepted:
 

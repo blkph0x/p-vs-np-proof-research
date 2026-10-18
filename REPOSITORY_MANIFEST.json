@@ -454,8 +454,8 @@
       "sha256": "73570b412657e9acced9ff103f34cd9f604ca2c603c4bba122c323c788c3631a"
     },
     "RUNTIME_SCALING_CHART.md": {
-      "bytes": 1367,
-      "sha256": "2db8618dc3aaf88b80b9ed930190f91b65406ea0896b9d8c12fae266ea3f81dc"
+      "bytes": 1491,
+      "sha256": "99e5735820e70c4394c7b89cc9543d99b7dfefb2c0f63a5dba7112c5032e9406"
     },
     "SEMANTIC_CERTIFICATE_REPAIR.json": {
       "bytes": 4374,
@@ -487,11 +487,11 @@
     },
     "TEST_OUTPUT.txt": {
       "bytes": 41327,
-      "sha256": "63e0f63a40235223921e3002f5354e0a4372496bb049e5b99850e3dbea110167"
+      "sha256": "dc9b485dedec71b8036c8171239b864368118e2cd810a80a6a0ffd22bccf2c1a"
     },
     "TEST_SUMMARY.json": {
-      "bytes": 34545,
-      "sha256": "da27bc3c5e8b4c1c3a1f4d8f7d3d202d731ae6fc4659d60a21e302a51d68e3c4"
+      "bytes": 34544,
+      "sha256": "4b6c9a217dd8cc4349a6204c3878a9bcb16081f2a5c0fd90abd23706a400a9f8"
     },
     "THEORY_REVIEW.md": {
       "bytes": 18223,
@@ -1358,8 +1358,8 @@
       "sha256": "2ff66d7c359c62b1fd51aa3b7e01c928007911f17851cf7a9512fa3ded0b404e"
     },
     "assets/data/scaling-runtime.json": {
-      "bytes": 9617,
-      "sha256": "b2bc928bad21566fb774dedcbaf4344ce962e48268dd711660cc7554799394aa"
+      "bytes": 9615,
+      "sha256": "88e7bfc35b64f74a4b12748782e7e6c52972a17b40ae41ec2227afaab3b8ec09"
     },
     "assets/js/scaling-chart.js": {
       "bytes": 8008,
@@ -2698,16 +2698,16 @@
       "sha256": "91eacc2114ebcbe202baed0ad653887c4bded2e9bfc8d6432e0c2333c0f78706"
     },
     "proof_complexity_scaling_lab/SCALING_CERTIFICATES.json": {
-      "bytes": 29320132,
-      "sha256": "45d80c489ff9902f3ebef0b28a26691429bc351f36ce1f080dba40bfed39353a"
+      "bytes": 29320130,
+      "sha256": "4bb1642952ab1f9053d077f328ce4cb6800fdb5af3e0609c67cb3aa6f546773a"
     },
     "proof_complexity_scaling_lab/SCALING_REPORT.md": {
       "bytes": 1683,
-      "sha256": "0ba8bc00bfaa6ffc2f93c0a5ca919b10b3ea96674db5600ea3623c1cd58a1c76"
+      "sha256": "0a65d04f2244208943de2f9c61fef79e2c10d20d17e16281573f18112d577df4"
     },
     "proof_complexity_scaling_lab/SCALING_RESULTS.json": {
-      "bytes": 10472,
-      "sha256": "dac988e1b55fa028c886a073a55ff7b82633fe4eb54d034fe8806bd53d5a3f9f"
+      "bytes": 10470,
+      "sha256": "92032cbabf0b7fdfc965349e1552baea0c90dd875958bee6c8c262ee0de5a691"
     },
     "proof_complexity_scaling_lab/SCALING_REVIEW.json": {
       "bytes": 135,
@@ -2730,8 +2730,8 @@
       "sha256": "b49fb89238f07bdee78f3d28ad19720a2c430d2a5eb10c1f75930827694414d6"
     },
     "proof_complexity_scaling_lab/test_scaling.py": {
-      "bytes": 2473,
-      "sha256": "508036163efcccee8a7ecb16ae5ccc416b15af9d436b380c661f35ad8074494f"
+      "bytes": 2793,
+      "sha256": "83b97857acfb1574d6a5e0f39fb829688604b71f1ac633fabb3ec3538b80d043"
     },
     "proof_motif_candidate_lab/CATALOG_RESULTS.json": {
       "bytes": 826,
@@ -4210,6 +4210,6 @@
       "sha256": "957bd3b51cbf2cd06ee00f1ef47ab5c6fa8bbf1a4c281c0e67b129b027785a18"
     }
   },
-  "generated_at_utc": "2026-10-18T14:43:49.201918+00:00",
-  "source_commit": "bbfa8dc01635f4517ef239f226244166c99169ea"
+  "generated_at_utc": "2026-10-18T14:58:38.258277+00:00",
+  "source_commit": "d95985e251949f06ca52d1507fac89e9162825e2"
 }
