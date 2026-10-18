@@ -375,7 +375,7 @@
     },
     "README.md": {
       "bytes": 41933,
-      "sha256": "da865972d9b6f0e842409742c2a43bc44a70434f5d07a986bd73eaf37c7516d7"
+      "sha256": "d858dc60b209dca93c49afc5c551eddca160b762e16d6201b059842b51f7532e"
     },
     "REGULAR_LDPC_33_LOCAL_AUDIT.json": {
       "bytes": 5015,
@@ -411,11 +411,11 @@
     },
     "REPORT.md": {
       "bytes": 34920,
-      "sha256": "fbd56032639d35b2e7eb5da0d675d843323831850e36b383a28850d9342dc240"
+      "sha256": "ffb2ac92ec8ad2e95ac0c019d73ef396bf35ad9ea43dff724494bd91507f1e1a"
     },
     "REPRODUCIBILITY.md": {
       "bytes": 2570,
-      "sha256": "6a0f452c6d2f01971c48be0e61c5251a23ea985f1652d77db869f28ea82982b1"
+      "sha256": "77c6e22d95a97e98ddebe90cf55ce435a019e6084399629fa929c22065b16fe2"
     },
     "RESIDUAL_EQUIVALENCE_BARRIER.json": {
       "bytes": 106347,
@@ -2115,7 +2115,7 @@
     },
     "index.md": {
       "bytes": 5033,
-      "sha256": "d97155737b668ed68f442d2df895490cd989b44263a65cd9869dde6f042c69e3"
+      "sha256": "ba25b3e205859a5bc7adcba0232b8af1bad3c5d43753d1010d9ff0ab0e3593f9"
     },
     "interval_coefficient_lab/INDEPENDENT_REVIEW.md": {
       "bytes": 7681,
@@ -4242,6 +4242,6 @@
       "sha256": "957bd3b51cbf2cd06ee00f1ef47ab5c6fa8bbf1a4c281c0e67b129b027785a18"
     }
   },
-  "generated_at_utc": "2026-10-18T15:25:15.160250+00:00",
-  "source_commit": "30e9285e86d04abb13c92a5fea731181992c6033"
+  "generated_at_utc": "2026-10-18T15:29:11.582941+00:00",
+  "source_commit": "fbbb595ad9974541d0f44734ac9c0c210c8cd376"
 }
