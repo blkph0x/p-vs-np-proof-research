@@ -15,7 +15,7 @@
 - Use [`CITATIONS.md`](CITATIONS.md) and [`PUBLIC_SOURCES.md`](PUBLIC_SOURCES.md)
   for public sources and the reports that use them.
 - Follow [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) to replay the checks from a
-  fresh checkout. The current frozen run has 325 passing methods across 33
+  fresh checkout. The current frozen run has 333 passing methods across 33
   suites; the full audit is intentionally separate from the lighter continuous
   integration checks, and all of its suite dependencies are included in this
   repository.
@@ -233,7 +233,7 @@ requests are saved separately from this phase's 140-test run. Follow-up proofs a
 The [odd-NOT-cycle control](matching_composition_controls/THEOREM.md) supplies
 an explicit global false positive for naive wiring of promised-domain gadgets.
 
-The sibling [typed-merge planner](../typed_merge_planner_lab/REPORT.md) now
+The sibling [typed-merge planner](typed_merge_planner_lab/REPORT.md) now
 also exhausts the one-bridge Horn/affine factorization pattern for positive
 exact-one and rejects all four finite orientations. Its two-bridge follow-up
 finds exact-one witnesses in all four orientations, proving a sharp local
@@ -244,16 +244,23 @@ frontier DP and independent certificate replay now cover the same reductions
 under supplied orders. An exact subset order oracle reconstructs optimal orders
 and preserves its exponential discovery cost in the saved evidence.
 
-The companion [horn_cdclt_lab](../horn_cdclt_lab/REPORT.md) turns that reduction into a
+The typed planner now also has a supplied strong-backdoor route. For a
+backdoor of size `k`, the proof-producing solver enumerates `2^k` assignments,
+checks every residual relation, and uses native Horn forward chaining or GF(2)
+elimination. Its saved SAT, UNSAT, and conservative `UNKNOWN` cases are
+independently replayed in `typed_merge_planner_lab/BACKDOOR_REVIEW.py`; finding
+such a backdoor for arbitrary SAT remains outside the claim.
+
+The companion [horn_cdclt_lab](horn_cdclt_lab/REPORT.md) turns that reduction into a
 proof-producing Horn-plus-GF(2) portfolio. Its independent replay verifies every emitted
 certificate and confirms the exact-one projection on the full truth table. This is a
 complexity barrier for the generic portfolio route, not a P=NP result.
 
 Its follow-up CDCL(T) extension adds replayable first-UIP resolution proofs. The saved
 3-coloring controls show substantial search compression while retaining the exact-one
-hardness barrier; see [CDCL_REVIEW.json](../horn_cdclt_lab/CDCL_REVIEW.json).
+hardness barrier; see [CDCL_REVIEW.json](horn_cdclt_lab/CDCL_REVIEW.json).
 The same lab's finite polymorphism audit finds only projections common to the fixed
-relations through arity four; this is recorded in [POLYMORPHISM_REVIEW.json](../horn_cdclt_lab/POLYMORPHISM_REVIEW.json).
+relations through arity four; this is recorded in [POLYMORPHISM_REVIEW.json](horn_cdclt_lab/POLYMORPHISM_REVIEW.json).
 
 The next phase adds [scalar threshold controls](threshold_composition_lab/THEOREM.md),
 [promised clause saturation](saturated_clause_limits/THEOREM.md),

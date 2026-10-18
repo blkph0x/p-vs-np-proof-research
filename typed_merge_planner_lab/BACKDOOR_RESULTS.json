@@ -1,0 +1,412 @@
+{
+  "schema": "strong_schaefer_backdoor_v1",
+  "status": "PASS",
+  "cases": [
+    {
+      "name": "exact_one_affine_sat",
+      "n": 5,
+      "constraints": [
+        {
+          "scope": [
+            0,
+            1,
+            2
+          ],
+          "relation": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "scope": [
+            2,
+            3,
+            4
+          ],
+          "relation": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "backdoor": [
+        2
+      ],
+      "target": "AFFINE",
+      "expected_status": "SAT",
+      "result": {
+        "status": "SAT",
+        "target": "AFFINE",
+        "backdoor": [
+          2
+        ],
+        "branches": [
+          {
+            "assignment": [
+              0
+            ],
+            "residual_signatures": [
+              [
+                "MAJ",
+                "MIN"
+              ],
+              [
+                "MAJ",
+                "MIN"
+              ]
+            ],
+            "status": "SAT",
+            "witness": [
+              1,
+              0,
+              0,
+              1,
+              0
+            ]
+          }
+        ],
+        "witness": [
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "parameter_k": 1,
+        "branch_budget": 2,
+        "enumerated_assignments": 1
+      }
+    },
+    {
+      "name": "exact_one_affine_unsat",
+      "n": 3,
+      "constraints": [
+        {
+          "scope": [
+            0,
+            1,
+            2
+          ],
+          "relation": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "scope": [
+            0,
+            1,
+            2
+          ],
+          "relation": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0
+            ]
+          ]
+        }
+      ],
+      "backdoor": [
+        0,
+        1
+      ],
+      "target": "AFFINE",
+      "expected_status": "UNSAT",
+      "result": {
+        "status": "UNSAT",
+        "target": "AFFINE",
+        "backdoor": [
+          0,
+          1
+        ],
+        "branches": [
+          {
+            "assignment": [
+              0,
+              0
+            ],
+            "residual_signatures": [
+              [
+                "AND",
+                "MAJ",
+                "MIN",
+                "ONE",
+                "OR"
+              ],
+              [
+                "AND",
+                "MAJ",
+                "MIN",
+                "OR"
+              ]
+            ],
+            "status": "UNSAT"
+          },
+          {
+            "assignment": [
+              0,
+              1
+            ],
+            "residual_signatures": [
+              [
+                "AND",
+                "MAJ",
+                "MIN",
+                "OR",
+                "ZERO"
+              ],
+              [
+                "AND",
+                "MAJ",
+                "MIN",
+                "ONE",
+                "OR"
+              ]
+            ],
+            "status": "UNSAT"
+          },
+          {
+            "assignment": [
+              1,
+              0
+            ],
+            "residual_signatures": [
+              [
+                "AND",
+                "MAJ",
+                "MIN",
+                "OR",
+                "ZERO"
+              ],
+              [
+                "AND",
+                "MAJ",
+                "MIN",
+                "ONE",
+                "OR"
+              ]
+            ],
+            "status": "UNSAT"
+          },
+          {
+            "assignment": [
+              1,
+              1
+            ],
+            "residual_signatures": [
+              [
+                "AND",
+                "MAJ",
+                "MIN",
+                "OR"
+              ],
+              [
+                "AND",
+                "MAJ",
+                "MIN",
+                "OR",
+                "ZERO"
+              ]
+            ],
+            "status": "UNSAT"
+          }
+        ],
+        "parameter_k": 2,
+        "branch_budget": 4,
+        "enumerated_assignments": 4
+      }
+    },
+    {
+      "name": "unassigned_exact_one_unknown",
+      "n": 3,
+      "constraints": [
+        {
+          "scope": [
+            0,
+            1,
+            2
+          ],
+          "relation": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "backdoor": [],
+      "target": "AFFINE",
+      "expected_status": "UNKNOWN",
+      "result": {
+        "status": "UNKNOWN",
+        "reason": "NOT_STRONG_BACKDOOR",
+        "target": "AFFINE",
+        "backdoor": [],
+        "parameter_k": 0,
+        "branch_budget": 1,
+        "branches": [
+          {
+            "assignment": [],
+            "residual_signatures": [
+              []
+            ],
+            "status": "NOT_TARGET",
+            "counterexample": {
+              "constraint": 0,
+              "scope": [
+                0,
+                1,
+                2
+              ],
+              "signature": []
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "horn_implication_sat",
+      "n": 2,
+      "constraints": [
+        {
+          "scope": [
+            0,
+            1
+          ],
+          "relation": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "scope": [
+            1
+          ],
+          "relation": [
+            [
+              1
+            ]
+          ]
+        }
+      ],
+      "backdoor": [],
+      "target": "HORN",
+      "expected_status": "SAT",
+      "result": {
+        "status": "SAT",
+        "target": "HORN",
+        "backdoor": [],
+        "branches": [
+          {
+            "assignment": [],
+            "residual_signatures": [
+              [
+                "AND",
+                "MAJ",
+                "ONE",
+                "OR",
+                "ZERO"
+              ],
+              [
+                "AND",
+                "MAJ",
+                "MIN",
+                "ONE",
+                "OR"
+              ]
+            ],
+            "status": "SAT",
+            "witness": [
+              0,
+              1
+            ]
+          }
+        ],
+        "witness": [
+          0,
+          1
+        ],
+        "parameter_k": 0,
+        "branch_budget": 1,
+        "enumerated_assignments": 1
+      }
+    }
+  ],
+  "source_sha256": {
+    "backdoor_solver.py": "75f7920b7f597810e5df3bc85198b94ddbd1ad6df9e2c2658d417c0e7c672637",
+    "run_backdoor_audit.py": "11766f18bc2ef7cd62d290e0e27cb1924a58c7817778272c3967c22042738cfa",
+    "BACKDOOR_THEOREM.md": "3159b87c92f9f9f5c585f043bf6fe53664315b79db9e627ff86a772c9ddef062",
+    "test_backdoor_solver.py": "96767d11d3683fc5325a1377e3e188bfa190abbc80918aa1e33a395b393a1a76"
+  }
+}

@@ -32,23 +32,33 @@ The typed-merge follow-up exhaustively rejects every one-bridge Horn/affine
 factorization of the positive exact-one relation across both scope orientations
 and both factor assignments. Its four source-bound searches inspect 1,464,
 728, 728 and 1,464 factor pairs with zero exact-one projections; the independent
-replay is recorded in [BRIDGE_FACTOR_REVIEW.json](../typed_merge_planner_lab/BRIDGE_FACTOR_REVIEW.json).
+replay is recorded in [BRIDGE_FACTOR_REVIEW.json](typed_merge_planner_lab/BRIDGE_FACTOR_REVIEW.json).
 The subsequent two-bridge search reverses that boundary: all four orientations
 contain exact-one witnesses among 37,576, 257,920, 257,920 and 37,576 pairs.
 The explicit witness and independent replay are in
-[TWO_BRIDGE_FACTOR_THEOREM.md](../typed_merge_planner_lab/TWO_BRIDGE_FACTOR_THEOREM.md)
-and [TWO_BRIDGE_FACTOR_REVIEW.json](../typed_merge_planner_lab/TWO_BRIDGE_FACTOR_REVIEW.json).
+[TWO_BRIDGE_FACTOR_THEOREM.md](typed_merge_planner_lab/TWO_BRIDGE_FACTOR_THEOREM.md)
+and [TWO_BRIDGE_FACTOR_REVIEW.json](typed_merge_planner_lab/TWO_BRIDGE_FACTOR_REVIEW.json).
 The fixed gadget's primal graph preserves the original exact-one clause graph's
 pathwidth up to an additive two; all 16 four-variable controls and an
 independent replay satisfy the bound in
-[MIXED_BRIDGE_WIDTH_THEOREM.md](../typed_merge_planner_lab/MIXED_BRIDGE_WIDTH_THEOREM.md).
+[MIXED_BRIDGE_WIDTH_THEOREM.md](typed_merge_planner_lab/MIXED_BRIDGE_WIDTH_THEOREM.md).
 The relation-level frontier DP now solves those same mixed instances with
 proof-producing state/transition certificates under a supplied order; its
 independent replay is recorded in
-[MIXED_RELATION_DP_REVIEW.json](../typed_merge_planner_lab/MIXED_RELATION_DP_REVIEW.json).
+[MIXED_RELATION_DP_REVIEW.json](typed_merge_planner_lab/MIXED_RELATION_DP_REVIEW.json).
 The exact subset order oracle now reconstructs minimum-width orders for the
 same instances and records its `O(n 2^n)` subset/transition work in
-[MIXED_ORDER_DISCOVERY_REVIEW.json](../typed_merge_planner_lab/MIXED_ORDER_DISCOVERY_REVIEW.json).
+[MIXED_ORDER_DISCOVERY_REVIEW.json](typed_merge_planner_lab/MIXED_ORDER_DISCOVERY_REVIEW.json).
+
+The typed planner now includes a supplied strong-backdoor edge. For a
+backdoor of size `k`, every assignment is checked against the requested Horn
+or affine closure, then solved by canonical Horn forward chaining or GF(2)
+elimination. The four saved cases and direct-enumeration replay in
+`typed_merge_planner_lab/BACKDOOR_RESULTS.json` and
+`BACKDOOR_REVIEW.py` establish the explicit
+`2^k * poly(explicit-table-size)` bound while preserving `UNKNOWN` when the
+backdoor condition fails. This is parameterized evidence, not a method for
+discovering small backdoors in arbitrary SAT instances.
 
 The [complete-graph frontier report](linear_frontier_order_lab/COMPLETE_GRAPH_FRONTIER_REPORT.md)
 adds an all-order barrier for the affine residual route. The GF(2) incidence
@@ -75,26 +85,26 @@ and every separating suffix witness. This is a lower bound for OBDD/frontier
 compilation and semantic quotienting; it is still not a lower bound for all SAT
 algorithms.
 
-The new [Horn + affine CDCL(T) audit](../horn_cdclt_lab/REPORT.md) implements a
+The new [Horn + affine CDCL(T) audit](horn_cdclt_lab/REPORT.md) implements a
 certifying Horn propagator beside GF(2) propagation and independently replays every
 certificate. Its fixed two-bridge relation projects to positive exact-one, so arbitrary
 positive 1-in-3-SAT reduces to this mixed language with two fresh variables per clause.
 This closes the tempting generic-portfolio shortcut; the search engine remains explicitly
 exponential in the worst case. The gadget truth table, all 16 four-variable subinstances,
 and complete-triple controls through ten target variables are saved in
-[REVIEW.json](../horn_cdclt_lab/REVIEW.json).
+[REVIEW.json](horn_cdclt_lab/REVIEW.json).
 
 The follow-up CDCL(T) layer keeps those theories opaque, adds first-UIP learning, and
 replays every resolution step independently. On sparse non-3-colorable controls it cuts
 the deterministic search from 287 to 29 decisions and from 491 DFS nodes to 88 decisions;
 the proof logs all replay successfully. These are proof-compression measurements, not a
 polynomial bound, because the exact-one projection remains NP-hard. See
-[CDCL_REVIEW.json](../horn_cdclt_lab/CDCL_REVIEW.json).
+[CDCL_REVIEW.json](horn_cdclt_lab/CDCL_REVIEW.json).
 An algebraic audit now has an all-arity proof: the affine side forces every common
 operation to be affine, and the Horn side forces its support to be a singleton. Thus the
 common polymorphism clone is exactly projections. The finite replay and symbolic checks are
-in [POLYMORPHISM_REVIEW.json](../horn_cdclt_lab/POLYMORPHISM_REVIEW.json), with the proof in
-[POLYMORPHISM_THEOREM.md](../horn_cdclt_lab/POLYMORPHISM_THEOREM.md).
+in [POLYMORPHISM_REVIEW.json](horn_cdclt_lab/POLYMORPHISM_REVIEW.json), with the proof in
+[POLYMORPHISM_THEOREM.md](horn_cdclt_lab/POLYMORPHISM_THEOREM.md).
 
 **Neither P=NP nor P!=NP has been proved.** The strongest positive result is an
 exact, certificate-producing optimizer for binary codes that admit a graph
@@ -203,7 +213,7 @@ See [STRUCTURAL_PROBE.md](STRUCTURAL_PROBE.md). The conditioned solver's
 charged-work replay additionally proves, for all 24 completed cases, that
 deleted-assignment attempts plus residual transitions are at least `2^w`,
 where `w` is the original supplied-order width; see the
-[independent artifact](../non_graphic_core_lab/CHARGED_WORK_REVIEW.json).
+[independent artifact](non_graphic_core_lab/CHARGED_WORK_REVIEW.json).
 
 ## Generalizations that failed rigorous checks
 
@@ -326,7 +336,7 @@ keeping the auxiliaries preserves its polynomial solving route.
 
 ## Evidence and practical limits
 
-The current frozen integration run passes **325 tests across 33 suites**, with
+The current frozen integration run passes **333 tests across 33 suites**, with
 unchanged source hashes throughout. The canonical audit now includes the
 51-test labelled-join and perturbation certificate suite in
 `labelled_join_certified`. [TEST_SUMMARY.json](TEST_SUMMARY.json) and

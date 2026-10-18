@@ -7,6 +7,7 @@
 | Native closed-pair lookup | constant/table lookup |
 | TT bridge admissibility | exact 2^k cost check |
 | Extension-quotient admissibility | polynomial given certified q-state quotient |
+| Supplied Horn/affine backdoor solver | `2^k * poly(explicit relation tables)`; backdoor is an input |
 | Greedy merge planner | polynomial |
 | Exact subset merge planner | exponential audit only |
 | Horn+Affine wide combination | known hard barrier |

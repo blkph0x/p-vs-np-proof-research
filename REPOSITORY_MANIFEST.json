@@ -1,5 +1,5 @@
 {
-  "file_count": 998,
+  "file_count": 1004,
   "files": {
     ".gitattributes": {
       "bytes": 648,
@@ -374,8 +374,8 @@
       "sha256": "631ec13d33a0045e6421133fee346759f9186117b909bdd327a954ddac826356"
     },
     "README.md": {
-      "bytes": 38675,
-      "sha256": "42a4f43340daed531196a3258ccd7eab0c0f5960388b14a38d5e6d04f94af850"
+      "bytes": 39101,
+      "sha256": "2a28af84be4f889fb875a11a45039f833b2cf9a91dca310c5192aa643557b07b"
     },
     "REGULAR_LDPC_33_LOCAL_AUDIT.json": {
       "bytes": 5015,
@@ -410,12 +410,12 @@
       "sha256": "2fb2bf7ea62a6c83a8ff274073f90b712c4ec8a650c1a14faf818eb6c1b9d122"
     },
     "REPORT.md": {
-      "bytes": 30384,
-      "sha256": "15da8c92cb2403007e0dee7bd6857743df8b4e2fff4f6db39319445e8b25051d"
+      "bytes": 30927,
+      "sha256": "bb39f50ce3496d47d994a46f0ee26fac593391f542adde5c57d8b629e495bd50"
     },
     "REPRODUCIBILITY.md": {
       "bytes": 2326,
-      "sha256": "17202a6b3e47059f353872d6ee500c323403a456c25e8b77bd6332a7756f026a"
+      "sha256": "a1c715be085dd34d7dcb0984ca6e5fffa24ab52f80c7a89eec52d184beda1730"
     },
     "RESIDUAL_EQUIVALENCE_BARRIER.json": {
       "bytes": 106347,
@@ -434,8 +434,8 @@
       "sha256": "d7d103f37e85cce87a5e236fbe90116277e0d0e76196239d73fa76b9e782fab1"
     },
     "ROADMAP.md": {
-      "bytes": 26842,
-      "sha256": "5d4df81caf24113a669748565f78d981a7a21e9f49001746efb7a91e2a884e63"
+      "bytes": 27463,
+      "sha256": "f11415e0a920826d1c5d1aa07f235a1b42a5180eb6094b2316cb306dfaa29481"
     },
     "ROW_BASIS_ESCAPE_RESULTS.json": {
       "bytes": 9367083,
@@ -486,12 +486,12 @@
       "sha256": "a3567d759c7f20ea1420bfbafdcc846cc2d5a5fed2b80ebee8cd98cfd1cf4255"
     },
     "TEST_OUTPUT.txt": {
-      "bytes": 36975,
-      "sha256": "f7e6f3d45ba2e129ca1c6f039a57debe1cee6f22f2b032caf0febaccb33606ba"
+      "bytes": 37714,
+      "sha256": "7b76a8fed5ce2e8c29bb290617da226fcbcfec4f3c394faa318fb99d8c2a3e5d"
     },
     "TEST_SUMMARY.json": {
-      "bytes": 29824,
-      "sha256": "9f14f1b86a59bda109b990d5d021e728a55c8d9bfcc5b576ecccb7eaea2ef2a3"
+      "bytes": 30421,
+      "sha256": "063d8759df000b289176aee5761a7a9a8ff05380a8aa790d753f35dd7fae42a0"
     },
     "THEORY_REVIEW.md": {
       "bytes": 18223,
@@ -2115,7 +2115,7 @@
     },
     "index.md": {
       "bytes": 4833,
-      "sha256": "37a73e80936342b501040c1400748996715a19338e3e29392cf434be4987b6d1"
+      "sha256": "4ad73aae3a1d623be8712aef6bfa97eda0adbd55ce7fb9930840ee3f850d2545"
     },
     "interval_coefficient_lab/INDEPENDENT_REVIEW.md": {
       "bytes": 7681,
@@ -3557,6 +3557,18 @@
       "bytes": 2568,
       "sha256": "486d06cc0ec4fb69587181b7939b48f16a16f53b82a6c22e87e312e928c2dedf"
     },
+    "typed_merge_planner_lab/BACKDOOR_RESULTS.json": {
+      "bytes": 7842,
+      "sha256": "df7beb8cda49bb72b3546d1b272a45444ca5e9e2a3a37cec4cb9ae89f1c11147"
+    },
+    "typed_merge_planner_lab/BACKDOOR_REVIEW.py": {
+      "bytes": 1763,
+      "sha256": "77d91cc7ec69b4e8d170fd2bff03707d607b17c62ceb7c4f0fcf1ca730229658"
+    },
+    "typed_merge_planner_lab/BACKDOOR_THEOREM.md": {
+      "bytes": 1683,
+      "sha256": "3159b87c92f9f9f5c585f043bf6fe53664315b79db9e627ff86a772c9ddef062"
+    },
     "typed_merge_planner_lab/BRIDGE_FACTOR_RESULTS.json": {
       "bytes": 2429,
       "sha256": "9a8225dd3d94f2a33002d0117bfe085a5e4386a95e5b873681da6677dcd00ffd"
@@ -3662,24 +3674,24 @@
       "sha256": "10f4abcc454c1825e14097c480f3f5b9cbcf5fd5d7bd2fd1dc666a9a9a302af6"
     },
     "typed_merge_planner_lab/POLY_SCORECARD.md": {
-      "bytes": 684,
-      "sha256": "57bbcfd2d3e3a2a3e273858fd99ce95f062a6a28fa93f8d851e449a1488d1ef8"
+      "bytes": 788,
+      "sha256": "5de23c03ec243f70b5b905152eabb847c3a4fd410a4cd234c97bbf9bd56d0472"
     },
     "typed_merge_planner_lab/README.md": {
-      "bytes": 1276,
-      "sha256": "1e5ab101f452c434a68b6cd3a5aa1f79b54a86129a3f48643d8c5cab74abeed8"
+      "bytes": 1565,
+      "sha256": "1c253b01042b73cbe9ff6960aa352a826ac22ccc93a43f5cf17d5b4016fca91f"
     },
     "typed_merge_planner_lab/REPORT.md": {
-      "bytes": 13181,
-      "sha256": "bdebe268de49c57f03a4b990d153d4aeb1baf0cbfb7217d1b29282a019139065"
+      "bytes": 14461,
+      "sha256": "b6165d4b56c428f41d8ef58da706985214492a58d39db55c41dbd3017d216d6e"
     },
     "typed_merge_planner_lab/RESULTS.json": {
       "bytes": 13098,
       "sha256": "3228199e8c6567254b02d28187a39ea91cc86bbb13e993670f1719962c6d559e"
     },
     "typed_merge_planner_lab/ROADMAP.md": {
-      "bytes": 1694,
-      "sha256": "ec8649cb3410ae3f6f790e7b1b49f3222a2f0158ca30ec42618778e31700bbae"
+      "bytes": 1984,
+      "sha256": "27c17c5987beffa66e43c6ffcd5ca40dbe234c6177f25b3bb726502439655f42"
     },
     "typed_merge_planner_lab/TEST_OUTPUT.txt": {
       "bytes": 2969,
@@ -3704,6 +3716,10 @@
     "typed_merge_planner_lab/TWO_BRIDGE_FACTOR_THEOREM.md": {
       "bytes": 2908,
       "sha256": "93ec0daeef9495ab25af6f4cec5ee3263e4eba6583966ff4defac2c91695def7"
+    },
+    "typed_merge_planner_lab/backdoor_solver.py": {
+      "bytes": 9851,
+      "sha256": "75f7920b7f597810e5df3bc85198b94ddbd1ad6df9e2c2658d417c0e7c672637"
     },
     "typed_merge_planner_lab/bridge_assessments.csv": {
       "bytes": 688,
@@ -3753,6 +3769,10 @@
       "bytes": 188,
       "sha256": "9cf3773d1e7c3c8d6a36bf0e0ad91d88e1bb0ac636790031731d0c3b20230c56"
     },
+    "typed_merge_planner_lab/run_backdoor_audit.py": {
+      "bytes": 2988,
+      "sha256": "11766f18bc2ef7cd62d290e0e27cb1924a58c7817778272c3967c22042738cfa"
+    },
     "typed_merge_planner_lab/run_bridge_factorization.py": {
       "bytes": 344,
       "sha256": "b6c55d7f0a6000aaea7118d07e5fede7a81d545131b26d141a28488296c59362"
@@ -3772,6 +3792,10 @@
     "typed_merge_planner_lab/run_two_bridge_factorization.py": {
       "bytes": 255,
       "sha256": "a40547caa0c85ddb0bd2277b9460dc73f2e350d73f001ce909615dc517aeb006"
+    },
+    "typed_merge_planner_lab/test_backdoor_solver.py": {
+      "bytes": 5126,
+      "sha256": "96767d11d3683fc5325a1377e3e188bfa190abbc80918aa1e33a395b393a1a76"
     },
     "typed_merge_planner_lab/test_bridge_factorization.py": {
       "bytes": 1340,
@@ -3994,6 +4018,6 @@
       "sha256": "957bd3b51cbf2cd06ee00f1ef47ab5c6fa8bbf1a4c281c0e67b129b027785a18"
     }
   },
-  "generated_at_utc": "2026-10-18T12:48:39.923292+00:00",
-  "source_commit": "a1d38a3b292472773b7f2968e76a5e6f57011dd0"
+  "generated_at_utc": "2026-10-18T13:10:19.531700+00:00",
+  "source_commit": "2d60b654b8f981d7cb90ad0d6ad18515638c4a8a"
 }

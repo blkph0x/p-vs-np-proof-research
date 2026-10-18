@@ -413,3 +413,14 @@ try to break the central lemma independently. Preserve the failed conjecture
 and minimal counterexample when it fails. No finite benchmark, restricted
 proof-system lower bound, or successful certificate justifies changing the
 overall P-versus-NP status by itself.
+
+## Typed planner checkpoint
+
+The bounded invented-relation bridge now feeds exact Schaefer signatures into
+the typed planner. A supplied strong Horn or affine backdoor of size `k` is
+also executable: it enumerates `2^k` assignments, checks every restricted
+relation, then uses native Horn forward chaining or GF(2) elimination. The
+saved `typed_merge_planner_lab/BACKDOOR_RESULTS.json` record and independent
+`BACKDOOR_REVIEW.py` replay cover SAT, UNSAT, and conservative `UNKNOWN`
+outcomes. This is a parameterized result for an explicitly supplied
+backdoor; discovering a small backdoor for arbitrary SAT remains open.

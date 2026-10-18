@@ -81,6 +81,27 @@ then replays all 32 entries in `bounded_language_invention_lab/RESULTS.json`. Th
 mutation test rejects altered signatures. Compact ANF, weight, circuit and OBDD choices
 remain optimization metadata; the truth table remains authoritative.
 
+## 1.2 Supplied strong backdoors are an explicit parameterized edge
+
+`backdoor_solver.py` turns the next planner edge into an executable,
+proof-producing contract. Given a supplied variable set `B`, it enumerates
+all `2^|B|` assignments and checks every restricted relation independently.
+If every branch is AND-closed, it compiles the explicit tables to canonical
+Horn clauses and uses forward chaining. If every branch is minority-closed,
+it extracts GF(2) equations and uses Gaussian elimination. Any branch that
+falls outside the requested language returns `UNKNOWN`; the solver never
+silently falls back to a non-polynomial method.
+
+The saved audit contains four cases and an independent direct-enumeration
+review. A two-clause positive exact-one fixture is solved through a one-bit
+affine backdoor, an inconsistent pair is proved UNSAT through a two-bit
+backdoor, an unassigned exact-one relation is correctly reported UNKNOWN, and
+a Horn implication control is solved natively. The test suite also sweeps all
+16 positive exact-one formulas on four variables under a three-variable
+backdoor. This proves only the standard
+`2^k * poly(explicit-table-size)` parameterized result for a supplied backdoor;
+it does not find a backdoor or make a uniform claim for arbitrary SAT.
+
 ## 2. Native theory combination graph
 
 For large native theories we use guaranteed language metadata rather than enumerating truth
