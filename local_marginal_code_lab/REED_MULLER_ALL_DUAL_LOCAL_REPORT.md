@@ -92,16 +92,16 @@ while the pinned integer optimum is `d`.
 
 | family | `n` | local level `k=d-1` | integer optimum | combined fractional optimum | ratio |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| `RM(1,3)` | 8 | 2 | 4 | `10/3` | `6/5` |
-| `RM(2,5)` | 32 | 6 | 8 | `38/7` | `28/19` |
-| `RM(3,7)` | 128 | 14 | 16 | `142/15` | `120/71` |
+| `RM(1,3)` | 8 | 3 | 4 | `10/3` | `6/5` |
+| `RM(2,5)` | 32 | 7 | 8 | `38/7` | `28/19` |
+| `RM(3,7)` | 128 | 15 | 16 | `142/15` | `120/71` |
 
 `RM(1,3)` replays every scope and every pinned-code projection at level three.
 `RM(2,5)` replays all `65,536` codewords and checks the arithmetic exactly.
 `RM(3,7)` uses the proved Reed--Muller distance/duality identities and an
 explicit theorem-backed projection argument instead of expanding `2^64`
 codewords. The independent reviewer reconstructs all arithmetic and rejects
-mutated support, product, optimum, and ratio fields.
+mutated support, sparse-marginal, optimum, and ratio fields.
 
 The ratio tends to two because `n=d^2/2`. Thus even the conjunction of all
 redundant XOR parity inequalities with all local projection tables through the

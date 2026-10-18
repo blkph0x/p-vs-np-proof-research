@@ -2406,8 +2406,8 @@
       "sha256": "7ad47eb47fd4007f79794c5c20bd1919aae3caa2b3fd55a795ff05b640140223"
     },
     "local_marginal_code_lab/REED_MULLER_ALL_DUAL_LOCAL_REPORT.md": {
-      "bytes": 5200,
-      "sha256": "54b39833ba0e2ae86330bce6b7243c2a7e1ae2ad9c951b2d113a79ee0a0e4cd7"
+      "bytes": 5202,
+      "sha256": "2285b743a11a83bd2173f5c19f585e9406b287a16f3ed79c6525728106521731"
     },
     "local_marginal_code_lab/REED_MULLER_ALL_DUAL_LOCAL_RESULTS.json": {
       "bytes": 100186,
@@ -4678,6 +4678,6 @@
       "sha256": "957bd3b51cbf2cd06ee00f1ef47ab5c6fa8bbf1a4c281c0e67b129b027785a18"
     }
   },
-  "generated_at_utc": "2026-10-18T22:17:16.260919+00:00",
-  "source_commit": "93eaae5d78cc1dac8c8a1496cd05e9b02be53c68"
+  "generated_at_utc": "2026-10-18T22:30:55.745424+00:00",
+  "source_commit": "28dde3b78f3936c08221ad20226c9fbce64bf222"
 }
