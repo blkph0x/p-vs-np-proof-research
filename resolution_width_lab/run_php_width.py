@@ -12,7 +12,7 @@ from review_php_width_proof import review_certificate
 def main():
     rows = []
     certificate = None
-    for holes in range(1, 6):
+    for holes in range(1, 7):
         current = build_php_width_proof(holes)
         row = {
             "holes": holes,
@@ -27,9 +27,9 @@ def main():
             "certificate_status": current["status"],
         }
         rows.append(row)
-        if holes == 5:
+        if holes == 6:
             certificate = current
-    certificate_path = HERE / "PHP_WIDTH_CERTIFICATE_N5.json"
+    certificate_path = HERE / "PHP_WIDTH_CERTIFICATE_N6.json"
     certificate_path.write_text(json.dumps(certificate, indent=2, sort_keys=True) + "\n",
                                 encoding="utf-8")
     review = review_certificate(certificate_path)

@@ -72,8 +72,10 @@ opposite signs, and that the recorded conclusion is the exact resolvent. It
 also checks the stage counts, per-stage resolution counts, final empty clause,
 and maximum width.
 
-The saved campaign covers \(n=1,\ldots,5\) and saves the full \(n=5\)
-certificate:
+The saved campaign covers \(n=1,\ldots,6\) and saves the full \(n=6\)
+certificate. The \(n=6\) replay has 11,742 resolution steps and 11,875
+proof events, extending the machine-checked finite anchor without changing
+the all-size construction or claiming a polynomial-size refutation:
 
 | holes \(n\) | pigeons | variables | stage counts \(k=0\ldots n\) | resolution steps | max width |
 | ---: | ---: | ---: | --- | ---: | ---: |
@@ -82,10 +84,11 @@ certificate:
 | 3 | 4 | 12 | 1, 3, 6, 6 | 48 | 3 |
 | 4 | 5 | 20 | 1, 4, 12, 24, 24 | 260 | 4 |
 | 5 | 6 | 30 | 1, 5, 20, 60, 120, 120 | 1,630 | 5 |
+| 6 | 7 | 42 | 1, 6, 30, 120, 360, 720, 720 | 11,742 | 6 |
 
 The machine-readable outputs are
 [`PHP_WIDTH_RESULTS.json`](PHP_WIDTH_RESULTS.json),
-[`PHP_WIDTH_CERTIFICATE_N5.json`](PHP_WIDTH_CERTIFICATE_N5.json), and
+[`PHP_WIDTH_CERTIFICATE_N6.json`](PHP_WIDTH_CERTIFICATE_N6.json), and
 [`PHP_WIDTH_REVIEW.json`](PHP_WIDTH_REVIEW.json). Re-run them with:
 
 ```text

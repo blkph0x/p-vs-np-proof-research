@@ -1,28 +1,29 @@
 {
   "certificate": {
-    "certificate_sha256": "37faafb8591d330859481b3a20e67cef24dacfab9ff56e9f41bd4caa799a66d9",
-    "event_count": 1711,
+    "certificate_sha256": "02cd9a0109b40fbc0d5b38e15bcee9fd5a4497310975797e41f400a9bb2c9a42",
+    "event_count": 11875,
     "final_clause": [],
-    "holes": 5,
-    "max_width": 5,
-    "resolution_steps": 1630,
+    "holes": 6,
+    "max_width": 6,
+    "resolution_steps": 11742,
     "stage_resolution_counts": {
-      "0": 5,
-      "1": 25,
-      "2": 100,
-      "3": 300,
-      "4": 600,
-      "5": 600
+      "0": 6,
+      "1": 36,
+      "2": 180,
+      "3": 720,
+      "4": 2160,
+      "5": 4320,
+      "6": 4320
     },
     "status": "PASS"
   },
   "source_hashes": {
-    "PHP_WIDTH_REPORT.md": "e802c74fb9a95681f256ad49409808e68c33fc4bd9c3ca52f98f244c690055d7",
-    "THEOREM.md": "85dbc50df14f8f68d1c574c1b267b05fef7116171d3d03d7f6411a2fc3ce8e79",
+    "PHP_WIDTH_REPORT.md": "2fd52770f1bd3f18102337084beb5902eb687b5f679771b8b517b5679d4dc4f3",
+    "THEOREM.md": "3ef724a64796dcaf557b1705bbbf8eaf7979a1e745f0630c2488057f87e99bea",
     "php_width_proof.py": "8d7ded4425ba06efcecc4ade10b3b8329189560e442ae3573240b70f2728a197",
-    "review_php_width_proof.py": "c54cd5d0a6d2d6ec424556d7445d3963db10ff2da1acc35250a66119f1c5a61a",
-    "run_php_width.py": "d5e1775a9940c4d3b1b89a429ff26fa92cd31c33cc91a0226d8cc5693cec093c",
-    "test_resolution.py": "941916c3a3695c00fefb67f6809a40a630c2bd255e361a2baf89eaeb167f5e85"
+    "review_php_width_proof.py": "c78a496aa5a8c013fb6c1b2a7f82dee4e1ca989b87c6dd83ec6aa13b2fcb0445",
+    "run_php_width.py": "be9400cb61f13b8409f23c377a1a3142a03589a588969fcf34b051a8b12114a2",
+    "test_resolution.py": "d978866aade0a024f1d04c3ad8dc2ff8eeb00fbfb6b7234fa382029a6eea51fa"
   },
   "status": "PASS"
 }

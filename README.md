@@ -85,7 +85,10 @@ complete certificate. For standard PHP(n+1,n), the exact minimum resolution
 width is `n` for `n >= 2` (PHP(2,1) has width two), with exactly
 `n * sum_k n!/(n-k)!` resolution steps in this construction. The proof size is
 `2^{O(n log n)}` in the pigeonhole parameter, so this is a uniform
-resolution result rather than a polynomial SAT algorithm.
+resolution result rather than a polynomial SAT algorithm. The saved
+machine-checkable campaign now includes the full PHP(7,6) certificate with
+11,742 replayed resolution steps; see
+[`resolution_width_lab/PHP_WIDTH_RESULTS.json`](resolution_width_lab/PHP_WIDTH_RESULTS.json).
 
 Start with the [grouping and global recognition report](AFFINE_RECOGNITION_PHASE_REPORT.md):
 verified grouping brings the stress set to 19/22 exact original counts, recovering

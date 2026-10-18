@@ -134,8 +134,8 @@ The construction uses exactly
 generates the complete DAG in `php_width_proof.py`; the independent
 `review_php_width_proof.py` reconstructs the formula, validates every axiom,
 parent reference, pivot, conclusion, stage count, and width. The full saved
-`PHP(6,5)` certificate and the `n=1..5` summary are in
-`PHP_WIDTH_CERTIFICATE_N5.json`, `PHP_WIDTH_RESULTS.json`, and
+`PHP(7,6)` certificate and the `n=1..6` summary are in
+`PHP_WIDTH_CERTIFICATE_N6.json`, `PHP_WIDTH_RESULTS.json`, and
 `PHP_WIDTH_REVIEW.json`.
 
 For the lower bound when `n >= 2`, every positive input axiom has width `n`.

@@ -118,7 +118,7 @@ def replay(certificate):
     }
 
 
-def review_certificate(path=HERE / "PHP_WIDTH_CERTIFICATE_N5.json"):
+def review_certificate(path=HERE / "PHP_WIDTH_CERTIFICATE_N6.json"):
     certificate = json.loads(Path(path).read_text(encoding="utf-8"))
     result = replay(certificate)
     result["certificate_sha256"] = sha256(Path(path).read_bytes()).hexdigest()

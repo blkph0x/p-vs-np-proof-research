@@ -255,13 +255,15 @@ class ResolutionWidthTests(unittest.TestCase):
         self.assertEqual(artifact["status"], "PASS")
         self.assertEqual(artifact["theorem"],
                          "minimum resolution refutation width is n for n >= 2 (PHP(2,1) has width 2)")
-        self.assertEqual([row["holes"] for row in artifact["rows"]], [1, 2, 3, 4, 5])
-        self.assertEqual([row["max_width"] for row in artifact["rows"]], [2, 2, 3, 4, 5])
+        self.assertEqual([row["holes"] for row in artifact["rows"]], [1, 2, 3, 4, 5, 6])
+        self.assertEqual([row["max_width"] for row in artifact["rows"]], [2, 2, 3, 4, 5, 6])
+        self.assertEqual(artifact["certificate"], "PHP_WIDTH_CERTIFICATE_N6.json")
+        self.assertEqual(review["certificate"]["holes"], 6)
         self.assertTrue(all(row["final_clause"] == [] for row in artifact["rows"]))
         self.assertEqual(review["status"], "PASS")
-        self.assertEqual(review["certificate"]["max_width"], 5)
+        self.assertEqual(review["certificate"]["max_width"], 6)
         self.assertEqual(review["certificate"]["final_clause"], [])
-        self.assertEqual(review["certificate"]["resolution_steps"], 1630)
+        self.assertEqual(review["certificate"]["resolution_steps"], 11742)
         self.assertTrue(review_saved_results()["source_hashes_match"])
 
 

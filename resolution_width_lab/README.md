@@ -40,3 +40,5 @@ documented in [`PHP_WIDTH_REPORT.md`](PHP_WIDTH_REPORT.md),
 [`PHP_WIDTH_RESULTS.json`](PHP_WIDTH_RESULTS.json), and
 [`PHP_WIDTH_REVIEW.json`](PHP_WIDTH_REVIEW.json). For `n >= 2`, the exact
 minimum resolution width is `n`; PHP(2,1) is the width-two edge case.
+The saved campaign includes the independently replayed six-hole certificate
+in `PHP_WIDTH_CERTIFICATE_N6.json`.

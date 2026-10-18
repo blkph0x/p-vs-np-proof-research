@@ -33,7 +33,8 @@ and its [independent replay](resolution_width_lab/PEBBLE_REVIEW.json).
 The accompanying [uniform PHP width certificate](resolution_width_lab/PHP_WIDTH_REPORT.md)
 proves the exact ordinary-resolution width `n` for every PHP(n+1,n) with
 `n >= 2`, with an explicit width-two PHP(2,1) edge case. This is a
-proof-complexity result, not a general SAT algorithm.
+proof-complexity result, not a general SAT algorithm. The saved replay now
+extends through the complete PHP(7,6) certificate.
 
 The [hidden-XOR pair audit](proof_motif_candidate_lab/INDIRECT_XOR_REPORT.md)
 also certifies one bounded auxiliary-variable step: two exact parity blocks
