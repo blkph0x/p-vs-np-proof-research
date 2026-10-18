@@ -98,7 +98,11 @@ second proof-complexity lens. It computes the complete finite closure under
 weakening and width-preserving resolution, replaying either an empty-clause
 refutation or a no-refutation fixed point. The universe size is bounded by
 `sum_{i<=w} 2^i binomial(n,i)`, so this records proof-width growth without
-claiming a uniform polynomial algorithm.
+claiming a uniform polynomial algorithm. Its independent width sweep measures
+the exact first refutation width on each uncapped control: 1 for contradictory
+units, 2 for the 3-by-2 pigeonhole instance, and 3 for the three-variable
+all-assignment contradiction; the satisfiable control has no refutation in the
+swept range.
 
 The [complete-graph frontier report](linear_frontier_order_lab/COMPLETE_GRAPH_FRONTIER_REPORT.md)
 adds an all-order barrier for the affine residual route. The GF(2) incidence
@@ -376,7 +380,7 @@ keeping the auxiliaries preserves its polynomial solving route.
 
 ## Evidence and practical limits
 
-The current frozen integration run passes **363 tests across 35 suites**, with
+The current frozen integration run passes **364 tests across 35 suites**, with
 unchanged source hashes throughout. The canonical audit now includes the
 51-test labelled-join and perturbation certificate suite in
 `labelled_join_certified`. [TEST_SUMMARY.json](TEST_SUMMARY.json) and

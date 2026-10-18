@@ -68,6 +68,20 @@ class ResolutionWidthTests(unittest.TestCase):
         self.assertEqual(result["status"], "UNKNOWN")
         self.assertTrue(direct(2, sat))
 
+    def test_minimum_refutation_widths_are_exact_on_controls(self):
+        def minimum_width(nvars, clauses):
+            for width in range(max((len(clause) for clause in clauses), default=0) + 1):
+                if BoundedResolution(nvars, clauses, width).solve()["status"] == "UNSAT":
+                    return width
+            return None
+
+        self.assertEqual(minimum_width(1, ((1,), (-1,))), 1)
+        all_assignments = all_assignment_clauses(3)
+        self.assertEqual(minimum_width(3, all_assignments), 3)
+        nvars, pigeon = pigeonhole(3, 2)
+        self.assertEqual(minimum_width(nvars, pigeon), 2)
+        self.assertIsNone(minimum_width(2, ((1, 2), (-1, 2))))
+
     def test_caps_are_conservative_unknown(self):
         clauses = all_assignment_clauses(4)
         result = BoundedResolution(4, clauses, 4, max_clauses=3).solve()

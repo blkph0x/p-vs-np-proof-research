@@ -30,6 +30,34 @@ def pigeonhole(pigeons, holes):
     return pigeons * holes, tuple(clauses)
 
 
+def width_sweep(nvars, clauses, *, max_clauses=10000, max_steps=100000):
+    """Find the first width with a complete bounded-resolution refutation.
+
+    The sweep is finite because no proof can use a clause wider than the
+    widest supplied axiom in this small control family.  A cap result makes
+    the sweep inconclusive rather than silently treating it as a negative.
+    """
+    max_width = max((len(clause) for clause in clauses), default=0)
+    observations = []
+    for width in range(max_width + 1):
+        result = BoundedResolution(
+            nvars, clauses, width,
+            max_clauses=max_clauses, max_steps=max_steps,
+        ).solve()
+        observations.append({
+            "width": width,
+            "status": result["status"],
+            "reason": result.get("reason"),
+            "closure_size": len(result["clauses"]),
+            "candidate_steps": result["stats"]["candidate_steps"],
+        })
+        if result["status"] == "UNSAT":
+            return width, observations
+        if result.get("reason") in {"CLAUSE_CAP", "STEP_CAP"}:
+            return None, observations
+    return None, observations
+
+
 def controls():
     _, pigeon = pigeonhole(3, 2)
     return (
@@ -54,14 +82,23 @@ def main():
     for case in controls():
         result = BoundedResolution(case["nvars"], case["clauses"], case["width"],
                                    **case["caps"]).solve()
+        if case["caps"]:
+            minimum_width, sweep = None, []
+        else:
+            minimum_width, sweep = width_sweep(case["nvars"], case["clauses"])
         rows.append({"name": case["name"], "nvars": case["nvars"],
                      "width": case["width"], "clause_count": len(case["clauses"]),
                      "status": result["status"], "reason": result.get("reason"),
-                     "stats": result["stats"], "closure_size": len(result["clauses"])})
+                     "stats": result["stats"], "closure_size": len(result["clauses"]),
+                     "minimum_refutation_width": minimum_width,
+                     "width_sweep": sweep})
         certificates.append({"name": case["name"], "nvars": case["nvars"],
                              "width": case["width"],
                              "clauses": [list(c) for c in case["clauses"]],
-                             "caps": case["caps"], "result": result})
+                             "caps": case["caps"],
+                             "minimum_refutation_width": minimum_width,
+                             "width_sweep": sweep,
+                             "result": result})
     output = {"format": "bounded-resolution-width-v1", "rows": rows,
               "all_cases_replayed": True, "source_sha256": source_hashes()}
     (HERE / "RESULTS.json").write_text(json.dumps(output, indent=2) + "\n", encoding="utf-8")

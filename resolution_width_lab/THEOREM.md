@@ -22,6 +22,14 @@ SAT. The pigeonhole and all-assignment controls test width boundaries; a
 satisfiable control and cap-triggered run prevent treating a missing bounded
 refutation as an UNSAT result.
 
+For each uncapped control, the audit runs this complete closure at every width
+from zero through the widest input axiom. The first width whose closure
+contains the empty clause is saved as the minimum refutation width for that
+finite instance. The independent review recomputes the same sweep from a
+separate implementation and compares every width's status and reason. A
+`None` threshold is retained for satisfiable controls, while capped runs are
+excluded from the sweep because they are deliberately inconclusive.
+
 Run:
 
     python -m unittest -v test_resolution.py

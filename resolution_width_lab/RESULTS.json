@@ -16,7 +16,24 @@
         "weakening_steps": 0,
         "resolution_steps": 1
       },
-      "closure_size": 3
+      "closure_size": 3,
+      "minimum_refutation_width": 1,
+      "width_sweep": [
+        {
+          "width": 0,
+          "status": "UNKNOWN",
+          "reason": "NO_WIDTH_W_REFUTATION",
+          "closure_size": 0,
+          "candidate_steps": 0
+        },
+        {
+          "width": 1,
+          "status": "UNSAT",
+          "reason": null,
+          "closure_size": 3,
+          "candidate_steps": 1
+        }
+      ]
     },
     {
       "name": "all_assignments_width_two",
@@ -33,7 +50,38 @@
         "weakening_steps": 0,
         "resolution_steps": 0
       },
-      "closure_size": 0
+      "closure_size": 0,
+      "minimum_refutation_width": 3,
+      "width_sweep": [
+        {
+          "width": 0,
+          "status": "UNKNOWN",
+          "reason": "NO_WIDTH_W_REFUTATION",
+          "closure_size": 0,
+          "candidate_steps": 0
+        },
+        {
+          "width": 1,
+          "status": "UNKNOWN",
+          "reason": "NO_WIDTH_W_REFUTATION",
+          "closure_size": 0,
+          "candidate_steps": 0
+        },
+        {
+          "width": 2,
+          "status": "UNKNOWN",
+          "reason": "NO_WIDTH_W_REFUTATION",
+          "closure_size": 0,
+          "candidate_steps": 0
+        },
+        {
+          "width": 3,
+          "status": "UNSAT",
+          "reason": null,
+          "closure_size": 27,
+          "candidate_steps": 222
+        }
+      ]
     },
     {
       "name": "all_assignments_width_three",
@@ -50,7 +98,38 @@
         "weakening_steps": 32,
         "resolution_steps": 190
       },
-      "closure_size": 27
+      "closure_size": 27,
+      "minimum_refutation_width": 3,
+      "width_sweep": [
+        {
+          "width": 0,
+          "status": "UNKNOWN",
+          "reason": "NO_WIDTH_W_REFUTATION",
+          "closure_size": 0,
+          "candidate_steps": 0
+        },
+        {
+          "width": 1,
+          "status": "UNKNOWN",
+          "reason": "NO_WIDTH_W_REFUTATION",
+          "closure_size": 0,
+          "candidate_steps": 0
+        },
+        {
+          "width": 2,
+          "status": "UNKNOWN",
+          "reason": "NO_WIDTH_W_REFUTATION",
+          "closure_size": 0,
+          "candidate_steps": 0
+        },
+        {
+          "width": 3,
+          "status": "UNSAT",
+          "reason": null,
+          "closure_size": 27,
+          "candidate_steps": 222
+        }
+      ]
     },
     {
       "name": "pigeonhole_3_2_width_three",
@@ -67,7 +146,31 @@
         "weakening_steps": 330,
         "resolution_steps": 6691
       },
-      "closure_size": 233
+      "closure_size": 233,
+      "minimum_refutation_width": 2,
+      "width_sweep": [
+        {
+          "width": 0,
+          "status": "UNKNOWN",
+          "reason": "NO_WIDTH_W_REFUTATION",
+          "closure_size": 0,
+          "candidate_steps": 0
+        },
+        {
+          "width": 1,
+          "status": "UNKNOWN",
+          "reason": "NO_WIDTH_W_REFUTATION",
+          "closure_size": 0,
+          "candidate_steps": 0
+        },
+        {
+          "width": 2,
+          "status": "UNSAT",
+          "reason": null,
+          "closure_size": 73,
+          "candidate_steps": 555
+        }
+      ]
     },
     {
       "name": "satisfiable_formula",
@@ -84,7 +187,31 @@
         "weakening_steps": 2,
         "resolution_steps": 2
       },
-      "closure_size": 3
+      "closure_size": 3,
+      "minimum_refutation_width": null,
+      "width_sweep": [
+        {
+          "width": 0,
+          "status": "UNKNOWN",
+          "reason": "NO_WIDTH_W_REFUTATION",
+          "closure_size": 0,
+          "candidate_steps": 0
+        },
+        {
+          "width": 1,
+          "status": "UNKNOWN",
+          "reason": "NO_WIDTH_W_REFUTATION",
+          "closure_size": 0,
+          "candidate_steps": 0
+        },
+        {
+          "width": 2,
+          "status": "UNKNOWN",
+          "reason": "NO_WIDTH_W_REFUTATION",
+          "closure_size": 3,
+          "candidate_steps": 4
+        }
+      ]
     },
     {
       "name": "explicit_clause_cap",
@@ -101,15 +228,17 @@
         "weakening_steps": 0,
         "resolution_steps": 0
       },
-      "closure_size": 3
+      "closure_size": 3,
+      "minimum_refutation_width": null,
+      "width_sweep": []
     }
   ],
   "all_cases_replayed": true,
   "source_sha256": {
     "resolution.py": "f6d45054901f4684b98c584c230f213a44fcf4d730293e564325154ca07005b1",
-    "run_audit.py": "e8f1b50cc95c7b10abab383f1a1e9708a4558abf9696e19d5accf9c1d6e905a4",
-    "THEOREM.md": "d79c650904b2f5ff16415cd6db745bc20ae6f63820f7297db1d892a7734223eb",
-    "review.py": "7b4148834b2f0493b53440c1e4874498c9280f8e1e645594ba5013f6d7f1adb9",
-    "test_resolution.py": "ce616ee149e5385516ecf42708701c94811aca1d5c8ca1e43ad565ea9e0e4cb7"
+    "run_audit.py": "d509dcbc55074439035006d996ce17ecd1e6b3c9f55340fb56f7b8bfe425277a",
+    "THEOREM.md": "c3953f733fdcc66408c9491577f4e5a66f1dd14974bea9cfc9ce7e86ab757c3c",
+    "review.py": "2be2bf379ad76477aa8da262fac618862058e2a646ee65ca67c3ef455f171cc1",
+    "test_resolution.py": "cddf5fb409bb834bf69ff858ac68edbf26df8f7232f35e7d5540d0226c0033e6"
   }
 }

@@ -12,6 +12,23 @@
       ]
     ],
     "caps": {},
+    "minimum_refutation_width": 1,
+    "width_sweep": [
+      {
+        "width": 0,
+        "status": "UNKNOWN",
+        "reason": "NO_WIDTH_W_REFUTATION",
+        "closure_size": 0,
+        "candidate_steps": 0
+      },
+      {
+        "width": 1,
+        "status": "UNSAT",
+        "reason": null,
+        "closure_size": 3,
+        "candidate_steps": 1
+      }
+    ],
     "result": {
       "status": "UNSAT",
       "clauses": [
@@ -105,6 +122,37 @@
       ]
     ],
     "caps": {},
+    "minimum_refutation_width": 3,
+    "width_sweep": [
+      {
+        "width": 0,
+        "status": "UNKNOWN",
+        "reason": "NO_WIDTH_W_REFUTATION",
+        "closure_size": 0,
+        "candidate_steps": 0
+      },
+      {
+        "width": 1,
+        "status": "UNKNOWN",
+        "reason": "NO_WIDTH_W_REFUTATION",
+        "closure_size": 0,
+        "candidate_steps": 0
+      },
+      {
+        "width": 2,
+        "status": "UNKNOWN",
+        "reason": "NO_WIDTH_W_REFUTATION",
+        "closure_size": 0,
+        "candidate_steps": 0
+      },
+      {
+        "width": 3,
+        "status": "UNSAT",
+        "reason": null,
+        "closure_size": 27,
+        "candidate_steps": 222
+      }
+    ],
     "result": {
       "status": "UNKNOWN",
       "reason": "NO_WIDTH_W_REFUTATION",
@@ -167,6 +215,37 @@
       ]
     ],
     "caps": {},
+    "minimum_refutation_width": 3,
+    "width_sweep": [
+      {
+        "width": 0,
+        "status": "UNKNOWN",
+        "reason": "NO_WIDTH_W_REFUTATION",
+        "closure_size": 0,
+        "candidate_steps": 0
+      },
+      {
+        "width": 1,
+        "status": "UNKNOWN",
+        "reason": "NO_WIDTH_W_REFUTATION",
+        "closure_size": 0,
+        "candidate_steps": 0
+      },
+      {
+        "width": 2,
+        "status": "UNKNOWN",
+        "reason": "NO_WIDTH_W_REFUTATION",
+        "closure_size": 0,
+        "candidate_steps": 0
+      },
+      {
+        "width": 3,
+        "status": "UNSAT",
+        "reason": null,
+        "closure_size": 27,
+        "candidate_steps": 222
+      }
+    ],
     "result": {
       "status": "UNSAT",
       "clauses": [
@@ -720,6 +799,30 @@
       ]
     ],
     "caps": {},
+    "minimum_refutation_width": 2,
+    "width_sweep": [
+      {
+        "width": 0,
+        "status": "UNKNOWN",
+        "reason": "NO_WIDTH_W_REFUTATION",
+        "closure_size": 0,
+        "candidate_steps": 0
+      },
+      {
+        "width": 1,
+        "status": "UNKNOWN",
+        "reason": "NO_WIDTH_W_REFUTATION",
+        "closure_size": 0,
+        "candidate_steps": 0
+      },
+      {
+        "width": 2,
+        "status": "UNSAT",
+        "reason": null,
+        "closure_size": 73,
+        "candidate_steps": 555
+      }
+    ],
     "result": {
       "status": "UNSAT",
       "clauses": [
@@ -5307,6 +5410,30 @@
       ]
     ],
     "caps": {},
+    "minimum_refutation_width": null,
+    "width_sweep": [
+      {
+        "width": 0,
+        "status": "UNKNOWN",
+        "reason": "NO_WIDTH_W_REFUTATION",
+        "closure_size": 0,
+        "candidate_steps": 0
+      },
+      {
+        "width": 1,
+        "status": "UNKNOWN",
+        "reason": "NO_WIDTH_W_REFUTATION",
+        "closure_size": 0,
+        "candidate_steps": 0
+      },
+      {
+        "width": 2,
+        "status": "UNKNOWN",
+        "reason": "NO_WIDTH_W_REFUTATION",
+        "closure_size": 3,
+        "candidate_steps": 4
+      }
+    ],
     "result": {
       "status": "UNKNOWN",
       "reason": "NO_WIDTH_W_REFUTATION",
@@ -5469,6 +5596,8 @@
     "caps": {
       "max_clauses": 3
     },
+    "minimum_refutation_width": null,
+    "width_sweep": [],
     "result": {
       "status": "UNKNOWN",
       "reason": "CLAUSE_CAP",

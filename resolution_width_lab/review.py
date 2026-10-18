@@ -84,6 +84,24 @@ def closure(nvars, clauses, width, max_clauses, max_steps):
     return known, records, "NO_WIDTH_W_REFUTATION"
 
 
+def width_sweep(nvars, clauses, max_clauses=10000, max_steps=100000):
+    """Independently recompute the first refutation width and statuses."""
+    max_width = max((len(clause) for clause in clauses), default=0)
+    observations = []
+    for width in range(max_width + 1):
+        known, _, reason = closure(nvars, clauses, width, max_clauses, max_steps)
+        capped = reason in {"CLAUSE_CAP", "STEP_CAP"}
+        status = "UNSAT" if known is not None and () in known else "UNKNOWN"
+        observations.append({"width": width, "status": status,
+                            "reason": None if status == "UNSAT" else reason,
+                            "closure_size": None if known is None else len(known)})
+        if status == "UNSAT":
+            return width, observations
+        if capped:
+            return None, observations
+    return None, observations
+
+
 def replay_proof(clauses, proof):
     known = set()
     for event in proof:
@@ -126,6 +144,15 @@ def main():
             assert {tuple(clause) for clause in result["clauses"]} == expected
         else:
             assert result["reason"] == reason
+        if not caps:
+            minimum, sweep = width_sweep(saved["nvars"], saved["clauses"])
+            assert minimum == saved["minimum_refutation_width"]
+            saved_sweep = saved["width_sweep"]
+            assert [(row["width"], row["status"], row["reason"])
+                    for row in saved_sweep] == [
+                        (row["width"], row["status"], row["reason"])
+                        for row in sweep]
+            assert saved_sweep[-1]["width"] == sweep[-1]["width"]
     assert artifact["all_cases_replayed"]
     for name, digest in artifact["source_sha256"].items():
         assert sha256((HERE / name).read_bytes()).hexdigest() == digest

@@ -15,7 +15,7 @@
 - Use [`CITATIONS.md`](CITATIONS.md) and [`PUBLIC_SOURCES.md`](PUBLIC_SOURCES.md)
   for public sources and the reports that use them.
 - Follow [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) to replay the checks from a
-  fresh checkout. The current frozen run has 363 passing methods across 35
+  fresh checkout. The current frozen run has 364 passing methods across 35
   suites; the full audit is intentionally separate from the lighter continuous
   integration checks, and all of its suite dependencies are included in this
   repository.
@@ -277,7 +277,9 @@ polynomial worst-case bound.
 The [bounded-width resolution lab](resolution_width_lab/README.md) separately
 closes every weakening and resolution consequence up to width `w`. A fixed
 point without the empty clause is a finite certificate that this proof system
-has no width-`w` refutation; width and closure caps remain explicit.
+has no width-`w` refutation; width and closure caps remain explicit. Its
+independent width sweep records the first refutation width on each uncapped
+control, rather than treating a single chosen width as a universal claim.
 
 The companion [horn_cdclt_lab](horn_cdclt_lab/REPORT.md) turns that reduction into a
 proof-producing Horn-plus-GF(2) portfolio. Its independent replay verifies every emitted

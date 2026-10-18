@@ -454,6 +454,8 @@ uncapped search and proof length remain exponential in the worst case.
 The bounded-width resolution closure now gives an independent finite barrier:
 for each supplied `w`, it exhausts the weakening/resolution universe and
 records either a replayable refutation or a fixed-point no-refutation result.
-The next comparison is to correlate these width certificates with CDCL proof
-length and frontier state growth, keeping every cap and proof-system scope
-explicit.
+The new width sweep independently certifies the first refutation width on the
+small controls (1 for contradictory units, 2 for 3-by-2 pigeonhole, and 3 for
+the three-variable all-assignment contradiction). The next comparison is to
+correlate these width certificates with CDCL proof length and frontier state
+growth, keeping every cap and proof-system scope explicit.
