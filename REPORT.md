@@ -351,6 +351,13 @@ state representation of the full indicators; it does not rule out algorithms
 using a different or nonlinear state space and is not a P-versus-NP
 separation.
 
+The [`FWHT_COST_REPORT.md`](fourier_spectrum_boundary_lab/FWHT_COST_REPORT.md)
+records a separate accounting check for the transform route. When the full
+length-`2^n` Walsh table is materialized, the FWHT uses `n 2^n` arithmetic
+operations and subset-Zeta uses `n 2^(n-1)` additions, for an exact combined
+count of `3 n 2^(n-1)`. The statement is conditional on materializing that
+table; it is not a general lower bound against implicit representations.
+
 The randomized escape route is now bounded by a separate all-size isolation proof.
 For any nonempty solution set, a uniformly random affine hash at rank
 `ceil(log2(s))+1` isolates one solution with probability at least `3/16`, by an
@@ -405,7 +412,7 @@ keeping the auxiliaries preserves its polynomial solving route.
 
 ## Evidence and practical limits
 
-The current frozen integration run passes **394 tests across 37 suites**, with
+The current frozen integration run passes **396 tests across 37 suites**, with
 unchanged source hashes throughout. The canonical audit now includes the
 51-test labelled-join and perturbation certificate suite in
 `labelled_join_certified`. [TEST_SUMMARY.json](TEST_SUMMARY.json) and

@@ -15,7 +15,7 @@
 - Use [`CITATIONS.md`](CITATIONS.md) and [`PUBLIC_SOURCES.md`](PUBLIC_SOURCES.md)
   for public sources and the reports that use them.
 - Follow [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) to replay the checks from a
-  fresh checkout. The current frozen run has 394 passing methods across 37
+  fresh checkout. The current frozen run has 396 passing methods across 37
   suites; the full audit is intentionally separate from the lighter continuous
   integration checks, and all of its suite dependencies are included in this
   repository.
@@ -151,6 +151,9 @@ also gives precise counterfamilies to any universal explicit low-dimensional
 Walsh/Fourier representation: even a linear-size, distinct-literal 3-CNF with
 a unique satisfying assignment can have `2^n` nonzero modes, confirmed by an
 independent transform on small instances.
+The companion [FWHT-Zeta cost audit](fourier_spectrum_boundary_lab/FWHT_COST_REPORT.md)
+checks the transform arithmetic exactly: a materialized full table costs
+`3 n 2^(n-1)` additions/subtractions before any claimed compression step.
 The [labelled-graph report](labelled_join_certified/REPORT.md) records the
 previous certified solver and encoding audits. Its new same-coordinate
 perturbation extension replays 243 exact small controls for supplied H=B+UV

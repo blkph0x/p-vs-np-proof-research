@@ -37,6 +37,11 @@ jobs:
         run: |
           python run_php_width.py
           python review_php_width_proof.py
+      - name: Replay full FWHT-Zeta cost audit
+        working-directory: fourier_spectrum_boundary_lab
+        run: |
+          python run_fwht_cost.py
+          python review_fwht_cost.py
       - name: Run the self-contained full audit
         run: |
           set +e

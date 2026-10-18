@@ -5,7 +5,7 @@ public URL found in the repository's source, reports, and saved metadata,
 along with the local files that cite or preserve it. The curated primary
 sources and citation rules are in [`CITATIONS.md`](CITATIONS.md).
 
-Indexed URLs: **63**.
+Indexed URLs: **64**.
 
 | URL | Local provenance |
 | --- | --- |
@@ -46,6 +46,7 @@ Indexed URLs: **63**.
 | <https://github.com/blkph0x/p-vs-np-proof-research> | `CITATION.cff`, `PUBLIC_SOURCES.md`, `index.md` |
 | <https://homepages.inf.ed.ac.uk/hguo/papers/HA-general.pdf> | `AFFINE_BOUNDARY_DESIGN.md`, `PUBLIC_SOURCES.md`, `holographic_tractability_lab/RESULTS.json`, `holographic_tractability_lab/THEOREM.md`, `holographic_tractability_lab/run_experiments.py` |
 | <https://ics.uci.edu/~dechter/publications/r76A.pdf> | `PUBLIC_SOURCES.md`, `coefficient_structure_lab/THEOREM.md` |
+| <https://ieeexplore.ieee.org/abstract/document/11717448> | `PUBLIC_SOURCES.md`, `fourier_spectrum_boundary_lab/FWHT_COST_REPORT.md` |
 | <https://ieeexplore.ieee.org/document/11717448> | `PUBLIC_SOURCES.md`, `REPORT.md` |
 | <https://ieeexplore.ieee.org/document/11717448/> | `PUBLIC_SOURCES.md`, `VOHRA_CROSSREF_METADATA.json` |
 | <https://link.springer.com/article/10.1007/s00453-015-0090-y> | `HOLOGRAPHIC_LITERATURE_CHECK.md`, `PUBLIC_SOURCES.md` |
@@ -56,7 +57,7 @@ Indexed URLs: **63**.
 | <https://quantum-journal.org/papers/q-2026-07-29-2179/> | `AFFINE_CANCELLATION_LITERATURE_SCOPE.md`, `PUBLIC_SOURCES.md` |
 | <https://theory.stanford.edu/~trevisan/cs172-07/karp.pdf> | `PUBLIC_SOURCES.md`, `multiobjective_matching_limits/THEOREM.md`, `packed_cost_exact_matching/THEOREM.md` |
 | <https://www-users.cse.umn.edu/~reiner/Talks/Vienna05/Lectures.pdf> | `PUBLIC_SOURCES.md`, `labelled_join_certified/COVERAGE_INDEPENDENT_REVIEW.md` |
-| <https://www.brics.dk/DS/02/2/BRICS-DS-02-2.pdf> | `CITATIONS.md`, `resolution_width_lab/PHP_WIDTH_REPORT.md` |
+| <https://www.brics.dk/DS/02/2/BRICS-DS-02-2.pdf> | `CITATIONS.md`, `PUBLIC_SOURCES.md`, `resolution_width_lab/PHP_WIDTH_REPORT.md` |
 | <https://www.claymath.org/millennium/p-vs-np/> | `CITATIONS.md`, `EXTERNAL_STATUS_AUDIT_2026_10_18.md`, `PUBLIC_SOURCES.md`, `RESOLUTION_STANDARD.md` |
 | <https://www.combinatorics.org/ojs/index.php/eljc/article/download/v32i3p36/pdf> | `PUBLIC_SOURCES.md`, `graph_order_hardness_lab/THEOREM.md` |
 | <https://www.cs.cornell.edu/~rdz/Papers/KZ-PAMI04.pdf> | `PUBLIC_SOURCES.md`, `gadget_limits/THEOREM.md` |

@@ -48,6 +48,13 @@ exact linear state representation whose dimension stays below `2^n` for this
 family, over every coefficient field. It remains a barrier for that specified
 linear-state language, not a lower bound against arbitrary algorithms.
 
+The accompanying [`FWHT_COST_REPORT.md`](fourier_spectrum_boundary_lab/FWHT_COST_REPORT.md)
+checks the arithmetic cost of the transform route itself. If an algorithm
+materializes all `2^n` Walsh values and then applies the full subset-Zeta
+transform, the exact butterfly/addition count is `3 n 2^(n-1)`. This is a
+conditional cost audit, not a lower bound against an implicit or compressed
+algorithm that never materializes that table.
+
 The project does not rely on the claim, and no conclusion changes if it is
 withdrawn. Any future audit would need the full paper, a precise input model,
 an all-instance proof of the transform's invariant, and an independent

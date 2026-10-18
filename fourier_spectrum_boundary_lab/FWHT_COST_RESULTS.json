@@ -1,0 +1,229 @@
+{
+  "interpretation": "A full length-2^n FWHT plus subset zeta pass; conditional barrier only.",
+  "review": {
+    "rows": 21,
+    "sample_transforms_replayed": 9,
+    "source_hashes_match": true,
+    "status": "PASS"
+  },
+  "rows": [
+    {
+      "combined_add_sub_operations": 0,
+      "dimension": 0,
+      "fwht_additions": 0,
+      "fwht_arithmetic_operations": 0,
+      "fwht_butterflies": 0,
+      "fwht_subtractions": 0,
+      "state_count": 1,
+      "zeta_additions": 0
+    },
+    {
+      "combined_add_sub_operations": 3,
+      "dimension": 1,
+      "fwht_additions": 1,
+      "fwht_arithmetic_operations": 2,
+      "fwht_butterflies": 1,
+      "fwht_subtractions": 1,
+      "state_count": 2,
+      "zeta_additions": 1
+    },
+    {
+      "combined_add_sub_operations": 12,
+      "dimension": 2,
+      "fwht_additions": 4,
+      "fwht_arithmetic_operations": 8,
+      "fwht_butterflies": 4,
+      "fwht_subtractions": 4,
+      "state_count": 4,
+      "zeta_additions": 4
+    },
+    {
+      "combined_add_sub_operations": 36,
+      "dimension": 3,
+      "fwht_additions": 12,
+      "fwht_arithmetic_operations": 24,
+      "fwht_butterflies": 12,
+      "fwht_subtractions": 12,
+      "state_count": 8,
+      "zeta_additions": 12
+    },
+    {
+      "combined_add_sub_operations": 96,
+      "dimension": 4,
+      "fwht_additions": 32,
+      "fwht_arithmetic_operations": 64,
+      "fwht_butterflies": 32,
+      "fwht_subtractions": 32,
+      "state_count": 16,
+      "zeta_additions": 32
+    },
+    {
+      "combined_add_sub_operations": 240,
+      "dimension": 5,
+      "fwht_additions": 80,
+      "fwht_arithmetic_operations": 160,
+      "fwht_butterflies": 80,
+      "fwht_subtractions": 80,
+      "state_count": 32,
+      "zeta_additions": 80
+    },
+    {
+      "combined_add_sub_operations": 576,
+      "dimension": 6,
+      "fwht_additions": 192,
+      "fwht_arithmetic_operations": 384,
+      "fwht_butterflies": 192,
+      "fwht_subtractions": 192,
+      "state_count": 64,
+      "zeta_additions": 192
+    },
+    {
+      "combined_add_sub_operations": 1344,
+      "dimension": 7,
+      "fwht_additions": 448,
+      "fwht_arithmetic_operations": 896,
+      "fwht_butterflies": 448,
+      "fwht_subtractions": 448,
+      "state_count": 128,
+      "zeta_additions": 448
+    },
+    {
+      "combined_add_sub_operations": 3072,
+      "dimension": 8,
+      "fwht_additions": 1024,
+      "fwht_arithmetic_operations": 2048,
+      "fwht_butterflies": 1024,
+      "fwht_subtractions": 1024,
+      "state_count": 256,
+      "zeta_additions": 1024
+    },
+    {
+      "combined_add_sub_operations": 6912,
+      "dimension": 9,
+      "fwht_additions": 2304,
+      "fwht_arithmetic_operations": 4608,
+      "fwht_butterflies": 2304,
+      "fwht_subtractions": 2304,
+      "state_count": 512,
+      "zeta_additions": 2304
+    },
+    {
+      "combined_add_sub_operations": 15360,
+      "dimension": 10,
+      "fwht_additions": 5120,
+      "fwht_arithmetic_operations": 10240,
+      "fwht_butterflies": 5120,
+      "fwht_subtractions": 5120,
+      "state_count": 1024,
+      "zeta_additions": 5120
+    },
+    {
+      "combined_add_sub_operations": 33792,
+      "dimension": 11,
+      "fwht_additions": 11264,
+      "fwht_arithmetic_operations": 22528,
+      "fwht_butterflies": 11264,
+      "fwht_subtractions": 11264,
+      "state_count": 2048,
+      "zeta_additions": 11264
+    },
+    {
+      "combined_add_sub_operations": 73728,
+      "dimension": 12,
+      "fwht_additions": 24576,
+      "fwht_arithmetic_operations": 49152,
+      "fwht_butterflies": 24576,
+      "fwht_subtractions": 24576,
+      "state_count": 4096,
+      "zeta_additions": 24576
+    },
+    {
+      "combined_add_sub_operations": 159744,
+      "dimension": 13,
+      "fwht_additions": 53248,
+      "fwht_arithmetic_operations": 106496,
+      "fwht_butterflies": 53248,
+      "fwht_subtractions": 53248,
+      "state_count": 8192,
+      "zeta_additions": 53248
+    },
+    {
+      "combined_add_sub_operations": 344064,
+      "dimension": 14,
+      "fwht_additions": 114688,
+      "fwht_arithmetic_operations": 229376,
+      "fwht_butterflies": 114688,
+      "fwht_subtractions": 114688,
+      "state_count": 16384,
+      "zeta_additions": 114688
+    },
+    {
+      "combined_add_sub_operations": 737280,
+      "dimension": 15,
+      "fwht_additions": 245760,
+      "fwht_arithmetic_operations": 491520,
+      "fwht_butterflies": 245760,
+      "fwht_subtractions": 245760,
+      "state_count": 32768,
+      "zeta_additions": 245760
+    },
+    {
+      "combined_add_sub_operations": 1572864,
+      "dimension": 16,
+      "fwht_additions": 524288,
+      "fwht_arithmetic_operations": 1048576,
+      "fwht_butterflies": 524288,
+      "fwht_subtractions": 524288,
+      "state_count": 65536,
+      "zeta_additions": 524288
+    },
+    {
+      "combined_add_sub_operations": 3342336,
+      "dimension": 17,
+      "fwht_additions": 1114112,
+      "fwht_arithmetic_operations": 2228224,
+      "fwht_butterflies": 1114112,
+      "fwht_subtractions": 1114112,
+      "state_count": 131072,
+      "zeta_additions": 1114112
+    },
+    {
+      "combined_add_sub_operations": 7077888,
+      "dimension": 18,
+      "fwht_additions": 2359296,
+      "fwht_arithmetic_operations": 4718592,
+      "fwht_butterflies": 2359296,
+      "fwht_subtractions": 2359296,
+      "state_count": 262144,
+      "zeta_additions": 2359296
+    },
+    {
+      "combined_add_sub_operations": 14942208,
+      "dimension": 19,
+      "fwht_additions": 4980736,
+      "fwht_arithmetic_operations": 9961472,
+      "fwht_butterflies": 4980736,
+      "fwht_subtractions": 4980736,
+      "state_count": 524288,
+      "zeta_additions": 4980736
+    },
+    {
+      "combined_add_sub_operations": 31457280,
+      "dimension": 20,
+      "fwht_additions": 10485760,
+      "fwht_arithmetic_operations": 20971520,
+      "fwht_butterflies": 10485760,
+      "fwht_subtractions": 10485760,
+      "state_count": 1048576,
+      "zeta_additions": 10485760
+    }
+  ],
+  "schema": "fwht_zeta_cost_v1",
+  "source_hashes": {
+    "../test_fwht_cost_audit.py": "d3303c93729adeaebb68c390af1dbd15bce35b4006b8c6986ccf18c6e4be7b1d",
+    "FWHT_COST_REPORT.md": "a9d6b4d001327dc774fe82403b324d69db2d94bfec2ba5a16e5f5b9e62170f06",
+    "fwht_cost.py": "8638bed38300aac6e251591836d709a106027d01948e01693ca9d66d298096e3",
+    "review_fwht_cost.py": "f5454fd6f53bde5fe8f8c47583394f6feb7cb59fb1b0e2f4a634f266ff9ec802",
+    "run_fwht_cost.py": "ddda2e8a3cf1747df81634c43af070024b492b85648ce74bb8b3ac83922e0aff"
+  }
+}
