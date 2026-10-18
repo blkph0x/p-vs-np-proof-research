@@ -47,6 +47,11 @@ jobs:
         run: |
           python run_indirect_xor.py
           python review_indirect_xor.py
+      - name: Replay compact ITE motif audit
+        working-directory: proof_motif_candidate_lab
+        run: |
+          python run_indirect_ite.py
+          python review_indirect_ite.py
       - name: Run the self-contained full audit
         run: |
           set +e

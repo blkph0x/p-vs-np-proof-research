@@ -1,0 +1,157 @@
+{
+  "decoy_clauses": [
+    [
+      -2,
+      -3,
+      1
+    ],
+    [
+      -1,
+      2,
+      3
+    ],
+    [
+      2,
+      -4,
+      1
+    ],
+    [
+      2,
+      4,
+      -1
+    ]
+  ],
+  "interpretation": "Exact four-clause 3-CNF ITE recognition; semantic role search is constant-size.",
+  "mutated_clauses": [
+    [
+      1,
+      -3,
+      1
+    ],
+    [
+      -2,
+      3,
+      -1
+    ],
+    [
+      2,
+      -4,
+      1
+    ],
+    [
+      2,
+      4,
+      -1
+    ],
+    [
+      6,
+      -7,
+      5
+    ],
+    [
+      -6,
+      7,
+      -5
+    ],
+    [
+      6,
+      -8,
+      5
+    ],
+    [
+      6,
+      8,
+      -5
+    ]
+  ],
+  "positive_candidates": [
+    {
+      "a": 2,
+      "b": 3,
+      "c": 1,
+      "clause_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "kind": "COMPACT_ITE",
+      "support": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "z": 0
+    },
+    {
+      "a": 6,
+      "b": 7,
+      "c": 5,
+      "clause_indices": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "kind": "COMPACT_ITE",
+      "support": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "z": 4
+    }
+  ],
+  "positive_clauses": [
+    [
+      -2,
+      -3,
+      1
+    ],
+    [
+      -2,
+      3,
+      -1
+    ],
+    [
+      2,
+      -4,
+      1
+    ],
+    [
+      2,
+      4,
+      -1
+    ],
+    [
+      -6,
+      -7,
+      5
+    ],
+    [
+      -6,
+      7,
+      -5
+    ],
+    [
+      6,
+      -8,
+      5
+    ],
+    [
+      6,
+      8,
+      -5
+    ]
+  ],
+  "schema": "indirect_ite_v1",
+  "source_hashes": {
+    "../test_indirect_ite.py": "36aca19fb3e1b1bdcbd70ac948936057916a6ce3304cfe6830bcc58969fe1bb5",
+    "INDIRECT_ITE_REPORT.md": "72a9b80cfda386a9669bbb16f1e082c0544df14c008ce4d6b0a7c08197020706",
+    "indirect_ite.py": "c233642a8dbd3b0a8126c5ee1fa68f8f90690dd82d2673c4fa01b54440e19436",
+    "review_indirect_ite.py": "3e792202f75e8c7c1fe04176976c78e1cc97bfe3ea22edbf1e735d5426837550",
+    "run_indirect_ite.py": "128c1aa7378cab24b46480a4790a722a892244adc705b74c3abf84b832a2dce0"
+  }
+}

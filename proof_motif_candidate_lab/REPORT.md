@@ -53,6 +53,12 @@ Group width-4 clauses by exact support and test all constant-many role permutati
 
 Only the exact eight-clause truth-table relation is accepted.
 
+The companion [compact ITE audit](INDIRECT_ITE_REPORT.md) recognizes the exact
+four-clause 3-CNF encoding of the same relation. It searches the constant 24
+role permutations, records all source clauses, and independently rejects
+mutated and same-support decoy groups. This is a compact encoding rule, not a
+complete circuit or auxiliary-definition recognizer.
+
 ### OR -> unit proof macro
 
 For a positive clause

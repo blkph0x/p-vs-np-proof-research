@@ -21,7 +21,7 @@ stated structural families, finite exhaustive controls, certificate verifiers,
 and scoped counterexamples. It does not claim a solver for every SAT instance
 or a lower bound against every polynomial algorithm.
 
-The latest recorded full audit passed **38 suites and 399 test methods** with
+The latest recorded full audit passed **39 suites and 402 test methods** with
 unchanged source hashes. These are reproducibility results for the checked
 finite cases, not a solution to the open problem.
 
@@ -41,6 +41,11 @@ sharing one variable are combined into a four-variable XOR relation, while a
 mutated block and a disjoint pair are rejected. This strengthens the scoped
 motif miner but does not provide complete auxiliary elimination or a general
 SAT algorithm.
+
+The [compact ITE audit](proof_motif_candidate_lab/INDIRECT_ITE_REPORT.md)
+recognizes the exact four-clause 3-CNF encoding of ITE gates and rejects
+mutated and same-support decoys through independent truth-table replay. This is
+another bounded motif result, not a complete circuit solver.
 
 ## Runtime scaling notebook
 
