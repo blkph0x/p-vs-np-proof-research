@@ -17,6 +17,8 @@ Run:
     python review.py
     python run_incremental.py
     python review_incremental.py
+    python run_indexed.py
+    python review_indexed.py
 
 See [`THEOREM.md`](THEOREM.md) for the completeness and exponential-cost
 argument.

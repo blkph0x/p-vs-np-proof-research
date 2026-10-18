@@ -405,7 +405,7 @@ keeping the auxiliaries preserves its polynomial solving route.
 
 ## Evidence and practical limits
 
-The current frozen integration run passes **384 tests across 37 suites**, with
+The current frozen integration run passes **386 tests across 37 suites**, with
 unchanged source hashes throughout. The canonical audit now includes the
 51-test labelled-join and perturbation certificate suite in
 `labelled_join_certified`. [TEST_SUMMARY.json](TEST_SUMMARY.json) and
@@ -566,6 +566,13 @@ An independent replay checks the complete clause set at every rung; on the
 `(4,3)` pigeonhole control, candidate inference attempts fall from 267,204 to
 234,750. This is a parameterized implementation optimization, not a
 machine-independent polynomial bound.
+
+The [indexed width stress report](resolution_width_lab/INDEXED_REPORT.md)
+preserves the same inference rules while indexing opposite literals. Its
+independent replay confirms an exact width-3 fixed point for PHP(5,4); the
+seeded width-4 run reaches the one-million-candidate cap with `UNKNOWN` status.
+The result identifies an implementation frontier and does not prove that no
+width-4 refutation exists.
 
 The ultimate goal remains active. These findings sharpen the question and
 remove incorrect shortcuts; they do not answer P versus NP.

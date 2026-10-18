@@ -21,7 +21,7 @@ stated structural families, finite exhaustive controls, certificate verifiers,
 and scoped counterexamples. It does not claim a solver for every SAT instance
 or a lower bound against every polynomial algorithm.
 
-The latest recorded full audit passed **37 suites and 384 test methods** with
+The latest recorded full audit passed **37 suites and 386 test methods** with
 unchanged source hashes. These are reproducibility results for the checked
 finite cases, not a solution to the open problem.
 

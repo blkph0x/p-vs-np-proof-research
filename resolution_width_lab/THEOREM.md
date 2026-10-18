@@ -54,3 +54,20 @@ inferences; they are implementation measurements, not machine-independent
 runtime bounds. The universe and bit-cost bounds above still apply, so the
 ladder remains a parameterized optimization rather than a polynomial SAT
 algorithm.
+
+## Literal indexing and the 5-into-4 stress row
+
+`indexed.py` implements the same closure with an index from each literal to
+the clauses containing it. When a current clause contains literal `l`, only
+the indexed clauses containing `-l` can be resolution parents. Every legal
+resolution pair therefore remains enumerated, while clauses with no opposite
+literal are never scanned. The index changes work ordering and candidate
+counts, not the inference system or its finite closure.
+
+The indexed implementation is independently replayed on the saved exact
+controls. On pigeonhole `PHP_5^4`, width 3 reaches a complete fixed point with
+2,230 clauses and no empty clause. Width 4 is seeded from that complete width-3
+closure, but reaches the explicit one-million-candidate cap with 27,377 known
+clauses and status `UNKNOWN`. The cap is a resource boundary: it does not prove
+that no width-4 refutation exists. These observations are recorded in
+`INDEXED_REPORT.md` and replayed by `review_indexed.py`.

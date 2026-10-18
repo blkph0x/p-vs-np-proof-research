@@ -26,6 +26,7 @@ or P≠NP has been proved.
 | Semantic clutter versus frontier width | Proved for the saved unit-plus-clique family | [`proof_complexity_frontier_lab/CLUTTER_REPORT.md`](proof_complexity_frontier_lab/CLUTTER_REPORT.md) and [`proof_complexity_frontier_lab/THEOREM.md`](proof_complexity_frontier_lab/THEOREM.md), with independent width closure, exact subset-order replay, and satisfying-model mutations. This is a preprocessing control, not a semantic hardness lower bound. |
 | Bounded-width resolution closure | Proved for the stated width-bounded proof system | [`resolution_width_lab/THEOREM.md`](resolution_width_lab/THEOREM.md), complete weakening/resolution closure with replayable refutations and explicit clause/step caps. |
 | Incremental bounded-width ladder | Proved equal to fresh closure on the saved controls | [`resolution_width_lab/INCREMENTAL_REPORT.md`](resolution_width_lab/INCREMENTAL_REPORT.md) and [`resolution_width_lab/THEOREM.md`](resolution_width_lab/THEOREM.md), with an induction argument, complete-clause-set replay, and conservative cap handling. The work reduction is implementation-specific and remains exponential in the width universe. |
+| Indexed bounded-width stress closure | Exact on the saved controls; capped stress frontier | [`resolution_width_lab/INDEXED_REPORT.md`](resolution_width_lab/INDEXED_REPORT.md) and [`resolution_width_lab/THEOREM.md`](resolution_width_lab/THEOREM.md), with literal-index completeness reasoning, independent replay, and explicit `UNKNOWN` handling for PHP(5,4) width 4. |
 
 ## Evidence vocabulary
 

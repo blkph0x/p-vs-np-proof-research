@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "rows_replayed": 25,
+  "exact_rows_match": true,
+  "stress_cap_replayed": true,
+  "source_hashes_match": true
+}

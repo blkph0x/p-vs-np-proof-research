@@ -500,3 +500,12 @@ pigeonhole row reduces candidate inference attempts from 267,204 to 234,750.
 This is a deterministic parameterized optimization, not a polynomial-time
 general SAT method; the next unresolved step is still a uniform width bound or
 an algorithm that handles formulas whose required width grows with input size.
+
+The indexed follow-up keeps the same weakening/resolution semantics but uses
+literal buckets to avoid scanning clauses without an opposite pivot. An
+independent replay gives an exact width-3 fixed point for PHP(5,4). Reusing that
+seed at width 4 still reaches the one-million-candidate cap with `UNKNOWN` and
+27,377 known clauses, so the stress run records a solver frontier rather than a
+mathematical width lower bound. The next useful step is a more scalable exact
+closure or a theorem-backed all-size width argument; neither is currently in
+hand.

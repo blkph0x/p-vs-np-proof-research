@@ -6,6 +6,7 @@ import unittest
 
 from resolution import BoundedResolution, weakenings
 from incremental import run_ladder
+from indexed import IndexedBoundedResolution
 
 
 HERE = Path(__file__).resolve().parent
@@ -123,6 +124,41 @@ class ResolutionWidthTests(unittest.TestCase):
         self.assertTrue(artifact["all_closures_match"])
         self.assertEqual(review["status"], "PASS")
         self.assertTrue(review["fresh_and_incremental_closures_match"])
+        self.assertTrue(review["source_hashes_match"])
+
+    def test_indexed_closure_matches_reference_controls(self):
+        controls = [
+            (1, ((1,), (-1,)), 1),
+            (3, all_assignment_clauses(3), 3),
+            (*pigeonhole(3, 2), 2),
+            (2, ((1, 2), (-1, 2)), 2),
+        ]
+        for nvars, clauses, width in controls:
+            reference = BoundedResolution(
+                nvars, clauses, width, max_clauses=100000, max_steps=500000
+            ).solve()
+            indexed = IndexedBoundedResolution(
+                nvars, clauses, width, max_clauses=100000, max_steps=500000
+            ).solve()
+            self.assertEqual(indexed["status"], reference["status"])
+            self.assertEqual(indexed.get("reason"), reference.get("reason"))
+            self.assertEqual({tuple(c) for c in indexed["clauses"]},
+                             {tuple(c) for c in reference["clauses"]})
+            self.assertGreaterEqual(indexed["stats"]["indexed_resolution_pairs"],
+                                    indexed["stats"]["resolution_steps"])
+
+    def test_saved_indexed_stress_review_passed(self):
+        artifact = json.loads((HERE / "INDEXED_RESULTS.json").read_text(encoding="utf-8"))
+        review = json.loads((HERE / "INDEXED_REVIEW.json").read_text(encoding="utf-8"))
+        self.assertEqual(artifact["exact_control_count"], 7)
+        stress = [row for row in artifact["rows"] if row["name"] == "pigeonhole_5_4"]
+        self.assertEqual([row["width"] for row in stress], [3, 4])
+        self.assertEqual([row["status"] for row in stress], ["UNKNOWN", "UNKNOWN"])
+        self.assertEqual(stress[0]["reason"], "NO_WIDTH_W_REFUTATION")
+        self.assertEqual(stress[1]["reason"], "STEP_CAP")
+        self.assertEqual(review["status"], "PASS")
+        self.assertTrue(review["exact_rows_match"])
+        self.assertTrue(review["stress_cap_replayed"])
         self.assertTrue(review["source_hashes_match"])
 
 
