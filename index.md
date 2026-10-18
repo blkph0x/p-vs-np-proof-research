@@ -21,7 +21,7 @@ stated structural families, finite exhaustive controls, certificate verifiers,
 and scoped counterexamples. It does not claim a solver for every SAT instance
 or a lower bound against every polynomial algorithm.
 
-The latest recorded full audit passed **43 suites and 429 test methods** with
+The latest recorded full audit passed **43 suites and 434 test methods** with
 unchanged source hashes. These are reproducibility results for the checked
 finite cases, not a solution to the open problem.
 
@@ -73,6 +73,11 @@ The companion [all-redundant-parity replay](local_marginal_code_lab/REED_MULLER_
 adds every dual parity check analytically. Its exact rational certificate still
 leaves integer/fractional ratios `6/5`, `28/19`, and `120/71` on the saved
 family, so redundant XOR checks tighten the relaxation without closing it.
+
+The [combined all-dual/local replay](local_marginal_code_lab/REED_MULLER_ALL_DUAL_LOCAL_REPORT.md)
+adds all pinned-code projection marginals through level `d-2` at the same
+time. Exact product tables remain feasible at the all-dual optimum, leaving the
+same ratios on the three saved Reed--Muller controls.
 
 ## Runtime scaling notebook
 

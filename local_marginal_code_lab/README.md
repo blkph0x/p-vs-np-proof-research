@@ -29,6 +29,14 @@ fractional optimum. The resulting integer/fractional ratios are `6/5`,
 `28/19`, and `120/71` for the three saved cases, so this stronger parity-only
 relaxation still has a limiting factor-two gap.
 
+The combined follow-up in
+[`REED_MULLER_ALL_DUAL_LOCAL_REPORT.md`](REED_MULLER_ALL_DUAL_LOCAL_REPORT.md)
+adds every pinned-code projection marginal through level `d-2` while retaining
+all dual parity inequalities. Product local tables remain feasible at the
+same exact fractional optimum; the saved ratios are again `6/5`, `28/19`, and
+`120/71`. This tests a stronger hierarchy edge without claiming a general
+lower bound.
+
 ```text
 python -m unittest discover -v
 python run_experiments.py
@@ -39,4 +47,7 @@ python -m unittest -v test_reed_muller.py
 python run_all_dual_reed_muller.py
 python REED_MULLER_ALL_DUAL_INDEPENDENT_REVIEW.py
 python -m unittest -v test_all_dual_reed_muller.py
+python run_all_dual_local_reed_muller.py
+python REED_MULLER_ALL_DUAL_LOCAL_INDEPENDENT_REVIEW.py
+python -m unittest -v test_all_dual_local_reed_muller.py
 ```

@@ -10,6 +10,7 @@ OUT = ROOT / "PUBLIC_SOURCES.md"
 URL_RE = re.compile(r"https?://[^\s<>()\[\]{}\"'`]+")
 TEXT_SUFFIXES = {".md", ".py", ".json", ".txt", ".cff", ".yml", ".yaml"}
 TRAILING = ",.;:'\"`"
+IGNORED_DIRS = {".git", ".venv", "venv", "env", "__pycache__"}
 
 
 def clean_url(raw: str) -> str:
@@ -22,7 +23,8 @@ def clean_url(raw: str) -> str:
 def main() -> None:
     found: dict[str, set[str]] = {}
     for path in ROOT.rglob("*"):
-        if not path.is_file() or ".git" in path.parts or path.suffix.lower() not in TEXT_SUFFIXES:
+        if (not path.is_file() or any(part in IGNORED_DIRS for part in path.parts)
+                or path.suffix.lower() not in TEXT_SUFFIXES):
             continue
         try:
             text = path.read_text(encoding="utf-8", errors="ignore")
