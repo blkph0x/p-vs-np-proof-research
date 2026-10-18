@@ -12,7 +12,7 @@ test_proof_dag_leaf_extraction_is_bounded (test_adaptive_fragment_synthesis.Test
 test_resolution_macro_relation (test_adaptive_fragment_synthesis.TestAdaptiveFragmentSynthesis) ... ok
 
 ----------------------------------------------------------------------
-Ran 11 tests in 0.009s
+Ran 11 tests in 0.010s
 
 OK
 
@@ -25,7 +25,7 @@ test_same_certificate_works_for_each_pin (test_all_dual_lp_barrier.AllDualLPBarr
 test_uniform_subset_mixtures_by_explicit_small_expansion (test_all_dual_lp_barrier.AllDualLPBarrierTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 6 tests in 5.034s
+Ran 6 tests in 5.192s
 
 OK
 
@@ -51,7 +51,7 @@ test_seeded_digit_no_carry_controls (test_coefficient_complexity_barrier.Coeffic
 test_small_general_families_and_duplicates (test_coefficient_complexity_barrier.CoefficientBarrierTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 6 tests in 0.253s
+Ran 6 tests in 0.256s
 
 OK
 
@@ -66,7 +66,7 @@ test_scope_is_affine_frontier_only (test_complete_graph_frontier_integration.Com
 test_state_bound_scales (test_complete_graph_frontier_integration.CompleteGraphFrontierIntegrationTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 8 tests in 11.585s
+Ran 8 tests in 11.660s
 
 OK
 
@@ -107,7 +107,7 @@ test_independent_verifier (test_fourier_spectrum_boundary_integration.FourierSpe
 test_saved_artifact_and_analytic_support (test_fourier_spectrum_boundary_integration.FourierSpectrumBoundaryTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 7 tests in 0.814s
+Ran 7 tests in 0.825s
 
 OK
 
@@ -119,7 +119,7 @@ test_subdag_cap_suffixes_are_recovered_by_structural_macro (test_macro_assisted_
 test_symbolic_work_is_not_claimed_as_projection_reuse (test_macro_assisted_subdag.TestMacroAssistedSubdag) ... ok
 
 ----------------------------------------------------------------------
-Ran 5 tests in 2.715s
+Ran 5 tests in 2.700s
 
 OK
 
@@ -135,7 +135,7 @@ test_verifier_accepts_general_crossing_odd_sets (test_matching_certificate.Match
 test_wrong_graph_and_malformed_inputs_are_rejected (test_matching_certificate.MatchingCertificateTest) ... ok
 
 ----------------------------------------------------------------------
-Ran 9 tests in 16.186s
+Ran 9 tests in 16.193s
 
 OK
 
@@ -155,7 +155,7 @@ test_reject_boolean_numeric_claims (test_native_coset_solver.NativeCosetSolverTe
 test_reject_tampered_result_certificates (test_native_coset_solver.NativeCosetSolverTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 13 tests in 103.241s
+Ran 13 tests in 104.138s
 
 OK
 
@@ -169,7 +169,7 @@ test_reject_tampered_guarantees_and_dual_basis (test_projection_barrier.Projecti
 test_zero_full_empty_codes_and_budgets (test_projection_barrier.ProjectionBarrierTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 7 tests in 0.692s
+Ran 7 tests in 0.713s
 
 OK
 
@@ -182,7 +182,7 @@ test_independent_replay (test_projection_discovery_barrier.ProjectionDiscoveryBa
 test_reduction_relation (test_projection_discovery_barrier.ProjectionDiscoveryBarrierTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 6 tests in 0.051s
+Ran 6 tests in 0.052s
 
 OK
 
@@ -207,7 +207,7 @@ test_independent_replay (test_quadratic_code_family_integration.QuadraticCodeFam
 test_saved_degrees_and_states (test_quadratic_code_family_integration.QuadraticCodeFamilyIntegrationTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 6 tests in 2.023s
+Ran 6 tests in 2.054s
 
 OK
 
@@ -220,7 +220,7 @@ test_second_moment_formula_and_rank_range (test_randomized_isolation.RandomizedI
 test_seeded_hash_replay (test_randomized_isolation.RandomizedIsolationTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 6 tests in 54.934s
+Ran 6 tests in 55.402s
 
 OK
 
@@ -236,7 +236,7 @@ test_seeded_four_and_five_row_affine_instances (test_rank_native_solver.RankNati
 test_tampering_rejected (test_rank_native_solver.RankNativeTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 9 tests in 97.558s
+Ran 9 tests in 97.868s
 
 OK
 
@@ -262,7 +262,7 @@ test_scale_scan_keeps_projection_cap_explicit (test_repeated_subdag_templates.Te
 test_unknown_records_remain_explicit (test_repeated_subdag_templates.TestRepeatedSubdagTemplates) ... ok
 
 ----------------------------------------------------------------------
-Ran 7 tests in 1.668s
+Ran 7 tests in 1.699s
 
 OK
 
@@ -289,7 +289,7 @@ test_strict_greedy_local_minimum_is_not_a_global_claim (test_row_basis_discovery
 test_tampered_transform_matrix_and_scores_are_rejected (test_row_basis_discovery.RowBasisDiscoveryTest) ... ok
 
 ----------------------------------------------------------------------
-Ran 9 tests in 0.217s
+Ran 9 tests in 0.218s
 
 OK
 
@@ -303,7 +303,7 @@ test_plateaus_are_traversed_without_fabricating_improvements (test_row_basis_esc
 test_seeded_cases_respect_exhaustive_gl3_optima (test_row_basis_escape.RowBasisEscapeTest) ... ok
 
 ----------------------------------------------------------------------
-Ran 7 tests in 0.244s
+Ran 7 tests in 0.242s
 
 OK
 
@@ -313,7 +313,7 @@ test_bounds_and_adversarial_mutation (test_semantic_frontier_expander_integratio
 test_every_saved_order_has_distinct_residual_witnesses (test_semantic_frontier_expander_integration.SemanticFrontierExpanderIntegrationTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 3 tests in 0.203s
+Ran 3 tests in 0.206s
 
 OK
 
@@ -329,7 +329,7 @@ test_loops_coloops_parallel_blocks_and_large_bit_positions (test_structural_prob
 test_stored_fixture_probe_without_conditioning (test_structural_probe.StructuralProbeTest) ... ok
 
 ----------------------------------------------------------------------
-Ran 9 tests in 0.261s
+Ran 9 tests in 0.264s
 
 OK
 
@@ -342,7 +342,7 @@ test_scale_work_is_linear_in_reachable_proof (test_symbolic_suffix_template.Test
 test_two_literal_suffix_is_exact (test_symbolic_suffix_template.TestSymbolicSuffixTemplate) ... ok
 
 ----------------------------------------------------------------------
-Ran 6 tests in 0.808s
+Ran 6 tests in 0.824s
 
 OK
 
@@ -355,7 +355,7 @@ test_near_miss_is_rejected (test_symbolic_unit_template.TestSymbolicUnitTemplate
 test_recognizes_and_certifies_large_local_fragment (test_symbolic_unit_template.TestSymbolicUnitTemplate) ... ok
 
 ----------------------------------------------------------------------
-Ran 6 tests in 0.215s
+Ran 6 tests in 0.223s
 
 OK
 
@@ -391,7 +391,7 @@ test_projection_layout_validation (test_two_bridge_factorization.TwoBridgeFactor
 test_saved_artifact_and_review (test_two_bridge_factorization.TwoBridgeFactorizationTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 29 tests in 13.910s
+Ran 29 tests in 14.264s
 
 OK
 
@@ -419,7 +419,7 @@ test_reject_malformed_certificates (test_fano_certificate.FanoCertificateTests) 
 test_zero_budget_and_small_input_are_unknown (test_fano_certificate.FanoCertificateTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 21 tests in 0.437s
+Ran 21 tests in 0.450s
 
 OK
 
@@ -429,7 +429,7 @@ test_dimension_validation (test_non_graphic_core.NonGraphicCoreTests) ... ok
 test_fano_restriction (test_non_graphic_core.NonGraphicCoreTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 3 tests in 0.002s
+Ran 3 tests in 0.003s
 
 OK
 
@@ -445,7 +445,7 @@ test_trellis_dimension_uses_generator_rank (test_lab.LabTest) ... ok
 test_trellis_matches_brute (test_lab.LabTest) ... ok
 
 ----------------------------------------------------------------------
-Ran 9 tests in 0.699s
+Ran 9 tests in 0.706s
 
 OK
 
@@ -472,6 +472,6 @@ test_polymorphism_artifact_replay (test_lab.TestHornCdclt) ... ok
 test_single_gadget_solver_matches_direct (test_lab.TestHornCdclt) ... ok
 
 ----------------------------------------------------------------------
-Ran 20 tests in 12.278s
+Ran 20 tests in 12.409s
 
 OK
