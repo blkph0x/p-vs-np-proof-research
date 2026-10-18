@@ -42,6 +42,11 @@ jobs:
         run: |
           python run_fwht_cost.py
           python review_fwht_cost.py
+      - name: Replay hidden XOR motif audit
+        working-directory: proof_motif_candidate_lab
+        run: |
+          python run_indirect_xor.py
+          python review_indirect_xor.py
       - name: Run the self-contained full audit
         run: |
           set +e

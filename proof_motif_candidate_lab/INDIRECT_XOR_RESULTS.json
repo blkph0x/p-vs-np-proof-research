@@ -1,0 +1,154 @@
+{
+  "disjoint_clauses": [
+    [
+      1,
+      2,
+      -5
+    ],
+    [
+      1,
+      -2,
+      5
+    ],
+    [
+      -1,
+      2,
+      5
+    ],
+    [
+      -1,
+      -2,
+      -5
+    ],
+    [
+      6,
+      7,
+      8
+    ],
+    [
+      6,
+      -7,
+      -8
+    ],
+    [
+      -6,
+      7,
+      -8
+    ],
+    [
+      -6,
+      -7,
+      8
+    ]
+  ],
+  "interpretation": "One shared-variable parity equation is cancelled; bounded one-step discovery only.",
+  "mutated_clauses": [
+    [
+      1,
+      2,
+      -5
+    ],
+    [
+      1,
+      -2,
+      5
+    ],
+    [
+      -1,
+      2,
+      5
+    ],
+    [
+      -1,
+      -2,
+      -5
+    ],
+    [
+      -3,
+      4,
+      5
+    ],
+    [
+      -3,
+      -4,
+      5
+    ],
+    [
+      3,
+      -4,
+      -5
+    ],
+    [
+      -3,
+      4,
+      -5
+    ]
+  ],
+  "positive_candidates": [
+    {
+      "block_ids": [
+        0,
+        1
+      ],
+      "eliminated": 4,
+      "kind": "HIDDEN_XOR_PAIR",
+      "rhs": 1,
+      "support": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "positive_clauses": [
+    [
+      1,
+      2,
+      -5
+    ],
+    [
+      1,
+      -2,
+      5
+    ],
+    [
+      -1,
+      2,
+      5
+    ],
+    [
+      -1,
+      -2,
+      -5
+    ],
+    [
+      3,
+      4,
+      5
+    ],
+    [
+      -3,
+      -4,
+      5
+    ],
+    [
+      3,
+      -4,
+      -5
+    ],
+    [
+      -3,
+      4,
+      -5
+    ]
+  ],
+  "schema": "indirect_xor_pair_v1",
+  "source_hashes": {
+    "../test_indirect_xor.py": "1837d1c403af329fabe2f6eb8290f7f515802224b96b993ecd82caa0cc7f45ba",
+    "INDIRECT_XOR_REPORT.md": "23f720b35c7f471babe480782d9e7f1444b9530db512d91417e7d2c62b725a16",
+    "indirect_xor.py": "42bceb645132cf25f9b069376720b9d3287fd232518b111954e0666c0ace6905",
+    "review_indirect_xor.py": "02f8935400c05a98f210e52a025ed78ab14589f8740f82f265c749022906af99",
+    "run_indirect_xor.py": "9408d9bb9e3260d1b51f298c91caf0377218a942be352e9bdc42256eddaa7027"
+  }
+}

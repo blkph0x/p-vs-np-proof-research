@@ -25,7 +25,7 @@ python run_research_checks.py
 ```
 
 The command regenerates `TEST_OUTPUT.txt` and `TEST_SUMMARY.json`, then checks
-all registered suites. The current checkpoint passes 37 suites and 396 methods
+all registered suites. The current checkpoint passes 38 suites and 399 methods
 with unchanged source hashes. A full run can take several
 minutes because it includes exhaustive finite controls and native rank checks.
 
@@ -38,6 +38,10 @@ python -m unittest -v test_fourier_spectrum_boundary_integration.py
 Push-Location fourier_spectrum_boundary_lab
 python run_fwht_cost.py
 python review_fwht_cost.py
+Pop-Location
+Push-Location proof_motif_candidate_lab
+python run_indirect_xor.py
+python review_indirect_xor.py
 Pop-Location
 python run_holographic_phase_checks.py
 python verify_holographic_artifacts.py

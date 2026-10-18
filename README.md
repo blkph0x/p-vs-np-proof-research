@@ -15,7 +15,7 @@
 - Use [`CITATIONS.md`](CITATIONS.md) and [`PUBLIC_SOURCES.md`](PUBLIC_SOURCES.md)
   for public sources and the reports that use them.
 - Follow [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) to replay the checks from a
-  fresh checkout. The current frozen run has 396 passing methods across 37
+  fresh checkout. The current frozen run has 399 passing methods across 38
   suites; the full audit is intentionally separate from the lighter continuous
   integration checks, and all of its suite dependencies are included in this
   repository.
@@ -650,6 +650,15 @@ symbolic receiver check. The independent replay also reconstructs every node of
 the serialized 65-node resolution refutation.
 An unlabelled scan of 42 small-boundary proof nodes found eight unit, eight PB,
 24 table-only and two `UNKNOWN` relations.
+
+The [hidden-XOR pair audit](proof_motif_candidate_lab/INDIRECT_XOR_REPORT.md)
+extends this vocabulary without benchmark labels. It verifies two local parity
+blocks, cancels one shared auxiliary variable, and emits a four-variable XOR
+certificate. An independent exhaustive implication check accepts the positive
+fixture and rejects both a one-literal mutation and a disjoint pair. The join is
+polynomial in the explicit block list but deliberately covers only one-step
+cancellation; longer spans and complete auxiliary-variable elimination remain
+open.
 
 The [residual-equivalence barrier report](RESIDUAL_EQUIVALENCE_BARRIER_REPORT.md)
 formalizes the next limitation: for arbitrary `G(y)`, the one-bit-boundary

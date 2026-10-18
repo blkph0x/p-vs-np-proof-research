@@ -412,7 +412,7 @@ keeping the auxiliaries preserves its polynomial solving route.
 
 ## Evidence and practical limits
 
-The current frozen integration run passes **396 tests across 37 suites**, with
+The current frozen integration run passes **399 tests across 38 suites**, with
 unchanged source hashes throughout. The canonical audit now includes the
 51-test labelled-join and perturbation certificate suite in
 `labelled_join_certified`. [TEST_SUMMARY.json](TEST_SUMMARY.json) and
@@ -483,6 +483,15 @@ empty clause independently.
 An unlabelled scan of 42 proof nodes with boundary arity at most two found
 eight unit and eight PB relations, 24 table-only relations, and two `UNKNOWN`
 cases.
+
+The [hidden-XOR pair audit](proof_motif_candidate_lab/INDIRECT_XOR_REPORT.md)
+adds a bounded auxiliary-variable control. It recognizes exact three-variable
+parity blocks, cancels one shared variable between two blocks, and checks the
+resulting four-variable equation with an independent exhaustive implication
+replay. A one-literal mutation and a disjoint-block control are rejected. The
+pair join is polynomial in the explicit block count, but this is only a
+one-step discovery rule; unrestricted XOR-span discovery and general SAT remain
+unresolved.
 
 The [residual-equivalence barrier report](RESIDUAL_EQUIVALENCE_BARRIER_REPORT.md)
 adds a source-bound coNP-hardness reduction for exact future-state quotienting.
