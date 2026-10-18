@@ -281,6 +281,15 @@ all-assignment campaign and preserves the injection-counting proof for the
 pigeonhole campaign. These are resolution/CDCL scaling controls, not lower
 bounds against arbitrary SAT algorithms.
 
+The companion [proof/frontier comparison lab](proof_complexity_frontier_lab/README.md)
+reconstructs the same all-assignment and pigeonhole rows with a supplied-order
+frontier dynamic program. It independently checks every boundary, state layer,
+and transition count, then places those exact measurements beside the replayed
+CDCL conflicts and resolution steps. The all-assignment identities and the
+pigeonhole h^2 row-major frontier width are proved for their stated families;
+the comparison remains a finite representation study, not a lower bound for
+all algorithms.
+
 The [bounded-width resolution lab](resolution_width_lab/README.md) separately
 closes every weakening and resolution consequence up to width `w`. A fixed
 point without the empty clause is a finite certificate that this proof system

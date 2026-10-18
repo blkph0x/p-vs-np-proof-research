@@ -462,3 +462,12 @@ growth, keeping every cap and proof-system scope explicit. The first CDCL
 scaling bridge is now saved in `proof_complexity_scaling_lab`; it replays ten
 all-assignment and eight pigeonhole traces and records exact deterministic
 trace identities where they are proved.
+
+The follow-up proof_complexity_frontier_lab now reconstructs the first seven
+rows of each family with an independent supplied-order frontier evaluator. It
+checks every boundary and state/transition layer, verifies 2^n-1 retained
+states for the all-assignment controls, and proves the h^2 row-major maximum
+frontier width for the pigeonhole controls. Its compact table aligns those
+measurements with the replayed CDCL conflicts and resolution steps. This
+strengthens the finite adversarial record while leaving order discovery,
+alternative proof systems, and arbitrary SAT lower bounds open.

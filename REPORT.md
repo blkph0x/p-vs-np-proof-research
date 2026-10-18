@@ -103,6 +103,15 @@ super-polynomial-in-input-size lower bound. The pigeonhole rows retain the
 independent injection-counting proof and expose scaling inside resolution;
 they do not lower-bound algorithms outside that proof system.
 
+The new [proof/frontier comparison](proof_complexity_frontier_lab/THEOREM.md)
+replays the same finite rows with a supplied-order frontier dynamic program.
+For all-assignment formulas it verifies the exact 2^n-1 retained-state
+identity; for h+1 pigeons and h holes it verifies the row-major maximum
+frontier width h^2 through the saved controls. The independent table places
+those state counts beside the CDCL conflict and resolution counts while
+preserving the distinction between a supplied representation and a universal
+SAT lower bound.
+
 The [bounded-width resolution lab](resolution_width_lab/THEOREM.md) provides a
 second proof-complexity lens. It computes the complete finite closure under
 weakening and width-preserving resolution, replaying either an empty-clause
