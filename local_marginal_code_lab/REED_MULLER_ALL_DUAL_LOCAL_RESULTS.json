@@ -157,20 +157,21 @@
         "fractional_feasible_weight": "10/3",
         "integer_pinned_optimum": 4,
         "integrality_ratio": "6/5",
-        "level": 2,
-        "local_product_marginal": {
-          "independent_on_each_scope": true,
-          "other_coordinate_value": "1/3",
+        "level": 3,
+        "local_sparse_marginal": {
+          "all_zero_mass": "1-|free_scope|/(d-1)",
+          "marginal_consistency": "one_hot_or_zero",
+          "one_hot_coordinate_mass": "1/3",
           "pin_value": "1",
           "supported_by_pinned_code_projection": true
         },
+        "local_witness_atom_count": 261,
         "m": 3,
         "minimum_check_count_through_pin": 7,
         "minimum_check_other_coordinate_incidence": 3,
         "minimum_check_ratio": "7/3",
         "n": 8,
         "pin": 0,
-        "pinned_atom_slot_count": 114,
         "point": [
           "1",
           "1/3",
@@ -182,17 +183,20 @@
           "1/3"
         ],
         "projection_support": {
-          "level": 2,
+          "boundary_scope_size": 3,
+          "level": 3,
+          "one_hot_boundary_assignments_supported": true,
           "pin_included_scope_support": "PIN_ONE_TIMES_FULL_FREE_CUBE",
-          "pin_omitted_scope_support": "FULL_CUBE",
-          "scope_plus_pin_max": 3,
-          "strictly_below_dual_distance": true
+          "pin_omitted_below_boundary": "FULL_CUBE",
+          "pin_omitted_boundary": "FULL_CUBE_OR_ODD_PARITY",
+          "scope_plus_pin_max": 4,
+          "strictly_below_dual_distance": false
         },
         "r": 1,
         "s": 1,
         "schema": "reed_muller_all_dual_local_v1",
-        "scope_count": 37,
-        "witness_kind": "product local marginals plus all-dual parity mixtures",
+        "scope_count": 93,
+        "witness_kind": "one-hot local marginals plus all-dual parity mixtures",
         "word_replay": {
           "minimum_distance": 4,
           "pinned_minimum": 4,
@@ -205,7 +209,7 @@
         "combined_relaxation_optimum": "10/3",
         "integer_pinned_optimum": 4,
         "integrality_ratio": "6/5",
-        "level": 2,
+        "level": 3,
         "mixture_case_count": 10,
         "n": 8,
         "s": 1,
@@ -962,20 +966,21 @@
         "fractional_feasible_weight": "38/7",
         "integer_pinned_optimum": 8,
         "integrality_ratio": "28/19",
-        "level": 6,
-        "local_product_marginal": {
-          "independent_on_each_scope": true,
-          "other_coordinate_value": "1/7",
+        "level": 7,
+        "local_sparse_marginal": {
+          "all_zero_mass": "1-|free_scope|/(d-1)",
+          "marginal_consistency": "one_hot_or_zero",
+          "one_hot_coordinate_mass": "1/7",
           "pin_value": "1",
           "supported_by_pinned_code_projection": true
         },
+        "local_witness_atom_count": 31107417,
         "m": 5,
         "minimum_check_count_through_pin": 155,
         "minimum_check_other_coordinate_incidence": 35,
         "minimum_check_ratio": "31/7",
         "n": 32,
         "pin": 0,
-        "pinned_atom_slot_count": 59078934,
         "point": [
           "1",
           "1/7",
@@ -1011,17 +1016,20 @@
           "1/7"
         ],
         "projection_support": {
-          "level": 6,
+          "boundary_scope_size": 7,
+          "level": 7,
+          "one_hot_boundary_assignments_supported": true,
           "pin_included_scope_support": "PIN_ONE_TIMES_FULL_FREE_CUBE",
-          "pin_omitted_scope_support": "FULL_CUBE",
-          "scope_plus_pin_max": 7,
-          "strictly_below_dual_distance": true
+          "pin_omitted_below_boundary": "FULL_CUBE",
+          "pin_omitted_boundary": "FULL_CUBE_OR_ODD_PARITY",
+          "scope_plus_pin_max": 8,
+          "strictly_below_dual_distance": false
         },
         "r": 2,
         "s": 2,
         "schema": "reed_muller_all_dual_local_v1",
-        "scope_count": 1149017,
-        "witness_kind": "product local marginals plus all-dual parity mixtures",
+        "scope_count": 4514873,
+        "witness_kind": "one-hot local marginals plus all-dual parity mixtures",
         "word_replay": {
           "minimum_distance": 8,
           "pinned_minimum": 8,
@@ -1034,7 +1042,7 @@
         "combined_relaxation_optimum": "38/7",
         "integer_pinned_optimum": 8,
         "integrality_ratio": "28/19",
-        "level": 6,
+        "level": 7,
         "mixture_case_count": 50,
         "n": 32,
         "s": 2,
@@ -4415,20 +4423,21 @@
         "fractional_feasible_weight": "142/15",
         "integer_pinned_optimum": 16,
         "integrality_ratio": "120/71",
-        "level": 14,
-        "local_product_marginal": {
-          "independent_on_each_scope": true,
-          "other_coordinate_value": "1/15",
+        "level": 15,
+        "local_sparse_marginal": {
+          "all_zero_mass": "1-|free_scope|/(d-1)",
+          "marginal_consistency": "one_hot_or_zero",
+          "one_hot_coordinate_mass": "1/15",
           "pin_value": "1",
           "supported_by_pinned_code_projection": true
         },
+        "local_witness_atom_count": 227426386402732505841,
         "m": 7,
         "minimum_check_count_through_pin": 11811,
         "minimum_check_other_coordinate_incidence": 1395,
         "minimum_check_ratio": "127/15",
         "n": 128,
         "pin": 0,
-        "pinned_atom_slot_count": 28678146484640622514518,
         "point": [
           "1",
           "1/15",
@@ -4560,17 +4569,20 @@
           "1/15"
         ],
         "projection_support": {
-          "level": 14,
+          "boundary_scope_size": 15,
+          "level": 15,
+          "one_hot_boundary_assignments_supported": true,
           "pin_included_scope_support": "PIN_ONE_TIMES_FULL_FREE_CUBE",
-          "pin_omitted_scope_support": "FULL_CUBE",
-          "scope_plus_pin_max": 15,
-          "strictly_below_dual_distance": true
+          "pin_omitted_below_boundary": "FULL_CUBE",
+          "pin_omitted_boundary": "FULL_CUBE_OR_ODD_PARITY",
+          "scope_plus_pin_max": 16,
+          "strictly_below_dual_distance": false
         },
         "r": 3,
         "s": 3,
         "schema": "reed_muller_all_dual_local_v1",
-        "scope_count": 1977157170471445233,
-        "witness_kind": "product local marginals plus all-dual parity mixtures",
+        "scope_count": 15193868137021842033,
+        "witness_kind": "one-hot local marginals plus all-dual parity mixtures",
         "word_replay": {
           "status": "THEOREM_ONLY",
           "word_count": null
@@ -4581,7 +4593,7 @@
         "combined_relaxation_optimum": "142/15",
         "integer_pinned_optimum": 16,
         "integrality_ratio": "120/71",
-        "level": 14,
+        "level": 15,
         "mixture_case_count": 226,
         "n": 128,
         "s": 3,

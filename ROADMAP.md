@@ -419,12 +419,13 @@ beyond parity checks must state its valid inequality family and its separation
 cost rather than assuming that redundant checks are enough.
 
 The combined all-dual/local follow-up now tests that next edge. For the same
-RM family, product projection tables are supported through level `d-2` because
-every scope plus the pin is smaller than the dual distance. Their singleton
-means are the all-dual uniform point, so the exact fractional optimum and the
-ratios `6/5`, `28/19`, and `120/71` remain unchanged. This closes one natural
-combination of parity cuts and local consistency; richer global inequalities or
-a different hierarchy are still required.
+RM family, sparse one-hot projection tables are supported through the boundary
+level `d-1`: below the boundary projections are full, while a boundary scope
+can impose only an odd minimum-check relation, which every one-hot assignment
+satisfies. Their singleton means are the all-dual uniform point, so the exact
+fractional optimum and the ratios `6/5`, `28/19`, and `120/71` remain unchanged.
+This closes one natural combination of parity cuts and local consistency;
+richer global inequalities or a different hierarchy are still required.
 
 ## Separate general direction: stronger global constraints
 

@@ -4,7 +4,7 @@
       "exact_scope_replay": true,
       "fractional_optimum": "10/3",
       "integrality_ratio": "6/5",
-      "level": 2,
+      "level": 3,
       "n": 8,
       "s": 1,
       "word_replay": "EXACT"
@@ -13,7 +13,7 @@
       "exact_scope_replay": false,
       "fractional_optimum": "38/7",
       "integrality_ratio": "28/19",
-      "level": 6,
+      "level": 7,
       "n": 32,
       "s": 2,
       "word_replay": "EXACT"
@@ -22,7 +22,7 @@
       "exact_scope_replay": false,
       "fractional_optimum": "142/15",
       "integrality_ratio": "120/71",
-      "level": 14,
+      "level": 15,
       "n": 128,
       "s": 3,
       "word_replay": "THEOREM_ONLY"

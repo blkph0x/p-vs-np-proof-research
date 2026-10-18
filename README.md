@@ -17,7 +17,7 @@
 - Use [`CITATIONS.md`](CITATIONS.md) and [`PUBLIC_SOURCES.md`](PUBLIC_SOURCES.md)
   for public sources and the reports that use them.
 - Follow [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) to replay the checks from a
-  fresh checkout. The current frozen run has 434 passing methods across 43
+  fresh checkout. The current frozen run has 435 passing methods across 43
   suites; the full audit is intentionally separate from the lighter continuous
   integration checks, and all of its suite dependencies are included in this
   repository.
@@ -658,11 +658,11 @@ shows that parity checks alone tighten the local gap but do not recover exact
 minimum distance.
 
 The [combined all-dual/local replay](local_marginal_code_lab/REED_MULLER_ALL_DUAL_LOCAL_REPORT.md)
-then adds every pinned-code projection marginal through level `d-2` as well.
-An exact product-table witness survives the added consistency system, and the
-same fractional optima and ratios remain for `RM(1,3)`, `RM(2,5)`, and
-`RM(3,7)`. This is a stronger barrier for the named relaxation, not a general
-SAT lower bound.
+then adds every pinned-code projection marginal through the boundary level
+`d-1` as well. An exact sparse one-hot witness survives the added consistency
+system, and the same fractional optima and ratios remain for `RM(1,3)`,
+`RM(2,5)`, and `RM(3,7)`. This is a stronger barrier for the named
+relaxation, not a general SAT lower bound.
 
 The [adaptive fragment synthesis report](ADAPTIVE_FRAGMENT_SYNTHESIS_REPORT.md)
 adds an independent cross-check of the bounded proof-language experiment. A bounded projector existentially

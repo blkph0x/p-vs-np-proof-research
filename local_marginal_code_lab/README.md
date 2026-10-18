@@ -31,11 +31,11 @@ relaxation still has a limiting factor-two gap.
 
 The combined follow-up in
 [`REED_MULLER_ALL_DUAL_LOCAL_REPORT.md`](REED_MULLER_ALL_DUAL_LOCAL_REPORT.md)
-adds every pinned-code projection marginal through level `d-2` while retaining
-all dual parity inequalities. Product local tables remain feasible at the
-same exact fractional optimum; the saved ratios are again `6/5`, `28/19`, and
-`120/71`. This tests a stronger hierarchy edge without claiming a general
-lower bound.
+adds every pinned-code projection marginal through the boundary level `d-1`
+while retaining all dual parity inequalities. Sparse one-hot local tables
+remain feasible at the same exact fractional optimum; the saved ratios are
+again `6/5`, `28/19`, and `120/71`. This tests a stronger hierarchy edge
+without claiming a general lower bound.
 
 ```text
 python -m unittest discover -v

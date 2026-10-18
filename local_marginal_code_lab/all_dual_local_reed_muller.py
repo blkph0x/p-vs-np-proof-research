@@ -17,15 +17,20 @@ from local_marginal import span
 from reed_muller import generator_rows, parameters
 
 
-def pinned_atom_slot_count(n: int, level: int) -> int:
-    """Count assignments allowed by the pin-aware projection rule."""
+def local_witness_atom_count(n: int, level: int) -> int:
+    """Count nonzero atoms in the sparse one-hot witness tables."""
     if type(n) is not int or n < 0 or type(level) is not int or not 0 <= level <= n:
         raise ValueError("invalid dimensions")
+    distance = level + 1
     total = 0
     for size in range(level + 1):
-        total += comb(n - 1, size) * (1 << size)
+        free = size
+        zero_atoms = 0 if free == distance - 1 else 1
+        total += comb(n - 1, size) * (free + zero_atoms)
         if size:
-            total += comb(n - 1, size - 1) * (1 << (size - 1))
+            free = size - 1
+            zero_atoms = 0 if free == distance - 1 else 1
+            total += comb(n - 1, size - 1) * (free + zero_atoms)
     return total
 
 
@@ -33,14 +38,17 @@ def projection_support_rule(distance: int, level: int) -> dict:
     """Return the exact dual-distance support implication used by the witness."""
     if type(distance) is not int or distance < 1 or type(level) is not int:
         raise ValueError("invalid support dimensions")
-    if level < 0 or level > distance - 2:
-        raise ValueError("level exceeds the dual-distance support guarantee")
+    if level != distance - 1:
+        raise ValueError("this boundary witness is defined at dual distance minus one")
     return {
         "level": level,
         "scope_plus_pin_max": level + 1,
-        "strictly_below_dual_distance": level + 1 < distance,
-        "pin_omitted_scope_support": "FULL_CUBE",
+        "strictly_below_dual_distance": False,
+        "boundary_scope_size": distance - 1,
+        "pin_omitted_below_boundary": "FULL_CUBE",
+        "pin_omitted_boundary": "FULL_CUBE_OR_ODD_PARITY",
         "pin_included_scope_support": "PIN_ONE_TIMES_FULL_FREE_CUBE",
+        "one_hot_boundary_assignments_supported": True,
     }
 
 
@@ -51,7 +59,7 @@ def make_certificate(s: int, *, pin: int = 0, word_limit: int = 1 << 20) -> dict
     distance = info["dual_distance"]
     if type(pin) is not int or not 0 <= pin < n:
         raise ValueError("pin out of range")
-    level = distance - 2
+    level = distance - 1
     point = (Fraction(1),) + (Fraction(1, distance - 1),) * (n - 1)
     fractional = Fraction(1) + Fraction(n - 1, distance - 1)
     word_count = span(generator_rows(s), word_limit)
@@ -87,17 +95,18 @@ def make_certificate(s: int, *, pin: int = 0, word_limit: int = 1 << 20) -> dict
         "minimum_check_ratio": str(Fraction(through_pin, incidence)),
         "all_dual_mixture_cases": cases,
         "all_nonzero_dual_checks_feasible": True,
-        "local_product_marginal": {
+        "local_sparse_marginal": {
             "pin_value": "1",
-            "other_coordinate_value": str(Fraction(1, distance - 1)),
-            "independent_on_each_scope": True,
+            "one_hot_coordinate_mass": str(Fraction(1, distance - 1)),
+            "all_zero_mass": "1-|free_scope|/(d-1)",
+            "marginal_consistency": "one_hot_or_zero",
             "supported_by_pinned_code_projection": True,
         },
         "projection_support": support,
         "scope_count": sum(comb(n, size) for size in range(level + 1)),
-        "pinned_atom_slot_count": pinned_atom_slot_count(n, level),
+        "local_witness_atom_count": local_witness_atom_count(n, level),
         "word_replay": word_replay,
-        "witness_kind": "product local marginals plus all-dual parity mixtures",
+        "witness_kind": "one-hot local marginals plus all-dual parity mixtures",
     }
     return {"status": "FOUND", "certificate": certificate}
 
@@ -117,7 +126,7 @@ def verify_certificate(certificate: dict, *, word_limit: int = 1 << 20) -> dict:
         level = certificate["level"]
         if type(pin) is not int or not 0 <= pin < n:
             raise ValueError("invalid pin")
-        if level != distance - 2:
+        if level != distance - 1:
             raise ValueError("level mismatch")
         point = tuple(Fraction(value) for value in certificate["point"])
         expected_point = (Fraction(1),) + (Fraction(1, distance - 1),) * (n - 1)
@@ -145,21 +154,22 @@ def verify_certificate(certificate: dict, *, word_limit: int = 1 << 20) -> dict:
             raise ValueError("all-dual mixture mismatch")
         if certificate["all_nonzero_dual_checks_feasible"] is not True:
             raise ValueError("all-dual feasibility flag mismatch")
-        product = certificate["local_product_marginal"]
-        if product != {
+        sparse = certificate["local_sparse_marginal"]
+        if sparse != {
             "pin_value": "1",
-            "other_coordinate_value": str(Fraction(1, distance - 1)),
-            "independent_on_each_scope": True,
+            "one_hot_coordinate_mass": str(Fraction(1, distance - 1)),
+            "all_zero_mass": "1-|free_scope|/(d-1)",
+            "marginal_consistency": "one_hot_or_zero",
             "supported_by_pinned_code_projection": True,
         }:
-            raise ValueError("product witness mismatch")
+            raise ValueError("sparse witness mismatch")
         if certificate["projection_support"] != projection_support_rule(distance, level):
             raise ValueError("projection-support theorem mismatch")
         expected_scope_count = sum(comb(n, size) for size in range(level + 1))
         if certificate["scope_count"] != expected_scope_count:
             raise ValueError("scope count mismatch")
-        if certificate["pinned_atom_slot_count"] != pinned_atom_slot_count(n, level):
-            raise ValueError("atom count mismatch")
+        if certificate["local_witness_atom_count"] != local_witness_atom_count(n, level):
+            raise ValueError("witness atom count mismatch")
         words = span(generator_rows(info["s"]), word_limit)
         replay = certificate["word_replay"]
         if words is None:

@@ -94,12 +94,23 @@ def support_replay_s1(pin: int, level: int) -> bool:
     for size in range(level + 1):
         for scope in combinations(range(n), size):
             projected = {tuple((word >> coordinate) & 1 for coordinate in scope) for word in pinned}
-            expected = {
-                assignment for assignment in __import__("itertools").product((0, 1), repeat=size)
-                if pin not in scope or assignment[scope.index(pin)] == 1
-            }
-            if projected != expected:
-                return False
+            assignments = set(__import__("itertools").product((0, 1), repeat=size))
+            if pin in scope or size < level:
+                expected = {
+                    assignment for assignment in assignments
+                    if pin not in scope or assignment[scope.index(pin)] == 1
+                }
+                if projected != expected:
+                    return False
+            else:
+                # At the boundary, a minimum dual word may impose odd parity.
+                # Every one-hot assignment is valid in either the full or odd
+                # projection and is therefore enough for the sparse witness.
+                if not {
+                    assignment for assignment in assignments
+                    if sum(assignment) == 1
+                }.issubset(projected):
+                    return False
     return True
 
 
@@ -113,7 +124,7 @@ def replay_certificate(certificate: dict) -> dict:
             raise ValueError(f"parameter mismatch: {key}")
     n = info["n"]
     d = info["dual_distance"]
-    level = d - 2
+    level = d - 1
     if certificate["pin"] != 0 or certificate["level"] != level:
         raise ValueError("pin or level mismatch")
     expected_point = ["1"] + [str(Fraction(1, d - 1))] * (n - 1)
@@ -138,34 +149,38 @@ def replay_certificate(certificate: dict) -> dict:
         raise ValueError("mixture replay mismatch")
     if certificate["all_nonzero_dual_checks_feasible"] is not True:
         raise ValueError("all-dual feasibility mismatch")
-    product = certificate["local_product_marginal"]
-    expected_product = {
+    sparse = certificate["local_sparse_marginal"]
+    expected_sparse = {
         "pin_value": "1",
-        "other_coordinate_value": str(Fraction(1, d - 1)),
-        "independent_on_each_scope": True,
+        "one_hot_coordinate_mass": str(Fraction(1, d - 1)),
+        "all_zero_mass": "1-|free_scope|/(d-1)",
+        "marginal_consistency": "one_hot_or_zero",
         "supported_by_pinned_code_projection": True,
     }
-    if product != expected_product:
-        raise ValueError("product marginal mismatch")
+    if sparse != expected_sparse:
+        raise ValueError("sparse marginal mismatch")
     expected_support = {
         "level": level,
         "scope_plus_pin_max": level + 1,
-        "strictly_below_dual_distance": level + 1 < d,
-        "pin_omitted_scope_support": "FULL_CUBE",
+        "strictly_below_dual_distance": False,
+        "boundary_scope_size": d - 1,
+        "pin_omitted_below_boundary": "FULL_CUBE",
+        "pin_omitted_boundary": "FULL_CUBE_OR_ODD_PARITY",
         "pin_included_scope_support": "PIN_ONE_TIMES_FULL_FREE_CUBE",
+        "one_hot_boundary_assignments_supported": True,
     }
     if certificate["projection_support"] != expected_support:
         raise ValueError("projection support mismatch")
     expected_scope_count = sum(comb(n, size) for size in range(level + 1))
     expected_atom_count = sum(
-        comb(n - 1, size) * (1 << size)
-        + (comb(n - 1, size - 1) * (1 << (size - 1)) if size else 0)
+        comb(n - 1, size) * (size + (0 if size == d - 1 else 1))
+        + (comb(n - 1, size - 1) * size if size else 0)
         for size in range(level + 1)
     )
     if certificate["scope_count"] != expected_scope_count:
         raise ValueError("scope count mismatch")
-    if certificate["pinned_atom_slot_count"] != expected_atom_count:
-        raise ValueError("atom count mismatch")
+    if certificate["local_witness_atom_count"] != expected_atom_count:
+        raise ValueError("witness atom count mismatch")
     replay = certificate["word_replay"]
     words = codewords(rows_for(s))
     if words is None:
