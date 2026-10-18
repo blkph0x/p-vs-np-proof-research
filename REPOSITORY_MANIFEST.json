@@ -7,7 +7,7 @@
     },
     ".github/workflows/pages.yml": {
       "bytes": 828,
-      "sha256": "a439d43c7997149967e54e057d21fdb92464c61e3f6b761abc62260a6c62e1c7"
+      "sha256": "a26d9a05cfd58fd3abfd8d432bef6aa7c89465adb50fd0f07bf16bdc85d9cc6b"
     },
     ".github/workflows/research-checks.yml": {
       "bytes": 2395,
@@ -4578,6 +4578,6 @@
       "sha256": "957bd3b51cbf2cd06ee00f1ef47ab5c6fa8bbf1a4c281c0e67b129b027785a18"
     }
   },
-  "generated_at_utc": "2026-10-18T20:27:33.029111+00:00",
-  "source_commit": "8f7c8832c509dcf0a3f95c2f0cfc098c8fa3a3df"
+  "generated_at_utc": "2026-10-18T20:36:36.025574+00:00",
+  "source_commit": "1d2a65fc7d7fe2f68ee05925ef5746ea075038e7"
 }
