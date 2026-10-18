@@ -84,6 +84,15 @@ charged cost is `O(n 2^n)` for order discovery plus `O(n 2^w)` frontier work
 up to relation-table factors; dense scopes and cap-triggered `UNKNOWN` results
 keep the exponential boundary explicit.
 
+The new [proof-producing CDCL baseline](proof_producing_cdcl_lab/THEOREM.md)
+provides an exact solver for arbitrary CNF inputs with independent first-UIP
+resolution replay. SAT models are checked against the original clauses, while
+UNSAT runs derive the empty clause from the level-zero conflict. Pigeonhole,
+all-three-variable assignments, contradictory units, seeded random formulas,
+and explicit decision caps are retained as controls. The implementation has no
+polynomial bound on decisions, conflicts, learned clauses, or proof steps, so
+this is a certified universal baseline rather than a P=NP algorithm.
+
 The [complete-graph frontier report](linear_frontier_order_lab/COMPLETE_GRAPH_FRONTIER_REPORT.md)
 adds an all-order barrier for the affine residual route. The GF(2) incidence
 system of `K_v` is trivially satisfiable, but at the halfway cut of every edge
@@ -360,7 +369,7 @@ keeping the auxiliaries preserves its polynomial solving route.
 
 ## Evidence and practical limits
 
-The current frozen integration run passes **350 tests across 33 suites**, with
+The current frozen integration run passes **357 tests across 34 suites**, with
 unchanged source hashes throughout. The canonical audit now includes the
 51-test labelled-join and perturbation certificate suite in
 `labelled_join_certified`. [TEST_SUMMARY.json](TEST_SUMMARY.json) and

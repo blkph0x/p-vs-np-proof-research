@@ -444,3 +444,9 @@ independent replay covers sparse, contradictory, dense, mixed, and capped
 controls. The dense and capped cases keep order discovery and state growth
 explicit, so this remains a parameterized experiment rather than a general
 polynomial SAT solver.
+
+The universal CNF baseline is now also proof-producing in
+`proof_producing_cdcl_lab`: every learned clause carries a first-UIP
+resolution chain and every finite UNSAT result ends in a replayable empty
+clause. The baseline is useful for adversarial scaling comparisons, while its
+uncapped search and proof length remain exponential in the worst case.

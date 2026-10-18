@@ -15,7 +15,7 @@
 - Use [`CITATIONS.md`](CITATIONS.md) and [`PUBLIC_SOURCES.md`](PUBLIC_SOURCES.md)
   for public sources and the reports that use them.
 - Follow [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) to replay the checks from a
-  fresh checkout. The current frozen run has 350 passing methods across 33
+  fresh checkout. The current frozen run has 357 passing methods across 34
   suites; the full audit is intentionally separate from the lighter continuous
   integration checks, and all of its suite dependencies are included in this
   repository.
@@ -266,6 +266,13 @@ primal-graph order discovery with the relation-level dynamic program. Its
 bounded controls replay every order and frontier certificate, while dense
 scopes and explicit caps retain the exponential discovery/state costs. See
 [`typed_merge_planner_lab/ADAPTIVE_FRONTIER_THEOREM.md`](typed_merge_planner_lab/ADAPTIVE_FRONTIER_THEOREM.md).
+
+The repository now also contains a universal proof-producing CNF baseline in
+[`proof_producing_cdcl_lab`](proof_producing_cdcl_lab/README.md). It records
+first-UIP resolution chains for UNSAT results, checks models for SAT results,
+and returns `UNKNOWN` under explicit decision, conflict, or proof-size caps.
+Its proof traces establish finite-run correctness but do not supply a
+polynomial worst-case bound.
 
 The companion [horn_cdclt_lab](horn_cdclt_lab/REPORT.md) turns that reduction into a
 proof-producing Horn-plus-GF(2) portfolio. Its independent replay verifies every emitted

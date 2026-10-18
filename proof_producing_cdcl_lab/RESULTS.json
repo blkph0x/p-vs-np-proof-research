@@ -1,0 +1,98 @@
+{
+  "format": "proof-producing-cdcl-v1",
+  "rows": [
+    {
+      "name": "unit_contradiction",
+      "nvars": 1,
+      "clause_count": 2,
+      "status": "UNSAT",
+      "reason": null,
+      "stats": {
+        "decisions": 0,
+        "boolean_props": 1,
+        "conflicts": 1,
+        "learned_clauses": 0,
+        "learned_literals": 0,
+        "resolution_steps": 1,
+        "backjumps": 0
+      },
+      "proof_events": 1
+    },
+    {
+      "name": "sat_implication",
+      "nvars": 2,
+      "clause_count": 2,
+      "status": "SAT",
+      "reason": null,
+      "stats": {
+        "decisions": 1,
+        "boolean_props": 1,
+        "conflicts": 0,
+        "learned_clauses": 0,
+        "learned_literals": 0,
+        "resolution_steps": 0,
+        "backjumps": 0
+      },
+      "proof_events": 0
+    },
+    {
+      "name": "pigeonhole_3_2",
+      "nvars": 6,
+      "clause_count": 12,
+      "status": "UNSAT",
+      "reason": null,
+      "stats": {
+        "decisions": 1,
+        "boolean_props": 11,
+        "conflicts": 2,
+        "learned_clauses": 1,
+        "learned_literals": 1,
+        "resolution_steps": 10,
+        "backjumps": 1
+      },
+      "proof_events": 2
+    },
+    {
+      "name": "all_three_variable_assignments",
+      "nvars": 3,
+      "clause_count": 8,
+      "status": "UNSAT",
+      "reason": null,
+      "stats": {
+        "decisions": 3,
+        "boolean_props": 7,
+        "conflicts": 4,
+        "learned_clauses": 3,
+        "learned_literals": 5,
+        "resolution_steps": 7,
+        "backjumps": 3
+      },
+      "proof_events": 4
+    },
+    {
+      "name": "pigeonhole_decision_cap",
+      "nvars": 12,
+      "clause_count": 34,
+      "status": "UNKNOWN",
+      "reason": "DECISION_CAP",
+      "stats": {
+        "decisions": 0,
+        "boolean_props": 0,
+        "conflicts": 0,
+        "learned_clauses": 0,
+        "learned_literals": 0,
+        "resolution_steps": 0,
+        "backjumps": 0
+      },
+      "proof_events": 0
+    }
+  ],
+  "all_cases_match_direct": true,
+  "source_sha256": {
+    "cdcl.py": "4740cc51c6ea0f13f777351ab7fdb19ae3e5eb4ae099274868e18c84846ad57f",
+    "run_audit.py": "b96e1d4bad34d17b0a2bf48f66b27c403ee7751bc4af87256ec1c027a1065518",
+    "THEOREM.md": "1c8ddebf137d61d31fcf01f2bcab8d305ee92729d87f29a52a7b4d5032ec70f4",
+    "review.py": "915fbd66740b7971868baef8095f2e1759f22667ad481a9f33e5677d06b4df54",
+    "test_cdcl.py": "bdda9b370920b74a9732976a5484435712d515ce5bb6231eba787486a05fdfbc"
+  }
+}
