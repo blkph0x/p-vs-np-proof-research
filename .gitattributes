@@ -1,7 +1,13 @@
-* text=auto eol=crlf
+* text=auto
 *.gz binary
 *.png binary
 *.jpg binary
 *.jpeg binary
 *.exe binary
+simultaneous_basis_lab/basis.py -text
+simultaneous_basis_lab/test_basis.py -text
+simultaneous_basis_lab/run_experiments.py -text
+simultaneous_basis_lab/independent_review.py -text
+simultaneous_basis_lab/THEOREM.md -text
+ALGEBRAIC_CROSSCHECK.json -text
 affine_compression_stress_lab/RESULTS.json filter=lfs diff=lfs merge=lfs -text
