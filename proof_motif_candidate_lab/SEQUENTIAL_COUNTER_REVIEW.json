@@ -1,0 +1,16 @@
+{
+  "all_checks_passed": true,
+  "replayed": {
+    "literal_mutation_rejected": true,
+    "missing_clause_rejected": true,
+    "positive_projection": "PASS",
+    "shuffled_roles_replayed": true,
+    "wrong_threshold_rejected": true
+  },
+  "source_sha256": {
+    "SEQUENTIAL_COUNTER_REPORT.md": "25af29ba8ca148487c06425cf9cb9e7b016c74560ade8842337c9e1f53683524",
+    "review_sequential_counter.py": "7a65572e7ada36c593846cec19ee466256bb076b9d7dab8245eda403718bf2f6",
+    "run_sequential_counter.py": "83a589baa142b36ab4ddbe1fba86ff0cef9bc239668950deff421f1873e7dac3",
+    "sequential_counter.py": "dd70059ddd4fe21b1ce5480c0303afee3fdb774548d4ad857f58543f704b03da"
+  }
+}

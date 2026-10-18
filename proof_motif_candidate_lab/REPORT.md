@@ -59,6 +59,22 @@ role permutations, records all source clauses, and independently rejects
 mutated and same-support decoy groups. This is a compact encoding rule, not a
 complete circuit or auxiliary-definition recognizer.
 
+### Prefix-threshold sequential counter
+
+The [prefix-counter audit](SEQUENTIAL_COUNTER_REPORT.md) adds a cardinality
+primitive beyond AMO. It certifies the recurrence
+
+    q[i,j] = q[i-1,j] OR (x_i AND q[i-1,j-1])
+
+and the final unit `not q[n,k+1]`, which projects exactly to
+`sum(x_i) <= k`. The verifier reconstructs the complete clause set from the
+supplied role map and exhaustively checks the five-input, threshold-two fixture.
+Missing clauses, literal mutations, and a wrong threshold are rejected. A
+renamed copy is accepted only when its role map is supplied; the bounded
+canonical scanner deliberately returns `NOT_FOUND` for that copy. This is an
+exact certificate language, not unrestricted discovery of arbitrary
+cardinality encodings.
+
 The [bounded XOR-chain audit](XOR_CLOSURE_REPORT.md) composes these exact parity
 blocks for four frontier rounds. Every derived relation carries the symmetric
 difference of its source block IDs. A five-block chain reaches its target with

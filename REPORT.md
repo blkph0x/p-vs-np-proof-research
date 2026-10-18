@@ -412,7 +412,7 @@ keeping the auxiliaries preserves its polynomial solving route.
 
 ## Evidence and practical limits
 
-The current frozen integration run passes **405 tests across 40 suites**, with
+The current frozen integration run passes **409 tests across 42 suites**, with
 unchanged source hashes throughout. The canonical audit now includes the
 51-test labelled-join and perturbation certificate suite in
 `labelled_join_certified`. [TEST_SUMMARY.json](TEST_SUMMARY.json) and
@@ -504,6 +504,13 @@ composes exact parity blocks through four capped frontier rounds. The five-block
 certificate reaches its target with all source IDs; mutation removes that target,
 and a branching fixture returns `UNKNOWN_CAP` at an explicit relation budget.
 This is a bounded proof-language result, not an unbounded XOR-span solver.
+
+The [prefix-threshold sequential-counter audit](proof_motif_candidate_lab/SEQUENTIAL_COUNTER_REPORT.md)
+adds a cardinality primitive beyond AMO. The exact recurrence and final unit
+are reconstructed from a supplied role map, and exhaustive projection verifies
+the five-input threshold-two instance. Independent replay rejects a missing
+clause, a literal mutation, and a wrong threshold; larger rows retain explicit
+semantic caps rather than being promoted to a general PB solver.
 
 The [residual-equivalence barrier report](RESIDUAL_EQUIVALENCE_BARRIER_REPORT.md)
 adds a source-bound coNP-hardness reduction for exact future-state quotienting.

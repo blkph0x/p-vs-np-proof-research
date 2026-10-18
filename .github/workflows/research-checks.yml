@@ -57,6 +57,11 @@ jobs:
         run: |
           python run_xor_closure.py
           python review_xor_closure.py
+      - name: Replay prefix-threshold sequential-counter audit
+        working-directory: proof_motif_candidate_lab
+        run: |
+          python run_sequential_counter.py
+          python review_sequential_counter.py
       - name: Run the self-contained full audit
         run: |
           set +e

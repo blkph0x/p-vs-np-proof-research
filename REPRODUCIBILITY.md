@@ -25,7 +25,7 @@ python run_research_checks.py
 ```
 
 The command regenerates `TEST_OUTPUT.txt` and `TEST_SUMMARY.json`, then checks
-all registered suites. The current checkpoint passes 40 suites and 405 methods
+all registered suites. The current checkpoint passes 42 suites and 409 methods
 with unchanged source hashes. A full run can take several
 minutes because it includes exhaustive finite controls and native rank checks.
 
@@ -50,6 +50,10 @@ Pop-Location
 Push-Location proof_motif_candidate_lab
 python run_xor_closure.py
 python review_xor_closure.py
+Pop-Location
+Push-Location proof_motif_candidate_lab
+python run_sequential_counter.py
+python review_sequential_counter.py
 Pop-Location
 python run_holographic_phase_checks.py
 python verify_holographic_artifacts.py
