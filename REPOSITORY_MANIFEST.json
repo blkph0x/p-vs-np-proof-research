@@ -458,8 +458,8 @@
       "sha256": "73570b412657e9acced9ff103f34cd9f604ca2c603c4bba122c323c788c3631a"
     },
     "RUNTIME_SCALING_CHART.md": {
-      "bytes": 1957,
-      "sha256": "5dfd0c4a275641a65f5170f2c38b7dedd179b8a47819480e0bd83096146204e7"
+      "bytes": 2246,
+      "sha256": "7536b2094b83c9d4cac9866fb86795d860e5d7fc14ecf7bb98d47eaf9c01ed37"
     },
     "SEMANTIC_CERTIFICATE_REPAIR.json": {
       "bytes": 4374,
@@ -491,11 +491,11 @@
     },
     "TEST_OUTPUT.txt": {
       "bytes": 49017,
-      "sha256": "cf98f5987ab9a9f2f121b7020d75eeff4b33804b480436818f646b2f894ccb2d"
+      "sha256": "555cafa5457422749def614d97297e08e593dcccb334257907a5bd1fbd02ec1e"
     },
     "TEST_SUMMARY.json": {
-      "bytes": 43544,
-      "sha256": "4bc69544bc3ebc28db3031af8aa7608353d538d58e97cb390ba238e113e53e39"
+      "bytes": 43539,
+      "sha256": "23c46a9f7730424df64bef68a754132b6b2696f2fcdb60fba893d3eec59fffa5"
     },
     "THEORY_REVIEW.md": {
       "bytes": 18223,
@@ -534,8 +534,8 @@
       "sha256": "5df8746378f777ff4ffd6982ec86f6ace228b40099f480c203db39a1f49d0bec"
     },
     "_includes/runtime-chart.html": {
-      "bytes": 2205,
-      "sha256": "9013c9f319172c7f07ae4470c5e68f086eb98eaf1dc6c686b5d0255b53a2409f"
+      "bytes": 2442,
+      "sha256": "560eb2d7afc33a6f45a4824757d83b9a2aad8db2a6accf6104316e53f2db5321"
     },
     "adaptive_fragment_synthesis.py": {
       "bytes": 10902,
@@ -1362,16 +1362,16 @@
       "sha256": "1f095996f4d114eeb32606570255d079c1e72a70ae6e3c1adbfc393e859ca315"
     },
     "assets/css/style.scss": {
-      "bytes": 5265,
-      "sha256": "832105b131c2cb355381d3e94d7ec26c18f5c579d458003489f6b7c522dcc8f5"
+      "bytes": 5810,
+      "sha256": "657c304f601c46899a9bfcfff1a057a511ce3bb7ebce9d7f4b67ace6d572d737"
     },
     "assets/data/scaling-runtime.json": {
       "bytes": 9635,
       "sha256": "6380d78c284099592f02bdfbc8b1a81276585e743e3792edb227cce71f0bf683"
     },
     "assets/js/scaling-chart.js": {
-      "bytes": 9965,
-      "sha256": "50ad71059eb2999c90796482eb5a46cd30ac4c382a0cd22bca3f25ab8339544d"
+      "bytes": 11164,
+      "sha256": "cceb17a5acffc0430df93ac8abf63fdcf595ec9b8cdc49ef000f37dd28eb6b90"
     },
     "bounded_language_invention_lab/MANIFEST.json": {
       "bytes": 1781,
@@ -4734,6 +4734,6 @@
       "sha256": "957bd3b51cbf2cd06ee00f1ef47ab5c6fa8bbf1a4c281c0e67b129b027785a18"
     }
   },
-  "generated_at_utc": "2026-10-18T23:06:43.079784+00:00",
-  "source_commit": "bbc3a0221e1a09cbcca0a4018a9ccd056d67d97a"
+  "generated_at_utc": "2026-10-18T23:33:42.189227+00:00",
+  "source_commit": "3b2c6a8401e8c3744998bbdc858b8d9ec74a9c60"
 }

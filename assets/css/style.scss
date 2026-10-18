@@ -132,8 +132,10 @@ code { background: var(--wash); }
 .chart-legend-2 .chart-legend-swatch { background: #2c8b57; }
 .chart-legend-3 .chart-legend-swatch { background: #8d4bb3; }
 .chart-grid line { stroke: #e5ebf4; stroke-dasharray: 3 4; }
+.chart-grid-vertical { stroke: #edf1f7; stroke-dasharray: 2 4; }
 .chart-axis { stroke: #9babc1; stroke-width: 1.2; }
 .chart-tick, .chart-label { fill: var(--muted); font-size: 11px; }
+.chart-x-tick { dominant-baseline: hanging; }
 .chart-line { fill: none; stroke-width: 2.5; }
 .chart-line-0 { stroke: var(--blue); }
 .chart-line-1 { stroke: #c77b18; stroke-dasharray: 5 4; }
@@ -146,6 +148,10 @@ code { background: var(--wash); }
 .chart-point-3 { fill: #fff; stroke: #8d4bb3; }
 .chart-point.unknown { stroke-dasharray: 2 2; }
 .chart-point:focus, .chart-point:hover { stroke-width: 3.5; outline: none; }
+.chart-symbol-key { display: flex; flex-wrap: wrap; align-items: center; gap: .35rem .55rem; margin: .35rem 0 .5rem; color: var(--muted); font-size: .82rem; }
+.chart-symbol { display: inline-block; width: .72rem; height: .72rem; margin-left: .45rem; border: 2px solid currentColor; background: #fff; }
+.chart-symbol.exact { border-radius: 50%; color: var(--blue); }
+.chart-symbol.unknown { color: #c77b18; transform: rotate(45deg); }
 .chart-note { margin: .5rem 0; color: var(--muted); font-size: .88rem; }
 .chart-detail { min-height: 1.4rem; margin: .5rem 0; color: var(--blue-dark); font-weight: 600; }
 .chart-summary { margin: .5rem 0; color: var(--blue-dark); font-size: .9rem; }

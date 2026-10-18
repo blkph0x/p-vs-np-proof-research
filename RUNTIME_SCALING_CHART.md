@@ -13,6 +13,11 @@ page can compare independent data files with more than one chart. Every key in
 `x_axes` must be a finite numeric field on every point; `default_x_axis` names
 the initial selection.
 
+The plot shows five labelled x-axis ticks with vertical guides, and every point
+is keyboard-focusable. A circle denotes an `EXACT` completed run; a diamond
+denotes an `UNKNOWN` run stopped at its cap. The status key is part of the
+include so a reused chart keeps the same interpretation.
+
 The checked data combines `NATIVE_RESULTS.json` with the proof-producing CDCL
 campaign in `proof_complexity_scaling_lab/SCALING_RESULTS.json`; both source
 hashes are saved in the chart data. `EXACT` and `UNKNOWN` records use separate

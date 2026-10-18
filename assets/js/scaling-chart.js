@@ -8,6 +8,7 @@
   const width = 760;
   const height = 390;
   const margin = {top: 26, right: 24, bottom: 62, left: 76};
+  let chartInstance = 0;
 
   function element(name, attrs = {}) {
     const node = document.createElementNS(SVG_NS, name);
@@ -32,6 +33,11 @@
     if (!logarithmic) return value < 1 ? `${(value * 1000).toFixed(0)} ms` : `${value.toFixed(2)} s`;
     if (value >= 1) return `${value.toFixed(value >= 10 ? 0 : 1)} s`;
     return `${(value * 1000).toFixed(0)} ms`;
+  }
+
+  function formatXTick(value) {
+    if (Number.isInteger(value)) return String(value);
+    return value.toFixed(2).replace(/0+$/, "").replace(/\.$/, "");
   }
 
   function tickValues(min, max, logarithmic) {
@@ -70,7 +76,9 @@
       const yValues = points.map(point => point.runtime_seconds).filter(value => value > 0);
       if (!xValues.length || !yValues.length) {
         svg.replaceChildren();
+        legend.replaceChildren();
         tableBody.replaceChildren();
+        details.textContent = "No point is available for the selected filters.";
         summary.textContent = "Select at least one series with recorded points to view the observed range.";
         status.textContent = "No points match the selected filters.";
         return;
@@ -90,11 +98,21 @@
       svg.replaceChildren();
       svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
       svg.setAttribute("aria-label", `${data.y_axis} by ${data.x_axes[axis]}`);
+      const titleId = `runtime-chart-title-${chartInstance++}`;
+      const title = element("title", {id: titleId});
+      title.textContent = `${data.y_axis} by ${data.x_axes[axis]}`;
+      svg.setAttribute("aria-labelledby", titleId);
+      svg.appendChild(title);
       const grid = element("g", {class: "chart-grid"});
       tickValues(yMin, yMax, logarithmic).forEach(value => {
         const y = yScale(value);
         grid.appendChild(element("line", {x1: plot.x, x2: plot.x + plot.width, y1: y, y2: y}));
         text(grid, formatTick(value, logarithmic), {x: plot.x - 10, y: y + 4, "text-anchor": "end", class: "chart-tick"});
+      });
+      tickValues(xMin, xMax, false).forEach(value => {
+        const x = xScale(value);
+        grid.appendChild(element("line", {x1: x, x2: x, y1: plot.y, y2: plot.y + plot.height, class: "chart-grid-vertical"}));
+        text(grid, formatXTick(value), {x, y: plot.y + plot.height + 19, "text-anchor": "middle", class: "chart-tick chart-x-tick"});
       });
       svg.appendChild(grid);
       svg.appendChild(element("line", {x1: plot.x, x2: plot.x, y1: plot.y, y2: plot.y + plot.height, class: "chart-axis"}));
@@ -125,19 +143,23 @@
           }));
         }
         visible.forEach(point => {
-          const circle = element("circle", {
-            cx: xScale(point[axis]), cy: yScale(point.runtime_seconds), r: point.status === "EXACT" ? 5 : 6,
-            class: `chart-point chart-point-${datasetIndex} ${point.status === "EXACT" ? "exact" : "unknown"}`,
-            tabindex: 0, role: "img",
-            "aria-label": `${point.label}: ${formatSeconds(point.runtime_seconds)}, ${point.status}`,
-          });
+          const isExact = point.status === "EXACT";
+          const x = xScale(point[axis]);
+          const y = yScale(point.runtime_seconds);
+          const pointNode = isExact
+            ? element("circle", {cx: x, cy: y, r: 5})
+            : element("path", {d: `M ${x} ${y - 6} L ${x + 6} ${y} L ${x} ${y + 6} L ${x - 6} ${y} Z`});
+          pointNode.setAttribute("class", `chart-point chart-point-${datasetIndex} ${isExact ? "exact" : "unknown"}`);
+          pointNode.setAttribute("tabindex", "0");
+          pointNode.setAttribute("role", "img");
+          pointNode.setAttribute("aria-label", `${point.label}: ${formatSeconds(point.runtime_seconds)}, ${point.status}`);
           const show = () => {
             details.textContent = `${point.label} · ${data.x_axes[axis]} ${point[axis]} · ${formatSeconds(point.runtime_seconds)} · ${point.status}`;
           };
-          circle.addEventListener("mouseenter", show);
-          circle.addEventListener("focus", show);
-          circle.addEventListener("click", show);
-          svg.appendChild(circle);
+          pointNode.addEventListener("mouseenter", show);
+          pointNode.addEventListener("focus", show);
+          pointNode.addEventListener("click", show);
+          svg.appendChild(pointNode);
         });
       });
 
