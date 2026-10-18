@@ -1,0 +1,123 @@
+{
+  "format": "adaptive-frontier-v1",
+  "rows": [
+    {
+      "name": "empty",
+      "n": 0,
+      "constraint_count": 0,
+      "status": "SAT",
+      "sat": true,
+      "reason": null,
+      "width": 0,
+      "max_states": 1,
+      "order_search": {
+        "width": 0,
+        "order": [],
+        "subsets": 1,
+        "transitions": 0
+      }
+    },
+    {
+      "name": "sparse_equalities",
+      "n": 5,
+      "constraint_count": 4,
+      "status": "SAT",
+      "sat": true,
+      "reason": null,
+      "width": 1,
+      "max_states": 2,
+      "order_search": {
+        "width": 1,
+        "order": [
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "subsets": 32,
+        "transitions": 80
+      }
+    },
+    {
+      "name": "contradictory_units",
+      "n": 1,
+      "constraint_count": 2,
+      "status": "UNSAT",
+      "sat": false,
+      "reason": null,
+      "width": 0,
+      "max_states": 1,
+      "order_search": {
+        "width": 0,
+        "order": [
+          0
+        ],
+        "subsets": 2,
+        "transitions": 1
+      }
+    },
+    {
+      "name": "dense_parity_scope",
+      "n": 6,
+      "constraint_count": 1,
+      "status": "SAT",
+      "sat": true,
+      "reason": null,
+      "width": 5,
+      "max_states": 32,
+      "order_search": {
+        "width": 5,
+        "order": [
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "subsets": 64,
+        "transitions": 192
+      }
+    },
+    {
+      "name": "exact_one_plus_equality",
+      "n": 3,
+      "constraint_count": 2,
+      "status": "SAT",
+      "sat": true,
+      "reason": null,
+      "width": 2,
+      "max_states": 2,
+      "order_search": {
+        "width": 2,
+        "order": [
+          2,
+          1,
+          0
+        ],
+        "subsets": 8,
+        "transitions": 12
+      }
+    },
+    {
+      "name": "explicit_order_cap",
+      "n": 13,
+      "constraint_count": 0,
+      "status": "UNKNOWN",
+      "sat": null,
+      "reason": "ORDER_DISCOVERY_CAP",
+      "width": null,
+      "max_states": null,
+      "order_search": null
+    }
+  ],
+  "all_bounded_results_match_direct": true,
+  "source_sha256": {
+    "adaptive_frontier.py": "9c741438a7a3dff9a1b0c877005429b10a2463c26159292b90b98ad862140a4e",
+    "run_adaptive_frontier.py": "e08ab7855f22b89796150c5c14b299e6b5712bc95164d7b3a2bb2042513b5e7e",
+    "ADAPTIVE_FRONTIER_THEOREM.md": "79b3b95b877fe2accb818243edaa366cd5e53b210b207af4aae5ac174ffcf806",
+    "ADAPTIVE_FRONTIER_REVIEW.py": "20df73203ae761ee9824fc3d11966e12eb458d1e70eba1c5627654272a9a0bb2",
+    "test_adaptive_frontier.py": "a99221d515b553973a7ee712bf37679a19a681ab5e9d56b0951068da994815d4"
+  }
+}

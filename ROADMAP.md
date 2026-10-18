@@ -436,3 +436,11 @@ The Horn/affine backdoor edge now also has a bounded recursive discovery
 search. It records every candidate branch and returns `UNKNOWN` when depth or
 node caps prevent a complete SAT/UNSAT certificate; a small decision tree is
 evidence for that instance, not a universal polynomial discovery theorem.
+
+The typed planner now composes its exact order oracle with frontier dynamic
+programming in `typed_merge_planner_lab/adaptive_frontier.py`. The bounded
+solver saves primal-graph, order, and every frontier-cut certificate; an
+independent replay covers sparse, contradictory, dense, mixed, and capped
+controls. The dense and capped cases keep order discovery and state growth
+explicit, so this remains a parameterized experiment rather than a general
+polynomial SAT solver.

@@ -19,6 +19,7 @@ or P≠NP has been proved.
 | Matchgate parity and crossing controls | Proved for the checked identities | [`HOLOGRAPHIC_PHASE_REPORT.md`](HOLOGRAPHIC_PHASE_REPORT.md), exact rational checks and independent mutations. |
 | Compact weighted-boundary marginalization | Proved for supplied affine-support/quadratic-phase summaries | [`weighted_boundary_lab/THEOREM.md`](weighted_boundary_lab/THEOREM.md), elimination certificates, direct small-instance oracle, and mutation controls. This does not provide a compact representation for arbitrary CNF sums. |
 | Recent public Vohra P=NP claim | Unverified | [`EXTERNAL_STATUS_AUDIT_2026_10_18.md`](EXTERNAL_STATUS_AUDIT_2026_10_18.md) and [`VOHRA_CROSSREF_METADATA.json`](VOHRA_CROSSREF_METADATA.json). Public metadata and abstract were checked; the full proof and bit-complexity argument were not accessible. |
+| Adaptive frontier SAT solver | Proved for bounded order discovery | [`typed_merge_planner_lab/ADAPTIVE_FRONTIER_THEOREM.md`](typed_merge_planner_lab/ADAPTIVE_FRONTIER_THEOREM.md), replayable primal-graph/order/frontier certificates, and explicit order/state caps. |
 
 ## Evidence vocabulary
 

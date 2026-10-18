@@ -136,6 +136,23 @@ independent replay checks these statuses by direct enumeration. The search is
 bounded discovery with a separately charged worst-case factor
 `sum_{i<=t} (2n)^i`; it is not a universal polynomial backdoor finder.
 
+## 1.5 Adaptive frontier solver
+
+`adaptive_frontier.py` composes the exact order oracle with the generic
+relation-frontier DP. It builds the primal graph, reconstructs a minimum
+vertex-separation order within an explicit variable cap, then records every
+boundary state and transition. The bounded controls include a sparse equality
+chain, contradictory units, a dense parity scope, mixed exact-one relations,
+and an order-discovery cap. The independent reviewer replays the graph, the
+order recurrence, every frontier cut, and direct satisfiability for all cases.
+
+The algorithm is exact when the cap permits order discovery. Its charged cost
+is `O(sum |scope|^2 + n 2^n + n 2^w R)`, where `w` is the discovered width and
+`R` is the explicit relation-table membership cost. Dense scopes reach width
+`n-1`; instances above the cap return `UNKNOWN`. This makes the global
+order/discovery bottleneck explicit rather than presenting a fixed-order
+parameterized solver as a uniform polynomial algorithm.
+
 ## 2. Native theory combination graph
 
 For large native theories we use guaranteed language metadata rather than enumerating truth

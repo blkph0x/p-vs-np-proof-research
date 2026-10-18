@@ -75,6 +75,15 @@ candidate and node, and returns `UNKNOWN` when depth or node caps prevent a
 complete certificate. This makes backdoor discovery executable for small
 instances without presenting bounded failure as a general lower bound.
 
+The typed planner now also composes exact primal-graph order discovery with
+the generic relation frontier DP in
+`typed_merge_planner_lab/adaptive_frontier.py`. Its independent replay checks
+the graph, reconstructed order, every frontier transition, and direct SAT
+status for sparse, contradictory, dense, mixed, and capped controls. The
+charged cost is `O(n 2^n)` for order discovery plus `O(n 2^w)` frontier work
+up to relation-table factors; dense scopes and cap-triggered `UNKNOWN` results
+keep the exponential boundary explicit.
+
 The [complete-graph frontier report](linear_frontier_order_lab/COMPLETE_GRAPH_FRONTIER_REPORT.md)
 adds an all-order barrier for the affine residual route. The GF(2) incidence
 system of `K_v` is trivially satisfiable, but at the halfway cut of every edge
@@ -351,7 +360,7 @@ keeping the auxiliaries preserves its polynomial solving route.
 
 ## Evidence and practical limits
 
-The current frozen integration run passes **344 tests across 33 suites**, with
+The current frozen integration run passes **350 tests across 33 suites**, with
 unchanged source hashes throughout. The canonical audit now includes the
 51-test labelled-join and perturbation certificate suite in
 `labelled_join_certified`. [TEST_SUMMARY.json](TEST_SUMMARY.json) and

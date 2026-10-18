@@ -6,6 +6,8 @@ Run:
     python -m unittest -v test_backdoor_solver.py
     python run_backdoor_audit.py
     python BACKDOOR_REVIEW.py
+    python run_adaptive_frontier.py
+    python ADAPTIVE_FRONTIER_REVIEW.py
 
 Key artifacts:
 - engine.py
@@ -41,3 +43,7 @@ Key artifacts:
 - `RECURSIVE_BACKDOOR_THEOREM.md`, `recursive_backdoor.py`, and
   `RECURSIVE_BACKDOOR_RESULTS.json`: budgeted recursive Horn/affine backdoor
   discovery with direct replay in `RECURSIVE_BACKDOOR_REVIEW.py`.
+- `ADAPTIVE_FRONTIER_THEOREM.md`, `adaptive_frontier.py`, and
+  `ADAPTIVE_FRONTIER_RESULTS.json`: exact minimum-order discovery composed with
+  frontier DP, with every order-search and frontier certificate independently
+  replayed by `ADAPTIVE_FRONTIER_REVIEW.py`.

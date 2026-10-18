@@ -32,4 +32,7 @@
    bound, not local relation evaluation.
    The exact subset order oracle now reconstructs and certifies minimum-width
    orders on the same controls, while retaining its `O(n 2^n)` discovery cost.
+   The adaptive frontier composition now builds the primal graph, discovers an
+   exact bounded order, and replays every frontier certificate. Dense scopes
+   and explicit order caps preserve the measured exponential boundary.
 8. Keep greedy-failure and minimum-distance fixtures as permanent controls.
