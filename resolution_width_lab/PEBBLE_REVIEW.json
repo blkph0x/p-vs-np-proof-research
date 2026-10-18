@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "independent_rows_replayed": 3,
+  "php_5_4_spoiler_width4_bridge": true,
+  "php_5_4_width3_closure_bridge": true,
+  "source_hashes_match": true
+}

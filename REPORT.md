@@ -405,7 +405,7 @@ keeping the auxiliaries preserves its polynomial solving route.
 
 ## Evidence and practical limits
 
-The current frozen integration run passes **388 tests across 37 suites**, with
+The current frozen integration run passes **390 tests across 37 suites**, with
 unchanged source hashes throughout. The canonical audit now includes the
 51-test labelled-join and perturbation certificate suite in
 `labelled_join_certified`. [TEST_SUMMARY.json](TEST_SUMMARY.json) and
@@ -580,6 +580,15 @@ bit masks. Its exact control digests match the tuple implementation. On
 PHP(5,4), width 3 reaches the same fixed point in about 0.8 seconds; seeded
 width 4 reaches 38,368 known clauses before a ten-million-candidate cap. The
 run remains `UNKNOWN`, and its timing is a representation-specific measurement.
+
+The [pebble-game report](resolution_width_lab/PEBBLE_REPORT.md) closes that
+finite PHP(5,4) width question. The Atserias-Dalmau characterization is
+replayed as an exhaustive fixed-point computation: the five-pebble game has no
+surviving Duplicator positions, which certifies a width-4 refutation, while the
+complete width-3 closure contains no empty clause. The standard 20-variable,
+75-clause encoding therefore has exact minimum resolution width 4. The result
+is independently replayed in `resolution_width_lab/PEBBLE_REVIEW.json` and
+does not generalize to a polynomial algorithm for SAT.
 
 The ultimate goal remains active. These findings sharpen the question and
 remove incorrect shortcuts; they do not answer P versus NP.

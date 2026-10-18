@@ -1,0 +1,370 @@
+{
+  "format": "boolean-pebble-width-bridge-v1",
+  "theorem": "Atserias-Dalmau Theorem 2: width w iff Spoiler wins (w+1) pebbles",
+  "rows": [
+    {
+      "name": "unit_contradiction_pebbles_2",
+      "nvars": 1,
+      "pebbles": 2,
+      "clause_count": 2,
+      "expected": "SPOILER_WINS",
+      "result": {
+        "status": "SPOILER_WINS",
+        "reason": "EMPTY_FIXED_POINT",
+        "nvars": 1,
+        "pebbles": 2,
+        "clause_count": 2,
+        "initial_states": 1,
+        "final_states": 0,
+        "final_states_by_domain": {},
+        "rounds": [
+          {
+            "removed": 1,
+            "projection_witnesses": 0,
+            "extension_witnesses": 1,
+            "remaining": 0
+          }
+        ],
+        "round_count": 1,
+        "surviving_state_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "elapsed_seconds": 7.090019062161446e-05
+      }
+    },
+    {
+      "name": "all_assignments_n3_pebbles_4",
+      "nvars": 3,
+      "pebbles": 4,
+      "clause_count": 8,
+      "expected": "SPOILER_WINS",
+      "result": {
+        "status": "SPOILER_WINS",
+        "reason": "EMPTY_FIXED_POINT",
+        "nvars": 3,
+        "pebbles": 4,
+        "clause_count": 8,
+        "initial_states": 19,
+        "final_states": 0,
+        "final_states_by_domain": {},
+        "rounds": [
+          {
+            "removed": 12,
+            "projection_witnesses": 0,
+            "extension_witnesses": 12,
+            "remaining": 7
+          },
+          {
+            "removed": 6,
+            "projection_witnesses": 0,
+            "extension_witnesses": 6,
+            "remaining": 1
+          },
+          {
+            "removed": 1,
+            "projection_witnesses": 0,
+            "extension_witnesses": 1,
+            "remaining": 0
+          }
+        ],
+        "round_count": 3,
+        "surviving_state_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "elapsed_seconds": 0.00011820020154118538
+      }
+    },
+    {
+      "name": "pigeonhole_4_3_pebbles_4",
+      "nvars": 12,
+      "pebbles": 4,
+      "clause_count": 34,
+      "expected": "SPOILER_WINS",
+      "result": {
+        "status": "SPOILER_WINS",
+        "reason": "EMPTY_FIXED_POINT",
+        "nvars": 12,
+        "pebbles": 4,
+        "clause_count": 34,
+        "initial_states": 5758,
+        "final_states": 0,
+        "final_states_by_domain": {},
+        "rounds": [
+          {
+            "removed": 36,
+            "projection_witnesses": 0,
+            "extension_witnesses": 36,
+            "remaining": 5722
+          },
+          {
+            "removed": 432,
+            "projection_witnesses": 432,
+            "extension_witnesses": 0,
+            "remaining": 5290
+          },
+          {
+            "removed": 72,
+            "projection_witnesses": 0,
+            "extension_witnesses": 72,
+            "remaining": 5218
+          },
+          {
+            "removed": 540,
+            "projection_witnesses": 540,
+            "extension_witnesses": 0,
+            "remaining": 4678
+          },
+          {
+            "removed": 240,
+            "projection_witnesses": 0,
+            "extension_witnesses": 240,
+            "remaining": 4438
+          },
+          {
+            "removed": 1500,
+            "projection_witnesses": 1392,
+            "extension_witnesses": 108,
+            "remaining": 2938
+          },
+          {
+            "removed": 588,
+            "projection_witnesses": 576,
+            "extension_witnesses": 12,
+            "remaining": 2350
+          },
+          {
+            "removed": 1356,
+            "projection_witnesses": 1356,
+            "extension_witnesses": 0,
+            "remaining": 994
+          },
+          {
+            "removed": 192,
+            "projection_witnesses": 120,
+            "extension_witnesses": 72,
+            "remaining": 802
+          },
+          {
+            "removed": 528,
+            "projection_witnesses": 462,
+            "extension_witnesses": 66,
+            "remaining": 274
+          },
+          {
+            "removed": 156,
+            "projection_witnesses": 144,
+            "extension_witnesses": 12,
+            "remaining": 118
+          },
+          {
+            "removed": 118,
+            "projection_witnesses": 117,
+            "extension_witnesses": 1,
+            "remaining": 0
+          }
+        ],
+        "round_count": 12,
+        "surviving_state_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "elapsed_seconds": 0.16767359990626574
+      }
+    },
+    {
+      "name": "pigeonhole_5_4_pebbles_4",
+      "nvars": 20,
+      "pebbles": 4,
+      "clause_count": 75,
+      "expected": "DUPLICATOR_WINS",
+      "result": {
+        "status": "DUPLICATOR_WINS",
+        "reason": "FIXED_POINT",
+        "nvars": 20,
+        "pebbles": 4,
+        "clause_count": 75,
+        "initial_states": 54471,
+        "final_states": 54471,
+        "final_states_by_domain": {
+          "0": 1,
+          "1": 40,
+          "2": 690,
+          "3": 6960,
+          "4": 46780
+        },
+        "rounds": [],
+        "round_count": 0,
+        "surviving_state_sha256": "d8c47baf7c5e929ce41c4cd9d47d3c1d3e5fe292dda4eb3af8d564ca948e3c4e",
+        "elapsed_seconds": 1.1246205000206828
+      }
+    },
+    {
+      "name": "pigeonhole_5_4_pebbles_5",
+      "nvars": 20,
+      "pebbles": 5,
+      "clause_count": 75,
+      "expected": "SPOILER_WINS",
+      "result": {
+        "status": "SPOILER_WINS",
+        "reason": "EMPTY_FIXED_POINT",
+        "nvars": 20,
+        "pebbles": 5,
+        "clause_count": 75,
+        "initial_states": 279815,
+        "final_states": 0,
+        "final_states_by_domain": {},
+        "rounds": [
+          {
+            "removed": 80,
+            "projection_witnesses": 0,
+            "extension_witnesses": 80,
+            "remaining": 279735
+          },
+          {
+            "removed": 1920,
+            "projection_witnesses": 1920,
+            "extension_witnesses": 0,
+            "remaining": 277815
+          },
+          {
+            "removed": 360,
+            "projection_witnesses": 0,
+            "extension_witnesses": 360,
+            "remaining": 277455
+          },
+          {
+            "removed": 6480,
+            "projection_witnesses": 6480,
+            "extension_witnesses": 0,
+            "remaining": 270975
+          },
+          {
+            "removed": 480,
+            "projection_witnesses": 0,
+            "extension_witnesses": 480,
+            "remaining": 270495
+          },
+          {
+            "removed": 6480,
+            "projection_witnesses": 6480,
+            "extension_witnesses": 0,
+            "remaining": 264015
+          },
+          {
+            "removed": 2280,
+            "projection_witnesses": 0,
+            "extension_witnesses": 2280,
+            "remaining": 261735
+          },
+          {
+            "removed": 28560,
+            "projection_witnesses": 27600,
+            "extension_witnesses": 960,
+            "remaining": 233175
+          },
+          {
+            "removed": 11640,
+            "projection_witnesses": 11520,
+            "extension_witnesses": 120,
+            "remaining": 221535
+          },
+          {
+            "removed": 66240,
+            "projection_witnesses": 66240,
+            "extension_witnesses": 0,
+            "remaining": 155295
+          },
+          {
+            "removed": 9360,
+            "projection_witnesses": 7920,
+            "extension_witnesses": 1440,
+            "remaining": 145935
+          },
+          {
+            "removed": 44640,
+            "projection_witnesses": 43320,
+            "extension_witnesses": 1320,
+            "remaining": 101295
+          },
+          {
+            "removed": 12360,
+            "projection_witnesses": 12120,
+            "extension_witnesses": 240,
+            "remaining": 88935
+          },
+          {
+            "removed": 51920,
+            "projection_witnesses": 51900,
+            "extension_witnesses": 20,
+            "remaining": 37015
+          },
+          {
+            "removed": 5180,
+            "projection_witnesses": 5180,
+            "extension_witnesses": 0,
+            "remaining": 31835
+          },
+          {
+            "removed": 8820,
+            "projection_witnesses": 8820,
+            "extension_witnesses": 0,
+            "remaining": 23015
+          },
+          {
+            "removed": 940,
+            "projection_witnesses": 700,
+            "extension_witnesses": 240,
+            "remaining": 22075
+          },
+          {
+            "removed": 3480,
+            "projection_witnesses": 2980,
+            "extension_witnesses": 500,
+            "remaining": 18595
+          },
+          {
+            "removed": 3510,
+            "projection_witnesses": 3320,
+            "extension_witnesses": 190,
+            "remaining": 15085
+          },
+          {
+            "removed": 12780,
+            "projection_witnesses": 12760,
+            "extension_witnesses": 20,
+            "remaining": 2305
+          },
+          {
+            "removed": 1281,
+            "projection_witnesses": 1280,
+            "extension_witnesses": 1,
+            "remaining": 1024
+          },
+          {
+            "removed": 1024,
+            "projection_witnesses": 1024,
+            "extension_witnesses": 0,
+            "remaining": 0
+          }
+        ],
+        "round_count": 22,
+        "surviving_state_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "elapsed_seconds": 20.216378199867904
+      }
+    }
+  ],
+  "php_5_4_width_conclusion": {
+    "formula": "PHP(5,4) standard encoding",
+    "lower_bound": {
+      "width": 4,
+      "evidence": "DUPLICATOR_WINS on 4 pebbles rules out width 3 only when combined with the complete width-3 closure; the saved bit-mask closure is the direct lower-bound certificate.",
+      "pebble_row": "pigeonhole_5_4_pebbles_4"
+    },
+    "upper_bound": {
+      "width": 4,
+      "evidence": "SPOILER_WINS on 5 pebbles, which is equivalent to a width-4 resolution refutation by the cited theorem.",
+      "pebble_row": "pigeonhole_5_4_pebbles_5"
+    },
+    "minimum_refutation_width": 4
+  },
+  "source_sha256": {
+    "pebble.py": "f479306a747beb558135d4a5af02310ee010303ffd2d9ca02a30e02fd1b68447",
+    "run_pebble.py": "fdbdabfec83d47dfedd0ba533e3c900a72717ba35dbd2d257cb48d213281c400",
+    "review_pebble.py": "e429575a53315c9750643942f5cde91ea35a7e8943266c89fa6d37959c9b4b45",
+    "resolution.py": "f6d45054901f4684b98c584c230f213a44fcf4d730293e564325154ca07005b1",
+    "THEOREM.md": "0ad195e5026fd1303fd54db905e46f9981b35ed54ef7610509a195250fd0188c"
+  }
+}

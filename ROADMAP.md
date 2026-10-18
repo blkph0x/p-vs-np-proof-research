@@ -516,3 +516,11 @@ PHP(5,4) seeded width-4 run to 38,368 clauses at a ten-million-candidate cap.
 That is useful engineering progress, but the cap still prevents a complete
 width-4 decision; a scalable exact closure or an all-size proof is still
 required.
+
+The theorem-backed pebble-game bridge now resolves this finite cap frontier.
+For the standard PHP(5,4) encoding, the five-pebble fixed point is empty, so
+Atserias-Dalmau's characterization certifies that a width-4 refutation exists;
+the complete width-3 closure has no empty clause. The exact minimum width is
+therefore 4 for this 20-variable instance. The next open width question is
+uniform behavior as the pigeonhole parameter grows, where the pebble-state
+space remains exponential and no P-versus-NP conclusion follows.

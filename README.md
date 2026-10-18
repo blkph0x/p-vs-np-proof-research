@@ -15,7 +15,7 @@
 - Use [`CITATIONS.md`](CITATIONS.md) and [`PUBLIC_SOURCES.md`](PUBLIC_SOURCES.md)
   for public sources and the reports that use them.
 - Follow [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) to replay the checks from a
-  fresh checkout. The current frozen run has 388 passing methods across 37
+  fresh checkout. The current frozen run has 390 passing methods across 37
   suites; the full audit is intentionally separate from the lighter continuous
   integration checks, and all of its suite dependencies are included in this
   repository.
@@ -67,6 +67,15 @@ positive and negative masks. Exact clause-set digests match the tuple-indexed
 controls; the PHP(5,4) stress run reaches 38,368 known clauses under a
 ten-million-candidate cap before width 4 remains `UNKNOWN`. The timing change
 is a representation-level optimization, not a polynomial-time result.
+
+The next width question is now settled for the finite PHP(5,4) target. The
+Atserias-Dalmau Boolean pebble-game characterization is replayed independently
+in [`resolution_width_lab/PEBBLE_RESULTS.json`](resolution_width_lab/PEBBLE_RESULTS.json)
+and [`resolution_width_lab/PEBBLE_REVIEW.json`](resolution_width_lab/PEBBLE_REVIEW.json):
+the 5-pebble game has an empty fixed point, certifying a width-4 refutation,
+while the complete width-3 closure has no empty clause. The standard 20-variable,
+75-clause encoding therefore has exact minimum resolution width 4. This finite
+bridge does not provide a general polynomial SAT algorithm or settle P versus NP.
 
 Start with the [grouping and global recognition report](AFFINE_RECOGNITION_PHASE_REPORT.md):
 verified grouping brings the stress set to 19/22 exact original counts, recovering

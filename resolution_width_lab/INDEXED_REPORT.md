@@ -41,3 +41,7 @@ the empty clause. Width 4 is deliberately reported as `UNKNOWN` after
 the step cap, even though the indexed implementation has already reused
 the complete width-3 seed. This is an implementation frontier, not a
 proof that the formula has no width-4 refutation.
+
+The independent [pebble-game bridge](PEBBLE_REPORT.md) now settles the finite
+question: PHP(5,4) has a width-4 refutation even though this capped indexed
+search did not reach it.

@@ -5,7 +5,7 @@ public URL found in the repository's source, reports, and saved metadata,
 along with the local files that cite or preserve it. The curated primary
 sources and citation rules are in [`CITATIONS.md`](CITATIONS.md).
 
-Indexed URLs: **61**.
+Indexed URLs: **62**.
 
 | URL | Local provenance |
 | --- | --- |
@@ -60,6 +60,7 @@ Indexed URLs: **61**.
 | <https://www.combinatorics.org/ojs/index.php/eljc/article/download/v32i3p36/pdf> | `PUBLIC_SOURCES.md`, `graph_order_hardness_lab/THEOREM.md` |
 | <https://www.cs.cornell.edu/~rdz/Papers/KZ-PAMI04.pdf> | `PUBLIC_SOURCES.md`, `gadget_limits/THEOREM.md` |
 | <https://www.cs.toronto.edu/~sacook/homepage/cook_reckhow.pdf> | `INDEPENDENT_AUDIT.md`, `PUBLIC_SOURCES.md` |
+| <https://www.cs.upc.edu/~atserias/papers/width/ccc03.pdf> | `CITATIONS.md`, `resolution_width_lab/PEBBLE_REPORT.md`, `resolution_width_lab/THEOREM.md` |
 | <https://www.ee.iitm.ac.in/~andrew/ee512/projects/LinearProgrammingDecoding.pdf> | `PUBLIC_SOURCES.md`, `THEORY_REVIEW.md` |
 | <https://www.ijcai.org/Proceedings/03/Papers/168.pdf> | `AFFINE_DECOMPOSITION_NEXT_REVIEW.md`, `PUBLIC_SOURCES.md` |
 | <https://www.khoury.northeastern.edu/home/lieber/courses/csg260/f06/materials/papers/max-sat/p216-schaefer.pdf> | `INDEPENDENT_AUDIT.md`, `PUBLIC_SOURCES.md`, `typed_merge_planner_lab/THEOREMS.md` |
@@ -67,6 +68,6 @@ Indexed URLs: **61**.
 | <https://www.math.uwaterloo.ca/~jfgeelen/Publications/regular.pdf> | `PUBLIC_SOURCES.md`, `THEORY_REVIEW.md`, `charged_work_core_lab/FANO_NOTES.md` |
 | <https://www.researchgate.net/profile/Alexander-Vardy/publication/221591825_Algorithmic_Complexity_in_Coding_Theory_and_the_Minimum_Distance_Problem/links/00463517a8f459b272000000/Algorithmic-Complexity-in-Coding-Theory-and-the-Minimum-Distance-Problem.pdf> | `PUBLIC_SOURCES.md`, `VARDY_MINIMUM_DISTANCE_SCOPE.md` |
 | <https://www.sciencedirect.com/science/article/pii/002001909290234M> | `PUBLIC_SOURCES.md`, `graph_order_hardness_lab/THEOREM.md` |
-| <https://www.sciencedirect.com/science/article/pii/0304397585901446> | `CITATIONS.md` |
+| <https://www.sciencedirect.com/science/article/pii/0304397585901446> | `CITATIONS.md`, `PUBLIC_SOURCES.md` |
 | <https://www.sciencedirect.com/science/article/pii/S0022000010000899> | `NEXT_HOLOGRAPHIC_BRIEF.md`, `PUBLIC_SOURCES.md` |
 | <https://www2.seas.gwu.edu/~simhaweb/champalg/tsp/papers/KarpOriginal.pdf> | `INDEPENDENT_AUDIT.md`, `PUBLIC_SOURCES.md`, `packed_cost_exact_matching/REVIEW.md` |

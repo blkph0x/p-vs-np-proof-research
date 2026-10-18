@@ -21,6 +21,13 @@ Run:
     python review_indexed.py
     python run_bitset.py
     python review_bitset.py
+    python run_pebble.py
+    python review_pebble.py
 
 See [`THEOREM.md`](THEOREM.md) for the completeness and exponential-cost
 argument.
+
+The pebble-game bridge uses the primary Atserias-Dalmau characterization to
+replace an inconclusive capped PHP(5,4) width-4 saturation with an exact finite
+width result. Its independent tuple replay is recorded in
+[`PEBBLE_REPORT.md`](PEBBLE_REPORT.md) and `PEBBLE_REVIEW.json`.

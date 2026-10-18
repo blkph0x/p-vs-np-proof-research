@@ -21,9 +21,15 @@ stated structural families, finite exhaustive controls, certificate verifiers,
 and scoped counterexamples. It does not claim a solver for every SAT instance
 or a lower bound against every polynomial algorithm.
 
-The latest recorded full audit passed **37 suites and 388 test methods** with
+The latest recorded full audit passed **37 suites and 390 test methods** with
 unchanged source hashes. These are reproducibility results for the checked
 finite cases, not a solution to the open problem.
+
+The newest finite proof-complexity checkpoint settles the standard PHP(5,4)
+encoding's minimum resolution width at **4**. An exhaustive five-pebble game
+fixed point certifies the width-4 upper bound, while the complete width-3
+closure has no empty clause. See the [pebble-game report](resolution_width_lab/PEBBLE_REPORT.md)
+and its [independent replay](resolution_width_lab/PEBBLE_REVIEW.json).
 
 ## Runtime scaling notebook
 

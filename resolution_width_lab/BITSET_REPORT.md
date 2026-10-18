@@ -24,3 +24,9 @@ with different machine-level timings. For PHP(5,4), width 3 reaches a
 complete fixed point; seeded width 4 reaches the ten-million-candidate
 cap and remains `UNKNOWN`. This is a resource frontier, not a proof that
 no width-4 refutation exists.
+
+The subsequent [pebble-game bridge](PEBBLE_REPORT.md) resolves this finite
+question independently: the five-pebble game has an empty fixed point, which
+is equivalent to existence of a width-4 refutation by the cited
+Atserias-Dalmau characterization. The capped bit-mask run therefore stopped
+before finding an existing proof.

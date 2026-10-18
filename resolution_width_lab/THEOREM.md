@@ -86,3 +86,33 @@ With a ten-million-candidate cap, the bit-mask run reaches the same PHP(5,4)
 width-3 fixed point in about 0.8 seconds and advances the seeded width-4 run
 to 38,368 known clauses before `STEP_CAP`. The recorded wall-clock values are
 machine-specific measurements; they do not imply a complexity-class bound.
+
+## Boolean pebble-game width bridge
+
+Atserias and Dalmau's primary characterization
+([paper](https://www.cs.upc.edu/~atserias/papers/width/ccc03.pdf), Theorem 2)
+says that a CNF formula has a resolution refutation of width `w` exactly when
+Spoiler wins its Boolean existential `(w + 1)`-pebble game. A position is a
+partial truth assignment that does not falsify an input clause. The Duplicator
+positions form a family closed under restrictions, and whenever fewer than the
+pebble limit are occupied, every unpebbled variable must have at least one
+truth-value extension in the family.
+
+`pebble.py` computes the greatest such family exactly. It starts with every
+non-falsifying position up to the pebble limit and repeatedly removes a
+position that loses projection closure or has a variable with neither legal
+extension. The empty fixed point is a finite Spoiler certificate; a nonempty
+fixed point is a finite Duplicator certificate. `review_pebble.py` replays the
+same rows with tuple states and compares the complete round-by-round removal
+trace and state digest.
+
+The saved `PEBBLE_RESULTS.json` settles the finite PHP(5,4) width target. The
+5-pebble game has an empty fixed point, so a width-4 resolution refutation
+exists by the cited theorem. The 4-pebble game retains 54,471 positions, while
+the complete bit-mask width-3 closure has 2,230 clauses and no empty clause.
+Together these give the exact minimum resolution width **4** for this standard
+20-variable, 75-clause encoding. The earlier capped width-4 saturation was
+therefore an incomplete search frontier, not evidence against a width-4 proof.
+
+This is a finite proof-complexity result for one encoding. It does not produce
+a polynomial SAT algorithm, and it does not resolve P versus NP.

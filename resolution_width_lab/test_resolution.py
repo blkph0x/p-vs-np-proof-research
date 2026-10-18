@@ -8,6 +8,7 @@ from resolution import BoundedResolution, weakenings
 from incremental import run_ladder
 from indexed import IndexedBoundedResolution
 from bitset import BitsetBoundedResolution
+from pebble import BooleanPebbleGame
 
 
 HERE = Path(__file__).resolve().parent
@@ -195,6 +196,29 @@ class ResolutionWidthTests(unittest.TestCase):
         self.assertEqual(review["status"], "PASS")
         self.assertTrue(review["stress_width3_match"])
         self.assertTrue(review["stress_cap_control"])
+        self.assertTrue(review["source_hashes_match"])
+
+    def test_pebble_game_matches_width_boundary_controls(self):
+        # The theorem uses (w + 1) pebbles for width w.  These controls have
+        # initial clauses no wider than the target width, so the game result
+        # and the complete closure agree at the boundary.
+        unit = BooleanPebbleGame(1, ((1,), (-1,)), 2).solve()
+        self.assertEqual(unit["status"], "SPOILER_WINS")
+        pigeon = pigeonhole(4, 3)
+        game = BooleanPebbleGame(*pigeon, 4).solve()
+        self.assertEqual(game["status"], "SPOILER_WINS")
+
+    def test_saved_pebble_width_bridge_review_passed(self):
+        artifact = json.loads((HERE / "PEBBLE_RESULTS.json").read_text(encoding="utf-8"))
+        review = json.loads((HERE / "PEBBLE_REVIEW.json").read_text(encoding="utf-8"))
+        php = artifact["php_5_4_width_conclusion"]
+        self.assertEqual(php["minimum_refutation_width"], 4)
+        rows = {row["name"]: row["result"]["status"] for row in artifact["rows"]}
+        self.assertEqual(rows["pigeonhole_5_4_pebbles_4"], "DUPLICATOR_WINS")
+        self.assertEqual(rows["pigeonhole_5_4_pebbles_5"], "SPOILER_WINS")
+        self.assertEqual(review["status"], "PASS")
+        self.assertTrue(review["php_5_4_spoiler_width4_bridge"])
+        self.assertTrue(review["php_5_4_width3_closure_bridge"])
         self.assertTrue(review["source_hashes_match"])
 
 
