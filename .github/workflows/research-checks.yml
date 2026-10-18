@@ -31,4 +31,11 @@ jobs:
           fi
           python verify_holographic_artifacts.py
       - name: Run the self-contained full audit
-        run: python run_research_checks.py
+        run: |
+          set +e
+          python run_research_checks.py
+          status=$?
+          if [ "$status" -ne 0 ]; then
+            cat TEST_OUTPUT.txt
+            exit "$status"
+          fi
