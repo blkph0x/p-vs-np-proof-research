@@ -2142,8 +2142,8 @@
       "sha256": "ce86680f49890fe07bdb95febd996ac2fdf8b2d45cd25b7e5b8863026581c070"
     },
     "index.md": {
-      "bytes": 4375,
-      "sha256": "6f3d19a7c2bb6eb9f591e0c93f868480a2886ae302df72babece30bde180ea75"
+      "bytes": 4775,
+      "sha256": "97f14ad2f90f1d200e7759688a8a78b4f544835605bb794f9623db66ca1987da"
     },
     "interval_coefficient_lab/INDEPENDENT_REVIEW.md": {
       "bytes": 7681,
@@ -4490,6 +4490,6 @@
       "sha256": "957bd3b51cbf2cd06ee00f1ef47ab5c6fa8bbf1a4c281c0e67b129b027785a18"
     }
   },
-  "generated_at_utc": "2026-10-18T19:13:58.282171+00:00",
-  "source_commit": "09b5a73cda794b0537d364f745eb4353bbabc801"
+  "generated_at_utc": "2026-10-18T19:17:42.127234+00:00",
+  "source_commit": "46ae22da522d6c252a6d13bb61d3f482abfb182d"
 }

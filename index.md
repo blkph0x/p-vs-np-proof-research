@@ -35,6 +35,13 @@ proves the exact ordinary-resolution width `n` for every PHP(n+1,n) with
 `n >= 2`, with an explicit width-two PHP(2,1) edge case. This is a
 proof-complexity result, not a general SAT algorithm.
 
+The [hidden-XOR pair audit](proof_motif_candidate_lab/INDIRECT_XOR_REPORT.md)
+also certifies one bounded auxiliary-variable step: two exact parity blocks
+sharing one variable are combined into a four-variable XOR relation, while a
+mutated block and a disjoint pair are rejected. This strengthens the scoped
+motif miner but does not provide complete auxiliary elimination or a general
+SAT algorithm.
+
 ## Runtime scaling notebook
 
 {% include runtime-chart.html data_url='/assets/data/scaling-runtime.json' %}
