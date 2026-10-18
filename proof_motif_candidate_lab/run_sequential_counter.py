@@ -46,6 +46,8 @@ def main():
     shuffled_clauses = _renamed_clauses(positive_clauses, role_map)
     shuffled_check = sc.verify_certificate(shuffled_clauses, shuffled_cert)
     shuffled_discovery = sc.discover_canonical(shuffled_clauses, max_inputs=5, max_threshold=4)
+    isomorphic_discovery = sc.discover_isomorphic(shuffled_clauses, 5, 2)
+    cap_discovery = sc.discover_isomorphic(shuffled_clauses, 5, 2, max_variables=8)
 
     scaling = []
     for n_inputs in range(1, 8):
@@ -69,7 +71,9 @@ def main():
         and wrong_threshold["status"] == "REJECT"
         and shuffled_check["status"] == "ACCEPT"
         and canonical_discovery["status"] == "FOUND"
-        and shuffled_discovery["status"] == "NOT_FOUND",
+        and shuffled_discovery["status"] == "NOT_FOUND"
+        and isomorphic_discovery["status"] == "FOUND"
+        and cap_discovery["status"] == "UNKNOWN_CAP",
         "scope": "exact prefix-threshold sequential counter with supplied role map",
         "positive": {"certificate": positive_cert, "clauses": [list(c) for c in positive_clauses],
                      "verification": positive_check},
@@ -80,7 +84,9 @@ def main():
             "shuffled_roles": {"certificate": shuffled_cert,
                                "clauses": [list(c) for c in shuffled_clauses],
                                "verification": shuffled_check,
-                               "canonical_discovery": shuffled_discovery},
+                               "canonical_discovery": shuffled_discovery,
+                               "isomorphic_discovery": isomorphic_discovery,
+                               "cap_discovery": cap_discovery},
         },
         "canonical_discovery": canonical_discovery,
         "scaling": scaling,
@@ -96,7 +102,9 @@ def main():
                       "wrong_threshold": wrong_threshold["status"],
                       "shuffled": shuffled_check["status"],
                       "canonical_discovery": canonical_discovery["status"],
-                      "shuffled_discovery": shuffled_discovery["status"]}, sort_keys=True))
+                      "shuffled_discovery": shuffled_discovery["status"],
+                      "isomorphic_discovery": isomorphic_discovery["status"],
+                      "cap_discovery": cap_discovery["status"]}, sort_keys=True))
     return 0 if result["all_checks_passed"] else 1
 
 

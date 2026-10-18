@@ -8,6 +8,8 @@
 
 ## Start here
 
+- Open the [interactive research site](https://blkph0x.github.io/p-vs-np-proof-research/)
+  for the live runtime-scaling chart and the current audit status.
 - Read [`RESOLUTION_STANDARD.md`](RESOLUTION_STANDARD.md) for the acceptance
   criteria and evidence labels used throughout the project.
 - Use [`METHOD_INDEX.md`](METHOD_INDEX.md) to find every current method,
@@ -675,8 +677,8 @@ The [prefix-threshold sequential-counter audit](proof_motif_candidate_lab/SEQUEN
 extends the checked motif vocabulary beyond AMO. It reconstructs a
 proof-carrying unary prefix counter, verifies that the final unit projects to
 `sum(x) <= k`, and independently rejects missing clauses, literal mutations,
-and a wrong threshold. The role map is supplied and polynomial to validate;
-unrestricted encoding discovery remains open.
+and a wrong threshold. A capped signed incidence-graph search recovers a renamed
+role map, while unrestricted encoding discovery remains open.
 
 The [residual-equivalence barrier report](RESIDUAL_EQUIVALENCE_BARRIER_REPORT.md)
 formalizes the next limitation: for arbitrary `G(y)`, the one-bit-boundary

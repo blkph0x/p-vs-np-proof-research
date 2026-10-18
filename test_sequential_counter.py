@@ -35,6 +35,8 @@ class TestSequentialCounter(unittest.TestCase):
                          for lit in clause) for clause in sc.expected_clauses(3, 1)]
         self.assertEqual(sc.verify_certificate(clauses, sc.certificate(3, 1, inputs, states))["status"], "ACCEPT")
         self.assertEqual(sc.discover_canonical(clauses, max_inputs=3, max_threshold=2)["status"], "NOT_FOUND")
+        self.assertEqual(sc.discover_isomorphic(clauses, 3, 1)["status"], "FOUND")
+        self.assertEqual(sc.discover_isomorphic(clauses, 3, 1, max_variables=4)["status"], "UNKNOWN_CAP")
 
     def test_saved_independent_review(self):
         result = json.loads((LAB / "SEQUENTIAL_COUNTER_RESULTS.json").read_text(encoding="utf-8"))

@@ -78,6 +78,10 @@ These commands cover the newest Fourier span result and the simultaneous-basis
 certificate, plus the proof-producing CDCL scaling bridge. The GitHub Actions
 workflow runs the focused set on every push.
 
+The companion Pages workflow (`.github/workflows/pages.yml`) builds the Jekyll
+site before deploying it. A deployment therefore cannot publish an artifact
+that the site build itself rejected.
+
 ## Updating a result
 
 1. Change the experiment and its theorem/report together.

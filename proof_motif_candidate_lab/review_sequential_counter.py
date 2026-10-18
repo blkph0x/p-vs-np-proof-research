@@ -10,6 +10,7 @@ import json
 from itertools import product
 from pathlib import Path
 
+import networkx as nx
 
 ROOT = Path(__file__).resolve().parent
 
@@ -83,6 +84,50 @@ def projection(clauses, cert, cap=20):
     return "PASS" if accepted == expected else "FAIL"
 
 
+def incidence(clauses):
+    graph = nx.Graph()
+    normalized = tuple(sorted(norm(clause) for clause in clauses if norm(clause) is not None))
+    variables = sorted({abs(literal) - 1 for clause in normalized for literal in clause})
+    for variable in variables:
+        graph.add_node(("v", variable), kind="variable", width=None)
+    for index, clause in enumerate(normalized):
+        node = ("c", index)
+        graph.add_node(node, kind="clause", width=len(clause))
+        for literal in clause:
+            graph.add_edge(("v", abs(literal) - 1), node,
+                           sign=1 if literal > 0 else -1)
+    return graph
+
+
+def discover_isomorphic(clauses, n, k, max_variables=24, max_isomorphisms=64):
+    actual = tuple(sorted(norm(clause) for clause in clauses if norm(clause) is not None))
+    target_cert = {"n_inputs": n, "threshold": k,
+                   "inputs": list(range(n)),
+                   "states": [list(range(n + i * (k + 1),
+                                         n + (i + 1) * (k + 1))) for i in range(n)]}
+    target = generated(target_cert)
+    variables = {abs(literal) - 1 for clause in actual for literal in clause}
+    if len(variables) > max_variables:
+        return "UNKNOWN_CAP"
+    if len(actual) != len(target):
+        return "NOT_FOUND"
+    matcher = nx.algorithms.isomorphism.GraphMatcher(
+        incidence(target), incidence(actual),
+        node_match=lambda left, right: (
+            left.get("kind") == right.get("kind")
+            and left.get("width") == right.get("width")
+        ),
+        edge_match=lambda left, right: left.get("sign") == right.get("sign"),
+    )
+    count = 0
+    for _mapping in matcher.isomorphisms_iter():
+        count += 1
+        if count > max_isomorphisms:
+            return "UNKNOWN_CAP"
+        return "FOUND"
+    return "NOT_FOUND"
+
+
 def verify(record):
     positive = record["positive"]
     cert = positive["certificate"]
@@ -98,6 +143,9 @@ def verify(record):
     assert projection(generated(shuffled["certificate"]), shuffled["certificate"]) == "PASS"
     assert record["canonical_discovery"]["status"] == "FOUND"
     assert shuffled["canonical_discovery"]["status"] == "NOT_FOUND"
+    assert shuffled["isomorphic_discovery"]["status"] == "FOUND"
+    assert shuffled["cap_discovery"]["status"] == "UNKNOWN_CAP"
+    assert discover_isomorphic(tuple(tuple(c) for c in shuffled["clauses"]), 5, 2) == "FOUND"
     for row in record["scaling"]:
         assert row["status"] in {"ACCEPT", "ACCEPT_STRUCTURAL_UNKNOWN_SEMANTIC"}
     return True
@@ -117,7 +165,9 @@ def main():
                             "missing_clause_rejected": True,
                             "literal_mutation_rejected": True,
                             "wrong_threshold_rejected": True,
-                            "shuffled_roles_replayed": True}}
+                            "shuffled_roles_replayed": True,
+                            "isomorphic_discovery_replayed": True,
+                            "discovery_cap_replayed": True}}
     (ROOT / "SEQUENTIAL_COUNTER_REVIEW.json").write_text(
         json.dumps(review, indent=2, sort_keys=True) + "\n", encoding="utf-8"
     )

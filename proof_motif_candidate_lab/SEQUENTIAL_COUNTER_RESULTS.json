@@ -298,6 +298,12 @@
         "candidates": 15,
         "status": "NOT_FOUND"
       },
+      "cap_discovery": {
+        "embeddings": 0,
+        "reason": "variable cap exceeded",
+        "status": "UNKNOWN_CAP",
+        "variables": 20
+      },
       "certificate": {
         "inputs": [
           31,
@@ -570,6 +576,286 @@
           -13
         ]
       ],
+      "isomorphic_discovery": {
+        "certificate": {
+          "inputs": [
+            31,
+            30,
+            29,
+            28,
+            27
+          ],
+          "kind": "PREFIX_THRESHOLD_COUNTER",
+          "n_inputs": 5,
+          "output_state": 12,
+          "states": [
+            [
+              26,
+              25,
+              24
+            ],
+            [
+              23,
+              22,
+              21
+            ],
+            [
+              20,
+              19,
+              18
+            ],
+            [
+              17,
+              16,
+              15
+            ],
+            [
+              14,
+              13,
+              12
+            ]
+          ],
+          "threshold": 2,
+          "variable_count": 32
+        },
+        "embeddings": 1,
+        "status": "FOUND",
+        "verification": {
+          "semantic": {
+            "accepted_inputs": [
+              [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                0,
+                0,
+                0
+              ]
+            ],
+            "expected_inputs": [
+              [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                0,
+                0,
+                0
+              ]
+            ],
+            "status": "PASS",
+            "total_variables": 20
+          },
+          "status": "ACCEPT"
+        }
+      },
       "verification": {
         "semantic": {
           "accepted_inputs": [
@@ -1382,9 +1668,9 @@
   ],
   "scope": "exact prefix-threshold sequential counter with supplied role map",
   "source_sha256": {
-    "SEQUENTIAL_COUNTER_REPORT.md": "25af29ba8ca148487c06425cf9cb9e7b016c74560ade8842337c9e1f53683524",
-    "review_sequential_counter.py": "7a65572e7ada36c593846cec19ee466256bb076b9d7dab8245eda403718bf2f6",
-    "run_sequential_counter.py": "83a589baa142b36ab4ddbe1fba86ff0cef9bc239668950deff421f1873e7dac3",
-    "sequential_counter.py": "dd70059ddd4fe21b1ce5480c0303afee3fdb774548d4ad857f58543f704b03da"
+    "SEQUENTIAL_COUNTER_REPORT.md": "249aea8b653bb54a8e714602536760e396b320f7fb6b515e29775b48c45203fd",
+    "review_sequential_counter.py": "60d76a00087954a1985e7a0db5dbcbf5a59472eea84822e50d106049dfcff429",
+    "run_sequential_counter.py": "903e6bb667f7636c099baabe9b916e0adc46968116446d824b1f5836db0a4032",
+    "sequential_counter.py": "dd7f6c7be2111f6e9c3d9d40171392ca2a5c7bd72f1045c4ef490acd8b042a9a"
   }
 }

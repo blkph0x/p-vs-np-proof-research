@@ -21,6 +21,8 @@ from __future__ import annotations
 
 from itertools import product
 
+import networkx as nx
+
 
 def normalize_clause(clause):
     values = {int(lit) for lit in clause}
@@ -206,3 +208,67 @@ def discover_canonical(clauses, max_inputs=8, max_threshold=7, max_candidates=64
                 return {"status": "FOUND", "candidates": candidates, "certificate": cert,
                         "verification": result}
     return {"status": "NOT_FOUND", "candidates": candidates}
+
+
+def _incidence_graph(clauses):
+    graph = nx.Graph()
+    normalized = tuple(sorted(normalize_clause(clause) for clause in clauses
+                              if normalize_clause(clause) is not None))
+    variables = sorted({abs(literal) - 1 for clause in normalized for literal in clause})
+    for variable in variables:
+        graph.add_node(("v", variable), kind="variable", width=None)
+    for index, clause in enumerate(normalized):
+        node = ("c", index)
+        graph.add_node(node, kind="clause", width=len(clause))
+        for literal in clause:
+            graph.add_edge(("v", abs(literal) - 1), node,
+                           sign=1 if literal > 0 else -1)
+    return graph
+
+
+def discover_isomorphic(clauses, n_inputs, threshold, *, max_variables=24,
+                        max_isomorphisms=64):
+    """Discover a role map through bounded signed incidence-graph isomorphism.
+
+    The exact counter shape is the target graph. This search is a bounded
+    structural proposal, not a universal polynomial role-discovery theorem.
+    Certificate validation remains the authority.
+    """
+    try:
+        actual = tuple(sorted(normalize_clause(clause) for clause in clauses
+                              if normalize_clause(clause) is not None))
+        target = expected_clauses(n_inputs, threshold)
+        actual_variables = {abs(literal) - 1 for clause in actual for literal in clause}
+        if len(actual_variables) > max_variables:
+            return {"status": "UNKNOWN_CAP", "reason": "variable cap exceeded",
+                    "variables": len(actual_variables), "embeddings": 0}
+        if len(actual) != len(target):
+            return {"status": "NOT_FOUND", "embeddings": 0}
+        source_graph = _incidence_graph(target)
+        actual_graph = _incidence_graph(actual)
+        node_match = lambda left, right: (
+            left.get("kind") == right.get("kind")
+            and left.get("width") == right.get("width")
+        )
+        edge_match = lambda left, right: left.get("sign") == right.get("sign")
+        matcher = nx.algorithms.isomorphism.GraphMatcher(
+            source_graph, actual_graph, node_match=node_match, edge_match=edge_match
+        )
+        embeddings = 0
+        canonical_inputs, canonical_states = canonical_roles(n_inputs, threshold)
+        for mapping in matcher.isomorphisms_iter():
+            embeddings += 1
+            if embeddings > max_isomorphisms:
+                return {"status": "UNKNOWN_CAP", "reason": "embedding cap exceeded",
+                        "variables": len(actual_variables), "embeddings": embeddings - 1}
+            inputs = tuple(mapping[("v", variable)][1] for variable in canonical_inputs)
+            states = tuple(tuple(mapping[("v", variable)][1] for variable in row)
+                           for row in canonical_states)
+            candidate = certificate(n_inputs, threshold, inputs, states)
+            verification = verify_certificate(actual, candidate)
+            if verification["status"] in {"ACCEPT", "ACCEPT_STRUCTURAL_UNKNOWN_SEMANTIC"}:
+                return {"status": "FOUND", "embeddings": embeddings,
+                        "certificate": candidate, "verification": verification}
+        return {"status": "NOT_FOUND", "embeddings": embeddings}
+    except (KeyError, TypeError, ValueError, nx.NetworkXError):
+        return {"status": "NOT_FOUND", "embeddings": 0}

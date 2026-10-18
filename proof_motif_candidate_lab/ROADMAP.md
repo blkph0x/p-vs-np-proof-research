@@ -5,7 +5,8 @@
    require proof-carrying equivalence certificates.
 3. Extend the new bounded indirect XOR/compact-ITE recognizers beyond one-overlap closure to auxiliary definitions and longer proof-carrying compositions.
 4. Add PB/cardinality recognition beyond AMO (sequential counters, totalizers, sorting networks).
-   The bounded prefix-threshold counter is now certified under a supplied role map;
+   The bounded prefix-threshold counter is now certified under a supplied role map,
+   and a capped signed incidence-graph search recovers a renamed fixture;
    standard encodings and unrestricted role discovery remain open.
 5. Feed motif recurrence into the existing online rent/buy controller.
 6. Test on random/competition proof logs, measuring proposal volume and checker rejection rate.

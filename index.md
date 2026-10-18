@@ -56,8 +56,9 @@ The [prefix-threshold sequential-counter audit](proof_motif_candidate_lab/SEQUEN
 adds an exact cardinality primitive beyond AMO. A supplied role map is checked
 by clause reconstruction and exhaustive projection on a five-input,
 threshold-two instance; missing clauses, literal mutations, and a wrong
-threshold are rejected by an independent replay. Role discovery remains capped
-and explicit.
+threshold are rejected by an independent replay. A capped signed incidence-graph
+search also recovers a renamed role map; unrestricted discovery remains explicit
+and unresolved.
 
 ## Runtime scaling notebook
 
@@ -115,6 +116,11 @@ python run_research_checks.py
 The audit writes `TEST_OUTPUT.txt` and `TEST_SUMMARY.json`. The workflow in
 `.github/workflows/research-checks.yml` runs the focused checks and the same
 self-contained full audit on every push and pull request.
+
+The public site is built and deployed by
+`.github/workflows/pages.yml` after every push to `main`. The workflow first
+builds the Jekyll source and uploads the exact artifact it deploys, so a broken
+page build fails before publication.
 
 ## Public record
 
