@@ -492,3 +492,11 @@ refutation but exact minimum primal boundary `n-1`; removing either unit is
 replayed with a model. Frontier width therefore cannot be interpreted as
 semantic hardness until redundant structure and the cost of finding it are
 accounted for.
+
+The bounded-width route now reuses complete lower-width closures instead of
+restarting each width from the raw axioms. An induction proof and independent
+replay show exact clause-set equality on the saved controls; the `(4,3)`
+pigeonhole row reduces candidate inference attempts from 267,204 to 234,750.
+This is a deterministic parameterized optimization, not a polynomial-time
+general SAT method; the next unresolved step is still a uniform width bound or
+an algorithm that handles formulas whose required width grows with input size.

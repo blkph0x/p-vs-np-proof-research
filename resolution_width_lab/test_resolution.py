@@ -5,6 +5,7 @@ from pathlib import Path
 import unittest
 
 from resolution import BoundedResolution, weakenings
+from incremental import run_ladder
 
 
 HERE = Path(__file__).resolve().parent
@@ -95,6 +96,33 @@ class ResolutionWidthTests(unittest.TestCase):
         self.assertEqual(review["status"], "PASS")
         self.assertTrue(review["closures_match"])
         self.assertTrue(review["proofs_match"])
+        self.assertTrue(review["source_hashes_match"])
+
+    def test_incremental_ladder_matches_fresh_closure(self):
+        clauses = all_assignment_clauses(3)
+        ladder = run_ladder(3, clauses, max_clauses=10000, max_steps=100000)
+        self.assertEqual([row["baseline"]["status"] for row in ladder],
+                         ["UNKNOWN", "UNKNOWN", "UNKNOWN", "UNSAT"])
+        for row in ladder:
+            self.assertEqual(row["baseline"]["clause_digest"],
+                             row["incremental"]["clause_digest"])
+
+    def test_incremental_ladder_saves_pigeonhole_work(self):
+        nvars, clauses = pigeonhole(4, 3)
+        ladder = run_ladder(nvars, clauses, max_clauses=100000, max_steps=500000)
+        final = ladder[-1]
+        self.assertEqual(final["baseline"]["status"], "UNSAT")
+        self.assertEqual(final["incremental"]["status"], "UNSAT")
+        self.assertLess(final["incremental"]["candidate_steps"],
+                        final["baseline"]["candidate_steps"])
+
+    def test_saved_incremental_review_passed(self):
+        artifact = json.loads((HERE / "INCREMENTAL_RESULTS.json").read_text(encoding="utf-8"))
+        review = json.loads((HERE / "INCREMENTAL_REVIEW.json").read_text(encoding="utf-8"))
+        self.assertEqual(len(artifact["rows"]), 7)
+        self.assertTrue(artifact["all_closures_match"])
+        self.assertEqual(review["status"], "PASS")
+        self.assertTrue(review["fresh_and_incremental_closures_match"])
         self.assertTrue(review["source_hashes_match"])
 
 

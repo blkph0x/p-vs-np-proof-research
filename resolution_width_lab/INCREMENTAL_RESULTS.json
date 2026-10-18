@@ -1,0 +1,944 @@
+{
+  "format": "incremental-width-ladder-v1",
+  "rows": [
+    {
+      "name": "all_assignments_n1",
+      "family": "all_assignments",
+      "parameter": 1,
+      "pigeons": null,
+      "holes": null,
+      "nvars": 1,
+      "clauses": [
+        [
+          1
+        ],
+        [
+          -1
+        ]
+      ],
+      "clause_count": 2,
+      "caps": {
+        "max_clauses": 100000,
+        "max_steps": 500000
+      },
+      "ladder": [
+        {
+          "width": 0,
+          "baseline": {
+            "status": "UNKNOWN",
+            "reason": "NO_WIDTH_W_REFUTATION",
+            "closure_size": 0,
+            "candidate_steps": 0,
+            "seed_clauses": 0,
+            "clause_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          },
+          "incremental": {
+            "status": "UNKNOWN",
+            "reason": "NO_WIDTH_W_REFUTATION",
+            "closure_size": 0,
+            "candidate_steps": 0,
+            "seed_clauses": 0,
+            "clause_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          }
+        },
+        {
+          "width": 1,
+          "baseline": {
+            "status": "UNSAT",
+            "reason": null,
+            "closure_size": 3,
+            "candidate_steps": 1,
+            "seed_clauses": 0,
+            "clause_digest": "4223fc73d01f0b3f37e9003929cdae9dcf6726ccc091cd7b81bb1e7fc29d66f2"
+          },
+          "incremental": {
+            "status": "UNSAT",
+            "reason": null,
+            "closure_size": 3,
+            "candidate_steps": 1,
+            "seed_clauses": 0,
+            "clause_digest": "4223fc73d01f0b3f37e9003929cdae9dcf6726ccc091cd7b81bb1e7fc29d66f2"
+          }
+        }
+      ]
+    },
+    {
+      "name": "all_assignments_n2",
+      "family": "all_assignments",
+      "parameter": 2,
+      "pigeons": null,
+      "holes": null,
+      "nvars": 2,
+      "clauses": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -1,
+          -2
+        ]
+      ],
+      "clause_count": 4,
+      "caps": {
+        "max_clauses": 100000,
+        "max_steps": 500000
+      },
+      "ladder": [
+        {
+          "width": 0,
+          "baseline": {
+            "status": "UNKNOWN",
+            "reason": "NO_WIDTH_W_REFUTATION",
+            "closure_size": 0,
+            "candidate_steps": 0,
+            "seed_clauses": 0,
+            "clause_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          },
+          "incremental": {
+            "status": "UNKNOWN",
+            "reason": "NO_WIDTH_W_REFUTATION",
+            "closure_size": 0,
+            "candidate_steps": 0,
+            "seed_clauses": 0,
+            "clause_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          }
+        },
+        {
+          "width": 1,
+          "baseline": {
+            "status": "UNKNOWN",
+            "reason": "NO_WIDTH_W_REFUTATION",
+            "closure_size": 0,
+            "candidate_steps": 0,
+            "seed_clauses": 0,
+            "clause_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          },
+          "incremental": {
+            "status": "UNKNOWN",
+            "reason": "NO_WIDTH_W_REFUTATION",
+            "closure_size": 0,
+            "candidate_steps": 0,
+            "seed_clauses": 0,
+            "clause_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          }
+        },
+        {
+          "width": 2,
+          "baseline": {
+            "status": "UNSAT",
+            "reason": null,
+            "closure_size": 9,
+            "candidate_steps": 16,
+            "seed_clauses": 0,
+            "clause_digest": "b9284a903de767719289c6d1c10e6ff8cd3e37ee2f1d871f2228d375544dd15b"
+          },
+          "incremental": {
+            "status": "UNSAT",
+            "reason": null,
+            "closure_size": 9,
+            "candidate_steps": 16,
+            "seed_clauses": 0,
+            "clause_digest": "b9284a903de767719289c6d1c10e6ff8cd3e37ee2f1d871f2228d375544dd15b"
+          }
+        }
+      ]
+    },
+    {
+      "name": "all_assignments_n3",
+      "family": "all_assignments",
+      "parameter": 3,
+      "pigeons": null,
+      "holes": null,
+      "nvars": 3,
+      "clauses": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          2,
+          -3
+        ],
+        [
+          1,
+          -2,
+          3
+        ],
+        [
+          1,
+          -2,
+          -3
+        ],
+        [
+          -1,
+          2,
+          3
+        ],
+        [
+          -1,
+          2,
+          -3
+        ],
+        [
+          -1,
+          -2,
+          3
+        ],
+        [
+          -1,
+          -2,
+          -3
+        ]
+      ],
+      "clause_count": 8,
+      "caps": {
+        "max_clauses": 100000,
+        "max_steps": 500000
+      },
+      "ladder": [
+        {
+          "width": 0,
+          "baseline": {
+            "status": "UNKNOWN",
+            "reason": "NO_WIDTH_W_REFUTATION",
+            "closure_size": 0,
+            "candidate_steps": 0,
+            "seed_clauses": 0,
+            "clause_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          },
+          "incremental": {
+            "status": "UNKNOWN",
+            "reason": "NO_WIDTH_W_REFUTATION",
+            "closure_size": 0,
+            "candidate_steps": 0,
+            "seed_clauses": 0,
+            "clause_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          }
+        },
+        {
+          "width": 1,
+          "baseline": {
+            "status": "UNKNOWN",
+            "reason": "NO_WIDTH_W_REFUTATION",
+            "closure_size": 0,
+            "candidate_steps": 0,
+            "seed_clauses": 0,
+            "clause_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          },
+          "incremental": {
+            "status": "UNKNOWN",
+            "reason": "NO_WIDTH_W_REFUTATION",
+            "closure_size": 0,
+            "candidate_steps": 0,
+            "seed_clauses": 0,
+            "clause_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          }
+        },
+        {
+          "width": 2,
+          "baseline": {
+            "status": "UNKNOWN",
+            "reason": "NO_WIDTH_W_REFUTATION",
+            "closure_size": 0,
+            "candidate_steps": 0,
+            "seed_clauses": 0,
+            "clause_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          },
+          "incremental": {
+            "status": "UNKNOWN",
+            "reason": "NO_WIDTH_W_REFUTATION",
+            "closure_size": 0,
+            "candidate_steps": 0,
+            "seed_clauses": 0,
+            "clause_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          }
+        },
+        {
+          "width": 3,
+          "baseline": {
+            "status": "UNSAT",
+            "reason": null,
+            "closure_size": 27,
+            "candidate_steps": 222,
+            "seed_clauses": 0,
+            "clause_digest": "747bd7b576c987ddd645720201a3a9bd5d9d4507a2ff84116ec552f9f33d3e1b"
+          },
+          "incremental": {
+            "status": "UNSAT",
+            "reason": null,
+            "closure_size": 27,
+            "candidate_steps": 222,
+            "seed_clauses": 0,
+            "clause_digest": "747bd7b576c987ddd645720201a3a9bd5d9d4507a2ff84116ec552f9f33d3e1b"
+          }
+        }
+      ]
+    },
+    {
+      "name": "all_assignments_n4",
+      "family": "all_assignments",
+      "parameter": 4,
+      "pigeons": null,
+      "holes": null,
+      "nvars": 4,
+      "clauses": [
+        [
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          3,
+          -4
+        ],
+        [
+          1,
+          2,
+          -3,
+          4
+        ],
+        [
+          1,
+          2,
+          -3,
+          -4
+        ],
+        [
+          1,
+          -2,
+          3,
+          4
+        ],
+        [
+          1,
+          -2,
+          3,
+          -4
+        ],
+        [
+          1,
+          -2,
+          -3,
+          4
+        ],
+        [
+          1,
+          -2,
+          -3,
+          -4
+        ],
+        [
+          -1,
+          2,
+          3,
+          4
+        ],
+        [
+          -1,
+          2,
+          3,
+          -4
+        ],
+        [
+          -1,
+          2,
+          -3,
+          4
+        ],
+        [
+          -1,
+          2,
+          -3,
+          -4
+        ],
+        [
+          -1,
+          -2,
+          3,
+          4
+        ],
+        [
+          -1,
+          -2,
+          3,
+          -4
+        ],
+        [
+          -1,
+          -2,
+          -3,
+          4
+        ],
+        [
+          -1,
+          -2,
+          -3,
+          -4
+        ]
+      ],
+      "clause_count": 16,
+      "caps": {
+        "max_clauses": 100000,
+        "max_steps": 500000
+      },
+      "ladder": [
+        {
+          "width": 0,
+          "baseline": {
+            "status": "UNKNOWN",
+            "reason": "NO_WIDTH_W_REFUTATION",
+            "closure_size": 0,
+            "candidate_steps": 0,
+            "seed_clauses": 0,
+            "clause_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          },
+          "incremental": {
+            "status": "UNKNOWN",
+            "reason": "NO_WIDTH_W_REFUTATION",
+            "closure_size": 0,
+            "candidate_steps": 0,
+            "seed_clauses": 0,
+            "clause_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          }
+        },
+        {
+          "width": 1,
+          "baseline": {
+            "status": "UNKNOWN",
+            "reason": "NO_WIDTH_W_REFUTATION",
+            "closure_size": 0,
+            "candidate_steps": 0,
+            "seed_clauses": 0,
+            "clause_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          },
+          "incremental": {
+            "status": "UNKNOWN",
+            "reason": "NO_WIDTH_W_REFUTATION",
+            "closure_size": 0,
+            "candidate_steps": 0,
+            "seed_clauses": 0,
+            "clause_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          }
+        },
+        {
+          "width": 2,
+          "baseline": {
+            "status": "UNKNOWN",
+            "reason": "NO_WIDTH_W_REFUTATION",
+            "closure_size": 0,
+            "candidate_steps": 0,
+            "seed_clauses": 0,
+            "clause_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          },
+          "incremental": {
+            "status": "UNKNOWN",
+            "reason": "NO_WIDTH_W_REFUTATION",
+            "closure_size": 0,
+            "candidate_steps": 0,
+            "seed_clauses": 0,
+            "clause_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          }
+        },
+        {
+          "width": 3,
+          "baseline": {
+            "status": "UNKNOWN",
+            "reason": "NO_WIDTH_W_REFUTATION",
+            "closure_size": 0,
+            "candidate_steps": 0,
+            "seed_clauses": 0,
+            "clause_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          },
+          "incremental": {
+            "status": "UNKNOWN",
+            "reason": "NO_WIDTH_W_REFUTATION",
+            "closure_size": 0,
+            "candidate_steps": 0,
+            "seed_clauses": 0,
+            "clause_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          }
+        },
+        {
+          "width": 4,
+          "baseline": {
+            "status": "UNSAT",
+            "reason": null,
+            "closure_size": 81,
+            "candidate_steps": 2218,
+            "seed_clauses": 0,
+            "clause_digest": "82ad0cd673641ac4081d5c67de105895bdd4b27c1fae1d2d1f7cd2355b786e54"
+          },
+          "incremental": {
+            "status": "UNSAT",
+            "reason": null,
+            "closure_size": 81,
+            "candidate_steps": 2218,
+            "seed_clauses": 0,
+            "clause_digest": "82ad0cd673641ac4081d5c67de105895bdd4b27c1fae1d2d1f7cd2355b786e54"
+          }
+        }
+      ]
+    },
+    {
+      "name": "pigeonhole_2_1",
+      "family": "pigeonhole",
+      "parameter": 1,
+      "pigeons": 2,
+      "holes": 1,
+      "nvars": 2,
+      "clauses": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          -1,
+          -2
+        ]
+      ],
+      "clause_count": 3,
+      "caps": {
+        "max_clauses": 100000,
+        "max_steps": 500000
+      },
+      "ladder": [
+        {
+          "width": 0,
+          "baseline": {
+            "status": "UNKNOWN",
+            "reason": "NO_WIDTH_W_REFUTATION",
+            "closure_size": 0,
+            "candidate_steps": 0,
+            "seed_clauses": 0,
+            "clause_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          },
+          "incremental": {
+            "status": "UNKNOWN",
+            "reason": "NO_WIDTH_W_REFUTATION",
+            "closure_size": 0,
+            "candidate_steps": 0,
+            "seed_clauses": 0,
+            "clause_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          }
+        },
+        {
+          "width": 1,
+          "baseline": {
+            "status": "UNKNOWN",
+            "reason": "NO_WIDTH_W_REFUTATION",
+            "closure_size": 2,
+            "candidate_steps": 0,
+            "seed_clauses": 0,
+            "clause_digest": "7df7c03ad1f4de3b78607b084bc11b714b2d4193c941df099819dbc7f866124b"
+          },
+          "incremental": {
+            "status": "UNKNOWN",
+            "reason": "NO_WIDTH_W_REFUTATION",
+            "closure_size": 2,
+            "candidate_steps": 0,
+            "seed_clauses": 0,
+            "clause_digest": "7df7c03ad1f4de3b78607b084bc11b714b2d4193c941df099819dbc7f866124b"
+          }
+        },
+        {
+          "width": 2,
+          "baseline": {
+            "status": "UNSAT",
+            "reason": null,
+            "closure_size": 8,
+            "candidate_steps": 6,
+            "seed_clauses": 0,
+            "clause_digest": "19b5e14fe5a604f04171cd04ef3a961b2fbee2ec75a1a736633a38f94197ab64"
+          },
+          "incremental": {
+            "status": "UNSAT",
+            "reason": null,
+            "closure_size": 8,
+            "candidate_steps": 6,
+            "seed_clauses": 2,
+            "clause_digest": "19b5e14fe5a604f04171cd04ef3a961b2fbee2ec75a1a736633a38f94197ab64"
+          }
+        }
+      ]
+    },
+    {
+      "name": "pigeonhole_3_2",
+      "family": "pigeonhole",
+      "parameter": 2,
+      "pigeons": 3,
+      "holes": 2,
+      "nvars": 6,
+      "clauses": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -3,
+          -4
+        ],
+        [
+          -5,
+          -6
+        ],
+        [
+          -1,
+          -3
+        ],
+        [
+          -1,
+          -5
+        ],
+        [
+          -3,
+          -5
+        ],
+        [
+          -2,
+          -4
+        ],
+        [
+          -2,
+          -6
+        ],
+        [
+          -4,
+          -6
+        ]
+      ],
+      "clause_count": 12,
+      "caps": {
+        "max_clauses": 100000,
+        "max_steps": 500000
+      },
+      "ladder": [
+        {
+          "width": 0,
+          "baseline": {
+            "status": "UNKNOWN",
+            "reason": "NO_WIDTH_W_REFUTATION",
+            "closure_size": 0,
+            "candidate_steps": 0,
+            "seed_clauses": 0,
+            "clause_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          },
+          "incremental": {
+            "status": "UNKNOWN",
+            "reason": "NO_WIDTH_W_REFUTATION",
+            "closure_size": 0,
+            "candidate_steps": 0,
+            "seed_clauses": 0,
+            "clause_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          }
+        },
+        {
+          "width": 1,
+          "baseline": {
+            "status": "UNKNOWN",
+            "reason": "NO_WIDTH_W_REFUTATION",
+            "closure_size": 0,
+            "candidate_steps": 0,
+            "seed_clauses": 0,
+            "clause_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          },
+          "incremental": {
+            "status": "UNKNOWN",
+            "reason": "NO_WIDTH_W_REFUTATION",
+            "closure_size": 0,
+            "candidate_steps": 0,
+            "seed_clauses": 0,
+            "clause_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          }
+        },
+        {
+          "width": 2,
+          "baseline": {
+            "status": "UNSAT",
+            "reason": null,
+            "closure_size": 73,
+            "candidate_steps": 555,
+            "seed_clauses": 0,
+            "clause_digest": "54dd859e80fc0b8a179bbcfd39f6ae86aad089a24a2d1c88813e07ed43cb9eeb"
+          },
+          "incremental": {
+            "status": "UNSAT",
+            "reason": null,
+            "closure_size": 73,
+            "candidate_steps": 555,
+            "seed_clauses": 0,
+            "clause_digest": "54dd859e80fc0b8a179bbcfd39f6ae86aad089a24a2d1c88813e07ed43cb9eeb"
+          }
+        }
+      ]
+    },
+    {
+      "name": "pigeonhole_4_3",
+      "family": "pigeonhole",
+      "parameter": 3,
+      "pigeons": 4,
+      "holes": 3,
+      "nvars": 12,
+      "clauses": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          7,
+          8,
+          9
+        ],
+        [
+          10,
+          11,
+          12
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          -3
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -4,
+          -5
+        ],
+        [
+          -4,
+          -6
+        ],
+        [
+          -5,
+          -6
+        ],
+        [
+          -7,
+          -8
+        ],
+        [
+          -7,
+          -9
+        ],
+        [
+          -8,
+          -9
+        ],
+        [
+          -10,
+          -11
+        ],
+        [
+          -10,
+          -12
+        ],
+        [
+          -11,
+          -12
+        ],
+        [
+          -1,
+          -4
+        ],
+        [
+          -1,
+          -7
+        ],
+        [
+          -1,
+          -10
+        ],
+        [
+          -4,
+          -7
+        ],
+        [
+          -4,
+          -10
+        ],
+        [
+          -7,
+          -10
+        ],
+        [
+          -2,
+          -5
+        ],
+        [
+          -2,
+          -8
+        ],
+        [
+          -2,
+          -11
+        ],
+        [
+          -5,
+          -8
+        ],
+        [
+          -5,
+          -11
+        ],
+        [
+          -8,
+          -11
+        ],
+        [
+          -3,
+          -6
+        ],
+        [
+          -3,
+          -9
+        ],
+        [
+          -3,
+          -12
+        ],
+        [
+          -6,
+          -9
+        ],
+        [
+          -6,
+          -12
+        ],
+        [
+          -9,
+          -12
+        ]
+      ],
+      "clause_count": 34,
+      "caps": {
+        "max_clauses": 100000,
+        "max_steps": 500000
+      },
+      "ladder": [
+        {
+          "width": 0,
+          "baseline": {
+            "status": "UNKNOWN",
+            "reason": "NO_WIDTH_W_REFUTATION",
+            "closure_size": 0,
+            "candidate_steps": 0,
+            "seed_clauses": 0,
+            "clause_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          },
+          "incremental": {
+            "status": "UNKNOWN",
+            "reason": "NO_WIDTH_W_REFUTATION",
+            "closure_size": 0,
+            "candidate_steps": 0,
+            "seed_clauses": 0,
+            "clause_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          }
+        },
+        {
+          "width": 1,
+          "baseline": {
+            "status": "UNKNOWN",
+            "reason": "NO_WIDTH_W_REFUTATION",
+            "closure_size": 0,
+            "candidate_steps": 0,
+            "seed_clauses": 0,
+            "clause_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          },
+          "incremental": {
+            "status": "UNKNOWN",
+            "reason": "NO_WIDTH_W_REFUTATION",
+            "closure_size": 0,
+            "candidate_steps": 0,
+            "seed_clauses": 0,
+            "clause_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          }
+        },
+        {
+          "width": 2,
+          "baseline": {
+            "status": "UNKNOWN",
+            "reason": "NO_WIDTH_W_REFUTATION",
+            "closure_size": 30,
+            "candidate_steps": 0,
+            "seed_clauses": 0,
+            "clause_digest": "8fa657f01b8d3f8d32e3bf72b1c86da87e1a6d98c98f50b8edd9f960a199e1b6"
+          },
+          "incremental": {
+            "status": "UNKNOWN",
+            "reason": "NO_WIDTH_W_REFUTATION",
+            "closure_size": 30,
+            "candidate_steps": 0,
+            "seed_clauses": 0,
+            "clause_digest": "8fa657f01b8d3f8d32e3bf72b1c86da87e1a6d98c98f50b8edd9f960a199e1b6"
+          }
+        },
+        {
+          "width": 3,
+          "baseline": {
+            "status": "UNSAT",
+            "reason": null,
+            "closure_size": 2049,
+            "candidate_steps": 267204,
+            "seed_clauses": 0,
+            "clause_digest": "322fdc4bc8fa1190059a762ba9b6f20b54175410ef421916bae8ea5b23f3e98d"
+          },
+          "incremental": {
+            "status": "UNSAT",
+            "reason": null,
+            "closure_size": 2049,
+            "candidate_steps": 234750,
+            "seed_clauses": 30,
+            "clause_digest": "322fdc4bc8fa1190059a762ba9b6f20b54175410ef421916bae8ea5b23f3e98d"
+          }
+        }
+      ]
+    }
+  ],
+  "all_closures_match": true,
+  "source_sha256": {
+    "resolution_width_lab/resolution.py": "f6d45054901f4684b98c584c230f213a44fcf4d730293e564325154ca07005b1",
+    "resolution_width_lab/incremental.py": "dcc96c6fb4375e6c544cc76230b741a96631f6101f01ade01e077e9094c44db8",
+    "resolution_width_lab/run_incremental.py": "becd8a9a4c6ef0bd6f53eb19c346a5fe7261fd89cafff18281db8fd0646aaf3f",
+    "resolution_width_lab/review_incremental.py": "fa4c4a7075efa2074720cf28edc9a589e237096fec52bbf645594a496606dbb6",
+    "resolution_width_lab/THEOREM.md": "5c03edbf812d67187fc9ac7c342167eff755923196185a7bcb805ea4702d4c10"
+  }
+}

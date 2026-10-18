@@ -405,7 +405,7 @@ keeping the auxiliaries preserves its polynomial solving route.
 
 ## Evidence and practical limits
 
-The current frozen integration run passes **380 tests across 37 suites**, with
+The current frozen integration run passes **383 tests across 37 suites**, with
 unchanged source hashes throughout. The canonical audit now includes the
 51-test labelled-join and perturbation certificate suite in
 `labelled_join_certified`. [TEST_SUMMARY.json](TEST_SUMMARY.json) and
@@ -559,6 +559,13 @@ proves the formula unsatisfiable at width one while an irrelevant `n`-clique
 forces exact minimum boundary `n-1`; removing either unit is independently
 replayed with a satisfying assignment. This makes preprocessing and semantic
 discovery explicit costs for any frontier-based solver proposal.
+
+The [incremental width report](resolution_width_lab/INCREMENTAL_REPORT.md)
+removes repeated lower-width closure work without changing the proof system.
+An independent replay checks the complete clause set at every rung; on the
+`(4,3)` pigeonhole control, candidate inference attempts fall from 267,204 to
+234,750. This is a parameterized implementation optimization, not a
+machine-independent polynomial bound.
 
 The ultimate goal remains active. These findings sharpen the question and
 remove incorrect shortcuts; they do not answer P versus NP.

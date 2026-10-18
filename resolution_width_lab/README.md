@@ -15,6 +15,8 @@ Run:
     python -m unittest -v test_resolution.py
     python run_audit.py
     python review.py
+    python run_incremental.py
+    python review_incremental.py
 
 See [`THEOREM.md`](THEOREM.md) for the completeness and exponential-cost
 argument.

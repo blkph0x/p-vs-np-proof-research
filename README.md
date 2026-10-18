@@ -15,7 +15,7 @@
 - Use [`CITATIONS.md`](CITATIONS.md) and [`PUBLIC_SOURCES.md`](PUBLIC_SOURCES.md)
   for public sources and the reports that use them.
 - Follow [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) to replay the checks from a
-  fresh checkout. The current frozen run has 380 passing methods across 37
+  fresh checkout. The current frozen run has 383 passing methods across 37
   suites; the full audit is intentionally separate from the lighter continuous
   integration checks, and all of its suite dependencies are included in this
   repository.
@@ -49,6 +49,12 @@ with an irrelevant positive clique keeps resolution width one while its exact
 minimum frontier boundary grows. The mutation replay removes either unit and
 finds a model, so the result records a preprocessing obligation rather than a
 hardness claim.
+
+The bounded-width lab now also has an incremental ladder. It reuses each
+completed width closure at the next width, proves the reuse by induction, and
+checks that the resulting clause sets match fresh closure exactly. The saved
+controls reduce candidate inference work on the `(4,3)` pigeonhole row while
+preserving explicit caps and `UNKNOWN` semantics.
 
 Start with the [grouping and global recognition report](AFFINE_RECOGNITION_PHASE_REPORT.md):
 verified grouping brings the stress set to 19/22 exact original counts, recovering
