@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "case_count": 7,
+  "width_replay_matches": true,
+  "cdcl_rows_match": true,
+  "frontier_rows_match": true,
+  "source_hashes_match": true
+}

@@ -477,3 +477,11 @@ For the first four pigeonhole controls it reduces row-major widths
 1,4,9,16 to exact optima 1,3,7,11, with an independent recurrence replay.
 This separates an order artifact from the underlying formula controls, while
 the 2^n subset cost keeps the order-discovery step outside a polynomial claim.
+
+The width-bridge follow-up now replays seven overlapping formulas through
+complete bounded weakening/resolution closure. Its exact finite minimum widths
+are 1,2,3,4 for all-assignment `n=1..4` and 2,2,3 for pigeonhole `(2,1)`,
+`(3,2)`, and `(4,3)`. The same rows are aligned with supplied-order frontier
+states and the independently replayed CDCL traces. This strengthens the finite
+adversarial record while leaving alternative proof systems, scalable width
+discovery, and arbitrary SAT lower bounds open.

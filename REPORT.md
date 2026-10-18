@@ -405,7 +405,7 @@ keeping the auxiliaries preserves its polynomial solving route.
 
 ## Evidence and practical limits
 
-The current frozen integration run passes **376 tests across 37 suites**, with
+The current frozen integration run passes **378 tests across 37 suites**, with
 unchanged source hashes throughout. The canonical audit now includes the
 51-test labelled-join and perturbation certificate suite in
 `labelled_join_certified`. [TEST_SUMMARY.json](TEST_SUMMARY.json) and
@@ -543,6 +543,15 @@ Here `n` counts columns; an explicit `r`-bit-column encoding has length
 `2^(Omega(L^(1/3)))`, still superpolynomial. The saved cases `k=4..7`, the formula sweep through `k=12`, all sampled basis
 replays and a forged-record control pass an independent verifier. This remains
 a route-specific state lower bound, not a P-versus-NP separation.
+
+The [width bridge report](proof_complexity_frontier_lab/WIDTH_REPORT.md)
+replays seven of the same adversarial CNFs through complete bounded
+weakening/resolution closure and aligns the exact finite minimum widths with
+the supplied-order frontier states and the separately replayed CDCL traces.
+The width minima are `1,2,3,4` for all-assignment `n=1..4` and `2,2,3` for
+the three pigeonhole controls. The independent reviewer recomputes every
+width layer under explicit caps, so a cap would remain `UNKNOWN`; this is a
+finite proof-system comparison rather than a lower bound for arbitrary SAT.
 
 The ultimate goal remains active. These findings sharpen the question and
 remove incorrect shortcuts; they do not answer P versus NP.

@@ -47,3 +47,21 @@ controls exhaust all subsets for 2, 6, 12, and 20 variables. Their exact
 optima are 1, 3, 7, and 11, compared with row-major widths 1, 4, 9, and 16.
 Those four values are finite order certificates; they do not establish an
 asymptotic formula or a polynomial order-discovery algorithm.
+
+## Width bridge
+
+The width extension uses the complete finite weakening/resolution closure for
+seven saved formulas: all-assignment instances for `n=1,...,4` and pigeonhole
+instances `(2,1)`, `(3,2)`, and `(4,3)`. The independent reviewer reconstructs
+each clause universe, repeats every width sweep, and checks the first width
+containing the empty clause. The resulting finite minima are
+
+    all assignments: 1, 2, 3, 4
+    pigeonhole:     2, 2, 3.
+
+The bridge aligns these rows with the supplied-order frontier state totals and
+one proof-producing CDCL trace. It compares measurements from three bounded
+representations; it does not prove that resolution width controls other proof
+systems, that CDCL is optimal, or that either quantity lower-bounds arbitrary
+SAT algorithms. The closure has explicit 100,000-clause and 500,000-candidate
+caps, and any cap outcome is recorded as `UNKNOWN`.

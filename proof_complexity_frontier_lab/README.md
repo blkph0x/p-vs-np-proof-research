@@ -16,6 +16,8 @@ Run:
     python review_frontier.py
     python run_orders.py
     python review_orders.py
+    python run_width_bridge.py
+    python review_width_bridge.py
     python -m unittest -v test_frontier.py
 
 The all-assignment family is included as a control whose input already has
@@ -28,3 +30,9 @@ lower-bound arbitrary SAT algorithms or resolve P versus NP.
 The small-order extension exhausts every variable order through 20 variables.
 It records the exact minimum primal vertex-boundary width and keeps the
 exponential subset cost explicit.
+
+The width bridge replays seven overlapping CNFs through an independent bounded
+weakening/resolution closure. It aligns the exact finite minimum refutation
+width with the supplied-order frontier counts and the separately replayed CDCL
+trace. Its width and candidate-step caps are stored in the artifact, and a cap
+would remain `UNKNOWN` rather than being treated as a refutation.

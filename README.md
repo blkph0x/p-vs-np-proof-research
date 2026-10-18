@@ -15,7 +15,7 @@
 - Use [`CITATIONS.md`](CITATIONS.md) and [`PUBLIC_SOURCES.md`](PUBLIC_SOURCES.md)
   for public sources and the reports that use them.
 - Follow [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) to replay the checks from a
-  fresh checkout. The current frozen run has 376 passing methods across 37
+  fresh checkout. The current frozen run has 378 passing methods across 37
   suites; the full audit is intentionally separate from the lighter continuous
   integration checks, and all of its suite dependencies are included in this
   repository.
@@ -36,6 +36,13 @@ bound against every polynomial algorithm.
 The time-stamped [external status audit](EXTERNAL_STATUS_AUDIT_2026_10_18.md)
 checks current public claims against the official problem status and keeps an
 unverified recent P=NP claim separate from the project's proof evidence.
+
+The proof-complexity checkpoint now includes a finite width bridge. Seven
+overlapping CNFs are replayed through bounded resolution-width closure and
+aligned with the supplied-order frontier state counts and the separately
+replayed CDCL traces. See [`proof_complexity_frontier_lab/WIDTH_REPORT.md`](proof_complexity_frontier_lab/WIDTH_REPORT.md)
+and its independent reviewer; the comparison is finite evidence, not a
+lower bound for arbitrary SAT algorithms.
 
 Start with the [grouping and global recognition report](AFFINE_RECOGNITION_PHASE_REPORT.md):
 verified grouping brings the stress set to 19/22 exact original counts, recovering

@@ -1,0 +1,874 @@
+{
+  "format": "proof-width-frontier-cdcl-bridge-v1",
+  "rows": [
+    {
+      "name": "all_assignments_n1",
+      "family": "all_assignments",
+      "parameter": 1,
+      "pigeons": null,
+      "holes": null,
+      "nvars": 1,
+      "clauses": [
+        [
+          1
+        ],
+        [
+          -1
+        ]
+      ],
+      "clause_count": 2,
+      "input_literals": 2,
+      "caps": {
+        "max_clauses": 100000,
+        "max_steps": 500000
+      },
+      "width": {
+        "minimum_refutation_width": 1,
+        "sweep": [
+          {
+            "width": 0,
+            "status": "UNKNOWN",
+            "reason": "NO_WIDTH_W_REFUTATION",
+            "closure_size": 0,
+            "candidate_steps": 0
+          },
+          {
+            "width": 1,
+            "status": "UNSAT",
+            "reason": null,
+            "closure_size": 3,
+            "candidate_steps": 1
+          }
+        ],
+        "final_stats": {
+          "initial_clauses": 2,
+          "known_clauses": 3,
+          "processed_clauses": 1,
+          "candidate_steps": 1,
+          "weakening_steps": 0,
+          "resolution_steps": 1
+        }
+      },
+      "frontier": {
+        "max_width": 0,
+        "states": 1,
+        "transitions": 0
+      },
+      "cdcl": {
+        "status": "UNSAT",
+        "proof_events": 1,
+        "elapsed_seconds": 3.6700163036584854e-05,
+        "stats": {
+          "decisions": 0,
+          "boolean_props": 1,
+          "conflicts": 1,
+          "learned_clauses": 0,
+          "learned_literals": 0,
+          "resolution_steps": 1,
+          "backjumps": 0
+        }
+      }
+    },
+    {
+      "name": "all_assignments_n2",
+      "family": "all_assignments",
+      "parameter": 2,
+      "pigeons": null,
+      "holes": null,
+      "nvars": 2,
+      "clauses": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -1,
+          -2
+        ]
+      ],
+      "clause_count": 4,
+      "input_literals": 8,
+      "caps": {
+        "max_clauses": 100000,
+        "max_steps": 500000
+      },
+      "width": {
+        "minimum_refutation_width": 2,
+        "sweep": [
+          {
+            "width": 0,
+            "status": "UNKNOWN",
+            "reason": "NO_WIDTH_W_REFUTATION",
+            "closure_size": 0,
+            "candidate_steps": 0
+          },
+          {
+            "width": 1,
+            "status": "UNKNOWN",
+            "reason": "NO_WIDTH_W_REFUTATION",
+            "closure_size": 0,
+            "candidate_steps": 0
+          },
+          {
+            "width": 2,
+            "status": "UNSAT",
+            "reason": null,
+            "closure_size": 9,
+            "candidate_steps": 16
+          }
+        ],
+        "final_stats": {
+          "initial_clauses": 4,
+          "known_clauses": 9,
+          "processed_clauses": 5,
+          "candidate_steps": 16,
+          "weakening_steps": 2,
+          "resolution_steps": 14
+        }
+      },
+      "frontier": {
+        "max_width": 1,
+        "states": 3,
+        "transitions": 2
+      },
+      "cdcl": {
+        "status": "UNSAT",
+        "proof_events": 2,
+        "elapsed_seconds": 7.760012522339821e-05,
+        "stats": {
+          "decisions": 1,
+          "boolean_props": 3,
+          "conflicts": 2,
+          "learned_clauses": 1,
+          "learned_literals": 1,
+          "resolution_steps": 3,
+          "backjumps": 1
+        }
+      }
+    },
+    {
+      "name": "all_assignments_n3",
+      "family": "all_assignments",
+      "parameter": 3,
+      "pigeons": null,
+      "holes": null,
+      "nvars": 3,
+      "clauses": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          2,
+          -3
+        ],
+        [
+          1,
+          -2,
+          3
+        ],
+        [
+          1,
+          -2,
+          -3
+        ],
+        [
+          -1,
+          2,
+          3
+        ],
+        [
+          -1,
+          2,
+          -3
+        ],
+        [
+          -1,
+          -2,
+          3
+        ],
+        [
+          -1,
+          -2,
+          -3
+        ]
+      ],
+      "clause_count": 8,
+      "input_literals": 24,
+      "caps": {
+        "max_clauses": 100000,
+        "max_steps": 500000
+      },
+      "width": {
+        "minimum_refutation_width": 3,
+        "sweep": [
+          {
+            "width": 0,
+            "status": "UNKNOWN",
+            "reason": "NO_WIDTH_W_REFUTATION",
+            "closure_size": 0,
+            "candidate_steps": 0
+          },
+          {
+            "width": 1,
+            "status": "UNKNOWN",
+            "reason": "NO_WIDTH_W_REFUTATION",
+            "closure_size": 0,
+            "candidate_steps": 0
+          },
+          {
+            "width": 2,
+            "status": "UNKNOWN",
+            "reason": "NO_WIDTH_W_REFUTATION",
+            "closure_size": 0,
+            "candidate_steps": 0
+          },
+          {
+            "width": 3,
+            "status": "UNSAT",
+            "reason": null,
+            "closure_size": 27,
+            "candidate_steps": 222
+          }
+        ],
+        "final_stats": {
+          "initial_clauses": 8,
+          "known_clauses": 27,
+          "processed_clauses": 21,
+          "candidate_steps": 222,
+          "weakening_steps": 32,
+          "resolution_steps": 190
+        }
+      },
+      "frontier": {
+        "max_width": 2,
+        "states": 7,
+        "transitions": 6
+      },
+      "cdcl": {
+        "status": "UNSAT",
+        "proof_events": 4,
+        "elapsed_seconds": 0.00021789968013763428,
+        "stats": {
+          "decisions": 3,
+          "boolean_props": 7,
+          "conflicts": 4,
+          "learned_clauses": 3,
+          "learned_literals": 5,
+          "resolution_steps": 7,
+          "backjumps": 3
+        }
+      }
+    },
+    {
+      "name": "all_assignments_n4",
+      "family": "all_assignments",
+      "parameter": 4,
+      "pigeons": null,
+      "holes": null,
+      "nvars": 4,
+      "clauses": [
+        [
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          3,
+          -4
+        ],
+        [
+          1,
+          2,
+          -3,
+          4
+        ],
+        [
+          1,
+          2,
+          -3,
+          -4
+        ],
+        [
+          1,
+          -2,
+          3,
+          4
+        ],
+        [
+          1,
+          -2,
+          3,
+          -4
+        ],
+        [
+          1,
+          -2,
+          -3,
+          4
+        ],
+        [
+          1,
+          -2,
+          -3,
+          -4
+        ],
+        [
+          -1,
+          2,
+          3,
+          4
+        ],
+        [
+          -1,
+          2,
+          3,
+          -4
+        ],
+        [
+          -1,
+          2,
+          -3,
+          4
+        ],
+        [
+          -1,
+          2,
+          -3,
+          -4
+        ],
+        [
+          -1,
+          -2,
+          3,
+          4
+        ],
+        [
+          -1,
+          -2,
+          3,
+          -4
+        ],
+        [
+          -1,
+          -2,
+          -3,
+          4
+        ],
+        [
+          -1,
+          -2,
+          -3,
+          -4
+        ]
+      ],
+      "clause_count": 16,
+      "input_literals": 64,
+      "caps": {
+        "max_clauses": 100000,
+        "max_steps": 500000
+      },
+      "width": {
+        "minimum_refutation_width": 4,
+        "sweep": [
+          {
+            "width": 0,
+            "status": "UNKNOWN",
+            "reason": "NO_WIDTH_W_REFUTATION",
+            "closure_size": 0,
+            "candidate_steps": 0
+          },
+          {
+            "width": 1,
+            "status": "UNKNOWN",
+            "reason": "NO_WIDTH_W_REFUTATION",
+            "closure_size": 0,
+            "candidate_steps": 0
+          },
+          {
+            "width": 2,
+            "status": "UNKNOWN",
+            "reason": "NO_WIDTH_W_REFUTATION",
+            "closure_size": 0,
+            "candidate_steps": 0
+          },
+          {
+            "width": 3,
+            "status": "UNKNOWN",
+            "reason": "NO_WIDTH_W_REFUTATION",
+            "closure_size": 0,
+            "candidate_steps": 0
+          },
+          {
+            "width": 4,
+            "status": "UNSAT",
+            "reason": null,
+            "closure_size": 81,
+            "candidate_steps": 2218
+          }
+        ],
+        "final_stats": {
+          "initial_clauses": 16,
+          "known_clauses": 81,
+          "processed_clauses": 73,
+          "candidate_steps": 2218,
+          "weakening_steps": 282,
+          "resolution_steps": 1936
+        }
+      },
+      "frontier": {
+        "max_width": 3,
+        "states": 15,
+        "transitions": 14
+      },
+      "cdcl": {
+        "status": "UNSAT",
+        "proof_events": 8,
+        "elapsed_seconds": 0.0006970004178583622,
+        "stats": {
+          "decisions": 7,
+          "boolean_props": 15,
+          "conflicts": 8,
+          "learned_clauses": 7,
+          "learned_literals": 17,
+          "resolution_steps": 15,
+          "backjumps": 7
+        }
+      }
+    },
+    {
+      "name": "pigeonhole_2_1",
+      "family": "pigeonhole",
+      "parameter": 1,
+      "pigeons": 2,
+      "holes": 1,
+      "nvars": 2,
+      "clauses": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          -1,
+          -2
+        ]
+      ],
+      "clause_count": 3,
+      "input_literals": 4,
+      "caps": {
+        "max_clauses": 100000,
+        "max_steps": 500000
+      },
+      "width": {
+        "minimum_refutation_width": 2,
+        "sweep": [
+          {
+            "width": 0,
+            "status": "UNKNOWN",
+            "reason": "NO_WIDTH_W_REFUTATION",
+            "closure_size": 0,
+            "candidate_steps": 0
+          },
+          {
+            "width": 1,
+            "status": "UNKNOWN",
+            "reason": "NO_WIDTH_W_REFUTATION",
+            "closure_size": 2,
+            "candidate_steps": 0
+          },
+          {
+            "width": 2,
+            "status": "UNSAT",
+            "reason": null,
+            "closure_size": 8,
+            "candidate_steps": 6
+          }
+        ],
+        "final_stats": {
+          "initial_clauses": 3,
+          "known_clauses": 8,
+          "processed_clauses": 2,
+          "candidate_steps": 6,
+          "weakening_steps": 4,
+          "resolution_steps": 2
+        }
+      },
+      "frontier": {
+        "max_width": 1,
+        "states": 2,
+        "transitions": 1
+      },
+      "cdcl": {
+        "status": "UNSAT",
+        "proof_events": 1,
+        "elapsed_seconds": 3.310013562440872e-05,
+        "stats": {
+          "decisions": 0,
+          "boolean_props": 2,
+          "conflicts": 1,
+          "learned_clauses": 0,
+          "learned_literals": 0,
+          "resolution_steps": 2,
+          "backjumps": 0
+        }
+      }
+    },
+    {
+      "name": "pigeonhole_3_2",
+      "family": "pigeonhole",
+      "parameter": 2,
+      "pigeons": 3,
+      "holes": 2,
+      "nvars": 6,
+      "clauses": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -3,
+          -4
+        ],
+        [
+          -5,
+          -6
+        ],
+        [
+          -1,
+          -3
+        ],
+        [
+          -1,
+          -5
+        ],
+        [
+          -3,
+          -5
+        ],
+        [
+          -2,
+          -4
+        ],
+        [
+          -2,
+          -6
+        ],
+        [
+          -4,
+          -6
+        ]
+      ],
+      "clause_count": 12,
+      "input_literals": 24,
+      "caps": {
+        "max_clauses": 100000,
+        "max_steps": 500000
+      },
+      "width": {
+        "minimum_refutation_width": 2,
+        "sweep": [
+          {
+            "width": 0,
+            "status": "UNKNOWN",
+            "reason": "NO_WIDTH_W_REFUTATION",
+            "closure_size": 0,
+            "candidate_steps": 0
+          },
+          {
+            "width": 1,
+            "status": "UNKNOWN",
+            "reason": "NO_WIDTH_W_REFUTATION",
+            "closure_size": 0,
+            "candidate_steps": 0
+          },
+          {
+            "width": 2,
+            "status": "UNSAT",
+            "reason": null,
+            "closure_size": 73,
+            "candidate_steps": 555
+          }
+        ],
+        "final_stats": {
+          "initial_clauses": 12,
+          "known_clauses": 73,
+          "processed_clauses": 36,
+          "candidate_steps": 555,
+          "weakening_steps": 10,
+          "resolution_steps": 545
+        }
+      },
+      "frontier": {
+        "max_width": 4,
+        "states": 12,
+        "transitions": 11
+      },
+      "cdcl": {
+        "status": "UNSAT",
+        "proof_events": 2,
+        "elapsed_seconds": 0.0001850002445280552,
+        "stats": {
+          "decisions": 1,
+          "boolean_props": 11,
+          "conflicts": 2,
+          "learned_clauses": 1,
+          "learned_literals": 1,
+          "resolution_steps": 10,
+          "backjumps": 1
+        }
+      }
+    },
+    {
+      "name": "pigeonhole_4_3",
+      "family": "pigeonhole",
+      "parameter": 3,
+      "pigeons": 4,
+      "holes": 3,
+      "nvars": 12,
+      "clauses": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          7,
+          8,
+          9
+        ],
+        [
+          10,
+          11,
+          12
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          -3
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -4,
+          -5
+        ],
+        [
+          -4,
+          -6
+        ],
+        [
+          -5,
+          -6
+        ],
+        [
+          -7,
+          -8
+        ],
+        [
+          -7,
+          -9
+        ],
+        [
+          -8,
+          -9
+        ],
+        [
+          -10,
+          -11
+        ],
+        [
+          -10,
+          -12
+        ],
+        [
+          -11,
+          -12
+        ],
+        [
+          -1,
+          -4
+        ],
+        [
+          -1,
+          -7
+        ],
+        [
+          -1,
+          -10
+        ],
+        [
+          -4,
+          -7
+        ],
+        [
+          -4,
+          -10
+        ],
+        [
+          -7,
+          -10
+        ],
+        [
+          -2,
+          -5
+        ],
+        [
+          -2,
+          -8
+        ],
+        [
+          -2,
+          -11
+        ],
+        [
+          -5,
+          -8
+        ],
+        [
+          -5,
+          -11
+        ],
+        [
+          -8,
+          -11
+        ],
+        [
+          -3,
+          -6
+        ],
+        [
+          -3,
+          -9
+        ],
+        [
+          -3,
+          -12
+        ],
+        [
+          -6,
+          -9
+        ],
+        [
+          -6,
+          -12
+        ],
+        [
+          -9,
+          -12
+        ]
+      ],
+      "clause_count": 34,
+      "input_literals": 72,
+      "caps": {
+        "max_clauses": 100000,
+        "max_steps": 500000
+      },
+      "width": {
+        "minimum_refutation_width": 3,
+        "sweep": [
+          {
+            "width": 0,
+            "status": "UNKNOWN",
+            "reason": "NO_WIDTH_W_REFUTATION",
+            "closure_size": 0,
+            "candidate_steps": 0
+          },
+          {
+            "width": 1,
+            "status": "UNKNOWN",
+            "reason": "NO_WIDTH_W_REFUTATION",
+            "closure_size": 0,
+            "candidate_steps": 0
+          },
+          {
+            "width": 2,
+            "status": "UNKNOWN",
+            "reason": "NO_WIDTH_W_REFUTATION",
+            "closure_size": 30,
+            "candidate_steps": 0
+          },
+          {
+            "width": 3,
+            "status": "UNSAT",
+            "reason": null,
+            "closure_size": 2049,
+            "candidate_steps": 267204
+          }
+        ],
+        "final_stats": {
+          "initial_clauses": 34,
+          "known_clauses": 2049,
+          "processed_clauses": 1746,
+          "candidate_steps": 267204,
+          "weakening_steps": 3862,
+          "resolution_steps": 263342
+        }
+      },
+      "frontier": {
+        "max_width": 9,
+        "states": 60,
+        "transitions": 62
+      },
+      "cdcl": {
+        "status": "UNSAT",
+        "proof_events": 6,
+        "elapsed_seconds": 0.0012575001455843449,
+        "stats": {
+          "decisions": 6,
+          "boolean_props": 47,
+          "conflicts": 6,
+          "learned_clauses": 5,
+          "learned_literals": 11,
+          "resolution_steps": 42,
+          "backjumps": 5
+        }
+      }
+    }
+  ],
+  "all_width_cases_exact": true,
+  "source_sha256": {
+    "resolution_width_lab/resolution.py": "f6d45054901f4684b98c584c230f213a44fcf4d730293e564325154ca07005b1",
+    "proof_complexity_scaling_lab/SCALING_RESULTS.json": "26c86346df659fa68e4dcbf2d524e25a4c89de723a7e59fd6c1a6cf0d73f2f3d",
+    "proof_complexity_frontier_lab/FRONTIER_RESULTS.json": "9c6328abc664ca4b150f85eca5bc746372946f6fe88f1a9107fe45d5c2db0e47",
+    "proof_complexity_frontier_lab/run_width_bridge.py": "7efa66d71716d70fd18b8f2cdeb6a266a595bf9eddd12cb954df05e5de9cc71a",
+    "proof_complexity_frontier_lab/review_width_bridge.py": "f443a264ae200d67c2fb140ae1b30c8500888af9ac4ba8a52a719f7ff580cd1c",
+    "proof_complexity_frontier_lab/THEOREM.md": "8328e2635450631040cafc39a5cad55885d2cf2ed3b8de9b1738973421967d18"
+  }
+}

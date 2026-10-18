@@ -51,6 +51,23 @@ class FrontierComparisonTests(unittest.TestCase):
         self.assertTrue(review["orders_are_permutations"])
         self.assertTrue(review["source_hashes_match"])
 
+    def test_width_bridge_rows(self):
+        artifact = json.loads((HERE / "WIDTH_RESULTS.json").read_text(encoding="utf-8"))
+        self.assertEqual(len(artifact["rows"]), 7)
+        self.assertEqual(
+            [row["width"]["minimum_refutation_width"] for row in artifact["rows"]],
+            [1, 2, 3, 4, 2, 2, 3],
+        )
+        self.assertTrue(artifact["all_width_cases_exact"])
+
+    def test_width_bridge_review_passed(self):
+        review = json.loads((HERE / "WIDTH_REVIEW.json").read_text(encoding="utf-8"))
+        self.assertEqual(review["status"], "PASS")
+        self.assertTrue(review["width_replay_matches"])
+        self.assertTrue(review["cdcl_rows_match"])
+        self.assertTrue(review["frontier_rows_match"])
+        self.assertTrue(review["source_hashes_match"])
+
 
 if __name__ == "__main__":
     unittest.main()

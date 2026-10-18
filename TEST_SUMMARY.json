@@ -1,271 +1,271 @@
 {
   "all_suites_passed": true,
   "source_unchanged_during_tests": true,
-  "started_utc": "2026-10-18T15:36:13.632924+00:00",
-  "finished_utc": "2026-10-18T15:41:58.471039+00:00",
+  "started_utc": "2026-10-18T15:54:06.262925+00:00",
+  "finished_utc": "2026-10-18T15:59:54.458635+00:00",
   "python": "3.10.10 | packaged by conda-forge | (main, Mar 24 2023, 20:00:38) [MSC v.1934 64 bit (AMD64)]",
   "suites": [
     {
       "suite": "test_adaptive_fragment_synthesis",
       "returncode": 0,
       "test_methods": 11,
-      "seconds": 0.1741899996995926,
+      "seconds": 0.17195389978587627,
       "passed": true
     },
     {
       "suite": "test_all_dual_lp_barrier",
       "returncode": 0,
       "test_methods": 6,
-      "seconds": 5.145991500001401,
+      "seconds": 5.205774900037795,
       "passed": true
     },
     {
       "suite": "test_certified_residual_quotient",
       "returncode": 0,
       "test_methods": 6,
-      "seconds": 0.1431068000383675,
+      "seconds": 0.14854819979518652,
       "passed": true
     },
     {
       "suite": "test_coefficient_complexity_barrier",
       "returncode": 0,
       "test_methods": 6,
-      "seconds": 0.40316039975732565,
+      "seconds": 0.3903874000534415,
       "passed": true
     },
     {
       "suite": "test_complete_graph_frontier_integration",
       "returncode": 0,
       "test_methods": 8,
-      "seconds": 11.53704039985314,
+      "seconds": 11.670743399765342,
       "passed": true
     },
     {
       "suite": "test_degree_three_barrier",
       "returncode": 0,
       "test_methods": 10,
-      "seconds": 0.30128549970686436,
+      "seconds": 0.30140789970755577,
       "passed": true
     },
     {
       "suite": "test_degree_two_min_distance_integration",
       "returncode": 0,
       "test_methods": 3,
-      "seconds": 0.1346500003710389,
+      "seconds": 0.14092430006712675,
       "passed": true
     },
     {
       "suite": "test_fourier_spectrum_boundary_integration",
       "returncode": 0,
       "test_methods": 7,
-      "seconds": 0.9254586002789438,
+      "seconds": 0.9473982001654804,
       "passed": true
     },
     {
       "suite": "test_macro_assisted_subdag",
       "returncode": 0,
       "test_methods": 5,
-      "seconds": 2.8115878999233246,
+      "seconds": 2.8646673997864127,
       "passed": true
     },
     {
       "suite": "test_matching_certificate",
       "returncode": 0,
       "test_methods": 9,
-      "seconds": 15.84974840003997,
+      "seconds": 16.02514689974487,
       "passed": true
     },
     {
       "suite": "test_native_coset_solver",
       "returncode": 0,
       "test_methods": 13,
-      "seconds": 100.59692470030859,
+      "seconds": 101.84577989997342,
       "passed": true
     },
     {
       "suite": "test_projection_barrier",
       "returncode": 0,
       "test_methods": 7,
-      "seconds": 0.8253057999536395,
+      "seconds": 0.8443776001222432,
       "passed": true
     },
     {
       "suite": "test_projection_discovery_barrier",
       "returncode": 0,
       "test_methods": 6,
-      "seconds": 0.18490839982405305,
+      "seconds": 0.19109469978138804,
       "passed": true
     },
     {
       "suite": "test_proof_portfolio_bridge",
       "returncode": 0,
       "test_methods": 5,
-      "seconds": 0.1536289998330176,
+      "seconds": 0.15557899978011847,
       "passed": true
     },
     {
       "suite": "test_quadratic_code_family_integration",
       "returncode": 0,
       "test_methods": 6,
-      "seconds": 2.1957244002260268,
+      "seconds": 2.170673199929297,
       "passed": true
     },
     {
       "suite": "test_randomized_isolation",
       "returncode": 0,
       "test_methods": 6,
-      "seconds": 54.25547960028052,
+      "seconds": 54.77377249998972,
       "passed": true
     },
     {
       "suite": "test_rank_native_solver",
       "returncode": 0,
       "test_methods": 9,
-      "seconds": 95.07513149967417,
+      "seconds": 95.69276240002364,
       "passed": true
     },
     {
       "suite": "test_regular_ldpc_audit_integration",
       "returncode": 0,
       "test_methods": 4,
-      "seconds": 0.458629600238055,
+      "seconds": 0.46568060014396906,
       "passed": true
     },
     {
       "suite": "test_repeated_subdag_templates",
       "returncode": 0,
       "test_methods": 7,
-      "seconds": 1.7587095000781119,
+      "seconds": 1.812635799869895,
       "passed": true
     },
     {
       "suite": "test_residual_equivalence_barrier",
       "returncode": 0,
       "test_methods": 4,
-      "seconds": 0.14150740019977093,
+      "seconds": 0.1496339999139309,
       "passed": true
     },
     {
       "suite": "test_row_basis_discovery",
       "returncode": 0,
       "test_methods": 9,
-      "seconds": 0.36735610011965036,
+      "seconds": 0.372843399643898,
       "passed": true
     },
     {
       "suite": "test_row_basis_escape",
       "returncode": 0,
       "test_methods": 7,
-      "seconds": 0.3870953000150621,
+      "seconds": 0.397221100050956,
       "passed": true
     },
     {
       "suite": "test_semantic_frontier_expander_integration",
       "returncode": 0,
       "test_methods": 3,
-      "seconds": 0.341285299975425,
+      "seconds": 0.34398879995569587,
       "passed": true
     },
     {
       "suite": "test_structural_probe",
       "returncode": 0,
       "test_methods": 9,
-      "seconds": 0.39211290003731847,
+      "seconds": 0.4084990001283586,
       "passed": true
     },
     {
       "suite": "test_symbolic_suffix_template",
       "returncode": 0,
       "test_methods": 6,
-      "seconds": 0.9265998001210392,
+      "seconds": 0.954440999776125,
       "passed": true
     },
     {
       "suite": "test_symbolic_unit_template",
       "returncode": 0,
       "test_methods": 6,
-      "seconds": 0.3581885998137295,
+      "seconds": 0.34978289995342493,
       "passed": true
     },
     {
       "suite": "typed_merge_planner",
       "returncode": 0,
       "test_methods": 59,
-      "seconds": 14.11061289999634,
+      "seconds": 14.247551100328565,
       "passed": true
     },
     {
       "suite": "charged_work_core",
       "returncode": 0,
       "test_methods": 21,
-      "seconds": 0.5778626003302634,
+      "seconds": 0.5849686004221439,
       "passed": true
     },
     {
       "suite": "direct_fano_core",
       "returncode": 0,
       "test_methods": 3,
-      "seconds": 0.14857470011338592,
+      "seconds": 0.15665540006011724,
       "passed": true
     },
     {
       "suite": "high_width_core",
       "returncode": 0,
       "test_methods": 9,
-      "seconds": 0.8444957998581231,
+      "seconds": 0.848881000187248,
       "passed": true
     },
     {
       "suite": "horn_cdclt",
       "returncode": 0,
       "test_methods": 20,
-      "seconds": 12.355632999911904,
+      "seconds": 12.36335809994489,
       "passed": true
     },
     {
       "suite": "proof_producing_cdcl",
       "returncode": 0,
       "test_methods": 7,
-      "seconds": 0.211937400046736,
+      "seconds": 0.2202245001681149,
       "passed": true
     },
     {
       "suite": "proof_complexity_scaling",
       "returncode": 0,
       "test_methods": 6,
-      "seconds": 0.9532770002260804,
+      "seconds": 1.000034200027585,
       "passed": true
     },
     {
       "suite": "proof_complexity_frontier",
       "returncode": 0,
-      "test_methods": 6,
-      "seconds": 3.959910800214857,
+      "test_methods": 8,
+      "seconds": 4.075757899787277,
       "passed": true
     },
     {
       "suite": "resolution_width",
       "returncode": 0,
       "test_methods": 7,
-      "seconds": 0.2596602998673916,
+      "seconds": 0.25327989971265197,
       "passed": true
     },
     {
       "suite": "weighted_boundary",
       "returncode": 0,
       "test_methods": 9,
-      "seconds": 0.1958686001598835,
+      "seconds": 0.20817699981853366,
       "passed": true
     },
     {
       "suite": "labelled_join_certified",
       "returncode": 0,
       "test_methods": 51,
-      "seconds": 15.300980899948627,
+      "seconds": 15.372120600193739,
       "passed": true
     }
   ],
-  "test_methods_total": 376,
+  "test_methods_total": 378,
   "implementation_sha256": {
     "overnight_research_2026_10_18/adaptive_fragment_synthesis.py": "4d4efd9818aca74e8c26842d75fb571c31b516155091b82de73843ab6c611b79",
     "overnight_research_2026_10_18/AFFINE_ONE_PIECE_RECOGNITION_REVIEW.py": "4f54e10ba9e710d18a474dda21ababada5f12320f5a0c2e0c0beeada597f372e",
@@ -332,9 +332,11 @@
     "overnight_research_2026_10_18/proof_complexity_frontier_lab/order_dp.py": "a41fcf919080cf7322694f5e95af161dc19dbe963282355308bb2ca6d24c2fc4",
     "overnight_research_2026_10_18/proof_complexity_frontier_lab/review_frontier.py": "011f755907af38b1f10d278a5a75fe148ce1520e0a110e0b59a06cb6e9f645b2",
     "overnight_research_2026_10_18/proof_complexity_frontier_lab/review_orders.py": "8a5e78b49313098816ca20c4105db2d7c5ff1feceffe1d2d1a8d9172149e4fe7",
+    "overnight_research_2026_10_18/proof_complexity_frontier_lab/review_width_bridge.py": "f443a264ae200d67c2fb140ae1b30c8500888af9ac4ba8a52a719f7ff580cd1c",
     "overnight_research_2026_10_18/proof_complexity_frontier_lab/run_frontier.py": "cc2d4e2986ef760f4185cdf486c723005b576f3daaaca295f0437fe7a08d559d",
     "overnight_research_2026_10_18/proof_complexity_frontier_lab/run_orders.py": "ac03d263c151cf9ff02f5a8c2de57e7cfaa40fdc886d11ec04ad144168fd6c71",
-    "overnight_research_2026_10_18/proof_complexity_frontier_lab/test_frontier.py": "d267d41eddc86a260cea61386384fcd23b442a2542a0a05a5a25ffe646fae1e8",
+    "overnight_research_2026_10_18/proof_complexity_frontier_lab/run_width_bridge.py": "7efa66d71716d70fd18b8f2cdeb6a266a595bf9eddd12cb954df05e5de9cc71a",
+    "overnight_research_2026_10_18/proof_complexity_frontier_lab/test_frontier.py": "5b507e2098c6c4bc0ecab9abb7d5ac0caf2f0e44c3ae47c6f6a06675a89b2d18",
     "overnight_research_2026_10_18/proof_complexity_scaling_lab/families.py": "c0fc23e87446466e335ab42aecfadaf48d0fec72b0a26ff7a443977b34544f49",
     "overnight_research_2026_10_18/proof_complexity_scaling_lab/review_scaling.py": "526cf7599146dcc06d86ec453f43d0178352698c38e127a69e10c1d93ea9fef8",
     "overnight_research_2026_10_18/proof_complexity_scaling_lab/run_scaling.py": "b49fb89238f07bdee78f3d28ad19720a2c430d2a5eb10c1f75930827694414d6",
