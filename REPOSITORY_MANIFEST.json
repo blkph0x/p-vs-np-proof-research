@@ -1,5 +1,5 @@
 {
-  "file_count": 1071,
+  "file_count": 1076,
   "files": {
     ".gitattributes": {
       "bytes": 648,
@@ -302,8 +302,8 @@
       "sha256": "7401f5cf6b946a82cec459cbaf5a62cb4b5237b8f96501e7f0496a3efc662683"
     },
     "METHOD_INDEX.md": {
-      "bytes": 6314,
-      "sha256": "487dcf424fb2a0fb8917995e9456dbd7ecdfe5b43fc3268226e26ad7688b92d7"
+      "bytes": 6760,
+      "sha256": "949de9de3882ec88c45a084d83ce1da894c9f9ada93afc1e66303c86eb61425e"
     },
     "NATIVE_RESULTS.csv": {
       "bytes": 11436,
@@ -374,8 +374,8 @@
       "sha256": "631ec13d33a0045e6421133fee346759f9186117b909bdd327a954ddac826356"
     },
     "README.md": {
-      "bytes": 42724,
-      "sha256": "a90f7fd35fb6c7c9a6c1d3615ce331db5eb2edc6f9ae6ced9b21042b4cf99dda"
+      "bytes": 43052,
+      "sha256": "f1315a711270fb175c3ea0ad19d5067163696e4b594f969c2a7b6c26488d4904"
     },
     "REGULAR_LDPC_33_LOCAL_AUDIT.json": {
       "bytes": 5015,
@@ -410,12 +410,12 @@
       "sha256": "2fb2bf7ea62a6c83a8ff274073f90b712c4ec8a650c1a14faf818eb6c1b9d122"
     },
     "REPORT.md": {
-      "bytes": 35886,
-      "sha256": "5fba23b684138d4cf8379d9bb2841a2ba73e3d45ef1548eb25b8cb012e7eb276"
+      "bytes": 36349,
+      "sha256": "e1bcea8056f583662673794d6e92598d20f20f19600479e896a6d1cd53c1fa16"
     },
     "REPRODUCIBILITY.md": {
       "bytes": 2570,
-      "sha256": "5896a4d20004dd143aa071ce163714edf7a2afa746e29c6201ed72d6689d5b92"
+      "sha256": "2aac60e7242b39067aaa4f68a175ad37f80b73f97d08972dcc87c7bcd4872141"
     },
     "RESIDUAL_EQUIVALENCE_BARRIER.json": {
       "bytes": 106347,
@@ -434,8 +434,8 @@
       "sha256": "d7d103f37e85cce87a5e236fbe90116277e0d0e76196239d73fa76b9e782fab1"
     },
     "ROADMAP.md": {
-      "bytes": 31293,
-      "sha256": "6c6ef416f29488be861852c10530d6ee0e4898c600be0fef778d07d02b11bf50"
+      "bytes": 31678,
+      "sha256": "3539b6a9483d0849eaef5321c5d237444dc948e4675673da196397e242f633ae"
     },
     "ROW_BASIS_ESCAPE_RESULTS.json": {
       "bytes": 9367083,
@@ -486,12 +486,12 @@
       "sha256": "a3567d759c7f20ea1420bfbafdcc846cc2d5a5fed2b80ebee8cd98cfd1cf4255"
     },
     "TEST_OUTPUT.txt": {
-      "bytes": 42102,
-      "sha256": "640b342f2889564ed84c321c8a5fb6fbaa81a94088a687df2b1627530fdb2f65"
+      "bytes": 42267,
+      "sha256": "b1a19f3a8b63743ff9d6023f5e05a01d4f6b20aef9b8621141c8e796d1b9a3ad"
     },
     "TEST_SUMMARY.json": {
-      "bytes": 35932,
-      "sha256": "6005f46978e9d3c73a76e4fa1bbc186e8760fe6e275d269d510a89fdda6d5253"
+      "bytes": 36242,
+      "sha256": "ab67cdee6cae0453360ae165b724af2c5b1ce78ee5e9b83fe4d5d96ab87d4dee"
     },
     "THEORY_REVIEW.md": {
       "bytes": 18223,
@@ -2115,7 +2115,7 @@
     },
     "index.md": {
       "bytes": 5033,
-      "sha256": "02b76fe6a590e2eb9ca6a40d2f9e9a361bab885a37ac1cee3c80f131361aed06"
+      "sha256": "52e8e80a3e7cd883e5aaa528c8db62980ca7540defcd0a9962c0140da90e9df2"
     },
     "interval_coefficient_lab/INDEPENDENT_REVIEW.md": {
       "bytes": 7681,
@@ -2693,6 +2693,18 @@
       "bytes": 6853,
       "sha256": "1ea02754ae1e00fd092e2879949ab98a297089182d7f1c0cd9814f0d422b5dbe"
     },
+    "proof_complexity_frontier_lab/CLUTTER_REPORT.md": {
+      "bytes": 1403,
+      "sha256": "38bdfefaef802b21d3c66652595f8a4a9b4528c043d14dce6f169c85879c2f66"
+    },
+    "proof_complexity_frontier_lab/CLUTTER_RESULTS.json": {
+      "bytes": 14239,
+      "sha256": "dfe5a0daa8115c3a06764cca577f64ba9c35ff0c95df2baa527a7d2d8366bb59"
+    },
+    "proof_complexity_frontier_lab/CLUTTER_REVIEW.json": {
+      "bytes": 186,
+      "sha256": "5a7139a40a37a36b9fe47b8bbc0895408f58dd7e1f5401e369b3cd50ee39a37d"
+    },
     "proof_complexity_frontier_lab/FRONTIER_REPORT.md": {
       "bytes": 1422,
       "sha256": "79a09bb9b190122850d7981c9f9d696ef2ab48cf6cf74eba31e2ae81a7363db4"
@@ -2718,12 +2730,12 @@
       "sha256": "8e5ecffef0f82c6b023c69a46c76eab3c34d9766590c272ef09bd5c5b23d87fe"
     },
     "proof_complexity_frontier_lab/README.md": {
-      "bytes": 1804,
-      "sha256": "4cdf67313a389e2bf242f4daaeb4c6c088e4182fd0e49ff0794cbd5dde69825f"
+      "bytes": 2280,
+      "sha256": "0077fd9c512789ede5801bd452207f239a2c3b8b66042d4c1f4f5210254595bf"
     },
     "proof_complexity_frontier_lab/THEOREM.md": {
-      "bytes": 3534,
-      "sha256": "8328e2635450631040cafc39a5cad55885d2cf2ed3b8de9b1738973421967d18"
+      "bytes": 4508,
+      "sha256": "eb6af909f2778867a5cb2212927ff7f939a5db8d47d903576bd6d385c58381f2"
     },
     "proof_complexity_frontier_lab/WIDTH_REPORT.md": {
       "bytes": 1445,
@@ -2731,7 +2743,7 @@
     },
     "proof_complexity_frontier_lab/WIDTH_RESULTS.json": {
       "bytes": 18357,
-      "sha256": "6b60bb4e3521f7f82a39d6497dc0760b6d683cea4eefb22cee6acc76f9c3aafb"
+      "sha256": "b909c06162784a811f9132e69a9c095379f06ced19e6e9da54ce6331413014f7"
     },
     "proof_complexity_frontier_lab/WIDTH_REVIEW.json": {
       "bytes": 171,
@@ -2740,6 +2752,10 @@
     "proof_complexity_frontier_lab/order_dp.py": {
       "bytes": 2281,
       "sha256": "a41fcf919080cf7322694f5e95af161dc19dbe963282355308bb2ca6d24c2fc4"
+    },
+    "proof_complexity_frontier_lab/review_clutter.py": {
+      "bytes": 10271,
+      "sha256": "cf8a6a0e201ca456d78460b66422675f3ce3010d39bb76ce724a222aa75d6790"
     },
     "proof_complexity_frontier_lab/review_frontier.py": {
       "bytes": 6321,
@@ -2752,6 +2768,10 @@
     "proof_complexity_frontier_lab/review_width_bridge.py": {
       "bytes": 9076,
       "sha256": "f443a264ae200d67c2fb140ae1b30c8500888af9ac4ba8a52a719f7ff580cd1c"
+    },
+    "proof_complexity_frontier_lab/run_clutter.py": {
+      "bytes": 5972,
+      "sha256": "fa175e242bafbdefed6c402f1f259d694454568b05f547a8d8c03d6a909d5485"
     },
     "proof_complexity_frontier_lab/run_frontier.py": {
       "bytes": 6245,
@@ -2766,8 +2786,8 @@
       "sha256": "7efa66d71716d70fd18b8f2cdeb6a266a595bf9eddd12cb954df05e5de9cc71a"
     },
     "proof_complexity_frontier_lab/test_frontier.py": {
-      "bytes": 3230,
-      "sha256": "5b507e2098c6c4bc0ecab9abb7d5ac0caf2f0e44c3ae47c6f6a06675a89b2d18"
+      "bytes": 4098,
+      "sha256": "262300bba183f9bac4ac1f28044679ae0e7cfa4e134f180345fc8fd95c98266c"
     },
     "proof_complexity_scaling_lab/README.md": {
       "bytes": 619,
@@ -4286,6 +4306,6 @@
       "sha256": "957bd3b51cbf2cd06ee00f1ef47ab5c6fa8bbf1a4c281c0e67b129b027785a18"
     }
   },
-  "generated_at_utc": "2026-10-18T16:00:10.182511+00:00",
-  "source_commit": "61242a9666b2164e60316cea7fb0bf44115b1598"
+  "generated_at_utc": "2026-10-18T16:12:09.008938+00:00",
+  "source_commit": "f638061630bace88f8a139caef83730fc896455d"
 }

@@ -65,3 +65,23 @@ representations; it does not prove that resolution width controls other proof
 systems, that CDCL is optimal, or that either quantity lower-bounds arbitrary
 SAT algorithms. The closure has explicit 100,000-clause and 500,000-candidate
 caps, and any cap outcome is recorded as `UNKNOWN`.
+
+## Semantic-clutter control
+
+For each `n >= 1`, let
+
+    F_n = z AND NOT z AND AND_{i<j}(x_i OR x_j).
+
+The unit pair gives a width-one refutation, while width zero has no initial
+clause and cannot derive the empty clause. The primal graph is a clique on the
+`x_i` variables plus an isolated `z`. Any order has a cut immediately before
+the last clique variable with the other `n-1` clique variables in the prefix,
+so its boundary is at least `n-1`; ordering `z` first and the clique variables
+after it attains widths `0,1,...,n-1`. The independent subset recurrence checks
+this exact optimum for `n=1,...,8`.
+
+Removing either unit leaves a model with all clique variables true and the
+remaining value of `z` satisfying the one unit. Thus the large frontier is
+representation clutter, not an unsatisfiable core. This does not show that
+semantic preprocessing is generally easy; it shows why a frontier-based
+hardness claim must account for preprocessing and discovery costs.

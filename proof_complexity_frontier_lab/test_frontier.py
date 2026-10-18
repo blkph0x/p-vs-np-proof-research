@@ -68,6 +68,22 @@ class FrontierComparisonTests(unittest.TestCase):
         self.assertTrue(review["frontier_rows_match"])
         self.assertTrue(review["source_hashes_match"])
 
+    def test_semantic_clutter_width_gap(self):
+        artifact = json.loads((HERE / "CLUTTER_RESULTS.json").read_text(encoding="utf-8"))
+        self.assertEqual(len(artifact["rows"]), 8)
+        self.assertEqual([row["resolution_width_one"]["status"] for row in artifact["rows"]],
+                         ["UNSAT"] * 8)
+        self.assertEqual([row["optimal_width"] for row in artifact["rows"]],
+                         list(range(0, 8)))
+
+    def test_semantic_clutter_review_passed(self):
+        review = json.loads((HERE / "CLUTTER_REVIEW.json").read_text(encoding="utf-8"))
+        self.assertEqual(review["status"], "PASS")
+        self.assertTrue(review["width_replay_matches"])
+        self.assertTrue(review["frontier_replay_matches"])
+        self.assertTrue(review["unit_mutations_have_models"])
+        self.assertTrue(review["source_hashes_match"])
+
 
 if __name__ == "__main__":
     unittest.main()

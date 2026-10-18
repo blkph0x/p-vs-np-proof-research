@@ -15,7 +15,7 @@
 - Use [`CITATIONS.md`](CITATIONS.md) and [`PUBLIC_SOURCES.md`](PUBLIC_SOURCES.md)
   for public sources and the reports that use them.
 - Follow [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) to replay the checks from a
-  fresh checkout. The current frozen run has 378 passing methods across 37
+  fresh checkout. The current frozen run has 380 passing methods across 37
   suites; the full audit is intentionally separate from the lighter continuous
   integration checks, and all of its suite dependencies are included in this
   repository.
@@ -43,6 +43,12 @@ aligned with the supplied-order frontier state counts and the separately
 replayed CDCL traces. See [`proof_complexity_frontier_lab/WIDTH_REPORT.md`](proof_complexity_frontier_lab/WIDTH_REPORT.md)
 and its independent reviewer; the comparison is finite evidence, not a
 lower bound for arbitrary SAT algorithms.
+
+The same checkpoint includes a semantic-clutter control: a unit contradiction
+with an irrelevant positive clique keeps resolution width one while its exact
+minimum frontier boundary grows. The mutation replay removes either unit and
+finds a model, so the result records a preprocessing obligation rather than a
+hardness claim.
 
 Start with the [grouping and global recognition report](AFFINE_RECOGNITION_PHASE_REPORT.md):
 verified grouping brings the stress set to 19/22 exact original counts, recovering

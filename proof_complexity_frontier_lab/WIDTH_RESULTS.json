@@ -869,6 +869,6 @@
     "proof_complexity_frontier_lab/FRONTIER_RESULTS.json": "9c6328abc664ca4b150f85eca5bc746372946f6fe88f1a9107fe45d5c2db0e47",
     "proof_complexity_frontier_lab/run_width_bridge.py": "7efa66d71716d70fd18b8f2cdeb6a266a595bf9eddd12cb954df05e5de9cc71a",
     "proof_complexity_frontier_lab/review_width_bridge.py": "f443a264ae200d67c2fb140ae1b30c8500888af9ac4ba8a52a719f7ff580cd1c",
-    "proof_complexity_frontier_lab/THEOREM.md": "8328e2635450631040cafc39a5cad55885d2cf2ed3b8de9b1738973421967d18"
+    "proof_complexity_frontier_lab/THEOREM.md": "eb6af909f2778867a5cb2212927ff7f939a5db8d47d903576bd6d385c58381f2"
   }
 }

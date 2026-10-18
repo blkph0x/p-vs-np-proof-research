@@ -485,3 +485,10 @@ are 1,2,3,4 for all-assignment `n=1..4` and 2,2,3 for pigeonhole `(2,1)`,
 states and the independently replayed CDCL traces. This strengthens the finite
 adversarial record while leaving alternative proof systems, scalable width
 discovery, and arbitrary SAT lower bounds open.
+
+The semantic-clutter adversary now makes the preprocessing obligation
+explicit. `F_n = z AND NOT z AND AND_{i<j}(x_i OR x_j)` has width-one unit
+refutation but exact minimum primal boundary `n-1`; removing either unit is
+replayed with a model. Frontier width therefore cannot be interpreted as
+semantic hardness until redundant structure and the cost of finding it are
+accounted for.

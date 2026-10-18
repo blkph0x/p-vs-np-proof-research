@@ -18,6 +18,8 @@ Run:
     python review_orders.py
     python run_width_bridge.py
     python review_width_bridge.py
+    python run_clutter.py
+    python review_clutter.py
     python -m unittest -v test_frontier.py
 
 The all-assignment family is included as a control whose input already has
@@ -30,6 +32,13 @@ lower-bound arbitrary SAT algorithms or resolve P versus NP.
 The small-order extension exhausts every variable order through 20 variables.
 It records the exact minimum primal vertex-boundary width and keeps the
 exponential subset cost explicit.
+
+The semantic-clutter control adds a contradictory unit pair to a satisfiable
+positive clique. Its minimum resolution width remains one while the exact
+minimum primal boundary grows as `n-1`; deleting either unit is replayed with
+an explicit satisfying assignment. This keeps raw frontier width separate from
+semantic hardness and charges the preprocessing/discovery step that would have
+to remove the irrelevant clique.
 
 The width bridge replays seven overlapping CNFs through an independent bounded
 weakening/resolution closure. It aligns the exact finite minimum refutation

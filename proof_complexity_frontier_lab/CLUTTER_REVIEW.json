@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "case_count": 8,
+  "width_replay_matches": true,
+  "frontier_replay_matches": true,
+  "unit_mutations_have_models": true,
+  "source_hashes_match": true
+}
