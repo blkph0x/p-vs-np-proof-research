@@ -21,7 +21,7 @@ stated structural families, finite exhaustive controls, certificate verifiers,
 and scoped counterexamples. It does not claim a solver for every SAT instance
 or a lower bound against every polynomial algorithm.
 
-The latest recorded full audit passed **43 suites and 424 test methods** with
+The latest recorded full audit passed **43 suites and 429 test methods** with
 unchanged source hashes. These are reproducibility results for the checked
 finite cases, not a solution to the open problem.
 
@@ -68,6 +68,11 @@ proved distance `2^(s+1)` leaves a unit-vector local witness through level
 include exact RM(1,3) scope replay, full RM(2,5) word enumeration, and an
 independently checked theorem-backed RM(3,7) certificate. This remains a
 limitation of the stated relaxation, not a general SAT lower bound.
+
+The companion [all-redundant-parity replay](local_marginal_code_lab/REED_MULLER_ALL_DUAL_REPORT.md)
+adds every dual parity check analytically. Its exact rational certificate still
+leaves integer/fractional ratios `6/5`, `28/19`, and `120/71` on the saved
+family, so redundant XOR checks tighten the relaxation without closing it.
 
 ## Runtime scaling notebook
 

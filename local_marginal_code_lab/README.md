@@ -21,6 +21,14 @@ gap with the self-dual `RM(s,2s+1)` codes. The saved producer and independent
 reviewer cover `RM(1,3)`, `RM(2,5)`, and theorem-backed `RM(3,7)`; mutation
 controls reject forged rows, witnesses, dual bases, and level fields.
 
+The all-dual follow-up in
+[`REED_MULLER_ALL_DUAL_REPORT.md`](REED_MULLER_ALL_DUAL_REPORT.md) supplies
+every redundant parity check analytically. Exact rational mixtures prove the
+uniform point feasible, and balanced minimum-weight affine checks prove its
+fractional optimum. The resulting integer/fractional ratios are `6/5`,
+`28/19`, and `120/71` for the three saved cases, so this stronger parity-only
+relaxation still has a limiting factor-two gap.
+
 ```text
 python -m unittest discover -v
 python run_experiments.py
@@ -28,4 +36,7 @@ python INDEPENDENT_REVIEW.py
 python run_reed_muller.py
 python REED_MULLER_INDEPENDENT_REVIEW.py
 python -m unittest -v test_reed_muller.py
+python run_all_dual_reed_muller.py
+python REED_MULLER_ALL_DUAL_INDEPENDENT_REVIEW.py
+python -m unittest -v test_all_dual_reed_muller.py
 ```

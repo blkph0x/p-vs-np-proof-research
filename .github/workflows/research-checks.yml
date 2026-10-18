@@ -68,6 +68,12 @@ jobs:
           python run_reed_muller.py
           python REED_MULLER_INDEPENDENT_REVIEW.py
           python -m unittest -v test_local_marginal.py test_reed_muller.py
+      - name: Replay all-dual Reed-Muller parity audit
+        working-directory: local_marginal_code_lab
+        run: |
+          python run_all_dual_reed_muller.py
+          python REED_MULLER_ALL_DUAL_INDEPENDENT_REVIEW.py
+          python -m unittest -v test_all_dual_reed_muller.py
       - name: Run the self-contained full audit
         run: |
           set +e

@@ -17,7 +17,7 @@
 - Use [`CITATIONS.md`](CITATIONS.md) and [`PUBLIC_SOURCES.md`](PUBLIC_SOURCES.md)
   for public sources and the reports that use them.
 - Follow [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) to replay the checks from a
-  fresh checkout. The current frozen run has 424 passing methods across 43
+  fresh checkout. The current frozen run has 429 passing methods across 43
   suites; the full audit is intentionally separate from the lighter continuous
   integration checks, and all of its suite dependencies are included in this
   repository.
@@ -648,6 +648,14 @@ uses the elementary distance/duality proof rather than expanding `2^64`
 words. This makes the barrier deterministic and explicit, but it remains
 limited to the stated relaxation architecture and does not imply a general
 SAT lower bound.
+
+The [all-redundant-parity RM report](local_marginal_code_lab/REED_MULLER_ALL_DUAL_REPORT.md)
+then gives every dual parity check for free. Exact rational mixtures certify
+feasibility for all possible check weights, while Gaussian-binomial incidence
+counts prove the fractional optimum exactly. The saved integer/fractional
+ratios are `6/5`, `28/19`, and `120/71`, approaching two for the family. This
+shows that parity checks alone tighten the local gap but do not recover exact
+minimum distance.
 
 The [adaptive fragment synthesis report](ADAPTIVE_FRAGMENT_SYNTHESIS_REPORT.md)
 adds an independent cross-check of the bounded proof-language experiment. A bounded projector existentially

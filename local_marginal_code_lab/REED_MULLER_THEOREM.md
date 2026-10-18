@@ -125,3 +125,8 @@ python -m unittest -v test_reed_muller.py test_local_marginal.py
 The machine-readable records are
 [`REED_MULLER_RESULTS.json`](REED_MULLER_RESULTS.json) and
 [`REED_MULLER_INDEPENDENT_REVIEW.json`](REED_MULLER_INDEPENDENT_REVIEW.json).
+
+The stronger all-redundant-parity experiment is recorded separately in
+[`REED_MULLER_ALL_DUAL_REPORT.md`](REED_MULLER_ALL_DUAL_REPORT.md); it keeps
+the family explicit while testing whether every dual XOR check closes the
+local gap.

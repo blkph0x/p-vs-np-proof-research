@@ -1,0 +1,4562 @@
+{
+  "format": "reed-muller-all-dual-lp-v1",
+  "family": "RM(s,2s+1)",
+  "cases": [
+    {
+      "name": "RM(1,3)_all_dual",
+      "certificate": {
+        "schema": "reed_muller_all_dual_lp_v1",
+        "family": "RM(s,2s+1)",
+        "s": 1,
+        "m": 3,
+        "r": 1,
+        "n": 8,
+        "dimension": 4,
+        "distance": 4,
+        "dual_order": 1,
+        "dual_distance": 4,
+        "pin": 0,
+        "point": [
+          "1",
+          "1/3",
+          "1/3",
+          "1/3",
+          "1/3",
+          "1/3",
+          "1/3",
+          "1/3"
+        ],
+        "integer_pinned_optimum": 4,
+        "fractional_feasible_weight": "10/3",
+        "fractional_optimum": "10/3",
+        "minimum_check_count_through_pin": 7,
+        "minimum_check_other_coordinate_incidence": 3,
+        "minimum_check_ratio": "7/3",
+        "word_enumeration": {
+          "status": "EXACT",
+          "word_count": 16,
+          "minimum_distance": 4,
+          "pinned_minimum": 4,
+          "minimum_checks_through_pin": 7,
+          "other_coordinate_incidence": [
+            3
+          ]
+        },
+        "all_dual_mixture_cases": [
+          {
+            "weight": 4,
+            "contains_pin": false,
+            "free_length": 4,
+            "mixture": [
+              [
+                "1/3",
+                0
+              ],
+              [
+                "2/3",
+                2
+              ]
+            ]
+          },
+          {
+            "weight": 4,
+            "contains_pin": true,
+            "free_length": 3,
+            "mixture": [
+              [
+                "1",
+                1
+              ]
+            ]
+          },
+          {
+            "weight": 5,
+            "contains_pin": false,
+            "free_length": 5,
+            "mixture": [
+              [
+                "1/6",
+                0
+              ],
+              [
+                "5/6",
+                2
+              ]
+            ]
+          },
+          {
+            "weight": 5,
+            "contains_pin": true,
+            "free_length": 4,
+            "mixture": [
+              [
+                "5/6",
+                1
+              ],
+              [
+                "1/6",
+                3
+              ]
+            ]
+          },
+          {
+            "weight": 6,
+            "contains_pin": false,
+            "free_length": 6,
+            "mixture": [
+              [
+                "1",
+                2
+              ]
+            ]
+          },
+          {
+            "weight": 6,
+            "contains_pin": true,
+            "free_length": 5,
+            "mixture": [
+              [
+                "2/3",
+                1
+              ],
+              [
+                "1/3",
+                3
+              ]
+            ]
+          },
+          {
+            "weight": 7,
+            "contains_pin": false,
+            "free_length": 7,
+            "mixture": [
+              [
+                "5/6",
+                2
+              ],
+              [
+                "1/6",
+                4
+              ]
+            ]
+          },
+          {
+            "weight": 7,
+            "contains_pin": true,
+            "free_length": 6,
+            "mixture": [
+              [
+                "1/2",
+                1
+              ],
+              [
+                "1/2",
+                3
+              ]
+            ]
+          },
+          {
+            "weight": 8,
+            "contains_pin": false,
+            "free_length": 8,
+            "mixture": [
+              [
+                "2/3",
+                2
+              ],
+              [
+                "1/3",
+                4
+              ]
+            ]
+          },
+          {
+            "weight": 8,
+            "contains_pin": true,
+            "free_length": 7,
+            "mixture": [
+              [
+                "1/3",
+                1
+              ],
+              [
+                "2/3",
+                3
+              ]
+            ]
+          }
+        ],
+        "all_nonzero_dual_checks_feasible": true
+      },
+      "verification": {
+        "status": "VERIFIED",
+        "valid": true,
+        "s": 1,
+        "n": 8,
+        "dual_distance": 4,
+        "integer_pinned_optimum": 4,
+        "fractional_optimum": "10/3",
+        "integrality_ratio": "6/5",
+        "minimum_check_count_through_pin": 7,
+        "minimum_check_other_coordinate_incidence": 3,
+        "mixture_case_count": 10,
+        "word_enumeration": "EXACT"
+      }
+    },
+    {
+      "name": "RM(2,5)_all_dual",
+      "certificate": {
+        "schema": "reed_muller_all_dual_lp_v1",
+        "family": "RM(s,2s+1)",
+        "s": 2,
+        "m": 5,
+        "r": 2,
+        "n": 32,
+        "dimension": 16,
+        "distance": 8,
+        "dual_order": 2,
+        "dual_distance": 8,
+        "pin": 0,
+        "point": [
+          "1",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7"
+        ],
+        "integer_pinned_optimum": 8,
+        "fractional_feasible_weight": "38/7",
+        "fractional_optimum": "38/7",
+        "minimum_check_count_through_pin": 155,
+        "minimum_check_other_coordinate_incidence": 35,
+        "minimum_check_ratio": "31/7",
+        "word_enumeration": {
+          "status": "EXACT",
+          "word_count": 65536,
+          "minimum_distance": 8,
+          "pinned_minimum": 8,
+          "minimum_checks_through_pin": 155,
+          "other_coordinate_incidence": [
+            35
+          ]
+        },
+        "all_dual_mixture_cases": [
+          {
+            "weight": 8,
+            "contains_pin": false,
+            "free_length": 8,
+            "mixture": [
+              [
+                "3/7",
+                0
+              ],
+              [
+                "4/7",
+                2
+              ]
+            ]
+          },
+          {
+            "weight": 8,
+            "contains_pin": true,
+            "free_length": 7,
+            "mixture": [
+              [
+                "1",
+                1
+              ]
+            ]
+          },
+          {
+            "weight": 9,
+            "contains_pin": false,
+            "free_length": 9,
+            "mixture": [
+              [
+                "5/14",
+                0
+              ],
+              [
+                "9/14",
+                2
+              ]
+            ]
+          },
+          {
+            "weight": 9,
+            "contains_pin": true,
+            "free_length": 8,
+            "mixture": [
+              [
+                "13/14",
+                1
+              ],
+              [
+                "1/14",
+                3
+              ]
+            ]
+          },
+          {
+            "weight": 10,
+            "contains_pin": false,
+            "free_length": 10,
+            "mixture": [
+              [
+                "2/7",
+                0
+              ],
+              [
+                "5/7",
+                2
+              ]
+            ]
+          },
+          {
+            "weight": 10,
+            "contains_pin": true,
+            "free_length": 9,
+            "mixture": [
+              [
+                "6/7",
+                1
+              ],
+              [
+                "1/7",
+                3
+              ]
+            ]
+          },
+          {
+            "weight": 11,
+            "contains_pin": false,
+            "free_length": 11,
+            "mixture": [
+              [
+                "3/14",
+                0
+              ],
+              [
+                "11/14",
+                2
+              ]
+            ]
+          },
+          {
+            "weight": 11,
+            "contains_pin": true,
+            "free_length": 10,
+            "mixture": [
+              [
+                "11/14",
+                1
+              ],
+              [
+                "3/14",
+                3
+              ]
+            ]
+          },
+          {
+            "weight": 12,
+            "contains_pin": false,
+            "free_length": 12,
+            "mixture": [
+              [
+                "1/7",
+                0
+              ],
+              [
+                "6/7",
+                2
+              ]
+            ]
+          },
+          {
+            "weight": 12,
+            "contains_pin": true,
+            "free_length": 11,
+            "mixture": [
+              [
+                "5/7",
+                1
+              ],
+              [
+                "2/7",
+                3
+              ]
+            ]
+          },
+          {
+            "weight": 13,
+            "contains_pin": false,
+            "free_length": 13,
+            "mixture": [
+              [
+                "1/14",
+                0
+              ],
+              [
+                "13/14",
+                2
+              ]
+            ]
+          },
+          {
+            "weight": 13,
+            "contains_pin": true,
+            "free_length": 12,
+            "mixture": [
+              [
+                "9/14",
+                1
+              ],
+              [
+                "5/14",
+                3
+              ]
+            ]
+          },
+          {
+            "weight": 14,
+            "contains_pin": false,
+            "free_length": 14,
+            "mixture": [
+              [
+                "1",
+                2
+              ]
+            ]
+          },
+          {
+            "weight": 14,
+            "contains_pin": true,
+            "free_length": 13,
+            "mixture": [
+              [
+                "4/7",
+                1
+              ],
+              [
+                "3/7",
+                3
+              ]
+            ]
+          },
+          {
+            "weight": 15,
+            "contains_pin": false,
+            "free_length": 15,
+            "mixture": [
+              [
+                "13/14",
+                2
+              ],
+              [
+                "1/14",
+                4
+              ]
+            ]
+          },
+          {
+            "weight": 15,
+            "contains_pin": true,
+            "free_length": 14,
+            "mixture": [
+              [
+                "1/2",
+                1
+              ],
+              [
+                "1/2",
+                3
+              ]
+            ]
+          },
+          {
+            "weight": 16,
+            "contains_pin": false,
+            "free_length": 16,
+            "mixture": [
+              [
+                "6/7",
+                2
+              ],
+              [
+                "1/7",
+                4
+              ]
+            ]
+          },
+          {
+            "weight": 16,
+            "contains_pin": true,
+            "free_length": 15,
+            "mixture": [
+              [
+                "3/7",
+                1
+              ],
+              [
+                "4/7",
+                3
+              ]
+            ]
+          },
+          {
+            "weight": 17,
+            "contains_pin": false,
+            "free_length": 17,
+            "mixture": [
+              [
+                "11/14",
+                2
+              ],
+              [
+                "3/14",
+                4
+              ]
+            ]
+          },
+          {
+            "weight": 17,
+            "contains_pin": true,
+            "free_length": 16,
+            "mixture": [
+              [
+                "5/14",
+                1
+              ],
+              [
+                "9/14",
+                3
+              ]
+            ]
+          },
+          {
+            "weight": 18,
+            "contains_pin": false,
+            "free_length": 18,
+            "mixture": [
+              [
+                "5/7",
+                2
+              ],
+              [
+                "2/7",
+                4
+              ]
+            ]
+          },
+          {
+            "weight": 18,
+            "contains_pin": true,
+            "free_length": 17,
+            "mixture": [
+              [
+                "2/7",
+                1
+              ],
+              [
+                "5/7",
+                3
+              ]
+            ]
+          },
+          {
+            "weight": 19,
+            "contains_pin": false,
+            "free_length": 19,
+            "mixture": [
+              [
+                "9/14",
+                2
+              ],
+              [
+                "5/14",
+                4
+              ]
+            ]
+          },
+          {
+            "weight": 19,
+            "contains_pin": true,
+            "free_length": 18,
+            "mixture": [
+              [
+                "3/14",
+                1
+              ],
+              [
+                "11/14",
+                3
+              ]
+            ]
+          },
+          {
+            "weight": 20,
+            "contains_pin": false,
+            "free_length": 20,
+            "mixture": [
+              [
+                "4/7",
+                2
+              ],
+              [
+                "3/7",
+                4
+              ]
+            ]
+          },
+          {
+            "weight": 20,
+            "contains_pin": true,
+            "free_length": 19,
+            "mixture": [
+              [
+                "1/7",
+                1
+              ],
+              [
+                "6/7",
+                3
+              ]
+            ]
+          },
+          {
+            "weight": 21,
+            "contains_pin": false,
+            "free_length": 21,
+            "mixture": [
+              [
+                "1/2",
+                2
+              ],
+              [
+                "1/2",
+                4
+              ]
+            ]
+          },
+          {
+            "weight": 21,
+            "contains_pin": true,
+            "free_length": 20,
+            "mixture": [
+              [
+                "1/14",
+                1
+              ],
+              [
+                "13/14",
+                3
+              ]
+            ]
+          },
+          {
+            "weight": 22,
+            "contains_pin": false,
+            "free_length": 22,
+            "mixture": [
+              [
+                "3/7",
+                2
+              ],
+              [
+                "4/7",
+                4
+              ]
+            ]
+          },
+          {
+            "weight": 22,
+            "contains_pin": true,
+            "free_length": 21,
+            "mixture": [
+              [
+                "1",
+                3
+              ]
+            ]
+          },
+          {
+            "weight": 23,
+            "contains_pin": false,
+            "free_length": 23,
+            "mixture": [
+              [
+                "5/14",
+                2
+              ],
+              [
+                "9/14",
+                4
+              ]
+            ]
+          },
+          {
+            "weight": 23,
+            "contains_pin": true,
+            "free_length": 22,
+            "mixture": [
+              [
+                "13/14",
+                3
+              ],
+              [
+                "1/14",
+                5
+              ]
+            ]
+          },
+          {
+            "weight": 24,
+            "contains_pin": false,
+            "free_length": 24,
+            "mixture": [
+              [
+                "2/7",
+                2
+              ],
+              [
+                "5/7",
+                4
+              ]
+            ]
+          },
+          {
+            "weight": 24,
+            "contains_pin": true,
+            "free_length": 23,
+            "mixture": [
+              [
+                "6/7",
+                3
+              ],
+              [
+                "1/7",
+                5
+              ]
+            ]
+          },
+          {
+            "weight": 25,
+            "contains_pin": false,
+            "free_length": 25,
+            "mixture": [
+              [
+                "3/14",
+                2
+              ],
+              [
+                "11/14",
+                4
+              ]
+            ]
+          },
+          {
+            "weight": 25,
+            "contains_pin": true,
+            "free_length": 24,
+            "mixture": [
+              [
+                "11/14",
+                3
+              ],
+              [
+                "3/14",
+                5
+              ]
+            ]
+          },
+          {
+            "weight": 26,
+            "contains_pin": false,
+            "free_length": 26,
+            "mixture": [
+              [
+                "1/7",
+                2
+              ],
+              [
+                "6/7",
+                4
+              ]
+            ]
+          },
+          {
+            "weight": 26,
+            "contains_pin": true,
+            "free_length": 25,
+            "mixture": [
+              [
+                "5/7",
+                3
+              ],
+              [
+                "2/7",
+                5
+              ]
+            ]
+          },
+          {
+            "weight": 27,
+            "contains_pin": false,
+            "free_length": 27,
+            "mixture": [
+              [
+                "1/14",
+                2
+              ],
+              [
+                "13/14",
+                4
+              ]
+            ]
+          },
+          {
+            "weight": 27,
+            "contains_pin": true,
+            "free_length": 26,
+            "mixture": [
+              [
+                "9/14",
+                3
+              ],
+              [
+                "5/14",
+                5
+              ]
+            ]
+          },
+          {
+            "weight": 28,
+            "contains_pin": false,
+            "free_length": 28,
+            "mixture": [
+              [
+                "1",
+                4
+              ]
+            ]
+          },
+          {
+            "weight": 28,
+            "contains_pin": true,
+            "free_length": 27,
+            "mixture": [
+              [
+                "4/7",
+                3
+              ],
+              [
+                "3/7",
+                5
+              ]
+            ]
+          },
+          {
+            "weight": 29,
+            "contains_pin": false,
+            "free_length": 29,
+            "mixture": [
+              [
+                "13/14",
+                4
+              ],
+              [
+                "1/14",
+                6
+              ]
+            ]
+          },
+          {
+            "weight": 29,
+            "contains_pin": true,
+            "free_length": 28,
+            "mixture": [
+              [
+                "1/2",
+                3
+              ],
+              [
+                "1/2",
+                5
+              ]
+            ]
+          },
+          {
+            "weight": 30,
+            "contains_pin": false,
+            "free_length": 30,
+            "mixture": [
+              [
+                "6/7",
+                4
+              ],
+              [
+                "1/7",
+                6
+              ]
+            ]
+          },
+          {
+            "weight": 30,
+            "contains_pin": true,
+            "free_length": 29,
+            "mixture": [
+              [
+                "3/7",
+                3
+              ],
+              [
+                "4/7",
+                5
+              ]
+            ]
+          },
+          {
+            "weight": 31,
+            "contains_pin": false,
+            "free_length": 31,
+            "mixture": [
+              [
+                "11/14",
+                4
+              ],
+              [
+                "3/14",
+                6
+              ]
+            ]
+          },
+          {
+            "weight": 31,
+            "contains_pin": true,
+            "free_length": 30,
+            "mixture": [
+              [
+                "5/14",
+                3
+              ],
+              [
+                "9/14",
+                5
+              ]
+            ]
+          },
+          {
+            "weight": 32,
+            "contains_pin": false,
+            "free_length": 32,
+            "mixture": [
+              [
+                "5/7",
+                4
+              ],
+              [
+                "2/7",
+                6
+              ]
+            ]
+          },
+          {
+            "weight": 32,
+            "contains_pin": true,
+            "free_length": 31,
+            "mixture": [
+              [
+                "2/7",
+                3
+              ],
+              [
+                "5/7",
+                5
+              ]
+            ]
+          }
+        ],
+        "all_nonzero_dual_checks_feasible": true
+      },
+      "verification": {
+        "status": "VERIFIED",
+        "valid": true,
+        "s": 2,
+        "n": 32,
+        "dual_distance": 8,
+        "integer_pinned_optimum": 8,
+        "fractional_optimum": "38/7",
+        "integrality_ratio": "28/19",
+        "minimum_check_count_through_pin": 155,
+        "minimum_check_other_coordinate_incidence": 35,
+        "mixture_case_count": 50,
+        "word_enumeration": "EXACT"
+      }
+    },
+    {
+      "name": "RM(3,7)_all_dual",
+      "certificate": {
+        "schema": "reed_muller_all_dual_lp_v1",
+        "family": "RM(s,2s+1)",
+        "s": 3,
+        "m": 7,
+        "r": 3,
+        "n": 128,
+        "dimension": 64,
+        "distance": 16,
+        "dual_order": 3,
+        "dual_distance": 16,
+        "pin": 0,
+        "point": [
+          "1",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15",
+          "1/15"
+        ],
+        "integer_pinned_optimum": 16,
+        "fractional_feasible_weight": "142/15",
+        "fractional_optimum": "142/15",
+        "minimum_check_count_through_pin": 11811,
+        "minimum_check_other_coordinate_incidence": 1395,
+        "minimum_check_ratio": "127/15",
+        "word_enumeration": {
+          "status": "THEOREM_ONLY",
+          "word_count": null,
+          "minimum_distance": null,
+          "pinned_minimum": null,
+          "minimum_checks_through_pin": null,
+          "other_coordinate_incidence": null
+        },
+        "all_dual_mixture_cases": [
+          {
+            "weight": 16,
+            "contains_pin": false,
+            "free_length": 16,
+            "mixture": [
+              [
+                "7/15",
+                0
+              ],
+              [
+                "8/15",
+                2
+              ]
+            ]
+          },
+          {
+            "weight": 16,
+            "contains_pin": true,
+            "free_length": 15,
+            "mixture": [
+              [
+                "1",
+                1
+              ]
+            ]
+          },
+          {
+            "weight": 17,
+            "contains_pin": false,
+            "free_length": 17,
+            "mixture": [
+              [
+                "13/30",
+                0
+              ],
+              [
+                "17/30",
+                2
+              ]
+            ]
+          },
+          {
+            "weight": 17,
+            "contains_pin": true,
+            "free_length": 16,
+            "mixture": [
+              [
+                "29/30",
+                1
+              ],
+              [
+                "1/30",
+                3
+              ]
+            ]
+          },
+          {
+            "weight": 18,
+            "contains_pin": false,
+            "free_length": 18,
+            "mixture": [
+              [
+                "2/5",
+                0
+              ],
+              [
+                "3/5",
+                2
+              ]
+            ]
+          },
+          {
+            "weight": 18,
+            "contains_pin": true,
+            "free_length": 17,
+            "mixture": [
+              [
+                "14/15",
+                1
+              ],
+              [
+                "1/15",
+                3
+              ]
+            ]
+          },
+          {
+            "weight": 19,
+            "contains_pin": false,
+            "free_length": 19,
+            "mixture": [
+              [
+                "11/30",
+                0
+              ],
+              [
+                "19/30",
+                2
+              ]
+            ]
+          },
+          {
+            "weight": 19,
+            "contains_pin": true,
+            "free_length": 18,
+            "mixture": [
+              [
+                "9/10",
+                1
+              ],
+              [
+                "1/10",
+                3
+              ]
+            ]
+          },
+          {
+            "weight": 20,
+            "contains_pin": false,
+            "free_length": 20,
+            "mixture": [
+              [
+                "1/3",
+                0
+              ],
+              [
+                "2/3",
+                2
+              ]
+            ]
+          },
+          {
+            "weight": 20,
+            "contains_pin": true,
+            "free_length": 19,
+            "mixture": [
+              [
+                "13/15",
+                1
+              ],
+              [
+                "2/15",
+                3
+              ]
+            ]
+          },
+          {
+            "weight": 21,
+            "contains_pin": false,
+            "free_length": 21,
+            "mixture": [
+              [
+                "3/10",
+                0
+              ],
+              [
+                "7/10",
+                2
+              ]
+            ]
+          },
+          {
+            "weight": 21,
+            "contains_pin": true,
+            "free_length": 20,
+            "mixture": [
+              [
+                "5/6",
+                1
+              ],
+              [
+                "1/6",
+                3
+              ]
+            ]
+          },
+          {
+            "weight": 22,
+            "contains_pin": false,
+            "free_length": 22,
+            "mixture": [
+              [
+                "4/15",
+                0
+              ],
+              [
+                "11/15",
+                2
+              ]
+            ]
+          },
+          {
+            "weight": 22,
+            "contains_pin": true,
+            "free_length": 21,
+            "mixture": [
+              [
+                "4/5",
+                1
+              ],
+              [
+                "1/5",
+                3
+              ]
+            ]
+          },
+          {
+            "weight": 23,
+            "contains_pin": false,
+            "free_length": 23,
+            "mixture": [
+              [
+                "7/30",
+                0
+              ],
+              [
+                "23/30",
+                2
+              ]
+            ]
+          },
+          {
+            "weight": 23,
+            "contains_pin": true,
+            "free_length": 22,
+            "mixture": [
+              [
+                "23/30",
+                1
+              ],
+              [
+                "7/30",
+                3
+              ]
+            ]
+          },
+          {
+            "weight": 24,
+            "contains_pin": false,
+            "free_length": 24,
+            "mixture": [
+              [
+                "1/5",
+                0
+              ],
+              [
+                "4/5",
+                2
+              ]
+            ]
+          },
+          {
+            "weight": 24,
+            "contains_pin": true,
+            "free_length": 23,
+            "mixture": [
+              [
+                "11/15",
+                1
+              ],
+              [
+                "4/15",
+                3
+              ]
+            ]
+          },
+          {
+            "weight": 25,
+            "contains_pin": false,
+            "free_length": 25,
+            "mixture": [
+              [
+                "1/6",
+                0
+              ],
+              [
+                "5/6",
+                2
+              ]
+            ]
+          },
+          {
+            "weight": 25,
+            "contains_pin": true,
+            "free_length": 24,
+            "mixture": [
+              [
+                "7/10",
+                1
+              ],
+              [
+                "3/10",
+                3
+              ]
+            ]
+          },
+          {
+            "weight": 26,
+            "contains_pin": false,
+            "free_length": 26,
+            "mixture": [
+              [
+                "2/15",
+                0
+              ],
+              [
+                "13/15",
+                2
+              ]
+            ]
+          },
+          {
+            "weight": 26,
+            "contains_pin": true,
+            "free_length": 25,
+            "mixture": [
+              [
+                "2/3",
+                1
+              ],
+              [
+                "1/3",
+                3
+              ]
+            ]
+          },
+          {
+            "weight": 27,
+            "contains_pin": false,
+            "free_length": 27,
+            "mixture": [
+              [
+                "1/10",
+                0
+              ],
+              [
+                "9/10",
+                2
+              ]
+            ]
+          },
+          {
+            "weight": 27,
+            "contains_pin": true,
+            "free_length": 26,
+            "mixture": [
+              [
+                "19/30",
+                1
+              ],
+              [
+                "11/30",
+                3
+              ]
+            ]
+          },
+          {
+            "weight": 28,
+            "contains_pin": false,
+            "free_length": 28,
+            "mixture": [
+              [
+                "1/15",
+                0
+              ],
+              [
+                "14/15",
+                2
+              ]
+            ]
+          },
+          {
+            "weight": 28,
+            "contains_pin": true,
+            "free_length": 27,
+            "mixture": [
+              [
+                "3/5",
+                1
+              ],
+              [
+                "2/5",
+                3
+              ]
+            ]
+          },
+          {
+            "weight": 29,
+            "contains_pin": false,
+            "free_length": 29,
+            "mixture": [
+              [
+                "1/30",
+                0
+              ],
+              [
+                "29/30",
+                2
+              ]
+            ]
+          },
+          {
+            "weight": 29,
+            "contains_pin": true,
+            "free_length": 28,
+            "mixture": [
+              [
+                "17/30",
+                1
+              ],
+              [
+                "13/30",
+                3
+              ]
+            ]
+          },
+          {
+            "weight": 30,
+            "contains_pin": false,
+            "free_length": 30,
+            "mixture": [
+              [
+                "1",
+                2
+              ]
+            ]
+          },
+          {
+            "weight": 30,
+            "contains_pin": true,
+            "free_length": 29,
+            "mixture": [
+              [
+                "8/15",
+                1
+              ],
+              [
+                "7/15",
+                3
+              ]
+            ]
+          },
+          {
+            "weight": 31,
+            "contains_pin": false,
+            "free_length": 31,
+            "mixture": [
+              [
+                "29/30",
+                2
+              ],
+              [
+                "1/30",
+                4
+              ]
+            ]
+          },
+          {
+            "weight": 31,
+            "contains_pin": true,
+            "free_length": 30,
+            "mixture": [
+              [
+                "1/2",
+                1
+              ],
+              [
+                "1/2",
+                3
+              ]
+            ]
+          },
+          {
+            "weight": 32,
+            "contains_pin": false,
+            "free_length": 32,
+            "mixture": [
+              [
+                "14/15",
+                2
+              ],
+              [
+                "1/15",
+                4
+              ]
+            ]
+          },
+          {
+            "weight": 32,
+            "contains_pin": true,
+            "free_length": 31,
+            "mixture": [
+              [
+                "7/15",
+                1
+              ],
+              [
+                "8/15",
+                3
+              ]
+            ]
+          },
+          {
+            "weight": 33,
+            "contains_pin": false,
+            "free_length": 33,
+            "mixture": [
+              [
+                "9/10",
+                2
+              ],
+              [
+                "1/10",
+                4
+              ]
+            ]
+          },
+          {
+            "weight": 33,
+            "contains_pin": true,
+            "free_length": 32,
+            "mixture": [
+              [
+                "13/30",
+                1
+              ],
+              [
+                "17/30",
+                3
+              ]
+            ]
+          },
+          {
+            "weight": 34,
+            "contains_pin": false,
+            "free_length": 34,
+            "mixture": [
+              [
+                "13/15",
+                2
+              ],
+              [
+                "2/15",
+                4
+              ]
+            ]
+          },
+          {
+            "weight": 34,
+            "contains_pin": true,
+            "free_length": 33,
+            "mixture": [
+              [
+                "2/5",
+                1
+              ],
+              [
+                "3/5",
+                3
+              ]
+            ]
+          },
+          {
+            "weight": 35,
+            "contains_pin": false,
+            "free_length": 35,
+            "mixture": [
+              [
+                "5/6",
+                2
+              ],
+              [
+                "1/6",
+                4
+              ]
+            ]
+          },
+          {
+            "weight": 35,
+            "contains_pin": true,
+            "free_length": 34,
+            "mixture": [
+              [
+                "11/30",
+                1
+              ],
+              [
+                "19/30",
+                3
+              ]
+            ]
+          },
+          {
+            "weight": 36,
+            "contains_pin": false,
+            "free_length": 36,
+            "mixture": [
+              [
+                "4/5",
+                2
+              ],
+              [
+                "1/5",
+                4
+              ]
+            ]
+          },
+          {
+            "weight": 36,
+            "contains_pin": true,
+            "free_length": 35,
+            "mixture": [
+              [
+                "1/3",
+                1
+              ],
+              [
+                "2/3",
+                3
+              ]
+            ]
+          },
+          {
+            "weight": 37,
+            "contains_pin": false,
+            "free_length": 37,
+            "mixture": [
+              [
+                "23/30",
+                2
+              ],
+              [
+                "7/30",
+                4
+              ]
+            ]
+          },
+          {
+            "weight": 37,
+            "contains_pin": true,
+            "free_length": 36,
+            "mixture": [
+              [
+                "3/10",
+                1
+              ],
+              [
+                "7/10",
+                3
+              ]
+            ]
+          },
+          {
+            "weight": 38,
+            "contains_pin": false,
+            "free_length": 38,
+            "mixture": [
+              [
+                "11/15",
+                2
+              ],
+              [
+                "4/15",
+                4
+              ]
+            ]
+          },
+          {
+            "weight": 38,
+            "contains_pin": true,
+            "free_length": 37,
+            "mixture": [
+              [
+                "4/15",
+                1
+              ],
+              [
+                "11/15",
+                3
+              ]
+            ]
+          },
+          {
+            "weight": 39,
+            "contains_pin": false,
+            "free_length": 39,
+            "mixture": [
+              [
+                "7/10",
+                2
+              ],
+              [
+                "3/10",
+                4
+              ]
+            ]
+          },
+          {
+            "weight": 39,
+            "contains_pin": true,
+            "free_length": 38,
+            "mixture": [
+              [
+                "7/30",
+                1
+              ],
+              [
+                "23/30",
+                3
+              ]
+            ]
+          },
+          {
+            "weight": 40,
+            "contains_pin": false,
+            "free_length": 40,
+            "mixture": [
+              [
+                "2/3",
+                2
+              ],
+              [
+                "1/3",
+                4
+              ]
+            ]
+          },
+          {
+            "weight": 40,
+            "contains_pin": true,
+            "free_length": 39,
+            "mixture": [
+              [
+                "1/5",
+                1
+              ],
+              [
+                "4/5",
+                3
+              ]
+            ]
+          },
+          {
+            "weight": 41,
+            "contains_pin": false,
+            "free_length": 41,
+            "mixture": [
+              [
+                "19/30",
+                2
+              ],
+              [
+                "11/30",
+                4
+              ]
+            ]
+          },
+          {
+            "weight": 41,
+            "contains_pin": true,
+            "free_length": 40,
+            "mixture": [
+              [
+                "1/6",
+                1
+              ],
+              [
+                "5/6",
+                3
+              ]
+            ]
+          },
+          {
+            "weight": 42,
+            "contains_pin": false,
+            "free_length": 42,
+            "mixture": [
+              [
+                "3/5",
+                2
+              ],
+              [
+                "2/5",
+                4
+              ]
+            ]
+          },
+          {
+            "weight": 42,
+            "contains_pin": true,
+            "free_length": 41,
+            "mixture": [
+              [
+                "2/15",
+                1
+              ],
+              [
+                "13/15",
+                3
+              ]
+            ]
+          },
+          {
+            "weight": 43,
+            "contains_pin": false,
+            "free_length": 43,
+            "mixture": [
+              [
+                "17/30",
+                2
+              ],
+              [
+                "13/30",
+                4
+              ]
+            ]
+          },
+          {
+            "weight": 43,
+            "contains_pin": true,
+            "free_length": 42,
+            "mixture": [
+              [
+                "1/10",
+                1
+              ],
+              [
+                "9/10",
+                3
+              ]
+            ]
+          },
+          {
+            "weight": 44,
+            "contains_pin": false,
+            "free_length": 44,
+            "mixture": [
+              [
+                "8/15",
+                2
+              ],
+              [
+                "7/15",
+                4
+              ]
+            ]
+          },
+          {
+            "weight": 44,
+            "contains_pin": true,
+            "free_length": 43,
+            "mixture": [
+              [
+                "1/15",
+                1
+              ],
+              [
+                "14/15",
+                3
+              ]
+            ]
+          },
+          {
+            "weight": 45,
+            "contains_pin": false,
+            "free_length": 45,
+            "mixture": [
+              [
+                "1/2",
+                2
+              ],
+              [
+                "1/2",
+                4
+              ]
+            ]
+          },
+          {
+            "weight": 45,
+            "contains_pin": true,
+            "free_length": 44,
+            "mixture": [
+              [
+                "1/30",
+                1
+              ],
+              [
+                "29/30",
+                3
+              ]
+            ]
+          },
+          {
+            "weight": 46,
+            "contains_pin": false,
+            "free_length": 46,
+            "mixture": [
+              [
+                "7/15",
+                2
+              ],
+              [
+                "8/15",
+                4
+              ]
+            ]
+          },
+          {
+            "weight": 46,
+            "contains_pin": true,
+            "free_length": 45,
+            "mixture": [
+              [
+                "1",
+                3
+              ]
+            ]
+          },
+          {
+            "weight": 47,
+            "contains_pin": false,
+            "free_length": 47,
+            "mixture": [
+              [
+                "13/30",
+                2
+              ],
+              [
+                "17/30",
+                4
+              ]
+            ]
+          },
+          {
+            "weight": 47,
+            "contains_pin": true,
+            "free_length": 46,
+            "mixture": [
+              [
+                "29/30",
+                3
+              ],
+              [
+                "1/30",
+                5
+              ]
+            ]
+          },
+          {
+            "weight": 48,
+            "contains_pin": false,
+            "free_length": 48,
+            "mixture": [
+              [
+                "2/5",
+                2
+              ],
+              [
+                "3/5",
+                4
+              ]
+            ]
+          },
+          {
+            "weight": 48,
+            "contains_pin": true,
+            "free_length": 47,
+            "mixture": [
+              [
+                "14/15",
+                3
+              ],
+              [
+                "1/15",
+                5
+              ]
+            ]
+          },
+          {
+            "weight": 49,
+            "contains_pin": false,
+            "free_length": 49,
+            "mixture": [
+              [
+                "11/30",
+                2
+              ],
+              [
+                "19/30",
+                4
+              ]
+            ]
+          },
+          {
+            "weight": 49,
+            "contains_pin": true,
+            "free_length": 48,
+            "mixture": [
+              [
+                "9/10",
+                3
+              ],
+              [
+                "1/10",
+                5
+              ]
+            ]
+          },
+          {
+            "weight": 50,
+            "contains_pin": false,
+            "free_length": 50,
+            "mixture": [
+              [
+                "1/3",
+                2
+              ],
+              [
+                "2/3",
+                4
+              ]
+            ]
+          },
+          {
+            "weight": 50,
+            "contains_pin": true,
+            "free_length": 49,
+            "mixture": [
+              [
+                "13/15",
+                3
+              ],
+              [
+                "2/15",
+                5
+              ]
+            ]
+          },
+          {
+            "weight": 51,
+            "contains_pin": false,
+            "free_length": 51,
+            "mixture": [
+              [
+                "3/10",
+                2
+              ],
+              [
+                "7/10",
+                4
+              ]
+            ]
+          },
+          {
+            "weight": 51,
+            "contains_pin": true,
+            "free_length": 50,
+            "mixture": [
+              [
+                "5/6",
+                3
+              ],
+              [
+                "1/6",
+                5
+              ]
+            ]
+          },
+          {
+            "weight": 52,
+            "contains_pin": false,
+            "free_length": 52,
+            "mixture": [
+              [
+                "4/15",
+                2
+              ],
+              [
+                "11/15",
+                4
+              ]
+            ]
+          },
+          {
+            "weight": 52,
+            "contains_pin": true,
+            "free_length": 51,
+            "mixture": [
+              [
+                "4/5",
+                3
+              ],
+              [
+                "1/5",
+                5
+              ]
+            ]
+          },
+          {
+            "weight": 53,
+            "contains_pin": false,
+            "free_length": 53,
+            "mixture": [
+              [
+                "7/30",
+                2
+              ],
+              [
+                "23/30",
+                4
+              ]
+            ]
+          },
+          {
+            "weight": 53,
+            "contains_pin": true,
+            "free_length": 52,
+            "mixture": [
+              [
+                "23/30",
+                3
+              ],
+              [
+                "7/30",
+                5
+              ]
+            ]
+          },
+          {
+            "weight": 54,
+            "contains_pin": false,
+            "free_length": 54,
+            "mixture": [
+              [
+                "1/5",
+                2
+              ],
+              [
+                "4/5",
+                4
+              ]
+            ]
+          },
+          {
+            "weight": 54,
+            "contains_pin": true,
+            "free_length": 53,
+            "mixture": [
+              [
+                "11/15",
+                3
+              ],
+              [
+                "4/15",
+                5
+              ]
+            ]
+          },
+          {
+            "weight": 55,
+            "contains_pin": false,
+            "free_length": 55,
+            "mixture": [
+              [
+                "1/6",
+                2
+              ],
+              [
+                "5/6",
+                4
+              ]
+            ]
+          },
+          {
+            "weight": 55,
+            "contains_pin": true,
+            "free_length": 54,
+            "mixture": [
+              [
+                "7/10",
+                3
+              ],
+              [
+                "3/10",
+                5
+              ]
+            ]
+          },
+          {
+            "weight": 56,
+            "contains_pin": false,
+            "free_length": 56,
+            "mixture": [
+              [
+                "2/15",
+                2
+              ],
+              [
+                "13/15",
+                4
+              ]
+            ]
+          },
+          {
+            "weight": 56,
+            "contains_pin": true,
+            "free_length": 55,
+            "mixture": [
+              [
+                "2/3",
+                3
+              ],
+              [
+                "1/3",
+                5
+              ]
+            ]
+          },
+          {
+            "weight": 57,
+            "contains_pin": false,
+            "free_length": 57,
+            "mixture": [
+              [
+                "1/10",
+                2
+              ],
+              [
+                "9/10",
+                4
+              ]
+            ]
+          },
+          {
+            "weight": 57,
+            "contains_pin": true,
+            "free_length": 56,
+            "mixture": [
+              [
+                "19/30",
+                3
+              ],
+              [
+                "11/30",
+                5
+              ]
+            ]
+          },
+          {
+            "weight": 58,
+            "contains_pin": false,
+            "free_length": 58,
+            "mixture": [
+              [
+                "1/15",
+                2
+              ],
+              [
+                "14/15",
+                4
+              ]
+            ]
+          },
+          {
+            "weight": 58,
+            "contains_pin": true,
+            "free_length": 57,
+            "mixture": [
+              [
+                "3/5",
+                3
+              ],
+              [
+                "2/5",
+                5
+              ]
+            ]
+          },
+          {
+            "weight": 59,
+            "contains_pin": false,
+            "free_length": 59,
+            "mixture": [
+              [
+                "1/30",
+                2
+              ],
+              [
+                "29/30",
+                4
+              ]
+            ]
+          },
+          {
+            "weight": 59,
+            "contains_pin": true,
+            "free_length": 58,
+            "mixture": [
+              [
+                "17/30",
+                3
+              ],
+              [
+                "13/30",
+                5
+              ]
+            ]
+          },
+          {
+            "weight": 60,
+            "contains_pin": false,
+            "free_length": 60,
+            "mixture": [
+              [
+                "1",
+                4
+              ]
+            ]
+          },
+          {
+            "weight": 60,
+            "contains_pin": true,
+            "free_length": 59,
+            "mixture": [
+              [
+                "8/15",
+                3
+              ],
+              [
+                "7/15",
+                5
+              ]
+            ]
+          },
+          {
+            "weight": 61,
+            "contains_pin": false,
+            "free_length": 61,
+            "mixture": [
+              [
+                "29/30",
+                4
+              ],
+              [
+                "1/30",
+                6
+              ]
+            ]
+          },
+          {
+            "weight": 61,
+            "contains_pin": true,
+            "free_length": 60,
+            "mixture": [
+              [
+                "1/2",
+                3
+              ],
+              [
+                "1/2",
+                5
+              ]
+            ]
+          },
+          {
+            "weight": 62,
+            "contains_pin": false,
+            "free_length": 62,
+            "mixture": [
+              [
+                "14/15",
+                4
+              ],
+              [
+                "1/15",
+                6
+              ]
+            ]
+          },
+          {
+            "weight": 62,
+            "contains_pin": true,
+            "free_length": 61,
+            "mixture": [
+              [
+                "7/15",
+                3
+              ],
+              [
+                "8/15",
+                5
+              ]
+            ]
+          },
+          {
+            "weight": 63,
+            "contains_pin": false,
+            "free_length": 63,
+            "mixture": [
+              [
+                "9/10",
+                4
+              ],
+              [
+                "1/10",
+                6
+              ]
+            ]
+          },
+          {
+            "weight": 63,
+            "contains_pin": true,
+            "free_length": 62,
+            "mixture": [
+              [
+                "13/30",
+                3
+              ],
+              [
+                "17/30",
+                5
+              ]
+            ]
+          },
+          {
+            "weight": 64,
+            "contains_pin": false,
+            "free_length": 64,
+            "mixture": [
+              [
+                "13/15",
+                4
+              ],
+              [
+                "2/15",
+                6
+              ]
+            ]
+          },
+          {
+            "weight": 64,
+            "contains_pin": true,
+            "free_length": 63,
+            "mixture": [
+              [
+                "2/5",
+                3
+              ],
+              [
+                "3/5",
+                5
+              ]
+            ]
+          },
+          {
+            "weight": 65,
+            "contains_pin": false,
+            "free_length": 65,
+            "mixture": [
+              [
+                "5/6",
+                4
+              ],
+              [
+                "1/6",
+                6
+              ]
+            ]
+          },
+          {
+            "weight": 65,
+            "contains_pin": true,
+            "free_length": 64,
+            "mixture": [
+              [
+                "11/30",
+                3
+              ],
+              [
+                "19/30",
+                5
+              ]
+            ]
+          },
+          {
+            "weight": 66,
+            "contains_pin": false,
+            "free_length": 66,
+            "mixture": [
+              [
+                "4/5",
+                4
+              ],
+              [
+                "1/5",
+                6
+              ]
+            ]
+          },
+          {
+            "weight": 66,
+            "contains_pin": true,
+            "free_length": 65,
+            "mixture": [
+              [
+                "1/3",
+                3
+              ],
+              [
+                "2/3",
+                5
+              ]
+            ]
+          },
+          {
+            "weight": 67,
+            "contains_pin": false,
+            "free_length": 67,
+            "mixture": [
+              [
+                "23/30",
+                4
+              ],
+              [
+                "7/30",
+                6
+              ]
+            ]
+          },
+          {
+            "weight": 67,
+            "contains_pin": true,
+            "free_length": 66,
+            "mixture": [
+              [
+                "3/10",
+                3
+              ],
+              [
+                "7/10",
+                5
+              ]
+            ]
+          },
+          {
+            "weight": 68,
+            "contains_pin": false,
+            "free_length": 68,
+            "mixture": [
+              [
+                "11/15",
+                4
+              ],
+              [
+                "4/15",
+                6
+              ]
+            ]
+          },
+          {
+            "weight": 68,
+            "contains_pin": true,
+            "free_length": 67,
+            "mixture": [
+              [
+                "4/15",
+                3
+              ],
+              [
+                "11/15",
+                5
+              ]
+            ]
+          },
+          {
+            "weight": 69,
+            "contains_pin": false,
+            "free_length": 69,
+            "mixture": [
+              [
+                "7/10",
+                4
+              ],
+              [
+                "3/10",
+                6
+              ]
+            ]
+          },
+          {
+            "weight": 69,
+            "contains_pin": true,
+            "free_length": 68,
+            "mixture": [
+              [
+                "7/30",
+                3
+              ],
+              [
+                "23/30",
+                5
+              ]
+            ]
+          },
+          {
+            "weight": 70,
+            "contains_pin": false,
+            "free_length": 70,
+            "mixture": [
+              [
+                "2/3",
+                4
+              ],
+              [
+                "1/3",
+                6
+              ]
+            ]
+          },
+          {
+            "weight": 70,
+            "contains_pin": true,
+            "free_length": 69,
+            "mixture": [
+              [
+                "1/5",
+                3
+              ],
+              [
+                "4/5",
+                5
+              ]
+            ]
+          },
+          {
+            "weight": 71,
+            "contains_pin": false,
+            "free_length": 71,
+            "mixture": [
+              [
+                "19/30",
+                4
+              ],
+              [
+                "11/30",
+                6
+              ]
+            ]
+          },
+          {
+            "weight": 71,
+            "contains_pin": true,
+            "free_length": 70,
+            "mixture": [
+              [
+                "1/6",
+                3
+              ],
+              [
+                "5/6",
+                5
+              ]
+            ]
+          },
+          {
+            "weight": 72,
+            "contains_pin": false,
+            "free_length": 72,
+            "mixture": [
+              [
+                "3/5",
+                4
+              ],
+              [
+                "2/5",
+                6
+              ]
+            ]
+          },
+          {
+            "weight": 72,
+            "contains_pin": true,
+            "free_length": 71,
+            "mixture": [
+              [
+                "2/15",
+                3
+              ],
+              [
+                "13/15",
+                5
+              ]
+            ]
+          },
+          {
+            "weight": 73,
+            "contains_pin": false,
+            "free_length": 73,
+            "mixture": [
+              [
+                "17/30",
+                4
+              ],
+              [
+                "13/30",
+                6
+              ]
+            ]
+          },
+          {
+            "weight": 73,
+            "contains_pin": true,
+            "free_length": 72,
+            "mixture": [
+              [
+                "1/10",
+                3
+              ],
+              [
+                "9/10",
+                5
+              ]
+            ]
+          },
+          {
+            "weight": 74,
+            "contains_pin": false,
+            "free_length": 74,
+            "mixture": [
+              [
+                "8/15",
+                4
+              ],
+              [
+                "7/15",
+                6
+              ]
+            ]
+          },
+          {
+            "weight": 74,
+            "contains_pin": true,
+            "free_length": 73,
+            "mixture": [
+              [
+                "1/15",
+                3
+              ],
+              [
+                "14/15",
+                5
+              ]
+            ]
+          },
+          {
+            "weight": 75,
+            "contains_pin": false,
+            "free_length": 75,
+            "mixture": [
+              [
+                "1/2",
+                4
+              ],
+              [
+                "1/2",
+                6
+              ]
+            ]
+          },
+          {
+            "weight": 75,
+            "contains_pin": true,
+            "free_length": 74,
+            "mixture": [
+              [
+                "1/30",
+                3
+              ],
+              [
+                "29/30",
+                5
+              ]
+            ]
+          },
+          {
+            "weight": 76,
+            "contains_pin": false,
+            "free_length": 76,
+            "mixture": [
+              [
+                "7/15",
+                4
+              ],
+              [
+                "8/15",
+                6
+              ]
+            ]
+          },
+          {
+            "weight": 76,
+            "contains_pin": true,
+            "free_length": 75,
+            "mixture": [
+              [
+                "1",
+                5
+              ]
+            ]
+          },
+          {
+            "weight": 77,
+            "contains_pin": false,
+            "free_length": 77,
+            "mixture": [
+              [
+                "13/30",
+                4
+              ],
+              [
+                "17/30",
+                6
+              ]
+            ]
+          },
+          {
+            "weight": 77,
+            "contains_pin": true,
+            "free_length": 76,
+            "mixture": [
+              [
+                "29/30",
+                5
+              ],
+              [
+                "1/30",
+                7
+              ]
+            ]
+          },
+          {
+            "weight": 78,
+            "contains_pin": false,
+            "free_length": 78,
+            "mixture": [
+              [
+                "2/5",
+                4
+              ],
+              [
+                "3/5",
+                6
+              ]
+            ]
+          },
+          {
+            "weight": 78,
+            "contains_pin": true,
+            "free_length": 77,
+            "mixture": [
+              [
+                "14/15",
+                5
+              ],
+              [
+                "1/15",
+                7
+              ]
+            ]
+          },
+          {
+            "weight": 79,
+            "contains_pin": false,
+            "free_length": 79,
+            "mixture": [
+              [
+                "11/30",
+                4
+              ],
+              [
+                "19/30",
+                6
+              ]
+            ]
+          },
+          {
+            "weight": 79,
+            "contains_pin": true,
+            "free_length": 78,
+            "mixture": [
+              [
+                "9/10",
+                5
+              ],
+              [
+                "1/10",
+                7
+              ]
+            ]
+          },
+          {
+            "weight": 80,
+            "contains_pin": false,
+            "free_length": 80,
+            "mixture": [
+              [
+                "1/3",
+                4
+              ],
+              [
+                "2/3",
+                6
+              ]
+            ]
+          },
+          {
+            "weight": 80,
+            "contains_pin": true,
+            "free_length": 79,
+            "mixture": [
+              [
+                "13/15",
+                5
+              ],
+              [
+                "2/15",
+                7
+              ]
+            ]
+          },
+          {
+            "weight": 81,
+            "contains_pin": false,
+            "free_length": 81,
+            "mixture": [
+              [
+                "3/10",
+                4
+              ],
+              [
+                "7/10",
+                6
+              ]
+            ]
+          },
+          {
+            "weight": 81,
+            "contains_pin": true,
+            "free_length": 80,
+            "mixture": [
+              [
+                "5/6",
+                5
+              ],
+              [
+                "1/6",
+                7
+              ]
+            ]
+          },
+          {
+            "weight": 82,
+            "contains_pin": false,
+            "free_length": 82,
+            "mixture": [
+              [
+                "4/15",
+                4
+              ],
+              [
+                "11/15",
+                6
+              ]
+            ]
+          },
+          {
+            "weight": 82,
+            "contains_pin": true,
+            "free_length": 81,
+            "mixture": [
+              [
+                "4/5",
+                5
+              ],
+              [
+                "1/5",
+                7
+              ]
+            ]
+          },
+          {
+            "weight": 83,
+            "contains_pin": false,
+            "free_length": 83,
+            "mixture": [
+              [
+                "7/30",
+                4
+              ],
+              [
+                "23/30",
+                6
+              ]
+            ]
+          },
+          {
+            "weight": 83,
+            "contains_pin": true,
+            "free_length": 82,
+            "mixture": [
+              [
+                "23/30",
+                5
+              ],
+              [
+                "7/30",
+                7
+              ]
+            ]
+          },
+          {
+            "weight": 84,
+            "contains_pin": false,
+            "free_length": 84,
+            "mixture": [
+              [
+                "1/5",
+                4
+              ],
+              [
+                "4/5",
+                6
+              ]
+            ]
+          },
+          {
+            "weight": 84,
+            "contains_pin": true,
+            "free_length": 83,
+            "mixture": [
+              [
+                "11/15",
+                5
+              ],
+              [
+                "4/15",
+                7
+              ]
+            ]
+          },
+          {
+            "weight": 85,
+            "contains_pin": false,
+            "free_length": 85,
+            "mixture": [
+              [
+                "1/6",
+                4
+              ],
+              [
+                "5/6",
+                6
+              ]
+            ]
+          },
+          {
+            "weight": 85,
+            "contains_pin": true,
+            "free_length": 84,
+            "mixture": [
+              [
+                "7/10",
+                5
+              ],
+              [
+                "3/10",
+                7
+              ]
+            ]
+          },
+          {
+            "weight": 86,
+            "contains_pin": false,
+            "free_length": 86,
+            "mixture": [
+              [
+                "2/15",
+                4
+              ],
+              [
+                "13/15",
+                6
+              ]
+            ]
+          },
+          {
+            "weight": 86,
+            "contains_pin": true,
+            "free_length": 85,
+            "mixture": [
+              [
+                "2/3",
+                5
+              ],
+              [
+                "1/3",
+                7
+              ]
+            ]
+          },
+          {
+            "weight": 87,
+            "contains_pin": false,
+            "free_length": 87,
+            "mixture": [
+              [
+                "1/10",
+                4
+              ],
+              [
+                "9/10",
+                6
+              ]
+            ]
+          },
+          {
+            "weight": 87,
+            "contains_pin": true,
+            "free_length": 86,
+            "mixture": [
+              [
+                "19/30",
+                5
+              ],
+              [
+                "11/30",
+                7
+              ]
+            ]
+          },
+          {
+            "weight": 88,
+            "contains_pin": false,
+            "free_length": 88,
+            "mixture": [
+              [
+                "1/15",
+                4
+              ],
+              [
+                "14/15",
+                6
+              ]
+            ]
+          },
+          {
+            "weight": 88,
+            "contains_pin": true,
+            "free_length": 87,
+            "mixture": [
+              [
+                "3/5",
+                5
+              ],
+              [
+                "2/5",
+                7
+              ]
+            ]
+          },
+          {
+            "weight": 89,
+            "contains_pin": false,
+            "free_length": 89,
+            "mixture": [
+              [
+                "1/30",
+                4
+              ],
+              [
+                "29/30",
+                6
+              ]
+            ]
+          },
+          {
+            "weight": 89,
+            "contains_pin": true,
+            "free_length": 88,
+            "mixture": [
+              [
+                "17/30",
+                5
+              ],
+              [
+                "13/30",
+                7
+              ]
+            ]
+          },
+          {
+            "weight": 90,
+            "contains_pin": false,
+            "free_length": 90,
+            "mixture": [
+              [
+                "1",
+                6
+              ]
+            ]
+          },
+          {
+            "weight": 90,
+            "contains_pin": true,
+            "free_length": 89,
+            "mixture": [
+              [
+                "8/15",
+                5
+              ],
+              [
+                "7/15",
+                7
+              ]
+            ]
+          },
+          {
+            "weight": 91,
+            "contains_pin": false,
+            "free_length": 91,
+            "mixture": [
+              [
+                "29/30",
+                6
+              ],
+              [
+                "1/30",
+                8
+              ]
+            ]
+          },
+          {
+            "weight": 91,
+            "contains_pin": true,
+            "free_length": 90,
+            "mixture": [
+              [
+                "1/2",
+                5
+              ],
+              [
+                "1/2",
+                7
+              ]
+            ]
+          },
+          {
+            "weight": 92,
+            "contains_pin": false,
+            "free_length": 92,
+            "mixture": [
+              [
+                "14/15",
+                6
+              ],
+              [
+                "1/15",
+                8
+              ]
+            ]
+          },
+          {
+            "weight": 92,
+            "contains_pin": true,
+            "free_length": 91,
+            "mixture": [
+              [
+                "7/15",
+                5
+              ],
+              [
+                "8/15",
+                7
+              ]
+            ]
+          },
+          {
+            "weight": 93,
+            "contains_pin": false,
+            "free_length": 93,
+            "mixture": [
+              [
+                "9/10",
+                6
+              ],
+              [
+                "1/10",
+                8
+              ]
+            ]
+          },
+          {
+            "weight": 93,
+            "contains_pin": true,
+            "free_length": 92,
+            "mixture": [
+              [
+                "13/30",
+                5
+              ],
+              [
+                "17/30",
+                7
+              ]
+            ]
+          },
+          {
+            "weight": 94,
+            "contains_pin": false,
+            "free_length": 94,
+            "mixture": [
+              [
+                "13/15",
+                6
+              ],
+              [
+                "2/15",
+                8
+              ]
+            ]
+          },
+          {
+            "weight": 94,
+            "contains_pin": true,
+            "free_length": 93,
+            "mixture": [
+              [
+                "2/5",
+                5
+              ],
+              [
+                "3/5",
+                7
+              ]
+            ]
+          },
+          {
+            "weight": 95,
+            "contains_pin": false,
+            "free_length": 95,
+            "mixture": [
+              [
+                "5/6",
+                6
+              ],
+              [
+                "1/6",
+                8
+              ]
+            ]
+          },
+          {
+            "weight": 95,
+            "contains_pin": true,
+            "free_length": 94,
+            "mixture": [
+              [
+                "11/30",
+                5
+              ],
+              [
+                "19/30",
+                7
+              ]
+            ]
+          },
+          {
+            "weight": 96,
+            "contains_pin": false,
+            "free_length": 96,
+            "mixture": [
+              [
+                "4/5",
+                6
+              ],
+              [
+                "1/5",
+                8
+              ]
+            ]
+          },
+          {
+            "weight": 96,
+            "contains_pin": true,
+            "free_length": 95,
+            "mixture": [
+              [
+                "1/3",
+                5
+              ],
+              [
+                "2/3",
+                7
+              ]
+            ]
+          },
+          {
+            "weight": 97,
+            "contains_pin": false,
+            "free_length": 97,
+            "mixture": [
+              [
+                "23/30",
+                6
+              ],
+              [
+                "7/30",
+                8
+              ]
+            ]
+          },
+          {
+            "weight": 97,
+            "contains_pin": true,
+            "free_length": 96,
+            "mixture": [
+              [
+                "3/10",
+                5
+              ],
+              [
+                "7/10",
+                7
+              ]
+            ]
+          },
+          {
+            "weight": 98,
+            "contains_pin": false,
+            "free_length": 98,
+            "mixture": [
+              [
+                "11/15",
+                6
+              ],
+              [
+                "4/15",
+                8
+              ]
+            ]
+          },
+          {
+            "weight": 98,
+            "contains_pin": true,
+            "free_length": 97,
+            "mixture": [
+              [
+                "4/15",
+                5
+              ],
+              [
+                "11/15",
+                7
+              ]
+            ]
+          },
+          {
+            "weight": 99,
+            "contains_pin": false,
+            "free_length": 99,
+            "mixture": [
+              [
+                "7/10",
+                6
+              ],
+              [
+                "3/10",
+                8
+              ]
+            ]
+          },
+          {
+            "weight": 99,
+            "contains_pin": true,
+            "free_length": 98,
+            "mixture": [
+              [
+                "7/30",
+                5
+              ],
+              [
+                "23/30",
+                7
+              ]
+            ]
+          },
+          {
+            "weight": 100,
+            "contains_pin": false,
+            "free_length": 100,
+            "mixture": [
+              [
+                "2/3",
+                6
+              ],
+              [
+                "1/3",
+                8
+              ]
+            ]
+          },
+          {
+            "weight": 100,
+            "contains_pin": true,
+            "free_length": 99,
+            "mixture": [
+              [
+                "1/5",
+                5
+              ],
+              [
+                "4/5",
+                7
+              ]
+            ]
+          },
+          {
+            "weight": 101,
+            "contains_pin": false,
+            "free_length": 101,
+            "mixture": [
+              [
+                "19/30",
+                6
+              ],
+              [
+                "11/30",
+                8
+              ]
+            ]
+          },
+          {
+            "weight": 101,
+            "contains_pin": true,
+            "free_length": 100,
+            "mixture": [
+              [
+                "1/6",
+                5
+              ],
+              [
+                "5/6",
+                7
+              ]
+            ]
+          },
+          {
+            "weight": 102,
+            "contains_pin": false,
+            "free_length": 102,
+            "mixture": [
+              [
+                "3/5",
+                6
+              ],
+              [
+                "2/5",
+                8
+              ]
+            ]
+          },
+          {
+            "weight": 102,
+            "contains_pin": true,
+            "free_length": 101,
+            "mixture": [
+              [
+                "2/15",
+                5
+              ],
+              [
+                "13/15",
+                7
+              ]
+            ]
+          },
+          {
+            "weight": 103,
+            "contains_pin": false,
+            "free_length": 103,
+            "mixture": [
+              [
+                "17/30",
+                6
+              ],
+              [
+                "13/30",
+                8
+              ]
+            ]
+          },
+          {
+            "weight": 103,
+            "contains_pin": true,
+            "free_length": 102,
+            "mixture": [
+              [
+                "1/10",
+                5
+              ],
+              [
+                "9/10",
+                7
+              ]
+            ]
+          },
+          {
+            "weight": 104,
+            "contains_pin": false,
+            "free_length": 104,
+            "mixture": [
+              [
+                "8/15",
+                6
+              ],
+              [
+                "7/15",
+                8
+              ]
+            ]
+          },
+          {
+            "weight": 104,
+            "contains_pin": true,
+            "free_length": 103,
+            "mixture": [
+              [
+                "1/15",
+                5
+              ],
+              [
+                "14/15",
+                7
+              ]
+            ]
+          },
+          {
+            "weight": 105,
+            "contains_pin": false,
+            "free_length": 105,
+            "mixture": [
+              [
+                "1/2",
+                6
+              ],
+              [
+                "1/2",
+                8
+              ]
+            ]
+          },
+          {
+            "weight": 105,
+            "contains_pin": true,
+            "free_length": 104,
+            "mixture": [
+              [
+                "1/30",
+                5
+              ],
+              [
+                "29/30",
+                7
+              ]
+            ]
+          },
+          {
+            "weight": 106,
+            "contains_pin": false,
+            "free_length": 106,
+            "mixture": [
+              [
+                "7/15",
+                6
+              ],
+              [
+                "8/15",
+                8
+              ]
+            ]
+          },
+          {
+            "weight": 106,
+            "contains_pin": true,
+            "free_length": 105,
+            "mixture": [
+              [
+                "1",
+                7
+              ]
+            ]
+          },
+          {
+            "weight": 107,
+            "contains_pin": false,
+            "free_length": 107,
+            "mixture": [
+              [
+                "13/30",
+                6
+              ],
+              [
+                "17/30",
+                8
+              ]
+            ]
+          },
+          {
+            "weight": 107,
+            "contains_pin": true,
+            "free_length": 106,
+            "mixture": [
+              [
+                "29/30",
+                7
+              ],
+              [
+                "1/30",
+                9
+              ]
+            ]
+          },
+          {
+            "weight": 108,
+            "contains_pin": false,
+            "free_length": 108,
+            "mixture": [
+              [
+                "2/5",
+                6
+              ],
+              [
+                "3/5",
+                8
+              ]
+            ]
+          },
+          {
+            "weight": 108,
+            "contains_pin": true,
+            "free_length": 107,
+            "mixture": [
+              [
+                "14/15",
+                7
+              ],
+              [
+                "1/15",
+                9
+              ]
+            ]
+          },
+          {
+            "weight": 109,
+            "contains_pin": false,
+            "free_length": 109,
+            "mixture": [
+              [
+                "11/30",
+                6
+              ],
+              [
+                "19/30",
+                8
+              ]
+            ]
+          },
+          {
+            "weight": 109,
+            "contains_pin": true,
+            "free_length": 108,
+            "mixture": [
+              [
+                "9/10",
+                7
+              ],
+              [
+                "1/10",
+                9
+              ]
+            ]
+          },
+          {
+            "weight": 110,
+            "contains_pin": false,
+            "free_length": 110,
+            "mixture": [
+              [
+                "1/3",
+                6
+              ],
+              [
+                "2/3",
+                8
+              ]
+            ]
+          },
+          {
+            "weight": 110,
+            "contains_pin": true,
+            "free_length": 109,
+            "mixture": [
+              [
+                "13/15",
+                7
+              ],
+              [
+                "2/15",
+                9
+              ]
+            ]
+          },
+          {
+            "weight": 111,
+            "contains_pin": false,
+            "free_length": 111,
+            "mixture": [
+              [
+                "3/10",
+                6
+              ],
+              [
+                "7/10",
+                8
+              ]
+            ]
+          },
+          {
+            "weight": 111,
+            "contains_pin": true,
+            "free_length": 110,
+            "mixture": [
+              [
+                "5/6",
+                7
+              ],
+              [
+                "1/6",
+                9
+              ]
+            ]
+          },
+          {
+            "weight": 112,
+            "contains_pin": false,
+            "free_length": 112,
+            "mixture": [
+              [
+                "4/15",
+                6
+              ],
+              [
+                "11/15",
+                8
+              ]
+            ]
+          },
+          {
+            "weight": 112,
+            "contains_pin": true,
+            "free_length": 111,
+            "mixture": [
+              [
+                "4/5",
+                7
+              ],
+              [
+                "1/5",
+                9
+              ]
+            ]
+          },
+          {
+            "weight": 113,
+            "contains_pin": false,
+            "free_length": 113,
+            "mixture": [
+              [
+                "7/30",
+                6
+              ],
+              [
+                "23/30",
+                8
+              ]
+            ]
+          },
+          {
+            "weight": 113,
+            "contains_pin": true,
+            "free_length": 112,
+            "mixture": [
+              [
+                "23/30",
+                7
+              ],
+              [
+                "7/30",
+                9
+              ]
+            ]
+          },
+          {
+            "weight": 114,
+            "contains_pin": false,
+            "free_length": 114,
+            "mixture": [
+              [
+                "1/5",
+                6
+              ],
+              [
+                "4/5",
+                8
+              ]
+            ]
+          },
+          {
+            "weight": 114,
+            "contains_pin": true,
+            "free_length": 113,
+            "mixture": [
+              [
+                "11/15",
+                7
+              ],
+              [
+                "4/15",
+                9
+              ]
+            ]
+          },
+          {
+            "weight": 115,
+            "contains_pin": false,
+            "free_length": 115,
+            "mixture": [
+              [
+                "1/6",
+                6
+              ],
+              [
+                "5/6",
+                8
+              ]
+            ]
+          },
+          {
+            "weight": 115,
+            "contains_pin": true,
+            "free_length": 114,
+            "mixture": [
+              [
+                "7/10",
+                7
+              ],
+              [
+                "3/10",
+                9
+              ]
+            ]
+          },
+          {
+            "weight": 116,
+            "contains_pin": false,
+            "free_length": 116,
+            "mixture": [
+              [
+                "2/15",
+                6
+              ],
+              [
+                "13/15",
+                8
+              ]
+            ]
+          },
+          {
+            "weight": 116,
+            "contains_pin": true,
+            "free_length": 115,
+            "mixture": [
+              [
+                "2/3",
+                7
+              ],
+              [
+                "1/3",
+                9
+              ]
+            ]
+          },
+          {
+            "weight": 117,
+            "contains_pin": false,
+            "free_length": 117,
+            "mixture": [
+              [
+                "1/10",
+                6
+              ],
+              [
+                "9/10",
+                8
+              ]
+            ]
+          },
+          {
+            "weight": 117,
+            "contains_pin": true,
+            "free_length": 116,
+            "mixture": [
+              [
+                "19/30",
+                7
+              ],
+              [
+                "11/30",
+                9
+              ]
+            ]
+          },
+          {
+            "weight": 118,
+            "contains_pin": false,
+            "free_length": 118,
+            "mixture": [
+              [
+                "1/15",
+                6
+              ],
+              [
+                "14/15",
+                8
+              ]
+            ]
+          },
+          {
+            "weight": 118,
+            "contains_pin": true,
+            "free_length": 117,
+            "mixture": [
+              [
+                "3/5",
+                7
+              ],
+              [
+                "2/5",
+                9
+              ]
+            ]
+          },
+          {
+            "weight": 119,
+            "contains_pin": false,
+            "free_length": 119,
+            "mixture": [
+              [
+                "1/30",
+                6
+              ],
+              [
+                "29/30",
+                8
+              ]
+            ]
+          },
+          {
+            "weight": 119,
+            "contains_pin": true,
+            "free_length": 118,
+            "mixture": [
+              [
+                "17/30",
+                7
+              ],
+              [
+                "13/30",
+                9
+              ]
+            ]
+          },
+          {
+            "weight": 120,
+            "contains_pin": false,
+            "free_length": 120,
+            "mixture": [
+              [
+                "1",
+                8
+              ]
+            ]
+          },
+          {
+            "weight": 120,
+            "contains_pin": true,
+            "free_length": 119,
+            "mixture": [
+              [
+                "8/15",
+                7
+              ],
+              [
+                "7/15",
+                9
+              ]
+            ]
+          },
+          {
+            "weight": 121,
+            "contains_pin": false,
+            "free_length": 121,
+            "mixture": [
+              [
+                "29/30",
+                8
+              ],
+              [
+                "1/30",
+                10
+              ]
+            ]
+          },
+          {
+            "weight": 121,
+            "contains_pin": true,
+            "free_length": 120,
+            "mixture": [
+              [
+                "1/2",
+                7
+              ],
+              [
+                "1/2",
+                9
+              ]
+            ]
+          },
+          {
+            "weight": 122,
+            "contains_pin": false,
+            "free_length": 122,
+            "mixture": [
+              [
+                "14/15",
+                8
+              ],
+              [
+                "1/15",
+                10
+              ]
+            ]
+          },
+          {
+            "weight": 122,
+            "contains_pin": true,
+            "free_length": 121,
+            "mixture": [
+              [
+                "7/15",
+                7
+              ],
+              [
+                "8/15",
+                9
+              ]
+            ]
+          },
+          {
+            "weight": 123,
+            "contains_pin": false,
+            "free_length": 123,
+            "mixture": [
+              [
+                "9/10",
+                8
+              ],
+              [
+                "1/10",
+                10
+              ]
+            ]
+          },
+          {
+            "weight": 123,
+            "contains_pin": true,
+            "free_length": 122,
+            "mixture": [
+              [
+                "13/30",
+                7
+              ],
+              [
+                "17/30",
+                9
+              ]
+            ]
+          },
+          {
+            "weight": 124,
+            "contains_pin": false,
+            "free_length": 124,
+            "mixture": [
+              [
+                "13/15",
+                8
+              ],
+              [
+                "2/15",
+                10
+              ]
+            ]
+          },
+          {
+            "weight": 124,
+            "contains_pin": true,
+            "free_length": 123,
+            "mixture": [
+              [
+                "2/5",
+                7
+              ],
+              [
+                "3/5",
+                9
+              ]
+            ]
+          },
+          {
+            "weight": 125,
+            "contains_pin": false,
+            "free_length": 125,
+            "mixture": [
+              [
+                "5/6",
+                8
+              ],
+              [
+                "1/6",
+                10
+              ]
+            ]
+          },
+          {
+            "weight": 125,
+            "contains_pin": true,
+            "free_length": 124,
+            "mixture": [
+              [
+                "11/30",
+                7
+              ],
+              [
+                "19/30",
+                9
+              ]
+            ]
+          },
+          {
+            "weight": 126,
+            "contains_pin": false,
+            "free_length": 126,
+            "mixture": [
+              [
+                "4/5",
+                8
+              ],
+              [
+                "1/5",
+                10
+              ]
+            ]
+          },
+          {
+            "weight": 126,
+            "contains_pin": true,
+            "free_length": 125,
+            "mixture": [
+              [
+                "1/3",
+                7
+              ],
+              [
+                "2/3",
+                9
+              ]
+            ]
+          },
+          {
+            "weight": 127,
+            "contains_pin": false,
+            "free_length": 127,
+            "mixture": [
+              [
+                "23/30",
+                8
+              ],
+              [
+                "7/30",
+                10
+              ]
+            ]
+          },
+          {
+            "weight": 127,
+            "contains_pin": true,
+            "free_length": 126,
+            "mixture": [
+              [
+                "3/10",
+                7
+              ],
+              [
+                "7/10",
+                9
+              ]
+            ]
+          },
+          {
+            "weight": 128,
+            "contains_pin": false,
+            "free_length": 128,
+            "mixture": [
+              [
+                "11/15",
+                8
+              ],
+              [
+                "4/15",
+                10
+              ]
+            ]
+          },
+          {
+            "weight": 128,
+            "contains_pin": true,
+            "free_length": 127,
+            "mixture": [
+              [
+                "4/15",
+                7
+              ],
+              [
+                "11/15",
+                9
+              ]
+            ]
+          }
+        ],
+        "all_nonzero_dual_checks_feasible": true
+      },
+      "verification": {
+        "status": "VERIFIED",
+        "valid": true,
+        "s": 3,
+        "n": 128,
+        "dual_distance": 16,
+        "integer_pinned_optimum": 16,
+        "fractional_optimum": "142/15",
+        "integrality_ratio": "120/71",
+        "minimum_check_count_through_pin": 11811,
+        "minimum_check_other_coordinate_incidence": 1395,
+        "mixture_case_count": 226,
+        "word_enumeration": "THEOREM_ONLY"
+      }
+    }
+  ],
+  "all_valid": true,
+  "interpretation": "Every nonzero dual check is supplied for free in the relaxation; the uniform rational point remains feasible, while balanced minimum-weight affine checks prove its exact fractional optimum.",
+  "source_report": "REED_MULLER_ALL_DUAL_REPORT.md"
+}

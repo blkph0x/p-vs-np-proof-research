@@ -410,6 +410,14 @@ local projection-marginal architecture. A stronger hierarchy, global valid
 inequalities, or a different SAT representation remains outside the result,
 and the project still has no general P-versus-NP lower bound.
 
+The next all-dual replay supplies every redundant parity check analytically for
+the same RM family. Exact rational mixtures keep the uniform point feasible,
+and balanced minimum-weight affine checks prove its fractional optimum. The
+integer/fractional ratios `6/5`, `28/19`, and `120/71` approach two, so adding
+all XOR combinations tightens but does not close this explicit gap. Any route
+beyond parity checks must state its valid inequality family and its separation
+cost rather than assuming that redundant checks are enough.
+
 ## Separate general direction: stronger global constraints
 
 Any proposed relaxation must be tested first against the exact Golay witness
