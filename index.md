@@ -33,28 +33,7 @@ and its [independent replay](resolution_width_lab/PEBBLE_REVIEW.json).
 
 ## Runtime scaling notebook
 
-<section class="scaling-panel" data-runtime-chart data-runtime-source="{{ '/assets/data/scaling-runtime.json' | relative_url }}">
-  <p class="chart-note">Recorded producer solve times from the native binary-code and proof-producing SAT experiments. Select the horizontal measure, include capped UNKNOWN runs, or switch to a logarithmic vertical scale.</p>
-  <div class="chart-toolbar">
-    <label>Horizontal axis <select data-chart-axis aria-label="Horizontal chart axis"></select></label>
-    <label><input type="checkbox" data-chart-unknown> Include UNKNOWN runs</label>
-    <label><input type="checkbox" data-chart-log> Logarithmic runtime</label>
-    <button type="button" data-chart-reset>Reset view</button>
-  </div>
-  <div class="chart-layout">
-    <svg class="runtime-chart" data-chart-svg role="img" aria-label="Solver runtime scaling chart" viewBox="0 0 760 390"></svg>
-  </div>
-  <div class="chart-legend" data-chart-legend aria-label="Chart series"></div>
-  <p class="chart-detail" data-chart-details aria-live="polite">Hover or focus a point for details.</p>
-  <p class="chart-note" data-chart-status>Loading recorded measurements…</p>
-  <details>
-    <summary>Accessible data table</summary>
-    <table class="chart-table">
-      <thead><tr><th>Series</th><th>Selected x</th><th>Seconds</th><th>Status</th></tr></thead>
-      <tbody data-chart-table-body></tbody>
-    </table>
-  </details>
-</section>
+{% include runtime-chart.html data_url='/assets/data/scaling-runtime.json' %}
 <script src="{{ '/assets/js/scaling-chart.js' | relative_url }}" defer></script>
 
 The chart is a measurement view, not a complexity claim. Exact family and

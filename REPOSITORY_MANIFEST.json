@@ -1,5 +1,5 @@
 {
-  "file_count": 1100,
+  "file_count": 1101,
   "files": {
     ".gitattributes": {
       "bytes": 648,
@@ -454,8 +454,8 @@
       "sha256": "73570b412657e9acced9ff103f34cd9f604ca2c603c4bba122c323c788c3631a"
     },
     "RUNTIME_SCALING_CHART.md": {
-      "bytes": 1606,
-      "sha256": "e74d805f9ad0c25f5e82d52bc5aa5b71985a06dd2ecfdb504f0a69cabd8a7ee6"
+      "bytes": 1786,
+      "sha256": "fdacd615219c4a2ea73b87da46db27f0aa3a8daae50a4a1513c25ef2cad8e0c5"
     },
     "SEMANTIC_CERTIFICATE_REPAIR.json": {
       "bytes": 4374,
@@ -528,6 +528,10 @@
     "_config.yml": {
       "bytes": 380,
       "sha256": "5df8746378f777ff4ffd6982ec86f6ace228b40099f480c203db39a1f49d0bec"
+    },
+    "_includes/runtime-chart.html": {
+      "bytes": 1947,
+      "sha256": "1418cbc6d52bda532db15e664c8be4cbb85f65fbe15133181b3a770a98fceb57"
     },
     "adaptive_fragment_synthesis.py": {
       "bytes": 10902,
@@ -1354,8 +1358,8 @@
       "sha256": "1f095996f4d114eeb32606570255d079c1e72a70ae6e3c1adbfc393e859ca315"
     },
     "assets/css/style.scss": {
-      "bytes": 4277,
-      "sha256": "2ff66d7c359c62b1fd51aa3b7e01c928007911f17851cf7a9512fa3ded0b404e"
+      "bytes": 4742,
+      "sha256": "c06b869e5f9b1378ce79c1a7496626ba052bd9a7c5330d48958ccd7cb79a1712"
     },
     "assets/data/scaling-runtime.json": {
       "bytes": 9635,
@@ -2114,8 +2118,8 @@
       "sha256": "ce86680f49890fe07bdb95febd996ac2fdf8b2d45cd25b7e5b8863026581c070"
     },
     "index.md": {
-      "bytes": 5429,
-      "sha256": "c1983a42c471f0f7105e90ef0948543a99d37d2e8cf282b9cb92c897bd28981f"
+      "bytes": 4090,
+      "sha256": "9cab8834ec77cdcca0425a4a8f73bf82ee126b0f05de816d545ae155de5eea74"
     },
     "interval_coefficient_lab/INDEPENDENT_REVIEW.md": {
       "bytes": 7681,
@@ -4402,6 +4406,6 @@
       "sha256": "957bd3b51cbf2cd06ee00f1ef47ab5c6fa8bbf1a4c281c0e67b129b027785a18"
     }
   },
-  "generated_at_utc": "2026-10-18T18:11:40.026566+00:00",
-  "source_commit": "fd8a00d557a1d98d73ddfa9a1fb23a1cfc3a0ac7"
+  "generated_at_utc": "2026-10-18T18:19:57.441414+00:00",
+  "source_commit": "08790822097a6caef9c85b068fc1796ae4ca4c78"
 }

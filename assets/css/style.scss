@@ -96,6 +96,16 @@ code { background: var(--wash); }
   background: #fff;
 }
 
+.chart-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.chart-heading h3 { margin: .15rem 0 .45rem; color: var(--blue-dark); }
+.chart-heading .chart-note { max-width: 48rem; }
+.chart-data-link { flex: 0 0 auto; color: var(--blue-dark); font-size: .84rem; font-weight: 700; }
+
 .chart-toolbar {
   display: flex;
   flex-wrap: wrap;
@@ -136,3 +146,8 @@ code { background: var(--wash); }
 .chart-detail { min-height: 1.4rem; margin: .5rem 0; color: var(--blue-dark); font-weight: 600; }
 .chart-table { width: 100%; margin-top: 1rem; border-collapse: collapse; font-size: .82rem; }
 .chart-table th, .chart-table td { padding: .35rem .5rem; border-bottom: 1px solid var(--line); text-align: left; }
+
+@media (max-width: 42rem) {
+  .chart-heading { display: block; }
+  .chart-data-link { display: inline-block; margin-top: .35rem; }
+}
