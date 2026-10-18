@@ -1,0 +1,134 @@
+{
+  "schema": "runtime_scaling_v1",
+  "generated_from": "NATIVE_RESULTS.json",
+  "source_sha256": "2820f7b32c2cf5dbe0d1caba65cee3435cbc60f74bfe2e008059e728d8d24be2",
+  "generated_utc": "2026-10-18T00:00:00Z",
+  "x_axes": {
+    "n": "Encoded coordinates (n)",
+    "dimension": "Code dimension (k)"
+  },
+  "y_axis": "Wall-clock solve time (seconds)",
+  "datasets": [
+    {
+      "id": "certified-family",
+      "label": "Complete-graph + Fano family (EXACT)",
+      "points": [
+        {
+          "x": 11,
+          "dimension": 7,
+          "runtime_seconds": 0.4912363002076745,
+          "status": "EXACT",
+          "label": "Family n=11",
+          "upper_bound": 3,
+          "distance": 3
+        },
+        {
+          "x": 29,
+          "dimension": 22,
+          "runtime_seconds": 0.01799870003014803,
+          "status": "EXACT",
+          "label": "Family n=29",
+          "upper_bound": 3,
+          "distance": 3
+        },
+        {
+          "x": 121,
+          "dimension": 106,
+          "runtime_seconds": 0.018109099939465523,
+          "status": "EXACT",
+          "label": "Family n=121",
+          "upper_bound": 3,
+          "distance": 3
+        },
+        {
+          "x": 497,
+          "dimension": 466,
+          "runtime_seconds": 0.02011340018361807,
+          "status": "EXACT",
+          "label": "Family n=497",
+          "upper_bound": 3,
+          "distance": 3
+        },
+        {
+          "x": 2017,
+          "dimension": 1954,
+          "runtime_seconds": 0.029641299974173307,
+          "status": "EXACT",
+          "label": "Family n=2017",
+          "upper_bound": 3,
+          "distance": 3
+        },
+        {
+          "x": 8129,
+          "dimension": 8002,
+          "runtime_seconds": 0.08434309996664524,
+          "status": "EXACT",
+          "label": "Family n=8129",
+          "upper_bound": 3,
+          "distance": 3
+        }
+      ]
+    },
+    {
+      "id": "capped-archive",
+      "label": "Archived random codes (UNKNOWN at branch cap)",
+      "points": [
+        {
+          "x": 18,
+          "dimension": 9,
+          "runtime_seconds": 1.1630370998755097,
+          "status": "UNKNOWN",
+          "label": "Archived n=18",
+          "upper_bound": 4,
+          "distance": null
+        },
+        {
+          "x": 20,
+          "dimension": 10,
+          "runtime_seconds": 1.1835770001634955,
+          "status": "UNKNOWN",
+          "label": "Archived n=20",
+          "upper_bound": 3,
+          "distance": null
+        },
+        {
+          "x": 22,
+          "dimension": 11,
+          "runtime_seconds": 1.1652286001481116,
+          "status": "UNKNOWN",
+          "label": "Archived n=22",
+          "upper_bound": 4,
+          "distance": null
+        },
+        {
+          "x": 24,
+          "dimension": 12,
+          "runtime_seconds": 1.1857114001177251,
+          "status": "UNKNOWN",
+          "label": "Archived n=24",
+          "upper_bound": 4,
+          "distance": null
+        },
+        {
+          "x": 26,
+          "dimension": 13,
+          "runtime_seconds": 1.2223761999048293,
+          "status": "UNKNOWN",
+          "label": "Archived n=26",
+          "upper_bound": 5,
+          "distance": null
+        },
+        {
+          "x": 28,
+          "dimension": 14,
+          "runtime_seconds": 1.2336180000565946,
+          "status": "UNKNOWN",
+          "label": "Archived n=28",
+          "upper_bound": 5,
+          "distance": null
+        }
+      ]
+    }
+  ],
+  "interpretation": "Measured producer solve time only. EXACT and UNKNOWN points are shown with different symbols; UNKNOWN is not an exact answer and no asymptotic claim is inferred."
+}

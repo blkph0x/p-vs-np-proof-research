@@ -25,8 +25,8 @@ python run_research_checks.py
 ```
 
 The command regenerates `TEST_OUTPUT.txt` and `TEST_SUMMARY.json`, then checks
-all registered suites. The frozen checkpoint on 18 October 2026 passed 31
-suites and 260 methods with unchanged source hashes. A full run can take several
+all registered suites. The frozen checkpoint on 18 October 2026 passed 32
+suites and 269 methods with unchanged source hashes. A full run can take several
 minutes because it includes exhaustive finite controls and native rank checks.
 
 ## Focused checks

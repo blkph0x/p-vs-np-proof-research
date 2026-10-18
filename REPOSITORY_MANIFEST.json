@@ -1,5 +1,5 @@
 {
-  "file_count": 987,
+  "file_count": 993,
   "files": {
     ".gitattributes": {
       "bytes": 648,
@@ -302,8 +302,8 @@
       "sha256": "7401f5cf6b946a82cec459cbaf5a62cb4b5237b8f96501e7f0496a3efc662683"
     },
     "METHOD_INDEX.md": {
-      "bytes": 4184,
-      "sha256": "1bb3a2b35cacc9c135d1c000cb3427e20853f17e86402d9d02baf25959276795"
+      "bytes": 4517,
+      "sha256": "06b5d6adeb6937d2a20da8607bce3af4603b8dbcc1fe647d23abd32c81af7604"
     },
     "NATIVE_RESULTS.csv": {
       "bytes": 11436,
@@ -375,7 +375,7 @@
     },
     "README.md": {
       "bytes": 38675,
-      "sha256": "aaa1e4324da1548825a162c15637095e0ba185401f03e04009d94b79d79be121"
+      "sha256": "5e549f1d4bb4afc623006df58213501620dfb116f6297bd67e08ceb8a8500813"
     },
     "REGULAR_LDPC_33_LOCAL_AUDIT.json": {
       "bytes": 5015,
@@ -415,7 +415,7 @@
     },
     "REPRODUCIBILITY.md": {
       "bytes": 2344,
-      "sha256": "eed3040b345bdd93e525f171f8434c230cab1de49f6ce487fbf490f178214402"
+      "sha256": "713e82f11a7444a31a2e32e93ade68ed73ecbe742897f6962fb6081cba474066"
     },
     "RESIDUAL_EQUIVALENCE_BARRIER.json": {
       "bytes": 106347,
@@ -453,6 +453,10 @@
       "bytes": 2445,
       "sha256": "73570b412657e9acced9ff103f34cd9f604ca2c603c4bba122c323c788c3631a"
     },
+    "RUNTIME_SCALING_CHART.md": {
+      "bytes": 1148,
+      "sha256": "28aa8e31e8ec1c1a2619b71acb1d1b0d66ad03586e26c2070ebf975a4c1ca1d7"
+    },
     "SEMANTIC_CERTIFICATE_REPAIR.json": {
       "bytes": 4374,
       "sha256": "0663927ce3aefe0f914954e30f63a6dd2e69e4496fcabf673e740fb43058887a"
@@ -482,12 +486,12 @@
       "sha256": "a3567d759c7f20ea1420bfbafdcc846cc2d5a5fed2b80ebee8cd98cfd1cf4255"
     },
     "TEST_OUTPUT.txt": {
-      "bytes": 30287,
-      "sha256": "26b71f10d5861c7da269baea6c0941a5bba73b12fbb8cdd06bdae4e140991418"
+      "bytes": 31195,
+      "sha256": "6318ef1acf43653106ace54628f85ea55b9ccdc79fb7b87c70942ef1aa5b00df"
     },
     "TEST_SUMMARY.json": {
-      "bytes": 25897,
-      "sha256": "9770c924abc4915c8c080bf1afc9a466b0dfab367d45e0226b6b64f24021a2c3"
+      "bytes": 26350,
+      "sha256": "497e6b4257d4264de55dbd4b263a3e0d64cee1c3fa8d4f98b86e6932d885bdc4"
     },
     "THEORY_REVIEW.md": {
       "bytes": 18223,
@@ -1350,8 +1354,16 @@
       "sha256": "1f095996f4d114eeb32606570255d079c1e72a70ae6e3c1adbfc393e859ca315"
     },
     "assets/css/style.scss": {
-      "bytes": 1836,
-      "sha256": "ec67b04e10f008ca2b19f40d1fb2abd6fc00062151e8e4301ea6c7e2b42917a5"
+      "bytes": 3594,
+      "sha256": "6c55462c74db72f2d4fdeba144ef6a5b5f6a4e1f9fdf951468529c69a80a4cf0"
+    },
+    "assets/data/scaling-runtime.json": {
+      "bytes": 3783,
+      "sha256": "a969c43d442965514ed13ab8a13eea1647dcd0465c0a17cc02c73b675a9b0d1b"
+    },
+    "assets/js/scaling-chart.js": {
+      "bytes": 7480,
+      "sha256": "030ddb98939b027f11ed1f19c41921520774f04c72d33b42c611e70a6b255697"
     },
     "bounded_language_invention_lab/MANIFEST.json": {
       "bytes": 1781,
@@ -2102,8 +2114,8 @@
       "sha256": "ce86680f49890fe07bdb95febd996ac2fdf8b2d45cd25b7e5b8863026581c070"
     },
     "index.md": {
-      "bytes": 3194,
-      "sha256": "0eb22dfa4f258b48c8d84ee5b6d4747e730c9a9f51e6b142560dedd85dd2e577"
+      "bytes": 4833,
+      "sha256": "8b81d2dc4ab23fb446145b3547014ea7718ced35060429024696b69b377ad6fb"
     },
     "interval_coefficient_lab/INDEPENDENT_REVIEW.md": {
       "bytes": 7681,
@@ -3278,8 +3290,8 @@
       "sha256": "f11e49f6b30f074519eb181976e555332093b8f1003858e09c9535c440a1a4e4"
     },
     "run_research_checks.py": {
-      "bytes": 3344,
-      "sha256": "8d65165122e6f1cf80352538780ce3b98a789317921dea02b24553f4aece44d9"
+      "bytes": 3433,
+      "sha256": "89caeac47679aa779a23c4244cd8e0d0643c9801b4109c9175bdce9833fb997d"
     },
     "run_threshold_phase_checks.py": {
       "bytes": 2230,
@@ -3948,8 +3960,20 @@
     "weighted_affine_dag_lab/test_dag.py": {
       "bytes": 11439,
       "sha256": "90fa27af09e557b617f93d4332af36dd50d17c0777e5e9dd3c23c9df57d6a0ee"
+    },
+    "weighted_boundary_lab/THEOREM.md": {
+      "bytes": 2646,
+      "sha256": "032bfee8695e8418c6ed5458610d3d0630d949869e6a26d7474f0970f6bffcd3"
+    },
+    "weighted_boundary_lab/test_lab.py": {
+      "bytes": 5457,
+      "sha256": "1dc40eed16510a2e348c9f363cb5820cce5f34b5c8380f02cdca4d155471775d"
+    },
+    "weighted_boundary_lab/weighted_boundary.py": {
+      "bytes": 14779,
+      "sha256": "957bd3b51cbf2cd06ee00f1ef47ab5c6fa8bbf1a4c281c0e67b129b027785a18"
     }
   },
-  "generated_at_utc": "2026-10-18T12:13:37.498328+00:00",
-  "source_commit": "760aebfc08d7094c299eae573a23d751443fa5de"
+  "generated_at_utc": "2026-10-18T12:25:08.730545+00:00",
+  "source_commit": "04d75a6bd87a7773751129c6e5dfe35af0354d71"
 }

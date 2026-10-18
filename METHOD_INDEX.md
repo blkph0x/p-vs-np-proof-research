@@ -17,6 +17,7 @@ or P≠NP has been proved.
 | Fourier/Walsh low-dimensional state | Refuted for the specified universal linear representation | [`fourier_spectrum_boundary_lab/REPORT.md`](fourier_spectrum_boundary_lab/REPORT.md); a linear-size distinct-literal family has exponentially many nonzero modes, and the cyclic unique-model family supplies every point mass, spanning the full `2^n`-dimensional function space. |
 | Holographic simultaneous basis | Refuted for the tested product-type and common-basis targets | [`simultaneous_basis_lab/THEOREM.md`](simultaneous_basis_lab/THEOREM.md), with independent certificate replay. The result is a scoped tensor obstruction, not a complexity lower bound. |
 | Matchgate parity and crossing controls | Proved for the checked identities | [`HOLOGRAPHIC_PHASE_REPORT.md`](HOLOGRAPHIC_PHASE_REPORT.md), exact rational checks and independent mutations. |
+| Compact weighted-boundary marginalization | Proved for supplied affine-support/quadratic-phase summaries | [`weighted_boundary_lab/THEOREM.md`](weighted_boundary_lab/THEOREM.md), elimination certificates, direct small-instance oracle, and mutation controls. This does not provide a compact representation for arbitrary CNF sums. |
 | Recent public Vohra P=NP claim | Unverified | [`EXTERNAL_STATUS_AUDIT_2026_10_18.md`](EXTERNAL_STATUS_AUDIT_2026_10_18.md) and [`VOHRA_CROSSREF_METADATA.json`](VOHRA_CROSSREF_METADATA.json). Public metadata and abstract were checked; the full proof and bit-complexity argument were not accessible. |
 
 ## Evidence vocabulary
