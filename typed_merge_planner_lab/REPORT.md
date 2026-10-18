@@ -102,6 +102,24 @@ backdoor. This proves only the standard
 `2^k * poly(explicit-table-size)` parameterized result for a supplied backdoor;
 it does not find a backdoor or make a uniform claim for arbitrary SAT.
 
+## 1.3 Parameterized affine/cardinality routes
+
+The affine-plus-cardinality hard edge now has explicit parameter metadata and
+certificates. `parameterized_edges.py` row-reduces a supplied binary generator
+matrix and enumerates its `2^k-1` nonzero messages when the code dimension `k`
+is the parameter. It also provides a separate support enumeration up to a
+distance bound `d`: for each support it solves the homogeneous GF(2) system
+that forces all outside coordinates to zero. The first witness is exact; if
+none exists, the result certifies distance greater than `d`.
+
+The dimension route is FPT in `k`, while the distance route is explicitly
+labeled XP with cost `sum_{s<=d} binomial(n,s) * poly(n,k)`. The planner's
+`assess_hard_merge` exposes these routes only when the caller supplies the
+metadata and retains `KNOWN_NP_HARD` otherwise. Five saved cases, including a
+rank-deficient generator and an above-bound certificate, pass a direct
+message-enumeration replay. Neither route discovers a small parameter for
+arbitrary instances.
+
 ## 2. Native theory combination graph
 
 For large native theories we use guaranteed language metadata rather than enumerating truth

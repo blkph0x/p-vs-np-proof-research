@@ -274,7 +274,15 @@ def evaluate_declared_tree(regions,tree,poly_degree=2):
 # ---------- bridge assessor ----------
 
 def assess_hard_merge(type_a,type_b,raw_width,input_size,
-                      quotient_states=None,poly_degree=2):
+                      quotient_states=None,poly_degree=2,*,code_dimension=None,
+                      code_length=None,distance_bound=None):
+    if (code_dimension is not None or distance_bound is not None) and \
+            frozenset((type_a, type_b)) == frozenset(("AFFINE", "CARDINALITY")):
+        from parameterized_edges import parameterized_pair_status
+        return parameterized_pair_status(type_a, type_b,
+                                         code_dimension=code_dimension,
+                                         code_length=code_length,
+                                         distance_bound=distance_bound)
     pair=native_pair_status(type_a,type_b)
     if pair["status"]=="POLY_CLOSED":
         return {"route":"NATIVE_CLOSED","pair_status":pair["status"],"cost":"poly"}

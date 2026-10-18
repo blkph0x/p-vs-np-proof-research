@@ -1,5 +1,5 @@
 {
-  "file_count": 1004,
+  "file_count": 1010,
   "files": {
     ".gitattributes": {
       "bytes": 648,
@@ -374,8 +374,8 @@
       "sha256": "631ec13d33a0045e6421133fee346759f9186117b909bdd327a954ddac826356"
     },
     "README.md": {
-      "bytes": 39101,
-      "sha256": "2a28af84be4f889fb875a11a45039f833b2cf9a91dca310c5192aa643557b07b"
+      "bytes": 39436,
+      "sha256": "4e0ef63bfa78a691f9b06f452b7904500bbe4fa8698411bb15dbfeb80a5f66b0"
     },
     "REGULAR_LDPC_33_LOCAL_AUDIT.json": {
       "bytes": 5015,
@@ -410,12 +410,12 @@
       "sha256": "2fb2bf7ea62a6c83a8ff274073f90b712c4ec8a650c1a14faf818eb6c1b9d122"
     },
     "REPORT.md": {
-      "bytes": 30927,
-      "sha256": "bb39f50ce3496d47d994a46f0ee26fac593391f542adde5c57d8b629e495bd50"
+      "bytes": 31477,
+      "sha256": "00b4967ffcb1e2101b34ccfab524a92f2e510d888a783d1d129dc3788d0e148a"
     },
     "REPRODUCIBILITY.md": {
       "bytes": 2326,
-      "sha256": "a1c715be085dd34d7dcb0984ca6e5fffa24ab52f80c7a89eec52d184beda1730"
+      "sha256": "a040d29bd378e2d22528a493a3d76ab3a2e3dd9f53b9cc295dfba199d5bacdee"
     },
     "RESIDUAL_EQUIVALENCE_BARRIER.json": {
       "bytes": 106347,
@@ -434,8 +434,8 @@
       "sha256": "d7d103f37e85cce87a5e236fbe90116277e0d0e76196239d73fa76b9e782fab1"
     },
     "ROADMAP.md": {
-      "bytes": 27463,
-      "sha256": "f11415e0a920826d1c5d1aa07f235a1b42a5180eb6094b2316cb306dfaa29481"
+      "bytes": 27888,
+      "sha256": "fb265171e9ec8d35daff58d4a846fa10d4b70dbc33169edc3dd756ed7c6eb278"
     },
     "ROW_BASIS_ESCAPE_RESULTS.json": {
       "bytes": 9367083,
@@ -486,12 +486,12 @@
       "sha256": "a3567d759c7f20ea1420bfbafdcc846cc2d5a5fed2b80ebee8cd98cfd1cf4255"
     },
     "TEST_OUTPUT.txt": {
-      "bytes": 37714,
-      "sha256": "7b76a8fed5ce2e8c29bb290617da226fcbcfec4f3c394faa318fb99d8c2a3e5d"
+      "bytes": 38273,
+      "sha256": "89391638dd6795d6ea366a60e3cadac4c8226324f67f5c29de97a6fa8b540bfb"
     },
     "TEST_SUMMARY.json": {
-      "bytes": 30421,
-      "sha256": "063d8759df000b289176aee5761a7a9a8ff05380a8aa790d753f35dd7fae42a0"
+      "bytes": 31060,
+      "sha256": "eef50e0063daa40d696a09a3e26f3ca798523fcd8910bc234681f5c2c6c35f9e"
     },
     "THEORY_REVIEW.md": {
       "bytes": 18223,
@@ -2115,7 +2115,7 @@
     },
     "index.md": {
       "bytes": 4833,
-      "sha256": "4ad73aae3a1d623be8712aef6bfa97eda0adbd55ce7fb9930840ee3f850d2545"
+      "sha256": "2828c749ff0939159eedd07e91768505bc0f5cbbb4aa3cafc1ebef0812e971be"
     },
     "interval_coefficient_lab/INDEPENDENT_REVIEW.md": {
       "bytes": 7681,
@@ -3673,25 +3673,37 @@
       "bytes": 1730,
       "sha256": "10f4abcc454c1825e14097c480f3f5b9cbcf5fd5d7bd2fd1dc666a9a9a302af6"
     },
+    "typed_merge_planner_lab/PARAMETERIZED_EDGE_RESULTS.json": {
+      "bytes": 4389,
+      "sha256": "36561f27b16aa19987baf4d7896bb3f71e4641a66a0d663d372ead90ccdf26d9"
+    },
+    "typed_merge_planner_lab/PARAMETERIZED_EDGE_REVIEW.py": {
+      "bytes": 2679,
+      "sha256": "129fb0ca67312e9b6bd90e36ce5d01d5416a8b1505adbb47cf0ee0d93f07126a"
+    },
+    "typed_merge_planner_lab/PARAMETERIZED_EDGE_THEOREM.md": {
+      "bytes": 1790,
+      "sha256": "cfbc8cbe3688de50db0b753a8b219e52658f14948f35e5921ee64f346fe815a6"
+    },
     "typed_merge_planner_lab/POLY_SCORECARD.md": {
-      "bytes": 788,
-      "sha256": "5de23c03ec243f70b5b905152eabb847c3a4fd410a4cd234c97bbf9bd56d0472"
+      "bytes": 977,
+      "sha256": "c51e1c3db5188a648ce7b3c14212dc9d200615273e6f44a8603ce34d60b95df9"
     },
     "typed_merge_planner_lab/README.md": {
-      "bytes": 1565,
-      "sha256": "1c253b01042b73cbe9ff6960aa352a826ac22ccc93a43f5cf17d5b4016fca91f"
+      "bytes": 1804,
+      "sha256": "14e03b9397b84a91e09be8ac03d9d70707f542a9635015b4fc6ba124ab6f5e6e"
     },
     "typed_merge_planner_lab/REPORT.md": {
-      "bytes": 14461,
-      "sha256": "b6165d4b56c428f41d8ef58da706985214492a58d39db55c41dbd3017d216d6e"
+      "bytes": 15502,
+      "sha256": "51c60f9cbf8ecb806e0de243ec80fd53982aa77ec7088dab1b88cdf1cc91700a"
     },
     "typed_merge_planner_lab/RESULTS.json": {
       "bytes": 13098,
       "sha256": "3228199e8c6567254b02d28187a39ea91cc86bbb13e993670f1719962c6d559e"
     },
     "typed_merge_planner_lab/ROADMAP.md": {
-      "bytes": 1984,
-      "sha256": "27c17c5987beffa66e43c6ffcd5ca40dbe234c6177f25b3bb726502439655f42"
+      "bytes": 2179,
+      "sha256": "5703559e15b06a1da9e7571522ea14765e50915f980888a92b99bd2b7ed0a30e"
     },
     "typed_merge_planner_lab/TEST_OUTPUT.txt": {
       "bytes": 2969,
@@ -3730,8 +3742,8 @@
       "sha256": "bf35dc463db2d64ef72cb8ac2ab96904f638be2f376f038f54e7870af1a97561"
     },
     "typed_merge_planner_lab/engine.py": {
-      "bytes": 11557,
-      "sha256": "7129d477d44cfa02caa20af51fe363a931894217f7f78fa28d6aa9e058561e49"
+      "bytes": 12125,
+      "sha256": "6fedcb49bbd3bff2bf52c1c2b7d039ef42094fc508e0772b266c6724753c350e"
     },
     "typed_merge_planner_lab/invented_relation_bridge.py": {
       "bytes": 5090,
@@ -3756,6 +3768,10 @@
     "typed_merge_planner_lab/native_pair_matrix.csv": {
       "bytes": 1073,
       "sha256": "5d8ccdc695d8695b322c467c7972e5c57df74332b81ef2dc1708a2b525c91c4f"
+    },
+    "typed_merge_planner_lab/parameterized_edges.py": {
+      "bytes": 8259,
+      "sha256": "0c049f2c691cc90969fc44e13a049ac6300197c7a6144390d26fb9ab0f1b2cab"
     },
     "typed_merge_planner_lab/planner_scaling.csv": {
       "bytes": 566,
@@ -3788,6 +3804,10 @@
     "typed_merge_planner_lab/run_mixed_relation_dp.py": {
       "bytes": 1890,
       "sha256": "422a13d7d6ae2121419f0eb2732da457fb112efedeb505ccca51059e64633c8f"
+    },
+    "typed_merge_planner_lab/run_parameterized_edge_audit.py": {
+      "bytes": 2127,
+      "sha256": "d78610767de4398684b6e38e904eddd2c1143bdc95e61d5f5a959f2b995ee9ec"
     },
     "typed_merge_planner_lab/run_two_bridge_factorization.py": {
       "bytes": 255,
@@ -3824,6 +3844,10 @@
     "typed_merge_planner_lab/test_mixed_relation_dp.py": {
       "bytes": 2096,
       "sha256": "66ba18575eeb9223d8cc0c65edecf3c2fd6ccb52d2dcf1a31e61e563516981f5"
+    },
+    "typed_merge_planner_lab/test_parameterized_edges.py": {
+      "bytes": 4274,
+      "sha256": "1c9a5bec5403b939cda78109887fe6c59e5d32e4bd041ad2295840522d1a7c2a"
     },
     "typed_merge_planner_lab/test_two_bridge_factorization.py": {
       "bytes": 1507,
@@ -4018,6 +4042,6 @@
       "sha256": "957bd3b51cbf2cd06ee00f1ef47ab5c6fa8bbf1a4c281c0e67b129b027785a18"
     }
   },
-  "generated_at_utc": "2026-10-18T13:10:19.531700+00:00",
-  "source_commit": "2d60b654b8f981d7cb90ad0d6ad18515638c4a8a"
+  "generated_at_utc": "2026-10-18T13:23:14.287422+00:00",
+  "source_commit": "7b53125b1f1b6a9917c8108ab6fbed8b756490f0"
 }

@@ -1,0 +1,221 @@
+{
+  "schema": "parameterized_affine_cardinality_v1",
+  "status": "PASS",
+  "cases": [
+    {
+      "name": "dimension_identity",
+      "matrix": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "mode": "dimension",
+      "bound": null,
+      "result": {
+        "method": "DIMENSION_ENUMERATION",
+        "n": 3,
+        "input_rows": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "row_space_dimension": 2,
+        "basis_rows": [
+          2,
+          1
+        ],
+        "distance": 1,
+        "word": 2,
+        "message": 1,
+        "status": "EXACT",
+        "enumerated_messages": 3
+      }
+    },
+    {
+      "name": "dimension_rank_deficient",
+      "matrix": [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ],
+      "mode": "dimension",
+      "bound": null,
+      "result": {
+        "method": "DIMENSION_ENUMERATION",
+        "n": 3,
+        "input_rows": [
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        "row_space_dimension": 1,
+        "basis_rows": [
+          5
+        ],
+        "distance": 2,
+        "word": 5,
+        "message": 1,
+        "status": "EXACT",
+        "enumerated_messages": 1
+      }
+    },
+    {
+      "name": "distance_above_bound",
+      "matrix": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "mode": "distance",
+      "bound": 2,
+      "result": {
+        "method": "DISTANCE_SUPPORT_ENUMERATION",
+        "n": 3,
+        "input_rows": [
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "row_space_dimension": 1,
+        "basis_rows": [
+          7
+        ],
+        "distance": null,
+        "word": null,
+        "message": null,
+        "status": "CERTIFIED_ABOVE_BOUND",
+        "max_distance": 2,
+        "lower_bound": 3,
+        "supports_checked": 6
+      }
+    },
+    {
+      "name": "distance_exact",
+      "matrix": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "mode": "distance",
+      "bound": 3,
+      "result": {
+        "method": "DISTANCE_SUPPORT_ENUMERATION",
+        "n": 3,
+        "input_rows": [
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "row_space_dimension": 1,
+        "basis_rows": [
+          7
+        ],
+        "distance": 3,
+        "word": 7,
+        "message": 1,
+        "status": "EXACT",
+        "max_distance": 3,
+        "support": [
+          0,
+          1,
+          2
+        ],
+        "supports_checked": 7
+      }
+    },
+    {
+      "name": "zero_code",
+      "matrix": [
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "mode": "dimension",
+      "bound": null,
+      "result": {
+        "method": "DIMENSION_ENUMERATION",
+        "n": 3,
+        "input_rows": [
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "row_space_dimension": 0,
+        "basis_rows": [],
+        "distance": null,
+        "word": null,
+        "message": null,
+        "status": "ZERO_CODE",
+        "enumerated_messages": 0
+      }
+    }
+  ],
+  "pair_routes": {
+    "unparameterized": {
+      "route": "KNOWN_NP_HARD",
+      "reason": "MINIMUM_DISTANCE",
+      "cost": "superpolynomial-unless-parameterized"
+    },
+    "dimension": {
+      "route": "PARAMETERIZED_DIMENSION_ENUMERATION",
+      "parameter": "k",
+      "k": 5,
+      "message_branches": 31,
+      "cost": "2^k * poly(n,k)"
+    },
+    "distance": {
+      "route": "XP_DISTANCE_SUPPORT_ENUMERATION",
+      "parameter": "d",
+      "d": 2,
+      "n": 6,
+      "supports": 22,
+      "cost": "O(sum_{s<=d} C(n,s) * poly(n,k))"
+    }
+  },
+  "source_sha256": {
+    "parameterized_edges.py": "0c049f2c691cc90969fc44e13a049ac6300197c7a6144390d26fb9ab0f1b2cab",
+    "run_parameterized_edge_audit.py": "d78610767de4398684b6e38e904eddd2c1143bdc95e61d5f5a959f2b995ee9ec",
+    "PARAMETERIZED_EDGE_THEOREM.md": "cfbc8cbe3688de50db0b753a8b219e52658f14948f35e5921ee64f346fe815a6",
+    "test_parameterized_edges.py": "1c9a5bec5403b939cda78109887fe6c59e5d32e4bd041ad2295840522d1a7c2a"
+  }
+}

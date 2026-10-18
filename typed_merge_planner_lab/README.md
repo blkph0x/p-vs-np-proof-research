@@ -34,3 +34,7 @@ Key artifacts:
 - `BACKDOOR_THEOREM.md`, `backdoor_solver.py`, and `BACKDOOR_RESULTS.json`:
   supplied strong Horn/affine backdoor solver with an independent replay in
   `BACKDOOR_REVIEW.py`.
+- `PARAMETERIZED_EDGE_THEOREM.md`, `parameterized_edges.py`, and
+  `PARAMETERIZED_EDGE_RESULTS.json`: dimension-FPT and distance-XP routes for
+  the affine/cardinality hard edge, independently replayed by
+  `PARAMETERIZED_EDGE_REVIEW.py`.

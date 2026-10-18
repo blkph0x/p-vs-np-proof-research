@@ -7,7 +7,9 @@
    parameter discovery and additional hard-pair parameters; no automatic small
    backdoor theorem is assumed.
 3. Add parameterized hard-pair edges: affine+cardinality by code dimension/distance,
-   Horn+affine by recursive backdoor depth, etc.
+   Horn+affine by recursive backdoor depth, etc. The affine/cardinality edge now
+   has dimension-FPT and distance-XP implementations; extend parameter discovery
+   only with explicit certificates and preserve the unparameterized hard barrier.
 4. Add native theory-combination conditions such as convex/equality-interpolating
    Nelson-Oppen edges.
 5. Let extension variables/reencodings change both the structural scopes and the language

@@ -424,3 +424,10 @@ saved `typed_merge_planner_lab/BACKDOOR_RESULTS.json` record and independent
 `BACKDOOR_REVIEW.py` replay cover SAT, UNSAT, and conservative `UNKNOWN`
 outcomes. This is a parameterized result for an explicitly supplied
 backdoor; discovering a small backdoor for arbitrary SAT remains open.
+
+The next hard-pair edge is also executable in
+`typed_merge_planner_lab/parameterized_edges.py`: supplied code dimension `k`
+gives exact `2^k` message enumeration, while supplied distance `d` gives an
+explicit XP support search. The planner preserves the unparameterized
+affine/cardinality NP-hard label when no parameter is supplied, and the saved
+artifact distinguishes exact witnesses from certified above-bound outcomes.
