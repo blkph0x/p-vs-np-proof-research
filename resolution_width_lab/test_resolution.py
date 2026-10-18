@@ -7,6 +7,7 @@ import unittest
 from resolution import BoundedResolution, weakenings
 from incremental import run_ladder
 from indexed import IndexedBoundedResolution
+from bitset import BitsetBoundedResolution
 
 
 HERE = Path(__file__).resolve().parent
@@ -159,6 +160,41 @@ class ResolutionWidthTests(unittest.TestCase):
         self.assertEqual(review["status"], "PASS")
         self.assertTrue(review["exact_rows_match"])
         self.assertTrue(review["stress_cap_replayed"])
+        self.assertTrue(review["source_hashes_match"])
+
+    def test_bitset_closure_matches_indexed_controls(self):
+        controls = [
+            (1, ((1,), (-1,)), 1),
+            (3, all_assignment_clauses(3), 3),
+            (*pigeonhole(3, 2), 2),
+            (*pigeonhole(4, 3), 3),
+        ]
+        for nvars, clauses, width in controls:
+            indexed = IndexedBoundedResolution(
+                nvars, clauses, width, max_clauses=100000, max_steps=500000
+            ).solve()
+            bitset = BitsetBoundedResolution(
+                nvars, clauses, width, max_clauses=100000, max_steps=500000
+            ).solve()
+            self.assertEqual(bitset["status"], indexed["status"])
+            self.assertEqual(bitset.get("reason"), indexed.get("reason"))
+            self.assertEqual({tuple(c) for c in bitset["clauses"]},
+                             {tuple(c) for c in indexed["clauses"]})
+
+    def test_saved_bitset_stress_review_passed(self):
+        artifact = json.loads((HERE / "BITSET_RESULTS.json").read_text(encoding="utf-8"))
+        review = json.loads((HERE / "BITSET_REVIEW.json").read_text(encoding="utf-8"))
+        self.assertEqual(artifact["exact_control_count"], 7)
+        self.assertTrue(artifact["exact_controls_match"])
+        stress = [row for row in artifact["rows"] if row["family"] == "pigeonhole_stress"]
+        self.assertEqual([row["width"] for row in stress], [3, 4])
+        self.assertEqual(stress[0]["closure_size"], 2230)
+        self.assertEqual(stress[1]["status"], "UNKNOWN")
+        self.assertEqual(stress[1]["reason"], "STEP_CAP")
+        self.assertEqual(stress[1]["candidate_steps"], 10000001)
+        self.assertEqual(review["status"], "PASS")
+        self.assertTrue(review["stress_width3_match"])
+        self.assertTrue(review["stress_cap_control"])
         self.assertTrue(review["source_hashes_match"])
 
 

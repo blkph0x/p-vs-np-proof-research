@@ -27,6 +27,7 @@ or P≠NP has been proved.
 | Bounded-width resolution closure | Proved for the stated width-bounded proof system | [`resolution_width_lab/THEOREM.md`](resolution_width_lab/THEOREM.md), complete weakening/resolution closure with replayable refutations and explicit clause/step caps. |
 | Incremental bounded-width ladder | Proved equal to fresh closure on the saved controls | [`resolution_width_lab/INCREMENTAL_REPORT.md`](resolution_width_lab/INCREMENTAL_REPORT.md) and [`resolution_width_lab/THEOREM.md`](resolution_width_lab/THEOREM.md), with an induction argument, complete-clause-set replay, and conservative cap handling. The work reduction is implementation-specific and remains exponential in the width universe. |
 | Indexed bounded-width stress closure | Exact on the saved controls; capped stress frontier | [`resolution_width_lab/INDEXED_REPORT.md`](resolution_width_lab/INDEXED_REPORT.md) and [`resolution_width_lab/THEOREM.md`](resolution_width_lab/THEOREM.md), with literal-index completeness reasoning, independent replay, and explicit `UNKNOWN` handling for PHP(5,4) width 4. |
+| Bit-mask bounded-width stress closure | Exact control digests; deeper capped PHP(5,4) frontier | [`resolution_width_lab/BITSET_REPORT.md`](resolution_width_lab/BITSET_REPORT.md) and [`resolution_width_lab/THEOREM.md`](resolution_width_lab/THEOREM.md), with two-mask clause encoding, tuple replay, and explicit timing/resource scope. |
 
 ## Evidence vocabulary
 

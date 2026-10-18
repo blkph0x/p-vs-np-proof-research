@@ -509,3 +509,10 @@ seed at width 4 still reaches the one-million-candidate cap with `UNKNOWN` and
 mathematical width lower bound. The next useful step is a more scalable exact
 closure or a theorem-backed all-size width argument; neither is currently in
 hand.
+
+The bit-mask implementation is the next representation test. It preserves the
+tuple closure on every exact control by clause-set digest and advances the
+PHP(5,4) seeded width-4 run to 38,368 clauses at a ten-million-candidate cap.
+That is useful engineering progress, but the cap still prevents a complete
+width-4 decision; a scalable exact closure or an all-size proof is still
+required.

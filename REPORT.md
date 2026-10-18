@@ -405,7 +405,7 @@ keeping the auxiliaries preserves its polynomial solving route.
 
 ## Evidence and practical limits
 
-The current frozen integration run passes **386 tests across 37 suites**, with
+The current frozen integration run passes **388 tests across 37 suites**, with
 unchanged source hashes throughout. The canonical audit now includes the
 51-test labelled-join and perturbation certificate suite in
 `labelled_join_certified`. [TEST_SUMMARY.json](TEST_SUMMARY.json) and
@@ -573,6 +573,13 @@ independent replay confirms an exact width-3 fixed point for PHP(5,4); the
 seeded width-4 run reaches the one-million-candidate cap with `UNKNOWN` status.
 The result identifies an implementation frontier and does not prove that no
 width-4 refutation exists.
+
+The [bit-mask width report](resolution_width_lab/BITSET_REPORT.md) keeps the
+same indexed inference system while storing clauses as positive and negative
+bit masks. Its exact control digests match the tuple implementation. On
+PHP(5,4), width 3 reaches the same fixed point in about 0.8 seconds; seeded
+width 4 reaches 38,368 known clauses before a ten-million-candidate cap. The
+run remains `UNKNOWN`, and its timing is a representation-specific measurement.
 
 The ultimate goal remains active. These findings sharpen the question and
 remove incorrect shortcuts; they do not answer P versus NP.

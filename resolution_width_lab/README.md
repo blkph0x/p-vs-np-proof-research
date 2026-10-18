@@ -19,6 +19,8 @@ Run:
     python review_incremental.py
     python run_indexed.py
     python review_indexed.py
+    python run_bitset.py
+    python review_bitset.py
 
 See [`THEOREM.md`](THEOREM.md) for the completeness and exponential-cost
 argument.

@@ -71,3 +71,18 @@ closure, but reaches the explicit one-million-candidate cap with 27,377 known
 clauses and status `UNKNOWN`. The cap is a resource boundary: it does not prove
 that no width-4 refutation exists. These observations are recorded in
 `INDEXED_REPORT.md` and replayed by `review_indexed.py`.
+
+## Bit-mask representation
+
+`bitset.py` stores the positive and negative literals of a clause in two
+`n`-bit masks. A clause is tautological exactly when the masks overlap;
+resolution clears the two pivot bits and unions the remaining masks. Thus
+encoding, weakening, and resolution preserve the same finite clause universe
+as the tuple implementation. The exact controls are compared by clause-set
+digest against the tuple-indexed solver, and a separate tuple replay checks the
+saved PHP(5,4) width-3 closure and a lower-cap width-4 control.
+
+With a ten-million-candidate cap, the bit-mask run reaches the same PHP(5,4)
+width-3 fixed point in about 0.8 seconds and advances the seeded width-4 run
+to 38,368 known clauses before `STEP_CAP`. The recorded wall-clock values are
+machine-specific measurements; they do not imply a complexity-class bound.

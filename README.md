@@ -15,7 +15,7 @@
 - Use [`CITATIONS.md`](CITATIONS.md) and [`PUBLIC_SOURCES.md`](PUBLIC_SOURCES.md)
   for public sources and the reports that use them.
 - Follow [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) to replay the checks from a
-  fresh checkout. The current frozen run has 386 passing methods across 37
+  fresh checkout. The current frozen run has 388 passing methods across 37
   suites; the full audit is intentionally separate from the lighter continuous
   integration checks, and all of its suite dependencies are included in this
   repository.
@@ -61,6 +61,12 @@ by literal before attempting resolution. Its independent stress record reaches
 an exact width-3 fixed point for PHP(5,4); the seeded width-4 run reaches the
 one-million-candidate cap and remains `UNKNOWN`. This makes the scaling frontier
 explicit without promoting an implementation cap to a width lower bound.
+
+The bit-mask follow-up keeps the same indexes while encoding each clause as
+positive and negative masks. Exact clause-set digests match the tuple-indexed
+controls; the PHP(5,4) stress run reaches 38,368 known clauses under a
+ten-million-candidate cap before width 4 remains `UNKNOWN`. The timing change
+is a representation-level optimization, not a polynomial-time result.
 
 Start with the [grouping and global recognition report](AFFINE_RECOGNITION_PHASE_REPORT.md):
 verified grouping brings the stress set to 19/22 exact original counts, recovering
