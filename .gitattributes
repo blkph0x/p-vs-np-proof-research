@@ -1,1 +1,7 @@
+* text=auto eol=crlf
+*.gz binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.exe binary
 affine_compression_stress_lab/RESULTS.json filter=lfs diff=lfs merge=lfs -text
