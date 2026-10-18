@@ -1,243 +1,243 @@
 {
   "all_suites_passed": true,
   "source_unchanged_during_tests": true,
-  "started_utc": "2026-10-18T13:17:21.500942+00:00",
-  "finished_utc": "2026-10-18T13:23:05.794894+00:00",
+  "started_utc": "2026-10-18T13:29:39.581407+00:00",
+  "finished_utc": "2026-10-18T13:35:21.631936+00:00",
   "python": "3.10.10 | packaged by conda-forge | (main, Mar 24 2023, 20:00:38) [MSC v.1934 64 bit (AMD64)]",
   "suites": [
     {
       "suite": "test_adaptive_fragment_synthesis",
       "returncode": 0,
       "test_methods": 11,
-      "seconds": 0.16744149988517165,
+      "seconds": 0.16331420000642538,
       "passed": true
     },
     {
       "suite": "test_all_dual_lp_barrier",
       "returncode": 0,
       "test_methods": 6,
-      "seconds": 5.266989599913359,
+      "seconds": 5.258065700065345,
       "passed": true
     },
     {
       "suite": "test_certified_residual_quotient",
       "returncode": 0,
       "test_methods": 6,
-      "seconds": 0.14263139991089702,
+      "seconds": 0.13788020005449653,
       "passed": true
     },
     {
       "suite": "test_coefficient_complexity_barrier",
       "returncode": 0,
       "test_methods": 6,
-      "seconds": 0.3922816999256611,
+      "seconds": 0.38402479980140924,
       "passed": true
     },
     {
       "suite": "test_complete_graph_frontier_integration",
       "returncode": 0,
       "test_methods": 8,
-      "seconds": 11.767200399655849,
+      "seconds": 11.666619500145316,
       "passed": true
     },
     {
       "suite": "test_degree_three_barrier",
       "returncode": 0,
       "test_methods": 10,
-      "seconds": 0.3058401998132467,
+      "seconds": 0.29751090006902814,
       "passed": true
     },
     {
       "suite": "test_degree_two_min_distance_integration",
       "returncode": 0,
       "test_methods": 3,
-      "seconds": 0.14096049964427948,
+      "seconds": 0.1354125002399087,
       "passed": true
     },
     {
       "suite": "test_fourier_spectrum_boundary_integration",
       "returncode": 0,
       "test_methods": 7,
-      "seconds": 0.9468752997927368,
+      "seconds": 0.9437858001329005,
       "passed": true
     },
     {
       "suite": "test_macro_assisted_subdag",
       "returncode": 0,
       "test_methods": 5,
-      "seconds": 2.859378700144589,
+      "seconds": 2.8132337001152337,
       "passed": true
     },
     {
       "suite": "test_matching_certificate",
       "returncode": 0,
       "test_methods": 9,
-      "seconds": 16.203184599988163,
+      "seconds": 16.083298100158572,
       "passed": true
     },
     {
       "suite": "test_native_coset_solver",
       "returncode": 0,
       "test_methods": 13,
-      "seconds": 102.46426239982247,
+      "seconds": 101.53771509975195,
       "passed": true
     },
     {
       "suite": "test_projection_barrier",
       "returncode": 0,
       "test_methods": 7,
-      "seconds": 0.821477500256151,
+      "seconds": 0.8267517001368105,
       "passed": true
     },
     {
       "suite": "test_projection_discovery_barrier",
       "returncode": 0,
       "test_methods": 6,
-      "seconds": 0.18629119964316487,
+      "seconds": 0.1901210001669824,
       "passed": true
     },
     {
       "suite": "test_proof_portfolio_bridge",
       "returncode": 0,
       "test_methods": 5,
-      "seconds": 0.14922479959204793,
+      "seconds": 0.1572990003041923,
       "passed": true
     },
     {
       "suite": "test_quadratic_code_family_integration",
       "returncode": 0,
       "test_methods": 6,
-      "seconds": 2.204844099935144,
+      "seconds": 2.1654551001265645,
       "passed": true
     },
     {
       "suite": "test_randomized_isolation",
       "returncode": 0,
       "test_methods": 6,
-      "seconds": 54.7115246001631,
+      "seconds": 54.39784319978207,
       "passed": true
     },
     {
       "suite": "test_rank_native_solver",
       "returncode": 0,
       "test_methods": 9,
-      "seconds": 96.33570900000632,
+      "seconds": 95.87808070005849,
       "passed": true
     },
     {
       "suite": "test_regular_ldpc_audit_integration",
       "returncode": 0,
       "test_methods": 4,
-      "seconds": 0.5051764999516308,
+      "seconds": 0.45784249994903803,
       "passed": true
     },
     {
       "suite": "test_repeated_subdag_templates",
       "returncode": 0,
       "test_methods": 7,
-      "seconds": 1.8150637997314334,
+      "seconds": 1.8087713001295924,
       "passed": true
     },
     {
       "suite": "test_residual_equivalence_barrier",
       "returncode": 0,
       "test_methods": 4,
-      "seconds": 0.14199170004576445,
+      "seconds": 0.1672665998339653,
       "passed": true
     },
     {
       "suite": "test_row_basis_discovery",
       "returncode": 0,
       "test_methods": 9,
-      "seconds": 0.37038820004090667,
+      "seconds": 0.39331339998170733,
       "passed": true
     },
     {
       "suite": "test_row_basis_escape",
       "returncode": 0,
       "test_methods": 7,
-      "seconds": 0.3877309001982212,
+      "seconds": 0.389323300216347,
       "passed": true
     },
     {
       "suite": "test_semantic_frontier_expander_integration",
       "returncode": 0,
       "test_methods": 3,
-      "seconds": 0.3540705000050366,
+      "seconds": 0.3359596002846956,
       "passed": true
     },
     {
       "suite": "test_structural_probe",
       "returncode": 0,
       "test_methods": 9,
-      "seconds": 0.39398920023813844,
+      "seconds": 0.38889139983803034,
       "passed": true
     },
     {
       "suite": "test_symbolic_suffix_template",
       "returncode": 0,
       "test_methods": 6,
-      "seconds": 0.9471267000772059,
+      "seconds": 0.9495319998823106,
       "passed": true
     },
     {
       "suite": "test_symbolic_unit_template",
       "returncode": 0,
       "test_methods": 6,
-      "seconds": 0.3468987997621298,
+      "seconds": 0.34575860016047955,
       "passed": true
     },
     {
       "suite": "typed_merge_planner",
       "returncode": 0,
-      "test_methods": 47,
-      "seconds": 14.259427400305867,
+      "test_methods": 53,
+      "seconds": 14.257834000047296,
       "passed": true
     },
     {
       "suite": "charged_work_core",
       "returncode": 0,
       "test_methods": 21,
-      "seconds": 0.6071878001093864,
+      "seconds": 0.577358000446111,
       "passed": true
     },
     {
       "suite": "direct_fano_core",
       "returncode": 0,
       "test_methods": 3,
-      "seconds": 0.1877959999255836,
+      "seconds": 0.14915530011057854,
       "passed": true
     },
     {
       "suite": "high_width_core",
       "returncode": 0,
       "test_methods": 9,
-      "seconds": 0.8787265000864863,
+      "seconds": 0.8258981998078525,
       "passed": true
     },
     {
       "suite": "horn_cdclt",
       "returncode": 0,
       "test_methods": 20,
-      "seconds": 12.331451599951833,
+      "seconds": 12.307551300153136,
       "passed": true
     },
     {
       "suite": "weighted_boundary",
       "returncode": 0,
       "test_methods": 9,
-      "seconds": 0.2019484001211822,
+      "seconds": 0.20366910006850958,
       "passed": true
     },
     {
       "suite": "labelled_join_certified",
       "returncode": 0,
       "test_methods": 51,
-      "seconds": 15.434731699991971,
+      "seconds": 15.392870100215077,
       "passed": true
     }
   ],
-  "test_methods_total": 338,
+  "test_methods_total": 344,
   "implementation_sha256": {
     "overnight_research_2026_10_18/adaptive_fragment_synthesis.py": "4d4efd9818aca74e8c26842d75fb571c31b516155091b82de73843ab6c611b79",
     "overnight_research_2026_10_18/AFFINE_ONE_PIECE_RECOGNITION_REVIEW.py": "4f54e10ba9e710d18a474dda21ababada5f12320f5a0c2e0c0beeada597f372e",
@@ -374,12 +374,15 @@
     "overnight_research_2026_10_18/typed_merge_planner_lab/MIXED_RELATION_DP_REVIEW.py": "c5473c4e2898480092942a354a50c0de97fa41d380fdc58984452f59821ac54a",
     "overnight_research_2026_10_18/typed_merge_planner_lab/PARAMETERIZED_EDGE_REVIEW.py": "129fb0ca67312e9b6bd90e36ce5d01d5416a8b1505adbb47cf0ee0d93f07126a",
     "overnight_research_2026_10_18/typed_merge_planner_lab/parameterized_edges.py": "0c049f2c691cc90969fc44e13a049ac6300197c7a6144390d26fb9ab0f1b2cab",
+    "overnight_research_2026_10_18/typed_merge_planner_lab/recursive_backdoor.py": "cf5622e2207e76cf840998f0bdd75e450f646c8fe5a16dd887e9c91f397ed8ca",
+    "overnight_research_2026_10_18/typed_merge_planner_lab/RECURSIVE_BACKDOOR_REVIEW.py": "e0b0a0a2a7308b11497800d9050fa4f8014a8f7cc4d0a532df39b8fd7fc13fb7",
     "overnight_research_2026_10_18/typed_merge_planner_lab/run_backdoor_audit.py": "11766f18bc2ef7cd62d290e0e27cb1924a58c7817778272c3967c22042738cfa",
     "overnight_research_2026_10_18/typed_merge_planner_lab/run_bridge_factorization.py": "b6c55d7f0a6000aaea7118d07e5fede7a81d545131b26d141a28488296c59362",
     "overnight_research_2026_10_18/typed_merge_planner_lab/run_mixed_bridge_width.py": "5e6cebea86cd4ff8d226afde723c39a5eab0a6b98e2b8b35d2fb36340d499594",
     "overnight_research_2026_10_18/typed_merge_planner_lab/run_mixed_order_discovery.py": "3826e7fd2fb22372803ae0f6ade49c6dafeb30822010adfb3ac5952ebde000a6",
     "overnight_research_2026_10_18/typed_merge_planner_lab/run_mixed_relation_dp.py": "422a13d7d6ae2121419f0eb2732da457fb112efedeb505ccca51059e64633c8f",
     "overnight_research_2026_10_18/typed_merge_planner_lab/run_parameterized_edge_audit.py": "d78610767de4398684b6e38e904eddd2c1143bdc95e61d5f5a959f2b995ee9ec",
+    "overnight_research_2026_10_18/typed_merge_planner_lab/run_recursive_backdoor_audit.py": "9246eb3bb28a21cbb138ac2c2bac13120052b2047d5d9fa11deaee8ff355de70",
     "overnight_research_2026_10_18/typed_merge_planner_lab/run_two_bridge_factorization.py": "a40547caa0c85ddb0bd2277b9460dc73f2e350d73f001ce909615dc517aeb006",
     "overnight_research_2026_10_18/typed_merge_planner_lab/test_backdoor_solver.py": "96767d11d3683fc5325a1377e3e188bfa190abbc80918aa1e33a395b393a1a76",
     "overnight_research_2026_10_18/typed_merge_planner_lab/test_bridge_factorization.py": "74209d395be49aefaf6a0f412265828d8f94a26fe73e428dc7edfac29f6d2d85",
@@ -390,6 +393,7 @@
     "overnight_research_2026_10_18/typed_merge_planner_lab/test_mixed_order_discovery.py": "1dd3c894bcfb36c0879a3c8b2a34c46ced7d337011aa8aa8d928a5829d209bf7",
     "overnight_research_2026_10_18/typed_merge_planner_lab/test_mixed_relation_dp.py": "66ba18575eeb9223d8cc0c65edecf3c2fd6ccb52d2dcf1a31e61e563516981f5",
     "overnight_research_2026_10_18/typed_merge_planner_lab/test_parameterized_edges.py": "1c9a5bec5403b939cda78109887fe6c59e5d32e4bd041ad2295840522d1a7c2a",
+    "overnight_research_2026_10_18/typed_merge_planner_lab/test_recursive_backdoor.py": "2ad325cf424a8708b494704b95aae96727f90e3f6fa1aab718a8e02606df8194",
     "overnight_research_2026_10_18/typed_merge_planner_lab/test_two_bridge_factorization.py": "32b57ff0b32e13c37c74ad96d02858d549104778c329f7ae13dda51e882bdf52",
     "overnight_research_2026_10_18/typed_merge_planner_lab/TWO_BRIDGE_FACTOR_REVIEW.py": "8e88d6ae7c72210a148001218021259266bf2b618cd70fdfeb13a535366ea72b",
     "overnight_research_2026_10_18/typed_merge_planner_lab/two_bridge_factorization.py": "82bcc134f2db038dd21f25c61ecacc972a4c7f571e73d6fe5449cab7141c23ff",

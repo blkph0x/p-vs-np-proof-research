@@ -69,6 +69,12 @@ rank-deficient matrix and a certified distance-above-bound result, are replayed
 by direct message enumeration in
 `typed_merge_planner_lab/PARAMETERIZED_EDGE_REVIEW.py`.
 
+The same planner now searches bounded recursive Horn/affine backdoor trees.
+It branches only on variables in a currently non-target relation, charges every
+candidate and node, and returns `UNKNOWN` when depth or node caps prevent a
+complete certificate. This makes backdoor discovery executable for small
+instances without presenting bounded failure as a general lower bound.
+
 The [complete-graph frontier report](linear_frontier_order_lab/COMPLETE_GRAPH_FRONTIER_REPORT.md)
 adds an all-order barrier for the affine residual route. The GF(2) incidence
 system of `K_v` is trivially satisfiable, but at the halfway cut of every edge
@@ -345,7 +351,7 @@ keeping the auxiliaries preserves its polynomial solving route.
 
 ## Evidence and practical limits
 
-The current frozen integration run passes **338 tests across 33 suites**, with
+The current frozen integration run passes **344 tests across 33 suites**, with
 unchanged source hashes throughout. The canonical audit now includes the
 51-test labelled-join and perturbation certificate suite in
 `labelled_join_certified`. [TEST_SUMMARY.json](TEST_SUMMARY.json) and

@@ -120,6 +120,22 @@ rank-deficient generator and an above-bound certificate, pass a direct
 message-enumeration replay. Neither route discovers a small parameter for
 arbitrary instances.
 
+## 1.4 Recursive backdoor discovery
+
+The supplied-backdoor route is now complemented by `recursive_backdoor.py`.
+It searches all variables in a non-target relation, branches on both values,
+and closes a branch with the native Horn or affine solver once its residual
+relations enter the requested class. A SAT result carries one checked witness;
+an UNSAT result requires both children to be UNSAT. Depth and node caps, failed
+candidate choices, and every explored node remain explicit, so the result is
+`UNKNOWN` when bounded discovery cannot certify a decision.
+
+The saved audit has four cases: a depth-one exact-one SAT witness, a depth-one
+UNSAT contradiction, a zero-depth `UNKNOWN`, and a node-cap `UNKNOWN`. The
+independent replay checks these statuses by direct enumeration. The search is
+bounded discovery with a separately charged worst-case factor
+`sum_{i<=t} (2n)^i`; it is not a universal polynomial backdoor finder.
+
 ## 2. Native theory combination graph
 
 For large native theories we use guaranteed language metadata rather than enumerating truth

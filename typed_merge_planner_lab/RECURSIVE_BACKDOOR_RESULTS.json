@@ -1,0 +1,340 @@
+{
+  "schema": "recursive_schaefer_backdoor_v1",
+  "status": "PASS",
+  "cases": [
+    {
+      "name": "sat_depth_one",
+      "n": 3,
+      "constraints": [
+        {
+          "scope": [
+            0,
+            1,
+            2
+          ],
+          "relation": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "target": "AFFINE",
+      "max_depth": 1,
+      "max_nodes": 100,
+      "result": {
+        "status": "SAT",
+        "target": "AFFINE",
+        "max_depth": 1,
+        "max_nodes": 100,
+        "ledger": {
+          "nodes": 2,
+          "candidate_trials": 1,
+          "max_nodes": 100,
+          "max_depth": 1
+        },
+        "tree": {
+          "kind": "BRANCH",
+          "variable": 0,
+          "assignment": {},
+          "children": [
+            {
+              "status": "SAT",
+              "node": {
+                "kind": "NATIVE",
+                "assignment": {
+                  "0": 0
+                },
+                "status": "SAT",
+                "residual_signatures": [
+                  [
+                    "MAJ",
+                    "MIN"
+                  ]
+                ],
+                "witness": [
+                  0,
+                  1,
+                  0
+                ]
+              },
+              "witness": [
+                0,
+                1,
+                0
+              ]
+            }
+          ]
+        },
+        "witness": [
+          0,
+          1,
+          0
+        ],
+        "reason": null
+      }
+    },
+    {
+      "name": "unsat_depth_one",
+      "n": 3,
+      "constraints": [
+        {
+          "scope": [
+            0,
+            1,
+            2
+          ],
+          "relation": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "scope": [
+            0,
+            1,
+            2
+          ],
+          "relation": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0
+            ]
+          ]
+        }
+      ],
+      "target": "AFFINE",
+      "max_depth": 1,
+      "max_nodes": 100,
+      "result": {
+        "status": "UNSAT",
+        "target": "AFFINE",
+        "max_depth": 1,
+        "max_nodes": 100,
+        "ledger": {
+          "nodes": 3,
+          "candidate_trials": 1,
+          "max_nodes": 100,
+          "max_depth": 1
+        },
+        "tree": {
+          "kind": "BRANCH",
+          "variable": 0,
+          "assignment": {},
+          "children": [
+            {
+              "status": "UNSAT",
+              "node": {
+                "kind": "NATIVE",
+                "assignment": {
+                  "0": 0
+                },
+                "status": "UNSAT",
+                "residual_signatures": [
+                  [
+                    "MAJ",
+                    "MIN"
+                  ],
+                  [
+                    "AND",
+                    "MAJ",
+                    "MIN",
+                    "ONE",
+                    "OR"
+                  ]
+                ]
+              }
+            },
+            {
+              "status": "UNSAT",
+              "node": {
+                "kind": "NATIVE",
+                "assignment": {
+                  "0": 1
+                },
+                "status": "UNSAT",
+                "residual_signatures": [
+                  [
+                    "AND",
+                    "MAJ",
+                    "MIN",
+                    "OR",
+                    "ZERO"
+                  ],
+                  [
+                    "MAJ",
+                    "MIN"
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        "witness": null,
+        "reason": null
+      }
+    },
+    {
+      "name": "depth_cap",
+      "n": 3,
+      "constraints": [
+        {
+          "scope": [
+            0,
+            1,
+            2
+          ],
+          "relation": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "target": "AFFINE",
+      "max_depth": 0,
+      "max_nodes": 100,
+      "result": {
+        "status": "UNKNOWN",
+        "target": "AFFINE",
+        "max_depth": 0,
+        "max_nodes": 100,
+        "ledger": {
+          "nodes": 1,
+          "candidate_trials": 0,
+          "max_nodes": 100,
+          "max_depth": 0
+        },
+        "tree": {
+          "kind": "CAP",
+          "assignment": {},
+          "obstruction": {
+            "constraint": 0,
+            "scope": [
+              0,
+              1,
+              2
+            ],
+            "signature": []
+          }
+        },
+        "witness": null,
+        "reason": "DEPTH_LIMIT"
+      }
+    },
+    {
+      "name": "node_cap",
+      "n": 3,
+      "constraints": [
+        {
+          "scope": [
+            0,
+            1,
+            2
+          ],
+          "relation": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "target": "AFFINE",
+      "max_depth": 2,
+      "max_nodes": 1,
+      "result": {
+        "status": "UNKNOWN",
+        "target": "AFFINE",
+        "max_depth": 2,
+        "max_nodes": 1,
+        "ledger": {
+          "nodes": 1,
+          "candidate_trials": 3,
+          "max_nodes": 1,
+          "max_depth": 2
+        },
+        "tree": {
+          "kind": "CAP",
+          "assignment": {},
+          "obstruction": {
+            "constraint": 0,
+            "scope": [
+              0,
+              1,
+              2
+            ],
+            "signature": []
+          }
+        },
+        "witness": null,
+        "reason": "NO_DECISION_TREE_WITHIN_BUDGET"
+      }
+    }
+  ],
+  "source_sha256": {
+    "recursive_backdoor.py": "cf5622e2207e76cf840998f0bdd75e450f646c8fe5a16dd887e9c91f397ed8ca",
+    "run_recursive_backdoor_audit.py": "9246eb3bb28a21cbb138ac2c2bac13120052b2047d5d9fa11deaee8ff355de70",
+    "RECURSIVE_BACKDOOR_THEOREM.md": "ae8b91cc23ac25f5c13949a68ed5aa2103383ff5ae35da041556d12578c14000",
+    "test_recursive_backdoor.py": "2ad325cf424a8708b494704b95aae96727f90e3f6fa1aab718a8e02606df8194"
+  }
+}

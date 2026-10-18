@@ -10,6 +10,8 @@
    Horn+affine by recursive backdoor depth, etc. The affine/cardinality edge now
    has dimension-FPT and distance-XP implementations; extend parameter discovery
    only with explicit certificates and preserve the unparameterized hard barrier.
+   A bounded recursive decision-tree search now discovers small Horn/affine
+   backdoors with explicit depth/node caps; universal discovery remains open.
 4. Add native theory-combination conditions such as convex/equality-interpolating
    Nelson-Oppen edges.
 5. Let extension variables/reencodings change both the structural scopes and the language

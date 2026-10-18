@@ -38,3 +38,6 @@ Key artifacts:
   `PARAMETERIZED_EDGE_RESULTS.json`: dimension-FPT and distance-XP routes for
   the affine/cardinality hard edge, independently replayed by
   `PARAMETERIZED_EDGE_REVIEW.py`.
+- `RECURSIVE_BACKDOOR_THEOREM.md`, `recursive_backdoor.py`, and
+  `RECURSIVE_BACKDOOR_RESULTS.json`: budgeted recursive Horn/affine backdoor
+  discovery with direct replay in `RECURSIVE_BACKDOOR_REVIEW.py`.

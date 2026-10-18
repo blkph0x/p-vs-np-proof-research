@@ -431,3 +431,8 @@ gives exact `2^k` message enumeration, while supplied distance `d` gives an
 explicit XP support search. The planner preserves the unparameterized
 affine/cardinality NP-hard label when no parameter is supplied, and the saved
 artifact distinguishes exact witnesses from certified above-bound outcomes.
+
+The Horn/affine backdoor edge now also has a bounded recursive discovery
+search. It records every candidate branch and returns `UNKNOWN` when depth or
+node caps prevent a complete SAT/UNSAT certificate; a small decision tree is
+evidence for that instance, not a universal polynomial discovery theorem.

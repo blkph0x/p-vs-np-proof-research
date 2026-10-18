@@ -15,7 +15,7 @@
 - Use [`CITATIONS.md`](CITATIONS.md) and [`PUBLIC_SOURCES.md`](PUBLIC_SOURCES.md)
   for public sources and the reports that use them.
 - Follow [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) to replay the checks from a
-  fresh checkout. The current frozen run has 338 passing methods across 33
+  fresh checkout. The current frozen run has 344 passing methods across 33
   suites; the full audit is intentionally separate from the lighter continuous
   integration checks, and all of its suite dependencies are included in this
   repository.
@@ -256,6 +256,10 @@ routes: exact `2^k` message enumeration for a supplied code dimension and an
 XP support search for a supplied distance bound. The unparameterized pair
 remains labeled NP-hard; the saved certificates distinguish exact witnesses
 from certified above-bound outcomes.
+
+The mixed Horn/affine route now also searches bounded recursive backdoor trees.
+It records candidate variables, branch work, and explicit depth/node caps;
+failed bounded discovery remains `UNKNOWN` rather than a hardness claim.
 
 The companion [horn_cdclt_lab](horn_cdclt_lab/REPORT.md) turns that reduction into a
 proof-producing Horn-plus-GF(2) portfolio. Its independent replay verifies every emitted
