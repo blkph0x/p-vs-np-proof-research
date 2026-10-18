@@ -1,5 +1,5 @@
 {
-  "file_count": 1144,
+  "file_count": 1145,
   "files": {
     ".gitattributes": {
       "bytes": 648,
@@ -458,8 +458,8 @@
       "sha256": "73570b412657e9acced9ff103f34cd9f604ca2c603c4bba122c323c788c3631a"
     },
     "RUNTIME_SCALING_CHART.md": {
-      "bytes": 1786,
-      "sha256": "fdacd615219c4a2ea73b87da46db27f0aa3a8daae50a4a1513c25ef2cad8e0c5"
+      "bytes": 1957,
+      "sha256": "5dfd0c4a275641a65f5170f2c38b7dedd179b8a47819480e0bd83096146204e7"
     },
     "SEMANTIC_CERTIFICATE_REPAIR.json": {
       "bytes": 4374,
@@ -534,8 +534,8 @@
       "sha256": "5df8746378f777ff4ffd6982ec86f6ace228b40099f480c203db39a1f49d0bec"
     },
     "_includes/runtime-chart.html": {
-      "bytes": 1947,
-      "sha256": "1418cbc6d52bda532db15e664c8be4cbb85f65fbe15133181b3a770a98fceb57"
+      "bytes": 2205,
+      "sha256": "9013c9f319172c7f07ae4470c5e68f086eb98eaf1dc6c686b5d0255b53a2409f"
     },
     "adaptive_fragment_synthesis.py": {
       "bytes": 10902,
@@ -1362,16 +1362,16 @@
       "sha256": "1f095996f4d114eeb32606570255d079c1e72a70ae6e3c1adbfc393e859ca315"
     },
     "assets/css/style.scss": {
-      "bytes": 4742,
-      "sha256": "c06b869e5f9b1378ce79c1a7496626ba052bd9a7c5330d48958ccd7cb79a1712"
+      "bytes": 5265,
+      "sha256": "832105b131c2cb355381d3e94d7ec26c18f5c579d458003489f6b7c522dcc8f5"
     },
     "assets/data/scaling-runtime.json": {
       "bytes": 9635,
       "sha256": "6380d78c284099592f02bdfbc8b1a81276585e743e3792edb227cce71f0bf683"
     },
     "assets/js/scaling-chart.js": {
-      "bytes": 8177,
-      "sha256": "f6e732807d8f595310f567bcc0f8e2087057e4fc360854cbe435f47ac630ad07"
+      "bytes": 9965,
+      "sha256": "50ad71059eb2999c90796482eb5a46cd30ac4c382a0cd22bca3f25ab8339544d"
     },
     "bounded_language_invention_lab/MANIFEST.json": {
       "bytes": 1781,
@@ -3241,6 +3241,10 @@
       "bytes": 427173,
       "sha256": "37faafb8591d330859481b3a20e67cef24dacfab9ff56e9f41bd4caa799a66d9"
     },
+    "resolution_width_lab/PHP_WIDTH_CERTIFICATE_N6.json": {
+      "bytes": 3125417,
+      "sha256": "02cd9a0109b40fbc0d5b38e15bcee9fd5a4497310975797e41f400a9bb2c9a42"
+    },
     "resolution_width_lab/PHP_WIDTH_REPORT.md": {
       "bytes": 4529,
       "sha256": "2fd52770f1bd3f18102337084beb5902eb687b5f679771b8b517b5679d4dc4f3"
@@ -4578,6 +4582,6 @@
       "sha256": "957bd3b51cbf2cd06ee00f1ef47ab5c6fa8bbf1a4c281c0e67b129b027785a18"
     }
   },
-  "generated_at_utc": "2026-10-18T20:54:46.039258+00:00",
-  "source_commit": "27d0b4c61e52d6139ad1fe5e6f21610e7c197c74"
+  "generated_at_utc": "2026-10-18T21:01:11.698143+00:00",
+  "source_commit": "44ad6d796b5f07db2ce684df052019f369d9bbf4"
 }

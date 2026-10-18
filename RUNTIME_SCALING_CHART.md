@@ -6,10 +6,12 @@ The Pages landing page includes `_includes/runtime-chart.html`, which loads
 so another page can reuse the same interactive element without copying its
 markup. The component is deliberately data-driven: add a dataset with an `id`,
 `label`, and points containing `x`, `dimension`, `runtime_seconds`, `status`,
-and `label`, then the axis selector, log-scale toggle, tooltips, and accessible
-table update without changing the chart code. Every key in `x_axes` must be a
-finite numeric field on every point; `default_x_axis` names the initial
-selection.
+and `label`, then the axis selector, series visibility controls, log-scale
+toggle, observed-range summary, tooltips, and accessible table update without
+changing the chart code. The script initializes every include on a page, so a
+page can compare independent data files with more than one chart. Every key in
+`x_axes` must be a finite numeric field on every point; `default_x_axis` names
+the initial selection.
 
 The checked data combines `NATIVE_RESULTS.json` with the proof-producing CDCL
 campaign in `proof_complexity_scaling_lab/SCALING_RESULTS.json`; both source

@@ -119,6 +119,10 @@ code { background: var(--wash); }
 .chart-toolbar label { display: inline-flex; align-items: center; gap: .4rem; }
 .chart-toolbar select { padding: .35rem .5rem; border: 1px solid var(--line); border-radius: .4rem; background: #fff; }
 .chart-toolbar button { padding: .4rem .7rem; border: 1px solid #aac2ee; border-radius: .4rem; color: var(--blue-dark); background: var(--wash); cursor: pointer; }
+.chart-series-filter { margin: .75rem 0 1rem; padding: .55rem .75rem .7rem; border: 1px solid var(--line); border-radius: .6rem; }
+.chart-series-filter legend { padding: 0 .35rem; color: var(--muted); font-size: .82rem; font-weight: 700; }
+.chart-series-controls { display: flex; flex-wrap: wrap; gap: .5rem 1rem; }
+.chart-series-controls label { display: inline-flex; align-items: center; gap: .4rem; color: var(--muted); font-size: .86rem; }
 .chart-layout { overflow-x: auto; }
 .runtime-chart { display: block; width: 100%; min-width: 600px; height: auto; }
 .chart-legend { display: flex; flex-wrap: wrap; gap: .65rem 1rem; margin: .5rem 0; color: var(--muted); font-size: .82rem; }
@@ -144,6 +148,7 @@ code { background: var(--wash); }
 .chart-point:focus, .chart-point:hover { stroke-width: 3.5; outline: none; }
 .chart-note { margin: .5rem 0; color: var(--muted); font-size: .88rem; }
 .chart-detail { min-height: 1.4rem; margin: .5rem 0; color: var(--blue-dark); font-weight: 600; }
+.chart-summary { margin: .5rem 0; color: var(--blue-dark); font-size: .9rem; }
 .chart-table { width: 100%; margin-top: 1rem; border-collapse: collapse; font-size: .82rem; }
 .chart-table th, .chart-table td { padding: .35rem .5rem; border-bottom: 1px solid var(--line); text-align: left; }
 

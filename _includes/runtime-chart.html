@@ -14,11 +14,16 @@
     <label><input type="checkbox" data-chart-log> Logarithmic runtime</label>
     <button type="button" data-chart-reset>Reset view</button>
   </div>
+  <fieldset class="chart-series-filter">
+    <legend>Visible series</legend>
+    <div class="chart-series-controls" data-chart-series-controls></div>
+  </fieldset>
   <div class="chart-layout">
     <svg class="runtime-chart" data-chart-svg role="img" aria-label="Solver runtime scaling chart" viewBox="0 0 760 390"></svg>
   </div>
   <div class="chart-legend" data-chart-legend aria-label="Chart series"></div>
   <p class="chart-detail" data-chart-details aria-live="polite">Hover or focus a point for details.</p>
+  <p class="chart-summary" data-chart-summary role="status">Loading the observed range…</p>
   <p class="chart-note" data-chart-status role="status">Loading recorded measurements…</p>
   <details>
     <summary>Accessible data table</summary>
