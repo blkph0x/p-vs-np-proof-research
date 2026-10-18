@@ -326,8 +326,10 @@ keeping the auxiliaries preserves its polynomial solving route.
 
 ## Evidence and practical limits
 
-The current frozen integration run passes **260 tests across 31 suites**, with
-unchanged source hashes throughout. [TEST_SUMMARY.json](TEST_SUMMARY.json) and
+The current frozen integration run passes **320 tests across 33 suites**, with
+unchanged source hashes throughout. The canonical audit now includes the
+51-test labelled-join and perturbation certificate suite in
+`labelled_join_certified`. [TEST_SUMMARY.json](TEST_SUMMARY.json) and
 [TEST_OUTPUT.txt](TEST_OUTPUT.txt) preserve the counts, timings and full output.
 A separate saved-artifact audit confirms all 22 recorded source/input hashes
 checked across the four native experiment reports. The tests include independent brute-force optimization,

@@ -25,7 +25,8 @@ def main():
               ("direct_fano_core", ROOT / "non_graphic_core_lab", ["discover", "-v"]),
               ("high_width_core", ROOT / "high_width_core_stress_lab", ["-v", "test_lab"]),
               ("horn_cdclt", ROOT / "horn_cdclt_lab", ["-v", "test_lab"]),
-              ("weighted_boundary", ROOT / "weighted_boundary_lab", ["-v", "test_lab"])]
+              ("weighted_boundary", ROOT / "weighted_boundary_lab", ["-v", "test_lab"]),
+              ("labelled_join_certified", ROOT / "labelled_join_certified", ["discover", "-v"])]
     def hashes():
         paths = sorted({p for _, directory, _ in suites for p in directory.glob("*.py")})
         return {p.relative_to(ROOT.parent).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest()

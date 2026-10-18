@@ -12,7 +12,7 @@ test_proof_dag_leaf_extraction_is_bounded (test_adaptive_fragment_synthesis.Test
 test_resolution_macro_relation (test_adaptive_fragment_synthesis.TestAdaptiveFragmentSynthesis) ... ok
 
 ----------------------------------------------------------------------
-Ran 11 tests in 0.009s
+Ran 11 tests in 0.010s
 
 OK
 
@@ -25,7 +25,7 @@ test_same_certificate_works_for_each_pin (test_all_dual_lp_barrier.AllDualLPBarr
 test_uniform_subset_mixtures_by_explicit_small_expansion (test_all_dual_lp_barrier.AllDualLPBarrierTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 6 tests in 5.118s
+Ran 6 tests in 5.142s
 
 OK
 
@@ -51,7 +51,7 @@ test_seeded_digit_no_carry_controls (test_coefficient_complexity_barrier.Coeffic
 test_small_general_families_and_duplicates (test_coefficient_complexity_barrier.CoefficientBarrierTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 6 tests in 0.256s
+Ran 6 tests in 0.263s
 
 OK
 
@@ -66,7 +66,7 @@ test_scope_is_affine_frontier_only (test_complete_graph_frontier_integration.Com
 test_state_bound_scales (test_complete_graph_frontier_integration.CompleteGraphFrontierIntegrationTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 8 tests in 11.799s
+Ran 8 tests in 11.793s
 
 OK
 
@@ -83,7 +83,7 @@ test_rational_local_convex_mixtures (test_degree_three_barrier.LocalParityRelaxa
 test_redundant_check_repairs_supplied_row_example (test_degree_three_barrier.LocalParityRelaxationTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 10 tests in 0.164s
+Ran 10 tests in 0.167s
 
 OK
 
@@ -107,7 +107,7 @@ test_independent_verifier (test_fourier_spectrum_boundary_integration.FourierSpe
 test_saved_artifact_and_analytic_support (test_fourier_spectrum_boundary_integration.FourierSpectrumBoundaryTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 7 tests in 0.813s
+Ran 7 tests in 0.815s
 
 OK
 
@@ -119,7 +119,7 @@ test_subdag_cap_suffixes_are_recovered_by_structural_macro (test_macro_assisted_
 test_symbolic_work_is_not_claimed_as_projection_reuse (test_macro_assisted_subdag.TestMacroAssistedSubdag) ... ok
 
 ----------------------------------------------------------------------
-Ran 5 tests in 2.694s
+Ran 5 tests in 2.716s
 
 OK
 
@@ -135,7 +135,7 @@ test_verifier_accepts_general_crossing_odd_sets (test_matching_certificate.Match
 test_wrong_graph_and_malformed_inputs_are_rejected (test_matching_certificate.MatchingCertificateTest) ... ok
 
 ----------------------------------------------------------------------
-Ran 9 tests in 16.134s
+Ran 9 tests in 16.218s
 
 OK
 
@@ -155,7 +155,7 @@ test_reject_boolean_numeric_claims (test_native_coset_solver.NativeCosetSolverTe
 test_reject_tampered_result_certificates (test_native_coset_solver.NativeCosetSolverTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 13 tests in 102.958s
+Ran 13 tests in 103.436s
 
 OK
 
@@ -169,7 +169,7 @@ test_reject_tampered_guarantees_and_dual_basis (test_projection_barrier.Projecti
 test_zero_full_empty_codes_and_budgets (test_projection_barrier.ProjectionBarrierTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 7 tests in 0.714s
+Ran 7 tests in 0.695s
 
 OK
 
@@ -182,7 +182,7 @@ test_independent_replay (test_projection_discovery_barrier.ProjectionDiscoveryBa
 test_reduction_relation (test_projection_discovery_barrier.ProjectionDiscoveryBarrierTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 6 tests in 0.052s
+Ran 6 tests in 0.050s
 
 OK
 
@@ -207,7 +207,7 @@ test_independent_replay (test_quadratic_code_family_integration.QuadraticCodeFam
 test_saved_degrees_and_states (test_quadratic_code_family_integration.QuadraticCodeFamilyIntegrationTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 6 tests in 2.032s
+Ran 6 tests in 2.016s
 
 OK
 
@@ -220,7 +220,7 @@ test_second_moment_formula_and_rank_range (test_randomized_isolation.RandomizedI
 test_seeded_hash_replay (test_randomized_isolation.RandomizedIsolationTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 6 tests in 54.717s
+Ran 6 tests in 55.424s
 
 OK
 
@@ -236,7 +236,7 @@ test_seeded_four_and_five_row_affine_instances (test_rank_native_solver.RankNati
 test_tampering_rejected (test_rank_native_solver.RankNativeTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 9 tests in 96.978s
+Ran 9 tests in 97.434s
 
 OK
 
@@ -248,7 +248,7 @@ Exercise the generic (3,3) completion on fresh small inputs. ... ok
 test_saved_artifact_records_exhaustive_extensions (test_regular_ldpc_audit_integration.RegularLdpcAuditIntegrationTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 4 tests in 0.307s
+Ran 4 tests in 0.337s
 
 OK
 
@@ -262,7 +262,7 @@ test_scale_scan_keeps_projection_cap_explicit (test_repeated_subdag_templates.Te
 test_unknown_records_remain_explicit (test_repeated_subdag_templates.TestRepeatedSubdagTemplates) ... ok
 
 ----------------------------------------------------------------------
-Ran 7 tests in 1.662s
+Ran 7 tests in 1.709s
 
 OK
 
@@ -289,7 +289,7 @@ test_strict_greedy_local_minimum_is_not_a_global_claim (test_row_basis_discovery
 test_tampered_transform_matrix_and_scores_are_rejected (test_row_basis_discovery.RowBasisDiscoveryTest) ... ok
 
 ----------------------------------------------------------------------
-Ran 9 tests in 0.214s
+Ran 9 tests in 0.216s
 
 OK
 
@@ -303,7 +303,7 @@ test_plateaus_are_traversed_without_fabricating_improvements (test_row_basis_esc
 test_seeded_cases_respect_exhaustive_gl3_optima (test_row_basis_escape.RowBasisEscapeTest) ... ok
 
 ----------------------------------------------------------------------
-Ran 7 tests in 0.246s
+Ran 7 tests in 0.239s
 
 OK
 
@@ -313,7 +313,7 @@ test_bounds_and_adversarial_mutation (test_semantic_frontier_expander_integratio
 test_every_saved_order_has_distinct_residual_witnesses (test_semantic_frontier_expander_integration.SemanticFrontierExpanderIntegrationTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 3 tests in 0.204s
+Ran 3 tests in 0.207s
 
 OK
 
@@ -329,7 +329,7 @@ test_loops_coloops_parallel_blocks_and_large_bit_positions (test_structural_prob
 test_stored_fixture_probe_without_conditioning (test_structural_probe.StructuralProbeTest) ... ok
 
 ----------------------------------------------------------------------
-Ran 9 tests in 0.263s
+Ran 9 tests in 0.267s
 
 OK
 
@@ -342,7 +342,7 @@ test_scale_work_is_linear_in_reachable_proof (test_symbolic_suffix_template.Test
 test_two_literal_suffix_is_exact (test_symbolic_suffix_template.TestSymbolicSuffixTemplate) ... ok
 
 ----------------------------------------------------------------------
-Ran 6 tests in 0.804s
+Ran 6 tests in 0.852s
 
 OK
 
@@ -355,7 +355,7 @@ test_near_miss_is_rejected (test_symbolic_unit_template.TestSymbolicUnitTemplate
 test_recognizes_and_certifies_large_local_fragment (test_symbolic_unit_template.TestSymbolicUnitTemplate) ... ok
 
 ----------------------------------------------------------------------
-Ran 6 tests in 0.213s
+Ran 6 tests in 0.212s
 
 OK
 
@@ -391,7 +391,7 @@ test_projection_layout_validation (test_two_bridge_factorization.TwoBridgeFactor
 test_saved_artifact_and_review (test_two_bridge_factorization.TwoBridgeFactorizationTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 29 tests in 13.855s
+Ran 29 tests in 14.217s
 
 OK
 
@@ -419,7 +419,7 @@ test_reject_malformed_certificates (test_fano_certificate.FanoCertificateTests) 
 test_zero_budget_and_small_input_are_unknown (test_fano_certificate.FanoCertificateTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 21 tests in 0.431s
+Ran 21 tests in 0.451s
 
 OK
 
@@ -429,7 +429,7 @@ test_dimension_validation (test_non_graphic_core.NonGraphicCoreTests) ... ok
 test_fano_restriction (test_non_graphic_core.NonGraphicCoreTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 3 tests in 0.002s
+Ran 3 tests in 0.003s
 
 OK
 
@@ -445,7 +445,7 @@ test_trellis_dimension_uses_generator_rank (test_lab.LabTest) ... ok
 test_trellis_matches_brute (test_lab.LabTest) ... ok
 
 ----------------------------------------------------------------------
-Ran 9 tests in 0.697s
+Ran 9 tests in 0.712s
 
 OK
 
@@ -472,7 +472,7 @@ test_polymorphism_artifact_replay (test_lab.TestHornCdclt) ... ok
 test_single_gadget_solver_matches_direct (test_lab.TestHornCdclt) ... ok
 
 ----------------------------------------------------------------------
-Ran 20 tests in 12.285s
+Ran 20 tests in 12.287s
 
 OK
 
@@ -488,6 +488,64 @@ test_pivot_substitution_preserves_quadratic_phase (test_lab.WeightedBoundaryTest
 test_seeded_small_instances_match_direct_oracle (test_lab.WeightedBoundaryTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 9 tests in 0.055s
+Ran 9 tests in 0.057s
+
+OK
+
+Suite: labelled_join_certified
+test_all_invertible_three_row_transforms_bind_original_target (test_code_lift_solver.CodeLiftTests) ... ok
+test_all_three_row_matrices_through_two_columns_all_targets (test_code_lift_solver.CodeLiftTests) ... ok
+test_explicit_one_row_lift_and_pg_controls (test_code_lift_solver.CodeLiftTests) ... ok
+test_invalid_and_forged_normal_forms (test_code_lift_solver.CodeLiftTests) ... ok
+test_seeded_weighted_codes_and_affine_requests (test_code_lift_solver.CodeLiftTests) ... ok
+test_unknown_and_zero_objective_nonzero_word (test_code_lift_solver.CodeLiftTests) ... ok
+test_all_small_one_bit_simple_graphs (test_labelled_tables.LabelledTableTests) ... ok
+test_all_two_edge_two_bit_multigraphs (test_labelled_tables.LabelledTableTests) ... ok
+test_disconnected_and_cancelled_walks (test_labelled_tables.LabelledTableTests) ... ok
+test_empty_graphs_and_zero_label_dimension (test_labelled_tables.LabelledTableTests) ... ok
+test_label_closure_and_big_integers (test_labelled_tables.LabelledTableTests) ... ok
+test_metadata_and_structural_mutations (test_labelled_tables.LabelledTableTests) ... ok
+test_producer_and_verifier_budgets (test_labelled_tables.LabelledTableTests) ... ok
+test_reject_false_unreachability (test_labelled_tables.LabelledTableTests) ... ok
+test_reject_feasible_but_suboptimal_distance (test_labelled_tables.LabelledTableTests) ... ok
+test_reject_forged_closed_walk_and_eulerian_values (test_labelled_tables.LabelledTableTests) ... ok
+test_reject_invalid_requests (test_labelled_tables.LabelledTableTests) ... ok
+test_reject_zero_cost_predecessor_cycles (test_labelled_tables.LabelledTableTests) ... ok
+test_saved_json_and_verified_table_isolation (test_labelled_tables.LabelledTableTests) ... ok
+test_seeded_weighted_multigraphs (test_labelled_tables.LabelledTableTests) ... ok
+test_all_labelled_simple_graphs_through_four_vertices (test_labelled_tjoin.LabelledTjoinTests) ... ok
+test_caps_and_huge_dimensions_fail_closed (test_labelled_tjoin.LabelledTjoinTests) ... ok
+test_dp_and_request_tampering (test_labelled_tjoin.LabelledTjoinTests) ... ok
+test_four_terminals_need_label_allocation_and_disconnected_correction (test_labelled_tjoin.LabelledTjoinTests) ... ok
+test_invalid_requests (test_labelled_tjoin.LabelledTjoinTests) ... ok
+test_large_integer_weights (test_labelled_tjoin.LabelledTjoinTests) ... ok
+test_nonempty_pin_coverage_and_loop_semantics (test_labelled_tjoin.LabelledTjoinTests) ... ok
+test_random_weighted_multigraphs_and_nonempty (test_labelled_tjoin.LabelledTjoinTests) ... ok
+test_verification_budget_is_separate_from_reachable_search_work (test_labelled_tjoin.LabelledTjoinTests) ... ok
+test_exact_all_row_thresholds (test_perturbation_coverage.PerturbationCoverageTests) ... ok
+test_graph_column_counts (test_perturbation_coverage.PerturbationCoverageTests) ... ok
+test_invalid_dimensions (test_perturbation_coverage.PerturbationCoverageTests) ... ok
+test_logarithmic_label_bound_eventually_excludes_coverage (test_perturbation_coverage.PerturbationCoverageTests) ... ok
+test_small_description_enumeration_is_below_bound (test_perturbation_coverage.PerturbationCoverageTests) ... ok
+test_systematic_spaces_are_distinct (test_perturbation_coverage.PerturbationCoverageTests) ... ok
+test_branch_cap_is_unknown_and_certificate_tampering_rejected (test_small_terminal_perturbation.SmallTerminalPerturbationTests) ... ok
+test_disconnected_cycle_correction (test_small_terminal_perturbation.SmallTerminalPerturbationTests) ... ok
+test_exhaustive_tiny_perturbations (test_small_terminal_perturbation.SmallTerminalPerturbationTests) ... ok
+test_free_variables_and_zero_rank (test_small_terminal_perturbation.SmallTerminalPerturbationTests) ... ok
+test_one_edge_inconsistent_branch_is_rejected (test_small_terminal_perturbation.SmallTerminalPerturbationTests) ... ok
+test_original_matrix_binding_and_mutations (test_small_terminal_perturbation.SmallTerminalPerturbationTests) ... ok
+test_random_original_matrix_adapter_and_cap (test_small_terminal_perturbation.SmallTerminalPerturbationTests) ... ok
+test_triangle_wrong_label_path (test_small_terminal_perturbation.SmallTerminalPerturbationTests) ... ok
+test_certificate_mutations_and_input_mismatch (test_sparse_lift_normal_form.SparseLiftNormalFormTests) ... ok
+test_component_collapse_preserves_original_edge_coordinates (test_sparse_lift_normal_form.SparseLiftNormalFormTests) ... ok
+test_empty_zero_rank_and_full_rank (test_sparse_lift_normal_form.SparseLiftNormalFormTests) ... ok
+test_exact_work_boundaries_and_unknown (test_sparse_lift_normal_form.SparseLiftNormalFormTests) ... ok
+test_exhaustive_three_row_two_column_single_U_factor (test_sparse_lift_normal_form.SparseLiftNormalFormTests) ... ok
+test_invalid_inputs (test_sparse_lift_normal_form.SparseLiftNormalFormTests) ... ok
+test_json_roundtrip_and_verifier_does_not_call_producer (test_sparse_lift_normal_form.SparseLiftNormalFormTests) ... ok
+test_seeded_dependent_factors_and_target_equivalence (test_sparse_lift_normal_form.SparseLiftNormalFormTests) ... ok
+
+----------------------------------------------------------------------
+Ran 51 tests in 15.331s
 
 OK
