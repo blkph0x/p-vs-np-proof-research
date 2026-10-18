@@ -21,7 +21,7 @@ stated structural families, finite exhaustive controls, certificate verifiers,
 and scoped counterexamples. It does not claim a solver for every SAT instance
 or a lower bound against every polynomial algorithm.
 
-The latest recorded full audit passed **43 suites and 441 test methods** with
+The latest recorded full audit passed **43 suites and 445 test methods** with
 unchanged source hashes. These are reproducibility results for the checked
 finite cases, not a solution to the open problem.
 
@@ -84,6 +84,11 @@ checks the next finite boundary with an exact integer dual certificate. All
 982 supported local atoms are covered, and the level-four optimum is exactly
 four, matching a pinned weight-four codeword. This closes the smallest saved
 gap only; it is not a general SAT or P-versus-NP result.
+
+The [RM(2,5) affine-flat star control](local_marginal_code_lab/REED_MULLER_LEVEL_D_FLAT_STAR_REPORT.md)
+tests a weaker level-eight construction. Its 620 affine-flat tables retain the
+exact `38/7` fractional optimum, so the full overlap-consistent level-eight
+case remains unresolved.
 
 ## Runtime scaling notebook
 

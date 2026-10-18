@@ -45,6 +45,11 @@ codeword, so the local and combined optima are exactly four. The independent
 replay is pure standard-library code and rejects mutated rows, assignments,
 and shape claims. Larger-family level-`d` cases remain open.
 
+The companion [RM(2,5) affine-flat star report](REED_MULLER_LEVEL_D_FLAT_STAR_REPORT.md)
+records an exact negative control for a weaker level-eight proposal: 620
+affine three-flat tables sharing only singleton marginals still have optimum
+`38/7`. Full overlap consistency at level eight remains unresolved.
+
 ```text
 python -m unittest discover -v
 python run_experiments.py
@@ -60,4 +65,7 @@ python REED_MULLER_ALL_DUAL_LOCAL_INDEPENDENT_REVIEW.py
 python -m unittest -v test_all_dual_local_reed_muller.py
 python REED_MULLER_LEVEL_D_INDEPENDENT_REVIEW.py
 python -m unittest -v test_reed_muller_level_d.py
+python run_reed_muller_level_d_flat_star.py
+python REED_MULLER_LEVEL_D_FLAT_STAR_INDEPENDENT_REVIEW.py
+python -m unittest -v test_reed_muller_level_d_flat_star.py
 ```

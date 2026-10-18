@@ -1,0 +1,51 @@
+{
+  "records": [
+    {
+      "affine_flat_count": 620,
+      "family": "RM(2,5)",
+      "flats_through_pin": 155,
+      "full_level_d_status": "UNRESOLVED",
+      "integer_pinned_optimum": "8",
+      "integrality_ratio": "28/19",
+      "singleton_point": [
+        "1",
+        "1/7",
+        "1/7",
+        "1/7",
+        "1/7",
+        "1/7",
+        "1/7",
+        "1/7",
+        "1/7",
+        "1/7",
+        "1/7",
+        "1/7",
+        "1/7",
+        "1/7",
+        "1/7",
+        "1/7",
+        "1/7",
+        "1/7",
+        "1/7",
+        "1/7",
+        "1/7",
+        "1/7",
+        "1/7",
+        "1/7",
+        "1/7",
+        "1/7",
+        "1/7",
+        "1/7",
+        "1/7",
+        "1/7",
+        "1/7",
+        "1/7"
+      ],
+      "star_relaxation_optimum": "38/7",
+      "status": "VERIFIED",
+      "valid": true
+    }
+  ],
+  "schema": "reed_muller_level_d_flat_star_independent_review_v1",
+  "valid": true
+}

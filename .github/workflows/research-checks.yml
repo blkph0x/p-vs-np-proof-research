@@ -85,6 +85,12 @@ jobs:
         run: |
           python REED_MULLER_LEVEL_D_INDEPENDENT_REVIEW.py
           python -m unittest -v test_reed_muller_level_d.py
+      - name: Replay RM(2,5) affine-flat star control
+        working-directory: local_marginal_code_lab
+        run: |
+          python run_reed_muller_level_d_flat_star.py
+          python REED_MULLER_LEVEL_D_FLAT_STAR_INDEPENDENT_REVIEW.py
+          python -m unittest -v test_reed_muller_level_d_flat_star.py
       - name: Run the self-contained full audit
         run: |
           set +e

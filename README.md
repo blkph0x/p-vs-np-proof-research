@@ -17,7 +17,7 @@
 - Use [`CITATIONS.md`](CITATIONS.md) and [`PUBLIC_SOURCES.md`](PUBLIC_SOURCES.md)
   for public sources and the reports that use them.
 - Follow [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) to replay the checks from a
-  fresh checkout. The current frozen run has 441 passing methods across 43
+  fresh checkout. The current frozen run has 445 passing methods across 43
   suites; the full audit is intentionally separate from the lighter continuous
   integration checks, and all of its suite dependencies are included in this
   repository.
@@ -670,6 +670,12 @@ then checks the next boundary exactly. An integer dual certificate over all
 optimum four, matching a pinned weight-four codeword. Thus the smallest saved
 gap closes at level `d`; the result is finite and does not establish the same
 claim for larger Reed--Muller members or arbitrary SAT.
+
+The [RM(2,5) affine-flat star control](local_marginal_code_lab/REED_MULLER_LEVEL_D_FLAT_STAR_REPORT.md)
+is an exact negative control for a weaker level-eight proposal. Sharing only
+singleton marginals across 620 affine three-flats still has optimum `38/7`;
+full level-eight overlap consistency remains open and is explicitly not
+claimed by this control.
 
 The [adaptive fragment synthesis report](ADAPTIVE_FRAGMENT_SYNTHESIS_REPORT.md)
 adds an independent cross-check of the bounded proof-language experiment. A bounded projector existentially

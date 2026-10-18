@@ -1,0 +1,90 @@
+{
+  "description": "Exact affine-flat star relaxation control for RM(2,5).",
+  "records": [
+    {
+      "certificate": {
+        "affine_flat_count": 620,
+        "distance": 8,
+        "family": "RM(2,5)",
+        "flat_dimension": 3,
+        "flat_size": 8,
+        "flats_omitting_pin": 465,
+        "flats_through_pin": 155,
+        "full_level_d_status": "UNRESOLVED",
+        "integer_pinned_optimum": "8",
+        "integrality_ratio": "28/19",
+        "linear_flat_count": 155,
+        "minimum_check_incidence_per_nonpin": 35,
+        "n": 32,
+        "omitting_pin_table": {
+          "each_coordinate_mass": "1/7",
+          "length": 8,
+          "mixture": [
+            [
+              "3/7",
+              0
+            ],
+            [
+              "4/7",
+              2
+            ]
+          ],
+          "parity": "EVEN",
+          "weight_two_distribution": "UNIFORM_OVER_2_SUBSETS"
+        },
+        "pin": 0,
+        "point": [
+          "1",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7"
+        ],
+        "schema": "reed_muller_level_d_flat_star_v1",
+        "scope_consistency": "SINGLETONS_ONLY",
+        "star_relaxation_optimum": "38/7",
+        "through_pin_table": {
+          "each_free_coordinate_mass": "1/7",
+          "free_length": 7,
+          "mixture": [
+            [
+              "1",
+              1
+            ]
+          ],
+          "parity": "ODD",
+          "pin_value": "1"
+        }
+      },
+      "status": "FOUND"
+    }
+  ],
+  "schema": "reed_muller_level_d_flat_star_results_v1"
+}

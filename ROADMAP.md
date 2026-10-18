@@ -433,6 +433,12 @@ proves optimum four, matching a pinned weight-four codeword. This shows that
 the `d-1` gap closes at `d` for this smallest member, while leaving the
 `RM(2,5)` and general-family level-`d` questions open.
 
+An exact affine-flat star control for `RM(2,5)` records the corresponding
+negative result for a weaker level-eight proposal: 620 affine three-flat
+tables sharing singleton marginals still have optimum `38/7`. The unresolved
+step is consistency among the overlapping seven- and lower-dimensional
+projections in the full level-eight system.
+
 ## Separate general direction: stronger global constraints
 
 Any proposed relaxation must be tested first against the exact Golay witness
