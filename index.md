@@ -21,7 +21,7 @@ stated structural families, finite exhaustive controls, certificate verifiers,
 and scoped counterexamples. It does not claim a solver for every SAT instance
 or a lower bound against every polynomial algorithm.
 
-The latest recorded full audit passed **39 suites and 402 test methods** with
+The latest recorded full audit passed **40 suites and 405 test methods** with
 unchanged source hashes. These are reproducibility results for the checked
 finite cases, not a solution to the open problem.
 
@@ -46,6 +46,11 @@ The [compact ITE audit](proof_motif_candidate_lab/INDIRECT_ITE_REPORT.md)
 recognizes the exact four-clause 3-CNF encoding of ITE gates and rejects
 mutated and same-support decoys through independent truth-table replay. This is
 another bounded motif result, not a complete circuit solver.
+
+The [bounded XOR-chain audit](proof_motif_candidate_lab/XOR_CLOSURE_REPORT.md)
+composes a capped five-block chain with proof IDs on each derived relation. The
+mutation and `UNKNOWN_CAP` controls make the boundary explicit: this is a
+proof-language experiment, not a complete parity or SAT solver.
 
 ## Runtime scaling notebook
 

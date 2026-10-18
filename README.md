@@ -15,7 +15,7 @@
 - Use [`CITATIONS.md`](CITATIONS.md) and [`PUBLIC_SOURCES.md`](PUBLIC_SOURCES.md)
   for public sources and the reports that use them.
 - Follow [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) to replay the checks from a
-  fresh checkout. The current frozen run has 402 passing methods across 39
+  fresh checkout. The current frozen run has 405 passing methods across 40
   suites; the full audit is intentionally separate from the lighter continuous
   integration checks, and all of its suite dependencies are included in this
   repository.
@@ -665,6 +665,11 @@ recognizes the exact four-clause 3-CNF encoding of an ITE gate by exhaustive
 constant-size role search. Independent replay rejects mutations and same-support
 decoys. This broadens the checked motif vocabulary while leaving arbitrary
 auxiliary circuits and general SAT unresolved.
+
+The [bounded XOR-chain audit](proof_motif_candidate_lab/XOR_CLOSURE_REPORT.md)
+extends one-step cancellation across a capped five-block chain with source
+proof IDs on every derived relation. A mutated chain loses the target, while a
+branching fixture returns `UNKNOWN_CAP` instead of claiming completeness.
 
 The [residual-equivalence barrier report](RESIDUAL_EQUIVALENCE_BARRIER_REPORT.md)
 formalizes the next limitation: for arbitrary `G(y)`, the one-bit-boundary

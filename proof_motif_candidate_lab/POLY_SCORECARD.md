@@ -7,6 +7,7 @@
 | Fixed-arity XOR3 detection | polynomial, exact |
 | Fixed-arity direct ITE detection | polynomial, exact |
 | Compact four-clause 3-CNF ITE detection | polynomial, exact |
+| Bounded multi-block XOR closure | polynomial under explicit caps, exact certificates |
 | OR->unit proof macro discovery | polynomial |
 | Subproof signature hashing | polynomial in subproof size |
 | Trusted affine/PB certificate filtering | polynomial |

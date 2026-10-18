@@ -59,6 +59,12 @@ role permutations, records all source clauses, and independently rejects
 mutated and same-support decoy groups. This is a compact encoding rule, not a
 complete circuit or auxiliary-definition recognizer.
 
+The [bounded XOR-chain audit](XOR_CLOSURE_REPORT.md) composes these exact parity
+blocks for four frontier rounds. Every derived relation carries the symmetric
+difference of its source block IDs. A five-block chain reaches its target with
+all five source certificates; a mutated chain loses the target, and a branching
+fixture returns `UNKNOWN_CAP` when its relation budget is exceeded.
+
 ### OR -> unit proof macro
 
 For a positive clause
