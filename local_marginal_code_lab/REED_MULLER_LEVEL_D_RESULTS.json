@@ -1,0 +1,1756 @@
+{
+  "description": "Exact level-four local-marginal dual certificate for pinned RM(1,3).",
+  "records": [
+    {
+      "certificate": {
+        "distance": 4,
+        "dual_objective": "4",
+        "entries": [
+          {
+            "kind": "norm",
+            "multiplier": 1,
+            "scope": [
+              0
+            ]
+          },
+          {
+            "kind": "norm",
+            "multiplier": 3,
+            "scope": [
+              2
+            ]
+          },
+          {
+            "assignment": [
+              0
+            ],
+            "drop": 1,
+            "kind": "marg",
+            "multiplier": -3,
+            "scope": [
+              1,
+              2
+            ]
+          },
+          {
+            "assignment": [
+              1
+            ],
+            "drop": 1,
+            "kind": "marg",
+            "multiplier": -2,
+            "scope": [
+              1,
+              2
+            ]
+          },
+          {
+            "assignment": [
+              1
+            ],
+            "drop": 2,
+            "kind": "marg",
+            "multiplier": 1,
+            "scope": [
+              1,
+              2
+            ]
+          },
+          {
+            "assignment": [
+              1
+            ],
+            "drop": 1,
+            "kind": "marg",
+            "multiplier": 1,
+            "scope": [
+              1,
+              3
+            ]
+          },
+          {
+            "assignment": [
+              1
+            ],
+            "drop": 1,
+            "kind": "marg",
+            "multiplier": 1,
+            "scope": [
+              1,
+              4
+            ]
+          },
+          {
+            "assignment": [
+              1
+            ],
+            "drop": 1,
+            "kind": "marg",
+            "multiplier": 1,
+            "scope": [
+              1,
+              5
+            ]
+          },
+          {
+            "assignment": [
+              1
+            ],
+            "drop": 1,
+            "kind": "marg",
+            "multiplier": 1,
+            "scope": [
+              1,
+              6
+            ]
+          },
+          {
+            "assignment": [
+              1
+            ],
+            "drop": 1,
+            "kind": "marg",
+            "multiplier": 1,
+            "scope": [
+              1,
+              7
+            ]
+          },
+          {
+            "assignment": [
+              1,
+              0
+            ],
+            "drop": 0,
+            "kind": "marg",
+            "multiplier": -2,
+            "scope": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              1
+            ],
+            "drop": 0,
+            "kind": "marg",
+            "multiplier": 1,
+            "scope": [
+              0,
+              1,
+              6
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              1
+            ],
+            "drop": 0,
+            "kind": "marg",
+            "multiplier": -2,
+            "scope": [
+              0,
+              2,
+              3
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              1
+            ],
+            "drop": 0,
+            "kind": "marg",
+            "multiplier": 1,
+            "scope": [
+              0,
+              4,
+              5
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              1
+            ],
+            "drop": 1,
+            "kind": "marg",
+            "multiplier": 2,
+            "scope": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              1
+            ],
+            "drop": 2,
+            "kind": "marg",
+            "multiplier": 1,
+            "scope": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "assignment": [
+              1,
+              1
+            ],
+            "drop": 2,
+            "kind": "marg",
+            "multiplier": 1,
+            "scope": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              0
+            ],
+            "drop": 3,
+            "kind": "marg",
+            "multiplier": -3,
+            "scope": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              1
+            ],
+            "drop": 3,
+            "kind": "marg",
+            "multiplier": -2,
+            "scope": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "assignment": [
+              1,
+              1
+            ],
+            "drop": 3,
+            "kind": "marg",
+            "multiplier": -1,
+            "scope": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              1
+            ],
+            "drop": 1,
+            "kind": "marg",
+            "multiplier": -1,
+            "scope": [
+              1,
+              4,
+              5
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              1
+            ],
+            "drop": 4,
+            "kind": "marg",
+            "multiplier": 1,
+            "scope": [
+              1,
+              4,
+              5
+            ]
+          },
+          {
+            "assignment": [
+              1,
+              1
+            ],
+            "drop": 4,
+            "kind": "marg",
+            "multiplier": 1,
+            "scope": [
+              1,
+              4,
+              5
+            ]
+          },
+          {
+            "assignment": [
+              1,
+              1
+            ],
+            "drop": 5,
+            "kind": "marg",
+            "multiplier": 1,
+            "scope": [
+              1,
+              4,
+              5
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              1
+            ],
+            "drop": 7,
+            "kind": "marg",
+            "multiplier": 1,
+            "scope": [
+              1,
+              4,
+              7
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              1
+            ],
+            "drop": 1,
+            "kind": "marg",
+            "multiplier": -1,
+            "scope": [
+              1,
+              6,
+              7
+            ]
+          },
+          {
+            "assignment": [
+              1,
+              1
+            ],
+            "drop": 1,
+            "kind": "marg",
+            "multiplier": -2,
+            "scope": [
+              1,
+              6,
+              7
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              1
+            ],
+            "drop": 6,
+            "kind": "marg",
+            "multiplier": 1,
+            "scope": [
+              1,
+              6,
+              7
+            ]
+          },
+          {
+            "assignment": [
+              1,
+              1
+            ],
+            "drop": 6,
+            "kind": "marg",
+            "multiplier": 1,
+            "scope": [
+              1,
+              6,
+              7
+            ]
+          },
+          {
+            "assignment": [
+              1,
+              1
+            ],
+            "drop": 7,
+            "kind": "marg",
+            "multiplier": 1,
+            "scope": [
+              1,
+              6,
+              7
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              1
+            ],
+            "drop": 3,
+            "kind": "marg",
+            "multiplier": 1,
+            "scope": [
+              3,
+              6,
+              7
+            ]
+          },
+          {
+            "assignment": [
+              1,
+              1
+            ],
+            "drop": 5,
+            "kind": "marg",
+            "multiplier": 2,
+            "scope": [
+              5,
+              6,
+              7
+            ]
+          },
+          {
+            "assignment": [
+              1,
+              0,
+              0
+            ],
+            "drop": 0,
+            "kind": "marg",
+            "multiplier": 2,
+            "scope": [
+              0,
+              1,
+              2,
+              5
+            ]
+          },
+          {
+            "assignment": [
+              1,
+              0,
+              1
+            ],
+            "drop": 0,
+            "kind": "marg",
+            "multiplier": 2,
+            "scope": [
+              0,
+              1,
+              2,
+              5
+            ]
+          },
+          {
+            "assignment": [
+              1,
+              1,
+              0
+            ],
+            "drop": 5,
+            "kind": "marg",
+            "multiplier": -2,
+            "scope": [
+              0,
+              1,
+              2,
+              5
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              0,
+              1
+            ],
+            "drop": 0,
+            "kind": "marg",
+            "multiplier": -1,
+            "scope": [
+              0,
+              1,
+              5,
+              6
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              1,
+              1
+            ],
+            "drop": 0,
+            "kind": "marg",
+            "multiplier": -1,
+            "scope": [
+              0,
+              1,
+              5,
+              6
+            ]
+          },
+          {
+            "assignment": [
+              1,
+              0,
+              1
+            ],
+            "drop": 5,
+            "kind": "marg",
+            "multiplier": 1,
+            "scope": [
+              0,
+              1,
+              5,
+              6
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              1,
+              0
+            ],
+            "drop": 0,
+            "kind": "marg",
+            "multiplier": 2,
+            "scope": [
+              0,
+              2,
+              3,
+              6
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              1,
+              1
+            ],
+            "drop": 0,
+            "kind": "marg",
+            "multiplier": 2,
+            "scope": [
+              0,
+              2,
+              3,
+              6
+            ]
+          },
+          {
+            "assignment": [
+              1,
+              0,
+              1
+            ],
+            "drop": 6,
+            "kind": "marg",
+            "multiplier": -2,
+            "scope": [
+              0,
+              2,
+              3,
+              6
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              1,
+              0
+            ],
+            "drop": 0,
+            "kind": "marg",
+            "multiplier": -1,
+            "scope": [
+              0,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              1,
+              1
+            ],
+            "drop": 0,
+            "kind": "marg",
+            "multiplier": -1,
+            "scope": [
+              0,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "assignment": [
+              1,
+              0,
+              1
+            ],
+            "drop": 6,
+            "kind": "marg",
+            "multiplier": 1,
+            "scope": [
+              0,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "assignment": [
+              1,
+              1,
+              1
+            ],
+            "drop": 1,
+            "kind": "marg",
+            "multiplier": -4,
+            "scope": [
+              1,
+              2,
+              3,
+              5
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              1,
+              0
+            ],
+            "drop": 3,
+            "kind": "marg",
+            "multiplier": 2,
+            "scope": [
+              1,
+              2,
+              3,
+              5
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              1,
+              1
+            ],
+            "drop": 3,
+            "kind": "marg",
+            "multiplier": 2,
+            "scope": [
+              1,
+              2,
+              3,
+              5
+            ]
+          },
+          {
+            "assignment": [
+              1,
+              1,
+              1
+            ],
+            "drop": 3,
+            "kind": "marg",
+            "multiplier": 4,
+            "scope": [
+              1,
+              2,
+              3,
+              5
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              1,
+              0
+            ],
+            "drop": 5,
+            "kind": "marg",
+            "multiplier": -2,
+            "scope": [
+              1,
+              2,
+              3,
+              5
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              1,
+              0
+            ],
+            "drop": 1,
+            "kind": "marg",
+            "multiplier": -2,
+            "scope": [
+              1,
+              2,
+              3,
+              6
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              1,
+              1
+            ],
+            "drop": 1,
+            "kind": "marg",
+            "multiplier": -2,
+            "scope": [
+              1,
+              2,
+              3,
+              6
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              0,
+              0
+            ],
+            "drop": 3,
+            "kind": "marg",
+            "multiplier": 2,
+            "scope": [
+              1,
+              2,
+              3,
+              6
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              0,
+              1
+            ],
+            "drop": 3,
+            "kind": "marg",
+            "multiplier": 2,
+            "scope": [
+              1,
+              2,
+              3,
+              6
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              0,
+              1
+            ],
+            "drop": 2,
+            "kind": "marg",
+            "multiplier": 1,
+            "scope": [
+              1,
+              2,
+              3,
+              7
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              1,
+              1
+            ],
+            "drop": 2,
+            "kind": "marg",
+            "multiplier": 1,
+            "scope": [
+              1,
+              2,
+              3,
+              7
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              0,
+              1
+            ],
+            "drop": 3,
+            "kind": "marg",
+            "multiplier": -1,
+            "scope": [
+              1,
+              2,
+              3,
+              7
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              1,
+              1
+            ],
+            "drop": 3,
+            "kind": "marg",
+            "multiplier": -1,
+            "scope": [
+              1,
+              2,
+              3,
+              7
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              1,
+              0
+            ],
+            "drop": 4,
+            "kind": "marg",
+            "multiplier": -2,
+            "scope": [
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              1,
+              1
+            ],
+            "drop": 4,
+            "kind": "marg",
+            "multiplier": -2,
+            "scope": [
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "assignment": [
+              1,
+              0,
+              0
+            ],
+            "drop": 4,
+            "kind": "marg",
+            "multiplier": -2,
+            "scope": [
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "assignment": [
+              1,
+              0,
+              1
+            ],
+            "drop": 4,
+            "kind": "marg",
+            "multiplier": -2,
+            "scope": [
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "assignment": [
+              1,
+              1,
+              1
+            ],
+            "drop": 4,
+            "kind": "marg",
+            "multiplier": -4,
+            "scope": [
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              1,
+              0
+            ],
+            "drop": 5,
+            "kind": "marg",
+            "multiplier": 2,
+            "scope": [
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              1,
+              1
+            ],
+            "drop": 5,
+            "kind": "marg",
+            "multiplier": 2,
+            "scope": [
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "assignment": [
+              1,
+              0,
+              0
+            ],
+            "drop": 5,
+            "kind": "marg",
+            "multiplier": 2,
+            "scope": [
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "assignment": [
+              1,
+              0,
+              1
+            ],
+            "drop": 5,
+            "kind": "marg",
+            "multiplier": 2,
+            "scope": [
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "assignment": [
+              1,
+              1,
+              1
+            ],
+            "drop": 5,
+            "kind": "marg",
+            "multiplier": 4,
+            "scope": [
+              1,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              0,
+              0
+            ],
+            "drop": 4,
+            "kind": "marg",
+            "multiplier": -2,
+            "scope": [
+              1,
+              2,
+              4,
+              6
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              1,
+              0
+            ],
+            "drop": 4,
+            "kind": "marg",
+            "multiplier": 1,
+            "scope": [
+              1,
+              2,
+              4,
+              6
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              1,
+              1
+            ],
+            "drop": 4,
+            "kind": "marg",
+            "multiplier": 1,
+            "scope": [
+              1,
+              2,
+              4,
+              6
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              0,
+              1
+            ],
+            "drop": 6,
+            "kind": "marg",
+            "multiplier": 2,
+            "scope": [
+              1,
+              2,
+              4,
+              6
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              1,
+              0
+            ],
+            "drop": 6,
+            "kind": "marg",
+            "multiplier": -1,
+            "scope": [
+              1,
+              2,
+              4,
+              6
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              1,
+              1
+            ],
+            "drop": 6,
+            "kind": "marg",
+            "multiplier": -1,
+            "scope": [
+              1,
+              2,
+              4,
+              6
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              1,
+              0
+            ],
+            "drop": 2,
+            "kind": "marg",
+            "multiplier": 1,
+            "scope": [
+              1,
+              2,
+              4,
+              7
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              1,
+              1
+            ],
+            "drop": 2,
+            "kind": "marg",
+            "multiplier": 1,
+            "scope": [
+              1,
+              2,
+              4,
+              7
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              0,
+              1
+            ],
+            "drop": 4,
+            "kind": "marg",
+            "multiplier": 1,
+            "scope": [
+              1,
+              2,
+              4,
+              7
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              1,
+              1
+            ],
+            "drop": 4,
+            "kind": "marg",
+            "multiplier": 1,
+            "scope": [
+              1,
+              2,
+              4,
+              7
+            ]
+          },
+          {
+            "assignment": [
+              1,
+              0,
+              0
+            ],
+            "drop": 4,
+            "kind": "marg",
+            "multiplier": 2,
+            "scope": [
+              1,
+              2,
+              4,
+              7
+            ]
+          },
+          {
+            "assignment": [
+              1,
+              0,
+              1
+            ],
+            "drop": 4,
+            "kind": "marg",
+            "multiplier": 2,
+            "scope": [
+              1,
+              2,
+              4,
+              7
+            ]
+          },
+          {
+            "assignment": [
+              1,
+              1,
+              1
+            ],
+            "drop": 4,
+            "kind": "marg",
+            "multiplier": 4,
+            "scope": [
+              1,
+              2,
+              4,
+              7
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              0,
+              1
+            ],
+            "drop": 7,
+            "kind": "marg",
+            "multiplier": -2,
+            "scope": [
+              1,
+              2,
+              4,
+              7
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              1,
+              0
+            ],
+            "drop": 7,
+            "kind": "marg",
+            "multiplier": -1,
+            "scope": [
+              1,
+              2,
+              4,
+              7
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              1,
+              1
+            ],
+            "drop": 7,
+            "kind": "marg",
+            "multiplier": -1,
+            "scope": [
+              1,
+              2,
+              4,
+              7
+            ]
+          },
+          {
+            "assignment": [
+              1,
+              0,
+              0
+            ],
+            "drop": 7,
+            "kind": "marg",
+            "multiplier": -2,
+            "scope": [
+              1,
+              2,
+              4,
+              7
+            ]
+          },
+          {
+            "assignment": [
+              1,
+              0,
+              1
+            ],
+            "drop": 7,
+            "kind": "marg",
+            "multiplier": -2,
+            "scope": [
+              1,
+              2,
+              4,
+              7
+            ]
+          },
+          {
+            "assignment": [
+              1,
+              1,
+              1
+            ],
+            "drop": 7,
+            "kind": "marg",
+            "multiplier": -4,
+            "scope": [
+              1,
+              2,
+              4,
+              7
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              0,
+              1
+            ],
+            "drop": 2,
+            "kind": "marg",
+            "multiplier": 1,
+            "scope": [
+              1,
+              2,
+              5,
+              6
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              1,
+              0
+            ],
+            "drop": 2,
+            "kind": "marg",
+            "multiplier": 1,
+            "scope": [
+              1,
+              2,
+              5,
+              6
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              1,
+              1
+            ],
+            "drop": 2,
+            "kind": "marg",
+            "multiplier": 2,
+            "scope": [
+              1,
+              2,
+              5,
+              6
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              0,
+              1
+            ],
+            "drop": 5,
+            "kind": "marg",
+            "multiplier": -2,
+            "scope": [
+              1,
+              2,
+              5,
+              6
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              1,
+              0
+            ],
+            "drop": 5,
+            "kind": "marg",
+            "multiplier": -1,
+            "scope": [
+              1,
+              2,
+              5,
+              6
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              1,
+              1
+            ],
+            "drop": 5,
+            "kind": "marg",
+            "multiplier": -1,
+            "scope": [
+              1,
+              2,
+              5,
+              6
+            ]
+          },
+          {
+            "assignment": [
+              1,
+              0,
+              1
+            ],
+            "drop": 2,
+            "kind": "marg",
+            "multiplier": 2,
+            "scope": [
+              1,
+              2,
+              5,
+              7
+            ]
+          },
+          {
+            "assignment": [
+              1,
+              1,
+              0
+            ],
+            "drop": 2,
+            "kind": "marg",
+            "multiplier": 2,
+            "scope": [
+              1,
+              2,
+              5,
+              7
+            ]
+          },
+          {
+            "assignment": [
+              1,
+              1,
+              1
+            ],
+            "drop": 2,
+            "kind": "marg",
+            "multiplier": 4,
+            "scope": [
+              1,
+              2,
+              5,
+              7
+            ]
+          },
+          {
+            "assignment": [
+              1,
+              0,
+              0
+            ],
+            "drop": 5,
+            "kind": "marg",
+            "multiplier": -2,
+            "scope": [
+              1,
+              2,
+              5,
+              7
+            ]
+          },
+          {
+            "assignment": [
+              1,
+              0,
+              1
+            ],
+            "drop": 5,
+            "kind": "marg",
+            "multiplier": -2,
+            "scope": [
+              1,
+              2,
+              5,
+              7
+            ]
+          },
+          {
+            "assignment": [
+              1,
+              1,
+              1
+            ],
+            "drop": 5,
+            "kind": "marg",
+            "multiplier": -4,
+            "scope": [
+              1,
+              2,
+              5,
+              7
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              0,
+              1
+            ],
+            "drop": 1,
+            "kind": "marg",
+            "multiplier": 1,
+            "scope": [
+              1,
+              3,
+              6,
+              7
+            ]
+          },
+          {
+            "assignment": [
+              1,
+              0,
+              1
+            ],
+            "drop": 1,
+            "kind": "marg",
+            "multiplier": 1,
+            "scope": [
+              1,
+              3,
+              6,
+              7
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              0,
+              1
+            ],
+            "drop": 6,
+            "kind": "marg",
+            "multiplier": -1,
+            "scope": [
+              1,
+              3,
+              6,
+              7
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              1,
+              1
+            ],
+            "drop": 6,
+            "kind": "marg",
+            "multiplier": -1,
+            "scope": [
+              1,
+              3,
+              6,
+              7
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              1,
+              0
+            ],
+            "drop": 1,
+            "kind": "marg",
+            "multiplier": 1,
+            "scope": [
+              1,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              1,
+              1
+            ],
+            "drop": 1,
+            "kind": "marg",
+            "multiplier": 1,
+            "scope": [
+              1,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              1,
+              0
+            ],
+            "drop": 4,
+            "kind": "marg",
+            "multiplier": -1,
+            "scope": [
+              1,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              1,
+              1
+            ],
+            "drop": 4,
+            "kind": "marg",
+            "multiplier": -1,
+            "scope": [
+              1,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "assignment": [
+              1,
+              1,
+              0
+            ],
+            "drop": 4,
+            "kind": "marg",
+            "multiplier": -2,
+            "scope": [
+              1,
+              4,
+              5,
+              7
+            ]
+          },
+          {
+            "assignment": [
+              1,
+              1,
+              1
+            ],
+            "drop": 4,
+            "kind": "marg",
+            "multiplier": -2,
+            "scope": [
+              1,
+              4,
+              5,
+              7
+            ]
+          },
+          {
+            "assignment": [
+              1,
+              1,
+              1
+            ],
+            "drop": 7,
+            "kind": "marg",
+            "multiplier": 2,
+            "scope": [
+              1,
+              4,
+              5,
+              7
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              1,
+              1
+            ],
+            "drop": 1,
+            "kind": "marg",
+            "multiplier": 2,
+            "scope": [
+              1,
+              5,
+              6,
+              7
+            ]
+          },
+          {
+            "assignment": [
+              1,
+              1,
+              1
+            ],
+            "drop": 1,
+            "kind": "marg",
+            "multiplier": 2,
+            "scope": [
+              1,
+              5,
+              6,
+              7
+            ]
+          },
+          {
+            "assignment": [
+              1,
+              0,
+              1
+            ],
+            "drop": 6,
+            "kind": "marg",
+            "multiplier": -2,
+            "scope": [
+              1,
+              5,
+              6,
+              7
+            ]
+          },
+          {
+            "assignment": [
+              1,
+              1,
+              1
+            ],
+            "drop": 6,
+            "kind": "marg",
+            "multiplier": -2,
+            "scope": [
+              1,
+              5,
+              6,
+              7
+            ]
+          }
+        ],
+        "equality_row_count": 2544,
+        "family": "RM(1,3)",
+        "level": 4,
+        "max_reduced_cost_slack": "4",
+        "n": 8,
+        "nonnegative_reduced_costs": true,
+        "objective_definition": "sum singleton one-marginals",
+        "pin": 0,
+        "schema": "rm1_level4_local_dual_v1",
+        "scope_count": 163,
+        "variable_count": 982,
+        "zero_slack_variables": 981
+      },
+      "status": "FOUND",
+      "verification": {
+        "combined_relaxation_optimum": "4",
+        "dual_entry_count": 113,
+        "dual_lower_bound": "4",
+        "equality_row_count": 2544,
+        "family": "RM(1,3)",
+        "level": 4,
+        "pin": 0,
+        "primal_witness_weight": 4,
+        "primal_witness_word": 15,
+        "scope_count": 163,
+        "status": "VERIFIED",
+        "valid": true,
+        "variable_count": 982
+      }
+    }
+  ],
+  "schema": "reed_muller_level_d_results_v1"
+}

@@ -427,6 +427,12 @@ fractional optimum and the ratios `6/5`, `28/19`, and `120/71` remain unchanged.
 This closes one natural combination of parity cuts and local consistency;
 richer global inequalities or a different hierarchy are still required.
 
+The next finite control now checks the smallest level-`d` boundary. For pinned
+`RM(1,3)`, an exact integer dual certificate over all level-four local atoms
+proves optimum four, matching a pinned weight-four codeword. This shows that
+the `d-1` gap closes at `d` for this smallest member, while leaving the
+`RM(2,5)` and general-family level-`d` questions open.
+
 ## Separate general direction: stronger global constraints
 
 Any proposed relaxation must be tested first against the exact Golay witness

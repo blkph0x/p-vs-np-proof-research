@@ -37,6 +37,14 @@ remain feasible at the same exact fractional optimum; the saved ratios are
 again `6/5`, `28/19`, and `120/71`. This tests a stronger hierarchy edge
 without claiming a general lower bound.
 
+The finite level-`d` follow-up in
+[`REED_MULLER_LEVEL_D_REPORT.md`](REED_MULLER_LEVEL_D_REPORT.md) closes the
+smallest saved gap. For pinned `RM(1,3)`, an exact integer dual certificate
+checks all 982 supported atoms at level four and matches a pinned weight-four
+codeword, so the local and combined optima are exactly four. The independent
+replay is pure standard-library code and rejects mutated rows, assignments,
+and shape claims. Larger-family level-`d` cases remain open.
+
 ```text
 python -m unittest discover -v
 python run_experiments.py
@@ -50,4 +58,6 @@ python -m unittest -v test_all_dual_reed_muller.py
 python run_all_dual_local_reed_muller.py
 python REED_MULLER_ALL_DUAL_LOCAL_INDEPENDENT_REVIEW.py
 python -m unittest -v test_all_dual_local_reed_muller.py
+python REED_MULLER_LEVEL_D_INDEPENDENT_REVIEW.py
+python -m unittest -v test_reed_muller_level_d.py
 ```

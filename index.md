@@ -21,7 +21,7 @@ stated structural families, finite exhaustive controls, certificate verifiers,
 and scoped counterexamples. It does not claim a solver for every SAT instance
 or a lower bound against every polynomial algorithm.
 
-The latest recorded full audit passed **43 suites and 435 test methods** with
+The latest recorded full audit passed **43 suites and 441 test methods** with
 unchanged source hashes. These are reproducibility results for the checked
 finite cases, not a solution to the open problem.
 
@@ -78,6 +78,12 @@ The [combined all-dual/local replay](local_marginal_code_lab/REED_MULLER_ALL_DUA
 adds all pinned-code projection marginals through the boundary level `d-1` at
 the same time. Exact sparse one-hot tables remain feasible at the all-dual
 optimum, leaving the same ratios on the three saved Reed--Muller controls.
+
+The [level-`d` RM(1,3) certificate](local_marginal_code_lab/REED_MULLER_LEVEL_D_REPORT.md)
+checks the next finite boundary with an exact integer dual certificate. All
+982 supported local atoms are covered, and the level-four optimum is exactly
+four, matching a pinned weight-four codeword. This closes the smallest saved
+gap only; it is not a general SAT or P-versus-NP result.
 
 ## Runtime scaling notebook
 

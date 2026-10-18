@@ -1,5 +1,5 @@
 {
-  "file_count": 1169,
+  "file_count": 1176,
   "files": {
     ".gitattributes": {
       "bytes": 648,
@@ -10,8 +10,8 @@
       "sha256": "a26d9a05cfd58fd3abfd8d432bef6aa7c89465adb50fd0f07bf16bdc85d9cc6b"
     },
     ".github/workflows/research-checks.yml": {
-      "bytes": 3296,
-      "sha256": "4ce4a949ff5d463c93b067666f640d8113680b0511de86dcee2cd3b4970fc4f5"
+      "bytes": 3543,
+      "sha256": "19a1d152143ddc8a0c2ccc559b01928ba26f094419123e515f91465dcdd543ed"
     },
     ".gitignore": {
       "bytes": 415,
@@ -306,8 +306,8 @@
       "sha256": "7401f5cf6b946a82cec459cbaf5a62cb4b5237b8f96501e7f0496a3efc662683"
     },
     "METHOD_INDEX.md": {
-      "bytes": 13205,
-      "sha256": "ef13dacb62d68c835d69b9d5595b24b8c1478c26764deddf37ca16d045c57628"
+      "bytes": 13922,
+      "sha256": "04ef6867cace963ea56b0bc289852fce585ccc5ee938cf3d5046e20def740174"
     },
     "NATIVE_RESULTS.csv": {
       "bytes": 11436,
@@ -378,8 +378,8 @@
       "sha256": "631ec13d33a0045e6421133fee346759f9186117b909bdd327a954ddac826356"
     },
     "README.md": {
-      "bytes": 49676,
-      "sha256": "06150768a841c506115506dc753dec37a5752ad0a04e8d9e32d0461e1e63a5be"
+      "bytes": 50127,
+      "sha256": "71e8b77e8f28bb1f454ce69de5d69001c402159b55aa12155748bb8c3693a77b"
     },
     "REGULAR_LDPC_33_LOCAL_AUDIT.json": {
       "bytes": 5015,
@@ -418,8 +418,8 @@
       "sha256": "9373c3321349d6f9251fc2d019502ac273c95a5f4b1e9c5dd7be38195af36838"
     },
     "REPRODUCIBILITY.md": {
-      "bytes": 3661,
-      "sha256": "f03e61a375751ade71551e8db0e2d606b2e544a019332442363d187de5c369fc"
+      "bytes": 3659,
+      "sha256": "ecd7dc44c9b8d2585bdddac7b6828b4e2b800e86b10d42cd9d5e43e88a741955"
     },
     "RESIDUAL_EQUIVALENCE_BARRIER.json": {
       "bytes": 106347,
@@ -438,8 +438,8 @@
       "sha256": "d7d103f37e85cce87a5e236fbe90116277e0d0e76196239d73fa76b9e782fab1"
     },
     "ROADMAP.md": {
-      "bytes": 36400,
-      "sha256": "3b643f51f5ce36091030c482a80b52a931102b5891c3f2e57fa6263d8c4449e1"
+      "bytes": 36759,
+      "sha256": "0e754296f231a5591f3699f37b3cfe5971c88232a0e04d9bfaeeeb6eed2a8218"
     },
     "ROW_BASIS_ESCAPE_RESULTS.json": {
       "bytes": 9367083,
@@ -490,12 +490,12 @@
       "sha256": "a3567d759c7f20ea1420bfbafdcc846cc2d5a5fed2b80ebee8cd98cfd1cf4255"
     },
     "TEST_OUTPUT.txt": {
-      "bytes": 48025,
-      "sha256": "3feffef8a3378b32eace49ed7cedcaf061cef64d5c9a77e14b5154fd6fdb3d75"
+      "bytes": 48606,
+      "sha256": "6a1dbd5cefe183e777b533fc44b73656bd7d0ac375958b2e03ddd1abcaeba282"
     },
     "TEST_SUMMARY.json": {
-      "bytes": 42690,
-      "sha256": "f25d551f2e07d7a3bc23098c06b0c4189b33606b5fb732f114e040e448e0a3fa"
+      "bytes": 43021,
+      "sha256": "c15c59f0c9ae1f04d7ef9aa449f1f4983e69b24898649368fccf44181f421cf4"
     },
     "THEORY_REVIEW.md": {
       "bytes": 18223,
@@ -2146,8 +2146,8 @@
       "sha256": "ce86680f49890fe07bdb95febd996ac2fdf8b2d45cd25b7e5b8863026581c070"
     },
     "index.md": {
-      "bytes": 7529,
-      "sha256": "c235f96243ea5518ab62309766866f19f08a133931ea33a3749e6df3974f44fe"
+      "bytes": 7903,
+      "sha256": "28f9c698523727cb67a4ea39943329901ac132d926d2236b543068a2ff9e1231"
     },
     "interval_coefficient_lab/INDEPENDENT_REVIEW.md": {
       "bytes": 7681,
@@ -2378,8 +2378,8 @@
       "sha256": "608489e4181967b18a4c22e96413a7a4cbc06de4b04c91e5985e3a7bc0a4b06c"
     },
     "local_marginal_code_lab/README.md": {
-      "bytes": 2623,
-      "sha256": "a14395d358a69bcbb4d1324a120848c028dede2c538c6b8db64f892f849e004a"
+      "bytes": 3190,
+      "sha256": "11fc4de5907a8353775c6060c3ef2e1c59d337eae016df46793c303b2530f2b1"
     },
     "local_marginal_code_lab/REED_MULLER_ALL_DUAL_INDEPENDENT_REVIEW.json": {
       "bytes": 1060,
@@ -2432,6 +2432,30 @@
     "local_marginal_code_lab/REED_MULLER_INDEPENDENT_REVIEW.py": {
       "bytes": 8192,
       "sha256": "4a1891b875b0e187fedd69d8f1b5a7b908cc7450ffdd1b246f493167126623a2"
+    },
+    "local_marginal_code_lab/REED_MULLER_LEVEL_D_DUAL.json": {
+      "bytes": 24396,
+      "sha256": "5b3e212c3300d0f6071990d112ac4cfdf7985a5becd17a27f42f8d6f41688485"
+    },
+    "local_marginal_code_lab/REED_MULLER_LEVEL_D_INDEPENDENT_REVIEW.json": {
+      "bytes": 499,
+      "sha256": "fc295530cb5012b4a4b465c8dabee309a695eea5d3b6e3a6b07e44bda2715af9"
+    },
+    "local_marginal_code_lab/REED_MULLER_LEVEL_D_INDEPENDENT_REVIEW.md": {
+      "bytes": 283,
+      "sha256": "9098913f6d691532900670aed019e2076b0549f51593bc86973e7ddd6a979d38"
+    },
+    "local_marginal_code_lab/REED_MULLER_LEVEL_D_INDEPENDENT_REVIEW.py": {
+      "bytes": 9386,
+      "sha256": "364bb3823b172805af6417783753e8c568bb8db9486cf2b5c4f0f6882da44570"
+    },
+    "local_marginal_code_lab/REED_MULLER_LEVEL_D_REPORT.md": {
+      "bytes": 3048,
+      "sha256": "e35d1fce4d419b7256cb85e17c851384e9e4c8d00722a86eec164bc50533f588"
+    },
+    "local_marginal_code_lab/REED_MULLER_LEVEL_D_RESULTS.json": {
+      "bytes": 35450,
+      "sha256": "c58bffc996ec680a023cfd55103cd14bb6e73ecdb9ea3e2273a6af384277f69b"
     },
     "local_marginal_code_lab/REED_MULLER_RESULTS.json": {
       "bytes": 13525,
@@ -2500,6 +2524,10 @@
     "local_marginal_code_lab/test_reed_muller.py": {
       "bytes": 4013,
       "sha256": "ef07d73ed9db512b2fdeb1dc9c542ffea5ccdca08323526d175c0b3537779122"
+    },
+    "local_marginal_code_lab/test_reed_muller_level_d.py": {
+      "bytes": 2531,
+      "sha256": "db7484d2b8983d893e9fb2b43d8750786c746daf08cfefe8914f02cc5505b34c"
     },
     "macro_assisted_subdag.py": {
       "bytes": 7249,
@@ -3850,8 +3878,8 @@
       "sha256": "f11e49f6b30f074519eb181976e555332093b8f1003858e09c9535c440a1a4e4"
     },
     "run_research_checks.py": {
-      "bytes": 4156,
-      "sha256": "3e8f39b57a93043dcf7dcaff03dfad339d4412d01bf1690bcc44af0332d30e72"
+      "bytes": 4200,
+      "sha256": "4e4139ba4db0f45894066cc97d8d8868cf7efa1a362731c0a90c21261437d100"
     },
     "run_threshold_phase_checks.py": {
       "bytes": 2230,
@@ -4678,6 +4706,6 @@
       "sha256": "957bd3b51cbf2cd06ee00f1ef47ab5c6fa8bbf1a4c281c0e67b129b027785a18"
     }
   },
-  "generated_at_utc": "2026-10-18T22:30:55.745424+00:00",
-  "source_commit": "28dde3b78f3936c08221ad20226c9fbce64bf222"
+  "generated_at_utc": "2026-10-18T22:53:59.388014+00:00",
+  "source_commit": "ec88890273b8d988b9b66ddefcea72472520b0f9"
 }
