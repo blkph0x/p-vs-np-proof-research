@@ -59,7 +59,7 @@
     const allPoints = data.datasets.flatMap(dataset => dataset.points.map(point => ({...point, dataset})));
     const points = allPoints.filter(point => showUnknown || point.status === "EXACT");
     const plot = {x: margin.left, y: margin.top, width: width - margin.left - margin.right, height: height - margin.top - margin.bottom};
-    const xValues = points.map(point => point[axis]);
+    const xValues = points.map(point => point[axis]).filter(Number.isFinite);
     const yValues = points.map(point => point.runtime_seconds).filter(value => value > 0);
     if (!xValues.length || !yValues.length) {
       status.textContent = "No points match the selected filters.";
@@ -105,7 +105,9 @@
     });
 
     data.datasets.forEach((dataset, datasetIndex) => {
-      const visible = dataset.points.filter(point => showUnknown || point.status === "EXACT").sort((a, b) => a[axis] - b[axis]);
+      const visible = dataset.points
+        .filter(point => (showUnknown || point.status === "EXACT") && Number.isFinite(point[axis]))
+        .sort((a, b) => a[axis] - b[axis]);
       const exact = visible.filter(point => point.status === "EXACT");
       if (exact.length > 1) {
         svg.appendChild(element("polyline", {
@@ -131,7 +133,7 @@
     });
 
     tableBody.replaceChildren();
-    points.sort((a, b) => a[axis] - b[axis]).forEach(point => {
+    points.filter(point => Number.isFinite(point[axis])).sort((a, b) => a[axis] - b[axis]).forEach(point => {
       const row = document.createElement("tr");
       [point.dataset.label, point[axis], point.runtime_seconds.toFixed(6), point.status].forEach(value => {
         const cell = document.createElement("td");
@@ -157,7 +159,7 @@
       }));
       [axisSelect, unknownToggle, logToggle].forEach(control => control.addEventListener("change", () => render(data)));
       resetButton.addEventListener("click", () => {
-        axisSelect.value = "n";
+        axisSelect.value = data.default_x_axis || Object.keys(data.x_axes)[0];
         unknownToggle.checked = false;
         logToggle.checked = false;
         render(data);

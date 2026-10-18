@@ -10,9 +10,10 @@
   },
   "generated_utc": "2026-10-18T00:00:00Z",
   "x_axes": {
-    "n": "Variables / encoded coordinates (n)",
+    "x": "Variables / encoded coordinates (n)",
     "dimension": "Code dimension / family parameter"
   },
+  "default_x_axis": "x",
   "y_axis": "Wall-clock solve time (seconds)",
   "datasets": [
     {

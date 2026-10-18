@@ -15,7 +15,7 @@
 - Use [`CITATIONS.md`](CITATIONS.md) and [`PUBLIC_SOURCES.md`](PUBLIC_SOURCES.md)
   for public sources and the reports that use them.
 - Follow [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) to replay the checks from a
-  fresh checkout. The current frozen run has 383 passing methods across 37
+  fresh checkout. The current frozen run has 384 passing methods across 37
   suites; the full audit is intentionally separate from the lighter continuous
   integration checks, and all of its suite dependencies are included in this
   repository.

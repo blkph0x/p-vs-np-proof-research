@@ -1,6 +1,7 @@
 """Tests for the proof-producing scaling campaign."""
 import json
 import hashlib
+import math
 from pathlib import Path
 import unittest
 
@@ -62,6 +63,15 @@ class ScalingTests(unittest.TestCase):
             normalized_sha256(HERE.parent / "NATIVE_RESULTS.json"),
         )
         self.assertTrue(any(dataset["id"] == "cdcl-pigeonhole" for dataset in chart["datasets"]))
+
+    def test_runtime_chart_axes_match_point_fields(self):
+        chart = json.loads((HERE.parent / "assets/data/scaling-runtime.json").read_text(encoding="utf-8"))
+        self.assertIn(chart["default_x_axis"], chart["x_axes"])
+        points = [point for dataset in chart["datasets"] for point in dataset["points"]]
+        self.assertTrue(points, "the chart must contain at least one point")
+        for axis in chart["x_axes"]:
+            self.assertTrue(all(axis in point and isinstance(point[axis], (int, float)) for point in points))
+            self.assertTrue(all(math.isfinite(point[axis]) for point in points))
 
 
 if __name__ == "__main__":
