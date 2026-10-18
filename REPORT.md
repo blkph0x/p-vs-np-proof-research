@@ -93,6 +93,13 @@ and explicit decision caps are retained as controls. The implementation has no
 polynomial bound on decisions, conflicts, learned clauses, or proof steps, so
 this is a certified universal baseline rather than a P=NP algorithm.
 
+The [bounded-width resolution lab](resolution_width_lab/THEOREM.md) provides a
+second proof-complexity lens. It computes the complete finite closure under
+weakening and width-preserving resolution, replaying either an empty-clause
+refutation or a no-refutation fixed point. The universe size is bounded by
+`sum_{i<=w} 2^i binomial(n,i)`, so this records proof-width growth without
+claiming a uniform polynomial algorithm.
+
 The [complete-graph frontier report](linear_frontier_order_lab/COMPLETE_GRAPH_FRONTIER_REPORT.md)
 adds an all-order barrier for the affine residual route. The GF(2) incidence
 system of `K_v` is trivially satisfiable, but at the halfway cut of every edge
@@ -369,7 +376,7 @@ keeping the auxiliaries preserves its polynomial solving route.
 
 ## Evidence and practical limits
 
-The current frozen integration run passes **357 tests across 34 suites**, with
+The current frozen integration run passes **363 tests across 35 suites**, with
 unchanged source hashes throughout. The canonical audit now includes the
 51-test labelled-join and perturbation certificate suite in
 `labelled_join_certified`. [TEST_SUMMARY.json](TEST_SUMMARY.json) and

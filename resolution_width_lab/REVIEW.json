@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "case_count": 6,
+  "closures_match": true,
+  "proofs_match": true,
+  "source_hashes_match": true
+}

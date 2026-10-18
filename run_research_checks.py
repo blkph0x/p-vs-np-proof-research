@@ -26,6 +26,7 @@ def main():
               ("high_width_core", ROOT / "high_width_core_stress_lab", ["-v", "test_lab"]),
               ("horn_cdclt", ROOT / "horn_cdclt_lab", ["-v", "test_lab"]),
               ("proof_producing_cdcl", ROOT / "proof_producing_cdcl_lab", ["-v", "test_cdcl"]),
+              ("resolution_width", ROOT / "resolution_width_lab", ["-v", "test_resolution"]),
               ("weighted_boundary", ROOT / "weighted_boundary_lab", ["-v", "test_lab"]),
               ("labelled_join_certified", ROOT / "labelled_join_certified", ["discover", "-v"])]
     def hashes():
