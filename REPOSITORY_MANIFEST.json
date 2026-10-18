@@ -1,13 +1,13 @@
 {
-  "file_count": 1108,
+  "file_count": 1115,
   "files": {
     ".gitattributes": {
       "bytes": 648,
       "sha256": "d444b6da71de1e680c63a19e376ae7bc43c5e96ececfbf46f74127e169305bdc"
     },
     ".github/workflows/research-checks.yml": {
-      "bytes": 1410,
-      "sha256": "619692a60d84d159a17d8df1ab99151bb0ce77f762296db4388c31aebaa7d914"
+      "bytes": 1600,
+      "sha256": "3cbc9f8f9240b9117e133a2b1551d5f714062191876ca9833c42c8b7e1daafbd"
     },
     ".gitignore": {
       "bytes": 415,
@@ -238,8 +238,8 @@
       "sha256": "5fd51b0f5c534a5c2e77bf90a2ba1458a6956dc0b8c695f86c921589d56a11ab"
     },
     "EXTERNAL_STATUS_AUDIT_2026_10_18.md": {
-      "bytes": 4373,
-      "sha256": "56539db1121bcecbf78108f2d36f99698bd7c70853e840ea6e6427c73c9c4382"
+      "bytes": 4810,
+      "sha256": "72a78f3f74ce0499632b074d98c2f7a29d6b33b575089b8b3a215d6d290bfc2e"
     },
     "FOLLOWUP_ARTIFACT_AUDIT.json": {
       "bytes": 31381,
@@ -302,8 +302,8 @@
       "sha256": "7401f5cf6b946a82cec459cbaf5a62cb4b5237b8f96501e7f0496a3efc662683"
     },
     "METHOD_INDEX.md": {
-      "bytes": 9015,
-      "sha256": "4649d5f04b2532b3486fdcfc7abc7d96388ddd4f01164d74e5d50c53af923bc9"
+      "bytes": 9228,
+      "sha256": "f7edeb0c51473a8574ee35895d41503e4048783ea152f25eeb60a4afa2650021"
     },
     "NATIVE_RESULTS.csv": {
       "bytes": 11436,
@@ -350,8 +350,8 @@
       "sha256": "a2ad1d52ccdcaa0ba34e59070c8a709aa5f89135f554c5b1cb61d5be0bec15e0"
     },
     "PUBLIC_SOURCES.md": {
-      "bytes": 8430,
-      "sha256": "0154a6c3ef980a5edb2d6a3f2b49ce3fbb289cdd507f81d997718e426b2d5393"
+      "bytes": 8588,
+      "sha256": "154eedc6e5899eff96d6959dcffa46b5f18b4f81173b8b40f81c50ca268230cb"
     },
     "RANDOMIZED_ISOLATION_REPORT.md": {
       "bytes": 915,
@@ -374,8 +374,8 @@
       "sha256": "631ec13d33a0045e6421133fee346759f9186117b909bdd327a954ddac826356"
     },
     "README.md": {
-      "bytes": 45331,
-      "sha256": "5b403259af36589c5f5896070686415ac5df31826e9dc165d7128b73388a98dc"
+      "bytes": 45561,
+      "sha256": "f676a392d3ef26a6d9a916a38bde42ab74f77c963548d1c8d367fe4c72245109"
     },
     "REGULAR_LDPC_33_LOCAL_AUDIT.json": {
       "bytes": 5015,
@@ -410,12 +410,12 @@
       "sha256": "2fb2bf7ea62a6c83a8ff274073f90b712c4ec8a650c1a14faf818eb6c1b9d122"
     },
     "REPORT.md": {
-      "bytes": 38743,
-      "sha256": "e56978a2fa148644377149ca22acd5d3a3c9d6c7c064560cb2a68130a9004a67"
+      "bytes": 39196,
+      "sha256": "f8343237a052c0533c977378c8da01ad392817b4c080c4894a9fd608f3ad3088"
     },
     "REPRODUCIBILITY.md": {
-      "bytes": 2812,
-      "sha256": "0e99c442f91c8a5480633913e2d69e3ebb3017cb3a62dddd0a9e67acf6fe34f8"
+      "bytes": 2920,
+      "sha256": "1d7f2b5bed2611a5bfe0101f77f99a5c31a11097cccf4da94cb5ad163b64159f"
     },
     "RESIDUAL_EQUIVALENCE_BARRIER.json": {
       "bytes": 106347,
@@ -486,12 +486,12 @@
       "sha256": "a3567d759c7f20ea1420bfbafdcc846cc2d5a5fed2b80ebee8cd98cfd1cf4255"
     },
     "TEST_OUTPUT.txt": {
-      "bytes": 43557,
-      "sha256": "09d80b09cb27e70b69c94044a0042dee9460b1d1838f4f70a6c1372a31caa92c"
+      "bytes": 43876,
+      "sha256": "4117db0df8c880d0b22c471b70e1501a5f32a34a40fdfc0107b0a3cf645d65e3"
     },
     "TEST_SUMMARY.json": {
-      "bytes": 38386,
-      "sha256": "714dce95df62cb6dacfaccbe18af4f90e4f5b10fe9a6a3bd3e0bb4d8f6e8e140"
+      "bytes": 38686,
+      "sha256": "31aa8df7913ced6a3f9d61e52a434bb7bf78badb8161ba2f95d984b1c4340248"
     },
     "THEORY_REVIEW.md": {
       "bytes": 18223,
@@ -1809,6 +1809,18 @@
       "bytes": 2499,
       "sha256": "35d069664c1a765c3bf1034851b8b1708e27a8ca699191dc2e7b13a3997366da"
     },
+    "fourier_spectrum_boundary_lab/FWHT_COST_REPORT.md": {
+      "bytes": 2379,
+      "sha256": "a9d6b4d001327dc774fe82403b324d69db2d94bfec2ba5a16e5f5b9e62170f06"
+    },
+    "fourier_spectrum_boundary_lab/FWHT_COST_RESULTS.json": {
+      "bytes": 6733,
+      "sha256": "ef26c8ad1bd9d1aa2fa2796dc1c83a0ff3a20484651dedb3abf93561342447d1"
+    },
+    "fourier_spectrum_boundary_lab/FWHT_COST_REVIEW.json": {
+      "bytes": 109,
+      "sha256": "ebfe26e2a7b0ac22804471135a0aca43f3c0867d74f06122193d085a98c2b794"
+    },
     "fourier_spectrum_boundary_lab/REPORT.md": {
       "bytes": 4087,
       "sha256": "96d878d84ebded5a78abb417bbf98a7eb41a871d72add420182d5312971233a8"
@@ -1821,9 +1833,21 @@
       "bytes": 7645,
       "sha256": "4639abec363c2b131ae813f06709a961fdfb56024c25b2d881f86bf970771dc8"
     },
+    "fourier_spectrum_boundary_lab/fwht_cost.py": {
+      "bytes": 2577,
+      "sha256": "8638bed38300aac6e251591836d709a106027d01948e01693ca9d66d298096e3"
+    },
+    "fourier_spectrum_boundary_lab/review_fwht_cost.py": {
+      "bytes": 3108,
+      "sha256": "f5454fd6f53bde5fe8f8c47583394f6feb7cb59fb1b0e2f4a634f266ff9ec802"
+    },
     "fourier_spectrum_boundary_lab/run_experiments.py": {
       "bytes": 2900,
       "sha256": "502c345a50b90f8b3761fd96440f47a3d0960d20e77cbd1a105231cce328b8ec"
+    },
+    "fourier_spectrum_boundary_lab/run_fwht_cost.py": {
+      "bytes": 1392,
+      "sha256": "ddda2e8a3cf1747df81634c43af070024b492b85648ce74bb8b3ac83922e0aff"
     },
     "fourier_spectrum_boundary_lab/verify_fourier_boundary.py": {
       "bytes": 7351,
@@ -2119,7 +2143,7 @@
     },
     "index.md": {
       "bytes": 4375,
-      "sha256": "93b00c8c27105dd7757744297359b9d4557ff51538a287a932aa0c7ac50db38d"
+      "sha256": "2ec852b06a79f4f6074d2e0121384cda2550164ab1612a5069c179c0c5affd73"
     },
     "interval_coefficient_lab/INDEPENDENT_REVIEW.md": {
       "bytes": 7681,
@@ -3797,6 +3821,10 @@
       "bytes": 4853,
       "sha256": "b3118603607d73675e86ab0ddc804e787abffe70152a43017ae649f3346871c4"
     },
+    "test_fwht_cost_audit.py": {
+      "bytes": 1586,
+      "sha256": "d3303c93729adeaebb68c390af1dbd15bce35b4006b8c6986ccf18c6e4be7b1d"
+    },
     "test_macro_assisted_subdag.py": {
       "bytes": 2444,
       "sha256": "09ec22e49aa6419e9b44845e0fef270dfd00a0b604aa9d52b872f9bba039acb4"
@@ -4434,6 +4462,6 @@
       "sha256": "957bd3b51cbf2cd06ee00f1ef47ab5c6fa8bbf1a4c281c0e67b129b027785a18"
     }
   },
-  "generated_at_utc": "2026-10-18T18:41:02.557658+00:00",
-  "source_commit": "8c0d1949e908bde4a9f6e629ee7a1621cdbb461a"
+  "generated_at_utc": "2026-10-18T19:00:38.442029+00:00",
+  "source_commit": "358d11b353ab320971c3d01c1d7870d507008a6b"
 }
