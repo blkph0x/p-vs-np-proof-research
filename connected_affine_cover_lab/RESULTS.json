@@ -1,0 +1,126 @@
+{
+  "all_size_controls": [
+    {
+      "explicit_dimension": 1,
+      "explicit_size": 2,
+      "lower_bound_pieces": 1,
+      "n": 1,
+      "satisfying_count": 2
+    },
+    {
+      "explicit_dimension": 1,
+      "explicit_size": 2,
+      "lower_bound_pieces": 2,
+      "n": 2,
+      "satisfying_count": 3
+    },
+    {
+      "explicit_dimension": 4,
+      "explicit_size": 16,
+      "lower_bound_pieces": 4,
+      "n": 8,
+      "satisfying_count": 55
+    },
+    {
+      "explicit_dimension": 8,
+      "explicit_size": 256,
+      "lower_bound_pieces": 11,
+      "n": 16,
+      "satisfying_count": 2584
+    },
+    {
+      "explicit_dimension": 16,
+      "explicit_size": 65536,
+      "lower_bound_pieces": 88,
+      "n": 32,
+      "satisfying_count": 5702887
+    },
+    {
+      "explicit_dimension": 32,
+      "explicit_size": 4294967296,
+      "lower_bound_pieces": 6468,
+      "n": 64,
+      "satisfying_count": 27777890035288
+    },
+    {
+      "explicit_dimension": 64,
+      "explicit_size": 18446744073709551616,
+      "lower_bound_pieces": 35726339,
+      "n": 128,
+      "satisfying_count": 659034621587630041982498215
+    },
+    {
+      "explicit_dimension": 128,
+      "explicit_size": 340282366920938463463374607431768211456,
+      "lower_bound_pieces": 1090151200392118,
+      "n": 256,
+      "satisfying_count": 370959230771131880927453318055001997489772178180790104
+    }
+  ],
+  "exhaustive_small": [
+    {
+      "contained_supports": 1,
+      "max_contained_dimension": 0,
+      "max_contained_size": 1,
+      "n": 0,
+      "satisfying_count": 1,
+      "total_affine_supports": 1
+    },
+    {
+      "contained_supports": 3,
+      "max_contained_dimension": 1,
+      "max_contained_size": 2,
+      "n": 1,
+      "satisfying_count": 2,
+      "total_affine_supports": 3
+    },
+    {
+      "contained_supports": 6,
+      "max_contained_dimension": 1,
+      "max_contained_size": 2,
+      "n": 2,
+      "satisfying_count": 3,
+      "total_affine_supports": 11
+    },
+    {
+      "contained_supports": 16,
+      "max_contained_dimension": 2,
+      "max_contained_size": 4,
+      "n": 3,
+      "satisfying_count": 5,
+      "total_affine_supports": 51
+    },
+    {
+      "contained_supports": 41,
+      "max_contained_dimension": 2,
+      "max_contained_size": 4,
+      "n": 4,
+      "satisfying_count": 8,
+      "total_affine_supports": 307
+    },
+    {
+      "contained_supports": 118,
+      "max_contained_dimension": 3,
+      "max_contained_size": 8,
+      "n": 5,
+      "satisfying_count": 13,
+      "total_affine_supports": 2451
+    },
+    {
+      "contained_supports": 347,
+      "max_contained_dimension": 3,
+      "max_contained_size": 8,
+      "n": 6,
+      "satisfying_count": 21,
+      "total_affine_supports": 26387
+    }
+  ],
+  "family": "path CNF F_n = AND_i (x_i OR x_(i+1)); satisfying assignments have no adjacent zeros.",
+  "interpretation": "Exact lower bound for nonnegative affine-support decompositions only; no signed or unrestricted SAT hardness claim.",
+  "schema": "connected_affine_cover_experiment_v1",
+  "source_hashes": {
+    "cover.py": "25276b25fef6ae0f7e0298298e72e0ffda64a45030f59efe913d7b38b9e4d854",
+    "run_experiments.py": "1763db958b8692121e41cd6d9c29dfdaed9305e7680ace6169ceb5bdb6684805",
+    "test_cover.py": "c77f5cc306f24f110d6eaf574bd3dc2b4d1fd7bedee4584884b13df82708adc6"
+  }
+}

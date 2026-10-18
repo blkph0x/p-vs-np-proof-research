@@ -1,0 +1,54 @@
+{
+  "status": "VERIFIED_INDEPENDENT_CONTROLS",
+  "source_hashes_before": {
+    "RESULTS.json": "01911adb24c1517974e5110704770e72b6e856093766456cc8950c395153ea6a",
+    "THEOREM.md": "5bba85209a1a6fbcdf4f5a28e6cededf9796fe25b0b62ffb7cf4cbf5220a3289",
+    "controls.py": "bdf51275bb7886b00c136aca178b425738c187b48e40d3aa46feb3a1ba7cb1b9",
+    "test_controls.py": "5d1b80ff20b7fe300847941f70aab4b234afd1c26ff708f67458c7dea2144232",
+    "INDEPENDENT_REVIEW.py": "a41adc3a47fe473569e6992d7bf32c51cd7bf5d63d60206d2f79693be010d29e"
+  },
+  "source_hashes_after": {
+    "RESULTS.json": "01911adb24c1517974e5110704770e72b6e856093766456cc8950c395153ea6a",
+    "THEOREM.md": "5bba85209a1a6fbcdf4f5a28e6cededf9796fe25b0b62ffb7cf4cbf5220a3289",
+    "controls.py": "bdf51275bb7886b00c136aca178b425738c187b48e40d3aa46feb3a1ba7cb1b9",
+    "test_controls.py": "5d1b80ff20b7fe300847941f70aab4b234afd1c26ff708f67458c7dea2144232",
+    "INDEPENDENT_REVIEW.py": "a41adc3a47fe473569e6992d7bf32c51cd7bf5d63d60206d2f79693be010d29e"
+  },
+  "source_unchanged_during_review": true,
+  "original_truth_words": 4681,
+  "independently_enumerated_local_affine_sets": 51,
+  "random_affine_cases": 600,
+  "random_affine_points": 28508,
+  "fiber_multipliers": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      9,
+      4
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      49,
+      8
+    ]
+  ],
+  "mathematical_review": "Support-containment, projection dimension, equal-size fibers, triangle inequality, coefficient-energy and Gram consequences reviewed. Finite controls supplement the all-size proofs.",
+  "scope": "No unrestricted signed piece lower bound; the original disjoint-clause SAT and count are easy."
+}

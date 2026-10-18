@@ -1,0 +1,38 @@
+{
+  "status": "VERIFIED_INDEPENDENT_LINEAR_WEIGHT_SIGNATURE",
+  "degrees_checked": [
+    7,
+    8,
+    9
+  ],
+  "rows": [
+    {
+      "field_degree": 7,
+      "columns": 16256,
+      "signature_entries": 16256,
+      "forced_positive_rows": 16256
+    },
+    {
+      "field_degree": 8,
+      "columns": 65280,
+      "signature_entries": 65280,
+      "forced_positive_rows": 65280
+    },
+    {
+      "field_degree": 9,
+      "columns": 261632,
+      "signature_entries": 261632,
+      "forced_positive_rows": 261632
+    }
+  ],
+  "small_cube_assignments_checked": 8,
+  "duplicate_signature_control": true,
+  "mismatch_control": true,
+  "source_hashes": {
+    "explicit_code_family.py": "a8e38e7026079bb281ab374b9908c6676ff134cb6db900a6e01f59d895a18dfd",
+    "linear_weight_signature.py": "d31cde69437cabe7506c94d5da53f6beb309ea26b310c2c30618a5ec970b1da5",
+    "run_linear_weight_signature.py": "f318c1f28f9db05d3345c370b499c0eb1fdce197924f62bf2d46ec5be9a4fd15",
+    "LINEAR_WEIGHT_SIGNATURE_REVIEW.py": "de5bbbf2c42ebc0951a8c23928064277cf1995a0095eae1944c55076c44d5575"
+  },
+  "scope": "Exact full-objective equality for homogeneous nonnegative linear encodings; no threshold-only claim."
+}

@@ -1,0 +1,26 @@
+name: research-checks
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  focused-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run focused certificate checks
+        run: |
+          python fourier_spectrum_boundary_lab/run_experiments.py
+          python fourier_spectrum_boundary_lab/verify_fourier_boundary.py
+          python -m unittest -v test_fourier_spectrum_boundary_integration.py
+          python run_holographic_phase_checks.py
+          python verify_holographic_artifacts.py

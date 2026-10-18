@@ -1,0 +1,2211 @@
+{
+  "all_checks_passed": true,
+  "parameters": {
+    "small_groups": 8,
+    "small_width": 4,
+    "max_boundary": 2
+  },
+  "proof_nodes": 65,
+  "proof_root": 64,
+  "proof_certificate": {
+    "A": [
+      [
+        1,
+        2,
+        3,
+        4
+      ],
+      [
+        1,
+        -2
+      ],
+      [
+        1,
+        -3
+      ],
+      [
+        1,
+        -4
+      ],
+      [
+        5,
+        6,
+        7,
+        8
+      ],
+      [
+        5,
+        -6
+      ],
+      [
+        5,
+        -7
+      ],
+      [
+        5,
+        -8
+      ],
+      [
+        9,
+        10,
+        11,
+        12
+      ],
+      [
+        9,
+        -10
+      ],
+      [
+        9,
+        -11
+      ],
+      [
+        9,
+        -12
+      ],
+      [
+        13,
+        14,
+        15,
+        16
+      ],
+      [
+        13,
+        -14
+      ],
+      [
+        13,
+        -15
+      ],
+      [
+        13,
+        -16
+      ],
+      [
+        17,
+        18,
+        19,
+        20
+      ],
+      [
+        17,
+        -18
+      ],
+      [
+        17,
+        -19
+      ],
+      [
+        17,
+        -20
+      ],
+      [
+        21,
+        22,
+        23,
+        24
+      ],
+      [
+        21,
+        -22
+      ],
+      [
+        21,
+        -23
+      ],
+      [
+        21,
+        -24
+      ],
+      [
+        25,
+        26,
+        27,
+        28
+      ],
+      [
+        25,
+        -26
+      ],
+      [
+        25,
+        -27
+      ],
+      [
+        25,
+        -28
+      ],
+      [
+        29,
+        30,
+        31,
+        32
+      ],
+      [
+        29,
+        -30
+      ],
+      [
+        29,
+        -31
+      ],
+      [
+        29,
+        -32
+      ]
+    ],
+    "B": [
+      [
+        -1,
+        -5,
+        -9,
+        -13,
+        -17,
+        -21,
+        -25,
+        -29
+      ]
+    ],
+    "nodes": [
+      {
+        "clause": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "part": "A"
+      },
+      {
+        "clause": [
+          1,
+          -2
+        ],
+        "part": "A"
+      },
+      {
+        "clause": [
+          1,
+          3,
+          4
+        ],
+        "left": 0,
+        "right": 1,
+        "pivot": 1
+      },
+      {
+        "clause": [
+          1,
+          -3
+        ],
+        "part": "A"
+      },
+      {
+        "clause": [
+          1,
+          4
+        ],
+        "left": 2,
+        "right": 3,
+        "pivot": 2
+      },
+      {
+        "clause": [
+          1,
+          -4
+        ],
+        "part": "A"
+      },
+      {
+        "clause": [
+          1
+        ],
+        "left": 4,
+        "right": 5,
+        "pivot": 3
+      },
+      {
+        "clause": [
+          5,
+          6,
+          7,
+          8
+        ],
+        "part": "A"
+      },
+      {
+        "clause": [
+          5,
+          -6
+        ],
+        "part": "A"
+      },
+      {
+        "clause": [
+          5,
+          7,
+          8
+        ],
+        "left": 7,
+        "right": 8,
+        "pivot": 5
+      },
+      {
+        "clause": [
+          5,
+          -7
+        ],
+        "part": "A"
+      },
+      {
+        "clause": [
+          5,
+          8
+        ],
+        "left": 9,
+        "right": 10,
+        "pivot": 6
+      },
+      {
+        "clause": [
+          5,
+          -8
+        ],
+        "part": "A"
+      },
+      {
+        "clause": [
+          5
+        ],
+        "left": 11,
+        "right": 12,
+        "pivot": 7
+      },
+      {
+        "clause": [
+          9,
+          10,
+          11,
+          12
+        ],
+        "part": "A"
+      },
+      {
+        "clause": [
+          9,
+          -10
+        ],
+        "part": "A"
+      },
+      {
+        "clause": [
+          9,
+          11,
+          12
+        ],
+        "left": 14,
+        "right": 15,
+        "pivot": 9
+      },
+      {
+        "clause": [
+          9,
+          -11
+        ],
+        "part": "A"
+      },
+      {
+        "clause": [
+          9,
+          12
+        ],
+        "left": 16,
+        "right": 17,
+        "pivot": 10
+      },
+      {
+        "clause": [
+          9,
+          -12
+        ],
+        "part": "A"
+      },
+      {
+        "clause": [
+          9
+        ],
+        "left": 18,
+        "right": 19,
+        "pivot": 11
+      },
+      {
+        "clause": [
+          13,
+          14,
+          15,
+          16
+        ],
+        "part": "A"
+      },
+      {
+        "clause": [
+          13,
+          -14
+        ],
+        "part": "A"
+      },
+      {
+        "clause": [
+          13,
+          15,
+          16
+        ],
+        "left": 21,
+        "right": 22,
+        "pivot": 13
+      },
+      {
+        "clause": [
+          13,
+          -15
+        ],
+        "part": "A"
+      },
+      {
+        "clause": [
+          13,
+          16
+        ],
+        "left": 23,
+        "right": 24,
+        "pivot": 14
+      },
+      {
+        "clause": [
+          13,
+          -16
+        ],
+        "part": "A"
+      },
+      {
+        "clause": [
+          13
+        ],
+        "left": 25,
+        "right": 26,
+        "pivot": 15
+      },
+      {
+        "clause": [
+          17,
+          18,
+          19,
+          20
+        ],
+        "part": "A"
+      },
+      {
+        "clause": [
+          17,
+          -18
+        ],
+        "part": "A"
+      },
+      {
+        "clause": [
+          17,
+          19,
+          20
+        ],
+        "left": 28,
+        "right": 29,
+        "pivot": 17
+      },
+      {
+        "clause": [
+          17,
+          -19
+        ],
+        "part": "A"
+      },
+      {
+        "clause": [
+          17,
+          20
+        ],
+        "left": 30,
+        "right": 31,
+        "pivot": 18
+      },
+      {
+        "clause": [
+          17,
+          -20
+        ],
+        "part": "A"
+      },
+      {
+        "clause": [
+          17
+        ],
+        "left": 32,
+        "right": 33,
+        "pivot": 19
+      },
+      {
+        "clause": [
+          21,
+          22,
+          23,
+          24
+        ],
+        "part": "A"
+      },
+      {
+        "clause": [
+          21,
+          -22
+        ],
+        "part": "A"
+      },
+      {
+        "clause": [
+          21,
+          23,
+          24
+        ],
+        "left": 35,
+        "right": 36,
+        "pivot": 21
+      },
+      {
+        "clause": [
+          21,
+          -23
+        ],
+        "part": "A"
+      },
+      {
+        "clause": [
+          21,
+          24
+        ],
+        "left": 37,
+        "right": 38,
+        "pivot": 22
+      },
+      {
+        "clause": [
+          21,
+          -24
+        ],
+        "part": "A"
+      },
+      {
+        "clause": [
+          21
+        ],
+        "left": 39,
+        "right": 40,
+        "pivot": 23
+      },
+      {
+        "clause": [
+          25,
+          26,
+          27,
+          28
+        ],
+        "part": "A"
+      },
+      {
+        "clause": [
+          25,
+          -26
+        ],
+        "part": "A"
+      },
+      {
+        "clause": [
+          25,
+          27,
+          28
+        ],
+        "left": 42,
+        "right": 43,
+        "pivot": 25
+      },
+      {
+        "clause": [
+          25,
+          -27
+        ],
+        "part": "A"
+      },
+      {
+        "clause": [
+          25,
+          28
+        ],
+        "left": 44,
+        "right": 45,
+        "pivot": 26
+      },
+      {
+        "clause": [
+          25,
+          -28
+        ],
+        "part": "A"
+      },
+      {
+        "clause": [
+          25
+        ],
+        "left": 46,
+        "right": 47,
+        "pivot": 27
+      },
+      {
+        "clause": [
+          29,
+          30,
+          31,
+          32
+        ],
+        "part": "A"
+      },
+      {
+        "clause": [
+          29,
+          -30
+        ],
+        "part": "A"
+      },
+      {
+        "clause": [
+          29,
+          31,
+          32
+        ],
+        "left": 49,
+        "right": 50,
+        "pivot": 29
+      },
+      {
+        "clause": [
+          29,
+          -31
+        ],
+        "part": "A"
+      },
+      {
+        "clause": [
+          29,
+          32
+        ],
+        "left": 51,
+        "right": 52,
+        "pivot": 30
+      },
+      {
+        "clause": [
+          29,
+          -32
+        ],
+        "part": "A"
+      },
+      {
+        "clause": [
+          29
+        ],
+        "left": 53,
+        "right": 54,
+        "pivot": 31
+      },
+      {
+        "clause": [
+          -1,
+          -5,
+          -9,
+          -13,
+          -17,
+          -21,
+          -25,
+          -29
+        ],
+        "part": "B"
+      },
+      {
+        "clause": [
+          -5,
+          -9,
+          -13,
+          -17,
+          -21,
+          -25,
+          -29
+        ],
+        "left": 56,
+        "right": 6,
+        "pivot": 0
+      },
+      {
+        "clause": [
+          -9,
+          -13,
+          -17,
+          -21,
+          -25,
+          -29
+        ],
+        "left": 57,
+        "right": 13,
+        "pivot": 4
+      },
+      {
+        "clause": [
+          -13,
+          -17,
+          -21,
+          -25,
+          -29
+        ],
+        "left": 58,
+        "right": 20,
+        "pivot": 8
+      },
+      {
+        "clause": [
+          -17,
+          -21,
+          -25,
+          -29
+        ],
+        "left": 59,
+        "right": 27,
+        "pivot": 12
+      },
+      {
+        "clause": [
+          -21,
+          -25,
+          -29
+        ],
+        "left": 60,
+        "right": 34,
+        "pivot": 16
+      },
+      {
+        "clause": [
+          -25,
+          -29
+        ],
+        "left": 61,
+        "right": 41,
+        "pivot": 20
+      },
+      {
+        "clause": [
+          -29
+        ],
+        "left": 62,
+        "right": 48,
+        "pivot": 24
+      },
+      {
+        "clause": [],
+        "left": 63,
+        "right": 55,
+        "pivot": 28
+      }
+    ]
+  },
+  "rows": [
+    {
+      "status": "FOUND",
+      "kind": "SUFFIX",
+      "candidate": {
+        "kind": "PB",
+        "weights": {
+          "24": 1,
+          "28": 1
+        },
+        "sense": "<=",
+        "bound": 1
+      },
+      "relation_bits": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "boundary": [
+        24,
+        28
+      ],
+      "local_count": 24,
+      "discovery_work": 49,
+      "certificate": {
+        "kind": "FUSED_NEGATIVE_SUFFIX",
+        "proof_node": 62,
+        "groups": 8,
+        "width": 4,
+        "start_group": 6,
+        "boundary": [
+          24,
+          28
+        ],
+        "suffix_clause": [
+          -25,
+          -29
+        ],
+        "chain_pivots": [
+          0,
+          4,
+          8,
+          12,
+          16,
+          20
+        ],
+        "unit_roots": [
+          6,
+          13,
+          20,
+          27,
+          34,
+          41
+        ],
+        "reachable_nodes_checked": 49,
+        "extension_schema": "set every variable in groups before start_group to true",
+        "projection_argument": "the prefix A groups force their representatives true; B then reduces to the suffix clause, and every satisfying boundary assignment extends by prefix-all-true"
+      },
+      "node_index": 62
+    },
+    {
+      "status": "FOUND",
+      "kind": "SUFFIX",
+      "candidate": {
+        "kind": "UNIT",
+        "var": 28,
+        "value": false
+      },
+      "relation_bits": [
+        1,
+        0
+      ],
+      "boundary": [
+        28
+      ],
+      "local_count": 28,
+      "discovery_work": 57,
+      "certificate": {
+        "kind": "FUSED_NEGATIVE_SUFFIX",
+        "proof_node": 63,
+        "groups": 8,
+        "width": 4,
+        "start_group": 7,
+        "boundary": [
+          28
+        ],
+        "suffix_clause": [
+          -29
+        ],
+        "chain_pivots": [
+          0,
+          4,
+          8,
+          12,
+          16,
+          20,
+          24
+        ],
+        "unit_roots": [
+          6,
+          13,
+          20,
+          27,
+          34,
+          41,
+          48
+        ],
+        "reachable_nodes_checked": 57,
+        "extension_schema": "set every variable in groups before start_group to true",
+        "projection_argument": "the prefix A groups force their representatives true; B then reduces to the suffix clause, and every satisfying boundary assignment extends by prefix-all-true"
+      },
+      "node_index": 63
+    }
+  ],
+  "scale_summary": {
+    "groups": 256,
+    "width": 8,
+    "proof_nodes": 4097,
+    "proof_root": 4096,
+    "rows": [
+      {
+        "status": "FOUND",
+        "kind": "SUFFIX",
+        "candidate": {
+          "kind": "PB",
+          "weights": {
+            "2032": 1,
+            "2040": 1
+          },
+          "sense": "<=",
+          "bound": 1
+        },
+        "relation_bits": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "boundary": [
+          2032,
+          2040
+        ],
+        "local_count": 2032,
+        "discovery_work": 4065,
+        "certificate": {
+          "kind": "FUSED_NEGATIVE_SUFFIX",
+          "proof_node": 4094,
+          "groups": 256,
+          "width": 8,
+          "start_group": 254,
+          "boundary": [
+            2032,
+            2040
+          ],
+          "suffix_clause": [
+            -2033,
+            -2041
+          ],
+          "chain_pivots": [
+            0,
+            8,
+            16,
+            24,
+            32,
+            40,
+            48,
+            56,
+            64,
+            72,
+            80,
+            88,
+            96,
+            104,
+            112,
+            120,
+            128,
+            136,
+            144,
+            152,
+            160,
+            168,
+            176,
+            184,
+            192,
+            200,
+            208,
+            216,
+            224,
+            232,
+            240,
+            248,
+            256,
+            264,
+            272,
+            280,
+            288,
+            296,
+            304,
+            312,
+            320,
+            328,
+            336,
+            344,
+            352,
+            360,
+            368,
+            376,
+            384,
+            392,
+            400,
+            408,
+            416,
+            424,
+            432,
+            440,
+            448,
+            456,
+            464,
+            472,
+            480,
+            488,
+            496,
+            504,
+            512,
+            520,
+            528,
+            536,
+            544,
+            552,
+            560,
+            568,
+            576,
+            584,
+            592,
+            600,
+            608,
+            616,
+            624,
+            632,
+            640,
+            648,
+            656,
+            664,
+            672,
+            680,
+            688,
+            696,
+            704,
+            712,
+            720,
+            728,
+            736,
+            744,
+            752,
+            760,
+            768,
+            776,
+            784,
+            792,
+            800,
+            808,
+            816,
+            824,
+            832,
+            840,
+            848,
+            856,
+            864,
+            872,
+            880,
+            888,
+            896,
+            904,
+            912,
+            920,
+            928,
+            936,
+            944,
+            952,
+            960,
+            968,
+            976,
+            984,
+            992,
+            1000,
+            1008,
+            1016,
+            1024,
+            1032,
+            1040,
+            1048,
+            1056,
+            1064,
+            1072,
+            1080,
+            1088,
+            1096,
+            1104,
+            1112,
+            1120,
+            1128,
+            1136,
+            1144,
+            1152,
+            1160,
+            1168,
+            1176,
+            1184,
+            1192,
+            1200,
+            1208,
+            1216,
+            1224,
+            1232,
+            1240,
+            1248,
+            1256,
+            1264,
+            1272,
+            1280,
+            1288,
+            1296,
+            1304,
+            1312,
+            1320,
+            1328,
+            1336,
+            1344,
+            1352,
+            1360,
+            1368,
+            1376,
+            1384,
+            1392,
+            1400,
+            1408,
+            1416,
+            1424,
+            1432,
+            1440,
+            1448,
+            1456,
+            1464,
+            1472,
+            1480,
+            1488,
+            1496,
+            1504,
+            1512,
+            1520,
+            1528,
+            1536,
+            1544,
+            1552,
+            1560,
+            1568,
+            1576,
+            1584,
+            1592,
+            1600,
+            1608,
+            1616,
+            1624,
+            1632,
+            1640,
+            1648,
+            1656,
+            1664,
+            1672,
+            1680,
+            1688,
+            1696,
+            1704,
+            1712,
+            1720,
+            1728,
+            1736,
+            1744,
+            1752,
+            1760,
+            1768,
+            1776,
+            1784,
+            1792,
+            1800,
+            1808,
+            1816,
+            1824,
+            1832,
+            1840,
+            1848,
+            1856,
+            1864,
+            1872,
+            1880,
+            1888,
+            1896,
+            1904,
+            1912,
+            1920,
+            1928,
+            1936,
+            1944,
+            1952,
+            1960,
+            1968,
+            1976,
+            1984,
+            1992,
+            2000,
+            2008,
+            2016,
+            2024
+          ],
+          "unit_roots": [
+            14,
+            29,
+            44,
+            59,
+            74,
+            89,
+            104,
+            119,
+            134,
+            149,
+            164,
+            179,
+            194,
+            209,
+            224,
+            239,
+            254,
+            269,
+            284,
+            299,
+            314,
+            329,
+            344,
+            359,
+            374,
+            389,
+            404,
+            419,
+            434,
+            449,
+            464,
+            479,
+            494,
+            509,
+            524,
+            539,
+            554,
+            569,
+            584,
+            599,
+            614,
+            629,
+            644,
+            659,
+            674,
+            689,
+            704,
+            719,
+            734,
+            749,
+            764,
+            779,
+            794,
+            809,
+            824,
+            839,
+            854,
+            869,
+            884,
+            899,
+            914,
+            929,
+            944,
+            959,
+            974,
+            989,
+            1004,
+            1019,
+            1034,
+            1049,
+            1064,
+            1079,
+            1094,
+            1109,
+            1124,
+            1139,
+            1154,
+            1169,
+            1184,
+            1199,
+            1214,
+            1229,
+            1244,
+            1259,
+            1274,
+            1289,
+            1304,
+            1319,
+            1334,
+            1349,
+            1364,
+            1379,
+            1394,
+            1409,
+            1424,
+            1439,
+            1454,
+            1469,
+            1484,
+            1499,
+            1514,
+            1529,
+            1544,
+            1559,
+            1574,
+            1589,
+            1604,
+            1619,
+            1634,
+            1649,
+            1664,
+            1679,
+            1694,
+            1709,
+            1724,
+            1739,
+            1754,
+            1769,
+            1784,
+            1799,
+            1814,
+            1829,
+            1844,
+            1859,
+            1874,
+            1889,
+            1904,
+            1919,
+            1934,
+            1949,
+            1964,
+            1979,
+            1994,
+            2009,
+            2024,
+            2039,
+            2054,
+            2069,
+            2084,
+            2099,
+            2114,
+            2129,
+            2144,
+            2159,
+            2174,
+            2189,
+            2204,
+            2219,
+            2234,
+            2249,
+            2264,
+            2279,
+            2294,
+            2309,
+            2324,
+            2339,
+            2354,
+            2369,
+            2384,
+            2399,
+            2414,
+            2429,
+            2444,
+            2459,
+            2474,
+            2489,
+            2504,
+            2519,
+            2534,
+            2549,
+            2564,
+            2579,
+            2594,
+            2609,
+            2624,
+            2639,
+            2654,
+            2669,
+            2684,
+            2699,
+            2714,
+            2729,
+            2744,
+            2759,
+            2774,
+            2789,
+            2804,
+            2819,
+            2834,
+            2849,
+            2864,
+            2879,
+            2894,
+            2909,
+            2924,
+            2939,
+            2954,
+            2969,
+            2984,
+            2999,
+            3014,
+            3029,
+            3044,
+            3059,
+            3074,
+            3089,
+            3104,
+            3119,
+            3134,
+            3149,
+            3164,
+            3179,
+            3194,
+            3209,
+            3224,
+            3239,
+            3254,
+            3269,
+            3284,
+            3299,
+            3314,
+            3329,
+            3344,
+            3359,
+            3374,
+            3389,
+            3404,
+            3419,
+            3434,
+            3449,
+            3464,
+            3479,
+            3494,
+            3509,
+            3524,
+            3539,
+            3554,
+            3569,
+            3584,
+            3599,
+            3614,
+            3629,
+            3644,
+            3659,
+            3674,
+            3689,
+            3704,
+            3719,
+            3734,
+            3749,
+            3764,
+            3779,
+            3794,
+            3809
+          ],
+          "reachable_nodes_checked": 4065,
+          "extension_schema": "set every variable in groups before start_group to true",
+          "projection_argument": "the prefix A groups force their representatives true; B then reduces to the suffix clause, and every satisfying boundary assignment extends by prefix-all-true"
+        },
+        "node_index": 4094
+      },
+      {
+        "status": "FOUND",
+        "kind": "SUFFIX",
+        "candidate": {
+          "kind": "UNIT",
+          "var": 2040,
+          "value": false
+        },
+        "relation_bits": [
+          1,
+          0
+        ],
+        "boundary": [
+          2040
+        ],
+        "local_count": 2040,
+        "discovery_work": 4081,
+        "certificate": {
+          "kind": "FUSED_NEGATIVE_SUFFIX",
+          "proof_node": 4095,
+          "groups": 256,
+          "width": 8,
+          "start_group": 255,
+          "boundary": [
+            2040
+          ],
+          "suffix_clause": [
+            -2041
+          ],
+          "chain_pivots": [
+            0,
+            8,
+            16,
+            24,
+            32,
+            40,
+            48,
+            56,
+            64,
+            72,
+            80,
+            88,
+            96,
+            104,
+            112,
+            120,
+            128,
+            136,
+            144,
+            152,
+            160,
+            168,
+            176,
+            184,
+            192,
+            200,
+            208,
+            216,
+            224,
+            232,
+            240,
+            248,
+            256,
+            264,
+            272,
+            280,
+            288,
+            296,
+            304,
+            312,
+            320,
+            328,
+            336,
+            344,
+            352,
+            360,
+            368,
+            376,
+            384,
+            392,
+            400,
+            408,
+            416,
+            424,
+            432,
+            440,
+            448,
+            456,
+            464,
+            472,
+            480,
+            488,
+            496,
+            504,
+            512,
+            520,
+            528,
+            536,
+            544,
+            552,
+            560,
+            568,
+            576,
+            584,
+            592,
+            600,
+            608,
+            616,
+            624,
+            632,
+            640,
+            648,
+            656,
+            664,
+            672,
+            680,
+            688,
+            696,
+            704,
+            712,
+            720,
+            728,
+            736,
+            744,
+            752,
+            760,
+            768,
+            776,
+            784,
+            792,
+            800,
+            808,
+            816,
+            824,
+            832,
+            840,
+            848,
+            856,
+            864,
+            872,
+            880,
+            888,
+            896,
+            904,
+            912,
+            920,
+            928,
+            936,
+            944,
+            952,
+            960,
+            968,
+            976,
+            984,
+            992,
+            1000,
+            1008,
+            1016,
+            1024,
+            1032,
+            1040,
+            1048,
+            1056,
+            1064,
+            1072,
+            1080,
+            1088,
+            1096,
+            1104,
+            1112,
+            1120,
+            1128,
+            1136,
+            1144,
+            1152,
+            1160,
+            1168,
+            1176,
+            1184,
+            1192,
+            1200,
+            1208,
+            1216,
+            1224,
+            1232,
+            1240,
+            1248,
+            1256,
+            1264,
+            1272,
+            1280,
+            1288,
+            1296,
+            1304,
+            1312,
+            1320,
+            1328,
+            1336,
+            1344,
+            1352,
+            1360,
+            1368,
+            1376,
+            1384,
+            1392,
+            1400,
+            1408,
+            1416,
+            1424,
+            1432,
+            1440,
+            1448,
+            1456,
+            1464,
+            1472,
+            1480,
+            1488,
+            1496,
+            1504,
+            1512,
+            1520,
+            1528,
+            1536,
+            1544,
+            1552,
+            1560,
+            1568,
+            1576,
+            1584,
+            1592,
+            1600,
+            1608,
+            1616,
+            1624,
+            1632,
+            1640,
+            1648,
+            1656,
+            1664,
+            1672,
+            1680,
+            1688,
+            1696,
+            1704,
+            1712,
+            1720,
+            1728,
+            1736,
+            1744,
+            1752,
+            1760,
+            1768,
+            1776,
+            1784,
+            1792,
+            1800,
+            1808,
+            1816,
+            1824,
+            1832,
+            1840,
+            1848,
+            1856,
+            1864,
+            1872,
+            1880,
+            1888,
+            1896,
+            1904,
+            1912,
+            1920,
+            1928,
+            1936,
+            1944,
+            1952,
+            1960,
+            1968,
+            1976,
+            1984,
+            1992,
+            2000,
+            2008,
+            2016,
+            2024,
+            2032
+          ],
+          "unit_roots": [
+            14,
+            29,
+            44,
+            59,
+            74,
+            89,
+            104,
+            119,
+            134,
+            149,
+            164,
+            179,
+            194,
+            209,
+            224,
+            239,
+            254,
+            269,
+            284,
+            299,
+            314,
+            329,
+            344,
+            359,
+            374,
+            389,
+            404,
+            419,
+            434,
+            449,
+            464,
+            479,
+            494,
+            509,
+            524,
+            539,
+            554,
+            569,
+            584,
+            599,
+            614,
+            629,
+            644,
+            659,
+            674,
+            689,
+            704,
+            719,
+            734,
+            749,
+            764,
+            779,
+            794,
+            809,
+            824,
+            839,
+            854,
+            869,
+            884,
+            899,
+            914,
+            929,
+            944,
+            959,
+            974,
+            989,
+            1004,
+            1019,
+            1034,
+            1049,
+            1064,
+            1079,
+            1094,
+            1109,
+            1124,
+            1139,
+            1154,
+            1169,
+            1184,
+            1199,
+            1214,
+            1229,
+            1244,
+            1259,
+            1274,
+            1289,
+            1304,
+            1319,
+            1334,
+            1349,
+            1364,
+            1379,
+            1394,
+            1409,
+            1424,
+            1439,
+            1454,
+            1469,
+            1484,
+            1499,
+            1514,
+            1529,
+            1544,
+            1559,
+            1574,
+            1589,
+            1604,
+            1619,
+            1634,
+            1649,
+            1664,
+            1679,
+            1694,
+            1709,
+            1724,
+            1739,
+            1754,
+            1769,
+            1784,
+            1799,
+            1814,
+            1829,
+            1844,
+            1859,
+            1874,
+            1889,
+            1904,
+            1919,
+            1934,
+            1949,
+            1964,
+            1979,
+            1994,
+            2009,
+            2024,
+            2039,
+            2054,
+            2069,
+            2084,
+            2099,
+            2114,
+            2129,
+            2144,
+            2159,
+            2174,
+            2189,
+            2204,
+            2219,
+            2234,
+            2249,
+            2264,
+            2279,
+            2294,
+            2309,
+            2324,
+            2339,
+            2354,
+            2369,
+            2384,
+            2399,
+            2414,
+            2429,
+            2444,
+            2459,
+            2474,
+            2489,
+            2504,
+            2519,
+            2534,
+            2549,
+            2564,
+            2579,
+            2594,
+            2609,
+            2624,
+            2639,
+            2654,
+            2669,
+            2684,
+            2699,
+            2714,
+            2729,
+            2744,
+            2759,
+            2774,
+            2789,
+            2804,
+            2819,
+            2834,
+            2849,
+            2864,
+            2879,
+            2894,
+            2909,
+            2924,
+            2939,
+            2954,
+            2969,
+            2984,
+            2999,
+            3014,
+            3029,
+            3044,
+            3059,
+            3074,
+            3089,
+            3104,
+            3119,
+            3134,
+            3149,
+            3164,
+            3179,
+            3194,
+            3209,
+            3224,
+            3239,
+            3254,
+            3269,
+            3284,
+            3299,
+            3314,
+            3329,
+            3344,
+            3359,
+            3374,
+            3389,
+            3404,
+            3419,
+            3434,
+            3449,
+            3464,
+            3479,
+            3494,
+            3509,
+            3524,
+            3539,
+            3554,
+            3569,
+            3584,
+            3599,
+            3614,
+            3629,
+            3644,
+            3659,
+            3674,
+            3689,
+            3704,
+            3719,
+            3734,
+            3749,
+            3764,
+            3779,
+            3794,
+            3809,
+            3824
+          ],
+          "reachable_nodes_checked": 4081,
+          "extension_schema": "set every variable in groups before start_group to true",
+          "projection_argument": "the prefix A groups force their representatives true; B then reduces to the suffix clause, and every satisfying boundary assignment extends by prefix-all-true"
+        },
+        "node_index": 4095
+      }
+    ]
+  },
+  "parameter_sweep": [
+    {
+      "groups": 4,
+      "width": 2,
+      "proof_nodes": 17,
+      "two_boundary_work": 9,
+      "one_boundary_work": 13,
+      "two_local_count": 4,
+      "one_local_count": 6,
+      "expected_two_boundary_work": 9,
+      "expected_one_boundary_work": 13
+    },
+    {
+      "groups": 8,
+      "width": 2,
+      "proof_nodes": 33,
+      "two_boundary_work": 25,
+      "one_boundary_work": 29,
+      "two_local_count": 12,
+      "one_local_count": 14,
+      "expected_two_boundary_work": 25,
+      "expected_one_boundary_work": 29
+    },
+    {
+      "groups": 16,
+      "width": 2,
+      "proof_nodes": 65,
+      "two_boundary_work": 57,
+      "one_boundary_work": 61,
+      "two_local_count": 28,
+      "one_local_count": 30,
+      "expected_two_boundary_work": 57,
+      "expected_one_boundary_work": 61
+    },
+    {
+      "groups": 32,
+      "width": 2,
+      "proof_nodes": 129,
+      "two_boundary_work": 121,
+      "one_boundary_work": 125,
+      "two_local_count": 60,
+      "one_local_count": 62,
+      "expected_two_boundary_work": 121,
+      "expected_one_boundary_work": 125
+    },
+    {
+      "groups": 64,
+      "width": 2,
+      "proof_nodes": 257,
+      "two_boundary_work": 249,
+      "one_boundary_work": 253,
+      "two_local_count": 124,
+      "one_local_count": 126,
+      "expected_two_boundary_work": 249,
+      "expected_one_boundary_work": 253
+    },
+    {
+      "groups": 128,
+      "width": 2,
+      "proof_nodes": 513,
+      "two_boundary_work": 505,
+      "one_boundary_work": 509,
+      "two_local_count": 252,
+      "one_local_count": 254,
+      "expected_two_boundary_work": 505,
+      "expected_one_boundary_work": 509
+    },
+    {
+      "groups": 256,
+      "width": 2,
+      "proof_nodes": 1025,
+      "two_boundary_work": 1017,
+      "one_boundary_work": 1021,
+      "two_local_count": 508,
+      "one_local_count": 510,
+      "expected_two_boundary_work": 1017,
+      "expected_one_boundary_work": 1021
+    },
+    {
+      "groups": 8,
+      "width": 4,
+      "proof_nodes": 65,
+      "two_boundary_work": 49,
+      "one_boundary_work": 57,
+      "two_local_count": 24,
+      "one_local_count": 28,
+      "expected_two_boundary_work": 49,
+      "expected_one_boundary_work": 57
+    },
+    {
+      "groups": 16,
+      "width": 4,
+      "proof_nodes": 129,
+      "two_boundary_work": 113,
+      "one_boundary_work": 121,
+      "two_local_count": 56,
+      "one_local_count": 60,
+      "expected_two_boundary_work": 113,
+      "expected_one_boundary_work": 121
+    },
+    {
+      "groups": 32,
+      "width": 4,
+      "proof_nodes": 257,
+      "two_boundary_work": 241,
+      "one_boundary_work": 249,
+      "two_local_count": 120,
+      "one_local_count": 124,
+      "expected_two_boundary_work": 241,
+      "expected_one_boundary_work": 249
+    },
+    {
+      "groups": 64,
+      "width": 4,
+      "proof_nodes": 513,
+      "two_boundary_work": 497,
+      "one_boundary_work": 505,
+      "two_local_count": 248,
+      "one_local_count": 252,
+      "expected_two_boundary_work": 497,
+      "expected_one_boundary_work": 505
+    },
+    {
+      "groups": 128,
+      "width": 4,
+      "proof_nodes": 1025,
+      "two_boundary_work": 1009,
+      "one_boundary_work": 1017,
+      "two_local_count": 504,
+      "one_local_count": 508,
+      "expected_two_boundary_work": 1009,
+      "expected_one_boundary_work": 1017
+    },
+    {
+      "groups": 256,
+      "width": 4,
+      "proof_nodes": 2049,
+      "two_boundary_work": 2033,
+      "one_boundary_work": 2041,
+      "two_local_count": 1016,
+      "one_local_count": 1020,
+      "expected_two_boundary_work": 2033,
+      "expected_one_boundary_work": 2041
+    },
+    {
+      "groups": 8,
+      "width": 8,
+      "proof_nodes": 129,
+      "two_boundary_work": 97,
+      "one_boundary_work": 113,
+      "two_local_count": 48,
+      "one_local_count": 56,
+      "expected_two_boundary_work": 97,
+      "expected_one_boundary_work": 113
+    },
+    {
+      "groups": 16,
+      "width": 8,
+      "proof_nodes": 257,
+      "two_boundary_work": 225,
+      "one_boundary_work": 241,
+      "two_local_count": 112,
+      "one_local_count": 120,
+      "expected_two_boundary_work": 225,
+      "expected_one_boundary_work": 241
+    },
+    {
+      "groups": 32,
+      "width": 8,
+      "proof_nodes": 513,
+      "two_boundary_work": 481,
+      "one_boundary_work": 497,
+      "two_local_count": 240,
+      "one_local_count": 248,
+      "expected_two_boundary_work": 481,
+      "expected_one_boundary_work": 497
+    },
+    {
+      "groups": 64,
+      "width": 8,
+      "proof_nodes": 1025,
+      "two_boundary_work": 993,
+      "one_boundary_work": 1009,
+      "two_local_count": 496,
+      "one_local_count": 504,
+      "expected_two_boundary_work": 993,
+      "expected_one_boundary_work": 1009
+    },
+    {
+      "groups": 128,
+      "width": 8,
+      "proof_nodes": 2049,
+      "two_boundary_work": 2017,
+      "one_boundary_work": 2033,
+      "two_local_count": 1008,
+      "one_local_count": 1016,
+      "expected_two_boundary_work": 2017,
+      "expected_one_boundary_work": 2033
+    },
+    {
+      "groups": 256,
+      "width": 8,
+      "proof_nodes": 4097,
+      "two_boundary_work": 4065,
+      "one_boundary_work": 4081,
+      "two_local_count": 2032,
+      "one_local_count": 2040,
+      "expected_two_boundary_work": 4065,
+      "expected_one_boundary_work": 4081
+    },
+    {
+      "groups": 8,
+      "width": 16,
+      "proof_nodes": 257,
+      "two_boundary_work": 193,
+      "one_boundary_work": 225,
+      "two_local_count": 96,
+      "one_local_count": 112,
+      "expected_two_boundary_work": 193,
+      "expected_one_boundary_work": 225
+    },
+    {
+      "groups": 16,
+      "width": 16,
+      "proof_nodes": 513,
+      "two_boundary_work": 449,
+      "one_boundary_work": 481,
+      "two_local_count": 224,
+      "one_local_count": 240,
+      "expected_two_boundary_work": 449,
+      "expected_one_boundary_work": 481
+    },
+    {
+      "groups": 32,
+      "width": 16,
+      "proof_nodes": 1025,
+      "two_boundary_work": 961,
+      "one_boundary_work": 993,
+      "two_local_count": 480,
+      "one_local_count": 496,
+      "expected_two_boundary_work": 961,
+      "expected_one_boundary_work": 993
+    },
+    {
+      "groups": 64,
+      "width": 16,
+      "proof_nodes": 2049,
+      "two_boundary_work": 1985,
+      "one_boundary_work": 2017,
+      "two_local_count": 992,
+      "one_local_count": 1008,
+      "expected_two_boundary_work": 1985,
+      "expected_one_boundary_work": 2017
+    }
+  ],
+  "adversarial": {
+    "forged_certificate_rejected": true,
+    "near_miss_rejected": true
+  }
+}

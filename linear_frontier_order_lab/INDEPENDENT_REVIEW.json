@@ -1,0 +1,77 @@
+{
+  "status": "VERIFIED_INDEPENDENT_LINEAR_FRONTIER_REVIEW",
+  "case_count": 4,
+  "rows": [
+    {
+      "name": "crossing_pairs_6",
+      "bad_width": 6,
+      "optimal_width": 1,
+      "optimal_order": [
+        0,
+        6,
+        1,
+        7,
+        2,
+        8,
+        3,
+        9,
+        4,
+        10,
+        5,
+        11
+      ]
+    },
+    {
+      "name": "repeated_rows_10",
+      "bad_width": 1,
+      "optimal_width": 1,
+      "optimal_order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "name": "identity_10",
+      "bad_width": 0,
+      "optimal_width": 0,
+      "optimal_order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "name": "dense_4",
+      "bad_width": 2,
+      "optimal_width": 1,
+      "optimal_order": [
+        0,
+        2,
+        1,
+        3
+      ]
+    }
+  ],
+  "source_hashes": {
+    "frontier.py": "b062171e78767f90671acf8627820da102c6b30f252f5321a6e2624adb7da51d",
+    "run_experiments.py": "87ae49e49dee099691415043971bd3ce352ecf838943fd38e66d05bcc0129995",
+    "INDEPENDENT_REVIEW.py": "649100bc717c06d2992f2d37cc9b524ba7ea318563cf95ea4c1403e9d388d80d"
+  },
+  "crossing_bad_width": 6,
+  "crossing_optimal_width": 1
+}

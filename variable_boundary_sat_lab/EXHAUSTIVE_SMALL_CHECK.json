@@ -1,0 +1,17 @@
+{
+  "status": "EXHAUSTIVE_SMALL_BOUNDARY_CROSSCHECK_PASS",
+  "variables": 3,
+  "max_clauses": 3,
+  "cnfs": 2952,
+  "orders": 6,
+  "certificates": 17712,
+  "source_hashes_before": {
+    "boundary_dp.py": "28420afddd49282f0184a70510372d72d21e929a91e3f6099b219cf6b03ed36b",
+    "EXHAUSTIVE_SMALL_CHECK.py": "81c7b7f1498d8693455a5348e26d00b565b6186d4cabec10941157989c64de6f"
+  },
+  "source_hashes_after": {
+    "boundary_dp.py": "28420afddd49282f0184a70510372d72d21e929a91e3f6099b219cf6b03ed36b",
+    "EXHAUSTIVE_SMALL_CHECK.py": "81c7b7f1498d8693455a5348e26d00b565b6186d4cabec10941157989c64de6f"
+  },
+  "source_unchanged_during_run": true
+}

@@ -1,0 +1,39 @@
+{
+  "status": "VERIFIED_INDEPENDENT_AFFINE_WEIGHT_SIGNATURE",
+  "degrees_checked": [
+    7,
+    8,
+    9
+  ],
+  "rows": [
+    {
+      "field_degree": 7,
+      "columns": 16256,
+      "signature_entries": 16256,
+      "forced_nonzero_rows": 16256
+    },
+    {
+      "field_degree": 8,
+      "columns": 65280,
+      "signature_entries": 65280,
+      "forced_nonzero_rows": 65280
+    },
+    {
+      "field_degree": 9,
+      "columns": 261632,
+      "signature_entries": 261632,
+      "forced_nonzero_rows": 261632
+    }
+  ],
+  "small_cube_assignments_checked": 8,
+  "duplicate_affine_control": true,
+  "offset_mismatch_control": true,
+  "signed_weights_accepted": true,
+  "source_hashes": {
+    "explicit_code_family.py": "a8e38e7026079bb281ab374b9908c6676ff134cb6db900a6e01f59d895a18dfd",
+    "affine_weight_signature.py": "73a755a3a7fcc09ad2993ed3fc136ac18c2e7cf767899070a2c05e9d0b8f6190",
+    "run_affine_weight_signature.py": "0602f512b8e14e997198ce33538a50a89b4d01caaa565570d6457066045e762c",
+    "AFFINE_WEIGHT_SIGNATURE_REVIEW.py": "264e8fe4c3006e1118a523df3a7245ab94c5baef44b78f461b385bf542969beb"
+  },
+  "scope": "Exact full-objective equality for affine integer-weight row encodings; no threshold-only claim."
+}

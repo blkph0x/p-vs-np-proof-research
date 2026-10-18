@@ -1,0 +1,27 @@
+{
+  "status": "VERIFIED_COMPARISON_BINDINGS",
+  "source_hashes": {
+    "dag.py": "ab0d730bc6f065b24ba5f80e7d067e68d9006ab1b59bb47836aec3896c1a82ae",
+    "POLICY.md": "5444ce8f7a501363dd928f19bab3a932e19bd74d862c01774a8c2bce05d21074",
+    "fast_recognition.py": "47074d149dd3a298ebe0f1611615e3e23b7d0803d118c85d7bd9bf6a58303b84",
+    "one_piece.py": "ee05d4fc52fec551e57bd61941786531c0ebdbbccaaae03abcecf5843231c248",
+    "grouping_RESULTS.json": "f99ef9dcf2f790cef2255ff027827847805abbb1f059159b0ed6db93191858a9",
+    "compression_CROSSCHECK.json": "485e644b60f64e58e9e7139703df98909d8f8064d9f605c3b2efbd58cbd6797f"
+  },
+  "cases": 80,
+  "summary": {
+    "stress22": {
+      "VERIFIED_EXACT": 11,
+      "UNKNOWN": 11
+    },
+    "original58": {
+      "VERIFIED_EXACT": 54,
+      "UNKNOWN": 4
+    }
+  },
+  "recognition_attempts": 3509,
+  "recognition_rejections": 3453,
+  "recognition_exact": 0,
+  "unchanged_coverage": true,
+  "scope": "Fresh hashes, fixed policy, row arithmetic and post-run exact-count checks. No solver rerun or claim of asymptotic improvement."
+}

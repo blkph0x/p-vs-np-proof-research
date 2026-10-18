@@ -1,0 +1,992 @@
+{
+  "format": "vertex-separation-order-v1",
+  "timestamp_utc": "2026-10-17T23:45:49.404524+00:00",
+  "source_hashes_before": {
+    "vertex_separation.py": "7f300120027e6ae8f5acc6e2d9cf00689ebe1fb39e72f52ff74c6d44795d818f",
+    "run_experiments.py": "94e9640aa36dd54cd538172c6a9e8a858b8a9e27aaec84e3359ca2b63db4c96e"
+  },
+  "source_hashes_after": {
+    "vertex_separation.py": "7f300120027e6ae8f5acc6e2d9cf00689ebe1fb39e72f52ff74c6d44795d818f",
+    "run_experiments.py": "94e9640aa36dd54cd538172c6a9e8a858b8a9e27aaec84e3359ca2b63db4c96e"
+  },
+  "source_unchanged_during_run": true,
+  "rows": [
+    {
+      "case": {
+        "name": "path_8",
+        "n": 8,
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        "bad_order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "expected_width": 1,
+        "expected_bad_width": 1
+      },
+      "bad_width": 1,
+      "greedy_order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "greedy_width": 1,
+      "optimal": {
+        "status": "EXACT",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "width": 1,
+        "records": [
+          {
+            "cut": 1,
+            "subset": 1,
+            "boundary": [
+              0
+            ],
+            "width": 1
+          },
+          {
+            "cut": 2,
+            "subset": 3,
+            "boundary": [
+              1
+            ],
+            "width": 1
+          },
+          {
+            "cut": 3,
+            "subset": 7,
+            "boundary": [
+              2
+            ],
+            "width": 1
+          },
+          {
+            "cut": 4,
+            "subset": 15,
+            "boundary": [
+              3
+            ],
+            "width": 1
+          },
+          {
+            "cut": 5,
+            "subset": 31,
+            "boundary": [
+              4
+            ],
+            "width": 1
+          },
+          {
+            "cut": 6,
+            "subset": 63,
+            "boundary": [
+              5
+            ],
+            "width": 1
+          },
+          {
+            "cut": 7,
+            "subset": 127,
+            "boundary": [
+              6
+            ],
+            "width": 1
+          },
+          {
+            "cut": 8,
+            "subset": 255,
+            "boundary": [],
+            "width": 0
+          }
+        ],
+        "state_count": 256
+      },
+      "verification": {
+        "valid": true,
+        "width": 1,
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "errors": []
+      },
+      "clauses": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          8
+        ]
+      ]
+    },
+    {
+      "case": {
+        "name": "star_8",
+        "n": 8,
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            0,
+            7
+          ]
+        ],
+        "bad_order": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          0
+        ],
+        "expected_width": 1,
+        "expected_bad_width": 7
+      },
+      "bad_width": 7,
+      "greedy_order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "greedy_width": 1,
+      "optimal": {
+        "status": "EXACT",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "width": 1,
+        "records": [
+          {
+            "cut": 1,
+            "subset": 1,
+            "boundary": [
+              0
+            ],
+            "width": 1
+          },
+          {
+            "cut": 2,
+            "subset": 3,
+            "boundary": [
+              0
+            ],
+            "width": 1
+          },
+          {
+            "cut": 3,
+            "subset": 7,
+            "boundary": [
+              0
+            ],
+            "width": 1
+          },
+          {
+            "cut": 4,
+            "subset": 15,
+            "boundary": [
+              0
+            ],
+            "width": 1
+          },
+          {
+            "cut": 5,
+            "subset": 31,
+            "boundary": [
+              0
+            ],
+            "width": 1
+          },
+          {
+            "cut": 6,
+            "subset": 63,
+            "boundary": [
+              0
+            ],
+            "width": 1
+          },
+          {
+            "cut": 7,
+            "subset": 127,
+            "boundary": [
+              0
+            ],
+            "width": 1
+          },
+          {
+            "cut": 8,
+            "subset": 255,
+            "boundary": [],
+            "width": 0
+          }
+        ],
+        "state_count": 256
+      },
+      "verification": {
+        "valid": true,
+        "width": 1,
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "errors": []
+      },
+      "clauses": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          1,
+          8
+        ]
+      ]
+    },
+    {
+      "case": {
+        "name": "cycle_8",
+        "n": 8,
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            7,
+            0
+          ]
+        ],
+        "bad_order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "expected_width": 2,
+        "expected_bad_width": 2
+      },
+      "bad_width": 2,
+      "greedy_order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "greedy_width": 2,
+      "optimal": {
+        "status": "EXACT",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "width": 2,
+        "records": [
+          {
+            "cut": 1,
+            "subset": 1,
+            "boundary": [
+              0
+            ],
+            "width": 1
+          },
+          {
+            "cut": 2,
+            "subset": 3,
+            "boundary": [
+              0,
+              1
+            ],
+            "width": 2
+          },
+          {
+            "cut": 3,
+            "subset": 7,
+            "boundary": [
+              0,
+              2
+            ],
+            "width": 2
+          },
+          {
+            "cut": 4,
+            "subset": 15,
+            "boundary": [
+              0,
+              3
+            ],
+            "width": 2
+          },
+          {
+            "cut": 5,
+            "subset": 31,
+            "boundary": [
+              0,
+              4
+            ],
+            "width": 2
+          },
+          {
+            "cut": 6,
+            "subset": 63,
+            "boundary": [
+              0,
+              5
+            ],
+            "width": 2
+          },
+          {
+            "cut": 7,
+            "subset": 127,
+            "boundary": [
+              0,
+              6
+            ],
+            "width": 2
+          },
+          {
+            "cut": 8,
+            "subset": 255,
+            "boundary": [],
+            "width": 0
+          }
+        ],
+        "state_count": 256
+      },
+      "verification": {
+        "valid": true,
+        "width": 2,
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "errors": []
+      },
+      "clauses": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          8
+        ]
+      ]
+    },
+    {
+      "case": {
+        "name": "complete_6",
+        "n": 6,
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "bad_order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "expected_width": 5,
+        "expected_bad_width": 5
+      },
+      "bad_width": 5,
+      "greedy_order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "greedy_width": 5,
+      "optimal": {
+        "status": "EXACT",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "width": 5,
+        "records": [
+          {
+            "cut": 1,
+            "subset": 1,
+            "boundary": [
+              0
+            ],
+            "width": 1
+          },
+          {
+            "cut": 2,
+            "subset": 3,
+            "boundary": [
+              0,
+              1
+            ],
+            "width": 2
+          },
+          {
+            "cut": 3,
+            "subset": 7,
+            "boundary": [
+              0,
+              1,
+              2
+            ],
+            "width": 3
+          },
+          {
+            "cut": 4,
+            "subset": 15,
+            "boundary": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "width": 4
+          },
+          {
+            "cut": 5,
+            "subset": 31,
+            "boundary": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "width": 5
+          },
+          {
+            "cut": 6,
+            "subset": 63,
+            "boundary": [],
+            "width": 0
+          }
+        ],
+        "state_count": 64
+      },
+      "verification": {
+        "valid": true,
+        "width": 5,
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "errors": []
+      },
+      "clauses": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ]
+      ]
+    },
+    {
+      "case": {
+        "name": "complete_bipartite_4_2",
+        "n": 6,
+        "edges": [
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            5
+          ]
+        ],
+        "bad_order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "expected_width": 2,
+        "expected_bad_width": 4
+      },
+      "bad_width": 4,
+      "greedy_order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "greedy_width": 4,
+      "optimal": {
+        "status": "EXACT",
+        "order": [
+          0,
+          4,
+          5,
+          1,
+          2,
+          3
+        ],
+        "width": 2,
+        "records": [
+          {
+            "cut": 1,
+            "subset": 1,
+            "boundary": [
+              0
+            ],
+            "width": 1
+          },
+          {
+            "cut": 2,
+            "subset": 17,
+            "boundary": [
+              0,
+              4
+            ],
+            "width": 2
+          },
+          {
+            "cut": 3,
+            "subset": 49,
+            "boundary": [
+              4,
+              5
+            ],
+            "width": 2
+          },
+          {
+            "cut": 4,
+            "subset": 51,
+            "boundary": [
+              4,
+              5
+            ],
+            "width": 2
+          },
+          {
+            "cut": 5,
+            "subset": 55,
+            "boundary": [
+              4,
+              5
+            ],
+            "width": 2
+          },
+          {
+            "cut": 6,
+            "subset": 63,
+            "boundary": [],
+            "width": 0
+          }
+        ],
+        "state_count": 64
+      },
+      "verification": {
+        "valid": true,
+        "width": 2,
+        "order": [
+          0,
+          4,
+          5,
+          1,
+          2,
+          3
+        ],
+        "errors": []
+      },
+      "clauses": [
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ]
+      ]
+    }
+  ],
+  "case_count": 5,
+  "star_bad_width": 7,
+  "star_optimal_width": 1,
+  "bipartite_greedy_width": 4,
+  "bipartite_optimal_width": 2
+}

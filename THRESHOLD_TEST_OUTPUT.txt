@@ -1,0 +1,64 @@
+threshold_composition_lab
+test_aggregation_false_accept_and_no_satisfying_assignment (test_threshold_controls.ThresholdControlsTests) ... ok
+test_large_exact_features_do_not_require_decimal_conversion (test_threshold_controls.ThresholdControlsTests) ... ok
+test_malformed_and_forged_certificates_fail_closed (test_threshold_controls.ThresholdControlsTests) ... ok
+test_nonlinear_features_really_change_the_classification_class (test_threshold_controls.ThresholdControlsTests) ... ok
+test_or_all_physical_states_and_original_witnesses (test_threshold_controls.ThresholdControlsTests) ... ok
+test_original_four_point_trade_and_json_roundtrip (test_threshold_controls.ThresholdControlsTests) ... ok
+test_reference_budget_exact_boundary_and_input_validation (test_threshold_controls.ThresholdControlsTests) ... ok
+test_reference_oracle_signed_rational_parallel_edges (test_threshold_controls.ThresholdControlsTests) ... ok
+test_saved_results_replay_and_source_provenance (test_threshold_controls.ThresholdControlsTests) ... ok
+test_signed_rational_features_and_multisets (test_threshold_controls.ThresholdControlsTests) ... ok
+test_truth_and_feature_changes_rejected_even_with_rebound_digest (test_threshold_controls.ThresholdControlsTests) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.350s
+
+OK
+
+saturated_clause_limits
+test_exact_flat_or_has_minimal_exchange_witness (test_saturated_clause.SaturatedClauseTests) ... ok
+test_one_input_is_outside_obstruction (test_saturated_clause.SaturatedClauseTests) ... ok
+test_promised_flat_or_graphs_and_matching_replay (test_saturated_clause.SaturatedClauseTests) ... ok
+test_raw_pair_graph_exactly_implements_or_threshold (test_saturated_clause.SaturatedClauseTests) ... ok
+test_scalar_saturation_is_the_boolean_clause_penalty (test_saturated_clause.SaturatedClauseTests) ... ok
+test_smallest_positive_control_exposes_invalid_zero_states (test_saturated_clause.SaturatedClauseTests) ... ok
+test_two_clause_reward_compensation_counterexample (test_saturated_clause.SaturatedClauseTests) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.012s
+
+OK
+
+multiobjective_matching_limits
+test_empty_formula_and_empty_clause (test_clause_bounds.ClauseBoundTests) ... ok
+test_exhaustive_raw_two_variable_clause_pairs (test_clause_bounds.ClauseBoundTests) ... ok
+test_input_and_budget_rejections (test_clause_bounds.ClauseBoundTests) ... ok
+test_json_roundtrip_exact_costs_and_large_integer_checker (test_clause_bounds.ClauseBoundTests) ... ok
+test_normalization_signs_and_nonnegative_bounded_numbers (test_clause_bounds.ClauseBoundTests) ... ok
+test_single_cycle_has_exactly_two_truth_matchings (test_clause_bounds.ClauseBoundTests) ... ok
+test_ternary_unsat_and_scalar_sum_false_positive (test_clause_bounds.ClauseBoundTests) ... ok
+test_witness_mutations_and_original_objective_binding (test_clause_bounds.ClauseBoundTests) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.055s
+
+OK
+
+packed_cost_exact_matching
+test_budget_is_unknown (test_packing.PackingTests) ... ok
+test_certificate_mutations (test_packing.PackingTests) ... ok
+test_cost_dp_against_all_binary_choices (test_packing.PackingTests) ... ok
+test_empty_and_invalid_inputs (test_packing.PackingTests) ... ok
+test_encoding_binds_original_formula_and_graph (test_packing.PackingTests) ... ok
+test_exact_target_gap_is_not_min_or_range (test_packing.PackingTests) ... ok
+test_exhaustive_small_formulas (test_packing.PackingTests) ... ok
+test_large_binary_weights (test_packing.PackingTests) ... ok
+test_matching_mutations (test_packing.PackingTests) ... ok
+test_polynomial_bitlength_not_small_magnitude (test_packing.PackingTests) ... ok
+test_seeded_width_three_formulas (test_packing.PackingTests) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.090s
+
+OK

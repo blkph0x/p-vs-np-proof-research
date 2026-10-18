@@ -1,0 +1,56 @@
+{
+  "status": "VERIFIED_INDEPENDENT_EXPLICIT_OBJECTIVE_PULLBACK",
+  "degrees_checked": [
+    7,
+    8,
+    9
+  ],
+  "rows": [
+    {
+      "field_degree": 7,
+      "pair": [
+        0,
+        6
+      ],
+      "values": [
+        8192,
+        8192,
+        8192
+      ],
+      "defect": 8192
+    },
+    {
+      "field_degree": 8,
+      "pair": [
+        5,
+        7
+      ],
+      "values": [
+        32768,
+        32768,
+        32768
+      ],
+      "defect": 32768
+    },
+    {
+      "field_degree": 9,
+      "pair": [
+        0,
+        8
+      ],
+      "values": [
+        131072,
+        131072,
+        131072
+      ],
+      "defect": 131072
+    }
+  ],
+  "source_hashes": {
+    "explicit_code_family.py": "a8e38e7026079bb281ab374b9908c6676ff134cb6db900a6e01f59d895a18dfd",
+    "explicit_objective_pullback.py": "bfe81f04bed63bbba843149c3b8a08256bfaadf10a83aa5c24d55b59b443b522",
+    "run_explicit_objective_pullback.py": "e5e7ae0d314f2c5b7a66221b6bd844ca32b3eac38675e58a7b2288612bb5a6dc",
+    "EXPLICIT_OBJECTIVE_PULLBACK_REVIEW.py": "9c37c8ff64be090e4c1aa4121654c65aba2b586e8fde190438453c0adf274283"
+  },
+  "scope": "Natural free-message generator map only; no claim about constrained or nonlinear encodings."
+}

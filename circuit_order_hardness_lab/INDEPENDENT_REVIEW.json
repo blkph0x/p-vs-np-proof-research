@@ -1,0 +1,59 @@
+{
+  "status": "VERIFIED_INDEPENDENT_CIRCUIT_ORDER_BOUND",
+  "case_count": 5,
+  "rows": [
+    {
+      "name": "path_6",
+      "source_width": 1,
+      "full_width": 2,
+      "source_states": 64,
+      "full_states": 2048,
+      "extension_width": 2,
+      "additive_upper_bound_holds": true,
+      "all_ones_sat": true
+    },
+    {
+      "name": "star_6",
+      "source_width": 1,
+      "full_width": 2,
+      "source_states": 64,
+      "full_states": 2048,
+      "extension_width": 2,
+      "additive_upper_bound_holds": true,
+      "all_ones_sat": true
+    },
+    {
+      "name": "cycle_6",
+      "source_width": 2,
+      "full_width": 3,
+      "source_states": 64,
+      "full_states": 4096,
+      "extension_width": 3,
+      "additive_upper_bound_holds": true,
+      "all_ones_sat": true
+    },
+    {
+      "name": "bipartite_3_2",
+      "source_width": 2,
+      "full_width": 3,
+      "source_states": 32,
+      "full_states": 2048,
+      "extension_width": 3,
+      "additive_upper_bound_holds": true,
+      "all_ones_sat": true
+    },
+    {
+      "name": "complete_4",
+      "source_width": 3,
+      "full_width": 4,
+      "source_states": 16,
+      "full_states": 1024,
+      "extension_width": 4,
+      "additive_upper_bound_holds": true,
+      "all_ones_sat": true
+    }
+  ],
+  "all_lower_bounds_hold": true,
+  "all_additive_upper_bounds_hold": true,
+  "all_controls_trivially_satisfiable": true
+}

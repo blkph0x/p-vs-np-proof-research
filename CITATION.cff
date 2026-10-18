@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+title: "P versus NP: exact native solvers and audited obstructions"
+message: "If you use this repository, cite the repository and the specific report or artifact used."
+type: software
+authors:
+  - family-names: Blkph0x
+    given-names: Research checkpoint
+date-released: 2026-10-18
+version: "2026.10.18"
+repository-code: "https://github.com/blkph0x/p-vs-np-proof-research"
+license: MIT
+abstract: >-
+  Reproducible exact algorithms for explicitly bounded SAT-related families,
+  finite certificates, independent replays, and scoped barriers against
+  proposed generalizations. The repository does not claim to resolve P versus NP.

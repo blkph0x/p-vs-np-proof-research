@@ -1,0 +1,816 @@
+{
+  "format": "linear-frontier-order-v1",
+  "timestamp_utc": "2026-10-17T23:37:37.730524+00:00",
+  "source_hashes_before": {
+    "frontier.py": "b062171e78767f90671acf8627820da102c6b30f252f5321a6e2624adb7da51d",
+    "run_experiments.py": "87ae49e49dee099691415043971bd3ce352ecf838943fd38e66d05bcc0129995"
+  },
+  "source_hashes_after": {
+    "frontier.py": "b062171e78767f90671acf8627820da102c6b30f252f5321a6e2624adb7da51d",
+    "run_experiments.py": "87ae49e49dee099691415043971bd3ce352ecf838943fd38e66d05bcc0129995"
+  },
+  "source_unchanged_during_run": true,
+  "rows": [
+    {
+      "name": "crossing_pairs_6",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "bad_order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "bad_width": 6,
+      "optimal": {
+        "status": "EXACT",
+        "order": [
+          0,
+          6,
+          1,
+          7,
+          2,
+          8,
+          3,
+          9,
+          4,
+          10,
+          5,
+          11
+        ],
+        "width": 1,
+        "records": [
+          {
+            "cut": 1,
+            "subset": 1,
+            "rank_past": 1,
+            "rank_future": 6,
+            "rank_all": 6,
+            "lambda": 1
+          },
+          {
+            "cut": 2,
+            "subset": 65,
+            "rank_past": 1,
+            "rank_future": 5,
+            "rank_all": 6,
+            "lambda": 0
+          },
+          {
+            "cut": 3,
+            "subset": 67,
+            "rank_past": 2,
+            "rank_future": 5,
+            "rank_all": 6,
+            "lambda": 1
+          },
+          {
+            "cut": 4,
+            "subset": 195,
+            "rank_past": 2,
+            "rank_future": 4,
+            "rank_all": 6,
+            "lambda": 0
+          },
+          {
+            "cut": 5,
+            "subset": 199,
+            "rank_past": 3,
+            "rank_future": 4,
+            "rank_all": 6,
+            "lambda": 1
+          },
+          {
+            "cut": 6,
+            "subset": 455,
+            "rank_past": 3,
+            "rank_future": 3,
+            "rank_all": 6,
+            "lambda": 0
+          },
+          {
+            "cut": 7,
+            "subset": 463,
+            "rank_past": 4,
+            "rank_future": 3,
+            "rank_all": 6,
+            "lambda": 1
+          },
+          {
+            "cut": 8,
+            "subset": 975,
+            "rank_past": 4,
+            "rank_future": 2,
+            "rank_all": 6,
+            "lambda": 0
+          },
+          {
+            "cut": 9,
+            "subset": 991,
+            "rank_past": 5,
+            "rank_future": 2,
+            "rank_all": 6,
+            "lambda": 1
+          },
+          {
+            "cut": 10,
+            "subset": 2015,
+            "rank_past": 5,
+            "rank_future": 1,
+            "rank_all": 6,
+            "lambda": 0
+          },
+          {
+            "cut": 11,
+            "subset": 2047,
+            "rank_past": 6,
+            "rank_future": 1,
+            "rank_all": 6,
+            "lambda": 1
+          },
+          {
+            "cut": 12,
+            "subset": 4095,
+            "rank_past": 6,
+            "rank_future": 0,
+            "rank_all": 6,
+            "lambda": 0
+          }
+        ],
+        "state_count": 4096
+      },
+      "verification": {
+        "valid": true,
+        "width": 1,
+        "order": [
+          0,
+          6,
+          1,
+          7,
+          2,
+          8,
+          3,
+          9,
+          4,
+          10,
+          5,
+          11
+        ],
+        "errors": []
+      }
+    },
+    {
+      "name": "repeated_rows_10",
+      "matrix": [
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "bad_order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "bad_width": 1,
+      "optimal": {
+        "status": "EXACT",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "width": 1,
+        "records": [
+          {
+            "cut": 1,
+            "subset": 1,
+            "rank_past": 1,
+            "rank_future": 1,
+            "rank_all": 1,
+            "lambda": 1
+          },
+          {
+            "cut": 2,
+            "subset": 3,
+            "rank_past": 1,
+            "rank_future": 1,
+            "rank_all": 1,
+            "lambda": 1
+          },
+          {
+            "cut": 3,
+            "subset": 7,
+            "rank_past": 1,
+            "rank_future": 1,
+            "rank_all": 1,
+            "lambda": 1
+          },
+          {
+            "cut": 4,
+            "subset": 15,
+            "rank_past": 1,
+            "rank_future": 1,
+            "rank_all": 1,
+            "lambda": 1
+          },
+          {
+            "cut": 5,
+            "subset": 31,
+            "rank_past": 1,
+            "rank_future": 1,
+            "rank_all": 1,
+            "lambda": 1
+          },
+          {
+            "cut": 6,
+            "subset": 63,
+            "rank_past": 1,
+            "rank_future": 1,
+            "rank_all": 1,
+            "lambda": 1
+          },
+          {
+            "cut": 7,
+            "subset": 127,
+            "rank_past": 1,
+            "rank_future": 1,
+            "rank_all": 1,
+            "lambda": 1
+          },
+          {
+            "cut": 8,
+            "subset": 255,
+            "rank_past": 1,
+            "rank_future": 1,
+            "rank_all": 1,
+            "lambda": 1
+          },
+          {
+            "cut": 9,
+            "subset": 511,
+            "rank_past": 1,
+            "rank_future": 1,
+            "rank_all": 1,
+            "lambda": 1
+          },
+          {
+            "cut": 10,
+            "subset": 1023,
+            "rank_past": 1,
+            "rank_future": 0,
+            "rank_all": 1,
+            "lambda": 0
+          }
+        ],
+        "state_count": 1024
+      },
+      "verification": {
+        "valid": true,
+        "width": 1,
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "errors": []
+      }
+    },
+    {
+      "name": "identity_10",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "bad_order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "bad_width": 0,
+      "optimal": {
+        "status": "EXACT",
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "width": 0,
+        "records": [
+          {
+            "cut": 1,
+            "subset": 1,
+            "rank_past": 1,
+            "rank_future": 9,
+            "rank_all": 10,
+            "lambda": 0
+          },
+          {
+            "cut": 2,
+            "subset": 3,
+            "rank_past": 2,
+            "rank_future": 8,
+            "rank_all": 10,
+            "lambda": 0
+          },
+          {
+            "cut": 3,
+            "subset": 7,
+            "rank_past": 3,
+            "rank_future": 7,
+            "rank_all": 10,
+            "lambda": 0
+          },
+          {
+            "cut": 4,
+            "subset": 15,
+            "rank_past": 4,
+            "rank_future": 6,
+            "rank_all": 10,
+            "lambda": 0
+          },
+          {
+            "cut": 5,
+            "subset": 31,
+            "rank_past": 5,
+            "rank_future": 5,
+            "rank_all": 10,
+            "lambda": 0
+          },
+          {
+            "cut": 6,
+            "subset": 63,
+            "rank_past": 6,
+            "rank_future": 4,
+            "rank_all": 10,
+            "lambda": 0
+          },
+          {
+            "cut": 7,
+            "subset": 127,
+            "rank_past": 7,
+            "rank_future": 3,
+            "rank_all": 10,
+            "lambda": 0
+          },
+          {
+            "cut": 8,
+            "subset": 255,
+            "rank_past": 8,
+            "rank_future": 2,
+            "rank_all": 10,
+            "lambda": 0
+          },
+          {
+            "cut": 9,
+            "subset": 511,
+            "rank_past": 9,
+            "rank_future": 1,
+            "rank_all": 10,
+            "lambda": 0
+          },
+          {
+            "cut": 10,
+            "subset": 1023,
+            "rank_past": 10,
+            "rank_future": 0,
+            "rank_all": 10,
+            "lambda": 0
+          }
+        ],
+        "state_count": 1024
+      },
+      "verification": {
+        "valid": true,
+        "width": 0,
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "errors": []
+      }
+    },
+    {
+      "name": "dense_4",
+      "matrix": [
+        [
+          1,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ]
+      ],
+      "bad_order": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "bad_width": 2,
+      "optimal": {
+        "status": "EXACT",
+        "order": [
+          0,
+          2,
+          1,
+          3
+        ],
+        "width": 1,
+        "records": [
+          {
+            "cut": 1,
+            "subset": 1,
+            "rank_past": 1,
+            "rank_future": 2,
+            "rank_all": 2,
+            "lambda": 1
+          },
+          {
+            "cut": 2,
+            "subset": 5,
+            "rank_past": 2,
+            "rank_future": 1,
+            "rank_all": 2,
+            "lambda": 1
+          },
+          {
+            "cut": 3,
+            "subset": 7,
+            "rank_past": 2,
+            "rank_future": 1,
+            "rank_all": 2,
+            "lambda": 1
+          },
+          {
+            "cut": 4,
+            "subset": 15,
+            "rank_past": 2,
+            "rank_future": 0,
+            "rank_all": 2,
+            "lambda": 0
+          }
+        ],
+        "state_count": 16
+      },
+      "verification": {
+        "valid": true,
+        "width": 1,
+        "order": [
+          0,
+          2,
+          1,
+          3
+        ],
+        "errors": []
+      }
+    }
+  ],
+  "case_count": 4,
+  "crossing_bad_width": 6,
+  "crossing_optimal_width": 1
+}

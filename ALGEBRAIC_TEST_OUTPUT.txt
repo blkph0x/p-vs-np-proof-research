@@ -1,0 +1,71 @@
+coefficient_residue_lab
+test_all_tiny_products_and_exact_folding (test_coefficient_residue.CoefficientResidueTests) ... ok
+test_exact_budget_boundaries_and_no_unknown_final_claim (test_coefficient_residue.CoefficientResidueTests) ... ok
+test_input_validation_and_json_replay (test_coefficient_residue.CoefficientResidueTests) ... ok
+test_joint_lcm_non_coprime_repeated_and_empty_moduli (test_coefficient_residue.CoefficientResidueTests) ... ok
+test_large_binary_exponents_do_not_use_decimal_conversion (test_coefficient_residue.CoefficientResidueTests) ... ok
+test_main_gap_separate_witnesses_are_not_one_common_witness (test_coefficient_residue.CoefficientResidueTests) ... ok
+test_malformed_counts_missing_states_and_false_witnesses_fail (test_coefficient_residue.CoefficientResidueTests) ... ok
+test_multiplicities_equal_choices_and_empty_product (test_coefficient_residue.CoefficientResidueTests) ... ok
+test_original_input_binding_recomputed_mutation_still_fails (test_coefficient_residue.CoefficientResidueTests) ... ok
+test_saved_examples_current_hashes_and_all_certificates (test_coefficient_residue.CoefficientResidueTests) ... ok
+test_seeded_small_products_against_choice_enumeration (test_coefficient_residue.CoefficientResidueTests) ... ok
+test_small_residues_can_complete_while_joint_table_hits_cap (test_coefficient_residue.CoefficientResidueTests) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.613s
+
+OK
+
+coefficient_isolation_lab
+test_aliasing_false_positive_and_outside_degree (test_coefficient.CoefficientTests) ... ok
+test_binary_ladder_exact_shortcut (test_coefficient.CoefficientTests) ... ok
+test_caps_return_unknown_without_a_count (test_coefficient.CoefficientTests) ... ok
+test_crt_arithmetic_does_not_validate_polynomial_residues (test_coefficient.CoefficientTests) ... ok
+test_exhaustive_integer_digits_and_sparse_counts (test_coefficient.CoefficientTests) ... ok
+test_invalid_parameters_and_budgeted_field_checks (test_coefficient.CoefficientTests) ... ok
+test_large_characteristic_and_crt_recover_the_exact_count (test_coefficient.CoefficientTests) ... ok
+test_no_aliasing_does_not_prevent_characteristic_cancellation (test_coefficient.CoefficientTests) ... ok
+test_normalization_handles_huge_offsets_gcd_and_zero_factors (test_coefficient.CoefficientTests) ... ok
+test_root_filter_equals_independent_folded_sum (test_coefficient.CoefficientTests) ... ok
+test_separate_residue_witnesses_do_not_give_one_matching (test_coefficient.CoefficientTests) ... ok
+test_whole_product_and_finite_field_evaluations_do_not_isolate (test_coefficient.CoefficientTests) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.137s
+
+OK
+
+coefficient_structure_lab
+test_certificate_mutations_and_external_request_binding (test_structure.StructureTests) ... ok
+test_connected_width_two_chain_and_transfer_recurrence (test_structure.StructureTests) ... ok
+test_disjoint_clauses_exponential_sparse_support_but_width_two (test_structure.StructureTests) ... ok
+test_exact_budget_boundaries_and_verification_unknown (test_structure.StructureTests) ... ok
+test_exhaustive_one_and_two_clause_formulas (test_structure.StructureTests) ... ok
+test_order_matters_and_dense_easy_control_is_unknown (test_structure.StructureTests) ... ok
+test_original_unsat_and_planted_high_interaction_controls (test_structure.StructureTests) ... ok
+test_seeded_original_polynomials_and_order_invariance (test_structure.StructureTests) ... ok
+test_shared_variables_cannot_be_independently_summed (test_structure.StructureTests) ... ok
+test_slack_multiplicity_duplicate_clauses_and_unused_variables (test_structure.StructureTests) ... ok
+test_validation_json_and_large_count_bit_bound (test_structure.StructureTests) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.551s
+
+OK
+
+interval_coefficient_lab
+test_all_small_moduli (test_intervals.IntervalTests) ... ok
+test_budget_boundaries (test_intervals.IntervalTests) ... ok
+test_empty_and_zero (test_intervals.IntervalTests) ... ok
+test_fragmentation_unknown (test_intervals.IntervalTests) ... ok
+test_huge_support_compresses (test_intervals.IntervalTests) ... ok
+test_large_integer_hash (test_intervals.IntervalTests) ... ok
+test_malformed_inputs (test_intervals.IntervalTests) ... ok
+test_random_original_products (test_intervals.IntervalTests) ... ok
+test_tampered_layers_and_witness (test_intervals.IntervalTests) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.149s
+
+OK

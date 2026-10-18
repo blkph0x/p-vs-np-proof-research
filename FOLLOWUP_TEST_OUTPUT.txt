@@ -1,0 +1,75 @@
+projection_limits
+test_actual_rank_differs_from_row_count_and_projector_rank (test_syndrome_projection.SyndromeProjectionTests) ... ok
+test_affine_statement_only_for_consistent_unrestricted_systems (test_syndrome_projection.SyndromeProjectionTests) ... ok
+test_all_matrices_through_three_rows_four_columns (test_syndrome_projection.SyndromeProjectionTests) ... ok
+test_all_small_H_and_projectors_and_strict_distance_claim (test_syndrome_projection.SyndromeProjectionTests) ... ok
+test_malformed_inputs_and_forged_witnesses (test_syndrome_projection.SyndromeProjectionTests) ... ok
+test_strict_inequality_and_n_greater_than_q_are_essential (test_syndrome_projection.SyndromeProjectionTests) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.731s
+
+OK
+
+gadget_limits
+test_all_complements_of_both_parities (test_gadgets.GadgetTests) ... ok
+test_alternative_encodings_are_not_overexcluded (test_gadgets.GadgetTests) ... ok
+test_cut_conventions_and_auxiliary_minimum (test_gadgets.GadgetTests) ... ok
+test_exact_rational_and_parallel_arcs (test_gadgets.GadgetTests) ... ok
+test_invalid_inputs (test_gadgets.GadgetTests) ... ok
+test_small_exhaustive_control (test_gadgets.GadgetTests) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.009s
+
+OK
+
+objective_pullback_limits
+test_additive_zero_weight_outputs (test_objective_pullback.ObjectiveTests) ... ok
+test_caps_and_invalid_inputs (test_objective_pullback.ObjectiveTests) ... ok
+test_exhaustive (test_objective_pullback.ObjectiveTests) ... ok
+test_integers_beyond_decimal_conversion_limit (test_objective_pullback.ObjectiveTests) ... ok
+test_nonadditive_certificate_tampering (test_objective_pullback.ObjectiveTests) ... ok
+test_scope_counterexamples (test_objective_pullback.ObjectiveTests) ... ok
+test_seeded_integer_weights (test_objective_pullback.ObjectiveTests) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.470s
+
+OK
+
+matching_gadget_limits
+test_alternating_exchange_with_internal_vertices_and_signed_costs (test_matching_boundary.MatchingBoundaryTests) ... ok
+test_double_rail_and_fails_on_output_rail (test_matching_boundary.MatchingBoundaryTests) ... ok
+test_empty_relation_is_not_called_a_delta_matroid (test_matching_boundary.MatchingBoundaryTests) ... ok
+test_every_signed_example_threshold_obeys_two_sided_exchange (test_matching_boundary.MatchingBoundaryTests) ... ok
+test_exact_and_violates_two_sided_threshold_exchange (test_matching_boundary.MatchingBoundaryTests) ... ok
+test_exact_copy_violates_two_sided_threshold_exchange (test_matching_boundary.MatchingBoundaryTests) ... ok
+test_exact_three_copy_equality_fails_exchange (test_matching_boundary.MatchingBoundaryTests) ... ok
+test_matching_replay_rejects_wrong_boundary_and_duplicates (test_matching_boundary.MatchingBoundaryTests) ... ok
+test_positive_threshold_is_not_covered_by_zero_theorem (test_matching_boundary.MatchingBoundaryTests) ... ok
+test_promised_domain_and_is_realizable (test_matching_boundary.MatchingBoundaryTests) ... ok
+test_promised_domain_copy_is_realizable (test_matching_boundary.MatchingBoundaryTests) ... ok
+test_signed_zero_support_can_fail (test_matching_boundary.MatchingBoundaryTests) ... ok
+test_validity_is_realizable_but_union_is_not_intersection (test_matching_boundary.MatchingBoundaryTests) ... ok
+test_zero_edges_reproduce_nonnegative_zero_optimum (test_matching_boundary.MatchingBoundaryTests) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.024s
+
+OK
+
+matching_composition_controls
+test_all_small_global_matchings_respect_decoding_when_ports_valid (test_not_cycle.MatchingCompositionTests) ... ok
+test_checker_rejects_tampered_matchings_and_graphs (test_not_cycle.MatchingCompositionTests) ... ok
+test_every_satisfying_assignment_extends_and_decodes (test_not_cycle.MatchingCompositionTests) ... ok
+test_exact_local_signature_and_promised_NOT (test_not_cycle.MatchingCompositionTests) ... ok
+test_explicit_partial_matching_and_odd_false_positives (test_not_cycle.MatchingCompositionTests) ... ok
+test_global_graph_indexing_and_edge_identity (test_not_cycle.MatchingCompositionTests) ... ok
+test_invalid_assignments_and_enumeration_cap (test_not_cycle.MatchingCompositionTests) ... ok
+test_serialized_original_graph_and_witness_replay (test_not_cycle.MatchingCompositionTests) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.041s
+
+OK

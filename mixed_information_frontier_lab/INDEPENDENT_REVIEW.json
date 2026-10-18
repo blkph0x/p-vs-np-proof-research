@@ -1,0 +1,51 @@
+{
+  "status": "VERIFIED_INDEPENDENT_MIXED_FRONTIER_REVIEW",
+  "case_count": 6,
+  "rows": [
+    {
+      "name": "duplicate_parity_6",
+      "future_classes": 2,
+      "naive_product_states": 64,
+      "live_prefixes": 64
+    },
+    {
+      "name": "independent_crossing_parity_6",
+      "future_classes": 64,
+      "naive_product_states": 64,
+      "live_prefixes": 64
+    },
+    {
+      "name": "same_scope_cardinality_plus_parity",
+      "future_classes": 7,
+      "naive_product_states": 14,
+      "live_prefixes": 64
+    },
+    {
+      "name": "duplicate_cardinality_5",
+      "future_classes": 7,
+      "naive_product_states": 16807,
+      "live_prefixes": 64
+    },
+    {
+      "name": "partial_scope_cardinality_plus_parity",
+      "future_classes": 10,
+      "naive_product_states": 10,
+      "live_prefixes": 62
+    },
+    {
+      "name": "clause_gate_plus_parity",
+      "future_classes": 64,
+      "naive_product_states": 128,
+      "live_prefixes": 64
+    }
+  ],
+  "source_hashes": {
+    "mixed_frontier.py": "fafb5386d0dc7ade24f86fb2f17b1e498d11358232665a86ace9bb70163df3d8",
+    "run_experiments.py": "af94e2bf45aff17b0aac03d21991175b189e2e976f9cdabc0bab71743ffa5205",
+    "INDEPENDENT_REVIEW.py": "2246190c5ae7f4696bd2b26a62b3c57cdc3463424ce0d644f2f64cdcccec34c9"
+  },
+  "full_product_case_classes": 64,
+  "duplicate_parity_classes": 2,
+  "same_scope_cardinality_parity_classes": 7,
+  "partial_scope_cardinality_parity_classes": 10
+}

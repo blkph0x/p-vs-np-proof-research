@@ -1,0 +1,83 @@
+{
+  "status": "EXPLICIT_OBJECTIVE_PULLBACK_CHECK_PASS",
+  "timestamp_utc": "2026-10-18T00:57:54.184409+00:00",
+  "degrees_checked": [
+    7,
+    8,
+    9
+  ],
+  "records": [
+    {
+      "field_degree": 7,
+      "binary_rank": 14,
+      "columns": 16256,
+      "column_digest": "848e758fc0b2978cd4c59ef97827a383c6db643e7f7a24fb33e77a8e88855564",
+      "pair": [
+        0,
+        6
+      ],
+      "values": [
+        8192,
+        8192,
+        8192
+      ],
+      "defect": 8192,
+      "verification": {
+        "status": "EXACT",
+        "valid": true
+      },
+      "input_hash": "3d07b9886e7938034560dd065775cd7915745091f07de8eee06a85fd7397ec6e"
+    },
+    {
+      "field_degree": 8,
+      "binary_rank": 32,
+      "columns": 65280,
+      "column_digest": "5431d5b69328125ee350b654f3fdda4b8962388aaf6ed33d3b564c17afaffcc6",
+      "pair": [
+        5,
+        7
+      ],
+      "values": [
+        32768,
+        32768,
+        32768
+      ],
+      "defect": 32768,
+      "verification": {
+        "status": "EXACT",
+        "valid": true
+      },
+      "input_hash": "e884509d5645d1996588ed3f01a1a188cfd29ca73685f6949ee02d12f0459816"
+    },
+    {
+      "field_degree": 9,
+      "binary_rank": 54,
+      "columns": 261632,
+      "column_digest": "e6834d96749a93331decd151184ebd05c72e2c700e1b13e2e963a6b959024bb9",
+      "pair": [
+        0,
+        8
+      ],
+      "values": [
+        131072,
+        131072,
+        131072
+      ],
+      "defect": 131072,
+      "verification": {
+        "status": "EXACT",
+        "valid": true
+      },
+      "input_hash": "7c42a986b8e5a5fabcf2da36ffa81f19f6f0df5d33cbb4907631f550f91a5239"
+    }
+  ],
+  "source_hashes_before": {
+    "explicit_code_family.py": "a8e38e7026079bb281ab374b9908c6676ff134cb6db900a6e01f59d895a18dfd",
+    "explicit_objective_pullback.py": "bfe81f04bed63bbba843149c3b8a08256bfaadf10a83aa5c24d55b59b443b522"
+  },
+  "source_hashes_after": {
+    "explicit_code_family.py": "a8e38e7026079bb281ab374b9908c6676ff134cb6db900a6e01f59d895a18dfd",
+    "explicit_objective_pullback.py": "bfe81f04bed63bbba843149c3b8a08256bfaadf10a83aa5c24d55b59b443b522"
+  },
+  "scope": "Natural free-message generator map only; constrained/nonlinear maps remain open."
+}

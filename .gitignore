@@ -1,0 +1,29 @@
+# Python and local tooling
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# Local editor and OS state
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+Desktop.ini
+
+# Native build products. The source and deterministic audit remain tracked.
+non_graphic_core_lab/matroid_audit.exe
+
+# Temporary downloads and raw access pages
+*_raw.html
+*.tmp
+*.bak
+
+# GitHub CLI and Git internals
+.git/

@@ -1,0 +1,232 @@
+{
+  "format": "local-pinned-marginal-v1",
+  "rows": [
+    {
+      "name": "even_parity_n5_level3",
+      "certificate": {
+        "schema": "local_pinned_marginal_v1",
+        "n": 5,
+        "generator_rows": [
+          17,
+          18,
+          20,
+          24
+        ],
+        "dual_basis": [
+          31
+        ],
+        "code_dimension": 4,
+        "dual_distance": 5,
+        "pin": 0,
+        "level": 3,
+        "theorem_level_bound": 3,
+        "pinned_integer_optimum": 2,
+        "relaxation_point_weight": 1,
+        "scope_count": 26,
+        "atom_slot_count": 131,
+        "enumerated_support": true,
+        "checked_scopes": 26,
+        "support_counterexample": null
+      },
+      "verification": {
+        "status": "VERIFIED",
+        "valid": true,
+        "theorem_level_valid": true,
+        "support_replay": true,
+        "checked_scopes": 26,
+        "dual_distance": 5,
+        "pinned_integer_optimum": 2,
+        "relaxation_point_weight": 1,
+        "integrality_gap": 2,
+        "counterexample": null
+      }
+    },
+    {
+      "name": "even_parity_n5_level4_boundary",
+      "certificate": {
+        "schema": "local_pinned_marginal_v1",
+        "n": 5,
+        "generator_rows": [
+          17,
+          18,
+          20,
+          24
+        ],
+        "dual_basis": [
+          31
+        ],
+        "code_dimension": 4,
+        "dual_distance": 5,
+        "pin": 0,
+        "level": 4,
+        "theorem_level_bound": 3,
+        "pinned_integer_optimum": 2,
+        "relaxation_point_weight": 1,
+        "scope_count": 31,
+        "atom_slot_count": 211,
+        "enumerated_support": false,
+        "checked_scopes": 30,
+        "support_counterexample": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "verification": {
+        "status": "VERIFIED",
+        "valid": true,
+        "theorem_level_valid": false,
+        "support_replay": false,
+        "checked_scopes": 30,
+        "dual_distance": 5,
+        "pinned_integer_optimum": 2,
+        "relaxation_point_weight": 1,
+        "integrality_gap": 2,
+        "counterexample": [
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "name": "golay_level6",
+      "certificate": {
+        "schema": "local_pinned_marginal_v1",
+        "n": 24,
+        "generator_rows": [
+          8391395,
+          8394182,
+          8399756,
+          8410904,
+          8433200,
+          8477792,
+          8566976,
+          8745344,
+          9102080,
+          9815552,
+          11242496,
+          14096384
+        ],
+        "dual_basis": [
+          7973,
+          8559,
+          17118,
+          34236,
+          68472,
+          133589,
+          265359,
+          525883,
+          1051766,
+          2099145,
+          4198290,
+          8391395
+        ],
+        "code_dimension": 12,
+        "dual_distance": 8,
+        "pin": 0,
+        "level": 6,
+        "theorem_level_bound": 6,
+        "pinned_integer_optimum": 8,
+        "relaxation_point_weight": 1,
+        "scope_count": 190051,
+        "atom_slot_count": 10161633,
+        "enumerated_support": null,
+        "checked_scopes": null,
+        "support_counterexample": null
+      },
+      "verification": {
+        "status": "VERIFIED",
+        "valid": true,
+        "theorem_level_valid": true,
+        "support_replay": true,
+        "checked_scopes": 190051,
+        "dual_distance": 8,
+        "pinned_integer_optimum": 8,
+        "relaxation_point_weight": 1,
+        "integrality_gap": 8,
+        "counterexample": null
+      }
+    }
+  ],
+  "all_valid": true,
+  "golay_level_bound_verified": true,
+  "golay_support_replay_deferred": true,
+  "scope": "exact local projection-marginal relaxation; no claim about a named hierarchy",
+  "random_code_bounds": [
+    {
+      "n": 32,
+      "rank": 16,
+      "distance_lower_bound": 2,
+      "local_level_lower_bound": 0,
+      "low_weight_ball": 33,
+      "bad_probability_numerator": 66,
+      "bad_probability_denominator": 65536,
+      "good_probability_lower_numerator": 65470,
+      "strictly_positive_good_probability": true,
+      "atom_slots_at_level": 1
+    },
+    {
+      "n": 64,
+      "rank": 32,
+      "distance_lower_bound": 4,
+      "local_level_lower_bound": 2,
+      "low_weight_ball": 43745,
+      "bad_probability_numerator": 87490,
+      "bad_probability_denominator": 4294967296,
+      "good_probability_lower_numerator": 4294879806,
+      "strictly_positive_good_probability": true,
+      "atom_slots_at_level": 8193
+    },
+    {
+      "n": 128,
+      "rank": 64,
+      "distance_lower_bound": 8,
+      "local_level_lower_bound": 6,
+      "low_weight_ball": 100224990433,
+      "bad_probability_numerator": 200449980866,
+      "bad_probability_denominator": 18446744073709551616,
+      "good_probability_lower_numerator": 18446743873259570750,
+      "strictly_positive_good_probability": true,
+      "atom_slots_at_level": 355750693377
+    },
+    {
+      "n": 256,
+      "rank": 128,
+      "distance_lower_bound": 16,
+      "local_level_lower_bound": 14,
+      "low_weight_ball": 713126996066184214744289,
+      "bad_probability_numerator": 1426253992132368429488578,
+      "bad_probability_denominator": 340282366920938463463374607431768211456,
+      "good_probability_lower_numerator": 340282366920937037209382475063338722878,
+      "strictly_positive_good_probability": true,
+      "atom_slots_at_level": 699634436683473253631587329
+    },
+    {
+      "n": 512,
+      "rank": 256,
+      "distance_lower_bound": 32,
+      "local_level_lower_bound": 30,
+      "low_weight_ball": 49962715377109479339166670085195501868170637905121,
+      "bad_probability_numerator": 99925430754218958678333340170391003736341275810242,
+      "bad_probability_denominator": 115792089237316195423570985008687907853269984665640564039457584007913129639936,
+      "good_probability_lower_numerator": 115792089237316195423570984908762477099051025987307223869066580271571853829694,
+      "strictly_positive_good_probability": true,
+      "atom_slots_at_level": 3332311119907278521607805807849031287894751137783776143361
+    },
+    {
+      "n": 1024,
+      "rank": 512,
+      "distance_lower_bound": 64,
+      "local_level_lower_bound": 62,
+      "low_weight_ball": 343049016494180722611689447576502373033262272722957730181757612853803386291744861308407373125170400481,
+      "bad_probability_numerator": 686098032988361445223378895153004746066524545445915460363515225707606772583489722616814746250340800962,
+      "bad_probability_denominator": 13407807929942597099574024998205846127479365820592393377723561443721764030073546976801874298166903427690031858186486050853753882811946569946433649006084096,
+      "good_probability_lower_numerator": 13407807929942597099574024998205846127479365820592392691625528455360318806694651823797128231642357981774571494671260343246981299322223953131687398665283134,
+      "strictly_positive_good_probability": true,
+      "atom_slots_at_level": 100047003941757495558206889455992973743693066334080971747600394417974171259346461703538145652570244625123392753001287681
+    }
+  ]
+}

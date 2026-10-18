@@ -1,0 +1,91 @@
+{
+  "status": "VERIFIED_INDEPENDENT_VERTEX_SEPARATION_REVIEW",
+  "case_count": 5,
+  "rows": [
+    {
+      "name": "path_8",
+      "bad_width": 1,
+      "optimal_width": 1,
+      "optimal_order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "greedy_width": 1
+    },
+    {
+      "name": "star_8",
+      "bad_width": 7,
+      "optimal_width": 1,
+      "optimal_order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "greedy_width": 1
+    },
+    {
+      "name": "cycle_8",
+      "bad_width": 2,
+      "optimal_width": 2,
+      "optimal_order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "greedy_width": 2
+    },
+    {
+      "name": "complete_6",
+      "bad_width": 5,
+      "optimal_width": 5,
+      "optimal_order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "greedy_width": 5
+    },
+    {
+      "name": "complete_bipartite_4_2",
+      "bad_width": 4,
+      "optimal_width": 2,
+      "optimal_order": [
+        0,
+        4,
+        5,
+        1,
+        2,
+        3
+      ],
+      "greedy_width": 4
+    }
+  ],
+  "source_hashes": {
+    "vertex_separation.py": "7f300120027e6ae8f5acc6e2d9cf00689ebe1fb39e72f52ff74c6d44795d818f",
+    "run_experiments.py": "94e9640aa36dd54cd538172c6a9e8a858b8a9e27aaec84e3359ca2b63db4c96e",
+    "INDEPENDENT_REVIEW.py": "6d4a6b6c827e54ee8d63687355f855c30aa8f4d09812ae474dd2d9ee687439a4"
+  },
+  "star_bad_width": 7,
+  "star_optimal_width": 1,
+  "bipartite_greedy_width": 4,
+  "bipartite_optimal_width": 2
+}

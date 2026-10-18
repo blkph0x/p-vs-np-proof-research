@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "saved_controls": 244,
+  "exact_controls_replayed": 243,
+  "saved_status_counts": {
+    "VERIFIED_EXACT": 240,
+    "UNKNOWN": 1
+  },
+  "source_hashes_current": {
+    "small_terminal_perturbation.py": "b21cd1b3a4bf1be3bce0d8963ed68d209e38ac9629f36d5353cfa47e82882aba",
+    "test_small_terminal_perturbation.py": "d864274aaead203f30e3f7c1fa62a951f4a47b2c34b79137c5a2df1e493b6c77",
+    "run_small_terminal_experiments.py": "acb2965ff13264c13c8890668642c48ece7a315c9e1e0998348560f860002567",
+    "verify_small_terminal_results.py": "a4bd6b3669bff4c3c907058b6a036635fa2751d9a68c9efcb36018578f6a53c3",
+    "PERTURBATION_SMALL_TERMINAL_THEOREM.md": "2e9c80a34b0b95e85cd9b1a4e624a8ffaa4b99de8dc38c71ff844a30376df65a",
+    "labelled_tjoin.py": "af0ffb5c2b9b93f1950f2f0b8bbb7fe44ad622a2edf56f79435cd01acc266c3d",
+    "labelled_tables.py": "eb8a710958aeb4f8cf26388d390b7667c7724b3d3dc8e7e2a3290a915ae78fc0"
+  },
+  "source_hashes_saved": {
+    "small_terminal_perturbation.py": "b21cd1b3a4bf1be3bce0d8963ed68d209e38ac9629f36d5353cfa47e82882aba",
+    "test_small_terminal_perturbation.py": "d864274aaead203f30e3f7c1fa62a951f4a47b2c34b79137c5a2df1e493b6c77",
+    "PERTURBATION_SMALL_TERMINAL_THEOREM.md": "2e9c80a34b0b95e85cd9b1a4e624a8ffaa4b99de8dc38c71ff844a30376df65a",
+    "run_small_terminal_experiments.py": "acb2965ff13264c13c8890668642c48ece7a315c9e1e0998348560f860002567",
+    "verify_small_terminal_results.py": "a4bd6b3669bff4c3c907058b6a036635fa2751d9a68c9efcb36018578f6a53c3",
+    "labelled_tjoin.py": "af0ffb5c2b9b93f1950f2f0b8bbb7fe44ad622a2edf56f79435cd01acc266c3d",
+    "labelled_tables.py": "eb8a710958aeb4f8cf26388d390b7667c7724b3d3dc8e7e2a3290a915ae78fc0"
+  },
+  "source_unchanged": true,
+  "mutation_controls": 2
+}

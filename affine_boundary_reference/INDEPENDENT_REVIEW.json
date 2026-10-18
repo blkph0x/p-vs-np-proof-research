@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "source_sha256": {
+    "reference.py": "60b62bfd936c7b9a399630754df6fdddaf6ee370135bd9a4e4bf6144f04f7a15",
+    "test_reference.py": "9632f3c0102e18ba1ca61dd6076b3d5397ca0cc3f1046b055a267dd87ce361fb",
+    "THEOREM.md": "cbf214457ef479784cbbd9b38ad139c76efbd8293f5f884c193d5d537296da0c",
+    "run_experiments.py": "faed5967d96dc8f508a3cf86c2855f9bcdc829d7b8c54749dbdcfb9a3e205224",
+    "RESULTS.json": "0dc3682da524b45aa3e33d62db7141ab9a90635b6d507e63113751ec142b7539",
+    "independent_review.py": "ec30984bcddd4454b3d4533804dc6b472b3986248a0b890b43f588d5ef1720c8"
+  },
+  "sources_unchanged_during_review": true,
+  "counts": {
+    "random_original_requests": 500,
+    "original_assignment_words": 19895,
+    "complete_boundary_values": 3239,
+    "saved_exact_proofs": 73,
+    "saved_unknown": 3,
+    "rejected_mutations": 1312
+  },
+  "findings": [],
+  "proof_review": "Projected support is tested by the full left nullspace. Injectivity plus checked nullity gives all internal solutions; pair identities and residual linear constraints preserve signed multiplicity.",
+  "limitation": "Code and ordinary mathematical argument review, not proof-assistant formalization or evidence resolving P versus NP."
+}

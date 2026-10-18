@@ -1,0 +1,9667 @@
+{
+  "format": "small-terminal-perturbation-controls-v1",
+  "timestamp_utc": "2026-10-18T04:07:33.010177+00:00",
+  "seed": 2026101819,
+  "random_cases": 160,
+  "adapter_cases": 80,
+  "verified_exact": 240,
+  "random_verified_exact": 160,
+  "adapter_verified_exact": 80,
+  "unknown": 1,
+  "controls": [
+    {
+      "name": "one_edge_inconsistent",
+      "row_count": 2,
+      "columns": [
+        3
+      ],
+      "u_columns": [
+        3
+      ],
+      "labels": [
+        1
+      ],
+      "weights": [
+        1
+      ],
+      "target": 1,
+      "p": null,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 8,
+        "branch_transitions": 8
+      },
+      "reason": null
+    },
+    {
+      "name": "triangle_wrong_label",
+      "row_count": 3,
+      "columns": [
+        3,
+        5,
+        6
+      ],
+      "u_columns": [
+        1
+      ],
+      "labels": [
+        1,
+        0,
+        0
+      ],
+      "weights": [
+        1,
+        1,
+        1
+      ],
+      "target": 3,
+      "p": null,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        2,
+        6
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 2,
+      "word": 6,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 76,
+        "branch_transitions": 8
+      },
+      "reason": null
+    },
+    {
+      "name": "zero_rank_loop",
+      "row_count": 1,
+      "columns": [
+        0,
+        1
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0
+      ],
+      "weights": [
+        0,
+        3
+      ],
+      "target": 0,
+      "p": 0,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        0,
+        1
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 1,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 0,
+        "branch_transitions": 0
+      },
+      "reason": null
+    },
+    {
+      "name": "explicit_branch_cap_unknown",
+      "row_count": 2,
+      "columns": [
+        3
+      ],
+      "u_columns": [
+        3
+      ],
+      "labels": [
+        1
+      ],
+      "weights": [
+        1
+      ],
+      "target": 0,
+      "p": null,
+      "require_nonzero": true,
+      "limits": {
+        "max_branches": 1
+      },
+      "expected": [
+        1,
+        1
+      ],
+      "status": "UNKNOWN",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 0
+      },
+      "reason": "branch cap"
+    },
+    {
+      "name": "random_000",
+      "row_count": 4,
+      "columns": [
+        0
+      ],
+      "u_columns": [],
+      "labels": [
+        0
+      ],
+      "weights": [
+        1
+      ],
+      "target": 5,
+      "p": 0,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 1,
+        "branch_transitions": 1
+      },
+      "reason": null
+    },
+    {
+      "name": "random_001",
+      "row_count": 2,
+      "columns": [
+        3,
+        3,
+        1
+      ],
+      "u_columns": [
+        1
+      ],
+      "labels": [
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        3,
+        0,
+        1
+      ],
+      "target": 0,
+      "p": 1,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        3,
+        3
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 3,
+      "word": 3,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 18,
+        "branch_transitions": 4
+      },
+      "reason": null
+    },
+    {
+      "name": "random_002",
+      "row_count": 4,
+      "columns": [],
+      "u_columns": [
+        3
+      ],
+      "labels": [],
+      "weights": [],
+      "target": 14,
+      "p": 1,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 0,
+        "branch_transitions": 72
+      },
+      "reason": null
+    },
+    {
+      "name": "random_003",
+      "row_count": 3,
+      "columns": [
+        5,
+        0
+      ],
+      "u_columns": [
+        6,
+        5
+      ],
+      "labels": [
+        2,
+        1
+      ],
+      "weights": [
+        3,
+        1
+      ],
+      "target": 1,
+      "p": 2,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 32,
+        "branch_transitions": 192
+      },
+      "reason": null
+    },
+    {
+      "name": "random_004",
+      "row_count": 1,
+      "columns": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "u_columns": [
+        1
+      ],
+      "labels": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "weights": [
+        1,
+        1,
+        2,
+        2,
+        2,
+        0
+      ],
+      "target": 1,
+      "p": 1,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        0,
+        32
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 32,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 76,
+        "branch_transitions": 4
+      },
+      "reason": null
+    },
+    {
+      "name": "random_005",
+      "row_count": 2,
+      "columns": [
+        3,
+        1,
+        3,
+        0
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        1,
+        3,
+        0,
+        1
+      ],
+      "target": 3,
+      "p": 0,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        0,
+        4
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 4,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 21,
+        "branch_transitions": 1
+      },
+      "reason": null
+    },
+    {
+      "name": "random_006",
+      "row_count": 3,
+      "columns": [
+        5
+      ],
+      "u_columns": [
+        0,
+        2
+      ],
+      "labels": [
+        0
+      ],
+      "weights": [
+        0
+      ],
+      "target": 2,
+      "p": 2,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 16,
+        "branch_transitions": 32
+      },
+      "reason": null
+    },
+    {
+      "name": "random_007",
+      "row_count": 3,
+      "columns": [],
+      "u_columns": [
+        3,
+        4
+      ],
+      "labels": [],
+      "weights": [],
+      "target": 2,
+      "p": 2,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 0,
+        "branch_transitions": 64
+      },
+      "reason": null
+    },
+    {
+      "name": "random_008",
+      "row_count": 1,
+      "columns": [
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "u_columns": [
+        1
+      ],
+      "labels": [
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "weights": [
+        0,
+        2,
+        0,
+        3,
+        0
+      ],
+      "target": 0,
+      "p": 1,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        0,
+        0
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 0,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 60,
+        "branch_transitions": 4
+      },
+      "reason": null
+    },
+    {
+      "name": "random_009",
+      "row_count": 4,
+      "columns": [],
+      "u_columns": [
+        2
+      ],
+      "labels": [],
+      "weights": [],
+      "target": 13,
+      "p": 1,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 0,
+        "branch_transitions": 72
+      },
+      "reason": null
+    },
+    {
+      "name": "random_010",
+      "row_count": 2,
+      "columns": [],
+      "u_columns": [
+        0
+      ],
+      "labels": [],
+      "weights": [],
+      "target": 3,
+      "p": 1,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 0,
+        "branch_transitions": 8
+      },
+      "reason": null
+    },
+    {
+      "name": "random_011",
+      "row_count": 1,
+      "columns": [
+        1,
+        0
+      ],
+      "u_columns": [
+        0
+      ],
+      "labels": [
+        1,
+        1
+      ],
+      "weights": [
+        0,
+        1
+      ],
+      "target": 1,
+      "p": 1,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        0,
+        1
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 1,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 28,
+        "branch_transitions": 8
+      },
+      "reason": null
+    },
+    {
+      "name": "random_012",
+      "row_count": 3,
+      "columns": [],
+      "u_columns": [
+        6
+      ],
+      "labels": [],
+      "weights": [],
+      "target": 7,
+      "p": 1,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 0,
+        "branch_transitions": 40
+      },
+      "reason": null
+    },
+    {
+      "name": "random_013",
+      "row_count": 3,
+      "columns": [
+        4
+      ],
+      "u_columns": [],
+      "labels": [
+        0
+      ],
+      "weights": [
+        3
+      ],
+      "target": 1,
+      "p": 0,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 4,
+        "branch_transitions": 1
+      },
+      "reason": null
+    },
+    {
+      "name": "random_014",
+      "row_count": 1,
+      "columns": [],
+      "u_columns": [],
+      "labels": [],
+      "weights": [],
+      "target": 1,
+      "p": 0,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 0,
+        "branch_transitions": 1
+      },
+      "reason": null
+    },
+    {
+      "name": "random_015",
+      "row_count": 4,
+      "columns": [
+        0,
+        10,
+        8,
+        5,
+        0
+      ],
+      "u_columns": [
+        4,
+        0
+      ],
+      "labels": [
+        3,
+        3,
+        1,
+        1,
+        3
+      ],
+      "weights": [
+        1,
+        0,
+        1,
+        1,
+        2
+      ],
+      "target": 3,
+      "p": 2,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        2,
+        14
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 2,
+      "word": 14,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 168,
+        "branch_transitions": 320
+      },
+      "reason": null
+    },
+    {
+      "name": "random_016",
+      "row_count": 3,
+      "columns": [],
+      "u_columns": [
+        1,
+        6
+      ],
+      "labels": [],
+      "weights": [],
+      "target": 7,
+      "p": 2,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 0,
+        "branch_transitions": 176
+      },
+      "reason": null
+    },
+    {
+      "name": "random_017",
+      "row_count": 2,
+      "columns": [
+        3
+      ],
+      "u_columns": [
+        0,
+        0
+      ],
+      "labels": [
+        3
+      ],
+      "weights": [
+        1
+      ],
+      "target": 2,
+      "p": 2,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 16,
+        "branch_transitions": 64
+      },
+      "reason": null
+    },
+    {
+      "name": "random_018",
+      "row_count": 3,
+      "columns": [
+        4,
+        3,
+        2
+      ],
+      "u_columns": [
+        1,
+        1
+      ],
+      "labels": [
+        2,
+        1,
+        1
+      ],
+      "weights": [
+        3,
+        1,
+        1
+      ],
+      "target": 1,
+      "p": 2,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        2,
+        6
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 2,
+      "word": 6,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 96,
+        "branch_transitions": 32
+      },
+      "reason": null
+    },
+    {
+      "name": "random_019",
+      "row_count": 1,
+      "columns": [
+        1,
+        0,
+        0
+      ],
+      "u_columns": [
+        0
+      ],
+      "labels": [
+        1,
+        0,
+        0
+      ],
+      "weights": [
+        3,
+        0,
+        1
+      ],
+      "target": 1,
+      "p": 1,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        3,
+        1
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 3,
+      "word": 1,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 16,
+        "branch_transitions": 8
+      },
+      "reason": null
+    },
+    {
+      "name": "random_020",
+      "row_count": 3,
+      "columns": [
+        0,
+        2,
+        0,
+        0,
+        3,
+        4
+      ],
+      "u_columns": [
+        2
+      ],
+      "labels": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "weights": [
+        3,
+        0,
+        0,
+        0,
+        2,
+        2
+      ],
+      "target": 6,
+      "p": 1,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        2,
+        32
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 2,
+      "word": 32,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 148,
+        "branch_transitions": 8
+      },
+      "reason": null
+    },
+    {
+      "name": "random_021",
+      "row_count": 2,
+      "columns": [],
+      "u_columns": [
+        0,
+        0
+      ],
+      "labels": [],
+      "weights": [],
+      "target": 1,
+      "p": 2,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 0,
+        "branch_transitions": 64
+      },
+      "reason": null
+    },
+    {
+      "name": "random_022",
+      "row_count": 1,
+      "columns": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        0,
+        1,
+        3,
+        2
+      ],
+      "target": 0,
+      "p": 0,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        0,
+        0
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 0,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 14,
+        "branch_transitions": 0
+      },
+      "reason": null
+    },
+    {
+      "name": "random_023",
+      "row_count": 2,
+      "columns": [
+        0,
+        3,
+        0,
+        2,
+        0
+      ],
+      "u_columns": [
+        0,
+        3
+      ],
+      "labels": [
+        1,
+        2,
+        3,
+        2,
+        2
+      ],
+      "weights": [
+        3,
+        1,
+        2,
+        1,
+        1
+      ],
+      "target": 1,
+      "p": 2,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        1,
+        8
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 1,
+      "word": 8,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 384,
+        "branch_transitions": 64
+      },
+      "reason": null
+    },
+    {
+      "name": "random_024",
+      "row_count": 1,
+      "columns": [
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "u_columns": [
+        0
+      ],
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "weights": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "target": 0,
+      "p": 1,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        0,
+        0
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 0,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 60,
+        "branch_transitions": 0
+      },
+      "reason": null
+    },
+    {
+      "name": "random_025",
+      "row_count": 3,
+      "columns": [
+        0,
+        6
+      ],
+      "u_columns": [
+        3
+      ],
+      "labels": [
+        1,
+        0
+      ],
+      "weights": [
+        3,
+        0
+      ],
+      "target": 6,
+      "p": 1,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        0,
+        2
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 2,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 16,
+        "branch_transitions": 8
+      },
+      "reason": null
+    },
+    {
+      "name": "random_026",
+      "row_count": 2,
+      "columns": [
+        2
+      ],
+      "u_columns": [],
+      "labels": [
+        0
+      ],
+      "weights": [
+        0
+      ],
+      "target": 0,
+      "p": 0,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        0,
+        0
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 0,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 4,
+        "branch_transitions": 0
+      },
+      "reason": null
+    },
+    {
+      "name": "random_027",
+      "row_count": 4,
+      "columns": [
+        2,
+        4
+      ],
+      "u_columns": [
+        1
+      ],
+      "labels": [
+        0,
+        1
+      ],
+      "weights": [
+        2,
+        1
+      ],
+      "target": 5,
+      "p": 1,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        1,
+        2
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 1,
+      "word": 2,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 24,
+        "branch_transitions": 8
+      },
+      "reason": null
+    },
+    {
+      "name": "random_028",
+      "row_count": 1,
+      "columns": [],
+      "u_columns": [
+        1,
+        0
+      ],
+      "labels": [],
+      "weights": [],
+      "target": 1,
+      "p": 2,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 0,
+        "branch_transitions": 32
+      },
+      "reason": null
+    },
+    {
+      "name": "random_029",
+      "row_count": 3,
+      "columns": [
+        4,
+        2,
+        3,
+        4,
+        0
+      ],
+      "u_columns": [
+        5
+      ],
+      "labels": [
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "weights": [
+        0,
+        1,
+        1,
+        2,
+        1
+      ],
+      "target": 0,
+      "p": 1,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        1,
+        16
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 1,
+      "word": 16,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 74,
+        "branch_transitions": 4
+      },
+      "reason": null
+    },
+    {
+      "name": "random_030",
+      "row_count": 3,
+      "columns": [
+        6
+      ],
+      "u_columns": [
+        3,
+        6
+      ],
+      "labels": [
+        0
+      ],
+      "weights": [
+        2
+      ],
+      "target": 1,
+      "p": 2,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 16,
+        "branch_transitions": 192
+      },
+      "reason": null
+    },
+    {
+      "name": "random_031",
+      "row_count": 3,
+      "columns": [],
+      "u_columns": [
+        4
+      ],
+      "labels": [],
+      "weights": [],
+      "target": 3,
+      "p": 1,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 0,
+        "branch_transitions": 40
+      },
+      "reason": null
+    },
+    {
+      "name": "random_032",
+      "row_count": 4,
+      "columns": [
+        3,
+        10,
+        0
+      ],
+      "u_columns": [
+        12
+      ],
+      "labels": [
+        1,
+        0,
+        0
+      ],
+      "weights": [
+        0,
+        1,
+        0
+      ],
+      "target": 11,
+      "p": 1,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 26,
+        "branch_transitions": 72
+      },
+      "reason": null
+    },
+    {
+      "name": "random_033",
+      "row_count": 1,
+      "columns": [
+        0,
+        0,
+        0
+      ],
+      "u_columns": [
+        1,
+        0
+      ],
+      "labels": [
+        3,
+        3,
+        2
+      ],
+      "weights": [
+        3,
+        2,
+        3
+      ],
+      "target": 0,
+      "p": 2,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        3,
+        4
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 3,
+      "word": 4,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 72,
+        "branch_transitions": 32
+      },
+      "reason": null
+    },
+    {
+      "name": "random_034",
+      "row_count": 4,
+      "columns": [
+        1,
+        2,
+        5,
+        2,
+        9,
+        0
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        0,
+        0,
+        1,
+        3,
+        1,
+        3
+      ],
+      "target": 2,
+      "p": 0,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        0,
+        2
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 2,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 55,
+        "branch_transitions": 1
+      },
+      "reason": null
+    },
+    {
+      "name": "random_035",
+      "row_count": 3,
+      "columns": [
+        0,
+        0,
+        5,
+        0,
+        1,
+        2
+      ],
+      "u_columns": [
+        3,
+        4
+      ],
+      "labels": [
+        2,
+        0,
+        3,
+        3,
+        1,
+        3
+      ],
+      "weights": [
+        1,
+        3,
+        3,
+        2,
+        0,
+        3
+      ],
+      "target": 3,
+      "p": 2,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        3,
+        9
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 3,
+      "word": 9,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 624,
+        "branch_transitions": 176
+      },
+      "reason": null
+    },
+    {
+      "name": "random_036",
+      "row_count": 3,
+      "columns": [
+        0,
+        5,
+        2,
+        3
+      ],
+      "u_columns": [
+        7,
+        5
+      ],
+      "labels": [
+        2,
+        2,
+        3,
+        0
+      ],
+      "weights": [
+        3,
+        0,
+        0,
+        0
+      ],
+      "target": 5,
+      "p": 2,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        3,
+        1
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 3,
+      "word": 1,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 232,
+        "branch_transitions": 176
+      },
+      "reason": null
+    },
+    {
+      "name": "random_037",
+      "row_count": 4,
+      "columns": [
+        12,
+        1,
+        4
+      ],
+      "u_columns": [
+        4
+      ],
+      "labels": [
+        1,
+        0,
+        1
+      ],
+      "weights": [
+        1,
+        1,
+        1
+      ],
+      "target": 12,
+      "p": 1,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 48,
+        "branch_transitions": 8
+      },
+      "reason": null
+    },
+    {
+      "name": "random_038",
+      "row_count": 1,
+      "columns": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "u_columns": [
+        1
+      ],
+      "labels": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "weights": [
+        0,
+        2,
+        1,
+        3,
+        3,
+        0
+      ],
+      "target": 1,
+      "p": 1,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        1,
+        4
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 1,
+      "word": 4,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 60,
+        "branch_transitions": 4
+      },
+      "reason": null
+    },
+    {
+      "name": "random_039",
+      "row_count": 2,
+      "columns": [
+        0,
+        1
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0
+      ],
+      "weights": [
+        0,
+        1
+      ],
+      "target": 2,
+      "p": 0,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 6,
+        "branch_transitions": 1
+      },
+      "reason": null
+    },
+    {
+      "name": "random_040",
+      "row_count": 4,
+      "columns": [
+        2,
+        0,
+        3,
+        10,
+        5
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        3,
+        1,
+        3,
+        2,
+        2
+      ],
+      "target": 0,
+      "p": 0,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        0,
+        0
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 0,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 45,
+        "branch_transitions": 0
+      },
+      "reason": null
+    },
+    {
+      "name": "random_041",
+      "row_count": 2,
+      "columns": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        0
+      ],
+      "u_columns": [
+        0,
+        1
+      ],
+      "labels": [
+        1,
+        2,
+        1,
+        1,
+        1,
+        3
+      ],
+      "weights": [
+        2,
+        1,
+        3,
+        3,
+        0,
+        0
+      ],
+      "target": 2,
+      "p": 2,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        0,
+        48
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 48,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 176,
+        "branch_transitions": 64
+      },
+      "reason": null
+    },
+    {
+      "name": "random_042",
+      "row_count": 2,
+      "columns": [
+        1,
+        0,
+        0,
+        1,
+        3,
+        1
+      ],
+      "u_columns": [
+        0,
+        2
+      ],
+      "labels": [
+        0,
+        2,
+        3,
+        2,
+        0,
+        0
+      ],
+      "weights": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        3
+      ],
+      "target": 0,
+      "p": 2,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        0,
+        0
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 0,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 528,
+        "branch_transitions": 32
+      },
+      "reason": null
+    },
+    {
+      "name": "random_043",
+      "row_count": 1,
+      "columns": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "u_columns": [
+        1,
+        0
+      ],
+      "labels": [
+        2,
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        2,
+        1,
+        2,
+        0
+      ],
+      "target": 1,
+      "p": 2,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        0,
+        8
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 8,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 120,
+        "branch_transitions": 32
+      },
+      "reason": null
+    },
+    {
+      "name": "random_044",
+      "row_count": 2,
+      "columns": [
+        3,
+        0,
+        3,
+        0
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        3,
+        1,
+        3,
+        1
+      ],
+      "target": 3,
+      "p": 0,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        3,
+        1
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 3,
+      "word": 1,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 10,
+        "branch_transitions": 1
+      },
+      "reason": null
+    },
+    {
+      "name": "random_045",
+      "row_count": 3,
+      "columns": [
+        0,
+        4,
+        5
+      ],
+      "u_columns": [
+        3
+      ],
+      "labels": [
+        1,
+        1,
+        1
+      ],
+      "weights": [
+        2,
+        3,
+        0
+      ],
+      "target": 5,
+      "p": 1,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        2,
+        5
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 2,
+      "word": 5,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 64,
+        "branch_transitions": 8
+      },
+      "reason": null
+    },
+    {
+      "name": "random_046",
+      "row_count": 1,
+      "columns": [
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "u_columns": [
+        0,
+        1
+      ],
+      "labels": [
+        3,
+        0,
+        1,
+        0,
+        0
+      ],
+      "weights": [
+        3,
+        1,
+        3,
+        0,
+        2
+      ],
+      "target": 0,
+      "p": 2,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        0,
+        0
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 0,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 304,
+        "branch_transitions": 32
+      },
+      "reason": null
+    },
+    {
+      "name": "random_047",
+      "row_count": 1,
+      "columns": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "u_columns": [
+        1,
+        1
+      ],
+      "labels": [
+        3,
+        0,
+        3,
+        3
+      ],
+      "weights": [
+        0,
+        0,
+        2,
+        0
+      ],
+      "target": 1,
+      "p": 2,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        0,
+        2
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 2,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 88,
+        "branch_transitions": 32
+      },
+      "reason": null
+    },
+    {
+      "name": "random_048",
+      "row_count": 1,
+      "columns": [
+        0,
+        1,
+        1
+      ],
+      "u_columns": [
+        0,
+        0
+      ],
+      "labels": [
+        1,
+        0,
+        1
+      ],
+      "weights": [
+        0,
+        3,
+        1
+      ],
+      "target": 0,
+      "p": 2,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        0,
+        0
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 0,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 88,
+        "branch_transitions": 0
+      },
+      "reason": null
+    },
+    {
+      "name": "random_049",
+      "row_count": 1,
+      "columns": [
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        3,
+        1,
+        0,
+        2,
+        0
+      ],
+      "target": 1,
+      "p": 0,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        0,
+        16
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 16,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 16,
+        "branch_transitions": 1
+      },
+      "reason": null
+    },
+    {
+      "name": "random_050",
+      "row_count": 1,
+      "columns": [
+        1,
+        1
+      ],
+      "u_columns": [
+        0
+      ],
+      "labels": [
+        1,
+        0
+      ],
+      "weights": [
+        2,
+        3
+      ],
+      "target": 1,
+      "p": 1,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        2,
+        1
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 2,
+      "word": 1,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 36,
+        "branch_transitions": 8
+      },
+      "reason": null
+    },
+    {
+      "name": "random_051",
+      "row_count": 1,
+      "columns": [
+        1,
+        1,
+        0
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        0,
+        3,
+        1
+      ],
+      "target": 0,
+      "p": 0,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        1,
+        4
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 1,
+      "word": 4,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 0,
+        "branch_transitions": 0
+      },
+      "reason": null
+    },
+    {
+      "name": "random_052",
+      "row_count": 2,
+      "columns": [
+        2,
+        0,
+        2
+      ],
+      "u_columns": [
+        2,
+        0
+      ],
+      "labels": [
+        3,
+        1,
+        1
+      ],
+      "weights": [
+        0,
+        3,
+        2
+      ],
+      "target": 0,
+      "p": 2,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        0,
+        0
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 0,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 208,
+        "branch_transitions": 32
+      },
+      "reason": null
+    },
+    {
+      "name": "random_053",
+      "row_count": 2,
+      "columns": [
+        3,
+        1,
+        0
+      ],
+      "u_columns": [
+        0
+      ],
+      "labels": [
+        0,
+        1,
+        1
+      ],
+      "weights": [
+        2,
+        1,
+        0
+      ],
+      "target": 0,
+      "p": 1,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        0,
+        4
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 4,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 32,
+        "branch_transitions": 0
+      },
+      "reason": null
+    },
+    {
+      "name": "random_054",
+      "row_count": 4,
+      "columns": [
+        8
+      ],
+      "u_columns": [
+        12,
+        5
+      ],
+      "labels": [
+        3
+      ],
+      "weights": [
+        2
+      ],
+      "target": 2,
+      "p": 2,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 16,
+        "branch_transitions": 448
+      },
+      "reason": null
+    },
+    {
+      "name": "random_055",
+      "row_count": 2,
+      "columns": [
+        2,
+        3,
+        1,
+        2,
+        3
+      ],
+      "u_columns": [
+        2
+      ],
+      "labels": [
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "weights": [
+        0,
+        3,
+        0,
+        1,
+        1
+      ],
+      "target": 0,
+      "p": 1,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        0,
+        1
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 1,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 30,
+        "branch_transitions": 4
+      },
+      "reason": null
+    },
+    {
+      "name": "random_056",
+      "row_count": 4,
+      "columns": [
+        0,
+        3,
+        1
+      ],
+      "u_columns": [
+        3,
+        12
+      ],
+      "labels": [
+        2,
+        0,
+        1
+      ],
+      "weights": [
+        1,
+        2,
+        1
+      ],
+      "target": 2,
+      "p": 2,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        1,
+        4
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 1,
+      "word": 4,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 128,
+        "branch_transitions": 320
+      },
+      "reason": null
+    },
+    {
+      "name": "random_057",
+      "row_count": 1,
+      "columns": [
+        0,
+        1,
+        1
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        0,
+        0,
+        2
+      ],
+      "target": 0,
+      "p": 0,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        0,
+        1
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 1,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 0,
+        "branch_transitions": 0
+      },
+      "reason": null
+    },
+    {
+      "name": "random_058",
+      "row_count": 4,
+      "columns": [
+        9
+      ],
+      "u_columns": [
+        2,
+        12
+      ],
+      "labels": [
+        1
+      ],
+      "weights": [
+        2
+      ],
+      "target": 3,
+      "p": 2,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 16,
+        "branch_transitions": 320
+      },
+      "reason": null
+    },
+    {
+      "name": "random_059",
+      "row_count": 2,
+      "columns": [
+        0,
+        1,
+        2
+      ],
+      "u_columns": [
+        0,
+        3
+      ],
+      "labels": [
+        0,
+        0,
+        1
+      ],
+      "weights": [
+        2,
+        0,
+        1
+      ],
+      "target": 0,
+      "p": 2,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        2,
+        1
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 2,
+      "word": 1,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 45,
+        "branch_transitions": 32
+      },
+      "reason": null
+    },
+    {
+      "name": "random_060",
+      "row_count": 2,
+      "columns": [
+        2
+      ],
+      "u_columns": [],
+      "labels": [
+        0
+      ],
+      "weights": [
+        1
+      ],
+      "target": 0,
+      "p": 0,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        0,
+        0
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 0,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 4,
+        "branch_transitions": 0
+      },
+      "reason": null
+    },
+    {
+      "name": "random_061",
+      "row_count": 2,
+      "columns": [
+        1,
+        0,
+        0
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        3,
+        3,
+        1
+      ],
+      "target": 1,
+      "p": 0,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        3,
+        1
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 3,
+      "word": 1,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 8,
+        "branch_transitions": 1
+      },
+      "reason": null
+    },
+    {
+      "name": "random_062",
+      "row_count": 1,
+      "columns": [
+        0,
+        0,
+        1
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        1,
+        2,
+        0
+      ],
+      "target": 1,
+      "p": 0,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        0,
+        4
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 4,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 8,
+        "branch_transitions": 1
+      },
+      "reason": null
+    },
+    {
+      "name": "random_063",
+      "row_count": 1,
+      "columns": [
+        1,
+        1,
+        1
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        2,
+        1,
+        0
+      ],
+      "target": 0,
+      "p": 0,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        1,
+        6
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 1,
+      "word": 6,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 0,
+        "branch_transitions": 0
+      },
+      "reason": null
+    },
+    {
+      "name": "random_064",
+      "row_count": 2,
+      "columns": [],
+      "u_columns": [
+        3
+      ],
+      "labels": [],
+      "weights": [],
+      "target": 1,
+      "p": 1,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 0,
+        "branch_transitions": 8
+      },
+      "reason": null
+    },
+    {
+      "name": "random_065",
+      "row_count": 2,
+      "columns": [
+        2,
+        2,
+        1,
+        3
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        1,
+        1,
+        1,
+        2
+      ],
+      "target": 3,
+      "p": 0,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        2,
+        5
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 2,
+      "word": 8,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 24,
+        "branch_transitions": 1
+      },
+      "reason": null
+    },
+    {
+      "name": "random_066",
+      "row_count": 3,
+      "columns": [
+        1,
+        0,
+        6,
+        6,
+        3
+      ],
+      "u_columns": [
+        0,
+        5
+      ],
+      "labels": [
+        3,
+        2,
+        0,
+        0,
+        3
+      ],
+      "weights": [
+        2,
+        0,
+        3,
+        3,
+        1
+      ],
+      "target": 3,
+      "p": 2,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        1,
+        18
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 1,
+      "word": 18,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 296,
+        "branch_transitions": 64
+      },
+      "reason": null
+    },
+    {
+      "name": "random_067",
+      "row_count": 3,
+      "columns": [
+        1,
+        4,
+        0,
+        2,
+        1
+      ],
+      "u_columns": [
+        1,
+        7
+      ],
+      "labels": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "weights": [
+        1,
+        0,
+        3,
+        2,
+        1
+      ],
+      "target": 6,
+      "p": 2,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        2,
+        10
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 2,
+      "word": 10,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 144,
+        "branch_transitions": 176
+      },
+      "reason": null
+    },
+    {
+      "name": "random_068",
+      "row_count": 1,
+      "columns": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        3,
+        2,
+        2,
+        0
+      ],
+      "target": 1,
+      "p": 0,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        0,
+        8
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 8,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 10,
+        "branch_transitions": 1
+      },
+      "reason": null
+    },
+    {
+      "name": "random_069",
+      "row_count": 1,
+      "columns": [
+        1,
+        0,
+        1
+      ],
+      "u_columns": [
+        1,
+        1
+      ],
+      "labels": [
+        0,
+        0,
+        2
+      ],
+      "weights": [
+        2,
+        2,
+        0
+      ],
+      "target": 1,
+      "p": 2,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        2,
+        1
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 2,
+      "word": 1,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 88,
+        "branch_transitions": 32
+      },
+      "reason": null
+    },
+    {
+      "name": "random_070",
+      "row_count": 1,
+      "columns": [
+        0,
+        1
+      ],
+      "u_columns": [
+        0,
+        1
+      ],
+      "labels": [
+        2,
+        3
+      ],
+      "weights": [
+        1,
+        3
+      ],
+      "target": 1,
+      "p": 2,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        1,
+        1
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 1,
+      "word": 1,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 56,
+        "branch_transitions": 32
+      },
+      "reason": null
+    },
+    {
+      "name": "random_071",
+      "row_count": 4,
+      "columns": [
+        6,
+        10,
+        0,
+        9,
+        6
+      ],
+      "u_columns": [
+        0
+      ],
+      "labels": [
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "weights": [
+        0,
+        3,
+        2,
+        0,
+        1
+      ],
+      "target": 8,
+      "p": 1,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 136,
+        "branch_transitions": 8
+      },
+      "reason": null
+    },
+    {
+      "name": "random_072",
+      "row_count": 4,
+      "columns": [
+        8,
+        10,
+        8,
+        0
+      ],
+      "u_columns": [
+        15
+      ],
+      "labels": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "weights": [
+        1,
+        3,
+        0,
+        3
+      ],
+      "target": 4,
+      "p": 1,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 88,
+        "branch_transitions": 40
+      },
+      "reason": null
+    },
+    {
+      "name": "random_073",
+      "row_count": 2,
+      "columns": [
+        3,
+        3,
+        0,
+        0
+      ],
+      "u_columns": [
+        1,
+        0
+      ],
+      "labels": [
+        2,
+        3,
+        1,
+        1
+      ],
+      "weights": [
+        3,
+        0,
+        0,
+        1
+      ],
+      "target": 1,
+      "p": 2,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        0,
+        4
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 4,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 88,
+        "branch_transitions": 32
+      },
+      "reason": null
+    },
+    {
+      "name": "random_074",
+      "row_count": 3,
+      "columns": [
+        0,
+        0,
+        4,
+        0,
+        2
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        0,
+        3,
+        2,
+        2,
+        2
+      ],
+      "target": 1,
+      "p": 0,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 21,
+        "branch_transitions": 1
+      },
+      "reason": null
+    },
+    {
+      "name": "random_075",
+      "row_count": 3,
+      "columns": [
+        2
+      ],
+      "u_columns": [
+        3,
+        5
+      ],
+      "labels": [
+        3
+      ],
+      "weights": [
+        0
+      ],
+      "target": 5,
+      "p": 2,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 16,
+        "branch_transitions": 48
+      },
+      "reason": null
+    },
+    {
+      "name": "random_076",
+      "row_count": 3,
+      "columns": [
+        5,
+        2,
+        2,
+        0,
+        0,
+        6
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        0,
+        0,
+        3,
+        3,
+        2,
+        0
+      ],
+      "target": 7,
+      "p": 0,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        0,
+        3
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 3,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 40,
+        "branch_transitions": 9
+      },
+      "reason": null
+    },
+    {
+      "name": "random_077",
+      "row_count": 1,
+      "columns": [],
+      "u_columns": [
+        1,
+        1
+      ],
+      "labels": [],
+      "weights": [],
+      "target": 1,
+      "p": 2,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 0,
+        "branch_transitions": 32
+      },
+      "reason": null
+    },
+    {
+      "name": "random_078",
+      "row_count": 1,
+      "columns": [
+        0
+      ],
+      "u_columns": [
+        1,
+        0
+      ],
+      "labels": [
+        3
+      ],
+      "weights": [
+        0
+      ],
+      "target": 1,
+      "p": 2,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        0,
+        1
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 1,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 16,
+        "branch_transitions": 32
+      },
+      "reason": null
+    },
+    {
+      "name": "random_079",
+      "row_count": 4,
+      "columns": [],
+      "u_columns": [],
+      "labels": [],
+      "weights": [],
+      "target": 8,
+      "p": 0,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 0,
+        "branch_transitions": 1
+      },
+      "reason": null
+    },
+    {
+      "name": "random_080",
+      "row_count": 3,
+      "columns": [],
+      "u_columns": [],
+      "labels": [],
+      "weights": [],
+      "target": 2,
+      "p": 0,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 0,
+        "branch_transitions": 1
+      },
+      "reason": null
+    },
+    {
+      "name": "random_081",
+      "row_count": 4,
+      "columns": [
+        0,
+        9
+      ],
+      "u_columns": [
+        4
+      ],
+      "labels": [
+        1,
+        0
+      ],
+      "weights": [
+        2,
+        1
+      ],
+      "target": 6,
+      "p": 1,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 16,
+        "branch_transitions": 8
+      },
+      "reason": null
+    },
+    {
+      "name": "random_082",
+      "row_count": 3,
+      "columns": [
+        3,
+        5,
+        1,
+        0,
+        0
+      ],
+      "u_columns": [
+        3
+      ],
+      "labels": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "weights": [
+        2,
+        2,
+        1,
+        0,
+        2
+      ],
+      "target": 3,
+      "p": 1,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        0,
+        8
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 8,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 132,
+        "branch_transitions": 4
+      },
+      "reason": null
+    },
+    {
+      "name": "random_083",
+      "row_count": 1,
+      "columns": [
+        1,
+        1
+      ],
+      "u_columns": [
+        1
+      ],
+      "labels": [
+        0,
+        0
+      ],
+      "weights": [
+        3,
+        3
+      ],
+      "target": 1,
+      "p": 1,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        3,
+        1
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 3,
+      "word": 1,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 16,
+        "branch_transitions": 4
+      },
+      "reason": null
+    },
+    {
+      "name": "random_084",
+      "row_count": 4,
+      "columns": [
+        10,
+        0,
+        6,
+        5,
+        5
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        0,
+        3,
+        3,
+        2,
+        0
+      ],
+      "target": 1,
+      "p": 0,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 33,
+        "branch_transitions": 1
+      },
+      "reason": null
+    },
+    {
+      "name": "random_085",
+      "row_count": 3,
+      "columns": [
+        1,
+        1,
+        0,
+        2
+      ],
+      "u_columns": [
+        6,
+        2
+      ],
+      "labels": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "weights": [
+        0,
+        0,
+        2,
+        2
+      ],
+      "target": 1,
+      "p": 2,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        0,
+        2
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 2,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 176,
+        "branch_transitions": 192
+      },
+      "reason": null
+    },
+    {
+      "name": "random_086",
+      "row_count": 3,
+      "columns": [
+        4,
+        0,
+        2
+      ],
+      "u_columns": [
+        2
+      ],
+      "labels": [
+        1,
+        0,
+        1
+      ],
+      "weights": [
+        2,
+        0,
+        0
+      ],
+      "target": 7,
+      "p": 1,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 30,
+        "branch_transitions": 40
+      },
+      "reason": null
+    },
+    {
+      "name": "random_087",
+      "row_count": 4,
+      "columns": [
+        0
+      ],
+      "u_columns": [
+        12,
+        2
+      ],
+      "labels": [
+        3
+      ],
+      "weights": [
+        3
+      ],
+      "target": 0,
+      "p": 2,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 12,
+        "branch_transitions": 176
+      },
+      "reason": null
+    },
+    {
+      "name": "random_088",
+      "row_count": 3,
+      "columns": [
+        6,
+        0,
+        0
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        2,
+        0,
+        0
+      ],
+      "target": 6,
+      "p": 0,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        2,
+        1
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 2,
+      "word": 1,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 6,
+        "branch_transitions": 1
+      },
+      "reason": null
+    },
+    {
+      "name": "random_089",
+      "row_count": 3,
+      "columns": [
+        1,
+        0,
+        6,
+        2,
+        0
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        3,
+        2,
+        2,
+        1,
+        3
+      ],
+      "target": 6,
+      "p": 0,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        2,
+        4
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 2,
+      "word": 4,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 32,
+        "branch_transitions": 1
+      },
+      "reason": null
+    },
+    {
+      "name": "random_090",
+      "row_count": 1,
+      "columns": [
+        0,
+        0
+      ],
+      "u_columns": [
+        1,
+        1
+      ],
+      "labels": [
+        3,
+        2
+      ],
+      "weights": [
+        1,
+        2
+      ],
+      "target": 0,
+      "p": 2,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        0,
+        0
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 0,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 80,
+        "branch_transitions": 32
+      },
+      "reason": null
+    },
+    {
+      "name": "random_091",
+      "row_count": 4,
+      "columns": [
+        2
+      ],
+      "u_columns": [
+        13
+      ],
+      "labels": [
+        1
+      ],
+      "weights": [
+        1
+      ],
+      "target": 12,
+      "p": 1,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 8,
+        "branch_transitions": 8
+      },
+      "reason": null
+    },
+    {
+      "name": "random_092",
+      "row_count": 4,
+      "columns": [
+        0,
+        3,
+        3,
+        8,
+        0
+      ],
+      "u_columns": [
+        12
+      ],
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "weights": [
+        0,
+        3,
+        0,
+        3,
+        3
+      ],
+      "target": 15,
+      "p": 1,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 32,
+        "branch_transitions": 40
+      },
+      "reason": null
+    },
+    {
+      "name": "random_093",
+      "row_count": 3,
+      "columns": [
+        6,
+        0,
+        0,
+        0,
+        0
+      ],
+      "u_columns": [
+        1,
+        0
+      ],
+      "labels": [
+        2,
+        1,
+        0,
+        3,
+        2
+      ],
+      "weights": [
+        1,
+        3,
+        1,
+        2,
+        0
+      ],
+      "target": 5,
+      "p": 2,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 128,
+        "branch_transitions": 64
+      },
+      "reason": null
+    },
+    {
+      "name": "random_094",
+      "row_count": 2,
+      "columns": [
+        2
+      ],
+      "u_columns": [
+        0
+      ],
+      "labels": [
+        0
+      ],
+      "weights": [
+        3
+      ],
+      "target": 0,
+      "p": 1,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        0,
+        0
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 0,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 8,
+        "branch_transitions": 0
+      },
+      "reason": null
+    },
+    {
+      "name": "random_095",
+      "row_count": 1,
+      "columns": [
+        0
+      ],
+      "u_columns": [
+        1
+      ],
+      "labels": [
+        1
+      ],
+      "weights": [
+        3
+      ],
+      "target": 0,
+      "p": 1,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 4,
+        "branch_transitions": 4
+      },
+      "reason": null
+    },
+    {
+      "name": "random_096",
+      "row_count": 2,
+      "columns": [
+        3
+      ],
+      "u_columns": [
+        0
+      ],
+      "labels": [
+        1
+      ],
+      "weights": [
+        0
+      ],
+      "target": 2,
+      "p": 1,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 8,
+        "branch_transitions": 8
+      },
+      "reason": null
+    },
+    {
+      "name": "random_097",
+      "row_count": 2,
+      "columns": [],
+      "u_columns": [],
+      "labels": [],
+      "weights": [],
+      "target": 1,
+      "p": 0,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 0,
+        "branch_transitions": 1
+      },
+      "reason": null
+    },
+    {
+      "name": "random_098",
+      "row_count": 2,
+      "columns": [
+        2,
+        2,
+        1,
+        3,
+        2,
+        0
+      ],
+      "u_columns": [
+        3,
+        3
+      ],
+      "labels": [
+        1,
+        2,
+        0,
+        0,
+        3,
+        1
+      ],
+      "weights": [
+        1,
+        3,
+        0,
+        0,
+        0,
+        3
+      ],
+      "target": 3,
+      "p": 2,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        0,
+        8
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 8,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 576,
+        "branch_transitions": 32
+      },
+      "reason": null
+    },
+    {
+      "name": "random_099",
+      "row_count": 3,
+      "columns": [
+        0,
+        0,
+        0
+      ],
+      "u_columns": [
+        1
+      ],
+      "labels": [
+        0,
+        0,
+        1
+      ],
+      "weights": [
+        0,
+        3,
+        0
+      ],
+      "target": 7,
+      "p": 1,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 16,
+        "branch_transitions": 40
+      },
+      "reason": null
+    },
+    {
+      "name": "random_100",
+      "row_count": 4,
+      "columns": [
+        4,
+        0,
+        3,
+        8
+      ],
+      "u_columns": [
+        1,
+        11
+      ],
+      "labels": [
+        3,
+        3,
+        0,
+        1
+      ],
+      "weights": [
+        3,
+        0,
+        3,
+        0
+      ],
+      "target": 14,
+      "p": 2,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        3,
+        1
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 3,
+      "word": 1,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 144,
+        "branch_transitions": 320
+      },
+      "reason": null
+    },
+    {
+      "name": "random_101",
+      "row_count": 4,
+      "columns": [],
+      "u_columns": [],
+      "labels": [],
+      "weights": [],
+      "target": 10,
+      "p": 0,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 0,
+        "branch_transitions": 1
+      },
+      "reason": null
+    },
+    {
+      "name": "random_102",
+      "row_count": 4,
+      "columns": [
+        4,
+        0,
+        1,
+        0,
+        0,
+        8
+      ],
+      "u_columns": [
+        9
+      ],
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "weights": [
+        0,
+        2,
+        0,
+        0,
+        3,
+        3
+      ],
+      "target": 8,
+      "p": 1,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        0,
+        12
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 12,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 148,
+        "branch_transitions": 8
+      },
+      "reason": null
+    },
+    {
+      "name": "random_103",
+      "row_count": 2,
+      "columns": [
+        3,
+        3,
+        0,
+        1,
+        2
+      ],
+      "u_columns": [
+        2,
+        0
+      ],
+      "labels": [
+        2,
+        0,
+        0,
+        2,
+        0
+      ],
+      "weights": [
+        0,
+        3,
+        2,
+        3,
+        1
+      ],
+      "target": 0,
+      "p": 2,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        2,
+        4
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 2,
+      "word": 4,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 168,
+        "branch_transitions": 32
+      },
+      "reason": null
+    },
+    {
+      "name": "random_104",
+      "row_count": 4,
+      "columns": [
+        8,
+        10
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0
+      ],
+      "weights": [
+        1,
+        0
+      ],
+      "target": 8,
+      "p": 0,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        1,
+        1
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 1,
+      "word": 1,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 12,
+        "branch_transitions": 1
+      },
+      "reason": null
+    },
+    {
+      "name": "random_105",
+      "row_count": 3,
+      "columns": [
+        0,
+        2
+      ],
+      "u_columns": [
+        5
+      ],
+      "labels": [
+        0,
+        1
+      ],
+      "weights": [
+        3,
+        2
+      ],
+      "target": 0,
+      "p": 1,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        3,
+        1
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 3,
+      "word": 1,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 6,
+        "branch_transitions": 4
+      },
+      "reason": null
+    },
+    {
+      "name": "random_106",
+      "row_count": 3,
+      "columns": [
+        0,
+        0,
+        3
+      ],
+      "u_columns": [
+        0,
+        5
+      ],
+      "labels": [
+        1,
+        1,
+        1
+      ],
+      "weights": [
+        2,
+        2,
+        2
+      ],
+      "target": 6,
+      "p": 2,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 40,
+        "branch_transitions": 64
+      },
+      "reason": null
+    },
+    {
+      "name": "random_107",
+      "row_count": 2,
+      "columns": [
+        1,
+        3
+      ],
+      "u_columns": [
+        0
+      ],
+      "labels": [
+        1,
+        0
+      ],
+      "weights": [
+        3,
+        0
+      ],
+      "target": 1,
+      "p": 1,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        3,
+        1
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 3,
+      "word": 1,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 24,
+        "branch_transitions": 8
+      },
+      "reason": null
+    },
+    {
+      "name": "random_108",
+      "row_count": 3,
+      "columns": [
+        5,
+        4
+      ],
+      "u_columns": [
+        1
+      ],
+      "labels": [
+        1,
+        0
+      ],
+      "weights": [
+        3,
+        1
+      ],
+      "target": 4,
+      "p": 1,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        1,
+        2
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 1,
+      "word": 2,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 24,
+        "branch_transitions": 8
+      },
+      "reason": null
+    },
+    {
+      "name": "random_109",
+      "row_count": 4,
+      "columns": [
+        10
+      ],
+      "u_columns": [],
+      "labels": [
+        0
+      ],
+      "weights": [
+        3
+      ],
+      "target": 0,
+      "p": 0,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 0,
+        "branch_transitions": 0
+      },
+      "reason": null
+    },
+    {
+      "name": "random_110",
+      "row_count": 4,
+      "columns": [
+        0,
+        4,
+        8
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        1,
+        0,
+        0
+      ],
+      "target": 6,
+      "p": 0,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 15,
+        "branch_transitions": 1
+      },
+      "reason": null
+    },
+    {
+      "name": "random_111",
+      "row_count": 3,
+      "columns": [
+        0,
+        5,
+        0,
+        6
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "target": 2,
+      "p": 0,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 14,
+        "branch_transitions": 1
+      },
+      "reason": null
+    },
+    {
+      "name": "random_112",
+      "row_count": 2,
+      "columns": [
+        0,
+        0
+      ],
+      "u_columns": [
+        1
+      ],
+      "labels": [
+        0,
+        1
+      ],
+      "weights": [
+        1,
+        1
+      ],
+      "target": 2,
+      "p": 1,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 12,
+        "branch_transitions": 8
+      },
+      "reason": null
+    },
+    {
+      "name": "random_113",
+      "row_count": 1,
+      "columns": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "u_columns": [
+        1
+      ],
+      "labels": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "weights": [
+        3,
+        3,
+        1,
+        0,
+        3,
+        1
+      ],
+      "target": 0,
+      "p": 1,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        1,
+        4
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 1,
+      "word": 4,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 30,
+        "branch_transitions": 4
+      },
+      "reason": null
+    },
+    {
+      "name": "random_114",
+      "row_count": 4,
+      "columns": [
+        0
+      ],
+      "u_columns": [
+        14
+      ],
+      "labels": [
+        1
+      ],
+      "weights": [
+        3
+      ],
+      "target": 9,
+      "p": 1,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 8,
+        "branch_transitions": 40
+      },
+      "reason": null
+    },
+    {
+      "name": "random_115",
+      "row_count": 2,
+      "columns": [
+        1,
+        3,
+        3
+      ],
+      "u_columns": [
+        0,
+        3
+      ],
+      "labels": [
+        0,
+        1,
+        0
+      ],
+      "weights": [
+        3,
+        0,
+        1
+      ],
+      "target": 1,
+      "p": 2,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        3,
+        1
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 3,
+      "word": 1,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 152,
+        "branch_transitions": 64
+      },
+      "reason": null
+    },
+    {
+      "name": "random_116",
+      "row_count": 1,
+      "columns": [
+        0,
+        1
+      ],
+      "u_columns": [
+        1
+      ],
+      "labels": [
+        0,
+        1
+      ],
+      "weights": [
+        1,
+        3
+      ],
+      "target": 1,
+      "p": 1,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 12,
+        "branch_transitions": 4
+      },
+      "reason": null
+    },
+    {
+      "name": "random_117",
+      "row_count": 2,
+      "columns": [
+        1,
+        1,
+        3,
+        0
+      ],
+      "u_columns": [
+        2,
+        2
+      ],
+      "labels": [
+        3,
+        1,
+        2,
+        1
+      ],
+      "weights": [
+        2,
+        0,
+        2,
+        0
+      ],
+      "target": 2,
+      "p": 2,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        0,
+        8
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 8,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 384,
+        "branch_transitions": 32
+      },
+      "reason": null
+    },
+    {
+      "name": "random_118",
+      "row_count": 2,
+      "columns": [
+        1,
+        2,
+        2,
+        3,
+        0,
+        0
+      ],
+      "u_columns": [
+        2,
+        3
+      ],
+      "labels": [
+        2,
+        2,
+        3,
+        2,
+        1,
+        2
+      ],
+      "weights": [
+        2,
+        1,
+        1,
+        0,
+        0,
+        2
+      ],
+      "target": 3,
+      "p": 2,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        1,
+        4
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 1,
+      "word": 18,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 528,
+        "branch_transitions": 48
+      },
+      "reason": null
+    },
+    {
+      "name": "random_119",
+      "row_count": 4,
+      "columns": [
+        0,
+        3,
+        3,
+        9,
+        12
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        2,
+        1,
+        2,
+        1,
+        0
+      ],
+      "target": 2,
+      "p": 0,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 33,
+        "branch_transitions": 1
+      },
+      "reason": null
+    },
+    {
+      "name": "random_120",
+      "row_count": 4,
+      "columns": [],
+      "u_columns": [],
+      "labels": [],
+      "weights": [],
+      "target": 0,
+      "p": 0,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        0,
+        0
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 0,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 0,
+        "branch_transitions": 0
+      },
+      "reason": null
+    },
+    {
+      "name": "random_121",
+      "row_count": 3,
+      "columns": [
+        0,
+        0,
+        0,
+        6
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        1,
+        3,
+        0,
+        3
+      ],
+      "target": 4,
+      "p": 0,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 7,
+        "branch_transitions": 1
+      },
+      "reason": null
+    },
+    {
+      "name": "random_122",
+      "row_count": 3,
+      "columns": [],
+      "u_columns": [],
+      "labels": [],
+      "weights": [],
+      "target": 7,
+      "p": 0,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 0,
+        "branch_transitions": 9
+      },
+      "reason": null
+    },
+    {
+      "name": "random_123",
+      "row_count": 1,
+      "columns": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "u_columns": [
+        1,
+        1
+      ],
+      "labels": [
+        3,
+        2,
+        2,
+        2,
+        0,
+        2
+      ],
+      "weights": [
+        2,
+        3,
+        2,
+        3,
+        2,
+        2
+      ],
+      "target": 1,
+      "p": 2,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        2,
+        1
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 2,
+      "word": 1,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 400,
+        "branch_transitions": 32
+      },
+      "reason": null
+    },
+    {
+      "name": "random_124",
+      "row_count": 3,
+      "columns": [],
+      "u_columns": [],
+      "labels": [],
+      "weights": [],
+      "target": 5,
+      "p": 0,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 0,
+        "branch_transitions": 1
+      },
+      "reason": null
+    },
+    {
+      "name": "random_125",
+      "row_count": 1,
+      "columns": [],
+      "u_columns": [
+        1
+      ],
+      "labels": [],
+      "weights": [],
+      "target": 0,
+      "p": 1,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 0,
+        "branch_transitions": 4
+      },
+      "reason": null
+    },
+    {
+      "name": "random_126",
+      "row_count": 2,
+      "columns": [
+        3,
+        1,
+        1
+      ],
+      "u_columns": [
+        1,
+        2
+      ],
+      "labels": [
+        3,
+        1,
+        2
+      ],
+      "weights": [
+        2,
+        0,
+        1
+      ],
+      "target": 3,
+      "p": 2,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        1,
+        4
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 1,
+      "word": 4,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 152,
+        "branch_transitions": 48
+      },
+      "reason": null
+    },
+    {
+      "name": "random_127",
+      "row_count": 1,
+      "columns": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "u_columns": [
+        1,
+        0
+      ],
+      "labels": [
+        3,
+        1,
+        3,
+        2,
+        1,
+        1
+      ],
+      "weights": [
+        2,
+        1,
+        3,
+        3,
+        2,
+        0
+      ],
+      "target": 1,
+      "p": 2,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        0,
+        32
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 32,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 336,
+        "branch_transitions": 32
+      },
+      "reason": null
+    },
+    {
+      "name": "random_128",
+      "row_count": 1,
+      "columns": [
+        0,
+        0,
+        1
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        3,
+        0,
+        2
+      ],
+      "target": 1,
+      "p": 0,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        2,
+        4
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 2,
+      "word": 4,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 8,
+        "branch_transitions": 1
+      },
+      "reason": null
+    },
+    {
+      "name": "random_129",
+      "row_count": 3,
+      "columns": [
+        4,
+        4,
+        3
+      ],
+      "u_columns": [
+        4
+      ],
+      "labels": [
+        1,
+        0,
+        0
+      ],
+      "weights": [
+        0,
+        1,
+        1
+      ],
+      "target": 0,
+      "p": 1,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        0,
+        1
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 1,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 22,
+        "branch_transitions": 4
+      },
+      "reason": null
+    },
+    {
+      "name": "random_130",
+      "row_count": 1,
+      "columns": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        1,
+        2,
+        1,
+        3
+      ],
+      "target": 1,
+      "p": 0,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        1,
+        1
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 1,
+      "word": 1,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 12,
+        "branch_transitions": 1
+      },
+      "reason": null
+    },
+    {
+      "name": "random_131",
+      "row_count": 4,
+      "columns": [
+        3,
+        4,
+        6,
+        4,
+        0,
+        4
+      ],
+      "u_columns": [
+        9,
+        8
+      ],
+      "labels": [
+        1,
+        0,
+        3,
+        0,
+        0,
+        2
+      ],
+      "weights": [
+        1,
+        1,
+        2,
+        1,
+        3,
+        3
+      ],
+      "target": 10,
+      "p": 2,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        1,
+        1
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 1,
+      "word": 1,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 360,
+        "branch_transitions": 192
+      },
+      "reason": null
+    },
+    {
+      "name": "random_132",
+      "row_count": 2,
+      "columns": [],
+      "u_columns": [
+        1
+      ],
+      "labels": [],
+      "weights": [],
+      "target": 0,
+      "p": 1,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        0,
+        0
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 0,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 0,
+        "branch_transitions": 4
+      },
+      "reason": null
+    },
+    {
+      "name": "random_133",
+      "row_count": 4,
+      "columns": [
+        2
+      ],
+      "u_columns": [
+        0
+      ],
+      "labels": [
+        0
+      ],
+      "weights": [
+        1
+      ],
+      "target": 14,
+      "p": 1,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 8,
+        "branch_transitions": 72
+      },
+      "reason": null
+    },
+    {
+      "name": "random_134",
+      "row_count": 3,
+      "columns": [
+        5,
+        0,
+        5
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        0,
+        3,
+        0
+      ],
+      "target": 2,
+      "p": 0,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 9,
+        "branch_transitions": 1
+      },
+      "reason": null
+    },
+    {
+      "name": "random_135",
+      "row_count": 4,
+      "columns": [
+        3,
+        3
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0
+      ],
+      "weights": [
+        2,
+        1
+      ],
+      "target": 2,
+      "p": 0,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 8,
+        "branch_transitions": 1
+      },
+      "reason": null
+    },
+    {
+      "name": "random_136",
+      "row_count": 1,
+      "columns": [
+        0,
+        1,
+        0
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        3,
+        0,
+        2
+      ],
+      "target": 0,
+      "p": 0,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        0,
+        0
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 0,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 8,
+        "branch_transitions": 0
+      },
+      "reason": null
+    },
+    {
+      "name": "random_137",
+      "row_count": 2,
+      "columns": [
+        0,
+        2,
+        3,
+        3
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        1,
+        0,
+        3,
+        0
+      ],
+      "target": 0,
+      "p": 0,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        1,
+        1
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 1,
+      "word": 1,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 0,
+        "branch_transitions": 0
+      },
+      "reason": null
+    },
+    {
+      "name": "random_138",
+      "row_count": 1,
+      "columns": [
+        1,
+        1
+      ],
+      "u_columns": [
+        1,
+        1
+      ],
+      "labels": [
+        2,
+        2
+      ],
+      "weights": [
+        3,
+        0
+      ],
+      "target": 0,
+      "p": 2,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        0,
+        0
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 0,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 32,
+        "branch_transitions": 32
+      },
+      "reason": null
+    },
+    {
+      "name": "random_139",
+      "row_count": 4,
+      "columns": [
+        0,
+        0,
+        0,
+        8,
+        4,
+        3
+      ],
+      "u_columns": [
+        10
+      ],
+      "labels": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "weights": [
+        2,
+        1,
+        3,
+        2,
+        0,
+        3
+      ],
+      "target": 8,
+      "p": 1,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        3,
+        10
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 3,
+      "word": 10,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 96,
+        "branch_transitions": 8
+      },
+      "reason": null
+    },
+    {
+      "name": "random_140",
+      "row_count": 2,
+      "columns": [
+        0,
+        3,
+        3,
+        2
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        0,
+        2,
+        0,
+        0
+      ],
+      "target": 1,
+      "p": 0,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        0,
+        12
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 12,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 21,
+        "branch_transitions": 1
+      },
+      "reason": null
+    },
+    {
+      "name": "random_141",
+      "row_count": 2,
+      "columns": [
+        3,
+        0,
+        0
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        0,
+        3,
+        0
+      ],
+      "target": 2,
+      "p": 0,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 6,
+        "branch_transitions": 1
+      },
+      "reason": null
+    },
+    {
+      "name": "random_142",
+      "row_count": 4,
+      "columns": [
+        2,
+        12,
+        0,
+        6,
+        1,
+        1
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        3,
+        2,
+        0,
+        3,
+        2,
+        0
+      ],
+      "target": 11,
+      "p": 0,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        5,
+        42
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 5,
+      "word": 42,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 55,
+        "branch_transitions": 9
+      },
+      "reason": null
+    },
+    {
+      "name": "random_143",
+      "row_count": 1,
+      "columns": [
+        0,
+        0
+      ],
+      "u_columns": [
+        1
+      ],
+      "labels": [
+        0,
+        1
+      ],
+      "weights": [
+        1,
+        2
+      ],
+      "target": 1,
+      "p": 1,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        2,
+        2
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 2,
+      "word": 2,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 12,
+        "branch_transitions": 4
+      },
+      "reason": null
+    },
+    {
+      "name": "random_144",
+      "row_count": 2,
+      "columns": [
+        3,
+        0,
+        0,
+        3,
+        2,
+        3
+      ],
+      "u_columns": [
+        2
+      ],
+      "labels": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "weights": [
+        1,
+        0,
+        1,
+        3,
+        2,
+        0
+      ],
+      "target": 0,
+      "p": 1,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        0,
+        0
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 0,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 124,
+        "branch_transitions": 4
+      },
+      "reason": null
+    },
+    {
+      "name": "random_145",
+      "row_count": 2,
+      "columns": [
+        1,
+        2,
+        1,
+        2
+      ],
+      "u_columns": [
+        0
+      ],
+      "labels": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "weights": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "target": 3,
+      "p": 1,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        1,
+        9
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 1,
+      "word": 9,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 100,
+        "branch_transitions": 8
+      },
+      "reason": null
+    },
+    {
+      "name": "random_146",
+      "row_count": 2,
+      "columns": [
+        1
+      ],
+      "u_columns": [],
+      "labels": [
+        0
+      ],
+      "weights": [
+        3
+      ],
+      "target": 2,
+      "p": 0,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 4,
+        "branch_transitions": 1
+      },
+      "reason": null
+    },
+    {
+      "name": "random_147",
+      "row_count": 1,
+      "columns": [
+        1,
+        1
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0
+      ],
+      "weights": [
+        2,
+        2
+      ],
+      "target": 1,
+      "p": 0,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        2,
+        1
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 2,
+      "word": 1,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 8,
+        "branch_transitions": 1
+      },
+      "reason": null
+    },
+    {
+      "name": "random_148",
+      "row_count": 2,
+      "columns": [
+        3,
+        3,
+        2,
+        0,
+        2
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        2,
+        0,
+        0,
+        2,
+        3
+      ],
+      "target": 2,
+      "p": 0,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        0,
+        4
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 4,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 27,
+        "branch_transitions": 1
+      },
+      "reason": null
+    },
+    {
+      "name": "random_149",
+      "row_count": 2,
+      "columns": [
+        2,
+        3
+      ],
+      "u_columns": [
+        1,
+        1
+      ],
+      "labels": [
+        1,
+        0
+      ],
+      "weights": [
+        1,
+        1
+      ],
+      "target": 1,
+      "p": 2,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 48,
+        "branch_transitions": 32
+      },
+      "reason": null
+    },
+    {
+      "name": "random_150",
+      "row_count": 3,
+      "columns": [
+        0,
+        4,
+        6,
+        1,
+        5,
+        6
+      ],
+      "u_columns": [
+        4,
+        3
+      ],
+      "labels": [
+        3,
+        0,
+        3,
+        3,
+        0,
+        2
+      ],
+      "weights": [
+        3,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "target": 4,
+      "p": 2,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        1,
+        2
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 1,
+      "word": 2,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 752,
+        "branch_transitions": 176
+      },
+      "reason": null
+    },
+    {
+      "name": "random_151",
+      "row_count": 3,
+      "columns": [
+        0
+      ],
+      "u_columns": [],
+      "labels": [
+        0
+      ],
+      "weights": [
+        2
+      ],
+      "target": 0,
+      "p": 0,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        2,
+        1
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 2,
+      "word": 1,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 0,
+        "branch_transitions": 0
+      },
+      "reason": null
+    },
+    {
+      "name": "random_152",
+      "row_count": 2,
+      "columns": [
+        3,
+        3,
+        2,
+        1,
+        3,
+        0
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        1,
+        3,
+        2,
+        1,
+        0,
+        3
+      ],
+      "target": 2,
+      "p": 0,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        1,
+        24
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 1,
+      "word": 24,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 33,
+        "branch_transitions": 1
+      },
+      "reason": null
+    },
+    {
+      "name": "random_153",
+      "row_count": 1,
+      "columns": [
+        1,
+        0,
+        0
+      ],
+      "u_columns": [
+        0,
+        1
+      ],
+      "labels": [
+        0,
+        3,
+        3
+      ],
+      "weights": [
+        2,
+        1,
+        3
+      ],
+      "target": 1,
+      "p": 2,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        1,
+        2
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 1,
+      "word": 2,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 72,
+        "branch_transitions": 32
+      },
+      "reason": null
+    },
+    {
+      "name": "random_154",
+      "row_count": 1,
+      "columns": [
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "u_columns": [
+        0
+      ],
+      "labels": [
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "weights": [
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "target": 1,
+      "p": 1,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        2,
+        1
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 2,
+      "word": 1,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 32,
+        "branch_transitions": 8
+      },
+      "reason": null
+    },
+    {
+      "name": "random_155",
+      "row_count": 2,
+      "columns": [
+        0,
+        0,
+        3,
+        0,
+        0,
+        3
+      ],
+      "u_columns": [
+        1,
+        1
+      ],
+      "labels": [
+        3,
+        0,
+        3,
+        2,
+        3,
+        2
+      ],
+      "weights": [
+        0,
+        0,
+        0,
+        2,
+        3,
+        2
+      ],
+      "target": 1,
+      "p": 2,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        2,
+        8
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 2,
+      "word": 8,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 176,
+        "branch_transitions": 32
+      },
+      "reason": null
+    },
+    {
+      "name": "random_156",
+      "row_count": 1,
+      "columns": [],
+      "u_columns": [],
+      "labels": [],
+      "weights": [],
+      "target": 1,
+      "p": 0,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 0,
+        "branch_transitions": 1
+      },
+      "reason": null
+    },
+    {
+      "name": "random_157",
+      "row_count": 2,
+      "columns": [
+        2,
+        1,
+        0
+      ],
+      "u_columns": [
+        2,
+        0
+      ],
+      "labels": [
+        2,
+        2,
+        3
+      ],
+      "weights": [
+        0,
+        3,
+        3
+      ],
+      "target": 2,
+      "p": 2,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        0,
+        1
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 1,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 128,
+        "branch_transitions": 32
+      },
+      "reason": null
+    },
+    {
+      "name": "random_158",
+      "row_count": 4,
+      "columns": [
+        3,
+        4,
+        2,
+        8,
+        12,
+        4
+      ],
+      "u_columns": [
+        8,
+        11
+      ],
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3
+      ],
+      "weights": [
+        2,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "target": 8,
+      "p": 2,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        1,
+        8
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 1,
+      "word": 8,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 488,
+        "branch_transitions": 176
+      },
+      "reason": null
+    },
+    {
+      "name": "random_159",
+      "row_count": 1,
+      "columns": [],
+      "u_columns": [
+        1,
+        1
+      ],
+      "labels": [],
+      "weights": [],
+      "target": 0,
+      "p": 2,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 0,
+        "branch_transitions": 32
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_000",
+      "adapter": true,
+      "original_rows": [
+        6,
+        4,
+        7,
+        1
+      ],
+      "row_count": 4,
+      "columns": [
+        8,
+        1,
+        3,
+        4
+      ],
+      "u_columns": [
+        4
+      ],
+      "labels": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "weights": [
+        2,
+        1,
+        1,
+        1
+      ],
+      "target": 6,
+      "p": 1,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 80,
+        "branch_transitions": 8
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_001",
+      "adapter": true,
+      "original_rows": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "row_count": 4,
+      "columns": [],
+      "u_columns": [
+        8
+      ],
+      "labels": [],
+      "weights": [],
+      "target": 13,
+      "p": 1,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 0,
+        "branch_transitions": 40
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_002",
+      "adapter": true,
+      "original_rows": [
+        0
+      ],
+      "row_count": 1,
+      "columns": [],
+      "u_columns": [
+        0
+      ],
+      "labels": [],
+      "weights": [],
+      "target": 1,
+      "p": 1,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 0,
+        "branch_transitions": 8
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_003",
+      "adapter": true,
+      "original_rows": [
+        0,
+        0,
+        0
+      ],
+      "row_count": 3,
+      "columns": [],
+      "u_columns": [
+        1,
+        2
+      ],
+      "labels": [],
+      "weights": [],
+      "target": 6,
+      "p": 2,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 0,
+        "branch_transitions": 192
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_004",
+      "adapter": true,
+      "original_rows": [
+        10,
+        0,
+        10
+      ],
+      "row_count": 3,
+      "columns": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "u_columns": [
+        5
+      ],
+      "labels": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "weights": [
+        0,
+        3,
+        3,
+        3
+      ],
+      "target": 4,
+      "p": 1,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 20,
+        "branch_transitions": 8
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_005",
+      "adapter": true,
+      "original_rows": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "row_count": 4,
+      "columns": [
+        6
+      ],
+      "u_columns": [],
+      "labels": [
+        0
+      ],
+      "weights": [
+        3
+      ],
+      "target": 14,
+      "p": 0,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 4,
+        "branch_transitions": 9
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_006",
+      "adapter": true,
+      "original_rows": [
+        1,
+        0
+      ],
+      "row_count": 2,
+      "columns": [
+        1
+      ],
+      "u_columns": [],
+      "labels": [
+        0
+      ],
+      "weights": [
+        3
+      ],
+      "target": 2,
+      "p": 0,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 4,
+        "branch_transitions": 1
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_007",
+      "adapter": true,
+      "original_rows": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "row_count": 4,
+      "columns": [
+        8
+      ],
+      "u_columns": [
+        5
+      ],
+      "labels": [
+        0
+      ],
+      "weights": [
+        1
+      ],
+      "target": 12,
+      "p": 1,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 8,
+        "branch_transitions": 8
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_008",
+      "adapter": true,
+      "original_rows": [
+        2
+      ],
+      "row_count": 1,
+      "columns": [
+        0,
+        1
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0
+      ],
+      "weights": [
+        2,
+        0
+      ],
+      "target": 1,
+      "p": 0,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        0,
+        2
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 2,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 6,
+        "branch_transitions": 1
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_009",
+      "adapter": true,
+      "original_rows": [
+        1,
+        1,
+        0,
+        8
+      ],
+      "row_count": 4,
+      "columns": [
+        0,
+        0,
+        0,
+        8
+      ],
+      "u_columns": [
+        3
+      ],
+      "labels": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        2,
+        0,
+        3,
+        2
+      ],
+      "target": 13,
+      "p": 1,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 44,
+        "branch_transitions": 72
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_010",
+      "adapter": true,
+      "original_rows": [
+        0,
+        44,
+        44,
+        54
+      ],
+      "row_count": 4,
+      "columns": [
+        0,
+        4,
+        2,
+        4,
+        10,
+        0
+      ],
+      "u_columns": [
+        14,
+        12
+      ],
+      "labels": [
+        0,
+        2,
+        2,
+        3,
+        3,
+        1
+      ],
+      "weights": [
+        2,
+        1,
+        3,
+        2,
+        1,
+        1
+      ],
+      "target": 14,
+      "p": 2,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        1,
+        32
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 1,
+      "word": 32,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 328,
+        "branch_transitions": 176
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_011",
+      "adapter": true,
+      "original_rows": [
+        3,
+        0,
+        0
+      ],
+      "row_count": 3,
+      "columns": [
+        1,
+        1,
+        3
+      ],
+      "u_columns": [
+        3
+      ],
+      "labels": [
+        0,
+        0,
+        1
+      ],
+      "weights": [
+        2,
+        3,
+        2
+      ],
+      "target": 0,
+      "p": 1,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        2,
+        4
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 2,
+      "word": 4,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 18,
+        "branch_transitions": 4
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_012",
+      "adapter": true,
+      "original_rows": [
+        11,
+        4,
+        4,
+        16
+      ],
+      "row_count": 4,
+      "columns": [
+        6,
+        1,
+        1,
+        1,
+        8
+      ],
+      "u_columns": [
+        7
+      ],
+      "labels": [
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "weights": [
+        0,
+        1,
+        0,
+        2,
+        3
+      ],
+      "target": 11,
+      "p": 1,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 108,
+        "branch_transitions": 40
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_013",
+      "adapter": true,
+      "original_rows": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "row_count": 4,
+      "columns": [],
+      "u_columns": [],
+      "labels": [],
+      "weights": [],
+      "target": 8,
+      "p": 0,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 0,
+        "branch_transitions": 1
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_014",
+      "adapter": true,
+      "original_rows": [
+        0,
+        1,
+        0
+      ],
+      "row_count": 3,
+      "columns": [
+        2,
+        0
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0
+      ],
+      "weights": [
+        0,
+        3
+      ],
+      "target": 0,
+      "p": 0,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        0,
+        0
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 0,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 6,
+        "branch_transitions": 0
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_015",
+      "adapter": true,
+      "original_rows": [
+        3
+      ],
+      "row_count": 1,
+      "columns": [
+        1,
+        0,
+        1
+      ],
+      "u_columns": [
+        0,
+        1
+      ],
+      "labels": [
+        0,
+        3,
+        3
+      ],
+      "weights": [
+        1,
+        2,
+        2
+      ],
+      "target": 1,
+      "p": 2,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        1,
+        1
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 1,
+      "word": 1,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 88,
+        "branch_transitions": 32
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_016",
+      "adapter": true,
+      "original_rows": [
+        34,
+        10,
+        0
+      ],
+      "row_count": 3,
+      "columns": [
+        0,
+        3,
+        0,
+        2,
+        1,
+        0
+      ],
+      "u_columns": [
+        1
+      ],
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "weights": [
+        1,
+        3,
+        1,
+        0,
+        1,
+        2
+      ],
+      "target": 2,
+      "p": 1,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        0,
+        8
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 8,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 112,
+        "branch_transitions": 8
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_017",
+      "adapter": true,
+      "original_rows": [
+        3,
+        5
+      ],
+      "row_count": 2,
+      "columns": [
+        3,
+        1,
+        2
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        1,
+        2,
+        3
+      ],
+      "target": 0,
+      "p": 0,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        6,
+        7
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 6,
+      "word": 7,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 0,
+        "branch_transitions": 0
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_018",
+      "adapter": true,
+      "original_rows": [
+        2,
+        2,
+        4,
+        4
+      ],
+      "row_count": 4,
+      "columns": [
+        0,
+        3,
+        12
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        2,
+        2,
+        1
+      ],
+      "target": 15,
+      "p": 0,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        3,
+        6
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 3,
+      "word": 6,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 9,
+        "branch_transitions": 9
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_019",
+      "adapter": true,
+      "original_rows": [
+        7,
+        4
+      ],
+      "row_count": 2,
+      "columns": [
+        0,
+        1,
+        3
+      ],
+      "u_columns": [
+        1,
+        0
+      ],
+      "labels": [
+        1,
+        2,
+        2
+      ],
+      "weights": [
+        2,
+        2,
+        1
+      ],
+      "target": 1,
+      "p": 2,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        2,
+        1
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 2,
+      "word": 1,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 128,
+        "branch_transitions": 32
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_020",
+      "adapter": true,
+      "original_rows": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "row_count": 4,
+      "columns": [],
+      "u_columns": [
+        12
+      ],
+      "labels": [],
+      "weights": [],
+      "target": 1,
+      "p": 1,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 0,
+        "branch_transitions": 40
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_021",
+      "adapter": true,
+      "original_rows": [
+        4
+      ],
+      "row_count": 1,
+      "columns": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "u_columns": [
+        1,
+        0
+      ],
+      "labels": [
+        0,
+        3,
+        2,
+        0,
+        1
+      ],
+      "weights": [
+        1,
+        3,
+        0,
+        2,
+        3
+      ],
+      "target": 1,
+      "p": 2,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        0,
+        4
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 4,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 304,
+        "branch_transitions": 32
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_022",
+      "adapter": true,
+      "original_rows": [
+        0
+      ],
+      "row_count": 1,
+      "columns": [
+        0
+      ],
+      "u_columns": [
+        0,
+        0
+      ],
+      "labels": [
+        3
+      ],
+      "weights": [
+        1
+      ],
+      "target": 1,
+      "p": 2,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 16,
+        "branch_transitions": 64
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_023",
+      "adapter": true,
+      "original_rows": [
+        0,
+        0
+      ],
+      "row_count": 2,
+      "columns": [],
+      "u_columns": [],
+      "labels": [],
+      "weights": [],
+      "target": 2,
+      "p": 0,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 0,
+        "branch_transitions": 1
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_024",
+      "adapter": true,
+      "original_rows": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "row_count": 4,
+      "columns": [],
+      "u_columns": [],
+      "labels": [],
+      "weights": [],
+      "target": 15,
+      "p": 0,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 0,
+        "branch_transitions": 9
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_025",
+      "adapter": true,
+      "original_rows": [
+        0,
+        0
+      ],
+      "row_count": 2,
+      "columns": [],
+      "u_columns": [
+        2,
+        0
+      ],
+      "labels": [],
+      "weights": [],
+      "target": 3,
+      "p": 2,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 0,
+        "branch_transitions": 64
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_026",
+      "adapter": true,
+      "original_rows": [
+        1
+      ],
+      "row_count": 1,
+      "columns": [
+        1
+      ],
+      "u_columns": [
+        0
+      ],
+      "labels": [
+        0
+      ],
+      "weights": [
+        1
+      ],
+      "target": 1,
+      "p": 1,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        1,
+        1
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 1,
+      "word": 1,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 8,
+        "branch_transitions": 8
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_027",
+      "adapter": true,
+      "original_rows": [
+        4
+      ],
+      "row_count": 1,
+      "columns": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "u_columns": [
+        1,
+        0
+      ],
+      "labels": [
+        2,
+        0,
+        3,
+        0
+      ],
+      "weights": [
+        2,
+        1,
+        1,
+        0
+      ],
+      "target": 1,
+      "p": 2,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        1,
+        4
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 1,
+      "word": 4,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 112,
+        "branch_transitions": 32
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_028",
+      "adapter": true,
+      "original_rows": [
+        2,
+        16,
+        7,
+        31
+      ],
+      "row_count": 4,
+      "columns": [
+        2,
+        3,
+        2,
+        8,
+        10
+      ],
+      "u_columns": [
+        9,
+        7
+      ],
+      "labels": [
+        3,
+        3,
+        3,
+        0,
+        0
+      ],
+      "weights": [
+        0,
+        0,
+        3,
+        3,
+        0
+      ],
+      "target": 2,
+      "p": 2,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        3,
+        24
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 3,
+      "word": 24,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 328,
+        "branch_transitions": 192
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_029",
+      "adapter": true,
+      "original_rows": [
+        9,
+        15
+      ],
+      "row_count": 2,
+      "columns": [
+        3,
+        2,
+        2,
+        3
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        0,
+        3,
+        1,
+        3
+      ],
+      "target": 1,
+      "p": 0,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        1,
+        5
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 1,
+      "word": 5,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 24,
+        "branch_transitions": 1
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_030",
+      "adapter": true,
+      "original_rows": [
+        1,
+        1,
+        1
+      ],
+      "row_count": 3,
+      "columns": [
+        0
+      ],
+      "u_columns": [
+        7
+      ],
+      "labels": [
+        1
+      ],
+      "weights": [
+        1
+      ],
+      "target": 3,
+      "p": 1,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 8,
+        "branch_transitions": 8
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_031",
+      "adapter": true,
+      "original_rows": [
+        2,
+        6
+      ],
+      "row_count": 2,
+      "columns": [
+        0,
+        3,
+        2,
+        0
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        1,
+        1,
+        3,
+        2
+      ],
+      "target": 0,
+      "p": 0,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        1,
+        1
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 1,
+      "word": 1,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 0,
+        "branch_transitions": 0
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_032",
+      "adapter": true,
+      "original_rows": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "row_count": 4,
+      "columns": [
+        0
+      ],
+      "u_columns": [
+        4
+      ],
+      "labels": [
+        1
+      ],
+      "weights": [
+        2
+      ],
+      "target": 13,
+      "p": 1,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 8,
+        "branch_transitions": 40
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_033",
+      "adapter": true,
+      "original_rows": [
+        0
+      ],
+      "row_count": 1,
+      "columns": [
+        0
+      ],
+      "u_columns": [],
+      "labels": [
+        0
+      ],
+      "weights": [
+        3
+      ],
+      "target": 0,
+      "p": 0,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        3,
+        1
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 3,
+      "word": 1,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 0,
+        "branch_transitions": 0
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_034",
+      "adapter": true,
+      "original_rows": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "row_count": 4,
+      "columns": [
+        4
+      ],
+      "u_columns": [
+        4,
+        6
+      ],
+      "labels": [
+        2
+      ],
+      "weights": [
+        0
+      ],
+      "target": 0,
+      "p": 2,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        0,
+        0
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 0,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 16,
+        "branch_transitions": 48
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_035",
+      "adapter": true,
+      "original_rows": [
+        21
+      ],
+      "row_count": 1,
+      "columns": [
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        0,
+        1,
+        0,
+        0,
+        3
+      ],
+      "target": 1,
+      "p": 0,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        0,
+        1
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 1,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 16,
+        "branch_transitions": 1
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_036",
+      "adapter": true,
+      "original_rows": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "row_count": 4,
+      "columns": [
+        8,
+        0,
+        0
+      ],
+      "u_columns": [
+        12,
+        4
+      ],
+      "labels": [
+        2,
+        0,
+        0
+      ],
+      "weights": [
+        0,
+        1,
+        1
+      ],
+      "target": 9,
+      "p": 2,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 32,
+        "branch_transitions": 192
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_037",
+      "adapter": true,
+      "original_rows": [
+        8
+      ],
+      "row_count": 1,
+      "columns": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "u_columns": [
+        1
+      ],
+      "labels": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        1,
+        2,
+        3,
+        3
+      ],
+      "target": 0,
+      "p": 1,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        1,
+        1
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 1,
+      "word": 1,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 26,
+        "branch_transitions": 4
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_038",
+      "adapter": true,
+      "original_rows": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "row_count": 4,
+      "columns": [
+        9
+      ],
+      "u_columns": [],
+      "labels": [
+        0
+      ],
+      "weights": [
+        3
+      ],
+      "target": 10,
+      "p": 0,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 4,
+        "branch_transitions": 1
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_039",
+      "adapter": true,
+      "original_rows": [
+        7,
+        15
+      ],
+      "row_count": 2,
+      "columns": [
+        3,
+        3,
+        3,
+        2
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        3,
+        3,
+        0,
+        1
+      ],
+      "target": 2,
+      "p": 0,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        1,
+        8
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 1,
+      "word": 8,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 24,
+        "branch_transitions": 1
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_040",
+      "adapter": true,
+      "original_rows": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "row_count": 4,
+      "columns": [],
+      "u_columns": [
+        9,
+        0
+      ],
+      "labels": [],
+      "weights": [],
+      "target": 6,
+      "p": 2,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 0,
+        "branch_transitions": 320
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_041",
+      "adapter": true,
+      "original_rows": [
+        7
+      ],
+      "row_count": 1,
+      "columns": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "u_columns": [
+        0,
+        0
+      ],
+      "labels": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        3,
+        0,
+        0,
+        1
+      ],
+      "target": 1,
+      "p": 2,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        0,
+        2
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 2,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 56,
+        "branch_transitions": 64
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_042",
+      "adapter": true,
+      "original_rows": [
+        36,
+        36
+      ],
+      "row_count": 2,
+      "columns": [
+        0,
+        0,
+        3,
+        0,
+        0,
+        3
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        0,
+        0,
+        2,
+        3,
+        2,
+        2
+      ],
+      "target": 2,
+      "p": 0,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 12,
+        "branch_transitions": 1
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_043",
+      "adapter": true,
+      "original_rows": [
+        0,
+        3
+      ],
+      "row_count": 2,
+      "columns": [
+        2,
+        2,
+        0
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        2,
+        0,
+        0
+      ],
+      "target": 2,
+      "p": 0,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        0,
+        2
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 2,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 10,
+        "branch_transitions": 1
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_044",
+      "adapter": true,
+      "original_rows": [
+        6
+      ],
+      "row_count": 1,
+      "columns": [
+        1,
+        0,
+        0
+      ],
+      "u_columns": [
+        1
+      ],
+      "labels": [
+        1,
+        1,
+        1
+      ],
+      "weights": [
+        2,
+        3,
+        3
+      ],
+      "target": 1,
+      "p": 1,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        3,
+        2
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 3,
+      "word": 2,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 36,
+        "branch_transitions": 4
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_045",
+      "adapter": true,
+      "original_rows": [
+        5,
+        15,
+        13,
+        3
+      ],
+      "row_count": 4,
+      "columns": [
+        8,
+        10,
+        0,
+        1
+      ],
+      "u_columns": [
+        7
+      ],
+      "labels": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "weights": [
+        3,
+        1,
+        2,
+        1
+      ],
+      "target": 13,
+      "p": 1,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        3,
+        6
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 3,
+      "word": 6,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 116,
+        "branch_transitions": 40
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_046",
+      "adapter": true,
+      "original_rows": [
+        0
+      ],
+      "row_count": 1,
+      "columns": [],
+      "u_columns": [
+        0
+      ],
+      "labels": [],
+      "weights": [],
+      "target": 1,
+      "p": 1,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 0,
+        "branch_transitions": 8
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_047",
+      "adapter": true,
+      "original_rows": [
+        10,
+        1,
+        12
+      ],
+      "row_count": 3,
+      "columns": [
+        2,
+        1,
+        4,
+        5
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        1,
+        2,
+        2,
+        2
+      ],
+      "target": 0,
+      "p": 0,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        6,
+        14
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 6,
+      "word": 14,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 0,
+        "branch_transitions": 0
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_048",
+      "adapter": true,
+      "original_rows": [
+        0
+      ],
+      "row_count": 1,
+      "columns": [],
+      "u_columns": [
+        0,
+        0
+      ],
+      "labels": [],
+      "weights": [],
+      "target": 1,
+      "p": 2,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 0,
+        "branch_transitions": 64
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_049",
+      "adapter": true,
+      "original_rows": [
+        51,
+        48
+      ],
+      "row_count": 2,
+      "columns": [
+        1,
+        1,
+        0,
+        0,
+        3,
+        3
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        1,
+        2,
+        3,
+        2,
+        1,
+        1
+      ],
+      "target": 1,
+      "p": 0,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        1,
+        1
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 1,
+      "word": 1,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 30,
+        "branch_transitions": 1
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_050",
+      "adapter": true,
+      "original_rows": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "row_count": 4,
+      "columns": [],
+      "u_columns": [
+        15
+      ],
+      "labels": [],
+      "weights": [],
+      "target": 6,
+      "p": 1,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 0,
+        "branch_transitions": 8
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_051",
+      "adapter": true,
+      "original_rows": [
+        2,
+        0,
+        0,
+        0
+      ],
+      "row_count": 4,
+      "columns": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        1,
+        2,
+        3,
+        3
+      ],
+      "target": 13,
+      "p": 0,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 10,
+        "branch_transitions": 9
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_052",
+      "adapter": true,
+      "original_rows": [
+        0,
+        0,
+        20,
+        21
+      ],
+      "row_count": 4,
+      "columns": [
+        8,
+        0,
+        12,
+        0,
+        12
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        1,
+        1,
+        0,
+        2,
+        1
+      ],
+      "target": 12,
+      "p": 0,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        0,
+        4
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 4,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 24,
+        "branch_transitions": 1
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_053",
+      "adapter": true,
+      "original_rows": [
+        2,
+        1,
+        3
+      ],
+      "row_count": 3,
+      "columns": [
+        6,
+        5,
+        0
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        1,
+        2,
+        3
+      ],
+      "target": 2,
+      "p": 0,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 13,
+        "branch_transitions": 1
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_054",
+      "adapter": true,
+      "original_rows": [
+        0,
+        3,
+        1
+      ],
+      "row_count": 3,
+      "columns": [
+        0,
+        4
+      ],
+      "u_columns": [
+        6,
+        2
+      ],
+      "labels": [
+        1,
+        1
+      ],
+      "weights": [
+        2,
+        2
+      ],
+      "target": 1,
+      "p": 2,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 56,
+        "branch_transitions": 192
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_055",
+      "adapter": true,
+      "original_rows": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "row_count": 4,
+      "columns": [],
+      "u_columns": [],
+      "labels": [],
+      "weights": [],
+      "target": 15,
+      "p": 0,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 0,
+        "branch_transitions": 9
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_056",
+      "adapter": true,
+      "original_rows": [
+        5,
+        31,
+        51
+      ],
+      "row_count": 3,
+      "columns": [
+        0,
+        5,
+        0,
+        2,
+        1,
+        0
+      ],
+      "u_columns": [
+        7,
+        3
+      ],
+      "labels": [
+        1,
+        2,
+        2,
+        0,
+        1,
+        3
+      ],
+      "weights": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "target": 6,
+      "p": 2,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        0,
+        16
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 16,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 624,
+        "branch_transitions": 64
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_057",
+      "adapter": true,
+      "original_rows": [
+        3,
+        0,
+        0
+      ],
+      "row_count": 3,
+      "columns": [
+        1,
+        1,
+        0
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        1,
+        0,
+        2
+      ],
+      "target": 4,
+      "p": 0,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 10,
+        "branch_transitions": 1
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_058",
+      "adapter": true,
+      "original_rows": [
+        1,
+        5,
+        0,
+        2
+      ],
+      "row_count": 4,
+      "columns": [
+        3,
+        8,
+        6
+      ],
+      "u_columns": [
+        4
+      ],
+      "labels": [
+        0,
+        0,
+        1
+      ],
+      "weights": [
+        2,
+        0,
+        3
+      ],
+      "target": 1,
+      "p": 1,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        5,
+        5
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 5,
+      "word": 5,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 32,
+        "branch_transitions": 8
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_059",
+      "adapter": true,
+      "original_rows": [
+        50,
+        62
+      ],
+      "row_count": 2,
+      "columns": [
+        0,
+        1,
+        2,
+        2,
+        1,
+        0
+      ],
+      "u_columns": [
+        3,
+        1
+      ],
+      "labels": [
+        0,
+        3,
+        0,
+        0,
+        3,
+        1
+      ],
+      "weights": [
+        1,
+        3,
+        1,
+        1,
+        1,
+        2
+      ],
+      "target": 1,
+      "p": 2,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        2,
+        20
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 2,
+      "word": 20,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 248,
+        "branch_transitions": 48
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_060",
+      "adapter": true,
+      "original_rows": [
+        0,
+        6,
+        8
+      ],
+      "row_count": 3,
+      "columns": [
+        0,
+        2,
+        2,
+        4
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "target": 7,
+      "p": 0,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 21,
+        "branch_transitions": 9
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_061",
+      "adapter": true,
+      "original_rows": [
+        0
+      ],
+      "row_count": 1,
+      "columns": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "u_columns": [
+        0
+      ],
+      "labels": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "weights": [
+        2,
+        1,
+        2,
+        3
+      ],
+      "target": 1,
+      "p": 1,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 20,
+        "branch_transitions": 8
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_062",
+      "adapter": true,
+      "original_rows": [
+        11
+      ],
+      "row_count": 1,
+      "columns": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "u_columns": [
+        0
+      ],
+      "labels": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "weights": [
+        3,
+        3,
+        0,
+        3
+      ],
+      "target": 1,
+      "p": 1,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        3,
+        1
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 3,
+      "word": 1,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 60,
+        "branch_transitions": 8
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_063",
+      "adapter": true,
+      "original_rows": [
+        2,
+        4,
+        4,
+        0
+      ],
+      "row_count": 4,
+      "columns": [
+        0,
+        1,
+        6
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        3,
+        2,
+        3
+      ],
+      "target": 13,
+      "p": 0,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 10,
+        "branch_transitions": 9
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_064",
+      "adapter": true,
+      "original_rows": [
+        0,
+        2,
+        2
+      ],
+      "row_count": 3,
+      "columns": [
+        0,
+        6,
+        0
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        2,
+        0,
+        1
+      ],
+      "target": 0,
+      "p": 0,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        0,
+        0
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 0,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 6,
+        "branch_transitions": 0
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_065",
+      "adapter": true,
+      "original_rows": [
+        0
+      ],
+      "row_count": 1,
+      "columns": [],
+      "u_columns": [
+        1
+      ],
+      "labels": [],
+      "weights": [],
+      "target": 1,
+      "p": 1,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 0,
+        "branch_transitions": 4
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_066",
+      "adapter": true,
+      "original_rows": [
+        55
+      ],
+      "row_count": 1,
+      "columns": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "u_columns": [
+        0,
+        0
+      ],
+      "labels": [
+        0,
+        0,
+        2,
+        1,
+        1,
+        3
+      ],
+      "weights": [
+        0,
+        2,
+        1,
+        3,
+        2,
+        1
+      ],
+      "target": 0,
+      "p": 2,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        0,
+        0
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 0,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 400,
+        "branch_transitions": 0
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_067",
+      "adapter": true,
+      "original_rows": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "row_count": 4,
+      "columns": [
+        1
+      ],
+      "u_columns": [
+        8,
+        14
+      ],
+      "labels": [
+        2
+      ],
+      "weights": [
+        2
+      ],
+      "target": 11,
+      "p": 2,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 16,
+        "branch_transitions": 320
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_068",
+      "adapter": true,
+      "original_rows": [
+        2,
+        15
+      ],
+      "row_count": 2,
+      "columns": [
+        0,
+        3,
+        3,
+        3
+      ],
+      "u_columns": [
+        2,
+        1
+      ],
+      "labels": [
+        1,
+        0,
+        2,
+        2
+      ],
+      "weights": [
+        2,
+        1,
+        1,
+        2
+      ],
+      "target": 0,
+      "p": 2,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        0,
+        0
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 0,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 136,
+        "branch_transitions": 48
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_069",
+      "adapter": true,
+      "original_rows": [
+        61,
+        50
+      ],
+      "row_count": 2,
+      "columns": [
+        0,
+        3,
+        0,
+        1,
+        3,
+        2
+      ],
+      "u_columns": [
+        1
+      ],
+      "labels": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "weights": [
+        0,
+        1,
+        3,
+        0,
+        1,
+        3
+      ],
+      "target": 1,
+      "p": 1,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        0,
+        1
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 1,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 124,
+        "branch_transitions": 4
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_070",
+      "adapter": true,
+      "original_rows": [
+        46
+      ],
+      "row_count": 1,
+      "columns": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "u_columns": [
+        0
+      ],
+      "labels": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "weights": [
+        0,
+        1,
+        3,
+        0,
+        1,
+        2
+      ],
+      "target": 1,
+      "p": 1,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        0,
+        8
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 8,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 84,
+        "branch_transitions": 8
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_071",
+      "adapter": true,
+      "original_rows": [
+        58,
+        54,
+        5,
+        24
+      ],
+      "row_count": 4,
+      "columns": [
+        4,
+        8,
+        6,
+        2,
+        0,
+        3
+      ],
+      "u_columns": [
+        9,
+        2
+      ],
+      "labels": [
+        0,
+        3,
+        0,
+        3,
+        3,
+        0
+      ],
+      "weights": [
+        1,
+        0,
+        3,
+        3,
+        3,
+        3
+      ],
+      "target": 13,
+      "p": 2,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        4,
+        9
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 4,
+      "word": 9,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 448,
+        "branch_transitions": 320
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_072",
+      "adapter": true,
+      "original_rows": [
+        5,
+        15,
+        13,
+        14
+      ],
+      "row_count": 4,
+      "columns": [
+        12,
+        1,
+        4,
+        5
+      ],
+      "u_columns": [
+        0,
+        11
+      ],
+      "labels": [
+        2,
+        3,
+        3,
+        2
+      ],
+      "weights": [
+        0,
+        3,
+        3,
+        3
+      ],
+      "target": 1,
+      "p": 2,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        6,
+        12
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 6,
+      "word": 12,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 264,
+        "branch_transitions": 64
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_073",
+      "adapter": true,
+      "original_rows": [
+        3,
+        3
+      ],
+      "row_count": 2,
+      "columns": [
+        3,
+        3
+      ],
+      "u_columns": [
+        0,
+        2
+      ],
+      "labels": [
+        0,
+        1
+      ],
+      "weights": [
+        3,
+        2
+      ],
+      "target": 3,
+      "p": 2,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        2,
+        2
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 2,
+      "word": 2,
+      "stats": {
+        "branches": 4,
+        "completed_branches": 4,
+        "branch_work": 72,
+        "branch_transitions": 64
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_074",
+      "adapter": true,
+      "original_rows": [
+        0,
+        1,
+        3
+      ],
+      "row_count": 3,
+      "columns": [
+        2,
+        0
+      ],
+      "u_columns": [
+        4
+      ],
+      "labels": [
+        1,
+        1
+      ],
+      "weights": [
+        0,
+        1
+      ],
+      "target": 3,
+      "p": 1,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 28,
+        "branch_transitions": 40
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_075",
+      "adapter": true,
+      "original_rows": [
+        45,
+        13
+      ],
+      "row_count": 2,
+      "columns": [
+        3,
+        0,
+        3,
+        3,
+        0,
+        1
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        2,
+        2,
+        0,
+        2,
+        3,
+        2
+      ],
+      "target": 1,
+      "p": 0,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        2,
+        32
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 2,
+      "word": 32,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 30,
+        "branch_transitions": 1
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_076",
+      "adapter": true,
+      "original_rows": [
+        5,
+        7,
+        0,
+        42
+      ],
+      "row_count": 4,
+      "columns": [
+        3,
+        10,
+        3,
+        8,
+        0,
+        8
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "weights": [
+        1,
+        0,
+        3,
+        2,
+        3,
+        2
+      ],
+      "target": 0,
+      "p": 0,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": [
+        0,
+        0
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 0,
+      "word": 0,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 44,
+        "branch_transitions": 0
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_077",
+      "adapter": true,
+      "original_rows": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "row_count": 4,
+      "columns": [],
+      "u_columns": [],
+      "labels": [],
+      "weights": [],
+      "target": 9,
+      "p": 0,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 0,
+        "branch_transitions": 1
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_078",
+      "adapter": true,
+      "original_rows": [
+        0,
+        0,
+        0
+      ],
+      "row_count": 3,
+      "columns": [],
+      "u_columns": [
+        0
+      ],
+      "labels": [],
+      "weights": [],
+      "target": 2,
+      "p": 1,
+      "require_nonzero": false,
+      "limits": null,
+      "expected": null,
+      "status": "VERIFIED_EXACT",
+      "weight": null,
+      "word": null,
+      "stats": {
+        "branches": 2,
+        "completed_branches": 2,
+        "branch_work": 0,
+        "branch_transitions": 8
+      },
+      "reason": null
+    },
+    {
+      "name": "adapter_079",
+      "adapter": true,
+      "original_rows": [
+        1,
+        3
+      ],
+      "row_count": 2,
+      "columns": [
+        3,
+        2
+      ],
+      "u_columns": [],
+      "labels": [
+        0,
+        0
+      ],
+      "weights": [
+        1,
+        1
+      ],
+      "target": 2,
+      "p": 0,
+      "require_nonzero": true,
+      "limits": null,
+      "expected": [
+        1,
+        2
+      ],
+      "status": "VERIFIED_EXACT",
+      "weight": 1,
+      "word": 2,
+      "stats": {
+        "branches": 1,
+        "completed_branches": 1,
+        "branch_work": 12,
+        "branch_transitions": 1
+      },
+      "reason": null
+    }
+  ],
+  "source_sha256": {
+    "small_terminal_perturbation.py": "b21cd1b3a4bf1be3bce0d8963ed68d209e38ac9629f36d5353cfa47e82882aba",
+    "test_small_terminal_perturbation.py": "d864274aaead203f30e3f7c1fa62a951f4a47b2c34b79137c5a2df1e493b6c77",
+    "PERTURBATION_SMALL_TERMINAL_THEOREM.md": "2e9c80a34b0b95e85cd9b1a4e624a8ffaa4b99de8dc38c71ff844a30376df65a",
+    "run_small_terminal_experiments.py": "acb2965ff13264c13c8890668642c48ece7a315c9e1e0998348560f860002567",
+    "verify_small_terminal_results.py": "a4bd6b3669bff4c3c907058b6a036635fa2751d9a68c9efcb36018578f6a53c3",
+    "labelled_tjoin.py": "af0ffb5c2b9b93f1950f2f0b8bbb7fe44ad622a2edf56f79435cd01acc266c3d",
+    "labelled_tables.py": "eb8a710958aeb4f8cf26388d390b7667c7724b3d3dc8e7e2a3290a915ae78fc0"
+  },
+  "interpretation": "The solver is exact for a supplied graph B+UV representation with explicit 2**p branch enumeration. UNKNOWN records carry no optimum. This is a parameterized class result, not a general SAT algorithm."
+}

@@ -1,0 +1,29 @@
+{
+  "all_checks_passed": true,
+  "reviewer": "root, independent of lab author",
+  "created_utc": "2026-10-18T11:13:32.403964+00:00",
+  "sympy_version": "1.14.0",
+  "source_sha256": {
+    "basis.py": "40edd2e54e7057c936d5ff86fb4fde1a2d38e51ccdf1fae37b23200367a84ef1",
+    "test_basis.py": "aebb2a18a0365547ae94d97db69be496c998a73342dca378389e09d84089b140",
+    "run_experiments.py": "fe74d24ff98388f5ab13c95540c2f288c577644b9db04aba94efa0f70f44c7f9",
+    "THEOREM.md": "6caebf538bcd1b5703be4f5e3a13fb019ed412f0d4450a2588a16e64bca53738"
+  },
+  "original_branch_equations_checked": 40,
+  "normal_form_entries_checked": 12,
+  "bezout_identities_checked": 4,
+  "classification_signatures_checked": 81,
+  "classification_replay": "independent q-equation replay over {-1,0,1}^4",
+  "edge_specific_equations_checked": 16,
+  "edge_specific_replay": "independent symbolic adjugate replay with seven support masks",
+  "global_edge_specific_equations_checked": 128,
+  "global_edge_specific_replay": "all eight per-edge flip cases for OR3 and slack",
+  "product_type_obstruction_review": "exact zero-mask split and diagonal/anti-diagonal support replay",
+  "independent_recursive_graph_entries": 40,
+  "mutation_rejections": [
+    "constant",
+    "original_equation",
+    "reduced_entry"
+  ],
+  "proof_review": "All complex normal-form branches, nonzero scaling, odd-parity swaps and field scope reviewed; no gap found. Not proof-assistant formalization."
+}

@@ -1,0 +1,630 @@
+{
+  "tests": 11,
+  "failures": 0,
+  "errors": 0,
+  "all_checks_passed": true,
+  "examples": {
+    "xor": {
+      "status": "FOUND",
+      "candidate": {
+        "kind": "XOR",
+        "support": [
+          0,
+          1,
+          2
+        ],
+        "rhs": 0,
+        "representation_bits": 15,
+        "discovery_work": 264
+      },
+      "candidates": [
+        {
+          "kind": "XOR",
+          "support": [
+            0,
+            1,
+            2
+          ],
+          "rhs": 0,
+          "representation_bits": 15,
+          "discovery_work": 264
+        },
+        {
+          "kind": "TRUTH_TABLE",
+          "support": [
+            0,
+            1,
+            2
+          ],
+          "accepted_mask": 105,
+          "representation_bits": 22,
+          "discovery_work": 264
+        }
+      ],
+      "candidate_kinds": [
+        "TRUTH_TABLE",
+        "XOR"
+      ],
+      "shared": [
+        0,
+        1,
+        2
+      ],
+      "local": [],
+      "relation_bits": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "discovery_work": 264,
+      "reason": null,
+      "clauses": [
+        [
+          1,
+          2,
+          -3
+        ],
+        [
+          1,
+          -2,
+          3
+        ],
+        [
+          -1,
+          2,
+          3
+        ],
+        [
+          -1,
+          -2,
+          -3
+        ]
+      ]
+    },
+    "xor_with_local": {
+      "status": "FOUND",
+      "candidate": {
+        "kind": "XOR",
+        "support": [
+          0,
+          1,
+          2
+        ],
+        "rhs": 0,
+        "representation_bits": 15,
+        "discovery_work": 312
+      },
+      "candidates": [
+        {
+          "kind": "XOR",
+          "support": [
+            0,
+            1,
+            2
+          ],
+          "rhs": 0,
+          "representation_bits": 15,
+          "discovery_work": 312
+        },
+        {
+          "kind": "TRUTH_TABLE",
+          "support": [
+            0,
+            1,
+            2
+          ],
+          "accepted_mask": 105,
+          "representation_bits": 22,
+          "discovery_work": 312
+        }
+      ],
+      "candidate_kinds": [
+        "TRUTH_TABLE",
+        "XOR"
+      ],
+      "shared": [
+        0,
+        1,
+        2
+      ],
+      "local": [
+        3
+      ],
+      "relation_bits": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "discovery_work": 312,
+      "reason": null,
+      "clauses": [
+        [
+          1,
+          2,
+          -3
+        ],
+        [
+          1,
+          -2,
+          3
+        ],
+        [
+          -1,
+          2,
+          3
+        ],
+        [
+          -1,
+          -2,
+          -3
+        ],
+        [
+          4
+        ]
+      ]
+    },
+    "ite": {
+      "status": "FOUND",
+      "candidate": {
+        "kind": "ITE",
+        "z": 0,
+        "c": 1,
+        "a": 2,
+        "b": 3,
+        "representation_bits": 16,
+        "discovery_work": 1296
+      },
+      "candidates": [
+        {
+          "kind": "ITE",
+          "z": 0,
+          "c": 1,
+          "a": 2,
+          "b": 3,
+          "representation_bits": 16,
+          "discovery_work": 1296
+        },
+        {
+          "kind": "TRUTH_TABLE",
+          "support": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "accepted_mask": 51765,
+          "representation_bits": 32,
+          "discovery_work": 1296
+        }
+      ],
+      "candidate_kinds": [
+        "ITE",
+        "TRUTH_TABLE"
+      ],
+      "shared": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "local": [],
+      "relation_bits": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "discovery_work": 1296,
+      "reason": null,
+      "clauses": [
+        [
+          1,
+          2,
+          3,
+          -4
+        ],
+        [
+          1,
+          2,
+          -3,
+          -4
+        ],
+        [
+          1,
+          -2,
+          -3,
+          4
+        ],
+        [
+          1,
+          -2,
+          -3,
+          -4
+        ],
+        [
+          -1,
+          2,
+          3,
+          4
+        ],
+        [
+          -1,
+          2,
+          -3,
+          4
+        ],
+        [
+          -1,
+          -2,
+          3,
+          4
+        ],
+        [
+          -1,
+          -2,
+          3,
+          -4
+        ]
+      ]
+    },
+    "amo": {
+      "status": "FOUND",
+      "candidate": {
+        "kind": "PB",
+        "weights": {
+          "0": 1,
+          "1": 1,
+          "2": 1
+        },
+        "sense": "<=",
+        "bound": 1,
+        "representation_bits": 24,
+        "discovery_work": 256
+      },
+      "candidates": [
+        {
+          "kind": "PB",
+          "weights": {
+            "0": 1,
+            "1": 1,
+            "2": 1
+          },
+          "sense": "<=",
+          "bound": 1,
+          "representation_bits": 24,
+          "discovery_work": 256
+        },
+        {
+          "kind": "TRUTH_TABLE",
+          "support": [
+            0,
+            1,
+            2
+          ],
+          "accepted_mask": 23,
+          "representation_bits": 22,
+          "discovery_work": 256
+        }
+      ],
+      "candidate_kinds": [
+        "PB",
+        "TRUTH_TABLE"
+      ],
+      "shared": [
+        0,
+        1,
+        2
+      ],
+      "local": [],
+      "relation_bits": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "discovery_work": 256,
+      "reason": null,
+      "clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          -3
+        ],
+        [
+          -2,
+          -3
+        ]
+      ]
+    },
+    "hall": {
+      "status": "FOUND",
+      "candidate": {
+        "kind": "UNIT",
+        "var": 0,
+        "value": true,
+        "representation_bits": 12,
+        "discovery_work": 2880
+      },
+      "candidates": [
+        {
+          "kind": "UNIT",
+          "var": 0,
+          "value": true,
+          "representation_bits": 12,
+          "discovery_work": 2880
+        },
+        {
+          "kind": "XOR",
+          "support": [
+            0
+          ],
+          "rhs": 1,
+          "representation_bits": 12,
+          "discovery_work": 2880
+        },
+        {
+          "kind": "TRUTH_TABLE",
+          "support": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "accepted_mask": 4294901760,
+          "representation_bits": 55,
+          "discovery_work": 2880
+        }
+      ],
+      "candidate_kinds": [
+        "TRUTH_TABLE",
+        "UNIT",
+        "XOR"
+      ],
+      "shared": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "local": [],
+      "relation_bits": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "discovery_work": 2880,
+      "reason": null,
+      "clauses": [
+        [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          -3
+        ],
+        [
+          1,
+          -4
+        ],
+        [
+          1,
+          -5
+        ]
+      ]
+    },
+    "noncompact": {
+      "status": "NO_COMPACT",
+      "candidate": {
+        "kind": "TRUTH_TABLE",
+        "support": [
+          0,
+          1,
+          2
+        ],
+        "accepted_mask": 248,
+        "representation_bits": 22,
+        "discovery_work": 248
+      },
+      "candidates": [
+        {
+          "kind": "TRUTH_TABLE",
+          "support": [
+            0,
+            1,
+            2
+          ],
+          "accepted_mask": 248,
+          "representation_bits": 22,
+          "discovery_work": 248
+        }
+      ],
+      "candidate_kinds": [
+        "TRUTH_TABLE"
+      ],
+      "shared": [
+        0,
+        1,
+        2
+      ],
+      "local": [],
+      "relation_bits": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "discovery_work": 248,
+      "reason": null,
+      "clauses": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ]
+    },
+    "mutated_xor": {
+      "status": "NO_COMPACT",
+      "candidate": {
+        "kind": "TRUTH_TABLE",
+        "support": [
+          0,
+          1,
+          2
+        ],
+        "accepted_mask": 107,
+        "representation_bits": 22,
+        "discovery_work": 256
+      },
+      "candidates": [
+        {
+          "kind": "TRUTH_TABLE",
+          "support": [
+            0,
+            1,
+            2
+          ],
+          "accepted_mask": 107,
+          "representation_bits": 22,
+          "discovery_work": 256
+        }
+      ],
+      "candidate_kinds": [
+        "TRUTH_TABLE"
+      ],
+      "shared": [
+        0,
+        1,
+        2
+      ],
+      "local": [],
+      "relation_bits": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "discovery_work": 256,
+      "reason": null,
+      "clauses": [
+        [
+          1,
+          -2,
+          3
+        ],
+        [
+          -1,
+          2,
+          3
+        ],
+        [
+          -1,
+          -2,
+          -3
+        ]
+      ]
+    }
+  },
+  "controls": {
+    "budget_unknown": {
+      "status": "UNKNOWN",
+      "candidate": null,
+      "candidates": [],
+      "candidate_kinds": [],
+      "shared": [
+        0,
+        1,
+        2
+      ],
+      "local": [],
+      "relation_bits": [],
+      "discovery_work": 8,
+      "reason": "projection assignment budget exceeded"
+    },
+    "clique_coloring_unknown": {
+      "status": "UNKNOWN",
+      "reason": "shared interface exceeds bound",
+      "shared_count": 10,
+      "max_shared": 6
+    }
+  }
+}

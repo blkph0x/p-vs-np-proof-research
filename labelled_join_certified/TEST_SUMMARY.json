@@ -1,0 +1,30 @@
+{
+  "all_tests_passed": true,
+  "returncode": 0,
+  "test_count": 51,
+  "source_unchanged_during_tests": true,
+  "seconds": 15.35341989994049,
+  "started_utc": "2026-10-18T04:10:10.811430+00:00",
+  "finished_utc": "2026-10-18T04:10:26.168837+00:00",
+  "python": "3.10.10 | packaged by conda-forge | (main, Mar 24 2023, 20:00:38) [MSC v.1934 64 bit (AMD64)]",
+  "implementation_sha256": {
+    "code_lift_solver.py": "99051dfc5e984b9a45cf6ddb5a906349a53536500ac30d9f86456bad9df8a9d4",
+    "labelled_tables.py": "eb8a710958aeb4f8cf26388d390b7667c7724b3d3dc8e7e2a3290a915ae78fc0",
+    "labelled_tjoin.py": "af0ffb5c2b9b93f1950f2f0b8bbb7fe44ad622a2edf56f79435cd01acc266c3d",
+    "perturbation_coverage.py": "1f9f3a65578ba95cd650a5f8bd484000ff0eb089828aa907a35c06efd3b57012",
+    "run_checks.py": "8024dead0220b7619dfc0911e3a9498e929705036242df0466fe979934eecee0",
+    "run_lift_experiments.py": "f158d7dfac8664c4639176adaf737d37f6f3eaf1daa56aef5cdf86e0cb66d21d",
+    "run_perturbation_coverage.py": "a432f5ffec5a50bf7aaaa44f56680ec9680b9feffed6c4f47687956d0cd863be",
+    "run_small_terminal_experiments.py": "acb2965ff13264c13c8890668642c48ece7a315c9e1e0998348560f860002567",
+    "small_terminal_perturbation.py": "b21cd1b3a4bf1be3bce0d8963ed68d209e38ac9629f36d5353cfa47e82882aba",
+    "sparse_lift_normal_form.py": "0649f907393586c1511b41931e99e9ca3817e8b91f8cd6c222516e35048bc705",
+    "test_code_lift_solver.py": "d54afaa32ac04f00ee8ff8f7020b0cde298b92688ba0c0e308875509d15b1308",
+    "test_labelled_tables.py": "0c0a9c341dda695956623539e463fba3f322104ec481a7a88860884aa015a274",
+    "test_labelled_tjoin.py": "c4a635e344e5a35c1dcc7a6814fe8436592a0f0c37a2fdba512250f4312f482c",
+    "test_perturbation_coverage.py": "03f883882cc902c107a3d6e954e93eb644a59195f73120afc5f87acb2486f98b",
+    "test_small_terminal_perturbation.py": "d864274aaead203f30e3f7c1fa62a951f4a47b2c34b79137c5a2df1e493b6c77",
+    "test_sparse_lift_normal_form.py": "32fe3eff30033feadb49745d041111a5be70058695e8892771292845941af744",
+    "verify_perturbation_coverage.py": "2d0d002a2241ae12490b8e65daa4e3df79c44d9c78d44b473acc5576f00aa41c",
+    "verify_small_terminal_results.py": "a4bd6b3669bff4c3c907058b6a036635fa2751d9a68c9efcb36018578f6a53c3"
+  }
+}

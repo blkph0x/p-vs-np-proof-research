@@ -1,0 +1,50 @@
+{
+  "status": "NONLINEAR_CIRCUIT_COMPRESSION_CHECK_PASS",
+  "timestamp_utc": "2026-10-18T01:19:42.008238+00:00",
+  "degrees_checked": [
+    7,
+    8,
+    9
+  ],
+  "records": [
+    {
+      "field_degree": 7,
+      "binary_rank": 14,
+      "source_forms": 16256,
+      "parity_xor_gates": 97984,
+      "accumulator_xor_gates": 227584,
+      "accumulator_and_gates": 227584,
+      "total_gates": 553152,
+      "output_bits": 14
+    },
+    {
+      "field_degree": 8,
+      "binary_rank": 32,
+      "source_forms": 65280,
+      "parity_xor_gates": 980224,
+      "accumulator_xor_gates": 1044480,
+      "accumulator_and_gates": 1044480,
+      "total_gates": 3069184,
+      "output_bits": 16
+    },
+    {
+      "field_degree": 9,
+      "binary_rank": 54,
+      "source_forms": 261632,
+      "parity_xor_gates": 6804736,
+      "accumulator_xor_gates": 4709376,
+      "accumulator_and_gates": 4709376,
+      "total_gates": 16223488,
+      "output_bits": 18
+    }
+  ],
+  "source_hashes_before": {
+    "explicit_code_family.py": "a8e38e7026079bb281ab374b9908c6676ff134cb6db900a6e01f59d895a18dfd",
+    "nonlinear_circuit_compression.py": "a1a70feec41606aa01b8b0631103757a0b4b1746b2632393a18776b0a0bbc1c4"
+  },
+  "source_hashes_after": {
+    "explicit_code_family.py": "a8e38e7026079bb281ab374b9908c6676ff134cb6db900a6e01f59d895a18dfd",
+    "nonlinear_circuit_compression.py": "a1a70feec41606aa01b8b0631103757a0b4b1746b2632393a18776b0a0bbc1c4"
+  },
+  "scope": "Explicit XOR/AND circuit for the Hamming-weight objective; no solver or P-versus-NP claim."
+}

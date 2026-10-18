@@ -1,0 +1,53 @@
+{
+  "all_tests_passed": true,
+  "test_count": 37,
+  "suite_count": 4,
+  "source_unchanged_during_tests": true,
+  "suites": [
+    {
+      "lab": "threshold_composition_lab",
+      "test_count": 11,
+      "passed": true,
+      "returncode": 0,
+      "seconds": 0.5029198001138866
+    },
+    {
+      "lab": "saturated_clause_limits",
+      "test_count": 7,
+      "passed": true,
+      "returncode": 0,
+      "seconds": 0.15108870016410947
+    },
+    {
+      "lab": "multiobjective_matching_limits",
+      "test_count": 8,
+      "passed": true,
+      "returncode": 0,
+      "seconds": 0.19804659998044372
+    },
+    {
+      "lab": "packed_cost_exact_matching",
+      "test_count": 11,
+      "passed": true,
+      "returncode": 0,
+      "seconds": 0.22224020026624203
+    }
+  ],
+  "started_utc": "2026-10-17T14:43:10.833269+00:00",
+  "finished_utc": "2026-10-17T14:43:11.910411+00:00",
+  "seconds": 1.077082300093025,
+  "python": "3.10.10 | packaged by conda-forge | (main, Mar 24 2023, 20:00:38) [MSC v.1934 64 bit (AMD64)]",
+  "implementation_sha256": {
+    "run_threshold_phase_checks.py": "9a408816daf4ffacad67437142b5722b8545a861b220f24b716c362f0514352d",
+    "threshold_composition_lab/test_threshold_controls.py": "24e5f19732c539513cadd753d66bea2c3baa88a339c67abbb7bdf65820bc5f7e",
+    "threshold_composition_lab/threshold_controls.py": "38fc7dd0372fdc1b55f3a64474c2e584c569855256a24b136f1e8653028d116a",
+    "saturated_clause_limits/run_experiments.py": "fab624a30eec741b265379ba65702ff1eabb3b14cc05d9b7c9baa37cc800442f",
+    "saturated_clause_limits/saturated_clause.py": "28f5a9e6874b7aea184d7ce6e785b1550cfc4d370751b8a6cf79bc75d03233c2",
+    "saturated_clause_limits/test_saturated_clause.py": "5be21bab406d3bcddfafe74a184edc3d396399b75f408e63d2f9bd789cface83",
+    "multiobjective_matching_limits/clause_bounds.py": "23e6a46189f6d0fe8cc1bad4bd9cd7cf13e9681490a9f84c206bda486b77c518",
+    "multiobjective_matching_limits/test_clause_bounds.py": "b4469f00be145f99fcaa40c1438afabe0d1f1705bc360373f162570acae7619e",
+    "packed_cost_exact_matching/packing.py": "1d60ffd5bf25a2cacdb08e5cf0287432135fe8134c6ca531c497e054ede30fbe",
+    "packed_cost_exact_matching/run_experiments.py": "30f37a67592b42e4702826fac12b3250440b80f99d95ea0057e4aa95902d3640",
+    "packed_cost_exact_matching/test_packing.py": "750091130860ebeb3a75a4b67b41164ec1e6ef0ebed9b63b3fad840320961da3"
+  }
+}

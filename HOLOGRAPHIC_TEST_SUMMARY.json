@@ -1,0 +1,56 @@
+{
+  "all_tests_passed": true,
+  "test_count": 53,
+  "suite_count": 4,
+  "source_unchanged_during_tests": true,
+  "suites": [
+    {
+      "lab": "tensor_basis_lab",
+      "test_count": 14,
+      "passed": true,
+      "returncode": 0,
+      "seconds": 1.3674428001977503
+    },
+    {
+      "lab": "simultaneous_basis_lab",
+      "test_count": 18,
+      "passed": true,
+      "returncode": 0,
+      "seconds": 1.5030010002665222
+    },
+    {
+      "lab": "holographic_tractability_lab",
+      "test_count": 12,
+      "passed": true,
+      "returncode": 0,
+      "seconds": 6.4115553996525705
+    },
+    {
+      "lab": "crossing_sign_lab",
+      "test_count": 9,
+      "passed": true,
+      "returncode": 0,
+      "seconds": 0.6597875999286771
+    }
+  ],
+  "started_utc": "2026-10-18T11:13:42.919877+00:00",
+  "finished_utc": "2026-10-18T11:13:52.864638+00:00",
+  "seconds": 9.945124799851328,
+  "python": "3.10.10 | packaged by conda-forge | (main, Mar 24 2023, 20:00:38) [MSC v.1934 64 bit (AMD64)]",
+  "implementation_sha256": {
+    "run_holographic_phase_checks.py": "b0c335f68cdd2ebf5df644c39a77eb98150674768aa54d08530136515d9cf175",
+    "tensor_basis_lab/run_experiments.py": "4308294523aec046a5c1ada471cda749dfca38bace8245f1c5ff91d8bf2eeb3c",
+    "tensor_basis_lab/tensor_basis.py": "a0b7b281677526230843d0b0663cfc8824915238ff475e0c8e49d8d2c70ffe06",
+    "tensor_basis_lab/test_tensor_basis.py": "a5eb3977d84c4dbbfda9d9ff7dcb67fe688309d7314cc9cef0b4abd49615b4ce",
+    "simultaneous_basis_lab/basis.py": "40edd2e54e7057c936d5ff86fb4fde1a2d38e51ccdf1fae37b23200367a84ef1",
+    "simultaneous_basis_lab/independent_review.py": "715eb9fb076567195b90e5dff6184d7537011d45a32ecdeeda969356546d7950",
+    "simultaneous_basis_lab/run_experiments.py": "fe74d24ff98388f5ab13c95540c2f288c577644b9db04aba94efa0f70f44c7f9",
+    "simultaneous_basis_lab/test_basis.py": "aebb2a18a0365547ae94d97db69be496c998a73342dca378389e09d84089b140",
+    "holographic_tractability_lab/affine_holant.py": "85db3e4fdd2d875542d67dd9718eb368b54afe5bd6c1a831adfce6a3cad6afee",
+    "holographic_tractability_lab/run_experiments.py": "7686c4ee65faab9674f7ec06d4e4cf8c9d0244a0f0c38c094d017c1ae97067ac",
+    "holographic_tractability_lab/test_affine_holant.py": "6e67ab0caf3cdf9747cb2c0419ea2f2fdf7a85ebcfd62d835302dd0983641c6b",
+    "crossing_sign_lab/crossing.py": "f12391105a9179dbe7fd09578e87557d3dd4dfc9b1dba8b88e35aacb4fb3ef4b",
+    "crossing_sign_lab/run_experiments.py": "effe1238824570e9bf2bf78d5b09550150e10540fac0ec8cf8e7efe0b9a5945c",
+    "crossing_sign_lab/test_crossing.py": "e1b1fce83dbf2188f497aea4ea0dfb64b757aa3f670592d1e8c865c4772cd636"
+  }
+}

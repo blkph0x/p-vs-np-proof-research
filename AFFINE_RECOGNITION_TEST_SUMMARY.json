@@ -1,0 +1,50 @@
+{
+  "all_tests_passed": true,
+  "test_count": 25,
+  "suite_count": 3,
+  "source_unchanged_during_tests": true,
+  "suites": [
+    {
+      "lab": "affine_grouping_plan_lab",
+      "test_count": 11,
+      "passed": true,
+      "returncode": 0,
+      "seconds": 1.1328826998360455
+    },
+    {
+      "lab": "affine_partition_compression_lab",
+      "test_count": 7,
+      "passed": true,
+      "returncode": 0,
+      "seconds": 4.29696340020746
+    },
+    {
+      "lab": "affine_one_piece_lab",
+      "test_count": 7,
+      "passed": true,
+      "returncode": 0,
+      "seconds": 18.65689990017563
+    }
+  ],
+  "started_utc": "2026-10-17T16:57:53.631417+00:00",
+  "finished_utc": "2026-10-17T16:58:17.721051+00:00",
+  "seconds": 24.089810200035572,
+  "python": "3.10.10 | packaged by conda-forge | (main, Mar 24 2023, 20:00:38) [MSC v.1934 64 bit (AMD64)]",
+  "implementation_sha256": {
+    "run_affine_recognition_phase_checks.py": "1efe55bbab339fda50d0291ae5b01e73c4434b055fbc54b97ec35a82ea9d89bc",
+    "affine_grouping_plan_lab/INDEPENDENT_REVIEW.py": "eda5d9e2b34ad117ec94233b29c6d6dc4daa94464cf20e7c2c6b9701839c6dd1",
+    "affine_grouping_plan_lab/planner.py": "2a5554e39d8316a7865dea796d77456a199a319e27930846ca26c47a94247605",
+    "affine_grouping_plan_lab/run_experiments.py": "c8ca9fc5c90da7cbc8b65e41514972f269f3dd2e4540eeab8a9be34d6e11b11e",
+    "affine_grouping_plan_lab/test_planner.py": "0d6828f01fe7f404bbf824628173f13ab024a457ede11b02f36b66d453a9cc0a",
+    "affine_partition_compression_lab/controls.py": "f2ab861ef3c0f7b4777eb56b2bb8361ec4c8e25336577ecf56a445c10518e06e",
+    "affine_partition_compression_lab/INDEPENDENT_REVIEW.py": "ecaf5c6da817dadf1a58d19f8ddd71760019b1c55e2c580828f34b9820d84f72",
+    "affine_partition_compression_lab/partition.py": "e5b27146e10c185fbd5fcbbbb33314c02e7653d2aa3421e2f50d8bdd9f8ae035",
+    "affine_partition_compression_lab/run_experiments.py": "755979d3a265c1b62c07754e3d29d9f52a28de9f41c9771b07a00e76900b1c67",
+    "affine_partition_compression_lab/test_partition.py": "89ec60797bd675248cdc90749bcf2f22c275d98e86c5ec7baa1e8d8d4a08be87",
+    "affine_one_piece_lab/controls.py": "bff5afef380cf71190bda6a1ad7e4fcfb239f436471ddcd67c77009b1ec0df99",
+    "affine_one_piece_lab/INDEPENDENT_REVIEW.py": "e520c07bcc318a274993e60a7bd6d3bde90817c2ef59ee5e9dc0b59efd5a44d7",
+    "affine_one_piece_lab/one_piece.py": "ee05d4fc52fec551e57bd61941786531c0ebdbbccaaae03abcecf5843231c248",
+    "affine_one_piece_lab/run_experiments.py": "b50b63140731bd9b57137de768491cc13aa1535f5f6dc1c85beb8c07e205b0d8",
+    "affine_one_piece_lab/test_one_piece.py": "8e235af874982ff19d07bb1885c270b7b1a37e0670cf930cf31c8814099b4977"
+  }
+}

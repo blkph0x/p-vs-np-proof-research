@@ -1,0 +1,70 @@
+{
+  "all_tests_passed": true,
+  "test_count": 54,
+  "suite_count": 5,
+  "source_unchanged_during_tests": true,
+  "suites": [
+    {
+      "lab": "affine_sum_compression_lab",
+      "test_count": 12,
+      "passed": true,
+      "returncode": 0,
+      "seconds": 0.6637842999771237
+    },
+    {
+      "lab": "compressed_affine_dag_lab",
+      "test_count": 20,
+      "passed": true,
+      "returncode": 0,
+      "seconds": 1.5803075996227562
+    },
+    {
+      "lab": "affine_compression_review",
+      "test_count": 15,
+      "passed": true,
+      "returncode": 0,
+      "seconds": 2.403227400034666
+    },
+    {
+      "lab": "affine_sum_capacity_lab",
+      "test_count": 4,
+      "passed": true,
+      "returncode": 0,
+      "seconds": 1.0538603998720646
+    },
+    {
+      "lab": "affine_compression_stress_lab",
+      "test_count": 3,
+      "passed": true,
+      "returncode": 0,
+      "seconds": 0.3422677000053227
+    }
+  ],
+  "started_utc": "2026-10-17T16:27:17.842222+00:00",
+  "finished_utc": "2026-10-17T16:27:23.890218+00:00",
+  "seconds": 6.047651799861342,
+  "python": "3.10.10 | packaged by conda-forge | (main, Mar 24 2023, 20:00:38) [MSC v.1934 64 bit (AMD64)]",
+  "implementation_sha256": {
+    "run_affine_compression_phase_checks.py": "80aa307dff6eab57a8db495d115d871521eb50116fa4b8a5bf0cdfbe33e44543",
+    "affine_sum_compression_lab/compression.py": "4105542d6c7317bf0ba8ca63d4c34fc5acab249d9ff38704201bdef3e8617dff",
+    "affine_sum_compression_lab/run_experiments.py": "48982b83d123c6cca31f66a31036ea9701f8239bb13d8109ae12e94e01893bad",
+    "affine_sum_compression_lab/test_compression.py": "085ad89c6c0824bfb1f54237abdbb21c4f2b3f9457354e01141c41f8a422764d",
+    "compressed_affine_dag_lab/dag.py": "9ed5f226b5f31fe6a78b229e568a9935582899940a7877b2ee687a5d73f47898",
+    "compressed_affine_dag_lab/run_experiments.py": "f99888415cdf9f1fcfa35b5836804c73ff6087d1d1880cd7fb858f322a1d44f6",
+    "compressed_affine_dag_lab/test_dag.py": "98670adc26daec62bd14ee421031d78e1e9e8c699f2d9003e7ab80ff34af13c7",
+    "affine_compression_review/dag_review.py": "b506ad4fa10ee9f4718fd91acd7b9457061c1b1c3d05f160dd3b09f2e1091e89",
+    "affine_compression_review/production_review.py": "37ed0f642d88b2ae21697a778687cf826baff4e3f9edeb2bdfa0a60eabdae2a1",
+    "affine_compression_review/review_oracles.py": "88447652bcbf85ca9392ea680358012c8b71b261e57918c136338655b9975e95",
+    "affine_compression_review/run_review.py": "65563c9575301e62cd62ec5d25b42ee4ce5a7b5f20d90f91aa5283d4080c34c4",
+    "affine_compression_review/test_dag_review.py": "96d02ccad851d0887578e99d9009f133c0c261b3e689140f3fe300246658f0ab",
+    "affine_compression_review/test_production_review.py": "408f2f381c28b3674198915bcabe96f213a8c08cd491a88f4b1fc955cad189f5",
+    "affine_compression_review/test_review_oracles.py": "0a0d30c0e912d9585a55757f859b0d24baf8d8b0cb717a2e67f32f664e7f2b4a",
+    "affine_sum_capacity_lab/capacity.py": "43c09044fa7535dd310c12ca00c9901146838bf4169d0db7211699c7f2abd8aa",
+    "affine_sum_capacity_lab/run_experiments.py": "4b48606ab6dc6de44ef3847a3914b5be0c67e9d3942e571d3a8b7faae5f05a5b",
+    "affine_sum_capacity_lab/test_capacity.py": "71bdd9ddc8b9781511bbe26c5964e24adf663470d89b3745ca96121a27780a88",
+    "affine_compression_stress_lab/controls.py": "315605bdf7a30245648116f837a91e00708b2f74c82d9943a88a98e6dc7cf7b5",
+    "affine_compression_stress_lab/independent_review.py": "35be63c8646e0020f04c540d8bfc19063182d85d326567ec69dacf129548381c",
+    "affine_compression_stress_lab/run_experiments.py": "3d7c0f2eb5c68588865aaeb8b460bbdec96bd95196aa87229935429dc7312efc",
+    "affine_compression_stress_lab/test_controls.py": "9dc3177369b0bac3b599472eb1ae8ac5c5b21569f9980a3db44681bc4f7a0fc5"
+  }
+}

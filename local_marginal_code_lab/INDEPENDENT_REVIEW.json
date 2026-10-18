@@ -1,0 +1,46 @@
+{
+  "status": "VERIFIED_INDEPENDENT_LOCAL_MARGINAL_BOUND",
+  "case_count": 3,
+  "rows": [
+    {
+      "name": "even_parity_n5_level3",
+      "dual_distance": 5,
+      "pinned_integer_optimum": 2,
+      "theorem_level_valid": true,
+      "relaxation_point_weight": 1
+    },
+    {
+      "name": "even_parity_n5_level4_boundary",
+      "dual_distance": 5,
+      "pinned_integer_optimum": 2,
+      "theorem_level_valid": false,
+      "relaxation_point_weight": 1
+    },
+    {
+      "name": "golay_level6",
+      "dual_distance": 8,
+      "pinned_integer_optimum": 8,
+      "theorem_level_valid": true,
+      "relaxation_point_weight": 1
+    }
+  ],
+  "golay_level": 6,
+  "golay_gap": 8,
+  "golay_support_replay_deferred": true,
+  "random_bound_lengths": [
+    32,
+    64,
+    128,
+    256,
+    512,
+    1024
+  ],
+  "random_bound_levels": [
+    0,
+    2,
+    6,
+    14,
+    30,
+    62
+  ]
+}

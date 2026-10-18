@@ -1,0 +1,489 @@
+{
+  "scope": "direct-terminal nonnegative s-t cut gadgets with free auxiliary bits; no universal algorithmic conclusion",
+  "exhaustive_cut_audit": {
+    "status": "PASS",
+    "family": "all simple directed graphs on the stated vertices with at most max_arcs useful arcs, capacities 1 or 2",
+    "max_terminals": 3,
+    "max_auxiliaries": 2,
+    "max_arcs": 3,
+    "graphs": 60988,
+    "cuts_enumerated": 1466473,
+    "submodularity_pairs_checked": 3164719,
+    "cases": [
+      {
+        "terminals": 0,
+        "auxiliaries": 0,
+        "useful_arc_positions": 0,
+        "graphs": 1
+      },
+      {
+        "terminals": 0,
+        "auxiliaries": 1,
+        "useful_arc_positions": 2,
+        "graphs": 9
+      },
+      {
+        "terminals": 0,
+        "auxiliaries": 2,
+        "useful_arc_positions": 6,
+        "graphs": 233
+      },
+      {
+        "terminals": 1,
+        "auxiliaries": 0,
+        "useful_arc_positions": 2,
+        "graphs": 9
+      },
+      {
+        "terminals": 1,
+        "auxiliaries": 1,
+        "useful_arc_positions": 6,
+        "graphs": 233
+      },
+      {
+        "terminals": 1,
+        "auxiliaries": 2,
+        "useful_arc_positions": 12,
+        "graphs": 2049
+      },
+      {
+        "terminals": 2,
+        "auxiliaries": 0,
+        "useful_arc_positions": 6,
+        "graphs": 233
+      },
+      {
+        "terminals": 2,
+        "auxiliaries": 1,
+        "useful_arc_positions": 12,
+        "graphs": 2049
+      },
+      {
+        "terminals": 2,
+        "auxiliaries": 2,
+        "useful_arc_positions": 20,
+        "graphs": 9921
+      },
+      {
+        "terminals": 3,
+        "auxiliaries": 0,
+        "useful_arc_positions": 12,
+        "graphs": 2049
+      },
+      {
+        "terminals": 3,
+        "auxiliaries": 1,
+        "useful_arc_positions": 20,
+        "graphs": 9921
+      },
+      {
+        "terminals": 3,
+        "auxiliaries": 2,
+        "useful_arc_positions": 30,
+        "graphs": 34281
+      }
+    ]
+  },
+  "parity_complement_controls": [
+    {
+      "desired_parity": 0,
+      "complemented_inputs": 0,
+      "values": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "violation": {
+        "x": 3,
+        "y": 5,
+        "meet": 1,
+        "join": 7,
+        "left": 0,
+        "right": 2,
+        "slack": -2
+      }
+    },
+    {
+      "desired_parity": 0,
+      "complemented_inputs": 1,
+      "values": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "violation": {
+        "x": 1,
+        "y": 2,
+        "meet": 0,
+        "join": 3,
+        "left": 0,
+        "right": 2,
+        "slack": -2
+      }
+    },
+    {
+      "desired_parity": 0,
+      "complemented_inputs": 2,
+      "values": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "violation": {
+        "x": 1,
+        "y": 2,
+        "meet": 0,
+        "join": 3,
+        "left": 0,
+        "right": 2,
+        "slack": -2
+      }
+    },
+    {
+      "desired_parity": 0,
+      "complemented_inputs": 3,
+      "values": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "violation": {
+        "x": 3,
+        "y": 5,
+        "meet": 1,
+        "join": 7,
+        "left": 0,
+        "right": 2,
+        "slack": -2
+      }
+    },
+    {
+      "desired_parity": 0,
+      "complemented_inputs": 4,
+      "values": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "violation": {
+        "x": 1,
+        "y": 2,
+        "meet": 0,
+        "join": 3,
+        "left": 0,
+        "right": 2,
+        "slack": -2
+      }
+    },
+    {
+      "desired_parity": 0,
+      "complemented_inputs": 5,
+      "values": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "violation": {
+        "x": 3,
+        "y": 5,
+        "meet": 1,
+        "join": 7,
+        "left": 0,
+        "right": 2,
+        "slack": -2
+      }
+    },
+    {
+      "desired_parity": 0,
+      "complemented_inputs": 6,
+      "values": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "violation": {
+        "x": 3,
+        "y": 5,
+        "meet": 1,
+        "join": 7,
+        "left": 0,
+        "right": 2,
+        "slack": -2
+      }
+    },
+    {
+      "desired_parity": 0,
+      "complemented_inputs": 7,
+      "values": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "violation": {
+        "x": 1,
+        "y": 2,
+        "meet": 0,
+        "join": 3,
+        "left": 0,
+        "right": 2,
+        "slack": -2
+      }
+    },
+    {
+      "desired_parity": 1,
+      "complemented_inputs": 0,
+      "values": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "violation": {
+        "x": 1,
+        "y": 2,
+        "meet": 0,
+        "join": 3,
+        "left": 0,
+        "right": 2,
+        "slack": -2
+      }
+    },
+    {
+      "desired_parity": 1,
+      "complemented_inputs": 1,
+      "values": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "violation": {
+        "x": 3,
+        "y": 5,
+        "meet": 1,
+        "join": 7,
+        "left": 0,
+        "right": 2,
+        "slack": -2
+      }
+    },
+    {
+      "desired_parity": 1,
+      "complemented_inputs": 2,
+      "values": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "violation": {
+        "x": 3,
+        "y": 5,
+        "meet": 1,
+        "join": 7,
+        "left": 0,
+        "right": 2,
+        "slack": -2
+      }
+    },
+    {
+      "desired_parity": 1,
+      "complemented_inputs": 3,
+      "values": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "violation": {
+        "x": 1,
+        "y": 2,
+        "meet": 0,
+        "join": 3,
+        "left": 0,
+        "right": 2,
+        "slack": -2
+      }
+    },
+    {
+      "desired_parity": 1,
+      "complemented_inputs": 4,
+      "values": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "violation": {
+        "x": 3,
+        "y": 5,
+        "meet": 1,
+        "join": 7,
+        "left": 0,
+        "right": 2,
+        "slack": -2
+      }
+    },
+    {
+      "desired_parity": 1,
+      "complemented_inputs": 5,
+      "values": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "violation": {
+        "x": 1,
+        "y": 2,
+        "meet": 0,
+        "join": 3,
+        "left": 0,
+        "right": 2,
+        "slack": -2
+      }
+    },
+    {
+      "desired_parity": 1,
+      "complemented_inputs": 6,
+      "values": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "violation": {
+        "x": 1,
+        "y": 2,
+        "meet": 0,
+        "join": 3,
+        "left": 0,
+        "right": 2,
+        "slack": -2
+      }
+    },
+    {
+      "desired_parity": 1,
+      "complemented_inputs": 7,
+      "values": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "violation": {
+        "x": 3,
+        "y": 5,
+        "meet": 1,
+        "join": 7,
+        "left": 0,
+        "right": 2,
+        "slack": -2
+      }
+    }
+  ],
+  "alternative_encoding_controls": {
+    "matching_model": "K4, ports0..2 deleted if input1; all edge weights zero",
+    "matching_counts": [
+      3,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      0
+    ],
+    "matching_feasible_iff_even_parity": true,
+    "one_hot_full_cut_is_submodular": true,
+    "one_hot_restricted_values": [
+      1,
+      0,
+      0,
+      1
+    ],
+    "one_hot_restricted_violation": {
+      "x": 1,
+      "y": 2,
+      "meet": 0,
+      "join": 3,
+      "left": 0,
+      "right": 2,
+      "slack": -2
+    },
+    "warning": "The restricted-domain example does not construct an unconstrained min-cut parity reduction or enforce one-hot validity."
+  },
+  "source_sha256": "148051d394fd1e1c64d396eb9e9d548b0fd45968c98ff4e38ec9efd1e19b6a79"
+}

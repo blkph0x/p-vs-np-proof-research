@@ -1,0 +1,211 @@
+{
+  "status": "EXPLICIT_CODE_FAMILY_CHECK_PASS",
+  "timestamp_utc": "2026-10-18T00:40:10.478668+00:00",
+  "degrees_checked": [
+    7,
+    8,
+    9
+  ],
+  "records": [
+    {
+      "parameters": {
+        "field_degree": 7,
+        "field_size": 128,
+        "polynomial_degree": 2,
+        "binary_rank": 14,
+        "columns": 16256,
+        "minimum_code_distance": 8128,
+        "low_weight_budget": 106,
+        "state_lower_bound": 16384
+      },
+      "field_modulus": 131,
+      "column_digest": "848e758fc0b2978cd4c59ef97827a383c6db643e7f7a24fb33e77a8e88855564",
+      "distinct_columns": 16256,
+      "transform_count": 8,
+      "sampled_stats": [
+        {
+          "exceptional_count": 16179,
+          "exceptional_rank": 14,
+          "excess": 81735,
+          "total": 114240
+        },
+        {
+          "exceptional_count": 16179,
+          "exceptional_rank": 14,
+          "excess": 81678,
+          "total": 114176
+        },
+        {
+          "exceptional_count": 16154,
+          "exceptional_rank": 14,
+          "excess": 81292,
+          "total": 113792
+        },
+        {
+          "exceptional_count": 16151,
+          "exceptional_rank": 14,
+          "excess": 81358,
+          "total": 113856
+        },
+        {
+          "exceptional_count": 16153,
+          "exceptional_rank": 14,
+          "excess": 81293,
+          "total": 113792
+        },
+        {
+          "exceptional_count": 16154,
+          "exceptional_rank": 14,
+          "excess": 81420,
+          "total": 113920
+        },
+        {
+          "exceptional_count": 16152,
+          "exceptional_rank": 14,
+          "excess": 81294,
+          "total": 113792
+        },
+        {
+          "exceptional_count": 16157,
+          "exceptional_rank": 14,
+          "excess": 81485,
+          "total": 113984
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "field_degree": 8,
+        "field_size": 256,
+        "polynomial_degree": 4,
+        "binary_rank": 32,
+        "columns": 65280,
+        "minimum_code_distance": 32384,
+        "low_weight_budget": 529,
+        "state_lower_bound": 4294967296
+      },
+      "field_modulus": 283,
+      "column_digest": "5431d5b69328125ee350b654f3fdda4b8962388aaf6ed33d3b564c17afaffcc6",
+      "distinct_columns": 65280,
+      "transform_count": 8,
+      "sampled_stats": [
+        {
+          "exceptional_count": 65244,
+          "exceptional_rank": 32,
+          "excess": 914952,
+          "total": 1045504
+        },
+        {
+          "exceptional_count": 65243,
+          "exceptional_rank": 32,
+          "excess": 914569,
+          "total": 1045120
+        },
+        {
+          "exceptional_count": 65279,
+          "exceptional_rank": 32,
+          "excess": 912896,
+          "total": 1043456
+        },
+        {
+          "exceptional_count": 65279,
+          "exceptional_rank": 32,
+          "excess": 914304,
+          "total": 1044864
+        },
+        {
+          "exceptional_count": 65279,
+          "exceptional_rank": 32,
+          "excess": 914561,
+          "total": 1045120
+        },
+        {
+          "exceptional_count": 65279,
+          "exceptional_rank": 32,
+          "excess": 913537,
+          "total": 1044096
+        },
+        {
+          "exceptional_count": 65278,
+          "exceptional_rank": 32,
+          "excess": 913921,
+          "total": 1044480
+        },
+        {
+          "exceptional_count": 65279,
+          "exceptional_rank": 32,
+          "excess": 913793,
+          "total": 1044352
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "field_degree": 9,
+        "field_size": 512,
+        "polynomial_degree": 6,
+        "binary_rank": 54,
+        "columns": 261632,
+        "minimum_code_distance": 129792,
+        "low_weight_budget": 1486,
+        "state_lower_bound": 18014398509481984
+      },
+      "field_modulus": 515,
+      "column_digest": "e6834d96749a93331decd151184ebd05c72e2c700e1b13e2e963a6b959024bb9",
+      "distinct_columns": 261632,
+      "transform_count": 8,
+      "sampled_stats": [
+        {
+          "exceptional_count": 261587,
+          "exceptional_rank": 54,
+          "excess": 6543113,
+          "total": 7066368
+        },
+        {
+          "exceptional_count": 261586,
+          "exceptional_rank": 54,
+          "excess": 6541834,
+          "total": 7065088
+        },
+        {
+          "exceptional_count": 261631,
+          "exceptional_rank": 54,
+          "excess": 6534657,
+          "total": 7057920
+        },
+        {
+          "exceptional_count": 261632,
+          "exceptional_rank": 54,
+          "excess": 6535424,
+          "total": 7058688
+        },
+        {
+          "exceptional_count": 261632,
+          "exceptional_rank": 54,
+          "excess": 6536704,
+          "total": 7059968
+        },
+        {
+          "exceptional_count": 261627,
+          "exceptional_rank": 54,
+          "excess": 6538498,
+          "total": 7061760
+        },
+        {
+          "exceptional_count": 261632,
+          "exceptional_rank": 54,
+          "excess": 6535936,
+          "total": 7059200
+        },
+        {
+          "exceptional_count": 261628,
+          "exceptional_rank": 54,
+          "excess": 6538754,
+          "total": 7062016
+        }
+      ]
+    }
+  ],
+  "source_hash": "a8e38e7026079bb281ab374b9908c6676ff134cb6db900a6e01f59d895a18dfd",
+  "scope": "Explicit deterministic concatenated-code certificates; route-specific lower bound only."
+}

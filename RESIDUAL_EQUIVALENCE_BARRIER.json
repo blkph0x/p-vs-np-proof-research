@@ -1,0 +1,6489 @@
+{
+  "all_checks_passed": true,
+  "theorem_construction": "F(z,y) = G(y) AND NOT z",
+  "boundary_width": 1,
+  "small_nvars": 2,
+  "small_formula_count": 256,
+  "small_equivalent_count": 161,
+  "small_satisfiable_count": 95,
+  "controls": [
+    {
+      "nvars": 3,
+      "g_clauses": [],
+      "g_satisfiable": true,
+      "g_model_count": 8,
+      "residual_z0": 255,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 1,
+      "g_clauses": [
+        [
+          1
+        ],
+        [
+          -1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          1,
+          2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          -1,
+          -2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          1,
+          2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 8,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    }
+  ],
+  "records": [
+    {
+      "nvars": 2,
+      "g_clauses": [],
+      "g_satisfiable": true,
+      "g_model_count": 4,
+      "residual_z0": 15,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 3,
+      "residual_z0": 7,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 2,
+      "residual_z0": 3,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 2,
+      "residual_z0": 3,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 3,
+      "residual_z0": 11,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 2,
+      "residual_z0": 3,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 2,
+      "residual_z0": 3,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 2,
+      "residual_z0": 3,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 2,
+      "residual_z0": 5,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 2,
+      "residual_z0": 5,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 1,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 1,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 1,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 1,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 1,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 1,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 2,
+      "residual_z0": 10,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 2,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 2,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 2,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 2,
+      "residual_z0": 10,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 2,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 2,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 2,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 3,
+      "residual_z0": 13,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 2,
+      "residual_z0": 5,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 1,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 1,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 2,
+      "residual_z0": 9,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 1,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 1,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 1,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 2,
+      "residual_z0": 5,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -2
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 2,
+      "residual_z0": 5,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -2
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 1,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -2
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 1,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 1,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 1,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 1,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 1,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 8,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 8,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 2,
+      "residual_z0": 12,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 4,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 8,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 4,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 4,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 8,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          2
+        ],
+        [
+          2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 8,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 2,
+      "residual_z0": 12,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 4,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 8,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 4,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 4,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 8,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 8,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 3,
+      "residual_z0": 14,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 2,
+      "residual_z0": 6,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 2,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 2,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 2,
+      "residual_z0": 10,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 2,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 2,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 2,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 4,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 4,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 2,
+      "residual_z0": 10,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 2,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 2,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 2,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 2,
+      "residual_z0": 10,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 2,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 2,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 2,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 2,
+      "residual_z0": 12,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 4,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 8,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 4,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 4,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 8,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 8,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 2,
+      "residual_z0": 12,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 4,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 8,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 4,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 4,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 8,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          2
+        ],
+        [
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 8,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 2,
+      "residual_z0": 12,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 4,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 8,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 4,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 4,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 8,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "residual_z0": 8,
+      "residual_z1": 0,
+      "future_equivalent": false,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "residual_z0": 0,
+      "residual_z1": 0,
+      "future_equivalent": true,
+      "boundary_width": 1
+    }
+  ]
+}

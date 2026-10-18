@@ -1,0 +1,220 @@
+{
+  "verdict": "CLEAN: complete original-clause controls and scoped structural counts",
+  "source_sha256": {
+    "controls.py": "315605bdf7a30245648116f837a91e00708b2f74c82d9943a88a98e6dc7cf7b5",
+    "test_controls.py": "9dc3177369b0bac3b599472eb1ae8ac5c5b21569f9980a3db44681bc4f7a0fc5",
+    "THEOREM.md": "97375630ed5b42da6af0a54b236af6d5c6873b25d474c6aa275a0edd3d2fb0c8",
+    "independent_review.py": "35be63c8646e0020f04c540d8bfc19063182d85d326567ec69dacf129548381c",
+    "INDEPENDENT_REVIEW.md": "864e325c4cdf59f94d6b559c26704374043bb9289b5380eeada6cc3d04215f93"
+  },
+  "source_unchanged_during_run": true,
+  "source_controls": 22,
+  "single_clause_omissions_rejected": 2611,
+  "grouped_shuffled_pairs": [
+    [
+      "cubic_parity_v8_charge0_grouped",
+      "cubic_parity_v8_charge0_shuffled"
+    ],
+    [
+      "cubic_parity_v8_charge1_grouped",
+      "cubic_parity_v8_charge1_shuffled"
+    ],
+    [
+      "cubic_parity_v20_charge0_grouped",
+      "cubic_parity_v20_charge0_shuffled"
+    ],
+    [
+      "cubic_parity_v20_charge1_grouped",
+      "cubic_parity_v20_charge1_shuffled"
+    ],
+    [
+      "cubic_parity_v40_charge0_grouped",
+      "cubic_parity_v40_charge0_shuffled"
+    ],
+    [
+      "cubic_parity_v40_charge1_grouped",
+      "cubic_parity_v40_charge1_shuffled"
+    ],
+    [
+      "cubic_parity_v80_charge0_grouped",
+      "cubic_parity_v80_charge0_shuffled"
+    ],
+    [
+      "cubic_parity_v80_charge1_grouped",
+      "cubic_parity_v80_charge1_shuffled"
+    ]
+  ],
+  "independent_pigeonhole_column_counts": 6,
+  "small_original_formulas": 18,
+  "small_original_truth_words": 23382,
+  "seconds": 5.4045966998673975,
+  "controls": [
+    {
+      "name": "cubic_parity_v8_charge0_grouped",
+      "n": 12,
+      "clauses": 32,
+      "structural_count": 32,
+      "single_clause_omissions_rejected": 32
+    },
+    {
+      "name": "cubic_parity_v8_charge0_shuffled",
+      "n": 12,
+      "clauses": 32,
+      "structural_count": 32,
+      "single_clause_omissions_rejected": 32
+    },
+    {
+      "name": "cubic_parity_v8_charge1_grouped",
+      "n": 12,
+      "clauses": 32,
+      "structural_count": 0,
+      "single_clause_omissions_rejected": 32
+    },
+    {
+      "name": "cubic_parity_v8_charge1_shuffled",
+      "n": 12,
+      "clauses": 32,
+      "structural_count": 0,
+      "single_clause_omissions_rejected": 32
+    },
+    {
+      "name": "cubic_parity_v20_charge0_grouped",
+      "n": 30,
+      "clauses": 80,
+      "structural_count": 2048,
+      "single_clause_omissions_rejected": 80
+    },
+    {
+      "name": "cubic_parity_v20_charge0_shuffled",
+      "n": 30,
+      "clauses": 80,
+      "structural_count": 2048,
+      "single_clause_omissions_rejected": 80
+    },
+    {
+      "name": "cubic_parity_v20_charge1_grouped",
+      "n": 30,
+      "clauses": 80,
+      "structural_count": 0,
+      "single_clause_omissions_rejected": 80
+    },
+    {
+      "name": "cubic_parity_v20_charge1_shuffled",
+      "n": 30,
+      "clauses": 80,
+      "structural_count": 0,
+      "single_clause_omissions_rejected": 80
+    },
+    {
+      "name": "cubic_parity_v40_charge0_grouped",
+      "n": 60,
+      "clauses": 160,
+      "structural_count": 2097152,
+      "single_clause_omissions_rejected": 160
+    },
+    {
+      "name": "cubic_parity_v40_charge0_shuffled",
+      "n": 60,
+      "clauses": 160,
+      "structural_count": 2097152,
+      "single_clause_omissions_rejected": 160
+    },
+    {
+      "name": "cubic_parity_v40_charge1_grouped",
+      "n": 60,
+      "clauses": 160,
+      "structural_count": 0,
+      "single_clause_omissions_rejected": 160
+    },
+    {
+      "name": "cubic_parity_v40_charge1_shuffled",
+      "n": 60,
+      "clauses": 160,
+      "structural_count": 0,
+      "single_clause_omissions_rejected": 160
+    },
+    {
+      "name": "cubic_parity_v80_charge0_grouped",
+      "n": 120,
+      "clauses": 320,
+      "structural_count": 2199023255552,
+      "single_clause_omissions_rejected": 320
+    },
+    {
+      "name": "cubic_parity_v80_charge0_shuffled",
+      "n": 120,
+      "clauses": 320,
+      "structural_count": 2199023255552,
+      "single_clause_omissions_rejected": 320
+    },
+    {
+      "name": "cubic_parity_v80_charge1_grouped",
+      "n": 120,
+      "clauses": 320,
+      "structural_count": 0,
+      "single_clause_omissions_rejected": 320
+    },
+    {
+      "name": "cubic_parity_v80_charge1_shuffled",
+      "n": 120,
+      "clauses": 320,
+      "structural_count": 0,
+      "single_clause_omissions_rejected": 320
+    },
+    {
+      "name": "pigeonhole_3_into_3",
+      "n": 9,
+      "clauses": 12,
+      "structural_count": 6,
+      "single_clause_omissions_rejected": 12,
+      "independent_column_assignment_count": 6,
+      "independent_column_assignments_examined": 64
+    },
+    {
+      "name": "pigeonhole_4_into_3",
+      "n": 12,
+      "clauses": 22,
+      "structural_count": 0,
+      "single_clause_omissions_rejected": 22,
+      "independent_column_assignment_count": 0,
+      "independent_column_assignments_examined": 125
+    },
+    {
+      "name": "pigeonhole_4_into_4",
+      "n": 16,
+      "clauses": 28,
+      "structural_count": 24,
+      "single_clause_omissions_rejected": 28,
+      "independent_column_assignment_count": 24,
+      "independent_column_assignments_examined": 625
+    },
+    {
+      "name": "pigeonhole_5_into_4",
+      "n": 20,
+      "clauses": 45,
+      "structural_count": 0,
+      "single_clause_omissions_rejected": 45,
+      "independent_column_assignment_count": 0,
+      "independent_column_assignments_examined": 1296
+    },
+    {
+      "name": "pigeonhole_5_into_5",
+      "n": 25,
+      "clauses": 55,
+      "structural_count": 120,
+      "single_clause_omissions_rejected": 55,
+      "independent_column_assignment_count": 120,
+      "independent_column_assignments_examined": 7776
+    },
+    {
+      "name": "pigeonhole_6_into_5",
+      "n": 30,
+      "clauses": 81,
+      "structural_count": 0,
+      "single_clause_omissions_rejected": 81,
+      "independent_column_assignment_count": 0,
+      "independent_column_assignments_examined": 16807
+    }
+  ],
+  "scope": "This audits source construction/counts, not solver performance; grouped/shuffled solver outcomes must remain separate."
+}

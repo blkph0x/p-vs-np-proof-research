@@ -1,0 +1,38 @@
+{
+  "status": "VERIFIED_INDEPENDENT_EXPLICIT_CODE_FAMILY",
+  "degrees_checked": [
+    7,
+    8,
+    9
+  ],
+  "rows": [
+    {
+      "k": 7,
+      "rank": 14,
+      "columns": 16256,
+      "states": 16384
+    },
+    {
+      "k": 8,
+      "rank": 32,
+      "columns": 65280,
+      "states": 4294967296
+    },
+    {
+      "k": 9,
+      "rank": 54,
+      "columns": 261632,
+      "states": 18014398509481984
+    }
+  ],
+  "rank7_states": 16384,
+  "rank8_states": 4294967296,
+  "rank9_states": 18014398509481984,
+  "k7_exhaustive_minimum_distance": 8128,
+  "source_hashes": {
+    "explicit_code_family.py": "a8e38e7026079bb281ab374b9908c6676ff134cb6db900a6e01f59d895a18dfd",
+    "run_explicit_code_family.py": "23fb03e117f6d046957da21af6f56097962657f0b935c6e5ffe8178471a201fb",
+    "EXPLICIT_CODE_FAMILY_REVIEW.py": "05cc0c4de6852436d719e79f8b5a5cb95e5ccc8d7014da6fa3ff3f3188ae3a24"
+  },
+  "scope": "Independent formula, field, distinctness and sampled-basis replay; route-specific only."
+}

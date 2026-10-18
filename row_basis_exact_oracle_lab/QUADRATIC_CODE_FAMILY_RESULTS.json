@@ -1,0 +1,301 @@
+{
+  "all_checks_passed": true,
+  "degrees_checked": [
+    4,
+    5,
+    6,
+    7
+  ],
+  "records": [
+    {
+      "parameters": {
+        "field_degree": 4,
+        "field_size": 16,
+        "polynomial_degree": 2,
+        "binary_rank": 8,
+        "columns": 240,
+        "minimum_code_distance": 120,
+        "low_weight_budget": 37,
+        "state_lower_bound": 256,
+        "rank_lower_bound_n_quarter": 4,
+        "rank_upper_bound_n_half": 8
+      },
+      "field_modulus": 19,
+      "column_digest": "47783d56373c4c97fd42b9c854bb16bbc9ebf4d8db7e17079dc56254edd34538",
+      "distinct_columns": 240,
+      "transform_count": 4,
+      "sampled_stats": [
+        {
+          "exceptional_count": 214,
+          "exceptional_rank": 8,
+          "excess": 516,
+          "total": 992
+        },
+        {
+          "exceptional_count": 214,
+          "exceptional_rank": 8,
+          "excess": 512,
+          "total": 984
+        },
+        {
+          "exceptional_count": 206,
+          "exceptional_rank": 8,
+          "excess": 488,
+          "total": 960
+        },
+        {
+          "exceptional_count": 210,
+          "exceptional_rank": 8,
+          "excess": 510,
+          "total": 984
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "field_degree": 5,
+        "field_size": 32,
+        "polynomial_degree": 3,
+        "binary_rank": 15,
+        "columns": 992,
+        "minimum_code_distance": 480,
+        "low_weight_budget": 121,
+        "state_lower_bound": 32768,
+        "rank_lower_bound_n_quarter": 8,
+        "rank_upper_bound_n_half": 16
+      },
+      "field_modulus": 37,
+      "column_digest": "4bcf076e04f533187ccfb3889d6faa02c0340ad211f214f629f5106ea0468b0d",
+      "distinct_columns": 992,
+      "transform_count": 4,
+      "sampled_stats": [
+        {
+          "exceptional_count": 977,
+          "exceptional_rank": 15,
+          "excess": 5541,
+          "total": 7520
+        },
+        {
+          "exceptional_count": 974,
+          "exceptional_rank": 15,
+          "excess": 5510,
+          "total": 7488
+        },
+        {
+          "exceptional_count": 991,
+          "exceptional_rank": 15,
+          "excess": 5488,
+          "total": 7472
+        },
+        {
+          "exceptional_count": 988,
+          "exceptional_rank": 15,
+          "excess": 5457,
+          "total": 7440
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "field_degree": 6,
+        "field_size": 64,
+        "polynomial_degree": 5,
+        "binary_rank": 30,
+        "columns": 4032,
+        "minimum_code_distance": 1920,
+        "low_weight_budget": 466,
+        "state_lower_bound": 1073741824,
+        "rank_lower_bound_n_quarter": 16,
+        "rank_upper_bound_n_half": 32
+      },
+      "field_modulus": 67,
+      "column_digest": "15b547112fc0710b0c77367dfc0b7d20aae84855fca210887decabc40b5906a1",
+      "distinct_columns": 4032,
+      "transform_count": 4,
+      "sampled_stats": [
+        {
+          "exceptional_count": 4011,
+          "exceptional_rank": 30,
+          "excess": 52614,
+          "total": 60672
+        },
+        {
+          "exceptional_count": 4010,
+          "exceptional_rank": 30,
+          "excess": 52487,
+          "total": 60544
+        },
+        {
+          "exceptional_count": 4031,
+          "exceptional_rank": 30,
+          "excess": 51937,
+          "total": 60000
+        },
+        {
+          "exceptional_count": 4031,
+          "exceptional_rank": 30,
+          "excess": 52321,
+          "total": 60384
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "field_degree": 7,
+        "field_size": 128,
+        "polynomial_degree": 9,
+        "binary_rank": 63,
+        "columns": 16256,
+        "minimum_code_distance": 7680,
+        "low_weight_budget": 2017,
+        "state_lower_bound": 9223372036854775808,
+        "rank_lower_bound_n_quarter": 32,
+        "rank_upper_bound_n_half": 64
+      },
+      "field_modulus": 131,
+      "column_digest": "3dc45f435dc473e9b96a2f04562138bbb873749a219b0263f1a877c14ca5a557",
+      "distinct_columns": 16256,
+      "transform_count": 4,
+      "sampled_stats": [
+        {
+          "exceptional_count": 16228,
+          "exceptional_rank": 63,
+          "excess": 480007,
+          "total": 512512
+        },
+        {
+          "exceptional_count": 16227,
+          "exceptional_rank": 63,
+          "excess": 479496,
+          "total": 512000
+        },
+        {
+          "exceptional_count": 16255,
+          "exceptional_rank": 63,
+          "excess": 478593,
+          "total": 511104
+        },
+        {
+          "exceptional_count": 16255,
+          "exceptional_rank": 63,
+          "excess": 477760,
+          "total": 510272
+        }
+      ]
+    }
+  ],
+  "formula_sweep": [
+    {
+      "field_degree": 4,
+      "field_size": 16,
+      "polynomial_degree": 2,
+      "binary_rank": 8,
+      "columns": 240,
+      "minimum_code_distance": 120,
+      "low_weight_budget": 37,
+      "state_lower_bound": 256,
+      "rank_lower_bound_n_quarter": 4,
+      "rank_upper_bound_n_half": 8
+    },
+    {
+      "field_degree": 5,
+      "field_size": 32,
+      "polynomial_degree": 3,
+      "binary_rank": 15,
+      "columns": 992,
+      "minimum_code_distance": 480,
+      "low_weight_budget": 121,
+      "state_lower_bound": 32768,
+      "rank_lower_bound_n_quarter": 8,
+      "rank_upper_bound_n_half": 16
+    },
+    {
+      "field_degree": 6,
+      "field_size": 64,
+      "polynomial_degree": 5,
+      "binary_rank": 30,
+      "columns": 4032,
+      "minimum_code_distance": 1920,
+      "low_weight_budget": 466,
+      "state_lower_bound": 1073741824,
+      "rank_lower_bound_n_quarter": 16,
+      "rank_upper_bound_n_half": 32
+    },
+    {
+      "field_degree": 7,
+      "field_size": 128,
+      "polynomial_degree": 9,
+      "binary_rank": 63,
+      "columns": 16256,
+      "minimum_code_distance": 7680,
+      "low_weight_budget": 2017,
+      "state_lower_bound": 9223372036854775808,
+      "rank_lower_bound_n_quarter": 32,
+      "rank_upper_bound_n_half": 64
+    },
+    {
+      "field_degree": 8,
+      "field_size": 256,
+      "polynomial_degree": 16,
+      "binary_rank": 128,
+      "columns": 65280,
+      "minimum_code_distance": 30848,
+      "low_weight_budget": 8257,
+      "state_lower_bound": 340282366920938463463374607431768211456,
+      "rank_lower_bound_n_quarter": 64,
+      "rank_upper_bound_n_half": 128
+    },
+    {
+      "field_degree": 9,
+      "field_size": 512,
+      "polynomial_degree": 28,
+      "binary_rank": 252,
+      "columns": 261632,
+      "minimum_code_distance": 124160,
+      "low_weight_budget": 31879,
+      "state_lower_bound": 7237005577332262213973186563042994240829374041602535252466099000494570602496,
+      "rank_lower_bound_n_quarter": 128,
+      "rank_upper_bound_n_half": 256
+    },
+    {
+      "field_degree": 10,
+      "field_size": 1024,
+      "polynomial_degree": 51,
+      "binary_rank": 510,
+      "columns": 1047552,
+      "minimum_code_distance": 498688,
+      "low_weight_budget": 130306,
+      "state_lower_bound": 3351951982485649274893506249551461531869841455148098344430890360930441007518386744200468574541725856922507964546621512713438470702986642486608412251521024,
+      "rank_lower_bound_n_quarter": 256,
+      "rank_upper_bound_n_half": 512
+    },
+    {
+      "field_degree": 11,
+      "field_size": 2048,
+      "polynomial_degree": 93,
+      "binary_rank": 1023,
+      "columns": 4192256,
+      "minimum_code_distance": 2002944,
+      "low_weight_budget": 523777,
+      "state_lower_bound": 89884656743115795386465259539451236680898848947115328636715040578866337902750481566354238661203768010560056939935696678829394884407208311246423715319737062188883946712432742638151109800623047059726541476042502884419075341171231440736956555270413618581675255342293149119973622969239858152417678164812112068608,
+      "rank_lower_bound_n_quarter": 512,
+      "rank_upper_bound_n_half": 1024
+    },
+    {
+      "field_degree": 12,
+      "field_size": 4096,
+      "polynomial_degree": 170,
+      "binary_rank": 2040,
+      "columns": 16773120,
+      "minimum_code_distance": 8042496,
+      "low_weight_budget": 2081821,
+      "state_lower_bound": 126238304966058622268417487065116999845484776053576109500509161826268184136202698801551568013761380717534054534851164138648904527931605160527688095259563605939964364716019515983399209962459578542172100149937763938581219604072733422507180056009672540900709554109516816573779593326332288314873251559077853068444977864803391962580800682760017849589281937637993445539366428356761821065267423102149447628375691862210717202025241630303118559188678304314076943801692528246980959705901641444238894928620825482303431806955690226308773426829503900930529395181208739591967195841536053143145775307050594328881077553168201547776,
+      "rank_lower_bound_n_quarter": 1024,
+      "rank_upper_bound_n_half": 2048
+    }
+  ],
+  "adversarial": {
+    "forged_record_rejected": true
+  },
+  "scope": "Quadratic-length explicit trace family; lower bound is for the exceptional-syndrome row-basis route only."
+}

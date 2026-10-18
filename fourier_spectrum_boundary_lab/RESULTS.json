@@ -1,0 +1,457 @@
+{
+  "all_checks_passed": true,
+  "scope": "explicit Fourier/Walsh support barrier; not a lower bound for arbitrary SAT algorithms",
+  "analytic_rows": [
+    {
+      "n": 0,
+      "variables": 0,
+      "clauses": 0,
+      "analytic_nonzero_coefficients": 1,
+      "input_size_linear_in_n": true,
+      "coefficient_magnitude": "1"
+    },
+    {
+      "n": 1,
+      "variables": 3,
+      "clauses": 4,
+      "analytic_nonzero_coefficients": 2,
+      "input_size_linear_in_n": true,
+      "coefficient_magnitude": "1/2"
+    },
+    {
+      "n": 2,
+      "variables": 6,
+      "clauses": 8,
+      "analytic_nonzero_coefficients": 4,
+      "input_size_linear_in_n": true,
+      "coefficient_magnitude": "1/4"
+    },
+    {
+      "n": 3,
+      "variables": 9,
+      "clauses": 12,
+      "analytic_nonzero_coefficients": 8,
+      "input_size_linear_in_n": true,
+      "coefficient_magnitude": "1/8"
+    },
+    {
+      "n": 4,
+      "variables": 12,
+      "clauses": 16,
+      "analytic_nonzero_coefficients": 16,
+      "input_size_linear_in_n": true,
+      "coefficient_magnitude": "1/16"
+    },
+    {
+      "n": 5,
+      "variables": 15,
+      "clauses": 20,
+      "analytic_nonzero_coefficients": 32,
+      "input_size_linear_in_n": true,
+      "coefficient_magnitude": "1/32"
+    },
+    {
+      "n": 6,
+      "variables": 18,
+      "clauses": 24,
+      "analytic_nonzero_coefficients": 64,
+      "input_size_linear_in_n": true,
+      "coefficient_magnitude": "1/64"
+    },
+    {
+      "n": 7,
+      "variables": 21,
+      "clauses": 28,
+      "analytic_nonzero_coefficients": 128,
+      "input_size_linear_in_n": true,
+      "coefficient_magnitude": "1/128"
+    },
+    {
+      "n": 8,
+      "variables": 24,
+      "clauses": 32,
+      "analytic_nonzero_coefficients": 256,
+      "input_size_linear_in_n": true,
+      "coefficient_magnitude": "1/256"
+    },
+    {
+      "n": 9,
+      "variables": 27,
+      "clauses": 36,
+      "analytic_nonzero_coefficients": 512,
+      "input_size_linear_in_n": true,
+      "coefficient_magnitude": "1/512"
+    },
+    {
+      "n": 10,
+      "variables": 30,
+      "clauses": 40,
+      "analytic_nonzero_coefficients": 1024,
+      "input_size_linear_in_n": true,
+      "coefficient_magnitude": "1/1024"
+    },
+    {
+      "n": 11,
+      "variables": 33,
+      "clauses": 44,
+      "analytic_nonzero_coefficients": 2048,
+      "input_size_linear_in_n": true,
+      "coefficient_magnitude": "1/2048"
+    },
+    {
+      "n": 12,
+      "variables": 36,
+      "clauses": 48,
+      "analytic_nonzero_coefficients": 4096,
+      "input_size_linear_in_n": true,
+      "coefficient_magnitude": "1/4096"
+    }
+  ],
+  "brute_force_rows": [
+    {
+      "n": 0,
+      "variables": 0,
+      "brute_force_support": 1,
+      "expected_support": 1
+    },
+    {
+      "n": 1,
+      "variables": 3,
+      "brute_force_support": 2,
+      "expected_support": 2
+    },
+    {
+      "n": 2,
+      "variables": 6,
+      "brute_force_support": 4,
+      "expected_support": 4
+    },
+    {
+      "n": 3,
+      "variables": 9,
+      "brute_force_support": 8,
+      "expected_support": 8
+    },
+    {
+      "n": 4,
+      "variables": 12,
+      "brute_force_support": 16,
+      "expected_support": 16
+    }
+  ],
+  "family": "private-helper forcing family and cyclic unique-model family",
+  "cyclic_analytic_rows": [
+    {
+      "n": 3,
+      "variables": 3,
+      "clauses": 12,
+      "analytic_nonzero_coefficients": 8,
+      "input_size_linear_in_n": true,
+      "unique_satisfying_assignment": 7,
+      "coefficient_magnitude": "1/8"
+    },
+    {
+      "n": 4,
+      "variables": 4,
+      "clauses": 16,
+      "analytic_nonzero_coefficients": 16,
+      "input_size_linear_in_n": true,
+      "unique_satisfying_assignment": 15,
+      "coefficient_magnitude": "1/16"
+    },
+    {
+      "n": 5,
+      "variables": 5,
+      "clauses": 20,
+      "analytic_nonzero_coefficients": 32,
+      "input_size_linear_in_n": true,
+      "unique_satisfying_assignment": 31,
+      "coefficient_magnitude": "1/32"
+    },
+    {
+      "n": 6,
+      "variables": 6,
+      "clauses": 24,
+      "analytic_nonzero_coefficients": 64,
+      "input_size_linear_in_n": true,
+      "unique_satisfying_assignment": 63,
+      "coefficient_magnitude": "1/64"
+    },
+    {
+      "n": 7,
+      "variables": 7,
+      "clauses": 28,
+      "analytic_nonzero_coefficients": 128,
+      "input_size_linear_in_n": true,
+      "unique_satisfying_assignment": 127,
+      "coefficient_magnitude": "1/128"
+    },
+    {
+      "n": 8,
+      "variables": 8,
+      "clauses": 32,
+      "analytic_nonzero_coefficients": 256,
+      "input_size_linear_in_n": true,
+      "unique_satisfying_assignment": 255,
+      "coefficient_magnitude": "1/256"
+    },
+    {
+      "n": 9,
+      "variables": 9,
+      "clauses": 36,
+      "analytic_nonzero_coefficients": 512,
+      "input_size_linear_in_n": true,
+      "unique_satisfying_assignment": 511,
+      "coefficient_magnitude": "1/512"
+    },
+    {
+      "n": 10,
+      "variables": 10,
+      "clauses": 40,
+      "analytic_nonzero_coefficients": 1024,
+      "input_size_linear_in_n": true,
+      "unique_satisfying_assignment": 1023,
+      "coefficient_magnitude": "1/1024"
+    },
+    {
+      "n": 11,
+      "variables": 11,
+      "clauses": 44,
+      "analytic_nonzero_coefficients": 2048,
+      "input_size_linear_in_n": true,
+      "unique_satisfying_assignment": 2047,
+      "coefficient_magnitude": "1/2048"
+    },
+    {
+      "n": 12,
+      "variables": 12,
+      "clauses": 48,
+      "analytic_nonzero_coefficients": 4096,
+      "input_size_linear_in_n": true,
+      "unique_satisfying_assignment": 4095,
+      "coefficient_magnitude": "1/4096"
+    },
+    {
+      "n": 13,
+      "variables": 13,
+      "clauses": 52,
+      "analytic_nonzero_coefficients": 8192,
+      "input_size_linear_in_n": true,
+      "unique_satisfying_assignment": 8191,
+      "coefficient_magnitude": "1/8192"
+    },
+    {
+      "n": 14,
+      "variables": 14,
+      "clauses": 56,
+      "analytic_nonzero_coefficients": 16384,
+      "input_size_linear_in_n": true,
+      "unique_satisfying_assignment": 16383,
+      "coefficient_magnitude": "1/16384"
+    }
+  ],
+  "cyclic_brute_force_rows": [
+    {
+      "n": 3,
+      "variables": 3,
+      "brute_force_support": 8,
+      "expected_support": 8
+    },
+    {
+      "n": 4,
+      "variables": 4,
+      "brute_force_support": 16,
+      "expected_support": 16
+    },
+    {
+      "n": 5,
+      "variables": 5,
+      "brute_force_support": 32,
+      "expected_support": 32
+    },
+    {
+      "n": 6,
+      "variables": 6,
+      "brute_force_support": 64,
+      "expected_support": 64
+    },
+    {
+      "n": 7,
+      "variables": 7,
+      "brute_force_support": 128,
+      "expected_support": 128
+    },
+    {
+      "n": 8,
+      "variables": 8,
+      "brute_force_support": 256,
+      "expected_support": 256
+    }
+  ],
+  "cyclic_modular_rows": [
+    {
+      "n": 3,
+      "prime": 3,
+      "modular_support": 8,
+      "expected_support": 8
+    },
+    {
+      "n": 4,
+      "prime": 3,
+      "modular_support": 16,
+      "expected_support": 16
+    },
+    {
+      "n": 5,
+      "prime": 3,
+      "modular_support": 32,
+      "expected_support": 32
+    },
+    {
+      "n": 6,
+      "prime": 3,
+      "modular_support": 64,
+      "expected_support": 64
+    },
+    {
+      "n": 7,
+      "prime": 3,
+      "modular_support": 128,
+      "expected_support": 128
+    },
+    {
+      "n": 8,
+      "prime": 3,
+      "modular_support": 256,
+      "expected_support": 256
+    },
+    {
+      "n": 3,
+      "prime": 5,
+      "modular_support": 8,
+      "expected_support": 8
+    },
+    {
+      "n": 4,
+      "prime": 5,
+      "modular_support": 16,
+      "expected_support": 16
+    },
+    {
+      "n": 5,
+      "prime": 5,
+      "modular_support": 32,
+      "expected_support": 32
+    },
+    {
+      "n": 6,
+      "prime": 5,
+      "modular_support": 64,
+      "expected_support": 64
+    },
+    {
+      "n": 7,
+      "prime": 5,
+      "modular_support": 128,
+      "expected_support": 128
+    },
+    {
+      "n": 8,
+      "prime": 5,
+      "modular_support": 256,
+      "expected_support": 256
+    },
+    {
+      "n": 3,
+      "prime": 7,
+      "modular_support": 8,
+      "expected_support": 8
+    },
+    {
+      "n": 4,
+      "prime": 7,
+      "modular_support": 16,
+      "expected_support": 16
+    },
+    {
+      "n": 5,
+      "prime": 7,
+      "modular_support": 32,
+      "expected_support": 32
+    },
+    {
+      "n": 6,
+      "prime": 7,
+      "modular_support": 64,
+      "expected_support": 64
+    },
+    {
+      "n": 7,
+      "prime": 7,
+      "modular_support": 128,
+      "expected_support": 128
+    },
+    {
+      "n": 8,
+      "prime": 7,
+      "modular_support": 256,
+      "expected_support": 256
+    }
+  ],
+  "cyclic_target_span_rows": [
+    {
+      "n": 3,
+      "variables": 3,
+      "target_count": 8,
+      "clauses_per_target": 12,
+      "indicator_span_dimension": 8,
+      "input_size_linear_in_n": true,
+      "field_independent": true
+    },
+    {
+      "n": 4,
+      "variables": 4,
+      "target_count": 16,
+      "clauses_per_target": 16,
+      "indicator_span_dimension": 16,
+      "input_size_linear_in_n": true,
+      "field_independent": true
+    },
+    {
+      "n": 5,
+      "variables": 5,
+      "target_count": 32,
+      "clauses_per_target": 20,
+      "indicator_span_dimension": 32,
+      "input_size_linear_in_n": true,
+      "field_independent": true
+    },
+    {
+      "n": 6,
+      "variables": 6,
+      "target_count": 64,
+      "clauses_per_target": 24,
+      "indicator_span_dimension": 64,
+      "input_size_linear_in_n": true,
+      "field_independent": true
+    },
+    {
+      "n": 7,
+      "variables": 7,
+      "target_count": 128,
+      "clauses_per_target": 28,
+      "indicator_span_dimension": 128,
+      "input_size_linear_in_n": true,
+      "field_independent": true
+    },
+    {
+      "n": 8,
+      "variables": 8,
+      "target_count": 256,
+      "clauses_per_target": 32,
+      "indicator_span_dimension": 256,
+      "input_size_linear_in_n": true,
+      "field_independent": true
+    }
+  ]
+}

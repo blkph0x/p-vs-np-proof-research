@@ -1,0 +1,38 @@
+{
+  "status": "VERIFIED_INDEPENDENT_NONLINEAR_WEIGHT_COMPRESSION",
+  "degrees_checked": [
+    7,
+    8,
+    9
+  ],
+  "rows": [
+    {
+      "field_degree": 7,
+      "source_forms": 16256,
+      "nonlinear_digit_rows": 14,
+      "sample_assignments": 7
+    },
+    {
+      "field_degree": 8,
+      "source_forms": 65280,
+      "nonlinear_digit_rows": 16,
+      "sample_assignments": 7
+    },
+    {
+      "field_degree": 9,
+      "source_forms": 261632,
+      "nonlinear_digit_rows": 18,
+      "sample_assignments": 7
+    }
+  ],
+  "small_cube_assignments_checked": 32,
+  "explicit_sample_assignments_checked": 7,
+  "threshold_control": true,
+  "source_hashes": {
+    "explicit_code_family.py": "a8e38e7026079bb281ab374b9908c6676ff134cb6db900a6e01f59d895a18dfd",
+    "nonlinear_weight_compression.py": "807f14d67838c56ef46a80022ef3d538a06513cafedd3c04e5a0278cb7ac9ec8",
+    "run_nonlinear_weight_compression.py": "78aebd9a6d477b33636c6c496912ede74f569887027836327a0ea055764c8037",
+    "NONLINEAR_WEIGHT_COMPRESSION_REVIEW.py": "9079f9a2883f4f9b13e57f030f2321b1036a119c6b2e83fb693398236c468663"
+  },
+  "scope": "Boundary control only: arbitrary nonlinear objective rows can compress weight digits, but no SAT solver or P-versus-NP claim."
+}

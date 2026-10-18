@@ -1,0 +1,80 @@
+tensor_basis_lab
+test_all_clause_polarities_identity_signed_hadamard_and_rational (test_tensor_basis.TensorBasisTests) ... ok
+test_empty_formula_empty_clause_and_unused_variables (test_tensor_basis.TensorBasisTests) ... ok
+test_every_local_action_against_direct_tensor_power (test_tensor_basis.TensorBasisTests) ... ok
+test_exact_limits_and_verifier_limits_fail_closed (test_tensor_basis.TensorBasisTests) ... ok
+test_exhaustive_tiny_formula_pairs (test_tensor_basis.TensorBasisTests) ... ok
+test_input_binding_rebound_mutation_still_fails (test_tensor_basis.TensorBasisTests) ... ok
+test_local_transform_can_finish_without_global_contraction (test_tensor_basis.TensorBasisTests) ... ok
+test_saved_proofs_and_source_hashes (test_tensor_basis.TensorBasisTests) ... ok
+test_seeded_raw_formulas_with_shared_and_repeated_occurrences (test_tensor_basis.TensorBasisTests) ... ok
+test_shared_variables_repeated_clauses_and_occurrence_port_order (test_tensor_basis.TensorBasisTests) ... ok
+test_signed_cancellation_preserves_a_zero_original_count (test_tensor_basis.TensorBasisTests) ... ok
+test_tampered_local_tensors_order_inverse_and_trace_rejected (test_tensor_basis.TensorBasisTests) ... ok
+test_validation_json_and_large_exact_matrix_entries (test_tensor_basis.TensorBasisTests) ... ok
+test_wrong_transform_both_ends_changes_the_original_count (test_tensor_basis.TensorBasisTests) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 1.198s
+
+OK
+
+simultaneous_basis_lab
+test_all_eight_branches (test_basis.BasisTests) ... ok
+test_bezout_identities_and_binding (test_basis.BasisTests) ... ok
+test_certificate_metadata_and_coverage_mutations (test_basis.BasisTests) ... ok
+test_classifier_exhaustive_small_integer_signatures (test_basis.BasisTests) ... ok
+test_column_swap_flips_output_parity (test_basis.BasisTests) ... ok
+test_edge_specific_eq3_or3_obstruction_certificate (test_basis.BasisTests) ... ok
+test_eq3_clause_family_classifier (test_basis.BasisTests) ... ok
+test_full_polynomial_equations (test_basis.BasisTests) ... ok
+test_graph_control_mutation_changes_signature (test_basis.BasisTests) ... ok
+test_hadamard_genuine_shared_positive_controls (test_basis.BasisTests) ... ok
+test_individual_clause_success_does_not_imply_common_success (test_basis.BasisTests) ... ok
+test_inverse_and_singular_rejection (test_basis.BasisTests) ... ok
+test_nonzero_diagonal_scaling_preserves_support (test_basis.BasisTests) ... ok
+test_normal_form_reduction (test_basis.BasisTests) ... ok
+test_palindromic_family_direct_hadamard_transform (test_basis.BasisTests) ... ok
+test_product_type_obstruction_certificate (test_basis.BasisTests) ... ok
+test_saved_symmetric_clause_classification (test_basis.BasisTests) ... ok
+test_symbolic_against_200_exact_rational_transforms (test_basis.BasisTests) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 1.372s
+
+OK
+
+holographic_tractability_lab
+test_all_quadratic_phases_through_four_variables (test_affine_holant.AffineTests) ... ok
+test_budgets_unknown_and_invalid_inputs (test_affine_holant.AffineTests) ... ok
+test_certificate_mutations_rejected (test_affine_holant.AffineTests) ... ok
+test_formula_wrapper_binds_external_request (test_affine_holant.AffineTests) ... ok
+test_inconsistent_and_zero_certificates (test_affine_holant.AffineTests) ... ok
+test_large_integer_binary_hash_and_exact_rationals (test_affine_holant.AffineTests) ... ok
+test_nonaffine_support_and_cubic_phase_rejected (test_affine_holant.AffineTests) ... ok
+test_nonplanar_and_large_transformed_positive_family (test_affine_holant.AffineTests) ... ok
+test_original_sat_slack_polarity_shared_repeated_contradictory (test_affine_holant.AffineTests) ... ok
+test_saved_original_requests_certificates_and_source_hashes (test_affine_holant.AffineTests) ... ok
+test_seeded_full_contractions_and_basis_inverses (test_affine_holant.AffineTests) ... ok
+test_unsigned_support_and_signed_cancellation_distinct (test_affine_holant.AffineTests) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 6.258s
+
+OK
+
+crossing_sign_lab
+test_actual_planar_graph_signature (test_crossing.CrossingTests) ... ok
+test_caps_and_invalid_input (test_crossing.CrossingTests) ... ok
+test_global_cancellation (test_crossing.CrossingTests) ... ok
+test_matchgate_identities_and_order (test_crossing.CrossingTests) ... ok
+test_permutation_singular_odd_and_empty (test_crossing.CrossingTests) ... ok
+test_pfaffian_against_pairings (test_crossing.CrossingTests) ... ok
+test_tampering_and_original_binding (test_crossing.CrossingTests) ... ok
+test_unary_rescaling_cannot_repair_crossing (test_crossing.CrossingTests) ... ok
+test_zero_does_not_mean_no_matching (test_crossing.CrossingTests) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.518s
+
+OK

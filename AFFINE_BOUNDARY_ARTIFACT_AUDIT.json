@@ -1,0 +1,67 @@
+{
+  "all_checks_passed": true,
+  "created_utc": "2026-10-17T16:05:04.840611+00:00",
+  "source_reference_count": 38,
+  "source_paths_relative_to": "checkpoint root",
+  "source_sha256": {
+    "overnight_research_2026_10_18/affine_boundary_lab/boundary.py": "19a51e88ca8e88d419c04d9ddd7f5f7ec04afaaabe94da00de4ab49250d2fcb7",
+    "overnight_research_2026_10_18/affine_boundary_lab/test_boundary.py": "684ff298d48cbfdc838d81156508293578b8a0a1dd75f2393c429abcd68c4b21",
+    "overnight_research_2026_10_18/affine_boundary_lab/run_experiments.py": "e5f04c5e3dc26c1e57fb18f07f9368bd747466e6975a1814ae1670ae63408611",
+    "overnight_research_2026_10_18/affine_boundary_lab/THEOREM.md": "c4931aa63605c43b15cb93a4b309ca6163dcb17eb20f69a40b356c8cd90f671a",
+    "overnight_research_2026_10_18/affine_boundary_reference/reference.py": "60b62bfd936c7b9a399630754df6fdddaf6ee370135bd9a4e4bf6144f04f7a15",
+    "overnight_research_2026_10_18/affine_boundary_reference/test_reference.py": "9632f3c0102e18ba1ca61dd6076b3d5397ca0cc3f1046b055a267dd87ce361fb",
+    "overnight_research_2026_10_18/affine_boundary_reference/THEOREM.md": "cbf214457ef479784cbbd9b38ad139c76efbd8293f5f884c193d5d537296da0c",
+    "overnight_research_2026_10_18/affine_boundary_reference/run_experiments.py": "faed5967d96dc8f508a3cf86c2855f9bcdc829d7b8c54749dbdcfb9a3e205224",
+    "overnight_research_2026_10_18/weighted_affine_dag_lab/dag.py": "5693dfff8bba4b4ec0ba9735698eb209567bc0a4eff1c091bf90e49b70453368",
+    "overnight_research_2026_10_18/weighted_affine_dag_lab/test_dag.py": "90fa27af09e557b617f93d4332af36dd50d17c0777e5e9dd3c23c9df57d6a0ee",
+    "overnight_research_2026_10_18/weighted_affine_dag_lab/run_experiments.py": "e8935c57290f432bbdedfd537829c27c625e8226c2883076be4221ddf87d07b5",
+    "overnight_research_2026_10_18/weighted_affine_dag_lab/THEOREM.md": "3afcb10bae2e1db22920a7d5036bdf8f1663489c22c798c3212789821f57c859",
+    "overnight_research_2026_10_18/original_count_reference_lab/reference.py": "27e97b0dcd34555c4ecf7d7f16d71e76aaf5cfc354db4dc28b2f06c7a5789446",
+    "overnight_research_2026_10_18/original_count_reference_lab/test_reference.py": "1afff76214b4dd28b003f0950abb8959849483fa01b923d4aebc681922f7d59a",
+    "overnight_research_2026_10_18/original_count_reference_lab/independent_oracles.py": "f6957a6ae0157f8a30baa0dc51e8d6f9bc371fc795ec07506b94ad18b20d359e",
+    "overnight_research_2026_10_18/original_count_reference_lab/THEOREM.md": "423bd772a1ee861315fa654cce73ad5ad8c719b7622f9bf26b7df7533248d6ac",
+    "overnight_research_2026_10_18/original_count_reference_lab/run_experiments.py": "7f3e7f6578800a90134a36d9317826f166a0e535389d547ed11fc0b740cbf030",
+    "overnight_research_2026_10_18/ALGEBRAIC_CROSSCHECK.json": "4e0b92f24bcfa2e2a71a054636dc65ff6283f0486a1e1b075248c853c94efd5f",
+    "overnight_research_2026_10_18/coefficient_structure_lab/RESULTS.json": "629b93f6f79b9a5abc7b8df1541ad3da1dc5db2af63f2b7dba2bf721124e3282",
+    "automatic_parameter_discovery_lab/engine.py": "bc4af5186d50cead984f6571ba40be195c90d69d1abaab70e1eafad748ab3c11",
+    "automatic_parameter_discovery_lab/parameter_routes.py": "6e157893ff87862821c097eae8659189528b6080977a94a8e4e14a56c6f71e69",
+    "semantic_branch_dp_lab/engine.py": "f17f0380015652d9f4a3d7ffd452de70c4e71f9eb5c85f5f4d22d916b1af41aa",
+    "overnight_research_2026_10_18/run_weighted_affine_crosscheck.py": "494639b8a9761c37bd11950dcba1314dc960fd06f5b8ab099c27e6a67da39ec1",
+    "overnight_research_2026_10_18/original_count_reference_lab/RESULTS.json": "7b68619bfa369220c47d9c48ca62ee57bd0b320644f43021105ddc1e733b4521",
+    "overnight_research_2026_10_18/run_affine_boundary_phase_checks.py": "eb85e4c08687fec98aba5105ca23f2d4c626b76dad80666bc218f741822d53ef",
+    "overnight_research_2026_10_18/affine_boundary_reference/crosscheck_boundary.py": "c4a97173b2764d959024e5c473c147da68d1b1dd7a5231da899557ab59a84bce",
+    "overnight_research_2026_10_18/affine_boundary_lab/RESULTS.json": "f559b8b4c8df9168529c38fc75ff903b07fd841d3b9e25ceb39940fbf178ac02",
+    "overnight_research_2026_10_18/affine_boundary_reference/BOUNDARY_CROSSCHECK.json": "ab1fb5be2d167497fc158185b16a16eb9ecec485fb5b541060cc257a99ffb1fc",
+    "overnight_research_2026_10_18/affine_boundary_reference/RESULTS.json": "0dc3682da524b45aa3e33d62db7141ab9a90635b6d507e63113751ec142b7539",
+    "overnight_research_2026_10_18/affine_boundary_reference/independent_review.py": "ec30984bcddd4454b3d4533804dc6b472b3986248a0b890b43f588d5ef1720c8",
+    "overnight_research_2026_10_18/affine_boundary_reference/INDEPENDENT_REVIEW.json": "c567945c4e24e2bd46da05383d134a593e2088594679d01e8ff7ce1c63f4a170",
+    "overnight_research_2026_10_18/original_count_reference_lab/independent_review.py": "a6a17fb8c755bec55f41b3082397406984545a4c27a9776b10ba84b8585572bb",
+    "overnight_research_2026_10_18/original_count_reference_lab/INDEPENDENT_REVIEW.md": "c8d3c522b7a4ccb7574ff30f1d62c94375c27836bf517f4ce505f6cda04e853a",
+    "overnight_research_2026_10_18/original_count_reference_lab/INDEPENDENT_REVIEW.json": "cffcc7bfbc8a49b7171720eb3eb5f482b027c4a42c9b1d52634986080fe2d7a7",
+    "overnight_research_2026_10_18/weighted_affine_dag_lab/independent_review.py": "ab446cfda21c46d8fa1153ca1725fd0fbbad477b39a0015cba6670847a6fd507",
+    "overnight_research_2026_10_18/weighted_affine_dag_lab/RESULTS.json": "1dd15bdc4859e2370ebed92c9560804ad2b4152eda7380e8f49d095ff6477b50",
+    "overnight_research_2026_10_18/weighted_affine_dag_lab/INDEPENDENT_REVIEW.json": "0919874347b4a340290389bb015b52a8eee318c36d77d2ce7eb3ca84b1cc8da7",
+    "overnight_research_2026_10_18/verify_affine_boundary_artifacts.py": "1a360591fa4de6e025e9e95cdd059bbf4f56c2a0ebd6096171296dbed470b158"
+  },
+  "summary": {
+    "one_bit_boundaries_with_independent_block_comparison": {
+      "EXACT": 96,
+      "UNKNOWN": 6
+    },
+    "block_reference": {
+      "EXACT": 73,
+      "UNKNOWN": 3
+    },
+    "native_and_structured_weighted_dag": {
+      "EXACT": 16,
+      "UNKNOWN": 2
+    },
+    "original_count_reference_exact": 58,
+    "same_original_weighted_dag": {
+      "EXACT": 54,
+      "UNKNOWN": 4
+    },
+    "tests_passed": 46,
+    "independent_review_records_with_current_sources": 4
+  }
+}

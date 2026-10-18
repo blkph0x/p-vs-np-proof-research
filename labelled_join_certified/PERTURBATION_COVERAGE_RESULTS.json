@@ -1,0 +1,77 @@
+{
+  "format": "dense-u-perturbation-coverage-v1",
+  "cases": [
+    {
+      "n": 128,
+      "r": 64,
+      "p": 7,
+      "representation_upper_bound_bit_length": 2755,
+      "representation_upper_bound_sha256": "c9c2d0e50b2d8490210248790f0cef8357edf81c1889ef3377476d399f3fe0b6",
+      "systematic_rowspace_lower_bound_bit_length": 4097,
+      "systematic_rowspace_lower_bound_sha256": "84a259209df110e60a0de743605c9c61d70950fb86311ca58d406c467864a276",
+      "universal_coverage_excluded": true,
+      "all_row_count_upper_bound_bit_length": 3458,
+      "all_row_count_upper_bound_sha256": "7daa510fa0d3faab612097ea91582f0e9ce39a7a7e363864723e98de04e9770c",
+      "all_row_count_systematic_lower_bound_bit_length": 4097,
+      "all_row_count_systematic_lower_bound_sha256": "84a259209df110e60a0de743605c9c61d70950fb86311ca58d406c467864a276",
+      "universal_coverage_excluded_with_any_row_count": true,
+      "largest_excluded_label_budget": 9
+    },
+    {
+      "n": 256,
+      "r": 128,
+      "p": 16,
+      "representation_upper_bound_bit_length": 9475,
+      "representation_upper_bound_sha256": "1b227af7148ec75300da6c91685680f9a566ca1c71f75264194f7b7ac5932a51",
+      "systematic_rowspace_lower_bound_bit_length": 16385,
+      "systematic_rowspace_lower_bound_sha256": "b6cb1247e6ef171b592ab6c48b364e50acc1e6d676f2ff667279d4e117871466",
+      "universal_coverage_excluded": true,
+      "all_row_count_upper_bound_bit_length": 12034,
+      "all_row_count_upper_bound_sha256": "c02d77da31c15c49fd7319ce94791a3e9a51c77fe00c13849a3bfc88f5e3937e",
+      "all_row_count_systematic_lower_bound_bit_length": 16385,
+      "all_row_count_systematic_lower_bound_sha256": "b6cb1247e6ef171b592ab6c48b364e50acc1e6d676f2ff667279d4e117871466",
+      "universal_coverage_excluded_with_any_row_count": true,
+      "largest_excluded_label_budget": 24
+    },
+    {
+      "n": 512,
+      "r": 256,
+      "p": 27,
+      "representation_upper_bound_bit_length": 28419,
+      "representation_upper_bound_sha256": "f9ca04aa16292904e8d980db7898b6a69396939e85403cd4e5545f60fc5404a3",
+      "systematic_rowspace_lower_bound_bit_length": 65537,
+      "systematic_rowspace_lower_bound_sha256": "8b49fcdc972116874fe7798f64b16d3862ee95aa8dfe290670a4ae1664e3101f",
+      "universal_coverage_excluded": true,
+      "all_row_count_upper_bound_bit_length": 36354,
+      "all_row_count_upper_bound_sha256": "e5da36ec727e75f3723e0f8b12bf66d82ef6871bbbbeb8db406b6f9bef37622e",
+      "all_row_count_systematic_lower_bound_bit_length": 65537,
+      "all_row_count_systematic_lower_bound_sha256": "8b49fcdc972116874fe7798f64b16d3862ee95aa8dfe290670a4ae1664e3101f",
+      "universal_coverage_excluded_with_any_row_count": true,
+      "largest_excluded_label_budget": 55
+    },
+    {
+      "n": 16,
+      "r": 8,
+      "p": 12,
+      "representation_upper_bound_bit_length": 372,
+      "representation_upper_bound_sha256": "2d205fea50f9feec67cdf5c7dbcbc2b44bd83026d6abc2e30893d2ca0335241a",
+      "systematic_rowspace_lower_bound_bit_length": 65,
+      "systematic_rowspace_lower_bound_sha256": "a536aa3cede6ea3c1f3e0357c3c60e0f216a8c89b853df13b29daa8f85065dfb",
+      "universal_coverage_excluded": false,
+      "all_row_count_upper_bound_bit_length": 498,
+      "all_row_count_upper_bound_sha256": "0e54aca4bd90a923037edb8e7095541548b9da5137029295715fa8f67fd9fff7",
+      "all_row_count_systematic_lower_bound_bit_length": 65,
+      "all_row_count_systematic_lower_bound_sha256": "a536aa3cede6ea3c1f3e0357c3c60e0f216a8c89b853df13b29daa8f85065dfb",
+      "universal_coverage_excluded_with_any_row_count": false,
+      "largest_excluded_label_budget": -1
+    }
+  ],
+  "source_sha256": {
+    "perturbation_coverage.py": "1f9f3a65578ba95cd650a5f8bd484000ff0eb089828aa907a35c06efd3b57012",
+    "test_perturbation_coverage.py": "03f883882cc902c107a3d6e954e93eb644a59195f73120afc5f87acb2486f98b",
+    "PERTURBATION_COVERAGE_THEOREM.md": "372a43827da486c56053b0edda6e7f2cfaed2900a71346bb6aaa54f997482b55",
+    "run_perturbation_coverage.py": "a432f5ffec5a50bf7aaaa44f56680ec9680b9feffed6c4f47687956d0cd863be",
+    "verify_perturbation_coverage.py": "2d0d002a2241ae12490b8e65daa4e3df79c44d9c78d44b473acc5576f00aa41c"
+  },
+  "interpretation": "The count concerns same-coordinate B+UV row spaces and allows dense U and V. It excludes universal O(log n) labels for this representation language, not arbitrary SAT algorithms or nonlinear encodings."
+}

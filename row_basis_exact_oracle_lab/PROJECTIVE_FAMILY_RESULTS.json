@@ -1,0 +1,184 @@
+{
+  "status": "PROJECTIVE_FAMILY_CHECK_PASS",
+  "timestamp_utc": "2026-10-18T00:34:45.105951+00:00",
+  "ranks_checked": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    12
+  ],
+  "records": [
+    {
+      "rank": 4,
+      "closed_form": {
+        "rank": 4,
+        "columns": 15,
+        "objective": [
+          5,
+          6,
+          32
+        ],
+        "stats": [
+          5,
+          4,
+          6,
+          32
+        ],
+        "native_state_count": 16
+      },
+      "transform": [
+        3,
+        6,
+        12,
+        8
+      ]
+    },
+    {
+      "rank": 5,
+      "closed_form": {
+        "rank": 5,
+        "columns": 31,
+        "objective": [
+          16,
+          23,
+          80
+        ],
+        "stats": [
+          16,
+          5,
+          23,
+          80
+        ],
+        "native_state_count": 32
+      },
+      "transform": [
+        3,
+        6,
+        12,
+        24,
+        16
+      ]
+    },
+    {
+      "rank": 6,
+      "closed_form": {
+        "rank": 6,
+        "columns": 63,
+        "objective": [
+          42,
+          72,
+          192
+        ],
+        "stats": [
+          42,
+          6,
+          72,
+          192
+        ],
+        "native_state_count": 64
+      },
+      "transform": [
+        3,
+        6,
+        12,
+        24,
+        48,
+        32
+      ]
+    },
+    {
+      "rank": 7,
+      "closed_form": {
+        "rank": 7,
+        "columns": 127,
+        "objective": [
+          99,
+          201,
+          448
+        ],
+        "stats": [
+          99,
+          7,
+          201,
+          448
+        ],
+        "native_state_count": 128
+      },
+      "transform": [
+        3,
+        6,
+        12,
+        24,
+        48,
+        96,
+        64
+      ]
+    },
+    {
+      "rank": 8,
+      "closed_form": {
+        "rank": 8,
+        "columns": 255,
+        "objective": [
+          219,
+          522,
+          1024
+        ],
+        "stats": [
+          219,
+          8,
+          522,
+          1024
+        ],
+        "native_state_count": 256
+      },
+      "transform": [
+        3,
+        6,
+        12,
+        24,
+        48,
+        96,
+        192,
+        128
+      ]
+    },
+    {
+      "rank": 12,
+      "closed_form": {
+        "rank": 12,
+        "columns": 4095,
+        "objective": [
+          4017,
+          16398,
+          24576
+        ],
+        "stats": [
+          4017,
+          12,
+          16398,
+          24576
+        ],
+        "native_state_count": 4096
+      },
+      "transform": [
+        3,
+        6,
+        12,
+        24,
+        48,
+        96,
+        192,
+        384,
+        768,
+        1536,
+        3072,
+        2048
+      ]
+    }
+  ],
+  "source_hash": "19a682953bad85191e28067a4cfe13f228259bd0c1de6bc64f43c40cf6c16715",
+  "scope": "Exact symmetry family; no hardness or P-versus-NP claim."
+}

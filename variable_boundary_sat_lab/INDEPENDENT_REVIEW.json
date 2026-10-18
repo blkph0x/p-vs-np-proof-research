@@ -1,0 +1,44 @@
+{
+  "status": "VERIFIED_INDEPENDENT_VARIABLE_BOUNDARY_REVIEW",
+  "case_count": 5,
+  "rows": [
+    {
+      "name": "chain_64_sat",
+      "sat": true,
+      "max_width": 1,
+      "states": 128
+    },
+    {
+      "name": "chain_64_unsat",
+      "sat": false,
+      "max_width": 1,
+      "states": 64
+    },
+    {
+      "name": "star_bad_order",
+      "sat": true,
+      "max_width": 11,
+      "states": 4096
+    },
+    {
+      "name": "star_good_order",
+      "sat": true,
+      "max_width": 1,
+      "states": 24
+    },
+    {
+      "name": "dense_3cnf_6",
+      "sat": true,
+      "max_width": 5,
+      "states": 42
+    }
+  ],
+  "source_hashes": {
+    "boundary_dp.py": "28420afddd49282f0184a70510372d72d21e929a91e3f6099b219cf6b03ed36b",
+    "run_experiments.py": "cfa52ae896176d4e33c6f4fffe008f9f57f3e5ce8d8001a0ff0f4d4a57c79ffe",
+    "INDEPENDENT_REVIEW.py": "12d8d4b95ce73aed629019385f2615b6b74ecc358f42db0c6cca64f1e13aed3a"
+  },
+  "chain_64_width": 1,
+  "star_bad_width": 11,
+  "star_good_width": 1
+}

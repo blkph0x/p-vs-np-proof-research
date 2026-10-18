@@ -1,0 +1,57 @@
+{
+  "all_tests_passed": true,
+  "test_count": 46,
+  "suite_count": 4,
+  "source_unchanged_during_tests": true,
+  "suites": [
+    {
+      "lab": "affine_boundary_lab",
+      "test_count": 12,
+      "passed": true,
+      "returncode": 0,
+      "seconds": 3.5548666999675333
+    },
+    {
+      "lab": "affine_boundary_reference",
+      "test_count": 11,
+      "passed": true,
+      "returncode": 0,
+      "seconds": 2.0541334999725223
+    },
+    {
+      "lab": "weighted_affine_dag_lab",
+      "test_count": 14,
+      "passed": true,
+      "returncode": 0,
+      "seconds": 1.2432537996210158
+    },
+    {
+      "lab": "original_count_reference_lab",
+      "test_count": 9,
+      "passed": true,
+      "returncode": 0,
+      "seconds": 0.5511980997398496
+    }
+  ],
+  "started_utc": "2026-10-17T15:59:54.426738+00:00",
+  "finished_utc": "2026-10-17T16:00:01.834367+00:00",
+  "seconds": 7.40681830001995,
+  "python": "3.10.10 | packaged by conda-forge | (main, Mar 24 2023, 20:00:38) [MSC v.1934 64 bit (AMD64)]",
+  "implementation_sha256": {
+    "run_affine_boundary_phase_checks.py": "eb85e4c08687fec98aba5105ca23f2d4c626b76dad80666bc218f741822d53ef",
+    "affine_boundary_lab/boundary.py": "19a51e88ca8e88d419c04d9ddd7f5f7ec04afaaabe94da00de4ab49250d2fcb7",
+    "affine_boundary_lab/run_experiments.py": "e5f04c5e3dc26c1e57fb18f07f9368bd747466e6975a1814ae1670ae63408611",
+    "affine_boundary_lab/test_boundary.py": "684ff298d48cbfdc838d81156508293578b8a0a1dd75f2393c429abcd68c4b21",
+    "affine_boundary_reference/crosscheck_boundary.py": "c4a97173b2764d959024e5c473c147da68d1b1dd7a5231da899557ab59a84bce",
+    "affine_boundary_reference/reference.py": "60b62bfd936c7b9a399630754df6fdddaf6ee370135bd9a4e4bf6144f04f7a15",
+    "affine_boundary_reference/run_experiments.py": "faed5967d96dc8f508a3cf86c2855f9bcdc829d7b8c54749dbdcfb9a3e205224",
+    "affine_boundary_reference/test_reference.py": "9632f3c0102e18ba1ca61dd6076b3d5397ca0cc3f1046b055a267dd87ce361fb",
+    "weighted_affine_dag_lab/dag.py": "5693dfff8bba4b4ec0ba9735698eb209567bc0a4eff1c091bf90e49b70453368",
+    "weighted_affine_dag_lab/run_experiments.py": "e8935c57290f432bbdedfd537829c27c625e8226c2883076be4221ddf87d07b5",
+    "weighted_affine_dag_lab/test_dag.py": "90fa27af09e557b617f93d4332af36dd50d17c0777e5e9dd3c23c9df57d6a0ee",
+    "original_count_reference_lab/independent_oracles.py": "f6957a6ae0157f8a30baa0dc51e8d6f9bc371fc795ec07506b94ad18b20d359e",
+    "original_count_reference_lab/reference.py": "27e97b0dcd34555c4ecf7d7f16d71e76aaf5cfc354db4dc28b2f06c7a5789446",
+    "original_count_reference_lab/run_experiments.py": "7f3e7f6578800a90134a36d9317826f166a0e535389d547ed11fc0b740cbf030",
+    "original_count_reference_lab/test_reference.py": "1afff76214b4dd28b003f0950abb8959849483fa01b923d4aebc681922f7d59a"
+  }
+}

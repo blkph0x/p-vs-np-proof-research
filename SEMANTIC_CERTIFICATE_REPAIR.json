@@ -1,0 +1,93 @@
+{
+  "format": "semantic-branch-certificate-repair-v1",
+  "date": "2026-10-18",
+  "scope": "Repair of full-formula coverage, decomposition ownership and externally reconstructed semantic messages; not a new SAT complexity result.",
+  "source_sha256": {
+    "../semantic_branch_dp_lab/engine.py": "f17f0380015652d9f4a3d7ffd452de70c4e71f9eb5c85f5f4d22d916b1af41aa",
+    "../semantic_branch_dp_lab/test_lab.py": "18a3e87ecd6be99c1a6d9a1853f85341a4b915e1c3dbe41b495c7c464dc7bc36"
+  },
+  "source_unchanged_during_run": true,
+  "historical_source_sha256": {
+    "../semantic_branch_dp_lab/engine.py": "18297c591264771ee807c22093f4964f0bd0ef0e5a7c2c1b0590bc07c9a2dc7e",
+    "../semantic_branch_dp_lab/test_lab.py": "781a3175afbbf3ed9b9924e8d7f3dd942f3ce2008aeb387ccb2d455ec5a079c6"
+  },
+  "test_command": "python -m unittest discover -s . -p 'test*.py' -v",
+  "test_working_directory": "../semantic_branch_dp_lab",
+  "tests": {
+    "run": 16,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "successful": true,
+    "elapsed_seconds": 0.7829705998301506,
+    "transcript": "test_bruteforce (test_lab.T) ... ok\ntest_chain_width (test_lab.T) ... ok\ntest_children_are_exact_disjoint_partitions (test_lab.T) ... ok\ntest_cycles_shared_children_and_malformed_objects_rejected (test_lab.T) ... ok\ntest_deep_valid_tree_uses_iterative_verification (test_lab.T) ... ok\ntest_empty_formula_and_empty_clause_are_distinct (test_lab.T) ... ok\ntest_every_message_matches_independent_original_projection (test_lab.T) ... ok\ntest_exhaustive_small_formulas_and_orders (test_lab.T) ... ok\ntest_historical_omitted_empty_clause_rejected (test_lab.T) ... ok\ntest_leaf_shape_and_one_sided_branches_rejected (test_lab.T) ... ok\ntest_order_must_be_complete_exact_permutation (test_lab.T) ... ok\ntest_original_formula_literal_validation (test_lab.T) ... ok\ntest_original_variables_and_interfaces_are_bound (test_lab.T) ... ok\ntest_root_coverage_and_duplicate_indices (test_lab.T) ... ok\ntest_sliding (test_lab.T) ... ok\ntest_truth_tables_are_typed_bounded_and_replayed (test_lab.T) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 0.783s\n\nOK\n"
+  },
+  "historical_regression": {
+    "proof_source_formula": [
+      [
+        1
+      ]
+    ],
+    "external_original_formula": [
+      [
+        1
+      ],
+      []
+    ],
+    "full_original_satisfiable": false,
+    "observed_before_repair_acceptance": true,
+    "repaired_acceptance": false,
+    "incomplete_order": [
+      0
+    ],
+    "incomplete_order_rejected_with": "ValueError"
+  },
+  "empty_formula": {
+    "satisfiable": true,
+    "clause_ids": [],
+    "vars": [],
+    "boundary": [],
+    "truth_table": 1,
+    "verified": true,
+    "stats": {
+      "nodes": 1,
+      "leaves": 1,
+      "merges": 0,
+      "max_boundary": 0,
+      "max_merge_union": 0,
+      "enumerated_assignments": 1,
+      "message_bits_total": 1,
+      "unique_message_types": 1,
+      "max_type_recurrence": 1
+    }
+  },
+  "controls": {
+    "exhaustive_formulas": 820,
+    "exhaustive_ordered_runs": 1640,
+    "seeded_formulas_with_every_message_independently_projected": 80,
+    "valid_deep_tree_clause_leaves": 1100,
+    "valid_deep_tree_nodes": 2199
+  },
+  "limitations": [
+    "Explicit truth tables and replay may require exponentially many assignments.",
+    "Canonical message type keys and diagnostic statistics are not certified by verify_dp_certificate.",
+    "The checker verifies a tree, rejecting shared children and cycles; no DAG certificate semantics are implemented.",
+    "Only syntactically valid list/tuple formulas with nonzero exact integer literals are accepted.",
+    "No archival manifest or old historical result artifact was changed."
+  ],
+  "independent_review": {
+    "reviewer": "breakthrough_audit",
+    "verdict": "No correction found",
+    "seed": 2026101847,
+    "original_formulas": 400,
+    "maximum_variables": 6,
+    "maximum_clauses": 8,
+    "original_projection_messages_checked": 2884,
+    "single_table_bit_mutations_rejected": 2884,
+    "added_empty_original_clause_rejections": 400,
+    "local_suite_tests_passed": 16,
+    "exact_historical_omission_rejected": true,
+    "source_hashes_unchanged": true,
+    "review_note": "AFFINE_DECOMPOSITION_NEXT_REVIEW.md"
+  }
+}

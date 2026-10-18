@@ -1,0 +1,5808 @@
+{
+  "scope": "unrestricted linear map with nonnegative integer output costs",
+  "case_count": 186,
+  "all_agree_with_oracle": true,
+  "serialized_replay_passed": true,
+  "additive_cases": 102,
+  "nonadditive_cases": 84,
+  "original_assignments_enumerated": 3695,
+  "exhaustive_unit_test_matrix_weight_cases": 5054,
+  "source_sha256": {
+    "objective_pullback.py": "244f965da1f6eef192304a96e768ee681f0b7ceca9a6eeb0d77803ab238be3bc",
+    "test_objective_pullback.py": "7373163b53f6b2ee9e94489a8164a21230c8c8d18f48c8a878e869bfa9517917",
+    "run_examples.py": "a387d9c77338fc8e7ad566e99d0db56bf2a4a541915cfe369a11440d194d333c"
+  },
+  "sources_unchanged": true,
+  "seconds": 0.04960979986935854,
+  "cases": [
+    {
+      "name": "Hamming_overlap",
+      "rows": [
+        1,
+        2,
+        3
+      ],
+      "input_dimension": 2,
+      "output_weights": [
+        1,
+        1,
+        1
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "579440b6d69ea4434cc89ee09c3da75557d5ea143220d12e8199c4d568587c79",
+        "additive": false,
+        "pair": [
+          0,
+          1
+        ],
+        "values": [
+          2,
+          2,
+          2
+        ],
+        "defect": 2
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "disjoint_replication",
+      "rows": [
+        1,
+        1,
+        2,
+        2,
+        2,
+        0
+      ],
+      "input_dimension": 2,
+      "output_weights": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "3c61c705fd9d078015988dceff09dc71c652aa7590bc891fa4fec691fe50cd92",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          2,
+          3
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "zero_cost_overlap",
+      "rows": [
+        1,
+        2,
+        3,
+        0
+      ],
+      "input_dimension": 2,
+      "output_weights": [
+        4,
+        5,
+        0,
+        9
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "375f004879e7077085366075389fa133d6a4c4151c2eccd87f5cc0b8400169c8",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          4,
+          5
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "no_outputs",
+      "rows": [],
+      "input_dimension": 3,
+      "output_weights": [],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "cf1d1bea0f36f0b4a021a2ffe99207e355ea949593e75a2341e68cdbd0bd0f71",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          0,
+          0,
+          0
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "no_inputs",
+      "rows": [
+        0,
+        0
+      ],
+      "input_dimension": 0,
+      "output_weights": [
+        1,
+        5
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "afb1a534006812517d04b3999c594625685da86f1ab19a220342f00b1478c24a",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": []
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "zero_objective",
+      "rows": [
+        7,
+        6
+      ],
+      "input_dimension": 3,
+      "output_weights": [
+        0,
+        0
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "fc667a4deb3f13f581392a583d1254bd973359d7d13bcd657e4781952b136a95",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          0,
+          0,
+          0
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_0",
+      "rows": [
+        12,
+        18,
+        4,
+        6,
+        1,
+        4,
+        7,
+        31
+      ],
+      "input_dimension": 5,
+      "output_weights": [
+        100000000000000000000000000000000000000000000000000,
+        100000000000000000000000000000000000000000000000000,
+        7,
+        7,
+        100000000000000000000000000000000000000000000000000,
+        1,
+        0,
+        1
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "eb486c3f80b9c0d097f4829cd00120ec04b84fdbcd50049459e4c987ac9304aa",
+        "additive": false,
+        "pair": [
+          2,
+          3
+        ],
+        "values": [
+          100000000000000000000000000000000000000000000000016,
+          100000000000000000000000000000000000000000000000001,
+          15
+        ],
+        "defect": 200000000000000000000000000000000000000000000000002
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_1",
+      "rows": [
+        3,
+        3,
+        0
+      ],
+      "input_dimension": 2,
+      "output_weights": [
+        100000000000000000000000000000000000000000000000000,
+        7,
+        1
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "dad4474e680449771cf9434d0633093717e4925c992704eacb9dce9cd5de8f45",
+        "additive": false,
+        "pair": [
+          0,
+          1
+        ],
+        "values": [
+          100000000000000000000000000000000000000000000000007,
+          100000000000000000000000000000000000000000000000007,
+          0
+        ],
+        "defect": 200000000000000000000000000000000000000000000000014
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_2",
+      "rows": [
+        5,
+        7,
+        9,
+        1,
+        7,
+        4,
+        11,
+        15
+      ],
+      "input_dimension": 4,
+      "output_weights": [
+        1,
+        100000000000000000000000000000000000000000000000000,
+        0,
+        1,
+        7,
+        0,
+        100000000000000000000000000000000000000000000000000,
+        0
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "23693d994cd5ad2a24514e4f0d85f4867797fa7bfdf36b7804a33be06cb15c45",
+        "additive": false,
+        "pair": [
+          0,
+          2
+        ],
+        "values": [
+          200000000000000000000000000000000000000000000000009,
+          100000000000000000000000000000000000000000000000008,
+          100000000000000000000000000000000000000000000000001
+        ],
+        "defect": 200000000000000000000000000000000000000000000000016
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_3",
+      "rows": [],
+      "input_dimension": 3,
+      "output_weights": [],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "cf1d1bea0f36f0b4a021a2ffe99207e355ea949593e75a2341e68cdbd0bd0f71",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          0,
+          0,
+          0
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_4",
+      "rows": [
+        3,
+        7,
+        5,
+        2,
+        5,
+        4
+      ],
+      "input_dimension": 4,
+      "output_weights": [
+        0,
+        1,
+        7,
+        0,
+        100000000000000000000000000000000000000000000000000,
+        7
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "3047db990d1e6c89dfefa047886b4805a6d8a66a682811a842cf2744161ac44f",
+        "additive": false,
+        "pair": [
+          0,
+          1
+        ],
+        "values": [
+          100000000000000000000000000000000000000000000000008,
+          1,
+          100000000000000000000000000000000000000000000000007
+        ],
+        "defect": 2
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_5",
+      "rows": [
+        3,
+        7
+      ],
+      "input_dimension": 3,
+      "output_weights": [
+        1,
+        1
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "d1daba1592adc10a4ff40860c874fb746a2b8df98eac245fda521ae23dcf56e3",
+        "additive": false,
+        "pair": [
+          0,
+          1
+        ],
+        "values": [
+          2,
+          2,
+          0
+        ],
+        "defect": 4
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_6",
+      "rows": [
+        2,
+        3,
+        6,
+        4,
+        13,
+        12,
+        6
+      ],
+      "input_dimension": 4,
+      "output_weights": [
+        0,
+        7,
+        7,
+        1,
+        0,
+        0,
+        0
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "6c57346e6df6e4dcfa7445086de14bae34b9501a1c05f9eaf88168d7574cf389",
+        "additive": false,
+        "pair": [
+          0,
+          1
+        ],
+        "values": [
+          7,
+          14,
+          7
+        ],
+        "defect": 14
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_7",
+      "rows": [
+        3,
+        1,
+        0,
+        6,
+        4,
+        1,
+        2
+      ],
+      "input_dimension": 3,
+      "output_weights": [
+        0,
+        1,
+        7,
+        100000000000000000000000000000000000000000000000000,
+        100000000000000000000000000000000000000000000000000,
+        1,
+        0
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "6a2cfbd637b76d4cb6e32a69359cdbf76134324297e8c0eb0b8527388a558a86",
+        "additive": false,
+        "pair": [
+          1,
+          2
+        ],
+        "values": [
+          100000000000000000000000000000000000000000000000000,
+          200000000000000000000000000000000000000000000000000,
+          100000000000000000000000000000000000000000000000000
+        ],
+        "defect": 200000000000000000000000000000000000000000000000000
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_8",
+      "rows": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "input_dimension": 0,
+      "output_weights": [
+        100000000000000000000000000000000000000000000000000,
+        0,
+        7,
+        1,
+        100000000000000000000000000000000000000000000000000,
+        7,
+        0,
+        7
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "058e71fdb1a1d1fe33dc6fbffb03e07e61f8c7354a0f08198e81fcce50d9f7ea",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": []
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_9",
+      "rows": [
+        8
+      ],
+      "input_dimension": 5,
+      "output_weights": [
+        1
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "3b9540f22d412623fb3783673c11c11cbe051e967db7d53f02c432795bb24931",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          0,
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_10",
+      "rows": [
+        49,
+        32,
+        3,
+        4
+      ],
+      "input_dimension": 6,
+      "output_weights": [
+        7,
+        7,
+        1,
+        1
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "365f7ccc2be9ed3758d7afd2b56d2e55ead3868767df1c0dad73496ae9ae2a31",
+        "additive": false,
+        "pair": [
+          0,
+          4
+        ],
+        "values": [
+          8,
+          7,
+          1
+        ],
+        "defect": 14
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_11",
+      "rows": [
+        43,
+        50,
+        19,
+        32,
+        34,
+        19,
+        12,
+        11
+      ],
+      "input_dimension": 6,
+      "output_weights": [
+        100000000000000000000000000000000000000000000000000,
+        1,
+        1,
+        1,
+        7,
+        100000000000000000000000000000000000000000000000000,
+        7,
+        7
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "a83e6d0437fb20984de3f0ad81ab772d65e7e030be24bdbdedfd3a096557fdbf",
+        "additive": false,
+        "pair": [
+          0,
+          1
+        ],
+        "values": [
+          200000000000000000000000000000000000000000000000008,
+          200000000000000000000000000000000000000000000000016,
+          8
+        ],
+        "defect": 400000000000000000000000000000000000000000000000016
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_12",
+      "rows": [
+        30,
+        25,
+        30,
+        14,
+        5,
+        12
+      ],
+      "input_dimension": 5,
+      "output_weights": [
+        0,
+        0,
+        0,
+        7,
+        1,
+        7
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "7077f2b974a650557b811592ada74421d22e7c8dcadf8478494e6eace909e617",
+        "additive": false,
+        "pair": [
+          1,
+          2
+        ],
+        "values": [
+          7,
+          15,
+          8
+        ],
+        "defect": 14
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_13",
+      "rows": [
+        1
+      ],
+      "input_dimension": 2,
+      "output_weights": [
+        1
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "b392a68cbb3c4f460a38c120340d2a987a4b0afa528f5c97d1eca15b84a9bcee",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          1,
+          0
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_14",
+      "rows": [
+        2,
+        1,
+        0,
+        0,
+        2,
+        3,
+        2
+      ],
+      "input_dimension": 2,
+      "output_weights": [
+        100000000000000000000000000000000000000000000000000,
+        1,
+        7,
+        0,
+        1,
+        0,
+        100000000000000000000000000000000000000000000000000
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "7282f95c3d1df74b720cf363f4a2b0ba3fb5f51c15c194469648d0e2a9095871",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          1,
+          200000000000000000000000000000000000000000000000001
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_15",
+      "rows": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "input_dimension": 1,
+      "output_weights": [
+        7,
+        7,
+        1,
+        1,
+        1,
+        1,
+        100000000000000000000000000000000000000000000000000,
+        1
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "0ac94ad7a19ec20a05f7a49cf861c6eec4991cfb0411394c20865e12fb5b90f5",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          100000000000000000000000000000000000000000000000009
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_16",
+      "rows": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "input_dimension": 0,
+      "output_weights": [
+        100000000000000000000000000000000000000000000000000,
+        1,
+        7,
+        0
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "33c0e6689f3300af0427baad385ae50880cdf461188802b8bddacb1afbae5bff",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": []
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_17",
+      "rows": [
+        1,
+        3,
+        3
+      ],
+      "input_dimension": 3,
+      "output_weights": [
+        1,
+        0,
+        100000000000000000000000000000000000000000000000000
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "6bb80ad9ee2f04170edc8afd44c64d61e028a8acb1461dca43b1c306da8be5e1",
+        "additive": false,
+        "pair": [
+          0,
+          1
+        ],
+        "values": [
+          100000000000000000000000000000000000000000000000001,
+          100000000000000000000000000000000000000000000000000,
+          1
+        ],
+        "defect": 200000000000000000000000000000000000000000000000000
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_18",
+      "rows": [
+        8,
+        25,
+        17,
+        23,
+        8,
+        12,
+        9
+      ],
+      "input_dimension": 5,
+      "output_weights": [
+        7,
+        7,
+        1,
+        1,
+        7,
+        100000000000000000000000000000000000000000000000000,
+        100000000000000000000000000000000000000000000000000
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "34c945c0a4e10edaca56fe4936d69a9f722628cdbd42ccefc8df9e838ab5a003",
+        "additive": false,
+        "pair": [
+          0,
+          3
+        ],
+        "values": [
+          100000000000000000000000000000000000000000000000009,
+          200000000000000000000000000000000000000000000000021,
+          100000000000000000000000000000000000000000000000016
+        ],
+        "defect": 200000000000000000000000000000000000000000000000014
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_19",
+      "rows": [
+        2,
+        6
+      ],
+      "input_dimension": 5,
+      "output_weights": [
+        7,
+        0
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "136fe26d9ceacc0b0422072182f1d0a7faeb6ce4c52922d9b89172d041e2a107",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          0,
+          7,
+          0,
+          0,
+          0
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_20",
+      "rows": [
+        0
+      ],
+      "input_dimension": 0,
+      "output_weights": [
+        0
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "e7ce8023ffb0728160e559da2758c5f1dfbea7c5f6ce1776c8d32c148266bbc1",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": []
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_21",
+      "rows": [
+        17,
+        38
+      ],
+      "input_dimension": 6,
+      "output_weights": [
+        7,
+        100000000000000000000000000000000000000000000000000
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "f722efd36ffeb483a6ec01e308aa0a5d854faf3c2716eeb204662a6646da6eb2",
+        "additive": false,
+        "pair": [
+          0,
+          4
+        ],
+        "values": [
+          7,
+          7,
+          0
+        ],
+        "defect": 14
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_22",
+      "rows": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "input_dimension": 0,
+      "output_weights": [
+        100000000000000000000000000000000000000000000000000,
+        7,
+        1,
+        1,
+        7,
+        7,
+        100000000000000000000000000000000000000000000000000
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "82a4ccbbe5dba6a0c0298713257fe6c2956409d30ceb72c9274beb3c98cc3836",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": []
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_23",
+      "rows": [
+        0,
+        0,
+        0
+      ],
+      "input_dimension": 0,
+      "output_weights": [
+        100000000000000000000000000000000000000000000000000,
+        100000000000000000000000000000000000000000000000000,
+        100000000000000000000000000000000000000000000000000
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "e9a314cb927b5e8f190839a15c95cc1b86171391102151dce6a9754ca19383d3",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": []
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_24",
+      "rows": [
+        6,
+        3,
+        8,
+        10
+      ],
+      "input_dimension": 4,
+      "output_weights": [
+        100000000000000000000000000000000000000000000000000,
+        7,
+        0,
+        1
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "cdfe43da6d232b8c9a21253f4450c7bdd6053b70788f96cadf29971bbde6dec0",
+        "additive": false,
+        "pair": [
+          1,
+          2
+        ],
+        "values": [
+          100000000000000000000000000000000000000000000000008,
+          100000000000000000000000000000000000000000000000000,
+          8
+        ],
+        "defect": 200000000000000000000000000000000000000000000000000
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_25",
+      "rows": [
+        1,
+        7,
+        7,
+        0
+      ],
+      "input_dimension": 3,
+      "output_weights": [
+        100000000000000000000000000000000000000000000000000,
+        1,
+        100000000000000000000000000000000000000000000000000,
+        0
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "cb7a181d8c0c6f2d481941d3af1c9ecbdd8c724a7f44fa3d356bcaad4b9c12d4",
+        "additive": false,
+        "pair": [
+          0,
+          1
+        ],
+        "values": [
+          200000000000000000000000000000000000000000000000001,
+          100000000000000000000000000000000000000000000000001,
+          100000000000000000000000000000000000000000000000000
+        ],
+        "defect": 200000000000000000000000000000000000000000000000002
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_26",
+      "rows": [
+        2,
+        1,
+        3,
+        3,
+        2
+      ],
+      "input_dimension": 3,
+      "output_weights": [
+        7,
+        100000000000000000000000000000000000000000000000000,
+        100000000000000000000000000000000000000000000000000,
+        100000000000000000000000000000000000000000000000000,
+        1
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "8c8e04c7d8a411f61f598b7ed2aff11caacb3996c3607bb05dbe53a8b1ee2e1a",
+        "additive": false,
+        "pair": [
+          0,
+          1
+        ],
+        "values": [
+          300000000000000000000000000000000000000000000000000,
+          200000000000000000000000000000000000000000000000008,
+          100000000000000000000000000000000000000000000000008
+        ],
+        "defect": 400000000000000000000000000000000000000000000000000
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_27",
+      "rows": [
+        8,
+        29,
+        6,
+        11,
+        62,
+        17
+      ],
+      "input_dimension": 6,
+      "output_weights": [
+        1,
+        7,
+        100000000000000000000000000000000000000000000000000,
+        100000000000000000000000000000000000000000000000000,
+        7,
+        0
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "d38490b46048a3264fbf8ed04b58f872547234f97a15c90b7ade14b6d79a6c43",
+        "additive": false,
+        "pair": [
+          0,
+          2
+        ],
+        "values": [
+          100000000000000000000000000000000000000000000000007,
+          100000000000000000000000000000000000000000000000014,
+          200000000000000000000000000000000000000000000000007
+        ],
+        "defect": 14
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_28",
+      "rows": [
+        7,
+        10,
+        15
+      ],
+      "input_dimension": 4,
+      "output_weights": [
+        7,
+        1,
+        7
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "d000df94775c974d5a2d1858ddc01aa16bf3f80cbfad63f0d8db8afac556ec34",
+        "additive": false,
+        "pair": [
+          0,
+          1
+        ],
+        "values": [
+          14,
+          15,
+          1
+        ],
+        "defect": 28
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_29",
+      "rows": [
+        1,
+        3,
+        3,
+        0,
+        2,
+        3
+      ],
+      "input_dimension": 2,
+      "output_weights": [
+        1,
+        1,
+        1,
+        7,
+        7,
+        100000000000000000000000000000000000000000000000000
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "18cddd84fb9ded459f409907fae84c084ec1444a8b69191d7dc0adfd3dbb8396",
+        "additive": false,
+        "pair": [
+          0,
+          1
+        ],
+        "values": [
+          100000000000000000000000000000000000000000000000003,
+          100000000000000000000000000000000000000000000000009,
+          8
+        ],
+        "defect": 200000000000000000000000000000000000000000000000004
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_30",
+      "rows": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "input_dimension": 1,
+      "output_weights": [
+        1,
+        1,
+        0,
+        7,
+        7,
+        0
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "11b90fa73f6f2a4eab05b6a1780e48b91a1f3fec4ced0e89f4e13af2cd8e4213",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          1
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_31",
+      "rows": [
+        31,
+        62
+      ],
+      "input_dimension": 6,
+      "output_weights": [
+        1,
+        7
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "efbd806dabeb41f5e0de243b5dd9d31a9e199c6bd536b66e6875aa3049bb6ce5",
+        "additive": false,
+        "pair": [
+          0,
+          1
+        ],
+        "values": [
+          1,
+          8,
+          7
+        ],
+        "defect": 2
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_32",
+      "rows": [
+        1,
+        0,
+        2
+      ],
+      "input_dimension": 2,
+      "output_weights": [
+        0,
+        7,
+        1
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "1f5aa5f2541a81dde60ba2f70c07eead27bb94bcfc056b186b7a51e373540d50",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          0,
+          1
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_33",
+      "rows": [
+        0,
+        1,
+        1
+      ],
+      "input_dimension": 1,
+      "output_weights": [
+        0,
+        7,
+        1
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "058f9aa699e4b2db769cd5589c8ece9086ac40684bc594c984693d0c5f87641d",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          8
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_34",
+      "rows": [],
+      "input_dimension": 0,
+      "output_weights": [],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "3cbbe1f26e4e664a1c188286ef918d8fb002e8d2d52f627c438268a2877ef010",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": []
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_35",
+      "rows": [
+        60,
+        10,
+        60,
+        31,
+        48
+      ],
+      "input_dimension": 6,
+      "output_weights": [
+        7,
+        0,
+        1,
+        7,
+        1
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "04cdcc998173441659ae9001c2f3578f7f764da47766e6926b57c49e98d70f0e",
+        "additive": false,
+        "pair": [
+          2,
+          3
+        ],
+        "values": [
+          15,
+          15,
+          0
+        ],
+        "defect": 30
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_36",
+      "rows": [
+        1,
+        1
+      ],
+      "input_dimension": 2,
+      "output_weights": [
+        7,
+        0
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "67cd0aa1464ed72bde31b38ad080d3998868255ca79247c2da735c0f4888238d",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          7,
+          0
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_37",
+      "rows": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "input_dimension": 1,
+      "output_weights": [
+        0,
+        7,
+        100000000000000000000000000000000000000000000000000,
+        7,
+        0,
+        100000000000000000000000000000000000000000000000000
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "582188d73ab85ed780e225784b6d718912bca0b78ebfd34a0a0f7139bd4458ba",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          100000000000000000000000000000000000000000000000000
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_38",
+      "rows": [
+        17,
+        23,
+        31,
+        2
+      ],
+      "input_dimension": 5,
+      "output_weights": [
+        1,
+        7,
+        7,
+        1
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "c08b472009c1fce59b5f3710a5bca39698af12501f01a25f1ad756002b90e9a1",
+        "additive": false,
+        "pair": [
+          0,
+          4
+        ],
+        "values": [
+          15,
+          15,
+          0
+        ],
+        "defect": 30
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_39",
+      "rows": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "input_dimension": 0,
+      "output_weights": [
+        0,
+        0,
+        7,
+        7,
+        0,
+        1,
+        1,
+        0
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "ab4bbb7999e343853f7006fdf471f003b00740ef233b02cb6f96f88c466b5636",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": []
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_40",
+      "rows": [
+        2,
+        30,
+        20,
+        24
+      ],
+      "input_dimension": 5,
+      "output_weights": [
+        100000000000000000000000000000000000000000000000000,
+        100000000000000000000000000000000000000000000000000,
+        0,
+        0
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "70d635acafd973b6a84e96071392482c908ab7a2cf3baebcab4a60be21958f59",
+        "additive": false,
+        "pair": [
+          1,
+          2
+        ],
+        "values": [
+          200000000000000000000000000000000000000000000000000,
+          100000000000000000000000000000000000000000000000000,
+          100000000000000000000000000000000000000000000000000
+        ],
+        "defect": 200000000000000000000000000000000000000000000000000
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_41",
+      "rows": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "input_dimension": 1,
+      "output_weights": [
+        1,
+        100000000000000000000000000000000000000000000000000,
+        1,
+        0
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "87f408c40a632b42b642a42446dcc07897399211ac951fd3e5de79c7ccedd6a2",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          1
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_42",
+      "rows": [
+        53,
+        0,
+        7,
+        51,
+        34,
+        9,
+        42
+      ],
+      "input_dimension": 6,
+      "output_weights": [
+        0,
+        1,
+        100000000000000000000000000000000000000000000000000,
+        1,
+        1,
+        100000000000000000000000000000000000000000000000000,
+        100000000000000000000000000000000000000000000000000
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "c070c14333e76f2bad8a8ca25923e6f6623d8ffa66d1ae3d25fb70a8fb28d661",
+        "additive": false,
+        "pair": [
+          0,
+          1
+        ],
+        "values": [
+          200000000000000000000000000000000000000000000000001,
+          200000000000000000000000000000000000000000000000002,
+          200000000000000000000000000000000000000000000000001
+        ],
+        "defect": 200000000000000000000000000000000000000000000000002
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_43",
+      "rows": [
+        0
+      ],
+      "input_dimension": 1,
+      "output_weights": [
+        0
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "d142c8d19c6b85de5c04fb5848ebad505f231c216ff8aa14da4c72c127b3a217",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          0
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_44",
+      "rows": [
+        0,
+        0,
+        1
+      ],
+      "input_dimension": 1,
+      "output_weights": [
+        0,
+        7,
+        1
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "fe1b2eced45cffc5244532ba375c977f21720b9bcedaa70d2526d72c5b826f1c",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          1
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_45",
+      "rows": [
+        18,
+        5,
+        1,
+        50,
+        46
+      ],
+      "input_dimension": 6,
+      "output_weights": [
+        100000000000000000000000000000000000000000000000000,
+        100000000000000000000000000000000000000000000000000,
+        0,
+        1,
+        7
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "e7905772c11a26c68a3e8c7d64080d2a2ddd21d5fa4c8c8d43bda12d43ac12d2",
+        "additive": false,
+        "pair": [
+          1,
+          4
+        ],
+        "values": [
+          100000000000000000000000000000000000000000000000008,
+          100000000000000000000000000000000000000000000000001,
+          7
+        ],
+        "defect": 200000000000000000000000000000000000000000000000002
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_46",
+      "rows": [],
+      "input_dimension": 1,
+      "output_weights": [],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "1b928757a067609d7bbe95093af4ea5a7acb6c2f4e5a004ffd76da07119970d8",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          0
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_47",
+      "rows": [
+        31,
+        7,
+        12,
+        18,
+        12,
+        12
+      ],
+      "input_dimension": 5,
+      "output_weights": [
+        0,
+        100000000000000000000000000000000000000000000000000,
+        7,
+        0,
+        1,
+        7
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "8ca447c4db70cd7b24bf005f981fdf159c48f8e6c632cc9038013dc545549e53",
+        "additive": false,
+        "pair": [
+          0,
+          1
+        ],
+        "values": [
+          100000000000000000000000000000000000000000000000000,
+          100000000000000000000000000000000000000000000000000,
+          0
+        ],
+        "defect": 200000000000000000000000000000000000000000000000000
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_48",
+      "rows": [
+        0
+      ],
+      "input_dimension": 3,
+      "output_weights": [
+        7
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "4f227d60c29fdbee58ffd255c8cd6a9b603be7da9b6880605050e94fd78f05e7",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          0,
+          0,
+          0
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_49",
+      "rows": [
+        1
+      ],
+      "input_dimension": 2,
+      "output_weights": [
+        100000000000000000000000000000000000000000000000000
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "239ffbee1e7c5c277f73412abd89e07b0dc2ade179690cfed3316bd284e47790",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          100000000000000000000000000000000000000000000000000,
+          0
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_50",
+      "rows": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "input_dimension": 0,
+      "output_weights": [
+        1,
+        0,
+        7,
+        0,
+        100000000000000000000000000000000000000000000000000,
+        100000000000000000000000000000000000000000000000000,
+        0,
+        0
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "ac1eac317d2913a90409cd572aa34d05ecbc50d31cc525710f001d79a1729894",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": []
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_51",
+      "rows": [
+        8,
+        0,
+        5,
+        4,
+        8,
+        0
+      ],
+      "input_dimension": 4,
+      "output_weights": [
+        100000000000000000000000000000000000000000000000000,
+        7,
+        1,
+        7,
+        1,
+        0
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "7373c916c36c3b2397cc4a36b6ac64fa6585fe9380664552f63cbd55599510fb",
+        "additive": false,
+        "pair": [
+          0,
+          2
+        ],
+        "values": [
+          1,
+          8,
+          7
+        ],
+        "defect": 2
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_52",
+      "rows": [
+        14,
+        8,
+        12
+      ],
+      "input_dimension": 4,
+      "output_weights": [
+        7,
+        100000000000000000000000000000000000000000000000000,
+        7
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "5eaf410fec140c8b4230f8ba618aa35312b3e11a42dd66e296edb9a3afb4be77",
+        "additive": false,
+        "pair": [
+          1,
+          2
+        ],
+        "values": [
+          7,
+          14,
+          7
+        ],
+        "defect": 14
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_53",
+      "rows": [
+        9,
+        14,
+        6,
+        2,
+        2,
+        4
+      ],
+      "input_dimension": 4,
+      "output_weights": [
+        100000000000000000000000000000000000000000000000000,
+        7,
+        100000000000000000000000000000000000000000000000000,
+        1,
+        0,
+        1
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "d32e05cc1de54821edcef3f4ccfb1d02c67a012ad54c67e685d012cccd7be985",
+        "additive": false,
+        "pair": [
+          0,
+          3
+        ],
+        "values": [
+          100000000000000000000000000000000000000000000000000,
+          100000000000000000000000000000000000000000000000007,
+          7
+        ],
+        "defect": 200000000000000000000000000000000000000000000000000
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_54",
+      "rows": [
+        1
+      ],
+      "input_dimension": 2,
+      "output_weights": [
+        100000000000000000000000000000000000000000000000000
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "239ffbee1e7c5c277f73412abd89e07b0dc2ade179690cfed3316bd284e47790",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          100000000000000000000000000000000000000000000000000,
+          0
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_55",
+      "rows": [
+        46,
+        49
+      ],
+      "input_dimension": 6,
+      "output_weights": [
+        7,
+        100000000000000000000000000000000000000000000000000
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "5b7321384c14508c922a0bf70d26b2b4dff8831d9ba3cf42f8e0a5f2c740a5c9",
+        "additive": false,
+        "pair": [
+          1,
+          2
+        ],
+        "values": [
+          7,
+          7,
+          0
+        ],
+        "defect": 14
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_56",
+      "rows": [
+        0,
+        1,
+        0
+      ],
+      "input_dimension": 1,
+      "output_weights": [
+        7,
+        100000000000000000000000000000000000000000000000000,
+        0
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "dcbd5e66679ae8baa7afdf6b29695308af295cbd164934f61cec685d6696fbc6",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          100000000000000000000000000000000000000000000000000
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_57",
+      "rows": [
+        7,
+        3,
+        6,
+        0,
+        5,
+        12,
+        0
+      ],
+      "input_dimension": 4,
+      "output_weights": [
+        7,
+        100000000000000000000000000000000000000000000000000,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "bdcc58b4b992327a88a46e65ea52c98351769f061e3c67f36371872483f354d3",
+        "additive": false,
+        "pair": [
+          0,
+          1
+        ],
+        "values": [
+          100000000000000000000000000000000000000000000000008,
+          100000000000000000000000000000000000000000000000008,
+          2
+        ],
+        "defect": 200000000000000000000000000000000000000000000000014
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_58",
+      "rows": [
+        25,
+        30,
+        7
+      ],
+      "input_dimension": 5,
+      "output_weights": [
+        7,
+        7,
+        100000000000000000000000000000000000000000000000000
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "fef0cf47d0d4ca17b7f3750240740b3a20758c48a62b0e0534468c7c9f8021f9",
+        "additive": false,
+        "pair": [
+          0,
+          3
+        ],
+        "values": [
+          100000000000000000000000000000000000000000000000007,
+          14,
+          100000000000000000000000000000000000000000000000007
+        ],
+        "defect": 14
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_59",
+      "rows": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "input_dimension": 1,
+      "output_weights": [
+        100000000000000000000000000000000000000000000000000,
+        7,
+        1,
+        0,
+        1,
+        0
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "967b7708f0922d5daeb5c04802f453512e0e57a6d70c2fc1556fdcdaf67ca619",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          100000000000000000000000000000000000000000000000001
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_60",
+      "rows": [
+        5,
+        31,
+        18,
+        3,
+        24,
+        13,
+        30,
+        0
+      ],
+      "input_dimension": 5,
+      "output_weights": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        1,
+        1,
+        1
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "0ae69818954bafe786bcae07e3a20b89d24fed7bbfbdf66826446b838f39c6e9",
+        "additive": false,
+        "pair": [
+          0,
+          2
+        ],
+        "values": [
+          22,
+          16,
+          8
+        ],
+        "defect": 30
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_61",
+      "rows": [
+        12,
+        15,
+        13,
+        4,
+        4,
+        11,
+        8,
+        2
+      ],
+      "input_dimension": 4,
+      "output_weights": [
+        7,
+        1,
+        100000000000000000000000000000000000000000000000000,
+        0,
+        0,
+        100000000000000000000000000000000000000000000000000,
+        0,
+        100000000000000000000000000000000000000000000000000
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "3d7fb3c9bc9d2d79453042ac1206afbaf59c991d0b8f879fb331a9a077f82f5b",
+        "additive": false,
+        "pair": [
+          2,
+          3
+        ],
+        "values": [
+          100000000000000000000000000000000000000000000000008,
+          200000000000000000000000000000000000000000000000008,
+          100000000000000000000000000000000000000000000000000
+        ],
+        "defect": 200000000000000000000000000000000000000000000000016
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_62",
+      "rows": [
+        45,
+        52,
+        5,
+        44,
+        22
+      ],
+      "input_dimension": 6,
+      "output_weights": [
+        0,
+        7,
+        1,
+        0,
+        1
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "48b93d918961778af36525a1916df418f30e2f09097d8b9ad5120d6e3a21f880",
+        "additive": false,
+        "pair": [
+          2,
+          4
+        ],
+        "values": [
+          9,
+          8,
+          1
+        ],
+        "defect": 16
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_63",
+      "rows": [
+        0
+      ],
+      "input_dimension": 1,
+      "output_weights": [
+        100000000000000000000000000000000000000000000000000
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "2dc741aa634ae19450312a8487b9331f00518b441aa6875b4e5a497ff1918a1b",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          0
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_64",
+      "rows": [
+        29,
+        4,
+        9,
+        30,
+        22
+      ],
+      "input_dimension": 5,
+      "output_weights": [
+        0,
+        100000000000000000000000000000000000000000000000000,
+        0,
+        100000000000000000000000000000000000000000000000000,
+        100000000000000000000000000000000000000000000000000
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "9f3b0a009d3ad4dad4a6f1901a733e62791c0d94543539544eae8f10e1917907",
+        "additive": false,
+        "pair": [
+          1,
+          2
+        ],
+        "values": [
+          200000000000000000000000000000000000000000000000000,
+          300000000000000000000000000000000000000000000000000,
+          100000000000000000000000000000000000000000000000000
+        ],
+        "defect": 400000000000000000000000000000000000000000000000000
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_65",
+      "rows": [
+        2,
+        2
+      ],
+      "input_dimension": 3,
+      "output_weights": [
+        1,
+        7
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "3b5f52fa11ada7f46b80b969ba1dea716d322e4dbb0c4f762b667b8d3bae2cb6",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          0,
+          8,
+          0
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_66",
+      "rows": [
+        1,
+        1,
+        0
+      ],
+      "input_dimension": 1,
+      "output_weights": [
+        100000000000000000000000000000000000000000000000000,
+        100000000000000000000000000000000000000000000000000,
+        1
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "95dd4f7ebeecd406b33b6fb65fc1122a10d56281cb04eef67c6f2fc9e59320ab",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          200000000000000000000000000000000000000000000000000
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_67",
+      "rows": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "input_dimension": 1,
+      "output_weights": [
+        1,
+        1,
+        0,
+        7
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "91f0b4370e2275c89b5df25894527b47e90834adc6a9b0885dcb3a0f342c47f0",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          8
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_68",
+      "rows": [
+        22,
+        15,
+        21,
+        14,
+        1,
+        2,
+        23
+      ],
+      "input_dimension": 5,
+      "output_weights": [
+        0,
+        7,
+        0,
+        100000000000000000000000000000000000000000000000000,
+        100000000000000000000000000000000000000000000000000,
+        100000000000000000000000000000000000000000000000000,
+        0
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "7ab901c8fd861c6d6ac0908978f637dc4eb3db3369aad9f42eb16a6fea068140",
+        "additive": false,
+        "pair": [
+          0,
+          1
+        ],
+        "values": [
+          100000000000000000000000000000000000000000000000007,
+          200000000000000000000000000000000000000000000000007,
+          300000000000000000000000000000000000000000000000000
+        ],
+        "defect": 14
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_69",
+      "rows": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "input_dimension": 0,
+      "output_weights": [
+        7,
+        100000000000000000000000000000000000000000000000000,
+        0,
+        1,
+        1
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "dd97f3efb390c15db492593c638c73d37551466b353e0e37a506b7db6f264719",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": []
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_70",
+      "rows": [
+        2
+      ],
+      "input_dimension": 3,
+      "output_weights": [
+        1
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "e12a4263e85dd7fea27b64b6c1051d3d57794ee6d3dc917df491ed56d0a535a7",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          0,
+          1,
+          0
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_71",
+      "rows": [],
+      "input_dimension": 2,
+      "output_weights": [],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "be13d7274491e4fed705c67372ea799189e31b784b5819b71a8e91bd31c5bceb",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          0,
+          0
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_72",
+      "rows": [
+        12,
+        14,
+        2,
+        11,
+        12,
+        15
+      ],
+      "input_dimension": 4,
+      "output_weights": [
+        7,
+        100000000000000000000000000000000000000000000000000,
+        1,
+        0,
+        1,
+        1
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "3ff51c74a7d9f2b0d2be750a311c6569eb12a08c4412d4d24b5c39c61e14d546",
+        "additive": false,
+        "pair": [
+          2,
+          3
+        ],
+        "values": [
+          100000000000000000000000000000000000000000000000009,
+          100000000000000000000000000000000000000000000000009,
+          0
+        ],
+        "defect": 200000000000000000000000000000000000000000000000018
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_73",
+      "rows": [],
+      "input_dimension": 2,
+      "output_weights": [],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "be13d7274491e4fed705c67372ea799189e31b784b5819b71a8e91bd31c5bceb",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          0,
+          0
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_74",
+      "rows": [
+        2,
+        0,
+        1,
+        1,
+        1
+      ],
+      "input_dimension": 2,
+      "output_weights": [
+        1,
+        0,
+        7,
+        0,
+        1
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "9179a4cd27eacd40e5512420dd38e4d6b8a2b9526d4071af8babacc3b514f82c",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          8,
+          1
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_75",
+      "rows": [
+        7,
+        3,
+        6
+      ],
+      "input_dimension": 3,
+      "output_weights": [
+        100000000000000000000000000000000000000000000000000,
+        0,
+        7
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "b77d635e97f65c2080a3ca00c290979e085a34df1fc7ef6723db034d287e46fa",
+        "additive": false,
+        "pair": [
+          0,
+          1
+        ],
+        "values": [
+          100000000000000000000000000000000000000000000000000,
+          100000000000000000000000000000000000000000000000007,
+          7
+        ],
+        "defect": 200000000000000000000000000000000000000000000000000
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_76",
+      "rows": [
+        34,
+        44,
+        25
+      ],
+      "input_dimension": 6,
+      "output_weights": [
+        0,
+        7,
+        1
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "da6e23646e6e86a6c9327a78ff810e49d7ace5f1ce8d96797e38ffe1c2de59d5",
+        "additive": false,
+        "pair": [
+          2,
+          3
+        ],
+        "values": [
+          7,
+          8,
+          1
+        ],
+        "defect": 14
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_77",
+      "rows": [
+        10
+      ],
+      "input_dimension": 4,
+      "output_weights": [
+        100000000000000000000000000000000000000000000000000
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "a96813a1f3e841a1823eec9073b58f5ad1457b0cfe6549ee723f4ac0e0a85ffb",
+        "additive": false,
+        "pair": [
+          1,
+          3
+        ],
+        "values": [
+          100000000000000000000000000000000000000000000000000,
+          100000000000000000000000000000000000000000000000000,
+          0
+        ],
+        "defect": 200000000000000000000000000000000000000000000000000
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_78",
+      "rows": [
+        0,
+        0
+      ],
+      "input_dimension": 0,
+      "output_weights": [
+        0,
+        1
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "b61664d64b40046588f25e479472c583e89ecc40ed417f7d97c72d4b1163d15a",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": []
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_79",
+      "rows": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "input_dimension": 0,
+      "output_weights": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "b02ff6a5a3335c2869b6a06beedcce3ac9ba6229a24fe7b235529127a43aff2c",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": []
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_80",
+      "rows": [
+        11
+      ],
+      "input_dimension": 4,
+      "output_weights": [
+        7
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "aa60ee1ae5368e3a2714341215690dabcd5bad3381fa85bcbd9ab3bf1bf3ea9f",
+        "additive": false,
+        "pair": [
+          0,
+          1
+        ],
+        "values": [
+          7,
+          7,
+          0
+        ],
+        "defect": 14
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_81",
+      "rows": [
+        0
+      ],
+      "input_dimension": 0,
+      "output_weights": [
+        1
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "03624a3afad43bdaeceb694560955b46aacd585305c13b5a81c72f75e3d3d1f5",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": []
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_82",
+      "rows": [
+        28,
+        2
+      ],
+      "input_dimension": 5,
+      "output_weights": [
+        0,
+        0
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "a30a86785d37e2278288e382d7fc893587c0a0eac3ade188a6afeb5d7c4786e3",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_83",
+      "rows": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "input_dimension": 1,
+      "output_weights": [
+        1,
+        1,
+        100000000000000000000000000000000000000000000000000,
+        0,
+        0
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "b7bb97d858441be674c8d19ff55735de96ef85c7366678b185d198dfb8a4d20d",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          0
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_84",
+      "rows": [
+        0,
+        0,
+        0
+      ],
+      "input_dimension": 0,
+      "output_weights": [
+        7,
+        0,
+        0
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "c47c66949e3e078bbbc8c387ffef4a32057c02217f6be6a4b81b2567d5e70a5f",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": []
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_85",
+      "rows": [
+        23
+      ],
+      "input_dimension": 5,
+      "output_weights": [
+        7
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "95d4c9163c7874bfd65bdb70c32ca24e4c325182fc80ba2892dfd316312a0f6b",
+        "additive": false,
+        "pair": [
+          0,
+          1
+        ],
+        "values": [
+          7,
+          7,
+          0
+        ],
+        "defect": 14
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_86",
+      "rows": [
+        0,
+        1,
+        0
+      ],
+      "input_dimension": 1,
+      "output_weights": [
+        1,
+        7,
+        1
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "ffb470e8baecafd640f259fc3969bde75236eb376a376de740b42583c2198c53",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          7
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_87",
+      "rows": [
+        19,
+        6,
+        15,
+        31,
+        3,
+        6
+      ],
+      "input_dimension": 5,
+      "output_weights": [
+        100000000000000000000000000000000000000000000000000,
+        1,
+        7,
+        7,
+        7,
+        1
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "f02ce1a164d9e8069905f24815b6a312ecdf71492f25b873c5d4a1360453c0d9",
+        "additive": false,
+        "pair": [
+          0,
+          1
+        ],
+        "values": [
+          100000000000000000000000000000000000000000000000021,
+          100000000000000000000000000000000000000000000000023,
+          2
+        ],
+        "defect": 200000000000000000000000000000000000000000000000042
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_88",
+      "rows": [
+        3,
+        6,
+        5,
+        5
+      ],
+      "input_dimension": 3,
+      "output_weights": [
+        1,
+        100000000000000000000000000000000000000000000000000,
+        1,
+        100000000000000000000000000000000000000000000000000
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "a0511ec141accdeb6b3507a5972a6062d7fd5686602b1e9d0e222cd5cfcfc1e9",
+        "additive": false,
+        "pair": [
+          0,
+          1
+        ],
+        "values": [
+          100000000000000000000000000000000000000000000000002,
+          100000000000000000000000000000000000000000000000001,
+          200000000000000000000000000000000000000000000000001
+        ],
+        "defect": 2
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_89",
+      "rows": [
+        12,
+        26,
+        2,
+        50,
+        41
+      ],
+      "input_dimension": 6,
+      "output_weights": [
+        100000000000000000000000000000000000000000000000000,
+        100000000000000000000000000000000000000000000000000,
+        1,
+        7,
+        0
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "a786751bdc5eb4cfa487ed0b9d8c1b259bf941fbc4a6ed523daa01d471c778c1",
+        "additive": false,
+        "pair": [
+          2,
+          3
+        ],
+        "values": [
+          100000000000000000000000000000000000000000000000000,
+          200000000000000000000000000000000000000000000000000,
+          100000000000000000000000000000000000000000000000000
+        ],
+        "defect": 200000000000000000000000000000000000000000000000000
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_90",
+      "rows": [
+        20,
+        29,
+        5
+      ],
+      "input_dimension": 5,
+      "output_weights": [
+        1,
+        0,
+        1
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "ef0d52724b8f0cb440c280a374f7e7f994e00d74e7c612fd087fe1707c31842e",
+        "additive": false,
+        "pair": [
+          2,
+          4
+        ],
+        "values": [
+          2,
+          1,
+          1
+        ],
+        "defect": 2
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_91",
+      "rows": [
+        1,
+        0,
+        0
+      ],
+      "input_dimension": 3,
+      "output_weights": [
+        1,
+        1,
+        0
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "128492f740914f4a4165408180660da1d65a5881d2ff0fbdc391fa3c419b6d27",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          1,
+          0,
+          0
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_92",
+      "rows": [
+        0,
+        0,
+        2,
+        3
+      ],
+      "input_dimension": 2,
+      "output_weights": [
+        0,
+        100000000000000000000000000000000000000000000000000,
+        100000000000000000000000000000000000000000000000000,
+        100000000000000000000000000000000000000000000000000
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "1cb615fdbe1f60fddb1b6c5d41b1a231b7555c74e4ad6d7f0e792a96a248c74d",
+        "additive": false,
+        "pair": [
+          0,
+          1
+        ],
+        "values": [
+          100000000000000000000000000000000000000000000000000,
+          200000000000000000000000000000000000000000000000000,
+          100000000000000000000000000000000000000000000000000
+        ],
+        "defect": 200000000000000000000000000000000000000000000000000
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_93",
+      "rows": [
+        3,
+        0
+      ],
+      "input_dimension": 2,
+      "output_weights": [
+        100000000000000000000000000000000000000000000000000,
+        7
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "f5aa983e93d1c110377079b568847d08f35165edc6e6da65556d6736910ad8b5",
+        "additive": false,
+        "pair": [
+          0,
+          1
+        ],
+        "values": [
+          100000000000000000000000000000000000000000000000000,
+          100000000000000000000000000000000000000000000000000,
+          0
+        ],
+        "defect": 200000000000000000000000000000000000000000000000000
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_94",
+      "rows": [
+        2,
+        1
+      ],
+      "input_dimension": 2,
+      "output_weights": [
+        100000000000000000000000000000000000000000000000000,
+        7
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "3afc73cdc637cf0305fbd7a52e8159a01eea0f31d4e4e062396509ab9b490047",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          7,
+          100000000000000000000000000000000000000000000000000
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_95",
+      "rows": [
+        2,
+        8,
+        6,
+        3
+      ],
+      "input_dimension": 4,
+      "output_weights": [
+        7,
+        0,
+        100000000000000000000000000000000000000000000000000,
+        0
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "7a3a4fd823d967cb261d615113573afdb987966942754943c832d5dc1a6f5dcd",
+        "additive": false,
+        "pair": [
+          1,
+          2
+        ],
+        "values": [
+          100000000000000000000000000000000000000000000000007,
+          100000000000000000000000000000000000000000000000000,
+          7
+        ],
+        "defect": 200000000000000000000000000000000000000000000000000
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_96",
+      "rows": [
+        8,
+        1,
+        61,
+        21,
+        61
+      ],
+      "input_dimension": 6,
+      "output_weights": [
+        100000000000000000000000000000000000000000000000000,
+        0,
+        0,
+        100000000000000000000000000000000000000000000000000,
+        7
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "e2cf6bbfb9e34eeb727c80e9b7b4590bb87fe89183eb386bc1872ca6c3974e71",
+        "additive": false,
+        "pair": [
+          0,
+          2
+        ],
+        "values": [
+          100000000000000000000000000000000000000000000000007,
+          100000000000000000000000000000000000000000000000007,
+          0
+        ],
+        "defect": 200000000000000000000000000000000000000000000000014
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_97",
+      "rows": [
+        28,
+        40,
+        22,
+        32,
+        20,
+        38,
+        36
+      ],
+      "input_dimension": 6,
+      "output_weights": [
+        0,
+        1,
+        1,
+        100000000000000000000000000000000000000000000000000,
+        100000000000000000000000000000000000000000000000000,
+        7,
+        0
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "da40122f4b4e55d5330acb085206bdf1c7747fd06d86a77ccaaf9c1634b2d97c",
+        "additive": false,
+        "pair": [
+          3,
+          5
+        ],
+        "values": [
+          1,
+          100000000000000000000000000000000000000000000000008,
+          100000000000000000000000000000000000000000000000007
+        ],
+        "defect": 2
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_98",
+      "rows": [],
+      "input_dimension": 3,
+      "output_weights": [],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "cf1d1bea0f36f0b4a021a2ffe99207e355ea949593e75a2341e68cdbd0bd0f71",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          0,
+          0,
+          0
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_99",
+      "rows": [
+        3,
+        12,
+        2,
+        15,
+        10,
+        16
+      ],
+      "input_dimension": 5,
+      "output_weights": [
+        1,
+        0,
+        1,
+        100000000000000000000000000000000000000000000000000,
+        1,
+        1
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "6c756fe63e9e237ebbd0cee360108cbf246d6b9705b5eb1f8b17a101a019072d",
+        "additive": false,
+        "pair": [
+          0,
+          1
+        ],
+        "values": [
+          100000000000000000000000000000000000000000000000001,
+          100000000000000000000000000000000000000000000000003,
+          2
+        ],
+        "defect": 200000000000000000000000000000000000000000000000002
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_100",
+      "rows": [
+        42,
+        29
+      ],
+      "input_dimension": 6,
+      "output_weights": [
+        7,
+        7
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "1cf109bbb6d23cc85e0b415d1ed0b27f8d7c0d4a9b91bffda6f13b33b89a7484",
+        "additive": false,
+        "pair": [
+          1,
+          3
+        ],
+        "values": [
+          7,
+          14,
+          7
+        ],
+        "defect": 14
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_101",
+      "rows": [
+        1,
+        5,
+        1
+      ],
+      "input_dimension": 3,
+      "output_weights": [
+        0,
+        1,
+        7
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "94e3e44e6d7227f8c8f73e96b00875f3c279470f6b39f7696be74c7500a3c00f",
+        "additive": false,
+        "pair": [
+          0,
+          2
+        ],
+        "values": [
+          8,
+          1,
+          7
+        ],
+        "defect": 2
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_102",
+      "rows": [
+        4,
+        0,
+        6,
+        0,
+        3,
+        5,
+        7,
+        0
+      ],
+      "input_dimension": 3,
+      "output_weights": [
+        1,
+        0,
+        100000000000000000000000000000000000000000000000000,
+        100000000000000000000000000000000000000000000000000,
+        7,
+        1,
+        0,
+        100000000000000000000000000000000000000000000000000
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "c5ddae2ee99a6b8f37eef06d4f4c88e924b1893c3102c9a457153c4e60a8be5c",
+        "additive": false,
+        "pair": [
+          1,
+          2
+        ],
+        "values": [
+          100000000000000000000000000000000000000000000000007,
+          100000000000000000000000000000000000000000000000002,
+          9
+        ],
+        "defect": 200000000000000000000000000000000000000000000000000
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_103",
+      "rows": [
+        3,
+        10
+      ],
+      "input_dimension": 4,
+      "output_weights": [
+        0,
+        1
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "ddc3f0c9d20302c4a510fa5b8aea313bffbb07fce9acba26dd988ccd6c75477b",
+        "additive": false,
+        "pair": [
+          1,
+          3
+        ],
+        "values": [
+          1,
+          1,
+          0
+        ],
+        "defect": 2
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_104",
+      "rows": [
+        0,
+        0
+      ],
+      "input_dimension": 2,
+      "output_weights": [
+        0,
+        100000000000000000000000000000000000000000000000000
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "ec15d4bb8363ee934d7c57fccc3d95ea65934e13da0651a9d0d47dce5dcbefa6",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          0,
+          0
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_105",
+      "rows": [
+        31,
+        8
+      ],
+      "input_dimension": 5,
+      "output_weights": [
+        0,
+        7
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "da72f6dd32004db9c6e44f35f80d43732f6d2718d33f11342a7a12bcca9d6ed0",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          0,
+          0,
+          0,
+          7,
+          0
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_106",
+      "rows": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "input_dimension": 0,
+      "output_weights": [
+        100000000000000000000000000000000000000000000000000,
+        100000000000000000000000000000000000000000000000000,
+        0,
+        7,
+        7,
+        7,
+        7,
+        100000000000000000000000000000000000000000000000000
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "3ef0e9a8480abff5f4f83955dadd97ec5c0dd19111f2c867788324d9ed2f0ade",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": []
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_107",
+      "rows": [],
+      "input_dimension": 1,
+      "output_weights": [],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "1b928757a067609d7bbe95093af4ea5a7acb6c2f4e5a004ffd76da07119970d8",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          0
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_108",
+      "rows": [
+        21,
+        12
+      ],
+      "input_dimension": 5,
+      "output_weights": [
+        0,
+        1
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "c461be3e584f88b8b691012d26f81682cfc4164ee5550da29ff8433cde186f44",
+        "additive": false,
+        "pair": [
+          2,
+          3
+        ],
+        "values": [
+          1,
+          1,
+          0
+        ],
+        "defect": 2
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_109",
+      "rows": [
+        0
+      ],
+      "input_dimension": 1,
+      "output_weights": [
+        1
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "40f63d4b277fb0b5f9eb6252a8a5568d174063ed5138fc93e2c59f896bd8d50f",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          0
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_110",
+      "rows": [
+        5
+      ],
+      "input_dimension": 4,
+      "output_weights": [
+        1
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "ccca7fa44f2217c4e555f98da404120c1b3b1acd23b2bd5a9580b89eaf3dda02",
+        "additive": false,
+        "pair": [
+          0,
+          2
+        ],
+        "values": [
+          1,
+          1,
+          0
+        ],
+        "defect": 2
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_111",
+      "rows": [
+        0
+      ],
+      "input_dimension": 0,
+      "output_weights": [
+        1
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "03624a3afad43bdaeceb694560955b46aacd585305c13b5a81c72f75e3d3d1f5",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": []
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_112",
+      "rows": [
+        6,
+        7,
+        5,
+        2
+      ],
+      "input_dimension": 3,
+      "output_weights": [
+        7,
+        7,
+        0,
+        1
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "8197753feb09e1f5940428fc8caa20b5b2cc8bc3ea1249751b8c79c679fb9a9b",
+        "additive": false,
+        "pair": [
+          1,
+          2
+        ],
+        "values": [
+          15,
+          14,
+          1
+        ],
+        "defect": 28
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_113",
+      "rows": [
+        0,
+        0
+      ],
+      "input_dimension": 3,
+      "output_weights": [
+        0,
+        100000000000000000000000000000000000000000000000000
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "95b61a4acbe28804f369d2f16aa98223884110e075015dccf1a8a8bfc178fd82",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          0,
+          0,
+          0
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_114",
+      "rows": [
+        15
+      ],
+      "input_dimension": 5,
+      "output_weights": [
+        1
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "2fc62174d27aa80389d0b48833dab95a1aace217a8798a6f770f2a4bbe658696",
+        "additive": false,
+        "pair": [
+          0,
+          1
+        ],
+        "values": [
+          1,
+          1,
+          0
+        ],
+        "defect": 2
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_115",
+      "rows": [],
+      "input_dimension": 0,
+      "output_weights": [],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "3cbbe1f26e4e664a1c188286ef918d8fb002e8d2d52f627c438268a2877ef010",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": []
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_116",
+      "rows": [
+        1,
+        5,
+        6,
+        1
+      ],
+      "input_dimension": 3,
+      "output_weights": [
+        1,
+        0,
+        100000000000000000000000000000000000000000000000000,
+        100000000000000000000000000000000000000000000000000
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "4057ef1cf5396c7a8afdaeaf56fcfe926d948da8a0ee3d41510c750676e79292",
+        "additive": false,
+        "pair": [
+          1,
+          2
+        ],
+        "values": [
+          100000000000000000000000000000000000000000000000000,
+          100000000000000000000000000000000000000000000000000,
+          0
+        ],
+        "defect": 200000000000000000000000000000000000000000000000000
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_117",
+      "rows": [
+        27,
+        12,
+        27,
+        5,
+        1,
+        12,
+        27
+      ],
+      "input_dimension": 5,
+      "output_weights": [
+        1,
+        100000000000000000000000000000000000000000000000000,
+        100000000000000000000000000000000000000000000000000,
+        7,
+        1,
+        100000000000000000000000000000000000000000000000000,
+        7
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "253a4caf989e0df48d3a924d41a8e2173e01050c35af3b4d1236f40770ffbc26",
+        "additive": false,
+        "pair": [
+          0,
+          1
+        ],
+        "values": [
+          100000000000000000000000000000000000000000000000016,
+          100000000000000000000000000000000000000000000000008,
+          8
+        ],
+        "defect": 200000000000000000000000000000000000000000000000016
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_118",
+      "rows": [
+        0,
+        6,
+        7,
+        7,
+        1,
+        5,
+        1,
+        5
+      ],
+      "input_dimension": 3,
+      "output_weights": [
+        0,
+        100000000000000000000000000000000000000000000000000,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "859188116f12f9edbc332ca03d5c476eeabb254c0dbc5cc260ade4148b307364",
+        "additive": false,
+        "pair": [
+          1,
+          2
+        ],
+        "values": [
+          100000000000000000000000000000000000000000000000001,
+          100000000000000000000000000000000000000000000000003,
+          2
+        ],
+        "defect": 200000000000000000000000000000000000000000000000002
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_119",
+      "rows": [
+        0,
+        0
+      ],
+      "input_dimension": 0,
+      "output_weights": [
+        1,
+        7
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "524f4c11f778a377408c7e521b5a506ecf975c4e97761777c7225d8724da9bc7",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": []
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_120",
+      "rows": [
+        28
+      ],
+      "input_dimension": 5,
+      "output_weights": [
+        0
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "ae7bd002d2127875893b38e3f9d4e2d5fc224939f94a361030017f32cd695a6a",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_121",
+      "rows": [
+        5,
+        2,
+        1,
+        0,
+        5,
+        0
+      ],
+      "input_dimension": 3,
+      "output_weights": [
+        100000000000000000000000000000000000000000000000000,
+        7,
+        0,
+        100000000000000000000000000000000000000000000000000,
+        7,
+        1
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "fde9036e00933e65fe3110b74d6398fa738ad3febb5038711b8722dfcd68670b",
+        "additive": false,
+        "pair": [
+          0,
+          2
+        ],
+        "values": [
+          100000000000000000000000000000000000000000000000007,
+          100000000000000000000000000000000000000000000000007,
+          0
+        ],
+        "defect": 200000000000000000000000000000000000000000000000014
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_122",
+      "rows": [
+        57,
+        60,
+        5,
+        25
+      ],
+      "input_dimension": 6,
+      "output_weights": [
+        100000000000000000000000000000000000000000000000000,
+        100000000000000000000000000000000000000000000000000,
+        0,
+        0
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "38fb2571a17c109263c0b18055e80516063e46d710812e7f42fd4db6d51e717c",
+        "additive": false,
+        "pair": [
+          0,
+          3
+        ],
+        "values": [
+          100000000000000000000000000000000000000000000000000,
+          200000000000000000000000000000000000000000000000000,
+          100000000000000000000000000000000000000000000000000
+        ],
+        "defect": 200000000000000000000000000000000000000000000000000
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_123",
+      "rows": [
+        10,
+        21,
+        26,
+        28
+      ],
+      "input_dimension": 5,
+      "output_weights": [
+        100000000000000000000000000000000000000000000000000,
+        7,
+        0,
+        7
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "1a1e7f22d198d629d920547d3942f7f4ad126e593a5420d4c6a3263acba638c2",
+        "additive": false,
+        "pair": [
+          1,
+          3
+        ],
+        "values": [
+          100000000000000000000000000000000000000000000000000,
+          100000000000000000000000000000000000000000000000007,
+          7
+        ],
+        "defect": 200000000000000000000000000000000000000000000000000
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_124",
+      "rows": [
+        14,
+        9,
+        21,
+        20,
+        9,
+        29,
+        15
+      ],
+      "input_dimension": 5,
+      "output_weights": [
+        100000000000000000000000000000000000000000000000000,
+        0,
+        0,
+        0,
+        100000000000000000000000000000000000000000000000000,
+        1,
+        7
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "802667d0213a09d97a50ee94857b5392f18b54cf7740b6b95065658600b1592f",
+        "additive": false,
+        "pair": [
+          1,
+          2
+        ],
+        "values": [
+          100000000000000000000000000000000000000000000000007,
+          100000000000000000000000000000000000000000000000008,
+          1
+        ],
+        "defect": 200000000000000000000000000000000000000000000000014
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_125",
+      "rows": [
+        33,
+        38,
+        1,
+        27,
+        63
+      ],
+      "input_dimension": 6,
+      "output_weights": [
+        100000000000000000000000000000000000000000000000000,
+        1,
+        1,
+        100000000000000000000000000000000000000000000000000,
+        100000000000000000000000000000000000000000000000000
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "bd7f54e4e4203dbde62a3630db438722e1f870dbf78a2ca7ce8b4e6c95622ab5",
+        "additive": false,
+        "pair": [
+          0,
+          5
+        ],
+        "values": [
+          300000000000000000000000000000000000000000000000001,
+          200000000000000000000000000000000000000000000000001,
+          100000000000000000000000000000000000000000000000002
+        ],
+        "defect": 400000000000000000000000000000000000000000000000000
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_126",
+      "rows": [
+        28,
+        11
+      ],
+      "input_dimension": 6,
+      "output_weights": [
+        7,
+        0
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "e6c46213564071a7e463f767046ecbcaa519b43c01025c609d1f140d96b3db6e",
+        "additive": false,
+        "pair": [
+          2,
+          3
+        ],
+        "values": [
+          7,
+          7,
+          0
+        ],
+        "defect": 14
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_127",
+      "rows": [
+        38,
+        60,
+        10,
+        22,
+        61,
+        24
+      ],
+      "input_dimension": 6,
+      "output_weights": [
+        7,
+        0,
+        0,
+        100000000000000000000000000000000000000000000000000,
+        1,
+        7
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "9ba8a021bb2840494288694fa83c9b2e04f59f8b3a6d1f49b197e9803b41aa0a",
+        "additive": false,
+        "pair": [
+          1,
+          2
+        ],
+        "values": [
+          100000000000000000000000000000000000000000000000007,
+          100000000000000000000000000000000000000000000000008,
+          1
+        ],
+        "defect": 200000000000000000000000000000000000000000000000014
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_128",
+      "rows": [
+        1,
+        9
+      ],
+      "input_dimension": 4,
+      "output_weights": [
+        0,
+        1
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "4005b1a2623708ced94c475d5952fc82f6611b13f5783e9b451624e21b19fa1d",
+        "additive": false,
+        "pair": [
+          0,
+          3
+        ],
+        "values": [
+          1,
+          1,
+          0
+        ],
+        "defect": 2
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_129",
+      "rows": [
+        0,
+        12,
+        9,
+        9,
+        12,
+        3,
+        15
+      ],
+      "input_dimension": 4,
+      "output_weights": [
+        100000000000000000000000000000000000000000000000000,
+        7,
+        0,
+        0,
+        100000000000000000000000000000000000000000000000000,
+        0,
+        100000000000000000000000000000000000000000000000000
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "04112f1ff1f855de62bcb6b9edac1bf0260fd2721b934b3b82fdc9797d341bb1",
+        "additive": false,
+        "pair": [
+          2,
+          3
+        ],
+        "values": [
+          200000000000000000000000000000000000000000000000007,
+          200000000000000000000000000000000000000000000000007,
+          0
+        ],
+        "defect": 400000000000000000000000000000000000000000000000014
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_130",
+      "rows": [
+        11,
+        5,
+        6,
+        9,
+        10,
+        0,
+        10
+      ],
+      "input_dimension": 4,
+      "output_weights": [
+        100000000000000000000000000000000000000000000000000,
+        1,
+        1,
+        100000000000000000000000000000000000000000000000000,
+        7,
+        1,
+        7
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "2f7a3593818de67b9f10cf5c9ecf03d861aa0cd16f1890a237c0eab56ac19bed",
+        "additive": false,
+        "pair": [
+          0,
+          1
+        ],
+        "values": [
+          200000000000000000000000000000000000000000000000001,
+          100000000000000000000000000000000000000000000000015,
+          100000000000000000000000000000000000000000000000016
+        ],
+        "defect": 200000000000000000000000000000000000000000000000000
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_131",
+      "rows": [],
+      "input_dimension": 2,
+      "output_weights": [],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "be13d7274491e4fed705c67372ea799189e31b784b5819b71a8e91bd31c5bceb",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          0,
+          0
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_132",
+      "rows": [
+        7,
+        22
+      ],
+      "input_dimension": 5,
+      "output_weights": [
+        100000000000000000000000000000000000000000000000000,
+        100000000000000000000000000000000000000000000000000
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "20bcce5c208afb7eb15aae5a487782a1b26ce2ee1b56bf0a9a11223e97d4ff18",
+        "additive": false,
+        "pair": [
+          0,
+          1
+        ],
+        "values": [
+          100000000000000000000000000000000000000000000000000,
+          200000000000000000000000000000000000000000000000000,
+          100000000000000000000000000000000000000000000000000
+        ],
+        "defect": 200000000000000000000000000000000000000000000000000
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_133",
+      "rows": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "input_dimension": 1,
+      "output_weights": [
+        100000000000000000000000000000000000000000000000000,
+        1,
+        7,
+        7,
+        0,
+        1,
+        0
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "ef87473b154a94552a394b08f3e3dc0e01fd72ff7dfcf2852b0214ab21107387",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          14
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_134",
+      "rows": [
+        3,
+        25,
+        14,
+        26,
+        27,
+        7,
+        2,
+        11
+      ],
+      "input_dimension": 5,
+      "output_weights": [
+        0,
+        7,
+        100000000000000000000000000000000000000000000000000,
+        7,
+        1,
+        7,
+        7,
+        7
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "5f97067f0fed12173b2b2b37a1284e7346727a3a307eb015851e024fd9a0ddbe",
+        "additive": false,
+        "pair": [
+          0,
+          3
+        ],
+        "values": [
+          22,
+          100000000000000000000000000000000000000000000000022,
+          100000000000000000000000000000000000000000000000014
+        ],
+        "defect": 30
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_135",
+      "rows": [
+        18,
+        3,
+        35
+      ],
+      "input_dimension": 6,
+      "output_weights": [
+        100000000000000000000000000000000000000000000000000,
+        0,
+        7
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "dc2c569c4cfa80d5e6dbefaeb3cbac84da8af901eb5ba65c334954ed1b5c76b9",
+        "additive": false,
+        "pair": [
+          1,
+          4
+        ],
+        "values": [
+          100000000000000000000000000000000000000000000000007,
+          100000000000000000000000000000000000000000000000000,
+          7
+        ],
+        "defect": 200000000000000000000000000000000000000000000000000
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_136",
+      "rows": [],
+      "input_dimension": 0,
+      "output_weights": [],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "3cbbe1f26e4e664a1c188286ef918d8fb002e8d2d52f627c438268a2877ef010",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": []
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_137",
+      "rows": [
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "input_dimension": 1,
+      "output_weights": [
+        1,
+        7,
+        100000000000000000000000000000000000000000000000000,
+        1,
+        7
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "a9cee6ef0efe56969036abe406db260bfca04dc95f48df081d7a2029c30cb813",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          9
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_138",
+      "rows": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "input_dimension": 0,
+      "output_weights": [
+        100000000000000000000000000000000000000000000000000,
+        100000000000000000000000000000000000000000000000000,
+        7,
+        7,
+        7,
+        1,
+        100000000000000000000000000000000000000000000000000
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "b870281c383fd243367e163964b4e09e094baa2a5191def4bab769881210aecc",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": []
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_139",
+      "rows": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "input_dimension": 0,
+      "output_weights": [
+        1,
+        7,
+        0,
+        0,
+        1,
+        7
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "a9a4f07a3436cf7b7e421f9a993b70ea1bbd0ddb387a1701a26104cb8c4bc634",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": []
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_140",
+      "rows": [
+        12,
+        23,
+        26,
+        26,
+        5
+      ],
+      "input_dimension": 5,
+      "output_weights": [
+        0,
+        100000000000000000000000000000000000000000000000000,
+        100000000000000000000000000000000000000000000000000,
+        100000000000000000000000000000000000000000000000000,
+        7
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "99ee081cb99a1fdee79a81e6bd1bc31b6f9d44eaf27cf5f90fd849e66cac4783",
+        "additive": false,
+        "pair": [
+          0,
+          1
+        ],
+        "values": [
+          100000000000000000000000000000000000000000000000007,
+          300000000000000000000000000000000000000000000000000,
+          200000000000000000000000000000000000000000000000007
+        ],
+        "defect": 200000000000000000000000000000000000000000000000000
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_141",
+      "rows": [],
+      "input_dimension": 6,
+      "output_weights": [],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "59bc8cf2fdaf4e86a59d4520e430791962ec36d551762fba7aba60cbf34b020c",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_142",
+      "rows": [
+        16,
+        19,
+        17
+      ],
+      "input_dimension": 5,
+      "output_weights": [
+        100000000000000000000000000000000000000000000000000,
+        100000000000000000000000000000000000000000000000000,
+        0
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "cef671c1deb360f9054fc0c89b85ae360c0ea9bad8cf997d1fe3471a082147e0",
+        "additive": false,
+        "pair": [
+          0,
+          1
+        ],
+        "values": [
+          100000000000000000000000000000000000000000000000000,
+          100000000000000000000000000000000000000000000000000,
+          0
+        ],
+        "defect": 200000000000000000000000000000000000000000000000000
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_143",
+      "rows": [
+        9
+      ],
+      "input_dimension": 4,
+      "output_weights": [
+        7
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "0eb7d3a2a8b0776076b5ddac6fc47ac317eb69101689bb402b8d66bd77261ec5",
+        "additive": false,
+        "pair": [
+          0,
+          3
+        ],
+        "values": [
+          7,
+          7,
+          0
+        ],
+        "defect": 14
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_144",
+      "rows": [
+        12,
+        32,
+        61,
+        43,
+        25
+      ],
+      "input_dimension": 6,
+      "output_weights": [
+        100000000000000000000000000000000000000000000000000,
+        100000000000000000000000000000000000000000000000000,
+        1,
+        100000000000000000000000000000000000000000000000000,
+        0
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "0db0459c7921c5ce1e2a3950ae32d773095767d048f5073d66943ead5155890f",
+        "additive": false,
+        "pair": [
+          2,
+          3
+        ],
+        "values": [
+          100000000000000000000000000000000000000000000000001,
+          200000000000000000000000000000000000000000000000001,
+          100000000000000000000000000000000000000000000000000
+        ],
+        "defect": 200000000000000000000000000000000000000000000000002
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_145",
+      "rows": [
+        5,
+        4,
+        2
+      ],
+      "input_dimension": 3,
+      "output_weights": [
+        0,
+        1,
+        0
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "6a77b81740c4f7ea7261e860a867e505819bac7db5c3da2e3824cb6936a116df",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          0,
+          0,
+          1
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_146",
+      "rows": [
+        0,
+        4,
+        13,
+        20,
+        8,
+        30
+      ],
+      "input_dimension": 5,
+      "output_weights": [
+        100000000000000000000000000000000000000000000000000,
+        7,
+        100000000000000000000000000000000000000000000000000,
+        1,
+        1,
+        1
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "8729debd9a3d6d5fd0054c384ed50e3a2325868a6915768452f4a7cf26054aba",
+        "additive": false,
+        "pair": [
+          0,
+          2
+        ],
+        "values": [
+          100000000000000000000000000000000000000000000000000,
+          100000000000000000000000000000000000000000000000009,
+          9
+        ],
+        "defect": 200000000000000000000000000000000000000000000000000
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_147",
+      "rows": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "input_dimension": 0,
+      "output_weights": [
+        7,
+        7,
+        100000000000000000000000000000000000000000000000000,
+        1,
+        100000000000000000000000000000000000000000000000000,
+        0,
+        100000000000000000000000000000000000000000000000000
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "c6f41d2907fda4e1c0392ed0080e964f5085bfe0c06e4d11b82a9a8987b11be2",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": []
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_148",
+      "rows": [
+        7,
+        13,
+        16,
+        14,
+        16,
+        14,
+        18
+      ],
+      "input_dimension": 5,
+      "output_weights": [
+        7,
+        1,
+        1,
+        0,
+        1,
+        0,
+        100000000000000000000000000000000000000000000000000
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "f8bc12d9af93a59274b74860fd61cb30b8d7fbb8bd0ad61b8c4ebc91db93b344",
+        "additive": false,
+        "pair": [
+          0,
+          1
+        ],
+        "values": [
+          8,
+          100000000000000000000000000000000000000000000000007,
+          100000000000000000000000000000000000000000000000001
+        ],
+        "defect": 14
+      },
+      "exhaustive_oracle_additive": false,
+      "verified": true
+    },
+    {
+      "name": "seeded_149",
+      "rows": [
+        0,
+        0,
+        0
+      ],
+      "input_dimension": 0,
+      "output_weights": [
+        7,
+        1,
+        1
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "8c6d8cd8068d06fe17daf3e8542c1c6da08b16a8ac06400f5f89d08dfa249f30",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": []
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_additive_0",
+      "rows": [
+        16,
+        2,
+        4,
+        1,
+        1,
+        1,
+        16
+      ],
+      "input_dimension": 5,
+      "output_weights": [
+        2,
+        0,
+        1,
+        1,
+        3,
+        1,
+        2
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "a69d361a05cdb52524535edb3c1de87e0138dd213050525cffe9bb453a40b9f8",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          5,
+          0,
+          1,
+          0,
+          4
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_additive_1",
+      "rows": [
+        4,
+        8,
+        30,
+        11,
+        15,
+        8
+      ],
+      "input_dimension": 5,
+      "output_weights": [
+        2,
+        2,
+        0,
+        0,
+        0,
+        3
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "866db2774ded1f3928c5db4359a438c3b17808facff554638f66daa3608c4af8",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          0,
+          0,
+          2,
+          5,
+          0
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_additive_2",
+      "rows": [
+        4,
+        4,
+        1
+      ],
+      "input_dimension": 3,
+      "output_weights": [
+        3,
+        2,
+        3
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "a425296402d140698a9861772c2e8dc01e2bc3f85470eef459a0087b30d2ed92",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          3,
+          0,
+          5
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_additive_3",
+      "rows": [
+        0,
+        1
+      ],
+      "input_dimension": 2,
+      "output_weights": [
+        0,
+        2
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "9f843b21fcbe1420d94f4c6359f223fe5c10e4d920f557d0b7caa9b1162bc2ff",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          2,
+          0
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_additive_4",
+      "rows": [
+        4,
+        8,
+        2,
+        16,
+        1,
+        16,
+        10,
+        1
+      ],
+      "input_dimension": 5,
+      "output_weights": [
+        1,
+        3,
+        1,
+        1,
+        3,
+        2,
+        0,
+        1
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "865334b1a75b769da3a37d4b74baa9ee7150811bff4581063896c77d97bec4ee",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          4,
+          1,
+          1,
+          3,
+          3
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_additive_5",
+      "rows": [
+        8,
+        4,
+        4,
+        1,
+        6,
+        5
+      ],
+      "input_dimension": 4,
+      "output_weights": [
+        3,
+        1,
+        3,
+        3,
+        0,
+        0
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "26358bb5b17eac6780d2c4200c1a2f56a9ac85bb4e441f14db49c226c815c48e",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          3,
+          0,
+          4,
+          3
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_additive_6",
+      "rows": [
+        1,
+        1,
+        1
+      ],
+      "input_dimension": 1,
+      "output_weights": [
+        1,
+        3,
+        1
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "b52a8b699438c777ed3a42c026fd9e12242f737b0ff8c0d24e6087e023d8747b",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          5
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_additive_7",
+      "rows": [
+        0
+      ],
+      "input_dimension": 2,
+      "output_weights": [
+        0
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "01ccef51fe47c22435e83397514832694f5d0841e122e00c51f316152458573a",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          0,
+          0
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_additive_8",
+      "rows": [
+        32,
+        16,
+        4,
+        2,
+        15,
+        1,
+        60
+      ],
+      "input_dimension": 6,
+      "output_weights": [
+        1,
+        3,
+        2,
+        2,
+        0,
+        2,
+        0
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "e9cfaf07808a9893c977bbcec05f9ba82a90ee4bf4d90cb304afdb7fce277fde",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          2,
+          2,
+          2,
+          0,
+          3,
+          1
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_additive_9",
+      "rows": [
+        24,
+        5
+      ],
+      "input_dimension": 5,
+      "output_weights": [
+        0,
+        0
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "ebd0d18e79e9b7ff5fec9f7a6e543a79df8dcb2adc79e1093531d5e8b75864e2",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_additive_10",
+      "rows": [
+        1,
+        1,
+        1,
+        2
+      ],
+      "input_dimension": 2,
+      "output_weights": [
+        3,
+        2,
+        3,
+        1
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "6e34690ddd10bb7a7a9beb40c6e12f1e8c0e7a015f56b79f9792c9303e5f4853",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          8,
+          1
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_additive_11",
+      "rows": [
+        8,
+        21
+      ],
+      "input_dimension": 5,
+      "output_weights": [
+        3,
+        0
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "2073637c945da33272609775caa05476e6354e90d4dce154b632243f400c420d",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          0,
+          0,
+          0,
+          3,
+          0
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_additive_12",
+      "rows": [
+        3,
+        2,
+        2,
+        1,
+        2,
+        2
+      ],
+      "input_dimension": 2,
+      "output_weights": [
+        0,
+        2,
+        2,
+        1,
+        3,
+        0
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "a00ba91810c1afccbf8c830bb3a9dc68954721c7e0338adae0103430d1695e15",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          1,
+          7
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_additive_13",
+      "rows": [
+        2,
+        1,
+        17,
+        4,
+        1,
+        1,
+        33,
+        32
+      ],
+      "input_dimension": 6,
+      "output_weights": [
+        1,
+        2,
+        0,
+        1,
+        2,
+        1,
+        0,
+        0
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "9f387099f92b470df80d2747b99b5f23063cd021fe08c59aabba57303c0cd5a8",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          5,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_additive_14",
+      "rows": [
+        0,
+        2,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1
+      ],
+      "input_dimension": 2,
+      "output_weights": [
+        0,
+        3,
+        3,
+        1,
+        2,
+        1,
+        3,
+        2
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "8597f0d575d7196f56c720ef97d6ca65e6ce015484b94f91a320330f4abc4e16",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          5,
+          10
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_additive_15",
+      "rows": [
+        1,
+        2,
+        0,
+        3,
+        1,
+        1,
+        3,
+        1
+      ],
+      "input_dimension": 2,
+      "output_weights": [
+        3,
+        2,
+        0,
+        0,
+        3,
+        3,
+        0,
+        3
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "21c0f55268ab5401258760d65fad7ca729a0d66e96aed42f9b8d76dc6e410bbc",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          12,
+          2
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_additive_16",
+      "rows": [
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "input_dimension": 1,
+      "output_weights": [
+        3,
+        2,
+        1,
+        3,
+        0
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "a45fe1c2cfd616fc9a26bc3061379cce806d2f194bba0990edbdd129cfe03082",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          9
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_additive_17",
+      "rows": [
+        6,
+        5,
+        1,
+        2,
+        2
+      ],
+      "input_dimension": 3,
+      "output_weights": [
+        0,
+        0,
+        1,
+        2,
+        0
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "8fa36fc74000f8eef8dd2f00c153a7c4a7b39f40ea70938ce9349fc9939435f4",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          1,
+          2,
+          0
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_additive_18",
+      "rows": [
+        14,
+        9,
+        8,
+        8
+      ],
+      "input_dimension": 4,
+      "output_weights": [
+        0,
+        0,
+        3,
+        3
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "3afad5c99f8e6aaae4b01c7e0f682ce34a02408dd1440c72c659ff7219b3597e",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          0,
+          0,
+          0,
+          6
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_additive_19",
+      "rows": [
+        2
+      ],
+      "input_dimension": 4,
+      "output_weights": [
+        1
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "f90c508a86a787d34c8e4a41b804724f168ad9ffc9e0ff2923f1968a55b2e4ab",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_additive_20",
+      "rows": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "input_dimension": 1,
+      "output_weights": [
+        3,
+        1,
+        1,
+        2,
+        3,
+        1,
+        1
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "5c737b266fa56212a874236b4ddda8b65000e1631bd0d392ca01413bf775e903",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          12
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_additive_21",
+      "rows": [
+        2
+      ],
+      "input_dimension": 6,
+      "output_weights": [
+        2
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "b9214dc3bc0f82d3141e2d971f8fafcb9be0f53d917f612c332688500f39e604",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          0,
+          2,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_additive_22",
+      "rows": [
+        4,
+        5,
+        16,
+        4,
+        31,
+        27
+      ],
+      "input_dimension": 5,
+      "output_weights": [
+        2,
+        0,
+        2,
+        3,
+        0,
+        0
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "2831867062754f9a849cfe1dd43ae74bbb26eefab8fee35d452003f33ec50630",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          0,
+          0,
+          5,
+          0,
+          2
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_additive_23",
+      "rows": [
+        1,
+        1,
+        1
+      ],
+      "input_dimension": 1,
+      "output_weights": [
+        0,
+        3,
+        3
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "bbac618da417fed7e352cbaf01ec62d9f548c8210754396ef91de1707c84d9c5",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          6
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_additive_24",
+      "rows": [
+        7,
+        2
+      ],
+      "input_dimension": 6,
+      "output_weights": [
+        0,
+        3
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "a3acebf08dd3a4c7f7f398d8cef7be844ec4c5695b540e10969227aa8822aaad",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          0,
+          3,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_additive_25",
+      "rows": [
+        2,
+        1,
+        3
+      ],
+      "input_dimension": 2,
+      "output_weights": [
+        1,
+        3,
+        0
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "401ea071c3f16e2ea240b78148689427dd44768e7ad552a39eb304e2f3c3d7d0",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          3,
+          1
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_additive_26",
+      "rows": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "input_dimension": 1,
+      "output_weights": [
+        2,
+        3,
+        0,
+        2,
+        3,
+        1,
+        3,
+        3
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "7ba95bde8f6fcc6f7626f86906eb8015fcfcc7bef73c12db860e8118de611b77",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          17
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_additive_27",
+      "rows": [
+        54,
+        22,
+        0,
+        8,
+        42,
+        32,
+        4
+      ],
+      "input_dimension": 6,
+      "output_weights": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        2
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "b4c36e10b520739fa70ad022ae1c9b229003af2b0b6eccffc5533a1ba18e50ba",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          0,
+          0,
+          2,
+          1,
+          0,
+          1
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_additive_28",
+      "rows": [
+        8,
+        44,
+        16,
+        8,
+        4,
+        55,
+        4
+      ],
+      "input_dimension": 6,
+      "output_weights": [
+        2,
+        0,
+        3,
+        2,
+        2,
+        0,
+        1
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "7ff040a817bbe1fc6412dd49cbef4f9989bdf9b310c39f3b3e67d3c61ed6377b",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          0,
+          0,
+          3,
+          4,
+          3,
+          0
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    },
+    {
+      "name": "seeded_additive_29",
+      "rows": [
+        1,
+        2,
+        4,
+        1
+      ],
+      "input_dimension": 3,
+      "output_weights": [
+        3,
+        2,
+        0,
+        1
+      ],
+      "certificate": {
+        "status": "EXACT",
+        "format": "linear_cost_pullback_v1",
+        "input_hash": "dba36eab110dcbe77b204e8782dc5716745201b73e46a847d71e316d3df2d1a7",
+        "additive": true,
+        "constant": 0,
+        "unary_costs": [
+          4,
+          2,
+          0
+        ]
+      },
+      "exhaustive_oracle_additive": true,
+      "verified": true
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "residue": {
+    "exact_proofs": 59,
+    "unknown": 8,
+    "original_choice_witnesses": 52
+  },
+  "isolation": {
+    "independently_expanded_filter_requests": 87,
+    "exact_evaluation_rows": 613,
+    "same_original_count_CRT": true,
+    "independent_packed_controls": 3,
+    "binary_ladder_identity_checked": true
+  },
+  "structure": {
+    "saved_exact_proofs": 11,
+    "unknown": 4,
+    "original_solution_witnesses": 9,
+    "note": "630 other small generated cases are reproducible through the frozen runner; their certificates are not stored here."
+  },
+  "interval": {
+    "exact_proofs": 37,
+    "unknown": 8,
+    "separate_modular_witnesses": 34,
+    "original_matching_witnesses": 41
+  },
+  "same_request_crosscheck": {
+    "exact_proofs": 34,
+    "same_original_requests": 34,
+    "exact_structure_proofs": 34,
+    "interval_unknown_resolved": 6,
+    "positive_counts": 23,
+    "zero_counts": 11
+  },
+  "source_references_matched": 21,
+  "finished_utc": "2026-10-18T06:30:45.984475+00:00",
+  "all_checks_passed": true
+}

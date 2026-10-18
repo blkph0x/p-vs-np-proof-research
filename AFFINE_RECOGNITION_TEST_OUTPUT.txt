@@ -1,0 +1,45 @@
+affine_grouping_plan_lab
+test_actual_frozen_solver_order_invariance (test_planner.TestPlanner) ... ok
+test_caps_unknown_without_partial_proposal (test_planner.TestPlanner) ... ok
+test_empty_formula_and_no_blocks_are_identity_orders (test_planner.TestPlanner) ... ok
+test_every_complete_xor3_support_and_polarity (test_planner.TestPlanner) ... ok
+test_fake_subset_block_on_duplicate_bucket_rejected (test_planner.TestPlanner) ... ok
+test_incomplete_mixed_parity_and_repeated_variables_not_blocks (test_planner.TestPlanner) ... ok
+test_occurrence_metadata_mutations (test_planner.TestPlanner) ... ok
+test_shuffled_occurrences_have_canonical_complete_blocks (test_planner.TestPlanner) ... ok
+test_source_rebinding_and_complete_partition (test_planner.TestPlanner) ... ok
+test_strict_original_types_and_literal_bounds (test_planner.TestPlanner) ... ok
+test_ungrouped_and_duplicate_occurrences_are_retained (test_planner.TestPlanner) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.989s
+
+OK
+
+affine_partition_compression_lab
+test_all_three_bit_sign_tables (test_partition.PartitionTests) ... ok
+test_certificate_and_rebound_semantic_mutations (test_partition.PartitionTests) ... ok
+test_every_affine_partition_of_three_bits (test_partition.PartitionTests) ... ok
+test_inputs_and_budget_fail_closed (test_partition.PartitionTests) ... ok
+test_named_and_wide_controls (test_partition.PartitionTests) ... ok
+test_seeded_quadratic_partitions (test_partition.PartitionTests) ... ok
+test_unknown_cap_precedes_quadratic_monomial_allocation (test_partition.PartitionTests) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 4.090s
+
+OK
+
+affine_one_piece_lab
+test_all_ternary_truth_tables_through_two_bits (test_one_piece.OnePieceTests) ... ok
+test_all_three_bit_sign_tables (test_one_piece.OnePieceTests) ... ok
+test_complete_source_norm_hull_sample_mutations (test_one_piece.OnePieceTests) ... ok
+test_fail_closed_caps_headers_and_constant_phase (test_one_piece.OnePieceTests) ... ok
+test_large_binary_rational_binding_and_derived_bits (test_one_piece.OnePieceTests) ... ok
+test_named_wide_and_resource_controls (test_one_piece.OnePieceTests) ... ok
+test_seeded_arbitrary_signed_sums (test_one_piece.OnePieceTests) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 18.507s
+
+OK

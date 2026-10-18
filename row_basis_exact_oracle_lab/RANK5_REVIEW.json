@@ -1,0 +1,76 @@
+{
+  "status": "VERIFIED_INDEPENDENT_RANK5_REVIEW",
+  "group_size": 9999360,
+  "case_count": 4,
+  "rows": [
+    {
+      "name": "rank5_tradeoff",
+      "count_stats": [
+        2,
+        2,
+        2,
+        29
+      ],
+      "rank_stats": [
+        4,
+        1,
+        4,
+        32
+      ]
+    },
+    {
+      "name": "rank5_mixed",
+      "count_stats": [
+        2,
+        2,
+        2,
+        27
+      ],
+      "rank_stats": [
+        2,
+        2,
+        2,
+        27
+      ]
+    },
+    {
+      "name": "rank5_random_a",
+      "count_stats": [
+        1,
+        1,
+        1,
+        20
+      ],
+      "rank_stats": [
+        1,
+        1,
+        1,
+        20
+      ]
+    },
+    {
+      "name": "rank5_random_b",
+      "count_stats": [
+        1,
+        1,
+        1,
+        28
+      ],
+      "rank_stats": [
+        1,
+        1,
+        1,
+        28
+      ]
+    }
+  ],
+  "tradeoff_count_first_state_count": 4,
+  "tradeoff_rank_first_state_count": 2,
+  "tradeoff_distance": 2,
+  "source_hashes": {
+    "rank5_exact.cpp": "ac259fffd7cff815a39fd934e73c2b4f7981b48e81b820bbd22f7a0cfdff826d",
+    "rank5_driver.py": "2b0ff514525dd6dd97464222affc083cff1ad489103a10464f7eb6f1ba2cf91b",
+    "RANK5_REVIEW.py": "08ab2791cd911f85074f0fd79dea6756fea172b2c05e77b91fd614b1df7d46b0"
+  },
+  "scope": "Independent certificate arithmetic and native replay; finite rank-five evidence only."
+}

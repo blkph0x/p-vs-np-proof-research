@@ -1,0 +1,182 @@
+{
+  "checked_utc": "2026-10-17T14:44:31.256587+00:00",
+  "all_source_hashes_match": true,
+  "source_references": 27,
+  "checks": [
+    {
+      "path": "threshold_composition_lab/threshold_controls.py",
+      "matches": true,
+      "origin": "threshold_composition_lab/RESULTS.json",
+      "sha256": "38fc7dd0372fdc1b55f3a64474c2e584c569855256a24b136f1e8653028d116a"
+    },
+    {
+      "path": "threshold_composition_lab/test_threshold_controls.py",
+      "matches": true,
+      "origin": "threshold_composition_lab/RESULTS.json",
+      "sha256": "24e5f19732c539513cadd753d66bea2c3baa88a339c67abbb7bdf65820bc5f7e"
+    },
+    {
+      "path": "threshold_composition_lab/THEOREM.md",
+      "matches": true,
+      "origin": "threshold_composition_lab/RESULTS.json",
+      "sha256": "fd6ffb5834c8a529c21d0450636ce3112fa7e0ac2c5af9b62b8d1ea139204f63"
+    },
+    {
+      "path": "saturated_clause_limits/saturated_clause.py",
+      "matches": true,
+      "origin": "saturated_clause_limits/RESULTS.json",
+      "sha256": "28f5a9e6874b7aea184d7ce6e785b1550cfc4d370751b8a6cf79bc75d03233c2"
+    },
+    {
+      "path": "saturated_clause_limits/test_saturated_clause.py",
+      "matches": true,
+      "origin": "saturated_clause_limits/RESULTS.json",
+      "sha256": "5be21bab406d3bcddfafe74a184edc3d396399b75f408e63d2f9bd789cface83"
+    },
+    {
+      "path": "saturated_clause_limits/run_experiments.py",
+      "matches": true,
+      "origin": "saturated_clause_limits/RESULTS.json",
+      "sha256": "fab624a30eec741b265379ba65702ff1eabb3b14cc05d9b7c9baa37cc800442f"
+    },
+    {
+      "path": "saturated_clause_limits/THEOREM.md",
+      "matches": true,
+      "origin": "saturated_clause_limits/RESULTS.json",
+      "sha256": "3adbb7b301da0e6353abf9f8964f5d9db912b19dc31bb38ad520f418a9c1132d"
+    },
+    {
+      "path": "matching_gadget_limits/matching_boundary.py",
+      "matches": true,
+      "origin": "saturated_clause_limits/RESULTS.json",
+      "sha256": "7c76c60f8ab02823a41de061c61ff8e4161f1fda60e26b51dcaca2ed8129fa59"
+    },
+    {
+      "path": "multiobjective_matching_limits/clause_bounds.py",
+      "matches": true,
+      "origin": "multiobjective_matching_limits/RESULTS.json",
+      "sha256": "23e6a46189f6d0fe8cc1bad4bd9cd7cf13e9681490a9f84c206bda486b77c518"
+    },
+    {
+      "path": "multiobjective_matching_limits/test_clause_bounds.py",
+      "matches": true,
+      "origin": "multiobjective_matching_limits/RESULTS.json",
+      "sha256": "b4469f00be145f99fcaa40c1438afabe0d1f1705bc360373f162570acae7619e"
+    },
+    {
+      "path": "multiobjective_matching_limits/THEOREM.md",
+      "matches": true,
+      "origin": "multiobjective_matching_limits/RESULTS.json",
+      "sha256": "f739aee8eb8fc852aae9ac91793a0cccdb966b8ac819e654ec2a06efbae756e8"
+    },
+    {
+      "path": "packed_cost_exact_matching/packing.py",
+      "matches": true,
+      "origin": "packed_cost_exact_matching/RESULTS.json",
+      "sha256": "1d60ffd5bf25a2cacdb08e5cf0287432135fe8134c6ca531c497e054ede30fbe"
+    },
+    {
+      "path": "packed_cost_exact_matching/test_packing.py",
+      "matches": true,
+      "origin": "packed_cost_exact_matching/RESULTS.json",
+      "sha256": "750091130860ebeb3a75a4b67b41164ec1e6ef0ebed9b63b3fad840320961da3"
+    },
+    {
+      "path": "packed_cost_exact_matching/run_experiments.py",
+      "matches": true,
+      "origin": "packed_cost_exact_matching/RESULTS.json",
+      "sha256": "30f37a67592b42e4702826fac12b3250440b80f99d95ea0057e4aa95902d3640"
+    },
+    {
+      "path": "packed_cost_exact_matching/THEOREM.md",
+      "matches": true,
+      "origin": "packed_cost_exact_matching/RESULTS.json",
+      "sha256": "11db830ad320390fdde1c5ea69cf9252f3550fa644a34388fc49759c6ad0d3e1"
+    },
+    {
+      "path": "run_threshold_phase_checks.py",
+      "matches": true,
+      "origin": "THRESHOLD_TEST_SUMMARY.json",
+      "sha256": "9a408816daf4ffacad67437142b5722b8545a861b220f24b716c362f0514352d"
+    },
+    {
+      "path": "threshold_composition_lab/test_threshold_controls.py",
+      "matches": true,
+      "origin": "THRESHOLD_TEST_SUMMARY.json",
+      "sha256": "24e5f19732c539513cadd753d66bea2c3baa88a339c67abbb7bdf65820bc5f7e"
+    },
+    {
+      "path": "threshold_composition_lab/threshold_controls.py",
+      "matches": true,
+      "origin": "THRESHOLD_TEST_SUMMARY.json",
+      "sha256": "38fc7dd0372fdc1b55f3a64474c2e584c569855256a24b136f1e8653028d116a"
+    },
+    {
+      "path": "saturated_clause_limits/run_experiments.py",
+      "matches": true,
+      "origin": "THRESHOLD_TEST_SUMMARY.json",
+      "sha256": "fab624a30eec741b265379ba65702ff1eabb3b14cc05d9b7c9baa37cc800442f"
+    },
+    {
+      "path": "saturated_clause_limits/saturated_clause.py",
+      "matches": true,
+      "origin": "THRESHOLD_TEST_SUMMARY.json",
+      "sha256": "28f5a9e6874b7aea184d7ce6e785b1550cfc4d370751b8a6cf79bc75d03233c2"
+    },
+    {
+      "path": "saturated_clause_limits/test_saturated_clause.py",
+      "matches": true,
+      "origin": "THRESHOLD_TEST_SUMMARY.json",
+      "sha256": "5be21bab406d3bcddfafe74a184edc3d396399b75f408e63d2f9bd789cface83"
+    },
+    {
+      "path": "multiobjective_matching_limits/clause_bounds.py",
+      "matches": true,
+      "origin": "THRESHOLD_TEST_SUMMARY.json",
+      "sha256": "23e6a46189f6d0fe8cc1bad4bd9cd7cf13e9681490a9f84c206bda486b77c518"
+    },
+    {
+      "path": "multiobjective_matching_limits/test_clause_bounds.py",
+      "matches": true,
+      "origin": "THRESHOLD_TEST_SUMMARY.json",
+      "sha256": "b4469f00be145f99fcaa40c1438afabe0d1f1705bc360373f162570acae7619e"
+    },
+    {
+      "path": "packed_cost_exact_matching/packing.py",
+      "matches": true,
+      "origin": "THRESHOLD_TEST_SUMMARY.json",
+      "sha256": "1d60ffd5bf25a2cacdb08e5cf0287432135fe8134c6ca531c497e054ede30fbe"
+    },
+    {
+      "path": "packed_cost_exact_matching/run_experiments.py",
+      "matches": true,
+      "origin": "THRESHOLD_TEST_SUMMARY.json",
+      "sha256": "30f37a67592b42e4702826fac12b3250440b80f99d95ea0057e4aa95902d3640"
+    },
+    {
+      "path": "packed_cost_exact_matching/test_packing.py",
+      "matches": true,
+      "origin": "THRESHOLD_TEST_SUMMARY.json",
+      "sha256": "750091130860ebeb3a75a4b67b41164ec1e6ef0ebed9b63b3fad840320961da3"
+    },
+    {
+      "path": "NEXT_RESEARCH_BRIEF.md",
+      "matches": true,
+      "origin": "threshold_composition_lab/RESULTS.json",
+      "sha256": "8304ecc29ed6e814eeb3df1edc195d4707ff993a6cd1228bf92d4c7ed3c8c891"
+    }
+  ],
+  "feature_trade_valid": true,
+  "OR_boundary_states_replayed": 1364,
+  "saturation_matching_witnesses_replayed": 28,
+  "bounded_matching_witnesses_replayed": 24,
+  "packed_replay": {
+    "cases": 34,
+    "exact_dp_proofs": 30,
+    "honest_unknown": 4,
+    "matching_witnesses_checked": 87,
+    "all_replayed": true
+  },
+  "scope": "Stored evidence and current-source binding; no new optimization search.",
+  "audit_source_sha256": "cb831ae4e7dd8081c763233f46a385896a722de3e6aad67647e2ffd51d783c14"
+}

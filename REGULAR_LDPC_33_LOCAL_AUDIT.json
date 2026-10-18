@@ -1,0 +1,185 @@
+{
+  "source": "Jia et al., arXiv:2606.23161v3, Theorem 18",
+  "scope": "finite reconstruction of the (3,3)-regularization phase; not an all-size proof",
+  "rows": [
+    {
+      "kind": "cubic_three",
+      "input_supports": 4,
+      "split_supports": 4,
+      "g2_supports": 4,
+      "g3_variables": 18,
+      "g4_variables": 2034,
+      "suffix_variables": 1926,
+      "forward_maps": 4,
+      "auxiliary_variables": 0
+    },
+    {
+      "kind": "one_four_check",
+      "input_supports": 2,
+      "split_supports": 2,
+      "g2_supports": 2,
+      "g3_variables": 26,
+      "g4_variables": 1158,
+      "suffix_variables": 1080,
+      "forward_maps": 2,
+      "auxiliary_variables": 1
+    }
+  ],
+  "random_completion": {
+    "seed": 20261018,
+    "requested": 12,
+    "completed": 12,
+    "attempts": 16,
+    "rows": [
+      {
+        "variables": 4,
+        "checks": 3,
+        "input_supports": 8,
+        "auxiliary_variables": 3,
+        "g3_variables": 46,
+        "g3_degree_two_checks": 51,
+        "suffix_variables": 3876,
+        "g4_variables": 4014,
+        "g4_checks": 4014,
+        "suffix_bound_h": 153
+      },
+      {
+        "variables": 5,
+        "checks": 3,
+        "input_supports": 16,
+        "auxiliary_variables": 6,
+        "g3_variables": 92,
+        "g3_degree_two_checks": 111,
+        "suffix_variables": 18426,
+        "g4_variables": 18702,
+        "g4_checks": 18702,
+        "suffix_bound_h": 333
+      },
+      {
+        "variables": 5,
+        "checks": 4,
+        "input_supports": 8,
+        "auxiliary_variables": 4,
+        "g3_variables": 68,
+        "g3_degree_two_checks": 81,
+        "suffix_variables": 9801,
+        "g4_variables": 10005,
+        "g4_checks": 10005,
+        "suffix_bound_h": 243
+      },
+      {
+        "variables": 5,
+        "checks": 5,
+        "input_supports": 2,
+        "auxiliary_variables": 2,
+        "g3_variables": 44,
+        "g3_degree_two_checks": 51,
+        "suffix_variables": 3876,
+        "g4_variables": 4008,
+        "g4_checks": 4008,
+        "suffix_bound_h": 153
+      },
+      {
+        "variables": 3,
+        "checks": 3,
+        "input_supports": 4,
+        "auxiliary_variables": 0,
+        "g3_variables": 18,
+        "g3_degree_two_checks": 18,
+        "suffix_variables": 1926,
+        "g4_variables": 2034,
+        "g4_checks": 2034,
+        "suffix_bound_h": 108
+      },
+      {
+        "variables": 5,
+        "checks": 4,
+        "input_supports": 2,
+        "auxiliary_variables": 3,
+        "g3_variables": 56,
+        "g3_degree_two_checks": 63,
+        "suffix_variables": 5922,
+        "g4_variables": 6090,
+        "g4_checks": 6090,
+        "suffix_bound_h": 189
+      },
+      {
+        "variables": 3,
+        "checks": 3,
+        "input_supports": 4,
+        "auxiliary_variables": 0,
+        "g3_variables": 18,
+        "g3_degree_two_checks": 18,
+        "suffix_variables": 1926,
+        "g4_variables": 2034,
+        "g4_checks": 2034,
+        "suffix_bound_h": 108
+      },
+      {
+        "variables": 4,
+        "checks": 4,
+        "input_supports": 4,
+        "auxiliary_variables": 2,
+        "g3_variables": 36,
+        "g3_degree_two_checks": 42,
+        "suffix_variables": 2625,
+        "g4_variables": 2733,
+        "g4_checks": 2733,
+        "suffix_bound_h": 126
+      },
+      {
+        "variables": 3,
+        "checks": 3,
+        "input_supports": 4,
+        "auxiliary_variables": 0,
+        "g3_variables": 18,
+        "g3_degree_two_checks": 18,
+        "suffix_variables": 1926,
+        "g4_variables": 2034,
+        "g4_checks": 2034,
+        "suffix_bound_h": 108
+      },
+      {
+        "variables": 3,
+        "checks": 3,
+        "input_supports": 4,
+        "auxiliary_variables": 0,
+        "g3_variables": 18,
+        "g3_degree_two_checks": 18,
+        "suffix_variables": 1926,
+        "g4_variables": 2034,
+        "g4_checks": 2034,
+        "suffix_bound_h": 108
+      },
+      {
+        "variables": 5,
+        "checks": 5,
+        "input_supports": 2,
+        "auxiliary_variables": 2,
+        "g3_variables": 44,
+        "g3_degree_two_checks": 51,
+        "suffix_variables": 3876,
+        "g4_variables": 4008,
+        "g4_checks": 4008,
+        "suffix_bound_h": 153
+      },
+      {
+        "variables": 4,
+        "checks": 5,
+        "input_supports": 1,
+        "auxiliary_variables": 0,
+        "g3_variables": 24,
+        "g3_degree_two_checks": 30,
+        "suffix_variables": 1335,
+        "g4_variables": 1407,
+        "g4_checks": 1407,
+        "suffix_bound_h": 90
+      }
+    ]
+  },
+  "all_checks_passed": true,
+  "source_sha256": {
+    "regular_ldpc_33_local_audit.py": "f66582f7752f4114017c83daf35a2084f74b0a1fa216315323fda3f9fa2fcb3e",
+    "REGULAR_LDPC_MINIMUM_DISTANCE_SCOPE.md": "35737e0d11bb535613780004503aa2eb3cc73953a57a13bcbd961ac6f6ad3e41"
+  }
+}

@@ -1,0 +1,1979 @@
+{
+  "format": "degree-two-homogeneous-min-distance-v1",
+  "timestamp_utc": "2026-10-18T09:51:22.807630+00:00",
+  "all_checks_passed": true,
+  "rows": [
+    {
+      "name": "triangle_cycle",
+      "rows": 3,
+      "columns": [
+        3,
+        6,
+        5
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 3,
+        "kind": "cycle",
+        "selected_columns": [
+          2,
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "name": "terminal_path",
+      "rows": 3,
+      "columns": [
+        1,
+        3,
+        6,
+        4
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 4,
+        "kind": "terminal_path",
+        "selected_columns": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "terminal_columns": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "name": "parallel_edges",
+      "rows": 2,
+      "columns": [
+        3,
+        3,
+        1
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 2,
+        "kind": "cycle",
+        "selected_columns": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "name": "forest_no_kernel",
+      "rows": 4,
+      "columns": [
+        3,
+        6,
+        12
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": null,
+        "kind": "zero_only",
+        "selected_columns": []
+      }
+    },
+    {
+      "name": "zero_column",
+      "rows": 3,
+      "columns": [
+        0,
+        3,
+        6
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 1,
+        "kind": "zero_column",
+        "selected_columns": [
+          0
+        ]
+      }
+    },
+    {
+      "name": "cycle_beats_terminal_path",
+      "rows": 4,
+      "columns": [
+        3,
+        6,
+        12,
+        9,
+        1,
+        8
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 3,
+        "kind": "terminal_path",
+        "selected_columns": [
+          3,
+          4,
+          5
+        ],
+        "terminal_columns": [
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "name": "random_000",
+      "rows": 2,
+      "columns": [
+        1,
+        2
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": null,
+        "kind": "zero_only",
+        "selected_columns": []
+      }
+    },
+    {
+      "name": "random_001",
+      "rows": 3,
+      "columns": [
+        6,
+        0,
+        6
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 1,
+        "kind": "zero_column",
+        "selected_columns": [
+          1
+        ]
+      }
+    },
+    {
+      "name": "random_002",
+      "rows": 4,
+      "columns": [
+        8,
+        9,
+        9,
+        1
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 2,
+        "kind": "cycle",
+        "selected_columns": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "name": "random_003",
+      "rows": 5,
+      "columns": [
+        8,
+        1,
+        9,
+        9,
+        5
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 2,
+        "kind": "cycle",
+        "selected_columns": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "name": "random_004",
+      "rows": 2,
+      "columns": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 1,
+        "kind": "zero_column",
+        "selected_columns": [
+          0
+        ]
+      }
+    },
+    {
+      "name": "random_005",
+      "rows": 3,
+      "columns": [
+        4,
+        6,
+        6,
+        1,
+        4,
+        4,
+        0
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 1,
+        "kind": "zero_column",
+        "selected_columns": [
+          6
+        ]
+      }
+    },
+    {
+      "name": "random_006",
+      "rows": 4,
+      "columns": [
+        1,
+        12,
+        12,
+        8,
+        0,
+        1,
+        9,
+        1
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 1,
+        "kind": "zero_column",
+        "selected_columns": [
+          4
+        ]
+      }
+    },
+    {
+      "name": "random_007",
+      "rows": 5,
+      "columns": [
+        5,
+        2
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": null,
+        "kind": "zero_only",
+        "selected_columns": []
+      }
+    },
+    {
+      "name": "random_008",
+      "rows": 2,
+      "columns": [
+        0,
+        0,
+        2
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 1,
+        "kind": "zero_column",
+        "selected_columns": [
+          0
+        ]
+      }
+    },
+    {
+      "name": "random_009",
+      "rows": 3,
+      "columns": [
+        4,
+        5,
+        0,
+        2
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 1,
+        "kind": "zero_column",
+        "selected_columns": [
+          2
+        ]
+      }
+    },
+    {
+      "name": "random_010",
+      "rows": 4,
+      "columns": [
+        1,
+        10,
+        0,
+        1,
+        8
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 1,
+        "kind": "zero_column",
+        "selected_columns": [
+          2
+        ]
+      }
+    },
+    {
+      "name": "random_011",
+      "rows": 5,
+      "columns": [
+        8,
+        24,
+        24,
+        18,
+        6,
+        0
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 1,
+        "kind": "zero_column",
+        "selected_columns": [
+          5
+        ]
+      }
+    },
+    {
+      "name": "random_012",
+      "rows": 2,
+      "columns": [
+        3,
+        1,
+        1,
+        0,
+        1,
+        0,
+        2
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 1,
+        "kind": "zero_column",
+        "selected_columns": [
+          3
+        ]
+      }
+    },
+    {
+      "name": "random_013",
+      "rows": 3,
+      "columns": [
+        3,
+        1,
+        0,
+        0,
+        2,
+        2,
+        5,
+        3
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 1,
+        "kind": "zero_column",
+        "selected_columns": [
+          2
+        ]
+      }
+    },
+    {
+      "name": "random_014",
+      "rows": 4,
+      "columns": [
+        3,
+        1
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": null,
+        "kind": "zero_only",
+        "selected_columns": []
+      }
+    },
+    {
+      "name": "random_015",
+      "rows": 5,
+      "columns": [
+        2,
+        8,
+        4
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": null,
+        "kind": "zero_only",
+        "selected_columns": []
+      }
+    },
+    {
+      "name": "random_016",
+      "rows": 2,
+      "columns": [
+        1,
+        0,
+        2,
+        1
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 1,
+        "kind": "zero_column",
+        "selected_columns": [
+          1
+        ]
+      }
+    },
+    {
+      "name": "random_017",
+      "rows": 3,
+      "columns": [
+        3,
+        4,
+        3,
+        1,
+        4
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 2,
+        "kind": "cycle",
+        "selected_columns": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "name": "random_018",
+      "rows": 4,
+      "columns": [
+        8,
+        8,
+        3,
+        9,
+        4,
+        12
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 2,
+        "kind": "terminal_path",
+        "selected_columns": [
+          0,
+          1
+        ],
+        "terminal_columns": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "name": "random_019",
+      "rows": 5,
+      "columns": [
+        17,
+        24,
+        12,
+        2,
+        0,
+        8,
+        8
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 1,
+        "kind": "zero_column",
+        "selected_columns": [
+          4
+        ]
+      }
+    },
+    {
+      "name": "random_020",
+      "rows": 2,
+      "columns": [
+        0,
+        2,
+        1,
+        2,
+        3,
+        0,
+        3,
+        3
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 1,
+        "kind": "zero_column",
+        "selected_columns": [
+          0
+        ]
+      }
+    },
+    {
+      "name": "random_021",
+      "rows": 3,
+      "columns": [
+        4,
+        6
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": null,
+        "kind": "zero_only",
+        "selected_columns": []
+      }
+    },
+    {
+      "name": "random_022",
+      "rows": 4,
+      "columns": [
+        6,
+        6,
+        9
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 2,
+        "kind": "cycle",
+        "selected_columns": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "name": "random_023",
+      "rows": 5,
+      "columns": [
+        8,
+        16,
+        3,
+        20
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": null,
+        "kind": "zero_only",
+        "selected_columns": []
+      }
+    },
+    {
+      "name": "random_024",
+      "rows": 2,
+      "columns": [
+        1,
+        1,
+        1,
+        0,
+        3
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 1,
+        "kind": "zero_column",
+        "selected_columns": [
+          3
+        ]
+      }
+    },
+    {
+      "name": "random_025",
+      "rows": 3,
+      "columns": [
+        1,
+        1,
+        1,
+        6,
+        4,
+        0
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 1,
+        "kind": "zero_column",
+        "selected_columns": [
+          5
+        ]
+      }
+    },
+    {
+      "name": "random_026",
+      "rows": 4,
+      "columns": [
+        10,
+        0,
+        10,
+        6,
+        2,
+        4,
+        10
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 1,
+        "kind": "zero_column",
+        "selected_columns": [
+          1
+        ]
+      }
+    },
+    {
+      "name": "random_027",
+      "rows": 5,
+      "columns": [
+        9,
+        17,
+        9,
+        17,
+        12,
+        17,
+        6,
+        1
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 2,
+        "kind": "cycle",
+        "selected_columns": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "name": "random_028",
+      "rows": 2,
+      "columns": [
+        1,
+        2
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": null,
+        "kind": "zero_only",
+        "selected_columns": []
+      }
+    },
+    {
+      "name": "random_029",
+      "rows": 3,
+      "columns": [
+        4,
+        6,
+        2
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 3,
+        "kind": "terminal_path",
+        "selected_columns": [
+          0,
+          1,
+          2
+        ],
+        "terminal_columns": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "name": "random_030",
+      "rows": 4,
+      "columns": [
+        0,
+        12,
+        9,
+        5
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 1,
+        "kind": "zero_column",
+        "selected_columns": [
+          0
+        ]
+      }
+    },
+    {
+      "name": "random_031",
+      "rows": 5,
+      "columns": [
+        1,
+        20,
+        6,
+        6,
+        4
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 2,
+        "kind": "cycle",
+        "selected_columns": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "name": "random_032",
+      "rows": 2,
+      "columns": [
+        1,
+        2,
+        3,
+        0,
+        1,
+        2
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 1,
+        "kind": "zero_column",
+        "selected_columns": [
+          3
+        ]
+      }
+    },
+    {
+      "name": "random_033",
+      "rows": 3,
+      "columns": [
+        2,
+        2,
+        2,
+        3,
+        0,
+        2,
+        4
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 1,
+        "kind": "zero_column",
+        "selected_columns": [
+          4
+        ]
+      }
+    },
+    {
+      "name": "random_034",
+      "rows": 4,
+      "columns": [
+        9,
+        0,
+        3,
+        2,
+        9,
+        10,
+        12,
+        0
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 1,
+        "kind": "zero_column",
+        "selected_columns": [
+          1
+        ]
+      }
+    },
+    {
+      "name": "random_035",
+      "rows": 5,
+      "columns": [
+        1,
+        2
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": null,
+        "kind": "zero_only",
+        "selected_columns": []
+      }
+    },
+    {
+      "name": "random_036",
+      "rows": 2,
+      "columns": [
+        0,
+        2,
+        2
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 1,
+        "kind": "zero_column",
+        "selected_columns": [
+          0
+        ]
+      }
+    },
+    {
+      "name": "random_037",
+      "rows": 3,
+      "columns": [
+        1,
+        0,
+        3,
+        4
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 1,
+        "kind": "zero_column",
+        "selected_columns": [
+          1
+        ]
+      }
+    },
+    {
+      "name": "random_038",
+      "rows": 4,
+      "columns": [
+        6,
+        6,
+        10,
+        2,
+        12
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 2,
+        "kind": "cycle",
+        "selected_columns": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "name": "random_039",
+      "rows": 5,
+      "columns": [
+        4,
+        6,
+        17,
+        5,
+        4,
+        4
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 2,
+        "kind": "terminal_path",
+        "selected_columns": [
+          0,
+          4
+        ],
+        "terminal_columns": [
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "name": "random_040",
+      "rows": 2,
+      "columns": [
+        0,
+        3,
+        0,
+        3,
+        0,
+        0,
+        2
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 1,
+        "kind": "zero_column",
+        "selected_columns": [
+          0
+        ]
+      }
+    },
+    {
+      "name": "random_041",
+      "rows": 3,
+      "columns": [
+        6,
+        4,
+        1,
+        0,
+        2,
+        4,
+        2,
+        5
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 1,
+        "kind": "zero_column",
+        "selected_columns": [
+          3
+        ]
+      }
+    },
+    {
+      "name": "random_042",
+      "rows": 4,
+      "columns": [
+        3,
+        1
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": null,
+        "kind": "zero_only",
+        "selected_columns": []
+      }
+    },
+    {
+      "name": "random_043",
+      "rows": 5,
+      "columns": [
+        16,
+        3,
+        20
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": null,
+        "kind": "zero_only",
+        "selected_columns": []
+      }
+    },
+    {
+      "name": "random_044",
+      "rows": 2,
+      "columns": [
+        3,
+        0,
+        3,
+        1
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 1,
+        "kind": "zero_column",
+        "selected_columns": [
+          1
+        ]
+      }
+    },
+    {
+      "name": "random_045",
+      "rows": 3,
+      "columns": [
+        5,
+        6,
+        1,
+        2,
+        0
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 1,
+        "kind": "zero_column",
+        "selected_columns": [
+          4
+        ]
+      }
+    },
+    {
+      "name": "random_046",
+      "rows": 4,
+      "columns": [
+        10,
+        2,
+        4,
+        5,
+        12,
+        10
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 2,
+        "kind": "cycle",
+        "selected_columns": [
+          5,
+          0
+        ]
+      }
+    },
+    {
+      "name": "random_047",
+      "rows": 5,
+      "columns": [
+        1,
+        5,
+        5,
+        0,
+        3,
+        17,
+        1
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 1,
+        "kind": "zero_column",
+        "selected_columns": [
+          3
+        ]
+      }
+    },
+    {
+      "name": "random_048",
+      "rows": 2,
+      "columns": [
+        1,
+        2,
+        1,
+        3,
+        0,
+        1,
+        1,
+        3
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 1,
+        "kind": "zero_column",
+        "selected_columns": [
+          4
+        ]
+      }
+    },
+    {
+      "name": "random_049",
+      "rows": 3,
+      "columns": [
+        0,
+        0
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 1,
+        "kind": "zero_column",
+        "selected_columns": [
+          0
+        ]
+      }
+    },
+    {
+      "name": "random_050",
+      "rows": 4,
+      "columns": [
+        9,
+        5,
+        3
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": null,
+        "kind": "zero_only",
+        "selected_columns": []
+      }
+    },
+    {
+      "name": "random_051",
+      "rows": 5,
+      "columns": [
+        0,
+        0,
+        10,
+        20
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 1,
+        "kind": "zero_column",
+        "selected_columns": [
+          0
+        ]
+      }
+    },
+    {
+      "name": "random_052",
+      "rows": 2,
+      "columns": [
+        0,
+        3,
+        0,
+        1,
+        3
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 1,
+        "kind": "zero_column",
+        "selected_columns": [
+          0
+        ]
+      }
+    },
+    {
+      "name": "random_053",
+      "rows": 3,
+      "columns": [
+        2,
+        6,
+        1,
+        3,
+        6,
+        6
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 2,
+        "kind": "cycle",
+        "selected_columns": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "name": "random_054",
+      "rows": 4,
+      "columns": [
+        0,
+        2,
+        4,
+        0,
+        8,
+        4,
+        6
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 1,
+        "kind": "zero_column",
+        "selected_columns": [
+          0
+        ]
+      }
+    },
+    {
+      "name": "random_055",
+      "rows": 5,
+      "columns": [
+        1,
+        17,
+        10,
+        2,
+        18,
+        10,
+        9,
+        24
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 2,
+        "kind": "cycle",
+        "selected_columns": [
+          5,
+          2
+        ]
+      }
+    },
+    {
+      "name": "random_056",
+      "rows": 2,
+      "columns": [
+        0,
+        2
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 1,
+        "kind": "zero_column",
+        "selected_columns": [
+          0
+        ]
+      }
+    },
+    {
+      "name": "random_057",
+      "rows": 3,
+      "columns": [
+        1,
+        4,
+        6
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": null,
+        "kind": "zero_only",
+        "selected_columns": []
+      }
+    },
+    {
+      "name": "random_058",
+      "rows": 4,
+      "columns": [
+        4,
+        5,
+        2,
+        3
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 4,
+        "kind": "terminal_path",
+        "selected_columns": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "terminal_columns": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "name": "random_059",
+      "rows": 5,
+      "columns": [
+        18,
+        8,
+        17,
+        4,
+        20
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": null,
+        "kind": "zero_only",
+        "selected_columns": []
+      }
+    },
+    {
+      "name": "random_060",
+      "rows": 2,
+      "columns": [
+        1,
+        0,
+        3,
+        3,
+        1,
+        3
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 1,
+        "kind": "zero_column",
+        "selected_columns": [
+          1
+        ]
+      }
+    },
+    {
+      "name": "random_061",
+      "rows": 3,
+      "columns": [
+        3,
+        2,
+        1,
+        3,
+        4,
+        1,
+        6
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 2,
+        "kind": "cycle",
+        "selected_columns": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "name": "random_062",
+      "rows": 4,
+      "columns": [
+        3,
+        8,
+        5,
+        5,
+        4,
+        3,
+        0,
+        0
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 1,
+        "kind": "zero_column",
+        "selected_columns": [
+          6
+        ]
+      }
+    },
+    {
+      "name": "random_063",
+      "rows": 5,
+      "columns": [
+        18,
+        17
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": null,
+        "kind": "zero_only",
+        "selected_columns": []
+      }
+    },
+    {
+      "name": "random_064",
+      "rows": 2,
+      "columns": [
+        1,
+        3,
+        3
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 2,
+        "kind": "cycle",
+        "selected_columns": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "name": "random_065",
+      "rows": 3,
+      "columns": [
+        1,
+        2,
+        2,
+        4
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 2,
+        "kind": "terminal_path",
+        "selected_columns": [
+          1,
+          2
+        ],
+        "terminal_columns": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "name": "random_066",
+      "rows": 4,
+      "columns": [
+        9,
+        0,
+        8,
+        3,
+        3
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 1,
+        "kind": "zero_column",
+        "selected_columns": [
+          1
+        ]
+      }
+    },
+    {
+      "name": "random_067",
+      "rows": 5,
+      "columns": [
+        4,
+        8,
+        9,
+        0,
+        2,
+        3
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 1,
+        "kind": "zero_column",
+        "selected_columns": [
+          3
+        ]
+      }
+    },
+    {
+      "name": "random_068",
+      "rows": 2,
+      "columns": [
+        2,
+        0,
+        1,
+        2,
+        2,
+        2,
+        1
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 1,
+        "kind": "zero_column",
+        "selected_columns": [
+          1
+        ]
+      }
+    },
+    {
+      "name": "random_069",
+      "rows": 3,
+      "columns": [
+        3,
+        0,
+        0,
+        6,
+        6,
+        0,
+        0,
+        1
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 1,
+        "kind": "zero_column",
+        "selected_columns": [
+          1
+        ]
+      }
+    },
+    {
+      "name": "random_070",
+      "rows": 4,
+      "columns": [
+        0,
+        1
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 1,
+        "kind": "zero_column",
+        "selected_columns": [
+          0
+        ]
+      }
+    },
+    {
+      "name": "random_071",
+      "rows": 5,
+      "columns": [
+        4,
+        9,
+        17
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": null,
+        "kind": "zero_only",
+        "selected_columns": []
+      }
+    },
+    {
+      "name": "random_072",
+      "rows": 2,
+      "columns": [
+        2,
+        2,
+        1,
+        3
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 2,
+        "kind": "terminal_path",
+        "selected_columns": [
+          0,
+          1
+        ],
+        "terminal_columns": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "name": "random_073",
+      "rows": 3,
+      "columns": [
+        2,
+        6,
+        6,
+        1,
+        6
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 2,
+        "kind": "cycle",
+        "selected_columns": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "name": "random_074",
+      "rows": 4,
+      "columns": [
+        9,
+        3,
+        0,
+        12,
+        3,
+        9
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 1,
+        "kind": "zero_column",
+        "selected_columns": [
+          2
+        ]
+      }
+    },
+    {
+      "name": "random_075",
+      "rows": 5,
+      "columns": [
+        20,
+        24,
+        17,
+        12,
+        10,
+        6,
+        4
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 3,
+        "kind": "cycle",
+        "selected_columns": [
+          3,
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "name": "random_076",
+      "rows": 2,
+      "columns": [
+        1,
+        3,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 1,
+        "kind": "zero_column",
+        "selected_columns": [
+          3
+        ]
+      }
+    },
+    {
+      "name": "random_077",
+      "rows": 3,
+      "columns": [
+        1,
+        6
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": null,
+        "kind": "zero_only",
+        "selected_columns": []
+      }
+    },
+    {
+      "name": "random_078",
+      "rows": 4,
+      "columns": [
+        1,
+        6,
+        5
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": null,
+        "kind": "zero_only",
+        "selected_columns": []
+      }
+    },
+    {
+      "name": "random_079",
+      "rows": 5,
+      "columns": [
+        0,
+        16,
+        1,
+        2
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 1,
+        "kind": "zero_column",
+        "selected_columns": [
+          0
+        ]
+      }
+    },
+    {
+      "name": "random_080",
+      "rows": 2,
+      "columns": [
+        2,
+        1,
+        2,
+        3,
+        1
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 2,
+        "kind": "terminal_path",
+        "selected_columns": [
+          0,
+          2
+        ],
+        "terminal_columns": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "name": "random_081",
+      "rows": 3,
+      "columns": [
+        3,
+        5,
+        5,
+        0,
+        0,
+        6
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 1,
+        "kind": "zero_column",
+        "selected_columns": [
+          3
+        ]
+      }
+    },
+    {
+      "name": "random_082",
+      "rows": 4,
+      "columns": [
+        0,
+        0,
+        3,
+        3,
+        0,
+        3,
+        8
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 1,
+        "kind": "zero_column",
+        "selected_columns": [
+          0
+        ]
+      }
+    },
+    {
+      "name": "random_083",
+      "rows": 5,
+      "columns": [
+        9,
+        20,
+        12,
+        12,
+        1,
+        12,
+        3,
+        3
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 2,
+        "kind": "cycle",
+        "selected_columns": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "name": "random_084",
+      "rows": 2,
+      "columns": [
+        1,
+        3
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": null,
+        "kind": "zero_only",
+        "selected_columns": []
+      }
+    },
+    {
+      "name": "random_085",
+      "rows": 3,
+      "columns": [
+        6,
+        4,
+        5
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": null,
+        "kind": "zero_only",
+        "selected_columns": []
+      }
+    },
+    {
+      "name": "random_086",
+      "rows": 4,
+      "columns": [
+        8,
+        4,
+        12,
+        9
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 3,
+        "kind": "terminal_path",
+        "selected_columns": [
+          0,
+          1,
+          2
+        ],
+        "terminal_columns": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "name": "random_087",
+      "rows": 5,
+      "columns": [
+        20,
+        17,
+        4,
+        24,
+        16
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 3,
+        "kind": "terminal_path",
+        "selected_columns": [
+          0,
+          2,
+          4
+        ],
+        "terminal_columns": [
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "name": "random_088",
+      "rows": 2,
+      "columns": [
+        0,
+        0,
+        2,
+        0,
+        0,
+        1
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 1,
+        "kind": "zero_column",
+        "selected_columns": [
+          0
+        ]
+      }
+    },
+    {
+      "name": "random_089",
+      "rows": 3,
+      "columns": [
+        1,
+        6,
+        0,
+        1,
+        1,
+        5,
+        3
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 1,
+        "kind": "zero_column",
+        "selected_columns": [
+          2
+        ]
+      }
+    },
+    {
+      "name": "random_090",
+      "rows": 4,
+      "columns": [
+        5,
+        4,
+        8,
+        12,
+        4,
+        10,
+        3,
+        8
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 2,
+        "kind": "terminal_path",
+        "selected_columns": [
+          1,
+          4
+        ],
+        "terminal_columns": [
+          1,
+          4
+        ]
+      }
+    },
+    {
+      "name": "random_091",
+      "rows": 5,
+      "columns": [
+        20,
+        2
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": null,
+        "kind": "zero_only",
+        "selected_columns": []
+      }
+    },
+    {
+      "name": "random_092",
+      "rows": 2,
+      "columns": [
+        3,
+        1,
+        0
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 1,
+        "kind": "zero_column",
+        "selected_columns": [
+          2
+        ]
+      }
+    },
+    {
+      "name": "random_093",
+      "rows": 3,
+      "columns": [
+        5,
+        0,
+        0,
+        3
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 1,
+        "kind": "zero_column",
+        "selected_columns": [
+          1
+        ]
+      }
+    },
+    {
+      "name": "random_094",
+      "rows": 4,
+      "columns": [
+        5,
+        9,
+        12,
+        8,
+        12
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 2,
+        "kind": "cycle",
+        "selected_columns": [
+          4,
+          2
+        ]
+      }
+    },
+    {
+      "name": "random_095",
+      "rows": 5,
+      "columns": [
+        0,
+        2,
+        1,
+        2,
+        4,
+        9
+      ],
+      "solution": {
+        "status": "EXACT",
+        "distance": 1,
+        "kind": "zero_column",
+        "selected_columns": [
+          0
+        ]
+      }
+    }
+  ],
+  "scope": "Polynomial solver for binary parity-check matrices with column weight at most two."
+}

@@ -1,0 +1,1369 @@
+{
+  "schema": "saturated_clause_limits_v1",
+  "started_utc": "2026-10-17T14:36:07.357438+00:00",
+  "python": "3.10.10",
+  "exact_integer_arithmetic": true,
+  "status": "PROVED_SCOPED_OBSTRUCTION_AND_CONSTRUCTIVE_PROMISED_CONTROL",
+  "universal_reduction_or_P_versus_NP_result_claimed": false,
+  "exact_flat_OR_exchange_witnesses": [
+    {
+      "inputs": 2,
+      "A": 3,
+      "B": 12,
+      "e": 0,
+      "rejected_neighbors": [
+        {
+          "f": 1,
+          "neighbor_A": 0
+        },
+        {
+          "f": 2,
+          "neighbor_A": 6
+        },
+        {
+          "f": 3,
+          "neighbor_A": 10
+        }
+      ],
+      "violates_ordinary_exchange": true
+    },
+    {
+      "inputs": 3,
+      "A": 3,
+      "B": 12,
+      "e": 0,
+      "rejected_neighbors": [
+        {
+          "f": 1,
+          "neighbor_A": 0
+        },
+        {
+          "f": 2,
+          "neighbor_A": 6
+        },
+        {
+          "f": 3,
+          "neighbor_A": 10
+        }
+      ],
+      "violates_ordinary_exchange": true
+    },
+    {
+      "inputs": 4,
+      "A": 3,
+      "B": 12,
+      "e": 0,
+      "rejected_neighbors": [
+        {
+          "f": 1,
+          "neighbor_A": 0
+        },
+        {
+          "f": 2,
+          "neighbor_A": 6
+        },
+        {
+          "f": 3,
+          "neighbor_A": 10
+        }
+      ],
+      "violates_ordinary_exchange": true
+    },
+    {
+      "inputs": 5,
+      "A": 3,
+      "B": 12,
+      "e": 0,
+      "rejected_neighbors": [
+        {
+          "f": 1,
+          "neighbor_A": 0
+        },
+        {
+          "f": 2,
+          "neighbor_A": 6
+        },
+        {
+          "f": 3,
+          "neighbor_A": 10
+        }
+      ],
+      "violates_ordinary_exchange": true
+    },
+    {
+      "inputs": 6,
+      "A": 3,
+      "B": 12,
+      "e": 0,
+      "rejected_neighbors": [
+        {
+          "f": 1,
+          "neighbor_A": 0
+        },
+        {
+          "f": 2,
+          "neighbor_A": 6
+        },
+        {
+          "f": 3,
+          "neighbor_A": 10
+        }
+      ],
+      "violates_ordinary_exchange": true
+    }
+  ],
+  "raw_threshold_gadgets": [
+    {
+      "request": {
+        "n": 2,
+        "terminals": [
+          0,
+          1
+        ],
+        "edges": [
+          [
+            0,
+            1,
+            1
+          ]
+        ]
+      },
+      "request_sha256": "2cc5272fdddf993aad723a42695dde795361383fa444ad4c7f64d3f2bc6cc024",
+      "signature": [
+        {
+          "deleted": 0,
+          "cost": 1,
+          "matching": [
+            0
+          ]
+        },
+        {
+          "deleted": 3,
+          "cost": 0,
+          "matching": []
+        }
+      ],
+      "valid_domain": [
+        0,
+        3
+      ],
+      "valid_costs": [
+        {
+          "deleted": 0,
+          "true_literals": 0,
+          "cost": 1
+        },
+        {
+          "deleted": 3,
+          "true_literals": 1,
+          "cost": 0
+        }
+      ],
+      "invalid_feasible_states": [],
+      "zero_support_audit": {
+        "nonempty": true,
+        "parities": [
+          0
+        ],
+        "exchange_failure": null,
+        "is_even_delta_matroid": true
+      },
+      "threshold": 0,
+      "threshold_support": [
+        3
+      ],
+      "threshold_audit": {
+        "nonempty": true,
+        "parities": [
+          0
+        ],
+        "two_sided_exchange_failure": null,
+        "passes_necessary_threshold_conditions": true,
+        "sufficient_for_matching_realizability_claimed": false
+      }
+    },
+    {
+      "request": {
+        "n": 4,
+        "terminals": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "edges": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            2,
+            3,
+            1
+          ]
+        ]
+      },
+      "request_sha256": "01ac5c7cb9a86ea00b1df006fd97fa12c1960ba88a83b6551ea1ea06a234b879",
+      "signature": [
+        {
+          "deleted": 0,
+          "cost": 2,
+          "matching": [
+            0,
+            1
+          ]
+        },
+        {
+          "deleted": 3,
+          "cost": 1,
+          "matching": [
+            1
+          ]
+        },
+        {
+          "deleted": 12,
+          "cost": 1,
+          "matching": [
+            0
+          ]
+        },
+        {
+          "deleted": 15,
+          "cost": 0,
+          "matching": []
+        }
+      ],
+      "valid_domain": [
+        0,
+        3,
+        12,
+        15
+      ],
+      "valid_costs": [
+        {
+          "deleted": 0,
+          "true_literals": 0,
+          "cost": 2
+        },
+        {
+          "deleted": 3,
+          "true_literals": 1,
+          "cost": 1
+        },
+        {
+          "deleted": 12,
+          "true_literals": 1,
+          "cost": 1
+        },
+        {
+          "deleted": 15,
+          "true_literals": 2,
+          "cost": 0
+        }
+      ],
+      "invalid_feasible_states": [],
+      "zero_support_audit": {
+        "nonempty": true,
+        "parities": [
+          0
+        ],
+        "exchange_failure": null,
+        "is_even_delta_matroid": true
+      },
+      "threshold": 1,
+      "threshold_support": [
+        3,
+        12,
+        15
+      ],
+      "threshold_audit": {
+        "nonempty": true,
+        "parities": [
+          0
+        ],
+        "two_sided_exchange_failure": null,
+        "passes_necessary_threshold_conditions": true,
+        "sufficient_for_matching_realizability_claimed": false
+      }
+    },
+    {
+      "request": {
+        "n": 6,
+        "terminals": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "edges": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            2,
+            3,
+            1
+          ],
+          [
+            4,
+            5,
+            1
+          ]
+        ]
+      },
+      "request_sha256": "e49f5d7c65a93f49c44936d8445e9ef408501ee284088cf67c6816272c7bb4a6",
+      "signature": [
+        {
+          "deleted": 0,
+          "cost": 3,
+          "matching": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "deleted": 3,
+          "cost": 2,
+          "matching": [
+            1,
+            2
+          ]
+        },
+        {
+          "deleted": 12,
+          "cost": 2,
+          "matching": [
+            0,
+            2
+          ]
+        },
+        {
+          "deleted": 15,
+          "cost": 1,
+          "matching": [
+            2
+          ]
+        },
+        {
+          "deleted": 48,
+          "cost": 2,
+          "matching": [
+            0,
+            1
+          ]
+        },
+        {
+          "deleted": 51,
+          "cost": 1,
+          "matching": [
+            1
+          ]
+        },
+        {
+          "deleted": 60,
+          "cost": 1,
+          "matching": [
+            0
+          ]
+        },
+        {
+          "deleted": 63,
+          "cost": 0,
+          "matching": []
+        }
+      ],
+      "valid_domain": [
+        0,
+        3,
+        12,
+        15,
+        48,
+        51,
+        60,
+        63
+      ],
+      "valid_costs": [
+        {
+          "deleted": 0,
+          "true_literals": 0,
+          "cost": 3
+        },
+        {
+          "deleted": 3,
+          "true_literals": 1,
+          "cost": 2
+        },
+        {
+          "deleted": 12,
+          "true_literals": 1,
+          "cost": 2
+        },
+        {
+          "deleted": 15,
+          "true_literals": 2,
+          "cost": 1
+        },
+        {
+          "deleted": 48,
+          "true_literals": 1,
+          "cost": 2
+        },
+        {
+          "deleted": 51,
+          "true_literals": 2,
+          "cost": 1
+        },
+        {
+          "deleted": 60,
+          "true_literals": 2,
+          "cost": 1
+        },
+        {
+          "deleted": 63,
+          "true_literals": 3,
+          "cost": 0
+        }
+      ],
+      "invalid_feasible_states": [],
+      "zero_support_audit": {
+        "nonempty": true,
+        "parities": [
+          0
+        ],
+        "exchange_failure": null,
+        "is_even_delta_matroid": true
+      },
+      "threshold": 2,
+      "threshold_support": [
+        3,
+        12,
+        15,
+        48,
+        51,
+        60,
+        63
+      ],
+      "threshold_audit": {
+        "nonempty": true,
+        "parities": [
+          0
+        ],
+        "two_sided_exchange_failure": null,
+        "passes_necessary_threshold_conditions": true,
+        "sufficient_for_matching_realizability_claimed": false
+      }
+    },
+    {
+      "request": {
+        "n": 8,
+        "terminals": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "edges": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            2,
+            3,
+            1
+          ],
+          [
+            4,
+            5,
+            1
+          ],
+          [
+            6,
+            7,
+            1
+          ]
+        ]
+      },
+      "request_sha256": "5fc72299f0ed8fa46bbf0f1655a5a824237c1a7382dfacbcda54105533cb43bd",
+      "signature": [
+        {
+          "deleted": 0,
+          "cost": 4,
+          "matching": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "deleted": 3,
+          "cost": 3,
+          "matching": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "deleted": 12,
+          "cost": 3,
+          "matching": [
+            0,
+            2,
+            3
+          ]
+        },
+        {
+          "deleted": 15,
+          "cost": 2,
+          "matching": [
+            2,
+            3
+          ]
+        },
+        {
+          "deleted": 48,
+          "cost": 3,
+          "matching": [
+            0,
+            1,
+            3
+          ]
+        },
+        {
+          "deleted": 51,
+          "cost": 2,
+          "matching": [
+            1,
+            3
+          ]
+        },
+        {
+          "deleted": 60,
+          "cost": 2,
+          "matching": [
+            0,
+            3
+          ]
+        },
+        {
+          "deleted": 63,
+          "cost": 1,
+          "matching": [
+            3
+          ]
+        },
+        {
+          "deleted": 192,
+          "cost": 3,
+          "matching": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "deleted": 195,
+          "cost": 2,
+          "matching": [
+            1,
+            2
+          ]
+        },
+        {
+          "deleted": 204,
+          "cost": 2,
+          "matching": [
+            0,
+            2
+          ]
+        },
+        {
+          "deleted": 207,
+          "cost": 1,
+          "matching": [
+            2
+          ]
+        },
+        {
+          "deleted": 240,
+          "cost": 2,
+          "matching": [
+            0,
+            1
+          ]
+        },
+        {
+          "deleted": 243,
+          "cost": 1,
+          "matching": [
+            1
+          ]
+        },
+        {
+          "deleted": 252,
+          "cost": 1,
+          "matching": [
+            0
+          ]
+        },
+        {
+          "deleted": 255,
+          "cost": 0,
+          "matching": []
+        }
+      ],
+      "valid_domain": [
+        0,
+        3,
+        12,
+        15,
+        48,
+        51,
+        60,
+        63,
+        192,
+        195,
+        204,
+        207,
+        240,
+        243,
+        252,
+        255
+      ],
+      "valid_costs": [
+        {
+          "deleted": 0,
+          "true_literals": 0,
+          "cost": 4
+        },
+        {
+          "deleted": 3,
+          "true_literals": 1,
+          "cost": 3
+        },
+        {
+          "deleted": 12,
+          "true_literals": 1,
+          "cost": 3
+        },
+        {
+          "deleted": 15,
+          "true_literals": 2,
+          "cost": 2
+        },
+        {
+          "deleted": 48,
+          "true_literals": 1,
+          "cost": 3
+        },
+        {
+          "deleted": 51,
+          "true_literals": 2,
+          "cost": 2
+        },
+        {
+          "deleted": 60,
+          "true_literals": 2,
+          "cost": 2
+        },
+        {
+          "deleted": 63,
+          "true_literals": 3,
+          "cost": 1
+        },
+        {
+          "deleted": 192,
+          "true_literals": 1,
+          "cost": 3
+        },
+        {
+          "deleted": 195,
+          "true_literals": 2,
+          "cost": 2
+        },
+        {
+          "deleted": 204,
+          "true_literals": 2,
+          "cost": 2
+        },
+        {
+          "deleted": 207,
+          "true_literals": 3,
+          "cost": 1
+        },
+        {
+          "deleted": 240,
+          "true_literals": 2,
+          "cost": 2
+        },
+        {
+          "deleted": 243,
+          "true_literals": 3,
+          "cost": 1
+        },
+        {
+          "deleted": 252,
+          "true_literals": 3,
+          "cost": 1
+        },
+        {
+          "deleted": 255,
+          "true_literals": 4,
+          "cost": 0
+        }
+      ],
+      "invalid_feasible_states": [],
+      "zero_support_audit": {
+        "nonempty": true,
+        "parities": [
+          0
+        ],
+        "exchange_failure": null,
+        "is_even_delta_matroid": true
+      },
+      "threshold": 3,
+      "threshold_support": [
+        3,
+        12,
+        15,
+        48,
+        51,
+        60,
+        63,
+        192,
+        195,
+        204,
+        207,
+        240,
+        243,
+        252,
+        255
+      ],
+      "threshold_audit": {
+        "nonempty": true,
+        "parities": [
+          0
+        ],
+        "two_sided_exchange_failure": null,
+        "passes_necessary_threshold_conditions": true,
+        "sufficient_for_matching_realizability_claimed": false
+      }
+    }
+  ],
+  "promised_saturated_gadgets": [
+    {
+      "request": {
+        "n": 2,
+        "terminals": [
+          0,
+          1
+        ],
+        "edges": [
+          [
+            0,
+            1,
+            1
+          ]
+        ]
+      },
+      "request_sha256": "2cc5272fdddf993aad723a42695dde795361383fa444ad4c7f64d3f2bc6cc024",
+      "signature": [
+        {
+          "deleted": 0,
+          "cost": 1,
+          "matching": [
+            0
+          ]
+        },
+        {
+          "deleted": 3,
+          "cost": 0,
+          "matching": []
+        }
+      ],
+      "valid_domain": [
+        0,
+        3
+      ],
+      "valid_costs": [
+        {
+          "deleted": 0,
+          "true_literals": 0,
+          "cost": 1
+        },
+        {
+          "deleted": 3,
+          "true_literals": 1,
+          "cost": 0
+        }
+      ],
+      "invalid_feasible_states": [],
+      "zero_support_audit": {
+        "nonempty": true,
+        "parities": [
+          0
+        ],
+        "exchange_failure": null,
+        "is_even_delta_matroid": true
+      }
+    },
+    {
+      "request": {
+        "n": 6,
+        "terminals": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "edges": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            2,
+            3,
+            1
+          ],
+          [
+            4,
+            5,
+            0
+          ],
+          [
+            0,
+            4,
+            0
+          ],
+          [
+            1,
+            5,
+            0
+          ],
+          [
+            2,
+            4,
+            0
+          ],
+          [
+            3,
+            5,
+            0
+          ]
+        ]
+      },
+      "request_sha256": "96fe5259b9f126e51bb390d6ba00f9ac9539c0bdfa557facba822333f73f509d",
+      "signature": [
+        {
+          "deleted": 0,
+          "cost": 1,
+          "matching": [
+            0,
+            5,
+            6
+          ]
+        },
+        {
+          "deleted": 3,
+          "cost": 0,
+          "matching": [
+            5,
+            6
+          ]
+        },
+        {
+          "deleted": 6,
+          "cost": 0,
+          "matching": [
+            3,
+            6
+          ]
+        },
+        {
+          "deleted": 9,
+          "cost": 0,
+          "matching": [
+            4,
+            5
+          ]
+        },
+        {
+          "deleted": 12,
+          "cost": 0,
+          "matching": [
+            3,
+            4
+          ]
+        },
+        {
+          "deleted": 15,
+          "cost": 0,
+          "matching": [
+            2
+          ]
+        }
+      ],
+      "valid_domain": [
+        0,
+        3,
+        12,
+        15
+      ],
+      "valid_costs": [
+        {
+          "deleted": 0,
+          "true_literals": 0,
+          "cost": 1
+        },
+        {
+          "deleted": 3,
+          "true_literals": 1,
+          "cost": 0
+        },
+        {
+          "deleted": 12,
+          "true_literals": 1,
+          "cost": 0
+        },
+        {
+          "deleted": 15,
+          "true_literals": 2,
+          "cost": 0
+        }
+      ],
+      "invalid_feasible_states": [
+        6,
+        9
+      ],
+      "zero_support_audit": {
+        "nonempty": true,
+        "parities": [
+          0
+        ],
+        "exchange_failure": null,
+        "is_even_delta_matroid": true
+      }
+    },
+    {
+      "request": {
+        "n": 10,
+        "terminals": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "edges": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            2,
+            3,
+            1
+          ],
+          [
+            4,
+            5,
+            1
+          ],
+          [
+            6,
+            7,
+            0
+          ],
+          [
+            0,
+            6,
+            0
+          ],
+          [
+            1,
+            7,
+            0
+          ],
+          [
+            2,
+            6,
+            0
+          ],
+          [
+            3,
+            7,
+            0
+          ],
+          [
+            4,
+            6,
+            0
+          ],
+          [
+            5,
+            7,
+            0
+          ],
+          [
+            8,
+            9,
+            0
+          ],
+          [
+            0,
+            8,
+            0
+          ],
+          [
+            1,
+            9,
+            0
+          ],
+          [
+            2,
+            8,
+            0
+          ],
+          [
+            3,
+            9,
+            0
+          ],
+          [
+            4,
+            8,
+            0
+          ],
+          [
+            5,
+            9,
+            0
+          ]
+        ]
+      },
+      "request_sha256": "73cbf8cf0ddcff5e8ba74f277f20432800859a4de7675396959eb7ff548b4efc",
+      "signature": [
+        {
+          "deleted": 0,
+          "cost": 1,
+          "matching": [
+            0,
+            6,
+            7,
+            15,
+            16
+          ]
+        },
+        {
+          "deleted": 3,
+          "cost": 0,
+          "matching": [
+            6,
+            7,
+            15,
+            16
+          ]
+        },
+        {
+          "deleted": 6,
+          "cost": 0,
+          "matching": [
+            4,
+            7,
+            15,
+            16
+          ]
+        },
+        {
+          "deleted": 9,
+          "cost": 0,
+          "matching": [
+            5,
+            6,
+            15,
+            16
+          ]
+        },
+        {
+          "deleted": 12,
+          "cost": 0,
+          "matching": [
+            4,
+            5,
+            15,
+            16
+          ]
+        },
+        {
+          "deleted": 15,
+          "cost": 0,
+          "matching": [
+            3,
+            15,
+            16
+          ]
+        },
+        {
+          "deleted": 18,
+          "cost": 0,
+          "matching": [
+            4,
+            7,
+            13,
+            16
+          ]
+        },
+        {
+          "deleted": 24,
+          "cost": 0,
+          "matching": [
+            4,
+            5,
+            13,
+            16
+          ]
+        },
+        {
+          "deleted": 27,
+          "cost": 0,
+          "matching": [
+            3,
+            13,
+            16
+          ]
+        },
+        {
+          "deleted": 30,
+          "cost": 0,
+          "matching": [
+            3,
+            11,
+            16
+          ]
+        },
+        {
+          "deleted": 33,
+          "cost": 0,
+          "matching": [
+            5,
+            6,
+            14,
+            15
+          ]
+        },
+        {
+          "deleted": 36,
+          "cost": 0,
+          "matching": [
+            4,
+            5,
+            14,
+            15
+          ]
+        },
+        {
+          "deleted": 39,
+          "cost": 0,
+          "matching": [
+            3,
+            14,
+            15
+          ]
+        },
+        {
+          "deleted": 45,
+          "cost": 0,
+          "matching": [
+            3,
+            12,
+            15
+          ]
+        },
+        {
+          "deleted": 48,
+          "cost": 0,
+          "matching": [
+            4,
+            5,
+            13,
+            14
+          ]
+        },
+        {
+          "deleted": 51,
+          "cost": 0,
+          "matching": [
+            3,
+            13,
+            14
+          ]
+        },
+        {
+          "deleted": 54,
+          "cost": 0,
+          "matching": [
+            3,
+            11,
+            14
+          ]
+        },
+        {
+          "deleted": 57,
+          "cost": 0,
+          "matching": [
+            3,
+            12,
+            13
+          ]
+        },
+        {
+          "deleted": 60,
+          "cost": 0,
+          "matching": [
+            3,
+            11,
+            12
+          ]
+        },
+        {
+          "deleted": 63,
+          "cost": 0,
+          "matching": [
+            3,
+            10
+          ]
+        }
+      ],
+      "valid_domain": [
+        0,
+        3,
+        12,
+        15,
+        48,
+        51,
+        60,
+        63
+      ],
+      "valid_costs": [
+        {
+          "deleted": 0,
+          "true_literals": 0,
+          "cost": 1
+        },
+        {
+          "deleted": 3,
+          "true_literals": 1,
+          "cost": 0
+        },
+        {
+          "deleted": 12,
+          "true_literals": 1,
+          "cost": 0
+        },
+        {
+          "deleted": 15,
+          "true_literals": 2,
+          "cost": 0
+        },
+        {
+          "deleted": 48,
+          "true_literals": 1,
+          "cost": 0
+        },
+        {
+          "deleted": 51,
+          "true_literals": 2,
+          "cost": 0
+        },
+        {
+          "deleted": 60,
+          "true_literals": 2,
+          "cost": 0
+        },
+        {
+          "deleted": 63,
+          "true_literals": 3,
+          "cost": 0
+        }
+      ],
+      "invalid_feasible_states": [
+        6,
+        9,
+        18,
+        24,
+        27,
+        30,
+        33,
+        36,
+        39,
+        45,
+        54,
+        57
+      ],
+      "zero_support_audit": {
+        "nonempty": true,
+        "parities": [
+          0
+        ],
+        "exchange_failure": null,
+        "is_even_delta_matroid": true
+      }
+    }
+  ],
+  "four_vertex_exhaustion": {
+    "labelled_graph_weight_assignments": 4096,
+    "edge_choices": [
+      "absent",
+      -1,
+      0,
+      1
+    ],
+    "graphs_with_both_required_pair_states": 2304,
+    "all_forced_modular_offsets_accept_false_at_cost_at_most_common": true,
+    "all_size_minimality_source": "THEOREM.md proof; bounded enumeration alone is not an impossibility proof"
+  },
+  "search_status": "No unresolved search claim: explicit witnesses supplied; larger-arity minimum graph size uninvestigated",
+  "two_clause_compensation": {
+    "clause_true_literal_counts": [
+      0,
+      2
+    ],
+    "raw_cost_sum": 2,
+    "sum_of_clause_thresholds": 2,
+    "unsatisfied_clauses": 1,
+    "saturated_penalty_sum": 1
+  },
+  "source_sha256_before": {
+    "saturated_clause.py": "28f5a9e6874b7aea184d7ce6e785b1550cfc4d370751b8a6cf79bc75d03233c2",
+    "test_saturated_clause.py": "5be21bab406d3bcddfafe74a184edc3d396399b75f408e63d2f9bd789cface83",
+    "run_experiments.py": "fab624a30eec741b265379ba65702ff1eabb3b14cc05d9b7c9baa37cc800442f",
+    "THEOREM.md": "3adbb7b301da0e6353abf9f8964f5d9db912b19dc31bb38ad520f418a9c1132d",
+    "matching_gadget_limits/matching_boundary.py": "7c76c60f8ab02823a41de061c61ff8e4161f1fda60e26b51dcaca2ed8129fa59"
+  },
+  "source_sha256_after": {
+    "saturated_clause.py": "28f5a9e6874b7aea184d7ce6e785b1550cfc4d370751b8a6cf79bc75d03233c2",
+    "test_saturated_clause.py": "5be21bab406d3bcddfafe74a184edc3d396399b75f408e63d2f9bd789cface83",
+    "run_experiments.py": "fab624a30eec741b265379ba65702ff1eabb3b14cc05d9b7c9baa37cc800442f",
+    "THEOREM.md": "3adbb7b301da0e6353abf9f8964f5d9db912b19dc31bb38ad520f418a9c1132d",
+    "matching_gadget_limits/matching_boundary.py": "7c76c60f8ab02823a41de061c61ff8e4161f1fda60e26b51dcaca2ed8129fa59"
+  },
+  "sources_unchanged_during_run": true,
+  "seconds": 0.4841857999563217
+}

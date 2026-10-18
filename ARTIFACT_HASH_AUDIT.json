@@ -1,0 +1,138 @@
+{
+  "all_match": true,
+  "hashes_checked": 22,
+  "entries": [
+    {
+      "artifact": "NATIVE_RESULTS.json",
+      "field": "implementation_sha256",
+      "path": "overnight_research_2026_10_18/run_native_experiments.py",
+      "matches": true
+    },
+    {
+      "artifact": "NATIVE_RESULTS.json",
+      "field": "implementation_sha256",
+      "path": "overnight_research_2026_10_18/native_coset_solver.py",
+      "matches": true
+    },
+    {
+      "artifact": "NATIVE_RESULTS.json",
+      "field": "implementation_sha256",
+      "path": "overnight_research_2026_10_18/matching_certificate.py",
+      "matches": true
+    },
+    {
+      "artifact": "NATIVE_RESULTS.json",
+      "field": "implementation_sha256",
+      "path": "non_graphic_core_lab/deletion_solver.py",
+      "matches": true
+    },
+    {
+      "artifact": "NATIVE_RESULTS.json",
+      "field": "implementation_sha256",
+      "path": "non_graphic_core_lab/fano_certificate.py",
+      "matches": true
+    },
+    {
+      "artifact": "NATIVE_RESULTS.json",
+      "field": "archived_input_sha256",
+      "path": "high_width_core_stress_lab/random_code_audits.json",
+      "matches": true
+    },
+    {
+      "artifact": "NATIVE_RESULTS.json",
+      "field": "archived_input_sha256",
+      "path": "high_width_core_stress_lab/random_code_results.json",
+      "matches": true
+    },
+    {
+      "artifact": "ROW_BASIS_RESULTS.json",
+      "field": "source_sha256",
+      "path": "overnight_research_2026_10_18/row_basis_discovery.py",
+      "matches": true
+    },
+    {
+      "artifact": "ROW_BASIS_RESULTS.json",
+      "field": "source_sha256",
+      "path": "overnight_research_2026_10_18/native_coset_solver.py",
+      "matches": true
+    },
+    {
+      "artifact": "ROW_BASIS_RESULTS.json",
+      "field": "source_sha256",
+      "path": "overnight_research_2026_10_18/matching_certificate.py",
+      "matches": true
+    },
+    {
+      "artifact": "ROW_BASIS_RESULTS.json",
+      "field": "source_sha256",
+      "path": "non_graphic_core_lab/deletion_solver.py",
+      "matches": true
+    },
+    {
+      "artifact": "ROW_BASIS_RESULTS.json",
+      "field": "source_sha256",
+      "path": "high_width_core_stress_lab/random_code_audits.json",
+      "matches": true
+    },
+    {
+      "artifact": "ROW_BASIS_RESULTS.json",
+      "field": "source_sha256",
+      "path": "high_width_core_stress_lab/random_code_results.json",
+      "matches": true
+    },
+    {
+      "artifact": "ROW_BASIS_ESCAPE_RESULTS.json",
+      "field": "source_sha256",
+      "path": "overnight_research_2026_10_18/row_basis_escape.py",
+      "matches": true
+    },
+    {
+      "artifact": "ROW_BASIS_ESCAPE_RESULTS.json",
+      "field": "source_sha256",
+      "path": "overnight_research_2026_10_18/row_basis_discovery.py",
+      "matches": true
+    },
+    {
+      "artifact": "ROW_BASIS_ESCAPE_RESULTS.json",
+      "field": "source_sha256",
+      "path": "overnight_research_2026_10_18/native_coset_solver.py",
+      "matches": true
+    },
+    {
+      "artifact": "ROW_BASIS_ESCAPE_RESULTS.json",
+      "field": "source_sha256",
+      "path": "overnight_research_2026_10_18/matching_certificate.py",
+      "matches": true
+    },
+    {
+      "artifact": "ROW_BASIS_ESCAPE_RESULTS.json",
+      "field": "source_sha256",
+      "path": "overnight_research_2026_10_18/ROW_BASIS_RESULTS.json",
+      "matches": true
+    },
+    {
+      "artifact": "RANK_NATIVE_RESULTS.json",
+      "field": "source_sha256",
+      "path": "run_rank_experiments.py",
+      "matches": true
+    },
+    {
+      "artifact": "RANK_NATIVE_RESULTS.json",
+      "field": "source_sha256",
+      "path": "rank_native_solver.py",
+      "matches": true
+    },
+    {
+      "artifact": "RANK_NATIVE_RESULTS.json",
+      "field": "source_sha256",
+      "path": "native_coset_solver.py",
+      "matches": true
+    },
+    {
+      "artifact": "RANK_NATIVE_RESULTS.json",
+      "field": "source_sha256",
+      "path": "matching_certificate.py",
+      "matches": true
+    }
+  ]
+}

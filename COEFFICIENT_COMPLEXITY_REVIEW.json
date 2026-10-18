@@ -1,0 +1,11 @@
+{
+  "theorem": "parsimonious X3C reduction to a binary-exponent coefficient",
+  "tripartite_families": 256,
+  "tripartite_selections": 6561,
+  "tripartite_positive_families": 175,
+  "seeded_general_families": 400,
+  "malformed_cases_rejected": 7,
+  "source_sha256": "f93f76eda1e2081fe4d2e72040dcbf92a896d6f9487cb89b193168b23fdfa65e",
+  "source_unchanged_during_run": true,
+  "all_checks_passed": true
+}

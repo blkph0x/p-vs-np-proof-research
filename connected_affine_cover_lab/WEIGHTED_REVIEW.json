@@ -1,0 +1,59 @@
+{
+  "status": "VERIFIED_INDEPENDENT_WEIGHTED_CROSSCHECK",
+  "rows": [
+    {
+      "n": 8,
+      "value": [
+        55,
+        1
+      ],
+      "verified": true,
+      "peak_terms": 4
+    },
+    {
+      "n": 16,
+      "value": [
+        2584,
+        1
+      ],
+      "verified": true,
+      "peak_terms": 4
+    },
+    {
+      "n": 32,
+      "value": [
+        5702887,
+        1
+      ],
+      "verified": true,
+      "peak_terms": 4
+    },
+    {
+      "n": 64,
+      "value": [
+        27777890035288,
+        1
+      ],
+      "verified": true,
+      "peak_terms": 4
+    },
+    {
+      "n": 128,
+      "value": [
+        659034621587630041982498215,
+        1
+      ],
+      "verified": true,
+      "peak_terms": 4
+    }
+  ],
+  "row_count": 5,
+  "exact_count": 5,
+  "max_peak_terms": 4,
+  "replay_source_hashes": {
+    "weighted_affine_dag_lab/dag.py": "5693dfff8bba4b4ec0ba9735698eb209567bc0a4eff1c091bf90e49b70453368",
+    "affine_boundary_lab/boundary.py": "19a51e88ca8e88d419c04d9ddd7f5f7ec04afaaabe94da00de4ab49250d2fcb7",
+    "connected_affine_cover_lab/weighted_crosscheck.py": "051204e3aab0c1b9e1465deb76741dd28018d61c4f21daa3e6e310ade2cfc203",
+    "connected_affine_cover_lab/verify_weighted_crosscheck.py": "ba7de35968ed29e4af7a2abadbdc14010377187785a703d8ac8d9b995650a0ea"
+  }
+}

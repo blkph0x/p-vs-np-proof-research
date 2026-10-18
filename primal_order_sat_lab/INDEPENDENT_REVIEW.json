@@ -1,0 +1,100 @@
+{
+  "status": "VERIFIED_INDEPENDENT_PRIMAL_ORDER_REVIEW",
+  "case_count": 6,
+  "exact_count": 5,
+  "unknown_count": 1,
+  "rows": [
+    {
+      "name": "chain_8_sat",
+      "status": "EXACT",
+      "sat": true,
+      "width": 1,
+      "order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "states": 16
+    },
+    {
+      "name": "chain_8_unsat",
+      "status": "EXACT",
+      "sat": false,
+      "width": 1,
+      "order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "states": 8
+    },
+    {
+      "name": "star_8",
+      "status": "EXACT",
+      "sat": true,
+      "width": 1,
+      "order": [
+        0,
+        7,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "states": 16
+    },
+    {
+      "name": "complete_6",
+      "status": "EXACT",
+      "sat": true,
+      "width": 5,
+      "order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "states": 22
+    },
+    {
+      "name": "dense_negative_3cnf_6",
+      "status": "EXACT",
+      "sat": true,
+      "width": 5,
+      "order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "states": 42
+    },
+    {
+      "name": "complete_12_search_cap",
+      "status": "UNKNOWN"
+    }
+  ],
+  "source_hashes": {
+    "primal_order.py": "c888c997cce2a7edc92b586c5b093e620c011f9e61a1b98f6c77bc5e9f17e468",
+    "run_experiments.py": "8fe8607927564ce8a409041503112f819b28d9531cac47c0380e1587b843383f",
+    "INDEPENDENT_REVIEW.py": "51bd762704e52ba4b6fcf6c952f6bcc10f7b4d9ae2e93f0699d05c5a3c0068d7"
+  },
+  "chain_width": 1,
+  "complete_width": 5
+}

@@ -1,0 +1,56 @@
+{
+  "all_tests_passed": true,
+  "test_count": 44,
+  "suite_count": 4,
+  "source_unchanged_during_tests": true,
+  "suites": [
+    {
+      "lab": "coefficient_residue_lab",
+      "test_count": 12,
+      "passed": true,
+      "returncode": 0,
+      "seconds": 0.7630552998743951
+    },
+    {
+      "lab": "coefficient_isolation_lab",
+      "test_count": 12,
+      "passed": true,
+      "returncode": 0,
+      "seconds": 0.2630799999460578
+    },
+    {
+      "lab": "coefficient_structure_lab",
+      "test_count": 11,
+      "passed": true,
+      "returncode": 0,
+      "seconds": 0.6946355998516083
+    },
+    {
+      "lab": "interval_coefficient_lab",
+      "test_count": 9,
+      "passed": true,
+      "returncode": 0,
+      "seconds": 0.286098700016737
+    }
+  ],
+  "started_utc": "2026-10-18T06:30:43.426822+00:00",
+  "finished_utc": "2026-10-18T06:30:45.437346+00:00",
+  "seconds": 2.010053100064397,
+  "python": "3.10.10 | packaged by conda-forge | (main, Mar 24 2023, 20:00:38) [MSC v.1934 64 bit (AMD64)]",
+  "implementation_sha256": {
+    "run_algebraic_phase_checks.py": "0bbb1c631bd2eac8b92c52b41de1f69bd93c236de6697aba01beb9ce1ddc5f6a",
+    "packed_cost_exact_matching/packing.py": "1d60ffd5bf25a2cacdb08e5cf0287432135fe8134c6ca531c497e054ede30fbe",
+    "coefficient_residue_lab/coefficient_residue.py": "f2fd1fd6534a656c4924ae619a3198aaecdbd9be13753ab7bd80c7a59b98ae4a",
+    "coefficient_residue_lab/run_experiments.py": "29e4f259072f3f7e63a9c05eaffde9d4a1e7a577aa9d680890fb0eb1ebb0407a",
+    "coefficient_residue_lab/test_coefficient_residue.py": "f53f4fd72dbd4d421a700acaa2256fb1e69a76b51ae9ed599962bf4346f49682",
+    "coefficient_isolation_lab/coefficient.py": "698039b50e188e7c33815d3f0d4fecc8f76ee255f7a71f13d14c4c3e1ecc2d05",
+    "coefficient_isolation_lab/run_experiments.py": "9bda10400a62bd6708a77e2a06fbc6d5593210f7cf393e353e6f10503fa91942",
+    "coefficient_isolation_lab/test_coefficient.py": "be5a42b96fef3af828be7412938d86d2a6c4e34a87d8bb1ef41f81728b70f5eb",
+    "coefficient_structure_lab/run_experiments.py": "a3f379d51e999150b94325350b524ad84b8c3103da6d9a61a70b174d585d2c91",
+    "coefficient_structure_lab/structure.py": "43a3d308e60ec4926b7772b2eaa727ae70745640dbdf54d525334d197a932ab2",
+    "coefficient_structure_lab/test_structure.py": "6a0e48996724533035d65cdde186313d87e8827e29f80c440c7a73c16c2dd983",
+    "interval_coefficient_lab/intervals.py": "b62036e069238d7dc92a1119b108814034b3090e7ec98fc673d1d70cb673140a",
+    "interval_coefficient_lab/run_experiments.py": "70e9ce822c32ddfc103cb20166d32fdb852f428e473500bd85e77b2c3b10f4b7",
+    "interval_coefficient_lab/test_intervals.py": "1ff4735fb28fdec5e9405c06b71844bf5fbae1b00975bedc34919946d8a5c9ab"
+  }
+}

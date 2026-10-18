@@ -1,0 +1,1408 @@
+{
+  "verdict": "CLEAN",
+  "source_sha256": {
+    "check.py": "5cdc4b954322c21120496f4d963d6a2a6bff826578f7b8f305fd237ce09aab60",
+    "THEOREM.md": "abebf2cd453bc72eededf299a82522cb7888c216d7c827b1718d3cb58da7dbd4",
+    "RESULTS.json": "4a4534d168af28375aebdd48a2367c56f560fbed1abaf2014ab637ba48d62b5a",
+    "INDEPENDENT_REVIEW.py": "f2793fea08e5ddd9db94a315ce220237e796cd1ef7ed4c8c08cad2f6f31035ae",
+    "INDEPENDENT_REVIEW.md": "b8105aea3b08a097909babe6712721b255058dca9e09f05e33cc9ce2cf688565"
+  },
+  "source_unchanged_during_run": true,
+  "summary": {
+    "original_cases": 28,
+    "original_truth_words": 8190,
+    "truth_vector_Gram_matrices": 12,
+    "independence_evaluation_points": 808,
+    "saved_determinants_matching_theorem": 24
+  },
+  "cases": [
+    {
+      "n": 1,
+      "original_support_equations_checked": true,
+      "independence_evaluation_points": 2,
+      "squared_full_shell_overlap_sum": [
+        1,
+        2
+      ],
+      "direct_support_gram": {
+        "original_truth_words": 2,
+        "actual_integer_gram": [
+          [
+            2,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "determinant_from_row_subtraction": 1,
+        "normalized_determinant": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "n": 2,
+      "original_support_equations_checked": true,
+      "independence_evaluation_points": 3,
+      "squared_full_shell_overlap_sum": [
+        3,
+        4
+      ],
+      "direct_support_gram": {
+        "original_truth_words": 4,
+        "actual_integer_gram": [
+          [
+            4,
+            2,
+            1
+          ],
+          [
+            2,
+            2,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        "determinant_from_row_subtraction": 2,
+        "normalized_determinant": [
+          1,
+          4
+        ]
+      }
+    },
+    {
+      "n": 3,
+      "original_support_equations_checked": true,
+      "independence_evaluation_points": 4,
+      "squared_full_shell_overlap_sum": [
+        7,
+        8
+      ],
+      "direct_support_gram": {
+        "original_truth_words": 8,
+        "actual_integer_gram": [
+          [
+            8,
+            4,
+            2,
+            1
+          ],
+          [
+            4,
+            4,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            2,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            1
+          ]
+        ],
+        "determinant_from_row_subtraction": 8,
+        "normalized_determinant": [
+          1,
+          8
+        ]
+      }
+    },
+    {
+      "n": 4,
+      "original_support_equations_checked": true,
+      "independence_evaluation_points": 5,
+      "squared_full_shell_overlap_sum": [
+        15,
+        16
+      ],
+      "direct_support_gram": {
+        "original_truth_words": 16,
+        "actual_integer_gram": [
+          [
+            16,
+            8,
+            4,
+            2,
+            1
+          ],
+          [
+            8,
+            8,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            0,
+            4,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "determinant_from_row_subtraction": 64,
+        "normalized_determinant": [
+          1,
+          16
+        ]
+      }
+    },
+    {
+      "n": 5,
+      "original_support_equations_checked": true,
+      "independence_evaluation_points": 6,
+      "squared_full_shell_overlap_sum": [
+        31,
+        32
+      ],
+      "direct_support_gram": {
+        "original_truth_words": 32,
+        "actual_integer_gram": [
+          [
+            32,
+            16,
+            8,
+            4,
+            2,
+            1
+          ],
+          [
+            16,
+            16,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            8,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            0,
+            0,
+            4,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "determinant_from_row_subtraction": 1024,
+        "normalized_determinant": [
+          1,
+          32
+        ]
+      }
+    },
+    {
+      "n": 6,
+      "original_support_equations_checked": true,
+      "independence_evaluation_points": 7,
+      "squared_full_shell_overlap_sum": [
+        63,
+        64
+      ],
+      "direct_support_gram": {
+        "original_truth_words": 64,
+        "actual_integer_gram": [
+          [
+            64,
+            32,
+            16,
+            8,
+            4,
+            2,
+            1
+          ],
+          [
+            32,
+            32,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            16,
+            0,
+            16,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            0,
+            8,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            0,
+            0,
+            0,
+            4,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "determinant_from_row_subtraction": 32768,
+        "normalized_determinant": [
+          1,
+          64
+        ]
+      }
+    },
+    {
+      "n": 7,
+      "original_support_equations_checked": true,
+      "independence_evaluation_points": 8,
+      "squared_full_shell_overlap_sum": [
+        127,
+        128
+      ],
+      "direct_support_gram": {
+        "original_truth_words": 128,
+        "actual_integer_gram": [
+          [
+            128,
+            64,
+            32,
+            16,
+            8,
+            4,
+            2,
+            1
+          ],
+          [
+            64,
+            64,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            32,
+            0,
+            32,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            16,
+            0,
+            0,
+            16,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            0,
+            0,
+            8,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            0,
+            0,
+            0,
+            0,
+            4,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "determinant_from_row_subtraction": 2097152,
+        "normalized_determinant": [
+          1,
+          128
+        ]
+      }
+    },
+    {
+      "n": 8,
+      "original_support_equations_checked": true,
+      "independence_evaluation_points": 9,
+      "squared_full_shell_overlap_sum": [
+        255,
+        256
+      ],
+      "direct_support_gram": {
+        "original_truth_words": 256,
+        "actual_integer_gram": [
+          [
+            256,
+            128,
+            64,
+            32,
+            16,
+            8,
+            4,
+            2,
+            1
+          ],
+          [
+            128,
+            128,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            64,
+            0,
+            64,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            32,
+            0,
+            0,
+            32,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            16,
+            0,
+            0,
+            0,
+            16,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            0,
+            0,
+            0,
+            8,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            4,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "determinant_from_row_subtraction": 268435456,
+        "normalized_determinant": [
+          1,
+          256
+        ]
+      }
+    },
+    {
+      "n": 9,
+      "original_support_equations_checked": true,
+      "independence_evaluation_points": 10,
+      "squared_full_shell_overlap_sum": [
+        511,
+        512
+      ],
+      "direct_support_gram": {
+        "original_truth_words": 512,
+        "actual_integer_gram": [
+          [
+            512,
+            256,
+            128,
+            64,
+            32,
+            16,
+            8,
+            4,
+            2,
+            1
+          ],
+          [
+            256,
+            256,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            128,
+            0,
+            128,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            64,
+            0,
+            0,
+            64,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            32,
+            0,
+            0,
+            0,
+            32,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            16,
+            0,
+            0,
+            0,
+            0,
+            16,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            0,
+            0,
+            0,
+            0,
+            8,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            4,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "determinant_from_row_subtraction": 68719476736,
+        "normalized_determinant": [
+          1,
+          512
+        ]
+      }
+    },
+    {
+      "n": 10,
+      "original_support_equations_checked": true,
+      "independence_evaluation_points": 11,
+      "squared_full_shell_overlap_sum": [
+        1023,
+        1024
+      ],
+      "direct_support_gram": {
+        "original_truth_words": 1024,
+        "actual_integer_gram": [
+          [
+            1024,
+            512,
+            256,
+            128,
+            64,
+            32,
+            16,
+            8,
+            4,
+            2,
+            1
+          ],
+          [
+            512,
+            512,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            256,
+            0,
+            256,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            128,
+            0,
+            0,
+            128,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            64,
+            0,
+            0,
+            0,
+            64,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            32,
+            0,
+            0,
+            0,
+            0,
+            32,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            16,
+            0,
+            0,
+            0,
+            0,
+            0,
+            16,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            8,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            4,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "determinant_from_row_subtraction": 35184372088832,
+        "normalized_determinant": [
+          1,
+          1024
+        ]
+      }
+    },
+    {
+      "n": 11,
+      "original_support_equations_checked": true,
+      "independence_evaluation_points": 12,
+      "squared_full_shell_overlap_sum": [
+        2047,
+        2048
+      ],
+      "direct_support_gram": {
+        "original_truth_words": 2048,
+        "actual_integer_gram": [
+          [
+            2048,
+            1024,
+            512,
+            256,
+            128,
+            64,
+            32,
+            16,
+            8,
+            4,
+            2,
+            1
+          ],
+          [
+            1024,
+            1024,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            512,
+            0,
+            512,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            256,
+            0,
+            0,
+            256,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            128,
+            0,
+            0,
+            0,
+            128,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            64,
+            0,
+            0,
+            0,
+            0,
+            64,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            32,
+            0,
+            0,
+            0,
+            0,
+            0,
+            32,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            16,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            16,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            8,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            4,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "determinant_from_row_subtraction": 36028797018963968,
+        "normalized_determinant": [
+          1,
+          2048
+        ]
+      }
+    },
+    {
+      "n": 12,
+      "original_support_equations_checked": true,
+      "independence_evaluation_points": 13,
+      "squared_full_shell_overlap_sum": [
+        4095,
+        4096
+      ],
+      "direct_support_gram": {
+        "original_truth_words": 4096,
+        "actual_integer_gram": [
+          [
+            4096,
+            2048,
+            1024,
+            512,
+            256,
+            128,
+            64,
+            32,
+            16,
+            8,
+            4,
+            2,
+            1
+          ],
+          [
+            2048,
+            2048,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1024,
+            0,
+            1024,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            512,
+            0,
+            0,
+            512,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            256,
+            0,
+            0,
+            0,
+            256,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            128,
+            0,
+            0,
+            0,
+            0,
+            128,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            64,
+            0,
+            0,
+            0,
+            0,
+            0,
+            64,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            32,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            32,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            16,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            16,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            8,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            4,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "determinant_from_row_subtraction": 73786976294838206464,
+        "normalized_determinant": [
+          1,
+          4096
+        ]
+      }
+    },
+    {
+      "n": 13,
+      "original_support_equations_checked": true,
+      "independence_evaluation_points": 14,
+      "squared_full_shell_overlap_sum": [
+        8191,
+        8192
+      ],
+      "direct_support_gram": null
+    },
+    {
+      "n": 14,
+      "original_support_equations_checked": true,
+      "independence_evaluation_points": 15,
+      "squared_full_shell_overlap_sum": [
+        16383,
+        16384
+      ],
+      "direct_support_gram": null
+    },
+    {
+      "n": 15,
+      "original_support_equations_checked": true,
+      "independence_evaluation_points": 16,
+      "squared_full_shell_overlap_sum": [
+        32767,
+        32768
+      ],
+      "direct_support_gram": null
+    },
+    {
+      "n": 16,
+      "original_support_equations_checked": true,
+      "independence_evaluation_points": 17,
+      "squared_full_shell_overlap_sum": [
+        65535,
+        65536
+      ],
+      "direct_support_gram": null
+    },
+    {
+      "n": 17,
+      "original_support_equations_checked": true,
+      "independence_evaluation_points": 18,
+      "squared_full_shell_overlap_sum": [
+        131071,
+        131072
+      ],
+      "direct_support_gram": null
+    },
+    {
+      "n": 18,
+      "original_support_equations_checked": true,
+      "independence_evaluation_points": 19,
+      "squared_full_shell_overlap_sum": [
+        262143,
+        262144
+      ],
+      "direct_support_gram": null
+    },
+    {
+      "n": 19,
+      "original_support_equations_checked": true,
+      "independence_evaluation_points": 20,
+      "squared_full_shell_overlap_sum": [
+        524287,
+        524288
+      ],
+      "direct_support_gram": null
+    },
+    {
+      "n": 20,
+      "original_support_equations_checked": true,
+      "independence_evaluation_points": 21,
+      "squared_full_shell_overlap_sum": [
+        1048575,
+        1048576
+      ],
+      "direct_support_gram": null
+    },
+    {
+      "n": 21,
+      "original_support_equations_checked": true,
+      "independence_evaluation_points": 22,
+      "squared_full_shell_overlap_sum": [
+        2097151,
+        2097152
+      ],
+      "direct_support_gram": null
+    },
+    {
+      "n": 22,
+      "original_support_equations_checked": true,
+      "independence_evaluation_points": 23,
+      "squared_full_shell_overlap_sum": [
+        4194303,
+        4194304
+      ],
+      "direct_support_gram": null
+    },
+    {
+      "n": 23,
+      "original_support_equations_checked": true,
+      "independence_evaluation_points": 24,
+      "squared_full_shell_overlap_sum": [
+        8388607,
+        8388608
+      ],
+      "direct_support_gram": null
+    },
+    {
+      "n": 24,
+      "original_support_equations_checked": true,
+      "independence_evaluation_points": 25,
+      "squared_full_shell_overlap_sum": [
+        16777215,
+        16777216
+      ],
+      "direct_support_gram": null
+    },
+    {
+      "n": 32,
+      "original_support_equations_checked": true,
+      "independence_evaluation_points": 33,
+      "squared_full_shell_overlap_sum": [
+        4294967295,
+        4294967296
+      ],
+      "direct_support_gram": null
+    },
+    {
+      "n": 64,
+      "original_support_equations_checked": true,
+      "independence_evaluation_points": 65,
+      "squared_full_shell_overlap_sum": [
+        18446744073709551615,
+        18446744073709551616
+      ],
+      "direct_support_gram": null
+    },
+    {
+      "n": 128,
+      "original_support_equations_checked": true,
+      "independence_evaluation_points": 129,
+      "squared_full_shell_overlap_sum": [
+        340282366920938463463374607431768211455,
+        340282366920938463463374607431768211456
+      ],
+      "direct_support_gram": null
+    },
+    {
+      "n": 256,
+      "original_support_equations_checked": true,
+      "independence_evaluation_points": 257,
+      "squared_full_shell_overlap_sum": [
+        115792089237316195423570985008687907853269984665640564039457584007913129639935,
+        115792089237316195423570985008687907853269984665640564039457584007913129639936
+      ],
+      "direct_support_gram": null
+    }
+  ],
+  "seconds": 1.5247876001521945,
+  "scope": "Producer not imported. Complete actual-support vectors and exact integer Gram matrices through n12; original equations and evaluation-minor independence for all28 widths through256. All-size spectral inequalities are proved in the accompanying review, not numerically approximated."
+}

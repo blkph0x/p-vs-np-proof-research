@@ -1,0 +1,28 @@
+{
+  "status": "VERIFIED_FAST_WRAPPER_REVIEW",
+  "source_hashes_before": {
+    "fast_recognition.py": "47074d149dd3a298ebe0f1611615e3e23b7d0803d118c85d7bd9bf6a58303b84",
+    "one_piece.py": "ee05d4fc52fec551e57bd61941786531c0ebdbbccaaae03abcecf5843231c248",
+    "partition.py": "e5b27146e10c185fbd5fcbbbb33314c02e7653d2aa3421e2f50d8bdd9f8ae035",
+    "reference.py": "60b62bfd936c7b9a399630754df6fdddaf6ee370135bd9a4e4bf6144f04f7a15",
+    "RESULTS.json": "4bfbc0b2d7ff03db366a95ebff64538a443c829a7e6db5bc07bf1ea73de5a79d"
+  },
+  "source_hashes_after": {
+    "fast_recognition.py": "47074d149dd3a298ebe0f1611615e3e23b7d0803d118c85d7bd9bf6a58303b84",
+    "one_piece.py": "ee05d4fc52fec551e57bd61941786531c0ebdbbccaaae03abcecf5843231c248",
+    "partition.py": "e5b27146e10c185fbd5fcbbbb33314c02e7653d2aa3421e2f50d8bdd9f8ae035",
+    "reference.py": "60b62bfd936c7b9a399630754df6fdddaf6ee370135bd9a4e4bf6144f04f7a15",
+    "RESULTS.json": "4bfbc0b2d7ff03db366a95ebff64538a443c829a7e6db5bc07bf1ea73de5a79d"
+  },
+  "source_unchanged_during_review": true,
+  "saved_requests": 494,
+  "status_counts": {
+    "EXACT": 284,
+    "UNSUPPORTED": 210,
+    "UNKNOWN": 0
+  },
+  "direct_truth_table_cases": 464,
+  "rejected_binding_mutations": 12,
+  "total_work": 9047655,
+  "scope": "Fast negative probes are checked against a direct oracle for all n<=3 records. Larger records are checked for no false UNSUPPORTED on saved exact claims and for complete certificate replay. UNKNOWN is never promoted to a claim; this review does not prove a polynomial SAT algorithm."
+}

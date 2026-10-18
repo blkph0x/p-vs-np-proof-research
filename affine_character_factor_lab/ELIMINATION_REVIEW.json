@@ -1,0 +1,10 @@
+{
+  "exact": 8,
+  "exact_replayed": 8,
+  "interleaved_chain_128_peak_terms": 3,
+  "poor_order_status": "UNKNOWN",
+  "rows": 9,
+  "source_hashes_match": true,
+  "status": "VERIFIED_INDEPENDENT_ELIMINATION_REVIEW",
+  "unknown": 1
+}

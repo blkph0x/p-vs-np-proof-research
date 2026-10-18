@@ -1,0 +1,203 @@
+{
+  "schema": "promised_and_boundary_control_v1",
+  "request": {
+    "n": 6,
+    "edges": [
+      [
+        0,
+        4,
+        0
+      ],
+      [
+        1,
+        5,
+        0
+      ],
+      [
+        2,
+        4,
+        0
+      ],
+      [
+        3,
+        5,
+        0
+      ],
+      [
+        0,
+        3,
+        0
+      ]
+    ],
+    "terminals": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "request_sha256": "5f8604538dfd2f752121e2c1b1f173335d9a73c3e176376986ccb300f907c761",
+  "signature": [
+    {
+      "deleted": 0,
+      "cost": 0,
+      "matching": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "deleted": 3,
+      "cost": 0,
+      "matching": [
+        2,
+        3
+      ]
+    },
+    {
+      "deleted": 6,
+      "cost": 0,
+      "matching": [
+        0,
+        3
+      ]
+    },
+    {
+      "deleted": 9,
+      "cost": 0,
+      "matching": [
+        1,
+        2
+      ]
+    },
+    {
+      "deleted": 12,
+      "cost": 0,
+      "matching": [
+        0,
+        1
+      ]
+    },
+    {
+      "deleted": 20,
+      "cost": 0,
+      "matching": [
+        1,
+        4
+      ]
+    },
+    {
+      "deleted": 23,
+      "cost": 0,
+      "matching": [
+        3
+      ]
+    },
+    {
+      "deleted": 29,
+      "cost": 0,
+      "matching": [
+        1
+      ]
+    },
+    {
+      "deleted": 34,
+      "cost": 0,
+      "matching": [
+        2,
+        4
+      ]
+    },
+    {
+      "deleted": 43,
+      "cost": 0,
+      "matching": [
+        2
+      ]
+    },
+    {
+      "deleted": 46,
+      "cost": 0,
+      "matching": [
+        0
+      ]
+    },
+    {
+      "deleted": 54,
+      "cost": 0,
+      "matching": [
+        4
+      ]
+    },
+    {
+      "deleted": 63,
+      "cost": 0,
+      "matching": []
+    }
+  ],
+  "valid_domain": [
+    0,
+    3,
+    12,
+    15,
+    48,
+    51,
+    60,
+    63
+  ],
+  "expected_encoded_AND": [
+    0,
+    3,
+    12,
+    63
+  ],
+  "valid_domain_intersection": [
+    0,
+    3,
+    12,
+    63
+  ],
+  "agreement": true,
+  "full_signature_even_delta": {
+    "nonempty": true,
+    "parities": [
+      0
+    ],
+    "exchange_failure": null,
+    "is_even_delta_matroid": true
+  },
+  "exact_AND_even_delta": {
+    "nonempty": true,
+    "parities": [
+      0
+    ],
+    "exchange_failure": {
+      "A": 0,
+      "B": 63,
+      "e": 4,
+      "candidate_f": [
+        0,
+        1,
+        2,
+        3,
+        5
+      ],
+      "rejected_neighbors": [
+        17,
+        18,
+        20,
+        24,
+        48
+      ]
+    },
+    "is_even_delta_matroid": false
+  },
+  "source_sha256": {
+    "matching_boundary.py": "7c76c60f8ab02823a41de061c61ff8e4161f1fda60e26b51dcaca2ed8129fa59"
+  },
+  "semantics": "Correct on the promised 00/11 pair domain; invalid physical boundary states remain feasible. No transparent validity filter is supplied.",
+  "revalidated_against_current_source": true
+}

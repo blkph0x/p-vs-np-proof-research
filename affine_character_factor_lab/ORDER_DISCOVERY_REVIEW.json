@@ -1,0 +1,10 @@
+{
+  "budget_status": "UNKNOWN",
+  "chain_exact_replayed": 3,
+  "complete_status": "NO",
+  "cycle_status": "NO",
+  "rows": 7,
+  "source_hashes_match": true,
+  "star_width": 1,
+  "status": "VERIFIED_INDEPENDENT_ORDER_REVIEW"
+}

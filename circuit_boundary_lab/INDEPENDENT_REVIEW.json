@@ -1,0 +1,16 @@
+{
+  "status": "VERIFIED_INDEPENDENT_CIRCUIT_BOUNDARY",
+  "assignments_checked": 32,
+  "gate_clauses_checked": 174,
+  "max_width": 11,
+  "all_gate_truth_tables_checked": true,
+  "all_outputs_match_direct_weight": true,
+  "all_wrong_targets_rejected_by_producer": true,
+  "source_hashes": {
+    "circuit_cnf.py": "39be4b8a5cae19beef9b222cf96caaa79a051cbd665e9f27f5a93e6194ca2fc5",
+    "run_experiments.py": "aeec6e44d188f8b549158f2636ec378608877e35e28d05751b976a3d8e7fc111",
+    "INDEPENDENT_REVIEW.py": "c02257685aec2ad35c71bfc49788f4176d8fa74d291b45263a0ace9d69c47042",
+    "THEOREM.md": "e8b8569a20cec7888281c8339feba4fd12f0a4f65ad71f9143c11112431bed83"
+  },
+  "scope": "Pinned small circuit CNF controls only; no general SAT or P-versus-NP claim."
+}

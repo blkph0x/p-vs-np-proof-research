@@ -1,0 +1,1331 @@
+{
+  "schema": "multiobjective_C4_SAT_reduction_v1",
+  "source_sha256": {
+    "clause_bounds.py": "23e6a46189f6d0fe8cc1bad4bd9cd7cf13e9681490a9f84c206bda486b77c518",
+    "test_clause_bounds.py": "b4469f00be145f99fcaa40c1438afabe0d1f1705bc360373f162570acae7619e",
+    "THEOREM.md": "f739aee8eb8fc852aae9ac91793a0cccdb966b8ac819e654ec2a06efbae756e8"
+  },
+  "source_unchanged_during_run": true,
+  "seed": 20261018,
+  "summary": {
+    "formulas_checked": 740,
+    "assignments_checked": 6558,
+    "matchings_checked": 6595,
+    "clause_costs_checked": 15576,
+    "exhaustive_formulas": 434,
+    "seeded_formulas": 300,
+    "named_controls": 6,
+    "general_matching_optimizer_used": false
+  },
+  "controls": [
+    {
+      "name": "SAT_three_clauses",
+      "instance": {
+        "format": "clause-bounded-C4-matching-v1",
+        "request": {
+          "variable_count": 3,
+          "clauses": [
+            [
+              1,
+              2,
+              3
+            ],
+            [
+              -1,
+              2
+            ],
+            [
+              -2,
+              3
+            ]
+          ]
+        },
+        "request_sha256": "c49458608a6f4c3f415f782ecc211a7b106003a456aaf840674033e632ca3fb9",
+        "normalization": {
+          "clauses": [
+            [
+              1,
+              2,
+              3
+            ],
+            [
+              -1,
+              2
+            ],
+            [
+              -2,
+              3
+            ]
+          ],
+          "original_indices": [
+            0,
+            1,
+            2
+          ],
+          "dropped_tautologies": []
+        },
+        "cycle_count": 3,
+        "vertex_count": 12,
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            9,
+            10
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            8,
+            11
+          ]
+        ],
+        "costs": [
+          [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
+        ],
+        "bounds": [
+          2,
+          1,
+          1
+        ]
+      },
+      "satisfying_assignments": [
+        4,
+        6,
+        7
+      ],
+      "accepted_assignments": [
+        4,
+        6,
+        7
+      ],
+      "assignments_checked": 8,
+      "matchings_checked": 8,
+      "clause_costs_checked": 24,
+      "witnesses": [
+        {
+          "assignment": 0,
+          "matching": [
+            0,
+            2,
+            4,
+            6,
+            8,
+            10
+          ],
+          "verification": {
+            "valid": false,
+            "perfect_matching": true,
+            "costs": [
+              3,
+              1,
+              1
+            ],
+            "violated_bounds": [
+              0
+            ],
+            "errors": []
+          }
+        },
+        {
+          "assignment": 1,
+          "matching": [
+            1,
+            3,
+            4,
+            6,
+            8,
+            10
+          ],
+          "verification": {
+            "valid": false,
+            "perfect_matching": true,
+            "costs": [
+              2,
+              2,
+              1
+            ],
+            "violated_bounds": [
+              1
+            ],
+            "errors": []
+          }
+        },
+        {
+          "assignment": 2,
+          "matching": [
+            0,
+            2,
+            5,
+            7,
+            8,
+            10
+          ],
+          "verification": {
+            "valid": false,
+            "perfect_matching": true,
+            "costs": [
+              2,
+              0,
+              2
+            ],
+            "violated_bounds": [
+              2
+            ],
+            "errors": []
+          }
+        },
+        {
+          "assignment": 3,
+          "matching": [
+            1,
+            3,
+            5,
+            7,
+            8,
+            10
+          ],
+          "verification": {
+            "valid": false,
+            "perfect_matching": true,
+            "costs": [
+              1,
+              1,
+              2
+            ],
+            "violated_bounds": [
+              2
+            ],
+            "errors": []
+          }
+        },
+        {
+          "assignment": 4,
+          "matching": [
+            0,
+            2,
+            4,
+            6,
+            9,
+            11
+          ],
+          "verification": {
+            "valid": true,
+            "perfect_matching": true,
+            "costs": [
+              2,
+              1,
+              0
+            ],
+            "violated_bounds": [],
+            "errors": []
+          }
+        },
+        {
+          "assignment": 5,
+          "matching": [
+            1,
+            3,
+            4,
+            6,
+            9,
+            11
+          ],
+          "verification": {
+            "valid": false,
+            "perfect_matching": true,
+            "costs": [
+              1,
+              2,
+              0
+            ],
+            "violated_bounds": [
+              1
+            ],
+            "errors": []
+          }
+        },
+        {
+          "assignment": 6,
+          "matching": [
+            0,
+            2,
+            5,
+            7,
+            9,
+            11
+          ],
+          "verification": {
+            "valid": true,
+            "perfect_matching": true,
+            "costs": [
+              1,
+              0,
+              1
+            ],
+            "violated_bounds": [],
+            "errors": []
+          }
+        },
+        {
+          "assignment": 7,
+          "matching": [
+            1,
+            3,
+            5,
+            7,
+            9,
+            11
+          ],
+          "verification": {
+            "valid": true,
+            "perfect_matching": true,
+            "costs": [
+              0,
+              1,
+              1
+            ],
+            "violated_bounds": [],
+            "errors": []
+          }
+        }
+      ]
+    },
+    {
+      "name": "UNSAT_opposite_units",
+      "instance": {
+        "format": "clause-bounded-C4-matching-v1",
+        "request": {
+          "variable_count": 1,
+          "clauses": [
+            [
+              1
+            ],
+            [
+              -1
+            ]
+          ]
+        },
+        "request_sha256": "e1a30c21dc265cbaa03dbc3c5215acc46609491f59276cd65824e582bd93a144",
+        "normalization": {
+          "clauses": [
+            [
+              1
+            ],
+            [
+              -1
+            ]
+          ],
+          "original_indices": [
+            0,
+            1
+          ],
+          "dropped_tautologies": []
+        },
+        "cycle_count": 1,
+        "vertex_count": 4,
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            0,
+            3
+          ]
+        ],
+        "costs": [
+          [
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0
+          ]
+        ],
+        "bounds": [
+          0,
+          0
+        ]
+      },
+      "satisfying_assignments": [],
+      "accepted_assignments": [],
+      "assignments_checked": 2,
+      "matchings_checked": 2,
+      "clause_costs_checked": 4,
+      "witnesses": [
+        {
+          "assignment": 0,
+          "matching": [
+            0,
+            2
+          ],
+          "verification": {
+            "valid": false,
+            "perfect_matching": true,
+            "costs": [
+              1,
+              0
+            ],
+            "violated_bounds": [
+              0
+            ],
+            "errors": []
+          }
+        },
+        {
+          "assignment": 1,
+          "matching": [
+            1,
+            3
+          ],
+          "verification": {
+            "valid": false,
+            "perfect_matching": true,
+            "costs": [
+              0,
+              1
+            ],
+            "violated_bounds": [
+              1
+            ],
+            "errors": []
+          }
+        }
+      ]
+    },
+    {
+      "name": "UNSAT_all_eight_ternary_clauses",
+      "instance": {
+        "format": "clause-bounded-C4-matching-v1",
+        "request": {
+          "variable_count": 3,
+          "clauses": [
+            [
+              1,
+              2,
+              3
+            ],
+            [
+              1,
+              2,
+              -3
+            ],
+            [
+              1,
+              -2,
+              3
+            ],
+            [
+              1,
+              -2,
+              -3
+            ],
+            [
+              -1,
+              2,
+              3
+            ],
+            [
+              -1,
+              2,
+              -3
+            ],
+            [
+              -1,
+              -2,
+              3
+            ],
+            [
+              -1,
+              -2,
+              -3
+            ]
+          ]
+        },
+        "request_sha256": "cfd2837a276f136eb6491de02947db3fbe3225d91574f2699c726b0dd9b31a2d",
+        "normalization": {
+          "clauses": [
+            [
+              1,
+              2,
+              3
+            ],
+            [
+              1,
+              2,
+              -3
+            ],
+            [
+              1,
+              -2,
+              3
+            ],
+            [
+              1,
+              -2,
+              -3
+            ],
+            [
+              -1,
+              2,
+              3
+            ],
+            [
+              -1,
+              2,
+              -3
+            ],
+            [
+              -1,
+              -2,
+              3
+            ],
+            [
+              -1,
+              -2,
+              -3
+            ]
+          ],
+          "original_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "dropped_tautologies": []
+        },
+        "cycle_count": 3,
+        "vertex_count": 12,
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            9,
+            10
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            8,
+            11
+          ]
+        ],
+        "costs": [
+          [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
+        ],
+        "bounds": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "satisfying_assignments": [],
+      "accepted_assignments": [],
+      "assignments_checked": 8,
+      "matchings_checked": 8,
+      "clause_costs_checked": 64,
+      "witnesses": [
+        {
+          "assignment": 0,
+          "matching": [
+            0,
+            2,
+            4,
+            6,
+            8,
+            10
+          ],
+          "verification": {
+            "valid": false,
+            "perfect_matching": true,
+            "costs": [
+              3,
+              2,
+              2,
+              1,
+              2,
+              1,
+              1,
+              0
+            ],
+            "violated_bounds": [
+              0
+            ],
+            "errors": []
+          }
+        },
+        {
+          "assignment": 1,
+          "matching": [
+            1,
+            3,
+            4,
+            6,
+            8,
+            10
+          ],
+          "verification": {
+            "valid": false,
+            "perfect_matching": true,
+            "costs": [
+              2,
+              1,
+              1,
+              0,
+              3,
+              2,
+              2,
+              1
+            ],
+            "violated_bounds": [
+              4
+            ],
+            "errors": []
+          }
+        },
+        {
+          "assignment": 2,
+          "matching": [
+            0,
+            2,
+            5,
+            7,
+            8,
+            10
+          ],
+          "verification": {
+            "valid": false,
+            "perfect_matching": true,
+            "costs": [
+              2,
+              1,
+              3,
+              2,
+              1,
+              0,
+              2,
+              1
+            ],
+            "violated_bounds": [
+              2
+            ],
+            "errors": []
+          }
+        },
+        {
+          "assignment": 3,
+          "matching": [
+            1,
+            3,
+            5,
+            7,
+            8,
+            10
+          ],
+          "verification": {
+            "valid": false,
+            "perfect_matching": true,
+            "costs": [
+              1,
+              0,
+              2,
+              1,
+              2,
+              1,
+              3,
+              2
+            ],
+            "violated_bounds": [
+              6
+            ],
+            "errors": []
+          }
+        },
+        {
+          "assignment": 4,
+          "matching": [
+            0,
+            2,
+            4,
+            6,
+            9,
+            11
+          ],
+          "verification": {
+            "valid": false,
+            "perfect_matching": true,
+            "costs": [
+              2,
+              3,
+              1,
+              2,
+              1,
+              2,
+              0,
+              1
+            ],
+            "violated_bounds": [
+              1
+            ],
+            "errors": []
+          }
+        },
+        {
+          "assignment": 5,
+          "matching": [
+            1,
+            3,
+            4,
+            6,
+            9,
+            11
+          ],
+          "verification": {
+            "valid": false,
+            "perfect_matching": true,
+            "costs": [
+              1,
+              2,
+              0,
+              1,
+              2,
+              3,
+              1,
+              2
+            ],
+            "violated_bounds": [
+              5
+            ],
+            "errors": []
+          }
+        },
+        {
+          "assignment": 6,
+          "matching": [
+            0,
+            2,
+            5,
+            7,
+            9,
+            11
+          ],
+          "verification": {
+            "valid": false,
+            "perfect_matching": true,
+            "costs": [
+              1,
+              2,
+              2,
+              3,
+              0,
+              1,
+              1,
+              2
+            ],
+            "violated_bounds": [
+              3
+            ],
+            "errors": []
+          }
+        },
+        {
+          "assignment": 7,
+          "matching": [
+            1,
+            3,
+            5,
+            7,
+            9,
+            11
+          ],
+          "verification": {
+            "valid": false,
+            "perfect_matching": true,
+            "costs": [
+              0,
+              1,
+              1,
+              2,
+              1,
+              2,
+              2,
+              3
+            ],
+            "violated_bounds": [
+              7
+            ],
+            "errors": []
+          }
+        }
+      ]
+    },
+    {
+      "name": "normalization",
+      "instance": {
+        "format": "clause-bounded-C4-matching-v1",
+        "request": {
+          "variable_count": 2,
+          "clauses": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              -1,
+              2
+            ],
+            [
+              -2,
+              -2
+            ]
+          ]
+        },
+        "request_sha256": "de1175eb2aa423d612c6aa3676b698d593bcbc784eff2523508e8b9d7c51ff3e",
+        "normalization": {
+          "clauses": [
+            [
+              1
+            ],
+            [
+              -2
+            ]
+          ],
+          "original_indices": [
+            0,
+            2
+          ],
+          "dropped_tautologies": [
+            1
+          ]
+        },
+        "cycle_count": 2,
+        "vertex_count": 8,
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            4,
+            7
+          ]
+        ],
+        "costs": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
+        ],
+        "bounds": [
+          0,
+          0
+        ]
+      },
+      "satisfying_assignments": [
+        1
+      ],
+      "accepted_assignments": [
+        1
+      ],
+      "assignments_checked": 4,
+      "matchings_checked": 4,
+      "clause_costs_checked": 8,
+      "witnesses": [
+        {
+          "assignment": 0,
+          "matching": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "verification": {
+            "valid": false,
+            "perfect_matching": true,
+            "costs": [
+              1,
+              0
+            ],
+            "violated_bounds": [
+              0
+            ],
+            "errors": []
+          }
+        },
+        {
+          "assignment": 1,
+          "matching": [
+            1,
+            3,
+            4,
+            6
+          ],
+          "verification": {
+            "valid": true,
+            "perfect_matching": true,
+            "costs": [
+              0,
+              0
+            ],
+            "violated_bounds": [],
+            "errors": []
+          }
+        },
+        {
+          "assignment": 2,
+          "matching": [
+            0,
+            2,
+            5,
+            7
+          ],
+          "verification": {
+            "valid": false,
+            "perfect_matching": true,
+            "costs": [
+              1,
+              1
+            ],
+            "violated_bounds": [
+              0,
+              1
+            ],
+            "errors": []
+          }
+        },
+        {
+          "assignment": 3,
+          "matching": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "verification": {
+            "valid": false,
+            "perfect_matching": true,
+            "costs": [
+              0,
+              1
+            ],
+            "violated_bounds": [
+              1
+            ],
+            "errors": []
+          }
+        }
+      ]
+    },
+    {
+      "name": "empty_formula",
+      "instance": {
+        "format": "clause-bounded-C4-matching-v1",
+        "request": {
+          "variable_count": 0,
+          "clauses": []
+        },
+        "request_sha256": "1c96573c79b725a4cc433a9120de87d1e92eddf26537bf07fd5b034ec4db59ed",
+        "normalization": {
+          "clauses": [],
+          "original_indices": [],
+          "dropped_tautologies": []
+        },
+        "cycle_count": 0,
+        "vertex_count": 0,
+        "edges": [],
+        "costs": [],
+        "bounds": []
+      },
+      "satisfying_assignments": [
+        0
+      ],
+      "accepted_assignments": [
+        0
+      ],
+      "assignments_checked": 1,
+      "matchings_checked": 1,
+      "clause_costs_checked": 0,
+      "witnesses": [
+        {
+          "assignment": 0,
+          "matching": [],
+          "verification": {
+            "valid": true,
+            "perfect_matching": true,
+            "costs": [],
+            "violated_bounds": [],
+            "errors": []
+          }
+        }
+      ]
+    },
+    {
+      "name": "empty_clause",
+      "instance": {
+        "format": "clause-bounded-C4-matching-v1",
+        "request": {
+          "variable_count": 0,
+          "clauses": [
+            []
+          ]
+        },
+        "request_sha256": "90bab79f2a4418d5c52f122f982f07168e6e208913f288a9ca68dac40cc9849d",
+        "normalization": {
+          "clauses": [
+            []
+          ],
+          "original_indices": [
+            0
+          ],
+          "dropped_tautologies": []
+        },
+        "cycle_count": 1,
+        "vertex_count": 4,
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            0,
+            3
+          ]
+        ],
+        "costs": [
+          [
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        "bounds": [
+          1
+        ]
+      },
+      "satisfying_assignments": [],
+      "accepted_assignments": [],
+      "assignments_checked": 1,
+      "matchings_checked": 2,
+      "clause_costs_checked": 2,
+      "witnesses": [
+        {
+          "assignment": 0,
+          "matching": [
+            0,
+            2
+          ],
+          "verification": {
+            "valid": false,
+            "perfect_matching": true,
+            "costs": [
+              2
+            ],
+            "violated_bounds": [
+              0
+            ],
+            "errors": []
+          }
+        }
+      ]
+    }
+  ],
+  "elapsed_seconds": 0.3603815999813378
+}

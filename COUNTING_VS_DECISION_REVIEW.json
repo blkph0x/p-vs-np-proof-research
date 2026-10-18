@@ -1,0 +1,86 @@
+{
+  "verdict": "CLEAN within the bounded witness/unit-refutation scope",
+  "source_sha256": {
+    "counting_vs_decision_audit.py": "00358de73b437f870c3ab1462afd1bbc651e6126129afac50e97fdb6dbb8870a",
+    "COUNTING_VS_DECISION_AUDIT.json": "621d017a4f69ae448756fb58a874e1fd8a3334d93948349b8a8f7d7daddd42e4",
+    "AFFINE_COMPRESSION_CROSSCHECK.json": "485e644b60f64e58e9e7139703df98909d8f8064d9f605c3b2efbd58cbd6797f",
+    "COUNTING_VS_DECISION_REVIEW.py": "5f2b66a5775e189359e9e3e509956a65949144e8783c6a6d51f4ff7e04fa1c65",
+    "COUNTING_VS_DECISION_REVIEW.md": "d4c01de1675a8c5317c01963bd7954fa9bda2d0942a4c5087837394b7ee71d7d"
+  },
+  "source_unchanged_during_run": true,
+  "saved_original_requests": [
+    {
+      "name": "structure_complete_interaction_every_order_width15",
+      "n": 16,
+      "clauses": 120,
+      "counting_status": "UNKNOWN",
+      "decision_status": "SAT",
+      "original_witness_or_unit_proof_checked": true,
+      "recorded_search_stats": {
+        "nodes": 16,
+        "literal_visits": 4080,
+        "branches": 15
+      }
+    },
+    {
+      "name": "structure_planted_mixed_3CNF_n24_m96",
+      "n": 24,
+      "clauses": 96,
+      "counting_status": "UNKNOWN",
+      "decision_status": "SAT",
+      "original_witness_or_unit_proof_checked": true,
+      "recorded_search_stats": {
+        "nodes": 8,
+        "literal_visits": 8298,
+        "branches": 6
+      }
+    },
+    {
+      "name": "structure_planted_mixed_3CNF_n32_m128",
+      "n": 32,
+      "clauses": 128,
+      "counting_status": "UNKNOWN",
+      "decision_status": "SAT",
+      "original_witness_or_unit_proof_checked": true,
+      "recorded_search_stats": {
+        "nodes": 14,
+        "literal_visits": 15825,
+        "branches": 12
+      }
+    },
+    {
+      "name": "legacy_mixed_12_connected_True",
+      "n": 72,
+      "clauses": 131,
+      "counting_status": "UNKNOWN",
+      "decision_status": "UNSAT",
+      "original_witness_or_unit_proof_checked": true,
+      "recorded_search_stats": {
+        "nodes": 0,
+        "literal_visits": 10960,
+        "branches": 0
+      }
+    }
+  ],
+  "saved_original_literal_occurrences": 1186,
+  "saved_witness_single_bit_mutations": 72,
+  "exhaustive_two_variable_formulas": 512,
+  "seeded_original_formulas": 300,
+  "seed": 2026101917,
+  "total_original_formulas": 812,
+  "total_original_truth_words": 7469,
+  "probe_statuses": {
+    "SAT": 192,
+    "UNSAT": 619,
+    "UNKNOWN": 1
+  },
+  "unit_proof_mutations": 11031,
+  "valid_alternative_unit_proofs": 2104,
+  "rejected_unit_proof_variants": 8927,
+  "explicitly_invalid_unit_controls": 6,
+  "malformed_witness_controls": 6,
+  "nonunit_unsat_unknown_controls": 1,
+  "explicit_cap_unknown_controls": 2,
+  "seconds": 0.5926152998581529,
+  "scope": "Decision witnesses and original-clause unit contradictions only. Exact counting remains UNKNOWN for the four originals. No completeness, polynomial complexity, generic hardness or comparative speed conclusion."
+}

@@ -1,0 +1,40 @@
+{
+  "status": "VERIFIED_INDEPENDENT_NONLINEAR_CIRCUIT_COMPRESSION",
+  "degrees_checked": [
+    7,
+    8,
+    9
+  ],
+  "rows": [
+    {
+      "field_degree": 7,
+      "source_forms": 16256,
+      "output_bits": 14,
+      "total_gates": 553152,
+      "sample_assignments": 7
+    },
+    {
+      "field_degree": 8,
+      "source_forms": 65280,
+      "output_bits": 16,
+      "total_gates": 3069184,
+      "sample_assignments": 7
+    },
+    {
+      "field_degree": 9,
+      "source_forms": 261632,
+      "output_bits": 18,
+      "total_gates": 16223488,
+      "sample_assignments": 7
+    }
+  ],
+  "small_cube_assignments_checked": 32,
+  "explicit_sample_assignments_checked": 7,
+  "source_hashes": {
+    "explicit_code_family.py": "a8e38e7026079bb281ab374b9908c6676ff134cb6db900a6e01f59d895a18dfd",
+    "nonlinear_circuit_compression.py": "a1a70feec41606aa01b8b0631103757a0b4b1746b2632393a18776b0a0bbc1c4",
+    "run_nonlinear_circuit_compression.py": "af73da08895d6a00e02c4f34dc43d761ca82db3913b5747df21dc94b8d94979d",
+    "NONLINEAR_CIRCUIT_COMPRESSION_REVIEW.py": "6e29c99c6c2574ec46ff7d3b698a42c51e80cc99501f33f7df95c296836231ac"
+  },
+  "scope": "Explicit polynomial-size XOR/AND circuit for Hamming weight; no SAT solver or P-versus-NP claim."
+}

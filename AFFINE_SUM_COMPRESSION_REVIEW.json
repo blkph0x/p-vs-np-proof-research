@@ -1,0 +1,54 @@
+{
+  "format": "affine-sum-compression-design-review-v1",
+  "reviewed_draft": "AFFINE_SUM_COMPRESSION_NEXT.md",
+  "reviewed_draft_sha256": "6a271b4597991f07ff6ee6813ac6b55deaefb663857832e32cd631ccbb01fa40",
+  "source_sha256": {
+    "AFFINE_SUM_COMPRESSION_NEXT.md": "6a271b4597991f07ff6ee6813ac6b55deaefb663857832e32cd631ccbb01fa40",
+    "AFFINE_SUM_COMPRESSION_REVIEW.py": "f054dd054730b4bd5f67e3ac2da7c46107097794d23748fa29e4eca59274cd2f",
+    "AFFINE_SUM_COMPRESSION_REVIEW.md": "ba92f165e3f82169108abbd717a5b3fe1291711571c4738b9d0730e54b4fc97a"
+  },
+  "source_unchanged_during_run": true,
+  "phase_criterion": {
+    "cases": 33320,
+    "quadratic_unions": 4392,
+    "cubic_obstructions": 28928,
+    "by_dimension": [
+      {
+        "common_free_coordinates": 0,
+        "cases": 8,
+        "quadratic_unions": 8,
+        "cubic_obstructions": 0
+      },
+      {
+        "common_free_coordinates": 1,
+        "cases": 32,
+        "quadratic_unions": 32,
+        "cubic_obstructions": 0
+      },
+      {
+        "common_free_coordinates": 2,
+        "cases": 512,
+        "quadratic_unions": 256,
+        "cubic_obstructions": 256
+      },
+      {
+        "common_free_coordinates": 3,
+        "cases": 32768,
+        "quadratic_unions": 4096,
+        "cubic_obstructions": 28672
+      }
+    ],
+    "oracle": "complete two-coset sign table followed by Boolean Mobius transform"
+  },
+  "union_support": {
+    "cases": 1000,
+    "assignment_checks": 35126,
+    "seed": 2026101903,
+    "dimensions_min": 1,
+    "dimensions_max": 7,
+    "rank_drop_checks": 1000,
+    "selector_checks": "every supported enumerated assignment",
+    "oracle": "direct original syndromes versus merged-row satisfaction"
+  },
+  "scope": "Bounded independent identity controls plus the accompanying mathematical review; no production merge or SAT speedup claim."
+}

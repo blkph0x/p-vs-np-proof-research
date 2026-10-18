@@ -1,0 +1,20 @@
+{
+  "source": "Jia et al., On the Intractability of the Minimum Distance Problem for Regular LDPC Codes, arXiv:2606.23161v3",
+  "scope": "finite local-gadget replay; not a formalization of the all-size theorem",
+  "seed": 20261018,
+  "counts": {
+    "decomposition_cases": 120,
+    "decomposition_exhaustive_cases": 314,
+    "padding_cases": 160,
+    "padding_exhaustive_cases": 445,
+    "replication_cases": 120,
+    "full_reduction_cases": 90,
+    "threshold_rows": 152,
+    "full_exhaustive_cases": 41
+  },
+  "all_checks_passed": true,
+  "source_sha256": {
+    "regular_ldpc_local_audit.py": "dab9c9be6ebd51c9106dd48ad32c734d10a84eb8b0ceb1bc8810ec4fb9623e59",
+    "REGULAR_LDPC_MINIMUM_DISTANCE_SCOPE.md": "35737e0d11bb535613780004503aa2eb3cc73953a57a13bcbd961ac6f6ad3e41"
+  }
+}

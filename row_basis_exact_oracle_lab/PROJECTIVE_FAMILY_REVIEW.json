@@ -1,0 +1,20 @@
+{
+  "status": "VERIFIED_INDEPENDENT_PROJECTIVE_FAMILY",
+  "ranks_checked": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    12
+  ],
+  "rank6_states": 64,
+  "rank12_columns": 4095,
+  "rank12_states": 4096,
+  "source_hashes": {
+    "projective_family.py": "19a682953bad85191e28067a4cfe13f228259bd0c1de6bc64f43c40cf6c16715",
+    "run_projective_family.py": "7d864d844863473578e57504d38b6b2cd5632d943152ae37eb9a71d513dff0a0",
+    "PROJECTIVE_FAMILY_REVIEW.py": "fbe10f01e1c91aa9b4e3961f03221a214834fa501240507d3f3670b239c4cf53"
+  },
+  "scope": "Exact permutation symmetry and arithmetic replay only."
+}

@@ -1,0 +1,8 @@
+{
+  "all_checks_passed": true,
+  "max_n": 32,
+  "first_phase_rows": 36464,
+  "suffix_phase_rows": 104544,
+  "max_suffix_variables": 64448760,
+  "scope": "integer size-accounting audit; parity bijections remain separately scoped"
+}

@@ -1,0 +1,277 @@
+{
+  "status": "VERIFIED_INDEPENDENT_ROW_BASIS_ORACLE_REVIEW",
+  "case_count": 11,
+  "exact_count": 10,
+  "unknown_count": 1,
+  "rows": [
+    {
+      "name": "gl3_trap",
+      "oracle_status": "EXACT",
+      "objective": [
+        1,
+        1,
+        31
+      ],
+      "parameter_objective": null,
+      "heuristic_objective": [
+        2,
+        2,
+        33
+      ],
+      "heuristic_exceptional_stats": [
+        2,
+        1,
+        2,
+        33
+      ]
+    },
+    {
+      "name": "random_gl4_0",
+      "oracle_status": "EXACT",
+      "objective": [
+        2,
+        2,
+        31
+      ],
+      "parameter_objective": null,
+      "heuristic_objective": [
+        2,
+        2,
+        32
+      ],
+      "heuristic_exceptional_stats": [
+        2,
+        2,
+        2,
+        32
+      ]
+    },
+    {
+      "name": "random_gl4_1",
+      "oracle_status": "EXACT",
+      "objective": [
+        2,
+        2,
+        32
+      ],
+      "parameter_objective": null,
+      "heuristic_objective": [
+        2,
+        2,
+        32
+      ],
+      "heuristic_exceptional_stats": [
+        2,
+        2,
+        2,
+        32
+      ]
+    },
+    {
+      "name": "random_gl4_2",
+      "oracle_status": "EXACT",
+      "objective": [
+        2,
+        2,
+        33
+      ],
+      "parameter_objective": null,
+      "heuristic_objective": [
+        2,
+        2,
+        36
+      ],
+      "heuristic_exceptional_stats": [
+        2,
+        2,
+        2,
+        36
+      ]
+    },
+    {
+      "name": "random_gl4_3",
+      "oracle_status": "EXACT",
+      "objective": [
+        2,
+        2,
+        34
+      ],
+      "parameter_objective": null,
+      "heuristic_objective": [
+        2,
+        2,
+        34
+      ],
+      "heuristic_exceptional_stats": [
+        2,
+        2,
+        2,
+        34
+      ]
+    },
+    {
+      "name": "random_gl4_4",
+      "oracle_status": "EXACT",
+      "objective": [
+        2,
+        2,
+        34
+      ],
+      "parameter_objective": null,
+      "heuristic_objective": [
+        2,
+        2,
+        34
+      ],
+      "heuristic_exceptional_stats": [
+        2,
+        2,
+        2,
+        34
+      ]
+    },
+    {
+      "name": "random_gl4_5",
+      "oracle_status": "EXACT",
+      "objective": [
+        5,
+        6,
+        43
+      ],
+      "parameter_objective": null,
+      "heuristic_objective": [
+        5,
+        6,
+        43
+      ],
+      "heuristic_exceptional_stats": [
+        5,
+        4,
+        6,
+        43
+      ]
+    },
+    {
+      "name": "random_gl4_6",
+      "oracle_status": "EXACT",
+      "objective": [
+        2,
+        2,
+        39
+      ],
+      "parameter_objective": null,
+      "heuristic_objective": [
+        2,
+        2,
+        39
+      ],
+      "heuristic_exceptional_stats": [
+        2,
+        2,
+        2,
+        39
+      ]
+    },
+    {
+      "name": "random_gl4_7",
+      "oracle_status": "EXACT",
+      "objective": [
+        5,
+        5,
+        44
+      ],
+      "parameter_objective": null,
+      "heuristic_objective": [
+        5,
+        5,
+        44
+      ],
+      "heuristic_exceptional_stats": [
+        5,
+        4,
+        5,
+        44
+      ]
+    },
+    {
+      "name": "rank_tradeoff",
+      "oracle_status": "EXACT",
+      "objective": [
+        2,
+        2,
+        28
+      ],
+      "parameter_objective": [
+        1,
+        4,
+        4,
+        31
+      ],
+      "heuristic_objective": [
+        2,
+        2,
+        28
+      ],
+      "heuristic_exceptional_stats": [
+        2,
+        2,
+        2,
+        28
+      ]
+    },
+    {
+      "name": "gl5_capped",
+      "oracle_status": "UNKNOWN",
+      "objective": null,
+      "parameter_objective": null,
+      "heuristic_objective": null,
+      "heuristic_exceptional_stats": null
+    }
+  ],
+  "source_hashes": {
+    "exact_oracle.py": "8ba808f8c73935cc60c1fe93abe2ad02afa68dbbf3cb809a17503e86b32c3870",
+    "run_experiments.py": "5d5d1cf05ad93e4bf8a7f24c91f9a8e1a79faecb0876a260128a08602b0f7b3c",
+    "INDEPENDENT_REVIEW.py": "56d06408b8b8265c4697397fa2f6cfd31a9328de413019dae9e44429914b9a20",
+    "rank_aware_discovery.py": "b9a7bbc9d2c2c21715c24d1c873f3a1eb372140b408cf651735aeb20a9c3d3ce",
+    "rank_native_solver.py": "c612a7a5ce0a504caf7d4a117db56e90c2e9312be71309f61ff509b9d044863c",
+    "native_coset_solver.py": "979e22b8430d10cc453b0819d82a656b05621b8d2971c3b919d2fbc4ab97fe6e",
+    "matching_certificate.py": "46180db74c0837d4d495f3579de2d57f29f7c059043bd3e56e55f209736fa5f7"
+  },
+  "gl3_trap_exact": [
+    1,
+    1,
+    31
+  ],
+  "gl3_trap_heuristic": [
+    2,
+    2,
+    33
+  ],
+  "rank_tradeoff_q_objective": [
+    2,
+    2,
+    28
+  ],
+  "rank_tradeoff_p_objective": [
+    1,
+    4,
+    4,
+    31
+  ],
+  "rank_tradeoff_heuristic_stats": [
+    2,
+    2,
+    2,
+    28
+  ],
+  "rank_tradeoff_native_q_state_count": 4,
+  "rank_tradeoff_native_p_state_count": 2,
+  "rank_tradeoff_native_distance": 2,
+  "rank_tradeoff_rank_aware_objective": [
+    1,
+    4,
+    4,
+    31
+  ],
+  "rank_tradeoff_rank_aware_state_count": 2
+}

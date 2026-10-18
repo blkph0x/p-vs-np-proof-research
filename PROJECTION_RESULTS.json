@@ -1,0 +1,213 @@
+{
+  "schema": "golay_bounded_projection_audit_v1",
+  "n": 24,
+  "generator_rows": [
+    8391395,
+    8394182,
+    8399756,
+    8410904,
+    8433200,
+    8477792,
+    8566976,
+    8745344,
+    9102080,
+    9815552,
+    11242496,
+    14096384
+  ],
+  "pin": 0,
+  "projection_certificate": {
+    "schema": "bounded_projection_dual_distance_v1",
+    "n": 24,
+    "dimension": 12,
+    "dual_basis": [
+      7973,
+      8559,
+      17118,
+      34236,
+      68472,
+      133589,
+      265359,
+      525883,
+      1051766,
+      2099145,
+      4198290,
+      8391395
+    ],
+    "dual_distance": 8,
+    "pin": 0,
+    "unconditioned_cube_max_size": 7,
+    "conditioned_other_cube_max_size": 6
+  },
+  "projection_verification": {
+    "valid": true,
+    "status": "VERIFIED",
+    "errors": [],
+    "dimension": 12,
+    "dual_distance": 8,
+    "dual_words_checked": 4096,
+    "nonzero_dual_words_checked": 4095,
+    "unconditioned_cube_max_size": 7,
+    "conditioned_other_cube_max_size": 6,
+    "pin_one_feasible": true,
+    "unconditioned_coordinate_sets_covered": 536155,
+    "conditioned_coordinate_sets_covered": 145499
+  },
+  "point_rationals": [
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      1,
+      7
+    ]
+  ],
+  "all_dual_checks_verified": 4095,
+  "integer_pinned_optimum": 8,
+  "fractional_feasible_weight": [
+    30,
+    7
+  ],
+  "combined_exact_lp_optimum": [
+    30,
+    7
+  ],
+  "lp_lower_certificate": {
+    "check_count": 253,
+    "other_coordinate_multiplicity": 77
+  },
+  "combined_all_dual_and_bounded_projection_witness_valid": true,
+  "projection_only_unit_vector_is_feasible": true,
+  "boundary_control": {
+    "dual_check": 8391395,
+    "support": [
+      0,
+      1,
+      5,
+      6,
+      7,
+      9,
+      11,
+      23
+    ],
+    "unconditioned_projection": {
+      "feasible": true,
+      "dimension": 7,
+      "is_full_cube": false,
+      "projected_offset": 0,
+      "projected_basis": [
+        255,
+        95,
+        63,
+        24,
+        15,
+        5,
+        3
+      ]
+    },
+    "conditioned_projection": {
+      "feasible": true,
+      "dimension": 6,
+      "is_full_cube": false,
+      "projected_offset": 127,
+      "projected_basis": [
+        96,
+        48,
+        24,
+        12,
+        6,
+        3
+      ]
+    }
+  },
+  "scope": "Coordinate projection hulls only; no claim about Sherali-Adams, Lasserre, lifted moment consistency, arbitrary global inequalities, or P versus NP."
+}

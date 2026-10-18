@@ -1,0 +1,41 @@
+{
+  "status": "LINEAR_WEIGHT_SIGNATURE_CHECK_PASS",
+  "timestamp_utc": "2026-10-18T01:03:09.376699+00:00",
+  "degrees_checked": [
+    7,
+    8,
+    9
+  ],
+  "records": [
+    {
+      "field_degree": 7,
+      "binary_rank": 14,
+      "columns": 16256,
+      "distinct_signature_entries": 16256,
+      "minimum_positive_rows": 16256
+    },
+    {
+      "field_degree": 8,
+      "binary_rank": 32,
+      "columns": 65280,
+      "distinct_signature_entries": 65280,
+      "minimum_positive_rows": 65280
+    },
+    {
+      "field_degree": 9,
+      "binary_rank": 54,
+      "columns": 261632,
+      "distinct_signature_entries": 261632,
+      "minimum_positive_rows": 261632
+    }
+  ],
+  "source_hashes_before": {
+    "explicit_code_family.py": "a8e38e7026079bb281ab374b9908c6676ff134cb6db900a6e01f59d895a18dfd",
+    "linear_weight_signature.py": "d31cde69437cabe7506c94d5da53f6beb309ea26b310c2c30618a5ec970b1da5"
+  },
+  "source_hashes_after": {
+    "explicit_code_family.py": "a8e38e7026079bb281ab374b9908c6676ff134cb6db900a6e01f59d895a18dfd",
+    "linear_weight_signature.py": "d31cde69437cabe7506c94d5da53f6beb309ea26b310c2c30618a5ec970b1da5"
+  },
+  "scope": "Exact full-objective equality for homogeneous nonnegative linear encodings."
+}

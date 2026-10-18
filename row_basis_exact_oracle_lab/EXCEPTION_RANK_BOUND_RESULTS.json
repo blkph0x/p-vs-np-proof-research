@@ -1,0 +1,75 @@
+{
+  "status": "EXCEPTION_RANK_BOUND_CHECK_PASS",
+  "timestamp_utc": "2026-10-18T00:28:15.062250+00:00",
+  "ranks_checked": [
+    6,
+    7,
+    8,
+    16,
+    32
+  ],
+  "records": [
+    {
+      "rank": 6,
+      "low_weight_count": 22,
+      "union_bound_numerator_bits": 2745,
+      "union_bound_denominator_bits": 2845,
+      "union_bound_lt_one": true,
+      "columns": 582,
+      "minimum_native_states": 64,
+      "random_columns": 576,
+      "identity_columns": 6,
+      "n_at_most_17_r_squared": true
+    },
+    {
+      "rank": 7,
+      "low_weight_count": 29,
+      "union_bound_numerator_bits": 5134,
+      "union_bound_denominator_bits": 5440,
+      "union_bound_lt_one": true,
+      "columns": 791,
+      "minimum_native_states": 128,
+      "random_columns": 784,
+      "identity_columns": 7,
+      "n_at_most_17_r_squared": true
+    },
+    {
+      "rank": 8,
+      "low_weight_count": 37,
+      "union_bound_numerator_bits": 7552,
+      "union_bound_denominator_bits": 8129,
+      "union_bound_lt_one": true,
+      "columns": 1032,
+      "minimum_native_states": 256,
+      "random_columns": 1024,
+      "identity_columns": 8,
+      "n_at_most_17_r_squared": true
+    },
+    {
+      "rank": 16,
+      "low_weight_count": 137,
+      "union_bound_numerator_bits": 61481,
+      "union_bound_denominator_bits": 65281,
+      "union_bound_lt_one": true,
+      "columns": 4112,
+      "minimum_native_states": 65536,
+      "random_columns": 4096,
+      "identity_columns": 16,
+      "n_at_most_17_r_squared": true
+    },
+    {
+      "rank": 32,
+      "low_weight_count": 529,
+      "union_bound_numerator_bits": 507937,
+      "union_bound_denominator_bits": 523265,
+      "union_bound_lt_one": true,
+      "columns": 16416,
+      "minimum_native_states": 4294967296,
+      "random_columns": 16384,
+      "identity_columns": 32,
+      "n_at_most_17_r_squared": true
+    }
+  ],
+  "source_hash": "d4d07a58fc76f7eb5c4e02eb4edd1a9b3442a8eba1bb50628a4e4f0b14fc63c0",
+  "scope": "Exact union-bound arithmetic; probabilistic existence theorem for one solver route."
+}

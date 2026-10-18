@@ -1,0 +1,41 @@
+{
+  "status": "NONLINEAR_WEIGHT_COMPRESSION_CHECK_PASS",
+  "timestamp_utc": "2026-10-18T01:13:57.926957+00:00",
+  "degrees_checked": [
+    7,
+    8,
+    9
+  ],
+  "records": [
+    {
+      "field_degree": 7,
+      "binary_rank": 14,
+      "source_forms": 16256,
+      "nonlinear_digit_rows": 14,
+      "compression_ratio": 1161.142857142857
+    },
+    {
+      "field_degree": 8,
+      "binary_rank": 32,
+      "source_forms": 65280,
+      "nonlinear_digit_rows": 16,
+      "compression_ratio": 4080.0
+    },
+    {
+      "field_degree": 9,
+      "binary_rank": 54,
+      "source_forms": 261632,
+      "nonlinear_digit_rows": 18,
+      "compression_ratio": 14535.111111111111
+    }
+  ],
+  "source_hashes_before": {
+    "explicit_code_family.py": "a8e38e7026079bb281ab374b9908c6676ff134cb6db900a6e01f59d895a18dfd",
+    "nonlinear_weight_compression.py": "807f14d67838c56ef46a80022ef3d538a06513cafedd3c04e5a0278cb7ac9ec8"
+  },
+  "source_hashes_after": {
+    "explicit_code_family.py": "a8e38e7026079bb281ab374b9908c6676ff134cb6db900a6e01f59d895a18dfd",
+    "nonlinear_weight_compression.py": "807f14d67838c56ef46a80022ef3d538a06513cafedd3c04e5a0278cb7ac9ec8"
+  },
+  "scope": "Exact identity control for unrestricted nonlinear objective rows; no solver or P-versus-NP claim."
+}

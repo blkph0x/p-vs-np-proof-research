@@ -1,0 +1,62 @@
+{
+  "all_tests_passed": true,
+  "source_unchanged_during_tests": true,
+  "test_count": 41,
+  "suite_count": 5,
+  "suites": [
+    {
+      "lab": "projection_limits",
+      "passed": true,
+      "returncode": 0,
+      "test_count": 6,
+      "seconds": 0.878351700026542
+    },
+    {
+      "lab": "gadget_limits",
+      "passed": true,
+      "returncode": 0,
+      "test_count": 6,
+      "seconds": 0.15040489984676242
+    },
+    {
+      "lab": "objective_pullback_limits",
+      "passed": true,
+      "returncode": 0,
+      "test_count": 7,
+      "seconds": 0.611003200057894
+    },
+    {
+      "lab": "matching_gadget_limits",
+      "passed": true,
+      "returncode": 0,
+      "test_count": 14,
+      "seconds": 0.14216569997370243
+    },
+    {
+      "lab": "matching_composition_controls",
+      "passed": true,
+      "returncode": 0,
+      "test_count": 8,
+      "seconds": 0.19223600020632148
+    }
+  ],
+  "started_utc": "2026-10-18T04:08:24.068424+00:00",
+  "finished_utc": "2026-10-18T04:08:26.049301+00:00",
+  "seconds": 1.9774480001069605,
+  "python": "3.10.10 | packaged by conda-forge | (main, Mar 24 2023, 20:00:38) [MSC v.1934 64 bit (AMD64)]",
+  "implementation_sha256": {
+    "run_followup_audits.py": "60a522fd66372bded03fc69642ba62acfb9da08ecb1e9b23159732287a58aedc",
+    "projection_limits/syndrome_projection.py": "6de5985281a79fdcb5ec8ed3c37f555914def0ee5e6bca6cd3482cc94f065eb2",
+    "projection_limits/test_syndrome_projection.py": "1ea02754ae1e00fd092e2879949ab98a297089182d7f1c0cd9814f0d422b5dbe",
+    "gadget_limits/test_gadgets.py": "98219dab4f6637f09c2c68d633b5f0676c78902d8e6b41141d3f2c045a352f49",
+    "gadget_limits/validate_gadgets.py": "148051d394fd1e1c64d396eb9e9d548b0fd45968c98ff4e38ec9efd1e19b6a79",
+    "objective_pullback_limits/objective_pullback.py": "244f965da1f6eef192304a96e768ee681f0b7ceca9a6eeb0d77803ab238be3bc",
+    "objective_pullback_limits/run_examples.py": "a387d9c77338fc8e7ad566e99d0db56bf2a4a541915cfe369a11440d194d333c",
+    "objective_pullback_limits/test_objective_pullback.py": "7373163b53f6b2ee9e94489a8164a21230c8c8d18f48c8a878e869bfa9517917",
+    "matching_gadget_limits/matching_boundary.py": "7c76c60f8ab02823a41de061c61ff8e4161f1fda60e26b51dcaca2ed8129fa59",
+    "matching_gadget_limits/run_experiments.py": "134976762694b5307e9e2a67378d7c3066a718666814dc73edd78df59aa05d3f",
+    "matching_gadget_limits/test_matching_boundary.py": "495a67c3ca8c3bd2bb53409b885caadf0392607ca4f886a9b258a0d3322c05aa",
+    "matching_composition_controls/not_cycle.py": "c046054888a28942e2a890d855b1f4249ecc1404279d37524958f46a64d3a7be",
+    "matching_composition_controls/test_not_cycle.py": "fe049948ea9d5af1c07b60cb6e9786689d8597b340ba4ea569ec594db444e432"
+  }
+}

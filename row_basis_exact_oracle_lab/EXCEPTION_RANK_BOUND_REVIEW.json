@@ -1,0 +1,19 @@
+{
+  "status": "VERIFIED_INDEPENDENT_EXCEPTION_RANK_BOUND",
+  "ranks_checked": [
+    6,
+    7,
+    8,
+    16,
+    32
+  ],
+  "minimum_rank6_states": 64,
+  "rank32_columns": 16416,
+  "rank32_states": 4294967296,
+  "source_hashes": {
+    "exception_rank_bound.py": "d4d07a58fc76f7eb5c4e02eb4edd1a9b3442a8eba1bb50628a4e4f0b14fc63c0",
+    "run_exception_rank_bound.py": "a1af73b170cac4cc19d4c91b4dced77d3c5690a8cc97dfc92ba2cf3d19ea9923",
+    "EXCEPTION_RANK_BOUND_REVIEW.py": "b77661deadea7266dbdfcb57c689fc6c2a0457e27aec08ed42e6f2b5c81f9cbd"
+  },
+  "scope": "Exact replay of the probabilistic existence inequalities; no explicit hard matrix is claimed."
+}

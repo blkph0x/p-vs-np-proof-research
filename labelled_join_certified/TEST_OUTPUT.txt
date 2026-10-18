@@ -1,0 +1,56 @@
+test_all_invertible_three_row_transforms_bind_original_target (test_code_lift_solver.CodeLiftTests) ... ok
+test_all_three_row_matrices_through_two_columns_all_targets (test_code_lift_solver.CodeLiftTests) ... ok
+test_explicit_one_row_lift_and_pg_controls (test_code_lift_solver.CodeLiftTests) ... ok
+test_invalid_and_forged_normal_forms (test_code_lift_solver.CodeLiftTests) ... ok
+test_seeded_weighted_codes_and_affine_requests (test_code_lift_solver.CodeLiftTests) ... ok
+test_unknown_and_zero_objective_nonzero_word (test_code_lift_solver.CodeLiftTests) ... ok
+test_all_small_one_bit_simple_graphs (test_labelled_tables.LabelledTableTests) ... ok
+test_all_two_edge_two_bit_multigraphs (test_labelled_tables.LabelledTableTests) ... ok
+test_disconnected_and_cancelled_walks (test_labelled_tables.LabelledTableTests) ... ok
+test_empty_graphs_and_zero_label_dimension (test_labelled_tables.LabelledTableTests) ... ok
+test_label_closure_and_big_integers (test_labelled_tables.LabelledTableTests) ... ok
+test_metadata_and_structural_mutations (test_labelled_tables.LabelledTableTests) ... ok
+test_producer_and_verifier_budgets (test_labelled_tables.LabelledTableTests) ... ok
+test_reject_false_unreachability (test_labelled_tables.LabelledTableTests) ... ok
+test_reject_feasible_but_suboptimal_distance (test_labelled_tables.LabelledTableTests) ... ok
+test_reject_forged_closed_walk_and_eulerian_values (test_labelled_tables.LabelledTableTests) ... ok
+test_reject_invalid_requests (test_labelled_tables.LabelledTableTests) ... ok
+test_reject_zero_cost_predecessor_cycles (test_labelled_tables.LabelledTableTests) ... ok
+test_saved_json_and_verified_table_isolation (test_labelled_tables.LabelledTableTests) ... ok
+test_seeded_weighted_multigraphs (test_labelled_tables.LabelledTableTests) ... ok
+test_all_labelled_simple_graphs_through_four_vertices (test_labelled_tjoin.LabelledTjoinTests) ... ok
+test_caps_and_huge_dimensions_fail_closed (test_labelled_tjoin.LabelledTjoinTests) ... ok
+test_dp_and_request_tampering (test_labelled_tjoin.LabelledTjoinTests) ... ok
+test_four_terminals_need_label_allocation_and_disconnected_correction (test_labelled_tjoin.LabelledTjoinTests) ... ok
+test_invalid_requests (test_labelled_tjoin.LabelledTjoinTests) ... ok
+test_large_integer_weights (test_labelled_tjoin.LabelledTjoinTests) ... ok
+test_nonempty_pin_coverage_and_loop_semantics (test_labelled_tjoin.LabelledTjoinTests) ... ok
+test_random_weighted_multigraphs_and_nonempty (test_labelled_tjoin.LabelledTjoinTests) ... ok
+test_verification_budget_is_separate_from_reachable_search_work (test_labelled_tjoin.LabelledTjoinTests) ... ok
+test_exact_all_row_thresholds (test_perturbation_coverage.PerturbationCoverageTests) ... ok
+test_graph_column_counts (test_perturbation_coverage.PerturbationCoverageTests) ... ok
+test_invalid_dimensions (test_perturbation_coverage.PerturbationCoverageTests) ... ok
+test_logarithmic_label_bound_eventually_excludes_coverage (test_perturbation_coverage.PerturbationCoverageTests) ... ok
+test_small_description_enumeration_is_below_bound (test_perturbation_coverage.PerturbationCoverageTests) ... ok
+test_systematic_spaces_are_distinct (test_perturbation_coverage.PerturbationCoverageTests) ... ok
+test_branch_cap_is_unknown_and_certificate_tampering_rejected (test_small_terminal_perturbation.SmallTerminalPerturbationTests) ... ok
+test_disconnected_cycle_correction (test_small_terminal_perturbation.SmallTerminalPerturbationTests) ... ok
+test_exhaustive_tiny_perturbations (test_small_terminal_perturbation.SmallTerminalPerturbationTests) ... ok
+test_free_variables_and_zero_rank (test_small_terminal_perturbation.SmallTerminalPerturbationTests) ... ok
+test_one_edge_inconsistent_branch_is_rejected (test_small_terminal_perturbation.SmallTerminalPerturbationTests) ... ok
+test_original_matrix_binding_and_mutations (test_small_terminal_perturbation.SmallTerminalPerturbationTests) ... ok
+test_random_original_matrix_adapter_and_cap (test_small_terminal_perturbation.SmallTerminalPerturbationTests) ... ok
+test_triangle_wrong_label_path (test_small_terminal_perturbation.SmallTerminalPerturbationTests) ... ok
+test_certificate_mutations_and_input_mismatch (test_sparse_lift_normal_form.SparseLiftNormalFormTests) ... ok
+test_component_collapse_preserves_original_edge_coordinates (test_sparse_lift_normal_form.SparseLiftNormalFormTests) ... ok
+test_empty_zero_rank_and_full_rank (test_sparse_lift_normal_form.SparseLiftNormalFormTests) ... ok
+test_exact_work_boundaries_and_unknown (test_sparse_lift_normal_form.SparseLiftNormalFormTests) ... ok
+test_exhaustive_three_row_two_column_single_U_factor (test_sparse_lift_normal_form.SparseLiftNormalFormTests) ... ok
+test_invalid_inputs (test_sparse_lift_normal_form.SparseLiftNormalFormTests) ... ok
+test_json_roundtrip_and_verifier_does_not_call_producer (test_sparse_lift_normal_form.SparseLiftNormalFormTests) ... ok
+test_seeded_dependent_factors_and_target_equivalence (test_sparse_lift_normal_form.SparseLiftNormalFormTests) ... ok
+
+----------------------------------------------------------------------
+Ran 51 tests in 15.125s
+
+OK

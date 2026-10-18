@@ -1,0 +1,117 @@
+{
+  "status": "REDUNDANCY_ADVERSARY_PASS",
+  "rows": [
+    {
+      "pairs": 3,
+      "variables": 6,
+      "raw_clauses": 21,
+      "clean_clauses": 6,
+      "raw": {
+        "max_width": 5,
+        "states": 22,
+        "transitions": 28
+      },
+      "normalized": {
+        "max_width": 1,
+        "states": 10,
+        "transitions": 12
+      },
+      "sat": true
+    },
+    {
+      "pairs": 4,
+      "variables": 8,
+      "raw_clauses": 36,
+      "clean_clauses": 8,
+      "raw": {
+        "max_width": 7,
+        "states": 46,
+        "transitions": 60
+      },
+      "normalized": {
+        "max_width": 1,
+        "states": 13,
+        "transitions": 16
+      },
+      "sat": true
+    },
+    {
+      "pairs": 5,
+      "variables": 10,
+      "raw_clauses": 55,
+      "clean_clauses": 10,
+      "raw": {
+        "max_width": 9,
+        "states": 94,
+        "transitions": 124
+      },
+      "normalized": {
+        "max_width": 1,
+        "states": 16,
+        "transitions": 20
+      },
+      "sat": true
+    },
+    {
+      "pairs": 6,
+      "variables": 12,
+      "raw_clauses": 78,
+      "clean_clauses": 12,
+      "raw": {
+        "max_width": 11,
+        "states": 190,
+        "transitions": 252
+      },
+      "normalized": {
+        "max_width": 1,
+        "states": 19,
+        "transitions": 24
+      },
+      "sat": true
+    },
+    {
+      "pairs": 7,
+      "variables": 14,
+      "raw_clauses": 105,
+      "clean_clauses": 14,
+      "raw": {
+        "max_width": 13,
+        "states": 382,
+        "transitions": 508
+      },
+      "normalized": {
+        "max_width": 1,
+        "states": 22,
+        "transitions": 28
+      },
+      "sat": true
+    },
+    {
+      "pairs": 8,
+      "variables": 16,
+      "raw_clauses": 136,
+      "clean_clauses": 16,
+      "raw": {
+        "max_width": 15,
+        "states": 766,
+        "transitions": 1020
+      },
+      "normalized": {
+        "max_width": 1,
+        "states": 25,
+        "transitions": 32
+      },
+      "sat": true
+    }
+  ],
+  "source_hashes_before": {
+    "boundary_dp.py": "28420afddd49282f0184a70510372d72d21e929a91e3f6099b219cf6b03ed36b",
+    "REDUNDANCY_ADVERSARY.py": "f311b0b890119b2eb2bc9c7ab7937ab69944447b5809cdd12f9c4603b701848a"
+  },
+  "source_hashes_after": {
+    "boundary_dp.py": "28420afddd49282f0184a70510372d72d21e929a91e3f6099b219cf6b03ed36b",
+    "REDUNDANCY_ADVERSARY.py": "f311b0b890119b2eb2bc9c7ab7937ab69944447b5809cdd12f9c4603b701848a"
+  },
+  "source_unchanged_during_run": true,
+  "interpretation": "syntactic frontier blow-up; no SAT hardness claim"
+}

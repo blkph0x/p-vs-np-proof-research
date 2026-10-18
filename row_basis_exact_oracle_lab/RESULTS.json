@@ -1,0 +1,1241 @@
+{
+  "status": "ROW_BASIS_EXACT_ORACLE_RESULTS_WRITTEN",
+  "timestamp_utc": "2026-10-18T00:17:10.901092+00:00",
+  "source_hashes_before": {
+    "exact_oracle.py": "8ba808f8c73935cc60c1fe93abe2ad02afa68dbbf3cb809a17503e86b32c3870",
+    "run_experiments.py": "5d5d1cf05ad93e4bf8a7f24c91f9a8e1a79faecb0876a260128a08602b0f7b3c",
+    "rank_native_solver.py": "c612a7a5ce0a504caf7d4a117db56e90c2e9312be71309f61ff509b9d044863c",
+    "native_coset_solver.py": "979e22b8430d10cc453b0819d82a656b05621b8d2971c3b919d2fbc4ab97fe6e",
+    "matching_certificate.py": "46180db74c0837d4d495f3579de2d57f29f7c059043bd3e56e55f209736fa5f7"
+  },
+  "source_hashes_after": {
+    "exact_oracle.py": "8ba808f8c73935cc60c1fe93abe2ad02afa68dbbf3cb809a17503e86b32c3870",
+    "run_experiments.py": "5d5d1cf05ad93e4bf8a7f24c91f9a8e1a79faecb0876a260128a08602b0f7b3c",
+    "rank_native_solver.py": "c612a7a5ce0a504caf7d4a117db56e90c2e9312be71309f61ff509b9d044863c",
+    "native_coset_solver.py": "979e22b8430d10cc453b0819d82a656b05621b8d2971c3b919d2fbc4ab97fe6e",
+    "matching_certificate.py": "46180db74c0837d4d495f3579de2d57f29f7c059043bd3e56e55f209736fa5f7"
+  },
+  "source_unchanged_during_run": true,
+  "rows": [
+    {
+      "case": {
+        "name": "gl3_trap",
+        "rows": [
+          815329,
+          1016062,
+          1048320
+        ],
+        "n": 20,
+        "expected": "EXACT"
+      },
+      "oracle": {
+        "status": "EXACT",
+        "objective": [
+          1,
+          1,
+          31
+        ],
+        "row_transform": [
+          1,
+          3,
+          5
+        ],
+        "transformed_rows": [
+          815329,
+          258079,
+          233441
+        ],
+        "transforms_evaluated": 168,
+        "global_optimality_checked": true
+      },
+      "parameter_oracle": null,
+      "native_q": null,
+      "native_p": null,
+      "rank_aware": null,
+      "native_rank_aware": null,
+      "heuristic_objective": [
+        2,
+        2,
+        33
+      ],
+      "heuristic_exceptional_stats": [
+        2,
+        1,
+        2,
+        33
+      ],
+      "heuristic_termination": "RESTART_LIMIT",
+      "heuristic_evaluations": 7
+    },
+    {
+      "case": {
+        "name": "random_gl4_0",
+        "rows": [
+          182034,
+          88169,
+          160863,
+          88019
+        ],
+        "n": 18,
+        "expected": "EXACT"
+      },
+      "oracle": {
+        "status": "EXACT",
+        "objective": [
+          2,
+          2,
+          31
+        ],
+        "row_transform": [
+          1,
+          2,
+          9,
+          12
+        ],
+        "transformed_rows": [
+          182034,
+          88169,
+          233665,
+          205708
+        ],
+        "transforms_evaluated": 20160,
+        "global_optimality_checked": true
+      },
+      "parameter_oracle": null,
+      "native_q": null,
+      "native_p": null,
+      "rank_aware": null,
+      "native_rank_aware": null,
+      "heuristic_objective": [
+        2,
+        2,
+        32
+      ],
+      "heuristic_exceptional_stats": [
+        2,
+        2,
+        2,
+        32
+      ],
+      "heuristic_termination": "RESTART_LIMIT",
+      "heuristic_evaluations": 333
+    },
+    {
+      "case": {
+        "name": "random_gl4_1",
+        "rows": [
+          62425,
+          518430,
+          23853,
+          317934
+        ],
+        "n": 19,
+        "expected": "EXACT"
+      },
+      "oracle": {
+        "status": "EXACT",
+        "objective": [
+          2,
+          2,
+          32
+        ],
+        "row_transform": [
+          4,
+          10,
+          12,
+          15
+        ],
+        "transformed_rows": [
+          23853,
+          209136,
+          296131,
+          237060
+        ],
+        "transforms_evaluated": 20160,
+        "global_optimality_checked": true
+      },
+      "parameter_oracle": null,
+      "native_q": null,
+      "native_p": null,
+      "rank_aware": null,
+      "native_rank_aware": null,
+      "heuristic_objective": [
+        2,
+        2,
+        32
+      ],
+      "heuristic_exceptional_stats": [
+        2,
+        2,
+        2,
+        32
+      ],
+      "heuristic_termination": "RESTART_LIMIT",
+      "heuristic_evaluations": 261
+    },
+    {
+      "case": {
+        "name": "random_gl4_2",
+        "rows": [
+          379795,
+          650410,
+          563447,
+          777147
+        ],
+        "n": 20,
+        "expected": "EXACT"
+      },
+      "oracle": {
+        "status": "EXACT",
+        "objective": [
+          2,
+          2,
+          33
+        ],
+        "row_transform": [
+          2,
+          9,
+          10,
+          12
+        ],
+        "transformed_rows": [
+          650410,
+          921640,
+          145169,
+          213836
+        ],
+        "transforms_evaluated": 20160,
+        "global_optimality_checked": true
+      },
+      "parameter_oracle": null,
+      "native_q": null,
+      "native_p": null,
+      "rank_aware": null,
+      "native_rank_aware": null,
+      "heuristic_objective": [
+        2,
+        2,
+        36
+      ],
+      "heuristic_exceptional_stats": [
+        2,
+        2,
+        2,
+        36
+      ],
+      "heuristic_termination": "RESTART_LIMIT",
+      "heuristic_evaluations": 285
+    },
+    {
+      "case": {
+        "name": "random_gl4_3",
+        "rows": [
+          829106,
+          1465301,
+          873000,
+          367530
+        ],
+        "n": 21,
+        "expected": "EXACT"
+      },
+      "oracle": {
+        "status": "EXACT",
+        "objective": [
+          2,
+          2,
+          34
+        ],
+        "row_transform": [
+          4,
+          9,
+          12,
+          15
+        ],
+        "transformed_rows": [
+          873000,
+          605464,
+          575874,
+          1193189
+        ],
+        "transforms_evaluated": 20160,
+        "global_optimality_checked": true
+      },
+      "parameter_oracle": null,
+      "native_q": null,
+      "native_p": null,
+      "rank_aware": null,
+      "native_rank_aware": null,
+      "heuristic_objective": [
+        2,
+        2,
+        34
+      ],
+      "heuristic_exceptional_stats": [
+        2,
+        2,
+        2,
+        34
+      ],
+      "heuristic_termination": "RESTART_LIMIT",
+      "heuristic_evaluations": 285
+    },
+    {
+      "case": {
+        "name": "random_gl4_4",
+        "rows": [
+          364882,
+          57605,
+          1762200,
+          3768185
+        ],
+        "n": 22,
+        "expected": "EXACT"
+      },
+      "oracle": {
+        "status": "EXACT",
+        "objective": [
+          2,
+          2,
+          34
+        ],
+        "row_transform": [
+          1,
+          2,
+          6,
+          12
+        ],
+        "transformed_rows": [
+          364882,
+          57605,
+          1704605,
+          2333921
+        ],
+        "transforms_evaluated": 20160,
+        "global_optimality_checked": true
+      },
+      "parameter_oracle": null,
+      "native_q": null,
+      "native_p": null,
+      "rank_aware": null,
+      "native_rank_aware": null,
+      "heuristic_objective": [
+        2,
+        2,
+        34
+      ],
+      "heuristic_exceptional_stats": [
+        2,
+        2,
+        2,
+        34
+      ],
+      "heuristic_termination": "RESTART_LIMIT",
+      "heuristic_evaluations": 333
+    },
+    {
+      "case": {
+        "name": "random_gl4_5",
+        "rows": [
+          4316610,
+          432775,
+          7257148,
+          5804327
+        ],
+        "n": 23,
+        "expected": "EXACT"
+      },
+      "oracle": {
+        "status": "EXACT",
+        "objective": [
+          5,
+          6,
+          43
+        ],
+        "row_transform": [
+          1,
+          2,
+          6,
+          10
+        ],
+        "transformed_rows": [
+          4316610,
+          432775,
+          6825659,
+          6163360
+        ],
+        "transforms_evaluated": 20160,
+        "global_optimality_checked": true
+      },
+      "parameter_oracle": null,
+      "native_q": null,
+      "native_p": null,
+      "rank_aware": null,
+      "native_rank_aware": null,
+      "heuristic_objective": [
+        5,
+        6,
+        43
+      ],
+      "heuristic_exceptional_stats": [
+        5,
+        4,
+        6,
+        43
+      ],
+      "heuristic_termination": "RESTART_LIMIT",
+      "heuristic_evaluations": 273
+    },
+    {
+      "case": {
+        "name": "random_gl4_6",
+        "rows": [
+          16409890,
+          15456701,
+          11305698,
+          9661622
+        ],
+        "n": 24,
+        "expected": "EXACT"
+      },
+      "oracle": {
+        "status": "EXACT",
+        "objective": [
+          2,
+          2,
+          39
+        ],
+        "row_transform": [
+          4,
+          5,
+          9,
+          11
+        ],
+        "transformed_rows": [
+          11305698,
+          5695424,
+          6883732,
+          8572969
+        ],
+        "transforms_evaluated": 20160,
+        "global_optimality_checked": true
+      },
+      "parameter_oracle": null,
+      "native_q": null,
+      "native_p": null,
+      "rank_aware": null,
+      "native_rank_aware": null,
+      "heuristic_objective": [
+        2,
+        2,
+        39
+      ],
+      "heuristic_exceptional_stats": [
+        2,
+        2,
+        2,
+        39
+      ],
+      "heuristic_termination": "RESTART_LIMIT",
+      "heuristic_evaluations": 357
+    },
+    {
+      "case": {
+        "name": "random_gl4_7",
+        "rows": [
+          6113776,
+          11613569,
+          26451288,
+          24710839
+        ],
+        "n": 25,
+        "expected": "EXACT"
+      },
+      "oracle": {
+        "status": "EXACT",
+        "objective": [
+          5,
+          5,
+          44
+        ],
+        "row_transform": [
+          1,
+          2,
+          6,
+          9
+        ],
+        "transformed_rows": [
+          6113776,
+          11613569,
+          19048665,
+          19154759
+        ],
+        "transforms_evaluated": 20160,
+        "global_optimality_checked": true
+      },
+      "parameter_oracle": null,
+      "native_q": null,
+      "native_p": null,
+      "rank_aware": null,
+      "native_rank_aware": null,
+      "heuristic_objective": [
+        5,
+        5,
+        44
+      ],
+      "heuristic_exceptional_stats": [
+        5,
+        4,
+        5,
+        44
+      ],
+      "heuristic_termination": "RESTART_LIMIT",
+      "heuristic_evaluations": 273
+    },
+    {
+      "case": {
+        "name": "rank_tradeoff",
+        "rows": [
+          17719,
+          49139,
+          75762,
+          15854
+        ],
+        "n": 17,
+        "expected": "EXACT"
+      },
+      "oracle": {
+        "status": "EXACT",
+        "objective": [
+          2,
+          2,
+          28
+        ],
+        "row_transform": [
+          1,
+          6,
+          12,
+          15
+        ],
+        "transformed_rows": [
+          17719,
+          104449,
+          72220,
+          123096
+        ],
+        "transforms_evaluated": 20160,
+        "global_optimality_checked": true
+      },
+      "parameter_oracle": {
+        "status": "EXACT",
+        "objective": [
+          1,
+          4,
+          4,
+          31
+        ],
+        "stats": [
+          4,
+          1,
+          4,
+          31
+        ],
+        "row_transform": [
+          1,
+          4,
+          6,
+          11
+        ],
+        "transformed_rows": [
+          17719,
+          75762,
+          104449,
+          50986
+        ],
+        "transforms_evaluated": 20160,
+        "global_optimality_checked": true
+      },
+      "native_q": {
+        "schema": "rank_native_minweight_v1",
+        "n": 17,
+        "target": 0,
+        "require_nonzero": true,
+        "row_transform": [
+          1,
+          6,
+          12,
+          15
+        ],
+        "exceptional_coordinates": [
+          4,
+          16
+        ],
+        "exception_rank": 2,
+        "state_count": 4,
+        "limits": {
+          "max_states": 256,
+          "max_dp_transitions": 1000000,
+          "max_graph_calls": 257
+        },
+        "dp_layers": [
+          [],
+          [
+            [
+              13,
+              1
+            ]
+          ],
+          [
+            [
+              3,
+              2
+            ],
+            [
+              13,
+              1
+            ],
+            [
+              14,
+              1
+            ]
+          ]
+        ],
+        "dp_transitions": 3,
+        "dp_complete": true,
+        "exception_witnesses": [
+          [
+            3,
+            2,
+            65552
+          ],
+          [
+            13,
+            1,
+            16
+          ],
+          [
+            14,
+            1,
+            65536
+          ]
+        ],
+        "graph_case_count": 4,
+        "branches": [
+          {
+            "exception_syndrome": 0,
+            "exception_word": 0,
+            "nonzero_graph_required": true,
+            "graph": {
+              "kind": "CYCLE",
+              "weight": 2,
+              "word": 34
+            }
+          },
+          {
+            "exception_syndrome": 3,
+            "exception_word": 65552,
+            "nonzero_graph_required": false,
+            "graph": {
+              "kind": "TJOIN",
+              "word": 1,
+              "weight": 1,
+              "matching_certificate": {
+                "schema": "integer_matching_dual_v1",
+                "matching": [
+                  [
+                    0,
+                    1
+                  ]
+                ],
+                "vertex_duals": [
+                  {
+                    "vertex": 0,
+                    "twice_value": 1
+                  },
+                  {
+                    "vertex": 1,
+                    "twice_value": 1
+                  }
+                ],
+                "odd_set_duals": [],
+                "producer": {
+                  "networkx": "3.2.1",
+                  "source_sha256": "f3b917702087caee3e7bf26955961b30910e561464f5f4b99813f409ecf0f360"
+                }
+              }
+            }
+          },
+          {
+            "exception_syndrome": 13,
+            "exception_word": 16,
+            "nonzero_graph_required": false,
+            "graph": {
+              "kind": "TJOIN",
+              "word": 10,
+              "weight": 2,
+              "matching_certificate": {
+                "schema": "integer_matching_dual_v1",
+                "matching": [
+                  [
+                    0,
+                    4
+                  ],
+                  [
+                    2,
+                    3
+                  ]
+                ],
+                "vertex_duals": [
+                  {
+                    "vertex": 0,
+                    "twice_value": 1
+                  },
+                  {
+                    "vertex": 2,
+                    "twice_value": 1
+                  },
+                  {
+                    "vertex": 3,
+                    "twice_value": 1
+                  },
+                  {
+                    "vertex": 4,
+                    "twice_value": 1
+                  }
+                ],
+                "odd_set_duals": [],
+                "producer": {
+                  "networkx": "3.2.1",
+                  "source_sha256": "f3b917702087caee3e7bf26955961b30910e561464f5f4b99813f409ecf0f360"
+                }
+              }
+            }
+          },
+          {
+            "exception_syndrome": 14,
+            "exception_word": 65536,
+            "nonzero_graph_required": false,
+            "graph": {
+              "kind": "TJOIN",
+              "word": 33280,
+              "weight": 2,
+              "matching_certificate": {
+                "schema": "integer_matching_dual_v1",
+                "matching": [
+                  [
+                    1,
+                    3
+                  ],
+                  [
+                    2,
+                    4
+                  ]
+                ],
+                "vertex_duals": [
+                  {
+                    "vertex": 1,
+                    "twice_value": 2
+                  },
+                  {
+                    "vertex": 2,
+                    "twice_value": 2
+                  },
+                  {
+                    "vertex": 3,
+                    "twice_value": 2
+                  },
+                  {
+                    "vertex": 4,
+                    "twice_value": 2
+                  }
+                ],
+                "odd_set_duals": [],
+                "producer": {
+                  "networkx": "3.2.1",
+                  "source_sha256": "f3b917702087caee3e7bf26955961b30910e561464f5f4b99813f409ecf0f360"
+                }
+              }
+            }
+          }
+        ],
+        "status": "EXACT",
+        "stop_reason": null,
+        "distance": 2,
+        "upper_bound": 2,
+        "word": 34,
+        "stats": {
+          "bfs_calls": 10,
+          "adjacency_visits": 300,
+          "matching_calls": 3,
+          "metric_edges": 13
+        },
+        "solve_seconds": 0.5457526999525726,
+        "verification_seconds": 0.00037589995190501213,
+        "verification": {
+          "valid": true,
+          "errors": [],
+          "status": "EXACT",
+          "dp_layers_verified": 3,
+          "graph_cases_verified": 4,
+          "distance": 2,
+          "upper_bound": 2
+        }
+      },
+      "native_p": {
+        "schema": "rank_native_minweight_v1",
+        "n": 17,
+        "target": 0,
+        "require_nonzero": true,
+        "row_transform": [
+          1,
+          4,
+          6,
+          11
+        ],
+        "exceptional_coordinates": [
+          1,
+          5,
+          8,
+          10
+        ],
+        "exception_rank": 1,
+        "state_count": 2,
+        "limits": {
+          "max_states": 256,
+          "max_dp_transitions": 1000000,
+          "max_graph_calls": 257
+        },
+        "dp_layers": [
+          [],
+          [
+            [
+              11,
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              2
+            ],
+            [
+              11,
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              2
+            ],
+            [
+              11,
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              2
+            ],
+            [
+              11,
+              1
+            ]
+          ]
+        ],
+        "dp_transitions": 9,
+        "dp_complete": true,
+        "exception_witnesses": [
+          [
+            0,
+            2,
+            34
+          ],
+          [
+            11,
+            1,
+            2
+          ]
+        ],
+        "graph_case_count": 3,
+        "branches": [
+          {
+            "exception_syndrome": 0,
+            "exception_word": 0,
+            "nonzero_graph_required": true,
+            "graph": {
+              "kind": "CYCLE",
+              "weight": 2,
+              "word": 192
+            }
+          },
+          {
+            "exception_syndrome": 0,
+            "exception_word": 34,
+            "nonzero_graph_required": false,
+            "graph": {
+              "kind": "TJOIN",
+              "word": 0,
+              "weight": 0,
+              "matching_certificate": null
+            }
+          },
+          {
+            "exception_syndrome": 11,
+            "exception_word": 2,
+            "nonzero_graph_required": false,
+            "graph": {
+              "kind": "TJOIN",
+              "word": 516,
+              "weight": 2,
+              "matching_certificate": {
+                "schema": "integer_matching_dual_v1",
+                "matching": [
+                  [
+                    0,
+                    4
+                  ],
+                  [
+                    1,
+                    3
+                  ]
+                ],
+                "vertex_duals": [
+                  {
+                    "vertex": 0,
+                    "twice_value": 1
+                  },
+                  {
+                    "vertex": 1,
+                    "twice_value": 1
+                  },
+                  {
+                    "vertex": 3,
+                    "twice_value": 1
+                  },
+                  {
+                    "vertex": 4,
+                    "twice_value": 1
+                  }
+                ],
+                "odd_set_duals": [],
+                "producer": {
+                  "networkx": "3.2.1",
+                  "source_sha256": "f3b917702087caee3e7bf26955961b30910e561464f5f4b99813f409ecf0f360"
+                }
+              }
+            }
+          }
+        ],
+        "status": "EXACT",
+        "stop_reason": null,
+        "distance": 2,
+        "upper_bound": 2,
+        "word": 34,
+        "stats": {
+          "bfs_calls": 4,
+          "adjacency_visits": 104,
+          "matching_calls": 1,
+          "metric_edges": 6
+        },
+        "solve_seconds": 0.017666500061750412,
+        "verification_seconds": 0.0002557998523116112,
+        "verification": {
+          "valid": true,
+          "errors": [],
+          "status": "EXACT",
+          "dp_layers_verified": 5,
+          "graph_cases_verified": 3,
+          "distance": 2,
+          "upper_bound": 2
+        }
+      },
+      "rank_aware": {
+        "schema": "rank_aware_discovery_v1",
+        "n": 17,
+        "row_count": 4,
+        "row_transform": [
+          1,
+          6,
+          4,
+          11
+        ],
+        "transformed_rows": [
+          17719,
+          104449,
+          75762,
+          50986
+        ],
+        "objective": [
+          1,
+          4,
+          4,
+          31
+        ],
+        "limits": {
+          "max_candidate_evaluations": 30000,
+          "max_restarts": 31,
+          "restart_moves": 8
+        },
+        "seed": 20261018,
+        "candidate_evaluations": 1148,
+        "termination": "RESTART_LIMIT",
+        "global_optimum_claimed": false,
+        "best_is_local_minimum": true,
+        "verification": {
+          "valid": true,
+          "errors": [],
+          "objective": [
+            1,
+            4,
+            4,
+            31
+          ]
+        }
+      },
+      "native_rank_aware": {
+        "schema": "rank_native_minweight_v1",
+        "n": 17,
+        "target": 0,
+        "require_nonzero": true,
+        "row_transform": [
+          1,
+          6,
+          4,
+          11
+        ],
+        "exceptional_coordinates": [
+          1,
+          5,
+          8,
+          10
+        ],
+        "exception_rank": 1,
+        "state_count": 2,
+        "limits": {
+          "max_states": 256,
+          "max_dp_transitions": 1000000,
+          "max_graph_calls": 257
+        },
+        "dp_layers": [
+          [],
+          [
+            [
+              13,
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              2
+            ],
+            [
+              13,
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              2
+            ],
+            [
+              13,
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              2
+            ],
+            [
+              13,
+              1
+            ]
+          ]
+        ],
+        "dp_transitions": 9,
+        "dp_complete": true,
+        "exception_witnesses": [
+          [
+            0,
+            2,
+            34
+          ],
+          [
+            13,
+            1,
+            2
+          ]
+        ],
+        "graph_case_count": 3,
+        "branches": [
+          {
+            "exception_syndrome": 0,
+            "exception_word": 0,
+            "nonzero_graph_required": true,
+            "graph": {
+              "kind": "CYCLE",
+              "weight": 2,
+              "word": 192
+            }
+          },
+          {
+            "exception_syndrome": 0,
+            "exception_word": 34,
+            "nonzero_graph_required": false,
+            "graph": {
+              "kind": "TJOIN",
+              "word": 0,
+              "weight": 0,
+              "matching_certificate": null
+            }
+          },
+          {
+            "exception_syndrome": 13,
+            "exception_word": 2,
+            "nonzero_graph_required": false,
+            "graph": {
+              "kind": "TJOIN",
+              "word": 516,
+              "weight": 2,
+              "matching_certificate": {
+                "schema": "integer_matching_dual_v1",
+                "matching": [
+                  [
+                    0,
+                    4
+                  ],
+                  [
+                    2,
+                    3
+                  ]
+                ],
+                "vertex_duals": [
+                  {
+                    "vertex": 0,
+                    "twice_value": 1
+                  },
+                  {
+                    "vertex": 2,
+                    "twice_value": 1
+                  },
+                  {
+                    "vertex": 3,
+                    "twice_value": 1
+                  },
+                  {
+                    "vertex": 4,
+                    "twice_value": 1
+                  }
+                ],
+                "odd_set_duals": [],
+                "producer": {
+                  "networkx": "3.2.1",
+                  "source_sha256": "f3b917702087caee3e7bf26955961b30910e561464f5f4b99813f409ecf0f360"
+                }
+              }
+            }
+          }
+        ],
+        "status": "EXACT",
+        "stop_reason": null,
+        "distance": 2,
+        "upper_bound": 2,
+        "word": 34,
+        "stats": {
+          "bfs_calls": 4,
+          "adjacency_visits": 104,
+          "matching_calls": 1,
+          "metric_edges": 6
+        },
+        "solve_seconds": 0.017816000152379274,
+        "verification_seconds": 0.0002661999315023422,
+        "verification": {
+          "valid": true,
+          "errors": [],
+          "status": "EXACT",
+          "dp_layers_verified": 5,
+          "graph_cases_verified": 3,
+          "distance": 2,
+          "upper_bound": 2
+        }
+      },
+      "heuristic_objective": [
+        2,
+        2,
+        28
+      ],
+      "heuristic_exceptional_stats": [
+        2,
+        2,
+        2,
+        28
+      ],
+      "heuristic_termination": "RESTART_LIMIT",
+      "heuristic_evaluations": 1040
+    },
+    {
+      "case": {
+        "name": "gl5_capped",
+        "rows": [
+          1,
+          2,
+          4,
+          8,
+          16
+        ],
+        "n": 10,
+        "expected": "UNKNOWN",
+        "max_transforms": 1000
+      },
+      "oracle": {
+        "status": "UNKNOWN",
+        "reason": "transform cap",
+        "transforms_evaluated": 1000
+      }
+    }
+  ],
+  "case_count": 11,
+  "exact_count": 10,
+  "unknown_count": 1,
+  "gl3_trap_exact": [
+    1,
+    1,
+    31
+  ],
+  "gl3_trap_heuristic": [
+    2,
+    2,
+    33
+  ],
+  "rank_tradeoff_q_objective": [
+    2,
+    2,
+    28
+  ],
+  "rank_tradeoff_p_objective": [
+    1,
+    4,
+    4,
+    31
+  ],
+  "rank_tradeoff_heuristic_stats": [
+    2,
+    2,
+    2,
+    28
+  ],
+  "rank_tradeoff_native_q_state_count": 4,
+  "rank_tradeoff_native_p_state_count": 2,
+  "rank_tradeoff_native_distance": 2,
+  "rank_tradeoff_rank_aware_objective": [
+    1,
+    4,
+    4,
+    31
+  ],
+  "rank_tradeoff_rank_aware_state_count": 2
+}

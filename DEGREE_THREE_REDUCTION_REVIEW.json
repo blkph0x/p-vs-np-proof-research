@@ -1,0 +1,11 @@
+{
+  "theorem": "X3C -> binary affine decoding with column weight three",
+  "tripartite_families": 256,
+  "tripartite_selections": 6561,
+  "tripartite_positive_families": 175,
+  "six_element_families_at_most_three_sets": 1351,
+  "malformed_cases_rejected": 11,
+  "naive_homogenization_warning_verified": true,
+  "source_sha256": "df63f123df60f59a17c7c614a978b0937539ee5948e0c8becc7648aad108424c",
+  "all_checks_passed": true
+}

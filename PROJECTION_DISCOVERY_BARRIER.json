@@ -1,0 +1,11885 @@
+{
+  "all_checks_passed": true,
+  "theorem_construction": "F(z,y)=G(y) AND NOT z",
+  "boundary_width": 1,
+  "small_nvars": 2,
+  "small_formula_count": 256,
+  "satisfiable_count": 95,
+  "unsatisfiable_count": 161,
+  "relation_class_counts": {
+    "EMPTY": 161,
+    "UNIT_Z_FALSE": 95,
+    "OTHER": 0
+  },
+  "controls": [
+    {
+      "nvars": 2,
+      "g_clauses": [],
+      "g_satisfiable": true,
+      "g_model_count": 4,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 1,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -2,
+          3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    }
+  ],
+  "records": [
+    {
+      "nvars": 2,
+      "g_clauses": [],
+      "g_satisfiable": true,
+      "g_model_count": 4,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 3,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -2,
+          -3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 2,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 2,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 3,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 2,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 2,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 2,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 2,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1,
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 2,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 2,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -2,
+          -3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 2,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 3,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          2,
+          -3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 2,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -2,
+          -3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 2,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -2,
+          3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 2,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 2,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          1,
+          -2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          2,
+          -3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2,
+          -3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -2,
+          3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 2,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          2
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -2,
+          -3
+        ],
+        [
+          2
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          2
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          2
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          2
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          2
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2,
+          -3
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 2,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -2,
+          -3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2,
+          -3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 3,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 2,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 2,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -2,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 2,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 2,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -2,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 2,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -2,
+          -3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -2,
+          3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2,
+          -3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -2,
+          3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 2,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -2,
+          -3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2,
+          -3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 2,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -2,
+          -3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2,
+          -3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": true,
+      "g_model_count": 1,
+      "boundary_width": 1,
+      "projection_bits": [
+        1,
+        0
+      ],
+      "relation_class": "UNIT_Z_FALSE",
+      "lifted_clauses": [
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    },
+    {
+      "nvars": 2,
+      "g_clauses": [
+        [
+          -2
+        ],
+        [
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "g_satisfiable": false,
+      "g_model_count": 0,
+      "boundary_width": 1,
+      "projection_bits": [
+        0,
+        0
+      ],
+      "relation_class": "EMPTY",
+      "lifted_clauses": [
+        [
+          -3
+        ],
+        [
+          -2
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          -1
+        ]
+      ]
+    }
+  ],
+  "adversarial": {
+    "forged_record_rejected": true
+  }
+}

@@ -1,0 +1,73 @@
+affine_boundary_lab
+test_all_quadratic_phases_through_three_variables (test_boundary.BoundaryTests) ... ok
+test_canonical_support_phase_keys_and_constant_sign (test_boundary.BoundaryTests) ... ok
+test_caps_boundaries_and_huge_dimension_guards (test_boundary.BoundaryTests) ... ok
+test_closed_marginals_cross_checked_with_affine_evaluator (test_boundary.BoundaryTests) ... ok
+test_empty_zero_inconsistent_dependent_and_unused_cases (test_boundary.BoundaryTests) ... ok
+test_external_original_input_binding_even_after_rehash (test_boundary.BoundaryTests) ... ok
+test_four_one_bit_and_pair_identities (test_boundary.BoundaryTests) ... ok
+test_invalid_inputs_and_large_exact_scalar_hash (test_boundary.BoundaryTests) ... ok
+test_saved_certificates_and_source_hashes (test_boundary.BoundaryTests) ... ok
+test_seeded_supports_sparse_active_ids_and_elimination_orders (test_boundary.BoundaryTests) ... ok
+test_trace_and_output_mutations_fail_closed (test_boundary.BoundaryTests) ... ok
+test_wide_signed_boundaries_without_truth_tables (test_boundary.BoundaryTests) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 3.399s
+
+OK
+
+affine_boundary_reference
+test_big_scalar_hash_and_sign (test_reference.ReferenceTests) ... ok
+test_budget_and_malformed_inputs (test_reference.ReferenceTests) ... ok
+test_crosscheck_one_bit_implementation (test_reference.ReferenceTests) ... ok
+test_equivalence_restricts_phase_to_support (test_reference.ReferenceTests) ... ok
+test_exhaustive_small_support_phase_boundary (test_reference.ReferenceTests) ... ok
+test_proof_mutations_and_external_binding (test_reference.ReferenceTests) ... ok
+test_saved_certificates_oracles_and_hashes (test_reference.ReferenceTests) ... ok
+test_seeded_active_support_and_signed_marginals (test_reference.ReferenceTests) ... ok
+test_wide_boundary_pins_and_inactive_free_counts (test_reference.ReferenceTests) ... ok
+test_wide_pair_output_without_truth_tables (test_reference.ReferenceTests) ... ok
+test_zero_and_identity_edges (test_reference.ReferenceTests) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 1.902s
+
+OK
+
+weighted_affine_dag_lab
+test_invalid_inputs_and_orders (test_dag.TestWeightedDAG) ... ok
+test_marginal_and_merge_tampering (test_dag.TestWeightedDAG) ... ok
+test_negative_zero_and_phase_multiplicity (test_dag.TestWeightedDAG) ... ok
+test_omitted_original_clause_and_external_binding (test_dag.TestWeightedDAG) ... ok
+test_original_count_normalization_and_free_variables (test_dag.TestWeightedDAG) ... ok
+test_partition_projection_and_total_tampering (test_dag.TestWeightedDAG) ... ok
+test_products_charged_before_merge_and_caps_unknown (test_dag.TestWeightedDAG) ... ok
+test_random_native_mixed_messages (test_dag.TestWeightedDAG) ... ok
+test_random_original_formula_and_every_boundary (test_dag.TestWeightedDAG) ... ok
+test_shared_requests_and_coefficient_merge (test_dag.TestWeightedDAG) ... ok
+test_signed_native_affine_and_or (test_dag.TestWeightedDAG) ... ok
+test_typed_metadata_and_untrusted_convenience_key (test_dag.TestWeightedDAG) ... ok
+test_verifier_caps_unknown (test_dag.TestWeightedDAG) ... ok
+test_wide_native_compact_elimination (test_dag.TestWeightedDAG) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 1.098s
+
+OK
+
+original_count_reference_lab
+test_caps_and_strict_inputs (test_reference.ReferenceTests) ... ok
+test_closed_form_large_families (test_reference.ReferenceTests) ... ok
+test_component_and_disappearing_variable_counts (test_reference.ReferenceTests) ... ok
+test_exhaustive_two_variable_formulas (test_reference.ReferenceTests) ... ok
+test_independent_bitset_and_sliding_oracles (test_reference.ReferenceTests) ... ok
+test_original_input_binding (test_reference.ReferenceTests) ... ok
+test_random_original_formulas (test_reference.ReferenceTests) ... ok
+test_recurrence_mutations (test_reference.ReferenceTests) ... ok
+test_unused_repeated_tautology (test_reference.ReferenceTests) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.411s
+
+OK

@@ -1,0 +1,5004 @@
+{
+  "format": "simultaneous-basis-experiment-v1",
+  "created_utc": "2026-10-18T11:13:28.914361+00:00",
+  "request": "Investigate one common invertible complex 2x2 basis for row EQ3 and column OR3, and separately row EQ3 and column slack [0,1,2,1], under opposite tensor actions; prove or certify all four parity branches for each pair. Include genuine positive controls and avoid a general complexity claim.",
+  "scope": "Same invertible 2x2 matrix on every port; complex numbers; necessary planar matchgate parity. Does not resolve P versus NP.",
+  "status": "Both gate pairs are impossible in the stated model, by direct classification and integer Bezout identities.",
+  "source_hashes_before": {
+    "basis.py": "40edd2e54e7057c936d5ff86fb4fde1a2d38e51ccdf1fae37b23200367a84ef1",
+    "test_basis.py": "aebb2a18a0365547ae94d97db69be496c998a73342dca378389e09d84089b140",
+    "run_experiments.py": "fe74d24ff98388f5ab13c95540c2f288c577644b9db04aba94efa0f70f44c7f9",
+    "THEOREM.md": "6caebf538bcd1b5703be4f5e3a13fb019ed412f0d4450a2588a16e64bca53738"
+  },
+  "source_hashes_after": {
+    "basis.py": "40edd2e54e7057c936d5ff86fb4fde1a2d38e51ccdf1fae37b23200367a84ef1",
+    "test_basis.py": "aebb2a18a0365547ae94d97db69be496c998a73342dca378389e09d84089b140",
+    "run_experiments.py": "fe74d24ff98388f5ab13c95540c2f288c577644b9db04aba94efa0f70f44c7f9",
+    "THEOREM.md": "6caebf538bcd1b5703be4f5e3a13fb019ed412f0d4450a2588a16e64bca53738"
+  },
+  "certificate": {
+    "format": "eq3-common-basis-parity-v1",
+    "field": "complex numbers",
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "u"
+    ],
+    "equation_systems": [
+      {
+        "gate": "OR3",
+        "eq_support_parity": 0,
+        "clause_support_parity": 0,
+        "equations": [
+          [
+            {
+              "powers": [
+                0,
+                0,
+                2,
+                1,
+                0
+              ],
+              "coefficient": 1
+            },
+            {
+              "powers": [
+                2,
+                1,
+                0,
+                0,
+                0
+              ],
+              "coefficient": 1
+            }
+          ],
+          [
+            {
+              "powers": [
+                0,
+                0,
+                0,
+                3,
+                0
+              ],
+              "coefficient": 1
+            },
+            {
+              "powers": [
+                0,
+                3,
+                0,
+                0,
+                0
+              ],
+              "coefficient": 1
+            }
+          ],
+          [
+            {
+              "powers": [
+                0,
+                1,
+                1,
+                1,
+                0
+              ],
+              "coefficient": 2
+            },
+            {
+              "powers": [
+                0,
+                2,
+                1,
+                0,
+                0
+              ],
+              "coefficient": -1
+            },
+            {
+              "powers": [
+                1,
+                0,
+                0,
+                2,
+                0
+              ],
+              "coefficient": 1
+            },
+            {
+              "powers": [
+                1,
+                1,
+                0,
+                1,
+                0
+              ],
+              "coefficient": -2
+            },
+            {
+              "powers": [
+                1,
+                2,
+                0,
+                0,
+                0
+              ],
+              "coefficient": 1
+            }
+          ],
+          [
+            {
+              "powers": [
+                1,
+                0,
+                2,
+                0,
+                0
+              ],
+              "coefficient": 3
+            },
+            {
+              "powers": [
+                2,
+                0,
+                1,
+                0,
+                0
+              ],
+              "coefficient": -3
+            },
+            {
+              "powers": [
+                3,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": 1
+            }
+          ],
+          [
+            {
+              "powers": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": -1
+            },
+            {
+              "powers": [
+                0,
+                1,
+                1,
+                0,
+                1
+              ],
+              "coefficient": -1
+            },
+            {
+              "powers": [
+                1,
+                0,
+                0,
+                1,
+                1
+              ],
+              "coefficient": 1
+            }
+          ]
+        ]
+      },
+      {
+        "gate": "OR3",
+        "eq_support_parity": 0,
+        "clause_support_parity": 1,
+        "equations": [
+          [
+            {
+              "powers": [
+                0,
+                0,
+                2,
+                1,
+                0
+              ],
+              "coefficient": 1
+            },
+            {
+              "powers": [
+                2,
+                1,
+                0,
+                0,
+                0
+              ],
+              "coefficient": 1
+            }
+          ],
+          [
+            {
+              "powers": [
+                0,
+                0,
+                0,
+                3,
+                0
+              ],
+              "coefficient": 1
+            },
+            {
+              "powers": [
+                0,
+                3,
+                0,
+                0,
+                0
+              ],
+              "coefficient": 1
+            }
+          ],
+          [
+            {
+              "powers": [
+                0,
+                1,
+                0,
+                2,
+                0
+              ],
+              "coefficient": -3
+            },
+            {
+              "powers": [
+                0,
+                2,
+                0,
+                1,
+                0
+              ],
+              "coefficient": 3
+            },
+            {
+              "powers": [
+                0,
+                3,
+                0,
+                0,
+                0
+              ],
+              "coefficient": -1
+            }
+          ],
+          [
+            {
+              "powers": [
+                0,
+                1,
+                2,
+                0,
+                0
+              ],
+              "coefficient": -1
+            },
+            {
+              "powers": [
+                1,
+                0,
+                1,
+                1,
+                0
+              ],
+              "coefficient": -2
+            },
+            {
+              "powers": [
+                1,
+                1,
+                1,
+                0,
+                0
+              ],
+              "coefficient": 2
+            },
+            {
+              "powers": [
+                2,
+                0,
+                0,
+                1,
+                0
+              ],
+              "coefficient": 1
+            },
+            {
+              "powers": [
+                2,
+                1,
+                0,
+                0,
+                0
+              ],
+              "coefficient": -1
+            }
+          ],
+          [
+            {
+              "powers": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": -1
+            },
+            {
+              "powers": [
+                0,
+                1,
+                1,
+                0,
+                1
+              ],
+              "coefficient": -1
+            },
+            {
+              "powers": [
+                1,
+                0,
+                0,
+                1,
+                1
+              ],
+              "coefficient": 1
+            }
+          ]
+        ]
+      },
+      {
+        "gate": "OR3",
+        "eq_support_parity": 1,
+        "clause_support_parity": 0,
+        "equations": [
+          [
+            {
+              "powers": [
+                0,
+                0,
+                3,
+                0,
+                0
+              ],
+              "coefficient": 1
+            },
+            {
+              "powers": [
+                3,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": 1
+            }
+          ],
+          [
+            {
+              "powers": [
+                0,
+                0,
+                1,
+                2,
+                0
+              ],
+              "coefficient": 1
+            },
+            {
+              "powers": [
+                1,
+                2,
+                0,
+                0,
+                0
+              ],
+              "coefficient": 1
+            }
+          ],
+          [
+            {
+              "powers": [
+                0,
+                1,
+                1,
+                1,
+                0
+              ],
+              "coefficient": 2
+            },
+            {
+              "powers": [
+                0,
+                2,
+                1,
+                0,
+                0
+              ],
+              "coefficient": -1
+            },
+            {
+              "powers": [
+                1,
+                0,
+                0,
+                2,
+                0
+              ],
+              "coefficient": 1
+            },
+            {
+              "powers": [
+                1,
+                1,
+                0,
+                1,
+                0
+              ],
+              "coefficient": -2
+            },
+            {
+              "powers": [
+                1,
+                2,
+                0,
+                0,
+                0
+              ],
+              "coefficient": 1
+            }
+          ],
+          [
+            {
+              "powers": [
+                1,
+                0,
+                2,
+                0,
+                0
+              ],
+              "coefficient": 3
+            },
+            {
+              "powers": [
+                2,
+                0,
+                1,
+                0,
+                0
+              ],
+              "coefficient": -3
+            },
+            {
+              "powers": [
+                3,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": 1
+            }
+          ],
+          [
+            {
+              "powers": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": -1
+            },
+            {
+              "powers": [
+                0,
+                1,
+                1,
+                0,
+                1
+              ],
+              "coefficient": -1
+            },
+            {
+              "powers": [
+                1,
+                0,
+                0,
+                1,
+                1
+              ],
+              "coefficient": 1
+            }
+          ]
+        ]
+      },
+      {
+        "gate": "OR3",
+        "eq_support_parity": 1,
+        "clause_support_parity": 1,
+        "equations": [
+          [
+            {
+              "powers": [
+                0,
+                0,
+                3,
+                0,
+                0
+              ],
+              "coefficient": 1
+            },
+            {
+              "powers": [
+                3,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": 1
+            }
+          ],
+          [
+            {
+              "powers": [
+                0,
+                0,
+                1,
+                2,
+                0
+              ],
+              "coefficient": 1
+            },
+            {
+              "powers": [
+                1,
+                2,
+                0,
+                0,
+                0
+              ],
+              "coefficient": 1
+            }
+          ],
+          [
+            {
+              "powers": [
+                0,
+                1,
+                0,
+                2,
+                0
+              ],
+              "coefficient": -3
+            },
+            {
+              "powers": [
+                0,
+                2,
+                0,
+                1,
+                0
+              ],
+              "coefficient": 3
+            },
+            {
+              "powers": [
+                0,
+                3,
+                0,
+                0,
+                0
+              ],
+              "coefficient": -1
+            }
+          ],
+          [
+            {
+              "powers": [
+                0,
+                1,
+                2,
+                0,
+                0
+              ],
+              "coefficient": -1
+            },
+            {
+              "powers": [
+                1,
+                0,
+                1,
+                1,
+                0
+              ],
+              "coefficient": -2
+            },
+            {
+              "powers": [
+                1,
+                1,
+                1,
+                0,
+                0
+              ],
+              "coefficient": 2
+            },
+            {
+              "powers": [
+                2,
+                0,
+                0,
+                1,
+                0
+              ],
+              "coefficient": 1
+            },
+            {
+              "powers": [
+                2,
+                1,
+                0,
+                0,
+                0
+              ],
+              "coefficient": -1
+            }
+          ],
+          [
+            {
+              "powers": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": -1
+            },
+            {
+              "powers": [
+                0,
+                1,
+                1,
+                0,
+                1
+              ],
+              "coefficient": -1
+            },
+            {
+              "powers": [
+                1,
+                0,
+                0,
+                1,
+                1
+              ],
+              "coefficient": 1
+            }
+          ]
+        ]
+      },
+      {
+        "gate": "SLACK3",
+        "eq_support_parity": 0,
+        "clause_support_parity": 0,
+        "equations": [
+          [
+            {
+              "powers": [
+                0,
+                0,
+                2,
+                1,
+                0
+              ],
+              "coefficient": 1
+            },
+            {
+              "powers": [
+                2,
+                1,
+                0,
+                0,
+                0
+              ],
+              "coefficient": 1
+            }
+          ],
+          [
+            {
+              "powers": [
+                0,
+                0,
+                0,
+                3,
+                0
+              ],
+              "coefficient": 1
+            },
+            {
+              "powers": [
+                0,
+                3,
+                0,
+                0,
+                0
+              ],
+              "coefficient": 1
+            }
+          ],
+          [
+            {
+              "powers": [
+                0,
+                1,
+                1,
+                1,
+                0
+              ],
+              "coefficient": 2
+            },
+            {
+              "powers": [
+                0,
+                2,
+                1,
+                0,
+                0
+              ],
+              "coefficient": -2
+            },
+            {
+              "powers": [
+                1,
+                0,
+                0,
+                2,
+                0
+              ],
+              "coefficient": 1
+            },
+            {
+              "powers": [
+                1,
+                1,
+                0,
+                1,
+                0
+              ],
+              "coefficient": -4
+            },
+            {
+              "powers": [
+                1,
+                2,
+                0,
+                0,
+                0
+              ],
+              "coefficient": 1
+            }
+          ],
+          [
+            {
+              "powers": [
+                1,
+                0,
+                2,
+                0,
+                0
+              ],
+              "coefficient": 3
+            },
+            {
+              "powers": [
+                2,
+                0,
+                1,
+                0,
+                0
+              ],
+              "coefficient": -6
+            },
+            {
+              "powers": [
+                3,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": 1
+            }
+          ],
+          [
+            {
+              "powers": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": -1
+            },
+            {
+              "powers": [
+                0,
+                1,
+                1,
+                0,
+                1
+              ],
+              "coefficient": -1
+            },
+            {
+              "powers": [
+                1,
+                0,
+                0,
+                1,
+                1
+              ],
+              "coefficient": 1
+            }
+          ]
+        ]
+      },
+      {
+        "gate": "SLACK3",
+        "eq_support_parity": 0,
+        "clause_support_parity": 1,
+        "equations": [
+          [
+            {
+              "powers": [
+                0,
+                0,
+                2,
+                1,
+                0
+              ],
+              "coefficient": 1
+            },
+            {
+              "powers": [
+                2,
+                1,
+                0,
+                0,
+                0
+              ],
+              "coefficient": 1
+            }
+          ],
+          [
+            {
+              "powers": [
+                0,
+                0,
+                0,
+                3,
+                0
+              ],
+              "coefficient": 1
+            },
+            {
+              "powers": [
+                0,
+                3,
+                0,
+                0,
+                0
+              ],
+              "coefficient": 1
+            }
+          ],
+          [
+            {
+              "powers": [
+                0,
+                1,
+                0,
+                2,
+                0
+              ],
+              "coefficient": -3
+            },
+            {
+              "powers": [
+                0,
+                2,
+                0,
+                1,
+                0
+              ],
+              "coefficient": 6
+            },
+            {
+              "powers": [
+                0,
+                3,
+                0,
+                0,
+                0
+              ],
+              "coefficient": -1
+            }
+          ],
+          [
+            {
+              "powers": [
+                0,
+                1,
+                2,
+                0,
+                0
+              ],
+              "coefficient": -1
+            },
+            {
+              "powers": [
+                1,
+                0,
+                1,
+                1,
+                0
+              ],
+              "coefficient": -2
+            },
+            {
+              "powers": [
+                1,
+                1,
+                1,
+                0,
+                0
+              ],
+              "coefficient": 4
+            },
+            {
+              "powers": [
+                2,
+                0,
+                0,
+                1,
+                0
+              ],
+              "coefficient": 2
+            },
+            {
+              "powers": [
+                2,
+                1,
+                0,
+                0,
+                0
+              ],
+              "coefficient": -1
+            }
+          ],
+          [
+            {
+              "powers": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": -1
+            },
+            {
+              "powers": [
+                0,
+                1,
+                1,
+                0,
+                1
+              ],
+              "coefficient": -1
+            },
+            {
+              "powers": [
+                1,
+                0,
+                0,
+                1,
+                1
+              ],
+              "coefficient": 1
+            }
+          ]
+        ]
+      },
+      {
+        "gate": "SLACK3",
+        "eq_support_parity": 1,
+        "clause_support_parity": 0,
+        "equations": [
+          [
+            {
+              "powers": [
+                0,
+                0,
+                3,
+                0,
+                0
+              ],
+              "coefficient": 1
+            },
+            {
+              "powers": [
+                3,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": 1
+            }
+          ],
+          [
+            {
+              "powers": [
+                0,
+                0,
+                1,
+                2,
+                0
+              ],
+              "coefficient": 1
+            },
+            {
+              "powers": [
+                1,
+                2,
+                0,
+                0,
+                0
+              ],
+              "coefficient": 1
+            }
+          ],
+          [
+            {
+              "powers": [
+                0,
+                1,
+                1,
+                1,
+                0
+              ],
+              "coefficient": 2
+            },
+            {
+              "powers": [
+                0,
+                2,
+                1,
+                0,
+                0
+              ],
+              "coefficient": -2
+            },
+            {
+              "powers": [
+                1,
+                0,
+                0,
+                2,
+                0
+              ],
+              "coefficient": 1
+            },
+            {
+              "powers": [
+                1,
+                1,
+                0,
+                1,
+                0
+              ],
+              "coefficient": -4
+            },
+            {
+              "powers": [
+                1,
+                2,
+                0,
+                0,
+                0
+              ],
+              "coefficient": 1
+            }
+          ],
+          [
+            {
+              "powers": [
+                1,
+                0,
+                2,
+                0,
+                0
+              ],
+              "coefficient": 3
+            },
+            {
+              "powers": [
+                2,
+                0,
+                1,
+                0,
+                0
+              ],
+              "coefficient": -6
+            },
+            {
+              "powers": [
+                3,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": 1
+            }
+          ],
+          [
+            {
+              "powers": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": -1
+            },
+            {
+              "powers": [
+                0,
+                1,
+                1,
+                0,
+                1
+              ],
+              "coefficient": -1
+            },
+            {
+              "powers": [
+                1,
+                0,
+                0,
+                1,
+                1
+              ],
+              "coefficient": 1
+            }
+          ]
+        ]
+      },
+      {
+        "gate": "SLACK3",
+        "eq_support_parity": 1,
+        "clause_support_parity": 1,
+        "equations": [
+          [
+            {
+              "powers": [
+                0,
+                0,
+                3,
+                0,
+                0
+              ],
+              "coefficient": 1
+            },
+            {
+              "powers": [
+                3,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": 1
+            }
+          ],
+          [
+            {
+              "powers": [
+                0,
+                0,
+                1,
+                2,
+                0
+              ],
+              "coefficient": 1
+            },
+            {
+              "powers": [
+                1,
+                2,
+                0,
+                0,
+                0
+              ],
+              "coefficient": 1
+            }
+          ],
+          [
+            {
+              "powers": [
+                0,
+                1,
+                0,
+                2,
+                0
+              ],
+              "coefficient": -3
+            },
+            {
+              "powers": [
+                0,
+                2,
+                0,
+                1,
+                0
+              ],
+              "coefficient": 6
+            },
+            {
+              "powers": [
+                0,
+                3,
+                0,
+                0,
+                0
+              ],
+              "coefficient": -1
+            }
+          ],
+          [
+            {
+              "powers": [
+                0,
+                1,
+                2,
+                0,
+                0
+              ],
+              "coefficient": -1
+            },
+            {
+              "powers": [
+                1,
+                0,
+                1,
+                1,
+                0
+              ],
+              "coefficient": -2
+            },
+            {
+              "powers": [
+                1,
+                1,
+                1,
+                0,
+                0
+              ],
+              "coefficient": 4
+            },
+            {
+              "powers": [
+                2,
+                0,
+                0,
+                1,
+                0
+              ],
+              "coefficient": 2
+            },
+            {
+              "powers": [
+                2,
+                1,
+                0,
+                0,
+                0
+              ],
+              "coefficient": -1
+            }
+          ],
+          [
+            {
+              "powers": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": -1
+            },
+            {
+              "powers": [
+                0,
+                1,
+                1,
+                0,
+                1
+              ],
+              "coefficient": -1
+            },
+            {
+              "powers": [
+                1,
+                0,
+                0,
+                1,
+                1
+              ],
+              "coefficient": 1
+            }
+          ]
+        ]
+      }
+    ],
+    "reduced_entries": {
+      "EQ3": [
+        [
+          2
+        ],
+        [],
+        [
+          0,
+          2
+        ],
+        []
+      ],
+      "OR3": [
+        [
+          -1,
+          -3,
+          -3
+        ],
+        [
+          1,
+          1,
+          -1
+        ],
+        [
+          1,
+          1,
+          -1
+        ],
+        [
+          1,
+          3,
+          -3
+        ]
+      ],
+      "SLACK3": [
+        [
+          -1,
+          -3,
+          -6
+        ],
+        [
+          2,
+          1,
+          -1
+        ],
+        [
+          1,
+          2,
+          -1
+        ],
+        [
+          1,
+          3,
+          -6
+        ]
+      ]
+    },
+    "bezout": [
+      {
+        "gate": "OR3",
+        "weight": 0,
+        "p": [
+          -1,
+          -3,
+          -3
+        ],
+        "A": [
+          4,
+          -3,
+          -3
+        ],
+        "B": [
+          -18,
+          -9
+        ],
+        "K": 14
+      },
+      {
+        "gate": "OR3",
+        "weight": 1,
+        "p": [
+          1,
+          1,
+          -1
+        ],
+        "A": [
+          1,
+          0,
+          1
+        ],
+        "B": [
+          -1,
+          1
+        ],
+        "K": 2
+      },
+      {
+        "gate": "SLACK3",
+        "weight": 0,
+        "p": [
+          -1,
+          -3,
+          -6
+        ],
+        "A": [
+          17,
+          -33,
+          -3
+        ],
+        "B": [
+          -207,
+          -18
+        ],
+        "K": 190
+      },
+      {
+        "gate": "SLACK3",
+        "weight": 1,
+        "p": [
+          2,
+          1,
+          -1
+        ],
+        "A": [
+          5,
+          -1,
+          3
+        ],
+        "B": [
+          -4,
+          3
+        ],
+        "K": 14
+      }
+    ]
+  },
+  "certificate_replayed": true,
+  "edge_specific_certificate": {
+    "format": "edge-specific-eq3-clause-parity-v1",
+    "field": "complex numbers",
+    "gate": "OR3",
+    "invertible_support_masks": [
+      6,
+      7,
+      9,
+      11,
+      13,
+      14,
+      15
+    ],
+    "eq_survivors": {
+      "0": [
+        [
+          15,
+          15,
+          15
+        ]
+      ],
+      "1": [
+        [
+          15,
+          15,
+          15
+        ]
+      ]
+    },
+    "normalized_form": "[[1,r_i],[p_i,-p_i*r_i]], p_i*r_i != 0, p_1*p_2*p_3=1",
+    "monomials": [
+      "xy",
+      "xz",
+      "x",
+      "yz",
+      "y",
+      "z",
+      "1"
+    ],
+    "clause_equations": {
+      "even": [
+        [
+          1,
+          1,
+          1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          -1,
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          1,
+          -1,
+          1,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          -1,
+          1,
+          -1,
+          -1,
+          1
+        ]
+      ],
+      "odd": [
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          -1,
+          -1,
+          -1,
+          -1,
+          1,
+          1
+        ],
+        [
+          1,
+          -1,
+          1,
+          1,
+          -1,
+          1,
+          -1
+        ],
+        [
+          1,
+          1,
+          -1,
+          -1,
+          1,
+          1,
+          -1
+        ]
+      ]
+    },
+    "identities": {
+      "even": [
+        1,
+        1,
+        -1,
+        -1,
+        -4
+      ],
+      "odd": [
+        1,
+        1,
+        -1,
+        -1,
+        4
+      ]
+    }
+  },
+  "edge_specific_certificate_replayed": true,
+  "edge_specific_slack_certificate": {
+    "format": "edge-specific-eq3-clause-parity-v1",
+    "field": "complex numbers",
+    "gate": "SLACK3",
+    "invertible_support_masks": [
+      6,
+      7,
+      9,
+      11,
+      13,
+      14,
+      15
+    ],
+    "eq_survivors": {
+      "0": [
+        [
+          15,
+          15,
+          15
+        ]
+      ],
+      "1": [
+        [
+          15,
+          15,
+          15
+        ]
+      ]
+    },
+    "normalized_form": "[[1,r_i],[p_i,-p_i*r_i]], p_i*r_i != 0, p_1*p_2*p_3=1",
+    "monomials": [
+      "xy",
+      "xz",
+      "x",
+      "yz",
+      "y",
+      "z",
+      "1"
+    ],
+    "clause_equations": {
+      "even": [
+        [
+          1,
+          1,
+          2,
+          -1,
+          -2,
+          -2,
+          -1
+        ],
+        [
+          1,
+          -1,
+          -2,
+          1,
+          2,
+          -2,
+          -1
+        ],
+        [
+          1,
+          -1,
+          2,
+          -1,
+          2,
+          -2,
+          1
+        ],
+        [
+          1,
+          1,
+          -2,
+          1,
+          -2,
+          -2,
+          1
+        ]
+      ],
+      "odd": [
+        [
+          1,
+          1,
+          2,
+          1,
+          2,
+          2,
+          1
+        ],
+        [
+          1,
+          -1,
+          -2,
+          -1,
+          -2,
+          2,
+          1
+        ],
+        [
+          1,
+          -1,
+          2,
+          1,
+          -2,
+          2,
+          -1
+        ],
+        [
+          1,
+          1,
+          -2,
+          -1,
+          2,
+          2,
+          -1
+        ]
+      ]
+    },
+    "identities": {
+      "even": [
+        1,
+        1,
+        -1,
+        -1,
+        -4
+      ],
+      "odd": [
+        1,
+        1,
+        -1,
+        -1,
+        4
+      ]
+    }
+  },
+  "edge_specific_slack_certificate_replayed": true,
+  "edge_specific_global_certificate": {
+    "format": "edge-specific-eq3-clause-global-v1",
+    "field": "complex numbers",
+    "gate": "OR3",
+    "invertible_support_masks": [
+      6,
+      7,
+      9,
+      11,
+      13,
+      14,
+      15
+    ],
+    "eq_survivors": {
+      "0": [
+        [
+          15,
+          15,
+          15
+        ]
+      ],
+      "1": [
+        [
+          15,
+          15,
+          15
+        ]
+      ]
+    },
+    "normalized_form": "[[1,r_i],[p_i,-p_i*r_i]], p_i*r_i != 0, up to per-edge column flips",
+    "monomials": [
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "cases": {
+      "000": {
+        "even": {
+          "outputs": [
+            1,
+            2,
+            4,
+            7
+          ],
+          "factors": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "equations": [
+            [
+              -1,
+              -1,
+              -1,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              -1,
+              1,
+              1,
+              -1,
+              -1,
+              1,
+              1
+            ],
+            [
+              1,
+              -1,
+              1,
+              -1,
+              1,
+              -1,
+              1
+            ],
+            [
+              1,
+              1,
+              -1,
+              1,
+              -1,
+              -1,
+              1
+            ]
+          ],
+          "identity": [
+            1,
+            1,
+            1,
+            1,
+            4
+          ]
+        },
+        "odd": {
+          "outputs": [
+            0,
+            3,
+            5,
+            6
+          ],
+          "factors": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ]
+          ],
+          "equations": [
+            [
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              1,
+              1,
+              1,
+              1,
+              -1,
+              -1
+            ],
+            [
+              1,
+              -1,
+              1,
+              1,
+              -1,
+              1,
+              -1
+            ],
+            [
+              1,
+              1,
+              -1,
+              -1,
+              1,
+              1,
+              -1
+            ]
+          ],
+          "identity": [
+            1,
+            1,
+            1,
+            1,
+            -4
+          ]
+        }
+      },
+      "001": {
+        "even": {
+          "outputs": [
+            1,
+            2,
+            4,
+            7
+          ],
+          "factors": [
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "equations": [
+            [
+              -1,
+              1,
+              -1,
+              -1,
+              1,
+              -1,
+              1
+            ],
+            [
+              -1,
+              -1,
+              1,
+              1,
+              -1,
+              -1,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              -1,
+              -1,
+              -1,
+              -1,
+              1,
+              1
+            ]
+          ],
+          "identity": [
+            1,
+            1,
+            1,
+            1,
+            4
+          ]
+        },
+        "odd": {
+          "outputs": [
+            0,
+            3,
+            5,
+            6
+          ],
+          "factors": [
+            [
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              1
+            ]
+          ],
+          "equations": [
+            [
+              -1,
+              1,
+              -1,
+              1,
+              -1,
+              1,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              1,
+              -1,
+              1,
+              1,
+              -1
+            ],
+            [
+              1,
+              1,
+              1,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              1,
+              -1,
+              -1,
+              1,
+              1,
+              -1,
+              -1
+            ]
+          ],
+          "identity": [
+            1,
+            1,
+            1,
+            1,
+            -4
+          ]
+        }
+      },
+      "010": {
+        "even": {
+          "outputs": [
+            1,
+            2,
+            4,
+            7
+          ],
+          "factors": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "equations": [
+            [
+              1,
+              -1,
+              -1,
+              -1,
+              -1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              -1,
+              -1,
+              1,
+              1,
+              -1,
+              -1,
+              1
+            ],
+            [
+              -1,
+              1,
+              -1,
+              -1,
+              1,
+              -1,
+              1
+            ]
+          ],
+          "identity": [
+            1,
+            1,
+            1,
+            1,
+            4
+          ]
+        },
+        "odd": {
+          "outputs": [
+            0,
+            3,
+            5,
+            6
+          ],
+          "factors": [
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0
+            ]
+          ],
+          "equations": [
+            [
+              1,
+              -1,
+              -1,
+              1,
+              1,
+              -1,
+              -1
+            ],
+            [
+              1,
+              1,
+              1,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              1,
+              -1,
+              1,
+              1,
+              -1
+            ],
+            [
+              -1,
+              1,
+              -1,
+              1,
+              -1,
+              1,
+              -1
+            ]
+          ],
+          "identity": [
+            1,
+            1,
+            1,
+            1,
+            -4
+          ]
+        }
+      },
+      "011": {
+        "even": {
+          "outputs": [
+            1,
+            2,
+            4,
+            7
+          ],
+          "factors": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              1
+            ]
+          ],
+          "equations": [
+            [
+              1,
+              1,
+              -1,
+              1,
+              -1,
+              -1,
+              1
+            ],
+            [
+              1,
+              -1,
+              1,
+              -1,
+              1,
+              -1,
+              1
+            ],
+            [
+              -1,
+              1,
+              1,
+              -1,
+              -1,
+              1,
+              1
+            ],
+            [
+              -1,
+              -1,
+              -1,
+              1,
+              1,
+              1,
+              1
+            ]
+          ],
+          "identity": [
+            1,
+            1,
+            1,
+            1,
+            4
+          ]
+        },
+        "odd": {
+          "outputs": [
+            0,
+            3,
+            5,
+            6
+          ],
+          "factors": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "equations": [
+            [
+              1,
+              1,
+              -1,
+              -1,
+              1,
+              1,
+              -1
+            ],
+            [
+              1,
+              -1,
+              1,
+              1,
+              -1,
+              1,
+              -1
+            ],
+            [
+              -1,
+              1,
+              1,
+              1,
+              1,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1
+            ]
+          ],
+          "identity": [
+            1,
+            1,
+            1,
+            1,
+            -4
+          ]
+        }
+      },
+      "100": {
+        "even": {
+          "outputs": [
+            1,
+            2,
+            4,
+            7
+          ],
+          "factors": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ]
+          ],
+          "equations": [
+            [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              -1,
+              -1,
+              -1,
+              -1,
+              1,
+              1
+            ],
+            [
+              -1,
+              1,
+              -1,
+              -1,
+              1,
+              -1,
+              1
+            ],
+            [
+              -1,
+              -1,
+              1,
+              1,
+              -1,
+              -1,
+              1
+            ]
+          ],
+          "identity": [
+            1,
+            1,
+            1,
+            1,
+            4
+          ]
+        },
+        "odd": {
+          "outputs": [
+            0,
+            3,
+            5,
+            6
+          ],
+          "factors": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "equations": [
+            [
+              1,
+              1,
+              1,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              1,
+              -1,
+              -1,
+              1,
+              1,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              1,
+              -1,
+              1,
+              -1,
+              1,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              1,
+              -1,
+              1,
+              1,
+              -1
+            ]
+          ],
+          "identity": [
+            1,
+            1,
+            1,
+            1,
+            -4
+          ]
+        }
+      },
+      "101": {
+        "even": {
+          "outputs": [
+            1,
+            2,
+            4,
+            7
+          ],
+          "factors": [
+            [
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              1
+            ]
+          ],
+          "equations": [
+            [
+              1,
+              -1,
+              1,
+              -1,
+              1,
+              -1,
+              1
+            ],
+            [
+              1,
+              1,
+              -1,
+              1,
+              -1,
+              -1,
+              1
+            ],
+            [
+              -1,
+              -1,
+              -1,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              -1,
+              1,
+              1,
+              -1,
+              -1,
+              1,
+              1
+            ]
+          ],
+          "identity": [
+            1,
+            1,
+            1,
+            1,
+            4
+          ]
+        },
+        "odd": {
+          "outputs": [
+            0,
+            3,
+            5,
+            6
+          ],
+          "factors": [
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "equations": [
+            [
+              1,
+              -1,
+              1,
+              1,
+              -1,
+              1,
+              -1
+            ],
+            [
+              1,
+              1,
+              -1,
+              -1,
+              1,
+              1,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              1,
+              1,
+              1,
+              1,
+              -1,
+              -1
+            ]
+          ],
+          "identity": [
+            1,
+            1,
+            1,
+            1,
+            -4
+          ]
+        }
+      },
+      "110": {
+        "even": {
+          "outputs": [
+            1,
+            2,
+            4,
+            7
+          ],
+          "factors": [
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0
+            ]
+          ],
+          "equations": [
+            [
+              -1,
+              1,
+              1,
+              -1,
+              -1,
+              1,
+              1
+            ],
+            [
+              -1,
+              -1,
+              -1,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              -1,
+              1,
+              -1,
+              -1,
+              1
+            ],
+            [
+              1,
+              -1,
+              1,
+              -1,
+              1,
+              -1,
+              1
+            ]
+          ],
+          "identity": [
+            1,
+            1,
+            1,
+            1,
+            4
+          ]
+        },
+        "odd": {
+          "outputs": [
+            0,
+            3,
+            5,
+            6
+          ],
+          "factors": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "equations": [
+            [
+              -1,
+              1,
+              1,
+              1,
+              1,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              1,
+              1,
+              -1,
+              -1,
+              1,
+              1,
+              -1
+            ],
+            [
+              1,
+              -1,
+              1,
+              1,
+              -1,
+              1,
+              -1
+            ]
+          ],
+          "identity": [
+            1,
+            1,
+            1,
+            1,
+            -4
+          ]
+        }
+      },
+      "111": {
+        "even": {
+          "outputs": [
+            1,
+            2,
+            4,
+            7
+          ],
+          "factors": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "equations": [
+            [
+              -1,
+              -1,
+              1,
+              1,
+              -1,
+              -1,
+              1
+            ],
+            [
+              -1,
+              1,
+              -1,
+              -1,
+              1,
+              -1,
+              1
+            ],
+            [
+              1,
+              -1,
+              -1,
+              -1,
+              -1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          ],
+          "identity": [
+            1,
+            1,
+            1,
+            1,
+            4
+          ]
+        },
+        "odd": {
+          "outputs": [
+            0,
+            3,
+            5,
+            6
+          ],
+          "factors": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              1
+            ]
+          ],
+          "equations": [
+            [
+              -1,
+              -1,
+              1,
+              -1,
+              1,
+              1,
+              -1
+            ],
+            [
+              -1,
+              1,
+              -1,
+              1,
+              -1,
+              1,
+              -1
+            ],
+            [
+              1,
+              -1,
+              -1,
+              1,
+              1,
+              -1,
+              -1
+            ],
+            [
+              1,
+              1,
+              1,
+              -1,
+              -1,
+              -1,
+              -1
+            ]
+          ],
+          "identity": [
+            1,
+            1,
+            1,
+            1,
+            -4
+          ]
+        }
+      }
+    }
+  },
+  "edge_specific_global_slack_certificate": {
+    "format": "edge-specific-eq3-clause-global-v1",
+    "field": "complex numbers",
+    "gate": "SLACK3",
+    "invertible_support_masks": [
+      6,
+      7,
+      9,
+      11,
+      13,
+      14,
+      15
+    ],
+    "eq_survivors": {
+      "0": [
+        [
+          15,
+          15,
+          15
+        ]
+      ],
+      "1": [
+        [
+          15,
+          15,
+          15
+        ]
+      ]
+    },
+    "normalized_form": "[[1,r_i],[p_i,-p_i*r_i]], p_i*r_i != 0, up to per-edge column flips",
+    "monomials": [
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "cases": {
+      "000": {
+        "even": {
+          "outputs": [
+            1,
+            2,
+            4,
+            7
+          ],
+          "factors": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "equations": [
+            [
+              -1,
+              -1,
+              -2,
+              1,
+              2,
+              2,
+              1
+            ],
+            [
+              -1,
+              1,
+              2,
+              -1,
+              -2,
+              2,
+              1
+            ],
+            [
+              1,
+              -1,
+              2,
+              -1,
+              2,
+              -2,
+              1
+            ],
+            [
+              1,
+              1,
+              -2,
+              1,
+              -2,
+              -2,
+              1
+            ]
+          ],
+          "identity": [
+            1,
+            1,
+            1,
+            1,
+            4
+          ]
+        },
+        "odd": {
+          "outputs": [
+            0,
+            3,
+            5,
+            6
+          ],
+          "factors": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ]
+          ],
+          "equations": [
+            [
+              -1,
+              -1,
+              -2,
+              -1,
+              -2,
+              -2,
+              -1
+            ],
+            [
+              -1,
+              1,
+              2,
+              1,
+              2,
+              -2,
+              -1
+            ],
+            [
+              1,
+              -1,
+              2,
+              1,
+              -2,
+              2,
+              -1
+            ],
+            [
+              1,
+              1,
+              -2,
+              -1,
+              2,
+              2,
+              -1
+            ]
+          ],
+          "identity": [
+            1,
+            1,
+            1,
+            1,
+            -4
+          ]
+        }
+      },
+      "001": {
+        "even": {
+          "outputs": [
+            1,
+            2,
+            4,
+            7
+          ],
+          "factors": [
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "equations": [
+            [
+              -1,
+              1,
+              -2,
+              -1,
+              2,
+              -2,
+              1
+            ],
+            [
+              -1,
+              -1,
+              2,
+              1,
+              -2,
+              -2,
+              1
+            ],
+            [
+              1,
+              1,
+              2,
+              1,
+              2,
+              2,
+              1
+            ],
+            [
+              1,
+              -1,
+              -2,
+              -1,
+              -2,
+              2,
+              1
+            ]
+          ],
+          "identity": [
+            1,
+            1,
+            1,
+            1,
+            4
+          ]
+        },
+        "odd": {
+          "outputs": [
+            0,
+            3,
+            5,
+            6
+          ],
+          "factors": [
+            [
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              1
+            ]
+          ],
+          "equations": [
+            [
+              -1,
+              1,
+              -2,
+              1,
+              -2,
+              2,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              2,
+              -1,
+              2,
+              2,
+              -1
+            ],
+            [
+              1,
+              1,
+              2,
+              -1,
+              -2,
+              -2,
+              -1
+            ],
+            [
+              1,
+              -1,
+              -2,
+              1,
+              2,
+              -2,
+              -1
+            ]
+          ],
+          "identity": [
+            1,
+            1,
+            1,
+            1,
+            -4
+          ]
+        }
+      },
+      "010": {
+        "even": {
+          "outputs": [
+            1,
+            2,
+            4,
+            7
+          ],
+          "factors": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "equations": [
+            [
+              1,
+              -1,
+              -2,
+              -1,
+              -2,
+              2,
+              1
+            ],
+            [
+              1,
+              1,
+              2,
+              1,
+              2,
+              2,
+              1
+            ],
+            [
+              -1,
+              -1,
+              2,
+              1,
+              -2,
+              -2,
+              1
+            ],
+            [
+              -1,
+              1,
+              -2,
+              -1,
+              2,
+              -2,
+              1
+            ]
+          ],
+          "identity": [
+            1,
+            1,
+            1,
+            1,
+            4
+          ]
+        },
+        "odd": {
+          "outputs": [
+            0,
+            3,
+            5,
+            6
+          ],
+          "factors": [
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0
+            ]
+          ],
+          "equations": [
+            [
+              1,
+              -1,
+              -2,
+              1,
+              2,
+              -2,
+              -1
+            ],
+            [
+              1,
+              1,
+              2,
+              -1,
+              -2,
+              -2,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              2,
+              -1,
+              2,
+              2,
+              -1
+            ],
+            [
+              -1,
+              1,
+              -2,
+              1,
+              -2,
+              2,
+              -1
+            ]
+          ],
+          "identity": [
+            1,
+            1,
+            1,
+            1,
+            -4
+          ]
+        }
+      },
+      "011": {
+        "even": {
+          "outputs": [
+            1,
+            2,
+            4,
+            7
+          ],
+          "factors": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              1
+            ]
+          ],
+          "equations": [
+            [
+              1,
+              1,
+              -2,
+              1,
+              -2,
+              -2,
+              1
+            ],
+            [
+              1,
+              -1,
+              2,
+              -1,
+              2,
+              -2,
+              1
+            ],
+            [
+              -1,
+              1,
+              2,
+              -1,
+              -2,
+              2,
+              1
+            ],
+            [
+              -1,
+              -1,
+              -2,
+              1,
+              2,
+              2,
+              1
+            ]
+          ],
+          "identity": [
+            1,
+            1,
+            1,
+            1,
+            4
+          ]
+        },
+        "odd": {
+          "outputs": [
+            0,
+            3,
+            5,
+            6
+          ],
+          "factors": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "equations": [
+            [
+              1,
+              1,
+              -2,
+              -1,
+              2,
+              2,
+              -1
+            ],
+            [
+              1,
+              -1,
+              2,
+              1,
+              -2,
+              2,
+              -1
+            ],
+            [
+              -1,
+              1,
+              2,
+              1,
+              2,
+              -2,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              -2,
+              -1,
+              -2,
+              -2,
+              -1
+            ]
+          ],
+          "identity": [
+            1,
+            1,
+            1,
+            1,
+            -4
+          ]
+        }
+      },
+      "100": {
+        "even": {
+          "outputs": [
+            1,
+            2,
+            4,
+            7
+          ],
+          "factors": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ]
+          ],
+          "equations": [
+            [
+              1,
+              1,
+              2,
+              1,
+              2,
+              2,
+              1
+            ],
+            [
+              1,
+              -1,
+              -2,
+              -1,
+              -2,
+              2,
+              1
+            ],
+            [
+              -1,
+              1,
+              -2,
+              -1,
+              2,
+              -2,
+              1
+            ],
+            [
+              -1,
+              -1,
+              2,
+              1,
+              -2,
+              -2,
+              1
+            ]
+          ],
+          "identity": [
+            1,
+            1,
+            1,
+            1,
+            4
+          ]
+        },
+        "odd": {
+          "outputs": [
+            0,
+            3,
+            5,
+            6
+          ],
+          "factors": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "equations": [
+            [
+              1,
+              1,
+              2,
+              -1,
+              -2,
+              -2,
+              -1
+            ],
+            [
+              1,
+              -1,
+              -2,
+              1,
+              2,
+              -2,
+              -1
+            ],
+            [
+              -1,
+              1,
+              -2,
+              1,
+              -2,
+              2,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              2,
+              -1,
+              2,
+              2,
+              -1
+            ]
+          ],
+          "identity": [
+            1,
+            1,
+            1,
+            1,
+            -4
+          ]
+        }
+      },
+      "101": {
+        "even": {
+          "outputs": [
+            1,
+            2,
+            4,
+            7
+          ],
+          "factors": [
+            [
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              1
+            ]
+          ],
+          "equations": [
+            [
+              1,
+              -1,
+              2,
+              -1,
+              2,
+              -2,
+              1
+            ],
+            [
+              1,
+              1,
+              -2,
+              1,
+              -2,
+              -2,
+              1
+            ],
+            [
+              -1,
+              -1,
+              -2,
+              1,
+              2,
+              2,
+              1
+            ],
+            [
+              -1,
+              1,
+              2,
+              -1,
+              -2,
+              2,
+              1
+            ]
+          ],
+          "identity": [
+            1,
+            1,
+            1,
+            1,
+            4
+          ]
+        },
+        "odd": {
+          "outputs": [
+            0,
+            3,
+            5,
+            6
+          ],
+          "factors": [
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "equations": [
+            [
+              1,
+              -1,
+              2,
+              1,
+              -2,
+              2,
+              -1
+            ],
+            [
+              1,
+              1,
+              -2,
+              -1,
+              2,
+              2,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              -2,
+              -1,
+              -2,
+              -2,
+              -1
+            ],
+            [
+              -1,
+              1,
+              2,
+              1,
+              2,
+              -2,
+              -1
+            ]
+          ],
+          "identity": [
+            1,
+            1,
+            1,
+            1,
+            -4
+          ]
+        }
+      },
+      "110": {
+        "even": {
+          "outputs": [
+            1,
+            2,
+            4,
+            7
+          ],
+          "factors": [
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0
+            ]
+          ],
+          "equations": [
+            [
+              -1,
+              1,
+              2,
+              -1,
+              -2,
+              2,
+              1
+            ],
+            [
+              -1,
+              -1,
+              -2,
+              1,
+              2,
+              2,
+              1
+            ],
+            [
+              1,
+              1,
+              -2,
+              1,
+              -2,
+              -2,
+              1
+            ],
+            [
+              1,
+              -1,
+              2,
+              -1,
+              2,
+              -2,
+              1
+            ]
+          ],
+          "identity": [
+            1,
+            1,
+            1,
+            1,
+            4
+          ]
+        },
+        "odd": {
+          "outputs": [
+            0,
+            3,
+            5,
+            6
+          ],
+          "factors": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "equations": [
+            [
+              -1,
+              1,
+              2,
+              1,
+              2,
+              -2,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              -2,
+              -1,
+              -2,
+              -2,
+              -1
+            ],
+            [
+              1,
+              1,
+              -2,
+              -1,
+              2,
+              2,
+              -1
+            ],
+            [
+              1,
+              -1,
+              2,
+              1,
+              -2,
+              2,
+              -1
+            ]
+          ],
+          "identity": [
+            1,
+            1,
+            1,
+            1,
+            -4
+          ]
+        }
+      },
+      "111": {
+        "even": {
+          "outputs": [
+            1,
+            2,
+            4,
+            7
+          ],
+          "factors": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "equations": [
+            [
+              -1,
+              -1,
+              2,
+              1,
+              -2,
+              -2,
+              1
+            ],
+            [
+              -1,
+              1,
+              -2,
+              -1,
+              2,
+              -2,
+              1
+            ],
+            [
+              1,
+              -1,
+              -2,
+              -1,
+              -2,
+              2,
+              1
+            ],
+            [
+              1,
+              1,
+              2,
+              1,
+              2,
+              2,
+              1
+            ]
+          ],
+          "identity": [
+            1,
+            1,
+            1,
+            1,
+            4
+          ]
+        },
+        "odd": {
+          "outputs": [
+            0,
+            3,
+            5,
+            6
+          ],
+          "factors": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              1
+            ]
+          ],
+          "equations": [
+            [
+              -1,
+              -1,
+              2,
+              -1,
+              2,
+              2,
+              -1
+            ],
+            [
+              -1,
+              1,
+              -2,
+              1,
+              -2,
+              2,
+              -1
+            ],
+            [
+              1,
+              -1,
+              -2,
+              1,
+              2,
+              -2,
+              -1
+            ],
+            [
+              1,
+              1,
+              2,
+              -1,
+              -2,
+              -2,
+              -1
+            ]
+          ],
+          "identity": [
+            1,
+            1,
+            1,
+            1,
+            -4
+          ]
+        }
+      }
+    }
+  },
+  "edge_specific_global_certificates_replayed": true,
+  "product_type_certificate": {
+    "format": "eq3-product-type-obstruction-v1",
+    "field": "complex numbers",
+    "eq3_zero_equations": [
+      "a^2*b+c^2*d",
+      "a*b^2+c*d^2"
+    ],
+    "all_nonzero_consequence": "a*d-b*c=0",
+    "invertible_zero_case_bases": [
+      "diagonal",
+      "anti-diagonal"
+    ],
+    "surviving_zero_support_masks_abcd": [
+      6,
+      9
+    ],
+    "or3_support_diagonal": [
+      0,
+      1,
+      1,
+      1
+    ],
+    "or3_support_antidiagonal": [
+      1,
+      1,
+      1,
+      0
+    ],
+    "slack3_support_diagonal": [
+      0,
+      1,
+      1,
+      1
+    ],
+    "slack3_support_antidiagonal": [
+      1,
+      1,
+      1,
+      0
+    ],
+    "conclusion": "no common invertible basis maps EQ3 with OR3 or SLACK3 to symmetric product-type signatures"
+  },
+  "product_type_certificate_replayed": true,
+  "groebner_corroboration": {
+    "sympy_version": "1.14.0",
+    "variable_order": [
+      "u",
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "monomial_order": "grevlex",
+    "proof_role": "corroboration only",
+    "branches": [
+      {
+        "gate": "OR3",
+        "eq_support_parity": 0,
+        "clause_support_parity": 0,
+        "basis": [
+          "1"
+        ],
+        "unit_ideal": true,
+        "elapsed_seconds": 0.10756810009479523
+      },
+      {
+        "gate": "OR3",
+        "eq_support_parity": 0,
+        "clause_support_parity": 1,
+        "basis": [
+          "1"
+        ],
+        "unit_ideal": true,
+        "elapsed_seconds": 0.07004670007154346
+      },
+      {
+        "gate": "OR3",
+        "eq_support_parity": 1,
+        "clause_support_parity": 0,
+        "basis": [
+          "1"
+        ],
+        "unit_ideal": true,
+        "elapsed_seconds": 0.07876840000972152
+      },
+      {
+        "gate": "OR3",
+        "eq_support_parity": 1,
+        "clause_support_parity": 1,
+        "basis": [
+          "1"
+        ],
+        "unit_ideal": true,
+        "elapsed_seconds": 0.0800378997810185
+      },
+      {
+        "gate": "SLACK3",
+        "eq_support_parity": 0,
+        "clause_support_parity": 0,
+        "basis": [
+          "1"
+        ],
+        "unit_ideal": true,
+        "elapsed_seconds": 0.12793800001963973
+      },
+      {
+        "gate": "SLACK3",
+        "eq_support_parity": 0,
+        "clause_support_parity": 1,
+        "basis": [
+          "1"
+        ],
+        "unit_ideal": true,
+        "elapsed_seconds": 0.08750299969688058
+      },
+      {
+        "gate": "SLACK3",
+        "eq_support_parity": 1,
+        "clause_support_parity": 0,
+        "basis": [
+          "1"
+        ],
+        "unit_ideal": true,
+        "elapsed_seconds": 0.07816340029239655
+      },
+      {
+        "gate": "SLACK3",
+        "eq_support_parity": 1,
+        "clause_support_parity": 1,
+        "basis": [
+          "1"
+        ],
+        "unit_ideal": true,
+        "elapsed_seconds": 0.11086679995059967
+      }
+    ]
+  },
+  "symmetric_clause_classification": {
+    "EQ3": [
+      {
+        "rho": "one",
+        "eq_support_parity": 0,
+        "clause_support_parity": 0
+      },
+      {
+        "rho": "one",
+        "eq_support_parity": 1,
+        "clause_support_parity": 1
+      },
+      {
+        "rho": "primitive",
+        "eq_support_parity": 0,
+        "clause_support_parity": 0
+      },
+      {
+        "rho": "primitive",
+        "eq_support_parity": 1,
+        "clause_support_parity": 1
+      }
+    ],
+    "NAE3": [
+      {
+        "rho": "one",
+        "eq_support_parity": 0,
+        "clause_support_parity": 0
+      },
+      {
+        "rho": "one",
+        "eq_support_parity": 1,
+        "clause_support_parity": 1
+      }
+    ],
+    "OR3": [],
+    "SLACK3": []
+  },
+  "positive_controls": [
+    {
+      "name": "EQ3 row under H",
+      "signature": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "basis": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ]
+      ],
+      "orientation": "row",
+      "transformed": [
+        "2",
+        "0",
+        "0",
+        "2",
+        "0",
+        "2",
+        "2",
+        "0"
+      ],
+      "symmetric_transformed": [
+        "2",
+        "0",
+        "2",
+        "0"
+      ],
+      "graph": {
+        "vertices": 4,
+        "ports": [
+          0,
+          1,
+          2
+        ],
+        "embedding": "outer triangle 0,1,2; center 3 inside",
+        "edges": [
+          [
+            0,
+            1,
+            "1/3"
+          ],
+          [
+            0,
+            2,
+            "1/3"
+          ],
+          [
+            1,
+            2,
+            "1/3"
+          ],
+          [
+            0,
+            3,
+            "2"
+          ],
+          [
+            1,
+            3,
+            "2"
+          ],
+          [
+            2,
+            3,
+            "2"
+          ]
+        ]
+      },
+      "graph_signature": [
+        "2",
+        "0",
+        "0",
+        "2",
+        "0",
+        "2",
+        "2",
+        "0"
+      ],
+      "eq3_row_under_same_basis": [
+        "2",
+        "0",
+        "0",
+        "2",
+        "0",
+        "2",
+        "2",
+        "0"
+      ]
+    },
+    {
+      "name": "EQ3 column under inverse H",
+      "signature": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "basis": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ]
+      ],
+      "orientation": "column",
+      "transformed": [
+        "1/4",
+        "0",
+        "0",
+        "1/4",
+        "0",
+        "1/4",
+        "1/4",
+        "0"
+      ],
+      "symmetric_transformed": [
+        "1/4",
+        "0",
+        "1/4",
+        "0"
+      ],
+      "graph": {
+        "vertices": 4,
+        "ports": [
+          0,
+          1,
+          2
+        ],
+        "embedding": "outer triangle 0,1,2; center 3 inside",
+        "edges": [
+          [
+            0,
+            1,
+            "1/3"
+          ],
+          [
+            0,
+            2,
+            "1/3"
+          ],
+          [
+            1,
+            2,
+            "1/3"
+          ],
+          [
+            0,
+            3,
+            "1/4"
+          ],
+          [
+            1,
+            3,
+            "1/4"
+          ],
+          [
+            2,
+            3,
+            "1/4"
+          ]
+        ]
+      },
+      "graph_signature": [
+        "1/4",
+        "0",
+        "0",
+        "1/4",
+        "0",
+        "1/4",
+        "1/4",
+        "0"
+      ],
+      "eq3_row_under_same_basis": [
+        "2",
+        "0",
+        "0",
+        "2",
+        "0",
+        "2",
+        "2",
+        "0"
+      ]
+    },
+    {
+      "name": "NAE3 column under inverse H",
+      "signature": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "basis": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ]
+      ],
+      "orientation": "column",
+      "transformed": [
+        "3/4",
+        "0",
+        "0",
+        "-1/4",
+        "0",
+        "-1/4",
+        "-1/4",
+        "0"
+      ],
+      "symmetric_transformed": [
+        "3/4",
+        "0",
+        "-1/4",
+        "0"
+      ],
+      "graph": {
+        "vertices": 4,
+        "ports": [
+          0,
+          1,
+          2
+        ],
+        "embedding": "outer triangle 0,1,2; center 3 inside",
+        "edges": [
+          [
+            0,
+            1,
+            "-1"
+          ],
+          [
+            0,
+            2,
+            "-1"
+          ],
+          [
+            1,
+            2,
+            "-1"
+          ],
+          [
+            0,
+            3,
+            "-1/4"
+          ],
+          [
+            1,
+            3,
+            "-1/4"
+          ],
+          [
+            2,
+            3,
+            "-1/4"
+          ]
+        ]
+      },
+      "graph_signature": [
+        "3/4",
+        "0",
+        "0",
+        "-1/4",
+        "0",
+        "-1/4",
+        "-1/4",
+        "0"
+      ],
+      "eq3_row_under_same_basis": [
+        "2",
+        "0",
+        "0",
+        "2",
+        "0",
+        "2",
+        "2",
+        "0"
+      ]
+    },
+    {
+      "name": "OR3 individually",
+      "signature": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "basis": [
+        [
+          1,
+          0
+        ],
+        [
+          "1/2",
+          1
+        ]
+      ],
+      "orientation": "column",
+      "transformed": [
+        "0",
+        "1",
+        "1",
+        "0",
+        "1",
+        "0",
+        "0",
+        "1/4"
+      ],
+      "symmetric_transformed": [
+        "0",
+        "1",
+        "0",
+        "1/4"
+      ],
+      "graph": {
+        "vertices": 5,
+        "ports": [
+          0,
+          1,
+          2
+        ],
+        "embedding": "outer triangle 0,1,2; separate edge 3,4 inside",
+        "edges": [
+          [
+            0,
+            1,
+            "4"
+          ],
+          [
+            0,
+            2,
+            "4"
+          ],
+          [
+            1,
+            2,
+            "4"
+          ],
+          [
+            3,
+            4,
+            "1/4"
+          ]
+        ]
+      },
+      "graph_signature": [
+        "0",
+        "1",
+        "1",
+        "0",
+        "1",
+        "0",
+        "0",
+        "1/4"
+      ],
+      "eq3_row_under_same_basis": [
+        "9/8",
+        "1/4",
+        "1/4",
+        "1/2",
+        "1/4",
+        "1/2",
+        "1/2",
+        "1"
+      ]
+    },
+    {
+      "name": "SLACK3 individually",
+      "signature": [
+        0,
+        1,
+        2,
+        1
+      ],
+      "basis": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "orientation": "column",
+      "transformed": [
+        "0",
+        "1",
+        "1",
+        "0",
+        "1",
+        "0",
+        "0",
+        "-2"
+      ],
+      "symmetric_transformed": [
+        "0",
+        "1",
+        "0",
+        "-2"
+      ],
+      "graph": {
+        "vertices": 5,
+        "ports": [
+          0,
+          1,
+          2
+        ],
+        "embedding": "outer triangle 0,1,2; separate edge 3,4 inside",
+        "edges": [
+          [
+            0,
+            1,
+            "-1/2"
+          ],
+          [
+            0,
+            2,
+            "-1/2"
+          ],
+          [
+            1,
+            2,
+            "-1/2"
+          ],
+          [
+            3,
+            4,
+            "-2"
+          ]
+        ]
+      },
+      "graph_signature": [
+        "0",
+        "1",
+        "1",
+        "0",
+        "1",
+        "0",
+        "0",
+        "-2"
+      ],
+      "eq3_row_under_same_basis": [
+        "2",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ]
+    }
+  ],
+  "counts": {
+    "excluded_gate_pairs": 2,
+    "parity_branches": 8,
+    "bezout_identities": 4,
+    "planar_graph_realizations": 5,
+    "graph_boundary_entries_replayed": 40,
+    "symmetric_clause_signatures_classified": 4,
+    "symmetric_clause_families": 4,
+    "edge_specific_parity_branches": 4,
+    "edge_specific_surviving_support_triples": 2,
+    "edge_specific_clause_pairs_excluded": 2,
+    "edge_specific_flip_cases_checked_per_clause": 16,
+    "product_type_common_basis_obstructions": 1
+  },
+  "elapsed_seconds": 1.6483296998776495
+}

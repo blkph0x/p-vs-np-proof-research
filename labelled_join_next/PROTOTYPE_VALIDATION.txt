@@ -1,0 +1,24 @@
+Isolated labelled-join design audit; NOT PROMOTED into core native_solver.
+No production solver imports or invokes this prototype.
+
+Saved: 2026-10-18T00:50:03+11:00
+Source: test_labelled_join_primitive.py
+SHA256: 661aa9a180c06574eb1b046d4b06a99c1390546c56469ba1369296a49772b206
+Working directory: overnight_research_2026_10_18/labelled_join_next
+Command: python -m unittest -v test_labelled_join_primitive
+Exit code: 0
+Transcript reused from the completed final reproduction; source unchanged.
+
+test_all_one_bit_labelled_simple_graphs_through_four_vertices (test_labelled_join_primitive.LabelledJoinPrimitiveTest) ... ok
+test_binary_encoded_weights_use_exact_integer_arithmetic (test_labelled_join_primitive.LabelledJoinPrimitiveTest) ... ok
+test_disconnected_cycle_defeats_a_single_labelled_path (test_labelled_join_primitive.LabelledJoinPrimitiveTest) ... ok
+test_eulerian_label_closure_combines_different_components (test_labelled_join_primitive.LabelledJoinPrimitiveTest) ... ok
+test_even_connected_graph_can_need_a_disconnected_selected_correction (test_labelled_join_primitive.LabelledJoinPrimitiveTest) ... ok
+test_negative_weights_bad_labels_and_oversized_audits_are_rejected (test_labelled_join_primitive.LabelledJoinPrimitiveTest) ... ok
+test_nonempty_walk_does_not_certify_nonzero_eulerian_edge_set (test_labelled_join_primitive.LabelledJoinPrimitiveTest) ... ok
+test_seeded_weighted_multigraphs_with_zero_costs_and_parallel_edges (test_labelled_join_primitive.LabelledJoinPrimitiveTest) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.174s
+
+OK
