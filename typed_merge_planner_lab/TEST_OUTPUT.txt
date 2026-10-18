@@ -1,20 +1,39 @@
-
-Spreadsheet runtime warmup failed during python startup
-Traceback (most recent call last):
-  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
-  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
-  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
-  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
-  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
-  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
-  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
-artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.
-test_bridge_assessor (test_lab.T.test_bridge_assessor) ... ok
-test_helper_fixture (test_lab.T.test_helper_fixture) ... ok
-test_schaefer_pair (test_lab.T.test_schaefer_pair) ... ok
-test_signatures (test_lab.T.test_signatures) ... ok
+test_all_four_orientations_reject_exact_one (test_bridge_factorization.BridgeFactorizationTests) ... ok
+test_projection_layout_validation (test_bridge_factorization.BridgeFactorizationTests) ... ok
+test_saved_artifact_and_review (test_bridge_factorization.BridgeFactorizationTests) ... ok
+test_catalog_artifact_mutation_is_rejected (test_invented_relation_bridge.InventedRelationBridgeTests) ... ok
+test_independent_signature_matches_typed_planner_exhaustively (test_invented_relation_bridge.InventedRelationBridgeTests) ... ok
+test_known_routes_and_pin_boundary (test_invented_relation_bridge.InventedRelationBridgeTests) ... ok
+test_saved_invented_catalog_replays_exactly (test_invented_relation_bridge.InventedRelationBridgeTests) ... ok
+test_truth_table_decoder_round_trips_all_small_relations (test_invented_relation_bridge.InventedRelationBridgeTests) ... ok
+test_boundary_merge_rejects_constant_validity_only (test_lab.T) ... ok
+test_bridge_assessor (test_lab.T) ... ok
+test_helper_fixture (test_lab.T) ... ok
+test_horn_projection_fooling_family (test_lab.T) ... ok
+test_minimal_pinning_obstruction (test_lab.T) ... ok
+test_pins_preserve_four_actual_polymorphisms (test_lab.T) ... ok
+test_schaefer_pair (test_lab.T) ... ok
+test_signatures (test_lab.T) ... ok
+test_single_pin_exact_one_reduction (test_lab.T) ... ok
+test_zero_and_one_valid_are_not_extension_oracles (test_lab.T) ... ok
+test_all_four_variable_families (test_mixed_bridge_width.MixedBridgeWidthTests) ... ok
+test_empty_and_malformed (test_mixed_bridge_width.MixedBridgeWidthTests) ... ok
+test_saved_review (test_mixed_bridge_width.MixedBridgeWidthTests) ... ok
+test_all_four_variable_clause_families (test_mixed_horn_affine_reduction.MixedReductionTests) ... ok
+test_empty_and_malformed_inputs (test_mixed_horn_affine_reduction.MixedReductionTests) ... ok
+test_fixed_factors_have_declared_closures (test_mixed_horn_affine_reduction.MixedReductionTests) ... ok
+test_independent_review_artifact (test_mixed_horn_affine_reduction.MixedReductionTests) ... ok
+test_complete_graph_control (test_mixed_order_discovery.MixedOrderDiscoveryTests) ... ok
+test_saved_review (test_mixed_order_discovery.MixedOrderDiscoveryTests) ... ok
+test_transformed_controls_have_reconstructed_orders (test_mixed_order_discovery.MixedOrderDiscoveryTests) ... ok
+test_all_four_variable_reductions (test_mixed_relation_dp.MixedRelationDPTests) ... ok
+test_empty_and_bad_orders (test_mixed_relation_dp.MixedRelationDPTests) ... ok
+test_saved_independent_review (test_mixed_relation_dp.MixedRelationDPTests) ... ok
+test_all_four_orientations_represent_exact_one (test_two_bridge_factorization.TwoBridgeFactorizationTests) ... ok
+test_projection_layout_validation (test_two_bridge_factorization.TwoBridgeFactorizationTests) ... ok
+test_saved_artifact_and_review (test_two_bridge_factorization.TwoBridgeFactorizationTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 4 tests in 0.001s
+Ran 34 tests in 14.164s
 
 OK

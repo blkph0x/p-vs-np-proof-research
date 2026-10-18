@@ -2,6 +2,7 @@
 
 Run:
     python -m unittest -v test_lab
+    python -m unittest -v test_invented_relation_bridge.py
 
 Key artifacts:
 - engine.py
@@ -24,3 +25,6 @@ Key artifacts:
 - bridge_assessments.csv
 - REPORT.md
 - THEOREMS.md
+- `INVENTED_RELATION_BRIDGE.md`, `invented_relation_bridge.py`, and
+  `INVENTED_RELATION_SIGNATURES.json`: independent Schaefer classification of
+  the bounded language inventor catalog.

@@ -67,6 +67,20 @@ One subtle but useful result is that implication + even parity share ZERO-validi
 satisfies both languages, so that specific fixed-language combination is trivially
 satisfiable.
 
+## 1.1 Independent bridge for invented proof relations
+
+The bounded proof-language inventor can create relation symbols without assigning them a
+semantic name. The new `invented_relation_bridge.py` decodes each saved canonical truth
+table, recomputes all six closure tests independently, and compares the result with this
+planner's classifier. It also reports the corresponding native theories and the stronger
+pin-preserving status used for boundary-extension queries.
+
+The replay exhausts every one of the (2^{2^k}) relations for (k \le 3) (278 tables),
+then replays all 32 entries in `bounded_language_invention_lab/RESULTS.json`. The saved
+`INVENTED_RELATION_SIGNATURES.json` artifact is bound to the source SHA-256 and a
+mutation test rejects altered signatures. Compact ANF, weight, circuit and OBDD choices
+remain optimization metadata; the truth table remains authoritative.
+
 ## 2. Native theory combination graph
 
 For large native theories we use guaranteed language metadata rather than enumerating truth
