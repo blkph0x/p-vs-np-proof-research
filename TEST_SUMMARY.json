@@ -1,225 +1,225 @@
 {
   "all_suites_passed": true,
   "source_unchanged_during_tests": true,
-  "started_utc": "2026-10-18T11:51:13.747558+00:00",
-  "finished_utc": "2026-10-18T11:56:47.504533+00:00",
+  "started_utc": "2026-10-18T12:04:23.260590+00:00",
+  "finished_utc": "2026-10-18T12:09:57.553671+00:00",
   "python": "3.10.10 | packaged by conda-forge | (main, Mar 24 2023, 20:00:38) [MSC v.1934 64 bit (AMD64)]",
   "suites": [
     {
       "suite": "test_adaptive_fragment_synthesis",
       "returncode": 0,
       "test_methods": 11,
-      "seconds": 0.18627789989113808,
+      "seconds": 0.16764690028503537,
       "passed": true
     },
     {
       "suite": "test_all_dual_lp_barrier",
       "returncode": 0,
       "test_methods": 6,
-      "seconds": 5.422874099574983,
+      "seconds": 5.371272699907422,
       "passed": true
     },
     {
       "suite": "test_certified_residual_quotient",
       "returncode": 0,
       "test_methods": 6,
-      "seconds": 0.15738159976899624,
+      "seconds": 0.15108489990234375,
       "passed": true
     },
     {
       "suite": "test_coefficient_complexity_barrier",
       "returncode": 0,
       "test_methods": 6,
-      "seconds": 0.4130979999899864,
+      "seconds": 0.3990497002378106,
       "passed": true
     },
     {
       "suite": "test_complete_graph_frontier_integration",
       "returncode": 0,
       "test_methods": 8,
-      "seconds": 11.952282499987632,
+      "seconds": 12.128449500072747,
       "passed": true
     },
     {
       "suite": "test_degree_three_barrier",
       "returncode": 0,
       "test_methods": 10,
-      "seconds": 0.31999710015952587,
+      "seconds": 0.3121943003498018,
       "passed": true
     },
     {
       "suite": "test_degree_two_min_distance_integration",
       "returncode": 0,
       "test_methods": 3,
-      "seconds": 0.140743900090456,
+      "seconds": 0.15085950028151274,
       "passed": true
     },
     {
       "suite": "test_fourier_spectrum_boundary_integration",
       "returncode": 0,
       "test_methods": 7,
-      "seconds": 0.9520304002799094,
+      "seconds": 0.9686902002431452,
       "passed": true
     },
     {
       "suite": "test_macro_assisted_subdag",
       "returncode": 0,
       "test_methods": 5,
-      "seconds": 2.8840952003374696,
+      "seconds": 2.941278399899602,
       "passed": true
     },
     {
       "suite": "test_matching_certificate",
       "returncode": 0,
       "test_methods": 9,
-      "seconds": 16.378864100202918,
+      "seconds": 16.633278999943286,
       "passed": true
     },
     {
       "suite": "test_native_coset_solver",
       "returncode": 0,
       "test_methods": 13,
-      "seconds": 104.4257890000008,
+      "seconds": 104.6721203001216,
       "passed": true
     },
     {
       "suite": "test_projection_barrier",
       "returncode": 0,
       "test_methods": 7,
-      "seconds": 0.8667450002394617,
+      "seconds": 0.8550513996742666,
       "passed": true
     },
     {
       "suite": "test_projection_discovery_barrier",
       "returncode": 0,
       "test_methods": 6,
-      "seconds": 0.20574560016393661,
+      "seconds": 0.20031999982893467,
       "passed": true
     },
     {
       "suite": "test_proof_portfolio_bridge",
       "returncode": 0,
       "test_methods": 5,
-      "seconds": 0.15930739976465702,
+      "seconds": 0.16611910006031394,
       "passed": true
     },
     {
       "suite": "test_quadratic_code_family_integration",
       "returncode": 0,
       "test_methods": 6,
-      "seconds": 2.2551050996407866,
+      "seconds": 2.201669199857861,
       "passed": true
     },
     {
       "suite": "test_randomized_isolation",
       "returncode": 0,
       "test_methods": 6,
-      "seconds": 55.585831000003964,
+      "seconds": 56.05494849989191,
       "passed": true
     },
     {
       "suite": "test_rank_native_solver",
       "returncode": 0,
       "test_methods": 9,
-      "seconds": 97.45509660011157,
+      "seconds": 97.50892820023,
       "passed": true
     },
     {
       "suite": "test_regular_ldpc_audit_integration",
       "returncode": 0,
       "test_methods": 4,
-      "seconds": 0.4801175999455154,
+      "seconds": 0.47020250000059605,
       "passed": true
     },
     {
       "suite": "test_repeated_subdag_templates",
       "returncode": 0,
       "test_methods": 7,
-      "seconds": 1.8821769999340177,
+      "seconds": 1.8157013999298215,
       "passed": true
     },
     {
       "suite": "test_residual_equivalence_barrier",
       "returncode": 0,
       "test_methods": 4,
-      "seconds": 0.159551199991256,
+      "seconds": 0.1484612999483943,
       "passed": true
     },
     {
       "suite": "test_row_basis_discovery",
       "returncode": 0,
       "test_methods": 9,
-      "seconds": 0.3882887000218034,
+      "seconds": 0.37748560030013323,
       "passed": true
     },
     {
       "suite": "test_row_basis_escape",
       "returncode": 0,
       "test_methods": 7,
-      "seconds": 0.40213009994477034,
+      "seconds": 0.4041042998433113,
       "passed": true
     },
     {
       "suite": "test_semantic_frontier_expander_integration",
       "returncode": 0,
       "test_methods": 3,
-      "seconds": 0.3585501001216471,
+      "seconds": 0.3435752000659704,
       "passed": true
     },
     {
       "suite": "test_structural_probe",
       "returncode": 0,
       "test_methods": 9,
-      "seconds": 0.43185280030593276,
+      "seconds": 0.3971832999959588,
       "passed": true
     },
     {
       "suite": "test_symbolic_suffix_template",
       "returncode": 0,
       "test_methods": 6,
-      "seconds": 0.9783389996737242,
+      "seconds": 0.9569278000853956,
       "passed": true
     },
     {
       "suite": "test_symbolic_unit_template",
       "returncode": 0,
       "test_methods": 6,
-      "seconds": 0.36451199976727366,
+      "seconds": 0.36795330001041293,
       "passed": true
     },
     {
       "suite": "typed_merge_planner",
       "returncode": 0,
       "test_methods": 29,
-      "seconds": 14.26863620011136,
+      "seconds": 14.032408900093287,
       "passed": true
     },
     {
       "suite": "charged_work_core",
       "returncode": 0,
       "test_methods": 21,
-      "seconds": 0.6213520998135209,
+      "seconds": 0.5942987003363669,
       "passed": true
     },
     {
       "suite": "direct_fano_core",
       "returncode": 0,
       "test_methods": 3,
-      "seconds": 0.1985380998812616,
+      "seconds": 0.16730759991332889,
       "passed": true
     },
     {
       "suite": "high_width_core",
       "returncode": 0,
       "test_methods": 9,
-      "seconds": 0.873204399831593,
+      "seconds": 0.8600288997404277,
       "passed": true
     },
     {
       "suite": "horn_cdclt",
       "returncode": 0,
       "test_methods": 20,
-      "seconds": 12.533653299789876,
+      "seconds": 12.42085950030014,
       "passed": true
     }
   ],
@@ -279,8 +279,8 @@
     "overnight_research_2026_10_18/regular_ldpc_size_bounds.py": "3514ef86afc1d58266d856c662df1ef2e80ef5574a9fa649f7002f1ef43070fc",
     "overnight_research_2026_10_18/repeated_subdag_templates.py": "8b9eced0f3e860eb28530a340de458cdc88feeeafab69c7d18a3b58957041441",
     "overnight_research_2026_10_18/residual_equivalence_barrier.py": "573b1cbf53798568006d5c5fc31812a78734369da36dc5d87f66bf48dd6f5967",
-    "overnight_research_2026_10_18/row_basis_discovery.py": "2281d560704e65172ed82f080434b889e4c10f32b13b9de7d5721143957c3b4b",
-    "overnight_research_2026_10_18/row_basis_escape.py": "f75f9556b303a4f3822ddbf86b4b707a768c7435c1bb839a14b37c850ef86469",
+    "overnight_research_2026_10_18/row_basis_discovery.py": "375a0387f6ab201ece76835b6188cd612aab25a724c920eca13e40e8c037f0b7",
+    "overnight_research_2026_10_18/row_basis_escape.py": "37d9914b25f8a313b3350c9d01e201c02f4ec646f117a096ed136f4b5614565c",
     "overnight_research_2026_10_18/run_affine_boundary_phase_checks.py": "eb85e4c08687fec98aba5105ca23f2d4c626b76dad80666bc218f741822d53ef",
     "overnight_research_2026_10_18/run_affine_compression_crosscheck.py": "c5b87a85fa049d6a91cb9e540ae8e21f550959697b389d2ea34afc21394320c7",
     "overnight_research_2026_10_18/run_affine_compression_phase_checks.py": "80aa307dff6eab57a8db495d115d871521eb50116fa4b8a5bf0cdfbe33e44543",
@@ -291,13 +291,13 @@
     "overnight_research_2026_10_18/run_followup_phase_checks.py": "9e0ecc50c5db1983b21bdd38259cfaf24dae0a7b5a674fca60e30b78c06d6950",
     "overnight_research_2026_10_18/run_holographic_crosscheck.py": "2114dd3e4b89ed9a1c8e406882dce9b79e3111d3348a5fdcb9f84b6f7068f65d",
     "overnight_research_2026_10_18/run_holographic_phase_checks.py": "b0c335f68cdd2ebf5df644c39a77eb98150674768aa54d08530136515d9cf175",
-    "overnight_research_2026_10_18/run_native_experiments.py": "024cb5c365a0e1c8fd5a83e777ce4b13732c14bb5578d133f86740ab903ba85f",
+    "overnight_research_2026_10_18/run_native_experiments.py": "6809112ddf98a590b28700d52a63fb082c077943df9f57e44b299679311396e7",
     "overnight_research_2026_10_18/run_rank_experiments.py": "f11e49f6b30f074519eb181976e555332093b8f1003858e09c9535c440a1a4e4",
     "overnight_research_2026_10_18/run_research_checks.py": "8d65165122e6f1cf80352538780ce3b98a789317921dea02b24553f4aece44d9",
     "overnight_research_2026_10_18/run_threshold_phase_checks.py": "9a408816daf4ffacad67437142b5722b8545a861b220f24b716c362f0514352d",
     "overnight_research_2026_10_18/run_weighted_affine_crosscheck.py": "494639b8a9761c37bd11950dcba1314dc960fd06f5b8ab099c27e6a67da39ec1",
     "overnight_research_2026_10_18/save_vohra_metadata.py": "848f7ca2ac3972bf3dc795190c954ea30c598e4ae345775dfe0f2e8a04a1e1e5",
-    "overnight_research_2026_10_18/structural_probe.py": "6d3d5195d867ed4f573892ed79e3114152f0c7799e2595fbb48db93f055e374f",
+    "overnight_research_2026_10_18/structural_probe.py": "f329854192011f76d7808df0c2200072bac3bfde6e986756dcd80d396986a0da",
     "overnight_research_2026_10_18/symbolic_suffix_template.py": "5c3e21c29eb178011e8f01ab5152ab3d35fcddad3d4848cd857caabbdb1157f4",
     "overnight_research_2026_10_18/symbolic_unit_template.py": "46d878abc868e9939dfa7a2fb6c44a8df9137416684999c535cd07b3cfe96ad2",
     "overnight_research_2026_10_18/test_adaptive_fragment_synthesis.py": "5b8df599133e849510b148204e5fb54325a447fa7fa2281a2a6d971ea55fa70b",

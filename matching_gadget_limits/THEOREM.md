@@ -93,7 +93,7 @@ Its complete feasible boundary family is
 
     {0,3,6,9,12,20,23,29,34,43,46,54,63}.
 
-Intersecting with D_3 gives exactly {0,3,12,63}, the paired encoding of z=x AND y. The undeleted graph has perfect matching {{1,5},{2,4},{0,3}}. Deleting pair {0,1} leaves matching {{2,4},{3,5}}; deleting pair {2,3} leaves {{0,4},{1,5}}; deleting every terminal leaves the empty matching. The four remaining valid pair-union states have no perfect matching. Thus AND, like copy, is possible with a valid-domain promise. Both full signatures and matching witnesses are saved in RESULTS.json; PROMISED_AND_CONTROL.md gives the explicit truth table.
+Intersecting with D_3 gives exactly {0,3,12,63}, the paired encoding of z=x AND y. The undeleted graph has perfect matching {&#123;1,5&#125;,&#123;2,4&#125;,&#123;0,3&#125;}. Deleting pair {0,1} leaves matching {&#123;2,4&#125;,&#123;3,5&#125;}; deleting pair {2,3} leaves {&#123;0,4&#125;,&#123;1,5&#125;}; deleting every terminal leaves the empty matching. The four remaining valid pair-union states have no perfect matching. Thus AND, like copy, is possible with a valid-domain promise. Both full signatures and matching witnesses are saved in RESULTS.json; PROMISED_AND_CONTROL.md gives the explicit truth table.
 
 ## 4. Why independently adding validity is not a free composition
 

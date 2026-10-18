@@ -1,0 +1,79 @@
+---
+layout: default
+title: P versus NP Research
+description: A public, reproducible research notebook for exact algorithms, certificates, and scoped barriers.
+---
+
+<div class="hero">
+  <p class="eyebrow">PUBLIC RESEARCH CHECKPOINT · 18 OCTOBER 2026</p>
+  <h1>Can computation settle P versus NP?</h1>
+  <p class="lede">This project tests proposed algorithms and proof ideas with exact arithmetic, saved certificates, independent checkers, and explicit complexity accounting.</p>
+  <p>
+    <a class="button" href="METHOD_INDEX.md">Explore the methods</a>
+    <a class="button secondary" href="REPRODUCIBILITY.md">Run the audit</a>
+  </p>
+</div>
+
+## Current result
+
+**P versus NP remains unresolved.** The repository contains exact algorithms for
+stated structural families, finite exhaustive controls, certificate verifiers,
+and scoped counterexamples. It does not claim a solver for every SAT instance
+or a lower bound against every polynomial algorithm.
+
+The latest recorded full audit passed **31 suites and 260 test methods** with
+unchanged source hashes. These are reproducibility results for the checked
+finite cases, not a solution to the open problem.
+
+## Start here
+
+<div class="cards">
+  <a class="card" href="RESOLUTION_STANDARD.md">
+    <strong>Acceptance standard</strong>
+    <span>What a valid P=NP or P≠NP result would have to prove.</span>
+  </a>
+  <a class="card" href="METHOD_INDEX.md">
+    <strong>Method index</strong>
+    <span>Every active algorithm, theorem, boundary result, and write-up.</span>
+  </a>
+  <a class="card" href="CITATIONS.md">
+    <strong>Sources and claims</strong>
+    <span>Public references, provenance, and the project's citation rules.</span>
+  </a>
+  <a class="card" href="TEST_SUMMARY.json">
+    <strong>Audit record</strong>
+    <span>Machine-readable suite outcomes, timings, and source hashes.</span>
+  </a>
+</div>
+
+## What is being tested
+
+- **Native exact solvers:** graph-plus-exception and rank-compressed minimum
+  distance routines with independently checked matching dual certificates.
+- **Structural boundaries:** degree-two distance algorithms, Fourier span
+  obstructions, holographic basis limits, and regular-LDPC hardness scope.
+- **Proof-producing experiments:** every result keeps the input, certificate,
+  checker, negative control, and a report of what the result does and does not
+  establish.
+- **Open proposals:** unresolved ideas remain labeled as proposals until their
+  correctness and fixed polynomial bit-complexity bounds are proved.
+
+## Reproduce it
+
+From a fresh checkout with Git LFS enabled:
+
+```text
+python -m pip install -r requirements.txt
+python run_research_checks.py
+```
+
+The audit writes `TEST_OUTPUT.txt` and `TEST_SUMMARY.json`. The workflow in
+`.github/workflows/research-checks.yml` runs the focused checks and the same
+self-contained full audit on every push and pull request.
+
+## Public record
+
+The source repository is [blkph0x/p-vs-np-proof-research on GitHub](https://github.com/blkph0x/p-vs-np-proof-research).
+The [external status audit](EXTERNAL_STATUS_AUDIT_2026_10_18.md) records the
+official public status and keeps an unverified recent P=NP claim separate from
+the project's own evidence.

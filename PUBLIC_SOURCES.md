@@ -31,19 +31,19 @@ Indexed URLs: **59**.
 | <https://arxiv.org/pdf/2110.07781> | `AFFINE_REPRESENTATION_LITERATURE_SCOPE.md`, `PUBLIC_SOURCES.md` |
 | <https://arxiv.org/pdf/2207.09797> | `PERTURBATION_ROUTE_REVIEW.md`, `PUBLIC_SOURCES.md` |
 | <https://arxiv.org/pdf/2610.20742> | `ALGEBRAIC_LITERATURE_CHECK.md`, `PUBLIC_SOURCES.md` |
-| <https://doi.org/10.1002/jgt.20037> | `charged_work_core_lab/FANO_NOTES.md` |
+| <https://doi.org/10.1002/jgt.20037> | `PUBLIC_SOURCES.md`, `charged_work_core_lab/FANO_NOTES.md` |
 | <https://doi.org/10.1007/BF00264290> | `CITATIONS.md`, `PUBLIC_SOURCES.md` |
 | <https://doi.org/10.1007/BF01580113> | `PUBLIC_SOURCES.md`, `THEORY_REVIEW.md` |
 | <https://doi.org/10.1016/0304-3975> | `PUBLIC_SOURCES.md`, `THEORY_REVIEW.md` |
 | <https://doi.org/10.1016/S0012-365X> | `PUBLIC_SOURCES.md`, `matching_gadget_limits/THEOREM.md` |
-| <https://doi.org/10.1109/18.641542> | `high_width_core_stress_lab/REPORT.md` |
+| <https://doi.org/10.1109/18.641542> | `PUBLIC_SOURCES.md`, `high_width_core_stress_lab/REPORT.md` |
 | <https://doi.org/10.1109/ASSIC70037.2026.11717448> | `CITATIONS.md`, `PUBLIC_SOURCES.md` |
 | <https://doi.org/10.1109/assic70037.2026.11717448> | `PUBLIC_SOURCES.md`, `VOHRA_CROSSREF_METADATA.json` |
 | <https://doi.org/10.1145/258533.258559> | `PUBLIC_SOURCES.md`, `VARDY_MINIMUM_DISTANCE_SCOPE.md`, `labelled_join_certified/COVERAGE_AUDIT.md` |
 | <https://doi.org/10.1287/moor.7.1.67> | `PUBLIC_SOURCES.md`, `THEORY_REVIEW.md` |
 | <https://ece.iisc.ac.in/~nkashyap/Papers/code_decomp_final.pdf> | `ALL_DUAL_LP_THEOREM.md`, `PUBLIC_SOURCES.md` |
-| <https://epubs.siam.org/doi/10.1137/070691152> | `high_width_core_stress_lab/REPORT.md` |
-| <https://github.com/blkph0x/p-vs-np-proof-research> | `CITATION.cff`, `PUBLIC_SOURCES.md` |
+| <https://epubs.siam.org/doi/10.1137/070691152> | `PUBLIC_SOURCES.md`, `high_width_core_stress_lab/REPORT.md` |
+| <https://github.com/blkph0x/p-vs-np-proof-research> | `CITATION.cff`, `PUBLIC_SOURCES.md`, `index.md` |
 | <https://homepages.inf.ed.ac.uk/hguo/papers/HA-general.pdf> | `AFFINE_BOUNDARY_DESIGN.md`, `PUBLIC_SOURCES.md`, `holographic_tractability_lab/RESULTS.json`, `holographic_tractability_lab/THEOREM.md`, `holographic_tractability_lab/run_experiments.py` |
 | <https://ics.uci.edu/~dechter/publications/r76A.pdf> | `PUBLIC_SOURCES.md`, `coefficient_structure_lab/THEOREM.md` |
 | <https://ieeexplore.ieee.org/document/11717448> | `PUBLIC_SOURCES.md`, `REPORT.md` |

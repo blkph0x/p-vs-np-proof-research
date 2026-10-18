@@ -1,0 +1,18 @@
+theme: jekyll-theme-primer
+title: P versus NP Research
+description: Reproducible experiments, certificates, and scoped proofs about P versus NP.
+show_downloads: true
+markdown: kramdown
+plugins:
+  - jekyll-relative-links
+  - jekyll-seo-tag
+relative_links:
+  enabled: true
+  collections: true
+exclude:
+  - .git/
+  - .github/
+  - .venv/
+  - __pycache__/
+  - _site/
+  - node_modules/
