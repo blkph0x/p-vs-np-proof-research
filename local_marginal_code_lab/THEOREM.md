@@ -62,3 +62,10 @@ input description is polynomial in `n`; it is not a deterministic
 short-description code family and it is not a lower bound for arbitrary
 algorithms. The saved arithmetic replay checks lengths 32 through 1024 with
 exact integers.
+
+The deterministic family follow-up is recorded in
+[`REED_MULLER_THEOREM.md`](REED_MULLER_THEOREM.md). It supplies an elementary
+distance/duality proof and saved certificates for the self-dual family
+`RM(s,2s+1)`, so this lab now contains both a random-existence control and an
+explicit short-description family. Neither result extends the claim beyond
+the exact local projection-marginal relaxation defined here.

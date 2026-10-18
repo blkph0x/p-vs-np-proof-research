@@ -391,6 +391,25 @@ unsatisfiable. A universal exact classifier would therefore decide SAT and
 UNSAT. The new finite replay keeps this reduction separate from the structural
 macros, which remain valid only for recognized proof families.
 
+## Deterministic local-marginal code control
+
+The local-marginal barrier now has an explicit deterministic family in
+`local_marginal_code_lab/REED_MULLER_THEOREM.md`. For `RM(s,2s+1)`, the
+evaluation rows are self-dual, both distances are `2^(s+1)`, and the unit
+vector survives the exact local projection relaxation through level
+`2^(s+1)-2`, while the pinned integer optimum is `2^(s+1)`. The saved
+`RM(1,3)` case enumerates every level-two scope; `RM(2,5)` enumerates all
+65,536 words; and `RM(3,7)` is checked from an elementary distance/duality
+proof with an explicit affine witness. The independent reviewer reconstructs
+the generator and dual spaces without importing the producer and mutation tests
+reject forged rows, theorem fields, witnesses, and levels.
+
+This closes the previous gap between the finite Golay control and the
+probabilistic random-code existence argument. It still only limits the exact
+local projection-marginal architecture. A stronger hierarchy, global valid
+inequalities, or a different SAT representation remains outside the result,
+and the project still has no general P-versus-NP lower bound.
+
 ## Separate general direction: stronger global constraints
 
 Any proposed relaxation must be tested first against the exact Golay witness

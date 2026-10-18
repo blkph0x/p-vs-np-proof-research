@@ -17,7 +17,7 @@
 - Use [`CITATIONS.md`](CITATIONS.md) and [`PUBLIC_SOURCES.md`](PUBLIC_SOURCES.md)
   for public sources and the reports that use them.
 - Follow [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) to replay the checks from a
-  fresh checkout. The current frozen run has 409 passing methods across 42
+  fresh checkout. The current frozen run has 424 passing methods across 43
   suites; the full audit is intentionally separate from the lighter continuous
   integration checks, and all of its suite dependencies are included in this
   repository.
@@ -254,6 +254,9 @@ actual resolution. Historical matrices and earlier labs are in the parent tree.
   probabilistic existence proof of linear integrality gaps.
 - [BOUNDED_PROJECTION_BARRIER.md](BOUNDED_PROJECTION_BARRIER.md): limits of exact
   local coordinate projections, including their combination with all dual checks.
+- [local_marginal_code_lab/REED_MULLER_THEOREM.md](local_marginal_code_lab/REED_MULLER_THEOREM.md):
+  an explicit self-dual Reed--Muller family with a proved local-marginal gap,
+  exact small replays, and an independent checker.
 - [DEGREE_THREE_REDUCTION_THEOREM.md](DEGREE_THREE_REDUCTION_THEOREM.md): a complete
   X3C reduction to nonzero-syndrome binary decoding with every column of weight three,
   with an independent source-bound replay.
@@ -634,6 +637,17 @@ Its asymptotic probabilistic extension uses exact union bounds to obtain
 half-rate random codes with both distances at least `n/16`, leaving a local
 witness through level `n/16-2`; lengths 32 through 1024 are replayed. This
 does not claim a deterministic family or a general complexity lower bound.
+
+The deterministic follow-up in
+[`local_marginal_code_lab/REED_MULLER_THEOREM.md`](local_marginal_code_lab/REED_MULLER_THEOREM.md)
+reconstructs the self-dual family `RM(s,2s+1)`. Its proved primal and dual
+distance is `2^(s+1)`, so the unit-vector local witness survives through level
+`2^(s+1)-2` while the pinned integer optimum is `2^(s+1)`. RM(1,3) replays
+every level-two scope, RM(2,5) enumerates all 65,536 codewords, and RM(3,7)
+uses the elementary distance/duality proof rather than expanding `2^64`
+words. This makes the barrier deterministic and explicit, but it remains
+limited to the stated relaxation architecture and does not imply a general
+SAT lower bound.
 
 The [adaptive fragment synthesis report](ADAPTIVE_FRAGMENT_SYNTHESIS_REPORT.md)
 adds an independent cross-check of the bounded proof-language experiment. A bounded projector existentially

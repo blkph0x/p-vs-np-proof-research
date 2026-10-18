@@ -5,7 +5,7 @@ public URL found in the repository's source, reports, and saved metadata,
 along with the local files that cite or preserve it. The curated primary
 sources and citation rules are in [`CITATIONS.md`](CITATIONS.md).
 
-Indexed URLs: **64**.
+Indexed URLs: **67**.
 
 | URL | Local provenance |
 | --- | --- |
@@ -31,6 +31,7 @@ Indexed URLs: **64**.
 | <https://arxiv.org/pdf/2110.07781> | `AFFINE_REPRESENTATION_LITERATURE_SCOPE.md`, `PUBLIC_SOURCES.md` |
 | <https://arxiv.org/pdf/2207.09797> | `PERTURBATION_ROUTE_REVIEW.md`, `PUBLIC_SOURCES.md` |
 | <https://arxiv.org/pdf/2610.20742> | `ALGEBRAIC_LITERATURE_CHECK.md`, `PUBLIC_SOURCES.md` |
+| <https://blkph0x.github.io/p-vs-np-proof-research/> | `README.md` |
 | <https://doi.org/10.1002/jgt.20037> | `PUBLIC_SOURCES.md`, `charged_work_core_lab/FANO_NOTES.md` |
 | <https://doi.org/10.1007/BF00264290> | `CITATIONS.md`, `PUBLIC_SOURCES.md` |
 | <https://doi.org/10.1007/BF01580113> | `PUBLIC_SOURCES.md`, `THEORY_REVIEW.md` |
@@ -38,6 +39,7 @@ Indexed URLs: **64**.
 | <https://doi.org/10.1016/S0012-365X> | `PUBLIC_SOURCES.md`, `matching_gadget_limits/THEOREM.md` |
 | <https://doi.org/10.1109/18.641542> | `PUBLIC_SOURCES.md`, `high_width_core_stress_lab/REPORT.md` |
 | <https://doi.org/10.1109/ASSIC70037.2026.11717448> | `CITATIONS.md`, `PUBLIC_SOURCES.md` |
+| <https://doi.org/10.1109/TIT.1954.1057465> | `CITATIONS.md`, `local_marginal_code_lab/REED_MULLER_RESULTS.json`, `local_marginal_code_lab/REED_MULLER_THEOREM.md`, `local_marginal_code_lab/run_reed_muller.py` |
 | <https://doi.org/10.1109/assic70037.2026.11717448> | `PUBLIC_SOURCES.md`, `VOHRA_CROSSREF_METADATA.json` |
 | <https://doi.org/10.1145/258533.258559> | `PUBLIC_SOURCES.md`, `VARDY_MINIMUM_DISTANCE_SCOPE.md`, `labelled_join_certified/COVERAGE_AUDIT.md` |
 | <https://doi.org/10.1287/moor.7.1.67> | `PUBLIC_SOURCES.md`, `THEORY_REVIEW.md` |
@@ -51,6 +53,7 @@ Indexed URLs: **64**.
 | <https://ieeexplore.ieee.org/document/11717448/> | `PUBLIC_SOURCES.md`, `VOHRA_CROSSREF_METADATA.json` |
 | <https://link.springer.com/article/10.1007/s00453-015-0090-y> | `HOLOGRAPHIC_LITERATURE_CHECK.md`, `PUBLIC_SOURCES.md` |
 | <https://link.springer.com/chapter/10.1007/978-1-4684-2001-2_9> | `PUBLIC_SOURCES.md`, `multiobjective_matching_limits/THEOREM.md` |
+| <https://ocw.mit.edu/courses/6-895-essential-coding-theory-fall-2004/resources/lect05slx4/> | `CITATIONS.md`, `local_marginal_code_lab/REED_MULLER_RESULTS.json`, `local_marginal_code_lab/REED_MULLER_THEOREM.md`, `local_marginal_code_lab/run_reed_muller.py` |
 | <https://pages.cs.wisc.edu/~jyc/papers/signature-thy.pdf> | `NEXT_HOLOGRAPHIC_BRIEF.md`, `PUBLIC_SOURCES.md` |
 | <https://people.inf.ethz.ch/emo/SatSem05/Papers/BensassonWidgerson01.pdf> | `CITATIONS.md`, `PUBLIC_SOURCES.md` |
 | <https://quantum-journal.org/papers/q-2022-04-20-692/> | `AFFINE_REPRESENTATION_LITERATURE_SCOPE.md`, `PUBLIC_SOURCES.md` |

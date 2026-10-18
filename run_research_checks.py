@@ -30,6 +30,8 @@ def main():
               ("proof_complexity_frontier", ROOT / "proof_complexity_frontier_lab", ["-v", "test_frontier"]),
               ("resolution_width", ROOT / "resolution_width_lab", ["-v", "test_resolution"]),
               ("weighted_boundary", ROOT / "weighted_boundary_lab", ["-v", "test_lab"]),
+              ("local_marginal_code", ROOT / "local_marginal_code_lab",
+               ["-v", "test_local_marginal", "test_reed_muller"]),
               ("labelled_join_certified", ROOT / "labelled_join_certified", ["discover", "-v"])]
     def hashes():
         paths = sorted({p for _, directory, _ in suites for p in directory.glob("*.py")})

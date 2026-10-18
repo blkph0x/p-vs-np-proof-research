@@ -16,6 +16,8 @@ provenance.
 | [Dantchev, *On Resolution Complexity of Matching Principles*](https://www.brics.dk/DS/02/2/BRICS-DS-02-2.pdf) | Primary source for Proposition 4.1, the explicit all-size width-`n`, `2^{O(n log n)}` resolution construction for ordinary PHP(n+1,n), which is independently generated and replayed in `resolution_width_lab`. |
 | [Cai, Guo and Williams, *A note on the complexity of counting perfect matchings*](https://arxiv.org/abs/1307.7430) | Matchgate/holographic basis and product-type obstruction context. The exact theorem used here is cited in `simultaneous_basis_lab/THEOREM.md`. |
 | [Jia et al., *The minimum distance problem for regular LDPC codes is NP-complete*](https://arxiv.org/abs/2606.23161) | Current preprint used for the regular-LDPC boundary audit; the finite replays do not replace its all-size proof. |
+| [Reed, *A class of multiple-error-correcting codes and the decoding scheme*](https://doi.org/10.1109/TIT.1954.1057465) | Original Reed--Muller construction; the explicit RM(s,2s+1) local-marginal certificate proves the parameter identities used in this repository. |
+| [MIT OpenCourseWare, *Essential Coding Theory, Lecture 5*](https://ocw.mit.edu/courses/6-895-essential-coding-theory-fall-2004/resources/lect05slx4/) | Independent public coding-theory reference for Reed--Muller construction and distance context. |
 | [Vohra, *The Vohra Duality: A Polynomial-Time Algebraic Framework Proving P=NP*](https://doi.org/10.1109/ASSIC70037.2026.11717448) | Public claim logged for audit only. The paper was not available in full through the access paths checked, so the claim remains unverified. |
 
 The repository also preserves the source links for coding theory, holographic

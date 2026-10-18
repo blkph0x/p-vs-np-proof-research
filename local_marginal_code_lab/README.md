@@ -15,8 +15,17 @@ for multiples of 16, forcing the same local witness through level `n/16-2`.
 The arithmetic replay covers lengths 32 through 1024 and makes no deterministic
 code-family claim.
 
+The deterministic follow-up in
+[`REED_MULLER_THEOREM.md`](REED_MULLER_THEOREM.md) closes that family-design
+gap with the self-dual `RM(s,2s+1)` codes. The saved producer and independent
+reviewer cover `RM(1,3)`, `RM(2,5)`, and theorem-backed `RM(3,7)`; mutation
+controls reject forged rows, witnesses, dual bases, and level fields.
+
 ```text
 python -m unittest discover -v
 python run_experiments.py
 python INDEPENDENT_REVIEW.py
+python run_reed_muller.py
+python REED_MULLER_INDEPENDENT_REVIEW.py
+python -m unittest -v test_reed_muller.py
 ```

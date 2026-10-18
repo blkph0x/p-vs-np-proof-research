@@ -62,6 +62,12 @@ jobs:
         run: |
           python run_sequential_counter.py
           python review_sequential_counter.py
+      - name: Replay deterministic Reed-Muller local-marginal audit
+        working-directory: local_marginal_code_lab
+        run: |
+          python run_reed_muller.py
+          python REED_MULLER_INDEPENDENT_REVIEW.py
+          python -m unittest -v test_local_marginal.py test_reed_muller.py
       - name: Run the self-contained full audit
         run: |
           set +e
