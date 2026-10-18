@@ -2,12 +2,12 @@
   "file_count": 810,
   "files": {
     ".gitattributes": {
-      "bytes": 79,
-      "sha256": "fc1fa3f125ff51b579d406489a74916bcd82c9cdae4ccf417c9b1ec89a82361a"
+      "bytes": 408,
+      "sha256": "2c03a2192bf6d867bbffefa754d8d7e4ad47d21d1d9f01de0ae4d6326d68e4ce"
     },
     ".github/workflows/research-checks.yml": {
-      "bytes": 674,
-      "sha256": "f736518e5d43b8496a1dc7c374646ce195c9c421d2f59bc6877058d23624bdba"
+      "bytes": 834,
+      "sha256": "2c77c25042a6d578e842b3d85673239f29a5548454ecbe663f0d9bae503e7065"
     },
     ".gitignore": {
       "bytes": 415,
@@ -3242,6 +3242,6 @@
       "sha256": "90fa27af09e557b617f93d4332af36dd50d17c0777e5e9dd3c23c9df57d6a0ee"
     }
   },
-  "generated_at_utc": "2026-10-18T11:34:17.798797+00:00",
-  "source_commit": "e441762bf508bc01a6265fc481a9d30be598c663"
+  "generated_at_utc": "2026-10-18T11:42:19.254692+00:00",
+  "source_commit": "3864915aecec44c74e4ab7137f1673160d33a398"
 }
