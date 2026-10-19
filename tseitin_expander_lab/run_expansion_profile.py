@@ -30,13 +30,13 @@ def report(rows):
         "# Tseitin exact expansion profiles",
         "",
         "For each connected cubic graph, this artifact enumerates every nonempty",
-        "vertex subset through size floor(n/2). `N(S)` is the open neighborhood",
-        "of `S`, and the saved ratio is `|N(S)|/|S|`. The profile records the",
-        "minimum at every subset size, the global minimum, and an explicit",
+        "vertex subset through size floor(n/2). It records both the open",
+        "neighborhood `N(S)` and the external neighborhood `N(S)\\S`, with the",
+        "exact ratio at every subset size, the global minimum, and an explicit",
         "lexicographically first witness. `review_expansion_profile.py` rebuilds",
         "the graph family and recomputes every value independently.",
         "",
-        "| graph | vertices | global epsilon | global witness size | subsets checked |",
+        "| graph | vertices | open epsilon | external epsilon | subsets checked |",
         "| --- | ---: | ---: | ---: | ---: |",
     ]
     for row in rows:
@@ -44,15 +44,18 @@ def report(rows):
         lines.append(
             f"| {row['name']} | {row['vertices']} | "
             f"{profile['epsilon_numerator']}/{profile['epsilon_denominator']} | "
-            f"{len(profile['witness']['vertices'])} | {profile['subsets_checked']} |"
+            f"{row['external_profile']['epsilon_numerator']}/"
+            f"{row['external_profile']['epsilon_denominator']} | "
+            f"{profile['subsets_checked']} |"
         )
     lines += [
         "",
-        "This is an exact finite graph certificate, not a claim that the saved",
-        "Möbius ladders form a uniform expander family. The profile is recorded",
-        "to make the graph property visible alongside the proof-producing CDCL",
-        "measurements. No resolution lower bound or P-versus-NP conclusion is",
-        "inferred from these ratios alone.",
+        "This is an exact finite graph certificate. The external ratios make the",
+        "boundary explicit: the saved Möbius-ladder values decline to 2/5 at",
+        "20 vertices, so these rows are not evidence for a standard uniform",
+        "external-expander family. The profile is recorded alongside the",
+        "proof-producing CDCL measurements; no resolution lower bound or",
+        "P-versus-NP conclusion is inferred from these ratios alone.",
         "",
     ]
     return "\n".join(lines)
@@ -69,6 +72,7 @@ def main():
             "edges": [list(edge) for edge in edges],
             "family": control.get("family", "named_control"),
             "profile": tseitin.expansion_profile(control["n"], edges),
+            "external_profile": tseitin.external_expansion_profile(control["n"], edges),
         })
     output = {
         "format": "tseitin-exact-expansion-v1",

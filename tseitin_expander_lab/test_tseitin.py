@@ -87,6 +87,16 @@ class TseitinTests(unittest.TestCase):
         for saved, expected in zip(artifact["rows"], controls):
             self.assertEqual(saved["name"], expected["name"])
             self.assertEqual(saved["profile"], exact_profile(saved["vertices"], saved["edges"]))
+            self.assertEqual(
+                saved["external_profile"],
+                exact_profile(saved["vertices"], saved["edges"], external=True),
+            )
+
+    def test_external_profile_exposes_ladder_boundary(self):
+        artifact = json.loads((HERE / "EXPANSION_RESULTS.json").read_text(encoding="utf-8"))
+        row = next(row for row in artifact["rows"] if row["name"] == "mobius_ladder_20")
+        self.assertEqual(row["external_profile"]["epsilon_numerator"], 2)
+        self.assertEqual(row["external_profile"]["epsilon_denominator"], 5)
 
     def test_expansion_profile_mutation_changes_certificate(self):
         control = expected_controls()[0]

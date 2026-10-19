@@ -6,11 +6,12 @@ connected cubic graphs plus a deterministic Möbius-ladder sweep with sizes
 result, and a second replay that rebuilds both the encoding and the resolution
 trace.
 
-The companion `EXPANSION_RESULTS.json` artifact exactly enumerates open-
-neighborhood expansion through half-size vertex sets for the same twelve
+The companion `EXPANSION_RESULTS.json` artifact exactly enumerates both open
+and external neighborhoods through half-size vertex sets for the same twelve
 graphs. `review_expansion_profile.py` independently rebuilds the named graph
-family and checks every saved ratio and witness. This records finite graph
-structure beside the solver traces; it is not an asymptotic expander theorem.
+family and checks every saved ratio and witness. The external ratio reaches
+`2/5` on the 20-vertex ladder, so the artifact makes clear that this sweep is
+not a standard uniform-expander theorem.
 
 The experiment is a finite solver and proof-complexity control. The ladder
 conflict counts are measurements of this fixed decision policy; they are not

@@ -53,7 +53,7 @@ def normalize(n, edges):
     return normalized
 
 
-def exact_profile(n, edges):
+def exact_profile(n, edges, *, external=False):
     edges = normalize(n, edges)
     adjacency = [0] * n
     for u, v in edges:
@@ -74,6 +74,8 @@ def exact_profile(n, edges):
                 bit = remaining & -remaining
                 neighborhood |= adjacency[bit.bit_length() - 1]
                 remaining ^= bit
+            if external:
+                neighborhood &= ~subset
             count = neighborhood.bit_count()
             subsets_checked += 1
             if best_count is None or count < best_count:
@@ -116,7 +118,10 @@ def main():
         assert normalize(expected["n"], saved["edges"]) == normalize(expected["n"], expected["edges"])
         assert saved["family"] == expected.get("family", "named_control")
         recomputed = exact_profile(saved["vertices"], saved["edges"])
-        assert saved["profile"] == recomputed
+        assert saved["profile"] == exact_profile(saved["vertices"], saved["edges"])
+        assert saved["external_profile"] == exact_profile(
+            saved["vertices"], saved["edges"], external=True
+        )
         assert saved["profile"]["maximum_degree"] == 3
         expected_count = sum(comb(saved["vertices"], size)
                              for size in range(1, saved["vertices"] // 2 + 1))

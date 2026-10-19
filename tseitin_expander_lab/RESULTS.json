@@ -40,7 +40,7 @@
       "status": "UNSAT",
       "family": "named_control",
       "proof_events": 24,
-      "elapsed_seconds": 0.006164900027215481,
+      "elapsed_seconds": 0.0061575002036988735,
       "stats": {
         "decisions": 23,
         "boolean_props": 147,
@@ -95,7 +95,7 @@
       "status": "UNSAT",
       "family": "named_control",
       "proof_events": 48,
-      "elapsed_seconds": 0.019129000138491392,
+      "elapsed_seconds": 0.019187300000339746,
       "stats": {
         "decisions": 47,
         "boolean_props": 347,
@@ -160,7 +160,7 @@
       "status": "UNSAT",
       "family": "named_control",
       "proof_events": 128,
-      "elapsed_seconds": 0.1009603999555111,
+      "elapsed_seconds": 0.09926729975268245,
       "stats": {
         "decisions": 127,
         "boolean_props": 1243,
@@ -230,7 +230,7 @@
       "status": "UNSAT",
       "family": "named_control",
       "proof_events": 160,
-      "elapsed_seconds": 0.163183500058949,
+      "elapsed_seconds": 0.15984710026532412,
       "stats": {
         "decisions": 159,
         "boolean_props": 1787,
@@ -275,7 +275,7 @@
       "status": "UNSAT",
       "family": "mobius_ladder",
       "proof_events": 16,
-      "elapsed_seconds": 0.0027290997095406055,
+      "elapsed_seconds": 0.0026720003224909306,
       "stats": {
         "decisions": 15,
         "boolean_props": 75,
@@ -325,7 +325,7 @@
       "status": "UNSAT",
       "family": "mobius_ladder",
       "proof_events": 32,
-      "elapsed_seconds": 0.007689299993216991,
+      "elapsed_seconds": 0.0075820996426045895,
       "stats": {
         "decisions": 31,
         "boolean_props": 187,
@@ -380,7 +380,7 @@
       "status": "UNSAT",
       "family": "mobius_ladder",
       "proof_events": 64,
-      "elapsed_seconds": 0.021651399787515402,
+      "elapsed_seconds": 0.021289699710905552,
       "stats": {
         "decisions": 63,
         "boolean_props": 443,
@@ -440,7 +440,7 @@
       "status": "UNSAT",
       "family": "mobius_ladder",
       "proof_events": 128,
-      "elapsed_seconds": 0.060084199998527765,
+      "elapsed_seconds": 0.05903849983587861,
       "stats": {
         "decisions": 127,
         "boolean_props": 1019,
@@ -505,7 +505,7 @@
       "status": "UNSAT",
       "family": "mobius_ladder",
       "proof_events": 256,
-      "elapsed_seconds": 0.17607309995219111,
+      "elapsed_seconds": 0.17426359979435802,
       "stats": {
         "decisions": 255,
         "boolean_props": 2299,
@@ -575,7 +575,7 @@
       "status": "UNSAT",
       "family": "mobius_ladder",
       "proof_events": 512,
-      "elapsed_seconds": 0.5724851000122726,
+      "elapsed_seconds": 0.5566080003045499,
       "stats": {
         "decisions": 511,
         "boolean_props": 5115,
@@ -650,7 +650,7 @@
       "status": "UNSAT",
       "family": "mobius_ladder",
       "proof_events": 1024,
-      "elapsed_seconds": 1.932618800085038,
+      "elapsed_seconds": 1.8948848997242749,
       "stats": {
         "decisions": 1023,
         "boolean_props": 11259,
@@ -730,7 +730,7 @@
       "status": "UNSAT",
       "family": "mobius_ladder",
       "proof_events": 2048,
-      "elapsed_seconds": 6.935537399724126,
+      "elapsed_seconds": 6.864623300265521,
       "stats": {
         "decisions": 2047,
         "boolean_props": 24571,
@@ -744,11 +744,11 @@
   ],
   "all_cases_unsat": true,
   "source_sha256": {
-    "tseitin_expander_lab/tseitin.py": "67bbaeba96d28ef58ff6ce09a98a9fa7a871fc9d7e7eb9331314d25d6108781e",
+    "tseitin_expander_lab/tseitin.py": "d80cad97c142e2a7473dc3dff891eab23e0d6319e28632c826f16ee119f4b1a6",
     "tseitin_expander_lab/run_experiments.py": "bf2f035621f5d0c8be332d6dda6d2035eda4b9dbec9217fc19c3a3a450cd7ba3",
     "tseitin_expander_lab/INDEPENDENT_REVIEW.py": "da13f6aa25dd6c7cb65551e7659fb4de95d665b64a6da4232c0274e0ee6bafe2",
-    "tseitin_expander_lab/test_tseitin.py": "a467f3c3c4819c187633c1433581c1e69cdfc0037e48aca79dc66339a9a4759d",
-    "tseitin_expander_lab/THEOREM.md": "e091cd1ef252ced179a42acc6c08183d480054f1181ca6c96a2036b7a94afd9a",
+    "tseitin_expander_lab/test_tseitin.py": "ff571291f1ac6434cf1d5fed196f9c92976306b3d8260f4a7a0eb75763bee25c",
+    "tseitin_expander_lab/THEOREM.md": "6294ef74f50b7cb405a962371648e1d7d9f40cb5a9491fc94d47587f6e4d3aa7",
     "proof_producing_cdcl_lab/cdcl.py": "4740cc51c6ea0f13f777351ab7fdb19ae3e5eb4ae099274868e18c84846ad57f"
   },
   "scope": "finite odd-charge Tseitin controls; not an all-size resolution lower-bound proof"

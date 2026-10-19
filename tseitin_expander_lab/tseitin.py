@@ -95,14 +95,15 @@ def parity_certificate(n, edges, charges):
     }
 
 
-def expansion_profile(n, edges):
-    """Enumerate exact open-neighborhood expansion through half-size sets.
+def _expansion_profile(n, edges, *, external):
+    """Enumerate one exact neighborhood profile through half-size sets.
 
-    For a nonempty vertex set S, N(S) is the union of the open neighborhoods
-    of vertices in S.  The profile records the minimum |N(S)|/|S| for every
-    size through floor(n/2), plus the global minimum and its first
-    lexicographic witness.  This is a finite graph certificate only; it makes
-    no inference about resolution size or arbitrary SAT algorithms.
+    With ``external=False``, N(S) is the union of the open neighborhoods of
+    vertices in S. With ``external=True``, vertices of S are removed from that
+    union. The profile records the minimum ratio for every size through
+    floor(n/2), plus the global minimum and its first lexicographic witness.
+    This is a finite graph certificate only; it makes no inference about
+    resolution size or arbitrary SAT algorithms.
     """
     edges = normalize_edges(n, edges)
     adjacency = [0] * n
@@ -126,6 +127,8 @@ def expansion_profile(n, edges):
                 bit = remaining & -remaining
                 neighborhood |= adjacency[bit.bit_length() - 1]
                 remaining ^= bit
+            if external:
+                neighborhood &= ~subset
             count = neighborhood.bit_count()
             subsets_checked += 1
             if best_count is None or count < best_count:
@@ -155,6 +158,16 @@ def expansion_profile(n, edges):
         "subsets_checked": subsets_checked,
         "maximum_degree": max(map(int.bit_count, adjacency)),
     }
+
+
+def expansion_profile(n, edges):
+    """Enumerate the open-neighborhood profile used by the semantic controls."""
+    return _expansion_profile(n, edges, external=False)
+
+
+def external_expansion_profile(n, edges):
+    """Enumerate the standard outside-the-set neighborhood profile."""
+    return _expansion_profile(n, edges, external=True)
 
 
 def local_parity_satisfied(bits, target):

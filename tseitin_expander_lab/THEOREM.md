@@ -33,12 +33,15 @@ lower bounds on every SAT algorithm and not a resolution of P versus NP.
 
 The companion [`EXPANSION_RESULTS.json`](EXPANSION_RESULTS.json) is a separate
 finite graph certificate. It enumerates every nonempty vertex subset through
-size `floor(n/2)` and records the exact open-neighborhood ratio `|N(S)|/|S|`
-for each subset size, its witness, and the global minimum. The independent
+size `floor(n/2)` and records both the open-neighborhood ratio `|N(S)|/|S|`
+and the external-neighborhood ratio `|N(S)\\S|/|S|` for each subset size,
+their witnesses, and their global minima. The independent
 [`review_expansion_profile.py`](review_expansion_profile.py) rebuilds the graph
 family and recomputes the profile without importing the producer's helper.
-These ratios document the saved graphs; they do not by themselves imply a
-resolution lower bound or an asymptotic expander family.
+The external ratios decline to `2/5` on the saved 20-vertex Möbius ladder,
+which explicitly rules out reading this finite sweep as evidence for a
+standard uniform external-expander family. Neither ratio by itself implies a
+resolution lower bound or a P-versus-NP result.
 
 Run the campaign from this directory:
 
