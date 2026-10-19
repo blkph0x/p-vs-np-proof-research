@@ -1,0 +1,13 @@
+{
+  "dual_lower_bound": "64263/10000",
+  "dual_objective": "983398195747256721400419/153027121820069630875000",
+  "primal_upper_bound": "7037/1095",
+  "reduced_cost_minimum": "280893295569599/140538273453549500000",
+  "row_orbits": 27926,
+  "scope": "Independent arithmetic replay of the saved quotient; source construction is checked by the full-level reviewer.",
+  "source_matrix": "REED_MULLER_LEVEL_D_FULL_RESULTS.json",
+  "status": "BRACKETED_NOT_EXACT",
+  "unresolved_gap": "403/2190000",
+  "valid": true,
+  "variable_orbits": 2174
+}

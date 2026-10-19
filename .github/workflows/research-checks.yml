@@ -109,6 +109,12 @@ jobs:
           python run_reed_muller_sos_moment.py
           python REED_MULLER_SOS_MOMENT_INDEPENDENT_REVIEW.py
           python -m unittest -v test_reed_muller_sos_moment.py
+      - name: Replay SOS-strengthened RM(2,5) bracket
+        working-directory: local_marginal_code_lab
+        run: |
+          python run_reed_muller_sos_strengthened.py
+          python REED_MULLER_SOS_STRENGTHENED_INDEPENDENT_REVIEW.py
+          python -m unittest -v test_reed_muller_sos_strengthened.py
       - name: Run the self-contained full audit
         run: |
           set +e

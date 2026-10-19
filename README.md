@@ -17,7 +17,7 @@
 - Use [`CITATIONS.md`](CITATIONS.md) and [`PUBLIC_SOURCES.md`](PUBLIC_SOURCES.md)
   for public sources and the reports that use them.
 - Follow [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) to replay the checks from a
-  fresh checkout. The current frozen run has 464 passing methods across 46
+  fresh checkout. The current frozen run has 471 passing methods across 47
   suites; the full audit is intentionally separate from the lighter continuous
   integration checks, and all of its suite dependencies are included in this
   repository.
@@ -695,7 +695,10 @@ The follow-up [SOS moment audit](local_marginal_code_lab/REED_MULLER_SOS_MOMENT_
 finds a valid degree-two Boolean square that the level-eight witness violates:
 for `t = sum_{p != 0} x_p`, `(5t-31)^2` has exact pseudo-expectation `-992/7`
 (`-992/175` after scaling). This exposes a missing global moment constraint in
-the local-marginal relaxation. The result is a finite cut discovery, not a
+the local-marginal relaxation. Adding that cut yields the independently
+replayed finite bracket in the [SOS-strengthened report](local_marginal_code_lab/REED_MULLER_SOS_STRENGTHENED_REPORT.md):
+`64263/10000 <= optimum <= 7037/1095`, with gap `403/2190000` and status
+`BRACKETED_NOT_EXACT`. The result is a finite hierarchy checkpoint, not a
 general SAT lower bound or a P-versus-NP result.
 
 The [adaptive fragment synthesis report](ADAPTIVE_FRAGMENT_SYNTHESIS_REPORT.md)

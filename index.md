@@ -21,7 +21,7 @@ stated structural families, finite exhaustive controls, certificate verifiers,
 and scoped counterexamples. It does not claim a solver for every SAT instance
 or a lower bound against every polynomial algorithm.
 
-The latest recorded full audit passed **46 suites and 464 test methods** with
+The latest recorded full audit passed **47 suites and 471 test methods** with
 unchanged source hashes. These are reproducibility results for the checked
 finite cases, not a solution to the open problem.
 
@@ -106,6 +106,13 @@ then supplies an exact finite separation: the valid Boolean square
 `(5t-31)^2`, with `t` the nonpin Hamming weight, evaluates to `-992/7` on
 the fractional witness. This identifies a missing global moment constraint;
 it is not a general SAT or P-versus-NP result.
+
+Adding that cut to the full level-eight model now has an exact finite bracket:
+the saved primal gives `7037/1095`, while the saved dual certifies at least
+`64263/10000`, leaving the explicit gap `403/2190000`. The
+[SOS-strengthened replay](local_marginal_code_lab/REED_MULLER_SOS_STRENGTHENED_REPORT.md)
+keeps this status `BRACKETED_NOT_EXACT`; it does not promote a finite
+relaxation bound into a general SAT or P-versus-NP claim.
 
 ## Runtime scaling notebook
 
