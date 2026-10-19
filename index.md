@@ -21,7 +21,7 @@ stated structural families, finite exhaustive controls, certificate verifiers,
 and scoped counterexamples. It does not claim a solver for every SAT instance
 or a lower bound against every polynomial algorithm.
 
-The latest recorded full audit passed **45 suites and 460 test methods** with
+The latest recorded full audit passed **46 suites and 464 test methods** with
 unchanged source hashes. These are reproducibility results for the checked
 finite cases, not a solution to the open problem.
 
@@ -100,6 +100,12 @@ Its independently checked 2,174-orbit quotient has the matching optimum
 `31/5`; the pinned integer optimum is eight. This closes the finite value of
 the stated RM(2,5) relaxation while leaving general SAT and P versus NP
 unresolved.
+
+The [SOS moment audit](local_marginal_code_lab/REED_MULLER_SOS_MOMENT_INDEPENDENT_REVIEW.md)
+then supplies an exact finite separation: the valid Boolean square
+`(5t-31)^2`, with `t` the nonpin Hamming weight, evaluates to `-992/7` on
+the fractional witness. This identifies a missing global moment constraint;
+it is not a general SAT or P-versus-NP result.
 
 ## Runtime scaling notebook
 

@@ -17,7 +17,7 @@
 - Use [`CITATIONS.md`](CITATIONS.md) and [`PUBLIC_SOURCES.md`](PUBLIC_SOURCES.md)
   for public sources and the reports that use them.
 - Follow [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) to replay the checks from a
-  fresh checkout. The current frozen run has 460 passing methods across 45
+  fresh checkout. The current frozen run has 464 passing methods across 46
   suites; the full audit is intentionally separate from the lighter continuous
   integration checks, and all of its suite dependencies are included in this
   repository.
@@ -690,6 +690,13 @@ projection support, and every containment marginal. Its independently checked
 optimum is eight, giving a finite ratio `40/31`. This closes the value of the
 stated finite relaxation only; it is not a general SAT solver or a P-versus-NP
 result.
+
+The follow-up [SOS moment audit](local_marginal_code_lab/REED_MULLER_SOS_MOMENT_INDEPENDENT_REVIEW.md)
+finds a valid degree-two Boolean square that the level-eight witness violates:
+for `t = sum_{p != 0} x_p`, `(5t-31)^2` has exact pseudo-expectation `-992/7`
+(`-992/175` after scaling). This exposes a missing global moment constraint in
+the local-marginal relaxation. The result is a finite cut discovery, not a
+general SAT lower bound or a P-versus-NP result.
 
 The [adaptive fragment synthesis report](ADAPTIVE_FRAGMENT_SYNTHESIS_REPORT.md)
 adds an independent cross-check of the bounded proof-language experiment. A bounded projector existentially

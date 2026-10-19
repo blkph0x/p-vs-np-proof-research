@@ -455,6 +455,13 @@ integer optimum is eight (ratio `40/31`). This closes the value of this
 representation-specific relaxation while leaving arbitrary SAT and P versus
 NP unresolved.
 
+The next SOS moment audit exposes a precise missing constraint in that finite
+relaxation. For the nonpin weight `t`, the Boolean square `(5t-31)^2` is at
+least one on every assignment, yet its exact pseudo-expectation under the
+`31/5` witness is `-992/7`. The cut is independently replayed and mutation
+checked. It guides a future moment-strengthened hierarchy while making no
+claim about a general SAT algorithm or a P-versus-NP lower bound.
+
 ## Separate general direction: stronger global constraints
 
 Any proposed relaxation must be tested first against the exact Golay witness

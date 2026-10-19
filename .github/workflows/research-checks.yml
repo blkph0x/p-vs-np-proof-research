@@ -103,6 +103,12 @@ jobs:
           python run_reed_muller_level_d_full.py
           python REED_MULLER_LEVEL_D_FULL_INDEPENDENT_REVIEW.py
           python -m unittest -v test_reed_muller_level_d_full.py
+      - name: Replay RM(2,5) SOS moment separation
+        working-directory: local_marginal_code_lab
+        run: |
+          python run_reed_muller_sos_moment.py
+          python REED_MULLER_SOS_MOMENT_INDEPENDENT_REVIEW.py
+          python -m unittest -v test_reed_muller_sos_moment.py
       - name: Run the self-contained full audit
         run: |
           set +e

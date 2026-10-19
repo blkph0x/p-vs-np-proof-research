@@ -67,6 +67,14 @@ rows; an independently replayed rational primal gives the matching value
 This remains a result about the stated relaxation, not a general SAT solver
 or a P-versus-NP resolution.
 
+The [SOS moment audit](REED_MULLER_SOS_MOMENT_INDEPENDENT_REVIEW.md) gives the
+next exact boundary. Writing `t` for the nonpin Hamming weight, every Boolean
+assignment satisfies `(5t-31)^2 >= 0`, but the full level-eight witness has
+expectation `-992/7` (or `-992/175` after dividing by 25). The independent
+replay checks the exact singleton and pair moments, all 32 possible counts,
+and mutation rejection. This is a valid global cut for the finite relaxation,
+not a universal SAT method.
+
 ```text
 python -m unittest discover -v
 python run_experiments.py

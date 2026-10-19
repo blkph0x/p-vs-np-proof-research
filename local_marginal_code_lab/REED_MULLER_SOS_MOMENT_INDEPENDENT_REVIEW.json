@@ -1,0 +1,12 @@
+{
+  "adversarial_controls": {
+    "boolean_control": true,
+    "moment": true
+  },
+  "boolean_minimum_scaled_square": 1,
+  "pair_moment": "1/35",
+  "scaled_square_expectation": "-992/7",
+  "singleton_moment": "1/5",
+  "square_expectation": "-992/175",
+  "valid": true
+}
