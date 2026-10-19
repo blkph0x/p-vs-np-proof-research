@@ -306,8 +306,8 @@
       "sha256": "7401f5cf6b946a82cec459cbaf5a62cb4b5237b8f96501e7f0496a3efc662683"
     },
     "METHOD_INDEX.md": {
-      "bytes": 24862,
-      "sha256": "0aacb74d9dec2de09ed70e41fcf0c74210c1b4364f16955bde315359fb2e8148"
+      "bytes": 25009,
+      "sha256": "897c0b3c6527994f36cfbb12a977f9fa48ffd21f42cbd4a7860fdd2c38968e74"
     },
     "NATIVE_RESULTS.csv": {
       "bytes": 11436,
@@ -390,8 +390,8 @@
       "sha256": "7e117ca0cba042bfb769e2536ee974d2a4d4d6c244ce988482afd4339aae9de9"
     },
     "REFEREE_RESPONSE_2026_10_20.md": {
-      "bytes": 5248,
-      "sha256": "cb467ac03bc9964fc000a298f87ea6ff8751246e08f57469f5facdfffda93d5e"
+      "bytes": 5577,
+      "sha256": "68339c8b94fecde3d47d128712800e8a884ab1c4209c99605201ccfedb8e9f08"
     },
     "REGULAR_LDPC_33_LOCAL_AUDIT.json": {
       "bytes": 5015,
@@ -5134,6 +5134,6 @@
       "sha256": "957bd3b51cbf2cd06ee00f1ef47ab5c6fa8bbf1a4c281c0e67b129b027785a18"
     }
   },
-  "generated_at_utc": "2026-10-19T21:33:24.017018+00:00",
-  "source_commit": "a7e1e3bef2d560c43abb83d11ad352eadc67253b"
+  "generated_at_utc": "2026-10-19T21:35:03.772053+00:00",
+  "source_commit": "42b5566195d756258bb5f4a310aeca9d910c5648"
 }

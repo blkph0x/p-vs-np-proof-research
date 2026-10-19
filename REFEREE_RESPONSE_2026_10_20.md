@@ -38,6 +38,11 @@ additional certificates it can produce:
 
 1. Derive a compact analytical inequality from the 28-orbit affine-overlap
    dual, and test whether it has a parameterised analogue for `RM(s,2s+1)`.
+   **Finite-instance gate completed:**
+   [`REED_MULLER_AFFINE_OVERLAP_DUAL_NOTE.md`](local_marginal_code_lab/REED_MULLER_AFFINE_OVERLAP_DUAL_NOTE.md)
+   records the six-term positive objective-gap identity and an exact replay
+   test. A parameterised analogue remains open and is not inferred from the
+   `RM(2,5)` certificate.
 2. Compare the local-marginal model and integer-cut sequence with standard
    Sherali–Adams, Lasserre/SOS, pseudocodeword, and orthogonal-array results.
    A relationship will be stated only after its hypotheses are proved.
