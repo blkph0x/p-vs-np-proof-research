@@ -41,6 +41,13 @@ proves the exact ordinary-resolution width `n` for every PHP(n+1,n) with
 proof-complexity result, not a general SAT algorithm. The saved replay now
 extends through the complete PHP(7,6) certificate.
 
+The [odd-charge Tseitin expander campaign](tseitin_expander_lab/REPORT.md)
+adds four connected cubic graph contradictions. An exact parity certificate
+proves each CNF unsatisfiable, and an independent checker rebuilds the local
+3-CNF encoding and replays every CDCL resolution step. These are finite
+controls against the cited expansion-based resolution literature, not a new
+all-size lower bound or a P-versus-NP result.
+
 The [hidden-XOR pair audit](proof_motif_candidate_lab/INDIRECT_XOR_REPORT.md)
 also certifies one bounded auxiliary-variable step: two exact parity blocks
 sharing one variable are combined into a four-variable XOR relation, while a
