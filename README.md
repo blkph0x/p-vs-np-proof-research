@@ -707,7 +707,9 @@ The [affine-overlap replay](local_marginal_code_lab/REED_MULLER_LEVEL_D_AFFINE_O
 then adds every shared affine four-point, line, and singleton marginal. Its
 exact 28-orbit primal/dual certificate proves the selected-model optimum
 `31/5`, and therefore the same scoped lower bound for the full level-eight
-relaxation by projection.
+relaxation by projection. The [compact dual note](local_marginal_code_lab/REED_MULLER_AFFINE_OVERLAP_DUAL_NOTE.md)
+extracts a six-term positive objective-gap identity from that certificate and
+checks it by rebuilding the quotient matrix with exact rational arithmetic.
 
 The [full RM(2,5) level-eight replay](local_marginal_code_lab/REED_MULLER_LEVEL_D_FULL_REPORT.md)
 now includes every coordinate scope of size at most eight, exact pinned-code

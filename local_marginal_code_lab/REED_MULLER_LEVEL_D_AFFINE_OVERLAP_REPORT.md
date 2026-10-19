@@ -30,6 +30,20 @@ library replay reconstructs the finite geometry, all 28 and 53 orbits, every
 quotient matrix entry, the primal equations, and the dual objective without
 using an LP solver.
 
+The separate [compact dual note](REED_MULLER_AFFINE_OVERLAP_DUAL_NOTE.md)
+extracts the certificate's human-readable core. For every feasible quotient
+point, the objective gap is the positive combination
+
+```text
+objective - 31/5 =
+  (434/5) z_2 + (682/5) z_3 + (124/5) z_4
+  + (496/5) z_7 + (1736/5) z_8 + 248 z_9 >= 0.
+```
+
+The accompanying test reconstructs the quotient matrix and checks this exact
+identity with rational arithmetic; it is not a decimal fit or a claim about
+an unbounded hierarchy.
+
 For the integral comparison, an integral table forces even parity on every
 affine 3-flat. The 620 flat-incidence vectors have binary rank 16, so their
 orthogonal space is exactly the 16-dimensional `RM(2,5)` code. Conditioning

@@ -136,7 +136,9 @@ then includes every scope through size eight and exact pinned-code support.
 Its independently checked 2,174-orbit quotient has the matching optimum
 `31/5`; the pinned integer optimum is eight. This closes the finite value of
 the stated RM(2,5) relaxation while leaving general SAT and P versus NP
-unresolved.
+unresolved. The [compact dual note](local_marginal_code_lab/REED_MULLER_AFFINE_OVERLAP_DUAL_NOTE.md)
+also exposes the selected-model lower bound as a six-term positive objective-gap
+identity checked with exact rational arithmetic.
 
 The [SOS moment audit](local_marginal_code_lab/REED_MULLER_SOS_MOMENT_INDEPENDENT_REVIEW.md)
 then supplies an exact finite separation: the valid Boolean square

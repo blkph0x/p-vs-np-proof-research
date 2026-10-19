@@ -62,7 +62,10 @@ adds every shared affine four-point flat, line, and singleton marginal to
 those 620 eight-point tables. Its 28-variable-orbit quotient has an exact
 primal/dual optimum `31/5`, improving the lower bound for the full level-eight
 relaxation to `31/5`. The independent replay reconstructs the quotient and
-reduced costs without an LP solver.
+reduced costs without an LP solver. The companion
+[compact dual note](REED_MULLER_AFFINE_OVERLAP_DUAL_NOTE.md) turns the saved
+dual into a six-term positive objective-gap identity and the adversarial test
+reconstructs that identity with exact rational arithmetic.
 
 The [full level-eight report](REED_MULLER_LEVEL_D_FULL_REPORT.md) now closes
 the finite arbitrary-scope case for this RM(2,5) model. It includes every
