@@ -25,7 +25,7 @@ python run_research_checks.py
 ```
 
 The command regenerates `TEST_OUTPUT.txt` and `TEST_SUMMARY.json`, then checks
-all registered suites. The current checkpoint passes 52 suites and 522 methods
+all registered suites. The current checkpoint passes 53 suites and 532 methods
 with unchanged source hashes. A full run can take several
 minutes because it includes exhaustive finite controls and native rank checks.
 
