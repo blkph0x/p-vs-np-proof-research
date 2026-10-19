@@ -58,7 +58,7 @@ Indexed URLs: **73**.
 | <https://link.springer.com/chapter/10.1007/978-1-4684-2001-2_9> | `PUBLIC_SOURCES.md`, `multiobjective_matching_limits/THEOREM.md` |
 | <https://ocw.mit.edu/courses/6-895-essential-coding-theory-fall-2004/resources/lect05slx4/> | `CITATIONS.md`, `PUBLIC_SOURCES.md`, `local_marginal_code_lab/REED_MULLER_ALL_DUAL_REPORT.md`, `local_marginal_code_lab/REED_MULLER_RESULTS.json`, `local_marginal_code_lab/REED_MULLER_THEOREM.md`, `local_marginal_code_lab/run_reed_muller.py` |
 | <https://pages.cs.wisc.edu/~jyc/papers/signature-thy.pdf> | `NEXT_HOLOGRAPHIC_BRIEF.md`, `PUBLIC_SOURCES.md` |
-| <https://people.inf.ethz.ch/emo/SatSem05/Papers/BensassonWidgerson01.pdf> | `CITATIONS.md`, `PUBLIC_SOURCES.md` |
+| <https://people.inf.ethz.ch/emo/SatSem05/Papers/BensassonWidgerson01.pdf> | `CITATIONS.md`, `PUBLIC_SOURCES.md`, `README.md`, `tseitin_expander_lab/REPORT.md`, `tseitin_expander_lab/THEOREM.md`, `tseitin_expander_lab/run_experiments.py` |
 | <https://proofcomplexityzoo.gitlab.io/zoo/> | `CITATIONS.md`, `PEER_AUDIT_RESPONSE_2026_10_19.md`, `PUBLIC_SOURCES.md` |
 | <https://quantum-journal.org/papers/q-2022-04-20-692/> | `AFFINE_REPRESENTATION_LITERATURE_SCOPE.md`, `PUBLIC_SOURCES.md` |
 | <https://quantum-journal.org/papers/q-2026-07-29-2179/> | `AFFINE_CANCELLATION_LITERATURE_SCOPE.md`, `PUBLIC_SOURCES.md` |

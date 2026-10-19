@@ -342,6 +342,14 @@ all-assignment campaign and preserves the injection-counting proof for the
 pigeonhole campaign. These are resolution/CDCL scaling controls, not lower
 bounds against arbitrary SAT algorithms.
 
+The [`tseitin_expander_lab`](tseitin_expander_lab/README.md) adds the
+canonical odd-charge Tseitin family on four connected cubic graphs. Its exact
+parity certificate proves every saved CNF unsatisfiable, while an independent
+program rebuilds the 3-CNF encoding and replays every CDCL resolution step.
+The finite traces connect the solver baseline to the
+[Ben-Sasson--Wigderson width-size literature](https://people.inf.ethz.ch/emo/SatSem05/Papers/BensassonWidgerson01.pdf)
+without claiming a new all-size lower bound or a P-versus-NP result.
+
 The companion [proof/frontier comparison lab](proof_complexity_frontier_lab/README.md)
 reconstructs the same all-assignment and pigeonhole rows with a supplied-order
 frontier dynamic program. It independently checks every boundary, state layer,

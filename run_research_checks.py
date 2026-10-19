@@ -27,6 +27,7 @@ def main():
               ("horn_cdclt", ROOT / "horn_cdclt_lab", ["-v", "test_lab"]),
               ("proof_producing_cdcl", ROOT / "proof_producing_cdcl_lab", ["-v", "test_cdcl"]),
               ("proof_complexity_scaling", ROOT / "proof_complexity_scaling_lab", ["-v", "test_scaling"]),
+              ("tseitin_expander", ROOT / "tseitin_expander_lab", ["-v", "test_tseitin"]),
               ("proof_complexity_frontier", ROOT / "proof_complexity_frontier_lab", ["-v", "test_frontier"]),
               ("resolution_width", ROOT / "resolution_width_lab", ["-v", "test_resolution"]),
               ("weighted_boundary", ROOT / "weighted_boundary_lab", ["-v", "test_lab"]),
