@@ -132,24 +132,9 @@ jobs:
           python run_reed_muller_sos_three_cut.py
           python REED_MULLER_SOS_THREE_CUT_INDEPENDENT_REVIEW.py
           python -m unittest -v test_reed_muller_sos_three_cut.py
-      - name: Replay four-cut SOS RM(2,5) certificate
-        working-directory: local_marginal_code_lab
-        run: |
-          python run_reed_muller_sos_four_cut.py
-          python REED_MULLER_SOS_FOUR_CUT_INDEPENDENT_REVIEW.py
-          python -m unittest -v test_reed_muller_sos_four_cut.py
-      - name: Replay five-cut SOS RM(2,5) certificate
-        working-directory: local_marginal_code_lab
-        run: |
-          python run_reed_muller_sos_five_cut.py
-          python REED_MULLER_SOS_FIVE_CUT_INDEPENDENT_REVIEW.py
-          python -m unittest -v test_reed_muller_sos_five_cut.py
-      - name: Replay six-cut SOS RM(2,5) certificate
-        working-directory: local_marginal_code_lab
-        run: |
-          python run_reed_muller_sos_six_cut.py
-          python REED_MULLER_SOS_SIX_CUT_INDEPENDENT_REVIEW.py
-          python -m unittest -v test_reed_muller_sos_six_cut.py
+      # The full audit below runs the four-, five-, and six-cut suites. Keep the
+      # newest exact replay focused here without executing those older expensive
+      # producer/reviewer pairs twice on every push.
       - name: Replay seven-cut SOS RM(2,5) certificate
         working-directory: local_marginal_code_lab
         run: |
