@@ -481,6 +481,15 @@ reduced costs replay nonnegative with zero primal-dual gap. This remains a
 finite representation-specific experiment, not a general SAT algorithm or a
 P-versus-NP proof.
 
+The next exact probe found a fourth valid integer-domain cut,
+`t(31-t)(t-3)(t-4)(t+28) >= 0`. The three-cut witness evaluates it at
+`-3248000/89`, while the four-cut replay closes the resulting finite
+relaxation at `1219047171/184149541`. The exact dual has 1,088 nonzero rows,
+all reduced costs are nonnegative, and the independent reviewer rebuilds the
+same 2,174-variable quotient without importing the producer. This is a new
+finite separation and certificate, not a general SAT algorithm or a
+P-versus-NP result.
+
 ## Separate general direction: stronger global constraints
 
 Any proposed relaxation must be tested first against the exact Golay witness

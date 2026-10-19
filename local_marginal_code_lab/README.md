@@ -79,9 +79,12 @@ The [two-cut replay](REED_MULLER_SOS_TWO_CUT_REPORT.md) adds the valid
 integer-weight polynomial `(t-6)(t-7)` and closes the finite relaxation at
 `367/57`. The [three-cut replay](REED_MULLER_SOS_THREE_CUT_REPORT.md) adds
 `(t-6)(t-7)(t-23)(t-24)`, which the two-cut witness violates by `-2400/19`,
-and closes the next finite relaxation exactly at `5231/801`. Both results have
-independent exact replays and remain scoped certificates rather than general
-SAT algorithms.
+and closes the next finite relaxation exactly at `5231/801`. The [four-cut
+replay](REED_MULLER_SOS_FOUR_CUT_REPORT.md) adds the valid integer-domain
+polynomial `t(31-t)(t-3)(t-4)(t+28)`, which the three-cut witness violates by
+`-3248000/89`, and closes the next finite relaxation exactly at
+`1219047171/184149541`. All three results have independent exact replays and
+remain scoped certificates rather than general SAT algorithms.
 
 ```text
 python -m unittest discover -v
@@ -110,4 +113,7 @@ python -m unittest -v test_reed_muller_level_d_full.py
 python run_reed_muller_sos_three_cut.py
 python REED_MULLER_SOS_THREE_CUT_INDEPENDENT_REVIEW.py
 python -m unittest -v test_reed_muller_sos_three_cut.py
+python run_reed_muller_sos_four_cut.py
+python REED_MULLER_SOS_FOUR_CUT_INDEPENDENT_REVIEW.py
+python -m unittest -v test_reed_muller_sos_four_cut.py
 ```

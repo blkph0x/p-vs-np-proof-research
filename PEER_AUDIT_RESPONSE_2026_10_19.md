@@ -29,7 +29,7 @@ finite case exact and auditable.
 The value is epistemic and operational. A second program reconstructs the
 finite geometry, scope orbits, quotient matrix, rational equations, and dual
 reduced costs without importing the producer's model builder. The one-cut,
-two-cut, and now three-cut RM(2,5) records therefore expose exact objects that
+two-cut, three-cut, and now four-cut RM(2,5) records therefore expose exact objects that
 another person can inspect or mutate. The new third-cut certificate adds the
 valid integer polynomial `(t-6)(t-7)(t-23)(t-24)`, which the two-cut witness
 evaluates at `-2400/19`, and closes the next finite relaxation at `5231/801`
@@ -56,12 +56,16 @@ current record citable while that longer-form work is absent.
 ## Corrections made in this checkpoint
 
 - Updated the site, README, report, and reproducibility date to 19 October
-  2026 and corrected the audit total to 49 suites and 492 test methods.
+  2026 and corrected the audit total to 50 suites and 502 test methods.
 - Added the exact three-cut producer, pure-standard-library independent
   reviewer, adversarial tests, report, CI replay step, and audit registration.
 - Reworded the affine-overlap and flat-star historical reports so their
   scope-specific `UNRESOLVED` fields are not mistaken for the current status
   of the later full level-eight replay.
+- Added the exact four-cut producer, independent reviewer, adversarial tests,
+  report, CI replay step, and audit registration. The new integer-domain cut
+  `t(31-t)(t-3)(t-4)(t+28)` closes the next finite relaxation at
+  `1219047171/184149541`; this remains a scoped certificate.
 - Added the three-cut result to the local lab documentation and public method
   narrative. `P versus NP remains unresolved`.
 
