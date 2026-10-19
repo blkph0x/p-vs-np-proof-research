@@ -60,7 +60,7 @@ current record citable while that longer-form work is absent.
 ## Corrections made in this checkpoint
 
 - Updated the site, README, report, and reproducibility date to 19 October
-  2026 and corrected the audit total to 53 suites and 532 test methods.
+  2026 and corrected the audit total to 54 suites and 538 test methods.
 - Added the exact three-cut producer, pure-standard-library independent
   reviewer, adversarial tests, report, CI replay step, and audit registration.
 - Reworded the affine-overlap and flat-star historical reports so their

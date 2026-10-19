@@ -19,7 +19,7 @@
 - Read [`PEER_AUDIT_RESPONSE_2026_10_19.md`](PEER_AUDIT_RESPONSE_2026_10_19.md)
   for the literature comparison, scope corrections, and current limitations.
 - Follow [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) to replay the checks from a
-  fresh checkout. The current frozen run has 532 passing methods across 53
+  fresh checkout. The current frozen run has 538 passing methods across 54
   suites; the full audit is intentionally separate from the lighter continuous
   integration checks, and all of its suite dependencies are included in this
   repository.

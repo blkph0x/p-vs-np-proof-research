@@ -1,383 +1,390 @@
 {
   "all_suites_passed": true,
   "source_unchanged_during_tests": true,
-  "started_utc": "2026-10-19T12:53:11.702896+00:00",
-  "finished_utc": "2026-10-19T13:12:47.420475+00:00",
+  "started_utc": "2026-10-19T14:18:57.715340+00:00",
+  "finished_utc": "2026-10-19T14:38:29.684341+00:00",
   "python": "3.10.10 | packaged by conda-forge | (main, Mar 24 2023, 20:00:38) [MSC v.1934 64 bit (AMD64)]",
   "suites": [
     {
       "suite": "test_adaptive_fragment_synthesis",
       "returncode": 0,
       "test_methods": 11,
-      "seconds": 0.166332199703902,
+      "seconds": 0.16517189983278513,
       "passed": true
     },
     {
       "suite": "test_all_dual_lp_barrier",
       "returncode": 0,
       "test_methods": 6,
-      "seconds": 5.1636991002596915,
+      "seconds": 5.233855600003153,
       "passed": true
     },
     {
       "suite": "test_certified_residual_quotient",
       "returncode": 0,
       "test_methods": 6,
-      "seconds": 0.13631210010498762,
+      "seconds": 0.1473392997868359,
       "passed": true
     },
     {
       "suite": "test_coefficient_complexity_barrier",
       "returncode": 0,
       "test_methods": 6,
-      "seconds": 0.3813593997620046,
+      "seconds": 0.3835172997787595,
       "passed": true
     },
     {
       "suite": "test_complete_graph_frontier_integration",
       "returncode": 0,
       "test_methods": 8,
-      "seconds": 11.65282820025459,
+      "seconds": 11.758345500100404,
       "passed": true
     },
     {
       "suite": "test_degree_three_barrier",
       "returncode": 0,
       "test_methods": 10,
-      "seconds": 0.2989415000192821,
+      "seconds": 0.30774509999901056,
       "passed": true
     },
     {
       "suite": "test_degree_two_min_distance_integration",
       "returncode": 0,
       "test_methods": 3,
-      "seconds": 0.14470629999414086,
+      "seconds": 0.14114180020987988,
       "passed": true
     },
     {
       "suite": "test_fourier_spectrum_boundary_integration",
       "returncode": 0,
       "test_methods": 7,
-      "seconds": 0.9469695999287069,
+      "seconds": 0.941884099971503,
       "passed": true
     },
     {
       "suite": "test_fwht_cost_audit",
       "returncode": 0,
       "test_methods": 2,
-      "seconds": 0.15540189994499087,
+      "seconds": 0.1613704999908805,
       "passed": true
     },
     {
       "suite": "test_indirect_ite",
       "returncode": 0,
       "test_methods": 3,
-      "seconds": 0.15681559965014458,
+      "seconds": 0.15652070008218288,
       "passed": true
     },
     {
       "suite": "test_indirect_xor",
       "returncode": 0,
       "test_methods": 3,
-      "seconds": 0.15051329974085093,
+      "seconds": 0.15629820013418794,
       "passed": true
     },
     {
       "suite": "test_macro_assisted_subdag",
       "returncode": 0,
       "test_methods": 5,
-      "seconds": 2.8382113999687135,
+      "seconds": 2.846211099997163,
       "passed": true
     },
     {
       "suite": "test_matching_certificate",
       "returncode": 0,
       "test_methods": 9,
-      "seconds": 15.770919100381434,
+      "seconds": 16.09500700002536,
       "passed": true
     },
     {
       "suite": "test_native_coset_solver",
       "returncode": 0,
       "test_methods": 13,
-      "seconds": 100.66793910041451,
+      "seconds": 100.96023199986666,
       "passed": true
     },
     {
       "suite": "test_projection_barrier",
       "returncode": 0,
       "test_methods": 7,
-      "seconds": 0.8237653998658061,
+      "seconds": 0.831476999912411,
       "passed": true
     },
     {
       "suite": "test_projection_discovery_barrier",
       "returncode": 0,
       "test_methods": 6,
-      "seconds": 0.1870709997601807,
+      "seconds": 0.18615779979154468,
       "passed": true
     },
     {
       "suite": "test_proof_portfolio_bridge",
       "returncode": 0,
       "test_methods": 5,
-      "seconds": 0.15354309976100922,
+      "seconds": 0.1509239999577403,
       "passed": true
     },
     {
       "suite": "test_quadratic_code_family_integration",
       "returncode": 0,
       "test_methods": 6,
-      "seconds": 2.1604833002202213,
+      "seconds": 2.2066514999605715,
       "passed": true
     },
     {
       "suite": "test_randomized_isolation",
       "returncode": 0,
       "test_methods": 6,
-      "seconds": 54.09225630015135,
+      "seconds": 54.245511000044644,
       "passed": true
     },
     {
       "suite": "test_rank_native_solver",
       "returncode": 0,
       "test_methods": 9,
-      "seconds": 94.86742749996483,
+      "seconds": 95.20666870009154,
       "passed": true
     },
     {
       "suite": "test_regular_ldpc_audit_integration",
       "returncode": 0,
       "test_methods": 4,
-      "seconds": 0.46005170000717044,
+      "seconds": 0.45969599997624755,
       "passed": true
     },
     {
       "suite": "test_repeated_subdag_templates",
       "returncode": 0,
       "test_methods": 7,
-      "seconds": 1.7674972997047007,
+      "seconds": 1.7822870002128184,
       "passed": true
     },
     {
       "suite": "test_residual_equivalence_barrier",
       "returncode": 0,
       "test_methods": 4,
-      "seconds": 0.14327090000733733,
+      "seconds": 0.14426840003579855,
       "passed": true
     },
     {
       "suite": "test_row_basis_discovery",
       "returncode": 0,
       "test_methods": 9,
-      "seconds": 0.367925800383091,
+      "seconds": 0.3674487001262605,
       "passed": true
     },
     {
       "suite": "test_row_basis_escape",
       "returncode": 0,
       "test_methods": 7,
-      "seconds": 0.3880935995839536,
+      "seconds": 0.4009564998559654,
       "passed": true
     },
     {
       "suite": "test_semantic_frontier_expander_integration",
       "returncode": 0,
       "test_methods": 3,
-      "seconds": 0.3374226000159979,
+      "seconds": 0.3411527001298964,
       "passed": true
     },
     {
       "suite": "test_sequential_counter",
       "returncode": 0,
       "test_methods": 4,
-      "seconds": 4.2359690996818244,
+      "seconds": 4.190062900073826,
       "passed": true
     },
     {
       "suite": "test_structural_probe",
       "returncode": 0,
       "test_methods": 9,
-      "seconds": 0.4248708998784423,
+      "seconds": 0.39683960005640984,
       "passed": true
     },
     {
       "suite": "test_symbolic_suffix_template",
       "returncode": 0,
       "test_methods": 6,
-      "seconds": 0.9387194998562336,
+      "seconds": 0.9501760001294315,
       "passed": true
     },
     {
       "suite": "test_symbolic_unit_template",
       "returncode": 0,
       "test_methods": 6,
-      "seconds": 0.34260799968615174,
+      "seconds": 0.35929910000413656,
       "passed": true
     },
     {
       "suite": "test_xor_closure",
       "returncode": 0,
       "test_methods": 3,
-      "seconds": 0.14979670010507107,
+      "seconds": 0.1531063998118043,
       "passed": true
     },
     {
       "suite": "typed_merge_planner",
       "returncode": 0,
       "test_methods": 59,
-      "seconds": 14.18688810011372,
+      "seconds": 14.176141100004315,
       "passed": true
     },
     {
       "suite": "charged_work_core",
       "returncode": 0,
       "test_methods": 21,
-      "seconds": 0.5797850000672042,
+      "seconds": 0.5779822999611497,
       "passed": true
     },
     {
       "suite": "direct_fano_core",
       "returncode": 0,
       "test_methods": 3,
-      "seconds": 0.1491586002521217,
+      "seconds": 0.1527877999469638,
       "passed": true
     },
     {
       "suite": "high_width_core",
       "returncode": 0,
       "test_methods": 9,
-      "seconds": 0.8248623996041715,
+      "seconds": 0.8328752000816166,
       "passed": true
     },
     {
       "suite": "horn_cdclt",
       "returncode": 0,
       "test_methods": 20,
-      "seconds": 12.10847339965403,
+      "seconds": 12.116095499601215,
       "passed": true
     },
     {
       "suite": "proof_producing_cdcl",
       "returncode": 0,
       "test_methods": 7,
-      "seconds": 0.20975300017744303,
+      "seconds": 0.20771150011569262,
       "passed": true
     },
     {
       "suite": "proof_complexity_scaling",
       "returncode": 0,
       "test_methods": 7,
-      "seconds": 1.018418399617076,
+      "seconds": 0.9567265999503434,
+      "passed": true
+    },
+    {
+      "suite": "tseitin_expander",
+      "returncode": 0,
+      "test_methods": 6,
+      "seconds": 0.3326838999055326,
       "passed": true
     },
     {
       "suite": "proof_complexity_frontier",
       "returncode": 0,
       "test_methods": 10,
-      "seconds": 3.9749894998967648,
+      "seconds": 3.9721274999901652,
       "passed": true
     },
     {
       "suite": "resolution_width",
       "returncode": 0,
       "test_methods": 20,
-      "seconds": 30.232604700140655,
+      "seconds": 30.074607300106436,
       "passed": true
     },
     {
       "suite": "weighted_boundary",
       "returncode": 0,
       "test_methods": 9,
-      "seconds": 0.19598550023511052,
+      "seconds": 0.20494790002703667,
       "passed": true
     },
     {
       "suite": "local_marginal_code",
       "returncode": 0,
       "test_methods": 36,
-      "seconds": 0.6820334000512958,
+      "seconds": 0.7007049997337162,
       "passed": true
     },
     {
       "suite": "local_marginal_affine_overlap",
       "returncode": 0,
       "test_methods": 7,
-      "seconds": 45.15838669985533,
+      "seconds": 44.765200700145215,
       "passed": true
     },
     {
       "suite": "local_marginal_full_level8",
       "returncode": 0,
       "test_methods": 8,
-      "seconds": 76.9454735997133,
+      "seconds": 77.27459290018305,
       "passed": true
     },
     {
       "suite": "local_marginal_sos_moment",
       "returncode": 0,
       "test_methods": 4,
-      "seconds": 0.284086300060153,
+      "seconds": 0.2589364000596106,
       "passed": true
     },
     {
       "suite": "local_marginal_sos_strengthened",
       "returncode": 0,
       "test_methods": 8,
-      "seconds": 6.9786920002661645,
+      "seconds": 6.864440999925137,
       "passed": true
     },
     {
       "suite": "local_marginal_sos_two_cut",
       "returncode": 0,
       "test_methods": 10,
-      "seconds": 8.05040830001235,
+      "seconds": 7.852586699649692,
       "passed": true
     },
     {
       "suite": "local_marginal_sos_three_cut",
       "returncode": 0,
       "test_methods": 10,
-      "seconds": 34.19382400019094,
+      "seconds": 34.118423900101334,
       "passed": true
     },
     {
       "suite": "local_marginal_sos_four_cut",
       "returncode": 0,
       "test_methods": 10,
-      "seconds": 155.9232874000445,
+      "seconds": 154.11009810026735,
       "passed": true
     },
     {
       "suite": "local_marginal_sos_five_cut",
       "returncode": 0,
       "test_methods": 10,
-      "seconds": 156.26475970027968,
+      "seconds": 154.84263909980655,
       "passed": true
     },
     {
       "suite": "local_marginal_sos_six_cut",
       "returncode": 0,
       "test_methods": 10,
-      "seconds": 155.9545108000748,
+      "seconds": 154.9070744002238,
       "passed": true
     },
     {
       "suite": "local_marginal_sos_seven_cut",
       "returncode": 0,
       "test_methods": 10,
-      "seconds": 155.92753690015525,
+      "seconds": 155.48680889979005,
       "passed": true
     },
     {
       "suite": "labelled_join_certified",
       "returncode": 0,
       "test_methods": 51,
-      "seconds": 15.292218300048262,
+      "seconds": 15.242654100060463,
       "passed": true
     }
   ],
-  "test_methods_total": 532,
+  "test_methods_total": 538,
   "implementation_sha256": {
     "overnight_research_2026_10_18/adaptive_fragment_synthesis.py": "4d4efd9818aca74e8c26842d75fb571c31b516155091b82de73843ab6c611b79",
     "overnight_research_2026_10_18/AFFINE_ONE_PIECE_RECOGNITION_REVIEW.py": "4f54e10ba9e710d18a474dda21ababada5f12320f5a0c2e0c0beeada597f372e",
@@ -556,7 +563,7 @@
     "overnight_research_2026_10_18/run_holographic_phase_checks.py": "b0c335f68cdd2ebf5df644c39a77eb98150674768aa54d08530136515d9cf175",
     "overnight_research_2026_10_18/run_native_experiments.py": "6809112ddf98a590b28700d52a63fb082c077943df9f57e44b299679311396e7",
     "overnight_research_2026_10_18/run_rank_experiments.py": "f11e49f6b30f074519eb181976e555332093b8f1003858e09c9535c440a1a4e4",
-    "overnight_research_2026_10_18/run_research_checks.py": "56538e54eb7d40622398fc9f29b6dc5436cc03af41e81298c8d31d8d97d48fb6",
+    "overnight_research_2026_10_18/run_research_checks.py": "4894d4148950ad90be70fc93e17c8aba38eb9a885ff06e5b9a125d2b53196305",
     "overnight_research_2026_10_18/run_threshold_phase_checks.py": "9a408816daf4ffacad67437142b5722b8545a861b220f24b716c362f0514352d",
     "overnight_research_2026_10_18/run_weighted_affine_crosscheck.py": "494639b8a9761c37bd11950dcba1314dc960fd06f5b8ab099c27e6a67da39ec1",
     "overnight_research_2026_10_18/save_vohra_metadata.py": "848f7ca2ac3972bf3dc795190c954ea30c598e4ae345775dfe0f2e8a04a1e1e5",
@@ -594,6 +601,10 @@
     "overnight_research_2026_10_18/test_symbolic_suffix_template.py": "8a51eb22a15dc7f18097c9869278be653c22b42b6c049ac109ef192107d7ec8a",
     "overnight_research_2026_10_18/test_symbolic_unit_template.py": "15391038d332dfd70342e206b89bd322d29fe764793b581cc8ae2ebcf09f6197",
     "overnight_research_2026_10_18/test_xor_closure.py": "955d1de2152ab122611af4f7495d4d926cdea2dc9d69e75e2554a0543ba6da85",
+    "overnight_research_2026_10_18/tseitin_expander_lab/INDEPENDENT_REVIEW.py": "c6fee7357118e7d8d4b06b6373156366a9960d059256e8bb44f0142ea18b1481",
+    "overnight_research_2026_10_18/tseitin_expander_lab/run_experiments.py": "ea2eee034bd1abfb406e7c06b0488b02b22df2a761999c234d0f639e3577d18c",
+    "overnight_research_2026_10_18/tseitin_expander_lab/test_tseitin.py": "9769ad10b00093c54776c52b4a5a7b94e33a02148b0081cc68426497a7585fba",
+    "overnight_research_2026_10_18/tseitin_expander_lab/tseitin.py": "469d85abacbfc8b26568e1a0219dffd4550acc8dc2c457df91903e804304a76f",
     "overnight_research_2026_10_18/typed_merge_planner_lab/adaptive_frontier.py": "9c741438a7a3dff9a1b0c877005429b10a2463c26159292b90b98ad862140a4e",
     "overnight_research_2026_10_18/typed_merge_planner_lab/ADAPTIVE_FRONTIER_REVIEW.py": "20df73203ae761ee9824fc3d11966e12eb458d1e70eba1c5627654272a9a0bb2",
     "overnight_research_2026_10_18/typed_merge_planner_lab/BACKDOOR_REVIEW.py": "77d91cc7ec69b4e8d170fd2bff03707d607b17c62ceb7c4f0fcf1ca730229658",
