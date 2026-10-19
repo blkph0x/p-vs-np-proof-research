@@ -1,5 +1,5 @@
 {
-  "file_count": 1284,
+  "file_count": 1286,
   "files": {
     ".gitattributes": {
       "bytes": 648,
@@ -390,8 +390,8 @@
       "sha256": "7e117ca0cba042bfb769e2536ee974d2a4d4d6c244ce988482afd4339aae9de9"
     },
     "REFEREE_RESPONSE_2026_10_20.md": {
-      "bytes": 5866,
-      "sha256": "d784463ab04f2cc82a7baed9d2fd836f864950735b1f12e92c11eacd419a2f02"
+      "bytes": 6175,
+      "sha256": "0d3d31f06a8d85788327fc956a26354f1aead91130f0bf0e5683fcf16b9291c0"
     },
     "REGULAR_LDPC_33_LOCAL_AUDIT.json": {
       "bytes": 5015,
@@ -2389,9 +2389,13 @@
       "bytes": 5622,
       "sha256": "608489e4181967b18a4c22e96413a7a4cbc06de4b04c91e5985e3a7bc0a4b06c"
     },
+    "local_marginal_code_lab/LOCAL_MARGINAL_HIERARCHY_NOTE.md": {
+      "bytes": 4044,
+      "sha256": "c59e547b5340ae4523d16fe0bd782bba4d455687d330228462df466a22ac875d"
+    },
     "local_marginal_code_lab/README.md": {
-      "bytes": 8851,
-      "sha256": "ca92bd7d6c7b842bd36275bf11a1eba53f5c9f17664784ec2ec199c7e4c0e797"
+      "bytes": 9166,
+      "sha256": "c56b70bf6ec7cb5410d48d88e8ae5dd1449f965cdb137d7033a90bf67d9c8245"
     },
     "local_marginal_code_lab/REED_MULLER_AFFINE_OVERLAP_DUAL_NOTE.md": {
       "bytes": 4118,
@@ -2844,6 +2848,10 @@
     "local_marginal_code_lab/test_local_marginal.py": {
       "bytes": 2723,
       "sha256": "cbd64e35fc3c932f7a8659ac44f8272794c157c0fd9bebefdbf3430d08887078"
+    },
+    "local_marginal_code_lab/test_local_marginal_hierarchy_note.py": {
+      "bytes": 1176,
+      "sha256": "983446e3550f87f45d1ef4ed1b39dc1207b600bdb2f10d5b64963d454fd44fe3"
     },
     "local_marginal_code_lab/test_reed_muller.py": {
       "bytes": 4013,
@@ -5138,6 +5146,6 @@
       "sha256": "957bd3b51cbf2cd06ee00f1ef47ab5c6fa8bbf1a4c281c0e67b129b027785a18"
     }
   },
-  "generated_at_utc": "2026-10-19T21:39:03.547208+00:00",
-  "source_commit": "fec21f2b446a49498be867013e9732f026757a2d"
+  "generated_at_utc": "2026-10-19T21:44:01.548639+00:00",
+  "source_commit": "d175370deb955872660b223812d7dbd1dd6f326b"
 }

@@ -45,7 +45,12 @@ additional certificates it can produce:
    `RM(2,5)` certificate.
 2. Compare the local-marginal model and integer-cut sequence with standard
    Sherali–Adams, Lasserre/SOS, pseudocodeword, and orthogonal-array results.
-   A relationship will be stated only after its hypotheses are proved.
+   **Terminology gate partially addressed:**
+   [`LOCAL_MARGINAL_HIERARCHY_NOTE.md`](local_marginal_code_lab/LOCAL_MARGINAL_HIERARCHY_NOTE.md)
+   defines the exact relation-family local polytope and gives a four-variable
+   control showing why no automatic Sherali–Adams equivalence should be
+   claimed. A formulation-specific theorem and literature comparison remain
+   open.
 3. Separate construction, discovery, and verification costs for the finite
    `RM(2,5)` certificate, including bit lengths, certificate size, memory, and
    replay time. **Partially addressed:**

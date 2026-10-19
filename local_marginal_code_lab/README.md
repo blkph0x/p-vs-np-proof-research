@@ -11,6 +11,12 @@ binary linear code. It verifies a dual-distance theorem showing that the
 deterministic unit-vector marginals survive through level `delta-2`, even when
 the true pinned codeword has much larger weight.
 
+The [hierarchy-positioning note](LOCAL_MARGINAL_HIERARCHY_NOTE.md) defines
+this polytope precisely and gives an exact four-variable control showing why
+it must not be called a standard Sherali--Adams level without specifying a
+base formulation. The comparison with named SA/Lasserre formulations remains
+an open gate.
+
 The even-parity controls enumerate all small scopes, while the Golay control
 uses the independently checked dual-distance certificate for level six
 instead of pretending to enumerate every local atom.
