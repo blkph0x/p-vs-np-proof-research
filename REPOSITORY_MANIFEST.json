@@ -306,8 +306,8 @@
       "sha256": "7401f5cf6b946a82cec459cbaf5a62cb4b5237b8f96501e7f0496a3efc662683"
     },
     "METHOD_INDEX.md": {
-      "bytes": 23327,
-      "sha256": "4600c7098a36ea2f5dafcda6259a924f41aa529c84e007988d206ca1349d727e"
+      "bytes": 23431,
+      "sha256": "4434450a3cad2b3d49e023982839fba760ffe76f0079f059db4107d1f95f528b"
     },
     "NATIVE_RESULTS.csv": {
       "bytes": 11436,
@@ -330,8 +330,8 @@
       "sha256": "8304ecc29ed6e814eeb3df1edc195d4707ff993a6cd1228bf92d4c7ed3c8c891"
     },
     "PEER_AUDIT_RESPONSE_2026_10_19.md": {
-      "bytes": 7864,
-      "sha256": "9c3f6709540507aec2cdbe4850b5adb27b41056fbcd7376cbe797de497e7f22b"
+      "bytes": 8597,
+      "sha256": "3c9804af366b6201db413092f10ccd54cab4df41c3aea825936ecb385a9cce43"
     },
     "PERTURBATION_ROUTE_REVIEW.md": {
       "bytes": 16524,
@@ -382,8 +382,8 @@
       "sha256": "631ec13d33a0045e6421133fee346759f9186117b909bdd327a954ddac826356"
     },
     "README.md": {
-      "bytes": 56200,
-      "sha256": "84fb35e5d426d7ff77e1e048b4874ff1aad0e4b6fa7d400590e8eeb2bbff4ab3"
+      "bytes": 56274,
+      "sha256": "0ff22ba811cd507fca36fcf1ae90bbca356900d73a16e3857e2c90ec23b09fb9"
     },
     "REGULAR_LDPC_33_LOCAL_AUDIT.json": {
       "bytes": 5015,
@@ -423,7 +423,7 @@
     },
     "REPRODUCIBILITY.md": {
       "bytes": 7804,
-      "sha256": "28fc5f315705142628db73b8a3e79dcf0ef2e5469c2817a2117013d2c10b8e4f"
+      "sha256": "303ba33d9a7750de5779b91b0d8886fc09cd3a8c48331f77eb948a6a01cfc627"
     },
     "RESIDUAL_EQUIVALENCE_BARRIER.json": {
       "bytes": 106347,
@@ -442,8 +442,8 @@
       "sha256": "d7d103f37e85cce87a5e236fbe90116277e0d0e76196239d73fa76b9e782fab1"
     },
     "ROADMAP.md": {
-      "bytes": 42124,
-      "sha256": "f8752f2db0ffe90f40bda1233ebcd7f9f1ac7f1ae559c42edde7447be54b7456"
+      "bytes": 42332,
+      "sha256": "7b370d4b5e7ee99516c93daa4631d3cffbe5cca2f679976c9e903277678927e7"
     },
     "ROW_BASIS_ESCAPE_RESULTS.json": {
       "bytes": 9367083,
@@ -494,12 +494,12 @@
       "sha256": "a3567d759c7f20ea1420bfbafdcc846cc2d5a5fed2b80ebee8cd98cfd1cf4255"
     },
     "TEST_OUTPUT.txt": {
-      "bytes": 60097,
-      "sha256": "366fdd230569066930527bb1e9dbba5d4a1e09a0e90e27a37964b5ce032746d0"
+      "bytes": 60190,
+      "sha256": "a4531f0a45ff35decbe9361b55d948413eea727e94a195b15e40e31c9240eb49"
     },
     "TEST_SUMMARY.json": {
-      "bytes": 51375,
-      "sha256": "1d212e5c4e17f1ce1c2baed7adf169691381005771f3cac20f73fbe5e11cc84a"
+      "bytes": 51371,
+      "sha256": "872490bca572008f477411f26a8f93317983ecdbe5823298d775f521757208ca"
     },
     "THEORY_REVIEW.md": {
       "bytes": 18223,
@@ -2150,8 +2150,8 @@
       "sha256": "ce86680f49890fe07bdb95febd996ac2fdf8b2d45cd25b7e5b8863026581c070"
     },
     "index.md": {
-      "bytes": 12982,
-      "sha256": "8371a897f96721c1b0c21fdbcb6a18f19f35700ed3e68837e8f67174bab7576a"
+      "bytes": 13056,
+      "sha256": "9ec61c82dd0a8351d0c472631df11d660a3daff8edf9199daa20e2536efb98ef"
     },
     "interval_coefficient_lab/INDEPENDENT_REVIEW.md": {
       "bytes": 7681,
@@ -4486,44 +4486,44 @@
       "sha256": "38fc7dd0372fdc1b55f3a64474c2e584c569855256a24b136f1e8653028d116a"
     },
     "tseitin_expander_lab/CERTIFICATES.json": {
-      "bytes": 1987491,
-      "sha256": "3f578bda77e607dcdaa9842000d5c06fb1d70a5abb790a38a5f996b2dfc798b6"
+      "bytes": 31216997,
+      "sha256": "2fac5218b8015ccff6c64caeab3ba0f1edc89afd6fc83e631e12b6f0231bb5e0"
     },
     "tseitin_expander_lab/INDEPENDENT_REVIEW.json": {
-      "bytes": 141,
-      "sha256": "99ccb8e4ce249f7e121692ec68c6e0f79d626cca8b0afea62309bb6f3c54c91c"
+      "bytes": 142,
+      "sha256": "e1e21bf036dcf6c727c230f8af169e000bb531053d6cf0b8199d2f9c6b524692"
     },
     "tseitin_expander_lab/INDEPENDENT_REVIEW.py": {
-      "bytes": 6104,
-      "sha256": "c6fee7357118e7d8d4b06b6373156366a9960d059256e8bb44f0142ea18b1481"
+      "bytes": 6208,
+      "sha256": "da13f6aa25dd6c7cb65551e7659fb4de95d665b64a6da4232c0274e0ee6bafe2"
     },
     "tseitin_expander_lab/README.md": {
-      "bytes": 547,
-      "sha256": "cfa42c350a1fb916e8a4ff784886eab5a206109a15574167253ce9b4be8805b9"
+      "bytes": 790,
+      "sha256": "f3f01ee2b6cbd9378360eaee9d01c915f28323d3191fd239856b0e96469e7770"
     },
     "tseitin_expander_lab/REPORT.md": {
-      "bytes": 1358,
-      "sha256": "11761cbadd4ce4ff86eb9483d267530753645286e3067885005c463c3b564ab1"
+      "bytes": 2170,
+      "sha256": "1146a61e5c428f25c93cb218db129c77a4cd123648f1a71694721457d9fc0bea"
     },
     "tseitin_expander_lab/RESULTS.json": {
-      "bytes": 5400,
-      "sha256": "b4a96f6899d3db40209888db3828f735aeba6490e55684393149909aac1b1861"
+      "bytes": 15100,
+      "sha256": "19a5369289e91040ac20ce38e9d2d2d6b5b3e1e21eb23eb010d77a5f3b22f40e"
     },
     "tseitin_expander_lab/THEOREM.md": {
-      "bytes": 1695,
-      "sha256": "e6169e54a0a38ebf88810867c017cef6efeafa5c5b096685f8fdfc55a1fe435c"
+      "bytes": 1990,
+      "sha256": "faccb07e7fc0ac14a811132c710288be87a8cc4124983e5f239d2d198b9656da"
     },
     "tseitin_expander_lab/run_experiments.py": {
-      "bytes": 4673,
-      "sha256": "ea2eee034bd1abfb406e7c06b0488b02b22df2a761999c234d0f639e3577d18c"
+      "bytes": 5153,
+      "sha256": "83a3705a8dd01b57b48394a3d8f225fa23fdc77be3470696b8b499d9c5c2a588"
     },
     "tseitin_expander_lab/test_tseitin.py": {
-      "bytes": 4278,
-      "sha256": "9769ad10b00093c54776c52b4a5a7b94e33a02148b0081cc68426497a7585fba"
+      "bytes": 4891,
+      "sha256": "6f8b7eab759b9c1a0c248f36c210027a6b6f647b80cec5e1de1b38fc66b322fa"
     },
     "tseitin_expander_lab/tseitin.py": {
-      "bytes": 4576,
-      "sha256": "469d85abacbfc8b26568e1a0219dffd4550acc8dc2c457df91903e804304a76f"
+      "bytes": 5299,
+      "sha256": "7a2e69ee40bf7944821b4dfdd9c4f0a3aa9e990f5e84b34db7338a42164e82c8"
     },
     "typed_merge_planner_lab/ADAPTIVE_FRONTIER_CERTIFICATES.json": {
       "bytes": 38857,
@@ -5070,6 +5070,6 @@
       "sha256": "957bd3b51cbf2cd06ee00f1ef47ab5c6fa8bbf1a4c281c0e67b129b027785a18"
     }
   },
-  "generated_at_utc": "2026-10-19T14:40:44.079954+00:00",
-  "source_commit": "279c47ad3903448e1840fcdb7a6f27f3e1b218cb"
+  "generated_at_utc": "2026-10-19T15:47:04.007551+00:00",
+  "source_commit": "69cb062b8adfb776e5306b2cbd53a7058944587a"
 }
