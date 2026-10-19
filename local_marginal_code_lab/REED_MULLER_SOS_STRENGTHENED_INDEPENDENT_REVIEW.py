@@ -1,4 +1,4 @@
-"""Pure-stdlib independent replay of the SOS-strengthened RM(2,5) bracket.
+"""Pure-stdlib independent replay of the SOS-strengthened RM(2,5) optimum.
 
 This checker consumes the saved full quotient matrix instead of importing the
 model builder used by the producer.  The cut vector is reconstructed from the
@@ -57,8 +57,8 @@ def replay(source: dict, certificate: dict) -> dict[str, object]:
         raise ValueError("source family or pin mismatch")
     if certificate.get("family") != "RM(2,5)" or certificate.get("pin") != 0:
         raise ValueError("certificate family or pin mismatch")
-    if certificate.get("status") != "BRACKETED_NOT_EXACT":
-        raise ValueError("the bracket must not be labelled exact")
+    if certificate.get("status") != "EXACT_OPTIMUM":
+        raise ValueError("the certificate must be labelled exact")
 
     n = int(source["variable_orbit_count"])
     row_count = int(source["row_orbit_count"])
@@ -95,6 +95,12 @@ def replay(source: dict, certificate: dict) -> dict[str, object]:
         dual[index] = Fraction(value)
     if sum(value != 0 for value in dual) != int(certificate["dual_nonzero_rows"]):
         raise ValueError("dual sparsity mismatch")
+    basis = certificate.get("dual_basis", {})
+    basis_indices = basis.get("basis_column_indices", [])
+    if (basis.get("basis_column_count") != 1890
+            or len(basis_indices) != 1890
+            or len(set(basis_indices)) != 1890):
+        raise ValueError("exact dual basis metadata mismatch")
     multiplier = Fraction(cut["dual_multiplier"])
     columns = _columns(matrix, n)
     reduced = [objective[column]
@@ -115,10 +121,10 @@ def replay(source: dict, certificate: dict) -> dict[str, object]:
     lower = Fraction(certificate["certified_lower_bound"])
     upper = Fraction(certificate["certified_upper_bound"])
     gap = Fraction(certificate["unresolved_optimum_gap"])
-    if lower != Fraction("64263/10000") or upper != Fraction("7037/1095"):
-        raise ValueError("bracket endpoints changed")
-    if dual_objective < lower or upper != primal_objective or gap != upper - lower or not lower < upper:
-        raise ValueError("invalid bracket ordering or gap")
+    if lower != Fraction("7037/1095") or upper != Fraction("7037/1095"):
+        raise ValueError("exact optimum endpoints changed")
+    if dual_objective != lower or upper != primal_objective or gap != 0:
+        raise ValueError("invalid exact primal/dual equality")
     return {
         "valid": True,
         "source_matrix": "REED_MULLER_LEVEL_D_FULL_RESULTS.json",
@@ -129,7 +135,7 @@ def replay(source: dict, certificate: dict) -> dict[str, object]:
         "dual_objective": str(dual_objective),
         "unresolved_gap": str(gap),
         "reduced_cost_minimum": str(minimum),
-        "status": "BRACKETED_NOT_EXACT",
+        "status": "EXACT_OPTIMUM",
         "scope": "Independent arithmetic replay of the saved quotient; source construction is checked by the full-level reviewer.",
     }
 
@@ -142,11 +148,11 @@ def main() -> None:
     REVIEW_MD.write_text(
         "# Independent SOS-strengthened RM(2,5) review\n\n"
         "The pure-stdlib replay accepted the saved primal and dual certificates. "
-        "It proves only the finite bracket\n\n"
+        "It proves the finite exact optimum\n\n"
         f"- dual lower bound: `{result['dual_lower_bound']}`\n"
         f"- primal upper bound: `{result['primal_upper_bound']}`\n"
         f"- unresolved gap: `{result['unresolved_gap']}`\n\n"
-        "The result remains `BRACKETED_NOT_EXACT`; it is not a SAT or P-versus-NP result.\n",
+        "The result is finite and representation-specific; it is not a SAT or P-versus-NP result.\n",
         encoding="utf-8",
     )
     print("REED_MULLER_SOS_STRENGTHENED_INDEPENDENT_PASS")

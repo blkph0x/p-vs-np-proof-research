@@ -1,9 +1,8 @@
-"""Replay the exact bracket for the SOS-strengthened RM(2,5) model.
+"""Replay the exact optimum for the SOS-strengthened RM(2,5) model.
 
 The base model is rebuilt with exact integer arithmetic.  The saved primal and
 dual values are then checked as rational certificates for the added inequality
-``E[(5t-31)^2] >= 0``.  The two certificates intentionally leave a nonzero
-interval; this runner must never turn a bracket into an exact optimum claim.
+``E[(5t-31)^2] >= 0``.  Every reduced cost is replayed as an exact fraction.
 """
 from __future__ import annotations
 
@@ -67,8 +66,8 @@ def replay() -> dict[str, str | int | bool]:
         raise ValueError("strengthened certificate schema mismatch")
     if certificate.get("family") != "RM(2,5)" or certificate.get("pin") != 0:
         raise ValueError("strengthened family or pin mismatch")
-    if certificate.get("status") != "BRACKETED_NOT_EXACT":
-        raise ValueError("the strengthened result must remain bracketed")
+    if certificate.get("status") != "EXACT_OPTIMUM":
+        raise ValueError("the strengthened result must be labelled exact")
 
     model = build_model()
     if model["variable_orbit_count"] != 2174 or model["row_orbit_count"] != 27926:
@@ -113,6 +112,12 @@ def replay() -> dict[str, str | int | bool]:
         dual[row_index] = Fraction(value)
     if sum(value != 0 for value in dual) != int(certificate["dual_nonzero_rows"]):
         raise ValueError("dual sparsity count mismatch")
+    basis = certificate.get("dual_basis", {})
+    basis_indices = basis.get("basis_column_indices", [])
+    if (basis.get("basis_column_count") != 1890
+            or len(basis_indices) != 1890
+            or len(set(basis_indices)) != 1890):
+        raise ValueError("exact dual basis metadata mismatch")
     multiplier = Fraction(cut["dual_multiplier"])
     reduced_costs = [objective_coefficients[column]
                      - sum(Fraction(coefficient) * dual[row]
@@ -133,10 +138,10 @@ def replay() -> dict[str, str | int | bool]:
     lower = Fraction(certificate["certified_lower_bound"])
     upper = Fraction(certificate["certified_upper_bound"])
     gap = Fraction(certificate["unresolved_optimum_gap"])
-    if lower != Fraction(64263, 10000) or upper != Fraction(7037, 1095):
-        raise ValueError("unexpected certified bracket")
-    if dual_objective < lower or upper != primal_objective or gap != upper - lower or not lower < upper:
-        raise ValueError("invalid certified bracket")
+    if lower != Fraction(7037, 1095) or upper != Fraction(7037, 1095):
+        raise ValueError("unexpected exact optimum")
+    if dual_objective != lower or upper != primal_objective or gap != 0:
+        raise ValueError("invalid exact primal/dual equality")
     return {
         "valid": True,
         "variable_orbits": model["variable_orbit_count"],
@@ -144,7 +149,7 @@ def replay() -> dict[str, str | int | bool]:
         "primal_upper_bound": str(upper),
         "dual_lower_bound": str(lower),
         "unresolved_gap": str(gap),
-        "status": "BRACKETED_NOT_EXACT",
+        "status": "EXACT_OPTIMUM",
     }
 
 

@@ -462,17 +462,14 @@ least one on every assignment, yet its exact pseudo-expectation under the
 checked. It guides a future moment-strengthened hierarchy while making no
 claim about a general SAT algorithm or a P-versus-NP lower bound.
 
-The first cut-strengthened replay is now recorded in
-`local_marginal_code_lab/REED_MULLER_SOS_STRENGTHENED_REPORT.md`. Exact primal
-and dual certificates bracket the strengthened RM(2,5) level-eight value as
-`64263/10000 <= optimum <= 7037/1095`, with remaining gap `403/2190000`.
-The gap is intentionally preserved as `BRACKETED_NOT_EXACT`; closing this one
-finite bracket would still say nothing about arbitrary SAT or P versus NP.
-An exact-dual search is recorded in
-`local_marginal_code_lab/REED_MULLER_EXACT_DUAL_SEARCH_REPORT.md`: matching the
-primal objective on the active support was not enough because 169 exact
-reduced-cost inequalities remained negative after rational reconstruction.
-The rejected candidate does not change the certified bracket or its status.
+The cut-strengthened replay is now recorded in
+`local_marginal_code_lab/REED_MULLER_SOS_STRENGTHENED_REPORT.md`. An exact
+primal and a 1,889-row rational dual certificate agree at
+`7037/1095`; all 2,174 reduced costs replay nonnegative with minimum `0`.
+The basis construction and the earlier rejected reconstruction are recorded in
+`local_marginal_code_lab/REED_MULLER_EXACT_DUAL_SEARCH_REPORT.md`. This closes
+the finite strengthened relaxation, while saying nothing about arbitrary SAT
+or P versus NP.
 
 ## Separate general direction: stronger global constraints
 

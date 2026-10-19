@@ -1,4 +1,4 @@
-"""Adversarial tests for the finite SOS-strengthened RM(2,5) bracket."""
+"""Adversarial tests for the finite SOS-strengthened RM(2,5) optimum."""
 from __future__ import annotations
 
 import copy
@@ -22,16 +22,23 @@ class StrengthenedCertificateTests(unittest.TestCase):
         cls.source = json.loads((HERE / "REED_MULLER_LEVEL_D_FULL_RESULTS.json").read_text(encoding="utf-8"))
         cls.certificate = json.loads((HERE / "REED_MULLER_SOS_STRENGTHENED_RESULTS.json").read_text(encoding="utf-8"))
 
-    def test_independent_replay_accepts_saved_bracket(self):
+    def test_independent_replay_accepts_saved_exact_optimum(self):
         result = replay(self.source, self.certificate)
         self.assertTrue(result["valid"])
-        self.assertEqual(result["status"], "BRACKETED_NOT_EXACT")
+        self.assertEqual(result["status"], "EXACT_OPTIMUM")
 
-    def test_exact_bracket_and_gap(self):
-        self.assertEqual(self.certificate["certified_lower_bound"], "64263/10000")
+    def test_exact_optimum_and_zero_gap(self):
+        self.assertEqual(self.certificate["certified_lower_bound"], "7037/1095")
         self.assertEqual(self.certificate["certified_upper_bound"], "7037/1095")
-        self.assertEqual(self.certificate["unresolved_optimum_gap"], "403/2190000")
-        self.assertLess(Fraction("64263/10000"), Fraction("7037/1095"))
+        self.assertEqual(self.certificate["unresolved_optimum_gap"], "0")
+        self.assertEqual(Fraction("7037/1095"), Fraction(self.certificate["dual_objective"]))
+        self.assertEqual(self.certificate["dual_reduced_cost_minimum"], "0")
+
+    def test_exact_dual_basis_metadata(self):
+        basis = self.certificate["dual_basis"]
+        self.assertEqual(basis["basis_column_count"], 1890)
+        self.assertEqual(len(basis["basis_column_indices"]), 1890)
+        self.assertEqual(len(set(basis["basis_column_indices"])), 1890)
 
     def test_cut_vector_has_only_nonpin_singleton_and_pair_columns(self):
         q = _cut_vector(self.source)

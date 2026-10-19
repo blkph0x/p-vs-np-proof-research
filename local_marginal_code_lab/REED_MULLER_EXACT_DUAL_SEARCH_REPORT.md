@@ -1,54 +1,49 @@
-# RM(2,5) SOS-strengthened exact-dual search
+# RM(2,5) SOS-strengthened exact-dual closure
 
-## Purpose
+## Result
 
-The SOS-strengthened RM(2,5) level-eight replay currently has the exact finite
-bracket
+The SOS-strengthened RM(2,5) level-eight quotient is now closed exactly:
 
 \[
-  64263/10000 \leq \operatorname{OPT} \leq 7037/1095,
-  \qquad \operatorname{gap}=403/2190000.
+  \operatorname{OPT}=7037/1095.
 \]
 
-This note records an attempted closure of that remaining gap.  It is a search
-record, not a certificate: the published status remains `BRACKETED_NOT_EXACT`.
+The primal witness and the dual certificate have the same rational objective.
+The dual replay checks all 2,174 reduced-cost inequalities over the rebuilt
+27,926-row quotient, with minimum reduced cost zero. The production result is
+therefore labelled `EXACT_OPTIMUM`.
 
-## Exact-support reconstruction
+## How the certificate was found
 
-The floating SOS LP has 625 positive primal orbit variables and 719 nonzero
-equality-dual rows.  The SOS multiplier is `35/876`.  We reconstructed a
-rational dual on those 719 rows by solving the active-support equations over
-the rationals.  The resulting dual objective is exactly `7037/1095`, matching
-the independently reconstructed primal objective.
+The first reconstruction used only the 719 rows that were nonzero in an
+initial floating dual. Its objective matched the primal, but rational rounding
+left 169 negative reduced costs. That candidate was correctly rejected.
 
-That matching objective is necessary but not sufficient.  An exact replay of
-all 2,174 reduced costs found 169 negative entries.  The violations are tiny
-(the worst is about `-3.1e-12` in floating scale), but a negative exact reduced
-cost invalidates a weak-duality certificate.  The candidate was therefore
-rejected and was not substituted into the production result.
+The successful search solved the complete sparse dual LP over all 27,926
+equality rows with an interior-point pass. The floating solution exposed
+2,140 numerically active column inequalities. Those active rows have rank
+1,890, exactly the number of nonzero dual rows plus the SOS multiplier in the
+chosen sparse support. Selecting a full-rank active basis and multiplying the
+SOS column by five gives an integer 1,890-by-1,890 system. FLINT solved that
+system over the rationals. The resulting certificate has 1,889 nonzero
+equality-dual rows and multiplier `35/876`.
 
-## Degeneracy and repair attempts
+The exact replay then verifies, independently of the floating solve:
 
-The active-support coefficient matrix has rank 215, leaving a large dual
-nullspace.  A floating feasibility repair over the 719-row support produced
-nonnegative reduced costs to solver tolerance, but rational reconstruction of
-an arbitrary LP vertex was unstable and amplified roundoff.  An L1-minimal
-repair with explicit slack margins was infeasible when restricted to those
-rows, indicating that a closure certificate may require dual rows that are
-zero in the particular floating solution.  A sparse full dual LP over all
-27,926 equality rows was started, but did not finish within the exploratory
-run budget; no result from that run is used as evidence.
+1. every primal marginal equality;
+2. the Boolean-square cut equality;
+3. every dual reduced cost is nonnegative, with minimum `0`;
+4. the dual objective is exactly `7037/1095`; and
+5. the primal and dual bounds coincide, so the gap is `0`.
 
-## Reproducibility and interpretation
+The pure-stdlib reviewer repeats the arithmetic from the saved quotient matrix,
+while the production runner rebuilds the quotient from its source code. The
+certificate also records the active basis indices used to obtain it.
 
-The exploratory scripts used to discover this route are outside the committed
-production path.  The committed runner and independent reviewer continue to
-rebuild the saved primal, SOS cut, and conservative exact dual bracket from
-source data.  The current claim is only the finite bracket in
-`REED_MULLER_SOS_STRENGTHENED_REPORT.md`; this search neither proves the
-strengthened finite optimum nor bears on arbitrary SAT or P versus NP.
+## Interpretation
 
-The next rigorous options are to obtain an exact dual basis with the missing
-degenerate rows, or to retain the bracket and add a different globally valid
-moment constraint.  Either route must finish with rational reduced-cost
-checks and an independent mutation test before changing the status.
+This proves the optimum of one finite, symmetry-quotiented SOS-strengthened
+RM(2,5) relaxation. It does not provide a polynomial-time algorithm for
+arbitrary SAT, a lower bound for all proof systems, or a resolution of P versus
+NP. Any broader claim would require an all-input construction with a proven
+complexity bound and a separate soundness proof.

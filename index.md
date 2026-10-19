@@ -107,12 +107,11 @@ then supplies an exact finite separation: the valid Boolean square
 the fractional witness. This identifies a missing global moment constraint;
 it is not a general SAT or P-versus-NP result.
 
-Adding that cut to the full level-eight model now has an exact finite bracket:
-the saved primal gives `7037/1095`, while the saved dual certifies at least
-`64263/10000`, leaving the explicit gap `403/2190000`. The
-[SOS-strengthened replay](local_marginal_code_lab/REED_MULLER_SOS_STRENGTHENED_REPORT.md)
-keeps this status `BRACKETED_NOT_EXACT`; it does not promote a finite
-relaxation bound into a general SAT or P-versus-NP claim.
+Adding that cut to the full level-eight model now has the exact finite optimum
+`7037/1095`. The [SOS-strengthened replay](local_marginal_code_lab/REED_MULLER_SOS_STRENGTHENED_REPORT.md)
+checks matching rational primal and dual certificates, all reduced costs, and
+zero gap. It closes this finite relaxation without making a general SAT or
+P-versus-NP claim.
 
 ## Runtime scaling notebook
 

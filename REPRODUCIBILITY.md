@@ -79,6 +79,13 @@ python run_reed_muller_sos_strengthened.py
 python REED_MULLER_SOS_STRENGTHENED_INDEPENDENT_REVIEW.py
 python -m unittest -v test_reed_muller_sos_strengthened.py
 Pop-Location
+
+The strengthened replay now reports `EXACT_OPTIMUM`: both saved certificates
+equal `7037/1095`, the reduced-cost minimum is `0`, and the gap is `0`. The
+certificate replay itself uses only the repository's exact arithmetic path;
+the exploratory active-basis search used SciPy and FLINT to discover the saved
+rational dual and is documented in
+`local_marginal_code_lab/REED_MULLER_EXACT_DUAL_SEARCH_REPORT.md`.
 Push-Location resolution_width_lab
 python run_indexed.py
 python review_indexed.py

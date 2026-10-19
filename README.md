@@ -694,16 +694,12 @@ result.
 The follow-up [SOS moment audit](local_marginal_code_lab/REED_MULLER_SOS_MOMENT_INDEPENDENT_REVIEW.md)
 finds a valid degree-two Boolean square that the level-eight witness violates:
 for `t = sum_{p != 0} x_p`, `(5t-31)^2` has exact pseudo-expectation `-992/7`
-(`-992/175` after scaling). This exposes a missing global moment constraint in
-the local-marginal relaxation. Adding that cut yields the independently
-replayed finite bracket in the [SOS-strengthened report](local_marginal_code_lab/REED_MULLER_SOS_STRENGTHENED_REPORT.md):
-`64263/10000 <= optimum <= 7037/1095`, with gap `403/2190000` and status
-`BRACKETED_NOT_EXACT`. The result is a finite hierarchy checkpoint, not a
-general SAT lower bound or a P-versus-NP result.
-The follow-up [exact-dual search record](local_marginal_code_lab/REED_MULLER_EXACT_DUAL_SEARCH_REPORT.md)
-documents a rejected rational reconstruction: its dual objective matches the
-primal, but exact reduced-cost checks still fail on 169 columns. The production
-bracket remains unchanged until a complete rational certificate passes replay.
+(`-992/175` after scaling). Adding that cut yields the independently replayed
+finite exact optimum `7037/1095` in the [SOS-strengthened report](local_marginal_code_lab/REED_MULLER_SOS_STRENGTHENED_REPORT.md).
+The [exact-dual search record](local_marginal_code_lab/REED_MULLER_EXACT_DUAL_SEARCH_REPORT.md)
+documents the full-rank rational basis and the earlier rejected numerical
+reconstruction. This remains a finite hierarchy result, not a general SAT
+lower bound or a P-versus-NP result.
 
 The [adaptive fragment synthesis report](ADAPTIVE_FRAGMENT_SYNTHESIS_REPORT.md)
 adds an independent cross-check of the bounded proof-language experiment. A bounded projector existentially
@@ -759,6 +755,13 @@ formula `G(y) AND NOT z` has equivalent `z=0` and `z=1` residuals exactly when
 `G` is UNSAT. All 256 two-variable formulas replay independently, while the
 source-bound reduction explains why exact quotient discovery cannot be assumed
 polynomial in general.
+
+The exact-dual closure is recorded in the [SOS-strengthened report](local_marginal_code_lab/REED_MULLER_SOS_STRENGTHENED_REPORT.md):
+the strengthened finite RM(2,5) relaxation has exact optimum `7037/1095`,
+with an independently replayed 1,889-row rational dual and zero reduced-cost
+gap. The [exact-dual search record](local_marginal_code_lab/REED_MULLER_EXACT_DUAL_SEARCH_REPORT.md)
+preserves the basis construction and rejected numerical route. This remains a
+finite hierarchy result, not a general SAT algorithm or a P-versus-NP result.
 
 The [certified residual quotient report](CERTIFIED_RESIDUAL_QUOTIENT_REPORT.md)
 implements the sound fallback: syntactic, bounded-exact, or replayable-proof
