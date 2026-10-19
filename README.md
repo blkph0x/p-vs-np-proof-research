@@ -24,8 +24,8 @@
   the next mathematical research gates.
 - Follow [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) to replay the checks from a
   fresh checkout. The latest committed baseline has 546 passing methods across
-  55 suites; the hierarchy-positioning note adds three tests registered for
-  the next full audit. The full audit is intentionally separate from the
+  55 suites; the hierarchy-positioning and weighted-boundary controls add four
+  tests registered for the next full audit. The full audit is intentionally separate from the
   lighter continuous-integration checks, and all suite dependencies are
   included in this repository.
 - The latest external status check is

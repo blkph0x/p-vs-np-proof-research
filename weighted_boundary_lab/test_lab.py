@@ -72,6 +72,28 @@ class WeightedBoundaryTests(unittest.TestCase):
                           scalar=[rng.choice((-3, -1, 1, 2)), rng.choice((1, 2, 5))])
             self.checked(net)
 
+    def test_adversarial_seeded_fuzz_matches_direct_oracle(self):
+        """Stress the independent marginal oracle beyond the saved controls."""
+        rng = random.Random(20261020)
+        for _ in range(1500):
+            k, m = rng.randrange(0, 6), rng.randrange(0, 7)
+            n = k + m
+            equations = [(rng.randrange(1 << n), rng.randrange(2))
+                         for _ in range(rng.randrange(0, 8))]
+            terms = [0] + [1 << i for i in range(n)]
+            terms += [(1 << i) | (1 << j)
+                      for i in range(n) for j in range(i + 1, n)]
+            phase = [term for term in terms if rng.randrange(2)]
+            net = request([f"b{i}" for i in range(k)], [f"t{i}" for i in range(m)],
+                          equations=equations, phase=phase,
+                          scalar=[rng.choice((-5, -2, -1, 1, 2, 7)),
+                                  rng.choice((1, 2, 3, 5))])
+            result = self.checked(net)
+            if result["certificate"]["steps"]:
+                forged = copy.deepcopy(result)
+                forged["certificate"]["steps"][0]["id"] = "tampered"
+                self.assertFalse(verify_marginal(net, forged)["valid"])
+
     def test_certificate_mutations_rejected(self):
         net = request(["a", "b"], ["s", "t"], phase=[12, 5, 10])
         result = self.checked(net)

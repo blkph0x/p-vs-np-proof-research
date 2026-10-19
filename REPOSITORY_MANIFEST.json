@@ -386,8 +386,8 @@
       "sha256": "631ec13d33a0045e6421133fee346759f9186117b909bdd327a954ddac826356"
     },
     "README.md": {
-      "bytes": 58127,
-      "sha256": "aaeee4acc62579ee58813f2bdcdc6b541495288e9ecc8d63898753de64eec8b2"
+      "bytes": 58151,
+      "sha256": "75b94c4fb2a293610e6a42ccec70bae6ca05c292284bd3f3a0d1cec256a0812b"
     },
     "REFEREE_RESPONSE_2026_10_20.md": {
       "bytes": 6175,
@@ -430,8 +430,8 @@
       "sha256": "e2613751a02ed13945172439c64bf9dbd13201e9102592f1e3485f25d89a6dad"
     },
     "REPRODUCIBILITY.md": {
-      "bytes": 8593,
-      "sha256": "2d766ae01d74d097067af0d4baa9ca322d61f12d4ebfb864fe70c1144da5892c"
+      "bytes": 8615,
+      "sha256": "5f7518f970a5c0b461f42d1edc4a09f80954840b153e56d577a27ceaa214514b"
     },
     "RESIDUAL_EQUIVALENCE_BARRIER.json": {
       "bytes": 106347,
@@ -2158,8 +2158,8 @@
       "sha256": "ce86680f49890fe07bdb95febd996ac2fdf8b2d45cd25b7e5b8863026581c070"
     },
     "index.md": {
-      "bytes": 15617,
-      "sha256": "5f705f4802fdbafb7deafcd2825a9995fd8e3dc8fe304c15e6475b0bec24f881"
+      "bytes": 15639,
+      "sha256": "db88b41a810883b0b15193a8a478ef17fd8b5a9fe959f8c881e3bdac1715c491"
     },
     "interval_coefficient_lab/INDEPENDENT_REVIEW.md": {
       "bytes": 7681,
@@ -5134,18 +5134,18 @@
       "sha256": "90fa27af09e557b617f93d4332af36dd50d17c0777e5e9dd3c23c9df57d6a0ee"
     },
     "weighted_boundary_lab/THEOREM.md": {
-      "bytes": 2646,
-      "sha256": "032bfee8695e8418c6ed5458610d3d0630d949869e6a26d7474f0970f6bffcd3"
+      "bytes": 2941,
+      "sha256": "dc3d4c5b62072ccc1dd4fad789c580a91a4635bf6b12908965e469cffa56ca69"
     },
     "weighted_boundary_lab/test_lab.py": {
-      "bytes": 5457,
-      "sha256": "1dc40eed16510a2e348c9f363cb5820cce5f34b5c8380f02cdca4d155471775d"
+      "bytes": 6657,
+      "sha256": "5eb7b3b44cd1e29e8a7215aad6d92ac65734d0fbe2b56ba71996be95b0a64daa"
     },
     "weighted_boundary_lab/weighted_boundary.py": {
       "bytes": 14779,
       "sha256": "957bd3b51cbf2cd06ee00f1ef47ab5c6fa8bbf1a4c281c0e67b129b027785a18"
     }
   },
-  "generated_at_utc": "2026-10-19T21:47:16.550601+00:00",
-  "source_commit": "f3f7adbd65252b82a4f30a4324932f2339a14c2c"
+  "generated_at_utc": "2026-10-19T21:50:59.121918+00:00",
+  "source_commit": "02763cf9f040b3b6d19a3f13165e04cc48ae0567"
 }

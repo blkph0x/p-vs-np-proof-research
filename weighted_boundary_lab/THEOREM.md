@@ -50,6 +50,11 @@ growth (at most one additional scalar bit per free variable). The code applies
 explicit caps to variables, rows, phase terms, work, and integer bits and
 returns `UNKNOWN` without a partial certificate when a cap is reached.
 
+The saved suite includes 180 seeded direct-oracle cases. A further adversarial
+seeded run of 1,500 cases uses a separate brute-force marginal evaluator and
+mutates the first elimination identity whenever a certificate has one; every
+case must match exactly and every mutation must be rejected.
+
 This closure result does not imply that a general CNF has a compact affine
 summary. A sum of many affine summaries is not closed under this single
 representation, and a generic clause expansion can still create exponentially
