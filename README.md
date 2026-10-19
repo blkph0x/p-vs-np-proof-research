@@ -17,7 +17,7 @@
 - Use [`CITATIONS.md`](CITATIONS.md) and [`PUBLIC_SOURCES.md`](PUBLIC_SOURCES.md)
   for public sources and the reports that use them.
 - Follow [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) to replay the checks from a
-  fresh checkout. The current frozen run has 452 passing methods across 44
+  fresh checkout. The current frozen run has 460 passing methods across 45
   suites; the full audit is intentionally separate from the lighter continuous
   integration checks, and all of its suite dependencies are included in this
   repository.
@@ -674,15 +674,22 @@ claim for larger Reed--Muller members or arbitrary SAT.
 The [RM(2,5) affine-flat star control](local_marginal_code_lab/REED_MULLER_LEVEL_D_FLAT_STAR_REPORT.md)
 is an exact negative control for a weaker level-eight proposal. Sharing only
 singleton marginals across 620 affine three-flats still has optimum `38/7`;
-full level-eight overlap consistency remains open and is explicitly not
-claimed by this control.
+the full replay below supplies the missing overlap-consistent finite result,
+while this control remains a separate weaker model.
 
 The [affine-overlap replay](local_marginal_code_lab/REED_MULLER_LEVEL_D_AFFINE_OVERLAP_REPORT.md)
 then adds every shared affine four-point, line, and singleton marginal. Its
 exact 28-orbit primal/dual certificate proves the selected-model optimum
 `31/5`, and therefore the same scoped lower bound for the full level-eight
-relaxation by projection. The full arbitrary-scope level-eight case remains
-unresolved and the certificate does not claim a general SAT lower bound.
+relaxation by projection.
+
+The [full RM(2,5) level-eight replay](local_marginal_code_lab/REED_MULLER_LEVEL_D_FULL_REPORT.md)
+now includes every coordinate scope of size at most eight, exact pinned-code
+projection support, and every containment marginal. Its independently checked
+2,174-orbit quotient has the matching exact optimum `31/5`; the pinned integer
+optimum is eight, giving a finite ratio `40/31`. This closes the value of the
+stated finite relaxation only; it is not a general SAT solver or a P-versus-NP
+result.
 
 The [adaptive fragment synthesis report](ADAPTIVE_FRAGMENT_SYNTHESIS_REPORT.md)
 adds an independent cross-check of the bounded proof-language experiment. A bounded projector existentially

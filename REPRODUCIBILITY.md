@@ -25,7 +25,7 @@ python run_research_checks.py
 ```
 
 The command regenerates `TEST_OUTPUT.txt` and `TEST_SUMMARY.json`, then checks
-all registered suites. The current checkpoint passes 44 suites and 452 methods
+all registered suites. The current checkpoint passes 45 suites and 460 methods
 with unchanged source hashes. A full run can take several
 minutes because it includes exhaustive finite controls and native rank checks.
 
@@ -63,6 +63,11 @@ Push-Location local_marginal_code_lab
 python run_reed_muller_level_d_affine_overlap.py
 python REED_MULLER_LEVEL_D_AFFINE_OVERLAP_INDEPENDENT_REVIEW.py
 python -m unittest -v test_reed_muller_level_d_affine_overlap.py
+Pop-Location
+Push-Location local_marginal_code_lab
+python run_reed_muller_level_d_full.py
+python REED_MULLER_LEVEL_D_FULL_INDEPENDENT_REVIEW.py
+python -m unittest -v test_reed_muller_level_d_full.py
 Pop-Location
 Push-Location resolution_width_lab
 python run_indexed.py

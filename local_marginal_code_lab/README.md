@@ -48,15 +48,24 @@ and shape claims. Larger-family level-`d` cases remain open.
 The companion [RM(2,5) affine-flat star report](REED_MULLER_LEVEL_D_FLAT_STAR_REPORT.md)
 records an exact negative control for a weaker level-eight proposal: 620
 affine three-flat tables sharing only singleton marginals still have optimum
-`38/7`. Full overlap consistency at level eight remains unresolved.
+`38/7`. The subsequent full replay resolves the corresponding finite model;
+this report remains the weaker negative control.
 
 The [affine-overlap report](REED_MULLER_LEVEL_D_AFFINE_OVERLAP_REPORT.md)
 adds every shared affine four-point flat, line, and singleton marginal to
 those 620 eight-point tables. Its 28-variable-orbit quotient has an exact
 primal/dual optimum `31/5`, improving the lower bound for the full level-eight
 relaxation to `31/5`. The independent replay reconstructs the quotient and
-reduced costs without an LP solver; the full arbitrary-scope level-eight case
-is still explicitly unresolved.
+reduced costs without an LP solver.
+
+The [full level-eight report](REED_MULLER_LEVEL_D_FULL_REPORT.md) now closes
+the finite arbitrary-scope case for this RM(2,5) model. It includes every
+scope of size at most eight, exact pinned-code projection support, and every
+containment marginal. Its exact quotient has 2,174 variable orbits and 27,926
+rows; an independently replayed rational primal gives the matching value
+`31/5`. The pinned integer optimum is eight, so the finite ratio is `40/31`.
+This remains a result about the stated relaxation, not a general SAT solver
+or a P-versus-NP resolution.
 
 ```text
 python -m unittest discover -v
@@ -79,4 +88,7 @@ python -m unittest -v test_reed_muller_level_d_flat_star.py
 python run_reed_muller_level_d_affine_overlap.py
 python REED_MULLER_LEVEL_D_AFFINE_OVERLAP_INDEPENDENT_REVIEW.py
 python -m unittest -v test_reed_muller_level_d_affine_overlap.py
+python run_reed_muller_level_d_full.py
+python REED_MULLER_LEVEL_D_FULL_INDEPENDENT_REVIEW.py
+python -m unittest -v test_reed_muller_level_d_full.py
 ```

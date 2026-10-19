@@ -1,0 +1,23 @@
+{
+  "adversarial_controls": {
+    "matrix": true,
+    "primal": true,
+    "support": true
+  },
+  "full_level_8_optimum": "31/5",
+  "pinned_word_count": 32768,
+  "quotient_nonzero_count": 214059,
+  "row_orbits": 27926,
+  "scope_counts": {
+    "1": 2,
+    "2": 2,
+    "3": 3,
+    "4": 5,
+    "5": 8,
+    "6": 14,
+    "7": 23,
+    "8": 35
+  },
+  "valid": true,
+  "variable_orbits": 2174
+}

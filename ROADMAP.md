@@ -435,15 +435,25 @@ the `d-1` gap closes at `d` for this smallest member, while leaving the
 
 An exact affine-flat star control for `RM(2,5)` records the corresponding
 negative result for a weaker level-eight proposal: 620 affine three-flat
-tables sharing singleton marginals still have optimum `38/7`. The unresolved
-step is consistency among the overlapping seven- and lower-dimensional
-projections in the full level-eight system.
+tables sharing singleton marginals still have optimum `38/7`. At that stage,
+the unresolved step was consistency among the overlapping seven- and
+lower-dimensional projections in the full level-eight system; the next two
+replays close that finite question.
 
 The next affine-overlap checkpoint adds every shared affine four-point flat,
 line, and singleton table. A `GL(5,2)` orbit quotient has an exact rational
 primal/dual optimum `31/5`, so the full level-eight relaxation has the scoped
-lower bound `31/5` by projection. This does not provide a full-level witness:
-arbitrary eight-coordinate scopes and their overlaps remain unresolved.
+lower bound `31/5` by projection. The following full replay supplies the
+matching upper-bound witness described below.
+
+The full level-eight checkpoint now supplies that missing witness for the
+defined RM(2,5) relaxation. It includes every scope of size at most eight,
+exact pinned-code projection support, and every containment marginal. The
+2,174-variable-orbit, 27,926-row quotient has an independently replayed exact
+primal value `31/5`, matching the affine-overlap lower bound. The finite pinned
+integer optimum is eight (ratio `40/31`). This closes the value of this
+representation-specific relaxation while leaving arbitrary SAT and P versus
+NP unresolved.
 
 ## Separate general direction: stronger global constraints
 

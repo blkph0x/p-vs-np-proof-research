@@ -21,7 +21,7 @@ stated structural families, finite exhaustive controls, certificate verifiers,
 and scoped counterexamples. It does not claim a solver for every SAT instance
 or a lower bound against every polynomial algorithm.
 
-The latest recorded full audit passed **44 suites and 452 test methods** with
+The latest recorded full audit passed **45 suites and 460 test methods** with
 unchanged source hashes. These are reproducibility results for the checked
 finite cases, not a solution to the open problem.
 
@@ -87,14 +87,19 @@ gap only; it is not a general SAT or P-versus-NP result.
 
 The [RM(2,5) affine-flat star control](local_marginal_code_lab/REED_MULLER_LEVEL_D_FLAT_STAR_REPORT.md)
 tests a weaker level-eight construction. Its 620 affine-flat tables retain the
-exact `38/7` fractional optimum, so the full overlap-consistent level-eight
-case remains unresolved.
+exact `38/7` fractional optimum; the full replay below supplies the missing
+overlap-consistent finite result while preserving this weaker control.
 
 The stronger [RM(2,5) affine-overlap replay](local_marginal_code_lab/REED_MULLER_LEVEL_D_AFFINE_OVERLAP_REPORT.md)
 shares all affine four-point, line, and singleton marginals among those flats.
 An exact 28-orbit primal/dual certificate raises the selected-model optimum to
 `31/5`, proving the same lower bound for the full level-eight relaxation by
-projection. The full arbitrary-scope level-eight optimum remains unresolved.
+projection. The [full level-eight replay](local_marginal_code_lab/REED_MULLER_LEVEL_D_FULL_REPORT.md)
+then includes every scope through size eight and exact pinned-code support.
+Its independently checked 2,174-orbit quotient has the matching optimum
+`31/5`; the pinned integer optimum is eight. This closes the finite value of
+the stated RM(2,5) relaxation while leaving general SAT and P versus NP
+unresolved.
 
 ## Runtime scaling notebook
 
