@@ -7,6 +7,10 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: research-checks
+  cancel-in-progress: true
+
 jobs:
   focused-checks:
     runs-on: ubuntu-24.04
