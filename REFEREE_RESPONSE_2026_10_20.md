@@ -55,17 +55,19 @@ additional certificates it can produce:
    Sherali–Adams, Lasserre/SOS, pseudocodeword, and orthogonal-array results.
    **Terminology gate partially addressed:**
    [`LOCAL_MARGINAL_HIERARCHY_NOTE.md`](local_marginal_code_lab/LOCAL_MARGINAL_HIERARCHY_NOTE.md)
-   defines the exact relation-family local polytope and gives a four-variable
-   control showing why no automatic Sherali–Adams equivalence should be
-   claimed. A formulation-specific theorem and literature comparison remain
-   open.
+   defines the exact relation-family local polytope, proves its level-by-level
+   equality with configuration Sherali–Adams for the explicitly declared
+   finite-domain projection CSP, and gives a four-variable control showing why
+   no equivalence to a sparse Boolean parity encoding should be claimed. The
+   parity-encoding and Lasserre comparisons remain open.
 3. Separate construction, discovery, and verification costs for the finite
    `RM(2,5)` certificate, including bit lengths, certificate size, memory, and
-   replay time. **Partially addressed:**
+   replay time. **Measured for the retained construction and replay paths:**
    [`REED_MULLER_CERTIFICATE_COSTS.md`](local_marginal_code_lab/REED_MULLER_CERTIFICATE_COSTS.md)
-   records exact artifact sizes, rational bit lengths, and a measured replay
-   time; peak memory and producer/discovery measurements remain explicitly
-   unclaimed.
+   now records exact artifact sizes, rational bit lengths, construction time,
+   saved-witness regeneration time, independent replay time, and sampled peak
+   RSS. The historical certificate-search/discovery process is not retained
+   and remains explicitly `UNRECORDED`.
 4. Collect nearby exact instances only when they test a stated scaling
    conjecture. A fitted curve is not a theorem, and a failed conjecture is a
    valid recorded outcome.

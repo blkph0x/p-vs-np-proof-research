@@ -1,0 +1,36 @@
+{
+  "discovery": {
+    "reason": "The historical certificate-search process is not retained in this repository.",
+    "status": "UNRECORDED"
+  },
+  "family": "RM(2,5)",
+  "measurements": [
+    {
+      "label": "construct_full_level8_model",
+      "peak_rss_bytes": 53014528,
+      "peak_rss_mib": 50.559,
+      "returncode": 0,
+      "seconds": 74.296,
+      "stdout_tail": "2174 27926\n"
+    },
+    {
+      "label": "regenerate_saved_primal",
+      "peak_rss_bytes": 136007680,
+      "peak_rss_mib": 129.707,
+      "returncode": 0,
+      "seconds": 76.572,
+      "stdout_tail": "REED_MULLER_FULL_LEVEL8_PASS\nvariable_orbits=2174 row_orbits=27926 optimum=31/5\n"
+    },
+    {
+      "label": "independent_full_level8_replay",
+      "peak_rss_bytes": 136507392,
+      "peak_rss_mib": 130.184,
+      "returncode": 0,
+      "seconds": 398.958,
+      "stdout_tail": "REED_MULLER_FULL_LEVEL8_INDEPENDENT_PASS\n"
+    }
+  ],
+  "platform": "win32",
+  "python": "3.10.10 | packaged by conda-forge | (main, Mar 24 2023, 20:00:38) [MSC v.1934 64 bit (AMD64)]",
+  "schema": "rm25_cost_measurements_v1"
+}

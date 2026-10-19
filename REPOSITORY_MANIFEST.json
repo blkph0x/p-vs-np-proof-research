@@ -1,5 +1,5 @@
 {
-  "file_count": 1286,
+  "file_count": 1291,
   "files": {
     ".gitattributes": {
       "bytes": 648,
@@ -362,8 +362,8 @@
       "sha256": "a2ad1d52ccdcaa0ba34e59070c8a709aa5f89135f554c5b1cb61d5be0bec15e0"
     },
     "PUBLIC_SOURCES.md": {
-      "bytes": 11129,
-      "sha256": "3e664a38e77e29b717b6efbafcab334c9bfc5cfc62fe7c6508b5e21a2b3ff929"
+      "bytes": 11150,
+      "sha256": "b68050570b0e6ccf2a620ca99ea5de1d43ad7987d83eaf3ab3ef40e190587432"
     },
     "RANDOMIZED_ISOLATION_REPORT.md": {
       "bytes": 915,
@@ -390,8 +390,8 @@
       "sha256": "a8c968826bc7a7c3bb1134ad832e0e217d729e562499738771c1cad978599e63"
     },
     "REFEREE_RESPONSE_2026_10_20.md": {
-      "bytes": 6709,
-      "sha256": "1031084b4375d1b400870951ff1690c7cacb0f668842cce027a70048c5413e91"
+      "bytes": 6981,
+      "sha256": "63217efa251664508e26131e313257a9f5c319a58f504c19ccf23158ee103cc0"
     },
     "REGULAR_LDPC_33_LOCAL_AUDIT.json": {
       "bytes": 5015,
@@ -2390,12 +2390,16 @@
       "sha256": "608489e4181967b18a4c22e96413a7a4cbc06de4b04c91e5985e3a7bc0a4b06c"
     },
     "local_marginal_code_lab/LOCAL_MARGINAL_HIERARCHY_NOTE.md": {
-      "bytes": 4044,
-      "sha256": "c59e547b5340ae4523d16fe0bd782bba4d455687d330228462df466a22ac875d"
+      "bytes": 5520,
+      "sha256": "bf3414ea50700d8eaca9552fdbd4ff431311ea8ac5cfcb2f7236e9b01bb15882"
+    },
+    "local_marginal_code_lab/LOCAL_MARGINAL_NOVELTY_LEDGER.md": {
+      "bytes": 3706,
+      "sha256": "eba702a922f6d3a59cb97e3d7b1ae2e0544ddca42d5284ea52d269b814a3f8e8"
     },
     "local_marginal_code_lab/README.md": {
-      "bytes": 9501,
-      "sha256": "6c44c5ef69d7f5f75083e0eaa49c6161a000b49ea3e953049bc4f6b5e17f2b16"
+      "bytes": 9527,
+      "sha256": "e1b9d3fac8ff28f79901d30824182a29a699331c97676649754b38b86dc64196"
     },
     "local_marginal_code_lab/REED_MULLER_AFFINE_OVERLAP_DUAL_NOTE.md": {
       "bytes": 4118,
@@ -2442,12 +2446,20 @@
       "sha256": "cb63d602511ac2adebd9aa44438828cc5ecd08f3e35012e73d728476d975a0e2"
     },
     "local_marginal_code_lab/REED_MULLER_CERTIFICATE_COSTS.md": {
-      "bytes": 2645,
-      "sha256": "a19d1aa74899a985847137c9b9bf2e53c8b3b4a359142a778549bbf0389beca1"
+      "bytes": 3592,
+      "sha256": "dcbde745c130a3381fa4c06f99b09aec8ec161fdbeb668e3df869716ab5fd95a"
+    },
+    "local_marginal_code_lab/REED_MULLER_COST_MEASUREMENTS.json": {
+      "bytes": 1128,
+      "sha256": "462b7a090f23363aec7d72bc73720dd3c866e47def2dfc1aac8a70b2cd95d2d0"
     },
     "local_marginal_code_lab/REED_MULLER_EXACT_DUAL_SEARCH_REPORT.md": {
       "bytes": 2178,
       "sha256": "9cfb4979800a620cc3fb0f410a3bda43cc8fef7bdef15fe5c66468186c723e95"
+    },
+    "local_marginal_code_lab/REED_MULLER_FORMAL_MODEL.md": {
+      "bytes": 3692,
+      "sha256": "f3e28b05f057c6041ec306d0a77e21b55bff9c387370716dffa4bc0a0d7774fc"
     },
     "local_marginal_code_lab/REED_MULLER_INDEPENDENT_REVIEW.json": {
       "bytes": 1148,
@@ -2745,6 +2757,10 @@
       "bytes": 3590,
       "sha256": "0d601944f997ab56ff7ffef70de8c9e79b70128dd1eb2b301fa208524d1d1771"
     },
+    "local_marginal_code_lab/TRUST_CHAIN.md": {
+      "bytes": 3082,
+      "sha256": "a1786f161adef709b15f1ab424c823b3d6bed5b9655a24534ecbe4abaa629660"
+    },
     "local_marginal_code_lab/all_dual_local_reed_muller.py": {
       "bytes": 9757,
       "sha256": "75819af584f8be3a8175653b3918d464df3ca39b553a809445bffefbabf8feaa"
@@ -2756,6 +2772,10 @@
     "local_marginal_code_lab/local_marginal.py": {
       "bytes": 9045,
       "sha256": "106c486d4eb868be2af4db7b781fac4631d42b2b12f1b94a9dba20d0477c3919"
+    },
+    "local_marginal_code_lab/measure_reed_muller_costs.py": {
+      "bytes": 4681,
+      "sha256": "823de8a0d391cfd08371d6316db1c9f6efd0f7e0ae7c0fb0dcbf9dcabb7da825"
     },
     "local_marginal_code_lab/random_code_bound.py": {
       "bytes": 900,
@@ -5146,6 +5166,6 @@
       "sha256": "957bd3b51cbf2cd06ee00f1ef47ab5c6fa8bbf1a4c281c0e67b129b027785a18"
     }
   },
-  "generated_at_utc": "2026-10-19T22:09:17.238769+00:00",
-  "source_commit": "f1c807d8b52cdb91755c4f76567f22b184d3532b"
+  "generated_at_utc": "2026-10-19T22:49:24.412446+00:00",
+  "source_commit": "dbbab5dcaf4a3df7042d3391bf8d2afd82ed7c93"
 }

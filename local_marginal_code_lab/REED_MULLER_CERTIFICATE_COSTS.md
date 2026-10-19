@@ -39,14 +39,31 @@ python REED_MULLER_LEVEL_D_AFFINE_OVERLAP_INDEPENDENT_REVIEW.py
 It completed in 44.742 seconds on the author workstation. The focused suite
 of eight exact tests, including the new compact-dual identity and mutation
 controls, completed in 44.453 seconds. These are wall-clock observations, not
-hardware-independent complexity bounds. The full-model CI stage has a 900
-second per-stage timeout; its actual runtime is intentionally reported by the
-workflow rather than inferred from that ceiling.
+hardware-independent complexity bounds. The continuous-integration job has a
+60-minute job timeout; the measured full-model replay below is reported as an
+observation rather than inferred from that ceiling.
 
-Peak memory and the producer's certificate-search time are not recorded here.
-They should be measured on a pinned environment before being used in a paper
-as quantitative claims. No finite certificate in this repository is being
-presented as an efficient algorithm for arbitrary SAT instances.
+The full-model measurement harness
+[`measure_reed_muller_costs.py`](measure_reed_muller_costs.py) runs each child
+in a temporary copy and samples its resident set size. The resulting record is
+[`REED_MULLER_COST_MEASUREMENTS.json`](REED_MULLER_COST_MEASUREMENTS.json).
+On the same Windows/Python 3.10.10 workstation it measured:
+
+| operation | wall seconds | peak RSS |
+| --- | ---: | ---: |
+| construct the full level-eight quotient | 74.296 | 50.559 MiB |
+| regenerate and validate the saved primal | 76.572 | 129.707 MiB |
+| independent full level-eight replay | 398.958 | 130.184 MiB |
+
+The RSS values are process measurements from the Windows working-set API and
+the times are single-run observations. They are useful reproducibility data,
+not asymptotic bounds or cross-machine performance claims.
+
+The historical certificate-search/discovery process is not retained in the
+repository, so its cost remains explicitly `UNRECORDED`. Regeneration of the
+saved witness is not presented as discovery. No finite certificate in this
+repository is being presented as an efficient algorithm for arbitrary SAT
+instances.
 
 ## Reproduction
 
@@ -56,3 +73,8 @@ identity is checked by `test_compact_dual_identity` in the companion test
 module. The full-model replay uses the analogous independent checker and
 objective reconstruction described in
 `REED_MULLER_LEVEL_D_FULL_REPORT.md`.
+To repeat the construction/RSS measurement in a temporary copy, run:
+
+```text
+python measure_reed_muller_costs.py
+```

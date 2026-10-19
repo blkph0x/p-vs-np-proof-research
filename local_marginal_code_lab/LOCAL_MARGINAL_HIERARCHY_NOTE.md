@@ -87,6 +87,43 @@ The finite quotient certificate and its compact dual inequality are therefore
 valid as scoped local-marginal results while the standard-hierarchy comparison
 remains an open research gate.
 
+## A precise one-sided comparison that is now proved
+
+There is one standard finite-domain formulation for which the relationship is
+exact. Form the extensional CSP `I_k(C)` whose variables are the coordinates
+and whose declared relations are
+
+```text
+R_S = R_S(C)  for every nonempty S with |S| <= k.
+```
+
+Use the usual level-`k` Sherali--Adams/configuration representation: a local
+variable is a nonnegative distribution on each allowed assignment to a scope,
+each distribution is normalized, and distributions agree on every overlap.
+The map
+
+```text
+mu_S(a)  <->  the level-k configuration variable for (S,a)
+```
+
+is a coordinate-by-coordinate bijection. The normalization and overlap rows
+are the same equations, and the singleton objective is unchanged. Therefore
+
+```text
+L_k(C) = SA_k(I_k(C))
+```
+
+for this explicitly declared finite-domain relation family, at every `k`.
+This is a formulation theorem, not a new lower bound: the relations `R_S(C)`
+already contain the exact global projections of `C`.
+
+It does **not** identify the RM experiments with Sherali--Adams applied to a
+sparse Boolean parity-check CNF. That comparison still depends on the chosen
+encoding and on which constraints are visible at each level. The four-variable
+control above is a concrete separation between the two support constructions.
+The repository now reports both facts: exact configuration-SA equivalence for
+`I_k(C)`, and an open formulation-specific comparison for parity encodings.
+
 ## Exact check
 
 ```text

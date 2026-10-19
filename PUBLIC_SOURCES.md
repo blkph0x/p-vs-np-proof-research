@@ -47,7 +47,7 @@ Indexed URLs: **74**.
 | <https://ece.iisc.ac.in/~nkashyap/Papers/code_decomp_final.pdf> | `ALL_DUAL_LP_THEOREM.md`, `PUBLIC_SOURCES.md`, `local_marginal_code_lab/LOCAL_MARGINAL_NOVELTY_LEDGER.md` |
 | <https://epubs.siam.org/doi/10.1137/070691152> | `PUBLIC_SOURCES.md`, `high_width_core_stress_lab/REPORT.md` |
 | <https://github.com/blkph0x/p-vs-np-proof-research> | `CITATION.cff`, `PUBLIC_SOURCES.md`, `index.md` |
-| <https://github.com/blkph0x/p-vs-np-proof-research/actions> | `PEER_AUDIT_RESPONSE_2026_10_20.md` |
+| <https://github.com/blkph0x/p-vs-np-proof-research/actions> | `PEER_AUDIT_RESPONSE_2026_10_20.md`, `PUBLIC_SOURCES.md` |
 | <https://github.com/marijnheule/cake_lpr> | `CITATIONS.md`, `PEER_AUDIT_RESPONSE_2026_10_19.md`, `PEER_AUDIT_RESPONSE_2026_10_20.md`, `PUBLIC_SOURCES.md` |
 | <https://github.com/marijnheule/drat-trim> | `CITATIONS.md`, `PEER_AUDIT_RESPONSE_2026_10_19.md`, `PEER_AUDIT_RESPONSE_2026_10_20.md`, `PUBLIC_SOURCES.md` |
 | <https://homepages.inf.ed.ac.uk/hguo/papers/HA-general.pdf> | `AFFINE_BOUNDARY_DESIGN.md`, `PUBLIC_SOURCES.md`, `holographic_tractability_lab/RESULTS.json`, `holographic_tractability_lab/THEOREM.md`, `holographic_tractability_lab/run_experiments.py` |
