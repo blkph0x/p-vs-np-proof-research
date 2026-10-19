@@ -71,5 +71,6 @@ current record citable while that longer-form work is absent.
 
 The project's source policy remains in [`CITATIONS.md`](CITATIONS.md), and the
 generated URL index is [`PUBLIC_SOURCES.md`](PUBLIC_SOURCES.md). The exact
-certificate files and replay commands are linked from
-[`REED_MULLER_SOS_THREE_CUT_REPORT.md`](local_marginal_code_lab/REED_MULLER_SOS_THREE_CUT_REPORT.md).
+certificate files and replay commands are linked from the
+[`four-cut report`](local_marginal_code_lab/REED_MULLER_SOS_FOUR_CUT_REPORT.md)
+and its preceding three-cut report.
