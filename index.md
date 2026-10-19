@@ -36,6 +36,10 @@ The [referee response](REFEREE_RESPONSE_2026_10_20.md) records the separate
 publication-level revision gate. In particular, the later weight-polynomial
 sequence is described as valid integer-domain cuts; the repository does not
 call those cuts a standard SOS hierarchy without degree-bounded SOS proofs.
+The [local-marginal hierarchy note](local_marginal_code_lab/LOCAL_MARGINAL_HIERARCHY_NOTE.md)
+also fixes the relation-family definition and records why a standard
+Sherali--Adams equivalence cannot be inferred without specifying a base
+formulation.
 
 The audit's practical rule is simple: a promoted entry must be an exact
 certificate for its declared scope, an explicit `UNKNOWN`/`UNKNOWN_CAP` with a
