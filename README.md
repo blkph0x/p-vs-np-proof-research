@@ -700,6 +700,10 @@ replayed finite bracket in the [SOS-strengthened report](local_marginal_code_lab
 `64263/10000 <= optimum <= 7037/1095`, with gap `403/2190000` and status
 `BRACKETED_NOT_EXACT`. The result is a finite hierarchy checkpoint, not a
 general SAT lower bound or a P-versus-NP result.
+The follow-up [exact-dual search record](local_marginal_code_lab/REED_MULLER_EXACT_DUAL_SEARCH_REPORT.md)
+documents a rejected rational reconstruction: its dual objective matches the
+primal, but exact reduced-cost checks still fail on 169 columns. The production
+bracket remains unchanged until a complete rational certificate passes replay.
 
 The [adaptive fragment synthesis report](ADAPTIVE_FRAGMENT_SYNTHESIS_REPORT.md)
 adds an independent cross-check of the bounded proof-language experiment. A bounded projector existentially

@@ -306,8 +306,8 @@
       "sha256": "7401f5cf6b946a82cec459cbaf5a62cb4b5237b8f96501e7f0496a3efc662683"
     },
     "METHOD_INDEX.md": {
-      "bytes": 17853,
-      "sha256": "983f27ba1a075866e3fdfd2b92ea4b6e9fd67946f960fbd967006d2f830c2595"
+      "bytes": 18311,
+      "sha256": "fe2528da37bad3ed066089c1070eb4430b7b37032188e9a1c7e11bf0fa83e607"
     },
     "NATIVE_RESULTS.csv": {
       "bytes": 11436,
@@ -378,8 +378,8 @@
       "sha256": "631ec13d33a0045e6421133fee346759f9186117b909bdd327a954ddac826356"
     },
     "README.md": {
-      "bytes": 52089,
-      "sha256": "13c45077ffe0886f0a949cdcd08364f932caf67ddcfae9314ee57c418d7c29d2"
+      "bytes": 52431,
+      "sha256": "c148073c8b3b6309774bae9f99d8ef6456d542631d376e7b3e26ce64df5dcd25"
     },
     "REGULAR_LDPC_33_LOCAL_AUDIT.json": {
       "bytes": 5015,
@@ -438,8 +438,8 @@
       "sha256": "d7d103f37e85cce87a5e236fbe90116277e0d0e76196239d73fa76b9e782fab1"
     },
     "ROADMAP.md": {
-      "bytes": 38939,
-      "sha256": "b6563996be79e2f6d8c77a1467852618994e35417dda9e5bab197078e1017627"
+      "bytes": 39278,
+      "sha256": "4431040d0d08ae3c562b4b2ffbb375272ff67a5b606997c0fa7a4a145399c583"
     },
     "ROW_BASIS_ESCAPE_RESULTS.json": {
       "bytes": 9367083,
@@ -4854,6 +4854,6 @@
       "sha256": "957bd3b51cbf2cd06ee00f1ef47ab5c6fa8bbf1a4c281c0e67b129b027785a18"
     }
   },
-  "generated_at_utc": "2026-10-19T03:43:04.021594+00:00",
-  "source_commit": "2f2ef4c19e63e1563ee1b7e818e5aebd8358be78"
+  "generated_at_utc": "2026-10-19T04:27:15.143748+00:00",
+  "source_commit": "15fb884dd46cc5700791334d265d33c1dade4e4d"
 }

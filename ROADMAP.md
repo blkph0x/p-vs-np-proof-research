@@ -468,6 +468,11 @@ and dual certificates bracket the strengthened RM(2,5) level-eight value as
 `64263/10000 <= optimum <= 7037/1095`, with remaining gap `403/2190000`.
 The gap is intentionally preserved as `BRACKETED_NOT_EXACT`; closing this one
 finite bracket would still say nothing about arbitrary SAT or P versus NP.
+An exact-dual search is recorded in
+`local_marginal_code_lab/REED_MULLER_EXACT_DUAL_SEARCH_REPORT.md`: matching the
+primal objective on the active support was not enough because 169 exact
+reduced-cost inequalities remained negative after rational reconstruction.
+The rejected candidate does not change the certified bracket or its status.
 
 ## Separate general direction: stronger global constraints
 
