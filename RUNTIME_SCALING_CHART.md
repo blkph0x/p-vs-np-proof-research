@@ -32,6 +32,12 @@ resolution traces for one deterministic implementation. Source hashes use the
 normalized UTF-8 text with LF line endings so the check is stable across
 Windows and Linux checkouts.
 
+The producer scripts are run only when intentionally refreshing a measurement
+artifact and the chart in the same change. Continuous integration replays the
+committed artifacts without rerunning those producers: wall-clock fields are
+runner-dependent, and replacing them during CI would make a public chart drift
+while leaving its checked source binding stale.
+
 When a new artifact is accepted:
 
 1. Regenerate the JSON with its source SHA-256 and update the interpretation

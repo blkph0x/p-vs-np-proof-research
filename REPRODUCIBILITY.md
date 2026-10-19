@@ -167,7 +167,11 @@ Pop-Location
 
 These commands cover the newest Fourier span result and the simultaneous-basis
 certificate, plus the proof-producing CDCL scaling bridge. The GitHub Actions
-workflow runs the focused set on every push.
+workflow runs the focused set on every push. The public runtime chart keeps
+frozen wall-clock observations; its CI path replays the committed Tseitin
+artifacts without rerunning the timing producer. If you intentionally refresh
+those measurements, regenerate `assets/data/scaling-runtime.json` and its
+source bindings in the same change before publishing.
 
 The companion Pages workflow (`.github/workflows/pages.yml`) builds the Jekyll
 site before deploying it. A deployment therefore cannot publish an artifact
