@@ -60,19 +60,21 @@
     const seriesControls = root.querySelector("[data-chart-series-controls]");
     const axisSelect = root.querySelector("[data-chart-axis]");
     const unknownToggle = root.querySelector("[data-chart-unknown]");
+    const xLogToggle = root.querySelector("[data-chart-x-log]");
     const logToggle = root.querySelector("[data-chart-log]");
     const resetButton = root.querySelector("[data-chart-reset]");
 
     function render(data) {
       const axis = axisSelect.value;
       const showUnknown = unknownToggle.checked;
+      const xLogarithmic = xLogToggle.checked;
       const logarithmic = logToggle.checked;
       const selectedIds = new Set([...seriesControls.querySelectorAll("input:checked")].map(input => input.value));
       const visibleDatasets = data.datasets.filter(dataset => selectedIds.has(dataset.id));
       const allPoints = visibleDatasets.flatMap(dataset => dataset.points.map(point => ({...point, dataset})));
       const points = allPoints.filter(point => showUnknown || point.status === "EXACT");
       const plot = {x: margin.left, y: margin.top, width: width - margin.left - margin.right, height: height - margin.top - margin.bottom};
-      const xValues = points.map(point => point[axis]).filter(Number.isFinite);
+      const xValues = points.map(point => point[axis]).filter(value => Number.isFinite(value) && (!xLogarithmic || value > 0));
       const yValues = points.map(point => point.runtime_seconds).filter(value => value > 0);
       if (!xValues.length || !yValues.length) {
         svg.replaceChildren();
@@ -89,7 +91,13 @@
       const rawYMax = Math.max(...yValues);
       const yMin = logarithmic ? Math.max(rawYMin / 2, Number.MIN_VALUE) : 0;
       const yMax = logarithmic ? rawYMax * 2 : rawYMax * 1.08 || 1;
-      const xScale = value => plot.x + (xMax === xMin ? .5 : (value - xMin) / (xMax - xMin)) * plot.width;
+      const xScale = value => {
+        if (xMax === xMin) return plot.x + plot.width / 2;
+        if (xLogarithmic) {
+          return plot.x + (Math.log10(value) - Math.log10(xMin)) / (Math.log10(xMax) - Math.log10(xMin)) * plot.width;
+        }
+        return plot.x + (value - xMin) / (xMax - xMin) * plot.width;
+      };
       const yScale = value => {
         if (logarithmic) return plot.y + plot.height - (Math.log10(value) - Math.log10(yMin)) / (Math.log10(yMax) - Math.log10(yMin)) * plot.height;
         return plot.y + plot.height - (value - yMin) / (yMax - yMin) * plot.height;
@@ -97,10 +105,10 @@
 
       svg.replaceChildren();
       svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
-      svg.setAttribute("aria-label", `${data.y_axis} by ${data.x_axes[axis]}`);
+      svg.setAttribute("aria-label", `${data.y_axis} by ${data.x_axes[axis]}${xLogarithmic ? " on a logarithmic axis" : ""}`);
       const titleId = `runtime-chart-title-${chartInstance++}`;
       const title = element("title", {id: titleId});
-      title.textContent = `${data.y_axis} by ${data.x_axes[axis]}`;
+      title.textContent = `${data.y_axis} by ${data.x_axes[axis]}${xLogarithmic ? " on a logarithmic axis" : ""}`;
       svg.setAttribute("aria-labelledby", titleId);
       svg.appendChild(title);
       const grid = element("g", {class: "chart-grid"});
@@ -109,7 +117,7 @@
         grid.appendChild(element("line", {x1: plot.x, x2: plot.x + plot.width, y1: y, y2: y}));
         text(grid, formatTick(value, logarithmic), {x: plot.x - 10, y: y + 4, "text-anchor": "end", class: "chart-tick"});
       });
-      tickValues(xMin, xMax, false).forEach(value => {
+      tickValues(xMin, xMax, xLogarithmic).forEach(value => {
         const x = xScale(value);
         grid.appendChild(element("line", {x1: x, x2: x, y1: plot.y, y2: plot.y + plot.height, class: "chart-grid-vertical"}));
         text(grid, formatXTick(value), {x, y: plot.y + plot.height + 19, "text-anchor": "middle", class: "chart-tick chart-x-tick"});
@@ -117,7 +125,7 @@
       svg.appendChild(grid);
       svg.appendChild(element("line", {x1: plot.x, x2: plot.x, y1: plot.y, y2: plot.y + plot.height, class: "chart-axis"}));
       svg.appendChild(element("line", {x1: plot.x, x2: plot.x + plot.width, y1: plot.y + plot.height, y2: plot.y + plot.height, class: "chart-axis"}));
-      text(svg, data.x_axes[axis], {x: plot.x + plot.width / 2, y: height - 14, "text-anchor": "middle", class: "chart-label"});
+      text(svg, `${data.x_axes[axis]}${xLogarithmic ? " · logarithmic" : ""}`, {x: plot.x + plot.width / 2, y: height - 14, "text-anchor": "middle", class: "chart-label"});
       text(svg, `${data.y_axis}${logarithmic ? " · logarithmic" : ""}`, {x: 17, y: plot.y + plot.height / 2, transform: `rotate(-90 17 ${plot.y + plot.height / 2})`, "text-anchor": "middle", class: "chart-label"});
 
       legend.replaceChildren();
@@ -133,7 +141,7 @@
 
       visibleDatasets.forEach((dataset, datasetIndex) => {
         const visible = dataset.points
-          .filter(point => (showUnknown || point.status === "EXACT") && Number.isFinite(point[axis]))
+          .filter(point => (showUnknown || point.status === "EXACT") && Number.isFinite(point[axis]) && (!xLogarithmic || point[axis] > 0))
           .sort((a, b) => a[axis] - b[axis]);
         const exact = visible.filter(point => point.status === "EXACT");
         if (exact.length > 1) {
@@ -174,7 +182,7 @@
         tableBody.appendChild(row);
       });
       summary.textContent = `Observed ${points.length} point${points.length === 1 ? "" : "s"} across ${data.x_axes[axis].toLowerCase()} ${xMin}–${xMax}; runtimes span ${formatSeconds(rawYMin)}–${formatSeconds(rawYMax)}. This is a measured range, not an asymptotic fit.`;
-      status.textContent = `${points.length} recorded points · ${showUnknown ? "EXACT and UNKNOWN" : "EXACT only"}${logarithmic ? " · log scale" : ""}`;
+      status.textContent = `${points.length} recorded points · ${showUnknown ? "EXACT and UNKNOWN" : "EXACT only"}${xLogarithmic ? " · logarithmic variables" : ""}${logarithmic ? " · logarithmic runtime" : ""}`;
     }
 
     fetch(root.dataset.runtimeSource)
@@ -199,10 +207,11 @@
           label.append(input, document.createTextNode(dataset.label));
           return label;
         }));
-        [axisSelect, unknownToggle, logToggle].forEach(control => control.addEventListener("change", () => render(data)));
+        [axisSelect, unknownToggle, xLogToggle, logToggle].forEach(control => control.addEventListener("change", () => render(data)));
         resetButton.addEventListener("click", () => {
           axisSelect.value = data.default_x_axis || Object.keys(data.x_axes)[0];
           unknownToggle.checked = false;
+          xLogToggle.checked = false;
           logToggle.checked = false;
           seriesControls.querySelectorAll("input").forEach(input => { input.checked = true; });
           render(data);

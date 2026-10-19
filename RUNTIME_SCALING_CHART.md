@@ -14,7 +14,9 @@ page can compare independent data files with more than one chart. Every key in
 the initial selection.
 
 The plot shows five labelled x-axis ticks with vertical guides, and every point
-is keyboard-focusable. A circle denotes an `EXACT` completed run; a diamond
+is keyboard-focusable. The variable-axis log toggle is useful when the recorded
+inputs span several orders of magnitude; it changes the display scale only and
+does not fit or claim a complexity class. A circle denotes an `EXACT` completed run; a diamond
 denotes an `UNKNOWN` run stopped at its cap. The status key is part of the
 include so a reused chart keeps the same interpretation.
 
