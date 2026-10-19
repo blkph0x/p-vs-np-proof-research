@@ -192,6 +192,9 @@ Push-Location local_marginal_code_lab
 python run_reed_muller_sos_seven_cut.py
 python REED_MULLER_SOS_SEVEN_CUT_INDEPENDENT_REVIEW.py
 python -m unittest -v test_reed_muller_sos_seven_cut.py
+python run_reed_muller_sos_candidate_scan.py
+python REED_MULLER_SOS_CANDIDATE_SCAN_INDEPENDENT_REVIEW.py
+python -m unittest -v test_reed_muller_sos_candidate_scan.py
 Pop-Location
 
 The seventh-cut replay reports `EXACT_OPTIMUM`: both saved certificates equal

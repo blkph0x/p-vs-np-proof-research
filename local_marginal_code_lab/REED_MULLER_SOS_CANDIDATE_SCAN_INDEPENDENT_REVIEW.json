@@ -1,0 +1,23 @@
+{
+  "candidate_count": 2144,
+  "negative_candidate_count": 39,
+  "scope": "Exact separation of the saved seven-cut witness; no post-cut optimum is certified.",
+  "selected_candidate": {
+    "degree": 4,
+    "expectation": "-657769331520/5129253893",
+    "factors": [
+      "adjacent_6_7",
+      "adjacent_30_31"
+    ],
+    "name": "adjacent_6_7*adjacent_30_31",
+    "polynomial": [
+      39060,
+      -14652,
+      1765,
+      -74,
+      1
+    ]
+  },
+  "status": "SEPARATION_ONLY",
+  "valid": true
+}

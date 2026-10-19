@@ -136,3 +136,10 @@ The [seventh-cut replay](REED_MULLER_SOS_SEVEN_CUT_REPORT.md) adds
 `-3473117738496/217025866361`, and closes the next finite relaxation exactly at
 `35873801083/5129253893`. The producer, independent reviewer, and adversarial
 suite are all checked into the repository.
+
+The [candidate-cut scan](REED_MULLER_SOS_CANDIDATE_SCAN_REPORT.md) checks a
+declared family of 2,144 exact degree-at-most-five integer-weight polynomials
+against the seven-cut witness. Thirty-nine are violated; the strongest
+lexicographically first candidate is `(t-6)(t-7)(t-30)(t-31)` with expectation
+`-657769331520/5129253893`. This scan only proves separation and deliberately
+does not claim the optimum after adding the candidate.

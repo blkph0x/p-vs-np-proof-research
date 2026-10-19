@@ -860,3 +860,5 @@ is charged separately for every occurrence and the pre-macro cap outcomes are
 retained in the artifact.
 
 The [seventh-cut certificate](local_marginal_code_lab/REED_MULLER_SOS_SEVEN_CUT_REPORT.md) adds the valid integer-domain polynomial `(t-6)(t-7)(31-t)`. The exact six-cut witness violates it by `-3473117738496/217025866361`; the next finite relaxation closes exactly at `35873801083/5129253893` with matching rational primal and dual certificates, 2,144 zero reduced costs, and independent replay. This is the current checkpoint and remains a scoped certificate, not a general SAT solver or a P-versus-NP answer.
+
+The [candidate-cut separation scan](local_marginal_code_lab/REED_MULLER_SOS_CANDIDATE_SCAN_REPORT.md) now checks 2,144 exact degree-at-most-five integer-weight polynomials against that seven-cut witness. Thirty-nine are violated; the strongest lexicographically first candidate is `(t-6)(t-7)(t-30)(t-31)`, with exact expectation `-657769331520/5129253893`. This is a separation-only result: the post-cut optimum remains uncomputed and is not promoted as an exact certificate.

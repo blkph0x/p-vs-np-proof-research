@@ -1,0 +1,365 @@
+{
+  "candidate_construction": "squares, adjacent integer-root products, boundary product, and all pairwise products of degree at most five",
+  "candidate_count": 2144,
+  "degree_bound": 5,
+  "domain": [
+    0,
+    31
+  ],
+  "family": "RM(2,5)",
+  "moments_binomial_basis": [
+    "1",
+    "35873801083/5129253893",
+    "113401415205/5129253893",
+    "259322763355/5129253893",
+    "757388998205/5129253893",
+    "1740570579531/5129253893"
+  ],
+  "negative_candidate_count": 39,
+  "pin": 0,
+  "schema": "reed_muller_sos_candidate_scan_results_v1",
+  "scope": "Exact separation of the saved seven-cut witness; no post-cut optimum is certified.",
+  "selected_candidate": {
+    "degree": 4,
+    "expectation": "-657769331520/5129253893",
+    "factors": [
+      "adjacent_6_7",
+      "adjacent_30_31"
+    ],
+    "name": "adjacent_6_7*adjacent_30_31",
+    "polynomial": [
+      39060,
+      -14652,
+      1765,
+      -74,
+      1
+    ]
+  },
+  "source_sha256": {
+    "REED_MULLER_LEVEL_D_FULL_RESULTS.json": "168d656f67cbcd3e6ab53810cac26a289400d4a0bacd5e15d48acc5e03a07381",
+    "REED_MULLER_SOS_SEVEN_CUT_RESULTS.json": "315db6a6b3cb6a1dc7a972865e21231c62d4120e52e9a82ea74aae08aac52e34"
+  },
+  "status": "SEPARATION_ONLY",
+  "top_negative_candidates": [
+    {
+      "degree": 4,
+      "expectation": "-657769331520/5129253893",
+      "factors": [
+        "adjacent_6_7",
+        "adjacent_30_31"
+      ],
+      "name": "adjacent_6_7*adjacent_30_31",
+      "polynomial": [
+        39060,
+        -14652,
+        1765,
+        -74,
+        1
+      ]
+    },
+    {
+      "degree": 4,
+      "expectation": "-657769331520/5129253893",
+      "factors": [
+        "square_31",
+        "adjacent_6_7"
+      ],
+      "name": "square_31*adjacent_6_7",
+      "polynomial": [
+        40362,
+        -15097,
+        1809,
+        -75,
+        1
+      ]
+    },
+    {
+      "degree": 4,
+      "expectation": "-646023450600/5129253893",
+      "factors": [
+        "square_30",
+        "adjacent_6_7"
+      ],
+      "name": "square_30*adjacent_6_7",
+      "polynomial": [
+        37800,
+        -14220,
+        1722,
+        -73,
+        1
+      ]
+    },
+    {
+      "degree": 4,
+      "expectation": "-634277569680/5129253893",
+      "factors": [
+        "adjacent_6_7",
+        "adjacent_29_30"
+      ],
+      "name": "adjacent_6_7*adjacent_29_30",
+      "polynomial": [
+        36540,
+        -13788,
+        1679,
+        -72,
+        1
+      ]
+    },
+    {
+      "degree": 4,
+      "expectation": "-610785807840/5129253893",
+      "factors": [
+        "square_29",
+        "adjacent_6_7"
+      ],
+      "name": "square_29*adjacent_6_7",
+      "polynomial": [
+        35322,
+        -13369,
+        1637,
+        -71,
+        1
+      ]
+    },
+    {
+      "degree": 4,
+      "expectation": "-587294046000/5129253893",
+      "factors": [
+        "adjacent_6_7",
+        "adjacent_28_29"
+      ],
+      "name": "adjacent_6_7*adjacent_28_29",
+      "polynomial": [
+        34104,
+        -12950,
+        1595,
+        -70,
+        1
+      ]
+    },
+    {
+      "degree": 4,
+      "expectation": "-552056403240/5129253893",
+      "factors": [
+        "square_28",
+        "adjacent_6_7"
+      ],
+      "name": "square_28*adjacent_6_7",
+      "polynomial": [
+        32928,
+        -12544,
+        1554,
+        -69,
+        1
+      ]
+    },
+    {
+      "degree": 4,
+      "expectation": "-516818760480/5129253893",
+      "factors": [
+        "adjacent_6_7",
+        "adjacent_27_28"
+      ],
+      "name": "adjacent_6_7*adjacent_27_28",
+      "polynomial": [
+        31752,
+        -12138,
+        1513,
+        -68,
+        1
+      ]
+    },
+    {
+      "degree": 4,
+      "expectation": "-469835236800/5129253893",
+      "factors": [
+        "square_27",
+        "adjacent_6_7"
+      ],
+      "name": "square_27*adjacent_6_7",
+      "polynomial": [
+        30618,
+        -11745,
+        1473,
+        -67,
+        1
+      ]
+    },
+    {
+      "degree": 4,
+      "expectation": "-422851713120/5129253893",
+      "factors": [
+        "adjacent_6_7",
+        "adjacent_26_27"
+      ],
+      "name": "adjacent_6_7*adjacent_26_27",
+      "polynomial": [
+        29484,
+        -11352,
+        1433,
+        -66,
+        1
+      ]
+    },
+    {
+      "degree": 4,
+      "expectation": "-11745880920/165459803",
+      "factors": [
+        "square_26",
+        "adjacent_6_7"
+      ],
+      "name": "square_26*adjacent_6_7",
+      "polynomial": [
+        28392,
+        -10972,
+        1394,
+        -65,
+        1
+      ]
+    },
+    {
+      "degree": 4,
+      "expectation": "-358769344704/5129253893",
+      "factors": [
+        "square_7",
+        "adjacent_29_30"
+      ],
+      "name": "square_7*adjacent_29_30",
+      "polynomial": [
+        42630,
+        -15071,
+        1745,
+        -73,
+        1
+      ]
+    },
+    {
+      "degree": 4,
+      "expectation": "-358025916672/5129253893",
+      "factors": [
+        "square_7",
+        "square_30"
+      ],
+      "name": "square_7*square_30",
+      "polynomial": [
+        44100,
+        -15540,
+        1789,
+        -74,
+        1
+      ]
+    },
+    {
+      "degree": 4,
+      "expectation": "-357282488640/5129253893",
+      "factors": [
+        "square_7",
+        "adjacent_30_31"
+      ],
+      "name": "square_7*adjacent_30_31",
+      "polynomial": [
+        45570,
+        -16009,
+        1833,
+        -75,
+        1
+      ]
+    },
+    {
+      "degree": 4,
+      "expectation": "-347735915648/5129253893",
+      "factors": [
+        "square_7",
+        "square_29"
+      ],
+      "name": "square_7*square_29",
+      "polynomial": [
+        41209,
+        -14616,
+        1702,
+        -72,
+        1
+      ]
+    },
+    {
+      "degree": 4,
+      "expectation": "-344762203520/5129253893",
+      "factors": [
+        "square_7",
+        "square_31"
+      ],
+      "name": "square_7*square_31",
+      "polynomial": [
+        47089,
+        -16492,
+        1878,
+        -76,
+        1
+      ]
+    },
+    {
+      "degree": 4,
+      "expectation": "-336702486592/5129253893",
+      "factors": [
+        "square_7",
+        "adjacent_28_29"
+      ],
+      "name": "square_7*adjacent_28_29",
+      "polynomial": [
+        39788,
+        -14161,
+        1659,
+        -71,
+        1
+      ]
+    },
+    {
+      "degree": 4,
+      "expectation": "-313892200448/5129253893",
+      "factors": [
+        "square_7",
+        "square_28"
+      ],
+      "name": "square_7*square_28",
+      "polynomial": [
+        38416,
+        -13720,
+        1617,
+        -70,
+        1
+      ]
+    },
+    {
+      "degree": 4,
+      "expectation": "-305392903920/5129253893",
+      "factors": [
+        "adjacent_6_7",
+        "adjacent_25_26"
+      ],
+      "name": "adjacent_6_7*adjacent_25_26",
+      "polynomial": [
+        27300,
+        -10592,
+        1355,
+        -64,
+        1
+      ]
+    },
+    {
+      "degree": 4,
+      "expectation": "-291081914304/5129253893",
+      "factors": [
+        "square_7",
+        "adjacent_27_28"
+      ],
+      "name": "square_7*adjacent_27_28",
+      "polynomial": [
+        37044,
+        -13279,
+        1575,
+        -69,
+        1
+      ]
+    }
+  ]
+}

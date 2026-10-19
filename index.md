@@ -171,6 +171,13 @@ adds the valid integer-domain inequality
 nonnegative reduced costs, and independent replay. This remains a
 representation-specific certificate, not a P-versus-NP result.
 
+The [candidate-cut scan](local_marginal_code_lab/REED_MULLER_SOS_CANDIDATE_SCAN_REPORT.md)
+then checks 2,144 exact degree-at-most-five integer-weight polynomials against
+the seven-cut witness. Thirty-nine are violated; the strongest lexicographically
+first candidate is `(t-6)(t-7)(t-30)(t-31)` with expectation
+`-657769331520/5129253893`. This is a separation-only result; no post-cut
+optimum is claimed.
+
 ## Runtime scaling notebook
 
 {% include runtime-chart.html data_url='/assets/data/scaling-runtime.json' %}
