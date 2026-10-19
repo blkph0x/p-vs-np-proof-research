@@ -21,7 +21,7 @@ stated structural families, finite exhaustive controls, certificate verifiers,
 and scoped counterexamples. It does not claim a solver for every SAT instance
 or a lower bound against every polynomial algorithm.
 
-The latest recorded full audit passed **54 suites and 539 test methods** with
+The latest recorded full audit passed **54 suites and 541 test methods** with
 unchanged source hashes. These are reproducibility results for the checked
 finite cases, not a solution to the open problem.
 
@@ -50,6 +50,13 @@ proves each CNF unsatisfiable, and an independent checker rebuilds the local
 3-CNF encoding and replays every CDCL resolution step. These are finite
 controls against the cited expansion-based resolution literature, not a new
 all-size lower bound or a P-versus-NP result.
+
+The companion [exact expansion profile](tseitin_expander_lab/EXPANSION_REPORT.md)
+enumerates every nonempty vertex subset through half size for the same graphs,
+records the minimum open-neighborhood ratio at each size, and independently
+rebuilds every witness. It documents the finite graph controls without
+asserting a uniform expander theorem or deriving a lower bound for arbitrary
+SAT algorithms.
 
 The [hidden-XOR pair audit](proof_motif_candidate_lab/INDIRECT_XOR_REPORT.md)
 also certifies one bounded auxiliary-variable step: two exact parity blocks

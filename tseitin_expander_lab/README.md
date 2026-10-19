@@ -6,6 +6,12 @@ connected cubic graphs plus a deterministic Möbius-ladder sweep with sizes
 result, and a second replay that rebuilds both the encoding and the resolution
 trace.
 
+The companion `EXPANSION_RESULTS.json` artifact exactly enumerates open-
+neighborhood expansion through half-size vertex sets for the same twelve
+graphs. `review_expansion_profile.py` independently rebuilds the named graph
+family and checks every saved ratio and witness. This records finite graph
+structure beside the solver traces; it is not an asymptotic expander theorem.
+
 The experiment is a finite solver and proof-complexity control. The ladder
 conflict counts are measurements of this fixed decision policy; they are not
 an all-size theorem or an assertion that the ladder family is a uniform
@@ -13,3 +19,13 @@ expander. It does not claim a new asymptotic lower bound or a solution to P
 versus NP. See
 [`THEOREM.md`](THEOREM.md), [`REPORT.md`](REPORT.md), and the cited
 Ben-Sasson--Wigderson paper in the repository citation ledger.
+
+Replay commands from this directory:
+
+```text
+python run_experiments.py
+python INDEPENDENT_REVIEW.py
+python run_expansion_profile.py
+python review_expansion_profile.py
+python -m unittest -v test_tseitin.py
+```

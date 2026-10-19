@@ -22,7 +22,7 @@ outcome with its stopping boundary, or it is not presented as a result.
 | The project is not stronger than Cutting Planes, Frege, SOS, or the systems in the Proof Complexity Zoo. | Accepted explicitly. The cited literature remains the authority for the broad theorems; this repository supplies finite, replayable records in its declared models. | [`CITATIONS.md`](CITATIONS.md), [Proof Complexity Zoo](https://proofcomplexityzoo.gitlab.io/zoo/) |
 | Formula-level proof checkers do not classify a complexity problem. | Accepted. DRAT-trim, cake_lpr, and the SAT competition are cited as neighboring trust and benchmarking tools, not as evidence for a P-versus-NP classification. | [`CITATIONS.md`](CITATIONS.md), [`proof_producing_cdcl_lab/THEOREM.md`](proof_producing_cdcl_lab/THEOREM.md) |
 | Two Python programs are weaker than a proof assistant. | Accepted. The trust model and its residual risks are stated in [`INDEPENDENT_AUDIT.md`](INDEPENDENT_AUDIT.md); no formal-verification claim is made. | [`INDEPENDENT_AUDIT.md`](INDEPENDENT_AUDIT.md) |
-| A test total is not a result total. | Corrected in this checkpoint. The current full audit reports **54 suites and 539 test methods**. Those are replay checks, not 539 mathematical results; the result ledger is [`METHOD_INDEX.md`](METHOD_INDEX.md). Local counts such as the affine-boundary suite's 46 tests are likewise test counts. | [`TEST_SUMMARY.json`](TEST_SUMMARY.json), [`METHOD_INDEX.md`](METHOD_INDEX.md) |
+| A test total is not a result total. | Corrected in this checkpoint. The current full audit reports **54 suites and 541 test methods**. Those are replay checks, not 541 mathematical results; the result ledger is [`METHOD_INDEX.md`](METHOD_INDEX.md). Local counts such as the affine-boundary suite's 46 tests are likewise test counts. | [`TEST_SUMMARY.json`](TEST_SUMMARY.json), [`METHOD_INDEX.md`](METHOD_INDEX.md) |
 | Historical dates and scope-specific `UNRESOLVED` fields can confuse the current status. | Corrected in this checkpoint. The landing page and README identify 20 October 2026 as the active checkpoint. Historical reports retain their dates but now identify themselves as historical and link to this current disposition. A scope-specific unresolved marker remains only where that narrower branch is genuinely unresolved; it does not override a later full replay. | [`index.md`](index.md), [`README.md`](README.md), [`REPORT.md`](REPORT.md), [`METHOD_INDEX.md`](METHOD_INDEX.md) |
 
 ## Neighboring work and the boundary of comparison
@@ -65,6 +65,18 @@ Failure is stored data. The capped XOR-chain and role-search branches remain
 a dual-distance or width observation remains scoped to its stated model. The
 repository's acceptance standard prevents these observations from being
 promoted by implication.
+
+## Finite expansion addendum
+
+To make the Tseitin comparison more concrete without overstating it, the
+campaign now includes [`tseitin_expander_lab/EXPANSION_REPORT.md`](tseitin_expander_lab/EXPANSION_REPORT.md).
+It enumerates every nonempty vertex subset through half size for all twelve
+saved cubic graphs, records the exact open-neighborhood minimum at each size,
+and stores a separate replay that reconstructs the graph family and every
+witness. The largest row checks 616,665 subsets. This addresses the audit's
+request for a reproducible graph property while preserving the correct
+boundary: these finite ratios do not prove a uniform expander theorem, a
+resolution lower bound for every proof system, or a P-versus-NP result.
 
 ## What remains open
 

@@ -156,6 +156,8 @@ jobs:
         run: |
           python run_experiments.py
           python INDEPENDENT_REVIEW.py
+          python run_expansion_profile.py
+          python review_expansion_profile.py
           python -m unittest -v test_tseitin.py
       - name: Run the self-contained full audit
         run: |

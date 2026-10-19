@@ -66,6 +66,12 @@ def markdown_report(rows):
         "claimed, and the family is not asserted here to be a uniform expander",
         "family.",
         "",
+        "The companion `EXPANSION_RESULTS.json` records the exact open-neighborhood",
+        "profile through half-size vertex sets for all twelve graphs. Its separate",
+        "replay checks every subset and rebuilds the named graph family. This is",
+        "finite graph evidence, not a resolution lower bound or an asymptotic",
+        "expander theorem.",
+        "",
     ]
     return "\n".join(lines)
 

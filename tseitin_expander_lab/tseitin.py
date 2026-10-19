@@ -7,7 +7,8 @@ certificate of unsatisfiability because every edge occurs at two vertices.
 """
 from __future__ import annotations
 
-from itertools import product
+from itertools import combinations, product
+from math import gcd
 
 
 def normalize_edges(n, edges):
@@ -91,6 +92,68 @@ def parity_certificate(n, edges, charges):
         "charge_sum_mod2": total_charge,
         "odd_charge": total_charge == 1,
         "parity_proves_unsat": all(count == 2 for count in counts) and total_charge == 1,
+    }
+
+
+def expansion_profile(n, edges):
+    """Enumerate exact open-neighborhood expansion through half-size sets.
+
+    For a nonempty vertex set S, N(S) is the union of the open neighborhoods
+    of vertices in S.  The profile records the minimum |N(S)|/|S| for every
+    size through floor(n/2), plus the global minimum and its first
+    lexicographic witness.  This is a finite graph certificate only; it makes
+    no inference about resolution size or arbitrary SAT algorithms.
+    """
+    edges = normalize_edges(n, edges)
+    adjacency = [0] * n
+    for u, v in edges:
+        adjacency[u] |= 1 << v
+        adjacency[v] |= 1 << u
+    minimum_by_size = []
+    global_count = global_size = None
+    global_vertices = None
+    subsets_checked = 0
+    for size in range(1, n // 2 + 1):
+        best_count = None
+        best_vertices = None
+        for chosen in combinations(range(n), size):
+            subset = 0
+            for vertex in chosen:
+                subset |= 1 << vertex
+            neighborhood = 0
+            remaining = subset
+            while remaining:
+                bit = remaining & -remaining
+                neighborhood |= adjacency[bit.bit_length() - 1]
+                remaining ^= bit
+            count = neighborhood.bit_count()
+            subsets_checked += 1
+            if best_count is None or count < best_count:
+                best_count = count
+                best_vertices = list(chosen)
+            if (global_count is None or count * global_size < global_count * size):
+                global_count = count
+                global_size = size
+                global_vertices = list(chosen)
+        divisor = gcd(best_count, size)
+        minimum_by_size.append({
+            "size": size,
+            "neighborhood_size": best_count,
+            "epsilon_numerator": best_count // divisor,
+            "epsilon_denominator": size // divisor,
+            "witness": {"vertices": best_vertices,
+                        "neighborhood_size": best_count},
+        })
+    divisor = gcd(global_count, global_size)
+    return {
+        "half_size": n // 2,
+        "epsilon_numerator": global_count // divisor,
+        "epsilon_denominator": global_size // divisor,
+        "witness": {"vertices": global_vertices,
+                    "neighborhood_size": global_count},
+        "minimum_by_size": minimum_by_size,
+        "subsets_checked": subsets_checked,
+        "maximum_degree": max(map(int.bit_count, adjacency)),
     }
 
 

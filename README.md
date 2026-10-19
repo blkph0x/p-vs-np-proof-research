@@ -20,7 +20,7 @@
   for the current claim-by-claim peer-audit disposition. The 19 October
   response is retained as the preceding historical record.
 - Follow [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) to replay the checks from a
-  fresh checkout. The current frozen run has 539 passing methods across 54
+  fresh checkout. The current frozen run has 541 passing methods across 54
   suites; the full audit is intentionally separate from the lighter continuous
   integration checks, and all of its suite dependencies are included in this
   repository.
@@ -28,7 +28,7 @@
   [`EXTERNAL_STATUS_AUDIT_2026_10_18.md`](EXTERNAL_STATUS_AUDIT_2026_10_18.md).
 
 Test counts are audit evidence, not result counts: the current frozen run has
-54 suites and 539 test methods, while the result ledger remains
+54 suites and 541 test methods, while the result ledger remains
 [`METHOD_INDEX.md`](METHOD_INDEX.md). Changes that alter a result must update the relevant theorem/report, saved
 artifact, independent checker, source citation, and the repository manifest in
 the same change. A public claim is recorded as unresolved until its full proof
@@ -350,7 +350,9 @@ canonical odd-charge Tseitin family on four named connected cubic graphs and a
 deterministic Möbius-ladder sweep from 6 through 20 vertices. Its exact
 parity certificate proves every saved CNF unsatisfiable, while an independent
 program rebuilds the 3-CNF encoding and replays every CDCL resolution step.
-The finite traces connect the solver baseline to the
+The companion [expansion profile](tseitin_expander_lab/EXPANSION_REPORT.md)
+enumerates every nonempty vertex subset through half size and records exact
+witnesses. The finite traces connect the solver baseline to the
 [Ben-Sasson--Wigderson width-size literature](https://people.inf.ethz.ch/emo/SatSem05/Papers/BensassonWidgerson01.pdf)
 without claiming a new all-size lower bound or a P-versus-NP result.
 

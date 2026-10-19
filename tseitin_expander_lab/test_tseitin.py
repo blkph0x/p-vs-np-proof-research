@@ -11,6 +11,7 @@ sys.path.insert(0, str(HERE.parent))
 from proof_producing_cdcl_lab.cdcl import CDCL
 import tseitin
 from INDEPENDENT_REVIEW import expected_cnf, parity_record, replay_result
+from review_expansion_profile import exact_profile, expected_controls
 
 
 def parity_assignment_satisfies(n, edges, charges, assignment):
@@ -75,6 +76,27 @@ class TseitinTests(unittest.TestCase):
         certificate = tseitin.parity_certificate(control["n"], control["edges"], charges)
         self.assertFalse(certificate["parity_proves_unsat"])
         self.assertFalse(certificate["odd_charge"])
+
+    def test_exact_expansion_profiles_replay_independently(self):
+        artifact = json.loads((HERE / "EXPANSION_RESULTS.json").read_text(encoding="utf-8"))
+        review = json.loads((HERE / "EXPANSION_REVIEW.json").read_text(encoding="utf-8"))
+        self.assertTrue(artifact["all_profiles_exact"])
+        self.assertEqual(review["status"], "PASS")
+        controls = expected_controls()
+        self.assertEqual(len(artifact["rows"]), len(controls))
+        for saved, expected in zip(artifact["rows"], controls):
+            self.assertEqual(saved["name"], expected["name"])
+            self.assertEqual(saved["profile"], exact_profile(saved["vertices"], saved["edges"]))
+
+    def test_expansion_profile_mutation_changes_certificate(self):
+        control = expected_controls()[0]
+        original = exact_profile(control["n"], control["edges"])
+        mutated_edges = list(control["edges"])
+        mutated_edges.remove((0, 1))
+        mutated_edges.remove((3, 7))
+        mutated_edges.extend(((0, 3), (1, 7)))
+        mutated = exact_profile(control["n"], mutated_edges)
+        self.assertNotEqual(original, mutated)
 
     def test_saved_artifacts_and_independent_replay(self):
         artifact = json.loads((HERE / "RESULTS.json").read_text(encoding="utf-8"))

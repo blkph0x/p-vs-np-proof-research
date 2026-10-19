@@ -8,9 +8,9 @@
   "source_sha256": {
     "NATIVE_RESULTS.json": "370dc2b313b7c47052b9da3030c892611b12713bc8626b707cf64734589a4002",
     "proof_complexity_scaling_lab/SCALING_RESULTS.json": "26c86346df659fa68e4dcbf2d524e25a4c89de723a7e59fd6c1a6cf0d73f2f3d",
-    "tseitin_expander_lab/RESULTS.json": "736bbd329fcbaa951ff3c50409fbb0b389f8993d19d0e8a05e67e40f4b888f24"
+    "tseitin_expander_lab/RESULTS.json": "cf7eba7feb87bccc0f618fd5cffa4852c2a016390ed971bcdf634c62927c3e9d"
   },
-  "generated_utc": "2026-10-19T15:53:22Z",
+  "generated_utc": "2026-10-20T00:00:00Z",
   "x_axes": {
     "x": "Variables / encoded coordinates (n)",
     "dimension": "Code dimension / family parameter"
@@ -337,7 +337,7 @@
         {
           "x": 9,
           "dimension": 6,
-          "runtime_seconds": 0.0027320999652147293,
+          "runtime_seconds": 0.0027290997095406055,
           "status": "EXACT",
           "label": "Tseitin M\u00f6bius ladder n=6",
           "conflicts": 16,
@@ -346,7 +346,7 @@
         {
           "x": 12,
           "dimension": 8,
-          "runtime_seconds": 0.007794900331646204,
+          "runtime_seconds": 0.007689299993216991,
           "status": "EXACT",
           "label": "Tseitin M\u00f6bius ladder n=8",
           "conflicts": 32,
@@ -355,7 +355,7 @@
         {
           "x": 15,
           "dimension": 10,
-          "runtime_seconds": 0.02207930013537407,
+          "runtime_seconds": 0.021651399787515402,
           "status": "EXACT",
           "label": "Tseitin M\u00f6bius ladder n=10",
           "conflicts": 64,
@@ -364,7 +364,7 @@
         {
           "x": 18,
           "dimension": 12,
-          "runtime_seconds": 0.06150349974632263,
+          "runtime_seconds": 0.060084199998527765,
           "status": "EXACT",
           "label": "Tseitin M\u00f6bius ladder n=12",
           "conflicts": 128,
@@ -373,7 +373,7 @@
         {
           "x": 21,
           "dimension": 14,
-          "runtime_seconds": 0.1818050998263061,
+          "runtime_seconds": 0.17607309995219111,
           "status": "EXACT",
           "label": "Tseitin M\u00f6bius ladder n=14",
           "conflicts": 256,
@@ -382,7 +382,7 @@
         {
           "x": 24,
           "dimension": 16,
-          "runtime_seconds": 0.5788904996588826,
+          "runtime_seconds": 0.5724851000122726,
           "status": "EXACT",
           "label": "Tseitin M\u00f6bius ladder n=16",
           "conflicts": 512,
@@ -391,7 +391,7 @@
         {
           "x": 27,
           "dimension": 18,
-          "runtime_seconds": 1.9627824001945555,
+          "runtime_seconds": 1.932618800085038,
           "status": "EXACT",
           "label": "Tseitin M\u00f6bius ladder n=18",
           "conflicts": 1024,
@@ -400,7 +400,7 @@
         {
           "x": 30,
           "dimension": 20,
-          "runtime_seconds": 7.101540100295097,
+          "runtime_seconds": 6.935537399724126,
           "status": "EXACT",
           "label": "Tseitin M\u00f6bius ladder n=20",
           "conflicts": 2048,
