@@ -19,6 +19,9 @@
 - Read [`PEER_AUDIT_RESPONSE_2026_10_20.md`](PEER_AUDIT_RESPONSE_2026_10_20.md)
   for the current claim-by-claim peer-audit disposition. The 19 October
   response is retained as the preceding historical record.
+- Read [`REFEREE_RESPONSE_2026_10_20.md`](REFEREE_RESPONSE_2026_10_20.md) for
+  the publication-level major-revision response, the explicit trust chain, and
+  the next mathematical research gates.
 - Follow [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) to replay the checks from a
   fresh checkout. The current frozen run has 546 passing methods across 55
   suites; the full audit is intentionally separate from the lighter continuous
@@ -39,6 +42,11 @@ unresolved.** The work delivers exact algorithms for stated structural classes,
 finite certificates, and proofs excluding specific proposed generalizations.
 It does not provide a polynomial algorithm for all SAT instances or a lower
 bound against every polynomial algorithm.
+
+The cut sequence keeps historical `SOS` filenames for stable artifact paths.
+Only the explicit degree-two Boolean-square entry is currently called an
+SOS/moment constraint. The later inequalities are valid integer-domain
+polynomial cuts; no bounded-degree SOS representation is claimed for them.
 
 The time-stamped [external status audit](EXTERNAL_STATUS_AUDIT_2026_10_18.md)
 checks current public claims against the official problem status and keeps an
@@ -716,7 +724,7 @@ for `t = sum_{p != 0} x_p`, `(5t-31)^2` has exact pseudo-expectation `-992/7`
 finite exact optimum `7037/1095` in the [SOS-strengthened report](local_marginal_code_lab/REED_MULLER_SOS_STRENGTHENED_REPORT.md).
 The [exact-dual search record](local_marginal_code_lab/REED_MULLER_EXACT_DUAL_SEARCH_REPORT.md)
 documents the full-rank rational basis and the earlier rejected numerical
-reconstruction. This remains a finite hierarchy result, not a general SAT
+reconstruction. This remains a finite square/moment relaxation result, not a general SAT
 lower bound or a P-versus-NP result.
 
 The [adaptive fragment synthesis report](ADAPTIVE_FRAGMENT_SYNTHESIS_REPORT.md)
@@ -779,7 +787,7 @@ the strengthened finite RM(2,5) relaxation has exact optimum `7037/1095`,
 with an independently replayed 1,889-row rational dual and zero reduced-cost
 gap. The [exact-dual search record](local_marginal_code_lab/REED_MULLER_EXACT_DUAL_SEARCH_REPORT.md)
 preserves the basis construction and rejected numerical route. This remains a
-finite hierarchy result, not a general SAT algorithm or a P-versus-NP result.
+finite square/moment relaxation result, not a general SAT algorithm or a P-versus-NP result.
 
 The [two-cut certificate](local_marginal_code_lab/REED_MULLER_SOS_TWO_CUT_REPORT.md)
 adds the valid integer-weight inequality `(t-6)(t-7) >= 0`, which the one-cut

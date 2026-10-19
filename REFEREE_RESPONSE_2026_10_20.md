@@ -1,0 +1,60 @@
+# Response to the independent referee report — 20 October 2026
+
+The report is accepted as a major-revision assessment. It does not identify a
+counterexample to the finite Reed–Muller certificates or to the all-dual LP
+argument, but it correctly says that mathematical credibility, reproducible
+software, novelty, and publication readiness are different claims. The
+repository therefore records the report as a revision gate, not as evidence
+for P versus NP.
+
+## Disposition
+
+| Referee point | Decision and action |
+| --- | --- |
+| The `RM(s,2s+1)` family theorem is a credible dual-distance/local-projection theorem. | Retain it as a scoped theorem. The next manuscript must state exactly what is inherited from Reed–Muller dual distance and what, if anything, is new about this local-marginal formulation. No novelty claim is made until that comparison is complete. |
+| The exact `31/5` value is a strong finite certificate if the quotient equivalence is established. | Retain the certificate. Add a standalone quotient-equivalence theorem and proof sketch, with the producer/reviewer correspondence and the remaining formalisation boundary recorded in [`REED_MULLER_QUOTIENT_EQUIVALENCE.md`](local_marginal_code_lab/REED_MULLER_QUOTIENT_EQUIVALENCE.md). |
+| The seven-cut sequence should not be called a standard SOS hierarchy without degree-bounded SOS proofs. | Adopted. The cuts are now described as **valid integer-domain polynomial cuts** or **integer-cut strengthening**. The degree-two Boolean square is the only item currently described as an SOS/moment constraint. Existing `SOS` filenames are retained as stable artifact paths and are explicitly historical names. |
+| The seven-cut value is fractional and the candidate scan is separation only. | Retain the exact primal/dual value `35873801083/5129253893` as a finite integer-cut LP optimum. Retain the 39-candidate scan only as separation evidence; no post-candidate optimum is claimed. |
+| The all-redundant-parity LP is a promising focused theorem but overlaps pseudocodeword and fundamental-polytope literature. | Retain the theorem and open a theorem-by-theorem novelty comparison before presenting it as new. |
+| X3C reductions and PHP width are correct but largely background or validation infrastructure. | Keep them in the research-software ledger and move them out of any proposed central mathematical paper. |
+| The repository is too broad for one paper. | Split the publication plan into: (A) code-based local-marginal gaps, (B) exact finite certificate infrastructure, and (C) structural SAT/proof-complexity experiments. The current repository remains the source record for all three. |
+| “Independent reviewer” must not imply proof-assistant independence. | Make the trust chain explicit: definition and code parameters → support replay → symmetry quotient theorem → base primal/dual certificate → integer-cut certificate → scope and literature comparison. A reviewer may import an earlier audited artifact; that dependency is now stated rather than hidden. |
+| Machine-readable certificates need a human explanation and cost accounting. | Add the quotient theorem, retain exact rational certificate summaries, and make construction, discovery, and verification costs separate fields in the next paper-oriented report. |
+
+## Terminology rule adopted here
+
+For a polynomial `P(t)` used only because `P(t) >= 0` for every integer weight
+`t` in `0..31`, the repository calls it a **valid integer-domain polynomial
+cut**. This does not assert that `P` is nonnegative on the real interval or
+that it has a bounded-degree sum-of-squares representation modulo Boolean
+constraints. A report may call the degree-two square a Boolean-square/SOS
+moment constraint because that representation is explicit. The later cuts
+must not inherit that label by filename alone.
+
+## Research gates
+
+The next work is ranked by mathematical value rather than by the number of
+additional certificates it can produce:
+
+1. Derive a compact analytical inequality from the 28-orbit affine-overlap
+   dual, and test whether it has a parameterised analogue for `RM(s,2s+1)`.
+2. Compare the local-marginal model and integer-cut sequence with standard
+   Sherali–Adams, Lasserre/SOS, pseudocodeword, and orthogonal-array results.
+   A relationship will be stated only after its hypotheses are proved.
+3. Separate construction, discovery, and verification costs for the finite
+   `RM(2,5)` certificate, including bit lengths, certificate size, memory, and
+   replay time.
+4. Collect nearby exact instances only when they test a stated scaling
+   conjecture. A fitted curve is not a theorem, and a failed conjecture is a
+   valid recorded outcome.
+
+The short-term success criterion is a publishable theorem with a precise
+new-versus-known comparison. Producing more cuts without such a criterion is
+not treated as progress toward P versus NP.
+
+## Current scope statement
+
+The repository still has no uniform deterministic polynomial-time SAT solver,
+no unconditional lower bound against every polynomial-time SAT solver, and no
+resolution of P versus NP. The finite RM(2,5) values, the code-family barrier,
+the all-dual LP gap, and the proof-complexity replays remain scoped results.

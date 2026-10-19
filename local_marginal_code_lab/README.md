@@ -1,5 +1,11 @@
 # Local-marginal code barrier
 
+Terminology note: the later files retain historical `SOS` names for stable
+paths, but their added inequalities are reported as valid integer-domain
+polynomial cuts unless an explicit bounded-degree SOS/moment representation is
+provided. The degree-two Boolean-square audit is the current explicit SOS
+moment result.
+
 The lab defines an exact local projection-marginal relaxation for a pinned
 binary linear code. It verifies a dual-distance theorem showing that the
 deterministic unit-vector marginals survive through level `delta-2`, even when

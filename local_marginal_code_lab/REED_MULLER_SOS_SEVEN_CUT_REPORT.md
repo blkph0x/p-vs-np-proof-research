@@ -1,4 +1,4 @@
-# Exact seventh-cut SOS certificate for RM(2,5)
+# Exact seventh-cut integer-polynomial certificate for RM(2,5)
 
 This report records an exact finite probe after the sixth-cut replay. The underlying object remains the complete pinned RM(2,5) level-eight projection-marginal quotient: 2,174 variable orbits and 27,926 equality rows.
 
@@ -16,7 +16,7 @@ The adjacent factors are nonnegative on integer `t`, and `31-t` is nonnegative o
 -402*C(t,1) + 82*C(t,2) - 6*C(t,3),
 ```
 
-with constant term `1302`. The exact six-cut witness violates this valid inequality by `-3473117738496/217025866361`. This is an integer-domain certificate, not a fitted floating-point row.
+with constant term `1302`. The exact six-cut witness violates this valid inequality by `-3473117738496/217025866361`. This is a valid integer-domain polynomial cut, not a standard SOS certificate or a fitted floating-point row. The repository has not supplied a degree-bounded SOS representation for this polynomial.
 
 ## Exact result
 

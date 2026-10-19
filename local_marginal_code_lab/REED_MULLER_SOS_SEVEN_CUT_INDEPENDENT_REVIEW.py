@@ -252,13 +252,15 @@ def main() -> None:
                     json.loads(CERTIFICATE_PATH.read_text(encoding="utf-8")))
     REVIEW_JSON.write_text(json.dumps(result, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     REVIEW_MD.write_text(
-        "# Independent seven-cut SOS RM(2,5) review\n\n"
+        "# Independent seven-cut integer-cut RM(2,5) review\n\n"
         "The pure-standard-library replay accepted the saved primal and dual certificates.\n\n"
         f"- dual lower bound: `{result['dual_lower_bound']}`\n"
         f"- primal upper bound: `{result['primal_upper_bound']}`\n"
         f"- unresolved gap: `{result['unresolved_gap']}`\n"
         f"- zero reduced costs: `{result['zero_reduced_cost_count']}`\n\n"
-        "The result is finite and representation-specific; it does not resolve P versus NP.\n",
+        "The cut is valid on the integer weight domain. This replay does not "
+        "claim a bounded-degree SOS representation for it. The result is finite "
+        "and representation-specific; it does not resolve P versus NP.\n",
         encoding="utf-8")
     print("REED_MULLER_SOS_SEVEN_CUT_INDEPENDENT_PASS")
     print(json.dumps(result, sort_keys=True))

@@ -1,4 +1,4 @@
-# Independent seven-cut SOS RM(2,5) review
+# Independent seven-cut integer-cut RM(2,5) review
 
 The pure-standard-library replay accepted the saved primal and dual certificates.
 
@@ -7,4 +7,6 @@ The pure-standard-library replay accepted the saved primal and dual certificates
 - unresolved gap: `0`
 - zero reduced costs: `2144`
 
-The result is finite and representation-specific; it does not resolve P versus NP.
+The cut is valid on the integer weight domain. This replay does not claim a
+bounded-degree SOS representation for it. The result is finite and
+representation-specific; it does not resolve P versus NP.

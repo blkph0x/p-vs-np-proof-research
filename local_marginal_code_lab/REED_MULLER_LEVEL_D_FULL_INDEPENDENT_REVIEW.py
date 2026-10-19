@@ -305,7 +305,10 @@ def replay(certificate, *, run_controls=True):
     reconstructed_objective = [0] * len(variable_orbits)
     for point in range(1, N):
         reconstructed_objective[variable_id(1 << point, 1)] += 1
-    saved_objective = [int(value) for value in certificate["objective"]]
+    saved_objective = certificate["objective"]
+    if any(isinstance(value, bool) or not isinstance(value, int)
+           for value in saved_objective):
+        raise ValueError("objective vector must contain JSON integers")
     if saved_objective != reconstructed_objective:
         raise ValueError("objective vector reconstruction mismatch")
 

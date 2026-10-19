@@ -1,5 +1,5 @@
 {
-  "file_count": 1280,
+  "file_count": 1282,
   "files": {
     ".gitattributes": {
       "bytes": 648,
@@ -306,8 +306,8 @@
       "sha256": "7401f5cf6b946a82cec459cbaf5a62cb4b5237b8f96501e7f0496a3efc662683"
     },
     "METHOD_INDEX.md": {
-      "bytes": 24466,
-      "sha256": "aa5dbe79158675a284bceeef234a5b021e53cc2bf7e0f992fb5f7ce6b1bd1b12"
+      "bytes": 24862,
+      "sha256": "0aacb74d9dec2de09ed70e41fcf0c74210c1b4364f16955bde315359fb2e8148"
     },
     "NATIVE_RESULTS.csv": {
       "bytes": 11436,
@@ -386,8 +386,12 @@
       "sha256": "631ec13d33a0045e6421133fee346759f9186117b909bdd327a954ddac826356"
     },
     "README.md": {
-      "bytes": 57274,
-      "sha256": "cf4cde69dcd7c73daace7c692dee186d60a756a12935cdb50c72438475e7407b"
+      "bytes": 57794,
+      "sha256": "94d4fc61b1d0038127baa461ed902a23a28f4cbbbd3423616def280ff2e9dae1"
+    },
+    "REFEREE_RESPONSE_2026_10_20.md": {
+      "bytes": 5248,
+      "sha256": "cb467ac03bc9964fc000a298f87ea6ff8751246e08f57469f5facdfffda93d5e"
     },
     "REGULAR_LDPC_33_LOCAL_AUDIT.json": {
       "bytes": 5015,
@@ -2154,8 +2158,8 @@
       "sha256": "ce86680f49890fe07bdb95febd996ac2fdf8b2d45cd25b7e5b8863026581c070"
     },
     "index.md": {
-      "bytes": 14732,
-      "sha256": "8a00186422f1de987ff1a1210a06f10e1400bfcecfc13ff1a1f369bae37fe29c"
+      "bytes": 15037,
+      "sha256": "6a709b6314064aefce7ba8f69a3dff8e7c82071d83605a607d47bf8693a303f6"
     },
     "interval_coefficient_lab/INDEPENDENT_REVIEW.md": {
       "bytes": 7681,
@@ -2386,8 +2390,8 @@
       "sha256": "608489e4181967b18a4c22e96413a7a4cbc06de4b04c91e5985e3a7bc0a4b06c"
     },
     "local_marginal_code_lab/README.md": {
-      "bytes": 8079,
-      "sha256": "1dc341c746219ebb04331e08c6f4eadeb1b9abbf60bd4dbc5c0e447aaed5f5a8"
+      "bytes": 8395,
+      "sha256": "ce4a3696911070be7ab61d0c8ea4168e53c16a1693b106b9cdd16b752a95c765"
     },
     "local_marginal_code_lab/REED_MULLER_ALL_DUAL_INDEPENDENT_REVIEW.json": {
       "bytes": 1060,
@@ -2498,8 +2502,8 @@
       "sha256": "5e03205e6414bc309fe0e61520c4253b4e8f7d875dcbd3206fa86ac3d063b8a2"
     },
     "local_marginal_code_lab/REED_MULLER_LEVEL_D_FULL_INDEPENDENT_REVIEW.py": {
-      "bytes": 17328,
-      "sha256": "5df7dbc0ace449e51396be105f55cf540392a46ff28465bbb7b4d1f54e6f809d"
+      "bytes": 17481,
+      "sha256": "9bc05a83721565742334f770730f754529ea0dc0551f52332d77c4c69ba7388d"
     },
     "local_marginal_code_lab/REED_MULLER_LEVEL_D_FULL_REPORT.md": {
       "bytes": 4021,
@@ -2528,6 +2532,10 @@
     "local_marginal_code_lab/REED_MULLER_LEVEL_D_RESULTS.json": {
       "bytes": 35450,
       "sha256": "c58bffc996ec680a023cfd55103cd14bb6e73ecdb9ea3e2273a6af384277f69b"
+    },
+    "local_marginal_code_lab/REED_MULLER_QUOTIENT_EQUIVALENCE.md": {
+      "bytes": 2725,
+      "sha256": "7f3bded8c558da7997acd4212c2c142c7ac66e4d9cfe9b79c660f91337ea60fe"
     },
     "local_marginal_code_lab/REED_MULLER_RESULTS.json": {
       "bytes": 13525,
@@ -2618,16 +2626,16 @@
       "sha256": "e87705951f2bcd0dfc0fb78596d91db57fc961c8b50ae7f00696152cf965bd13"
     },
     "local_marginal_code_lab/REED_MULLER_SOS_SEVEN_CUT_INDEPENDENT_REVIEW.md": {
-      "bytes": 364,
-      "sha256": "c0c65b266b1ea09ac7fdf13b24668bc979f665eb6e3a3451ae6d6e62a3b2a3b1"
+      "bytes": 488,
+      "sha256": "ecb716310a4a71a78beb31ed777304c85ff3b6707b9340fc1c0c5d4f0efa1461"
     },
     "local_marginal_code_lab/REED_MULLER_SOS_SEVEN_CUT_INDEPENDENT_REVIEW.py": {
-      "bytes": 14105,
-      "sha256": "446fa55d5adb25040b49873362a8137a53273b43951dca07681e8ce62817bde8"
+      "bytes": 14252,
+      "sha256": "6ef0d072ad5ab9309ee89618838863b1c1d27474418d941714913bec0765fbbb"
     },
     "local_marginal_code_lab/REED_MULLER_SOS_SEVEN_CUT_REPORT.md": {
-      "bytes": 2437,
-      "sha256": "8dd59d32e0202a110220a9ea4525fd82aa4a195e33b1eda5ba39e684d93a5440"
+      "bytes": 2579,
+      "sha256": "fb8918f4606ea827f2ed15d86b72741e5142f4dbccb0fe9f872823128d6836cc"
     },
     "local_marginal_code_lab/REED_MULLER_SOS_SEVEN_CUT_RESULTS.json": {
       "bytes": 182222,
@@ -5122,6 +5130,6 @@
       "sha256": "957bd3b51cbf2cd06ee00f1ef47ab5c6fa8bbf1a4c281c0e67b129b027785a18"
     }
   },
-  "generated_at_utc": "2026-10-19T20:37:15.720251+00:00",
-  "source_commit": "19d65227be74502dbe0f70beb76d50a419e325d8"
+  "generated_at_utc": "2026-10-19T21:15:17.073784+00:00",
+  "source_commit": "3ca4aef45f46ed6948bb5057147b8dda572529ad"
 }
