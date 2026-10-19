@@ -21,9 +21,11 @@ stated structural families, finite exhaustive controls, certificate verifiers,
 and scoped counterexamples. It does not claim a solver for every SAT instance
 or a lower bound against every polynomial algorithm.
 
-The latest recorded full audit passed **55 suites and 546 test methods** with
-unchanged source hashes. These are reproducibility results for the checked
-finite cases, not a solution to the open problem.
+The latest committed baseline audit passed **55 suites and 546 test methods**
+with unchanged source hashes. The current hierarchy-positioning control adds
+three dedicated tests and is registered for the next full audit. These are
+reproducibility results for checked finite cases, not a solution to the open
+problem.
 
 The [current peer-audit disposition](PEER_AUDIT_RESPONSE_2026_10_20.md) records
 what is borrowed from neighboring proof-complexity, SAT, hierarchy, and coding

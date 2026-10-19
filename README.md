@@ -23,15 +23,16 @@
   the publication-level major-revision response, the explicit trust chain, and
   the next mathematical research gates.
 - Follow [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) to replay the checks from a
-  fresh checkout. The current frozen run has 546 passing methods across 55
-  suites; the full audit is intentionally separate from the lighter continuous
-  integration checks, and all of its suite dependencies are included in this
-  repository.
+  fresh checkout. The latest committed baseline has 546 passing methods across
+  55 suites; the hierarchy-positioning note adds three tests registered for
+  the next full audit. The full audit is intentionally separate from the
+  lighter continuous-integration checks, and all suite dependencies are
+  included in this repository.
 - The latest external status check is
   [`EXTERNAL_STATUS_AUDIT_2026_10_18.md`](EXTERNAL_STATUS_AUDIT_2026_10_18.md).
 
-Test counts are audit evidence, not result counts: the current frozen run has
-55 suites and 546 test methods, while the result ledger remains
+Test counts are audit evidence, not result counts: the latest committed
+baseline has 55 suites and 546 test methods, while the result ledger remains
 [`METHOD_INDEX.md`](METHOD_INDEX.md). Changes that alter a result must update the relevant theorem/report, saved
 artifact, independent checker, source citation, and the repository manifest in
 the same change. A public claim is recorded as unresolved until its full proof
