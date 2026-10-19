@@ -1,5 +1,5 @@
 {
-  "file_count": 1267,
+  "file_count": 1268,
   "files": {
     ".gitattributes": {
       "bytes": 648,
@@ -306,8 +306,8 @@
       "sha256": "7401f5cf6b946a82cec459cbaf5a62cb4b5237b8f96501e7f0496a3efc662683"
     },
     "METHOD_INDEX.md": {
-      "bytes": 23431,
-      "sha256": "4434450a3cad2b3d49e023982839fba760ffe76f0079f059db4107d1f95f528b"
+      "bytes": 23525,
+      "sha256": "d25dad3044eb179af7c304b4145a966f34b6291513ccc60afd434bbcc22ef75b"
     },
     "NATIVE_RESULTS.csv": {
       "bytes": 11436,
@@ -330,8 +330,12 @@
       "sha256": "8304ecc29ed6e814eeb3df1edc195d4707ff993a6cd1228bf92d4c7ed3c8c891"
     },
     "PEER_AUDIT_RESPONSE_2026_10_19.md": {
-      "bytes": 8597,
-      "sha256": "3c9804af366b6201db413092f10ccd54cab4df41c3aea825936ecb385a9cce43"
+      "bytes": 8818,
+      "sha256": "89509fd7575d9cb5100041bd5444fb437a93444a8f077c223368deaf3600868c"
+    },
+    "PEER_AUDIT_RESPONSE_2026_10_20.md": {
+      "bytes": 7269,
+      "sha256": "ed7c5f333f3f08e7838ab65bae5e48934ce78d8b7466e13c22b123ecd649c873"
     },
     "PERTURBATION_ROUTE_REVIEW.md": {
       "bytes": 16524,
@@ -358,8 +362,8 @@
       "sha256": "a2ad1d52ccdcaa0ba34e59070c8a709aa5f89135f554c5b1cb61d5be0bec15e0"
     },
     "PUBLIC_SOURCES.md": {
-      "bytes": 10255,
-      "sha256": "650f1bd3b385748e22e3cb4156b90303ff44c66a940bf4cc5bf0cf952f3f4d57"
+      "bytes": 10292,
+      "sha256": "8732763bb3bc72841f2df2ec9b0de0772b64b5fcb074d902213dc9f7dfb91716"
     },
     "RANDOMIZED_ISOLATION_REPORT.md": {
       "bytes": 915,
@@ -382,8 +386,8 @@
       "sha256": "631ec13d33a0045e6421133fee346759f9186117b909bdd327a954ddac826356"
     },
     "README.md": {
-      "bytes": 56274,
-      "sha256": "0ff22ba811cd507fca36fcf1ae90bbca356900d73a16e3857e2c90ec23b09fb9"
+      "bytes": 56507,
+      "sha256": "44042be5064c74b8cb00c6d9dc53a0fdbffd47d1a96a7944c185288a611ba030"
     },
     "REGULAR_LDPC_33_LOCAL_AUDIT.json": {
       "bytes": 5015,
@@ -418,8 +422,8 @@
       "sha256": "2fb2bf7ea62a6c83a8ff274073f90b712c4ec8a650c1a14faf818eb6c1b9d122"
     },
     "REPORT.md": {
-      "bytes": 40991,
-      "sha256": "9c4ea1d518759f4bac6f54cc9c1a6def0380dfaa1a990bc8eadfad15f214dcc3"
+      "bytes": 41418,
+      "sha256": "e2613751a02ed13945172439c64bf9dbd13201e9102592f1e3485f25d89a6dad"
     },
     "REPRODUCIBILITY.md": {
       "bytes": 7804,
@@ -2150,8 +2154,8 @@
       "sha256": "ce86680f49890fe07bdb95febd996ac2fdf8b2d45cd25b7e5b8863026581c070"
     },
     "index.md": {
-      "bytes": 13056,
-      "sha256": "9ec61c82dd0a8351d0c472631df11d660a3daff8edf9199daa20e2536efb98ef"
+      "bytes": 13256,
+      "sha256": "fd941838d9582aac5ed3f585487fa66d97b67f488ff235473c0e9e0e99e054c5"
     },
     "interval_coefficient_lab/INDEPENDENT_REVIEW.md": {
       "bytes": 7681,
@@ -5070,6 +5074,6 @@
       "sha256": "957bd3b51cbf2cd06ee00f1ef47ab5c6fa8bbf1a4c281c0e67b129b027785a18"
     }
   },
-  "generated_at_utc": "2026-10-19T16:01:49.301693+00:00",
-  "source_commit": "ba20a10416102227be5b7dfc765609e24418ace3"
+  "generated_at_utc": "2026-10-19T16:11:07.015523+00:00",
+  "source_commit": "d5b21a97036cab7f4c37f421cdde26eae4a99653"
 }

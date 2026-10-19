@@ -16,8 +16,9 @@
   theorem, boundary result, and its write-up.
 - Use [`CITATIONS.md`](CITATIONS.md) and [`PUBLIC_SOURCES.md`](PUBLIC_SOURCES.md)
   for public sources and the reports that use them.
-- Read [`PEER_AUDIT_RESPONSE_2026_10_19.md`](PEER_AUDIT_RESPONSE_2026_10_19.md)
-  for the literature comparison, scope corrections, and current limitations.
+- Read [`PEER_AUDIT_RESPONSE_2026_10_20.md`](PEER_AUDIT_RESPONSE_2026_10_20.md)
+  for the current claim-by-claim peer-audit disposition. The 19 October
+  response is retained as the preceding historical record.
 - Follow [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) to replay the checks from a
   fresh checkout. The current frozen run has 539 passing methods across 54
   suites; the full audit is intentionally separate from the lighter continuous
@@ -26,7 +27,9 @@
 - The latest external status check is
   [`EXTERNAL_STATUS_AUDIT_2026_10_18.md`](EXTERNAL_STATUS_AUDIT_2026_10_18.md).
 
-Changes that alter a result must update the relevant theorem/report, saved
+Test counts are audit evidence, not result counts: the current frozen run has
+54 suites and 539 test methods, while the result ledger remains
+[`METHOD_INDEX.md`](METHOD_INDEX.md). Changes that alter a result must update the relevant theorem/report, saved
 artifact, independent checker, source citation, and the repository manifest in
 the same change. A public claim is recorded as unresolved until its full proof
 and bit-complexity argument pass the standard above.

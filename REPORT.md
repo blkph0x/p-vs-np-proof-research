@@ -1,4 +1,11 @@
-# Research checkpoint: 19 October 2026
+# Historical research checkpoint: 19 October 2026
+
+This file is a dated checkpoint, not the current result index. The global
+P-versus-NP question remains unresolved, while the later RM(2,5) full
+level-eight replay closed that finite model at `31/5`. For the current
+claim-by-claim status and the distinction between test counts and result
+counts, see [`PEER_AUDIT_RESPONSE_2026_10_20.md`](PEER_AUDIT_RESPONSE_2026_10_20.md)
+and [`METHOD_INDEX.md`](METHOD_INDEX.md).
 
 The [latest threshold-composition phase](THRESHOLD_PHASE_REPORT.md) now records
 correct SAT encodings, scalar aggregation failures, promised flat clause

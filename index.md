@@ -25,10 +25,12 @@ The latest recorded full audit passed **54 suites and 539 test methods** with
 unchanged source hashes. These are reproducibility results for the checked
 finite cases, not a solution to the open problem.
 
-The [peer-audit response](PEER_AUDIT_RESPONSE_2026_10_19.md) records what is
-borrowed from neighboring proof-complexity, SAT, hierarchy, and coding
+The [current peer-audit disposition](PEER_AUDIT_RESPONSE_2026_10_20.md) records
+what is borrowed from neighboring proof-complexity, SAT, hierarchy, and coding
 literatures, what this repository actually certifies, and which claims remain
-outside its scope.
+outside its scope. The repository does not claim absolute novelty: its narrow
+contribution is keeping finite certificates, independent replay, citations,
+and explicit `UNKNOWN` outcomes in one result ledger.
 
 The newest finite proof-complexity checkpoint settles the standard PHP(5,4)
 encoding's minimum resolution width at **4**. An exhaustive five-pebble game

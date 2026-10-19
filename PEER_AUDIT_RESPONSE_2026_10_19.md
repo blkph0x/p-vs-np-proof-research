@@ -1,5 +1,9 @@
 # Response to the 19 October peer audit
 
+**Historical record.** The current disposition, including the test-count versus
+result-count correction and the historical-report labeling, is in
+[`PEER_AUDIT_RESPONSE_2026_10_20.md`](PEER_AUDIT_RESPONSE_2026_10_20.md).
+
 The audit is correct about the project's narrow contribution and its limits.
 No public repository search can establish that no one has ever assembled a
 similar collection, so the landing-page language now describes the repository
