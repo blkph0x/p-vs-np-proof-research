@@ -19,7 +19,7 @@
 - Read [`PEER_AUDIT_RESPONSE_2026_10_19.md`](PEER_AUDIT_RESPONSE_2026_10_19.md)
   for the literature comparison, scope corrections, and current limitations.
 - Follow [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) to replay the checks from a
-  fresh checkout. The current frozen run has 512 passing methods across 51
+  fresh checkout. The current frozen run has 522 passing methods across 52
   suites; the full audit is intentionally separate from the lighter continuous
   integration checks, and all of its suite dependencies are included in this
   repository.
@@ -795,6 +795,14 @@ relaxation closes exactly at `324713143/48731153` with matching rational
 primal and dual certificates, 2,144 zero reduced costs, and independent
 replay. It remains a scoped certificate, not a general SAT solver or a
 P-versus-NP answer.
+
+The [sixth-cut certificate](local_marginal_code_lab/REED_MULLER_SOS_SIX_CUT_REPORT.md)
+adds the valid integer-domain polynomial
+`(t-6)(t-7)(31-t)(t+32)^2`, which the fifth-cut witness violates by
+`-6759234824400/48731153`. The next finite relaxation closes exactly at
+`22465669893401/3255387995415` with matching rational primal and dual
+certificates, 2,147 zero reduced costs, and independent replay. It remains a
+scoped certificate, not a general SAT solver or a P-versus-NP answer.
 
 The [certified residual quotient report](CERTIFIED_RESIDUAL_QUOTIENT_REPORT.md)
 implements the sound fallback: syntactic, bounded-exact, or replayable-proof

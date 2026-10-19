@@ -498,6 +498,14 @@ relaxation at `324713143/48731153`. The exact base dual has 1,733 nonzero rows,
 quotient and rational objective. This is another finite separation and
 certificate, not a general SAT algorithm or a P-versus-NP result.
 
+The next exact probe tests the valid product
+`(t-6)(t-7)(31-t)(t+32)^2 >= 0`. The fifth-cut witness evaluates it at
+`-6759234824400/48731153`; the sixth-cut replay closes the next finite
+relaxation at `22465669893401/3255387995415`. The exact base dual has 1,793
+nonzero rows, 2,147 zero reduced costs, and the independent reviewer rebuilds
+the same quotient and rational objective. This is a finite separation and
+certificate, not a general SAT algorithm or a P-versus-NP result.
+
 ## Separate general direction: stronger global constraints
 
 Any proposed relaxation must be tested first against the exact Golay witness

@@ -21,7 +21,7 @@ stated structural families, finite exhaustive controls, certificate verifiers,
 and scoped counterexamples. It does not claim a solver for every SAT instance
 or a lower bound against every polynomial algorithm.
 
-The latest recorded full audit passed **51 suites and 512 test methods** with
+The latest recorded full audit passed **52 suites and 522 test methods** with
 unchanged source hashes. These are reproducibility results for the checked
 finite cases, not a solution to the open problem.
 
@@ -142,6 +142,14 @@ The [fifth-cut replay](local_marginal_code_lab/REED_MULLER_SOS_FIVE_CUT_REPORT.m
 adds the valid core inequality `t(31-t)(t-3)(t-4) >= 0`. The four-cut witness
 violates it by `-61440933600/184149541`; the next finite relaxation closes
 exactly at `324713143/48731153`, with matching rational certificates,
+nonnegative reduced costs, and independent replay. This remains a
+representation-specific certificate, not a P-versus-NP result.
+
+The [sixth-cut replay](local_marginal_code_lab/REED_MULLER_SOS_SIX_CUT_REPORT.md)
+adds the valid integer-domain inequality
+`(t-6)(t-7)(31-t)(t+32)^2 >= 0`. The fifth-cut witness violates it by
+`-6759234824400/48731153`; the next finite relaxation closes exactly at
+`22465669893401/3255387995415`, with matching rational certificates,
 nonnegative reduced costs, and independent replay. This remains a
 representation-specific certificate, not a P-versus-NP result.
 

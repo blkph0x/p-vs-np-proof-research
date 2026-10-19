@@ -50,6 +50,8 @@ def main():
                ["-v", "test_reed_muller_sos_four_cut"]),
               ("local_marginal_sos_five_cut", ROOT / "local_marginal_code_lab",
                ["-v", "test_reed_muller_sos_five_cut"]),
+              ("local_marginal_sos_six_cut", ROOT / "local_marginal_code_lab",
+               ["-v", "test_reed_muller_sos_six_cut"]),
               ("labelled_join_certified", ROOT / "labelled_join_certified", ["discover", "-v"])]
     def hashes():
         paths = sorted({p for _, directory, _ in suites for p in directory.glob("*.py")})
