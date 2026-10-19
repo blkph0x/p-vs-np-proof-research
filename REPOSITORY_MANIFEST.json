@@ -6,12 +6,12 @@
       "sha256": "d444b6da71de1e680c63a19e376ae7bc43c5e96ececfbf46f74127e169305bdc"
     },
     ".github/workflows/pages.yml": {
-      "bytes": 828,
-      "sha256": "a26d9a05cfd58fd3abfd8d432bef6aa7c89465adb50fd0f07bf16bdc85d9cc6b"
+      "bytes": 826,
+      "sha256": "8fdbe59654d74f073e56039d336fe737646ff55d3f938d184f64fa5f401a62ce"
     },
     ".github/workflows/research-checks.yml": {
-      "bytes": 7116,
-      "sha256": "384de045476bb411b6715fd4e90a4a8652eafc54cd81843994a243d5d6658bdc"
+      "bytes": 7115,
+      "sha256": "ea3b69dbf2079c8e6b2ce9f3ef69087e2ecdfaca5b4fa3a8ebbb717894fc430b"
     },
     ".gitignore": {
       "bytes": 415,
@@ -5070,6 +5070,6 @@
       "sha256": "957bd3b51cbf2cd06ee00f1ef47ab5c6fa8bbf1a4c281c0e67b129b027785a18"
     }
   },
-  "generated_at_utc": "2026-10-19T15:53:53.299360+00:00",
-  "source_commit": "90782efaf72330d4150832571729601ab3c35694"
+  "generated_at_utc": "2026-10-19T16:01:49.301693+00:00",
+  "source_commit": "ba20a10416102227be5b7dfc765609e24418ace3"
 }
