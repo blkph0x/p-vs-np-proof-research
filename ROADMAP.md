@@ -490,6 +490,14 @@ same 2,174-variable quotient without importing the producer. This is a new
 finite separation and certificate, not a general SAT algorithm or a
 P-versus-NP result.
 
+The following exact probe removes the harmless `(t+28)` factor and tests the
+core integer-domain cut `t(31-t)(t-3)(t-4) >= 0`. The four-cut witness evaluates
+it at `-61440933600/184149541`; the fifth-cut replay closes the next finite
+relaxation at `324713143/48731153`. The exact base dual has 1,733 nonzero rows,
+2,144 zero reduced costs, and the independent reviewer reconstructs the same
+quotient and rational objective. This is another finite separation and
+certificate, not a general SAT algorithm or a P-versus-NP result.
+
 ## Separate general direction: stronger global constraints
 
 Any proposed relaxation must be tested first against the exact Golay witness

@@ -29,7 +29,7 @@ finite case exact and auditable.
 The value is epistemic and operational. A second program reconstructs the
 finite geometry, scope orbits, quotient matrix, rational equations, and dual
 reduced costs without importing the producer's model builder. The one-cut,
-two-cut, three-cut, and now four-cut RM(2,5) records therefore expose exact objects that
+two-cut, three-cut, four-cut, and now five-cut RM(2,5) records therefore expose exact objects that
 another person can inspect or mutate. The new third-cut certificate adds the
 valid integer polynomial `(t-6)(t-7)(t-23)(t-24)`, which the two-cut witness
 evaluates at `-2400/19`, and closes the next finite relaxation at `5231/801`
@@ -56,7 +56,7 @@ current record citable while that longer-form work is absent.
 ## Corrections made in this checkpoint
 
 - Updated the site, README, report, and reproducibility date to 19 October
-  2026 and corrected the audit total to 50 suites and 502 test methods.
+  2026 and corrected the audit total to 51 suites and 512 test methods.
 - Added the exact three-cut producer, pure-standard-library independent
   reviewer, adversarial tests, report, CI replay step, and audit registration.
 - Reworded the affine-overlap and flat-star historical reports so their
@@ -66,11 +66,16 @@ current record citable while that longer-form work is absent.
   report, CI replay step, and audit registration. The new integer-domain cut
   `t(31-t)(t-3)(t-4)(t+28)` closes the next finite relaxation at
   `1219047171/184149541`; this remains a scoped certificate.
+- Added the exact fifth-cut producer, independent reviewer, adversarial tests,
+  report, CI replay step, and audit registration. The core integer-domain cut
+  `t(31-t)(t-3)(t-4)` is violated by the four-cut witness at
+  `-61440933600/184149541` and closes the next finite relaxation at
+  `324713143/48731153`; this remains a scoped certificate.
 - Added the three-cut result to the local lab documentation and public method
   narrative. `P versus NP remains unresolved`.
 
 The project's source policy remains in [`CITATIONS.md`](CITATIONS.md), and the
 generated URL index is [`PUBLIC_SOURCES.md`](PUBLIC_SOURCES.md). The exact
 certificate files and replay commands are linked from the
-[`four-cut report`](local_marginal_code_lab/REED_MULLER_SOS_FOUR_CUT_REPORT.md)
-and its preceding three-cut report.
+[`five-cut report`](local_marginal_code_lab/REED_MULLER_SOS_FIVE_CUT_REPORT.md),
+which follows the four-cut and three-cut reports.

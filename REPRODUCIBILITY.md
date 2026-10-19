@@ -25,7 +25,7 @@ python run_research_checks.py
 ```
 
 The command regenerates `TEST_OUTPUT.txt` and `TEST_SUMMARY.json`, then checks
-all registered suites. The current checkpoint passes 50 suites and 502 methods
+all registered suites. The current checkpoint passes 51 suites and 512 methods
 with unchanged source hashes. A full run can take several
 minutes because it includes exhaustive finite controls and native rank checks.
 
@@ -98,6 +98,12 @@ python REED_MULLER_SOS_FOUR_CUT_INDEPENDENT_REVIEW.py
 python -m unittest -v test_reed_muller_sos_four_cut.py
 Pop-Location
 
+Push-Location local_marginal_code_lab
+python run_reed_muller_sos_five_cut.py
+python REED_MULLER_SOS_FIVE_CUT_INDEPENDENT_REVIEW.py
+python -m unittest -v test_reed_muller_sos_five_cut.py
+Pop-Location
+
 The strengthened replay now reports `EXACT_OPTIMUM`: both saved certificates
 equal `7037/1095`, the reduced-cost minimum is `0`, and the gap is `0`. The
 certificate replay itself uses only the repository's exact arithmetic path;
@@ -120,6 +126,11 @@ The four-cut replay reports `EXACT_OPTIMUM`: both saved certificates equal
 The added integer-domain polynomial is
 `t(31-t)(t-3)(t-4)(t+28)`, with exact dual multiplier
 `4151/1657345869`.
+
+The five-cut replay reports `EXACT_OPTIMUM`: both saved certificates equal
+`324713143/48731153`, the reduced-cost minimum is `0`, and the gap is `0`.
+The added core polynomial is `t(31-t)(t-3)(t-4)`, with exact dual multiplier
+`178066/1315741131`; the earlier boundary product is slack in this optimum.
 Push-Location resolution_width_lab
 python run_indexed.py
 python review_indexed.py
