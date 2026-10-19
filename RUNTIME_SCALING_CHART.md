@@ -20,8 +20,9 @@ does not fit or claim a complexity class. A circle denotes an `EXACT` completed 
 denotes an `UNKNOWN` run stopped at its cap. The status key is part of the
 include so a reused chart keeps the same interpretation.
 
-The checked data combines `NATIVE_RESULTS.json` with the proof-producing CDCL
-campaign in `proof_complexity_scaling_lab/SCALING_RESULTS.json`; both source
+The checked data combines `NATIVE_RESULTS.json`, the proof-producing CDCL
+campaign in `proof_complexity_scaling_lab/SCALING_RESULTS.json`, and the exact
+Tseitin Möbius-ladder sweep in `tseitin_expander_lab/RESULTS.json`; all source
 hashes are saved in the chart data. `EXACT` and `UNKNOWN` records use separate
 symbols. UNKNOWN means that the native branch cap stopped the run; it must not
 be read as an exact answer, a lower bound, or evidence of an asymptotic runtime

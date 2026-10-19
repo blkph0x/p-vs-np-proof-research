@@ -62,7 +62,12 @@ class ScalingTests(unittest.TestCase):
             chart["source_sha256"]["NATIVE_RESULTS.json"],
             normalized_sha256(HERE.parent / "NATIVE_RESULTS.json"),
         )
+        self.assertEqual(
+            chart["source_sha256"]["tseitin_expander_lab/RESULTS.json"],
+            normalized_sha256(HERE.parent / "tseitin_expander_lab/RESULTS.json"),
+        )
         self.assertTrue(any(dataset["id"] == "cdcl-pigeonhole" for dataset in chart["datasets"]))
+        self.assertTrue(any(dataset["id"] == "tseitin-mobius-ladder" for dataset in chart["datasets"]))
 
     def test_runtime_chart_axes_match_point_fields(self):
         chart = json.loads((HERE.parent / "assets/data/scaling-runtime.json").read_text(encoding="utf-8"))

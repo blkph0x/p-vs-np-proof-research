@@ -2,13 +2,15 @@
   "schema": "runtime_scaling_v2",
   "generated_from": [
     "NATIVE_RESULTS.json",
-    "proof_complexity_scaling_lab/SCALING_RESULTS.json"
+    "proof_complexity_scaling_lab/SCALING_RESULTS.json",
+    "tseitin_expander_lab/RESULTS.json"
   ],
   "source_sha256": {
     "NATIVE_RESULTS.json": "370dc2b313b7c47052b9da3030c892611b12713bc8626b707cf64734589a4002",
-    "proof_complexity_scaling_lab/SCALING_RESULTS.json": "26c86346df659fa68e4dcbf2d524e25a4c89de723a7e59fd6c1a6cf0d73f2f3d"
+    "proof_complexity_scaling_lab/SCALING_RESULTS.json": "26c86346df659fa68e4dcbf2d524e25a4c89de723a7e59fd6c1a6cf0d73f2f3d",
+    "tseitin_expander_lab/RESULTS.json": "736bbd329fcbaa951ff3c50409fbb0b389f8993d19d0e8a05e67e40f4b888f24"
   },
-  "generated_utc": "2026-10-18T00:00:00Z",
+  "generated_utc": "2026-10-19T15:53:22Z",
   "x_axes": {
     "x": "Variables / encoded coordinates (n)",
     "dimension": "Code dimension / family parameter"
@@ -325,6 +327,84 @@
           "proof_events": 770,
           "decisions": 1792,
           "resolution_steps": 17992
+        }
+      ]
+    },
+    {
+      "id": "tseitin-mobius-ladder",
+      "label": "Proof-producing CDCL | M\u00f6bius-ladder Tseitin (EXACT)",
+      "points": [
+        {
+          "x": 9,
+          "dimension": 6,
+          "runtime_seconds": 0.0027320999652147293,
+          "status": "EXACT",
+          "label": "Tseitin M\u00f6bius ladder n=6",
+          "conflicts": 16,
+          "resolution_steps": 75
+        },
+        {
+          "x": 12,
+          "dimension": 8,
+          "runtime_seconds": 0.007794900331646204,
+          "status": "EXACT",
+          "label": "Tseitin M\u00f6bius ladder n=8",
+          "conflicts": 32,
+          "resolution_steps": 187
+        },
+        {
+          "x": 15,
+          "dimension": 10,
+          "runtime_seconds": 0.02207930013537407,
+          "status": "EXACT",
+          "label": "Tseitin M\u00f6bius ladder n=10",
+          "conflicts": 64,
+          "resolution_steps": 443
+        },
+        {
+          "x": 18,
+          "dimension": 12,
+          "runtime_seconds": 0.06150349974632263,
+          "status": "EXACT",
+          "label": "Tseitin M\u00f6bius ladder n=12",
+          "conflicts": 128,
+          "resolution_steps": 1019
+        },
+        {
+          "x": 21,
+          "dimension": 14,
+          "runtime_seconds": 0.1818050998263061,
+          "status": "EXACT",
+          "label": "Tseitin M\u00f6bius ladder n=14",
+          "conflicts": 256,
+          "resolution_steps": 2299
+        },
+        {
+          "x": 24,
+          "dimension": 16,
+          "runtime_seconds": 0.5788904996588826,
+          "status": "EXACT",
+          "label": "Tseitin M\u00f6bius ladder n=16",
+          "conflicts": 512,
+          "resolution_steps": 5115
+        },
+        {
+          "x": 27,
+          "dimension": 18,
+          "runtime_seconds": 1.9627824001945555,
+          "status": "EXACT",
+          "label": "Tseitin M\u00f6bius ladder n=18",
+          "conflicts": 1024,
+          "resolution_steps": 11259
+        },
+        {
+          "x": 30,
+          "dimension": 20,
+          "runtime_seconds": 7.101540100295097,
+          "status": "EXACT",
+          "label": "Tseitin M\u00f6bius ladder n=20",
+          "conflicts": 2048,
+          "resolution_steps": 24571
         }
       ]
     }
