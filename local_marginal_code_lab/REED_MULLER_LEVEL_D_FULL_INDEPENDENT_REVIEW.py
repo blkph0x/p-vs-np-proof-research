@@ -1,7 +1,7 @@
 
 """Independent pure-stdlib replay of the complete RM(2,5) level-eight model."""
 from __future__ import annotations
-import itertools, json, math
+import copy, itertools, json, math
 from collections import Counter
 from fractions import Fraction
 from pathlib import Path
@@ -139,7 +139,7 @@ def _gl_order(dimension):
     return value
 
 
-def replay(certificate):
+def replay(certificate, *, run_controls=True):
     if certificate.get("schema") != "reed_muller_level_d_full_results_v1":
         raise ValueError("schema mismatch")
     if certificate.get("family") != "RM(2,5)" or certificate.get("pin") != 0:
@@ -298,6 +298,17 @@ def replay(certificate):
     if rhs != certificate["rhs"] or len(variable_orbits) != certificate["variable_orbit_count"]:
         raise ValueError("linear program metadata mismatch")
 
+    # Rebuild the objective from the model definition.  The producer uses one
+    # singleton value-one marginal for each non-pin point; the checker must
+    # derive that vector from the independently rebuilt variable map rather
+    # than trusting the vector stored in the certificate.
+    reconstructed_objective = [0] * len(variable_orbits)
+    for point in range(1, N):
+        reconstructed_objective[variable_id(1 << point, 1)] += 1
+    saved_objective = [int(value) for value in certificate["objective"]]
+    if saved_objective != reconstructed_objective:
+        raise ValueError("objective vector reconstruction mismatch")
+
     masses = [Fraction(value) for value in certificate["primal_orbit_masses"]]
     if any(value < 0 for value in masses):
         raise ValueError("negative primal mass")
@@ -305,7 +316,7 @@ def replay(certificate):
         if sum(Fraction(coefficient) * masses[int(index)] for index, coefficient in row.items()) != target:
             raise ValueError("exact primal equation mismatch")
     objective = sum(Fraction(coefficient) * value
-                    for coefficient, value in zip(certificate["objective"], masses))
+                    for coefficient, value in zip(reconstructed_objective, masses))
     if objective != Fraction(31, 5):
         raise ValueError("exact objective mismatch")
     if certificate.get("full_level_8_optimum") != "31/5":
@@ -313,16 +324,39 @@ def replay(certificate):
     if certificate.get("selected_model_lower_bound") != "31/5":
         raise ValueError("lower-bound provenance mismatch")
 
-    perturbed = list(masses)
-    perturbed[0] += Fraction(1, 35)
-    if all(sum(Fraction(coefficient) * perturbed[int(index)] for index, coefficient in row.items()) == target
-           for row, target in zip(matrices, rhs)):
-        raise ValueError("perturbed primal was not rejected")
-    corrupted = [dict(row) for row in matrices]
-    first_key = next(iter(corrupted[0]))
-    corrupted[0][first_key] += 1
-    if corrupted[0] == matrices[0]:
-        raise ValueError("matrix mutation was not observed")
+    adversarial_controls = {"support": True, "primal": True,
+                            "matrix": True, "objective": True}
+    if run_controls:
+        perturbed = list(masses)
+        perturbed[0] += Fraction(1, 35)
+        if all(sum(Fraction(coefficient) * perturbed[int(index)] for index, coefficient in row.items()) == target
+               for row, target in zip(matrices, rhs)):
+            raise ValueError("perturbed primal was not rejected")
+
+        # Exercise the complete replay on a certificate mutation.  Merely
+        # observing that a local dictionary changed does not test the checker.
+        corrupted = copy.deepcopy(certificate)
+        first_key = next(iter(corrupted["quotient_matrix"][0]))
+        corrupted["quotient_matrix"][0][first_key] += 1
+        try:
+            replay(corrupted, run_controls=False)
+        except ValueError as error:
+            if "quotient matrix replay mismatch" not in str(error):
+                raise ValueError(f"unexpected matrix mutation rejection: {error}") from error
+        else:
+            raise ValueError("mutated certificate matrix was accepted")
+
+        # The same control protects the independently reconstructed objective
+        # from regressing to a certificate-trusted vector.
+        corrupted_objective = copy.deepcopy(certificate)
+        corrupted_objective["objective"][0] += 1
+        try:
+            replay(corrupted_objective, run_controls=False)
+        except ValueError as error:
+            if "objective vector reconstruction mismatch" not in str(error):
+                raise ValueError(f"unexpected objective mutation rejection: {error}") from error
+        else:
+            raise ValueError("mutated certificate objective was accepted")
 
     return {
         "valid": True,
@@ -332,7 +366,7 @@ def replay(certificate):
         "quotient_nonzero_count": sum(len(row) for row in matrices),
         "pinned_word_count": len(_PINNED_WORDS),
         "full_level_8_optimum": "31/5",
-        "adversarial_controls": {"support": True, "primal": True, "matrix": True},
+        "adversarial_controls": adversarial_controls,
     }
 
 
@@ -348,8 +382,12 @@ if __name__ == "__main__":
         "all 92 scope orbits, stabilizer closures, all 2,174 variable orbits, "
         "all 27,926 row orbits, the 214,059-nonzero quotient matrix, and every "
         "rational primal equality. It also rejected a wrong support atom, a "
-        "perturbed primal mass, and a mutated matrix row. The exact value is "
-        "31/5; the lower bound is inherited from the affine-overlap submodel.\n",
+        "perturbed primal mass, a mutated stored matrix row, and a mutated "
+        "stored objective vector by invoking the complete replay on each "
+        "corrupted certificate. The exact value is 31/5; the lower bound is "
+        "inherited from the affine-overlap submodel. "
+        "The checker independently rebuilds the singleton objective and reruns "
+        "the complete replay against mutated matrix and objective certificates.\n",
         encoding="utf-8",
     )
     print("REED_MULLER_FULL_LEVEL8_INDEPENDENT_PASS")

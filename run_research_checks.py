@@ -1,7 +1,9 @@
 """Run research suites in separate processes and save exact test transcripts.
 
 This is an integration/reproduction entry point; it does not label mathematical
-proofs as formally verified. Individual test processes have a five-minute limit.
+proofs as formally verified. Most test processes have a five-minute limit; the
+full RM(2,5) independent replay has a longer limit because it rebuilds the
+27,926-row quotient several times for adversarial certificate tests.
 """
 from __future__ import annotations
 
@@ -70,8 +72,9 @@ def main():
         print(f"Running {name}...", flush=True)
         started = perf_counter()
         try:
+            timeout = 900 if name == "local_marginal_full_level8" else 300
             completed = subprocess.run([sys.executable, "-m", "unittest", *arguments], cwd=directory,
-                                       capture_output=True, text=True, timeout=300)
+                                       capture_output=True, text=True, timeout=timeout)
             output = completed.stdout + completed.stderr
             returncode = completed.returncode
         except subprocess.TimeoutExpired as exc:

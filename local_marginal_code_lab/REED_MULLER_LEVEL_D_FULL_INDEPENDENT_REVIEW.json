@@ -1,6 +1,7 @@
 {
   "adversarial_controls": {
     "matrix": true,
+    "objective": true,
     "primal": true,
     "support": true
   },

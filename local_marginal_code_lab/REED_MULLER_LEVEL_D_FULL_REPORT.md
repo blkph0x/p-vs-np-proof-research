@@ -70,11 +70,20 @@ From the repository root:
 
 The independent pure-standard-library replay rebuilds the code projections,
 all 92 scope orbits, stabilizer closures, all variable and row orbits, the
-quotient matrix, and every rational primal equation. It also rejects:
+quotient matrix, the singleton objective vector, and every rational primal
+equation. It also runs the complete replay on adversarial certificate copies
+and rejects:
 
 - the impossible atom on scope 510;
 - a perturbed primal mass;
-- a mutated matrix row.
+- a mutated stored matrix row;
+- a mutated stored objective vector.
+
+The objective is accepted only after the replay independently reconstructs one
+singleton value-one coefficient for each non-pin point and compares that
+vector with the saved certificate. The matrix control mutates the saved
+certificate, invokes the full replay, and requires the replay to fail with a
+quotient-matrix mismatch; it is not a data-structure-only comparison.
 
 The machine-readable certificate is
 [REED_MULLER_LEVEL_D_FULL_RESULTS.json](REED_MULLER_LEVEL_D_FULL_RESULTS.json);

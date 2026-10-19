@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import math
+import copy
 import unittest
 from fractions import Fraction
 from pathlib import Path
@@ -12,6 +13,7 @@ import sys
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 from reed_muller_full_level8 import PINNED, build_model, verify_primal  # noqa: E402
+from REED_MULLER_LEVEL_D_FULL_INDEPENDENT_REVIEW import replay  # noqa: E402
 
 
 class FullLevelEightTests(unittest.TestCase):
@@ -72,6 +74,24 @@ class FullLevelEightTests(unittest.TestCase):
         wrong = set(self.model["allowed_reps"]["510"])
         wrong.add(0)
         self.assertNotEqual(wrong, set(self.model["allowed_reps"]["510"]))
+
+    def test_independent_reviewer_accepts_saved_certificate(self):
+        result = replay(self.certificate, run_controls=False)
+        self.assertTrue(result["valid"])
+        self.assertEqual(result["full_level_8_optimum"], "31/5")
+
+    def test_independent_reviewer_rejects_matrix_mutation(self):
+        corrupted = copy.deepcopy(self.certificate)
+        first_key = next(iter(corrupted["quotient_matrix"][0]))
+        corrupted["quotient_matrix"][0][first_key] += 1
+        with self.assertRaisesRegex(ValueError, "quotient matrix replay mismatch"):
+            replay(corrupted, run_controls=False)
+
+    def test_independent_reviewer_rejects_objective_mutation(self):
+        corrupted = copy.deepcopy(self.certificate)
+        corrupted["objective"][0] += 1
+        with self.assertRaisesRegex(ValueError, "objective vector reconstruction mismatch"):
+            replay(corrupted, run_controls=False)
 
 
 if __name__ == "__main__":
