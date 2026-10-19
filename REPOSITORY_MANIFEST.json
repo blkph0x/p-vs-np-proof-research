@@ -334,8 +334,8 @@
       "sha256": "89509fd7575d9cb5100041bd5444fb437a93444a8f077c223368deaf3600868c"
     },
     "PEER_AUDIT_RESPONSE_2026_10_20.md": {
-      "bytes": 7269,
-      "sha256": "ed7c5f333f3f08e7838ab65bae5e48934ce78d8b7466e13c22b123ecd649c873"
+      "bytes": 9140,
+      "sha256": "141524686cc1a98de635a7701fdcd8fcf43350709428bb5ee7c5009051a69e09"
     },
     "PERTURBATION_ROUTE_REVIEW.md": {
       "bytes": 16524,
@@ -362,8 +362,8 @@
       "sha256": "a2ad1d52ccdcaa0ba34e59070c8a709aa5f89135f554c5b1cb61d5be0bec15e0"
     },
     "PUBLIC_SOURCES.md": {
-      "bytes": 10292,
-      "sha256": "8732763bb3bc72841f2df2ec9b0de0772b64b5fcb074d902213dc9f7dfb91716"
+      "bytes": 10551,
+      "sha256": "b8c1e44bd3b6597beda290467747cd81b28b4ee1a217a7aedce02a8da467b812"
     },
     "RANDOMIZED_ISOLATION_REPORT.md": {
       "bytes": 915,
@@ -5074,6 +5074,6 @@
       "sha256": "957bd3b51cbf2cd06ee00f1ef47ab5c6fa8bbf1a4c281c0e67b129b027785a18"
     }
   },
-  "generated_at_utc": "2026-10-19T16:11:07.015523+00:00",
-  "source_commit": "d5b21a97036cab7f4c37f421cdde26eae4a99653"
+  "generated_at_utc": "2026-10-19T16:11:46.492831+00:00",
+  "source_commit": "84f6edff88452ed9dc7331d94d156e95c21bfa72"
 }

@@ -25,6 +25,23 @@ outcome with its stopping boundary, or it is not presented as a result.
 | A test total is not a result total. | Corrected in this checkpoint. The current full audit reports **54 suites and 539 test methods**. Those are replay checks, not 539 mathematical results; the result ledger is [`METHOD_INDEX.md`](METHOD_INDEX.md). Local counts such as the affine-boundary suite's 46 tests are likewise test counts. | [`TEST_SUMMARY.json`](TEST_SUMMARY.json), [`METHOD_INDEX.md`](METHOD_INDEX.md) |
 | Historical dates and scope-specific `UNRESOLVED` fields can confuse the current status. | Corrected in this checkpoint. The landing page and README identify 20 October 2026 as the active checkpoint. Historical reports retain their dates but now identify themselves as historical and link to this current disposition. A scope-specific unresolved marker remains only where that narrower branch is genuinely unresolved; it does not override a later full replay. | [`index.md`](index.md), [`README.md`](README.md), [`REPORT.md`](REPORT.md), [`METHOD_INDEX.md`](METHOD_INDEX.md) |
 
+## Neighboring work and the boundary of comparison
+
+The audit's comparison is useful when each neighbor is described by what it
+actually supplies and what this repository does not infer from it:
+
+| Neighbor | What it supplies | Boundary here |
+| --- | --- | --- |
+| [Proof Complexity Zoo](https://proofcomplexityzoo.gitlab.io/zoo/) | A map of proof systems and simulations. | A literature map is not a certificate or a finite optimum. |
+| [SAT Competition](https://satcompetition.github.io/), [DRAT-trim](https://github.com/marijnheule/drat-trim), and [cake_lpr](https://github.com/marijnheule/cake_lpr) | Industrial solving, benchmarking, and formula-level proof checking. | A checked proof of one formula does not classify a relaxation or prove a complexity theorem. |
+| [Sherali--Adams](https://doi.org/10.1016/0166-218X(92)00190-W), [Schoenebeck's Lasserre bounds](https://schoeneb.people.si.umich.edu/papers/LasserreNew.pdf), and their exact or numerical tools | Hierarchy definitions, integrality gaps, and stronger all-size results in their stated settings. | The RM(2,5) record is one exact finite rational quotient; it does not replace those theorems. |
+| [Reed--Muller literature](https://doi.org/10.1109/TIT.1954.1057465) | Code parameters, distance, and decoding. | The local-marginal relaxation is a separate diagnostic model; its finite certificate is not a new code theorem. |
+| [Dantchev's matching-principle notes](https://www.brics.dk/DS/02/2/BRICS-DS-02-2.pdf) | The PHP width construction replayed by the resolution lab. | The replay is a bounded machine-checkable record of a cited construction, not ownership of the all-size theorem. |
+
+Where the cited hierarchy or width theorem applies, it is the stronger result.
+The repository's contribution is to preserve a small, exact, independently
+replayable instance and to keep its limitations visible.
+
 ## What the repository adds, narrowly
 
 The value is epistemic and operational. For the saved models, the repository
