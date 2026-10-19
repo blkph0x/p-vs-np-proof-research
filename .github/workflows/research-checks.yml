@@ -91,6 +91,12 @@ jobs:
           python run_reed_muller_level_d_flat_star.py
           python REED_MULLER_LEVEL_D_FLAT_STAR_INDEPENDENT_REVIEW.py
           python -m unittest -v test_reed_muller_level_d_flat_star.py
+      - name: Replay RM(2,5) affine-overlap lower bound
+        working-directory: local_marginal_code_lab
+        run: |
+          python run_reed_muller_level_d_affine_overlap.py
+          python REED_MULLER_LEVEL_D_AFFINE_OVERLAP_INDEPENDENT_REVIEW.py
+          python -m unittest -v test_reed_muller_level_d_affine_overlap.py
       - name: Run the self-contained full audit
         run: |
           set +e

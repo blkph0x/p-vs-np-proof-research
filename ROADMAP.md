@@ -439,6 +439,12 @@ tables sharing singleton marginals still have optimum `38/7`. The unresolved
 step is consistency among the overlapping seven- and lower-dimensional
 projections in the full level-eight system.
 
+The next affine-overlap checkpoint adds every shared affine four-point flat,
+line, and singleton table. A `GL(5,2)` orbit quotient has an exact rational
+primal/dual optimum `31/5`, so the full level-eight relaxation has the scoped
+lower bound `31/5` by projection. This does not provide a full-level witness:
+arbitrary eight-coordinate scopes and their overlaps remain unresolved.
+
 ## Separate general direction: stronger global constraints
 
 Any proposed relaxation must be tested first against the exact Golay witness

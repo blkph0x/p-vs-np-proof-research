@@ -50,6 +50,14 @@ records an exact negative control for a weaker level-eight proposal: 620
 affine three-flat tables sharing only singleton marginals still have optimum
 `38/7`. Full overlap consistency at level eight remains unresolved.
 
+The [affine-overlap report](REED_MULLER_LEVEL_D_AFFINE_OVERLAP_REPORT.md)
+adds every shared affine four-point flat, line, and singleton marginal to
+those 620 eight-point tables. Its 28-variable-orbit quotient has an exact
+primal/dual optimum `31/5`, improving the lower bound for the full level-eight
+relaxation to `31/5`. The independent replay reconstructs the quotient and
+reduced costs without an LP solver; the full arbitrary-scope level-eight case
+is still explicitly unresolved.
+
 ```text
 python -m unittest discover -v
 python run_experiments.py
@@ -68,4 +76,7 @@ python -m unittest -v test_reed_muller_level_d.py
 python run_reed_muller_level_d_flat_star.py
 python REED_MULLER_LEVEL_D_FLAT_STAR_INDEPENDENT_REVIEW.py
 python -m unittest -v test_reed_muller_level_d_flat_star.py
+python run_reed_muller_level_d_affine_overlap.py
+python REED_MULLER_LEVEL_D_AFFINE_OVERLAP_INDEPENDENT_REVIEW.py
+python -m unittest -v test_reed_muller_level_d_affine_overlap.py
 ```

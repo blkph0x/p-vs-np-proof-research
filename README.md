@@ -17,7 +17,7 @@
 - Use [`CITATIONS.md`](CITATIONS.md) and [`PUBLIC_SOURCES.md`](PUBLIC_SOURCES.md)
   for public sources and the reports that use them.
 - Follow [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) to replay the checks from a
-  fresh checkout. The current frozen run has 445 passing methods across 43
+  fresh checkout. The current frozen run has 452 passing methods across 44
   suites; the full audit is intentionally separate from the lighter continuous
   integration checks, and all of its suite dependencies are included in this
   repository.
@@ -676,6 +676,13 @@ is an exact negative control for a weaker level-eight proposal. Sharing only
 singleton marginals across 620 affine three-flats still has optimum `38/7`;
 full level-eight overlap consistency remains open and is explicitly not
 claimed by this control.
+
+The [affine-overlap replay](local_marginal_code_lab/REED_MULLER_LEVEL_D_AFFINE_OVERLAP_REPORT.md)
+then adds every shared affine four-point, line, and singleton marginal. Its
+exact 28-orbit primal/dual certificate proves the selected-model optimum
+`31/5`, and therefore the same scoped lower bound for the full level-eight
+relaxation by projection. The full arbitrary-scope level-eight case remains
+unresolved and the certificate does not claim a general SAT lower bound.
 
 The [adaptive fragment synthesis report](ADAPTIVE_FRAGMENT_SYNTHESIS_REPORT.md)
 adds an independent cross-check of the bounded proof-language experiment. A bounded projector existentially

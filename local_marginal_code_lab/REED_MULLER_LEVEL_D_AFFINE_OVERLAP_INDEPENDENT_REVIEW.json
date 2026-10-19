@@ -1,0 +1,18 @@
+{
+  "schema": "reed_muller_level_d_affine_overlap_independent_review_v1",
+  "verification": {
+    "dual_reduced_cost_minimum": "0",
+    "full_level_8_lower_bound": "31/5",
+    "full_level_8_status": "UNRESOLVED",
+    "row_orbits": 53,
+    "scope_counts": {
+      "1": 32,
+      "2": 496,
+      "4": 1240,
+      "8": 620
+    },
+    "selected_model_optimum": "31/5",
+    "valid": true,
+    "variable_orbits": 28
+  }
+}

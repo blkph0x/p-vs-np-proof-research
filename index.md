@@ -21,7 +21,7 @@ stated structural families, finite exhaustive controls, certificate verifiers,
 and scoped counterexamples. It does not claim a solver for every SAT instance
 or a lower bound against every polynomial algorithm.
 
-The latest recorded full audit passed **43 suites and 445 test methods** with
+The latest recorded full audit passed **44 suites and 452 test methods** with
 unchanged source hashes. These are reproducibility results for the checked
 finite cases, not a solution to the open problem.
 
@@ -89,6 +89,12 @@ The [RM(2,5) affine-flat star control](local_marginal_code_lab/REED_MULLER_LEVEL
 tests a weaker level-eight construction. Its 620 affine-flat tables retain the
 exact `38/7` fractional optimum, so the full overlap-consistent level-eight
 case remains unresolved.
+
+The stronger [RM(2,5) affine-overlap replay](local_marginal_code_lab/REED_MULLER_LEVEL_D_AFFINE_OVERLAP_REPORT.md)
+shares all affine four-point, line, and singleton marginals among those flats.
+An exact 28-orbit primal/dual certificate raises the selected-model optimum to
+`31/5`, proving the same lower bound for the full level-eight relaxation by
+projection. The full arbitrary-scope level-eight optimum remains unresolved.
 
 ## Runtime scaling notebook
 
