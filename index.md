@@ -110,7 +110,7 @@ it is not a general SAT or P-versus-NP result.
 ## Runtime scaling notebook
 
 {% include runtime-chart.html data_url='/assets/data/scaling-runtime.json' %}
-<script src="{{ '/assets/js/scaling-chart.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/scaling-chart.js?v=2' | relative_url }}" defer></script>
 
 The chart is a measurement view, not a complexity claim. Exact family and
 capped archive points use different symbols; an UNKNOWN point records work
