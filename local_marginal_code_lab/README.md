@@ -6,6 +6,13 @@ polynomial cuts unless an explicit bounded-degree SOS/moment representation is
 provided. The degree-two Boolean-square audit is the current explicit SOS
 moment result.
 
+For a publication-facing statement of the object, read the
+[formal model specification](REED_MULLER_FORMAL_MODEL.md), the
+[trust chain](TRUST_CHAIN.md), and the
+[novelty ledger](LOCAL_MARGINAL_NOVELTY_LEDGER.md). These documents separate
+the mathematical definition, executable quotient evidence, and open
+new-versus-known questions.
+
 The lab defines an exact local projection-marginal relaxation for a pinned
 binary linear code. It verifies a dual-distance theorem showing that the
 deterministic unit-vector marginals survive through level `delta-2`, even when

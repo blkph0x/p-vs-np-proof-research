@@ -146,6 +146,13 @@ unresolved. The [compact dual note](local_marginal_code_lab/REED_MULLER_AFFINE_O
 also exposes the selected-model lower bound as a six-term positive objective-gap
 identity checked with exact rational arithmetic.
 
+The publication-facing [formal model](local_marginal_code_lab/REED_MULLER_FORMAL_MODEL.md),
+[trust chain](local_marginal_code_lab/TRUST_CHAIN.md), and
+[novelty ledger](local_marginal_code_lab/LOCAL_MARGINAL_NOVELTY_LEDGER.md)
+state the exact variables and equations, identify which checks import earlier
+artifacts, and keep new-versus-known questions open until the literature
+comparison is complete.
+
 The [SOS moment audit](local_marginal_code_lab/REED_MULLER_SOS_MOMENT_INDEPENDENT_REVIEW.md)
 then supplies an exact finite separation: the valid Boolean square
 `(5t-31)^2`, with `t` the nonpin Hamming weight, evaluates to `-992/7` on

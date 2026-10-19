@@ -21,6 +21,14 @@ for P versus NP.
 | “Independent reviewer” must not imply proof-assistant independence. | Make the trust chain explicit: definition and code parameters → support replay → symmetry quotient theorem → base primal/dual certificate → integer-cut certificate → scope and literature comparison. A reviewer may import an earlier audited artifact; that dependency is now stated rather than hidden. |
 | Machine-readable certificates need a human explanation and cost accounting. | Add the quotient theorem, retain exact rational certificate summaries, and make construction, discovery, and verification costs separate fields in the next paper-oriented report. |
 
+The requested publication-facing artifacts are now separated into three notes:
+the [formal model specification](local_marginal_code_lab/REED_MULLER_FORMAL_MODEL.md),
+the [explicit trust chain](local_marginal_code_lab/TRUST_CHAIN.md), and the
+[theorem-by-theorem novelty ledger](local_marginal_code_lab/LOCAL_MARGINAL_NOVELTY_LEDGER.md).
+They are deliberately conservative: they make the finite object and imported
+assumptions easier to audit, while leaving new-versus-known status open where
+the literature comparison is incomplete.
+
 ## Terminology rule adopted here
 
 For a polynomial `P(t)` used only because `P(t) >= 0` for every integer weight

@@ -362,8 +362,8 @@
       "sha256": "a2ad1d52ccdcaa0ba34e59070c8a709aa5f89135f554c5b1cb61d5be0bec15e0"
     },
     "PUBLIC_SOURCES.md": {
-      "bytes": 10551,
-      "sha256": "b8c1e44bd3b6597beda290467747cd81b28b4ee1a217a7aedce02a8da467b812"
+      "bytes": 11129,
+      "sha256": "3e664a38e77e29b717b6efbafcab334c9bfc5cfc62fe7c6508b5e21a2b3ff929"
     },
     "RANDOMIZED_ISOLATION_REPORT.md": {
       "bytes": 915,
@@ -386,12 +386,12 @@
       "sha256": "631ec13d33a0045e6421133fee346759f9186117b909bdd327a954ddac826356"
     },
     "README.md": {
-      "bytes": 58151,
-      "sha256": "75b94c4fb2a293610e6a42ccec70bae6ca05c292284bd3f3a0d1cec256a0812b"
+      "bytes": 58421,
+      "sha256": "a8c968826bc7a7c3bb1134ad832e0e217d729e562499738771c1cad978599e63"
     },
     "REFEREE_RESPONSE_2026_10_20.md": {
-      "bytes": 6175,
-      "sha256": "0d3d31f06a8d85788327fc956a26354f1aead91130f0bf0e5683fcf16b9291c0"
+      "bytes": 6709,
+      "sha256": "1031084b4375d1b400870951ff1690c7cacb0f668842cce027a70048c5413e91"
     },
     "REGULAR_LDPC_33_LOCAL_AUDIT.json": {
       "bytes": 5015,
@@ -2158,8 +2158,8 @@
       "sha256": "ce86680f49890fe07bdb95febd996ac2fdf8b2d45cd25b7e5b8863026581c070"
     },
     "index.md": {
-      "bytes": 15639,
-      "sha256": "db88b41a810883b0b15193a8a478ef17fd8b5a9fe959f8c881e3bdac1715c491"
+      "bytes": 16041,
+      "sha256": "a23a055aeab538546be879d3337c23efcb420c2b8bda9cde3dbc97df1f19159a"
     },
     "interval_coefficient_lab/INDEPENDENT_REVIEW.md": {
       "bytes": 7681,
@@ -2394,8 +2394,8 @@
       "sha256": "c59e547b5340ae4523d16fe0bd782bba4d455687d330228462df466a22ac875d"
     },
     "local_marginal_code_lab/README.md": {
-      "bytes": 9166,
-      "sha256": "c56b70bf6ec7cb5410d48d88e8ae5dd1449f965cdb137d7033a90bf67d9c8245"
+      "bytes": 9501,
+      "sha256": "6c44c5ef69d7f5f75083e0eaa49c6161a000b49ea3e953049bc4f6b5e17f2b16"
     },
     "local_marginal_code_lab/REED_MULLER_AFFINE_OVERLAP_DUAL_NOTE.md": {
       "bytes": 4118,
@@ -5146,6 +5146,6 @@
       "sha256": "957bd3b51cbf2cd06ee00f1ef47ab5c6fa8bbf1a4c281c0e67b129b027785a18"
     }
   },
-  "generated_at_utc": "2026-10-19T21:50:59.121918+00:00",
-  "source_commit": "02763cf9f040b3b6d19a3f13165e04cc48ae0567"
+  "generated_at_utc": "2026-10-19T22:09:17.238769+00:00",
+  "source_commit": "f1c807d8b52cdb91755c4f76567f22b184d3532b"
 }

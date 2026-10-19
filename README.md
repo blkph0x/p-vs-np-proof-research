@@ -22,6 +22,10 @@
 - Read [`REFEREE_RESPONSE_2026_10_20.md`](REFEREE_RESPONSE_2026_10_20.md) for
   the publication-level major-revision response, the explicit trust chain, and
   the next mathematical research gates.
+- For the Reed--Muller result specifically, read the
+  [formal finite model](local_marginal_code_lab/REED_MULLER_FORMAL_MODEL.md),
+  [trust chain](local_marginal_code_lab/TRUST_CHAIN.md), and
+  [novelty ledger](local_marginal_code_lab/LOCAL_MARGINAL_NOVELTY_LEDGER.md).
 - Follow [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) to replay the checks from a
   fresh checkout. The latest committed baseline has 546 passing methods across
   55 suites; the hierarchy-positioning and weighted-boundary controls add four
