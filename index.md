@@ -113,6 +113,12 @@ checks matching rational primal and dual certificates, all reduced costs, and
 zero gap. It closes this finite relaxation without making a general SAT or
 P-versus-NP claim.
 
+The next [two-cut replay](local_marginal_code_lab/REED_MULLER_SOS_TWO_CUT_REPORT.md)
+adds the valid integer-weight polynomial `(t-6)(t-7)`. It closes the resulting
+finite relaxation exactly at `367/57`, with a matching rational primal and dual,
+zero gap, and an independently replayed reduced-cost certificate. This remains
+a representation-specific hierarchy result, not a P-versus-NP result.
+
 ## Runtime scaling notebook
 
 {% include runtime-chart.html data_url='/assets/data/scaling-runtime.json' %}

@@ -1,5 +1,5 @@
 {
-  "file_count": 1214,
+  "file_count": 1221,
   "files": {
     ".gitattributes": {
       "bytes": 648,
@@ -10,8 +10,8 @@
       "sha256": "a26d9a05cfd58fd3abfd8d432bef6aa7c89465adb50fd0f07bf16bdc85d9cc6b"
     },
     ".github/workflows/research-checks.yml": {
-      "bytes": 5084,
-      "sha256": "f0c45df2ecac75969d980396104caf6cd41eb487d2206d9d1e45e3ef9881c27c"
+      "bytes": 5378,
+      "sha256": "4d7c890c5cbc398f77cae2e9108d986ba9a4fd4e57c3c6a82f45c2695f6440b2"
     },
     ".gitignore": {
       "bytes": 415,
@@ -306,8 +306,8 @@
       "sha256": "7401f5cf6b946a82cec459cbaf5a62cb4b5237b8f96501e7f0496a3efc662683"
     },
     "METHOD_INDEX.md": {
-      "bytes": 17954,
-      "sha256": "e77ef828bda129ba2be1bdcc2e56311be6a76d2b9331ae014a0c652292327a2c"
+      "bytes": 18713,
+      "sha256": "0fb3502b9e24211b4167bc12a9981f1adfb98614fd7ef782cfbcc5950e4e828f"
     },
     "NATIVE_RESULTS.csv": {
       "bytes": 11436,
@@ -378,8 +378,8 @@
       "sha256": "631ec13d33a0045e6421133fee346759f9186117b909bdd327a954ddac826356"
     },
     "README.md": {
-      "bytes": 52651,
-      "sha256": "d68c33544ea089db8db1a75c365e2c8e9bfe7eb1fc46e9296a35ea4910d4fa3a"
+      "bytes": 53124,
+      "sha256": "446fa84aaaac7aa0b5274d5df78cf0efe9f99f552febf864233b8ae98aa08cb1"
     },
     "REGULAR_LDPC_33_LOCAL_AUDIT.json": {
       "bytes": 5015,
@@ -418,8 +418,8 @@
       "sha256": "9373c3321349d6f9251fc2d019502ac273c95a5f4b1e9c5dd7be38195af36838"
     },
     "REPRODUCIBILITY.md": {
-      "bytes": 4900,
-      "sha256": "2c5ebd9428d915044da202f97bed73223e01a5e12084b9a541ccce93a06f1259"
+      "bytes": 5344,
+      "sha256": "8c9fbf4793d9b18d38077cf16a57b9e5400974561d59357670809e950c37d48e"
     },
     "RESIDUAL_EQUIVALENCE_BARRIER.json": {
       "bytes": 106347,
@@ -438,8 +438,8 @@
       "sha256": "d7d103f37e85cce87a5e236fbe90116277e0d0e76196239d73fa76b9e782fab1"
     },
     "ROADMAP.md": {
-      "bytes": 39010,
-      "sha256": "e337fc7cfd64c4d750c2ea8c3b408a7b961496ceac5197174664cfe0535c4db8"
+      "bytes": 39664,
+      "sha256": "446a3a003071dfc00e99d7f4aa6c322df4b8cbe5dcce941ac74deecf5297547f"
     },
     "ROW_BASIS_ESCAPE_RESULTS.json": {
       "bytes": 9367083,
@@ -490,12 +490,12 @@
       "sha256": "a3567d759c7f20ea1420bfbafdcc846cc2d5a5fed2b80ebee8cd98cfd1cf4255"
     },
     "TEST_OUTPUT.txt": {
-      "bytes": 52351,
-      "sha256": "76d4b1a443465c8bd7ea131fe57311d56d4ee08c7f992fb52782e8327e95b654"
+      "bytes": 53519,
+      "sha256": "5cb3541ae551976ceb48d58c077164336ec01b46f0c42adbbc82ba79e92177a7"
     },
     "TEST_SUMMARY.json": {
-      "bytes": 46587,
-      "sha256": "d3be8052fbeb51cf3070c6db2000c6db38ba4b25ba235c0bd721c242b5044e3d"
+      "bytes": 47259,
+      "sha256": "f79d4d85a251e0026f490986ec198e2a805ffe20e51d6dcf213f63712762f97d"
     },
     "THEORY_REVIEW.md": {
       "bytes": 18223,
@@ -2146,8 +2146,8 @@
       "sha256": "ce86680f49890fe07bdb95febd996ac2fdf8b2d45cd25b7e5b8863026581c070"
     },
     "index.md": {
-      "bytes": 9713,
-      "sha256": "52664dff0fdd8edb017d79cc99170319def324266e40dc4365f9cd66937eb1f2"
+      "bytes": 10108,
+      "sha256": "ac6fdfd51b673ea3d38462a58e0b978fbb7cf42ace37329593c26f28a5b61a4c"
     },
     "interval_coefficient_lab/INDEPENDENT_REVIEW.md": {
       "bytes": 7681,
@@ -2565,6 +2565,26 @@
       "bytes": 648586,
       "sha256": "bc33fad6138023f32c10b29ed4d4cee624d21c0aecee64acd1189673bf07d03a"
     },
+    "local_marginal_code_lab/REED_MULLER_SOS_TWO_CUT_INDEPENDENT_REVIEW.json": {
+      "bytes": 411,
+      "sha256": "77f360d72b7d456f4992451de167602527ff149f833ae6c8b0802b18c106fbbf"
+    },
+    "local_marginal_code_lab/REED_MULLER_SOS_TWO_CUT_INDEPENDENT_REVIEW.md": {
+      "bytes": 292,
+      "sha256": "13ce856e5b6af97f8b4a470ddd354718bac9c07116897be8eaa5d97c719b9842"
+    },
+    "local_marginal_code_lab/REED_MULLER_SOS_TWO_CUT_INDEPENDENT_REVIEW.py": {
+      "bytes": 7596,
+      "sha256": "f7620875136aac41b713fc8416d85baebf9964297d150b4bad130ac2296894b6"
+    },
+    "local_marginal_code_lab/REED_MULLER_SOS_TWO_CUT_REPORT.md": {
+      "bytes": 1752,
+      "sha256": "188d8703b525c89c992e53aeebc66d566fd4415f0f1c90473f867fe56b274780"
+    },
+    "local_marginal_code_lab/REED_MULLER_SOS_TWO_CUT_RESULTS.json": {
+      "bytes": 45459,
+      "sha256": "2c83cc106036717b504d44ce55769e998a8d5eb80604995f5aa97cf8b5b4e4b8"
+    },
     "local_marginal_code_lab/REED_MULLER_THEOREM.md": {
       "bytes": 4951,
       "sha256": "e6b32fb402e5b3f4c151657a11725d09517ee120e2022bdb85bfefaf2f04b8eb"
@@ -2641,6 +2661,10 @@
       "bytes": 7363,
       "sha256": "f6897808c7b80c9e2b304b7b9358271f75d6d5f736962df65995e3cdf3273187"
     },
+    "local_marginal_code_lab/run_reed_muller_sos_two_cut.py": {
+      "bytes": 7698,
+      "sha256": "e6a4aa95c40d6d997ffc54cee5ec5e528cbec1364a5d7c00442204038eb173bd"
+    },
     "local_marginal_code_lab/test_all_dual_local_reed_muller.py": {
       "bytes": 3543,
       "sha256": "ccc3fe46015f981c17d181131d49a751333b1834afe621f9a5a9c3f5419b6938"
@@ -2680,6 +2704,10 @@
     "local_marginal_code_lab/test_reed_muller_sos_strengthened.py": {
       "bytes": 3319,
       "sha256": "e9d21458dbf6e90d9a77f26ab3691681466496a987c053b42b0f7ecec08415b1"
+    },
+    "local_marginal_code_lab/test_reed_muller_sos_two_cut.py": {
+      "bytes": 3943,
+      "sha256": "2730646d71878e4c119b187d8dcae1fc38d2beb089bc258ea11ad0db0b5a011e"
     },
     "macro_assisted_subdag.py": {
       "bytes": 7249,
@@ -4030,8 +4058,8 @@
       "sha256": "f11e49f6b30f074519eb181976e555332093b8f1003858e09c9535c440a1a4e4"
     },
     "run_research_checks.py": {
-      "bytes": 4801,
-      "sha256": "516167a687d2108120c879cfb5ca3d29c7e08829abbbc04e1f63e066a4d469ef"
+      "bytes": 4936,
+      "sha256": "8abfd66da8a98e7731501d125f22d456574432fcf377cd1f71acec6ef6119e19"
     },
     "run_threshold_phase_checks.py": {
       "bytes": 2230,
@@ -4858,6 +4886,6 @@
       "sha256": "957bd3b51cbf2cd06ee00f1ef47ab5c6fa8bbf1a4c281c0e67b129b027785a18"
     }
   },
-  "generated_at_utc": "2026-10-19T05:15:07.997301+00:00",
-  "source_commit": "cf50611b8c46baa2da4f595c419d0944564c9ec8"
+  "generated_at_utc": "2026-10-19T05:49:49.030570+00:00",
+  "source_commit": "e10df80de1bca7670d74b944b8a5937b9255fb8f"
 }

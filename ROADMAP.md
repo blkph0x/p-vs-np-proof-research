@@ -471,6 +471,16 @@ The basis construction and the earlier rejected reconstruction are recorded in
 the finite strengthened relaxation, while saying nothing about arbitrary SAT
 or P versus NP.
 
+The next finite cut is the integer-weight inequality `(t-6)(t-7) >= 0` for
+`t` in `0..31`. The one-cut witness violates its expectation by `-108/365`,
+so this is an independently motivated valid constraint rather than a fitted
+numerical tweak. The [two-cut certificate](local_marginal_code_lab/REED_MULLER_SOS_TWO_CUT_REPORT.md)
+closes the resulting exact relaxation at `367/57`: the first cut has slack
+`144/475`, the new cut is tight, the exact dual multiplier is `7/171`, and all
+reduced costs replay nonnegative with zero primal-dual gap. This remains a
+finite representation-specific experiment, not a general SAT algorithm or a
+P-versus-NP proof.
+
 ## Separate general direction: stronger global constraints
 
 Any proposed relaxation must be tested first against the exact Golay witness

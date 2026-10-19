@@ -763,6 +763,14 @@ gap. The [exact-dual search record](local_marginal_code_lab/REED_MULLER_EXACT_DU
 preserves the basis construction and rejected numerical route. This remains a
 finite hierarchy result, not a general SAT algorithm or a P-versus-NP result.
 
+The [two-cut certificate](local_marginal_code_lab/REED_MULLER_SOS_TWO_CUT_REPORT.md)
+adds the valid integer-weight inequality `(t-6)(t-7) >= 0`, which the one-cut
+pseudo-distribution violates by `-108/365`. The resulting finite relaxation is
+closed exactly at `367/57` with a matching primal and 337-row rational dual,
+zero reduced-cost minimum, and independent replay. It remains a finite
+representation-specific result, not a general SAT solver or a P-versus-NP
+answer.
+
 The [certified residual quotient report](CERTIFIED_RESIDUAL_QUOTIENT_REPORT.md)
 implements the sound fallback: syntactic, bounded-exact, or replayable-proof
 merges; witness-certified distinctions; and explicit `UNKNOWN` otherwise. Six
