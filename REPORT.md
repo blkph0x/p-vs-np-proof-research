@@ -1,4 +1,4 @@
-# Research checkpoint: 18 October 2026
+# Research checkpoint: 19 October 2026
 
 The [latest threshold-composition phase](THRESHOLD_PHASE_REPORT.md) now records
 correct SAT encodings, scalar aggregation failures, promised flat clause

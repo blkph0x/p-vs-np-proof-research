@@ -25,7 +25,7 @@ python run_research_checks.py
 ```
 
 The command regenerates `TEST_OUTPUT.txt` and `TEST_SUMMARY.json`, then checks
-all registered suites. The current checkpoint passes 47 suites and 471 methods
+all registered suites. The current checkpoint passes 49 suites and 492 methods
 with unchanged source hashes. A full run can take several
 minutes because it includes exhaustive finite controls and native rank checks.
 
@@ -86,6 +86,12 @@ python REED_MULLER_SOS_TWO_CUT_INDEPENDENT_REVIEW.py
 python -m unittest -v test_reed_muller_sos_two_cut.py
 Pop-Location
 
+Push-Location local_marginal_code_lab
+python run_reed_muller_sos_three_cut.py
+python REED_MULLER_SOS_THREE_CUT_INDEPENDENT_REVIEW.py
+python -m unittest -v test_reed_muller_sos_three_cut.py
+Pop-Location
+
 The strengthened replay now reports `EXACT_OPTIMUM`: both saved certificates
 equal `7037/1095`, the reduced-cost minimum is `0`, and the gap is `0`. The
 certificate replay itself uses only the repository's exact arithmetic path;
@@ -97,6 +103,11 @@ The two-cut replay reports `EXACT_OPTIMUM`: both saved certificates equal
 `367/57`, the reduced-cost minimum is `0`, and the gap is `0`. The added cut is
 the valid integer-weight polynomial `(t-6)(t-7)`, and its exact dual multiplier
 is `7/171`.
+
+The three-cut replay reports `EXACT_OPTIMUM`: both saved certificates equal
+`5231/801`, the reduced-cost minimum is `0`, and the gap is `0`. The added
+integer-weight product is `(t-6)(t-7)(t-23)(t-24)` and its exact dual
+multiplier is `7/9612`.
 Push-Location resolution_width_lab
 python run_indexed.py
 python review_indexed.py

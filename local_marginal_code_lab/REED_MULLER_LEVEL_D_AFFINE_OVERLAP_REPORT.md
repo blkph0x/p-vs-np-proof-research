@@ -43,10 +43,11 @@ selected model, the result proves the scoped lower bound
 full RM(2,5) level-8 optimum >= 31/5.
 ```
 
-The full level-eight relaxation is still **UNRESOLVED**: the selected primal
-witness is not claimed to extend to every arbitrary eight-coordinate scope.
-This is therefore a stronger barrier and a controlled negative result, not a
-complete solution to the Reed--Muller instance or to P versus NP.
+This report deliberately makes no claim about extension to every arbitrary
+eight-coordinate scope. The later [full level-eight replay](REED_MULLER_LEVEL_D_FULL_REPORT.md)
+closed that finite arbitrary-scope model at `31/5`; this selected-model report
+remains a stronger barrier and a controlled negative result, not a complete
+solution to the Reed--Muller instance or to P versus NP.
 
 ## Reproduction
 

@@ -75,6 +75,14 @@ replay checks the exact singleton and pair moments, all 32 possible counts,
 and mutation rejection. This is a valid global cut for the finite relaxation,
 not a universal SAT method.
 
+The [two-cut replay](REED_MULLER_SOS_TWO_CUT_REPORT.md) adds the valid
+integer-weight polynomial `(t-6)(t-7)` and closes the finite relaxation at
+`367/57`. The [three-cut replay](REED_MULLER_SOS_THREE_CUT_REPORT.md) adds
+`(t-6)(t-7)(t-23)(t-24)`, which the two-cut witness violates by `-2400/19`,
+and closes the next finite relaxation exactly at `5231/801`. Both results have
+independent exact replays and remain scoped certificates rather than general
+SAT algorithms.
+
 ```text
 python -m unittest discover -v
 python run_experiments.py
@@ -99,4 +107,7 @@ python -m unittest -v test_reed_muller_level_d_affine_overlap.py
 python run_reed_muller_level_d_full.py
 python REED_MULLER_LEVEL_D_FULL_INDEPENDENT_REVIEW.py
 python -m unittest -v test_reed_muller_level_d_full.py
+python run_reed_muller_sos_three_cut.py
+python REED_MULLER_SOS_THREE_CUT_INDEPENDENT_REVIEW.py
+python -m unittest -v test_reed_muller_sos_three_cut.py
 ```

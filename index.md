@@ -5,7 +5,7 @@ description: A public, reproducible research notebook for exact algorithms, cert
 ---
 
 <div class="hero">
-  <p class="eyebrow">PUBLIC RESEARCH CHECKPOINT · 18 OCTOBER 2026</p>
+  <p class="eyebrow">PUBLIC RESEARCH CHECKPOINT · 19 OCTOBER 2026</p>
   <h1>Can computation settle P versus NP?</h1>
   <p class="lede">This project tests proposed algorithms and proof ideas with exact arithmetic, saved certificates, independent checkers, and explicit complexity accounting.</p>
   <p>
@@ -21,9 +21,14 @@ stated structural families, finite exhaustive controls, certificate verifiers,
 and scoped counterexamples. It does not claim a solver for every SAT instance
 or a lower bound against every polynomial algorithm.
 
-The latest recorded full audit passed **47 suites and 471 test methods** with
+The latest recorded full audit passed **49 suites and 492 test methods** with
 unchanged source hashes. These are reproducibility results for the checked
 finite cases, not a solution to the open problem.
+
+The [peer-audit response](PEER_AUDIT_RESPONSE_2026_10_19.md) records what is
+borrowed from neighboring proof-complexity, SAT, hierarchy, and coding
+literatures, what this repository actually certifies, and which claims remain
+outside its scope.
 
 The newest finite proof-complexity checkpoint settles the standard PHP(5,4)
 encoding's minimum resolution width at **4**. An exhaustive five-pebble game
@@ -118,6 +123,13 @@ adds the valid integer-weight polynomial `(t-6)(t-7)`. It closes the resulting
 finite relaxation exactly at `367/57`, with a matching rational primal and dual,
 zero gap, and an independently replayed reduced-cost certificate. This remains
 a representation-specific hierarchy result, not a P-versus-NP result.
+
+The [three-cut replay](local_marginal_code_lab/REED_MULLER_SOS_THREE_CUT_REPORT.md)
+adds the valid integer-weight product `(t-6)(t-7)(t-23)(t-24)`, which the
+two-cut witness violates by `-2400/19`. The strengthened finite relaxation is
+closed exactly at `5231/801`, with a matching rational primal and dual,
+zero gap, and an independent pure-stdlib replay. This is still a
+representation-specific certificate, not a P-versus-NP result.
 
 ## Runtime scaling notebook
 

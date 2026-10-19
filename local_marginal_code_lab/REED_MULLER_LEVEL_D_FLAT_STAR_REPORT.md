@@ -35,9 +35,9 @@ is `38/7`, with integer pinned optimum eight and ratio `28/19`.
 
 The independent replay checks the Gaussian-binomial counts, both rational
 tables, all marginal arithmetic, and the lower-bound formula without an LP
-solver. The full level-eight local projection relaxation remains unresolved;
-the missing ingredient is consistency among overlapping seven- and
-lower-dimensional projections.
+solver. This star model does not itself certify the arbitrary-scope
+relaxation; the later full level-eight replay supplies that missing overlap
+consistency and closes the finite model at `31/5`.
 
 ## Reproduction
 

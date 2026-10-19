@@ -5,7 +5,7 @@ public URL found in the repository's source, reports, and saved metadata,
 along with the local files that cite or preserve it. The curated primary
 sources and citation rules are in [`CITATIONS.md`](CITATIONS.md).
 
-Indexed URLs: **67**.
+Indexed URLs: **73**.
 
 | URL | Local provenance |
 | --- | --- |
@@ -35,17 +35,20 @@ Indexed URLs: **67**.
 | <https://doi.org/10.1002/jgt.20037> | `PUBLIC_SOURCES.md`, `charged_work_core_lab/FANO_NOTES.md` |
 | <https://doi.org/10.1007/BF00264290> | `CITATIONS.md`, `PUBLIC_SOURCES.md` |
 | <https://doi.org/10.1007/BF01580113> | `PUBLIC_SOURCES.md`, `THEORY_REVIEW.md` |
+| <https://doi.org/10.1016/0166-218X> | `CITATIONS.md`, `PEER_AUDIT_RESPONSE_2026_10_19.md` |
 | <https://doi.org/10.1016/0304-3975> | `PUBLIC_SOURCES.md`, `THEORY_REVIEW.md` |
 | <https://doi.org/10.1016/S0012-365X> | `PUBLIC_SOURCES.md`, `matching_gadget_limits/THEOREM.md` |
 | <https://doi.org/10.1109/18.641542> | `PUBLIC_SOURCES.md`, `high_width_core_stress_lab/REPORT.md` |
 | <https://doi.org/10.1109/ASSIC70037.2026.11717448> | `CITATIONS.md`, `PUBLIC_SOURCES.md` |
-| <https://doi.org/10.1109/TIT.1954.1057465> | `CITATIONS.md`, `PUBLIC_SOURCES.md`, `local_marginal_code_lab/REED_MULLER_ALL_DUAL_REPORT.md`, `local_marginal_code_lab/REED_MULLER_RESULTS.json`, `local_marginal_code_lab/REED_MULLER_THEOREM.md`, `local_marginal_code_lab/run_reed_muller.py` |
+| <https://doi.org/10.1109/TIT.1954.1057465> | `CITATIONS.md`, `PEER_AUDIT_RESPONSE_2026_10_19.md`, `PUBLIC_SOURCES.md`, `local_marginal_code_lab/REED_MULLER_ALL_DUAL_REPORT.md`, `local_marginal_code_lab/REED_MULLER_RESULTS.json`, `local_marginal_code_lab/REED_MULLER_THEOREM.md`, `local_marginal_code_lab/run_reed_muller.py` |
 | <https://doi.org/10.1109/assic70037.2026.11717448> | `PUBLIC_SOURCES.md`, `VOHRA_CROSSREF_METADATA.json` |
 | <https://doi.org/10.1145/258533.258559> | `PUBLIC_SOURCES.md`, `VARDY_MINIMUM_DISTANCE_SCOPE.md`, `labelled_join_certified/COVERAGE_AUDIT.md` |
 | <https://doi.org/10.1287/moor.7.1.67> | `PUBLIC_SOURCES.md`, `THEORY_REVIEW.md` |
 | <https://ece.iisc.ac.in/~nkashyap/Papers/code_decomp_final.pdf> | `ALL_DUAL_LP_THEOREM.md`, `PUBLIC_SOURCES.md` |
 | <https://epubs.siam.org/doi/10.1137/070691152> | `PUBLIC_SOURCES.md`, `high_width_core_stress_lab/REPORT.md` |
 | <https://github.com/blkph0x/p-vs-np-proof-research> | `CITATION.cff`, `PUBLIC_SOURCES.md`, `index.md` |
+| <https://github.com/marijnheule/cake_lpr> | `CITATIONS.md`, `PEER_AUDIT_RESPONSE_2026_10_19.md` |
+| <https://github.com/marijnheule/drat-trim> | `CITATIONS.md`, `PEER_AUDIT_RESPONSE_2026_10_19.md` |
 | <https://homepages.inf.ed.ac.uk/hguo/papers/HA-general.pdf> | `AFFINE_BOUNDARY_DESIGN.md`, `PUBLIC_SOURCES.md`, `holographic_tractability_lab/RESULTS.json`, `holographic_tractability_lab/THEOREM.md`, `holographic_tractability_lab/run_experiments.py` |
 | <https://ics.uci.edu/~dechter/publications/r76A.pdf> | `PUBLIC_SOURCES.md`, `coefficient_structure_lab/THEOREM.md` |
 | <https://ieeexplore.ieee.org/abstract/document/11717448> | `PUBLIC_SOURCES.md`, `fourier_spectrum_boundary_lab/FWHT_COST_REPORT.md` |
@@ -56,11 +59,14 @@ Indexed URLs: **67**.
 | <https://ocw.mit.edu/courses/6-895-essential-coding-theory-fall-2004/resources/lect05slx4/> | `CITATIONS.md`, `PUBLIC_SOURCES.md`, `local_marginal_code_lab/REED_MULLER_ALL_DUAL_REPORT.md`, `local_marginal_code_lab/REED_MULLER_RESULTS.json`, `local_marginal_code_lab/REED_MULLER_THEOREM.md`, `local_marginal_code_lab/run_reed_muller.py` |
 | <https://pages.cs.wisc.edu/~jyc/papers/signature-thy.pdf> | `NEXT_HOLOGRAPHIC_BRIEF.md`, `PUBLIC_SOURCES.md` |
 | <https://people.inf.ethz.ch/emo/SatSem05/Papers/BensassonWidgerson01.pdf> | `CITATIONS.md`, `PUBLIC_SOURCES.md` |
+| <https://proofcomplexityzoo.gitlab.io/zoo/> | `CITATIONS.md`, `PEER_AUDIT_RESPONSE_2026_10_19.md` |
 | <https://quantum-journal.org/papers/q-2022-04-20-692/> | `AFFINE_REPRESENTATION_LITERATURE_SCOPE.md`, `PUBLIC_SOURCES.md` |
 | <https://quantum-journal.org/papers/q-2026-07-29-2179/> | `AFFINE_CANCELLATION_LITERATURE_SCOPE.md`, `PUBLIC_SOURCES.md` |
+| <https://satcompetition.github.io/> | `CITATIONS.md`, `PEER_AUDIT_RESPONSE_2026_10_19.md` |
+| <https://schoeneb.people.si.umich.edu/papers/LasserreNew.pdf> | `CITATIONS.md`, `PEER_AUDIT_RESPONSE_2026_10_19.md` |
 | <https://theory.stanford.edu/~trevisan/cs172-07/karp.pdf> | `PUBLIC_SOURCES.md`, `multiobjective_matching_limits/THEOREM.md`, `packed_cost_exact_matching/THEOREM.md` |
 | <https://www-users.cse.umn.edu/~reiner/Talks/Vienna05/Lectures.pdf> | `PUBLIC_SOURCES.md`, `labelled_join_certified/COVERAGE_INDEPENDENT_REVIEW.md` |
-| <https://www.brics.dk/DS/02/2/BRICS-DS-02-2.pdf> | `CITATIONS.md`, `PUBLIC_SOURCES.md`, `resolution_width_lab/PHP_WIDTH_REPORT.md` |
+| <https://www.brics.dk/DS/02/2/BRICS-DS-02-2.pdf> | `CITATIONS.md`, `PEER_AUDIT_RESPONSE_2026_10_19.md`, `PUBLIC_SOURCES.md`, `resolution_width_lab/PHP_WIDTH_REPORT.md` |
 | <https://www.claymath.org/millennium/p-vs-np/> | `CITATIONS.md`, `EXTERNAL_STATUS_AUDIT_2026_10_18.md`, `PUBLIC_SOURCES.md`, `RESOLUTION_STANDARD.md` |
 | <https://www.combinatorics.org/ojs/index.php/eljc/article/download/v32i3p36/pdf> | `PUBLIC_SOURCES.md`, `graph_order_hardness_lab/THEOREM.md` |
 | <https://www.cs.cornell.edu/~rdz/Papers/KZ-PAMI04.pdf> | `PUBLIC_SOURCES.md`, `gadget_limits/THEOREM.md` |

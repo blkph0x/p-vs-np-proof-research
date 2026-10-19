@@ -1,0 +1,13 @@
+{
+  "dual_lower_bound": "5231/801",
+  "dual_objective": "5231/801",
+  "primal_upper_bound": "5231/801",
+  "reduced_cost_minimum": "0",
+  "row_orbits": 27926,
+  "scope": "Independent stdlib replay of the three-cut quotient certificate.",
+  "source_matrix": "REED_MULLER_LEVEL_D_FULL_RESULTS.json",
+  "status": "EXACT_OPTIMUM",
+  "unresolved_gap": "0",
+  "valid": true,
+  "variable_orbits": 2174
+}
