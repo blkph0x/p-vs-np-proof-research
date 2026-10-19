@@ -4258,8 +4258,8 @@
       "sha256": "f11e49f6b30f074519eb181976e555332093b8f1003858e09c9535c440a1a4e4"
     },
     "run_research_checks.py": {
-      "bytes": 6084,
-      "sha256": "ade0763e6bcb41ff1885558dfded0d99a07467b0a8d9add48222dd274085e76a"
+      "bytes": 6228,
+      "sha256": "6d1edd712eb2d54b96d707b12a9262b5ccb0c29b0a4bba0bbe4e4805f670ccfc"
     },
     "run_threshold_phase_checks.py": {
       "bytes": 2230,
@@ -5146,6 +5146,6 @@
       "sha256": "957bd3b51cbf2cd06ee00f1ef47ab5c6fa8bbf1a4c281c0e67b129b027785a18"
     }
   },
-  "generated_at_utc": "2026-10-19T21:44:33.244897+00:00",
-  "source_commit": "38f86593819d2380674db79655bb47ee7d2c25de"
+  "generated_at_utc": "2026-10-19T21:46:18.312179+00:00",
+  "source_commit": "31febf4198f43096cf2cdb48050982a5a5f6ef8a"
 }
