@@ -21,11 +21,11 @@ stated structural families, finite exhaustive controls, certificate verifiers,
 and scoped counterexamples. It does not claim a solver for every SAT instance
 or a lower bound against every polynomial algorithm.
 
-The latest committed baseline audit passed **55 suites and 546 test methods**
-with unchanged source hashes. The current hierarchy-positioning and
-weighted-boundary controls add four dedicated tests and are registered for the
-next full audit. These are reproducibility results for checked finite cases,
-not a solution to the open problem.
+The committed baseline audit passed **55 suites and 546 test methods** with
+unchanged source hashes. The current full-audit workflow also executes four
+hierarchy-positioning and weighted-boundary controls; the committed summary
+remains the pinned baseline record. These are reproducibility results for
+checked finite cases, not a solution to the open problem.
 
 The [current peer-audit disposition](PEER_AUDIT_RESPONSE_2026_10_20.md) records
 what is borrowed from neighboring proof-complexity, SAT, hierarchy, and coding
@@ -39,9 +39,10 @@ publication-level revision gate. In particular, the later weight-polynomial
 sequence is described as valid integer-domain cuts; the repository does not
 call those cuts a standard SOS hierarchy without degree-bounded SOS proofs.
 The [local-marginal hierarchy note](local_marginal_code_lab/LOCAL_MARGINAL_HIERARCHY_NOTE.md)
-also fixes the relation-family definition and records why a standard
-Sherali--Adams equivalence cannot be inferred without specifying a base
-formulation.
+also fixes the relation-family definition and proves level-by-level equality
+with configuration Sherali--Adams for the explicitly declared finite-domain
+projection CSP. The comparison with a sparse Boolean parity encoding and with
+Lasserre remains formulation-specific and open.
 
 The audit's practical rule is simple: a promoted entry must be an exact
 certificate for its declared scope, an explicit `UNKNOWN`/`UNKNOWN_CAP` with a

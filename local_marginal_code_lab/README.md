@@ -19,10 +19,11 @@ deterministic unit-vector marginals survive through level `delta-2`, even when
 the true pinned codeword has much larger weight.
 
 The [hierarchy-positioning note](LOCAL_MARGINAL_HIERARCHY_NOTE.md) defines
-this polytope precisely and gives an exact four-variable control showing why
-it must not be called a standard Sherali--Adams level without specifying a
-base formulation. The comparison with named SA/Lasserre formulations remains
-an open gate.
+this polytope precisely and proves level-by-level equality with configuration
+Sherali--Adams for the explicitly declared finite-domain projection CSP. A
+four-variable control shows why that theorem does not transfer automatically
+to a sparse Boolean parity encoding; the parity-encoding and Lasserre
+comparisons remain open.
 
 The even-parity controls enumerate all small scopes, while the Golay control
 uses the independently checked dual-distance certificate for level six

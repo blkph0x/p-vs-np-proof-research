@@ -27,11 +27,11 @@
   [trust chain](local_marginal_code_lab/TRUST_CHAIN.md), and
   [novelty ledger](local_marginal_code_lab/LOCAL_MARGINAL_NOVELTY_LEDGER.md).
 - Follow [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) to replay the checks from a
-  fresh checkout. The latest committed baseline has 546 passing methods across
-  55 suites; the hierarchy-positioning and weighted-boundary controls add four
-  tests registered for the next full audit. The full audit is intentionally separate from the
-  lighter continuous-integration checks, and all suite dependencies are
-  included in this repository.
+  fresh checkout. The committed baseline record has 546 passing methods across
+  55 suites. The current full-audit workflow also executes four hierarchy-
+  positioning and weighted-boundary controls; the committed summary remains
+  the pinned baseline record. All suite dependencies are included in this
+  repository.
 - The latest external status check is
   [`EXTERNAL_STATUS_AUDIT_2026_10_18.md`](EXTERNAL_STATUS_AUDIT_2026_10_18.md).
 

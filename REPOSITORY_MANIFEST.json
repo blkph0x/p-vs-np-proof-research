@@ -386,8 +386,8 @@
       "sha256": "631ec13d33a0045e6421133fee346759f9186117b909bdd327a954ddac826356"
     },
     "README.md": {
-      "bytes": 58421,
-      "sha256": "a8c968826bc7a7c3bb1134ad832e0e217d729e562499738771c1cad978599e63"
+      "bytes": 58384,
+      "sha256": "735b23323da3ae88f79229fe058bfc11fcdacfaedf1193250288349c85b25385"
     },
     "REFEREE_RESPONSE_2026_10_20.md": {
       "bytes": 6981,
@@ -2158,8 +2158,8 @@
       "sha256": "ce86680f49890fe07bdb95febd996ac2fdf8b2d45cd25b7e5b8863026581c070"
     },
     "index.md": {
-      "bytes": 16041,
-      "sha256": "a23a055aeab538546be879d3337c23efcb420c2b8bda9cde3dbc97df1f19159a"
+      "bytes": 16188,
+      "sha256": "9fa7f29f6512bb06b5c571febf3d30c1fde99d773dd64ed2ae93cc0c8af3de80"
     },
     "interval_coefficient_lab/INDEPENDENT_REVIEW.md": {
       "bytes": 7681,
@@ -2398,8 +2398,8 @@
       "sha256": "eba702a922f6d3a59cb97e3d7b1ae2e0544ddca42d5284ea52d269b814a3f8e8"
     },
     "local_marginal_code_lab/README.md": {
-      "bytes": 9527,
-      "sha256": "e1b9d3fac8ff28f79901d30824182a29a699331c97676649754b38b86dc64196"
+      "bytes": 9609,
+      "sha256": "38b9f76f4f9ae8221be5191b6ae5470c3f53361960b1a31d36f0d7c741c0c4df"
     },
     "local_marginal_code_lab/REED_MULLER_AFFINE_OVERLAP_DUAL_NOTE.md": {
       "bytes": 4118,
@@ -5166,6 +5166,6 @@
       "sha256": "957bd3b51cbf2cd06ee00f1ef47ab5c6fa8bbf1a4c281c0e67b129b027785a18"
     }
   },
-  "generated_at_utc": "2026-10-19T22:49:24.412446+00:00",
-  "source_commit": "dbbab5dcaf4a3df7042d3391bf8d2afd82ed7c93"
+  "generated_at_utc": "2026-10-19T23:32:17.698388+00:00",
+  "source_commit": "8d717942bc933314a4983a7f760ce373c9bb35c4"
 }
