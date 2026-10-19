@@ -643,3 +643,11 @@ minimum width is `n` for every standard PHP(n+1,n) with `n >= 2`, and the
 certificate size is `2^{O(n log n)}`. The remaining research question is how
 this proof-complexity boundary interacts with stronger proof systems and
 algorithmic representations; it is not a general SAT lower bound.
+
+The seventh-cut replay is now the current finite SOS checkpoint. It tests
+`(t-6)(t-7)(31-t) >= 0`, which the six-cut witness violates by
+`-3473117738496/217025866361`, and closes the next relaxation exactly at
+`35873801083/5129253893`. The exact base dual has 1,100 nonzero rows, 2,144
+zero reduced costs, and a positive reduced-cost minimum of
+`154880840/165459803`. This is a finite separation and certificate, not a
+general SAT algorithm or a P-versus-NP result.

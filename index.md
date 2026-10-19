@@ -221,3 +221,5 @@ The source repository is [blkph0x/p-vs-np-proof-research on GitHub](https://gith
 The [external status audit](EXTERNAL_STATUS_AUDIT_2026_10_18.md) records the
 official public status and keeps an unverified recent P=NP claim separate from
 the project's own evidence.
+
+The [seventh-cut replay](local_marginal_code_lab/REED_MULLER_SOS_SEVEN_CUT_REPORT.md) adds the valid integer-domain inequality `(t-6)(t-7)(31-t) >= 0`. The exact six-cut witness violates it by `-3473117738496/217025866361`; the next finite relaxation closes exactly at `35873801083/5129253893`, with matching rational certificates and independent replay. This remains representation-specific and does not resolve P versus NP.

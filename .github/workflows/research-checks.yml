@@ -145,6 +145,12 @@ jobs:
           python run_reed_muller_sos_six_cut.py
           python REED_MULLER_SOS_SIX_CUT_INDEPENDENT_REVIEW.py
           python -m unittest -v test_reed_muller_sos_six_cut.py
+      - name: Replay seven-cut SOS RM(2,5) certificate
+        working-directory: local_marginal_code_lab
+        run: |
+          python run_reed_muller_sos_seven_cut.py
+          python REED_MULLER_SOS_SEVEN_CUT_INDEPENDENT_REVIEW.py
+          python -m unittest -v test_reed_muller_sos_seven_cut.py
       - name: Run the self-contained full audit
         run: |
           set +e

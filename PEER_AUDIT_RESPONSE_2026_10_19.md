@@ -85,3 +85,9 @@ generated URL index is [`PUBLIC_SOURCES.md`](PUBLIC_SOURCES.md). The exact
 certificate files and replay commands are linked from the
 [`six-cut report`](local_marginal_code_lab/REED_MULLER_SOS_SIX_CUT_REPORT.md),
 which follows the five-cut, four-cut, and three-cut reports.
+
+## Seventh-cut audit addendum (2026-10-19)
+
+The audit's central distinction is now reflected in the next exact checkpoint. The repository promoted one new, explicitly scoped object: the valid integer-domain cut `(t-6)(t-7)(31-t) >= 0`, together with an independent reconstruction of the quotient, rational primal masses, rational dual, and every reduced cost. The six-cut witness violates that polynomial by `-3473117738496/217025866361`; the seventh-cut primal and dual both equal `35873801083/5129253893`, with gap `0`, 1,100 nonzero base rows, and 2,144 zero reduced costs.
+
+This is still a finite hierarchy certificate. It does not strengthen the literature's global hierarchy theorems, classify arbitrary SAT, or claim a P-versus-NP solution. The public record now links the producer, independent reviewer, adversarial tests, report, CI registration, and reproducibility commands for the seventh cut. Earlier six-cut figures remain in the history as prior checkpoints; the seventh-cut report is the current result.

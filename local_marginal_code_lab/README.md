@@ -130,3 +130,9 @@ python run_reed_muller_sos_six_cut.py
 python REED_MULLER_SOS_SIX_CUT_INDEPENDENT_REVIEW.py
 python -m unittest -v test_reed_muller_sos_six_cut.py
 ```
+
+The [seventh-cut replay](REED_MULLER_SOS_SEVEN_CUT_REPORT.md) adds
+`(t-6)(t-7)(31-t)`, which the six-cut witness violates by
+`-3473117738496/217025866361`, and closes the next finite relaxation exactly at
+`35873801083/5129253893`. The producer, independent reviewer, and adversarial
+suite are all checked into the repository.

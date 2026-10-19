@@ -180,3 +180,16 @@ The large affine stress artifact is stored with Git LFS. A fresh checkout needs
 Git LFS enabled so that its pointer is hydrated before running the full audit.
 The generated native executable is intentionally excluded; its C++ source and
 deterministic Python audit are tracked.
+
+Push-Location local_marginal_code_lab
+python run_reed_muller_sos_seven_cut.py
+python REED_MULLER_SOS_SEVEN_CUT_INDEPENDENT_REVIEW.py
+python -m unittest -v test_reed_muller_sos_seven_cut.py
+Pop-Location
+
+The seventh-cut replay reports `EXACT_OPTIMUM`: both saved certificates equal
+`35873801083/5129253893`, the reduced-cost minimum is `0`, the positive minimum
+is `154880840/165459803`, and the gap is `0`. The added polynomial is
+`(t-6)(t-7)(31-t)`, with exact dual multiplier
+`181738963/30775523358`; the earlier six-cut witness violates it by
+`-3473117738496/217025866361`.
