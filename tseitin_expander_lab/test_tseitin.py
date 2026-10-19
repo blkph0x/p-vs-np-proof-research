@@ -21,12 +21,23 @@ def parity_assignment_satisfies(n, edges, charges, assignment):
 
 class TseitinTests(unittest.TestCase):
     def test_controls_are_connected_cubic_graphs(self):
-        for control in tseitin.graph_controls():
+        controls = tuple(tseitin.graph_controls()) + tuple(tseitin.mobius_ladder_controls())
+        self.assertEqual(len(controls), 12)
+        for control in controls:
             n, edges = control["n"], control["edges"]
             self.assertTrue(tseitin.connected(n, edges))
             incidence = tseitin.incidence(n, edges)
             self.assertTrue(all(len(row) == 3 for row in incidence))
             self.assertEqual(len(edges), 3 * n // 2)
+
+    def test_mobius_ladder_family_is_exactly_cycle_plus_matching(self):
+        controls = tseitin.mobius_ladder_controls()
+        self.assertEqual([control["n"] for control in controls], list(range(6, 22, 2)))
+        for control in controls:
+            n = control["n"]
+            expected = {tuple(sorted((i, (i + 1) % n))) for i in range(n)}
+            expected |= {tuple(sorted((i, i + n // 2))) for i in range(n // 2)}
+            self.assertEqual(set(control["edges"]), expected)
 
     def test_local_cnf_is_exact_parity_encoding(self):
         control = tseitin.graph_controls()[0]

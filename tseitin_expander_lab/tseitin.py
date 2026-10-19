@@ -121,3 +121,19 @@ def graph_controls():
         {"name": "heawood_3_regular", "n": 14, "edges": heawood},
         {"name": "cyclic_bipartite_16", "n": 16, "edges": cyclic_bipartite},
     )
+
+
+def mobius_ladder(n):
+    """Return the cubic cycle-plus-opposite-matching graph for even n >= 6."""
+    if type(n) is not int or n < 6 or n % 2:
+        raise ValueError("the Mobius ladder size must be an even integer >= 6")
+    cycle = [(vertex, (vertex + 1) % n) for vertex in range(n)]
+    opposite = [(vertex, vertex + n // 2) for vertex in range(n // 2)]
+    return tuple(sorted({tuple(sorted(edge)) for edge in cycle + opposite}))
+
+
+def mobius_ladder_controls():
+    """Return a deterministic even-size scaling family for the CDCL control."""
+    return tuple({"name": f"mobius_ladder_{n}", "n": n,
+                  "edges": mobius_ladder(n), "family": "mobius_ladder"}
+                 for n in range(6, 22, 2))

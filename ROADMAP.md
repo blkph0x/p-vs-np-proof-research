@@ -579,12 +579,14 @@ all-assignment and eight pigeonhole traces and records exact deterministic
 trace identities where they are proved.
 
 The new [`tseitin_expander_lab`](tseitin_expander_lab/README.md) adds four
-connected cubic odd-charge Tseitin contradictions. An exact XOR parity
+named connected cubic odd-charge Tseitin contradictions and a deterministic
+Möbius-ladder sweep from 6 through 20 vertices. An exact XOR parity
 certificate proves each saved CNF unsatisfiable, and an independent reviewer
 rebuilds the 3-CNF encoding and replays the complete CDCL resolution trace.
 The rows are a finite control against the known expansion-based width-size
-literature; they do not reprove its asymptotic theorem or lower-bound every
-SAT algorithm.
+literature; the ladder conflict counts are measurements of one fixed CDCL
+policy, not an all-size theorem or uniform-expander claim. They do not reprove
+the literature's asymptotic theorem or lower-bound every SAT algorithm.
 
 The follow-up proof_complexity_frontier_lab now reconstructs the first seven
 rows of each family with an independent supplied-order frontier evaluator. It

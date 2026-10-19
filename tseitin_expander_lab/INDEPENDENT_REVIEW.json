@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "case_count": 4,
+  "case_count": 12,
   "parity_certificates_match": true,
   "proofs_match": true,
   "source_hashes_match": true

@@ -60,13 +60,20 @@ def markdown_report(rows):
         "solver and do not reprove that theorem, lower-bound every SAT algorithm,",
         "or resolve P versus NP.",
         "",
+        "The Möbius-ladder rows are a deterministic scaling control for this",
+        "specific CDCL implementation. Their observed conflict counts are",
+        "reported as measurements; no all-size formula for those counts is",
+        "claimed, and the family is not asserted here to be a uniform expander",
+        "family.",
+        "",
     ]
     return "\n".join(lines)
 
 
 def main():
     rows, certificates = [], []
-    for control in tseitin.graph_controls():
+    controls = tuple(tseitin.graph_controls()) + tuple(tseitin.mobius_ladder_controls())
+    for control in controls:
         n = control["n"]
         edges = tseitin.normalize_edges(n, control["edges"])
         charges = [1] + [0] * (n - 1)
@@ -87,6 +94,7 @@ def main():
             "charge": charges,
             "parity": parity,
             "status": result["status"],
+            "family": control.get("family", "named_control"),
             "proof_events": len(result["proof"]),
             "elapsed_seconds": elapsed,
             "stats": result["stats"],

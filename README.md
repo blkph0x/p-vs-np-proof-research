@@ -1,6 +1,6 @@
 # P versus NP: exact native solvers and audited obstructions
 
-> **Repository status — 19 October 2026.** P versus NP remains unresolved. This
+> **Repository status — 20 October 2026.** P versus NP remains unresolved. This
 > repository contains exact algorithms for explicitly bounded or promised
 > families, finite certificates, reproducible experiments, and scoped barriers
 > against proposed generalizations. It does not claim a solver for all SAT and
@@ -19,7 +19,7 @@
 - Read [`PEER_AUDIT_RESPONSE_2026_10_19.md`](PEER_AUDIT_RESPONSE_2026_10_19.md)
   for the literature comparison, scope corrections, and current limitations.
 - Follow [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) to replay the checks from a
-  fresh checkout. The current frozen run has 538 passing methods across 54
+  fresh checkout. The current frozen run has 539 passing methods across 54
   suites; the full audit is intentionally separate from the lighter continuous
   integration checks, and all of its suite dependencies are included in this
   repository.
@@ -31,7 +31,7 @@ artifact, independent checker, source citation, and the repository manifest in
 the same change. A public claim is recorded as unresolved until its full proof
 and bit-complexity argument pass the standard above.
 
-This is the active 19 October 2026 research increment. **P versus NP remains
+This is the active 20 October 2026 research increment. **P versus NP remains
 unresolved.** The work delivers exact algorithms for stated structural classes,
 finite certificates, and proofs excluding specific proposed generalizations.
 It does not provide a polynomial algorithm for all SAT instances or a lower
@@ -343,7 +343,8 @@ pigeonhole campaign. These are resolution/CDCL scaling controls, not lower
 bounds against arbitrary SAT algorithms.
 
 The [`tseitin_expander_lab`](tseitin_expander_lab/README.md) adds the
-canonical odd-charge Tseitin family on four connected cubic graphs. Its exact
+canonical odd-charge Tseitin family on four named connected cubic graphs and a
+deterministic Möbius-ladder sweep from 6 through 20 vertices. Its exact
 parity certificate proves every saved CNF unsatisfiable, while an independent
 program rebuilds the 3-CNF encoding and replays every CDCL resolution step.
 The finite traces connect the solver baseline to the

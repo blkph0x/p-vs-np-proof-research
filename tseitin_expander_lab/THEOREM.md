@@ -18,12 +18,16 @@ reviewer reconstructs the incidence map and every forbidden local assignment,
 checks the odd-charge identity, and replays the saved first-UIP resolution
 trace without importing the encoder.
 
-The finite campaign uses four connected cubic graphs and places charge one at
-vertex zero. Its purpose is to test the proof-producing SAT baseline against a
-canonical parity family. The [Ben-Sasson--Wigderson width-size tradeoff](https://people.inf.ethz.ch/emo/SatSem05/Papers/BensassonWidgerson01.pdf)
+The finite campaign uses four named connected cubic graphs and a deterministic
+Möbius-ladder family with even sizes 6 through 20; every case places charge one
+at vertex zero. Its purpose is to test the proof-producing SAT baseline against
+a canonical parity family and a reproducible size sweep. The
+[Ben-Sasson--Wigderson width-size tradeoff](https://people.inf.ethz.ch/emo/SatSem05/Papers/BensassonWidgerson01.pdf)
 and the expansion literature provide the all-size resolution lower-bound
 context for Tseitin contradictions; this repository does not reprove that
-theorem.
+theorem. The observed Möbius-ladder conflict counts are measurements of this
+fixed CDCL policy, not an all-size formula, a uniform-expander claim, or a
+lower bound on every SAT algorithm.
 The saved timings and CDCL proof lengths are measurements of one solver, not
 lower bounds on every SAT algorithm and not a resolution of P versus NP.
 

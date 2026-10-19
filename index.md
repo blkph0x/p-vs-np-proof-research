@@ -5,7 +5,7 @@ description: A public, reproducible research notebook for exact algorithms, cert
 ---
 
 <div class="hero">
-  <p class="eyebrow">PUBLIC RESEARCH CHECKPOINT · 19 OCTOBER 2026</p>
+  <p class="eyebrow">PUBLIC RESEARCH CHECKPOINT · 20 OCTOBER 2026</p>
   <h1>Can computation settle P versus NP?</h1>
   <p class="lede">This project tests proposed algorithms and proof ideas with exact arithmetic, saved certificates, independent checkers, and explicit complexity accounting.</p>
   <p>
@@ -21,7 +21,7 @@ stated structural families, finite exhaustive controls, certificate verifiers,
 and scoped counterexamples. It does not claim a solver for every SAT instance
 or a lower bound against every polynomial algorithm.
 
-The latest recorded full audit passed **54 suites and 538 test methods** with
+The latest recorded full audit passed **54 suites and 539 test methods** with
 unchanged source hashes. These are reproducibility results for the checked
 finite cases, not a solution to the open problem.
 
@@ -42,7 +42,8 @@ proof-complexity result, not a general SAT algorithm. The saved replay now
 extends through the complete PHP(7,6) certificate.
 
 The [odd-charge Tseitin expander campaign](tseitin_expander_lab/REPORT.md)
-adds four connected cubic graph contradictions. An exact parity certificate
+adds four named connected cubic graph contradictions and a deterministic
+Möbius-ladder sweep from 6 through 20 vertices. An exact parity certificate
 proves each CNF unsatisfiable, and an independent checker rebuilds the local
 3-CNF encoding and replays every CDCL resolution step. These are finite
 controls against the cited expansion-based resolution literature, not a new

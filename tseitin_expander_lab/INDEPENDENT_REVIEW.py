@@ -127,13 +127,14 @@ def main():
     artifact = json.loads((HERE / "RESULTS.json").read_text(encoding="utf-8"))
     certificates = json.loads((HERE / "CERTIFICATES.json").read_text(encoding="utf-8"))
     assert artifact["all_cases_unsat"]
-    assert len(certificates) == len(artifact["rows"]) == 4
+    assert len(certificates) == len(artifact["rows"]) == 12
     for saved, row in zip(certificates, artifact["rows"]):
         nvars, clauses = expected_cnf(saved["vertices"], saved["edges"], saved["charges"])
         assert nvars == saved["nvars"]
         assert [list(clause) for clause in clauses] == saved["clauses"]
         assert parity_record(saved["vertices"], saved["edges"], saved["charges"]) == saved["parity"]
         assert saved["parity"]["parity_proves_unsat"]
+        assert all(len(row) == 3 for row in edges_and_incidence(saved["vertices"], saved["edges"])[1])
         assert replay_result(saved["nvars"], saved["clauses"], saved["result"])
         assert row["status"] == "UNSAT"
         assert row["proof_events"] == len(saved["result"]["proof"])

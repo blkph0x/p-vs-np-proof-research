@@ -99,3 +99,16 @@ which follows the six-cut, five-cut, four-cut, and three-cut reports.
 The audit's central distinction is now reflected in the next exact checkpoint. The repository promoted one new, explicitly scoped object: the valid integer-domain cut `(t-6)(t-7)(31-t) >= 0`, together with an independent reconstruction of the quotient, rational primal masses, rational dual, and every reduced cost. The six-cut witness violates that polynomial by `-3473117738496/217025866361`; the seventh-cut primal and dual both equal `35873801083/5129253893`, with gap `0`, 1,100 nonzero base rows, and 2,144 zero reduced costs.
 
 This is still a finite hierarchy certificate. It does not strengthen the literature's global hierarchy theorems, classify arbitrary SAT, or claim a P-versus-NP solution. The public record now links the producer, independent reviewer, adversarial tests, report, CI registration, and reproducibility commands for the seventh cut. Earlier six-cut figures remain in the history as prior checkpoints; the seventh-cut report is the current result.
+
+## Tseitin scaling addendum (2026-10-20)
+
+The next checkpoint extends the finite proof-complexity control rather than
+promoting the peer-audit comparison into a novelty claim. Four named cubic
+graphs are now joined by a deterministic Möbius-ladder sweep at sizes
+6, 8, ..., 20. Each odd-charge CNF has an exact parity unsatisfiability
+certificate, and the independent reviewer rebuilds the 3-CNF and every saved
+first-UIP resolution step. The fixed CDCL policy records 16, 32, ..., 2048
+conflicts on the ladder rows; these are observed solver measurements, with no
+all-size recurrence, uniform-expander assertion, or lower bound for arbitrary
+SAT algorithms. The cited width-size literature remains the correct asymptotic
+boundary.
