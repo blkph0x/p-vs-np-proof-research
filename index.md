@@ -32,6 +32,15 @@ outside its scope. The repository does not claim absolute novelty: its narrow
 contribution is keeping finite certificates, independent replay, citations,
 and explicit `UNKNOWN` outcomes in one result ledger.
 
+The audit's practical rule is simple: a promoted entry must be an exact
+certificate for its declared scope, an explicit `UNKNOWN`/`UNKNOWN_CAP` with a
+stopping boundary, or it is not a result. The independent program that
+rebuilds a quotient is evidence against implementation drift, not a proof
+assistant and not a guarantee against a shared definition error. Stronger
+all-size hierarchy and proof-complexity theorems remain the literature's
+results; the repository records small exact replays and their limits. A test
+count is therefore never presented as a result count.
+
 The newest finite proof-complexity checkpoint settles the standard PHP(5,4)
 encoding's minimum resolution width at **4**. An exhaustive five-pebble game
 fixed point certifies the width-4 upper bound, while the complete width-3
