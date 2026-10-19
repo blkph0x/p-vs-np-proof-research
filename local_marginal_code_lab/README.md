@@ -67,6 +67,10 @@ reduced costs without an LP solver. The companion
 dual into a six-term positive objective-gap identity and the adversarial test
 reconstructs that identity with exact rational arithmetic.
 
+Finite certificate sizes, rational bit lengths, and measured replay timing are
+listed in [REED_MULLER_CERTIFICATE_COSTS.md](REED_MULLER_CERTIFICATE_COSTS.md);
+unmeasured producer and peak-memory costs are left explicitly open.
+
 The [full level-eight report](REED_MULLER_LEVEL_D_FULL_REPORT.md) now closes
 the finite arbitrary-scope case for this RM(2,5) model. It includes every
 scope of size at most eight, exact pinned-code projection support, and every

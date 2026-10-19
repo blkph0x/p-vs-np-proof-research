@@ -1,5 +1,5 @@
 {
-  "file_count": 1283,
+  "file_count": 1284,
   "files": {
     ".gitattributes": {
       "bytes": 648,
@@ -390,8 +390,8 @@
       "sha256": "7e117ca0cba042bfb769e2536ee974d2a4d4d6c244ce988482afd4339aae9de9"
     },
     "REFEREE_RESPONSE_2026_10_20.md": {
-      "bytes": 5577,
-      "sha256": "68339c8b94fecde3d47d128712800e8a884ab1c4209c99605201ccfedb8e9f08"
+      "bytes": 5866,
+      "sha256": "d784463ab04f2cc82a7baed9d2fd836f864950735b1f12e92c11eacd419a2f02"
     },
     "REGULAR_LDPC_33_LOCAL_AUDIT.json": {
       "bytes": 5015,
@@ -2390,8 +2390,8 @@
       "sha256": "608489e4181967b18a4c22e96413a7a4cbc06de4b04c91e5985e3a7bc0a4b06c"
     },
     "local_marginal_code_lab/README.md": {
-      "bytes": 8623,
-      "sha256": "6fa8cc3f8c6f71f1ee0aa1687a643bc1e2b5fb27b4e69e88687c660379975528"
+      "bytes": 8851,
+      "sha256": "ca92bd7d6c7b842bd36275bf11a1eba53f5c9f17664784ec2ec199c7e4c0e797"
     },
     "local_marginal_code_lab/REED_MULLER_AFFINE_OVERLAP_DUAL_NOTE.md": {
       "bytes": 4118,
@@ -2436,6 +2436,10 @@
     "local_marginal_code_lab/REED_MULLER_ALL_DUAL_RESULTS.json": {
       "bytes": 98285,
       "sha256": "cb63d602511ac2adebd9aa44438828cc5ecd08f3e35012e73d728476d975a0e2"
+    },
+    "local_marginal_code_lab/REED_MULLER_CERTIFICATE_COSTS.md": {
+      "bytes": 2645,
+      "sha256": "a19d1aa74899a985847137c9b9bf2e53c8b3b4a359142a778549bbf0389beca1"
     },
     "local_marginal_code_lab/REED_MULLER_EXACT_DUAL_SEARCH_REPORT.md": {
       "bytes": 2178,
@@ -2510,8 +2514,8 @@
       "sha256": "9bc05a83721565742334f770730f754529ea0dc0551f52332d77c4c69ba7388d"
     },
     "local_marginal_code_lab/REED_MULLER_LEVEL_D_FULL_REPORT.md": {
-      "bytes": 4021,
-      "sha256": "33b32eb60f474a47a976999273d3aaf72c12f1b5c181fef657c844b2ce8f2a6a"
+      "bytes": 4239,
+      "sha256": "4ddefe2547a5acf61e39ef50cb76a6e0a3496c0315d1817d97043c8d35c60a3a"
     },
     "local_marginal_code_lab/REED_MULLER_LEVEL_D_FULL_RESULTS.json": {
       "bytes": 6822694,
@@ -5134,6 +5138,6 @@
       "sha256": "957bd3b51cbf2cd06ee00f1ef47ab5c6fa8bbf1a4c281c0e67b129b027785a18"
     }
   },
-  "generated_at_utc": "2026-10-19T21:35:03.772053+00:00",
-  "source_commit": "42b5566195d756258bb5f4a310aeca9d910c5648"
+  "generated_at_utc": "2026-10-19T21:39:03.547208+00:00",
+  "source_commit": "fec21f2b446a49498be867013e9732f026757a2d"
 }

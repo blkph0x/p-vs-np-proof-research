@@ -89,6 +89,9 @@ The machine-readable certificate is
 [REED_MULLER_LEVEL_D_FULL_RESULTS.json](REED_MULLER_LEVEL_D_FULL_RESULTS.json);
 the replay summary is
 [REED_MULLER_LEVEL_D_FULL_INDEPENDENT_REVIEW.json](REED_MULLER_LEVEL_D_FULL_INDEPENDENT_REVIEW.json).
+The finite artifact sizes and the measured affine-overlap replay cost are
+recorded in [REED_MULLER_CERTIFICATE_COSTS.md](REED_MULLER_CERTIFICATE_COSTS.md);
+producer and discovery asymptotics remain deliberately unclaimed.
 
 This result is a finite, representation-specific relaxation boundary. It is
 not a polynomial-time SAT algorithm, a lower bound against arbitrary SAT

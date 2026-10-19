@@ -48,7 +48,11 @@ additional certificates it can produce:
    A relationship will be stated only after its hypotheses are proved.
 3. Separate construction, discovery, and verification costs for the finite
    `RM(2,5)` certificate, including bit lengths, certificate size, memory, and
-   replay time.
+   replay time. **Partially addressed:**
+   [`REED_MULLER_CERTIFICATE_COSTS.md`](local_marginal_code_lab/REED_MULLER_CERTIFICATE_COSTS.md)
+   records exact artifact sizes, rational bit lengths, and a measured replay
+   time; peak memory and producer/discovery measurements remain explicitly
+   unclaimed.
 4. Collect nearby exact instances only when they test a stated scaling
    conjecture. A fitted curve is not a theorem, and a failed conjecture is a
    valid recorded outcome.
