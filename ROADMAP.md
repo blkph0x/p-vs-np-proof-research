@@ -3,12 +3,22 @@
 ## Current engineering priorities — 20 October 2026
 
 The [public-method review](PUBLIC_METHOD_REVIEW.md) now supplies the comparison
-and acceptance test for each capability. First reconstruct exact LP discovery
-with a canonical rational export and an exact backend. Then benchmark certified
+and acceptance test for each capability. A canonical rational export and
+[SoPlex adapter](local_marginal_code_lab/EXACT_LP_DISCOVERY.md) now reproduce
+the affine-overlap optimum, with independent model reconstruction. Extend
+this to full-model/cut discovery only with the same source-bound acceptance.
+Then benchmark certified
 SAT/XOR and D4/CPOG compilation on the same original requests. Next evaluate
 CMR graphic recognition, a public LEMON matching-dual exporter, and independently
 checked join/contraction plans. Keep exact reference implementations and all
-negative/UNKNOWN controls. These adapters are proposed, not yet installed.
+negative/UNKNOWN controls. The SAT/compilation, CMR and LEMON adapters remain
+proposed; SoPlex is the first implemented external discovery backend.
+
+The [quadratic RM family theorem](local_marginal_code_lab/REED_MULLER_QUADRATIC_LEVEL8_THEOREM.md)
+now proves the exact fixed-level value `(2^m-1)/5` for every `m>=4`.
+Its novelty is unresolved. Next test the explicitly derived nine-point
+inequality against the selected-scope LP; it rejects the present moment
+witness but does not yet establish a higher full-level-nine optimum.
 
 Immediate verifier hardening, source-coverage checks and local Fourier
 precomputation are recorded separately from those future integrations. None

@@ -1,0 +1,60 @@
+test_exported_lp_accepts_an_exact_feasible_primal_dual_pair (test_exact_lp_model.AffineModelTests) ... ok
+test_original_quotient_dimensions_and_representative_equation (test_exact_lp_model.AffineModelTests) ... ok
+test_canonical_rationals_and_large_exact_values (test_exact_lp_model.ModelExportTests) ... ok
+test_digest_is_canonical_and_covers_all_model_data (test_exact_lp_model.ModelExportTests) ... ok
+test_reject_noncanonical_rationals (test_exact_lp_model.ModelExportTests) ... ok
+test_reject_schema_dimensions_and_duplicate_ids (test_exact_lp_model.ModelExportTests) ... ok
+test_reject_sparse_zeros_bad_indexes_and_inexact_values (test_exact_lp_model.ModelExportTests) ... ok
+test_signed_fractional_equations_and_reduced_objective (test_exact_lp_model.ModelExportTests) ... ok
+test_zero_objective_and_zero_dimensional_serialization (test_exact_lp_model.ModelExportTests) ... ok
+test_affine_source_binding_and_source_mutations (test_exact_lp_verify.ExactLPVerificationTests) ... ok
+test_all_adversarial_controls (test_exact_lp_verify.ExactLPVerificationTests) ... ok
+test_alternative_optimal_vectors_are_allowed (test_exact_lp_verify.ExactLPVerificationTests) ... ok
+test_dual_feasibility_and_gap_are_separate (test_exact_lp_verify.ExactLPVerificationTests) ... ok
+test_hash_and_mathematics_both_checked (test_exact_lp_verify.ExactLPVerificationTests) ... ok
+test_large_exact_rational_strings (test_exact_lp_verify.ExactLPVerificationTests) ... ok
+test_no_primal_feasible_certificate_for_infeasible_lp (test_exact_lp_verify.ExactLPVerificationTests) ... ok
+test_offset_is_reporting_metadata_for_generic_lp (test_exact_lp_verify.ExactLPVerificationTests) ... ok
+test_optimized_python_rejects_forged_certificates (test_exact_lp_verify.ExactLPVerificationTests) ... ok
+test_rational_row_scaling_requires_dual_remap (test_exact_lp_verify.ExactLPVerificationTests) ... ok
+test_valid_row_mapping_and_signed_equality_dual (test_exact_lp_verify.ExactLPVerificationTests) ... ok
+test_zero_dimension_cases (test_exact_lp_verify.ExactLPVerificationTests) ... ok
+test_existing_artifacts_are_rejected_before_any_solver_call (test_exact_lp_soplex.DiscoveryProcessTests) ... ok
+test_launch_failure_has_structured_non_success_result (test_exact_lp_soplex.DiscoveryProcessTests) ... ok
+test_missing_solver_is_unknown_without_launch (test_exact_lp_soplex.DiscoveryProcessTests) ... ok
+test_source_drift_prevents_exact_run_and_stable_run_binds_lf_artifacts (test_exact_lp_soplex.DiscoveryProcessTests) ... ok
+test_success_and_nonzero_exit_preserve_separate_outputs (test_exact_lp_soplex.DiscoveryProcessTests) ... ok
+test_version_error_timeout_and_unsupported_version_are_unknown (test_exact_lp_soplex.DiscoveryProcessTests) ... ok
+test_wall_timeout_preserves_partial_output_and_reaps_child (test_exact_lp_soplex.DiscoveryProcessTests) ... ok
+test_captured_default_tolerance_candidate_is_rejected (test_exact_lp_soplex.SoPlexCandidateTests) ... ok
+test_captured_signed_equality_dual_and_reporting_offset (test_exact_lp_soplex.SoPlexCandidateTests) ... ok
+test_dual_and_reduced_cost_sections_must_be_complete (test_exact_lp_soplex.SoPlexCandidateTests) ... ok
+test_exact_fraction_and_negative_objective (test_exact_lp_soplex.SoPlexCandidateTests) ... ok
+test_mapping_is_by_exact_name_not_printed_order (test_exact_lp_soplex.SoPlexCandidateTests) ... ok
+test_missing_nonzero_entry_and_wrong_signed_dual_fail_exact_replay (test_exact_lp_soplex.SoPlexCandidateTests) ... ok
+test_model_types_and_digest_bind_the_candidate (test_exact_lp_soplex.SoPlexCandidateTests) ... ok
+test_nonoptimal_unknown_missing_or_conflicting_status_rejected (test_exact_lp_soplex.SoPlexCandidateTests) ... ok
+test_omitted_zero_entries_and_positive_reduced_cost (test_exact_lp_soplex.SoPlexCandidateTests) ... ok
+test_optimal_stdout_and_supplied_reduced_costs_do_not_prove_truth (test_exact_lp_soplex.SoPlexCandidateTests) ... ok
+test_optimized_mode_has_the_same_acceptance_boundary (test_exact_lp_soplex.SoPlexCandidateTests) ... ok
+test_primal_missing_truncated_or_inconsistent_completeness (test_exact_lp_soplex.SoPlexCandidateTests) ... ok
+test_sparse_entries_require_canonical_nonzero_exact_rationals (test_exact_lp_soplex.SoPlexCandidateTests) ... ok
+test_unknown_duplicate_and_cross_section_ids_rejected (test_exact_lp_soplex.SoPlexCandidateTests) ... ok
+test_ambient_embedding_and_coordinate_permutation (test_rm2_level8_family.LevelEightFamilyTests) ... ok
+test_complete_moments_and_all_marginals (test_rm2_level8_family.LevelEightFamilyTests) ... ok
+test_dependent_triple_cannot_be_dropped (test_rm2_level8_family.LevelEightFamilyTests) ... ok
+test_eight_point_bound_extremal_and_low_line_controls (test_rm2_level8_family.LevelEightFamilyTests) ... ok
+test_empty_scope_strict_types_and_shapes (test_rm2_level8_family.LevelEightFamilyTests) ... ok
+test_global_m4_plane_distribution_on_every_eight_point_scope (test_rm2_level8_family.LevelEightFamilyTests)
+A genuine global pinned RM(2,4) distribution, all 6,435 scopes. ... ok
+test_independent_triple_mutation_has_valid_support_but_wrong_moment (test_rm2_level8_family.LevelEightFamilyTests) ... ok
+test_level_nine_is_only_a_witness_obstruction (test_rm2_level8_family.LevelEightFamilyTests) ... ok
+test_pin_parity_mutation_rejected_before_moments (test_rm2_level8_family.LevelEightFamilyTests) ... ok
+test_provenance_normalizes_line_endings_but_not_content (test_rm2_level8_family.LevelEightFamilyTests) ... ok
+test_rref_enumeration_small_counts_and_unique_rowspaces (test_rm2_level8_family.LevelEightFamilyTests) ... ok
+test_unpinned_affine_flat_has_only_even_atoms (test_rm2_level8_family.LevelEightFamilyTests) ... ok
+
+----------------------------------------------------------------------
+Ran 54 tests in 94.348s
+
+OK

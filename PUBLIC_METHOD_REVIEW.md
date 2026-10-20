@@ -29,7 +29,7 @@ python build_public_method_inventory.py --check
 | Priority | Change | Why it is preferable | Acceptance evidence |
 | --- | --- | --- | --- |
 | P0 | Harden proof acceptance; benchmark an external proof-producing SAT backend | Older acceptance assertions could disappear under Python optimisation; mature engines have substantially more search machinery | Reject forged proofs under normal Python and `-O`; validate original SAT models and complete UNSAT proofs |
-| P1 | Canonical rational LP export and SoPlex discovery adapter | Reconstructs the currently unrecorded certificate-search process | Independently replay the same original model and exact optimal objectives |
+| P1 | Canonical rational LP export and SoPlex discovery adapter | Implemented for fresh affine-overlap discovery; larger models remain | Independently replay the same original model and exact optimal objectives |
 | P1 | D4/CPOG certified compilation baseline | Public certification already covers CNF equivalence and projected compilation | Check original CNF/projection semantics, counts, construction and proof costs |
 | P1 | CMR pure-graphic recognition and LEMON dual exporter | Complete recognition for a declared class; documented matching dual API | Check row-space/target transformations and every dual inequality |
 | P1 | Exact local FWHT precomputation; better contraction/join planning | Removes repeated local arithmetic; targets intermediate-state growth | Equality to direct controls, honest operation counts, paired measurements |
@@ -237,6 +237,15 @@ be selected explicitly. Its [current project licence](https://soplex.zib.de/inde
 is Apache-2.0. The inspected QSopt_ex fork is GPL-3-or-later.
 Neither tool's status string constitutes a certificate.
 
+**Implemented follow-up:** the [SoPlex adapter](local_marginal_code_lab/EXACT_LP_DISCOVERY.md)
+now performs fresh affine-overlap discovery and independently reconstructs
+the model before accepting exact primal/dual optimality at reduced `31/5`.
+The original historical search is still unrecorded. Default-tolerance rational
+output produced a genuinely rejected candidate; that negative control is
+retained. The final search uses zero tolerances. Construction, search and
+verification have separate process measurements, with sampled memory clearly
+distinguished from a guaranteed peak. Full-model/cut discovery remains open.
+
 ## Integer cuts versus genuine moment/SOS constraints
 
 The seven-cut campaign adds valid integer-weight polynomial inequalities to
@@ -295,11 +304,11 @@ in this plan is evidence that P versus NP is resolved.
 Completed changes are the optimisation-independent CDCL verifier, source
 inventory and provenance repair, non-cancelling active CI replay, integration
 of the previously prepared certified affine-hull experiment, and the bounded
-local-Fourier improvement with its own evidence. They do not constitute
-installation of the external backends described above.
+local-Fourier improvement with its own evidence. The follow-up also installs
+and validates SoPlex as the first optional external discovery backend.
 
-The next substantive adapter should be **exact LP discovery**, followed by
-a **certified SAT/compilation benchmark**. Those directly address absent
+Next extend **exact LP discovery** to the larger certificates and build
+a **certified SAT/compilation benchmark**. These address remaining
 discovery reproducibility and missing external baselines. CMR and LEMON then
 target well-defined recognition/export weaknesses. Broader SOS and hierarchy
 work remains research requiring its own mathematical specification.

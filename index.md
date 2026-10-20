@@ -23,6 +23,13 @@ concrete upgrades and the evidence required before calling them improvements.
 The source inventory covers all 65 research directories; comparative speed
 claims still require matching benchmarks.
 
+The first external discovery integration is now [SoPlex with exact independent checking](local_marginal_code_lab/EXACT_LP_DISCOVERY.md).
+It reproduces the affine-overlap value `31/5` from the model alone, while a
+saved default-tolerance run is correctly rejected. A separate
+[quadratic Reed–Muller theorem](local_marginal_code_lab/REED_MULLER_QUADRATIC_LEVEL8_THEOREM.md)
+proves the level-eight reduced optimum `(2^m-1)/5` for `m>=4`, using explicit
+local tables and the finite dual identity. Its novelty remains unresolved.
+
 **P versus NP remains unresolved.** The repository contains exact algorithms for
 stated structural families, finite exhaustive controls, certificate verifiers,
 and scoped counterexamples. It does not claim a solver for every SAT instance

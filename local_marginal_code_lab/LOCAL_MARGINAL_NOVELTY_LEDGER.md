@@ -11,6 +11,8 @@ open novelty question.
 | Projection-marginal LP `L_k(C)` | Local consistency and marginal relaxations; named Sherali--Adams/Lasserre systems | **Two boundaries are now explicit.** `L_k(C)` is proved identical, level by level, to configuration Sherali--Adams for the declared finite-domain CSP whose relations are the exact projections `R_S(C)`. No equivalence is claimed for a sparse Boolean parity-check encoding, and the Lasserre relationship remains formulation-specific. |
 | Sparse parity check-local configuration versus clause LP | Configuration SA for local CSP relations and the ordinary 0/1 clause relaxation | **Exact finite positioning control.** On the pinned four-variable ternary-parity encoding, the check-local level-two value is `0`, while the simplified sparse 3-CNF clause LP has exact value `1`. This is an encoding-specific comparison, not a new all-size hierarchy theorem. |
 | Exact RM(2,5) reduced value `31/5` (total pinned weight `36/5`) | Coding-theory and hierarchy gap results, including stronger asymptotic lower bounds for other models | **Finite certificate.** Whether this exact quotient value is new is an open literature-comparison task. The result is not advertised as a new asymptotic hierarchy theorem. |
+| Exact full level-eight value for `RM(2,m)`, every `m>=4` | Reed--Muller geometry, local-marginal relaxations, and the existing finite six-term dual identity | **20 October 2026 formulation-specific follow-up; novelty `UNKNOWN`.** The [audited theorem](REED_MULLER_QUADRATIC_LEVEL8_THEOREM.md) proves reduced optimum `(2^m-1)/5` and total optimum `(2^m+4)/5` using explicit common moments and transport of the finite lower bound. Its total integer/LP ratio tends to `5/4`. This is a fixed-level statement for the declared projection model, not a growing-round lower bound or a new general algorithm. |
+| Fresh affine-overlap rational LP search | SoPlex exact LP methods and standard primal/dual optimality certificates | **Reproduced engineering workflow, not a new optimization method.** [Discovery records](EXACT_LP_DISCOVERY/discovery.json) bind a newly source-built model, solver outputs, and independent exact verification. Historical discovery remains `UNRECORDED`; new full-model and cut discovery have not been executed. |
 | All-redundant-parity fractional witness | Fundamental polytopes, pseudocodewords, and redundant-parity-check separation | **Related, not yet differentiated.** The repository's all-size theorem is retained, with novelty unclaimed until a theorem-by-theorem comparison is complete. See Kashyap's decomposition discussion and Puchert--Tillmann's separation result. |
 | Boolean square and later weight polynomials | Moment/SOS constraints for the square; integer-valid cuts for the later polynomials | **Terminology fixed.** Only the explicit Boolean-square constraint is called a moment/SOS constraint. The remaining seven-cut sequence is a finite integer-cut LP, not a claimed bounded-degree SOS hierarchy. |
 | PHP width replay | Classical resolution-width and pebble-game theorems | **Validation infrastructure.** The replay checks known mathematics and does not claim a new width lower bound. |
@@ -47,3 +49,10 @@ The repository has not found a cited theorem in this ledger that states the
 exact reduced value `31/5` (total pinned weight `36/5`) for the same pinned `RM(2,5)` level-eight projection-marginal
 polytope. That is a bounded search status, not a novelty proof: a publication
 claim still requires a systematic literature search and an expert comparison.
+
+The 20 October 2026 all-`m` theorem does not change that acceptance rule. Its
+mathematical review checks the proof, while novelty of the exact family
+formula remains `UNKNOWN`. The standard dual-code and affine-flat facts are
+inherited; the cited finite identity is an explicit dependency. Reproducing
+the affine LP search establishes provenance for a new run, not priority for
+the finite optimum or the family theorem.

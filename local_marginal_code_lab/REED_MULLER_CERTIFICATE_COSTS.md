@@ -61,9 +61,36 @@ not asymptotic bounds or cross-machine performance claims.
 
 The historical certificate-search/discovery process is not retained in the
 repository, so its cost remains explicitly `UNRECORDED`. Regeneration of the
-saved witness is not presented as discovery. No finite certificate in this
-repository is being presented as an efficient algorithm for arbitrary SAT
-instances.
+saved witness is not presented as discovery. These historical measurements
+are preserved separately from the new search below.
+
+## Fresh affine search and family theorem: 20 October 2026
+
+The [exact LP discovery workflow](EXACT_LP_DISCOVERY.md) now supplies a
+reproduced affine-overlap search. It builds the model without reading a saved
+primal, dual, basis, or expected optimum, runs SoPlex with exact rational
+settings and zero feasibility/optimality tolerances, then independently
+reconstructs the model and verifies the candidate. The accepted objective is
+reduced `31/5`, with reporting offset one giving total `36/5`.
+
+The current timings, sampled RSS, command arguments, platform, source hashes,
+and preserved outputs are in
+[`EXACT_LP_DISCOVERY/discovery.json`](EXACT_LP_DISCOVERY/discovery.json).
+Construction, search, and verification are separate processes. Search time
+excludes the other two stages, and sampled RSS is only a lower bound on the
+true process peak. No cross-solver performance advantage is inferred from
+this one workload. The original historical search cost remains `UNRECORDED`;
+fresh full-model and polynomial-cut discovery remain unexecuted by this
+workflow, even though an exporter for the full model is available.
+
+The [all-dimension `RM(2,m)` theorem](REED_MULLER_QUADRATIC_LEVEL8_THEOREM.md)
+has a different cost statement. Its explicit moment rule constructs a table
+on at most eight nonpin coordinates using at most 56 triple checks and 256
+atom slots, with `m`-bit coordinates and denominator 35. Enumerating every
+scope still requires `O((2^m)^8)` scopes, rather than polynomial work in `m`.
+The lower proof transports the fixed finite six-term identity; it does not
+run a new LP search for each dimension. Its reproducible finite checks
+supplement the proof and do not establish a general SAT or decoding algorithm.
 
 ## Reproduction
 
@@ -77,4 +104,11 @@ To repeat the construction/RSS measurement in a temporary copy, run:
 
 ```text
 python measure_reed_muller_costs.py
+```
+
+To verify the new committed discovery evidence without installing SoPlex,
+follow [`EXACT_LP_DISCOVERY.md`](EXACT_LP_DISCOVERY.md) and run:
+
+```text
+python run_exact_lp_discovery.py --replay EXACT_LP_DISCOVERY
 ```

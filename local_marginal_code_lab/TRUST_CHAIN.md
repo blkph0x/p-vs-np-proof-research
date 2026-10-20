@@ -40,6 +40,38 @@ but that dependency is recorded explicitly here.
    The project-wide resolution standard remains in
    [`../RESOLUTION_STANDARD.md`](../RESOLUTION_STANDARD.md).
 
+## Follow-ups recorded on 20 October 2026
+
+**Fresh exact LP discovery.** The workflow in
+[`EXACT_LP_DISCOVERY.md`](EXACT_LP_DISCOVERY.md) rebuilds the affine-overlap
+equality LP from source, exports exact rational coefficients, and supplies no
+saved solution, basis, or expected optimum to SoPlex. The independent checker
+accepts arbitrary candidate vectors only after checking `x>=0`, `Ax=b`,
+`c-A^T*y>=0`, and `c*x=b*y` exactly. A separate source-binding step reconstructs
+the original quotient and compares the complete model, including its objective
+offset. Thus a solver status or model hash alone is insufficient. The
+[`discovery.json`](EXACT_LP_DISCOVERY/discovery.json) record reproduces reduced
+`31/5` and total `36/5`; the historical discovery remains `UNRECORDED`.
+This new search does not rediscover the full-model or cut certificates.
+
+**All-dimension quadratic-family theorem.** The
+[`RM(2,m)` level-eight proof](REED_MULLER_QUADRATIC_LEVEL8_THEOREM.md) establishes
+reduced optimum `(2^m-1)/5` and total optimum `(2^m+4)/5` for every `m>=4`.
+Its upper bound uses explicit common moments and exact pinned projection
+support. Its lower bound depends on the finite six-term identity in step 5,
+transported by `GL(m,2)` averaging and embeddings of selected scope spans of
+dimension at most four. The finite identity and quotient-equivalence proof
+remain explicit dependencies; neither the new search nor the finite scope
+enumeration replaces this argument.
+
+An independent mathematical review checked the eight-point zero-sum-triple
+bound, Möbius inversion and nonnegativity, overlap consistency, the
+shortened-dual projection argument, and transport of the lower bound including
+`m=4`. It also checked the singleton-only scope of the redundant-parity
+extension and the proposed level-nine inequality, which excludes the displayed
+witness without determining the level-nine optimum. This is a review of the
+written proof, not a proof-assistant certificate. Novelty remains `UNKNOWN`.
+
 The chain is intentionally not described as proof-assistant independence.
 Two programs can share a mistaken definition, and a written quotient theorem
 can still contain an error. The claim made here is narrower: the saved finite

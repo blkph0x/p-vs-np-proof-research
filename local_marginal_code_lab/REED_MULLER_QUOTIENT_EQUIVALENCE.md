@@ -45,8 +45,9 @@ For an invariant table, every supported atom in one orbit has one common mass.
 The normalization and containment equations can likewise be averaged over
 the stabilizer of a representative scope and containment pair. Enumerating
 those stabilizer orbits gives exactly one quotient variable or row per orbit.
-The coefficient of a quotient row is the number of original equations in the
-corresponding orbit that contain that variable. Therefore lifting a quotient
+The coefficient of a quotient variable in a representative row is the sum of
+the original coefficients of all atom variables in that variable orbit
+occurring in the representative equation. Therefore lifting a quotient
 assignment by assigning its orbit value to every member gives a feasible
 invariant point, and averaging any full point gives the reverse map.
 

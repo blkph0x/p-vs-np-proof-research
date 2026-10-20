@@ -1,0 +1,97 @@
+{
+  "artifact_encoding": "UTF-8 text; newlines normalized to LF before SHA256",
+  "artifact_sha256": {
+    "candidate.json": "22e517efec1415730101eb33324747af4725dfaf7ce750caab7462b7a7ea52eb",
+    "construct.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "construct.stdout.txt": "23d7e8e8263af2b11a682bb5382778f2d419cdfeb6ce24bbe200fa570f00902c",
+    "dual.sol": "36c9ab0fbbd373fb1094f9995ee8f07c230d9a455bdb902eb789b6654a486113",
+    "model.json": "86eb45dc4e150d1c40e4f1fea2eec05a14cfbd697fb967ae3bcf046e9e8792e7",
+    "model.lp": "d69279325142be7d89979b0bca90b8e478e895bcc538c633f8e4d78fa6f9bbf1",
+    "primal.sol": "c3d36eaebafd4984bcab8a0d68c36ebd116f18ed9f6b6ba33bc9fc5fd732762f",
+    "replay.json": "a7d641db190947e1689f7820e57c1976c7f8fd2b80c3fb996f10a1d757179c41",
+    "search.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "search.stdout.txt": "8dabbb69aa4468f58b6048f2cd7a9aa91d3cb34347650bf77af3e796b6b1c10d",
+    "solver-version.txt": "e460efaa793d96e85d1e146a9b02f80534c6d0371523c2d85047fcb0dc1043a1",
+    "verify.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "verify.stdout.txt": "93727810f8174dac37ab90330b9449bdd46d0d1148c9831474a01e1ad176697c"
+  },
+  "environment": {
+    "logical_cpus": 24,
+    "machine": "AMD64",
+    "platform": "Windows-10-10.0.22631-SP0",
+    "python": "3.10.10 | packaged by conda-forge | (main, Mar 24 2023, 20:00:38) [MSC v.1934 64 bit (AMD64)]"
+  },
+  "historical_discovery": "UNRECORDED",
+  "model": "rm25_affine_overlap",
+  "reason": "fresh candidate passed independent model reconstruction and exact primal/dual checking",
+  "reduced_objective": "31/5",
+  "schema": "exact-lp-discovery-run-v1",
+  "search_inputs": "source-rebuilt model only; no saved primal, dual, basis, or expected optimum",
+  "solver": {
+    "arguments": [
+      "--readmode=1",
+      "--solvemode=2",
+      "--int:syncmode=1",
+      "--real:feastol=0",
+      "--real:opttol=0",
+      "--int:checkmode=2",
+      "-X=primal.sol",
+      "-Y=dual.sol",
+      "-q",
+      "-c",
+      "-t600",
+      "model.lp"
+    ],
+    "executable_sha256": "8a18cfe1f6c5b844d79afea179aacb755b1ee1e63a3bb0b07dd661ad22eaaf26",
+    "required_version": "8.1.0",
+    "version": "8.1.0"
+  },
+  "source_after_sha256_lf": {
+    "REED_MULLER_LEVEL_D_AFFINE_OVERLAP_INDEPENDENT_REVIEW.py": "76efdc7778a493f8cd1bb4ae1cd8b87fbafa3a62855342b0165d18107f99a6cb",
+    "exact_lp_model.py": "83cb365b022b62d86396e60d29a39f612abb39c4b880c55e7a8a8cccd07ab933",
+    "exact_lp_soplex.py": "eb4daca1fd4347b3cf5acaad0fa596bbdb353aafd82d0734acc884908b98cc9f",
+    "exact_lp_verify.py": "e04b0ebaecbb6cd232cd623c8d5bbeeb596d2a779fb3529c294dbcb6db04c5f5",
+    "reed_muller_affine_overlap.py": "936827495ee549d48e5c6e7a5e2f7d902ebc40c4d464054c65b407ecc47cb763",
+    "run_exact_lp_discovery.py": "901ab90a51e60532968d7ab3ee842296b0baba6776825165c9e42a7fb08ea636"
+  },
+  "source_sha256_lf": {
+    "REED_MULLER_LEVEL_D_AFFINE_OVERLAP_INDEPENDENT_REVIEW.py": "76efdc7778a493f8cd1bb4ae1cd8b87fbafa3a62855342b0165d18107f99a6cb",
+    "exact_lp_model.py": "83cb365b022b62d86396e60d29a39f612abb39c4b880c55e7a8a8cccd07ab933",
+    "exact_lp_soplex.py": "eb4daca1fd4347b3cf5acaad0fa596bbdb353aafd82d0734acc884908b98cc9f",
+    "exact_lp_verify.py": "e04b0ebaecbb6cd232cd623c8d5bbeeb596d2a779fb3529c294dbcb6db04c5f5",
+    "reed_muller_affine_overlap.py": "936827495ee549d48e5c6e7a5e2f7d902ebc40c4d464054c65b407ecc47cb763",
+    "run_exact_lp_discovery.py": "901ab90a51e60532968d7ab3ee842296b0baba6776825165c9e42a7fb08ea636"
+  },
+  "sources_unchanged": true,
+  "stages": [
+    {
+      "label": "construct",
+      "max_sampled_rss_bytes": 109838336,
+      "memory_method": "20ms current-RSS samples; lower bound on true process peak; excludes parent",
+      "returncode": 0,
+      "rss_samples": 1491,
+      "timed_out": false,
+      "wall_seconds": 46.230238
+    },
+    {
+      "label": "search",
+      "max_sampled_rss_bytes": 2273280,
+      "memory_method": "20ms current-RSS samples; lower bound on true process peak; excludes parent",
+      "returncode": 0,
+      "rss_samples": 1,
+      "timed_out": false,
+      "wall_seconds": 0.076472
+    },
+    {
+      "label": "verify",
+      "max_sampled_rss_bytes": 112336896,
+      "memory_method": "20ms current-RSS samples; lower bound on true process peak; excludes parent",
+      "returncode": 0,
+      "rss_samples": 1525,
+      "timed_out": false,
+      "wall_seconds": 47.378427
+    }
+  ],
+  "status": "EXACT_OPTIMUM",
+  "total_objective": "36/5"
+}

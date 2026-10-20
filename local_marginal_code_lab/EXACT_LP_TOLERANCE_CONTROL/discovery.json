@@ -1,0 +1,98 @@
+{
+  "artifact_encoding": "UTF-8 text; newlines normalized to LF before archived SHA256",
+  "artifact_sha256": {
+    "candidate.json": "68bf98f1b3d83fe10afbce6eb8c413106366e0245e9ea1d69404ec8d5556cc5e",
+    "construct.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "construct.stdout.txt": "23d7e8e8263af2b11a682bb5382778f2d419cdfeb6ce24bbe200fa570f00902c",
+    "dual.sol": "8be278a19ae7b444370f755a4d91c8e72cb5db0bb286785eaced450d11347503",
+    "model.json": "86eb45dc4e150d1c40e4f1fea2eec05a14cfbd697fb967ae3bcf046e9e8792e7",
+    "model.lp": "d69279325142be7d89979b0bca90b8e478e895bcc538c633f8e4d78fa6f9bbf1",
+    "primal.sol": "df19cd7cf370f00113f1f31c7a7ea6f0e5ae4cef2e0a5ea75e4f6d39d2fe420f",
+    "replay.json": "b67cbfd2252e21270b462c532f592f71c99c6c3878f2d16df8db493456fa64d7",
+    "search.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "search.stdout.txt": "cc7654a3d4a23abb1463d9b010a86be4bda3a8885f42ef017d76529738da79af",
+    "solver-version.txt": "e460efaa793d96e85d1e146a9b02f80534c6d0371523c2d85047fcb0dc1043a1",
+    "verify.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "verify.stdout.txt": "e4c71a921423b3001f120c2b68a6beb1f4bff86e1b6a6f349b359d84a7098c86"
+  },
+  "environment": {
+    "logical_cpus": 24,
+    "machine": "AMD64",
+    "platform": "Windows-10-10.0.22631-SP0",
+    "python": "3.10.10 | packaged by conda-forge | (main, Mar 24 2023, 20:00:38) [MSC v.1934 64 bit (AMD64)]"
+  },
+  "historical_discovery": "UNRECORDED",
+  "model": "rm25_affine_overlap",
+  "original_artifact_sha256_before_lf_normalization": {
+    "candidate.json": "8262c87f745db855f653b2b2d03d92a0b8f743a73cf8920e9a6327237b026f7f",
+    "construct.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "construct.stdout.txt": "fd7622f11270c4fad01f324cd74d237fcf94449a444dd2142b7b68ff6b169fb2",
+    "dual.sol": "aee867304740ffffa7d1836cfba5f1934c4c8be9602e84d16240eafc640a4393",
+    "model.json": "e4ac2c32c28aacd7303f3a38528e93bf028c463c2676d000cece20193384dba1",
+    "model.lp": "8a5d2ae420c5c6fe4b7b58c91bf63f7da0d9704cc68632fa50b36f68d0a24862",
+    "primal.sol": "c32215e4d7fb981022687fcd26676e355157616a7b221dc31a231ce46ba28713",
+    "replay.json": "c550f1c9aef9d73e29e66029c09d5497d177a080a60cd2b822cec0ae630e9e47",
+    "search.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "search.stdout.txt": "1ad30d4d62144b0acbef194205c26cb298341498313ef8dcef20be0eb2ba6e26",
+    "solver-version.txt": "0f8325cf84578c12b8f32b931b0b8a6d726e32e133595579cd2f2965afa7d4bd",
+    "verify.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "verify.stdout.txt": "25b0de15a759010c9cca959614b795b89da62006d8572dc2d25d7794a3b5a6a7"
+  },
+  "provenance_note": "Historical rejected first adapter trial; its source hashes and solver arguments predate the final zero-tolerance/provenance hardening. Original byte hashes are retained separately; current artifact hashes use LF.",
+  "reason": "independent source-bound verification failed or timed out",
+  "schema": "exact-lp-discovery-run-v1",
+  "search_inputs": "source-rebuilt model only; no saved primal, dual, basis, or expected optimum",
+  "solver": {
+    "arguments": [
+      "--readmode=1",
+      "--solvemode=2",
+      "--int:checkmode=2",
+      "-X=primal.sol",
+      "-Y=dual.sol",
+      "-q",
+      "-c",
+      "-t600",
+      "model.lp"
+    ],
+    "executable_sha256": "8a18cfe1f6c5b844d79afea179aacb755b1ee1e63a3bb0b07dd661ad22eaaf26",
+    "version": "8.1.0"
+  },
+  "source_sha256_lf": {
+    "REED_MULLER_LEVEL_D_AFFINE_OVERLAP_INDEPENDENT_REVIEW.py": "76efdc7778a493f8cd1bb4ae1cd8b87fbafa3a62855342b0165d18107f99a6cb",
+    "exact_lp_model.py": "4071c8b3abd3b06ee167dc4de02182ac8e5d9ecec99d833a8cacdcb4e1552c4f",
+    "exact_lp_soplex.py": "eb4daca1fd4347b3cf5acaad0fa596bbdb353aafd82d0734acc884908b98cc9f",
+    "exact_lp_verify.py": "e04b0ebaecbb6cd232cd623c8d5bbeeb596d2a779fb3529c294dbcb6db04c5f5",
+    "reed_muller_affine_overlap.py": "936827495ee549d48e5c6e7a5e2f7d902ebc40c4d464054c65b407ecc47cb763",
+    "run_exact_lp_discovery.py": "02e2329cc13be8a22a16cc50b2250466a192719db9eb2557d99902385fc3fcb0"
+  },
+  "stages": [
+    {
+      "label": "construct",
+      "max_sampled_rss_bytes": 109535232,
+      "memory_method": "20ms current-RSS samples; lower bound on true process peak; excludes parent",
+      "returncode": 0,
+      "rss_samples": 1455,
+      "timed_out": false,
+      "wall_seconds": 45.178636
+    },
+    {
+      "label": "search",
+      "max_sampled_rss_bytes": 2273280,
+      "memory_method": "20ms current-RSS samples; lower bound on true process peak; excludes parent",
+      "returncode": 0,
+      "rss_samples": 1,
+      "timed_out": false,
+      "wall_seconds": 0.092564
+    },
+    {
+      "label": "verify",
+      "max_sampled_rss_bytes": 112574464,
+      "memory_method": "20ms current-RSS samples; lower bound on true process peak; excludes parent",
+      "returncode": 1,
+      "rss_samples": 1493,
+      "timed_out": false,
+      "wall_seconds": 46.335461
+    }
+  ],
+  "status": "UNKNOWN"
+}

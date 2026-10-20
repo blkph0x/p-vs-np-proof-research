@@ -94,6 +94,17 @@ jobs:
         run: |
           python review_sparse_parity_clause_comparison.py
           python -m unittest -v test_sparse_parity_clause_comparison.py
+      - name: Replay fresh exact LP discovery without trusting the backend
+        working-directory: local_marginal_code_lab
+        run: |
+          python run_exact_lp_discovery.py --replay EXACT_LP_DISCOVERY
+          python -m unittest -v test_exact_lp_model test_exact_lp_verify test_exact_lp_soplex
+          python -O -m unittest -v test_exact_lp_verify test_exact_lp_soplex
+      - name: Check quadratic Reed-Muller family and exhaustive scope classification
+        working-directory: local_marginal_code_lab
+        run: |
+          python -m unittest -v test_rm2_level8_family
+          python review_rm2_level8_family.py
       - name: Replay prefix-threshold sequential-counter audit
         working-directory: proof_motif_candidate_lab
         run: |

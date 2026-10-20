@@ -1,0 +1,14 @@
+{
+  "errors": [],
+  "minimum_reduced_cost": "0",
+  "model_sha256": "e98a81f2bf31044dcdf94c00985ec7ac8e000451c3884bd215125225ac82c912",
+  "objective_offset": "1",
+  "reduced_objective": "31/5",
+  "rows": 53,
+  "scope": "RM(2,5) affine-overlap quotient optimum",
+  "source_binding": "independent affine geometry and quotient reconstruction",
+  "status": "EXACT_OPTIMUM",
+  "total_objective": "36/5",
+  "valid": true,
+  "variables": 28
+}

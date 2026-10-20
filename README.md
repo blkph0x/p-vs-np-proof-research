@@ -8,6 +8,13 @@
 
 ## Start here
 
+- The public-method review now has a working [SoPlex discovery adapter](local_marginal_code_lab/EXACT_LP_DISCOVERY.md):
+  a fresh search independently reproduces reduced optimum `31/5`, preserves
+  a rejected tolerance control, and separates construction/search/replay costs.
+- The [quadratic Reed–Muller level-eight theorem](local_marginal_code_lab/REED_MULLER_QUADRATIC_LEVEL8_THEOREM.md)
+  extends the value to `(2^m-1)/5` for `RM(2,m)`, `m>=4`, in the declared
+  projection-marginal model. The proof and exhaustive scope checks are recorded;
+  mathematical novelty remains unestablished.
 - Read the [public-method comparison and improvement plan](PUBLIC_METHOD_REVIEW.md)
   for established alternatives to each capability, adoption tests, and the
   distinction between documented capabilities and measured performance.

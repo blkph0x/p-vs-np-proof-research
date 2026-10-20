@@ -37,6 +37,22 @@ that the cited claim is correct or that it proves P versus NP.
 
 ## Citation rules for new work
 
+The [exact LP discovery integration](local_marginal_code_lab/EXACT_LP_DISCOVERY.md)
+uses [SoPlex's exact-mode configuration](https://soplex.zib.de/doc/html/EXACT.php)
+and credits Gleixner, Steffy and Wolter's
+[iterative-refinement method](https://optimization-online.org/wp-content/uploads/2015/06/4948.pdf)
+and Gleixner and Steffy's
+[limited-precision-oracle framework](https://arxiv.org/abs/1912.12820).
+The [official 10.1.0 suite release](https://github.com/scipopt/scip/releases/tag/v10.1.0)
+provides the measured SoPlex 8.1.0 Windows binary. Exact search is borrowed
+engineering; it is not claimed as a new optimization algorithm.
+
+The [quadratic RM level-eight proof](local_marginal_code_lab/REED_MULLER_QUADRATIC_LEVEL8_THEOREM.md)
+uses the standard duality, distance and affine-flat minimum-check facts stated
+by Santi, Häger and Pfister in
+[Decoding Reed–Muller Codes Using Minimum-Weight Parity Checks](https://doi.org/10.1109/ISIT.2018.8437637).
+The exact optimization formula's novelty remains unestablished.
+
 The [public-method comparison](PUBLIC_METHOD_REVIEW.md) adds primary sources
 for CaDiCaL/CryptoMiniSat and proof formats; D4/CPOG and projected certified
 compilation; DPMC, htd and cotengra; CMR and LEMON; exact LP backends and GAP;

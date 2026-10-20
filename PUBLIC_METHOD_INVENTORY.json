@@ -4,7 +4,7 @@
   "review_date": "2026-10-20",
   "scope": "All repository Python files mapped by capability; selected code paths inspected. Callable listing is not an individual semantic audit.",
   "hash_convention": "UTF-8 without BOM; universal newlines normalized to LF",
-  "python_files": 565,
+  "python_files": 574,
   "research_directories": [
     "affine_boundary_lab",
     "affine_boundary_reference",
@@ -72,7 +72,7 @@
     "weighted_affine_dag_lab",
     "weighted_boundary_lab"
   ],
-  "callable_definitions": 4790,
+  "callable_definitions": 4923,
   "non_python_components": [
     ".github/workflows/research-checks.yml",
     ".github/workflows/pages.yml",
@@ -12360,6 +12360,180 @@
       "assert_statement_count": 0
     },
     {
+      "path": "local_marginal_code_lab/exact_lp_model.py",
+      "comparison_area": "code-relaxations",
+      "normalized_source_sha256": "83cb365b022b62d86396e60d29a39f612abb39c4b880c55e7a8a8cccd07ab933",
+      "callables": [
+        {
+          "name": "_decimal_integer",
+          "line": 32,
+          "kind": "function"
+        },
+        {
+          "name": "_integer_string",
+          "line": 41,
+          "kind": "function"
+        },
+        {
+          "name": "rational_string",
+          "line": 54,
+          "kind": "function"
+        },
+        {
+          "name": "parse_rational",
+          "line": 65,
+          "kind": "function"
+        },
+        {
+          "name": "validate_model",
+          "line": 80,
+          "kind": "function"
+        },
+        {
+          "name": "model_digest",
+          "line": 123,
+          "kind": "function"
+        },
+        {
+          "name": "_linear_expression",
+          "line": 130,
+          "kind": "function"
+        },
+        {
+          "name": "to_lp",
+          "line": 145,
+          "kind": "function"
+        },
+        {
+          "name": "_load_sibling",
+          "line": 172,
+          "kind": "function"
+        },
+        {
+          "name": "_from_matrix",
+          "line": 194,
+          "kind": "function"
+        },
+        {
+          "name": "build_affine_overlap_model",
+          "line": 214,
+          "kind": "function"
+        },
+        {
+          "name": "build_full_level8_model",
+          "line": 220,
+          "kind": "function"
+        }
+      ],
+      "assert_statement_count": 0
+    },
+    {
+      "path": "local_marginal_code_lab/exact_lp_soplex.py",
+      "comparison_area": "code-relaxations",
+      "normalized_source_sha256": "eb4daca1fd4347b3cf5acaad0fa596bbdb353aafd82d0734acc884908b98cc9f",
+      "callables": [
+        {
+          "name": "_lines",
+          "line": 10,
+          "kind": "function"
+        },
+        {
+          "name": "_entries",
+          "line": 16,
+          "kind": "function"
+        },
+        {
+          "name": "parse_primal",
+          "line": 34,
+          "kind": "function"
+        },
+        {
+          "name": "parse_dual",
+          "line": 45,
+          "kind": "function"
+        },
+        {
+          "name": "candidate_from_output",
+          "line": 64,
+          "kind": "function"
+        }
+      ],
+      "assert_statement_count": 0
+    },
+    {
+      "path": "local_marginal_code_lab/exact_lp_verify.py",
+      "comparison_area": "code-relaxations",
+      "normalized_source_sha256": "e04b0ebaecbb6cd232cd623c8d5bbeeb596d2a779fb3529c294dbcb6db04c5f5",
+      "callables": [
+        {
+          "name": "VerificationError",
+          "line": 30,
+          "kind": "class"
+        },
+        {
+          "name": "_require",
+          "line": 34,
+          "kind": "function"
+        },
+        {
+          "name": "_decimal",
+          "line": 39,
+          "kind": "function"
+        },
+        {
+          "name": "_integer_text",
+          "line": 48,
+          "kind": "function"
+        },
+        {
+          "name": "_rational",
+          "line": 60,
+          "kind": "function"
+        },
+        {
+          "name": "_rational_text",
+          "line": 75,
+          "kind": "function"
+        },
+        {
+          "name": "_json",
+          "line": 80,
+          "kind": "function"
+        },
+        {
+          "name": "_parse_model",
+          "line": 84,
+          "kind": "function"
+        },
+        {
+          "name": "model_digest",
+          "line": 118,
+          "kind": "function"
+        },
+        {
+          "name": "_verify",
+          "line": 124,
+          "kind": "function"
+        },
+        {
+          "name": "verify_solution",
+          "line": 167,
+          "kind": "function"
+        },
+        {
+          "name": "_affine_model_json",
+          "line": 179,
+          "kind": "function"
+        },
+        {
+          "name": "replay_affine_overlap",
+          "line": 201,
+          "kind": "function"
+        }
+      ],
+      "assert_statement_count": 0
+    },
+    {
       "path": "local_marginal_code_lab/local_marginal.py",
       "comparison_area": "code-relaxations",
       "normalized_source_sha256": "106c486d4eb868be2af4db7b781fac4631d42b2b12f1b94a9dba20d0477c3919",
@@ -12723,6 +12897,84 @@
       "assert_statement_count": 0
     },
     {
+      "path": "local_marginal_code_lab/review_rm2_level8_family.py",
+      "comparison_area": "code-relaxations",
+      "normalized_source_sha256": "3ea4353e431662fe6e410cb6006cf43d7f3a6306fac23cd4fe3301f4af818182",
+      "callables": [
+        {
+          "name": "_points",
+          "line": 40,
+          "kind": "function"
+        },
+        {
+          "name": "line_triples",
+          "line": 50,
+          "kind": "function"
+        },
+        {
+          "name": "scope_masses",
+          "line": 57,
+          "kind": "function"
+        },
+        {
+          "name": "_row_basis",
+          "line": 78,
+          "kind": "function"
+        },
+        {
+          "name": "projection_basis",
+          "line": 92,
+          "kind": "function"
+        },
+        {
+          "name": "in_span",
+          "line": 111,
+          "kind": "function"
+        },
+        {
+          "name": "check_scope",
+          "line": 118,
+          "kind": "function"
+        },
+        {
+          "name": "rref_configurations",
+          "line": 165,
+          "kind": "function"
+        },
+        {
+          "name": "enumerate_configurations",
+          "line": 189,
+          "kind": "function"
+        },
+        {
+          "name": "replay_lower_bound",
+          "line": 235,
+          "kind": "function"
+        },
+        {
+          "name": "level_nine_control",
+          "line": 276,
+          "kind": "function"
+        },
+        {
+          "name": "normalized_sha256",
+          "line": 298,
+          "kind": "function"
+        },
+        {
+          "name": "_hashes",
+          "line": 305,
+          "kind": "function"
+        },
+        {
+          "name": "main",
+          "line": 309,
+          "kind": "function"
+        }
+      ],
+      "assert_statement_count": 0
+    },
+    {
       "path": "local_marginal_code_lab/review_sparse_parity_clause_comparison.py",
       "comparison_area": "code-relaxations",
       "normalized_source_sha256": "02a29e0f3f59326ec2b79915ba40ccc373f505377a71cdd074f5c89f423aa0ef",
@@ -12771,6 +13023,69 @@
         {
           "name": "main",
           "line": 10,
+          "kind": "function"
+        }
+      ],
+      "assert_statement_count": 0
+    },
+    {
+      "path": "local_marginal_code_lab/run_exact_lp_discovery.py",
+      "comparison_area": "code-relaxations",
+      "normalized_source_sha256": "901ab90a51e60532968d7ab3ee842296b0baba6776825165c9e42a7fb08ea636",
+      "callables": [
+        {
+          "name": "source_hashes",
+          "line": 23,
+          "kind": "function"
+        },
+        {
+          "name": "write_json",
+          "line": 32,
+          "kind": "function"
+        },
+        {
+          "name": "sha256",
+          "line": 36,
+          "kind": "function"
+        },
+        {
+          "name": "rss_bytes",
+          "line": 40,
+          "kind": "function"
+        },
+        {
+          "name": "rss_bytes.Counters",
+          "line": 43,
+          "kind": "class"
+        },
+        {
+          "name": "run_stage",
+          "line": 77,
+          "kind": "function"
+        },
+        {
+          "name": "worker",
+          "line": 117,
+          "kind": "function"
+        },
+        {
+          "name": "replay",
+          "line": 134,
+          "kind": "function"
+        },
+        {
+          "name": "discover",
+          "line": 144,
+          "kind": "function"
+        },
+        {
+          "name": "discover.finish",
+          "line": 162,
+          "kind": "function"
+        },
+        {
+          "name": "main",
+          "line": 227,
           "kind": "function"
         }
       ],
@@ -13294,6 +13609,345 @@
         {
           "name": "AllDualReedMullerTests.test_wrong_incidence_and_mixture_are_rejected",
           "line": 45,
+          "kind": "function"
+        }
+      ],
+      "assert_statement_count": 0
+    },
+    {
+      "path": "local_marginal_code_lab/test_exact_lp_model.py",
+      "comparison_area": "code-relaxations",
+      "normalized_source_sha256": "41c2ca4c8a633003afadd667963fa29b65fd60753402855f3ff788e2b51b15f2",
+      "callables": [
+        {
+          "name": "control_model",
+          "line": 19,
+          "kind": "function"
+        },
+        {
+          "name": "independently_read_lp",
+          "line": 38,
+          "kind": "function"
+        },
+        {
+          "name": "independently_read_lp.terms",
+          "line": 45,
+          "kind": "function"
+        },
+        {
+          "name": "ModelExportTests",
+          "line": 95,
+          "kind": "class"
+        },
+        {
+          "name": "ModelExportTests.test_signed_fractional_equations_and_reduced_objective",
+          "line": 96,
+          "kind": "function"
+        },
+        {
+          "name": "ModelExportTests.test_digest_is_canonical_and_covers_all_model_data",
+          "line": 112,
+          "kind": "function"
+        },
+        {
+          "name": "ModelExportTests.test_canonical_rationals_and_large_exact_values",
+          "line": 133,
+          "kind": "function"
+        },
+        {
+          "name": "ModelExportTests.test_reject_noncanonical_rationals",
+          "line": 149,
+          "kind": "function"
+        },
+        {
+          "name": "ModelExportTests.test_reject_schema_dimensions_and_duplicate_ids",
+          "line": 157,
+          "kind": "function"
+        },
+        {
+          "name": "ModelExportTests.test_reject_sparse_zeros_bad_indexes_and_inexact_values",
+          "line": 182,
+          "kind": "function"
+        },
+        {
+          "name": "ModelExportTests.test_zero_objective_and_zero_dimensional_serialization",
+          "line": 195,
+          "kind": "function"
+        },
+        {
+          "name": "AffineModelTests",
+          "line": 210,
+          "kind": "class"
+        },
+        {
+          "name": "AffineModelTests.setUpClass",
+          "line": 212,
+          "kind": "function"
+        },
+        {
+          "name": "AffineModelTests.test_original_quotient_dimensions_and_representative_equation",
+          "line": 219,
+          "kind": "function"
+        },
+        {
+          "name": "AffineModelTests.test_exported_lp_accepts_an_exact_feasible_primal_dual_pair",
+          "line": 230,
+          "kind": "function"
+        }
+      ],
+      "assert_statement_count": 0
+    },
+    {
+      "path": "local_marginal_code_lab/test_exact_lp_soplex.py",
+      "comparison_area": "code-relaxations",
+      "normalized_source_sha256": "0034c1014351ece5c4d63d3401ff6e0a7a455b66ee14fd4d76a7585ef5e2fe69",
+      "callables": [
+        {
+          "name": "model",
+          "line": 44,
+          "kind": "function"
+        },
+        {
+          "name": "signed_model",
+          "line": 54,
+          "kind": "function"
+        },
+        {
+          "name": "primal_text",
+          "line": 59,
+          "kind": "function"
+        },
+        {
+          "name": "dual_text",
+          "line": 65,
+          "kind": "function"
+        },
+        {
+          "name": "parsed",
+          "line": 73,
+          "kind": "function"
+        },
+        {
+          "name": "optimized_checks",
+          "line": 78,
+          "kind": "function"
+        },
+        {
+          "name": "SoPlexCandidateTests",
+          "line": 101,
+          "kind": "class"
+        },
+        {
+          "name": "SoPlexCandidateTests.test_captured_signed_equality_dual_and_reporting_offset",
+          "line": 102,
+          "kind": "function"
+        },
+        {
+          "name": "SoPlexCandidateTests.test_mapping_is_by_exact_name_not_printed_order",
+          "line": 112,
+          "kind": "function"
+        },
+        {
+          "name": "SoPlexCandidateTests.test_omitted_zero_entries_and_positive_reduced_cost",
+          "line": 124,
+          "kind": "function"
+        },
+        {
+          "name": "SoPlexCandidateTests.test_exact_fraction_and_negative_objective",
+          "line": 136,
+          "kind": "function"
+        },
+        {
+          "name": "SoPlexCandidateTests.test_primal_missing_truncated_or_inconsistent_completeness",
+          "line": 145,
+          "kind": "function"
+        },
+        {
+          "name": "SoPlexCandidateTests.test_dual_and_reduced_cost_sections_must_be_complete",
+          "line": 159,
+          "kind": "function"
+        },
+        {
+          "name": "SoPlexCandidateTests.test_unknown_duplicate_and_cross_section_ids_rejected",
+          "line": 174,
+          "kind": "function"
+        },
+        {
+          "name": "SoPlexCandidateTests.test_sparse_entries_require_canonical_nonzero_exact_rationals",
+          "line": 193,
+          "kind": "function"
+        },
+        {
+          "name": "SoPlexCandidateTests.test_nonoptimal_unknown_missing_or_conflicting_status_rejected",
+          "line": 207,
+          "kind": "function"
+        },
+        {
+          "name": "SoPlexCandidateTests.test_optimal_stdout_and_supplied_reduced_costs_do_not_prove_truth",
+          "line": 221,
+          "kind": "function"
+        },
+        {
+          "name": "SoPlexCandidateTests.test_missing_nonzero_entry_and_wrong_signed_dual_fail_exact_replay",
+          "line": 235,
+          "kind": "function"
+        },
+        {
+          "name": "SoPlexCandidateTests.test_model_types_and_digest_bind_the_candidate",
+          "line": 244,
+          "kind": "function"
+        },
+        {
+          "name": "SoPlexCandidateTests.test_captured_default_tolerance_candidate_is_rejected",
+          "line": 260,
+          "kind": "function"
+        },
+        {
+          "name": "SoPlexCandidateTests.test_optimized_mode_has_the_same_acceptance_boundary",
+          "line": 282,
+          "kind": "function"
+        },
+        {
+          "name": "DiscoveryProcessTests",
+          "line": 291,
+          "kind": "class"
+        },
+        {
+          "name": "DiscoveryProcessTests.test_success_and_nonzero_exit_preserve_separate_outputs",
+          "line": 292,
+          "kind": "function"
+        },
+        {
+          "name": "DiscoveryProcessTests.test_wall_timeout_preserves_partial_output_and_reaps_child",
+          "line": 309,
+          "kind": "function"
+        },
+        {
+          "name": "DiscoveryProcessTests.test_wall_timeout_preserves_partial_output_and_reaps_child.record_child",
+          "line": 317,
+          "kind": "function"
+        },
+        {
+          "name": "DiscoveryProcessTests.test_existing_artifacts_are_rejected_before_any_solver_call",
+          "line": 333,
+          "kind": "function"
+        },
+        {
+          "name": "DiscoveryProcessTests.test_launch_failure_has_structured_non_success_result",
+          "line": 344,
+          "kind": "function"
+        },
+        {
+          "name": "DiscoveryProcessTests.test_version_error_timeout_and_unsupported_version_are_unknown",
+          "line": 358,
+          "kind": "function"
+        },
+        {
+          "name": "DiscoveryProcessTests.test_missing_solver_is_unknown_without_launch",
+          "line": 385,
+          "kind": "function"
+        },
+        {
+          "name": "DiscoveryProcessTests.test_source_drift_prevents_exact_run_and_stable_run_binds_lf_artifacts",
+          "line": 399,
+          "kind": "function"
+        },
+        {
+          "name": "DiscoveryProcessTests.test_source_drift_prevents_exact_run_and_stable_run_binds_lf_artifacts.stage",
+          "line": 410,
+          "kind": "function"
+        }
+      ],
+      "assert_statement_count": 0
+    },
+    {
+      "path": "local_marginal_code_lab/test_exact_lp_verify.py",
+      "comparison_area": "code-relaxations",
+      "normalized_source_sha256": "4cae8305a1460f090dd0cf6196fbd9d7bf27123a765298da968216d54626acf9",
+      "callables": [
+        {
+          "name": "model",
+          "line": 16,
+          "kind": "function"
+        },
+        {
+          "name": "certificate",
+          "line": 25,
+          "kind": "function"
+        },
+        {
+          "name": "mapping_control",
+          "line": 31,
+          "kind": "function"
+        },
+        {
+          "name": "rejected_controls",
+          "line": 37,
+          "kind": "function"
+        },
+        {
+          "name": "ExactLPVerificationTests",
+          "line": 75,
+          "kind": "class"
+        },
+        {
+          "name": "ExactLPVerificationTests.test_valid_row_mapping_and_signed_equality_dual",
+          "line": 76,
+          "kind": "function"
+        },
+        {
+          "name": "ExactLPVerificationTests.test_all_adversarial_controls",
+          "line": 85,
+          "kind": "function"
+        },
+        {
+          "name": "ExactLPVerificationTests.test_no_primal_feasible_certificate_for_infeasible_lp",
+          "line": 91,
+          "kind": "function"
+        },
+        {
+          "name": "ExactLPVerificationTests.test_dual_feasibility_and_gap_are_separate",
+          "line": 95,
+          "kind": "function"
+        },
+        {
+          "name": "ExactLPVerificationTests.test_alternative_optimal_vectors_are_allowed",
+          "line": 102,
+          "kind": "function"
+        },
+        {
+          "name": "ExactLPVerificationTests.test_rational_row_scaling_requires_dual_remap",
+          "line": 107,
+          "kind": "function"
+        },
+        {
+          "name": "ExactLPVerificationTests.test_hash_and_mathematics_both_checked",
+          "line": 112,
+          "kind": "function"
+        },
+        {
+          "name": "ExactLPVerificationTests.test_offset_is_reporting_metadata_for_generic_lp",
+          "line": 121,
+          "kind": "function"
+        },
+        {
+          "name": "ExactLPVerificationTests.test_large_exact_rational_strings",
+          "line": 133,
+          "kind": "function"
+        },
+        {
+          "name": "ExactLPVerificationTests.test_zero_dimension_cases",
+          "line": 141,
+          "kind": "function"
+        },
+        {
+          "name": "ExactLPVerificationTests.test_optimized_python_rejects_forged_certificates",
+          "line": 147,
+          "kind": "function"
+        },
+        {
+          "name": "ExactLPVerificationTests.test_affine_source_binding_and_source_mutations",
+          "line": 160,
           "kind": "function"
         }
       ],
@@ -14212,6 +14866,89 @@
         {
           "name": "TwoCutCertificateTests.test_source_matrix_mutation_is_rejected",
           "line": 80,
+          "kind": "function"
+        }
+      ],
+      "assert_statement_count": 0
+    },
+    {
+      "path": "local_marginal_code_lab/test_rm2_level8_family.py",
+      "comparison_area": "code-relaxations",
+      "normalized_source_sha256": "104693762094c72e0ba76cfc8b414473d7be2d218851a891063834c2af4b4555",
+      "callables": [
+        {
+          "name": "direct_planes_m4",
+          "line": 12,
+          "kind": "function"
+        },
+        {
+          "name": "marginal",
+          "line": 18,
+          "kind": "function"
+        },
+        {
+          "name": "LevelEightFamilyTests",
+          "line": 27,
+          "kind": "class"
+        },
+        {
+          "name": "LevelEightFamilyTests.test_global_m4_plane_distribution_on_every_eight_point_scope",
+          "line": 28,
+          "kind": "function"
+        },
+        {
+          "name": "LevelEightFamilyTests.test_complete_moments_and_all_marginals",
+          "line": 39,
+          "kind": "function"
+        },
+        {
+          "name": "LevelEightFamilyTests.test_rref_enumeration_small_counts_and_unique_rowspaces",
+          "line": 49,
+          "kind": "function"
+        },
+        {
+          "name": "LevelEightFamilyTests.test_pin_parity_mutation_rejected_before_moments",
+          "line": 65,
+          "kind": "function"
+        },
+        {
+          "name": "LevelEightFamilyTests.test_independent_triple_mutation_has_valid_support_but_wrong_moment",
+          "line": 74,
+          "kind": "function"
+        },
+        {
+          "name": "LevelEightFamilyTests.test_dependent_triple_cannot_be_dropped",
+          "line": 84,
+          "kind": "function"
+        },
+        {
+          "name": "LevelEightFamilyTests.test_unpinned_affine_flat_has_only_even_atoms",
+          "line": 93,
+          "kind": "function"
+        },
+        {
+          "name": "LevelEightFamilyTests.test_ambient_embedding_and_coordinate_permutation",
+          "line": 105,
+          "kind": "function"
+        },
+        {
+          "name": "LevelEightFamilyTests.test_empty_scope_strict_types_and_shapes",
+          "line": 116,
+          "kind": "function"
+        },
+        {
+          "name": "LevelEightFamilyTests.test_level_nine_is_only_a_witness_obstruction",
+          "line": 129,
+          "kind": "function"
+        },
+        {
+          "name": "LevelEightFamilyTests.test_eight_point_bound_extremal_and_low_line_controls",
+          "line": 137,
+          "kind": "function"
+        },
+        {
+          "name": "LevelEightFamilyTests.test_provenance_normalizes_line_endings_but_not_content",
+          "line": 145,
           "kind": "function"
         }
       ],
@@ -22170,7 +22907,7 @@
     {
       "path": "run_research_checks.py",
       "comparison_area": "engineering-evidence",
-      "normalized_source_sha256": "e45e12c436a59bd17f7e21b3b84f7ae77adb8dcb221b24dc713158cca1528b2b",
+      "normalized_source_sha256": "6e2f8d4bb09f909f98dbe9f5bd90e120056e08ffecfac69db8ac6e907b1c2ef7",
       "callables": [
         {
           "name": "main",
@@ -22179,12 +22916,12 @@
         },
         {
           "name": "main.hashes",
-          "line": 72,
+          "line": 76,
           "kind": "function"
         },
         {
           "name": "main.decoded",
-          "line": 90,
+          "line": 94,
           "kind": "function"
         }
       ],

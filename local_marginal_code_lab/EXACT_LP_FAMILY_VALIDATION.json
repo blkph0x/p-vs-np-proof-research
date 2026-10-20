@@ -1,0 +1,53 @@
+{
+  "python": "3.10.10 | packaged by conda-forge | (main, Mar 24 2023, 20:00:38) [MSC v.1934 64 bit (AMD64)]",
+  "runs": [
+    {
+      "arguments": [
+        "-m",
+        "unittest",
+        "-v",
+        "test_exact_lp_model",
+        "test_exact_lp_verify",
+        "test_exact_lp_soplex",
+        "test_rm2_level8_family"
+      ],
+      "mode": "normal",
+      "passed": true,
+      "returncode": 0,
+      "tests": 54,
+      "transcript": "EXACT_LP_FAMILY_TEST_NORMAL.txt",
+      "wall_seconds": 94.629
+    },
+    {
+      "arguments": [
+        "-O",
+        "-m",
+        "unittest",
+        "-v",
+        "test_exact_lp_verify",
+        "test_exact_lp_soplex",
+        "test_rm2_level8_family"
+      ],
+      "mode": "optimized",
+      "passed": true,
+      "returncode": 0,
+      "tests": 45,
+      "transcript": "EXACT_LP_FAMILY_TEST_OPTIMIZED.txt",
+      "wall_seconds": 49.397
+    }
+  ],
+  "schema": "exact-lp-family-focused-tests-v1",
+  "scope": "new exact LP adapter/checker and quadratic RM family only; not full repository audit",
+  "source_sha256_lf": {
+    "exact_lp_model.py": "83cb365b022b62d86396e60d29a39f612abb39c4b880c55e7a8a8cccd07ab933",
+    "exact_lp_soplex.py": "eb4daca1fd4347b3cf5acaad0fa596bbdb353aafd82d0734acc884908b98cc9f",
+    "exact_lp_verify.py": "e04b0ebaecbb6cd232cd623c8d5bbeeb596d2a779fb3529c294dbcb6db04c5f5",
+    "review_rm2_level8_family.py": "3ea4353e431662fe6e410cb6006cf43d7f3a6306fac23cd4fe3301f4af818182",
+    "run_exact_lp_discovery.py": "901ab90a51e60532968d7ab3ee842296b0baba6776825165c9e42a7fb08ea636",
+    "test_exact_lp_model.py": "41c2ca4c8a633003afadd667963fa29b65fd60753402855f3ff788e2b51b15f2",
+    "test_exact_lp_soplex.py": "0034c1014351ece5c4d63d3401ff6e0a7a455b66ee14fd4d76a7585ef5e2fe69",
+    "test_exact_lp_verify.py": "4cae8305a1460f090dd0cf6196fbd9d7bf27123a765298da968216d54626acf9",
+    "test_rm2_level8_family.py": "104693762094c72e0ba76cfc8b414473d7be2d218851a891063834c2af4b4555"
+  },
+  "source_unchanged_during_run": true
+}

@@ -33,6 +33,24 @@ minutes because it includes exhaustive finite controls and native rank checks.
 
 ## Focused checks
 
+The new exact LP search is optional and uses the pinned SoPlex backend.
+Its committed candidate can be verified with the standard library alone:
+
+```powershell
+Push-Location local_marginal_code_lab
+python run_exact_lp_discovery.py --replay EXACT_LP_DISCOVERY
+python -m unittest -v test_exact_lp_model test_exact_lp_verify test_exact_lp_soplex
+python -O -m unittest -v test_exact_lp_verify test_exact_lp_soplex
+python -m unittest -v test_rm2_level8_family
+python review_rm2_level8_family.py
+Pop-Location
+```
+
+[Discovery instructions](local_marginal_code_lab/EXACT_LP_DISCOVERY.md)
+pin the solver release and document the observed rejected tolerance control.
+The [quadratic-family proof](local_marginal_code_lab/REED_MULLER_QUADRATIC_LEVEL8_THEOREM.md)
+explains why the finite scope enumeration supplements an all-size argument.
+
 The public-method review adds a source-coverage check and focused verifier
 controls. Run these from the repository root before regenerating evidence:
 

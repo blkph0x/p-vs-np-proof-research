@@ -92,11 +92,29 @@ orbit multiplicity.
 
 ## What this does and does not establish
 
-This is a compact explanation of one finite rational optimum. It does not
-identify a new general proof system, prove a scaling law, or resolve P versus
-NP. The identity is useful because it exposes the lower bound as a positive
-combination of six explicitly named quotient masses rather than as an opaque
-2,174-variable full-model computation.
+The original note is a compact explanation of one finite rational optimum.
+The identity exposes its lower bound as a positive combination of six
+explicitly named quotient masses rather than as an opaque 2,174-variable
+full-model computation.
+
+The audited 20 October 2026
+[quadratic-family follow-up](REED_MULLER_QUADRATIC_LEVEL8_THEOREM.md) now uses
+this same finite identity in an all-size argument. Group averaging and
+embeddings of the selected affine-scope spans transport the inequality to
+`RM(2,m)` for every `m>=4`, forcing a common nonpin singleton value at least
+`1/5`. An explicit common-moment construction supplies the matching upper
+bound. Thus the full level-eight optima are reduced `(2^m-1)/5` and total
+`(2^m+4)/5`. The finite identity remains a dependency of that proof; finite
+enumeration alone is not its all-size justification. Novelty is `UNKNOWN`,
+and the result does not identify a general proof-system lower bound or
+resolve P versus NP.
+
+Separately, the [new exact LP workflow](EXACT_LP_DISCOVERY.md) reproduces
+affine-overlap discovery from the source-built model and independently checks
+the resulting primal/dual optimum. Its
+[run record](EXACT_LP_DISCOVERY/discovery.json) is distinct from the historical
+saved dual underlying this six-term identity. Historical discovery remains
+`UNRECORDED`; fresh full-model and cut discovery remain unexecuted.
 
 ## Exact reproduction
 

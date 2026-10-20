@@ -66,7 +66,9 @@ smallest saved gap. For pinned `RM(1,3)`, an exact integer dual certificate
 checks all 982 supported atoms at level four and matches a pinned weight-four
 codeword, so the local and combined optima are exactly four. The independent
 replay is pure standard-library code and rejects mutated rows, assignments,
-and shape claims. Larger-family level-`d` cases remain open.
+and shape claims. That report left the larger-family level-`d` cases open;
+the quadratic-family level-eight follow-up below addresses a particular
+subsequent case.
 
 The companion [RM(2,5) affine-flat star report](REED_MULLER_LEVEL_D_FLAT_STAR_REPORT.md)
 records an exact negative control for a weaker level-eight proposal: 620
@@ -89,6 +91,17 @@ sampled peak RSS are listed in
 [REED_MULLER_CERTIFICATE_COSTS.md](REED_MULLER_CERTIFICATE_COSTS.md). The
 historical certificate-search time remains explicitly `UNRECORDED`.
 
+The 20 October 2026 [exact LP discovery follow-up](EXACT_LP_DISCOVERY.md)
+reproduces a fresh affine-overlap search with SoPlex, using only the
+source-built matrix and objective. Its new rational primal/dual certificate
+passes independent model reconstruction and exact arithmetic, recovering
+reduced `31/5` and total `36/5`. The
+[run record](EXACT_LP_DISCOVERY/discovery.json) preserves the separate
+construction, search, and verification costs, solver settings, hashes, and
+outputs. This makes the new affine search reproducible; it does not recover
+the historical search process. Fresh full-model and polynomial-cut discovery
+remain unexecuted by this workflow.
+
 The [full level-eight report](REED_MULLER_LEVEL_D_FULL_REPORT.md) now closes
 the finite arbitrary-scope case for this RM(2,5) model. It includes every
 scope of size at most eight, exact pinned-code projection support, and every
@@ -98,6 +111,17 @@ value `31/5` (total pinned weight `36/5`). The pinned integer benchmarks are
 reduced `7` and total `8`, so the finite ratios are `35/31` and `10/9`.
 This remains a result about the stated relaxation, not a general SAT solver or
 a P-versus-NP resolution.
+
+The audited 20 October 2026
+[quadratic Reed--Muller level-eight theorem](REED_MULLER_QUADRATIC_LEVEL8_THEOREM.md)
+extends the exact value to every `RM(2,m)` with `m>=4`: reduced optimum
+`(2^m-1)/5`, total optimum `(2^m+4)/5`. A common rational moment assignment
+gives all local tables, and group averaging transports the finite six-term
+dual identity to prove the matching lower bound. The result also permits all
+redundant parity inequalities on the singleton vector and joint tables on the
+pin plus up to eight other coordinates. It does not cover arbitrary nine
+nonpin coordinates. The finite checks supplement the all-size proof;
+novelty remains `UNKNOWN`, and no general decoding algorithm is claimed.
 
 The accompanying [objective-normalization audit](REED_MULLER_OBJECTIVE_NORMALIZATION_AUDIT.md)
 independently enumerates the pinned codewords and records the convention used
