@@ -198,7 +198,7 @@ There are the Gaussian-binomial number
 singleton marginals gives
 
 ```text
-objective = 1 + sum_{i != j} x_i
+W = 1 + F, where F = sum_{i != j} x_i
           >= 1 + P/Q
           = 1 + (2^(2s+1)-1)/(2^(s+1)-1).
 ```
@@ -215,18 +215,22 @@ exists; a one-hot non-pin assignment has total parity `1+1=0` on that support,
 so it satisfies the relation. The boundary tables marginalize to the smaller
 tables because `(d-1-|T|)p = 1-|T|p`; scopes containing the pin have at most
 `d-2` free coordinates and obey the same identity. Thus these tables are
-feasible and have objective `1+(n-1)p`.
+feasible and have reduced objective `F=(n-1)p` and total objective
+`W=1+(n-1)p`.
 
 Consequently, for the plain model,
 
 ```text
-OPT(L_{d-1}(RM(s,2s+1), j))
+OPT_F(L_{d-1}(RM(s,2s+1), j))
+  = (2^(2s+1)-1)/(2^(s+1)-1),
+OPT_W(L_{d-1}(RM(s,2s+1), j))
   = 1 + (2^(2s+1)-1)/(2^(s+1)-1).
 ```
 
 Restriction gives the same lower bound for every level `k >= d-1`. For `s=2`
-the exact boundary value is `38/7`, the affine-flat star optimum recorded in
-the finite RM(2,5) campaign, while the exact level-eight value is `31/5`.
+the exact boundary value is reduced `31/7` (total `38/7`), the affine-flat
+star optimum recorded in the finite RM(2,5) campaign, while the exact
+level-eight value is reduced `31/5` (total `36/5`).
 This is an analytical theorem for the declared projection-marginal model; it
 does not imply a bound for arbitrary SAT algorithms or for P versus NP. The
 incidence identity is also the elementary mechanism already used in the
@@ -237,11 +241,14 @@ The independent replay recomputes both Gaussian-binomial incidence counts and
 the rational bound for `s=1,...,8`.
 
 Together with the dual-distance unit witness, this gives the first two exact
-levels of the family:
+levels of the family. The unit witness has reduced objective zero and total
+objective one:
 
 ```text
-OPT(L_k) = 1                                  for k <= d-2,
-OPT(L_{d-1}) = 1 + (2^(2s+1)-1)/(2^(s+1)-1).
+OPT_F(L_k) = 0                                  for k <= d-2,
+OPT_W(L_k) = 1                                  for k <= d-2,
+OPT_F(L_{d-1}) = (2^(2s+1)-1)/(2^(s+1)-1),
+OPT_W(L_{d-1}) = 1 + (2^(2s+1)-1)/(2^(s+1)-1).
 ```
 
 The second line is a boundary theorem, not a claim that the same value persists

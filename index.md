@@ -144,9 +144,10 @@ An exact 28-orbit primal/dual certificate raises the selected-model optimum to
 projection. The [full level-eight replay](local_marginal_code_lab/REED_MULLER_LEVEL_D_FULL_REPORT.md)
 then includes every scope through size eight and exact pinned-code support.
 Its independently checked 2,174-orbit quotient has the matching optimum
-`31/5`; the pinned integer optimum is eight. This closes the finite value of
-the stated RM(2,5) relaxation while leaving general SAT and P versus NP
-unresolved. The [compact dual note](local_marginal_code_lab/REED_MULLER_AFFINE_OVERLAP_DUAL_NOTE.md)
+`31/5` (reduced; total pinned weight `36/5`); the pinned integer benchmarks
+are reduced `7` and total `8`, giving ratios `35/31` and `10/9`. This closes
+the finite value of the stated RM(2,5) relaxation while leaving general SAT
+and P versus NP unresolved. The [compact dual note](local_marginal_code_lab/REED_MULLER_AFFINE_OVERLAP_DUAL_NOTE.md)
 also exposes the selected-model lower bound as a six-term positive objective-gap
 identity checked with exact rational arithmetic.
 

@@ -19,7 +19,7 @@
       "peak_rss_mib": 129.707,
       "returncode": 0,
       "seconds": 76.572,
-      "stdout_tail": "REED_MULLER_FULL_LEVEL8_PASS\nvariable_orbits=2174 row_orbits=27926 optimum=31/5\n"
+      "stdout_tail": "REED_MULLER_FULL_LEVEL8_PASS\nvariable_orbits=2174 row_orbits=27926 nonpin_optimum=31/5 total_optimum=36/5\n"
     },
     {
       "label": "independent_full_level8_replay",

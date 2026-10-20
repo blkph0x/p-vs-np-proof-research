@@ -10377,10 +10377,14 @@
   },
   "description": "Exact symmetry-quotient certificate for the full pinned RM(2,5) local projection-marginal model through level 8.",
   "family": "RM(2,5)",
-  "full_level_8_integrality_ratio": "40/31",
+  "full_level_8_integrality_ratio": "35/31",
   "full_level_8_optimum": "31/5",
   "full_level_8_status": "EXACT_FOR_DEFINED_RELAXATION",
-  "integer_pinned_optimum": "8",
+  "full_level_8_total_integrality_ratio": "10/9",
+  "full_level_8_total_optimum": "36/5",
+  "integer_pinned_nonpin_optimum": "7",
+  "integer_pinned_optimum": "7",
+  "integer_pinned_total_optimum": "8",
   "objective": [
     0,
     0,
@@ -12557,6 +12561,7 @@
     0,
     0
   ],
+  "objective_convention": "nonpin_weight",
   "p_vs_np_status": "UNRESOLVED",
   "pin": 0,
   "primal_orbit_masses": [
@@ -512783,6 +512788,8 @@
   ],
   "verification": {
     "full_level_8_optimum": "31/5",
+    "full_level_8_total_optimum": "36/5",
+    "objective_convention": "nonpin_weight",
     "quotient_nonzero_count": 214059,
     "row_orbits": 27926,
     "source_rebuilt": true,

@@ -43,8 +43,11 @@ def make_certificate() -> dict:
         "flats_omitting_pin": omitting_pin,
         "minimum_check_incidence_per_nonpin": incidence,
         "point": ["1"] + [str(p)] * 31,
+        "objective_convention": "total_weight",
         "star_relaxation_optimum": str(fractional),
+        "star_relaxation_nonpin_optimum": str(fractional - 1),
         "integer_pinned_optimum": "8",
+        "integer_pinned_nonpin_optimum": "7",
         "integrality_ratio": str(Fraction(8, 1) / fractional),
         "through_pin_table": {
             "pin_value": "1",

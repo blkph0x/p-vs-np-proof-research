@@ -74,11 +74,11 @@ this report remains the weaker negative control.
 The [affine-overlap report](REED_MULLER_LEVEL_D_AFFINE_OVERLAP_REPORT.md)
 adds every shared affine four-point flat, line, and singleton marginal to
 those 620 eight-point tables. Its 28-variable-orbit quotient has an exact
-primal/dual optimum `31/5`, improving the lower bound for the full level-eight
-relaxation to `31/5`. The independent replay reconstructs the quotient and
+reduced primal/dual optimum `31/5` (total `36/5`), improving the lower bound
+for the full level-eight relaxation to reduced `31/5`. The independent replay reconstructs the quotient and
 reduced costs without an LP solver. The companion
 [compact dual note](REED_MULLER_AFFINE_OVERLAP_DUAL_NOTE.md) turns the saved
-dual into a six-term positive objective-gap identity and the adversarial test
+dual into a six-term positive reduced-objective gap identity and the adversarial test
 reconstructs that identity with exact rational arithmetic.
 
 Finite certificate sizes, rational bit lengths, construction/replay timing, and
@@ -90,10 +90,17 @@ The [full level-eight report](REED_MULLER_LEVEL_D_FULL_REPORT.md) now closes
 the finite arbitrary-scope case for this RM(2,5) model. It includes every
 scope of size at most eight, exact pinned-code projection support, and every
 containment marginal. Its exact quotient has 2,174 variable orbits and 27,926
-rows; an independently replayed rational primal gives the matching value
-`31/5`. The pinned integer optimum is eight, so the finite ratio is `40/31`.
-This remains a result about the stated relaxation, not a general SAT solver
-or a P-versus-NP resolution.
+rows; an independently replayed rational primal gives the matching reduced
+value `31/5` (total pinned weight `36/5`). The pinned integer benchmarks are
+reduced `7` and total `8`, so the finite ratios are `35/31` and `10/9`.
+This remains a result about the stated relaxation, not a general SAT solver or
+a P-versus-NP resolution.
+
+The accompanying [objective-normalization audit](REED_MULLER_OBJECTIVE_NORMALIZATION_AUDIT.md)
+independently enumerates the pinned codewords and records the convention used
+by every full and affine certificate. It verifies reduced integer optimum `7`,
+total integer optimum `8`, reduced fractional value `31/5`, and total
+fractional value `36/5`.
 
 The [SOS moment audit](REED_MULLER_SOS_MOMENT_INDEPENDENT_REVIEW.md) gives the
 next exact boundary. Writing `t` for the nonpin Hamming weight, every Boolean

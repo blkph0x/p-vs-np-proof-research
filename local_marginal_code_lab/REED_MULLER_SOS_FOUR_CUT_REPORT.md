@@ -1,5 +1,9 @@
 # Four-cut SOS-strengthened RM(2,5) certificate
 
+All objective values below use the reduced non-pin weight `t=sum_{p != 0} x_p`.
+Add one for total pinned weight; the integral benchmarks are reduced `7` and
+total `8`.
+
 The exact three-cut witness has a negative expectation for the valid
 integer-weight polynomial
 

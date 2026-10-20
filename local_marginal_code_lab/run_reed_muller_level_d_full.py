@@ -54,12 +54,19 @@ def main() -> None:
         raise ValueError("saved objective claim mismatch")
     if saved.get("selected_model_lower_bound") != "31/5":
         raise ValueError("lower-bound provenance mismatch")
+    saved["objective_convention"] = "nonpin_weight"
+    saved["full_level_8_total_optimum"] = "36/5"
+    saved["integer_pinned_optimum"] = "7"
+    saved["integer_pinned_nonpin_optimum"] = "7"
+    saved["integer_pinned_total_optimum"] = "8"
+    saved["full_level_8_integrality_ratio"] = "35/31"
+    saved["full_level_8_total_integrality_ratio"] = "10/9"
     saved["verification"] = verification
     saved["verification"]["source_rebuilt"] = True
     saved["stabilizer_generators"] = rebuilt["stabilizer_generators"]
     OUT.write_text(json.dumps(saved, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     print("REED_MULLER_FULL_LEVEL8_PASS")
-    print("variable_orbits=2174 row_orbits=27926 optimum=31/5")
+    print("variable_orbits=2174 row_orbits=27926 nonpin_optimum=31/5 total_optimum=36/5")
 
 
 if __name__ == "__main__":

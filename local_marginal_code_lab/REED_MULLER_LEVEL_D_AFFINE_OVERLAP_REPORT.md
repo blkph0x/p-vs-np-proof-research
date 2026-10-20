@@ -16,12 +16,15 @@ selected model.
 ## Exact value
 
 The saved rational primal tables and rational dual reduced-cost certificate
-both give
+both use the reduced objective over the 31 non-pinned coordinates and give
 
 ```text
-selected affine-overlap optimum = 31/5
-integer pinned optimum           = 8
-selected-model ratio             = 40/31
+selected affine-overlap reduced optimum = 31/5
+selected affine-overlap total optimum   = 36/5
+integer pinned reduced benchmark        = 7
+integer pinned total benchmark          = 8
+reduced ratio                           = 35/31
+total-weight ratio                      = 10/9
 ```
 
 The dual certificate has nonnegative reduced costs for all 28 quotient
@@ -32,7 +35,7 @@ using an LP solver.
 
 The separate [compact dual note](REED_MULLER_AFFINE_OVERLAP_DUAL_NOTE.md)
 extracts the certificate's human-readable core. For every feasible quotient
-point, the objective gap is the positive combination
+point, the reduced-objective gap is the positive combination
 
 ```text
 objective - 31/5 =
@@ -48,18 +51,20 @@ For the integral comparison, an integral table forces even parity on every
 affine 3-flat. The 620 flat-incidence vectors have binary rank 16, so their
 orthogonal space is exactly the 16-dimensional `RM(2,5)` code. Conditioning
 the pin therefore leaves true codewords, whose minimum weight is 8; this
-justifies the selected-model ratio `8/(31/5)=40/31`.
+justifies the selected-model ratios `7/(31/5)=35/31` and
+`8/(36/5)=10/9`.
 
 Because every full level-eight local projection solution restricts to this
 selected model, the result proves the scoped lower bound
 
 ```text
-full RM(2,5) level-8 optimum >= 31/5.
+full RM(2,5) level-8 reduced optimum >= 31/5
+(equivalently total-weight optimum >= 36/5).
 ```
 
 This report deliberately makes no claim about extension to every arbitrary
 eight-coordinate scope. The later [full level-eight replay](REED_MULLER_LEVEL_D_FULL_REPORT.md)
-closed that finite arbitrary-scope model at `31/5`; this selected-model report
+closed that finite arbitrary-scope model at reduced value `31/5` (total `36/5`); this selected-model report
 remains a stronger barrier and a controlled negative result, not a complete
 solution to the Reed--Muller instance or to P versus NP.
 

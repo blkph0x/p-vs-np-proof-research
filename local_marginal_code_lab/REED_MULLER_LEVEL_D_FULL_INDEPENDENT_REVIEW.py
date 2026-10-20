@@ -322,6 +322,20 @@ def replay(certificate, *, run_controls=True):
                     for coefficient, value in zip(reconstructed_objective, masses))
     if objective != Fraction(31, 5):
         raise ValueError("exact objective mismatch")
+    if certificate.get("objective_convention") != "nonpin_weight":
+        raise ValueError("objective convention mismatch")
+    if certificate.get("full_level_8_total_optimum") != "36/5":
+        raise ValueError("total objective mismatch")
+    if certificate.get("integer_pinned_optimum") != "7":
+        raise ValueError("reduced integer benchmark mismatch")
+    if certificate.get("integer_pinned_nonpin_optimum") != "7":
+        raise ValueError("nonpin integer benchmark mismatch")
+    if certificate.get("integer_pinned_total_optimum") != "8":
+        raise ValueError("total integer benchmark mismatch")
+    if certificate.get("full_level_8_integrality_ratio") != "35/31":
+        raise ValueError("reduced ratio mismatch")
+    if certificate.get("full_level_8_total_integrality_ratio") != "10/9":
+        raise ValueError("total ratio mismatch")
     if certificate.get("full_level_8_optimum") != "31/5":
         raise ValueError("full optimum claim mismatch")
     if certificate.get("selected_model_lower_bound") != "31/5":
@@ -368,7 +382,13 @@ def replay(certificate, *, run_controls=True):
         "row_orbits": len(row_representatives),
         "quotient_nonzero_count": sum(len(row) for row in matrices),
         "pinned_word_count": len(_PINNED_WORDS),
+        "objective_convention": "nonpin_weight",
         "full_level_8_optimum": "31/5",
+        "full_level_8_total_optimum": "36/5",
+        "integer_pinned_nonpin_optimum": "7",
+        "integer_pinned_total_optimum": "8",
+        "full_level_8_integrality_ratio": "35/31",
+        "full_level_8_total_integrality_ratio": "10/9",
         "adversarial_controls": adversarial_controls,
     }
 
@@ -387,7 +407,7 @@ if __name__ == "__main__":
         "rational primal equality. It also rejected a wrong support atom, a "
         "perturbed primal mass, a mutated stored matrix row, and a mutated "
         "stored objective vector by invoking the complete replay on each "
-        "corrupted certificate. The exact value is 31/5; the lower bound is "
+        "corrupted certificate. The exact non-pin value is 31/5 (total 36/5); the lower bound is "
         "inherited from the affine-overlap submodel. "
         "The checker independently rebuilds the singleton objective and reruns "
         "the complete replay against mutated matrix and objective certificates.\n",

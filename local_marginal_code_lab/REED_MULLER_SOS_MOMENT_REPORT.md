@@ -1,6 +1,8 @@
 # RM(2,5) SOS moment separation
 
-The exact full level-eight projection-marginal witness has objective `31/5`.
+The exact full level-eight projection-marginal witness has reduced objective
+`31/5` (total pinned weight `36/5`). The integral benchmarks are reduced `7`
+and total `8`.
 It is feasible for every saved local table and every containment marginal, but
 it is not a valid second-order Boolean moment sequence.
 

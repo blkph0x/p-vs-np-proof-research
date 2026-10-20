@@ -242,4 +242,6 @@ def verify_primal(model, values):
         raise ValueError("full-level objective mismatch")
     return {"valid": True, "variable_orbits": len(values), "row_orbits": len(model["matrix"]),
             "quotient_nonzero_count": sum(len(row) for row in model["matrix"]),
-            "full_level_8_optimum": "31/5"}
+            "objective_convention": "nonpin_weight",
+            "full_level_8_optimum": "31/5",
+            "full_level_8_total_optimum": "36/5"}

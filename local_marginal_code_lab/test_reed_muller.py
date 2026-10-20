@@ -8,6 +8,7 @@ import unittest
 from reed_muller import (
     affine_minimum_support,
     affine_minimum_witness_masks,
+    boundary_nonpin_objective_lower_bound,
     boundary_objective_lower_bound,
     boundary_local_optimum,
     generator_rows,
@@ -137,6 +138,7 @@ class ReedMullerTests(unittest.TestCase):
                                                (1 << (r + 1)) - 1)
             self.assertEqual(boundary_objective_lower_bound(s), expected)
             self.assertEqual(boundary_local_optimum(s), expected)
+            self.assertEqual(boundary_nonpin_objective_lower_bound(s), expected - 1)
             self.assertEqual(Fraction(1) - (info["dual_distance"] - 1)
                              * Fraction(1, info["dual_distance"] - 1), 0)
         self.assertEqual(boundary_objective_lower_bound(2), Fraction(38, 7))

@@ -58,6 +58,7 @@ class FullLevelEightTests(unittest.TestCase):
         result = verify_primal(self.model, self.masses)
         self.assertTrue(result["valid"])
         self.assertEqual(result["full_level_8_optimum"], "31/5")
+        self.assertEqual(result["full_level_8_total_optimum"], "36/5")
 
     def test_primal_mutation_is_rejected(self):
         perturbed = list(self.masses)
@@ -68,7 +69,9 @@ class FullLevelEightTests(unittest.TestCase):
     def test_pinned_integer_optimum(self):
         self.assertEqual(len(PINNED), 32768)
         self.assertEqual(min(word.bit_count() for word in PINNED), 8)
-        self.assertEqual(self.certificate["integer_pinned_optimum"], "8")
+        self.assertEqual(self.certificate["integer_pinned_optimum"], "7")
+        self.assertEqual(self.certificate["integer_pinned_nonpin_optimum"], "7")
+        self.assertEqual(self.certificate["integer_pinned_total_optimum"], "8")
 
     def test_scope_510_support_mutation_is_rejected(self):
         wrong = set(self.model["allowed_reps"]["510"])
@@ -79,6 +82,7 @@ class FullLevelEightTests(unittest.TestCase):
         result = replay(self.certificate, run_controls=False)
         self.assertTrue(result["valid"])
         self.assertEqual(result["full_level_8_optimum"], "31/5")
+        self.assertEqual(result["full_level_8_total_optimum"], "36/5")
 
     def test_independent_reviewer_rejects_matrix_mutation(self):
         corrupted = copy.deepcopy(self.certificate)

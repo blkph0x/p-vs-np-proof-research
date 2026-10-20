@@ -65,20 +65,25 @@ def gaussian_binomial_2(n: int, k: int) -> int:
     return row[k]
 
 
+def boundary_nonpin_objective_lower_bound(s: int) -> Fraction:
+    """Count minimum affine checks for the reduced free-coordinate objective."""
+    info = parameters(s)
+    m = info["m"]
+    codimension = info["r"]
+    total_checks = gaussian_binomial_2(m, codimension + 1)
+    checks_through_other_point = gaussian_binomial_2(m - 1, codimension)
+    return Fraction(total_checks, checks_through_other_point)
+
+
 def boundary_objective_lower_bound(s: int) -> Fraction:
-    """Count minimum affine dual checks to lower-bound ``L_{d-1}``.
+    """Count minimum affine dual checks to lower-bound total ``L_{d-1}``.
 
     For RM(s, 2s+1), every affine (s+1)-flat through the pin is a dual
     minimum-weight check. On its d-1 non-pin coordinates the pinned
     projection has odd parity, so its expected local weight is at least one.
     Double-counting flat incidences gives the stated rational lower bound.
     """
-    info = parameters(s)
-    m = info["m"]
-    codimension = info["r"]
-    total_checks = gaussian_binomial_2(m, codimension + 1)
-    checks_through_other_point = gaussian_binomial_2(m - 1, codimension)
-    return Fraction(1) + Fraction(total_checks, checks_through_other_point)
+    return Fraction(1) + boundary_nonpin_objective_lower_bound(s)
 
 
 def boundary_local_optimum(s: int) -> Fraction:

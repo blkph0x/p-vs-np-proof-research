@@ -5,7 +5,13 @@
     "primal": true,
     "support": true
   },
+  "full_level_8_integrality_ratio": "35/31",
   "full_level_8_optimum": "31/5",
+  "full_level_8_total_integrality_ratio": "10/9",
+  "full_level_8_total_optimum": "36/5",
+  "integer_pinned_nonpin_optimum": "7",
+  "integer_pinned_total_optimum": "8",
+  "objective_convention": "nonpin_weight",
   "pinned_word_count": 32768,
   "quotient_nonzero_count": 214059,
   "row_orbits": 27926,

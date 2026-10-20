@@ -10,8 +10,9 @@ The code is RM(2,5), evaluated on the 32 points of F_2^5. Coordinate 0 is
 pinned to one. For every coordinate scope S with 1 <= |S| <= 8, the model
 contains a probability table on the exact projection of the pinned code onto
 S. Every table is normalized, and every pair of nested scopes has the exact
-marginal-consistency equations. The objective is the sum of the singleton
-masses assigned value one away from the pinned coordinate.
+marginal-consistency equations. The reported objective is the reduced sum of
+the singleton masses assigned value one away from the pinned coordinate; total
+pinned weight is one larger.
 
 The support is computed from the 32,768 pinned codewords. In particular, it
 does not assume that every eight-scope has only a single parity condition:
@@ -39,7 +40,9 @@ The resulting quotient has:
 
 The saved primal assigns one rational mass to each variable orbit. Its masses
 have denominator at most 35. Every equality is checked exactly over the
-rationals, all masses are nonnegative, and its objective is exactly 31/5.
+rationals, all masses are nonnegative, and its reduced objective over the 31
+non-pinned singleton masses is exactly `31/5`. Adding the pinned singleton
+gives total weight `36/5`.
 
 ## Why this is the full value
 
@@ -48,18 +51,23 @@ The affine-overlap model in
 is a projection of this full model. Its exact dual certificate therefore gives
 the lower bound
 
-    full optimum >= 31/5.
+    reduced full optimum >= 31/5.
+    total-weight full optimum >= 36/5.
 
 The full quotient primal certificate gives
 
-    full optimum <= 31/5.
+    reduced full optimum <= 31/5.
+    total-weight full optimum <= 36/5.
 
 Consequently the full level-eight relaxation has the exact value
 
-    full optimum = 31/5.
+    reduced full optimum = 31/5.
+    total-weight full optimum = 36/5.
 
-The pinned integer optimum is 8, so the finite relaxation's
-integer-to-fractional ratio is 40/31.
+The pinned integer benchmark is `7` in reduced weight and `8` in total weight.
+The corresponding integer-to-fractional ratios are `7/(31/5)=35/31` and
+`8/(36/5)=10/9`. Earlier `40/31` wording mixed these two conventions and is
+retired.
 
 ## Independent replay
 

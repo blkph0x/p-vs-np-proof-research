@@ -5,8 +5,10 @@
       "family": "RM(2,5)",
       "flats_through_pin": 155,
       "full_level_d_status": "UNRESOLVED",
+      "integer_pinned_nonpin_optimum": "7",
       "integer_pinned_optimum": "8",
       "integrality_ratio": "28/19",
+      "objective_convention": "total_weight",
       "singleton_point": [
         "1",
         "1/7",
@@ -41,6 +43,7 @@
         "1/7",
         "1/7"
       ],
+      "star_relaxation_nonpin_optimum": "31/7",
       "star_relaxation_optimum": "38/7",
       "status": "VERIFIED",
       "valid": true

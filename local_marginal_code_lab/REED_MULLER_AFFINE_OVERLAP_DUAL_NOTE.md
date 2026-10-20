@@ -9,6 +9,10 @@ full model.
 
 ## The identity
 
+The objective in this note is the reduced weight on non-pinned coordinates.
+The total pinned-codeword weight is obtained by adding one to every feasible
+objective, so the displayed `31/5` corresponds to total weight `36/5`.
+
 Let `z_i` denote the nonnegative mass of quotient variable orbit `i`, using
 the orbit ordering in the saved certificate. For every feasible quotient
 point, the exact dual multipliers satisfy
@@ -24,9 +28,9 @@ objective(z) - 31/5
 ```
 
 All six coefficients are strictly positive and every `z_i` is nonnegative.
-Consequently every feasible point has objective at least `31/5`. The saved
+Consequently every feasible point has reduced objective at least `31/5`. The saved
 primal point has `z_2=z_3=z_4=z_7=z_8=z_9=0`, so the same certificate has
-objective exactly `31/5`.
+reduced objective exactly `31/5` (total `36/5`).
 
 The six slack orbits are:
 

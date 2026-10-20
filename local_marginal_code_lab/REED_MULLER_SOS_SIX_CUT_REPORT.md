@@ -2,8 +2,9 @@
 
 This report records the next exact finite probe after the fifth-cut replay. The
 underlying object is still the complete pinned RM(2,5) level-eight
-projection-marginal quotient: 2,174 variable orbits, 27,926 equality rows,
-and integer optimum eight.
+projection-marginal quotient: 2,174 variable orbits and 27,926 equality rows.
+The objective is the reduced non-pin weight; its integral benchmark is `7`
+(total pinned weight `8`).
 
 ## The new valid cut
 

@@ -1,0 +1,16 @@
+{
+  "affine_certificate_reduced_value": "31/5",
+  "family": "RM(2,5)",
+  "full_certificate_reduced_value": "31/5",
+  "nonpin_fractional_optimum": "31/5",
+  "nonpin_integer_optimum": "7",
+  "nonpin_ratio": "35/31",
+  "objective_convention_in_certificates": "nonpin_weight",
+  "pin": 0,
+  "pinned_word_count": 32768,
+  "schema": "reed_muller_objective_normalization_audit_v1",
+  "status": "VERIFIED_OBJECTIVE_NORMALIZATION",
+  "total_fractional_optimum": "36/5",
+  "total_integer_optimum": "8",
+  "total_ratio": "10/9"
+}

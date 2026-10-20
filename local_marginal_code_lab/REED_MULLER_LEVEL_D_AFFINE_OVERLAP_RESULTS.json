@@ -60,7 +60,9 @@
   "full_level_8_lower_bound": "31/5",
   "full_level_8_status": "UNRESOLVED",
   "generator_count": 30,
-  "integer_pinned_optimum": "8",
+  "integer_pinned_nonpin_optimum": "7",
+  "integer_pinned_optimum": "7",
+  "integer_pinned_total_optimum": "8",
   "objective": [
     "0",
     "0",
@@ -91,6 +93,7 @@
     "0",
     "31"
   ],
+  "objective_convention": "nonpin_weight",
   "pin": 0,
   "primal_orbit_masses": [
     "4/35",
@@ -1480,8 +1483,10 @@
     "4": 1240,
     "8": 620
   },
-  "selected_model_integrality_ratio": "40/31",
+  "selected_model_integrality_ratio": "35/31",
   "selected_model_optimum": "31/5",
+  "selected_model_total_integrality_ratio": "10/9",
+  "selected_model_total_optimum": "36/5",
   "selected_scope_sizes": [
     8,
     4,

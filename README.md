@@ -723,8 +723,9 @@ checks it by rebuilding the quotient matrix with exact rational arithmetic.
 The [full RM(2,5) level-eight replay](local_marginal_code_lab/REED_MULLER_LEVEL_D_FULL_REPORT.md)
 now includes every coordinate scope of size at most eight, exact pinned-code
 projection support, and every containment marginal. Its independently checked
-2,174-orbit quotient has the matching exact optimum `31/5`; the pinned integer
-optimum is eight, giving a finite ratio `40/31`. This closes the value of the
+2,174-orbit quotient has the matching exact reduced optimum `31/5` (total
+pinned weight `36/5`). The pinned integer benchmarks are reduced `7` and total
+`8`, giving finite ratios `35/31` and `10/9`. This closes the value of the
 stated finite relaxation only; it is not a general SAT solver or a P-versus-NP
 result.
 

@@ -3,6 +3,10 @@
 This experiment adds a second valid inequality to the exact one-cut quotient
 model for the non-pin weight `t`. The polynomial
 
+All objective values in this report are for the reduced non-pin weight
+`t=sum_{p != 0} x_p`. The corresponding total pinned weight is one larger;
+the integral benchmarks are reduced `7` and total `8`.
+
 ```text
 (t - 6)(t - 7) >= 0,   t in {0, 1, ..., 31}
 ```

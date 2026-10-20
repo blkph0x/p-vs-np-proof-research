@@ -45,17 +45,19 @@ For every parent scope `P`, every nonempty proper child `Q subset P`, and every
 sum_(a in A_P : a restricted to Q = b) lambda[P,a] = lambda[Q,b].
 ```
 
-All coefficients and right-hand sides are integers. The pinned objective is
+All coefficients and right-hand sides are integers. The certificate code uses
+the reduced (free-coordinate) objective
 
 ```text
-minimize  sum_(i=1,...,31) lambda[{i}, 1].
+F = minimize  sum_(i=1,...,31) lambda[{i}, 1].
 ```
 
-Every pinned codeword gives an integral feasible point. Since `RM(2,5)` has
-minimum distance eight, the pinned codeword benchmark is exactly `8`; the
-finite report records that benchmark separately from the LP optimum. The
-certificate claim below concerns the rational relaxation itself and does not
-silently identify all integral local-table assignments with global codewords.
+The corresponding total pinned-codeword weight is `W = 1 + F`, because the
+pin contributes one. Every pinned codeword gives an integral feasible point.
+For RM(2,5), the minimum integral values are `F=7` and `W=8`; the two numbers
+must not be compared across conventions. The certificate claim below concerns
+the rational relaxation itself and does not silently identify all integral
+local-table assignments with global codewords.
 
 ## Quotient representation
 
@@ -71,12 +73,14 @@ stabilizer, and finally equation orbits. The current finite instance has
 entries. The proof that this quotient is equivalent to the declared LP is in
 [`REED_MULLER_QUOTIENT_EQUIVALENCE.md`](REED_MULLER_QUOTIENT_EQUIVALENCE.md).
 
-The exact full-model result is a rational primal certificate with objective
-`31/5`, together with an independently checked affine-overlap lower bound of
-`31/5`. Its conclusion is therefore the finite equality
+The exact full-model result is a rational primal certificate with reduced
+objective `F=31/5`, together with an independently checked affine-overlap
+lower bound of `F=31/5`. In total-weight language the same certificate is
+`W=36/5`. Its conclusion is therefore the finite equality
 
 ```text
-opt(L_full, RM(2,5), level 8) = 31/5,
+opt_F(L_full, RM(2,5), level 8) = 31/5,
+opt_W(L_full, RM(2,5), level 8) = 36/5.
 ```
 
 not a statement about an unbounded hierarchy or arbitrary SAT.

@@ -55,10 +55,16 @@ def replay(certificate: dict) -> dict:
     if certificate["point"] != ["1"] + [str(p)] * 31:
         raise ValueError("singleton point mismatch")
     lower_bound = Fraction(1) + Fraction(linear, incidence)
+    if certificate["objective_convention"] != "total_weight":
+        raise ValueError("objective convention mismatch")
     if Fraction(certificate["star_relaxation_optimum"]) != lower_bound:
         raise ValueError("star optimum mismatch")
+    if Fraction(certificate["star_relaxation_nonpin_optimum"]) != lower_bound - 1:
+        raise ValueError("reduced star optimum mismatch")
     if certificate["integer_pinned_optimum"] != "8":
         raise ValueError("integer optimum mismatch")
+    if certificate["integer_pinned_nonpin_optimum"] != "7":
+        raise ValueError("reduced integer optimum mismatch")
     if Fraction(certificate["integrality_ratio"]) != Fraction(8, 1) / lower_bound:
         raise ValueError("ratio mismatch")
     through = certificate["through_pin_table"]
@@ -92,7 +98,10 @@ def replay(certificate: dict) -> dict:
         "flats_through_pin": linear,
         "singleton_point": certificate["point"],
         "star_relaxation_optimum": str(lower_bound),
+        "star_relaxation_nonpin_optimum": str(lower_bound - 1),
+        "objective_convention": "total_weight",
         "integer_pinned_optimum": "8",
+        "integer_pinned_nonpin_optimum": "7",
         "integrality_ratio": certificate["integrality_ratio"],
         "full_level_d_status": "UNRESOLVED",
     }
@@ -120,7 +129,7 @@ def main() -> None:
         "# Independent review\n\n"
         "The reviewer reconstructs the Gaussian-binomial affine-flat counts, "
         "the two exact parity mixtures, the singleton marginals, and the "
-        "38/7 lower bound without an LP solver. The saved status is scoped to "
+        "total-weight 38/7 lower bound (reduced 31/7) without an LP solver. The saved status is scoped to "
         "this weaker singleton-consistency model; the later full level-eight "
         "replay closes the separate arbitrary-scope model at `31/5`.\n",
         encoding="utf-8",

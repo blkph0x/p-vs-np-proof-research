@@ -1,5 +1,9 @@
 # SOS-strengthened RM(2,5) level-eight optimum
 
+All objective values below use the reduced non-pin weight `t=sum_{p != 0} x_p`.
+Add one for total pinned weight; the integral benchmarks are reduced `7` and
+total `8`.
+
 The full RM(2,5) level-eight local-marginal model has a fractional witness of
 value `31/5`. The earlier SOS audit showed that this witness violates the
 valid Boolean square

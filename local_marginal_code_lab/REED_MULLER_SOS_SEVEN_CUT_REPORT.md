@@ -1,5 +1,9 @@
 # Exact seventh-cut integer-polynomial certificate for RM(2,5)
 
+All objective values below use the reduced non-pin weight `t=sum_{p != 0} x_p`.
+Add one for total pinned weight; the integral benchmarks are reduced `7` and
+total `8`.
+
 This report records an exact finite probe after the sixth-cut replay. The underlying object remains the complete pinned RM(2,5) level-eight projection-marginal quotient: 2,174 variable orbits and 27,926 equality rows.
 
 ## The new valid cut

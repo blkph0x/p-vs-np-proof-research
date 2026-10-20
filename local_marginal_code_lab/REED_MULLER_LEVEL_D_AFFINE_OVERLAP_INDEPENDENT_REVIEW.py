@@ -247,17 +247,32 @@ def replay(certificate, model=None):
         raise ValueError("objective mismatch")
     if certificate.get("selected_model_optimum") != "31/5":
         raise ValueError("selected optimum claim mismatch")
-    if certificate.get("integer_pinned_optimum") != "8":
-        raise ValueError("integer optimum claim mismatch")
-    if certificate.get("selected_model_integrality_ratio") != "40/31":
-        raise ValueError("ratio claim mismatch")
+    if certificate.get("objective_convention") != "nonpin_weight":
+        raise ValueError("objective convention mismatch")
+    if certificate.get("selected_model_total_optimum") != "36/5":
+        raise ValueError("total objective claim mismatch")
+    if certificate.get("integer_pinned_optimum") != "7":
+        raise ValueError("reduced integer optimum claim mismatch")
+    if certificate.get("integer_pinned_nonpin_optimum") != "7":
+        raise ValueError("nonpin integer optimum claim mismatch")
+    if certificate.get("integer_pinned_total_optimum") != "8":
+        raise ValueError("total integer optimum claim mismatch")
+    if certificate.get("selected_model_integrality_ratio") != "35/31":
+        raise ValueError("reduced ratio claim mismatch")
+    if certificate.get("selected_model_total_integrality_ratio") != "10/9":
+        raise ValueError("total ratio claim mismatch")
     if certificate.get("full_level_8_lower_bound") != "31/5":
         raise ValueError("full-level lower bound mismatch")
     if certificate.get("full_level_8_status") != "UNRESOLVED":
         raise ValueError("full-level status must remain unresolved")
     return {"valid": True, "scope_counts": {str(size): len(scopes[size]) for size in (8, 4, 2, 1)},
             "variable_orbits": len(var_orbits), "row_orbits": len(row_orbits),
-            "selected_model_optimum": "31/5", "dual_reduced_cost_minimum": str(min(reduced)),
+            "objective_convention": "nonpin_weight",
+            "selected_model_optimum": "31/5", "selected_model_total_optimum": "36/5",
+            "integer_pinned_nonpin_optimum": "7", "integer_pinned_total_optimum": "8",
+            "selected_model_integrality_ratio": "35/31",
+            "selected_model_total_integrality_ratio": "10/9",
+            "dual_reduced_cost_minimum": str(min(reduced)),
             "full_level_8_lower_bound": "31/5", "full_level_8_status": "UNRESOLVED"}
 
 
@@ -273,7 +288,7 @@ def main():
         "# Independent affine-overlap replay\n\n"
         "The pure-standard-library replay rebuilds the finite-geometry scope sets, "
         "GL(5,2) orbit quotient, affine-flat span rank, exact rational primal witness, and dual reduced-cost "
-        "certificate. It verifies the selected-model optimum `31/5`. The selected-"
+        "certificate. It verifies the selected-model non-pin optimum `31/5` (total `36/5`). The selected-"
         "model record does not itself certify arbitrary scopes; the later full"
         " level-eight replay closes that separate finite model.\n",
         encoding="utf-8")
