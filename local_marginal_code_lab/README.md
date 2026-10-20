@@ -20,10 +20,11 @@ the true pinned codeword has much larger weight.
 
 The [hierarchy-positioning note](LOCAL_MARGINAL_HIERARCHY_NOTE.md) defines
 this polytope precisely and proves level-by-level equality with configuration
-Sherali--Adams for the explicitly declared finite-domain projection CSP. A
-four-variable control shows why that theorem does not transfer automatically
-to a sparse Boolean parity encoding; the parity-encoding and Lasserre
-comparisons remain open.
+Sherali--Adams for the explicitly declared finite-domain projection CSP. It
+also proves a one-sided inclusion into an explicitly defined check-local
+parity configuration LP, with a strict four-variable support separation. The
+relationship to canonical sparse-CNF Sherali--Adams and Lasserre formulations
+remains open.
 
 The even-parity controls enumerate all small scopes, while the Golay control
 uses the independently checked dual-distance certificate for level six
