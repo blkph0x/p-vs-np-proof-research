@@ -18,6 +18,12 @@ local_marginal_code_lab/level10_scope_exploration/** text eol=lf
 local_marginal_code_lab/level10_scope_exploration/*.gz binary
 local_marginal_code_lab/VIRTUAL_DIMENSION_TESTS_*.txt text eol=lf
 local_marginal_code_lab/level10_exploration/**/solver.stdout.txt whitespace=-blank-at-eol
+local_marginal_code_lab/level10_conditioning/** text eol=lf
+local_marginal_code_lab/level10_conditioning/**/solver.stdout.txt whitespace=-blank-at-eol
+local_marginal_code_lab/general_order_boundary/** text eol=lf
+local_marginal_code_lab/global_moment_extension/** text eol=lf
+affine_projection_recognition_lab/fixed_width_hierarchy/** text eol=lf
+affine_projection_recognition_lab/fixed_width_hierarchy/*.gz binary
 proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/** text eol=lf
 proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/** text eol=lf
 proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/** text eol=lf

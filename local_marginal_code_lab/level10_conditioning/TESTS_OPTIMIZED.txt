@@ -1,0 +1,14 @@
+test_actual_global_codimension_two_upper_and_zero_slacks (test_conditioning.ConditioningTests) ... ok
+test_conditional_atom_maps (test_conditioning.ConditioningTests) ... ok
+test_discovery_provenance_and_artifact_hashes (test_conditioning.ConditioningTests) ... ok
+test_elementary_eight_term_identity_and_mutations (test_conditioning.ConditioningTests) ... ok
+test_nontight_global_controls_satisfy_every_incidence (test_conditioning.ConditioningTests) ... ok
+test_primal_dual_objective_and_type_mutations (test_conditioning.ConditioningTests) ... ok
+test_saved_exact_optima (test_conditioning.ConditioningTests) ... ok
+test_saved_matrix_dual_identity_and_unused_old_cut (test_conditioning.ConditioningTests) ... ok
+test_source_mutations_rejected_after_digest_rebinding (test_conditioning.ConditioningTests) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 46.527s
+
+OK

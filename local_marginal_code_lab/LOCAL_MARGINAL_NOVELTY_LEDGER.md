@@ -7,6 +7,9 @@ open novelty question.
 
 | Repository component | Closest established result or tool | Status of the claim here |
 | --- | --- | --- |
+| Exact full locality-ten value for `RM(2,m)`, `m>=6` | Conditioning of consistent local distributions and nonnegative LP identities | **Exact scoped optimum; novelty UNKNOWN.** The [conditional proof](level10_conditioning/THEOREM.md) obtains `5(2^m-1)/21` by transporting the prior level-nine identity and matching the separately proved D6 upper witness. |
+| All-order full dual-distance local witness | Gaussian subspace inclusion, minimum-weight RM dual supports, extremal finite geometry | **Feasible upper bound; novelty UNKNOWN.** The [all-order proof](general_order_boundary/THEOREM.md) gives a self-dual-family exhibited ratio tending to `4/3`, without asserting a general exact optimum. |
+| Degree-two global-moment repair | Boolean moment matrices, convex mixtures and Schur complements | **Specified hybrid gap; novelty UNKNOWN.** The [moment proof](global_moment_extension/THEOREM.md) gives full-M1 feasibility with a remaining gap and an explicit degree-four obstruction to the same witness. |
 | Strict full locality-ten lower bound for `RM(2,m)`, every `m>=6` | Boolean Bonferroni inequalities and nonnegative combinations of existing local-marginal identities | **Scoped lower bound; novelty `UNKNOWN`.** The [control](RM2_LEVEL10_CONTROL.md) proves reduced weight at least `644(2^m-1)/2849`, strictly above the level-nine value. It excludes the entire symmetrized level-nine optimal face using an actual ten-nonpin-coordinate table. It does **not** determine the full level-ten optimum. Seven exact tests and a separate mathematical audit check the derivation; no optimizer or general complexity conclusion is needed. |
 | Exact full locality-nine value for `RM(2,m)`, every `m>=5` | Fixed-level local-marginal relaxations, finite-geometry moments and LP duality | **Formulation-specific follow-up; novelty `UNKNOWN`.** The [proof](REED_MULLER_QUADRATIC_LEVEL9_THEOREM.md) gives reduced `7(2^m-1)/31` with a seven-term nonnegative identity and common rank moments. The [284-variable selected-model search](RM2_NINE_SCOPE_DISCOVERY.md) is freshly reproduced and independently reconstructed. RM(2,5) reaches integer total eight; the all-size gap ratio tends to `31/28`. No new general hierarchy or algorithmic lower bound is claimed. |
 | Gaussian rank moments and local atom inversion | Uniform subspace inclusion probabilities, matroid-flat Möbius inversion, and the Crapo--Rota Critical Theorem | **Inherited counting mechanism, with an additional scoped positivity obligation.** The low-rank cases are genuine codimension-two subspace distributions. The classical count does not automatically prove nonnegativity when the scope rank exceeds the construction's virtual ambient dimension. The level-eight and level-nine proofs separately discharge that obligation; their exact optimization formulas retain novelty `UNKNOWN`. |
@@ -111,7 +114,7 @@ established a direct prior theorem with the same model and exact family
 values. This is a bounded search outcome, not evidence of priority;
 novelty of the scoped optimization statements remains **UNKNOWN**.
 
-## Level-ten follow-up: exact lower bound, open optimum
+## Level-ten discovery history before conditional closure
 
 The new control uses ten nonpin coordinates in a six-dimensional span.
 Its assignment-wise Boolean inequality gives
@@ -132,7 +135,8 @@ conditioning handles nonempty atoms, a relation-space expansion handles the
 empty atom, and self-orthogonality establishes pinned projection support.
 The same moments fail explicitly at `D+5` while working through `D+4`.
 This is a proved boundary for that construction, not an exact LP-optimum law.
-The full level-ten optimum remains open.
+At that stage the full level-ten optimum was open. The conditional proof
+recorded below subsequently closed it at `p=5/21`.
 
 The [subsequent selected-scope certificate](level10_exploration/REPORT.md)
 strengthens the lower bound to `p>=3843/16627` for all `m>=6`.
@@ -168,3 +172,30 @@ The comparison identifies definitions exactly. It does not attribute the
 specific rank-moment construction, its sharp locality boundary, or the
 finite optimal fractions to that paper. Whether those statements follow
 from existing results remains a separate novelty question.
+
+## Subsequent mathematical closure and extensions
+
+The [conditional level-ten theorem](level10_conditioning/THEOREM.md)
+closes the interval recorded above at `p=5/21` for every `m>=6`.
+Conditioning consistent local tables is an inherited operation: conditioning
+one coordinate consumes one locality level. The actual contribution recorded
+here is the checked transport of the prior level-nine identity and its
+eight-term nonnegative combination with original marginal incidences.
+The exact full optimum follows only after using the separately proved D6
+upper witness. No literature search has established priority for this value.
+
+The [all-order theorem](general_order_boundary/THEOREM.md) extends the
+virtual-dimension-four quadratic witness to virtual dimension `r+2` for
+`RM(r,m)`. It uses standard subspace containment counts and minimum-weight
+dual supports. Its elementary line-count lemma is proved for self-containment,
+without a novelty claim. It supplies a feasible upper value at full
+dual-distance locality, with an exhibited self-dual-family gap ratio tending
+to `4/3`; it does not determine general higher-order optima.
+
+The [global moment theorem](global_moment_extension/THEOREM.md) uses standard
+Boolean moment matrices and a Schur complement. Its explicit mixture proves
+that adding the full degree-two matrix does not close the objective gap of
+the defined hybrid. A degree-four square then rejects that same mixture.
+These statements distinguish an actual hybrid gap from exclusion of only
+one witness. They do not identify the hybrid with a full parity-encoding
+Lasserre relaxation, establish a higher-order hierarchy gap, or claim novelty.

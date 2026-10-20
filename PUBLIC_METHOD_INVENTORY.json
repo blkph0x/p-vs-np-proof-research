@@ -4,7 +4,7 @@
   "review_date": "2026-10-20",
   "scope": "All repository Python files mapped by capability; selected code paths inspected. Callable listing is not an individual semantic audit.",
   "hash_convention": "UTF-8 without BOM; universal newlines normalized to LF",
-  "python_files": 600,
+  "python_files": 614,
   "research_directories": [
     "affine_boundary_lab",
     "affine_boundary_reference",
@@ -72,7 +72,7 @@
     "weighted_affine_dag_lab",
     "weighted_boundary_lab"
   ],
-  "callable_definitions": 5230,
+  "callable_definitions": 5343,
   "non_python_components": [
     ".github/workflows/research-checks.yml",
     ".github/workflows/pages.yml",
@@ -3580,6 +3580,228 @@
         {
           "name": "build_artifact",
           "line": 204,
+          "kind": "function"
+        }
+      ],
+      "assert_statement_count": 0
+    },
+    {
+      "path": "affine_projection_recognition_lab/fixed_width_hierarchy/chain.py",
+      "comparison_area": "hidden-affine",
+      "normalized_source_sha256": "b89473f47e8bc80e28ff8a72a6be293b6c146177af5c58c0d6c1cd990f6cec63",
+      "callables": [
+        {
+          "name": "width",
+          "line": 19,
+          "kind": "function"
+        },
+        {
+          "name": "source",
+          "line": 25,
+          "kind": "function"
+        },
+        {
+          "name": "source_digest",
+          "line": 43,
+          "kind": "function"
+        },
+        {
+          "name": "affine_by_rank",
+          "line": 49,
+          "kind": "function"
+        },
+        {
+          "name": "canonical_chain",
+          "line": 73,
+          "kind": "function"
+        },
+        {
+          "name": "chain_record",
+          "line": 86,
+          "kind": "function"
+        },
+        {
+          "name": "reduce_sat_prefix",
+          "line": 105,
+          "kind": "function"
+        },
+        {
+          "name": "satisfies",
+          "line": 142,
+          "kind": "function"
+        },
+        {
+          "name": "reduction_record",
+          "line": 147,
+          "kind": "function"
+        },
+        {
+          "name": "campaign",
+          "line": 176,
+          "kind": "function"
+        },
+        {
+          "name": "build_artifact",
+          "line": 201,
+          "kind": "function"
+        }
+      ],
+      "assert_statement_count": 0
+    },
+    {
+      "path": "affine_projection_recognition_lab/fixed_width_hierarchy/run_experiments.py",
+      "comparison_area": "hidden-affine",
+      "normalized_source_sha256": "4c4893e2c89e9e4f9b3f9f58d499055b822c87cee90bd9e2f6e4cf5d8b351dbd",
+      "callables": [
+        {
+          "name": "source_hashes",
+          "line": 20,
+          "kind": "function"
+        },
+        {
+          "name": "main",
+          "line": 30,
+          "kind": "function"
+        }
+      ],
+      "assert_statement_count": 0
+    },
+    {
+      "path": "affine_projection_recognition_lab/fixed_width_hierarchy/test_hierarchy.py",
+      "comparison_area": "hidden-affine",
+      "normalized_source_sha256": "78a8b097886badfd69812134831c530753bc17a8191d1fa52a0e5738889931db",
+      "callables": [
+        {
+          "name": "FixedWidthHierarchyTests",
+          "line": 9,
+          "kind": "class"
+        },
+        {
+          "name": "FixedWidthHierarchyTests.setUpClass",
+          "line": 11,
+          "kind": "function"
+        },
+        {
+          "name": "FixedWidthHierarchyTests.test_complete_independent_replay",
+          "line": 14,
+          "kind": "function"
+        },
+        {
+          "name": "FixedWidthHierarchyTests.test_chain_coverage_and_mutations",
+          "line": 24,
+          "kind": "function"
+        },
+        {
+          "name": "FixedWidthHierarchyTests.test_source_inputs_not_assumed_nested",
+          "line": 41,
+          "kind": "function"
+        },
+        {
+          "name": "FixedWidthHierarchyTests.test_original_variable_blocks_are_independent",
+          "line": 53,
+          "kind": "function"
+        },
+        {
+          "name": "FixedWidthHierarchyTests.test_original_binding_and_rebound_hash",
+          "line": 64,
+          "kind": "function"
+        },
+        {
+          "name": "FixedWidthHierarchyTests.test_reduction_claim_and_gadget_mutations",
+          "line": 77,
+          "kind": "function"
+        },
+        {
+          "name": "FixedWidthHierarchyTests.test_campaign_complete_source_order",
+          "line": 94,
+          "kind": "function"
+        },
+        {
+          "name": "FixedWidthHierarchyTests.test_empty_formula_clause_visible_width_and_unused_variables",
+          "line": 106,
+          "kind": "function"
+        },
+        {
+          "name": "FixedWidthHierarchyTests.test_strict_inputs_and_enumeration_guard",
+          "line": 117,
+          "kind": "function"
+        },
+        {
+          "name": "FixedWidthHierarchyTests.test_normalized_source_hash_scope",
+          "line": 136,
+          "kind": "function"
+        }
+      ],
+      "assert_statement_count": 0
+    },
+    {
+      "path": "affine_projection_recognition_lab/fixed_width_hierarchy/verify.py",
+      "comparison_area": "hidden-affine",
+      "normalized_source_sha256": "d0b441467f73a91449b0ce0334c95e6fd9a1e48471e5305d8aa8b914689a685a",
+      "callables": [
+        {
+          "name": "require",
+          "line": 17,
+          "kind": "function"
+        },
+        {
+          "name": "text_hash",
+          "line": 22,
+          "kind": "function"
+        },
+        {
+          "name": "original",
+          "line": 27,
+          "kind": "function"
+        },
+        {
+          "name": "affine_by_closure",
+          "line": 42,
+          "kind": "function"
+        },
+        {
+          "name": "expected_chain",
+          "line": 52,
+          "kind": "function"
+        },
+        {
+          "name": "check_chain",
+          "line": 64,
+          "kind": "function"
+        },
+        {
+          "name": "evaluate",
+          "line": 104,
+          "kind": "function"
+        },
+        {
+          "name": "rebuild",
+          "line": 113,
+          "kind": "function"
+        },
+        {
+          "name": "check_reduction",
+          "line": 145,
+          "kind": "function"
+        },
+        {
+          "name": "verify_reduction",
+          "line": 187,
+          "kind": "function"
+        },
+        {
+          "name": "originals",
+          "line": 194,
+          "kind": "function"
+        },
+        {
+          "name": "verify_artifact",
+          "line": 222,
+          "kind": "function"
+        },
+        {
+          "name": "verify_saved",
+          "line": 249,
           "kind": "function"
         }
       ],
@@ -12528,6 +12750,461 @@
         {
           "name": "replay_affine_overlap",
           "line": 201,
+          "kind": "function"
+        }
+      ],
+      "assert_statement_count": 0
+    },
+    {
+      "path": "local_marginal_code_lab/general_order_boundary/test_witness.py",
+      "comparison_area": "code-relaxations",
+      "normalized_source_sha256": "5fa751c252a8356519498a414787dc83ae24d0a60baf927ab06572253791d9e4",
+      "callables": [
+        {
+          "name": "rank",
+          "line": 10,
+          "kind": "function"
+        },
+        {
+          "name": "gaussian",
+          "line": 23,
+          "kind": "function"
+        },
+        {
+          "name": "mobius_table",
+          "line": 34,
+          "kind": "function"
+        },
+        {
+          "name": "projection_basis",
+          "line": 48,
+          "kind": "function"
+        },
+        {
+          "name": "supported",
+          "line": 65,
+          "kind": "function"
+        },
+        {
+          "name": "independent_check",
+          "line": 75,
+          "kind": "function"
+        },
+        {
+          "name": "BoundaryTests",
+          "line": 90,
+          "kind": "class"
+        },
+        {
+          "name": "BoundaryTests.test_parameters_and_objective",
+          "line": 91,
+          "kind": "function"
+        },
+        {
+          "name": "BoundaryTests.test_all_power_two_line_controls_in_dimension_four",
+          "line": 103,
+          "kind": "function"
+        },
+        {
+          "name": "BoundaryTests.test_mobius_and_all_delete_one_marginals",
+          "line": 116,
+          "kind": "function"
+        },
+        {
+          "name": "BoundaryTests.test_full_boundary_and_pinned_projection_support",
+          "line": 132,
+          "kind": "function"
+        },
+        {
+          "name": "BoundaryTests.test_genuine_subspaces_in_dimension_four",
+          "line": 146,
+          "kind": "function"
+        },
+        {
+          "name": "BoundaryTests.test_first_failure_is_negative_and_deletions_pass",
+          "line": 157,
+          "kind": "function"
+        },
+        {
+          "name": "BoundaryTests.test_invalid_input_and_mutated_mass",
+          "line": 169,
+          "kind": "function"
+        }
+      ],
+      "assert_statement_count": 0
+    },
+    {
+      "path": "local_marginal_code_lab/general_order_boundary/witness.py",
+      "comparison_area": "code-relaxations",
+      "normalized_source_sha256": "de3d373cfa5f02684f1dbf7e204227fd0883bb92d3e64351f29cd3fabfe1b3fd",
+      "callables": [
+        {
+          "name": "parameters",
+          "line": 10,
+          "kind": "function"
+        },
+        {
+          "name": "raw_numerators",
+          "line": 17,
+          "kind": "function"
+        },
+        {
+          "name": "checked_table",
+          "line": 41,
+          "kind": "function"
+        },
+        {
+          "name": "first_failure_scope",
+          "line": 54,
+          "kind": "function"
+        },
+        {
+          "name": "objective",
+          "line": 60,
+          "kind": "function"
+        }
+      ],
+      "assert_statement_count": 0
+    },
+    {
+      "path": "local_marginal_code_lab/global_moment_extension/moments.py",
+      "comparison_area": "code-relaxations",
+      "normalized_source_sha256": "a07b71da772d7bc560e3097821f04abf639e207afe6aaa43ab5ad98bf96fac14",
+      "callables": [
+        {
+          "name": "_integer",
+          "line": 11,
+          "kind": "function"
+        },
+        {
+          "name": "validate_dimensions",
+          "line": 17,
+          "kind": "function"
+        },
+        {
+          "name": "gaussian_two",
+          "line": 24,
+          "kind": "function"
+        },
+        {
+          "name": "rank",
+          "line": 29,
+          "kind": "function"
+        },
+        {
+          "name": "_scope",
+          "line": 43,
+          "kind": "function"
+        },
+        {
+          "name": "parameters",
+          "line": 58,
+          "kind": "function"
+        },
+        {
+          "name": "moment",
+          "line": 90,
+          "kind": "function"
+        },
+        {
+          "name": "scope_table",
+          "line": 101,
+          "kind": "function"
+        },
+        {
+          "name": "dense_moment_matrix",
+          "line": 125,
+          "kind": "function"
+        },
+        {
+          "name": "json_value",
+          "line": 142,
+          "kind": "function"
+        }
+      ],
+      "assert_statement_count": 0
+    },
+    {
+      "path": "local_marginal_code_lab/global_moment_extension/run_experiments.py",
+      "comparison_area": "code-relaxations",
+      "normalized_source_sha256": "1e303c5b587918af3c4cb9f3ae91510b947808d052fd3f0d9d0f46999d9d97f6",
+      "callables": [
+        {
+          "name": "hashes",
+          "line": 23,
+          "kind": "function"
+        },
+        {
+          "name": "run",
+          "line": 31,
+          "kind": "function"
+        }
+      ],
+      "assert_statement_count": 0
+    },
+    {
+      "path": "local_marginal_code_lab/global_moment_extension/test_global_moment.py",
+      "comparison_area": "code-relaxations",
+      "normalized_source_sha256": "dd4211f5e359a6ac41e675d15b10b2ab125b8290e1e8865dd808a35824376993",
+      "callables": [
+        {
+          "name": "span_oracle",
+          "line": 8,
+          "kind": "function"
+        },
+        {
+          "name": "original_moment",
+          "line": 16,
+          "kind": "function"
+        },
+        {
+          "name": "polynomial_square_expectation",
+          "line": 25,
+          "kind": "function"
+        },
+        {
+          "name": "exact_psd",
+          "line": 35,
+          "kind": "function"
+        },
+        {
+          "name": "projected_code_words",
+          "line": 53,
+          "kind": "function"
+        },
+        {
+          "name": "local_review",
+          "line": 66,
+          "kind": "function"
+        },
+        {
+          "name": "GlobalMomentTests",
+          "line": 85,
+          "kind": "class"
+        },
+        {
+          "name": "GlobalMomentTests.test_existing_finite_square_is_reproduced",
+          "line": 86,
+          "kind": "function"
+        },
+        {
+          "name": "GlobalMomentTests.test_formulas_and_threshold_over_dimensions",
+          "line": 94,
+          "kind": "function"
+        },
+        {
+          "name": "GlobalMomentTests.test_dense_matrix_psd_and_explicit_gram_identity",
+          "line": 119,
+          "kind": "function"
+        },
+        {
+          "name": "GlobalMomentTests.test_moment_mutations_break_psd",
+          "line": 136,
+          "kind": "function"
+        },
+        {
+          "name": "GlobalMomentTests.test_full_local_tables_and_actual_code_projection",
+          "line": 149,
+          "kind": "function"
+        },
+        {
+          "name": "GlobalMomentTests.test_genuine_equal_dimension_subspace_distribution",
+          "line": 156,
+          "kind": "function"
+        },
+        {
+          "name": "GlobalMomentTests.test_degree_four_square_by_original_monomial_expansion",
+          "line": 175,
+          "kind": "function"
+        },
+        {
+          "name": "GlobalMomentTests.test_independent_linear_square_expansion",
+          "line": 193,
+          "kind": "function"
+        },
+        {
+          "name": "GlobalMomentTests.test_input_and_allocation_guards",
+          "line": 201,
+          "kind": "function"
+        }
+      ],
+      "assert_statement_count": 0
+    },
+    {
+      "path": "local_marginal_code_lab/level10_conditioning/discover.py",
+      "comparison_area": "code-relaxations",
+      "normalized_source_sha256": "4c311baab8001734e69eff2b8fededf94d641a358530b66358644083c43d9e33",
+      "callables": [
+        {
+          "name": "build",
+          "line": 26,
+          "kind": "function"
+        },
+        {
+          "name": "source_hashes",
+          "line": 51,
+          "kind": "function"
+        },
+        {
+          "name": "main",
+          "line": 60,
+          "kind": "function"
+        }
+      ],
+      "assert_statement_count": 0
+    },
+    {
+      "path": "local_marginal_code_lab/level10_conditioning/package_evidence.py",
+      "comparison_area": "code-relaxations",
+      "normalized_source_sha256": "9031448ba38d6b33b8ecc927157e21954cf1e75894d54498a9e98a612c46ce3c",
+      "callables": [
+        {
+          "name": "main",
+          "line": 9,
+          "kind": "function"
+        }
+      ],
+      "assert_statement_count": 0
+    },
+    {
+      "path": "local_marginal_code_lab/level10_conditioning/replay.py",
+      "comparison_area": "code-relaxations",
+      "normalized_source_sha256": "2e2e850c185bcbfce7b80fab538f81a7041290033582b0059472a47aee48b4ab",
+      "callables": [
+        {
+          "name": "_add",
+          "line": 32,
+          "kind": "function"
+        },
+        {
+          "name": "elementary_equations",
+          "line": 40,
+          "kind": "function"
+        },
+        {
+          "name": "verify_elementary_identity",
+          "line": 70,
+          "kind": "function"
+        },
+        {
+          "name": "check_atom_maps",
+          "line": 92,
+          "kind": "function"
+        },
+        {
+          "name": "_rebuild",
+          "line": 146,
+          "kind": "function"
+        },
+        {
+          "name": "rebuild_model",
+          "line": 186,
+          "kind": "function"
+        },
+        {
+          "name": "replay",
+          "line": 190,
+          "kind": "function"
+        },
+        {
+          "name": "source_hashes",
+          "line": 205,
+          "kind": "function"
+        },
+        {
+          "name": "main",
+          "line": 215,
+          "kind": "function"
+        }
+      ],
+      "assert_statement_count": 0
+    },
+    {
+      "path": "local_marginal_code_lab/level10_conditioning/run_checks.py",
+      "comparison_area": "code-relaxations",
+      "normalized_source_sha256": "70a409b647cd14c129de021f0b025b85035f262221aea8d4b66b0c8b59290117",
+      "callables": [
+        {
+          "name": "hashes",
+          "line": 12,
+          "kind": "function"
+        },
+        {
+          "name": "main",
+          "line": 17,
+          "kind": "function"
+        }
+      ],
+      "assert_statement_count": 0
+    },
+    {
+      "path": "local_marginal_code_lab/level10_conditioning/test_conditioning.py",
+      "comparison_area": "code-relaxations",
+      "normalized_source_sha256": "f4db4584d1f995256518d25eb7b1f1e65195eabde213200dac5cfb2c74637f17",
+      "callables": [
+        {
+          "name": "kernels",
+          "line": 16,
+          "kind": "function"
+        },
+        {
+          "name": "word_values",
+          "line": 29,
+          "kind": "function"
+        },
+        {
+          "name": "ConditioningTests",
+          "line": 89,
+          "kind": "class"
+        },
+        {
+          "name": "ConditioningTests.setUpClass",
+          "line": 91,
+          "kind": "function"
+        },
+        {
+          "name": "ConditioningTests.test_saved_exact_optima",
+          "line": 101,
+          "kind": "function"
+        },
+        {
+          "name": "ConditioningTests.test_elementary_eight_term_identity_and_mutations",
+          "line": 110,
+          "kind": "function"
+        },
+        {
+          "name": "ConditioningTests.test_conditional_atom_maps",
+          "line": 120,
+          "kind": "function"
+        },
+        {
+          "name": "ConditioningTests.test_actual_global_codimension_two_upper_and_zero_slacks",
+          "line": 126,
+          "kind": "function"
+        },
+        {
+          "name": "ConditioningTests.test_nontight_global_controls_satisfy_every_incidence",
+          "line": 144,
+          "kind": "function"
+        },
+        {
+          "name": "ConditioningTests.test_source_mutations_rejected_after_digest_rebinding",
+          "line": 152,
+          "kind": "function"
+        },
+        {
+          "name": "ConditioningTests.test_primal_dual_objective_and_type_mutations",
+          "line": 176,
+          "kind": "function"
+        },
+        {
+          "name": "ConditioningTests.test_saved_matrix_dual_identity_and_unused_old_cut",
+          "line": 189,
+          "kind": "function"
+        },
+        {
+          "name": "ConditioningTests.test_discovery_provenance_and_artifact_hashes",
+          "line": 207,
           "kind": "function"
         }
       ],

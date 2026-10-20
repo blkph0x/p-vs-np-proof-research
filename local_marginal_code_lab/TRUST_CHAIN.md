@@ -127,6 +127,36 @@ on every Boolean assignment of its stated scope. Symmetrization turns it into
 identities gives `p>=644/2849` for `m>=6`. Seven exact tests check the
 1,024 Boolean assignments, rank conditions, original atom-incidence identity
 and mutation controls. The written proof transports this finite geometry to
-all stated dimensions. Neither a full level-ten primal witness nor its exact
-optimum is supplied. The bound and the literature comparison do not establish
-novelty.
+all stated dimensions. That historical control supplied neither a full
+level-ten primal witness nor its exact optimum. The subsequent conditional
+closure below adds the missing proof. The literature comparison does not
+establish novelty.
+
+## Conditional closure and all-order follow-ups
+
+The [locality-ten conditional proof](level10_conditioning/THEOREM.md)
+uses actual conditional local distributions on an affine five-flat avoiding
+the original pin. Its nine-coordinate tables require at most ten original
+coordinates. The lower proof depends on the prior locality-nine identity;
+the new reviewer reconstructs its geometric transport and the elementary
+incidence rows rather than accepting an optimizer's status. An eight-term
+identity proves `p>=5/21`. Only the independent D6 all-scope upper theorem
+turns this lower certificate into the exact full-model optimum.
+
+The [all-order boundary witness](general_order_boundary/THEOREM.md) has a
+separate analytical positivity proof, using an extremal line lemma, and a
+projection-support proof using standard minimum-weight RM dual supports.
+Its sparse implementation is compared with independently computed Möbius
+tables, actual subspaces and polynomial projection bases. Finite tests are
+not used as evidence for its unrestricted quantifiers.
+
+The [global moment extension](global_moment_extension/THEOREM.md) inherits
+all-scope feasibility from the virtual-dimension theorem, preserves it by
+mixing with a genuine codeword, and proves the full degree-two matrix PSD
+by an explicit Gram decomposition. Its degree-four negative square marks
+the limit of that witness, not the optimum of the next hierarchy level.
+
+Separate research agents internally audited these written mathematical
+arguments; this is not external referee certification or proof-assistant
+verification. The model definitions and cited code facts remain assumptions
+in the verification chain. Novelty and P versus NP remain unresolved.

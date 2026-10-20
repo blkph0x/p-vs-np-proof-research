@@ -5,7 +5,7 @@ public URL found in the repository's source, reports, and saved metadata,
 along with the local files that cite or preserve it. The curated primary
 sources and citation rules are in [`CITATIONS.md`](CITATIONS.md).
 
-Indexed URLs: **152**.
+Indexed URLs: **154**.
 
 | URL | Local provenance |
 | --- | --- |
@@ -39,7 +39,7 @@ Indexed URLs: **152**.
 | <https://arxiv.org/pdf/1504.07647> | `PERTURBATION_ROUTE_REVIEW.md`, `labelled_join_certified/COVERAGE_AUDIT.md` |
 | <https://arxiv.org/pdf/1510.01509> | `local_marginal_code_lab/LOCAL_MARGINAL_NOVELTY_LEDGER.md` |
 | <https://arxiv.org/pdf/1602.03124> | `matching_gadget_limits/THEOREM.md` |
-| <https://arxiv.org/pdf/1804.10319> | `CITATIONS.md`, `local_marginal_code_lab/REED_MULLER_VIRTUAL_DIMENSION_THEOREM.md` |
+| <https://arxiv.org/pdf/1804.10319> | `CITATIONS.md`, `local_marginal_code_lab/REED_MULLER_VIRTUAL_DIMENSION_THEOREM.md`, `local_marginal_code_lab/general_order_boundary/THEOREM.md`, `local_marginal_code_lab/global_moment_extension/THEOREM.md` |
 | <https://arxiv.org/pdf/1808.00128> | `PUBLIC_METHOD_REVIEW.md` |
 | <https://arxiv.org/pdf/2106.03214> | `AFFINE_REPRESENTATION_LITERATURE_SCOPE.md` |
 | <https://arxiv.org/pdf/2110.07781> | `AFFINE_REPRESENTATION_LITERATURE_SCOPE.md` |
@@ -104,6 +104,7 @@ Indexed URLs: **152**.
 | <https://github.com/sharpbracket/qsopt-ex> | `PUBLIC_METHOD_REVIEW.md` |
 | <https://github.com/sosy-lab/benchexec/> | `PUBLIC_METHOD_REVIEW.md` |
 | <https://github.com/vardigroup/DPMC> | `PUBLIC_METHOD_REVIEW.md` |
+| <https://homepages.cwi.nl/~monique/files/moment-ima-update-new.pdf> | `local_marginal_code_lab/global_moment_extension/THEOREM.md` |
 | <https://homepages.inf.ed.ac.uk/hguo/papers/HA-general.pdf> | `AFFINE_BOUNDARY_DESIGN.md`, `holographic_tractability_lab/RESULTS.json`, `holographic_tractability_lab/THEOREM.md`, `holographic_tractability_lab/run_experiments.py` |
 | <https://ics.uci.edu/~dechter/publications/r76A.pdf> | `PUBLIC_METHOD_REVIEW.md`, `coefficient_structure_lab/THEOREM.md` |
 | <https://ieeexplore.ieee.org/abstract/document/11717448> | `fourier_spectrum_boundary_lab/FWHT_COST_REPORT.md` |
@@ -137,6 +138,7 @@ Indexed URLs: **152**.
 | <https://soplex.zib.de/index.php> | `PUBLIC_METHOD_REVIEW.md` |
 | <https://theory.stanford.edu/~trevisan/cs172-07/karp.pdf> | `multiobjective_matching_limits/THEOREM.md`, `packed_cost_exact_matching/THEOREM.md` |
 | <https://theoryofcomputing.org/articles/v010a007/> | `PUBLIC_METHOD_REVIEW.md` |
+| <https://userpages.cs.umbc.edu/chang/papers/bqabh/npfsat.pdf> | `CITATIONS.md`, `affine_projection_recognition_lab/fixed_width_hierarchy/THEOREM.md` |
 | <https://veripb.org/> | `PUBLIC_METHOD_REVIEW.md` |
 | <https://www-users.cse.umn.edu/~reiner/Talks/Vienna05/Lectures.pdf> | `labelled_join_certified/COVERAGE_INDEPENDENT_REVIEW.md` |
 | <https://www.brics.dk/DS/02/2/BRICS-DS-02-2.pdf> | `CITATIONS.md`, `PEER_AUDIT_RESPONSE_2026_10_19.md`, `PEER_AUDIT_RESPONSE_2026_10_20.md`, `PUBLIC_METHOD_REVIEW.md`, `resolution_width_lab/PHP_WIDTH_REPORT.md` |

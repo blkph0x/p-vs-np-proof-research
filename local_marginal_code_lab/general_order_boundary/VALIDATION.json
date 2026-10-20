@@ -1,0 +1,51 @@
+{
+  "schema": "general-order-boundary-validation-v1",
+  "recorded_at_utc": "2026-10-20T08:24:59.501109+00:00",
+  "python": "3.10.10 | packaged by conda-forge | (main, Mar 24 2023, 20:00:38) [MSC v.1934 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.22631-SP0",
+  "source_commit_before_changes": "1df0ac21cb2d790ed6adc93ec618168de3513ff4",
+  "source_sha256_lf": {
+    "witness.py": "de3d373cfa5f02684f1dbf7e204227fd0883bb92d3e64351f29cd3fabfe1b3fd",
+    "test_witness.py": "5fa751c252a8356519498a414787dc83ae24d0a60baf927ab06572253791d9e4",
+    "THEOREM.md": "ea80de65585d00f225aa27b96ba264727506c98da08de6ddc10e53a6a7c7dde8"
+  },
+  "source_after_sha256_lf": {
+    "witness.py": "de3d373cfa5f02684f1dbf7e204227fd0883bb92d3e64351f29cd3fabfe1b3fd",
+    "test_witness.py": "5fa751c252a8356519498a414787dc83ae24d0a60baf927ab06572253791d9e4",
+    "THEOREM.md": "ea80de65585d00f225aa27b96ba264727506c98da08de6ddc10e53a6a7c7dde8"
+  },
+  "sources_unchanged": true,
+  "runs": [
+    {
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-m",
+        "unittest",
+        "-v",
+        "test_witness"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 5.43036439968273,
+      "tests": 7,
+      "output": "TESTS_NORMAL.txt",
+      "output_sha256": "e1d94b19992ab747014f2d5088cd7e2c00b53e075da7389b19dbb1ee73761375"
+    },
+    {
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-O",
+        "-m",
+        "unittest",
+        "-v",
+        "test_witness"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 6.193552900105715,
+      "tests": 7,
+      "output": "TESTS_OPTIMIZED.txt",
+      "output_sha256": "2a0f2157a56f9dde9bf4f2c74b3f61ce997282316600a83fb60a2b5778aa118f"
+    }
+  ],
+  "status": "PASS",
+  "scope": "Finite exact controls supplement the written all-size proof; no formal-verification or novelty claim."
+}

@@ -1,0 +1,102 @@
+{
+  "atom_maps": {
+    "conditional_scope_size": 9,
+    "even_H_atoms": 128,
+    "independent_triples": 28,
+    "original_scope_size": 10,
+    "status": "EXACT_GEOMETRY",
+    "type_counts": {
+      "0": 1,
+      "2": 28,
+      "6": 28,
+      "8": 1,
+      "N": 56,
+      "P": 14
+    }
+  },
+  "elapsed_seconds": 45.809578999876976,
+  "elementary_identity": {
+    "constant": 1305,
+    "equations": 20,
+    "lower_bound": "5/21",
+    "multipliers": [
+      1305,
+      9135,
+      -18270,
+      22620,
+      -12180,
+      0,
+      -126,
+      882,
+      -13944,
+      12180,
+      17584,
+      0,
+      1764,
+      -12348,
+      8120,
+      16576,
+      0,
+      3672,
+      -25704,
+      56
+    ],
+    "scale": 5481,
+    "status": "EXACT_IDENTITY",
+    "terms": 8
+  },
+  "results": {
+    "identity": {
+      "errors": [],
+      "minimum_reduced_cost": "0",
+      "model_sha256": "571c3ecc0b5d423a381b148d5dc34e392b38023a3fc2a518f8a6bb008bb80ea4",
+      "objective_offset": "0",
+      "reduced_objective": "5/21",
+      "rows": 81,
+      "scope": "exact optimum of the supplied equality LP",
+      "source_bound": true,
+      "status": "EXACT_OPTIMUM",
+      "total_objective": "5/21",
+      "valid": true,
+      "variables": 59
+    },
+    "scalar": {
+      "errors": [],
+      "minimum_reduced_cost": "0",
+      "model_sha256": "db3d36b4d2fe44a5ee02eb561dc153d6c7779659bd9535edd99684eda2b55d2a",
+      "objective_offset": "0",
+      "reduced_objective": "1953/8369",
+      "rows": 81,
+      "scope": "exact optimum of the supplied equality LP",
+      "source_bound": true,
+      "status": "EXACT_OPTIMUM",
+      "total_objective": "1953/8369",
+      "valid": true,
+      "variables": 60
+    }
+  },
+  "schema": "rm2-level10-conditioning-replay-v1",
+  "scope": "Source-bound selected optima and all-family lower identity; separate upper theorem.",
+  "source_after_sha256_lf": {
+    "REED_MULLER_LEVEL_D_AFFINE_OVERLAP_INDEPENDENT_REVIEW.py": "76efdc7778a493f8cd1bb4ae1cd8b87fbafa3a62855342b0165d18107f99a6cb",
+    "REED_MULLER_QUADRATIC_LEVEL9_THEOREM.md": "379f28edaf1df4226c0a12deaa210e8b05ff9570c302a215a10d0a9ce19b4a70",
+    "exact_lp_verify.py": "e04b0ebaecbb6cd232cd623c8d5bbeeb596d2a779fb3529c294dbcb6db04c5f5",
+    "level10_conditioning/discover.py": "4c311baab8001734e69eff2b8fededf94d641a358530b66358644083c43d9e33",
+    "level10_conditioning/replay.py": "2e2e850c185bcbfce7b80fab538f81a7041290033582b0059472a47aee48b4ab",
+    "level10_exploration/review_level10.py": "02a2c7af57aa5300922027e400b7d4c710c8f0f6605f354b392fd986fa78572a",
+    "reed_muller_affine_overlap.py": "936827495ee549d48e5c6e7a5e2f7d902ebc40c4d464054c65b407ecc47cb763",
+    "review_rm2_nine_scope.py": "6b011e9d05c4316c0d322dca5e1d101cc549db2e8445c33f1e2589fafc9bb578"
+  },
+  "source_sha256_lf": {
+    "REED_MULLER_LEVEL_D_AFFINE_OVERLAP_INDEPENDENT_REVIEW.py": "76efdc7778a493f8cd1bb4ae1cd8b87fbafa3a62855342b0165d18107f99a6cb",
+    "REED_MULLER_QUADRATIC_LEVEL9_THEOREM.md": "379f28edaf1df4226c0a12deaa210e8b05ff9570c302a215a10d0a9ce19b4a70",
+    "exact_lp_verify.py": "e04b0ebaecbb6cd232cd623c8d5bbeeb596d2a779fb3529c294dbcb6db04c5f5",
+    "level10_conditioning/discover.py": "4c311baab8001734e69eff2b8fededf94d641a358530b66358644083c43d9e33",
+    "level10_conditioning/replay.py": "2e2e850c185bcbfce7b80fab538f81a7041290033582b0059472a47aee48b4ab",
+    "level10_exploration/review_level10.py": "02a2c7af57aa5300922027e400b7d4c710c8f0f6605f354b392fd986fa78572a",
+    "reed_muller_affine_overlap.py": "936827495ee549d48e5c6e7a5e2f7d902ebc40c4d464054c65b407ecc47cb763",
+    "review_rm2_nine_scope.py": "6b011e9d05c4316c0d322dca5e1d101cc549db2e8445c33f1e2589fafc9bb578"
+  },
+  "sources_unchanged": true,
+  "status": "PASS"
+}

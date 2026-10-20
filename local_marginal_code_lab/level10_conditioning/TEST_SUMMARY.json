@@ -1,0 +1,68 @@
+{
+  "artifact_sha256_lf": {
+    "REPLAY.json": "63132ef33406a0057d8ea30058fcf42f3f065570e2488a2bea0ffcad7a5a7313",
+    "REPLAY_OUTPUT.txt": "7f693de8ff88fda66543b76a522d758f3b003b6683139f1b84e71e08d1bd22a4",
+    "TESTS_NORMAL.txt": "27b5f907ec8974d967a7ddb41a79e0130bf316ed9c2bce379cec868a9367287e",
+    "TESTS_OPTIMIZED.txt": "dce6cc8ef7f690d40dcbecf9b3d3f2c904ef717ad9f0fc0fc10eb9745179fd97",
+    "exact_run/RESULTS.json": "85fb32578f1e997c027a101f1b765fcb51ab22bf4035d6745ddacdc90f999ca1"
+  },
+  "elapsed_seconds": 139.293382700067,
+  "source_after_sha256_lf": {
+    "THEOREM.md": "8f279381ac5f1cac8c77bc20c1cf810481b437a0852431455ebf78f6ccdf35d1",
+    "discover.py": "4c311baab8001734e69eff2b8fededf94d641a358530b66358644083c43d9e33",
+    "package_evidence.py": "9031448ba38d6b33b8ecc927157e21954cf1e75894d54498a9e98a612c46ce3c",
+    "replay.py": "2e2e850c185bcbfce7b80fab538f81a7041290033582b0059472a47aee48b4ab",
+    "run_checks.py": "70a409b647cd14c129de021f0b025b85035f262221aea8d4b66b0c8b59290117",
+    "test_conditioning.py": "f4db4584d1f995256518d25eb7b1f1e65195eabde213200dac5cfb2c74637f17"
+  },
+  "source_sha256_lf": {
+    "THEOREM.md": "8f279381ac5f1cac8c77bc20c1cf810481b437a0852431455ebf78f6ccdf35d1",
+    "discover.py": "4c311baab8001734e69eff2b8fededf94d641a358530b66358644083c43d9e33",
+    "package_evidence.py": "9031448ba38d6b33b8ecc927157e21954cf1e75894d54498a9e98a612c46ce3c",
+    "replay.py": "2e2e850c185bcbfce7b80fab538f81a7041290033582b0059472a47aee48b4ab",
+    "run_checks.py": "70a409b647cd14c129de021f0b025b85035f262221aea8d4b66b0c8b59290117",
+    "test_conditioning.py": "f4db4584d1f995256518d25eb7b1f1e65195eabde213200dac5cfb2c74637f17"
+  },
+  "sources_unchanged": true,
+  "stages": [
+    {
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "replay.py"
+      ],
+      "elapsed_seconds": 45.94913879968226,
+      "log": "REPLAY_OUTPUT.txt",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "test_conditioning",
+        "-v"
+      ],
+      "elapsed_seconds": 46.44202920002863,
+      "log": "TESTS_NORMAL.txt",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "-O",
+        "-m",
+        "unittest",
+        "test_conditioning",
+        "-v"
+      ],
+      "elapsed_seconds": 46.90099970018491,
+      "log": "TESTS_OPTIMIZED.txt",
+      "returncode": 0
+    }
+  ],
+  "status": "PASS",
+  "tests_each_mode": 9
+}

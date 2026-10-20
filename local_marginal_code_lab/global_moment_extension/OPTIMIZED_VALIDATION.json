@@ -1,0 +1,31 @@
+{
+  "command": [
+    "C:\\ProgramData\\radioconda\\python.exe",
+    "-O",
+    "-m",
+    "unittest",
+    "-v",
+    "test_global_moment.py"
+  ],
+  "cwd": "local_marginal_code_lab/global_moment_extension",
+  "elapsed_seconds": 3.820333099924028,
+  "exit_code": 0,
+  "format": "global-moment-optimized-validation-v1",
+  "hash_convention": "SHA256 after CRLF-to-LF normalization",
+  "optimization_flag": "-O",
+  "platform": "Windows-10-10.0.22631-SP0",
+  "python": "3.10.10",
+  "source_and_normal_result_sha256": {
+    "REED_MULLER_VIRTUAL_DIMENSION_THEOREM.md": "cce5ee92ce0e8e844fb07e9a99683d161600c3258815b3bd3c2aed2fb2f1e299",
+    "global_moment_extension/RESULTS.json": "fefce11c413921a90b67ffe9e55d20eeecd730cd1358a0b80274def7b6c04ce9",
+    "global_moment_extension/THEOREM.md": "94a9ff4727537a55151e79c49fd4df807cd36992980f6ccb7d85b397502d9902",
+    "global_moment_extension/moments.py": "a07b71da772d7bc560e3097821f04abf639e207afe6aaa43ab5ad98bf96fac14",
+    "global_moment_extension/run_experiments.py": "1e303c5b587918af3c4cb9f3ae91510b947808d052fd3f0d9d0f46999d9d97f6",
+    "global_moment_extension/test_global_moment.py": "dd4211f5e359a6ac41e675d15b10b2ab125b8290e1e8865dd808a35824376993"
+  },
+  "source_and_normal_result_unchanged_during_run": true,
+  "started_utc": "2026-10-20T08:30:37.870542+00:00",
+  "status": "PASS",
+  "tests": 9,
+  "transcript": "test_degree_four_square_by_original_monomial_expansion (test_global_moment.GlobalMomentTests) ... ok\ntest_dense_matrix_psd_and_explicit_gram_identity (test_global_moment.GlobalMomentTests) ... ok\ntest_existing_finite_square_is_reproduced (test_global_moment.GlobalMomentTests) ... ok\ntest_formulas_and_threshold_over_dimensions (test_global_moment.GlobalMomentTests) ... ok\ntest_full_local_tables_and_actual_code_projection (test_global_moment.GlobalMomentTests) ... ok\ntest_genuine_equal_dimension_subspace_distribution (test_global_moment.GlobalMomentTests) ... ok\ntest_independent_linear_square_expansion (test_global_moment.GlobalMomentTests) ... ok\ntest_input_and_allocation_guards (test_global_moment.GlobalMomentTests) ... ok\ntest_moment_mutations_break_psd (test_global_moment.GlobalMomentTests) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 3.469s\n\nOK\n"
+}

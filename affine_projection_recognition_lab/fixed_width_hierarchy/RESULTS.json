@@ -1,0 +1,135 @@
+{
+  "certificate_bytes": 58528,
+  "certificate_sha256": "5c12cd9b445a9033fde041153796f2cac0663718a3435e7e19767ef6e9bb62ae",
+  "evidence_seconds": 5.313374700024724,
+  "independent_replay": {
+    "accepted": 255,
+    "cases_by_width": {
+      "0": 4,
+      "1": 512,
+      "2": 512,
+      "3": 32
+    },
+    "chains": [
+      {
+        "depth_histogram": {
+          "0": 1,
+          "1": 1
+        },
+        "maximum_depth": 1,
+        "relations": 2,
+        "visible_width": 0
+      },
+      {
+        "depth_histogram": {
+          "0": 1,
+          "1": 3
+        },
+        "maximum_depth": 1,
+        "relations": 4,
+        "visible_width": 1
+      },
+      {
+        "depth_histogram": {
+          "0": 1,
+          "1": 10,
+          "2": 4,
+          "3": 1
+        },
+        "maximum_depth": 3,
+        "relations": 16,
+        "visible_width": 2
+      },
+      {
+        "depth_histogram": {
+          "0": 1,
+          "1": 36,
+          "2": 112,
+          "3": 14,
+          "4": 92,
+          "5": 1
+        },
+        "maximum_depth": 5,
+        "relations": 256,
+        "visible_width": 3
+      },
+      {
+        "depth_histogram": {
+          "0": 1,
+          "1": 136,
+          "2": 5376,
+          "3": 140,
+          "4": 54576,
+          "5": 30,
+          "6": 5276,
+          "7": 1
+        },
+        "maximum_depth": 7,
+        "relations": 65536,
+        "visible_width": 4
+      }
+    ],
+    "errors": [],
+    "gadget_evaluations": 344076,
+    "reduction_cases": 1060,
+    "relations": 65814,
+    "source_evaluations": 5286,
+    "status": "PASS",
+    "valid": true
+  },
+  "platform": "Windows-10-10.0.22631-SP0",
+  "python": "3.10.10",
+  "schema": "fixed-width-affine-hierarchy-results-v1",
+  "scope": "Fixed finite controls; the all-input fixed-k classification rests on THEOREM.md. No SAT speed, proof-assistant, novelty, or complexity separation claim.",
+  "source_after_sha256_lf": {
+    "THEOREM.md": "a5f57d67320b3a07e7e612ccf1faa43de934d0f1bf1efc5e14261e291c0bf630",
+    "chain.py": "b89473f47e8bc80e28ff8a72a6be293b6c146177af5c58c0d6c1cd990f6cec63",
+    "run_experiments.py": "4c4893e2c89e9e4f9b3f9f58d499055b822c87cee90bd9e2f6e4cf5d8b351dbd",
+    "test_hierarchy.py": "78a8b097886badfd69812134831c530753bc17a8191d1fa52a0e5738889931db",
+    "verify.py": "d0b441467f73a91449b0ce0334c95e6fd9a1e48471e5305d8aa8b914689a685a"
+  },
+  "source_sha256_lf": {
+    "THEOREM.md": "a5f57d67320b3a07e7e612ccf1faa43de934d0f1bf1efc5e14261e291c0bf630",
+    "chain.py": "b89473f47e8bc80e28ff8a72a6be293b6c146177af5c58c0d6c1cd990f6cec63",
+    "run_experiments.py": "4c4893e2c89e9e4f9b3f9f58d499055b822c87cee90bd9e2f6e4cf5d8b351dbd",
+    "test_hierarchy.py": "78a8b097886badfd69812134831c530753bc17a8191d1fa52a0e5738889931db",
+    "verify.py": "d0b441467f73a91449b0ce0334c95e6fd9a1e48471e5305d8aa8b914689a685a"
+  },
+  "sources_unchanged": true,
+  "status": "PASS",
+  "tests": [
+    {
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_hierarchy"
+      ],
+      "exit_code": 0,
+      "optimized": false,
+      "sha256_lf": "3a046d7e1fdfd69701618ae18c7f9bd136b85e65b4c72db2ed6c18d2f4b550ee",
+      "tests": 10,
+      "transcript": "TESTS_NORMAL.txt",
+      "wall_seconds": 10.683248799759895
+    },
+    {
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "-O",
+        "-m",
+        "unittest",
+        "-v",
+        "test_hierarchy"
+      ],
+      "exit_code": 0,
+      "optimized": true,
+      "sha256_lf": "bd49096c8ff6d2da0840798495cce48c43fa01bb3c5e955dacaa2871805c28cd",
+      "tests": 10,
+      "transcript": "TESTS_OPTIMIZED.txt",
+      "wall_seconds": 11.045800100080669
+    }
+  ]
+}

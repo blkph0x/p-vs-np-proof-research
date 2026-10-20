@@ -8,23 +8,39 @@
 
 ## Start here
 
+- The [conditional level-ten proof](local_marginal_code_lab/level10_conditioning/THEOREM.md)
+  closes the previous interval: `min F = 5(2^m-1)/21` for `RM(2,m)`, `m>=6`.
+  Conditioning the level-nine identity gives an eight-term nonnegative lower
+  certificate; the independently proved D6 witness matches it. The earlier
+  selected-model intervals remain historical evidence, not the current bound.
+- The [all-order boundary witness](local_marginal_code_lab/general_order_boundary/THEOREM.md)
+  works for `RM(r,m)` at full dual-distance locality `2^(r+1)`.
+  On `RM(s,2s+1)`, `s>=2`, its demonstrated total-weight gap ratio tends to
+  `4/3`. It gives an upper witness, not a general exact-optimum formula.
+- A [global moment extension](local_marginal_code_lab/global_moment_extension/THEOREM.md)
+  proves that adding the entire degree-two Boolean moment matrix still leaves
+  a gap in a precisely specified hybrid relaxation. An explicit degree-four
+  square rejects that repaired witness; higher-order feasibility is not claimed.
+- [Fixed-width affine recognition](affine_projection_recognition_lab/fixed_width_hierarchy/THEOREM.md)
+  is `BH_(2k-1)`-complete for each fixed visible width `k>=1`, with the
+  empty projection rejected. This classifies a representation problem;
+  it does not establish an unconditional time lower bound.
 - The [virtual-dimension theorem](local_marginal_code_lab/REED_MULLER_VIRTUAL_DIMENSION_THEOREM.md)
   now proves a whole family of consistent local witnesses: for every `D>=3`,
   they work through locality `D+4` and fail explicitly at `D+5` when `m>D`.
   It implies nonintegrality of `L_(m+3)(RM(2,m))` for every `m>=4`.
   This is a written all-size proof with independent mathematical review,
   [121 exhaustive ten-point controls](local_marginal_code_lab/level10_scope_exploration/THEOREM.md),
-  and negative tests. It does not determine the later-level exact optima;
+  and negative tests. A general optimum formula beyond level ten remains open;
   novelty remains unknown.
 - The [public SAT comparison](proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE.md)
   now has 114 independently verified runs, pinned Glucose3/DRAT-trim
   provenance, full costs and a retained failed pilot. Public search is faster
   on the harder examples, but Python proof checking prevents an overall win.
-- The [strengthened level-ten certificate](local_marginal_code_lab/level10_exploration/REPORT.md)
-  gives `3843(2^m-1)/16627 <= min F <= 5(2^m-1)/21` for `RM(2,m)`, `m>=6`.
-  Its independently reconstructed 79-variable model supplies a 14-term lower
-  identity; the virtual-dimension theorem supplies the full-model upper witness.
-  The exact full level-ten optimum and mathematical novelty remain unknown.
+- The [earlier level-ten discovery](local_marginal_code_lab/level10_exploration/REPORT.md)
+  preserves the weaker interval and the failed single-cut attempt that preceded
+  the conditional proof. Mathematical novelty remains unestablished for these
+  scoped results; none settles P versus NP.
 - The [nine-scope discovery](local_marginal_code_lab/RM2_NINE_SCOPE_DISCOVERY.md)
   uses SoPlex to find, and a separate source reconstruction to verify, reduced
   optimum `7` / total `8` for an explicit selected model. A genuine codeword

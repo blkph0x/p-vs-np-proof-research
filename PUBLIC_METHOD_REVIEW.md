@@ -344,8 +344,19 @@ The [matroid/subspace literature comparison](local_marginal_code_lab/LOCAL_MARGI
 identifies which counting mechanisms are inherited and why higher-rank
 virtual local tables need a separate argument. A
 [ten-coordinate inequality](local_marginal_code_lab/RM2_LEVEL10_CONTROL.md)
-now gives a strict all-family lower-bound improvement for `m>=6`; it does
-not determine the level-ten optimum or establish novelty.
+gave a strict all-family lower-bound improvement for `m>=6`. The subsequent
+[conditional identity](local_marginal_code_lab/level10_conditioning/THEOREM.md)
+now closes the exact full level-ten optimum at `5(2^m-1)/21` in reduced
+weight. SoPlex supplied discovery evidence; the eight-term mathematical
+identity and separate all-scope upper witness establish the result.
+
+The follow-up also supplies an
+[all-order full dual-distance witness](local_marginal_code_lab/general_order_boundary/THEOREM.md),
+a [precisely defined global-moment gap](local_marginal_code_lab/global_moment_extension/THEOREM.md),
+and a [fixed-width representation classification](affine_projection_recognition_lab/fixed_width_hierarchy/THEOREM.md).
+They answer narrower mathematical questions raised by the public-method
+review. None establishes priority, a faster general SAT algorithm, or an
+unconditional computational lower bound.
 
 Next extend **exact LP discovery** to the larger certificates and build
 a **certified compilation benchmark**, while improving the SAT proof-checking

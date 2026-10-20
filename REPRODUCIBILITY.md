@@ -278,7 +278,25 @@ by the virtual-dimension theorem. `REPORT.md` preserves all six discovery
 models, solver settings, failed controls and source/artifact bindings;
 `TEST_SUMMARY.json` binds the passing normal and optimized test transcripts.
 
-## Updating a result
+## Conditional closure and general extensions
+
+The subsequent locality-ten closure and three general extensions have
+solver-free focused checks. Run each pair in its listed directory:
+
+| Directory | Normal command | Optimized command |
+| --- | --- | --- |
+| `local_marginal_code_lab/level10_conditioning` | `python -m unittest -v test_conditioning` | `python -O -m unittest -v test_conditioning` |
+| `local_marginal_code_lab/general_order_boundary` | `python -m unittest -v test_witness` | `python -O -m unittest -v test_witness` |
+| `local_marginal_code_lab/global_moment_extension` | `python -m unittest -v test_global_moment` | `python -O -m unittest -v test_global_moment` |
+| `affine_projection_recognition_lab/fixed_width_hierarchy` | `python -m unittest -v test_hierarchy` | `python -O -m unittest -v test_hierarchy` |
+
+The first directory also provides `python replay.py` for independent model
+reconstruction and exact certificate checking. Its lower identity becomes
+an exact full-L10 result only together with the separate D6 upper proof.
+Each directory's theorem states what its finite tests cover and what depends
+on the written argument. The GitHub workflow runs these commands explicitly.
+
+## Recording further changes
 
 1. Change the experiment and its theorem/report together.
 2. Add or update an independent checker and a mutation or negative control when

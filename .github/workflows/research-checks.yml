@@ -127,6 +127,27 @@ jobs:
         run: |
           python -m unittest -v test_rm2_virtual_dimension
           python -O -m unittest -v test_rm2_virtual_dimension
+      - name: Check the all-order full dual-distance witness
+        working-directory: local_marginal_code_lab/general_order_boundary
+        run: |
+          python -m unittest -v test_witness
+          python -O -m unittest -v test_witness
+      - name: Check the global degree-two moment extension
+        working-directory: local_marginal_code_lab/global_moment_extension
+        run: |
+          python -m unittest -v test_global_moment
+          python -O -m unittest -v test_global_moment
+      - name: Check the fixed-width affine-recognition hierarchy
+        working-directory: affine_projection_recognition_lab/fixed_width_hierarchy
+        run: |
+          python -m unittest -v test_hierarchy
+          python -O -m unittest -v test_hierarchy
+      - name: Reconstruct the full locality-ten conditional identity
+        working-directory: local_marginal_code_lab/level10_conditioning
+        run: |
+          python replay.py
+          python -m unittest -v test_conditioning
+          python -O -m unittest -v test_conditioning
       - name: Independently replay every high-rank ten-point configuration
         working-directory: local_marginal_code_lab/level10_scope_exploration
         run: |

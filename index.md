@@ -16,14 +16,30 @@ description: A public, reproducible research notebook for exact algorithms, cert
 
 ## Current result
 
+The [full level-ten optimum](local_marginal_code_lab/level10_conditioning/THEOREM.md)
+is now proved: reduced weight `5(2^m-1)/21` for `RM(2,m)`, `m>=6`.
+An eight-term nonnegative identity obtained by conditioning the level-nine
+proof matches the existing upper witness. This closes the previously
+published interval for this relaxation.
+
+An [all-order witness](local_marginal_code_lab/general_order_boundary/THEOREM.md)
+also leaves a gap at full dual-distance locality for the self-dual Reed–Muller
+family, with an exhibited ratio tending to `4/3`. A separate
+[global moment theorem](local_marginal_code_lab/global_moment_extension/THEOREM.md)
+shows that one fully defined degree-two moment strengthening still has a gap.
+The [fixed-width affine-recognition classification](affine_projection_recognition_lab/fixed_width_hierarchy/THEOREM.md)
+supplies a distinct complexity result about discovering representations.
+These written proofs and finite checks do not establish novelty or resolve
+P versus NP.
+
 The [virtual-dimension theorem](local_marginal_code_lab/REED_MULLER_VIRTUAL_DIMENSION_THEOREM.md)
 gives a proved scaling law for one family of local witnesses: virtual dimension
 `D>=3` works through `D+4` coordinates and fails at `D+5` in higher ambient
 dimension. In particular, `L_(m+3)(RM(2,m))` remains nonintegral for every
 `m>=4`. The proof is analytical; a separate complete ten-point classification
 checks all **121** high-rank types and rejects deliberately corrupted tables.
-These are bounds for the declared relaxation, with novelty and later-level
-exact optima still open.
+These are bounds for the declared relaxation. A general optimum formula
+beyond level ten and mathematical novelty remain open.
 
 The [feature-by-feature public-method review](PUBLIC_METHOD_REVIEW.md) compares
 the project's capabilities with established SAT, certified compilation,
@@ -36,11 +52,9 @@ faster on the harder examples and produces smaller proofs, but the simple
 Python proof checker is slower. The report includes both costs and the
 failed pilot; there is no general speedup claim.
 
-The [strengthened level-ten certificate](local_marginal_code_lab/level10_exploration/REPORT.md)
-now bounds reduced weight between `3843(2^m-1)/16627` and `5(2^m-1)/21`
-for `RM(2,m)`, `m>=6`. The lower bound has a compact 14-term nonnegative
-identity; the upper bound has an all-scope witness. The exact full level-ten
-optimum and novelty remain open.
+The [earlier level-ten certificate](local_marginal_code_lab/level10_exploration/REPORT.md)
+retains the selected-model interval and its 14-term identity as a reproducible
+record of the search before conditioning closed the full-model gap.
 
 The first external discovery integration is now [SoPlex with exact independent checking](local_marginal_code_lab/EXACT_LP_DISCOVERY.md).
 It reproduces the affine-overlap value `31/5` from the model alone, while a

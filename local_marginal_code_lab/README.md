@@ -208,6 +208,21 @@ does not claim the optimum after adding the candidate.
 
 ## Latest fixed-level follow-up
 
+The [conditional locality-ten theorem](level10_conditioning/THEOREM.md)
+now closes the full optimum at `F=5(2^m-1)/21` for every `m>=6`.
+It conditions the earlier locality-nine identity inside an affine flat,
+then combines actual marginal incidences into an eight-term nonnegative
+identity. The separately proved D6 witness supplies the matching upper bound.
+The weaker discovery intervals below are retained as historical steps.
+
+Two further results address the family and hierarchy questions. The
+[all-order boundary witness](general_order_boundary/THEOREM.md) gives a
+nonintegral full dual-distance relaxation for `RM(s,2s+1)`, `s>=2`, with
+exhibited total ratio tending to `4/3`. The
+[global moment extension](global_moment_extension/THEOREM.md) preserves
+a gap after adding the entire degree-two Boolean moment matrix to a
+precisely defined hybrid model. It does not claim full Lasserre feasibility.
+
 The [nine-scope exact discovery](RM2_NINE_SCOPE_DISCOVERY.md) independently
 reconstructs and checks a fresh reduced optimum of seven, total eight, for
 a 284-variable selected model. A genuine codeword proves the matching full
@@ -221,8 +236,8 @@ strictly stronger full-locality-ten lower bound
 `644(2^m-1)/2849` on reduced weight for every `m>=6`. Its explicit
 nonnegative identity excludes the entire level-nine optimal face.
 [Seven tests](test_rm2_level10_control.py) and a separate mathematical
-audit check the derivation. This is a lower bound; the full level-ten
-optimum remains open.
+audit check the derivation. This was a lower-bound-only result; the later
+conditional proof above supplies the exact full level-ten optimum.
 
 The 20 October follow-up now supplies a full-model upper witness and a
 stronger lower certificate. The
@@ -237,8 +252,9 @@ The [stronger level-ten certificate](level10_exploration/REPORT.md) gives
 `3843(2^m-1)/16627 <= min F <= 5(2^m-1)/21` for every `m>=6`.
 Its independently reconstructed 79-variable, 104-row selected model has
 an exact primal/dual certificate and a 14-term nonnegative lower identity.
-The full-model upper bound comes separately from the D6 construction;
-the full level-ten optimum and novelty remain unknown.
+The full-model upper bound comes separately from the D6 construction.
+That interval was superseded by the conditional proof above; novelty
+of the exact scoped results remains unknown.
 
 The expanded [novelty ledger](LOCAL_MARGINAL_NOVELTY_LEDGER.md) connects
 the rank moments to classical subspace inclusion and matroid Möbius

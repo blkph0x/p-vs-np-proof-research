@@ -1,0 +1,15 @@
+test_campaign_complete_source_order (test_hierarchy.FixedWidthHierarchyTests) ... ok
+test_chain_coverage_and_mutations (test_hierarchy.FixedWidthHierarchyTests) ... ok
+test_complete_independent_replay (test_hierarchy.FixedWidthHierarchyTests) ... ok
+test_empty_formula_clause_visible_width_and_unused_variables (test_hierarchy.FixedWidthHierarchyTests) ... ok
+test_normalized_source_hash_scope (test_hierarchy.FixedWidthHierarchyTests) ... ok
+test_original_binding_and_rebound_hash (test_hierarchy.FixedWidthHierarchyTests) ... ok
+test_original_variable_blocks_are_independent (test_hierarchy.FixedWidthHierarchyTests) ... ok
+test_reduction_claim_and_gadget_mutations (test_hierarchy.FixedWidthHierarchyTests) ... ok
+test_source_inputs_not_assumed_nested (test_hierarchy.FixedWidthHierarchyTests) ... ok
+test_strict_inputs_and_enumeration_guard (test_hierarchy.FixedWidthHierarchyTests) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 10.593s
+
+OK

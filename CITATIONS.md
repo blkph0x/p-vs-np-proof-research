@@ -74,6 +74,21 @@ now compares the model exactly with Chiesa--Manohar--Shinkar's previously
 defined locally explainable non-signaling functions. No priority claim is
 made for the new written parameterized witness theorem.
 
+The [fixed-width projection classification](affine_projection_recognition_lab/fixed_width_hierarchy/THEOREM.md)
+uses the standard Boolean-hierarchy convention from Richard Chang,
+[*Bounded Queries, Approximations and the Boolean Hierarchy* (1999),
+Section 2](https://userpages.cs.umbc.edu/chang/papers/bqabh/npfsat.pdf).
+Its alternating-chain and selector-CNF arguments are given in full, with
+the fixed-width parameter and empty-relation convention explicit. The
+classification's priority is not established.
+
+The [all-order local witness](local_marginal_code_lab/general_order_boundary/THEOREM.md)
+uses the minimum-weight dual-support description in Santi--Hager--Pfister,
+Section II.A, and proves its required extremal line lemma directly.
+The [moment extension](local_marginal_code_lab/global_moment_extension/THEOREM.md)
+uses standard Boolean moment matrices and Schur complements, while keeping
+its hybrid model distinct from an unspecified full Lasserre formulation.
+
 1. Name the original or primary public source near the first use of an idea.
 2. State whether the source is a theorem, a preprint, an abstract, or an
    unverified public claim.
