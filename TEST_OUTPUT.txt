@@ -25,7 +25,7 @@ test_same_certificate_works_for_each_pin (test_all_dual_lp_barrier.AllDualLPBarr
 test_uniform_subset_mixtures_by_explicit_small_expansion (test_all_dual_lp_barrier.AllDualLPBarrierTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 6 tests in 4.957s
+Ran 6 tests in 5.046s
 
 OK
 
@@ -51,7 +51,7 @@ test_seeded_digit_no_carry_controls (test_coefficient_complexity_barrier.Coeffic
 test_small_general_families_and_duplicates (test_coefficient_complexity_barrier.CoefficientBarrierTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 6 tests in 0.246s
+Ran 6 tests in 0.250s
 
 OK
 
@@ -66,7 +66,7 @@ test_scope_is_affine_frontier_only (test_complete_graph_frontier_integration.Com
 test_state_bound_scales (test_complete_graph_frontier_integration.CompleteGraphFrontierIntegrationTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 8 tests in 11.290s
+Ran 8 tests in 11.477s
 
 OK
 
@@ -107,7 +107,7 @@ test_independent_verifier (test_fourier_spectrum_boundary_integration.FourierSpe
 test_saved_artifact_and_analytic_support (test_fourier_spectrum_boundary_integration.FourierSpectrumBoundaryTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 7 tests in 0.798s
+Ran 7 tests in 0.790s
 
 OK
 
@@ -148,7 +148,7 @@ test_subdag_cap_suffixes_are_recovered_by_structural_macro (test_macro_assisted_
 test_symbolic_work_is_not_claimed_as_projection_reuse (test_macro_assisted_subdag.TestMacroAssistedSubdag) ... ok
 
 ----------------------------------------------------------------------
-Ran 5 tests in 2.635s
+Ran 5 tests in 2.655s
 
 OK
 
@@ -164,7 +164,7 @@ test_verifier_accepts_general_crossing_odd_sets (test_matching_certificate.Match
 test_wrong_graph_and_malformed_inputs_are_rejected (test_matching_certificate.MatchingCertificateTest) ... ok
 
 ----------------------------------------------------------------------
-Ran 9 tests in 15.540s
+Ran 9 tests in 15.677s
 
 OK
 
@@ -184,7 +184,7 @@ test_reject_boolean_numeric_claims (test_native_coset_solver.NativeCosetSolverTe
 test_reject_tampered_result_certificates (test_native_coset_solver.NativeCosetSolverTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 13 tests in 99.519s
+Ran 13 tests in 100.474s
 
 OK
 
@@ -198,7 +198,7 @@ test_reject_tampered_guarantees_and_dual_basis (test_projection_barrier.Projecti
 test_zero_full_empty_codes_and_budgets (test_projection_barrier.ProjectionBarrierTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 7 tests in 0.682s
+Ran 7 tests in 0.680s
 
 OK
 
@@ -211,7 +211,7 @@ test_independent_replay (test_projection_discovery_barrier.ProjectionDiscoveryBa
 test_reduction_relation (test_projection_discovery_barrier.ProjectionDiscoveryBarrierTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 6 tests in 0.050s
+Ran 6 tests in 0.051s
 
 OK
 
@@ -236,7 +236,7 @@ test_independent_replay (test_quadratic_code_family_integration.QuadraticCodeFam
 test_saved_degrees_and_states (test_quadratic_code_family_integration.QuadraticCodeFamilyIntegrationTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 6 tests in 1.974s
+Ran 6 tests in 1.991s
 
 OK
 
@@ -249,7 +249,7 @@ test_second_moment_formula_and_rank_range (test_randomized_isolation.RandomizedI
 test_seeded_hash_replay (test_randomized_isolation.RandomizedIsolationTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 6 tests in 53.664s
+Ran 6 tests in 54.209s
 
 OK
 
@@ -265,7 +265,7 @@ test_seeded_four_and_five_row_affine_instances (test_rank_native_solver.RankNati
 test_tampering_rejected (test_rank_native_solver.RankNativeTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 9 tests in 93.803s
+Ran 9 tests in 95.078s
 
 OK
 
@@ -277,7 +277,7 @@ Exercise the generic (3,3) completion on fresh small inputs. ... ok
 test_saved_artifact_records_exhaustive_extensions (test_regular_ldpc_audit_integration.RegularLdpcAuditIntegrationTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 4 tests in 0.305s
+Ran 4 tests in 0.304s
 
 OK
 
@@ -332,7 +332,7 @@ test_plateaus_are_traversed_without_fabricating_improvements (test_row_basis_esc
 test_seeded_cases_respect_exhaustive_gl3_optima (test_row_basis_escape.RowBasisEscapeTest) ... ok
 
 ----------------------------------------------------------------------
-Ran 7 tests in 0.234s
+Ran 7 tests in 0.232s
 
 OK
 
@@ -342,7 +342,7 @@ test_bounds_and_adversarial_mutation (test_semantic_frontier_expander_integratio
 test_every_saved_order_has_distinct_residual_witnesses (test_semantic_frontier_expander_integration.SemanticFrontierExpanderIntegrationTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 3 tests in 0.201s
+Ran 3 tests in 0.203s
 
 OK
 
@@ -353,7 +353,7 @@ test_role_permutation_requires_certificate (test_sequential_counter.TestSequenti
 test_saved_independent_review (test_sequential_counter.TestSequentialCounter) ... ok
 
 ----------------------------------------------------------------------
-Ran 4 tests in 3.486s
+Ran 4 tests in 3.567s
 
 OK
 
@@ -369,7 +369,7 @@ test_loops_coloops_parallel_blocks_and_large_bit_positions (test_structural_prob
 test_stored_fixture_probe_without_conditioning (test_structural_probe.StructuralProbeTest) ... ok
 
 ----------------------------------------------------------------------
-Ran 9 tests in 0.255s
+Ran 9 tests in 0.256s
 
 OK
 
@@ -382,7 +382,7 @@ test_scale_work_is_linear_in_reachable_proof (test_symbolic_suffix_template.Test
 test_two_literal_suffix_is_exact (test_symbolic_suffix_template.TestSymbolicSuffixTemplate) ... ok
 
 ----------------------------------------------------------------------
-Ran 6 tests in 0.793s
+Ran 6 tests in 0.804s
 
 OK
 
@@ -395,7 +395,7 @@ test_near_miss_is_rejected (test_symbolic_unit_template.TestSymbolicUnitTemplate
 test_recognizes_and_certifies_large_local_fragment (test_symbolic_unit_template.TestSymbolicUnitTemplate) ... ok
 
 ----------------------------------------------------------------------
-Ran 6 tests in 0.206s
+Ran 6 tests in 0.217s
 
 OK
 
@@ -471,7 +471,7 @@ test_projection_layout_validation (test_two_bridge_factorization.TwoBridgeFactor
 test_saved_artifact_and_review (test_two_bridge_factorization.TwoBridgeFactorizationTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 59 tests in 13.708s
+Ran 59 tests in 13.865s
 
 OK
 
@@ -499,7 +499,7 @@ test_reject_malformed_certificates (test_fano_certificate.FanoCertificateTests) 
 test_zero_budget_and_small_input_are_unknown (test_fano_certificate.FanoCertificateTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 21 tests in 0.423s
+Ran 21 tests in 0.436s
 
 OK
 
@@ -509,7 +509,7 @@ test_dimension_validation (test_non_graphic_core.NonGraphicCoreTests) ... ok
 test_fano_restriction (test_non_graphic_core.NonGraphicCoreTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 3 tests in 0.002s
+Ran 3 tests in 0.003s
 
 OK
 
@@ -525,7 +525,7 @@ test_trellis_dimension_uses_generator_rank (test_lab.LabTest) ... ok
 test_trellis_matches_brute (test_lab.LabTest) ... ok
 
 ----------------------------------------------------------------------
-Ran 9 tests in 0.687s
+Ran 9 tests in 0.689s
 
 OK
 
@@ -552,7 +552,7 @@ test_polymorphism_artifact_replay (test_lab.TestHornCdclt) ... ok
 test_single_gadget_solver_matches_direct (test_lab.TestHornCdclt) ... ok
 
 ----------------------------------------------------------------------
-Ran 20 tests in 12.001s
+Ran 20 tests in 12.160s
 
 OK
 
@@ -566,7 +566,7 @@ test_seeded_random_three_sat_controls (test_cdcl.CDCLTests) ... ok
 test_small_formula_exhaustive (test_cdcl.CDCLTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 7 tests in 0.059s
+Ran 7 tests in 0.064s
 
 OK
 
@@ -580,7 +580,7 @@ test_saved_campaign_has_both_adversarial_families (test_scaling.ScalingTests) ..
 test_saved_proofs_replay (test_scaling.ScalingTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 7 tests in 0.820s
+Ran 7 tests in 0.865s
 
 OK
 
@@ -597,7 +597,7 @@ test_odd_charge_certificate_is_exact (test_tseitin.TseitinTests) ... ok
 test_saved_artifacts_and_independent_replay (test_tseitin.TseitinTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 10 tests in 7.656s
+Ran 10 tests in 7.986s
 
 OK
 
@@ -614,7 +614,7 @@ test_width_bridge_review_passed (test_frontier.FrontierComparisonTests) ... ok
 test_width_bridge_rows (test_frontier.FrontierComparisonTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 10 tests in 3.826s
+Ran 10 tests in 3.894s
 
 OK
 
@@ -641,11 +641,13 @@ test_weakenings_are_complete_and_non_tautological (test_resolution.ResolutionWid
 test_width_boundary_and_complete_small_unsat (test_resolution.ResolutionWidthTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 20 tests in 29.741s
+Ran 20 tests in 30.385s
 
 OK
 
 Suite: weighted_boundary
+test_adversarial_seeded_fuzz_matches_direct_oracle (test_lab.WeightedBoundaryTests)
+Stress the independent marginal oracle beyond the saved controls. ... ok
 test_certificate_mutations_rejected (test_lab.WeightedBoundaryTests) ... ok
 test_dependent_equations_and_unused_internal (test_lab.WeightedBoundaryTests) ... ok
 test_explicit_caps_return_unknown_without_partial_result (test_lab.WeightedBoundaryTests) ... ok
@@ -657,7 +659,7 @@ test_pivot_substitution_preserves_quadratic_phase (test_lab.WeightedBoundaryTest
 test_seeded_small_instances_match_direct_oracle (test_lab.WeightedBoundaryTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 9 tests in 0.054s
+Ran 10 tests in 2.186s
 
 OK
 
@@ -668,6 +670,10 @@ test_linear_algebra_helpers (test_local_marginal.LocalMarginalTests) ... ok
 test_malformed_certificate_is_rejected (test_local_marginal.LocalMarginalTests) ... ok
 test_parity_boundary_fails_at_full_scope (test_local_marginal.LocalMarginalTests) ... ok
 test_random_code_union_bound_is_strict (test_local_marginal.LocalMarginalTests) ... ok
+test_boundary_level_has_a_general_incidence_lower_bound (test_reed_muller.ReedMullerTests)
+Minimum affine checks improve the level-d-1 objective bound. ... ok
+test_explicit_all_scope_representation_has_exact_scaling_bounds (test_reed_muller.ReedMullerTests)
+The unquotiented max-level model is superpolynomial in n. ... ok
 test_generator_rows_are_the_anf_basis (test_reed_muller.ReedMullerTests) ... ok
 test_mutated_dual_and_level_are_rejected (test_reed_muller.ReedMullerTests) ... ok
 test_mutated_rows_are_rejected (test_reed_muller.ReedMullerTests) ... ok
@@ -676,6 +682,8 @@ test_rm_1_3_boundary_scope_rejects_unit_point (test_reed_muller.ReedMullerTests)
 test_rm_2_5_is_exactly_enumerated (test_reed_muller.ReedMullerTests) ... ok
 test_saved_certificates_replay (test_reed_muller.ReedMullerTests) ... ok
 test_small_support_replay (test_reed_muller.ReedMullerTests) ... ok
+test_symmetric_family_has_exact_boundary_obstruction (test_reed_muller.ReedMullerTests)
+A minimum dual word through the pin rejects the unit atom at d-1. ... ok
 test_symmetric_parameters (test_reed_muller.ReedMullerTests) ... ok
 test_exact_rm_2_5_has_matching_lp_bound (test_all_dual_reed_muller.AllDualReedMullerTests) ... ok
 test_gaussian_binomials_are_exact (test_all_dual_reed_muller.AllDualReedMullerTests) ... ok
@@ -700,11 +708,29 @@ test_mutated_status_cannot_claim_full_level_d (test_reed_muller_level_d_flat_sta
 test_saved_result_replays (test_reed_muller_level_d_flat_star.ReedMullerFlatStarTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 36 tests in 0.537s
+Ran 39 tests in 1.921s
+
+OK
+
+Suite: local_marginal_hierarchy_note
+test_check_local_pair_has_no_whole_check_scope (test_local_marginal_hierarchy_note.LocalMarginalHierarchyNoteTests) ... ok
+test_full_scope_distribution_is_exactly_supported_on_code (test_local_marginal_hierarchy_note.LocalMarginalHierarchyNoteTests) ... ok
+test_global_projection_contains_only_equal_pair_bits (test_local_marginal_hierarchy_note.LocalMarginalHierarchyNoteTests) ... ok
+test_global_projection_is_contained_in_check_local_support (test_local_marginal_hierarchy_note.LocalMarginalHierarchyNoteTests) ... ok
+test_pinned_level_two_has_strict_objective_separation (test_local_marginal_hierarchy_note.LocalMarginalHierarchyNoteTests) ... ok
+test_check_local_level_two_accepts_zero_free_point (test_sparse_parity_clause_comparison.SparseParityClauseComparisonTests) ... ok
+test_clause_lp_has_exact_optimum_one (test_sparse_parity_clause_comparison.SparseParityClauseComparisonTests) ... ok
+test_clause_mutation_is_detected (test_sparse_parity_clause_comparison.SparseParityClauseComparisonTests) ... ok
+test_pin_simplifies_each_parity_check_to_exact_pair_relation (test_sparse_parity_clause_comparison.SparseParityClauseComparisonTests) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.001s
 
 OK
 
 Suite: local_marginal_affine_overlap
+test_compact_dual_identity (test_reed_muller_level_d_affine_overlap.ReedMullerAffineOverlapTests)
+The saved dual reduces the objective gap to six nonnegative orbit masses. ... ok
 test_dual_and_primal_match_exactly (test_reed_muller_level_d_affine_overlap.ReedMullerAffineOverlapTests) ... ok
 test_full_level_status_cannot_be_promoted (test_reed_muller_level_d_affine_overlap.ReedMullerAffineOverlapTests) ... ok
 test_mutated_dual_is_rejected (test_reed_muller_level_d_affine_overlap.ReedMullerAffineOverlapTests) ... ok
@@ -714,13 +740,16 @@ test_saved_result_replays (test_reed_muller_level_d_affine_overlap.ReedMullerAff
 test_scope_and_orbit_counts (test_reed_muller_level_d_affine_overlap.ReedMullerAffineOverlapTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 7 tests in 44.296s
+Ran 8 tests in 44.750s
 
 OK
 
 Suite: local_marginal_full_level8
 test_exact_primal_certificate (test_reed_muller_level_d_full.FullLevelEightTests) ... ok
 test_exact_support_and_negative_control (test_reed_muller_level_d_full.FullLevelEightTests) ... ok
+test_independent_reviewer_accepts_saved_certificate (test_reed_muller_level_d_full.FullLevelEightTests) ... ok
+test_independent_reviewer_rejects_matrix_mutation (test_reed_muller_level_d_full.FullLevelEightTests) ... ok
+test_independent_reviewer_rejects_objective_mutation (test_reed_muller_level_d_full.FullLevelEightTests) ... ok
 test_pinned_integer_optimum (test_reed_muller_level_d_full.FullLevelEightTests) ... ok
 test_primal_mutation_is_rejected (test_reed_muller_level_d_full.FullLevelEightTests) ... ok
 test_quotient_shape (test_reed_muller_level_d_full.FullLevelEightTests) ... ok
@@ -729,7 +758,7 @@ test_scope_510_support_mutation_is_rejected (test_reed_muller_level_d_full.FullL
 test_scope_orbit_coverage (test_reed_muller_level_d_full.FullLevelEightTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 8 tests in 57.474s
+Ran 11 tests in 460.150s
 
 OK
 
@@ -740,7 +769,7 @@ test_mutated_boolean_control_is_rejected (test_reed_muller_sos_moment.SosMomentT
 test_mutated_moment_is_rejected (test_reed_muller_sos_moment.SosMomentTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 4 tests in 0.094s
+Ran 4 tests in 0.095s
 
 OK
 
@@ -755,7 +784,7 @@ test_primal_mutation_is_rejected (test_reed_muller_sos_strengthened.Strengthened
 test_source_matrix_mutation_is_rejected (test_reed_muller_sos_strengthened.StrengthenedCertificateTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 8 tests in 6.702s
+Ran 8 tests in 6.754s
 
 OK
 
@@ -772,7 +801,7 @@ test_source_matrix_mutation_is_rejected (test_reed_muller_sos_two_cut.TwoCutCert
 test_two_cut_vectors_have_expected_integer_support (test_reed_muller_sos_two_cut.TwoCutCertificateTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 10 tests in 7.682s
+Ran 10 tests in 7.729s
 
 OK
 
@@ -789,7 +818,7 @@ test_third_multiplier_mutation_is_rejected (test_reed_muller_sos_three_cut.Three
 test_three_cut_vectors_have_expected_support (test_reed_muller_sos_three_cut.ThreeCutCertificateTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 10 tests in 33.532s
+Ran 10 tests in 34.068s
 
 OK
 
@@ -806,7 +835,7 @@ test_primal_mutation_is_rejected (test_reed_muller_sos_four_cut.FourCutCertifica
 test_source_matrix_mutation_is_rejected (test_reed_muller_sos_four_cut.FourCutCertificateTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 10 tests in 152.879s
+Ran 10 tests in 154.305s
 
 OK
 
@@ -823,7 +852,7 @@ test_primal_mutation_is_rejected (test_reed_muller_sos_five_cut.FiveCutCertifica
 test_source_matrix_mutation_is_rejected (test_reed_muller_sos_five_cut.FiveCutCertificateTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 10 tests in 152.864s
+Ran 10 tests in 155.151s
 
 OK
 
@@ -840,7 +869,7 @@ test_sixth_multiplier_mutation_is_rejected (test_reed_muller_sos_six_cut.SixCutC
 test_source_matrix_mutation_is_rejected (test_reed_muller_sos_six_cut.SixCutCertificateTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 10 tests in 152.695s
+Ran 10 tests in 155.542s
 
 OK
 
@@ -857,7 +886,7 @@ test_sixth_multiplier_mutation_is_rejected (test_reed_muller_sos_seven_cut.Seven
 test_source_matrix_mutation_is_rejected (test_reed_muller_sos_seven_cut.SevenCutCertificateTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 10 tests in 153.176s
+Ran 10 tests in 155.312s
 
 OK
 
@@ -868,7 +897,23 @@ test_mutated_source_hash_is_rejected (test_reed_muller_sos_candidate_scan.Candid
 test_selected_cut_is_exact_and_domain_nonnegative (test_reed_muller_sos_candidate_scan.CandidateScanTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 4 tests in 144.998s
+Ran 4 tests in 146.680s
+
+OK
+
+Suite: representation_discovery
+test_chain_projects_to_even_parity (test_engine.RepresentationDiscoveryTests) ... ok
+test_discovery_work_grows_while_representation_stays_linear (test_engine.RepresentationDiscoveryTests) ... ok
+test_gaussian_baseline_fails_closed_on_mutated_gadget (test_engine.RepresentationDiscoveryTests) ... ok
+test_gaussian_baseline_recovers_the_hidden_relation (test_engine.RepresentationDiscoveryTests) ... ok
+test_gaussian_baseline_survives_syntactic_controls (test_engine.RepresentationDiscoveryTests) ... ok
+test_invalid_permutation_is_rejected (test_engine.RepresentationDiscoveryTests) ... ok
+test_saved_record_replays_exactly (test_engine.RepresentationDiscoveryTests) ... ok
+test_semantics_survive_variable_renaming (test_engine.RepresentationDiscoveryTests) ... ok
+test_control_is_not_affine (test_nonlinear_control.NonlinearControlTests) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.260s
 
 OK
 
@@ -926,6 +971,6 @@ test_json_roundtrip_and_verifier_does_not_call_producer (test_sparse_lift_normal
 test_seeded_dependent_factors_and_target_equivalence (test_sparse_lift_normal_form.SparseLiftNormalFormTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 51 tests in 14.894s
+Ran 51 tests in 14.956s
 
 OK
