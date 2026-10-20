@@ -62,6 +62,12 @@ jobs:
         run: |
           python run_xor_closure.py
           python review_xor_closure.py
+      - name: Replay hidden-affine representation discovery experiment
+        working-directory: representation_discovery_lab
+        run: |
+          python run_experiment.py
+          python independent_review.py
+          python -m unittest -v test_engine.py
       - name: Replay prefix-threshold sequential-counter audit
         working-directory: proof_motif_candidate_lab
         run: |

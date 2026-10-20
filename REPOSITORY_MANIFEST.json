@@ -10,8 +10,8 @@
       "sha256": "8fdbe59654d74f073e56039d336fe737646ff55d3f938d184f64fa5f401a62ce"
     },
     ".github/workflows/research-checks.yml": {
-      "bytes": 7351,
-      "sha256": "5cc3b1772ff4fc54b89d735811b0f7a4af7d1d7510a86d0a3b7e8a81d883f31f"
+      "bytes": 7614,
+      "sha256": "e3e6afaab7543f24552fc4eb6b81f3d6cb4f9187bb7e7da0c1a2ae1d098dda1a"
     },
     ".gitignore": {
       "bytes": 415,
@@ -306,8 +306,8 @@
       "sha256": "7401f5cf6b946a82cec459cbaf5a62cb4b5237b8f96501e7f0496a3efc662683"
     },
     "METHOD_INDEX.md": {
-      "bytes": 25210,
-      "sha256": "272279ebc122e58109ddccd7365138d8695af036b15c07dd16e5d26e269040cb"
+      "bytes": 25663,
+      "sha256": "d546631eaeaaab45c4893d93c7ce4215cb9093e491a3f0dad52a338ccc0eb677"
     },
     "NATIVE_RESULTS.csv": {
       "bytes": 11436,
@@ -4290,8 +4290,8 @@
       "sha256": "f11e49f6b30f074519eb181976e555332093b8f1003858e09c9535c440a1a4e4"
     },
     "run_research_checks.py": {
-      "bytes": 6228,
-      "sha256": "6d1edd712eb2d54b96d707b12a9262b5ccb0c29b0a4bba0bbe4e4805f670ccfc"
+      "bytes": 6349,
+      "sha256": "cab85a997e13a3b5c53cbb0b511ad10af4c06372d40ad0e02cff35f1db4b20db"
     },
     "run_threshold_phase_checks.py": {
       "bytes": 2230,
@@ -5178,6 +5178,6 @@
       "sha256": "957bd3b51cbf2cd06ee00f1ef47ab5c6fa8bbf1a4c281c0e67b129b027785a18"
     }
   },
-  "generated_at_utc": "2026-10-20T02:25:12.148375+00:00",
-  "source_commit": "584475c629e44260755ab55e167e253a057da73d"
+  "generated_at_utc": "2026-10-20T02:27:21.000404+00:00",
+  "source_commit": "232625816f154594c694b0cb1ace0a5a257f4734"
 }
