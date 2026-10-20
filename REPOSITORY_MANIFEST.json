@@ -1,5 +1,5 @@
 {
-  "file_count": 1294,
+  "file_count": 1300,
   "files": {
     ".gitattributes": {
       "bytes": 648,
@@ -3713,6 +3713,30 @@
       "bytes": 13221,
       "sha256": "8b9eced0f3e860eb28530a340de458cdc88feeeafab69c7d18a3b58957041441"
     },
+    "representation_discovery_lab/REPORT.md": {
+      "bytes": 2901,
+      "sha256": "53d2c207797a95c9a799b174cb47ed161c26525663018e45f461c1ed1fb0b7aa"
+    },
+    "representation_discovery_lab/RESULTS.json": {
+      "bytes": 10504,
+      "sha256": "699828265b069c573b44ea8a87f07652425c18854528a4f7df6d7ea4f26dcfb2"
+    },
+    "representation_discovery_lab/engine.py": {
+      "bytes": 6910,
+      "sha256": "c0e88ef4443befedaac53c377569ca8998d184746ac4038ce45bde1147309983"
+    },
+    "representation_discovery_lab/independent_review.py": {
+      "bytes": 4332,
+      "sha256": "bd49245c4cdbaf7135471e8e24885e7469684a41ec4bf5f8a066808577b35ad0"
+    },
+    "representation_discovery_lab/run_experiment.py": {
+      "bytes": 2551,
+      "sha256": "a5b511d4ba67652c7150a80df60b384a081430c4d12b1d84557ccc9c884a3325"
+    },
+    "representation_discovery_lab/test_engine.py": {
+      "bytes": 1878,
+      "sha256": "10369add558380c9b6c3bef98dd3054e8ac8251c7d7735b5e077d5a32a45005c"
+    },
     "requirements.txt": {
       "bytes": 241,
       "sha256": "6644405b844573f294fa1a3f29188eab1a3d59ab93e26acd07b88b8ecd8cd884"
@@ -5178,6 +5202,6 @@
       "sha256": "957bd3b51cbf2cd06ee00f1ef47ab5c6fa8bbf1a4c281c0e67b129b027785a18"
     }
   },
-  "generated_at_utc": "2026-10-20T02:27:21.000404+00:00",
-  "source_commit": "232625816f154594c694b0cb1ace0a5a257f4734"
+  "generated_at_utc": "2026-10-20T03:15:55.888572+00:00",
+  "source_commit": "0b8329a273694c203885dc65b7bcaf3b42792d15"
 }

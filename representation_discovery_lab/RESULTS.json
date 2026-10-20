@@ -9,11 +9,19 @@
     "shared_range": [
       3,
       7
-    ]
+    ],
+    "operation_formulas": {
+      "local_count": "m - 1",
+      "clause_count": "4m - 3",
+      "representation_bits": "9 + m*ceil(log2(m))",
+      "verification_work": "(4m - 3)*2^(2m - 1)",
+      "candidate_search_work": "(2^(m + 1) - 1)*2^m",
+      "discovery_work": "(4m - 3)*2^(2m - 1) + (2^(m + 1) - 1)*2^m"
+    }
   },
   "source_sha256": {
     "engine.py": "c0e88ef4443befedaac53c377569ca8998d184746ac4038ce45bde1147309983",
-    "run_experiment.py": "94dd0b4ae69f30c5d86ee6db06699c1988d5e0d6462c4e7e9c0c3067b2f946e2"
+    "run_experiment.py": "a5b511d4ba67652c7150a80df60b384a081430c4d12b1d84557ccc9c884a3325"
   },
   "records": [
     {

@@ -78,6 +78,14 @@ def main() -> None:
     payload = json.loads((HERE / "RESULTS.json").read_text(encoding="utf-8"))
     assert payload["schema"] == "representation_discovery_hidden_xor_v1"
     assert payload["status"] == "EXACT_BOUNDED_EXPERIMENT"
+    assert payload["model"]["operation_formulas"] == {
+        "local_count": "m - 1",
+        "clause_count": "4m - 3",
+        "representation_bits": "9 + m*ceil(log2(m))",
+        "verification_work": "(4m - 3)*2^(2m - 1)",
+        "candidate_search_work": "(2^(m + 1) - 1)*2^m",
+        "discovery_work": "(4m - 3)*2^(2m - 1) + (2^(m + 1) - 1)*2^m",
+    }
     assert payload["source_sha256"] == {
         "engine.py": sha256(HERE / "engine.py"),
         "run_experiment.py": sha256(HERE / "run_experiment.py"),

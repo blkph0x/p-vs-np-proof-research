@@ -36,6 +36,25 @@ wall-clock timings.  `RESULTS.json` stores both identity and reversed-name
 controls.  `independent_review.py` rebuilds the clauses and projection without
 importing the producer.
 
+For `m` shared variables the counts have the closed forms
+
+```text
+local variables       = m - 1
+CNF clauses           = 4m - 3
+D                     = 9 + m ceil(log2 m)
+V                     = (4m - 3) 2^(2m - 1)
+candidate-search work = (2^(m + 1) - 1) 2^m
+S                     = V + candidate-search work
+```
+
+The first two identities follow from the XOR chain.  The projection enumerates
+`2^(m+(m-1))` assignments, and the fixed candidate vocabulary evaluates
+`2(2^m-1)+1` candidates on each shared assignment, giving the last three
+identities exactly.  Thus this declared procedure has
+`D=Theta(m log m)` and `S,V=Theta(m 4^m)`.  The theorem is about the procedure's
+charged work; it does not imply that every method for discovering or verifying
+the same XOR relation pays that cost.
+
 The result supports a precise, limited statement: a compact projected
 representation can coexist with high discovery cost for one explicit
 projection-based synthesizer.  It does not show that another solver must first
