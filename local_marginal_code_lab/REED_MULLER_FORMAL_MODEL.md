@@ -83,7 +83,7 @@ opt_F(L_full, RM(2,5), level 8) = 31/5,
 opt_W(L_full, RM(2,5), level 8) = 36/5.
 ```
 
-not a statement about an unbounded hierarchy or arbitrary SAT.
+This is not a statement about an unbounded hierarchy or arbitrary SAT.
 
 ## Trust boundary
 

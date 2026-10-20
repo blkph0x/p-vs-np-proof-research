@@ -1,5 +1,5 @@
 {
-  "file_count": 1291,
+  "file_count": 1294,
   "files": {
     ".gitattributes": {
       "bytes": 648,
@@ -10,8 +10,8 @@
       "sha256": "8fdbe59654d74f073e56039d336fe737646ff55d3f938d184f64fa5f401a62ce"
     },
     ".github/workflows/research-checks.yml": {
-      "bytes": 7289,
-      "sha256": "8563a95573484061c3ebb74225e21ce2ed867cd8e16001aee4616868fa896e2c"
+      "bytes": 7351,
+      "sha256": "5cc3b1772ff4fc54b89d735811b0f7a4af7d1d7510a86d0a3b7e8a81d883f31f"
     },
     ".gitignore": {
       "bytes": 415,
@@ -2458,8 +2458,8 @@
       "sha256": "9cfb4979800a620cc3fb0f410a3bda43cc8fef7bdef15fe5c66468186c723e95"
     },
     "local_marginal_code_lab/REED_MULLER_FORMAL_MODEL.md": {
-      "bytes": 3903,
-      "sha256": "a08ba92bf51055364271ac737fbc183cc601bddaaad0c109fc1b92e15859efe0"
+      "bytes": 3911,
+      "sha256": "be83743f8c208757ab81c62832412902a96de7b9c0047af0deb7c17238c94c0b"
     },
     "local_marginal_code_lab/REED_MULLER_INDEPENDENT_REVIEW.json": {
       "bytes": 5804,
@@ -2556,6 +2556,18 @@
     "local_marginal_code_lab/REED_MULLER_LEVEL_D_RESULTS.json": {
       "bytes": 35450,
       "sha256": "c58bffc996ec680a023cfd55103cd14bb6e73ecdb9ea3e2273a6af384277f69b"
+    },
+    "local_marginal_code_lab/REED_MULLER_OBJECTIVE_NORMALIZATION_AUDIT.json": {
+      "bytes": 535,
+      "sha256": "36c9f9b107ff2e9fc9c729f6673239b5e78e075833fef743819b38d939032d16"
+    },
+    "local_marginal_code_lab/REED_MULLER_OBJECTIVE_NORMALIZATION_AUDIT.md": {
+      "bytes": 791,
+      "sha256": "5b8d2e3b1ecd6ef5c2c75a6d3a184eb8354f5543737ee5c85e89e914ed0c7feb"
+    },
+    "local_marginal_code_lab/REED_MULLER_OBJECTIVE_NORMALIZATION_AUDIT.py": {
+      "bytes": 3578,
+      "sha256": "9141c0c794e500c83a08ef2f574db42801d9fe4b814db5a4d7418d8786c2ea65"
     },
     "local_marginal_code_lab/REED_MULLER_QUOTIENT_EQUIVALENCE.md": {
       "bytes": 2725,
@@ -5166,6 +5178,6 @@
       "sha256": "957bd3b51cbf2cd06ee00f1ef47ab5c6fa8bbf1a4c281c0e67b129b027785a18"
     }
   },
-  "generated_at_utc": "2026-10-20T01:13:29.927373+00:00",
-  "source_commit": "cbc4198dd28776a583de2765734112faa52796f9"
+  "generated_at_utc": "2026-10-20T01:15:44.525980+00:00",
+  "source_commit": "099c4c45066b6bffb34d676ef01a3761841f0ec9"
 }
