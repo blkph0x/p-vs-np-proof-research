@@ -233,6 +233,17 @@ argument itself.
 The independent replay recomputes both Gaussian-binomial incidence counts and
 the rational bound for `s=1,...,8`.
 
+Together with the dual-distance unit witness, this gives the first two exact
+levels of the family:
+
+```text
+OPT(L_k) = 1                                  for k <= d-2,
+OPT(L_{d-1}) = 1 + (2^(2s+1)-1)/(2^(s+1)-1).
+```
+
+The second line is a boundary theorem, not a claim that the same value persists
+at higher levels.
+
 ## Public sources and replay commands
 
 The family is the standard Reed--Muller construction introduced in Reed's

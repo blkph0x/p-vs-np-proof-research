@@ -2746,8 +2746,8 @@
       "sha256": "2c83cc106036717b504d44ce55769e998a8d5eb80604995f5aa97cf8b5b4e4b8"
     },
     "local_marginal_code_lab/REED_MULLER_THEOREM.md": {
-      "bytes": 10139,
-      "sha256": "102db09d8492d9094d745365fbddfb42895d27dc964dbe1ef6594535be5b0bf3"
+      "bytes": 10456,
+      "sha256": "43ffa1b2b040bb6eaaedcc16d40c3f8609068fc4121f1fb6a0040a1aabf88476"
     },
     "local_marginal_code_lab/RESULTS.json": {
       "bytes": 7326,
@@ -5166,6 +5166,6 @@
       "sha256": "957bd3b51cbf2cd06ee00f1ef47ab5c6fa8bbf1a4c281c0e67b129b027785a18"
     }
   },
-  "generated_at_utc": "2026-10-20T00:21:30.214376+00:00",
-  "source_commit": "8b1fc96f71e21c1516f0d4ce92fdf63d52cc268c"
+  "generated_at_utc": "2026-10-20T00:21:56.051121+00:00",
+  "source_commit": "5ffbae144e101a0b3807a910faeb45acdd11f0f3"
 }
