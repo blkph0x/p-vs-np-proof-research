@@ -37,6 +37,13 @@ class AffineProjectionRecognitionTests(unittest.TestCase):
             (False, True): "NON_AFFINE_OR_EMPTY",
             (False, False): "NON_AFFINE_OR_EMPTY",
         })
+        masks = {(row["a_satisfiable"], row["b_satisfiable"]):
+                 {index for index, bit in enumerate(row["projection_bits"]) if bit}
+                 for row in rows}
+        self.assertEqual(masks[(True, False)], set(range(8)))
+        self.assertEqual(masks[(True, True)], set(range(9)))
+        self.assertEqual(masks[(False, True)], {1, 3, 5, 6, 7, 8})
+        self.assertEqual(masks[(False, False)], {1, 3, 5, 6, 7})
 
     def test_fixed_width_oracle_accounting(self):
         profiles = self.artifact["fixed_width_oracle_profiles"]
