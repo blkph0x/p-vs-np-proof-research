@@ -71,7 +71,7 @@ Write \({D\brack2}_2=(2^D-1)(2^D-2)/6\). For a uniform
 codimension-two subspace \(U\) of \(\mathbb F_2^D\) and a specified
 rank-\(r\) subspace \(A\), ordinary subspace counting gives
 \[
- \Pr[A\subseteq U]=\frac{{D-r\brack2}_2}{{D\brack2}_2},
+ \Pr[A\subseteq U]=\frac{ {D-r\brack2}_2 }{ {D\brack2}_2 },
 \]
 where the numerator is zero when \(D-r<2\). The repository's level-eight
 numerators are \((35,7,1,0,\ldots)\) at \(D=4\), and its level-nine
@@ -85,7 +85,7 @@ If \(B\) is closed in the binary matroid on a scope \(S\), grouping
 inclusion-exclusion by closed sets expresses its atom as
 \[
  \mu_S(B)=
- \frac{1}{{D\brack2}_2}
+ \frac{1}{ {D\brack2}_2 }
  \sum_{\substack{F\text{ closed in }S\\B\subseteq F}}
  \mu_{\mathrm{flats}}(B,F)\,{D-\operatorname{rank}(F)\brack2}_2 .
 \]

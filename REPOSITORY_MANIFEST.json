@@ -2634,8 +2634,8 @@
       "sha256": "4799b862dacdcdde16a12de66050ad2daf6cfbeaeee2d266681e4053042529ac"
     },
     "local_marginal_code_lab/LOCAL_MARGINAL_NOVELTY_LEDGER.md": {
-      "bytes": 16683,
-      "sha256": "fa7250c841b5ccef449963ff23b131573bb7efa82d7a53bf4456f2090f9166e0"
+      "bytes": 16689,
+      "sha256": "b7b0f9fa69d1ddcc6a9cb6c8f6e6c4cb555b0742dc738870b7eff06576a0fa49"
     },
     "local_marginal_code_lab/README.md": {
       "bytes": 13202,
@@ -8690,6 +8690,6 @@
       "sha256": "957bd3b51cbf2cd06ee00f1ef47ab5c6fa8bbf1a4c281c0e67b129b027785a18"
     }
   },
-  "generated_at_utc": "2026-10-20T07:31:08.536024+00:00",
-  "source_commit": "07bc9c3303d501b56da612eb8bf27a6aa28f7fdb"
+  "generated_at_utc": "2026-10-20T07:34:46.382659+00:00",
+  "source_commit": "31e712bc466ce40017987e0ffa6025c5bd082ff1"
 }
