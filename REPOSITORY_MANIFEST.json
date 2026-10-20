@@ -2390,8 +2390,8 @@
       "sha256": "608489e4181967b18a4c22e96413a7a4cbc06de4b04c91e5985e3a7bc0a4b06c"
     },
     "local_marginal_code_lab/LOCAL_MARGINAL_HIERARCHY_NOTE.md": {
-      "bytes": 7032,
-      "sha256": "e1e2fa262b9ba3c3be557903949b55bd013619562bcd279cb724dcc3d3322450"
+      "bytes": 7828,
+      "sha256": "84db7e2ff8c06d84f93abd5d1e165a3188019d0fa206c769bc80993cd213b4f1"
     },
     "local_marginal_code_lab/LOCAL_MARGINAL_NOVELTY_LEDGER.md": {
       "bytes": 6586,
@@ -2595,7 +2595,7 @@
     },
     "local_marginal_code_lab/REED_MULLER_SOS_CANDIDATE_SCAN_RESULTS.json": {
       "bytes": 7472,
-      "sha256": "c2dfaa967c8c73f8b7a360f44bc7c56bead1f27d56564d5cdf7258105d86e9f2"
+      "sha256": "1dd9110855b0f560993083da4846d3e4e31a8d509ef2ba1ab3d2d76ba1d56380"
     },
     "local_marginal_code_lab/REED_MULLER_SOS_FIVE_CUT_INDEPENDENT_REVIEW.json": {
       "bytes": 478,
@@ -2882,8 +2882,8 @@
       "sha256": "cbd64e35fc3c932f7a8659ac44f8272794c157c0fd9bebefdbf3430d08887078"
     },
     "local_marginal_code_lab/test_local_marginal_hierarchy_note.py": {
-      "bytes": 1940,
-      "sha256": "8d37eddfaa0ae31219d187ffdd708d766bb213f4a5926b93bf89336fef09b53f"
+      "bytes": 3158,
+      "sha256": "dbf6e539fe6d493c18217735a9e7c3ae7b18b2f9690545aad90f401025087161"
     },
     "local_marginal_code_lab/test_reed_muller.py": {
       "bytes": 7660,
@@ -5178,6 +5178,6 @@
       "sha256": "957bd3b51cbf2cd06ee00f1ef47ab5c6fa8bbf1a4c281c0e67b129b027785a18"
     }
   },
-  "generated_at_utc": "2026-10-20T01:54:38.842596+00:00",
-  "source_commit": "c4c44c1e48f96ba3e41572755a113fbbb8fe97af"
+  "generated_at_utc": "2026-10-20T02:25:12.148375+00:00",
+  "source_commit": "584475c629e44260755ab55e167e253a057da73d"
 }

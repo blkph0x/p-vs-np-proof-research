@@ -126,7 +126,8 @@ The repository now reports both facts: exact configuration-SA equivalence for
 
 ## A one-sided theorem for check-local parity configurations
 
-Fix a parity-check matrix `H` for `C`, with check scopes `E_a`. Define the
+Fix a parity-check matrix `H` for `C`, with check scopes `E_a`. For a pinned
+model, include the pin as a unary relation in both formulations. Define the
 check-local support on a queried scope `S` by
 
 ```text
@@ -157,6 +158,22 @@ relationship and a finite strict-support separation for the declared
 check-local formulation. It does not compare either configuration LP with a
 canonical sparse-CNF Sherali--Adams or Lasserre level without an additional
 variable map.
+
+The same four-variable control gives a strict objective separation after
+pinning `x_0=1` and minimizing the free weight `F=x_1+x_2+x_3`. The two pinned
+codewords are `1100` and `1011`. In every global projection, `x_1+x_2=1` and
+`x_2=x_3`, so every `L_2(C)` point has
+
+```text
+F = E[x_1] + 2 E[x_2] = 1 + 2 E[x_2] >= 1.
+```
+
+At level two, no parity check is wholly contained in a free pair scope. The
+check-local configuration LP therefore accepts the point mass with
+`(x_1,x_2,x_3)=(0,0,0)` and pinned `x_0=1`, giving `F=0`. Thus
+`opt(SA_2^check(H))=0 < 1 <= opt(L_2(C))` for this explicit pinned example.
+The separation is exact and finite; it does not assert a separation for every
+parity encoding or every level.
 
 ## Exact check
 

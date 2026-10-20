@@ -14,6 +14,10 @@ def _codewords():
     )
 
 
+def _pinned_codewords():
+    return tuple(word for word in _codewords() if word[0] == 1)
+
+
 class LocalMarginalHierarchyNoteTests(unittest.TestCase):
     def test_global_projection_is_contained_in_check_local_support(self):
         checks = ((0, 1, 2), (0, 1, 3))
@@ -49,6 +53,26 @@ class LocalMarginalHierarchyNoteTests(unittest.TestCase):
     def test_full_scope_distribution_is_exactly_supported_on_code(self):
         self.assertEqual(len(_codewords()), 4)
         self.assertTrue(all((word[2] == word[3]) for word in _codewords()))
+
+    def test_pinned_level_two_has_strict_objective_separation(self):
+        self.assertEqual(_pinned_codewords(), ((1, 0, 1, 1), (1, 1, 0, 0)))
+        self.assertTrue(all(word[1] + word[2] == 1 for word in _pinned_codewords()))
+        self.assertTrue(all(word[2] == word[3] for word in _pinned_codewords()))
+        # Every L_2 distribution is a convex combination of these two words,
+        # so F=E[x1]+E[x2]+E[x3]=1+2 E[x2] is at least one.
+        self.assertGreaterEqual(
+            min(sum(word[index] for index in (1, 2, 3)) for word in _pinned_codewords()),
+            1,
+        )
+        # The check-local level-two supports contain every free assignment:
+        # both parity checks have size three.  The all-zero free point therefore
+        # gives the exact check-local upper bound F=0.
+        checks = ((0, 1, 2), (0, 1, 3))
+        free = {1, 2, 3}
+        self.assertTrue(all(not set(check).issubset(free) for check in checks))
+        check_local_point = (1, 0, 0, 0)
+        self.assertEqual(check_local_point[0], 1)
+        self.assertEqual(sum(check_local_point[index] for index in (1, 2, 3)), 0)
 
 
 if __name__ == "__main__":
