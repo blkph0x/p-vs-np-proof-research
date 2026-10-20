@@ -6,6 +6,8 @@
     "encoding": "existential XOR chain in 3-CNF with one helper per prefix",
     "discovery": "exhaustive projection followed by all nonempty XOR supports and both RHS values",
     "verification": "independent exhaustive projection replay",
+    "representation_size_note": "encoded_representation_bits is the size of this label encoding, not a minimum over representations",
+    "discovery_cost_note": "enumeration_discovery_work and exhaustive_replay_work are exact charges for the declared procedures, not lower bounds for other algorithms",
     "shared_range": [
       3,
       7
@@ -13,15 +15,16 @@
     "operation_formulas": {
       "local_count": "m - 1",
       "clause_count": "4m - 3",
-      "representation_bits": "9 + m*ceil(log2(m))",
-      "verification_work": "(4m - 3)*2^(2m - 1)",
+      "encoded_representation_bits": "9 + m*ceil(log2(m))",
+      "exhaustive_replay_work": "(4m - 3)*2^(2m - 1)",
       "candidate_search_work": "(2^(m + 1) - 1)*2^m",
-      "discovery_work": "(4m - 3)*2^(2m - 1) + (2^(m + 1) - 1)*2^m"
+      "enumeration_discovery_work": "(4m - 3)*2^(2m - 1) + (2^(m + 1) - 1)*2^m"
     }
   },
   "source_sha256": {
-    "engine.py": "c0e88ef4443befedaac53c377569ca8998d184746ac4038ce45bde1147309983",
-    "run_experiment.py": "a5b511d4ba67652c7150a80df60b384a081430c4d12b1d84557ccc9c884a3325"
+    "engine.py": "65bc58e585e30cc6d2fb3edc0d9527b3469577d3d7720f9f7937cbbbae8e17e5",
+    "run_experiment.py": "b113836d2beb9af76f4fe9faed8c1ab250617faf24c3eaca46c3fc8b439c90f2",
+    "gaussian_baseline.py": "f43468bbc17a0b929dad23c969bd35e75c4bac172f9fbd7006af2e7b3d16493e"
   },
   "records": [
     {
@@ -33,9 +36,9 @@
       ],
       "clause_count": 9,
       "local_count": 2,
-      "representation_bits": 15,
-      "discovery_work": 408,
-      "verification_work": 288,
+      "encoded_representation_bits": 15,
+      "enumeration_discovery_work": 408,
+      "exhaustive_replay_work": 288,
       "projected_bits": [
         1,
         0,
@@ -45,7 +48,18 @@
         1,
         1,
         0
-      ]
+      ],
+      "linear_algebra_baseline": {
+        "status": "EXACT_AFFINE",
+        "support": [
+          0,
+          1,
+          2
+        ],
+        "rhs": 0,
+        "work": 27,
+        "gadget_count": 2
+      }
     },
     {
       "shared_count": 3,
@@ -56,9 +70,9 @@
       ],
       "clause_count": 9,
       "local_count": 2,
-      "representation_bits": 15,
-      "discovery_work": 408,
-      "verification_work": 288,
+      "encoded_representation_bits": 15,
+      "enumeration_discovery_work": 408,
+      "exhaustive_replay_work": 288,
       "projected_bits": [
         1,
         0,
@@ -68,7 +82,18 @@
         1,
         1,
         0
-      ]
+      ],
+      "linear_algebra_baseline": {
+        "status": "EXACT_AFFINE",
+        "support": [
+          0,
+          1,
+          2
+        ],
+        "rhs": 0,
+        "work": 27,
+        "gadget_count": 2
+      }
     },
     {
       "shared_count": 4,
@@ -80,9 +105,9 @@
       ],
       "clause_count": 13,
       "local_count": 3,
-      "representation_bits": 17,
-      "discovery_work": 2160,
-      "verification_work": 1664,
+      "encoded_representation_bits": 17,
+      "enumeration_discovery_work": 2160,
+      "exhaustive_replay_work": 1664,
       "projected_bits": [
         1,
         0,
@@ -100,7 +125,19 @@
         0,
         0,
         1
-      ]
+      ],
+      "linear_algebra_baseline": {
+        "status": "EXACT_AFFINE",
+        "support": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "rhs": 0,
+        "work": 40,
+        "gadget_count": 3
+      }
     },
     {
       "shared_count": 4,
@@ -112,9 +149,9 @@
       ],
       "clause_count": 13,
       "local_count": 3,
-      "representation_bits": 17,
-      "discovery_work": 2160,
-      "verification_work": 1664,
+      "encoded_representation_bits": 17,
+      "enumeration_discovery_work": 2160,
+      "exhaustive_replay_work": 1664,
       "projected_bits": [
         1,
         0,
@@ -132,7 +169,19 @@
         0,
         0,
         1
-      ]
+      ],
+      "linear_algebra_baseline": {
+        "status": "EXACT_AFFINE",
+        "support": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "rhs": 0,
+        "work": 40,
+        "gadget_count": 3
+      }
     },
     {
       "shared_count": 5,
@@ -145,9 +194,9 @@
       ],
       "clause_count": 17,
       "local_count": 4,
-      "representation_bits": 24,
-      "discovery_work": 10720,
-      "verification_work": 8704,
+      "encoded_representation_bits": 24,
+      "enumeration_discovery_work": 10720,
+      "exhaustive_replay_work": 8704,
       "projected_bits": [
         1,
         0,
@@ -181,7 +230,20 @@
         1,
         1,
         0
-      ]
+      ],
+      "linear_algebra_baseline": {
+        "status": "EXACT_AFFINE",
+        "support": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "rhs": 0,
+        "work": 53,
+        "gadget_count": 4
+      }
     },
     {
       "shared_count": 5,
@@ -194,9 +256,9 @@
       ],
       "clause_count": 17,
       "local_count": 4,
-      "representation_bits": 24,
-      "discovery_work": 10720,
-      "verification_work": 8704,
+      "encoded_representation_bits": 24,
+      "enumeration_discovery_work": 10720,
+      "exhaustive_replay_work": 8704,
       "projected_bits": [
         1,
         0,
@@ -230,7 +292,20 @@
         1,
         1,
         0
-      ]
+      ],
+      "linear_algebra_baseline": {
+        "status": "EXACT_AFFINE",
+        "support": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "rhs": 0,
+        "work": 53,
+        "gadget_count": 4
+      }
     },
     {
       "shared_count": 6,
@@ -244,9 +319,9 @@
       ],
       "clause_count": 21,
       "local_count": 5,
-      "representation_bits": 27,
-      "discovery_work": 51136,
-      "verification_work": 43008,
+      "encoded_representation_bits": 27,
+      "enumeration_discovery_work": 51136,
+      "exhaustive_replay_work": 43008,
       "projected_bits": [
         1,
         0,
@@ -312,7 +387,21 @@
         0,
         0,
         1
-      ]
+      ],
+      "linear_algebra_baseline": {
+        "status": "EXACT_AFFINE",
+        "support": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "rhs": 0,
+        "work": 66,
+        "gadget_count": 5
+      }
     },
     {
       "shared_count": 6,
@@ -326,9 +415,9 @@
       ],
       "clause_count": 21,
       "local_count": 5,
-      "representation_bits": 27,
-      "discovery_work": 51136,
-      "verification_work": 43008,
+      "encoded_representation_bits": 27,
+      "enumeration_discovery_work": 51136,
+      "exhaustive_replay_work": 43008,
       "projected_bits": [
         1,
         0,
@@ -394,7 +483,21 @@
         0,
         0,
         1
-      ]
+      ],
+      "linear_algebra_baseline": {
+        "status": "EXACT_AFFINE",
+        "support": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "rhs": 0,
+        "work": 66,
+        "gadget_count": 5
+      }
     },
     {
       "shared_count": 7,
@@ -409,9 +512,9 @@
       ],
       "clause_count": 25,
       "local_count": 6,
-      "representation_bits": 30,
-      "discovery_work": 237440,
-      "verification_work": 204800,
+      "encoded_representation_bits": 30,
+      "enumeration_discovery_work": 237440,
+      "exhaustive_replay_work": 204800,
       "projected_bits": [
         1,
         0,
@@ -541,7 +644,22 @@
         1,
         1,
         0
-      ]
+      ],
+      "linear_algebra_baseline": {
+        "status": "EXACT_AFFINE",
+        "support": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "rhs": 0,
+        "work": 79,
+        "gadget_count": 6
+      }
     },
     {
       "shared_count": 7,
@@ -556,9 +674,9 @@
       ],
       "clause_count": 25,
       "local_count": 6,
-      "representation_bits": 30,
-      "discovery_work": 237440,
-      "verification_work": 204800,
+      "encoded_representation_bits": 30,
+      "enumeration_discovery_work": 237440,
+      "exhaustive_replay_work": 204800,
       "projected_bits": [
         1,
         0,
@@ -688,8 +806,108 @@
         1,
         1,
         0
-      ]
+      ],
+      "linear_algebra_baseline": {
+        "status": "EXACT_AFFINE",
+        "support": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "rhs": 0,
+        "work": 79,
+        "gadget_count": 6
+      }
     }
   ],
-  "interpretation": "The projected representation remains one XOR equation while the bounded projection-based discovery work grows with the hidden helper variables. This is evidence about the declared discovery model only, not a lower bound on SAT or on arbitrary representation algorithms."
+  "controls": {
+    "reordered_gadgets": {
+      "clause_count": 17,
+      "shared": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "status": "EXACT_AFFINE",
+      "support": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "rhs": 0,
+      "work": 53
+    },
+    "duplicated_gadget": {
+      "clause_count": 21,
+      "shared": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "status": "EXACT_AFFINE",
+      "support": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "rhs": 0,
+      "work": 57
+    },
+    "renamed_all_variables": {
+      "clause_count": 17,
+      "shared": [
+        8,
+        7,
+        6,
+        5,
+        4
+      ],
+      "status": "EXACT_AFFINE",
+      "support": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "rhs": 0,
+      "work": 53
+    }
+  },
+  "nonlinear_control": {
+    "status": "NOT_AFFINE",
+    "clauses": [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "projected_bits": [
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1
+    ]
+  },
+  "interpretation": "The projected representation remains one XOR equation while the bounded projection-based enumeration work grows with the hidden helper variables. A separate GF(2) baseline recovers the same relation without projection, so the enumeration cost is algorithm-specific evidence rather than an intrinsic discovery lower bound."
 }

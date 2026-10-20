@@ -38,7 +38,8 @@ def main():
                 "test_all_dual_reed_muller", "test_all_dual_local_reed_muller",
                 "test_reed_muller_level_d", "test_reed_muller_level_d_flat_star"]),
               ("local_marginal_hierarchy_note", ROOT / "local_marginal_code_lab",
-               ["-v", "test_local_marginal_hierarchy_note"]),
+               ["-v", "test_local_marginal_hierarchy_note",
+                "test_sparse_parity_clause_comparison"]),
               ("local_marginal_affine_overlap", ROOT / "local_marginal_code_lab",
                ["-v", "test_reed_muller_level_d_affine_overlap"]),
               ("local_marginal_full_level8", ROOT / "local_marginal_code_lab",
@@ -61,8 +62,8 @@ def main():
                ["-v", "test_reed_muller_sos_seven_cut"]),
               ("local_marginal_sos_candidate_scan", ROOT / "local_marginal_code_lab",
                ["-v", "test_reed_muller_sos_candidate_scan"]),
-              ("representation_discovery", ROOT / "representation_discovery_lab",
-               ["-v", "test_engine"]),
+                ("representation_discovery", ROOT / "representation_discovery_lab",
+                 ["-v", "test_engine", "test_nonlinear_control"]),
               ("labelled_join_certified", ROOT / "labelled_join_certified", ["discover", "-v"])]
     def hashes():
         paths = sorted({p for _, directory, _ in suites for p in directory.glob("*.py")})

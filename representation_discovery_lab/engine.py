@@ -13,7 +13,6 @@ bound on SAT, on representation discovery in general, or on P versus NP.
 from __future__ import annotations
 
 from dataclasses import dataclass
-from itertools import permutations
 from typing import Iterable
 
 
@@ -70,6 +69,45 @@ def xor_chain(shared_count: int, permutation: Iterable[int] | None = None) -> di
     }
 
 
+def reorder_gadget_blocks(chain: dict, order: Iterable[int] | None = None,
+                          duplicate_block: int | None = None) -> dict:
+    """Return the same chain with its XOR-gadget blocks reordered or duplicated.
+
+    The four clauses in each gadget are kept together.  Duplicating a block is
+    a redundant syntactic control: it changes the input text but not the CNF
+    relation.
+    """
+    block_count = len(chain["local"])
+    if order is None:
+        order = tuple(reversed(range(block_count)))
+    order = tuple(int(index) for index in order)
+    if sorted(order) != list(range(block_count)):
+        raise ValueError("order must contain each gadget block once")
+    blocks = [tuple(chain["clauses"][4 * index:4 * index + 4]) for index in range(block_count)]
+    selected = [blocks[index] for index in order]
+    if duplicate_block is not None:
+        if not 0 <= duplicate_block < block_count:
+            raise ValueError("duplicate_block is out of range")
+        selected.insert(1, blocks[duplicate_block])
+    unit = tuple(chain["clauses"][4 * block_count:])
+    return {**chain, "clauses": tuple(clause for block in selected for clause in block) + unit}
+
+
+def rename_variables(chain: dict, mapping: dict[int, int]) -> dict:
+    """Apply a bijective variable renaming to a chain, including metadata."""
+    variables = set(chain["shared"]) | set(chain["local"])
+    if set(mapping) != variables or set(mapping.values()) != variables:
+        raise ValueError("mapping must be a permutation of all chain variables")
+    clauses = tuple(tuple((1 if literal > 0 else -1) * (mapping[abs(literal) - 1] + 1)
+                          for literal in clause) for clause in chain["clauses"])
+    return {
+        **chain,
+        "shared": tuple(mapping[index] for index in chain["shared"]),
+        "local": tuple(mapping[index] for index in chain["local"]),
+        "clauses": clauses,
+    }
+
+
 def _literal_value(literal: int, assignment: dict[int, bool]) -> bool:
     value = assignment[abs(literal) - 1]
     return value if literal > 0 else not value
@@ -123,9 +161,9 @@ class DiscoveryRecord:
     permutation: tuple[int, ...]
     clause_count: int
     local_count: int
-    representation_bits: int
-    discovery_work: int
-    verification_work: int
+    encoded_representation_bits: int
+    enumeration_discovery_work: int
+    exhaustive_replay_work: int
     projected_bits: tuple[int, ...]
 
 
@@ -139,20 +177,20 @@ def discover(chain: dict) -> DiscoveryRecord:
     if projected != expected:
         raise ValueError("chain projection is not the expected even-parity relation")
     # Encoding a support of m variables needs m variable labels and one RHS bit.
-    representation_bits = 8 + len(shared) * max(1, (len(shared) - 1).bit_length()) + 1
+    encoded_representation_bits = 8 + len(shared) * max(1, (len(shared) - 1).bit_length()) + 1
     projection_work = (1 << (len(shared) + len(local))) * max(1, len(clauses))
-    discovery_work = projection_work + candidate_search_work(len(shared))
+    enumeration_discovery_work = projection_work + candidate_search_work(len(shared))
     # Independent replay enumerates exactly the same assignments and clauses;
     # keep it explicit as a separate metric instead of folding it into S.
-    verification_work = projection_work
+    exhaustive_replay_work = projection_work
     return DiscoveryRecord(
         shared_count=len(shared),
         permutation=tuple(chain["permutation"]),
         clause_count=len(clauses),
         local_count=len(local),
-        representation_bits=representation_bits,
-        discovery_work=discovery_work,
-        verification_work=verification_work,
+        encoded_representation_bits=encoded_representation_bits,
+        enumeration_discovery_work=enumeration_discovery_work,
+        exhaustive_replay_work=exhaustive_replay_work,
         projected_bits=projected,
     )
 

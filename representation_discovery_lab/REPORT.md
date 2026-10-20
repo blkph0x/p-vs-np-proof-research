@@ -1,63 +1,44 @@
 # Hidden-affine representation discovery experiment
 
-This is a bounded experiment for the representation-discovery question.  It
-does not claim a lower bound for SAT, an invariant of all algorithms, or a
-route to P versus NP.
+This bounded experiment asks whether a short projected representation can coexist with high work for one explicitly declared discovery procedure. It is an experiment about algorithms and accounting, not a lower bound for SAT, representation discovery in general, or P versus NP.
 
-The family encodes one even-parity equation on `m` shared variables as a chain
-of 3-CNF XOR gadgets.  The chain has `m-1` existential helper variables.  The
-projected relation therefore has a compact representation consisting of one
-XOR support, while the declared discovery procedure must enumerate all shared
-and helper assignments before testing every bounded XOR candidate.
+The family encodes one even-parity equation on `m` shared variables as a chain of 3-CNF XOR gadgets. The chain has `m-1` existential helper variables. Its projection therefore has a one-equation XOR description. The original procedure enumerates all shared/helper assignments and then tests every nonempty XOR support and both right-hand sides.
 
-The experiment records three model-relative quantities:
+## Two discovery procedures
 
-```text
-D = bits in the discovered one-XOR representation
-S = bounded projection work plus candidate-search work
-V = independent exhaustive projection replay work
-```
+`enumeration_discovery_work` is the exact charged work of that fixed projection-and-candidate procedure. `exhaustive_replay_work` is the exact charged work of its exhaustive replay. They are procedure costs, not minima over algorithms and not lower bounds.
 
-`D` grows with the support label width, while `S` and `V` grow with the hidden
-helper variables.  Reversing the shared-variable names preserves the projected
-relation and all three values, so the control distinguishes semantic hiding by
-auxiliary encoding from ordinary renaming.
+The separate `gaussian_baseline.py` recognises the constant-size XOR gadgets, then propagates affine expressions over GF(2) by substitution (the chain-specialised form of Gaussian elimination). It recovers the same parity support without constructing the projected truth table. Its `work` field is an explicit implementation charge for this baseline, included to make the comparison auditable rather than to claim a universal complexity measure.
 
-| shared variables | helpers | clauses | representation bits | discovery work | verification work |
-| ---: | ---: | ---: | ---: | ---: | ---: |
-| 3 | 2 | 9 | 15 | 408 | 288 |
-| 4 | 3 | 13 | 17 | 2,160 | 1,664 |
-| 5 | 4 | 17 | 24 | 10,720 | 8,704 |
-| 6 | 5 | 21 | 27 | 51,136 | 43,008 |
-| 7 | 6 | 25 | 30 | 237,440 | 204,800 |
+The encoded representation size is named `encoded_representation_bits`: it is the bit count for this repository's support-label encoding. It is not a proof of minimum representation length.
 
-The values are exact operation counts for the declared enumeration model, not
-wall-clock timings.  `RESULTS.json` stores both identity and reversed-name
-controls.  `independent_review.py` rebuilds the clauses and projection without
-importing the producer.
+| shared variables | helpers | clauses | encoded bits | enumeration work | exhaustive replay | GF(2) baseline |
+| ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 3 | 2 | 9 | 15 | 408 | 288 | recorded in `RESULTS.json` |
+| 4 | 3 | 13 | 17 | 2,160 | 1,664 | recorded in `RESULTS.json` |
+| 5 | 4 | 17 | 24 | 10,720 | 8,704 | recorded in `RESULTS.json` |
+| 6 | 5 | 21 | 27 | 51,136 | 43,008 | recorded in `RESULTS.json` |
+| 7 | 6 | 25 | 30 | 237,440 | 204,800 | recorded in `RESULTS.json` |
 
-For `m` shared variables the counts have the closed forms
+For `m` shared variables:
 
 ```text
-local variables       = m - 1
-CNF clauses           = 4m - 3
-D                     = 9 + m ceil(log2 m)
-V                     = (4m - 3) 2^(2m - 1)
-candidate-search work = (2^(m + 1) - 1) 2^m
-S                     = V + candidate-search work
+local variables            = m - 1
+CNF clauses                = 4m - 3
+encoded bits               = 9 + m ceil(log2 m)
+exhaustive replay work     = (4m - 3) 2^(2m - 1)
+candidate-search work      = (2^(m + 1) - 1) 2^m
+enumeration discovery work = (4m - 3) 2^(2m - 1) + (2^(m + 1) - 1) 2^m
 ```
 
-The first two identities follow from the XOR chain.  The projection enumerates
-`2^(m+(m-1))` assignments, and the fixed candidate vocabulary evaluates
-`2(2^m-1)+1` candidates on each shared assignment, giving the last three
-identities exactly.  Thus this declared procedure has
-`D=Theta(m log m)` and `S,V=Theta(m 4^m)`.  The theorem is about the procedure's
-charged work; it does not imply that every method for discovering or verifying
-the same XOR relation pays that cost.
+The projection count follows from `2^(m+(m-1))` assignments. The candidate vocabulary has `2(2^m-1)+1` entries. Thus the declared enumeration procedure has Θ(m4^m) charged work while its particular encoded support has Θ(m log m) bits. The GF(2) baseline gives a polynomial structural control for the same family, so the exponential separation is algorithm-specific evidence.
 
-The result supports a precise, limited statement: a compact projected
-representation can coexist with high discovery cost for one explicit
-projection-based synthesizer.  It does not show that another solver must first
-discover that representation, and it does not establish a superpolynomial
-lower bound.  Extending the experiment to a theorem would require a transfer
-argument covering a broader algorithm model.
+## Controls and nonlinear boundary
+
+`RESULTS.json` includes three syntactic controls at `m=5`: reversed gadget order, a duplicated redundant gadget, and a bijective renaming of all variables. The baseline recovers the same affine relation in each case. These controls test robustness to superficial hiding; they do not make discovery hard.
+
+The companion nonlinear control tests a Boolean relation that is not affine. The baseline must return `NOT_AFFINE`/`UNKNOWN` rather than silently treating a nonlinear projection as an XOR equation. This keeps affine recovery and nonlinear representation questions separate.
+
+`independent_review.py` rebuilds the chain and projection without importing the producer, checks every saved formula, and checks the baseline outputs and controls. The tests also exercise reordered, duplicated, renamed, and malformed inputs.
+
+The supported conclusion is narrow: a compact projected representation can coexist with high work for one explicit exhaustive synthesizer. A meaningful discovery barrier would require a reduction or theorem covering a broad, well-defined class of algorithms, including methods that bypass this representation.

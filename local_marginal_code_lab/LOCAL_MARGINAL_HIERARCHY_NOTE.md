@@ -175,8 +175,50 @@ check-local configuration LP therefore accepts the point mass with
 The separation is exact and finite; it does not assert a separation for every
 parity encoding or every level.
 
+## Comparison with the ordinary sparse 3-CNF clause relaxation
+
+The same example also separates the check-local configuration model from the
+ordinary clause relaxation of the sparse parity encoding. Encode each ternary
+even-parity check by its four clauses forbidding the odd assignments, and add
+the pin equality `x_0=1`. Substituting the pin into the two checks leaves the
+four binary clauses
+
+```text
+(x_1 or x_2),  (not x_1 or not x_2),
+(x_1 or x_3),  (not x_1 or not x_3).
+```
+
+Their standard 0/1 clause inequalities give
+`x_1+x_2 >= 1`, `x_1+x_2 <= 1`, `x_1+x_3 >= 1`, and
+`x_1+x_3 <= 1`. Therefore the unlifted clause LP (the first Sherali--Adams
+level under the common indexing convention for this 0/1 clause formulation)
+has
+
+```text
+F = x_1+x_2+x_3 >= 1.
+```
+
+The satisfying assignment `(x_0,x_1,x_2,x_3)=(1,1,0,0)` attains `F=1`, so
+the clause-LP optimum is exactly one. The check-local level-two configuration
+model still has the feasible zero-free point with value zero. Hence, for this
+declared encoding,
+
+```text
+opt(SA_2^check(H)) = 0 < 1 = opt(clause-LP with x_0=1)
+                 <= opt(L_2(C)).
+```
+
+This is a finite encoding-specific comparison. It does not identify the full
+projection hierarchy with every polynomial Sherali--Adams convention, and it
+does not give an all-size sparse-parity hierarchy theorem. The exact clause
+simplification and the three objective controls are replayed in
+`review_sparse_parity_clause_comparison.py`, with the mutation controls in
+`test_sparse_parity_clause_comparison.py`.
+
 ## Exact check
 
 ```text
 python -m unittest -v test_local_marginal_hierarchy_note.py
+python review_sparse_parity_clause_comparison.py
+python -m unittest -v test_sparse_parity_clause_comparison.py
 ```

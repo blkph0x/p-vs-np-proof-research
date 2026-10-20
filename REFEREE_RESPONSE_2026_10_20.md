@@ -67,8 +67,11 @@ additional certificates it can produce:
    no equivalence to a sparse Boolean parity encoding should be claimed. It
    now also proves the one-sided inclusion `L_k(C) subseteq SA_k^check(H)` for
    an explicitly defined check-local parity configuration LP, with a strict
-   four-variable support separation. The relationship to canonical sparse-CNF
-   Sherali–Adams and Lasserre levels remains open.
+   four-variable support separation. A new exact finite control compares that
+   check-local model with the ordinary sparse ternary-parity clause LP: the
+   former has value `0` and the latter value `1` after pinning. A general
+   level-by-level relationship to canonical sparse-CNF Sherali–Adams and
+   Lasserre levels remains open.
 3. Separate construction, discovery, and verification costs for the finite
    `RM(2,5)` certificate, including bit lengths, certificate size, memory, and
    replay time. **Measured for the retained construction and replay paths:**
@@ -87,6 +90,24 @@ additional certificates it can produce:
 The short-term success criterion is a publishable theorem with a precise
 new-versus-known comparison. Producing more cuts without such a criterion is
 not treated as progress toward P versus NP.
+
+## Hidden-affine discovery audit
+
+The hidden-XOR chain experiment has been revised in response to the latest
+audit. Its former `D/S/V` labels are now
+`encoded_representation_bits`, `enumeration_discovery_work`, and
+`exhaustive_replay_work`; the names state exactly what is charged and do not
+claim minima over representations or algorithms. A separate GF(2) structural
+baseline recognises the XOR gadgets and recovers the projected parity without
+building the truth table. Reordered-gadget, redundant-gadget, and bijective
+variable-renaming controls pass the baseline, while a nonlinear projection is
+classified `NOT_AFFINE`.
+
+This resolves the methodological ambiguity but confirms the audit's main
+conclusion: the exponential count belongs to the declared exhaustive
+synthesizer, not to representation discovery in general. A hardness result
+would require a reduction covering a broader algorithm class and a transfer
+argument ruling out methods that bypass the chosen representation.
 
 ## Current scope statement
 

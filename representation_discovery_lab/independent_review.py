@@ -81,14 +81,15 @@ def main() -> None:
     assert payload["model"]["operation_formulas"] == {
         "local_count": "m - 1",
         "clause_count": "4m - 3",
-        "representation_bits": "9 + m*ceil(log2(m))",
-        "verification_work": "(4m - 3)*2^(2m - 1)",
+        "encoded_representation_bits": "9 + m*ceil(log2(m))",
+        "exhaustive_replay_work": "(4m - 3)*2^(2m - 1)",
         "candidate_search_work": "(2^(m + 1) - 1)*2^m",
-        "discovery_work": "(4m - 3)*2^(2m - 1) + (2^(m + 1) - 1)*2^m",
+        "enumeration_discovery_work": "(4m - 3)*2^(2m - 1) + (2^(m + 1) - 1)*2^m",
     }
     assert payload["source_sha256"] == {
         "engine.py": sha256(HERE / "engine.py"),
         "run_experiment.py": sha256(HERE / "run_experiment.py"),
+        "gaussian_baseline.py": sha256(HERE / "gaussian_baseline.py"),
     }
     rows = payload["records"]
     assert len(rows) == 10
@@ -103,11 +104,27 @@ def main() -> None:
         assert len(clauses) == row["clause_count"]
         assert len(local) == row["local_count"] == count - 1
         bit_width = max(1, (count - 1).bit_length())
-        assert row["representation_bits"] == 8 + count * bit_width + 1
+        assert row["encoded_representation_bits"] == 8 + count * bit_width + 1
         projection_work = (1 << (count + len(local))) * len(clauses)
         candidate_work = (1 << count) * (2 * ((1 << count) - 1) + 1)
-        assert row["verification_work"] == projection_work
-        assert row["discovery_work"] == projection_work + candidate_work
+        assert row["exhaustive_replay_work"] == projection_work
+        assert row["enumeration_discovery_work"] == projection_work + candidate_work
+        baseline = row["linear_algebra_baseline"]
+        assert baseline["status"] == "EXACT_AFFINE"
+        assert baseline["support"] == list(range(count))
+        assert baseline["rhs"] == 0
+        assert baseline["gadget_count"] == count - 1
+        assert baseline["work"] < row["enumeration_discovery_work"]
+    assert set(payload["controls"]) == {
+        "reordered_gadgets", "duplicated_gadget", "renamed_all_variables"
+    }
+    for control in payload["controls"].values():
+        assert control["status"] == "EXACT_AFFINE"
+        assert control["support"] == list(range(5))
+        assert control["rhs"] == 0
+    nonlinear = payload["nonlinear_control"]
+    assert nonlinear["status"] == "NOT_AFFINE"
+    assert nonlinear["projected_bits"] == [0, 1, 0, 1, 0, 1, 1, 1]
     print(json.dumps({"independent_checks_passed": True, "records": len(rows)}))
 
 
