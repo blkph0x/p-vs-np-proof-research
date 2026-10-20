@@ -72,6 +72,29 @@ extension and the proposed level-nine inequality, which excludes the displayed
 witness without determining the level-nine optimum. This is a review of the
 written proof, not a proof-assistant certificate. Novelty remains `UNKNOWN`.
 
+**Locality-nine follow-up.** The
+[new discovery](RM2_NINE_SCOPE_DISCOVERY.md) adds an actual table on nine
+coordinates and all 362 selected-flat moment equations. The independent
+checker reconstructs its 284 variables and 416 rows, including all 98
+cross-boundary closures, and accepts the fresh candidate at reduced seven /
+total eight. Tests also derive a compact seven-term dual identity from
+original atom incidences and reject changed models even after their hashes
+are rebound. Neither test uses the producer to reconstruct the model.
+
+This finite selected model supplies a lower bound for full locality nine.
+A genuine pinned weight-eight codeword supplies the matching RM(2,5) upper
+bound. The [family theorem](REED_MULLER_QUADRATIC_LEVEL9_THEOREM.md) separately
+proves the all-dimension value using common rank moments, nonnegative Möbius
+tables and exact projection support. Its proof depends explicitly on the
+earlier eight-point lemma. The first single-cut mixture is retained as a
+nonextendable control, rather than promoted to a full-L9 witness.
+
+Independent mathematical review checked the lower incidence counts and the
+high-rank upper argument. That review corrected the six-point Fano count:
+three zero-sum quadruples, and coefficient five in the empty-mass formula.
+The correction is covered by a dedicated exact regression test. These
+reviews and finite controls are not mechanized proofs or novelty assessments.
+
 The chain is intentionally not described as proof-assistant independence.
 Two programs can share a mistaken definition, and a written quotient theorem
 can still contain an error. The claim made here is narrower: the saved finite

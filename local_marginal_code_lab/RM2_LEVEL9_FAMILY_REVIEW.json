@@ -1,0 +1,126 @@
+{
+  "all_nine_point_types_enumerated": false,
+  "counts": {
+    "actual_five_space_controls": 68,
+    "empty_identities": 106,
+    "high_rank_nine_scopes": 100,
+    "moments_checked": 59221,
+    "positive_atoms": 11960,
+    "proper_marginal_tables": 3193,
+    "scope_cases": 168
+  },
+  "coverage": "eight named scopes,96 seeded rank6..8 scopes,64 five-bit scopes",
+  "denominator": 155,
+  "named_controls": {
+    "eight_cap_plus_external": {
+      "atoms": 512,
+      "closed_rank3_flats_by_size": {
+        "3": 28,
+        "4": 14
+      },
+      "empty_numerator": 22,
+      "empty_numerator_formula": 22,
+      "moments_checked": 512,
+      "positive_atoms": 72,
+      "quadratic_support_size": 256,
+      "rank": 5,
+      "zero_sum_quadruples": 14
+    },
+    "empty": {
+      "atoms": 1,
+      "empty_numerator": 155,
+      "moments_checked": 1,
+      "positive_atoms": 1,
+      "quadratic_support_size": 1,
+      "rank": 0
+    },
+    "five_fano_plus_four_independent": {
+      "atoms": 512,
+      "closed_rank3_flats_by_size": {
+        "3": 50,
+        "4": 8,
+        "5": 1
+      },
+      "empty_numerator": 8,
+      "empty_numerator_formula": 8,
+      "moments_checked": 512,
+      "positive_atoms": 95,
+      "quadratic_support_size": 512,
+      "rank": 7,
+      "zero_sum_quadruples": 1
+    },
+    "full_fano": {
+      "atoms": 128,
+      "empty_numerator": 0,
+      "moments_checked": 128,
+      "positive_atoms": 15,
+      "quadratic_support_size": 64,
+      "rank": 3
+    },
+    "nine_independent": {
+      "atoms": 512,
+      "closed_rank3_flats_by_size": {
+        "3": 84
+      },
+      "empty_numerator": 8,
+      "empty_numerator_formula": 8,
+      "moments_checked": 512,
+      "positive_atoms": 94,
+      "quadratic_support_size": 512,
+      "rank": 9,
+      "zero_sum_quadruples": 0
+    },
+    "seven_fano_plus_two_independent": {
+      "atoms": 512,
+      "closed_rank3_flats_by_size": {
+        "3": 7,
+        "4": 14,
+        "7": 1
+      },
+      "empty_numerator": 0,
+      "empty_numerator_formula": 0,
+      "moments_checked": 512,
+      "positive_atoms": 50,
+      "quadratic_support_size": 256,
+      "rank": 5,
+      "zero_sum_quadruples": 7
+    },
+    "six_fano_plus_three_independent": {
+      "atoms": 512,
+      "closed_rank3_flats_by_size": {
+        "3": 28,
+        "4": 12,
+        "6": 1
+      },
+      "empty_numerator": 6,
+      "empty_numerator_formula": 6,
+      "moments_checked": 512,
+      "positive_atoms": 76,
+      "quadratic_support_size": 512,
+      "rank": 6,
+      "zero_sum_quadruples": 3
+    },
+    "two_independent_lines_plus_three": {
+      "atoms": 512,
+      "closed_rank3_flats_by_size": {
+        "3": 46,
+        "4": 12
+      },
+      "empty_numerator": 8,
+      "empty_numerator_formula": 8,
+      "moments_checked": 512,
+      "positive_atoms": 97,
+      "quadratic_support_size": 512,
+      "rank": 7,
+      "zero_sum_quadruples": 0
+    }
+  },
+  "seed": 202610209,
+  "source_sha256_lf": {
+    "REED_MULLER_QUADRATIC_LEVEL9_THEOREM.md": "f14bebb4f1b61d26607108fae50ed2be101bfb9b0b484b0ad598457ccb9e5fee",
+    "review_rm2_level9_family.py": "c0a17db2afc3ecda608b12c9ee4ae4392deaa3310b191c87a13c03867b390c06",
+    "test_rm2_level9_family.py": "f40ea6d4e819cfdb130ddfcdb35bcd261878e99dedc1c8e7b6ee291126a2e7d5"
+  },
+  "status": "PASS",
+  "wall_seconds": 2.079117
+}

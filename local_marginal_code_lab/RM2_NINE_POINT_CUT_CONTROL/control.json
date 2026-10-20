@@ -1,0 +1,17 @@
+{
+  "artifact_sha256": {
+    "candidate.json": "a861929c36f32aaaaf4b592d497f80a771602be747a923e26f17dbd4205ad5da",
+    "dual.sol": "f4c89791589251ead2bbb2e8daafee4f77199c336bc9fe6b4714f5e748dfb5bc",
+    "model.json": "13e8dd241c68265822a8baf5d00bf9b7726933d08103ece006c1e2777d08e8b3",
+    "model.lp": "32d70c0c4a4af5a169c49fe7dec40d330903da19c0b6ed00b03567744e066b37",
+    "primal.sol": "c8409b9a89de92607d706224d5b3a0e0995fdf692f05639b95056d2e10aa228e",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.txt": "9de2683823b09d6d3a25a6b2d7aa2a41d97f06526f8921bc5e902bca273ec253"
+  },
+  "full_L9_feasibility": "REJECTED_FOR_THIS_PRIMAL: tight cubic moment restricts weight to 0,2,3 but a four-point moment is 1/736",
+  "provenance": "Preserved preliminary SoPlex 8.1.0 probe; original logs and vectors retained. Separate timing and source snapshots were not recorded for this probe. Model is independently reconstructible by review_rm2_nine_scope.py --cut.",
+  "reduced_objective": "1147/184",
+  "scope": "Affine-overlap LP plus p-8q+28r>=0",
+  "status": "INTERMEDIATE_SELECTED_MODEL_ONLY",
+  "total_objective": "1331/184"
+}

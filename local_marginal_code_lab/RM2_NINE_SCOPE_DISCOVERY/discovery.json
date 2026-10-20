@@ -1,0 +1,103 @@
+{
+  "artifact_encoding": "UTF-8; LF newlines before SHA256",
+  "artifact_sha256": {
+    "candidate.json": "6064d194027200e767d02183ed6e97ca470eb0de6348fa41e88405854ebf9c20",
+    "construct.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "construct.stdout.txt": "df4a5c0f0dddeda1609243a7721fdc6651321451542842b6ecf3f668f1cb1301",
+    "dual.sol": "e76db22d33fe75c7210787b936cce67a54e03534eeca09bac843332ae7fad5a1",
+    "model-details.json": "cfd010cc25853c649f491f428cbafa81e65a9c5fd0e037f63580378b3204f35f",
+    "model.json": "371cf576bb78769697af4babd2e8bebd88d76660b2ad243f41526c2a2eb655f3",
+    "model.lp": "118cd71afb49294621a857ba5469d0a07c39c797e1ae32f7588035fa0b7c391a",
+    "primal.sol": "cc8d710f68e86853758cc8fa37fea0ab7b9af8b544429b5ec31b56fc00a3772f",
+    "replay.json": "e394b7b60663665d7e4430191d75881c5359a572669bef8276ebdd78c39e9c2e",
+    "search.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "search.stdout.txt": "33c8afcd02607550a8af391eb31a9db8f32b2f66eb8224e0d77306cac45fc3ed",
+    "solver-version.txt": "e460efaa793d96e85d1e146a9b02f80534c6d0371523c2d85047fcb0dc1043a1",
+    "verify.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "verify.stdout.txt": "4766a54e8731479cca175ccb9d2b07e10fba6fbd3cfb3bd39bc0434fa1a6c8a5"
+  },
+  "environment": {
+    "logical_cpus": 24,
+    "machine": "AMD64",
+    "platform": "Windows-10-10.0.22631-SP0",
+    "python": "3.10.10 | packaged by conda-forge | (main, Mar 24 2023, 20:00:38) [MSC v.1934 64 bit (AMD64)]"
+  },
+  "model": "rm25_affine_plus_nine_scope",
+  "reason": "fresh discovery passed independent source reconstruction and exact primal/dual checks",
+  "reduced_objective": "7",
+  "schema": "rm2-nine-scope-discovery-v1",
+  "search_inputs": "source-built LP only; no saved solution, basis, or expected optimum",
+  "solver": {
+    "arguments": [
+      "--readmode=1",
+      "--solvemode=2",
+      "--int:syncmode=1",
+      "--real:feastol=0",
+      "--real:opttol=0",
+      "--int:checkmode=2",
+      "-X=primal.sol",
+      "-Y=dual.sol",
+      "-q",
+      "-c",
+      "-t600",
+      "model.lp"
+    ],
+    "executable_sha256": "8a18cfe1f6c5b844d79afea179aacb755b1ee1e63a3bb0b07dd661ad22eaaf26",
+    "required_version": "8.1.0",
+    "version": "8.1.0"
+  },
+  "source_after_sha256_lf": {
+    "REED_MULLER_LEVEL_D_AFFINE_OVERLAP_INDEPENDENT_REVIEW.py": "76efdc7778a493f8cd1bb4ae1cd8b87fbafa3a62855342b0165d18107f99a6cb",
+    "exact_lp_model.py": "83cb365b022b62d86396e60d29a39f612abb39c4b880c55e7a8a8cccd07ab933",
+    "exact_lp_soplex.py": "eb4daca1fd4347b3cf5acaad0fa596bbdb353aafd82d0734acc884908b98cc9f",
+    "exact_lp_verify.py": "e04b0ebaecbb6cd232cd623c8d5bbeeb596d2a779fb3529c294dbcb6db04c5f5",
+    "reed_muller_affine_overlap.py": "936827495ee549d48e5c6e7a5e2f7d902ebc40c4d464054c65b407ecc47cb763",
+    "review_rm2_nine_scope.py": "6b011e9d05c4316c0d322dca5e1d101cc549db2e8445c33f1e2589fafc9bb578",
+    "rm2_nine_scope.py": "932b37460913c8e0df93753424ebeaa2c7e8033643068962489049ea0803ed2e",
+    "run_exact_lp_discovery.py": "901ab90a51e60532968d7ab3ee842296b0baba6776825165c9e42a7fb08ea636",
+    "run_rm2_nine_scope.py": "c1dbe33f368267c28ed834b7fcaf97c83e36fa5c804e69bb29d8d8dd41b7a3df"
+  },
+  "source_sha256_lf": {
+    "REED_MULLER_LEVEL_D_AFFINE_OVERLAP_INDEPENDENT_REVIEW.py": "76efdc7778a493f8cd1bb4ae1cd8b87fbafa3a62855342b0165d18107f99a6cb",
+    "exact_lp_model.py": "83cb365b022b62d86396e60d29a39f612abb39c4b880c55e7a8a8cccd07ab933",
+    "exact_lp_soplex.py": "eb4daca1fd4347b3cf5acaad0fa596bbdb353aafd82d0734acc884908b98cc9f",
+    "exact_lp_verify.py": "e04b0ebaecbb6cd232cd623c8d5bbeeb596d2a779fb3529c294dbcb6db04c5f5",
+    "reed_muller_affine_overlap.py": "936827495ee549d48e5c6e7a5e2f7d902ebc40c4d464054c65b407ecc47cb763",
+    "review_rm2_nine_scope.py": "6b011e9d05c4316c0d322dca5e1d101cc549db2e8445c33f1e2589fafc9bb578",
+    "rm2_nine_scope.py": "932b37460913c8e0df93753424ebeaa2c7e8033643068962489049ea0803ed2e",
+    "run_exact_lp_discovery.py": "901ab90a51e60532968d7ab3ee842296b0baba6776825165c9e42a7fb08ea636",
+    "run_rm2_nine_scope.py": "c1dbe33f368267c28ed834b7fcaf97c83e36fa5c804e69bb29d8d8dd41b7a3df"
+  },
+  "sources_unchanged": true,
+  "stages": [
+    {
+      "label": "construct",
+      "max_sampled_rss_bytes": 109998080,
+      "memory_method": "20ms current-RSS samples; lower bound on true process peak; excludes parent",
+      "returncode": 0,
+      "rss_samples": 1440,
+      "timed_out": false,
+      "wall_seconds": 44.732151
+    },
+    {
+      "label": "search",
+      "max_sampled_rss_bytes": 18202624,
+      "memory_method": "20ms current-RSS samples; lower bound on true process peak; excludes parent",
+      "returncode": 0,
+      "rss_samples": 6,
+      "timed_out": false,
+      "wall_seconds": 0.231767
+    },
+    {
+      "label": "verify",
+      "max_sampled_rss_bytes": 114417664,
+      "memory_method": "20ms current-RSS samples; lower bound on true process peak; excludes parent",
+      "returncode": 0,
+      "rss_samples": 1478,
+      "timed_out": false,
+      "wall_seconds": 45.930733
+    }
+  ],
+  "status": "EXACT_OPTIMUM",
+  "total_objective": "8"
+}

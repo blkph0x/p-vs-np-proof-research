@@ -1,0 +1,1 @@
+{"variables": 284, "rows": 416, "nonzeros": 10089}

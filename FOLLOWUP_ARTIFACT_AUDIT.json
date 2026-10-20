@@ -328,7 +328,7 @@
     "local_marginal_code_lab/run_experiments.py": "473e7cca9abaa9d506377ea6e1e196963719ff022af40453336936b7d384dffd",
     "local_marginal_code_lab/test_local_marginal.py": "cbd64e35fc3c932f7a8659ac44f8272794c157c0fd9bebefdbf3430d08887078",
     "local_marginal_code_lab/THEOREM.md": "0d601944f997ab56ff7ffef70de8c9e79b70128dd1eb2b301fa208524d1d1771",
-    "local_marginal_code_lab/README.md": "f6df8c574219c503c5e9af65788c96d24d5bea77dc18e80f5badf6a36ad3961e",
+    "local_marginal_code_lab/README.md": "9faa4f99d06b3e4a7f98a103cdb9ff61c3525d245091473ada98f32633fe4058",
     "rank_native_solver.py": "c612a7a5ce0a504caf7d4a117db56e90c2e9312be71309f61ff509b9d044863c",
     "native_coset_solver.py": "979e22b8430d10cc453b0819d82a656b05621b8d2971c3b919d2fbc4ab97fe6e",
     "matching_certificate.py": "46180db74c0837d4d495f3579de2d57f29f7c059043bd3e56e55f209736fa5f7"

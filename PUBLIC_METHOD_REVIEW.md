@@ -29,7 +29,7 @@ python build_public_method_inventory.py --check
 | Priority | Change | Why it is preferable | Acceptance evidence |
 | --- | --- | --- | --- |
 | P0 | Harden proof acceptance; benchmark an external proof-producing SAT backend | Older acceptance assertions could disappear under Python optimisation; mature engines have substantially more search machinery | Reject forged proofs under normal Python and `-O`; validate original SAT models and complete UNSAT proofs |
-| P1 | Canonical rational LP export and SoPlex discovery adapter | Implemented for fresh affine-overlap discovery; larger models remain | Independently replay the same original model and exact optimal objectives |
+| P1 | Canonical rational LP export and SoPlex discovery adapter | Implemented for affine-overlap and nine-scope discovery; full level-eight/cut regeneration remains | Independently replay the same original model and exact optimal objectives |
 | P1 | D4/CPOG certified compilation baseline | Public certification already covers CNF equivalence and projected compilation | Check original CNF/projection semantics, counts, construction and proof costs |
 | P1 | CMR pure-graphic recognition and LEMON dual exporter | Complete recognition for a declared class; documented matching dual API | Check row-space/target transformations and every dual inequality |
 | P1 | Exact local FWHT precomputation; better contraction/join planning | Removes repeated local arithmetic; targets intermediate-state growth | Equality to direct controls, honest operation counts, paired measurements |
@@ -244,7 +244,17 @@ The original historical search is still unrecorded. Default-tolerance rational
 output produced a genuinely rejected candidate; that negative control is
 retained. The final search uses zero tolerances. Construction, search and
 verification have separate process measurements, with sampled memory clearly
-distinguished from a guaranteed peak. Full-model/cut discovery remains open.
+distinguished from a guaranteed peak.
+
+The [nine-scope follow-up](local_marginal_code_lab/RM2_NINE_SCOPE_DISCOVERY.md)
+uses the same exact-backend pattern on a new 284-variable, 416-row model.
+It discovers reduced optimum seven without a supplied target. Independent
+reconstruction checks the projection support and all 362 added moment rows,
+including 98 whose affine closure crosses the scope boundary. The full
+RM(2,5) locality-nine conclusion uses a separate genuine-codeword upper bound;
+the all-dimension statement has its own mathematical proof. This is a concrete
+use of the adopted public method, not a speed comparison with another solver.
+Regeneration of the original full-level-eight and seven-cut searches remains open.
 
 ## Integer cuts versus genuine moment/SOS constraints
 
@@ -305,7 +315,9 @@ Completed changes are the optimisation-independent CDCL verifier, source
 inventory and provenance repair, non-cancelling active CI replay, integration
 of the previously prepared certified affine-hull experiment, and the bounded
 local-Fourier improvement with its own evidence. The follow-up also installs
-and validates SoPlex as the first optional external discovery backend.
+and validates SoPlex as the first optional external discovery backend. Its
+nine-coordinate follow-up has now produced a source-bound exact certificate
+and a separately reviewed mathematical extension.
 
 Next extend **exact LP discovery** to the larger certificates and build
 a **certified SAT/compilation benchmark**. These address remaining

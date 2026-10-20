@@ -4,7 +4,7 @@
   "review_date": "2026-10-20",
   "scope": "All repository Python files mapped by capability; selected code paths inspected. Callable listing is not an individual semantic audit.",
   "hash_convention": "UTF-8 without BOM; universal newlines normalized to LF",
-  "python_files": 574,
+  "python_files": 580,
   "research_directories": [
     "affine_boundary_lab",
     "affine_boundary_reference",
@@ -72,7 +72,7 @@
     "weighted_affine_dag_lab",
     "weighted_boundary_lab"
   ],
-  "callable_definitions": 4923,
+  "callable_definitions": 4999,
   "non_python_components": [
     ".github/workflows/research-checks.yml",
     ".github/workflows/pages.yml",
@@ -12975,6 +12975,192 @@
       "assert_statement_count": 0
     },
     {
+      "path": "local_marginal_code_lab/review_rm2_level9_family.py",
+      "comparison_area": "code-relaxations",
+      "normalized_source_sha256": "c0a17db2afc3ecda608b12c9ee4ae4392deaa3310b191c87a13c03867b390c06",
+      "callables": [
+        {
+          "name": "checked_scope",
+          "line": 25,
+          "kind": "function"
+        },
+        {
+          "name": "binary_rank",
+          "line": 35,
+          "kind": "function"
+        },
+        {
+          "name": "moment_numerators",
+          "line": 47,
+          "kind": "function"
+        },
+        {
+          "name": "mobius_table",
+          "line": 56,
+          "kind": "function"
+        },
+        {
+          "name": "_span_coordinates",
+          "line": 67,
+          "kind": "function"
+        },
+        {
+          "name": "quadratic_projection_support",
+          "line": 90,
+          "kind": "function"
+        },
+        {
+          "name": "verify_table",
+          "line": 113,
+          "kind": "function"
+        },
+        {
+          "name": "project_table",
+          "line": 138,
+          "kind": "function"
+        },
+        {
+          "name": "verify_all_marginals",
+          "line": 153,
+          "kind": "function"
+        },
+        {
+          "name": "empty_atom_counts",
+          "line": 165,
+          "kind": "function"
+        },
+        {
+          "name": "three_subspaces_five",
+          "line": 189,
+          "kind": "function"
+        },
+        {
+          "name": "actual_five_space_table",
+          "line": 199,
+          "kind": "function"
+        },
+        {
+          "name": "named_scopes",
+          "line": 211,
+          "kind": "function"
+        },
+        {
+          "name": "run_review",
+          "line": 224,
+          "kind": "function"
+        },
+        {
+          "name": "main",
+          "line": 272,
+          "kind": "function"
+        }
+      ],
+      "assert_statement_count": 0
+    },
+    {
+      "path": "local_marginal_code_lab/review_rm2_nine_scope.py",
+      "comparison_area": "code-relaxations",
+      "normalized_source_sha256": "6b011e9d05c4316c0d322dca5e1d101cc549db2e8445c33f1e2589fafc9bb578",
+      "callables": [
+        {
+          "name": "_require",
+          "line": 28,
+          "kind": "function"
+        },
+        {
+          "name": "_json",
+          "line": 33,
+          "kind": "function"
+        },
+        {
+          "name": "_points",
+          "line": 37,
+          "kind": "function"
+        },
+        {
+          "name": "affine_closure",
+          "line": 46,
+          "kind": "function"
+        },
+        {
+          "name": "_pinned_atoms",
+          "line": 60,
+          "kind": "function"
+        },
+        {
+          "name": "pinned_projection_atoms",
+          "line": 84,
+          "kind": "function"
+        },
+        {
+          "name": "_base",
+          "line": 90,
+          "kind": "function"
+        },
+        {
+          "name": "_model",
+          "line": 109,
+          "kind": "function"
+        },
+        {
+          "name": "_moment",
+          "line": 122,
+          "kind": "function"
+        },
+        {
+          "name": "base_moment",
+          "line": 135,
+          "kind": "function"
+        },
+        {
+          "name": "_nine_json",
+          "line": 143,
+          "kind": "function"
+        },
+        {
+          "name": "rebuild_details",
+          "line": 177,
+          "kind": "function"
+        },
+        {
+          "name": "rebuild_model",
+          "line": 182,
+          "kind": "function"
+        },
+        {
+          "name": "_cut_json",
+          "line": 187,
+          "kind": "function"
+        },
+        {
+          "name": "rebuild_nine_point_cut_model",
+          "line": 202,
+          "kind": "function"
+        },
+        {
+          "name": "_replay",
+          "line": 206,
+          "kind": "function"
+        },
+        {
+          "name": "replay_nine_scope",
+          "line": 222,
+          "kind": "function"
+        },
+        {
+          "name": "replay_nine_point_cut",
+          "line": 227,
+          "kind": "function"
+        },
+        {
+          "name": "main",
+          "line": 235,
+          "kind": "function"
+        }
+      ],
+      "assert_statement_count": 0
+    },
+    {
       "path": "local_marginal_code_lab/review_sparse_parity_clause_comparison.py",
       "comparison_area": "code-relaxations",
       "normalized_source_sha256": "02a29e0f3f59326ec2b79915ba40ccc373f505377a71cdd074f5c89f423aa0ef",
@@ -13001,6 +13187,49 @@
         }
       ],
       "assert_statement_count": 6
+    },
+    {
+      "path": "local_marginal_code_lab/rm2_nine_scope.py",
+      "comparison_area": "code-relaxations",
+      "normalized_source_sha256": "932b37460913c8e0df93753424ebeaa2c7e8033643068962489049ea0803ed2e",
+      "callables": [
+        {
+          "name": "_exporter",
+          "line": 28,
+          "kind": "function"
+        },
+        {
+          "name": "_points",
+          "line": 49,
+          "kind": "function"
+        },
+        {
+          "name": "affine_closure",
+          "line": 59,
+          "kind": "function"
+        },
+        {
+          "name": "projected_atoms",
+          "line": 72,
+          "kind": "function"
+        },
+        {
+          "name": "moment_form",
+          "line": 96,
+          "kind": "function"
+        },
+        {
+          "name": "build_details",
+          "line": 121,
+          "kind": "function"
+        },
+        {
+          "name": "build_model",
+          "line": 183,
+          "kind": "function"
+        }
+      ],
+      "assert_statement_count": 0
     },
     {
       "path": "local_marginal_code_lab/run_all_dual_local_reed_muller.py",
@@ -13528,6 +13757,49 @@
         {
           "name": "main",
           "line": 154,
+          "kind": "function"
+        }
+      ],
+      "assert_statement_count": 0
+    },
+    {
+      "path": "local_marginal_code_lab/run_rm2_nine_scope.py",
+      "comparison_area": "code-relaxations",
+      "normalized_source_sha256": "c1dbe33f368267c28ed834b7fcaf97c83e36fa5c804e69bb29d8d8dd41b7a3df",
+      "callables": [
+        {
+          "name": "source_hashes",
+          "line": 29,
+          "kind": "function"
+        },
+        {
+          "name": "replay",
+          "line": 34,
+          "kind": "function"
+        },
+        {
+          "name": "worker",
+          "line": 41,
+          "kind": "function"
+        },
+        {
+          "name": "discover",
+          "line": 59,
+          "kind": "function"
+        },
+        {
+          "name": "discover.finish",
+          "line": 75,
+          "kind": "function"
+        },
+        {
+          "name": "discover.stage",
+          "line": 95,
+          "kind": "function"
+        },
+        {
+          "name": "main",
+          "line": 143,
           "kind": "function"
         }
       ],
@@ -14949,6 +15221,162 @@
         {
           "name": "LevelEightFamilyTests.test_provenance_normalizes_line_endings_but_not_content",
           "line": 145,
+          "kind": "function"
+        }
+      ],
+      "assert_statement_count": 0
+    },
+    {
+      "path": "local_marginal_code_lab/test_rm2_level9_family.py",
+      "comparison_area": "code-relaxations",
+      "normalized_source_sha256": "f40ea6d4e819cfdb130ddfcdb35bcd261878e99dedc1c8e7b6ee291126a2e7d5",
+      "callables": [
+        {
+          "name": "LevelNineFamilyTests",
+          "line": 14,
+          "kind": "class"
+        },
+        {
+          "name": "LevelNineFamilyTests.test_actual_155_subspace_distribution_on_five_bit_scopes",
+          "line": 15,
+          "kind": "function"
+        },
+        {
+          "name": "LevelNineFamilyTests.test_six_fano_regression_corrects_empty_coefficient",
+          "line": 26,
+          "kind": "function"
+        },
+        {
+          "name": "LevelNineFamilyTests.test_seven_fano_and_independent_extremes",
+          "line": 39,
+          "kind": "function"
+        },
+        {
+          "name": "LevelNineFamilyTests.test_every_proper_marginal_of_curated_scopes",
+          "line": 50,
+          "kind": "function"
+        },
+        {
+          "name": "LevelNineFamilyTests.test_coordinate_order_and_wide_linear_embedding",
+          "line": 57,
+          "kind": "function"
+        },
+        {
+          "name": "LevelNineFamilyTests.test_nonclosed_atoms_and_rank_two_quotient_formula",
+          "line": 72,
+          "kind": "function"
+        },
+        {
+          "name": "LevelNineFamilyTests.test_reject_mutations_and_malformed_inputs",
+          "line": 81,
+          "kind": "function"
+        },
+        {
+          "name": "LevelNineFamilyTests.test_reproducible_bounded_review",
+          "line": 100,
+          "kind": "function"
+        }
+      ],
+      "assert_statement_count": 0
+    },
+    {
+      "path": "local_marginal_code_lab/test_rm2_nine_scope.py",
+      "comparison_area": "code-relaxations",
+      "normalized_source_sha256": "da2ea42f92eb32b705a8f6c7fee30a9c20f57682c3a11b8675ab81b0da44638d",
+      "callables": [
+        {
+          "name": "saved",
+          "line": 17,
+          "kind": "function"
+        },
+        {
+          "name": "activity",
+          "line": 23,
+          "kind": "function"
+        },
+        {
+          "name": "all_linear_three_flats",
+          "line": 28,
+          "kind": "function"
+        },
+        {
+          "name": "NineScopeTests",
+          "line": 38,
+          "kind": "class"
+        },
+        {
+          "name": "NineScopeTests.setUpClass",
+          "line": 40,
+          "kind": "function"
+        },
+        {
+          "name": "NineScopeTests.assert_primal",
+          "line": 45,
+          "kind": "function"
+        },
+        {
+          "name": "NineScopeTests.test_exact_support_via_distinct_parity_characterization",
+          "line": 51,
+          "kind": "function"
+        },
+        {
+          "name": "NineScopeTests.test_complete_moment_coverage_including_closures_outside_scope",
+          "line": 62,
+          "kind": "function"
+        },
+        {
+          "name": "NineScopeTests.test_two_global_distributions_satisfy_every_row",
+          "line": 80,
+          "kind": "function"
+        },
+        {
+          "name": "NineScopeTests.test_actual_global_plane_distribution_has_reduced_weight_seven",
+          "line": 96,
+          "kind": "function"
+        },
+        {
+          "name": "NineScopeTests.test_nine_point_inequality_follows_from_all_moment_rows",
+          "line": 116,
+          "kind": "function"
+        },
+        {
+          "name": "NineScopeTests.test_compact_dual_identity_from_original_atom_incidence",
+          "line": 132,
+          "kind": "function"
+        },
+        {
+          "name": "NineScopeTests.test_compact_dual_identity_from_original_atom_incidence.transpose_product",
+          "line": 177,
+          "kind": "function"
+        },
+        {
+          "name": "NineScopeTests.test_intermediate_cut_is_geometry_bound_with_correct_dual_slack_sign",
+          "line": 199,
+          "kind": "function"
+        },
+        {
+          "name": "NineScopeTests.test_intermediate_mixture_cannot_extend_to_the_nine_scope",
+          "line": 211,
+          "kind": "function"
+        },
+        {
+          "name": "NineScopeTests.test_saved_full_extension_certificate_replays",
+          "line": 228,
+          "kind": "function"
+        },
+        {
+          "name": "NineScopeTests.test_false_vectors_and_claims_are_rejected",
+          "line": 237,
+          "kind": "function"
+        },
+        {
+          "name": "NineScopeTests.test_rebound_model_mutations_cannot_replace_original_source",
+          "line": 260,
+          "kind": "function"
+        },
+        {
+          "name": "NineScopeTests.test_reconstruction_is_fresh_and_input_types_are_strict",
+          "line": 301,
           "kind": "function"
         }
       ],
@@ -22907,7 +23335,7 @@
     {
       "path": "run_research_checks.py",
       "comparison_area": "engineering-evidence",
-      "normalized_source_sha256": "6e2f8d4bb09f909f98dbe9f5bd90e120056e08ffecfac69db8ac6e907b1c2ef7",
+      "normalized_source_sha256": "aa4188e272e82aedf85cbaa53d72a6c2947be8f2044b11d0cfd756a607f65203",
       "callables": [
         {
           "name": "main",
@@ -22916,12 +23344,12 @@
         },
         {
           "name": "main.hashes",
-          "line": 76,
+          "line": 78,
           "kind": "function"
         },
         {
           "name": "main.decoded",
-          "line": 94,
+          "line": 96,
           "kind": "function"
         }
       ],

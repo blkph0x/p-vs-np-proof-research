@@ -16,9 +16,14 @@ proposed; SoPlex is the first implemented external discovery backend.
 
 The [quadratic RM family theorem](local_marginal_code_lab/REED_MULLER_QUADRATIC_LEVEL8_THEOREM.md)
 now proves the exact fixed-level value `(2^m-1)/5` for every `m>=4`.
-Its novelty is unresolved. Next test the explicitly derived nine-point
-inequality against the selected-scope LP; it rejects the present moment
-witness but does not yet establish a higher full-level-nine optimum.
+Its novelty is unresolved. The [nine-scope extension](local_marginal_code_lab/RM2_NINE_SCOPE_DISCOVERY.md)
+now has an independently reconstructed exact reduced optimum of seven.
+An actual codeword closes full RM(2,5) locality nine, and the
+[family proof](local_marginal_code_lab/REED_MULLER_QUADRATIC_LEVEL9_THEOREM.md)
+gives `7(2^m-1)/31` for every `m>=5`. The weaker single-cut primal is retained
+with its nonextendability argument. Next compare the two fixed-level family
+formulas with the code/hierarchy literature and test a precise further-locality
+conjecture. Do not infer convergence or novelty from these two levels.
 
 Immediate verifier hardening, source-coverage checks and local Fourier
 precomputation are recorded separately from those future integrations. None

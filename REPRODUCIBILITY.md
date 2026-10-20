@@ -43,6 +43,9 @@ python -m unittest -v test_exact_lp_model test_exact_lp_verify test_exact_lp_sop
 python -O -m unittest -v test_exact_lp_verify test_exact_lp_soplex
 python -m unittest -v test_rm2_level8_family
 python review_rm2_level8_family.py
+python run_rm2_nine_scope.py --replay RM2_NINE_SCOPE_DISCOVERY
+python -m unittest -v test_rm2_nine_scope test_rm2_level9_family
+python -O -m unittest -v test_rm2_nine_scope test_rm2_level9_family
 Pop-Location
 ```
 
@@ -50,6 +53,10 @@ Pop-Location
 pin the solver release and document the observed rejected tolerance control.
 The [quadratic-family proof](local_marginal_code_lab/REED_MULLER_QUADRATIC_LEVEL8_THEOREM.md)
 explains why the finite scope enumeration supplements an all-size argument.
+The [nine-scope discovery record](local_marginal_code_lab/RM2_NINE_SCOPE_DISCOVERY.md)
+provides a separate fresh search, reconstruction, exact replay and stage costs.
+Its all-size interpretation depends on the written level-nine proof, not only
+on the finite certificate.
 
 The public-method review adds a source-coverage check and focused verifier
 controls. Run these from the repository root before regenerating evidence:

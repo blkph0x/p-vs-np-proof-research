@@ -94,6 +94,15 @@ supplement the proof and do not establish a general SAT or decoding algorithm.
 
 ## Reproduction
 
+The later [nine-scope discovery](RM2_NINE_SCOPE_DISCOVERY.md) separately
+records a 284-variable / 416-row / 10,089-nonzero model. Its fresh source
+construction, exact search and independent replay took 44.732151 s,
+0.231767 s and 45.930733 s respectively. Maximum sampled child RSS was
+109,998,080 / 18,202,624 / 114,417,664 bytes; these samples are lower bounds
+on true peaks. The model and candidate JSON sizes are 201,854 and 7,226 bytes.
+This new model is distinct from the full level-eight quotient measured above.
+It is not a rerun of the original seven-cut discovery.
+
 The matrix and objective are rebuilt by
 `REED_MULLER_LEVEL_D_AFFINE_OVERLAP_INDEPENDENT_REVIEW.py`; the exact cost
 identity is checked by `test_compact_dual_identity` in the companion test

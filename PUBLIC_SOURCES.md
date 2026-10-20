@@ -59,7 +59,7 @@ Indexed URLs: **136**.
 | <https://doi.org/10.1016/j.jcss.2024.103520> | `PUBLIC_METHOD_REVIEW.md` |
 | <https://doi.org/10.1109/18.641542> | `high_width_core_stress_lab/REPORT.md` |
 | <https://doi.org/10.1109/ASSIC70037.2026.11717448> | `CITATIONS.md` |
-| <https://doi.org/10.1109/ISIT.2018.8437637> | `CITATIONS.md`, `local_marginal_code_lab/REED_MULLER_QUADRATIC_LEVEL8_THEOREM.md` |
+| <https://doi.org/10.1109/ISIT.2018.8437637> | `CITATIONS.md`, `local_marginal_code_lab/REED_MULLER_QUADRATIC_LEVEL8_THEOREM.md`, `local_marginal_code_lab/REED_MULLER_QUADRATIC_LEVEL9_THEOREM.md` |
 | <https://doi.org/10.1109/TIT.1954.1057465> | `CITATIONS.md`, `PEER_AUDIT_RESPONSE_2026_10_19.md`, `PEER_AUDIT_RESPONSE_2026_10_20.md`, `local_marginal_code_lab/LOCAL_MARGINAL_NOVELTY_LEDGER.md`, `local_marginal_code_lab/REED_MULLER_ALL_DUAL_REPORT.md`, `local_marginal_code_lab/REED_MULLER_FORMAL_MODEL.md`, `local_marginal_code_lab/REED_MULLER_RESULTS.json`, `local_marginal_code_lab/REED_MULLER_THEOREM.md`, `local_marginal_code_lab/run_reed_muller.py` |
 | <https://doi.org/10.1109/assic70037.2026.11717448> | `VOHRA_CROSSREF_METADATA.json` |
 | <https://doi.org/10.1145/258533.258559> | `VARDY_MINIMUM_DISTANCE_SCOPE.md`, `labelled_join_certified/COVERAGE_AUDIT.md` |
@@ -87,8 +87,8 @@ Indexed URLs: **136**.
 | <https://github.com/meelgroup/approxmc> | `PUBLIC_METHOD_REVIEW.md` |
 | <https://github.com/meelgroup/frat-xor> | `PUBLIC_METHOD_REVIEW.md` |
 | <https://github.com/msoos/cryptominisat> | `PUBLIC_METHOD_REVIEW.md` |
-| <https://github.com/scipopt/scip/releases/tag/v10.1.0> | `CITATIONS.md`, `local_marginal_code_lab/EXACT_LP_DISCOVERY.md` |
-| <https://github.com/scipopt/soplex> | `local_marginal_code_lab/EXACT_LP_DISCOVERY.md` |
+| <https://github.com/scipopt/scip/releases/tag/v10.1.0> | `CITATIONS.md`, `local_marginal_code_lab/EXACT_LP_DISCOVERY.md`, `local_marginal_code_lab/RM2_NINE_SCOPE_DISCOVERY.md` |
+| <https://github.com/scipopt/soplex> | `local_marginal_code_lab/EXACT_LP_DISCOVERY.md`, `local_marginal_code_lab/RM2_NINE_SCOPE_DISCOVERY.md` |
 | <https://github.com/sharpbracket/qsopt-ex> | `PUBLIC_METHOD_REVIEW.md` |
 | <https://github.com/sosy-lab/benchexec/> | `PUBLIC_METHOD_REVIEW.md` |
 | <https://github.com/vardigroup/DPMC> | `PUBLIC_METHOD_REVIEW.md` |
@@ -114,11 +114,11 @@ Indexed URLs: **136**.
 | <https://pub.ista.ac.at/~vnk/software.html> | `PUBLIC_METHOD_REVIEW.md` |
 | <https://quantum-journal.org/papers/q-2022-04-20-692/> | `AFFINE_REPRESENTATION_LITERATURE_SCOPE.md` |
 | <https://quantum-journal.org/papers/q-2026-07-29-2179/> | `AFFINE_CANCELLATION_LITERATURE_SCOPE.md` |
-| <https://research.chalmers.se/publication/507229/file/507229_Fulltext.pdf> | `local_marginal_code_lab/REED_MULLER_QUADRATIC_LEVEL8_THEOREM.md` |
+| <https://research.chalmers.se/publication/507229/file/507229_Fulltext.pdf> | `local_marginal_code_lab/REED_MULLER_QUADRATIC_LEVEL8_THEOREM.md`, `local_marginal_code_lab/REED_MULLER_QUADRATIC_LEVEL9_THEOREM.md` |
 | <https://research.cs.wisc.edu/wpis/papers/vmcai04.BT.pdf> | `PUBLIC_METHOD_REVIEW.md`, `affine_projection_recognition_lab/AFFINE_HULL_METHOD.md` |
 | <https://satcompetition.github.io/> | `CITATIONS.md`, `PEER_AUDIT_RESPONSE_2026_10_19.md`, `PEER_AUDIT_RESPONSE_2026_10_20.md` |
 | <https://schoeneb.people.si.umich.edu/papers/LasserreNew.pdf> | `CITATIONS.md`, `PEER_AUDIT_RESPONSE_2026_10_19.md`, `PEER_AUDIT_RESPONSE_2026_10_20.md`, `local_marginal_code_lab/LOCAL_MARGINAL_NOVELTY_LEDGER.md` |
-| <https://soplex.zib.de/doc/html/EXACT.php> | `CITATIONS.md`, `PUBLIC_METHOD_REVIEW.md`, `local_marginal_code_lab/EXACT_LP_DISCOVERY.md` |
+| <https://soplex.zib.de/doc/html/EXACT.php> | `CITATIONS.md`, `PUBLIC_METHOD_REVIEW.md`, `local_marginal_code_lab/EXACT_LP_DISCOVERY.md`, `local_marginal_code_lab/RM2_NINE_SCOPE_DISCOVERY.md` |
 | <https://soplex.zib.de/index.php> | `PUBLIC_METHOD_REVIEW.md` |
 | <https://theory.stanford.edu/~trevisan/cs172-07/karp.pdf> | `multiobjective_matching_limits/THEOREM.md`, `packed_cost_exact_matching/THEOREM.md` |
 | <https://theoryofcomputing.org/articles/v010a007/> | `PUBLIC_METHOD_REVIEW.md` |

@@ -9,6 +9,10 @@ local_marginal_code_lab/EXACT_LP_DISCOVERY/** text eol=lf
 local_marginal_code_lab/EXACT_LP_TOLERANCE_CONTROL/** text eol=lf
 local_marginal_code_lab/EXACT_LP_DISCOVERY/*.stdout.txt whitespace=-blank-at-eol
 local_marginal_code_lab/EXACT_LP_TOLERANCE_CONTROL/*.stdout.txt whitespace=-blank-at-eol
+local_marginal_code_lab/RM2_NINE_SCOPE_DISCOVERY/** text eol=lf
+local_marginal_code_lab/RM2_NINE_POINT_CUT_CONTROL/** text eol=lf
+local_marginal_code_lab/RM2_NINE_SCOPE_DISCOVERY/*.stdout.txt whitespace=-blank-at-eol
+local_marginal_code_lab/RM2_NINE_POINT_CUT_CONTROL/stdout.txt whitespace=-blank-at-eol
 simultaneous_basis_lab/basis.py -text
 simultaneous_basis_lab/test_basis.py -text
 simultaneous_basis_lab/run_experiments.py -text

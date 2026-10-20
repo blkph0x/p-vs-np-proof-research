@@ -205,3 +205,13 @@ against the seven-cut witness. Thirty-nine are violated; the strongest
 lexicographically first candidate is `(t-6)(t-7)(t-30)(t-31)` with expectation
 `-657769331520/5129253893`. This scan only proves separation and deliberately
 does not claim the optimum after adding the candidate.
+
+## Latest fixed-level follow-up
+
+The [nine-scope exact discovery](RM2_NINE_SCOPE_DISCOVERY.md) independently
+reconstructs and checks a fresh reduced optimum of seven, total eight, for
+a 284-variable selected model. A genuine codeword proves the matching full
+RM(2,5) locality-nine upper bound. The
+[family proof](REED_MULLER_QUADRATIC_LEVEL9_THEOREM.md) gives reduced
+`7(2^m-1)/31` for every `m>=5`, with novelty unestablished. Earlier reports
+remain historical evidence at their declared locality levels.

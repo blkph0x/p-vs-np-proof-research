@@ -8,6 +8,12 @@
 
 ## Start here
 
+- The [nine-scope discovery](local_marginal_code_lab/RM2_NINE_SCOPE_DISCOVERY.md)
+  uses SoPlex to find, and a separate source reconstruction to verify, reduced
+  optimum `7` / total `8` for an explicit selected model. A genuine codeword
+  gives the matching upper bound for full RM(2,5) locality nine. The
+  [level-nine family proof](local_marginal_code_lab/REED_MULLER_QUADRATIC_LEVEL9_THEOREM.md)
+  separately establishes `7(2^m-1)/31` for every `m>=5`; novelty remains unknown.
 - The public-method review now has a working [SoPlex discovery adapter](local_marginal_code_lab/EXACT_LP_DISCOVERY.md):
   a fresh search independently reproduces reduced optimum `31/5`, preserves
   a rejected tolerance control, and separates construction/search/replay costs.

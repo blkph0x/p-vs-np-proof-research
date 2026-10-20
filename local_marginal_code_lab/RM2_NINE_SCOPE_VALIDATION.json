@@ -1,0 +1,57 @@
+{
+  "all_nine_point_types_enumerated": false,
+  "base_commit": "6e25fa660951b1226bce78ec45003d9a55112a34",
+  "dependency_sha256_lf": {
+    "REED_MULLER_QUADRATIC_LEVEL8_THEOREM.md": "13b915965a993926631763e0b648c991df4d72fd4093c8c59562b4e3e98792c1"
+  },
+  "family_bounded_counts": {
+    "actual_five_space_controls": 68,
+    "empty_identities": 106,
+    "high_rank_nine_scopes": 100,
+    "moments_checked": 59221,
+    "positive_atoms": 11960,
+    "proper_marginal_tables": 3193,
+    "scope_cases": 168
+  },
+  "fresh_discovery_status": "EXACT_OPTIMUM",
+  "normal_test_methods": 20,
+  "optimized_test_methods": 20,
+  "platform": "Windows-10-10.0.22631-SP0",
+  "python": "3.10.10 | packaged by conda-forge | (main, Mar 24 2023, 20:00:38) [MSC v.1934 64 bit (AMD64)]",
+  "reduced_optimum": "7",
+  "schema": "rm2-level-nine-validation-v1",
+  "scope": "Finite LP and bounded table checks passed; all-dimension theorem has a separate written proof and mathematical review, not proof-assistant certification. Novelty UNKNOWN. Whole-repository current-commit CI is separate.",
+  "source_sha256_lf": {
+    "REED_MULLER_QUADRATIC_LEVEL9_THEOREM.md": "f14bebb4f1b61d26607108fae50ed2be101bfb9b0b484b0ad598457ccb9e5fee",
+    "review_rm2_level9_family.py": "c0a17db2afc3ecda608b12c9ee4ae4392deaa3310b191c87a13c03867b390c06",
+    "review_rm2_nine_scope.py": "6b011e9d05c4316c0d322dca5e1d101cc549db2e8445c33f1e2589fafc9bb578",
+    "rm2_nine_scope.py": "932b37460913c8e0df93753424ebeaa2c7e8033643068962489049ea0803ed2e",
+    "run_rm2_nine_scope.py": "c1dbe33f368267c28ed834b7fcaf97c83e36fa5c804e69bb29d8d8dd41b7a3df",
+    "test_rm2_level9_family.py": "f40ea6d4e819cfdb130ddfcdb35bcd261878e99dedc1c8e7b6ee291126a2e7d5",
+    "test_rm2_nine_scope.py": "da2ea42f92eb32b705a8f6c7fee30a9c20f57682c3a11b8675ab81b0da44638d"
+  },
+  "status": "PASS",
+  "tests": {
+    "RM2_LEVEL9_FAMILY_TESTS.txt": {
+      "sha256_lf": "4e2d23aa14c101a798168712f6fdcc066cec0bb1208804bcb919b079736c4866",
+      "status": "PASS",
+      "test_methods": 8
+    },
+    "RM2_LEVEL9_FAMILY_TESTS_OPTIMIZED.txt": {
+      "sha256_lf": "92f693d95d4b4bd5034fdd9f80649c1484d557fe93bdf4ca9b940a69e01e01d3",
+      "status": "PASS",
+      "test_methods": 8
+    },
+    "RM2_NINE_SCOPE_TESTS.txt": {
+      "sha256_lf": "688e3ede3c89c72254c5cd19af3751fb1cda4a177ff5275044ef7abcb143456b",
+      "status": "PASS",
+      "test_methods": 12
+    },
+    "RM2_NINE_SCOPE_TESTS_OPTIMIZED.txt": {
+      "sha256_lf": "fc703d2099a62d387540d2e06b8a03585fb173cf15dbae5277accb1f4a35f12c",
+      "status": "PASS",
+      "test_methods": 12
+    }
+  },
+  "total_optimum": "8"
+}

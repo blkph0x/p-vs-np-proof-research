@@ -30,6 +30,14 @@ saved default-tolerance run is correctly rejected. A separate
 proves the level-eight reduced optimum `(2^m-1)/5` for `m>=4`, using explicit
 local tables and the finite dual identity. Its novelty remains unresolved.
 
+The next [source-built nine-coordinate model](local_marginal_code_lab/RM2_NINE_SCOPE_DISCOVERY.md)
+now has an independently verified reduced optimum **7**, total **8**. Together
+with a genuine weight-eight codeword, this closes the full RM(2,5) locality-nine
+gap. The [separate family proof](local_marginal_code_lab/REED_MULLER_QUADRATIC_LEVEL9_THEOREM.md)
+gives reduced `7(2^m-1)/31` for every `m>=5`; larger dimensions still have an
+integrality gap. The discovery costs, weaker failed extension and exact
+verification chain are retained. Novelty is unestablished.
+
 **P versus NP remains unresolved.** The repository contains exact algorithms for
 stated structural families, finite exhaustive controls, certificate verifiers,
 and scoped counterexamples. It does not claim a solver for every SAT instance

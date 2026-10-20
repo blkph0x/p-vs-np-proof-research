@@ -46,6 +46,8 @@ def main():
                ["-v", "test_exact_lp_model", "test_exact_lp_verify", "test_exact_lp_soplex"]),
               ("quadratic_rm_level8", ROOT / "local_marginal_code_lab",
                ["-v", "test_rm2_level8_family"]),
+              ("quadratic_rm_level9", ROOT / "local_marginal_code_lab",
+               ["-v", "test_rm2_nine_scope", "test_rm2_level9_family"]),
               ("local_marginal_full_level8", ROOT / "local_marginal_code_lab",
                ["-v", "test_reed_muller_level_d_full"]),
               ("local_marginal_sos_moment", ROOT / "local_marginal_code_lab",

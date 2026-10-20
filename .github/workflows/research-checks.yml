@@ -105,6 +105,12 @@ jobs:
         run: |
           python -m unittest -v test_rm2_level8_family
           python review_rm2_level8_family.py
+      - name: Reconstruct and replay the nine-scope discovery
+        working-directory: local_marginal_code_lab
+        run: |
+          python run_rm2_nine_scope.py --replay RM2_NINE_SCOPE_DISCOVERY
+          python -m unittest -v test_rm2_nine_scope test_rm2_level9_family
+          python -O -m unittest -v test_rm2_nine_scope test_rm2_level9_family
       - name: Replay prefix-threshold sequential-counter audit
         working-directory: proof_motif_candidate_lab
         run: |

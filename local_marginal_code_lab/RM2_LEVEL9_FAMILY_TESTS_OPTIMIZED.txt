@@ -1,0 +1,13 @@
+test_actual_155_subspace_distribution_on_five_bit_scopes (test_rm2_level9_family.LevelNineFamilyTests) ... ok
+test_coordinate_order_and_wide_linear_embedding (test_rm2_level9_family.LevelNineFamilyTests) ... ok
+test_every_proper_marginal_of_curated_scopes (test_rm2_level9_family.LevelNineFamilyTests) ... ok
+test_nonclosed_atoms_and_rank_two_quotient_formula (test_rm2_level9_family.LevelNineFamilyTests) ... ok
+test_reject_mutations_and_malformed_inputs (test_rm2_level9_family.LevelNineFamilyTests) ... ok
+test_reproducible_bounded_review (test_rm2_level9_family.LevelNineFamilyTests) ... ok
+test_seven_fano_and_independent_extremes (test_rm2_level9_family.LevelNineFamilyTests) ... ok
+test_six_fano_regression_corrects_empty_coefficient (test_rm2_level9_family.LevelNineFamilyTests) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 3.283s
+
+OK
