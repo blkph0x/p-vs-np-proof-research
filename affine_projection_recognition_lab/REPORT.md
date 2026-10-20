@@ -60,6 +60,21 @@ or the base relation from being affine. This is a direct reduction from the
 standard SAT--UNSAT pair language, recorded as hardness evidence rather than
 as a complete complexity classification.
 
+## The strongest general upper bound recorded here
+
+For visible width `k`, an exact recognizer can query an existential-CNF SAT
+oracle once for each visible assignment, collect the `2^k` membership bits, and
+test affine closure on that table. The oracle count is exactly `2^k`; the
+post-processing is polynomial in the table size. The saved width-three and
+width-four profiles contain 8 and 16 oracle queries respectively. This is an
+upper bound in `P^NP` for fixed-width input, not a polynomial-time algorithm
+when `k` is part of the input.
+
+The selector reductions show why this accounting matters: even a constant
+visible width can encode SAT or SAT--UNSAT through the existential query, while
+the query count only becomes an ordinary polynomial bound after the width
+promise is fixed.
+
 For the finite witness, `B0` has masks `{1,3,5,6,7}` with `x3=0`; the three
 points `1,3,6` have XOR `4`, which is absent, so `B0` is not affine. The
 differences of `1` to `3`, `5`, and `6` span all three coordinates, so the

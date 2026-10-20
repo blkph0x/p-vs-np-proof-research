@@ -93,6 +93,24 @@ def relation_class(bits: tuple[int, ...]) -> str:
     return "AFFINE" if is_affine_relation(bits) else "NON_AFFINE_OR_EMPTY"
 
 
+def fixed_width_oracle_profile(lifted: dict) -> dict:
+    """Account for exact recognition using one SAT query per visible point.
+
+    ``project`` simulates the oracle by enumerating local assignments.  The
+    reported query count is the model-level count: one existential-CNF SAT
+    query for each visible assignment, followed by a truth-table affine test.
+    """
+    bits = project(lifted)
+    width = len(tuple(lifted["shared"]))
+    return {
+        "visible_width": width,
+        "oracle_queries": 1 << width,
+        "postprocess_points": 1 << width,
+        "projection_bits": list(bits),
+        "projection_class": relation_class(bits),
+    }
+
+
 def _point_clauses(selector: int, point: int) -> tuple[tuple[int, ...], ...]:
     """Gate a visible assignment point by one selector variable."""
     return tuple((-selector - 1, (index + 1) if point & (1 << index)
@@ -199,6 +217,11 @@ def build_artifact() -> dict:
         two_source_record(a_unsat, 1, b_sat, 0),
         two_source_record(a_unsat, 1, b_unsat, 1),
     ]
+    oracle_profiles = {
+        "one_source_width_three": fixed_width_oracle_profile(selector_lift(((1,),), 1)),
+        "two_source_width_four": fixed_width_oracle_profile(
+            two_source_selector_lift(((1,),), 1, ((1,), (-1,)), 1)),
+    }
     return {
         "status": "EXACT_FINITE_REDUCTION",
         "theorem": "G satisfiable iff selector-lift projection is AFFINE",
@@ -209,5 +232,6 @@ def build_artifact() -> dict:
         "two_source_theorem": "projection is AFFINE iff A is satisfiable and B is unsatisfiable",
         "two_source_shared_width": 4,
         "two_source_records": two_source,
+        "fixed_width_oracle_profiles": oracle_profiles,
         "adversarial": {"forged_projection_rejected": forged["projection_bits"] != sat["projection_bits"]},
     }

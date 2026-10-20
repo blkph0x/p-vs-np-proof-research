@@ -884,6 +884,48 @@
       ]
     }
   ],
+  "fixed_width_oracle_profiles": {
+    "one_source_width_three": {
+      "visible_width": 3,
+      "oracle_queries": 8,
+      "postprocess_points": 8,
+      "projection_bits": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "projection_class": "AFFINE"
+    },
+    "two_source_width_four": {
+      "visible_width": 4,
+      "oracle_queries": 16,
+      "postprocess_points": 16,
+      "projection_bits": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "projection_class": "AFFINE"
+    }
+  },
   "adversarial": {
     "forged_projection_rejected": true
   }

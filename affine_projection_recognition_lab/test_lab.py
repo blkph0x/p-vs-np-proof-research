@@ -38,6 +38,14 @@ class AffineProjectionRecognitionTests(unittest.TestCase):
             (False, False): "NON_AFFINE_OR_EMPTY",
         })
 
+    def test_fixed_width_oracle_accounting(self):
+        profiles = self.artifact["fixed_width_oracle_profiles"]
+        self.assertEqual(profiles["one_source_width_three"]["oracle_queries"], 8)
+        self.assertEqual(profiles["two_source_width_four"]["oracle_queries"], 16)
+        for profile in profiles.values():
+            self.assertEqual(profile["oracle_queries"], profile["postprocess_points"])
+            self.assertEqual(profile["projection_class"], "AFFINE")
+
     def test_independent_replay(self):
         self.assertTrue(all(verify.verify(row) for row in self.artifact["records"]))
         self.assertTrue(all(verify.verify_two_source(row)
