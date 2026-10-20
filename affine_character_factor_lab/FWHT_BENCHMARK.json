@@ -1,0 +1,1944 @@
+{
+  "kind": "paired-fwht-local-benchmark-v1",
+  "repeats": 5,
+  "scope": "Finite named controls; timing is not a universal speed claim.",
+  "baseline": "Current solve with the selector disabled and its unchanged original direct local-sum path; not a separate historical binary.",
+  "source_sha256": {
+    "engine.py": "0dc75f40beda452a4ac957cb6dedac24d580e81badb202c4370c5eb1135d1ae3",
+    "test_fwht_precomputation.py": "8ee5eabf0972f2d14c9cea8931d1d85c68ec06acf88338974eedb7d21feb9c62"
+  },
+  "cases": [
+    {
+      "name": "tiny-rank-direct",
+      "original_request": {
+        "n": 128,
+        "blocks": [
+          {
+            "id": "block-0",
+            "scope": [
+              0,
+              1
+            ],
+            "factors": [
+              {
+                "id": "or-0",
+                "scope": [
+                  0,
+                  1
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-1",
+            "scope": [
+              2,
+              3
+            ],
+            "factors": [
+              {
+                "id": "or-1",
+                "scope": [
+                  2,
+                  3
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-2",
+            "scope": [
+              4,
+              5
+            ],
+            "factors": [
+              {
+                "id": "or-2",
+                "scope": [
+                  4,
+                  5
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-3",
+            "scope": [
+              6,
+              7
+            ],
+            "factors": [
+              {
+                "id": "or-3",
+                "scope": [
+                  6,
+                  7
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-4",
+            "scope": [
+              8,
+              9
+            ],
+            "factors": [
+              {
+                "id": "or-4",
+                "scope": [
+                  8,
+                  9
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-5",
+            "scope": [
+              10,
+              11
+            ],
+            "factors": [
+              {
+                "id": "or-5",
+                "scope": [
+                  10,
+                  11
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-6",
+            "scope": [
+              12,
+              13
+            ],
+            "factors": [
+              {
+                "id": "or-6",
+                "scope": [
+                  12,
+                  13
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-7",
+            "scope": [
+              14,
+              15
+            ],
+            "factors": [
+              {
+                "id": "or-7",
+                "scope": [
+                  14,
+                  15
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-8",
+            "scope": [
+              16,
+              17
+            ],
+            "factors": [
+              {
+                "id": "or-8",
+                "scope": [
+                  16,
+                  17
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-9",
+            "scope": [
+              18,
+              19
+            ],
+            "factors": [
+              {
+                "id": "or-9",
+                "scope": [
+                  18,
+                  19
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-10",
+            "scope": [
+              20,
+              21
+            ],
+            "factors": [
+              {
+                "id": "or-10",
+                "scope": [
+                  20,
+                  21
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-11",
+            "scope": [
+              22,
+              23
+            ],
+            "factors": [
+              {
+                "id": "or-11",
+                "scope": [
+                  22,
+                  23
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-12",
+            "scope": [
+              24,
+              25
+            ],
+            "factors": [
+              {
+                "id": "or-12",
+                "scope": [
+                  24,
+                  25
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-13",
+            "scope": [
+              26,
+              27
+            ],
+            "factors": [
+              {
+                "id": "or-13",
+                "scope": [
+                  26,
+                  27
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-14",
+            "scope": [
+              28,
+              29
+            ],
+            "factors": [
+              {
+                "id": "or-14",
+                "scope": [
+                  28,
+                  29
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-15",
+            "scope": [
+              30,
+              31
+            ],
+            "factors": [
+              {
+                "id": "or-15",
+                "scope": [
+                  30,
+                  31
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-16",
+            "scope": [
+              32,
+              33
+            ],
+            "factors": [
+              {
+                "id": "or-16",
+                "scope": [
+                  32,
+                  33
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-17",
+            "scope": [
+              34,
+              35
+            ],
+            "factors": [
+              {
+                "id": "or-17",
+                "scope": [
+                  34,
+                  35
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-18",
+            "scope": [
+              36,
+              37
+            ],
+            "factors": [
+              {
+                "id": "or-18",
+                "scope": [
+                  36,
+                  37
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-19",
+            "scope": [
+              38,
+              39
+            ],
+            "factors": [
+              {
+                "id": "or-19",
+                "scope": [
+                  38,
+                  39
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-20",
+            "scope": [
+              40,
+              41
+            ],
+            "factors": [
+              {
+                "id": "or-20",
+                "scope": [
+                  40,
+                  41
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-21",
+            "scope": [
+              42,
+              43
+            ],
+            "factors": [
+              {
+                "id": "or-21",
+                "scope": [
+                  42,
+                  43
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-22",
+            "scope": [
+              44,
+              45
+            ],
+            "factors": [
+              {
+                "id": "or-22",
+                "scope": [
+                  44,
+                  45
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-23",
+            "scope": [
+              46,
+              47
+            ],
+            "factors": [
+              {
+                "id": "or-23",
+                "scope": [
+                  46,
+                  47
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-24",
+            "scope": [
+              48,
+              49
+            ],
+            "factors": [
+              {
+                "id": "or-24",
+                "scope": [
+                  48,
+                  49
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-25",
+            "scope": [
+              50,
+              51
+            ],
+            "factors": [
+              {
+                "id": "or-25",
+                "scope": [
+                  50,
+                  51
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-26",
+            "scope": [
+              52,
+              53
+            ],
+            "factors": [
+              {
+                "id": "or-26",
+                "scope": [
+                  52,
+                  53
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-27",
+            "scope": [
+              54,
+              55
+            ],
+            "factors": [
+              {
+                "id": "or-27",
+                "scope": [
+                  54,
+                  55
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-28",
+            "scope": [
+              56,
+              57
+            ],
+            "factors": [
+              {
+                "id": "or-28",
+                "scope": [
+                  56,
+                  57
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-29",
+            "scope": [
+              58,
+              59
+            ],
+            "factors": [
+              {
+                "id": "or-29",
+                "scope": [
+                  58,
+                  59
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-30",
+            "scope": [
+              60,
+              61
+            ],
+            "factors": [
+              {
+                "id": "or-30",
+                "scope": [
+                  60,
+                  61
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-31",
+            "scope": [
+              62,
+              63
+            ],
+            "factors": [
+              {
+                "id": "or-31",
+                "scope": [
+                  62,
+                  63
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-32",
+            "scope": [
+              64,
+              65
+            ],
+            "factors": [
+              {
+                "id": "or-32",
+                "scope": [
+                  64,
+                  65
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-33",
+            "scope": [
+              66,
+              67
+            ],
+            "factors": [
+              {
+                "id": "or-33",
+                "scope": [
+                  66,
+                  67
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-34",
+            "scope": [
+              68,
+              69
+            ],
+            "factors": [
+              {
+                "id": "or-34",
+                "scope": [
+                  68,
+                  69
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-35",
+            "scope": [
+              70,
+              71
+            ],
+            "factors": [
+              {
+                "id": "or-35",
+                "scope": [
+                  70,
+                  71
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-36",
+            "scope": [
+              72,
+              73
+            ],
+            "factors": [
+              {
+                "id": "or-36",
+                "scope": [
+                  72,
+                  73
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-37",
+            "scope": [
+              74,
+              75
+            ],
+            "factors": [
+              {
+                "id": "or-37",
+                "scope": [
+                  74,
+                  75
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-38",
+            "scope": [
+              76,
+              77
+            ],
+            "factors": [
+              {
+                "id": "or-38",
+                "scope": [
+                  76,
+                  77
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-39",
+            "scope": [
+              78,
+              79
+            ],
+            "factors": [
+              {
+                "id": "or-39",
+                "scope": [
+                  78,
+                  79
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-40",
+            "scope": [
+              80,
+              81
+            ],
+            "factors": [
+              {
+                "id": "or-40",
+                "scope": [
+                  80,
+                  81
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-41",
+            "scope": [
+              82,
+              83
+            ],
+            "factors": [
+              {
+                "id": "or-41",
+                "scope": [
+                  82,
+                  83
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-42",
+            "scope": [
+              84,
+              85
+            ],
+            "factors": [
+              {
+                "id": "or-42",
+                "scope": [
+                  84,
+                  85
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-43",
+            "scope": [
+              86,
+              87
+            ],
+            "factors": [
+              {
+                "id": "or-43",
+                "scope": [
+                  86,
+                  87
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-44",
+            "scope": [
+              88,
+              89
+            ],
+            "factors": [
+              {
+                "id": "or-44",
+                "scope": [
+                  88,
+                  89
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-45",
+            "scope": [
+              90,
+              91
+            ],
+            "factors": [
+              {
+                "id": "or-45",
+                "scope": [
+                  90,
+                  91
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-46",
+            "scope": [
+              92,
+              93
+            ],
+            "factors": [
+              {
+                "id": "or-46",
+                "scope": [
+                  92,
+                  93
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-47",
+            "scope": [
+              94,
+              95
+            ],
+            "factors": [
+              {
+                "id": "or-47",
+                "scope": [
+                  94,
+                  95
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-48",
+            "scope": [
+              96,
+              97
+            ],
+            "factors": [
+              {
+                "id": "or-48",
+                "scope": [
+                  96,
+                  97
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-49",
+            "scope": [
+              98,
+              99
+            ],
+            "factors": [
+              {
+                "id": "or-49",
+                "scope": [
+                  98,
+                  99
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-50",
+            "scope": [
+              100,
+              101
+            ],
+            "factors": [
+              {
+                "id": "or-50",
+                "scope": [
+                  100,
+                  101
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-51",
+            "scope": [
+              102,
+              103
+            ],
+            "factors": [
+              {
+                "id": "or-51",
+                "scope": [
+                  102,
+                  103
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-52",
+            "scope": [
+              104,
+              105
+            ],
+            "factors": [
+              {
+                "id": "or-52",
+                "scope": [
+                  104,
+                  105
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-53",
+            "scope": [
+              106,
+              107
+            ],
+            "factors": [
+              {
+                "id": "or-53",
+                "scope": [
+                  106,
+                  107
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-54",
+            "scope": [
+              108,
+              109
+            ],
+            "factors": [
+              {
+                "id": "or-54",
+                "scope": [
+                  108,
+                  109
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-55",
+            "scope": [
+              110,
+              111
+            ],
+            "factors": [
+              {
+                "id": "or-55",
+                "scope": [
+                  110,
+                  111
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-56",
+            "scope": [
+              112,
+              113
+            ],
+            "factors": [
+              {
+                "id": "or-56",
+                "scope": [
+                  112,
+                  113
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-57",
+            "scope": [
+              114,
+              115
+            ],
+            "factors": [
+              {
+                "id": "or-57",
+                "scope": [
+                  114,
+                  115
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-58",
+            "scope": [
+              116,
+              117
+            ],
+            "factors": [
+              {
+                "id": "or-58",
+                "scope": [
+                  116,
+                  117
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-59",
+            "scope": [
+              118,
+              119
+            ],
+            "factors": [
+              {
+                "id": "or-59",
+                "scope": [
+                  118,
+                  119
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-60",
+            "scope": [
+              120,
+              121
+            ],
+            "factors": [
+              {
+                "id": "or-60",
+                "scope": [
+                  120,
+                  121
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-61",
+            "scope": [
+              122,
+              123
+            ],
+            "factors": [
+              {
+                "id": "or-61",
+                "scope": [
+                  122,
+                  123
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-62",
+            "scope": [
+              124,
+              125
+            ],
+            "factors": [
+              {
+                "id": "or-62",
+                "scope": [
+                  124,
+                  125
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-63",
+            "scope": [
+              126,
+              127
+            ],
+            "factors": [
+              {
+                "id": "or-63",
+                "scope": [
+                  126,
+                  127
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          }
+        ],
+        "equations": [
+          340282366920938463463374607431768211455
+        ],
+        "rhs": [
+          0
+        ]
+      },
+      "source_hash": "301556e2370556130dd9f60e4ee1a16540c0dcc94ea6cdd774715ed0c471e926",
+      "value": [
+        1716841910146256242328924544641,
+        1
+      ],
+      "direct_stats": {
+        "work": 512,
+        "local_evaluations": 512,
+        "characters": 2,
+        "rank": 1
+      },
+      "adaptive_stats": {
+        "work": 512,
+        "local_evaluations": 512,
+        "characters": 2,
+        "rank": 1
+      },
+      "direct_seconds": [
+        0.00273749977350235,
+        0.0026743998751044273,
+        0.0026632999069988728,
+        0.0029520001262426376,
+        0.002645199652761221
+      ],
+      "adaptive_seconds": [
+        0.0027080001309514046,
+        0.0027095996774733067,
+        0.002704000100493431,
+        0.002694300375878811,
+        0.0026666000485420227
+      ],
+      "direct_median_seconds": 0.0026743998751044273,
+      "adaptive_median_seconds": 0.002704000100493431,
+      "certificate_equal_except_stats": true,
+      "verification": {
+        "valid": true,
+        "status": "VERIFIED",
+        "errors": [],
+        "stats": {
+          "work": 512,
+          "local_evaluations": 512,
+          "characters": 2,
+          "rank": 1
+        }
+      }
+    },
+    {
+      "name": "connected-rank-10",
+      "original_request": {
+        "n": 20,
+        "blocks": [
+          {
+            "id": "block-0",
+            "scope": [
+              0,
+              1
+            ],
+            "factors": [
+              {
+                "id": "or-0",
+                "scope": [
+                  0,
+                  1
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-1",
+            "scope": [
+              2,
+              3
+            ],
+            "factors": [
+              {
+                "id": "or-1",
+                "scope": [
+                  2,
+                  3
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-2",
+            "scope": [
+              4,
+              5
+            ],
+            "factors": [
+              {
+                "id": "or-2",
+                "scope": [
+                  4,
+                  5
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-3",
+            "scope": [
+              6,
+              7
+            ],
+            "factors": [
+              {
+                "id": "or-3",
+                "scope": [
+                  6,
+                  7
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-4",
+            "scope": [
+              8,
+              9
+            ],
+            "factors": [
+              {
+                "id": "or-4",
+                "scope": [
+                  8,
+                  9
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-5",
+            "scope": [
+              10,
+              11
+            ],
+            "factors": [
+              {
+                "id": "or-5",
+                "scope": [
+                  10,
+                  11
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-6",
+            "scope": [
+              12,
+              13
+            ],
+            "factors": [
+              {
+                "id": "or-6",
+                "scope": [
+                  12,
+                  13
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-7",
+            "scope": [
+              14,
+              15
+            ],
+            "factors": [
+              {
+                "id": "or-7",
+                "scope": [
+                  14,
+                  15
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-8",
+            "scope": [
+              16,
+              17
+            ],
+            "factors": [
+              {
+                "id": "or-8",
+                "scope": [
+                  16,
+                  17
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "block-9",
+            "scope": [
+              18,
+              19
+            ],
+            "factors": [
+              {
+                "id": "or-9",
+                "scope": [
+                  18,
+                  19
+                ],
+                "table": [
+                  0,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          }
+        ],
+        "equations": [
+          3,
+          15,
+          60,
+          240,
+          960,
+          3840,
+          15360,
+          61440,
+          245760,
+          983040
+        ],
+        "rhs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "source_hash": "803320fb71e8a06eddb72dc302219fcdd6f8525ebf6f5703c879714b84150634",
+      "value": [
+        1,
+        1
+      ],
+      "direct_stats": {
+        "work": 40960,
+        "local_evaluations": 40960,
+        "characters": 1024,
+        "rank": 10
+      },
+      "adaptive_stats": {
+        "work": 10360,
+        "local_evaluations": 40,
+        "characters": 1024,
+        "rank": 10
+      },
+      "direct_seconds": [
+        0.15445289993658662,
+        0.1484258002601564,
+        0.1462618000805378,
+        0.14690749999135733,
+        0.1521001998335123
+      ],
+      "adaptive_seconds": [
+        0.045819600112736225,
+        0.04606779990717769,
+        0.04618080006912351,
+        0.04580680001527071,
+        0.046369099989533424
+      ],
+      "direct_median_seconds": 0.1484258002601564,
+      "adaptive_median_seconds": 0.04606779990717769,
+      "certificate_equal_except_stats": true,
+      "verification": {
+        "valid": true,
+        "status": "VERIFIED",
+        "errors": [],
+        "stats": {
+          "work": 40960,
+          "local_evaluations": 40960,
+          "characters": 1024,
+          "rank": 10
+        }
+      }
+    },
+    {
+      "name": "single-six-bit-block",
+      "original_request": {
+        "n": 6,
+        "blocks": [
+          {
+            "id": "b-dense",
+            "scope": [
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ],
+            "factors": [
+              {
+                "id": "f-dense",
+                "scope": [
+                  5,
+                  4,
+                  3,
+                  2,
+                  1,
+                  0
+                ],
+                "table": [
+                  -5,
+                  2,
+                  -2,
+                  5,
+                  1,
+                  -3,
+                  4,
+                  0,
+                  -4,
+                  3,
+                  -1,
+                  -5,
+                  2,
+                  -2,
+                  5,
+                  1,
+                  -3,
+                  4,
+                  0,
+                  -4,
+                  3,
+                  -1,
+                  -5,
+                  2,
+                  -2,
+                  5,
+                  1,
+                  -3,
+                  4,
+                  0,
+                  -4,
+                  3,
+                  -1,
+                  -5,
+                  2,
+                  -2,
+                  5,
+                  1,
+                  -3,
+                  4,
+                  0,
+                  -4,
+                  3,
+                  -1,
+                  -5,
+                  2,
+                  -2,
+                  5,
+                  1,
+                  -3,
+                  4,
+                  0,
+                  -4,
+                  3,
+                  -1,
+                  -5,
+                  2,
+                  -2,
+                  5,
+                  1,
+                  -3,
+                  4,
+                  0,
+                  -4
+                ]
+              }
+            ]
+          }
+        ],
+        "equations": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32
+        ],
+        "rhs": [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      "source_hash": "429b190a108e1225f3d90b8da3c23f5b3defe64643334a7f07a8e999d00ea0e2",
+      "value": [
+        3,
+        1
+      ],
+      "direct_stats": {
+        "work": 4096,
+        "local_evaluations": 4096,
+        "characters": 64,
+        "rank": 6
+      },
+      "adaptive_stats": {
+        "work": 512,
+        "local_evaluations": 64,
+        "characters": 64,
+        "rank": 6
+      },
+      "direct_seconds": [
+        0.01541980030015111,
+        0.014894099906086922,
+        0.015006599947810173,
+        0.015407700091600418,
+        0.015316999983042479
+      ],
+      "adaptive_seconds": [
+        0.001980300061404705,
+        0.0010279002599418163,
+        0.0010187998414039612,
+        0.0010395999997854233,
+        0.001015199813991785
+      ],
+      "direct_median_seconds": 0.015316999983042479,
+      "adaptive_median_seconds": 0.0010279002599418163,
+      "certificate_equal_except_stats": true,
+      "verification": {
+        "valid": true,
+        "status": "VERIFIED",
+        "errors": [],
+        "stats": {
+          "work": 4096,
+          "local_evaluations": 4096,
+          "characters": 64,
+          "rank": 6
+        }
+      }
+    }
+  ],
+  "environment": {
+    "python": "3.10.10 | packaged by conda-forge | (main, Mar 24 2023, 20:00:38) [MSC v.1934 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.22631-SP0",
+    "processor": "AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD",
+    "timestamp_utc": "2026-10-20T06:09:49.913540+00:00",
+    "isolation": "ordinary local process; no CPU affinity or process-tree memory isolation",
+    "peak_memory_bytes": null,
+    "timing_includes": "producer solve including certificate construction; excludes interpreter startup and separate verification"
+  }
+}

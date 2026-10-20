@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "date": "2026-10-20",
+  "base_commit": "914f2e0c283b6440159d3495ececffd83d42dc30",
+  "scope": "Focused local checks for public-method review and changed code; not a current full-suite result.",
+  "unique_test_methods": 101,
+  "additional_optimized_mode_method_executions": 15,
+  "checks": [
+    {
+      "check": "cdcl",
+      "exit_code": 0,
+      "test_methods": 14,
+      "transcript": "test_normalization_and_input_validation (test_cdcl.CDCLTests) ... ok\r\ntest_pigeonhole_unsat_has_resolution_trace (test_cdcl.CDCLTests) ... ok\r\ntest_resource_cap_is_unknown (test_cdcl.CDCLTests) ... ok\r\ntest_sat_model_and_parity_style_unsat (test_cdcl.CDCLTests) ... ok\r\ntest_saved_artifact_and_independent_review (test_cdcl.CDCLTests) ... ok\r\ntest_seeded_random_three_sat_controls (test_cdcl.CDCLTests) ... ok\r\ntest_small_formula_exhaustive (test_cdcl.CDCLTests) ... ok\r\ntest_adversarial_certificates (test_review_validation.ReviewValidationTests) ... ok\r\ntest_empty_formula_and_empty_clause (test_review_validation.ReviewValidationTests) ... ok\r\ntest_existing_saved_certificates (test_review_validation.ReviewValidationTests) ... ok\r\ntest_main_invokes_replay (test_review_validation.ReviewValidationTests) ... ok\r\ntest_no_exhaustive_oracle_is_needed (test_review_validation.ReviewValidationTests) ... ok\r\ntest_optimized_mode_adversaries_and_main (test_review_validation.ReviewValidationTests) ... ok\r\ntest_strict_original_and_model_types (test_review_validation.ReviewValidationTests) ... ok\r\n\r\n----------------------------------------------------------------------\r\nRan 14 tests in 0.633s\r\n\r\nOK\r\n"
+    },
+    {
+      "check": "cdcl_optimized",
+      "exit_code": 0,
+      "test_methods": 7,
+      "transcript": "test_adversarial_certificates (test_review_validation.ReviewValidationTests) ... ok\r\ntest_empty_formula_and_empty_clause (test_review_validation.ReviewValidationTests) ... ok\r\ntest_existing_saved_certificates (test_review_validation.ReviewValidationTests) ... ok\r\ntest_main_invokes_replay (test_review_validation.ReviewValidationTests) ... ok\r\ntest_no_exhaustive_oracle_is_needed (test_review_validation.ReviewValidationTests) ... ok\r\ntest_optimized_mode_adversaries_and_main (test_review_validation.ReviewValidationTests) ... ok\r\ntest_strict_original_and_model_types (test_review_validation.ReviewValidationTests) ... ok\r\n\r\n----------------------------------------------------------------------\r\nRan 7 tests in 0.564s\r\n\r\nOK\r\n"
+    },
+    {
+      "check": "projection",
+      "exit_code": 0,
+      "test_methods": 31,
+      "transcript": "test_exhaustive_two_variable_source_controls (test_lab.AffineProjectionRecognitionTests) ... ok\r\ntest_fixed_width_oracle_accounting (test_lab.AffineProjectionRecognitionTests) ... ok\r\ntest_independent_replay (test_lab.AffineProjectionRecognitionTests) ... ok\r\ntest_mutation_is_rejected (test_lab.AffineProjectionRecognitionTests) ... ok\r\ntest_saved_artifact_replays (test_lab.AffineProjectionRecognitionTests) ... ok\r\ntest_selector_reduction (test_lab.AffineProjectionRecognitionTests) ... ok\r\ntest_shared_width_is_constant (test_lab.AffineProjectionRecognitionTests) ... ok\r\ntest_two_source_sat_unsat_reduction (test_lab.AffineProjectionRecognitionTests) ... ok\r\ntest_all_1536_source_formulas_and_quantifier_splits (test_quantified_boundary.QuantifiedBoundaryTests) ... ok\r\ntest_caps_never_become_mathematical_answers (test_quantified_boundary.QuantifiedBoundaryTests) ... ok\r\ntest_committed_artifact_before_regeneration (test_quantified_boundary.QuantifiedBoundaryTests) ... ok\r\ntest_complete_replay_rejects_all_adversarial_controls (test_quantified_boundary.QuantifiedBoundaryTests) ... ok\r\ntest_malformed_partitions_and_literals_are_rejected (test_quantified_boundary.QuantifiedBoundaryTests) ... ok\r\ntest_quantifiers_are_not_replaced_by_sat (test_quantified_boundary.QuantifiedBoundaryTests) ... ok\r\ntest_rank_affinity_matches_ternary_closure_including_empty (test_quantified_boundary.QuantifiedBoundaryTests) ... ok\r\ntest_specific_failures_bind_certificate_to_source (test_quantified_boundary.QuantifiedBoundaryTests) ... ok\r\ntest_zero_width_empty_clause_tautology_duplicates (test_quantified_boundary.QuantifiedBoundaryTests) ... ok\r\ntest_call_and_input_caps_have_no_exact_output (test_hull_engine.HullProducerTests) ... ok\r\ntest_decision_cap_is_aggregate_and_zero_still_allows_propagation (test_hull_engine.HullProducerTests) ... ok\r\ntest_empty_and_zero_width_conventions (test_hull_engine.HullProducerTests) ... ok\r\ntest_hidden_variables_and_final_unsat_trace (test_hull_engine.HullProducerTests) ... ok\r\ntest_nonaffine_projection_can_have_exact_full_hull (test_hull_engine.HullProducerTests) ... ok\r\ntest_strict_inputs_and_helper_conventions (test_hull_engine.HullProducerTests) ... ok\r\ntest_100_projected_cnfs_with_hidden_variables (test_hull_certificate.HullCertificateTests) ... ok\r\ntest_all_256_visible_relations_match_independent_explicit_hull (test_hull_certificate.HullCertificateTests) ... ok\r\ntest_caps_never_certify_partial_hulls (test_hull_certificate.HullCertificateTests) ... ok\r\ntest_hull_is_not_promoted_to_projection_or_counting_equality (test_hull_certificate.HullCertificateTests) ... ok\r\ntest_mutated_terminal_resolution_and_missing_proof_are_rejected (test_hull_certificate.HullCertificateTests) ... ok\r\ntest_outside_compilation_preserves_each_visible_assignment (test_hull_certificate.HullCertificateTests) ... ok\r\ntest_saved_inputs_hashes_and_certificate_replay (test_hull_certificate.HullCertificateTests) ... ok\r\ntest_trust_does_not_depend_on_stats_or_python_assertions (test_hull_certificate.HullCertificateTests) ... ok\r\n\r\n----------------------------------------------------------------------\r\nRan 31 tests in 3.542s\r\n\r\nOK\r\n"
+    },
+    {
+      "check": "hull_optimized",
+      "exit_code": 0,
+      "test_methods": 8,
+      "transcript": "test_100_projected_cnfs_with_hidden_variables (test_hull_certificate.HullCertificateTests) ... ok\r\ntest_all_256_visible_relations_match_independent_explicit_hull (test_hull_certificate.HullCertificateTests) ... ok\r\ntest_caps_never_certify_partial_hulls (test_hull_certificate.HullCertificateTests) ... ok\r\ntest_hull_is_not_promoted_to_projection_or_counting_equality (test_hull_certificate.HullCertificateTests) ... ok\r\ntest_mutated_terminal_resolution_and_missing_proof_are_rejected (test_hull_certificate.HullCertificateTests) ... ok\r\ntest_outside_compilation_preserves_each_visible_assignment (test_hull_certificate.HullCertificateTests) ... ok\r\ntest_saved_inputs_hashes_and_certificate_replay (test_hull_certificate.HullCertificateTests) ... ok\r\ntest_trust_does_not_depend_on_stats_or_python_assertions (test_hull_certificate.HullCertificateTests) ... ok\r\n\r\n----------------------------------------------------------------------\r\nRan 8 tests in 0.604s\r\n\r\nOK\r\n"
+    },
+    {
+      "check": "representation",
+      "exit_code": 0,
+      "test_methods": 23,
+      "transcript": "test_added_binary_and_empty_clause_are_not_ignored (test_baseline.BaselineRepairTests) ... ok\r\ntest_all_three_variable_clause_subsets_with_both_units (test_baseline.BaselineRepairTests) ... ok\r\ntest_duplicate_clauses_literals_units_and_tautologies_are_safe (test_baseline.BaselineRepairTests) ... ok\r\ntest_every_clause_and_unresolved_equation_must_be_covered (test_baseline.BaselineRepairTests) ... ok\r\ntest_failed_substitution_scans_are_charged (test_baseline.BaselineRepairTests) ... ok\r\ntest_malformed_literals_and_shared_ids_raise_value_error (test_baseline.BaselineRepairTests) ... ok\r\ntest_positive_unit_and_sparse_ordered_shared_ids (test_baseline.BaselineRepairTests) ... ok\r\ntest_project_rejects_shared_local_overlap_and_invalid_inputs (test_baseline.BaselineRepairTests) ... ok\r\ntest_seeded_original_networks_against_independent_assignment_oracle (test_baseline.BaselineRepairTests) ... ok\r\ntest_unit_only_constants_and_empty_input_scope (test_baseline.BaselineRepairTests) ... ok\r\ntest_chain_projects_to_even_parity (test_engine.RepresentationDiscoveryTests) ... ok\r\ntest_discovery_work_grows_while_representation_stays_linear (test_engine.RepresentationDiscoveryTests) ... ok\r\ntest_gaussian_baseline_fails_closed_on_mutated_gadget (test_engine.RepresentationDiscoveryTests) ... ok\r\ntest_gaussian_baseline_recovers_the_hidden_relation (test_engine.RepresentationDiscoveryTests) ... ok\r\ntest_gaussian_baseline_survives_syntactic_controls (test_engine.RepresentationDiscoveryTests) ... ok\r\ntest_invalid_permutation_is_rejected (test_engine.RepresentationDiscoveryTests) ... ok\r\ntest_saved_record_replays_exactly (test_engine.RepresentationDiscoveryTests) ... ok\r\ntest_semantics_survive_variable_renaming (test_engine.RepresentationDiscoveryTests) ... ok\r\ntest_changed_control_inputs_outputs_and_work_are_rejected (test_independent_review.IndependentReviewTests) ... ok\r\ntest_lf_crlf_source_snapshots_replay_but_changed_source_is_rejected (test_independent_review.IndependentReviewTests) ... ok\r\ntest_saved_original_inputs_and_outputs_replay (test_independent_review.IndependentReviewTests) ... ok\r\ntest_text_hash_preserves_content_bom_and_utf8_validation (test_independent_review.IndependentReviewTests) ... ok\r\ntest_control_is_not_affine (test_nonlinear_control.NonlinearControlTests) ... ok\r\n\r\n----------------------------------------------------------------------\r\nRan 23 tests in 3.111s\r\n\r\nOK\r\n"
+    },
+    {
+      "check": "affine_character_factor",
+      "exit_code": 0,
+      "test_methods": 33,
+      "command": "python -m unittest discover -v",
+      "directory": "affine_character_factor_lab",
+      "evidence": "Executed after final producer/test changes; all 33 methods passed. Full method listing is present in the public source inventory."
+    }
+  ],
+  "other_checks": {
+    "general_cdcl_saved_certificates": 5,
+    "affine_hull_saved_requests": 14,
+    "character_saved_records": 23,
+    "character_seeded_replay_cases": 220,
+    "public_inventory_python_files": 565,
+    "public_inventory_research_directories": 65
+  },
+  "benchmark": "affine_character_factor_lab/FWHT_BENCHMARK.json",
+  "source_inventory": "PUBLIC_METHOD_INVENTORY.json"
+}

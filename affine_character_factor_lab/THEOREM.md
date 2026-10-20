@@ -62,6 +62,25 @@ division by (2^r). A nonintegral result is rejected rather than rounded.
 
 ## Cost and the actual parameter
 
+The 20 October implementation precomputes a block's exact unnormalised
+Walsh spectrum when its charged cost is strictly lower than direct repeated
+sums. For width `k`, `N=2^k` entries and `C=2^r` characters, the compared
+costs are `C*N` versus `N + k*N + C`: local product evaluations, butterfly
+additions/subtractions, and spectrum lookups. Ties and `C<=2` stay direct.
+This borrows standard [FWHT arithmetic](https://docs.sympy.org/latest/modules/discrete.html)
+within the [normal-factor-graph duality](https://arxiv.org/abs/1102.0316)
+interpretation; no new transform is claimed.
+
+The certificate still records every character, mask and exact local value.
+Its independent arithmetic checker deliberately uses direct sums, so the
+verification work bound below remains unchanged. Producer local arithmetic
+can instead be bounded by `sum_j min(C*2^k_j, (k_j+1)*2^k_j+C)` under this
+charged convention, plus the other operations already listed below.
+The spectrum temporarily stores `sum_j 2^k_j` integers over selected blocks.
+Work and integer-size caps apply during precomputation. An unused spectrum
+entry can exceed a tight integer-size cap even if the requested direct sums
+would cancel; that path returns UNKNOWN, never a false exact value.
+
 With (k=\max_j |B_j|), the explicit character certificate uses
 
 \[

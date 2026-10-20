@@ -6,6 +6,18 @@ indicator gives an exact solver parameterized by the independent affine rank.
 Every character term is produced before any coefficient is merged, and the
 certificate records all local transforms.  This is a deliberately narrow
 family: it is a compactness experiment, not a general SAT solver.
+
+The producer chooses independently for each block between direct local sums
+and one exact, unnormalised Walsh--Hadamard transform.  For k block variables,
+N=2**k assignments and C characters, the charged costs are C*N for direct
+evaluation and N+k*N+C for precomputation: N local product evaluations, k*N
+butterfly additions/subtractions, and C lookups.  Strict improvement is
+required; ties and C<=2 retain the direct method.  These work units preserve
+the original local-evaluation convention, not a claim about total CPU cost:
+factor indexing/multiplications, character masks, parsing, and row reduction
+still have their existing polynomial overhead.  No factor values inform this
+choice.  The independent verifier deliberately retains direct local sums,
+so verification can require a larger work budget than production.
 """
 
 from __future__ import annotations
@@ -202,6 +214,58 @@ def _block_transform(block, character_mask, row_masks, budget):
     return total, local_mask
 
 
+def _use_precomputed_spectrum(block, characters):
+    """Select by charged work, with a direct tiny-rank/tie fallback."""
+    width = len(block["scope"])
+    assignments = 1 << width
+    return (characters > 2
+            and (width + 1) * assignments + characters < characters * assignments)
+
+
+def _block_spectrum(block, budget):
+    """Return every unnormalised local Walsh coefficient in LSB mask order.
+
+    Each stage replaces (a,b) by (a+b,a-b); after k stages, entry u is
+    sum_x f(x)*(-1)**parity(u&x).  Only integer addition/subtraction is used.
+    Work and integer caps apply before each allocation-producing evaluation
+    and before each butterfly's results are retained.  Exhaustion propagates
+    to solve as UNKNOWN without a value or partial certificate.
+    """
+    spectrum = []
+    for assignment in range(1 << len(block["scope"])):
+        budget.tick()
+        value = _assignment_table(block, assignment)
+        budget.local_evaluations += 1
+        budget.check_integer(value)
+        spectrum.append(value)
+    stride = 1
+    while stride < len(spectrum):
+        for start in range(0, len(spectrum), stride * 2):
+            for offset in range(stride):
+                left = start + offset
+                right = left + stride
+                a, b = spectrum[left], spectrum[right]
+                budget.tick(2)
+                plus, minus = a + b, a - b
+                budget.check_integer(plus)
+                budget.check_integer(minus)
+                spectrum[left], spectrum[right] = plus, minus
+        stride *= 2
+    return spectrum
+
+
+def _spectrum_lookup(block, character, row_masks, spectrum, budget):
+    """Project the global character onto a block; overlapping rows XOR."""
+    mask = 0
+    for index, row in enumerate(row_masks):
+        if (character >> index) & 1:
+            mask ^= row
+    local_mask = sum(((mask >> variable) & 1) << index
+                     for index, variable in enumerate(block["scope"]))
+    budget.tick()
+    return spectrum[local_mask], local_mask
+
+
 def solve(n, blocks, equations, rhs, caps=None):
     req = _canonical_request(n, blocks, equations, rhs)
     budget = Budget(caps)
@@ -230,12 +294,23 @@ def solve(n, blocks, equations, rhs, caps=None):
     numerator = 0
     rhs_mask = sum(bit << j for j, bit in enumerate(row_rhs))
     try:
+        # Precomputation leaves the existing character certificate unchanged.
+        # The direct checker never calls these helpers or trusts this choice.
+        spectra = [
+            _block_spectrum(block, budget)
+            if _use_precomputed_spectrum(block, characters) else None
+            for block in req["blocks"]
+        ]
         for character in range(characters):
             sign = -1 if (character & rhs_mask).bit_count() & 1 else 1
             product = 1
             local = []
-            for block in req["blocks"]:
-                value, local_mask = _block_transform(block, character, row_masks, budget)
+            for block, spectrum in zip(req["blocks"], spectra):
+                if spectrum is None:
+                    value, local_mask = _block_transform(block, character, row_masks, budget)
+                else:
+                    value, local_mask = _spectrum_lookup(
+                        block, character, row_masks, spectrum, budget)
                 local.append({"block_id": block["id"], "mask": local_mask, "value": value})
                 product *= value
                 budget.check_integer(product)

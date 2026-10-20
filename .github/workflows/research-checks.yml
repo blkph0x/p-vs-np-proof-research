@@ -9,7 +9,9 @@ permissions:
 
 concurrency:
   group: research-checks
-  cancel-in-progress: true
+  # Let an active mathematical replay finish when a new revision is pushed.
+  # GitHub still replaces an older pending run with the newest pending run.
+  cancel-in-progress: false
 
 jobs:
   focused-checks:
@@ -24,6 +26,17 @@ jobs:
           python-version: "3.12"
       - name: Install pinned research dependencies
         run: python -m pip install --disable-pip-version-check -r requirements.txt
+      - name: Check method coverage and optimization-independent proof checking
+        run: |
+          python build_public_method_inventory.py --check
+          cd proof_producing_cdcl_lab
+          python -m unittest -v test_cdcl.py test_review_validation.py
+          python -O -m unittest -v test_review_validation.py
+      - name: Check exact local Fourier precomputation
+        working-directory: affine_character_factor_lab
+        run: |
+          python -m unittest discover -v
+          python INDEPENDENT_REVIEW.py
       - name: Run focused certificate checks
         run: |
           python fourier_spectrum_boundary_lab/run_experiments.py
@@ -73,7 +86,9 @@ jobs:
         run: |
           # Check committed evidence before any regeneration.
           python review_quantified_boundary.py
-          python -m unittest -v test_lab.py test_quantified_boundary.py
+          python review_affine_hull.py
+          python -m unittest -v test_lab.py test_quantified_boundary.py test_hull_engine.py test_hull_certificate.py
+          python -O -m unittest -v test_hull_certificate.py
       - name: Replay sparse parity clause hierarchy comparison
         working-directory: local_marginal_code_lab
         run: |

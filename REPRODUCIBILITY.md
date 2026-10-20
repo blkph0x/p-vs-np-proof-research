@@ -33,6 +33,33 @@ minutes because it includes exhaustive finite controls and native rank checks.
 
 ## Focused checks
 
+The public-method review adds a source-coverage check and focused verifier
+controls. Run these from the repository root before regenerating evidence:
+
+```powershell
+python build_public_method_inventory.py --check
+Push-Location proof_producing_cdcl_lab
+python -m unittest -v test_cdcl.py test_review_validation.py
+python -O -m unittest -v test_review_validation.py
+Pop-Location
+Push-Location affine_projection_recognition_lab
+python review_affine_hull.py
+python -m unittest -v test_hull_engine.py test_hull_certificate.py
+python -O -m unittest -v test_hull_certificate.py
+Pop-Location
+```
+
+The independent hull replay verifies the committed original requests, guarded
+queries, models, resolution proofs, source bindings and capped statuses. It
+does not verify that the projected relation equals its hull. The older general
+CDCL checker now uses explicit acceptance checks even under optimized Python.
+Other historical checkers have not all been audited for `-O` safety.
+
+Active research CI runs are now allowed to finish; a new push does not cancel
+one halfway through. GitHub's default pending queue can still replace an older
+pending revision. A successful Pages deployment does not establish successful
+mathematical checks, and the committed 55-suite summary remains historical.
+
 ```powershell
 python fourier_spectrum_boundary_lab\run_experiments.py
 python fourier_spectrum_boundary_lab\verify_fourier_boundary.py

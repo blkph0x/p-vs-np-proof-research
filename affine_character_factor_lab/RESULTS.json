@@ -482,7 +482,7 @@
       "characters": 2,
       "direct_count": 1,
       "direct_matches": true,
-      "elapsed_seconds": 0.00016769999638199806,
+      "elapsed_seconds": 0.0001783999614417553,
       "equation_rows": 1,
       "expected": [
         1,
@@ -507,7 +507,7 @@
       "characters": 2,
       "direct_count": 5,
       "direct_matches": true,
-      "elapsed_seconds": 0.000134199857711792,
+      "elapsed_seconds": 0.00019740033894777298,
       "equation_rows": 1,
       "expected": [
         5,
@@ -532,7 +532,7 @@
       "characters": 2,
       "direct_count": 41,
       "direct_matches": true,
-      "elapsed_seconds": 0.00022780010476708412,
+      "elapsed_seconds": 0.0002438998781144619,
       "equation_rows": 1,
       "expected": [
         41,
@@ -555,7 +555,7 @@
     {
       "blocks": 8,
       "characters": 2,
-      "elapsed_seconds": 0.00039349962025880814,
+      "elapsed_seconds": 0.00044080009683966637,
       "equation_rows": 1,
       "expected": [
         3281,
@@ -578,7 +578,7 @@
     {
       "blocks": 16,
       "characters": 2,
-      "elapsed_seconds": 0.0007317997515201569,
+      "elapsed_seconds": 0.0008342000655829906,
       "equation_rows": 1,
       "expected": [
         21523361,
@@ -601,7 +601,7 @@
     {
       "blocks": 32,
       "characters": 2,
-      "elapsed_seconds": 0.00140330009162426,
+      "elapsed_seconds": 0.001586299855262041,
       "equation_rows": 1,
       "expected": [
         926510094425921,
@@ -624,7 +624,7 @@
     {
       "blocks": 64,
       "characters": 2,
-      "elapsed_seconds": 0.0027254000306129456,
+      "elapsed_seconds": 0.0028512999415397644,
       "equation_rows": 1,
       "expected": [
         1716841910146256242328924544641,
@@ -647,7 +647,7 @@
     {
       "blocks": 96,
       "characters": 2,
-      "elapsed_seconds": 0.0044617000967264175,
+      "elapsed_seconds": 0.004768899641931057,
       "equation_rows": 1,
       "expected": [
         3181342720567971179237414381269267115445108161,
@@ -670,7 +670,7 @@
     {
       "blocks": 128,
       "characters": 2,
-      "elapsed_seconds": 0.00523229967802763,
+      "elapsed_seconds": 0.005674800369888544,
       "equation_rows": 1,
       "expected": [
         5895092288869291585760436430706259332839105796137920554548481,
@@ -695,7 +695,7 @@
       "characters": 1,
       "direct_count": 1,
       "direct_matches": true,
-      "elapsed_seconds": 4.1999854147434235e-05,
+      "elapsed_seconds": 3.9400067180395126e-05,
       "equation_rows": 0,
       "expected": [
         1,
@@ -720,7 +720,7 @@
       "characters": 1,
       "direct_count": 3,
       "direct_matches": true,
-      "elapsed_seconds": 6.640003994107246e-05,
+      "elapsed_seconds": 7.170019671320915e-05,
       "equation_rows": 0,
       "expected": [
         3,
@@ -745,7 +745,7 @@
       "characters": 1,
       "direct_count": 81,
       "direct_matches": true,
-      "elapsed_seconds": 0.00015360023826360703,
+      "elapsed_seconds": 0.0001692003570497036,
       "equation_rows": 0,
       "expected": [
         81,
@@ -768,7 +768,7 @@
     {
       "blocks": 16,
       "characters": 1,
-      "elapsed_seconds": 0.0005171000957489014,
+      "elapsed_seconds": 0.0005423999391496181,
       "equation_rows": 0,
       "expected": [
         43046721,
@@ -791,7 +791,7 @@
     {
       "blocks": 64,
       "characters": 1,
-      "elapsed_seconds": 0.0018993997946381569,
+      "elapsed_seconds": 0.002045100089162588,
       "equation_rows": 0,
       "expected": [
         3433683820292512484657849089281,
@@ -814,7 +814,7 @@
     {
       "blocks": 128,
       "characters": 1,
-      "elapsed_seconds": 0.0038436995819211006,
+      "elapsed_seconds": 0.004022399894893169,
       "equation_rows": 0,
       "expected": [
         11790184577738583171520872861412518665678211592275841109096961,
@@ -839,7 +839,7 @@
       "characters": 2,
       "direct_count": 1,
       "direct_matches": true,
-      "elapsed_seconds": 0.00010110018774867058,
+      "elapsed_seconds": 9.580003097653389e-05,
       "equation_rows": 1,
       "expected": [
         1,
@@ -864,7 +864,7 @@
       "characters": 4,
       "direct_count": 1,
       "direct_matches": true,
-      "elapsed_seconds": 0.00018010009080171585,
+      "elapsed_seconds": 0.00019069993868470192,
       "equation_rows": 2,
       "expected": [
         1,
@@ -889,7 +889,7 @@
       "characters": 16,
       "direct_count": 1,
       "direct_matches": true,
-      "elapsed_seconds": 0.0009035002440214157,
+      "elapsed_seconds": 0.00045900000259280205,
       "equation_rows": 4,
       "expected": [
         1,
@@ -898,7 +898,7 @@
       "expected_matches": true,
       "n": 8,
       "name": "local_parities_rank_4",
-      "producer_work": 256,
+      "producer_work": 112,
       "rank": 4,
       "status": "EXACT",
       "value": [
@@ -912,7 +912,7 @@
     {
       "blocks": 8,
       "characters": 256,
-      "elapsed_seconds": 0.027320099994540215,
+      "elapsed_seconds": 0.009026099927723408,
       "equation_rows": 8,
       "expected": [
         1,
@@ -921,7 +921,7 @@
       "expected_matches": true,
       "n": 16,
       "name": "local_parities_rank_8",
-      "producer_work": 8192,
+      "producer_work": 2144,
       "rank": 8,
       "status": "EXACT",
       "value": [
@@ -935,7 +935,7 @@
     {
       "blocks": 12,
       "characters": 4096,
-      "elapsed_seconds": 0.7238962003029883,
+      "elapsed_seconds": 0.23627289989963174,
       "equation_rows": 12,
       "expected": [
         1,
@@ -944,7 +944,7 @@
       "expected_matches": true,
       "n": 24,
       "name": "local_parities_rank_12",
-      "producer_work": 196608,
+      "producer_work": 49296,
       "rank": 12,
       "status": "EXACT",
       "value": [
@@ -958,7 +958,7 @@
     {
       "blocks": 14,
       "characters": 16384,
-      "elapsed_seconds": 3.5442872997373343,
+      "elapsed_seconds": 1.157164600212127,
       "equation_rows": 14,
       "expected": [
         1,
@@ -967,7 +967,7 @@
       "expected_matches": true,
       "n": 28,
       "name": "local_parities_rank_14",
-      "producer_work": 917504,
+      "producer_work": 229544,
       "rank": 14,
       "status": "EXACT",
       "value": [
@@ -980,7 +980,7 @@
     },
     {
       "blocks": 16,
-      "elapsed_seconds": 0.36748480005189776,
+      "elapsed_seconds": 0.5237075998447835,
       "equation_rows": 16,
       "n": 32,
       "name": "local_parities_rank_16_capped",
@@ -998,7 +998,7 @@
   ],
   "schema": "affine_character_factor_experiment_v1",
   "source_hashes": {
-    "engine.py": "4af5c39edd3f212b0e19787e9c8fc30212363acb46ca841f3bd32b4ca6ebe5cb",
+    "engine.py": "0dc75f40beda452a4ac957cb6dedac24d580e81badb202c4370c5eb1135d1ae3",
     "run_experiments.py": "d746b249d0907758629bd40a6805b48433ee0cd38e60d2dd445b8e3ee451e6f2",
     "test_engine.py": "2a9dbe7456434bfd88b4af81c1f49009cd3c1e81cf987df5a9fa80a1da9edae0"
   }

@@ -23,7 +23,7 @@ def clean_url(raw: str) -> str:
 def main() -> None:
     found: dict[str, set[str]] = {}
     for path in ROOT.rglob("*"):
-        if (not path.is_file() or any(part in IGNORED_DIRS for part in path.parts)
+        if (path == OUT or not path.is_file() or any(part in IGNORED_DIRS for part in path.parts)
                 or path.suffix.lower() not in TEXT_SUFFIXES):
             continue
         try:

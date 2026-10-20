@@ -1,5 +1,18 @@
 # Next research decisions
 
+## Current engineering priorities — 20 October 2026
+
+The [public-method review](PUBLIC_METHOD_REVIEW.md) now supplies the comparison
+and acceptance test for each capability. First reconstruct exact LP discovery
+with a canonical rational export and an exact backend. Then benchmark certified
+SAT/XOR and D4/CPOG compilation on the same original requests. Next evaluate
+CMR graphic recognition, a public LEMON matching-dual exporter, and independently
+checked join/contraction plans. Keep exact reference implementations and all
+negative/UNKNOWN controls. These adapters are proposed, not yet installed.
+
+Immediate verifier hardening, source-coverage checks and local Fourier
+precomputation are recorded separately from those future integrations. None
+establishes novelty, global superiority or a P-versus-NP result.
 The active goal remains a rigorous answer to P versus NP. A finite solver
 improvement is an intermediate result. The current report and acceptance
 standard must accompany any claim of progress.

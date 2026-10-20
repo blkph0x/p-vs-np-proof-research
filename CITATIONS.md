@@ -37,6 +37,18 @@ that the cited claim is correct or that it proves P versus NP.
 
 ## Citation rules for new work
 
+The [public-method comparison](PUBLIC_METHOD_REVIEW.md) adds primary sources
+for CaDiCaL/CryptoMiniSat and proof formats; D4/CPOG and projected certified
+compilation; DPMC, htd and cotengra; CMR and LEMON; exact LP backends and GAP;
+FLINT, subset-sum and certified approximate counting; and benchmark practices.
+Each comparison states the matching input/output contract and an adoption
+test. These tools have not all been installed or benchmarked here.
+
+The [affine-hull experiment](affine_projection_recognition_lab/AFFINE_HULL_METHOD.md)
+specializes Reps--Sagiv--Yorsh's best-abstraction algorithm and cites Boolean
+affine-envelope work. Its algorithmic provenance is explicit; no novelty is
+claimed for the model-outside-current-hull loop.
+
 1. Name the original or primary public source near the first use of an idea.
 2. State whether the source is a theorem, a preprint, an abstract, or an
    unverified public claim.

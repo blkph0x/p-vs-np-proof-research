@@ -5,85 +5,137 @@ public URL found in the repository's source, reports, and saved metadata,
 along with the local files that cite or preserve it. The curated primary
 sources and citation rules are in [`CITATIONS.md`](CITATIONS.md).
 
-Indexed URLs: **78**.
+Indexed URLs: **130**.
 
 | URL | Local provenance |
 | --- | --- |
-| <http://xplorestaging.ieee.org/ielx8/11716742/11716745/11717448.pdf?arnumber=11717448> | `PUBLIC_SOURCES.md`, `VOHRA_CROSSREF_METADATA.json` |
-| <https://api.crossref.org/works/10.1109/ASSIC70037.2026.11717448> | `PUBLIC_SOURCES.md`, `VOHRA_CROSSREF_METADATA.json`, `save_vohra_metadata.py` |
-| <https://arxiv.org/abs/1307.7430> | `AFFINE_DECOMPOSITION_NEXT_REVIEW.md`, `CITATIONS.md`, `NEXT_HOLOGRAPHIC_BRIEF.md`, `PUBLIC_SOURCES.md`, `holographic_tractability_lab/THEOREM.md` |
-| <https://arxiv.org/abs/1808.00128> | `AFFINE_CANCELLATION_LITERATURE_SCOPE.md`, `PUBLIC_SOURCES.md` |
-| <https://arxiv.org/abs/2004.03387> | `ALL_DUAL_LP_THEOREM.md`, `PUBLIC_SOURCES.md`, `local_marginal_code_lab/LOCAL_MARGINAL_NOVELTY_LEDGER.md` |
-| <https://arxiv.org/abs/2211.12862> | `PERTURBATION_ROUTE_REVIEW.md`, `PUBLIC_SOURCES.md` |
-| <https://arxiv.org/abs/2508.04726> | `ALGEBRAIC_LITERATURE_CHECK.md`, `PUBLIC_SOURCES.md` |
-| <https://arxiv.org/abs/2606.23161> | `CITATIONS.md`, `EXTERNAL_STATUS_AUDIT_2026_10_18.md`, `PUBLIC_SOURCES.md`, `REGULAR_LDPC_MINIMUM_DISTANCE_SCOPE.md` |
-| <https://arxiv.org/abs/2608.16298> | `PERTURBATION_ROUTE_REVIEW.md`, `PUBLIC_SOURCES.md` |
-| <https://arxiv.org/html/1303.6729> | `HOLOGRAPHIC_LITERATURE_CHECK.md`, `PUBLIC_SOURCES.md`, `crossing_sign_lab/THEOREM.md` |
-| <https://arxiv.org/html/1303.6729#S2> | `PUBLIC_SOURCES.md`, `crossing_sign_lab/INDEPENDENT_REVIEW.md`, `simultaneous_basis_lab/THEOREM.md` |
-| <https://arxiv.org/html/1307.7430#S2> | `PUBLIC_SOURCES.md`, `simultaneous_basis_lab/THEOREM.md` |
-| <https://arxiv.org/html/2503.04101v3#S3> | `AFFINE_CANCELLATION_LITERATURE_SCOPE.md`, `PUBLIC_SOURCES.md` |
-| <https://arxiv.org/html/2601.01390v1> | `ALGEBRAIC_LITERATURE_CHECK.md`, `PUBLIC_SOURCES.md` |
-| <https://arxiv.org/html/2610.06819v1> | `AFFINE_REPRESENTATION_LITERATURE_SCOPE.md`, `PUBLIC_SOURCES.md` |
-| <https://arxiv.org/pdf/1307.7430> | `HOLOGRAPHIC_LITERATURE_CHECK.md`, `PUBLIC_SOURCES.md`, `affine_boundary_lab/THEOREM.md`, `holographic_tractability_lab/INDEPENDENT_REVIEW.md`, `tensor_basis_lab/THEOREM.md` |
-| <https://arxiv.org/pdf/1504.07647> | `PERTURBATION_ROUTE_REVIEW.md`, `PUBLIC_SOURCES.md`, `labelled_join_certified/COVERAGE_AUDIT.md` |
-| <https://arxiv.org/pdf/1602.03124> | `PUBLIC_SOURCES.md`, `matching_gadget_limits/THEOREM.md` |
-| <https://arxiv.org/pdf/2106.03214> | `AFFINE_REPRESENTATION_LITERATURE_SCOPE.md`, `PUBLIC_SOURCES.md` |
-| <https://arxiv.org/pdf/2110.07781> | `AFFINE_REPRESENTATION_LITERATURE_SCOPE.md`, `PUBLIC_SOURCES.md` |
-| <https://arxiv.org/pdf/2207.09797> | `PERTURBATION_ROUTE_REVIEW.md`, `PUBLIC_SOURCES.md` |
-| <https://arxiv.org/pdf/2610.20742> | `ALGEBRAIC_LITERATURE_CHECK.md`, `PUBLIC_SOURCES.md` |
+| <http://xplorestaging.ieee.org/ielx8/11716742/11716745/11717448.pdf?arnumber=11717448> | `VOHRA_CROSSREF_METADATA.json` |
+| <https://api.crossref.org/works/10.1109/ASSIC70037.2026.11717448> | `VOHRA_CROSSREF_METADATA.json`, `save_vohra_metadata.py` |
+| <https://arxiv.org/abs/1102.0316> | `PUBLIC_METHOD_REVIEW.md`, `affine_character_factor_lab/FWHT_PRECOMPUTATION.md`, `affine_character_factor_lab/THEOREM.md` |
+| <https://arxiv.org/abs/1211.4475> | `PUBLIC_METHOD_REVIEW.md` |
+| <https://arxiv.org/abs/1307.7430> | `AFFINE_DECOMPOSITION_NEXT_REVIEW.md`, `CITATIONS.md`, `NEXT_HOLOGRAPHIC_BRIEF.md`, `holographic_tractability_lab/THEOREM.md` |
+| <https://arxiv.org/abs/1507.02318> | `PUBLIC_METHOD_REVIEW.md` |
+| <https://arxiv.org/abs/1808.00128> | `AFFINE_CANCELLATION_LITERATURE_SCOPE.md` |
+| <https://arxiv.org/abs/2004.03387> | `ALL_DUAL_LP_THEOREM.md`, `PUBLIC_METHOD_REVIEW.md`, `local_marginal_code_lab/LOCAL_MARGINAL_NOVELTY_LEDGER.md` |
+| <https://arxiv.org/abs/2109.08629> | `PUBLIC_METHOD_REVIEW.md` |
+| <https://arxiv.org/abs/2211.12862> | `PERTURBATION_ROUTE_REVIEW.md` |
+| <https://arxiv.org/abs/2406.11414> | `PUBLIC_METHOD_REVIEW.md` |
+| <https://arxiv.org/abs/2508.04726> | `ALGEBRAIC_LITERATURE_CHECK.md` |
+| <https://arxiv.org/abs/2606.23161> | `CITATIONS.md`, `EXTERNAL_STATUS_AUDIT_2026_10_18.md`, `REGULAR_LDPC_MINIMUM_DISTANCE_SCOPE.md` |
+| <https://arxiv.org/abs/2608.16298> | `PERTURBATION_ROUTE_REVIEW.md` |
+| <https://arxiv.org/abs/math/0211450> | `PUBLIC_METHOD_REVIEW.md` |
+| <https://arxiv.org/html/1303.6729> | `HOLOGRAPHIC_LITERATURE_CHECK.md`, `crossing_sign_lab/THEOREM.md` |
+| <https://arxiv.org/html/1303.6729#S2> | `crossing_sign_lab/INDEPENDENT_REVIEW.md`, `simultaneous_basis_lab/THEOREM.md` |
+| <https://arxiv.org/html/1307.7430#S2> | `simultaneous_basis_lab/THEOREM.md` |
+| <https://arxiv.org/html/2503.04101v3#S3> | `AFFINE_CANCELLATION_LITERATURE_SCOPE.md` |
+| <https://arxiv.org/html/2601.01390v1> | `ALGEBRAIC_LITERATURE_CHECK.md` |
+| <https://arxiv.org/html/2610.06819v1> | `AFFINE_REPRESENTATION_LITERATURE_SCOPE.md` |
+| <https://arxiv.org/pdf/0804.0066> | `PUBLIC_METHOD_REVIEW.md`, `affine_projection_recognition_lab/AFFINE_HULL_METHOD.md` |
+| <https://arxiv.org/pdf/1307.7430> | `HOLOGRAPHIC_LITERATURE_CHECK.md`, `PUBLIC_METHOD_REVIEW.md`, `affine_boundary_lab/THEOREM.md`, `holographic_tractability_lab/INDEPENDENT_REVIEW.md`, `tensor_basis_lab/THEOREM.md` |
+| <https://arxiv.org/pdf/1504.07647> | `PERTURBATION_ROUTE_REVIEW.md`, `labelled_join_certified/COVERAGE_AUDIT.md` |
+| <https://arxiv.org/pdf/1602.03124> | `matching_gadget_limits/THEOREM.md` |
+| <https://arxiv.org/pdf/1808.00128> | `PUBLIC_METHOD_REVIEW.md` |
+| <https://arxiv.org/pdf/2106.03214> | `AFFINE_REPRESENTATION_LITERATURE_SCOPE.md` |
+| <https://arxiv.org/pdf/2110.07781> | `AFFINE_REPRESENTATION_LITERATURE_SCOPE.md` |
+| <https://arxiv.org/pdf/2207.09797> | `PERTURBATION_ROUTE_REVIEW.md` |
+| <https://arxiv.org/pdf/2610.20742> | `ALGEBRAIC_LITERATURE_CHECK.md` |
 | <https://arxiv.org/pdf/cs/0406006> | `CITATIONS.md`, `affine_projection_recognition_lab/COMPLEXITY_THEOREM.md` |
-| <https://blkph0x.github.io/p-vs-np-proof-research/> | `PUBLIC_SOURCES.md`, `README.md` |
-| <https://doi.org/10.1002/jgt.20037> | `PUBLIC_SOURCES.md`, `charged_work_core_lab/FANO_NOTES.md` |
-| <https://doi.org/10.1007/BF00264290> | `CITATIONS.md`, `PUBLIC_SOURCES.md` |
-| <https://doi.org/10.1007/BF01580113> | `PUBLIC_SOURCES.md`, `THEORY_REVIEW.md` |
-| <https://doi.org/10.1016/0166-218X> | `CITATIONS.md`, `PEER_AUDIT_RESPONSE_2026_10_19.md`, `PEER_AUDIT_RESPONSE_2026_10_20.md`, `PUBLIC_SOURCES.md`, `local_marginal_code_lab/LOCAL_MARGINAL_HIERARCHY_NOTE.md`, `local_marginal_code_lab/LOCAL_MARGINAL_NOVELTY_LEDGER.md` |
-| <https://doi.org/10.1016/0304-3975> | `PUBLIC_SOURCES.md`, `THEORY_REVIEW.md` |
-| <https://doi.org/10.1016/S0012-365X> | `PUBLIC_SOURCES.md`, `matching_gadget_limits/THEOREM.md` |
-| <https://doi.org/10.1109/18.641542> | `PUBLIC_SOURCES.md`, `high_width_core_stress_lab/REPORT.md` |
-| <https://doi.org/10.1109/ASSIC70037.2026.11717448> | `CITATIONS.md`, `PUBLIC_SOURCES.md` |
-| <https://doi.org/10.1109/TIT.1954.1057465> | `CITATIONS.md`, `PEER_AUDIT_RESPONSE_2026_10_19.md`, `PEER_AUDIT_RESPONSE_2026_10_20.md`, `PUBLIC_SOURCES.md`, `local_marginal_code_lab/LOCAL_MARGINAL_NOVELTY_LEDGER.md`, `local_marginal_code_lab/REED_MULLER_ALL_DUAL_REPORT.md`, `local_marginal_code_lab/REED_MULLER_FORMAL_MODEL.md`, `local_marginal_code_lab/REED_MULLER_RESULTS.json`, `local_marginal_code_lab/REED_MULLER_THEOREM.md`, `local_marginal_code_lab/run_reed_muller.py` |
-| <https://doi.org/10.1109/assic70037.2026.11717448> | `PUBLIC_SOURCES.md`, `VOHRA_CROSSREF_METADATA.json` |
-| <https://doi.org/10.1145/258533.258559> | `PUBLIC_SOURCES.md`, `VARDY_MINIMUM_DISTANCE_SCOPE.md`, `labelled_join_certified/COVERAGE_AUDIT.md` |
-| <https://doi.org/10.1287/moor.7.1.67> | `PUBLIC_SOURCES.md`, `THEORY_REVIEW.md` |
-| <https://eccc.weizmann.ac.il/report/2011/142/> | `CITATIONS.md`, `PUBLIC_SOURCES.md`, `local_marginal_code_lab/LOCAL_MARGINAL_NOVELTY_LEDGER.md` |
-| <https://ece.iisc.ac.in/~nkashyap/Papers/code_decomp_final.pdf> | `ALL_DUAL_LP_THEOREM.md`, `PUBLIC_SOURCES.md`, `local_marginal_code_lab/LOCAL_MARGINAL_NOVELTY_LEDGER.md` |
-| <https://epubs.siam.org/doi/10.1137/070691152> | `PUBLIC_SOURCES.md`, `high_width_core_stress_lab/REPORT.md` |
-| <https://github.com/blkph0x/p-vs-np-proof-research> | `CITATION.cff`, `PUBLIC_SOURCES.md`, `index.md` |
-| <https://github.com/blkph0x/p-vs-np-proof-research/actions> | `PEER_AUDIT_RESPONSE_2026_10_20.md`, `PUBLIC_SOURCES.md` |
-| <https://github.com/marijnheule/cake_lpr> | `CITATIONS.md`, `PEER_AUDIT_RESPONSE_2026_10_19.md`, `PEER_AUDIT_RESPONSE_2026_10_20.md`, `PUBLIC_SOURCES.md` |
-| <https://github.com/marijnheule/drat-trim> | `CITATIONS.md`, `PEER_AUDIT_RESPONSE_2026_10_19.md`, `PEER_AUDIT_RESPONSE_2026_10_20.md`, `PUBLIC_SOURCES.md` |
-| <https://homepages.inf.ed.ac.uk/hguo/papers/HA-general.pdf> | `AFFINE_BOUNDARY_DESIGN.md`, `PUBLIC_SOURCES.md`, `holographic_tractability_lab/RESULTS.json`, `holographic_tractability_lab/THEOREM.md`, `holographic_tractability_lab/run_experiments.py` |
-| <https://ics.uci.edu/~dechter/publications/r76A.pdf> | `PUBLIC_SOURCES.md`, `coefficient_structure_lab/THEOREM.md` |
-| <https://ieeexplore.ieee.org/abstract/document/11717448> | `PUBLIC_SOURCES.md`, `fourier_spectrum_boundary_lab/FWHT_COST_REPORT.md` |
-| <https://ieeexplore.ieee.org/document/11717448> | `PUBLIC_SOURCES.md`, `REPORT.md` |
-| <https://ieeexplore.ieee.org/document/11717448/> | `PUBLIC_SOURCES.md`, `VOHRA_CROSSREF_METADATA.json` |
-| <https://link.springer.com/article/10.1007/s00453-015-0090-y> | `HOLOGRAPHIC_LITERATURE_CHECK.md`, `PUBLIC_SOURCES.md` |
-| <https://link.springer.com/chapter/10.1007/978-1-4684-2001-2_9> | `PUBLIC_SOURCES.md`, `multiobjective_matching_limits/THEOREM.md` |
-| <https://ocw.mit.edu/courses/6-895-essential-coding-theory-fall-2004/resources/lect05slx4/> | `CITATIONS.md`, `PUBLIC_SOURCES.md`, `local_marginal_code_lab/REED_MULLER_ALL_DUAL_REPORT.md`, `local_marginal_code_lab/REED_MULLER_RESULTS.json`, `local_marginal_code_lab/REED_MULLER_THEOREM.md`, `local_marginal_code_lab/run_reed_muller.py` |
-| <https://pages.cs.wisc.edu/~jyc/papers/signature-thy.pdf> | `NEXT_HOLOGRAPHIC_BRIEF.md`, `PUBLIC_SOURCES.md` |
-| <https://people.inf.ethz.ch/emo/SatSem05/Papers/BensassonWidgerson01.pdf> | `CITATIONS.md`, `PUBLIC_SOURCES.md`, `README.md`, `tseitin_expander_lab/REPORT.md`, `tseitin_expander_lab/THEOREM.md`, `tseitin_expander_lab/run_experiments.py` |
-| <https://proofcomplexityzoo.gitlab.io/zoo/> | `CITATIONS.md`, `PEER_AUDIT_RESPONSE_2026_10_19.md`, `PEER_AUDIT_RESPONSE_2026_10_20.md`, `PUBLIC_SOURCES.md`, `local_marginal_code_lab/LOCAL_MARGINAL_NOVELTY_LEDGER.md` |
-| <https://quantum-journal.org/papers/q-2022-04-20-692/> | `AFFINE_REPRESENTATION_LITERATURE_SCOPE.md`, `PUBLIC_SOURCES.md` |
-| <https://quantum-journal.org/papers/q-2026-07-29-2179/> | `AFFINE_CANCELLATION_LITERATURE_SCOPE.md`, `PUBLIC_SOURCES.md` |
-| <https://satcompetition.github.io/> | `CITATIONS.md`, `PEER_AUDIT_RESPONSE_2026_10_19.md`, `PEER_AUDIT_RESPONSE_2026_10_20.md`, `PUBLIC_SOURCES.md` |
-| <https://schoeneb.people.si.umich.edu/papers/LasserreNew.pdf> | `CITATIONS.md`, `PEER_AUDIT_RESPONSE_2026_10_19.md`, `PEER_AUDIT_RESPONSE_2026_10_20.md`, `PUBLIC_SOURCES.md`, `local_marginal_code_lab/LOCAL_MARGINAL_NOVELTY_LEDGER.md` |
-| <https://theory.stanford.edu/~trevisan/cs172-07/karp.pdf> | `PUBLIC_SOURCES.md`, `multiobjective_matching_limits/THEOREM.md`, `packed_cost_exact_matching/THEOREM.md` |
-| <https://www-users.cse.umn.edu/~reiner/Talks/Vienna05/Lectures.pdf> | `PUBLIC_SOURCES.md`, `labelled_join_certified/COVERAGE_INDEPENDENT_REVIEW.md` |
-| <https://www.brics.dk/DS/02/2/BRICS-DS-02-2.pdf> | `CITATIONS.md`, `PEER_AUDIT_RESPONSE_2026_10_19.md`, `PEER_AUDIT_RESPONSE_2026_10_20.md`, `PUBLIC_SOURCES.md`, `resolution_width_lab/PHP_WIDTH_REPORT.md` |
-| <https://www.claymath.org/millennium/p-vs-np/> | `CITATIONS.md`, `EXTERNAL_STATUS_AUDIT_2026_10_18.md`, `PUBLIC_SOURCES.md`, `RESOLUTION_STANDARD.md` |
-| <https://www.combinatorics.org/ojs/index.php/eljc/article/download/v32i3p36/pdf> | `PUBLIC_SOURCES.md`, `graph_order_hardness_lab/THEOREM.md` |
-| <https://www.cs.cornell.edu/~rdz/Papers/KZ-PAMI04.pdf> | `PUBLIC_SOURCES.md`, `gadget_limits/THEOREM.md` |
-| <https://www.cs.toronto.edu/~sacook/homepage/cook_reckhow.pdf> | `INDEPENDENT_AUDIT.md`, `PUBLIC_SOURCES.md` |
-| <https://www.cs.upc.edu/~atserias/papers/width/ccc03.pdf> | `CITATIONS.md`, `PUBLIC_SOURCES.md`, `resolution_width_lab/PEBBLE_REPORT.md`, `resolution_width_lab/THEOREM.md` |
-| <https://www.ee.iitm.ac.in/~andrew/ee512/projects/LinearProgrammingDecoding.pdf> | `PUBLIC_SOURCES.md`, `THEORY_REVIEW.md` |
-| <https://www.ijcai.org/Proceedings/03/Papers/168.pdf> | `AFFINE_DECOMPOSITION_NEXT_REVIEW.md`, `PUBLIC_SOURCES.md` |
-| <https://www.khoury.northeastern.edu/home/lieber/courses/csg260/f06/materials/papers/max-sat/p216-schaefer.pdf> | `CITATIONS.md`, `INDEPENDENT_AUDIT.md`, `PUBLIC_SOURCES.md`, `affine_projection_recognition_lab/COMPLEXITY_THEOREM.md`, `typed_merge_planner_lab/THEOREMS.md` |
-| <https://www.math.uwaterloo.ca/~bguenin/matroid.html> | `PUBLIC_SOURCES.md`, `labelled_join_certified/COVERAGE_AUDIT.md` |
-| <https://www.math.uwaterloo.ca/~jfgeelen/Publications/regular.pdf> | `PUBLIC_SOURCES.md`, `THEORY_REVIEW.md`, `charged_work_core_lab/FANO_NOTES.md` |
-| <https://www.researchgate.net/profile/Alexander-Vardy/publication/221591825_Algorithmic_Complexity_in_Coding_Theory_and_the_Minimum_Distance_Problem/links/00463517a8f459b272000000/Algorithmic-Complexity-in-Coding-Theory-and-the-Minimum-Distance-Problem.pdf> | `PUBLIC_SOURCES.md`, `VARDY_MINIMUM_DISTANCE_SCOPE.md` |
+| <https://blkph0x.github.io/p-vs-np-proof-research/> | `README.md` |
+| <https://cotengra.readthedocs.io/en/main/basics.html> | `PUBLIC_METHOD_REVIEW.md` |
+| <https://discopt.github.io/cmr/> | `PUBLIC_METHOD_REVIEW.md` |
+| <https://discopt.github.io/cmr/graphic.html> | `PUBLIC_METHOD_REVIEW.md` |
+| <https://doc.sagemath.org/html/en/reference/coding/sage/coding/linear_code.html> | `PUBLIC_METHOD_REVIEW.md` |
+| <https://doc.sagemath.org/html/en/reference/matroids/sage/matroids/matroid.html> | `PUBLIC_METHOD_REVIEW.md` |
+| <https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax#concurrency> | `PUBLIC_METHOD_REVIEW.md` |
+| <https://docs.python.org/3/reference/simple_stmts.html#the-assert-statement> | `PUBLIC_METHOD_REVIEW.md` |
+| <https://docs.sympy.org/latest/modules/discrete.html> | `PUBLIC_METHOD_REVIEW.md`, `affine_character_factor_lab/FWHT_PRECOMPUTATION.md`, `affine_character_factor_lab/THEOREM.md` |
+| <https://doi.org/10.1002/jgt.20037> | `charged_work_core_lab/FANO_NOTES.md` |
+| <https://doi.org/10.1007/BF00264290> | `CITATIONS.md` |
+| <https://doi.org/10.1007/BF01580113> | `THEORY_REVIEW.md` |
+| <https://doi.org/10.1016/0166-218X> | `CITATIONS.md`, `PEER_AUDIT_RESPONSE_2026_10_19.md`, `PEER_AUDIT_RESPONSE_2026_10_20.md`, `local_marginal_code_lab/LOCAL_MARGINAL_HIERARCHY_NOTE.md`, `local_marginal_code_lab/LOCAL_MARGINAL_NOVELTY_LEDGER.md` |
+| <https://doi.org/10.1016/0304-3975> | `THEORY_REVIEW.md` |
+| <https://doi.org/10.1016/S0012-365X> | `matching_gadget_limits/THEOREM.md` |
+| <https://doi.org/10.1016/j.jcss.2024.103520> | `PUBLIC_METHOD_REVIEW.md` |
+| <https://doi.org/10.1109/18.641542> | `high_width_core_stress_lab/REPORT.md` |
+| <https://doi.org/10.1109/ASSIC70037.2026.11717448> | `CITATIONS.md` |
+| <https://doi.org/10.1109/TIT.1954.1057465> | `CITATIONS.md`, `PEER_AUDIT_RESPONSE_2026_10_19.md`, `PEER_AUDIT_RESPONSE_2026_10_20.md`, `local_marginal_code_lab/LOCAL_MARGINAL_NOVELTY_LEDGER.md`, `local_marginal_code_lab/REED_MULLER_ALL_DUAL_REPORT.md`, `local_marginal_code_lab/REED_MULLER_FORMAL_MODEL.md`, `local_marginal_code_lab/REED_MULLER_RESULTS.json`, `local_marginal_code_lab/REED_MULLER_THEOREM.md`, `local_marginal_code_lab/run_reed_muller.py` |
+| <https://doi.org/10.1109/assic70037.2026.11717448> | `VOHRA_CROSSREF_METADATA.json` |
+| <https://doi.org/10.1145/258533.258559> | `VARDY_MINIMUM_DISTANCE_SCOPE.md`, `labelled_join_certified/COVERAGE_AUDIT.md` |
+| <https://doi.org/10.1287/moor.7.1.67> | `THEORY_REVIEW.md` |
+| <https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.SAT.2023.6> | `PUBLIC_METHOD_REVIEW.md` |
+| <https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.SAT.2025.8> | `PUBLIC_METHOD_REVIEW.md` |
+| <https://eccc.weizmann.ac.il/report/2011/142/> | `CITATIONS.md`, `local_marginal_code_lab/LOCAL_MARGINAL_NOVELTY_LEDGER.md` |
+| <https://ece.iisc.ac.in/~nkashyap/Papers/code_decomp_final.pdf> | `ALL_DUAL_LP_THEOREM.md`, `local_marginal_code_lab/LOCAL_MARGINAL_NOVELTY_LEDGER.md` |
+| <https://epubs.siam.org/doi/10.1137/070691152> | `high_width_core_stress_lab/REPORT.md` |
+| <https://flintlib.org/doc/fmpz_poly.html> | `PUBLIC_METHOD_REVIEW.md` |
+| <https://flintlib.org/doc/nmod_poly.html> | `PUBLIC_METHOD_REVIEW.md` |
+| <https://gap-system.github.io/gap/doc/ref/chap41.html> | `PUBLIC_METHOD_REVIEW.md` |
+| <https://gap-system.github.io/gap/doc/ref/chap43_mj.html> | `PUBLIC_METHOD_REVIEW.md` |
+| <https://github.com/arminbiere/cadical> | `PUBLIC_METHOD_REVIEW.md` |
+| <https://github.com/arminbiere/cadical/blob/master/src/cadical.hpp> | `PUBLIC_METHOD_REVIEW.md` |
+| <https://github.com/arminbiere/kissat> | `PUBLIC_METHOD_REVIEW.md` |
+| <https://github.com/blkph0x/p-vs-np-proof-research> | `CITATION.cff`, `index.md` |
+| <https://github.com/blkph0x/p-vs-np-proof-research/actions> | `PEER_AUDIT_RESPONSE_2026_10_20.md` |
+| <https://github.com/blkph0x/p-vs-np-proof-research/tree/914f2e0c283b6440159d3495ececffd83d42dc30/affine_character_factor_lab> | `affine_character_factor_lab/FWHT_PRECOMPUTATION.md` |
+| <https://github.com/jump-dev/SumOfSquares.jl> | `PUBLIC_METHOD_REVIEW.md` |
+| <https://github.com/mabseher/htd> | `PUBLIC_METHOD_REVIEW.md` |
+| <https://github.com/malb/m4ri> | `PUBLIC_METHOD_REVIEW.md` |
+| <https://github.com/marijnheule/cake_lpr> | `CITATIONS.md`, `PEER_AUDIT_RESPONSE_2026_10_19.md`, `PEER_AUDIT_RESPONSE_2026_10_20.md`, `PUBLIC_METHOD_REVIEW.md` |
+| <https://github.com/marijnheule/drat-trim> | `CITATIONS.md`, `PEER_AUDIT_RESPONSE_2026_10_19.md`, `PEER_AUDIT_RESPONSE_2026_10_20.md`, `PUBLIC_METHOD_REVIEW.md` |
+| <https://github.com/meelgroup/approxmc> | `PUBLIC_METHOD_REVIEW.md` |
+| <https://github.com/meelgroup/frat-xor> | `PUBLIC_METHOD_REVIEW.md` |
+| <https://github.com/msoos/cryptominisat> | `PUBLIC_METHOD_REVIEW.md` |
+| <https://github.com/sharpbracket/qsopt-ex> | `PUBLIC_METHOD_REVIEW.md` |
+| <https://github.com/sosy-lab/benchexec/> | `PUBLIC_METHOD_REVIEW.md` |
+| <https://github.com/vardigroup/DPMC> | `PUBLIC_METHOD_REVIEW.md` |
+| <https://homepages.inf.ed.ac.uk/hguo/papers/HA-general.pdf> | `AFFINE_BOUNDARY_DESIGN.md`, `holographic_tractability_lab/RESULTS.json`, `holographic_tractability_lab/THEOREM.md`, `holographic_tractability_lab/run_experiments.py` |
+| <https://ics.uci.edu/~dechter/publications/r76A.pdf> | `PUBLIC_METHOD_REVIEW.md`, `coefficient_structure_lab/THEOREM.md` |
+| <https://ieeexplore.ieee.org/abstract/document/11717448> | `fourier_spectrum_boundary_lab/FWHT_COST_REPORT.md` |
+| <https://ieeexplore.ieee.org/document/11717448> | `REPORT.md` |
+| <https://ieeexplore.ieee.org/document/11717448/> | `VOHRA_CROSSREF_METADATA.json` |
+| <https://jump.dev/SumOfSquares.jl/v0.8/reference/certificate/> | `PUBLIC_METHOD_REVIEW.md` |
+| <https://lemon.cs.elte.hu/pub/doc/1.3/a00254.html> | `PUBLIC_METHOD_REVIEW.md` |
+| <https://lemon.cs.elte.hu/trac/lemon/wiki/License> | `PUBLIC_METHOD_REVIEW.md` |
+| <https://link.springer.com/article/10.1007/s00453-015-0090-y> | `HOLOGRAPHIC_LITERATURE_CHECK.md` |
+| <https://link.springer.com/chapter/10.1007/978-1-4684-2001-2_9> | `multiobjective_matching_limits/THEOREM.md` |
+| <https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.matching.max_weight_matching.html> | `PUBLIC_METHOD_REVIEW.md` |
+| <https://ocw.mit.edu/courses/6-895-essential-coding-theory-fall-2004/resources/lect05slx4/> | `CITATIONS.md`, `local_marginal_code_lab/REED_MULLER_ALL_DUAL_REPORT.md`, `local_marginal_code_lab/REED_MULLER_RESULTS.json`, `local_marginal_code_lab/REED_MULLER_THEOREM.md`, `local_marginal_code_lab/run_reed_muller.py` |
+| <https://pages.cs.wisc.edu/~jyc/papers/signature-thy.pdf> | `NEXT_HOLOGRAPHIC_BRIEF.md` |
+| <https://pallini.di.uniroma1.it/> | `PUBLIC_METHOD_REVIEW.md` |
+| <https://people.inf.ethz.ch/emo/SatSem05/Papers/BensassonWidgerson01.pdf> | `CITATIONS.md`, `README.md`, `tseitin_expander_lab/REPORT.md`, `tseitin_expander_lab/THEOREM.md`, `tseitin_expander_lab/run_experiments.py` |
+| <https://pfapack.readthedocs.io/en/stable/> | `PUBLIC_METHOD_REVIEW.md` |
+| <https://pmc.ncbi.nlm.nih.gov/articles/PMC7326555/> | `PUBLIC_METHOD_REVIEW.md` |
+| <https://proofcomplexityzoo.gitlab.io/zoo/> | `CITATIONS.md`, `PEER_AUDIT_RESPONSE_2026_10_19.md`, `PEER_AUDIT_RESPONSE_2026_10_20.md`, `local_marginal_code_lab/LOCAL_MARGINAL_NOVELTY_LEDGER.md` |
+| <https://pub.ista.ac.at/~vnk/software.html> | `PUBLIC_METHOD_REVIEW.md` |
+| <https://quantum-journal.org/papers/q-2022-04-20-692/> | `AFFINE_REPRESENTATION_LITERATURE_SCOPE.md` |
+| <https://quantum-journal.org/papers/q-2026-07-29-2179/> | `AFFINE_CANCELLATION_LITERATURE_SCOPE.md` |
+| <https://research.cs.wisc.edu/wpis/papers/vmcai04.BT.pdf> | `PUBLIC_METHOD_REVIEW.md`, `affine_projection_recognition_lab/AFFINE_HULL_METHOD.md` |
+| <https://satcompetition.github.io/> | `CITATIONS.md`, `PEER_AUDIT_RESPONSE_2026_10_19.md`, `PEER_AUDIT_RESPONSE_2026_10_20.md` |
+| <https://schoeneb.people.si.umich.edu/papers/LasserreNew.pdf> | `CITATIONS.md`, `PEER_AUDIT_RESPONSE_2026_10_19.md`, `PEER_AUDIT_RESPONSE_2026_10_20.md`, `local_marginal_code_lab/LOCAL_MARGINAL_NOVELTY_LEDGER.md` |
+| <https://soplex.zib.de/doc/html/EXACT.php> | `PUBLIC_METHOD_REVIEW.md` |
+| <https://soplex.zib.de/index.php> | `PUBLIC_METHOD_REVIEW.md` |
+| <https://theory.stanford.edu/~trevisan/cs172-07/karp.pdf> | `multiobjective_matching_limits/THEOREM.md`, `packed_cost_exact_matching/THEOREM.md` |
+| <https://theoryofcomputing.org/articles/v010a007/> | `PUBLIC_METHOD_REVIEW.md` |
+| <https://veripb.org/> | `PUBLIC_METHOD_REVIEW.md` |
+| <https://www-users.cse.umn.edu/~reiner/Talks/Vienna05/Lectures.pdf> | `labelled_join_certified/COVERAGE_INDEPENDENT_REVIEW.md` |
+| <https://www.brics.dk/DS/02/2/BRICS-DS-02-2.pdf> | `CITATIONS.md`, `PEER_AUDIT_RESPONSE_2026_10_19.md`, `PEER_AUDIT_RESPONSE_2026_10_20.md`, `PUBLIC_METHOD_REVIEW.md`, `resolution_width_lab/PHP_WIDTH_REPORT.md` |
+| <https://www.claymath.org/millennium/p-vs-np/> | `CITATIONS.md`, `EXTERNAL_STATUS_AUDIT_2026_10_18.md`, `RESOLUTION_STANDARD.md` |
+| <https://www.combinatorics.org/ojs/index.php/eljc/article/download/v32i3p36/pdf> | `graph_order_hardness_lab/THEOREM.md` |
+| <https://www.cs.cornell.edu/~rdz/Papers/KZ-PAMI04.pdf> | `gadget_limits/THEOREM.md` |
+| <https://www.cs.toronto.edu/~sacook/homepage/cook_reckhow.pdf> | `INDEPENDENT_AUDIT.md` |
+| <https://www.cs.upc.edu/~atserias/papers/width/ccc03.pdf> | `CITATIONS.md`, `PUBLIC_METHOD_REVIEW.md`, `resolution_width_lab/PEBBLE_REPORT.md`, `resolution_width_lab/THEOREM.md` |
+| <https://www.ee.iitm.ac.in/~andrew/ee512/projects/LinearProgrammingDecoding.pdf> | `THEORY_REVIEW.md` |
+| <https://www.ijcai.org/Proceedings/03/Papers/168.pdf> | `AFFINE_DECOMPOSITION_NEXT_REVIEW.md` |
+| <https://www.khoury.northeastern.edu/home/lieber/courses/csg260/f06/materials/papers/max-sat/p216-schaefer.pdf> | `CITATIONS.md`, `INDEPENDENT_AUDIT.md`, `affine_projection_recognition_lab/COMPLEXITY_THEOREM.md`, `typed_merge_planner_lab/THEOREMS.md` |
+| <https://www.math.uwaterloo.ca/~bguenin/matroid.html> | `labelled_join_certified/COVERAGE_AUDIT.md` |
+| <https://www.math.uwaterloo.ca/~jfgeelen/Publications/regular.pdf> | `THEORY_REVIEW.md`, `charged_work_core_lab/FANO_NOTES.md` |
+| <https://www.mit.edu/~parrilo/pubs/files/PeyrlParrilo-ComputingSumOfSquaresDecompositionsWithRationalCoefficients.pdf> | `PUBLIC_METHOD_REVIEW.md` |
+| <https://www.researchgate.net/profile/Alexander-Vardy/publication/221591825_Algorithmic_Complexity_in_Coding_Theory_and_the_Minimum_Distance_Problem/links/00463517a8f459b272000000/Algorithmic-Complexity-in-Coding-Theory-and-the-Minimum-Distance-Problem.pdf> | `VARDY_MINIMUM_DISTANCE_SCOPE.md` |
 | <https://www.researchgate.net/publication/237654012_Playing_with_Boolean_Blocks_Part_II_Constraint_Satisfaction_Problems1> | `CITATIONS.md`, `affine_projection_recognition_lab/COMPLEXITY_THEOREM.md` |
-| <https://www.sciencedirect.com/science/article/pii/002001909290234M> | `PUBLIC_SOURCES.md`, `graph_order_hardness_lab/THEOREM.md` |
-| <https://www.sciencedirect.com/science/article/pii/0304397585901446> | `CITATIONS.md`, `PUBLIC_SOURCES.md` |
+| <https://www.satisfiability.org/SAT04/programme/51.pdf> | `PUBLIC_METHOD_REVIEW.md` |
+| <https://www.sciencedirect.com/science/article/pii/002001909290234M> | `graph_order_hardness_lab/THEOREM.md` |
+| <https://www.sciencedirect.com/science/article/pii/0304397585901446> | `CITATIONS.md` |
 | <https://www.sciencedirect.com/science/article/pii/S002001909800163X> | `CITATIONS.md`, `affine_projection_recognition_lab/COMPLEXITY_THEOREM.md` |
-| <https://www.sciencedirect.com/science/article/pii/S0022000010000899> | `NEXT_HOLOGRAPHIC_BRIEF.md`, `PUBLIC_SOURCES.md` |
-| <https://www2.seas.gwu.edu/~simhaweb/champalg/tsp/papers/KarpOriginal.pdf> | `INDEPENDENT_AUDIT.md`, `PUBLIC_SOURCES.md`, `packed_cost_exact_matching/REVIEW.md` |
+| <https://www.sciencedirect.com/science/article/pii/S0022000010000899> | `NEXT_HOLOGRAPHIC_BRIEF.md` |
+| <https://www.w3.org/WAI/tutorials/images/complex/> | `PUBLIC_METHOD_REVIEW.md` |
+| <https://www2.seas.gwu.edu/~simhaweb/champalg/tsp/papers/KarpOriginal.pdf> | `INDEPENDENT_AUDIT.md`, `packed_cost_exact_matching/REVIEW.md` |

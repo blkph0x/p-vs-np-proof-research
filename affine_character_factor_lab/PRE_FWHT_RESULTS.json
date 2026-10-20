@@ -1,0 +1,1005 @@
+{
+  "component_controls": [
+    {
+      "component_characters": [
+        2
+      ],
+      "component_count": 1,
+      "expected": [
+        1,
+        1
+      ],
+      "expected_matches": true,
+      "m": 1,
+      "mode": "local",
+      "name": "split_local_1",
+      "status": "EXACT",
+      "value": [
+        1,
+        1
+      ],
+      "verification": "VERIFIED",
+      "verification_valid": true
+    },
+    {
+      "component_characters": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "component_count": 4,
+      "expected": [
+        1,
+        1
+      ],
+      "expected_matches": true,
+      "m": 4,
+      "mode": "local",
+      "name": "split_local_4",
+      "status": "EXACT",
+      "value": [
+        1,
+        1
+      ],
+      "verification": "VERIFIED",
+      "verification_valid": true
+    },
+    {
+      "component_characters": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "component_count": 16,
+      "expected": [
+        1,
+        1
+      ],
+      "expected_matches": true,
+      "m": 16,
+      "mode": "local",
+      "name": "split_local_16",
+      "status": "EXACT",
+      "value": [
+        1,
+        1
+      ],
+      "verification": "VERIFIED",
+      "verification_valid": true
+    },
+    {
+      "component_characters": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "component_count": 64,
+      "expected": [
+        1,
+        1
+      ],
+      "expected_matches": true,
+      "m": 64,
+      "mode": "local",
+      "name": "split_local_64",
+      "status": "EXACT",
+      "value": [
+        1,
+        1
+      ],
+      "verification": "VERIFIED",
+      "verification_valid": true
+    },
+    {
+      "component_characters": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "component_count": 128,
+      "expected": [
+        1,
+        1
+      ],
+      "expected_matches": true,
+      "m": 128,
+      "mode": "local",
+      "name": "split_local_128",
+      "status": "EXACT",
+      "value": [
+        1,
+        1
+      ],
+      "verification": "VERIFIED",
+      "verification_valid": true
+    },
+    {
+      "component_characters": [
+        2
+      ],
+      "component_count": 1,
+      "expected": [
+        1,
+        1
+      ],
+      "expected_matches": true,
+      "m": 1,
+      "mode": "global",
+      "name": "split_global_1",
+      "status": "EXACT",
+      "value": [
+        1,
+        1
+      ],
+      "verification": "VERIFIED",
+      "verification_valid": true
+    },
+    {
+      "component_characters": [
+        2
+      ],
+      "component_count": 1,
+      "expected": [
+        3281,
+        1
+      ],
+      "expected_matches": true,
+      "m": 8,
+      "mode": "global",
+      "name": "split_global_8",
+      "status": "EXACT",
+      "value": [
+        3281,
+        1
+      ],
+      "verification": "VERIFIED",
+      "verification_valid": true
+    },
+    {
+      "component_characters": [
+        2
+      ],
+      "component_count": 1,
+      "expected": [
+        5895092288869291585760436430706259332839105796137920554548481,
+        1
+      ],
+      "expected_matches": true,
+      "m": 128,
+      "mode": "global",
+      "name": "split_global_128",
+      "status": "EXACT",
+      "value": [
+        5895092288869291585760436430706259332839105796137920554548481,
+        1
+      ],
+      "verification": "VERIFIED",
+      "verification_valid": true
+    },
+    {
+      "component_characters": [
+        2
+      ],
+      "component_count": 1,
+      "expected": [
+        1,
+        1
+      ],
+      "expected_matches": true,
+      "m": 1,
+      "mode": "connected",
+      "name": "connected_rank_1",
+      "status": "EXACT",
+      "value": [
+        1,
+        1
+      ],
+      "verification": "VERIFIED",
+      "verification_valid": true
+    },
+    {
+      "component_characters": [
+        16
+      ],
+      "component_count": 1,
+      "expected": [
+        1,
+        1
+      ],
+      "expected_matches": true,
+      "m": 4,
+      "mode": "connected",
+      "name": "connected_rank_4",
+      "status": "EXACT",
+      "value": [
+        1,
+        1
+      ],
+      "verification": "VERIFIED",
+      "verification_valid": true
+    },
+    {
+      "component_characters": [
+        256
+      ],
+      "component_count": 1,
+      "expected": [
+        1,
+        1
+      ],
+      "expected_matches": true,
+      "m": 8,
+      "mode": "connected",
+      "name": "connected_rank_8",
+      "status": "EXACT",
+      "value": [
+        1,
+        1
+      ],
+      "verification": "VERIFIED",
+      "verification_valid": true
+    },
+    {
+      "component_characters": [
+        4096
+      ],
+      "component_count": 1,
+      "expected": [
+        1,
+        1
+      ],
+      "expected_matches": true,
+      "m": 12,
+      "mode": "connected",
+      "name": "connected_rank_12",
+      "status": "EXACT",
+      "value": [
+        1,
+        1
+      ],
+      "verification": "VERIFIED",
+      "verification_valid": true
+    },
+    {
+      "m": 16,
+      "mode": "connected",
+      "name": "connected_rank_16_capped",
+      "reason": "work cap",
+      "status": "UNKNOWN"
+    }
+  ],
+  "interpretation": "Exact factorized counting for disjoint local factors plus affine coupling; rank is an explicit parameter and no unrestricted SAT claim follows.",
+  "random_crosscheck": {
+    "cases": 220,
+    "certificate_matches": 220,
+    "direct_matches": 220,
+    "exact": 220,
+    "seed": 8128
+  },
+  "records": [
+    {
+      "blocks": 1,
+      "characters": 2,
+      "direct_count": 1,
+      "direct_matches": true,
+      "elapsed_seconds": 0.00016769999638199806,
+      "equation_rows": 1,
+      "expected": [
+        1,
+        1
+      ],
+      "expected_matches": true,
+      "n": 2,
+      "name": "global_even_or_1",
+      "producer_work": 8,
+      "rank": 1,
+      "status": "EXACT",
+      "value": [
+        1,
+        1
+      ],
+      "verification": "VERIFIED",
+      "verification_valid": true,
+      "verifier_work": 8
+    },
+    {
+      "blocks": 2,
+      "characters": 2,
+      "direct_count": 5,
+      "direct_matches": true,
+      "elapsed_seconds": 0.000134199857711792,
+      "equation_rows": 1,
+      "expected": [
+        5,
+        1
+      ],
+      "expected_matches": true,
+      "n": 4,
+      "name": "global_even_or_2",
+      "producer_work": 16,
+      "rank": 1,
+      "status": "EXACT",
+      "value": [
+        5,
+        1
+      ],
+      "verification": "VERIFIED",
+      "verification_valid": true,
+      "verifier_work": 16
+    },
+    {
+      "blocks": 4,
+      "characters": 2,
+      "direct_count": 41,
+      "direct_matches": true,
+      "elapsed_seconds": 0.00022780010476708412,
+      "equation_rows": 1,
+      "expected": [
+        41,
+        1
+      ],
+      "expected_matches": true,
+      "n": 8,
+      "name": "global_even_or_4",
+      "producer_work": 32,
+      "rank": 1,
+      "status": "EXACT",
+      "value": [
+        41,
+        1
+      ],
+      "verification": "VERIFIED",
+      "verification_valid": true,
+      "verifier_work": 32
+    },
+    {
+      "blocks": 8,
+      "characters": 2,
+      "elapsed_seconds": 0.00039349962025880814,
+      "equation_rows": 1,
+      "expected": [
+        3281,
+        1
+      ],
+      "expected_matches": true,
+      "n": 16,
+      "name": "global_even_or_8",
+      "producer_work": 64,
+      "rank": 1,
+      "status": "EXACT",
+      "value": [
+        3281,
+        1
+      ],
+      "verification": "VERIFIED",
+      "verification_valid": true,
+      "verifier_work": 64
+    },
+    {
+      "blocks": 16,
+      "characters": 2,
+      "elapsed_seconds": 0.0007317997515201569,
+      "equation_rows": 1,
+      "expected": [
+        21523361,
+        1
+      ],
+      "expected_matches": true,
+      "n": 32,
+      "name": "global_even_or_16",
+      "producer_work": 128,
+      "rank": 1,
+      "status": "EXACT",
+      "value": [
+        21523361,
+        1
+      ],
+      "verification": "VERIFIED",
+      "verification_valid": true,
+      "verifier_work": 128
+    },
+    {
+      "blocks": 32,
+      "characters": 2,
+      "elapsed_seconds": 0.00140330009162426,
+      "equation_rows": 1,
+      "expected": [
+        926510094425921,
+        1
+      ],
+      "expected_matches": true,
+      "n": 64,
+      "name": "global_even_or_32",
+      "producer_work": 256,
+      "rank": 1,
+      "status": "EXACT",
+      "value": [
+        926510094425921,
+        1
+      ],
+      "verification": "VERIFIED",
+      "verification_valid": true,
+      "verifier_work": 256
+    },
+    {
+      "blocks": 64,
+      "characters": 2,
+      "elapsed_seconds": 0.0027254000306129456,
+      "equation_rows": 1,
+      "expected": [
+        1716841910146256242328924544641,
+        1
+      ],
+      "expected_matches": true,
+      "n": 128,
+      "name": "global_even_or_64",
+      "producer_work": 512,
+      "rank": 1,
+      "status": "EXACT",
+      "value": [
+        1716841910146256242328924544641,
+        1
+      ],
+      "verification": "VERIFIED",
+      "verification_valid": true,
+      "verifier_work": 512
+    },
+    {
+      "blocks": 96,
+      "characters": 2,
+      "elapsed_seconds": 0.0044617000967264175,
+      "equation_rows": 1,
+      "expected": [
+        3181342720567971179237414381269267115445108161,
+        1
+      ],
+      "expected_matches": true,
+      "n": 192,
+      "name": "global_even_or_96",
+      "producer_work": 768,
+      "rank": 1,
+      "status": "EXACT",
+      "value": [
+        3181342720567971179237414381269267115445108161,
+        1
+      ],
+      "verification": "VERIFIED",
+      "verification_valid": true,
+      "verifier_work": 768
+    },
+    {
+      "blocks": 128,
+      "characters": 2,
+      "elapsed_seconds": 0.00523229967802763,
+      "equation_rows": 1,
+      "expected": [
+        5895092288869291585760436430706259332839105796137920554548481,
+        1
+      ],
+      "expected_matches": true,
+      "n": 256,
+      "name": "global_even_or_128",
+      "producer_work": 1024,
+      "rank": 1,
+      "status": "EXACT",
+      "value": [
+        5895092288869291585760436430706259332839105796137920554548481,
+        1
+      ],
+      "verification": "VERIFIED",
+      "verification_valid": true,
+      "verifier_work": 1024
+    },
+    {
+      "blocks": 0,
+      "characters": 1,
+      "direct_count": 1,
+      "direct_matches": true,
+      "elapsed_seconds": 4.1999854147434235e-05,
+      "equation_rows": 0,
+      "expected": [
+        1,
+        1
+      ],
+      "expected_matches": true,
+      "n": 0,
+      "name": "uncoupled_or_0",
+      "producer_work": 0,
+      "rank": 0,
+      "status": "EXACT",
+      "value": [
+        1,
+        1
+      ],
+      "verification": "VERIFIED",
+      "verification_valid": true,
+      "verifier_work": 0
+    },
+    {
+      "blocks": 1,
+      "characters": 1,
+      "direct_count": 3,
+      "direct_matches": true,
+      "elapsed_seconds": 6.640003994107246e-05,
+      "equation_rows": 0,
+      "expected": [
+        3,
+        1
+      ],
+      "expected_matches": true,
+      "n": 2,
+      "name": "uncoupled_or_1",
+      "producer_work": 4,
+      "rank": 0,
+      "status": "EXACT",
+      "value": [
+        3,
+        1
+      ],
+      "verification": "VERIFIED",
+      "verification_valid": true,
+      "verifier_work": 4
+    },
+    {
+      "blocks": 4,
+      "characters": 1,
+      "direct_count": 81,
+      "direct_matches": true,
+      "elapsed_seconds": 0.00015360023826360703,
+      "equation_rows": 0,
+      "expected": [
+        81,
+        1
+      ],
+      "expected_matches": true,
+      "n": 8,
+      "name": "uncoupled_or_4",
+      "producer_work": 16,
+      "rank": 0,
+      "status": "EXACT",
+      "value": [
+        81,
+        1
+      ],
+      "verification": "VERIFIED",
+      "verification_valid": true,
+      "verifier_work": 16
+    },
+    {
+      "blocks": 16,
+      "characters": 1,
+      "elapsed_seconds": 0.0005171000957489014,
+      "equation_rows": 0,
+      "expected": [
+        43046721,
+        1
+      ],
+      "expected_matches": true,
+      "n": 32,
+      "name": "uncoupled_or_16",
+      "producer_work": 64,
+      "rank": 0,
+      "status": "EXACT",
+      "value": [
+        43046721,
+        1
+      ],
+      "verification": "VERIFIED",
+      "verification_valid": true,
+      "verifier_work": 64
+    },
+    {
+      "blocks": 64,
+      "characters": 1,
+      "elapsed_seconds": 0.0018993997946381569,
+      "equation_rows": 0,
+      "expected": [
+        3433683820292512484657849089281,
+        1
+      ],
+      "expected_matches": true,
+      "n": 128,
+      "name": "uncoupled_or_64",
+      "producer_work": 256,
+      "rank": 0,
+      "status": "EXACT",
+      "value": [
+        3433683820292512484657849089281,
+        1
+      ],
+      "verification": "VERIFIED",
+      "verification_valid": true,
+      "verifier_work": 256
+    },
+    {
+      "blocks": 128,
+      "characters": 1,
+      "elapsed_seconds": 0.0038436995819211006,
+      "equation_rows": 0,
+      "expected": [
+        11790184577738583171520872861412518665678211592275841109096961,
+        1
+      ],
+      "expected_matches": true,
+      "n": 256,
+      "name": "uncoupled_or_128",
+      "producer_work": 512,
+      "rank": 0,
+      "status": "EXACT",
+      "value": [
+        11790184577738583171520872861412518665678211592275841109096961,
+        1
+      ],
+      "verification": "VERIFIED",
+      "verification_valid": true,
+      "verifier_work": 512
+    },
+    {
+      "blocks": 1,
+      "characters": 2,
+      "direct_count": 1,
+      "direct_matches": true,
+      "elapsed_seconds": 0.00010110018774867058,
+      "equation_rows": 1,
+      "expected": [
+        1,
+        1
+      ],
+      "expected_matches": true,
+      "n": 2,
+      "name": "local_parities_rank_1",
+      "producer_work": 8,
+      "rank": 1,
+      "status": "EXACT",
+      "value": [
+        1,
+        1
+      ],
+      "verification": "VERIFIED",
+      "verification_valid": true,
+      "verifier_work": 8
+    },
+    {
+      "blocks": 2,
+      "characters": 4,
+      "direct_count": 1,
+      "direct_matches": true,
+      "elapsed_seconds": 0.00018010009080171585,
+      "equation_rows": 2,
+      "expected": [
+        1,
+        1
+      ],
+      "expected_matches": true,
+      "n": 4,
+      "name": "local_parities_rank_2",
+      "producer_work": 32,
+      "rank": 2,
+      "status": "EXACT",
+      "value": [
+        1,
+        1
+      ],
+      "verification": "VERIFIED",
+      "verification_valid": true,
+      "verifier_work": 32
+    },
+    {
+      "blocks": 4,
+      "characters": 16,
+      "direct_count": 1,
+      "direct_matches": true,
+      "elapsed_seconds": 0.0009035002440214157,
+      "equation_rows": 4,
+      "expected": [
+        1,
+        1
+      ],
+      "expected_matches": true,
+      "n": 8,
+      "name": "local_parities_rank_4",
+      "producer_work": 256,
+      "rank": 4,
+      "status": "EXACT",
+      "value": [
+        1,
+        1
+      ],
+      "verification": "VERIFIED",
+      "verification_valid": true,
+      "verifier_work": 256
+    },
+    {
+      "blocks": 8,
+      "characters": 256,
+      "elapsed_seconds": 0.027320099994540215,
+      "equation_rows": 8,
+      "expected": [
+        1,
+        1
+      ],
+      "expected_matches": true,
+      "n": 16,
+      "name": "local_parities_rank_8",
+      "producer_work": 8192,
+      "rank": 8,
+      "status": "EXACT",
+      "value": [
+        1,
+        1
+      ],
+      "verification": "VERIFIED",
+      "verification_valid": true,
+      "verifier_work": 8192
+    },
+    {
+      "blocks": 12,
+      "characters": 4096,
+      "elapsed_seconds": 0.7238962003029883,
+      "equation_rows": 12,
+      "expected": [
+        1,
+        1
+      ],
+      "expected_matches": true,
+      "n": 24,
+      "name": "local_parities_rank_12",
+      "producer_work": 196608,
+      "rank": 12,
+      "status": "EXACT",
+      "value": [
+        1,
+        1
+      ],
+      "verification": "VERIFIED",
+      "verification_valid": true,
+      "verifier_work": 196608
+    },
+    {
+      "blocks": 14,
+      "characters": 16384,
+      "elapsed_seconds": 3.5442872997373343,
+      "equation_rows": 14,
+      "expected": [
+        1,
+        1
+      ],
+      "expected_matches": true,
+      "n": 28,
+      "name": "local_parities_rank_14",
+      "producer_work": 917504,
+      "rank": 14,
+      "status": "EXACT",
+      "value": [
+        1,
+        1
+      ],
+      "verification": "VERIFIED",
+      "verification_valid": true,
+      "verifier_work": 917504
+    },
+    {
+      "blocks": 16,
+      "elapsed_seconds": 0.36748480005189776,
+      "equation_rows": 16,
+      "n": 32,
+      "name": "local_parities_rank_16_capped",
+      "reason": "work cap",
+      "status": "UNKNOWN"
+    },
+    {
+      "errors": [
+        "product mismatch"
+      ],
+      "name": "mutated_certificate",
+      "status": "INVALID",
+      "verification_valid": false
+    }
+  ],
+  "schema": "affine_character_factor_experiment_v1",
+  "source_hashes": {
+    "engine.py": "4af5c39edd3f212b0e19787e9c8fc30212363acb46ca841f3bd32b4ca6ebe5cb",
+    "run_experiments.py": "d746b249d0907758629bd40a6805b48433ee0cd38e60d2dd445b8e3ee451e6f2",
+    "test_engine.py": "2a9dbe7456434bfd88b4af81c1f49009cd3c1e81cf987df5a9fa80a1da9edae0"
+  }
+}

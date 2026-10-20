@@ -27,7 +27,7 @@ def main():
               ("direct_fano_core", ROOT / "non_graphic_core_lab", ["discover", "-v"]),
               ("high_width_core", ROOT / "high_width_core_stress_lab", ["-v", "test_lab"]),
               ("horn_cdclt", ROOT / "horn_cdclt_lab", ["-v", "test_lab"]),
-              ("proof_producing_cdcl", ROOT / "proof_producing_cdcl_lab", ["-v", "test_cdcl"]),
+              ("proof_producing_cdcl", ROOT / "proof_producing_cdcl_lab", ["-v", "test_cdcl", "test_review_validation"]),
               ("proof_complexity_scaling", ROOT / "proof_complexity_scaling_lab", ["-v", "test_scaling"]),
               ("tseitin_expander", ROOT / "tseitin_expander_lab", ["-v", "test_tseitin"]),
               ("proof_complexity_frontier", ROOT / "proof_complexity_frontier_lab", ["-v", "test_frontier"]),
@@ -66,7 +66,8 @@ def main():
                  ["-v", "test_engine", "test_nonlinear_control",
                   "test_baseline", "test_independent_review"]),
               ("affine_projection_recognition", ROOT / "affine_projection_recognition_lab",
-                 ["-v", "test_lab", "test_quantified_boundary"]),
+                 ["-v", "test_lab", "test_quantified_boundary", "test_hull_engine", "test_hull_certificate"]),
+              ("affine_character_factor", ROOT / "affine_character_factor_lab", ["discover", "-v"]),
               ("labelled_join_certified", ROOT / "labelled_join_certified", ["discover", "-v"])]
     def hashes():
         paths = sorted({p for _, directory, _ in suites for p in directory.glob("*.py")})
@@ -88,7 +89,7 @@ def main():
         except subprocess.TimeoutExpired as exc:
             def decoded(value):
                 return value.decode(errors="replace") if isinstance(value, bytes) else value or ""
-            output = decoded(exc.stdout) + decoded(exc.stderr) + "\nTIMEOUT after 300 seconds\n"
+            output = decoded(exc.stdout) + decoded(exc.stderr) + f"\nTIMEOUT after {timeout} seconds\n"
             returncode = None
         elapsed = perf_counter() - started
         count = re.search(r"Ran (\d+) tests? in", output)

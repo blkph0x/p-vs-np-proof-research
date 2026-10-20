@@ -16,6 +16,13 @@ description: A public, reproducible research notebook for exact algorithms, cert
 
 ## Current result
 
+The [feature-by-feature public-method review](PUBLIC_METHOD_REVIEW.md) compares
+the project's capabilities with established SAT, certified compilation,
+matching, exact optimisation and decomposition methods. It identifies
+concrete upgrades and the evidence required before calling them improvements.
+The source inventory covers all 65 research directories; comparative speed
+claims still require matching benchmarks.
+
 **P versus NP remains unresolved.** The repository contains exact algorithms for
 stated structural families, finite exhaustive controls, certificate verifiers,
 and scoped counterexamples. It does not claim a solver for every SAT instance

@@ -8,6 +8,11 @@
 
 ## Start here
 
+- Read the [public-method comparison and improvement plan](PUBLIC_METHOD_REVIEW.md)
+  for established alternatives to each capability, adoption tests, and the
+  distinction between documented capabilities and measured performance.
+  The [source inventory](PUBLIC_METHOD_INVENTORY.json) covers every Python
+  module in all 65 research directories; it is not a line-by-line audit.
 - Open the [interactive research site](https://blkph0x.github.io/p-vs-np-proof-research/)
   for the live runtime-scaling chart and the current audit status.
 - Read [`RESOLUTION_STANDARD.md`](RESOLUTION_STANDARD.md) for the acceptance
@@ -41,6 +46,15 @@ baseline has 55 suites and 546 test methods, while the result ledger remains
 artifact, independent checker, source citation, and the repository manifest in
 the same change. A public claim is recorded as unresolved until its full proof
 and bit-complexity argument pass the standard above.
+
+The current engineering review repairs the older general-CDCL checker's use
+of acceptance assertions, adds negative tests under optimized Python, and
+lets active research CI runs finish when another revision is pushed. It also
+integrates the [certified affine-hull experiment](affine_projection_recognition_lab/AFFINE_HULL_METHOD.md):
+an exact hull can overapproximate a projected relation, so it is not an exact
+replacement for that relation or a standalone SAT acceleration. Public
+certified compilation already exists; certification itself is not claimed
+as unique to this repository.
 
 This is the active 20 October 2026 research increment. **P versus NP remains
 unresolved.** The work delivers exact algorithms for stated structural classes,
