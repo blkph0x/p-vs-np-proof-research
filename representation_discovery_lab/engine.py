@@ -37,11 +37,13 @@ def xor_chain(shared_count: int, permutation: Iterable[int] | None = None) -> di
     fixing the last helper to zero.  ``permutation`` renames the shared inputs;
     it changes syntax while preserving the projected parity relation.
     """
-    if shared_count < 3:
+    if type(shared_count) is not int or shared_count < 3:
         raise ValueError("shared_count must be at least three")
     if permutation is None:
         permutation = tuple(range(shared_count))
-    permutation = tuple(int(value) for value in permutation)
+    permutation = tuple(permutation)
+    if any(type(value) is not int for value in permutation):
+        raise ValueError("permutation IDs must be exact integers")
     if tuple(sorted(permutation)) != tuple(range(shared_count)):
         raise ValueError("permutation must contain every shared variable once")
 
@@ -80,13 +82,15 @@ def reorder_gadget_blocks(chain: dict, order: Iterable[int] | None = None,
     block_count = len(chain["local"])
     if order is None:
         order = tuple(reversed(range(block_count)))
-    order = tuple(int(index) for index in order)
+    order = tuple(order)
+    if any(type(index) is not int for index in order):
+        raise ValueError("order IDs must be exact integers")
     if sorted(order) != list(range(block_count)):
         raise ValueError("order must contain each gadget block once")
     blocks = [tuple(chain["clauses"][4 * index:4 * index + 4]) for index in range(block_count)]
     selected = [blocks[index] for index in order]
     if duplicate_block is not None:
-        if not 0 <= duplicate_block < block_count:
+        if type(duplicate_block) is not int or not 0 <= duplicate_block < block_count:
             raise ValueError("duplicate_block is out of range")
         selected.insert(1, blocks[duplicate_block])
     unit = tuple(chain["clauses"][4 * block_count:])
@@ -96,6 +100,8 @@ def reorder_gadget_blocks(chain: dict, order: Iterable[int] | None = None,
 def rename_variables(chain: dict, mapping: dict[int, int]) -> dict:
     """Apply a bijective variable renaming to a chain, including metadata."""
     variables = set(chain["shared"]) | set(chain["local"])
+    if any(type(value) is not int for pair in mapping.items() for value in pair):
+        raise ValueError("renaming IDs must be exact integers")
     if set(mapping) != variables or set(mapping.values()) != variables:
         raise ValueError("mapping must be a permutation of all chain variables")
     clauses = tuple(tuple((1 if literal > 0 else -1) * (mapping[abs(literal) - 1] + 1)
@@ -120,6 +126,19 @@ def satisfies(clauses: tuple[tuple[int, ...], ...], assignment: dict[int, bool])
 
 def project(clauses: tuple[tuple[int, ...], ...], shared: tuple[int, ...], local: tuple[int, ...]) -> tuple[int, ...]:
     """Enumerate the exact existential projection onto ``shared``."""
+    if not all(isinstance(items, (tuple, list)) for items in (clauses, shared, local)):
+        raise ValueError("clauses/shared/local must be lists or tuples")
+    variable_ids = tuple(shared) + tuple(local)
+    if (any(type(variable) is not int or variable < 0 for variable in variable_ids)
+            or len(set(variable_ids)) != len(variable_ids)):
+        raise ValueError("shared/local IDs must be exact, nonnegative, unique and disjoint")
+    variables = set(variable_ids)
+    for clause in clauses:
+        if not isinstance(clause, (tuple, list)):
+            raise ValueError("clauses must be lists or tuples")
+        for literal in clause:
+            if type(literal) is not int or literal == 0 or abs(literal)-1 not in variables:
+                raise ValueError("nonzero exact literals must reference declared variables")
     bits: list[int] = []
     for shared_mask in range(1 << len(shared)):
         shared_assignment = {
@@ -168,7 +187,12 @@ class DiscoveryRecord:
 
 
 def discover(chain: dict) -> DiscoveryRecord:
-    """Run the fixed bounded discovery calculation and exact replay."""
+    """Check the exact projection and calculate the declared schedule charges.
+
+    Candidate enumeration is a symbolic charge, not an executed synthesis
+    loop. Projection itself short-circuits; the full-schedule charge below is
+    deliberately not an instrumentation count of those actual Python loops.
+    """
     shared = tuple(chain["shared"])
     local = tuple(chain["local"])
     clauses = tuple(chain["clauses"])
@@ -180,8 +204,8 @@ def discover(chain: dict) -> DiscoveryRecord:
     encoded_representation_bits = 8 + len(shared) * max(1, (len(shared) - 1).bit_length()) + 1
     projection_work = (1 << (len(shared) + len(local))) * max(1, len(clauses))
     enumeration_discovery_work = projection_work + candidate_search_work(len(shared))
-    # Independent replay enumerates exactly the same assignments and clauses;
-    # keep it explicit as a separate metric instead of folding it into S.
+    # This is the charge for a non-short-circuit replay schedule, not a count
+    # of the actual short-circuit project() implementation above.
     exhaustive_replay_work = projection_work
     return DiscoveryRecord(
         shared_count=len(shared),
@@ -209,7 +233,7 @@ def records(max_shared: int = 7) -> tuple[DiscoveryRecord, ...]:
 
 
 def verify_record(chain: dict, record: DiscoveryRecord) -> bool:
-    """Independent structural and semantic check for one saved record."""
+    """Recompute a producer record; independent replay is a separate module."""
     fresh = discover(chain)
     return fresh == record
 

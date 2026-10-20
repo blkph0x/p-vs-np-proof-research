@@ -1,0 +1,376 @@
+{
+  "campaign": {
+    "cases": 1536,
+    "false": 1423,
+    "formula_evaluations": 30720,
+    "records_sha256": "f282425e67603513dd400619f9932314cbaa863d85029ddc599343cf6f976dd6",
+    "true": 113
+  },
+  "examples": [
+    {
+      "formula_evaluations": 5,
+      "lifted_clauses": [],
+      "projection_affine": true,
+      "projection_bits": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "qbf_true": true,
+      "source": {
+        "clauses": [],
+        "existential_width": 0,
+        "universal_width": 0
+      },
+      "source_witness_counts": [
+        1
+      ],
+      "status": "EXACT",
+      "ternary_violation": null
+    },
+    {
+      "formula_evaluations": 5,
+      "lifted_clauses": [
+        [
+          -1,
+          -2
+        ]
+      ],
+      "projection_affine": false,
+      "projection_bits": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "qbf_true": false,
+      "source": {
+        "clauses": [
+          []
+        ],
+        "existential_width": 0,
+        "universal_width": 0
+      },
+      "source_witness_counts": [
+        0
+      ],
+      "status": "EXACT",
+      "ternary_violation": {
+        "missing": 3,
+        "parents": [
+          0,
+          1,
+          2
+        ],
+        "universal_mask": 0
+      }
+    },
+    {
+      "formula_evaluations": 20,
+      "lifted_clauses": [
+        [
+          -1,
+          -2,
+          -3,
+          4
+        ],
+        [
+          -1,
+          -2,
+          3,
+          -4
+        ]
+      ],
+      "projection_affine": true,
+      "projection_bits": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "qbf_true": true,
+      "source": {
+        "clauses": [
+          [
+            -1,
+            2
+          ],
+          [
+            1,
+            -2
+          ]
+        ],
+        "existential_width": 1,
+        "universal_width": 1
+      },
+      "source_witness_counts": [
+        1,
+        1
+      ],
+      "status": "EXACT",
+      "ternary_violation": null
+    },
+    {
+      "formula_evaluations": 20,
+      "lifted_clauses": [
+        [
+          -1,
+          -2,
+          3
+        ]
+      ],
+      "projection_affine": false,
+      "projection_bits": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "qbf_true": false,
+      "source": {
+        "clauses": [
+          [
+            1
+          ]
+        ],
+        "existential_width": 1,
+        "universal_width": 1
+      },
+      "source_witness_counts": [
+        0,
+        2
+      ],
+      "status": "EXACT",
+      "ternary_violation": {
+        "missing": 3,
+        "parents": [
+          0,
+          1,
+          2
+        ],
+        "universal_mask": 0
+      }
+    },
+    {
+      "formula_evaluations": 20,
+      "lifted_clauses": [
+        [
+          -1,
+          -2,
+          4
+        ],
+        [
+          -1,
+          -2,
+          -4
+        ]
+      ],
+      "projection_affine": false,
+      "projection_bits": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "qbf_true": false,
+      "source": {
+        "clauses": [
+          [
+            2
+          ],
+          [
+            -2
+          ]
+        ],
+        "existential_width": 1,
+        "universal_width": 1
+      },
+      "source_witness_counts": [
+        0,
+        0
+      ],
+      "status": "EXACT",
+      "ternary_violation": {
+        "missing": 3,
+        "parents": [
+          0,
+          1,
+          2
+        ],
+        "universal_mask": 0
+      }
+    },
+    {
+      "formula_evaluations": 20,
+      "lifted_clauses": [
+        [
+          -1,
+          -2,
+          3,
+          -3
+        ]
+      ],
+      "projection_affine": true,
+      "projection_bits": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "qbf_true": true,
+      "source": {
+        "clauses": [
+          [
+            1,
+            -1
+          ]
+        ],
+        "existential_width": 0,
+        "universal_width": 2
+      },
+      "source_witness_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "status": "EXACT",
+      "ternary_violation": null
+    },
+    {
+      "formula_evaluations": 20,
+      "lifted_clauses": [
+        [
+          -1,
+          -2,
+          3
+        ],
+        [
+          -1,
+          -2,
+          3
+        ]
+      ],
+      "projection_affine": false,
+      "projection_bits": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "qbf_true": false,
+      "source": {
+        "clauses": [
+          [
+            1
+          ],
+          [
+            1
+          ]
+        ],
+        "existential_width": 0,
+        "universal_width": 2
+      },
+      "source_witness_counts": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "status": "EXACT",
+      "ternary_violation": {
+        "missing": 3,
+        "parents": [
+          0,
+          1,
+          2
+        ],
+        "universal_mask": 0
+      }
+    },
+    {
+      "formula_evaluations": 20,
+      "lifted_clauses": [
+        [
+          -1,
+          -2,
+          3,
+          4
+        ],
+        [
+          -1,
+          -2,
+          -3,
+          -4
+        ]
+      ],
+      "projection_affine": true,
+      "projection_bits": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "qbf_true": true,
+      "source": {
+        "clauses": [
+          [
+            1,
+            2
+          ],
+          [
+            -1,
+            -2
+          ]
+        ],
+        "existential_width": 2,
+        "universal_width": 0
+      },
+      "source_witness_counts": [
+        2
+      ],
+      "status": "EXACT",
+      "ternary_violation": null
+    }
+  ],
+  "schema": "quantified-affine-boundary-v1",
+  "scope": "Finite regression evidence; the all-input proof is in COMPLEXITY_THEOREM.md.",
+  "status": "EXACT_FINITE_REDUCTION_CHECKS"
+}

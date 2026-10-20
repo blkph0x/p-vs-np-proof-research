@@ -27,6 +27,15 @@ hierarchy-positioning and weighted-boundary controls; the committed summary
 remains the pinned baseline record. These are reproducibility results for
 checked finite cases, not a solution to the open problem.
 
+The [hidden-affine discovery audit](representation_discovery_lab/REPORT.md)
+now separates symbolic enumeration costs from a checked structural baseline.
+Its recognizer accounts for every clause before accepting an exact equation.
+The accompanying [projection-recognition theorem](affine_projection_recognition_lab/COMPLEXITY_THEOREM.md)
+classifies the unrestricted decision problem as `Pi_2^P`-complete, with a
+written proof and 1,536 independently rebuilt finite controls. This is a
+conditional hardness classification; novelty and a P-versus-NP resolution
+are not claimed.
+
 The [current peer-audit disposition](PEER_AUDIT_RESPONSE_2026_10_20.md) records
 what is borrowed from neighboring proof-complexity, SAT, hierarchy, and coding
 literatures, what this repository actually certifies, and which claims remain

@@ -5,7 +5,7 @@ public URL found in the repository's source, reports, and saved metadata,
 along with the local files that cite or preserve it. The curated primary
 sources and citation rules are in [`CITATIONS.md`](CITATIONS.md).
 
-Indexed URLs: **75**.
+Indexed URLs: **78**.
 
 | URL | Local provenance |
 | --- | --- |
@@ -31,6 +31,7 @@ Indexed URLs: **75**.
 | <https://arxiv.org/pdf/2110.07781> | `AFFINE_REPRESENTATION_LITERATURE_SCOPE.md`, `PUBLIC_SOURCES.md` |
 | <https://arxiv.org/pdf/2207.09797> | `PERTURBATION_ROUTE_REVIEW.md`, `PUBLIC_SOURCES.md` |
 | <https://arxiv.org/pdf/2610.20742> | `ALGEBRAIC_LITERATURE_CHECK.md`, `PUBLIC_SOURCES.md` |
+| <https://arxiv.org/pdf/cs/0406006> | `CITATIONS.md`, `affine_projection_recognition_lab/COMPLEXITY_THEOREM.md` |
 | <https://blkph0x.github.io/p-vs-np-proof-research/> | `PUBLIC_SOURCES.md`, `README.md` |
 | <https://doi.org/10.1002/jgt.20037> | `PUBLIC_SOURCES.md`, `charged_work_core_lab/FANO_NOTES.md` |
 | <https://doi.org/10.1007/BF00264290> | `CITATIONS.md`, `PUBLIC_SOURCES.md` |
@@ -76,11 +77,13 @@ Indexed URLs: **75**.
 | <https://www.cs.upc.edu/~atserias/papers/width/ccc03.pdf> | `CITATIONS.md`, `PUBLIC_SOURCES.md`, `resolution_width_lab/PEBBLE_REPORT.md`, `resolution_width_lab/THEOREM.md` |
 | <https://www.ee.iitm.ac.in/~andrew/ee512/projects/LinearProgrammingDecoding.pdf> | `PUBLIC_SOURCES.md`, `THEORY_REVIEW.md` |
 | <https://www.ijcai.org/Proceedings/03/Papers/168.pdf> | `AFFINE_DECOMPOSITION_NEXT_REVIEW.md`, `PUBLIC_SOURCES.md` |
-| <https://www.khoury.northeastern.edu/home/lieber/courses/csg260/f06/materials/papers/max-sat/p216-schaefer.pdf> | `INDEPENDENT_AUDIT.md`, `PUBLIC_SOURCES.md`, `typed_merge_planner_lab/THEOREMS.md` |
+| <https://www.khoury.northeastern.edu/home/lieber/courses/csg260/f06/materials/papers/max-sat/p216-schaefer.pdf> | `CITATIONS.md`, `INDEPENDENT_AUDIT.md`, `PUBLIC_SOURCES.md`, `affine_projection_recognition_lab/COMPLEXITY_THEOREM.md`, `typed_merge_planner_lab/THEOREMS.md` |
 | <https://www.math.uwaterloo.ca/~bguenin/matroid.html> | `PUBLIC_SOURCES.md`, `labelled_join_certified/COVERAGE_AUDIT.md` |
 | <https://www.math.uwaterloo.ca/~jfgeelen/Publications/regular.pdf> | `PUBLIC_SOURCES.md`, `THEORY_REVIEW.md`, `charged_work_core_lab/FANO_NOTES.md` |
 | <https://www.researchgate.net/profile/Alexander-Vardy/publication/221591825_Algorithmic_Complexity_in_Coding_Theory_and_the_Minimum_Distance_Problem/links/00463517a8f459b272000000/Algorithmic-Complexity-in-Coding-Theory-and-the-Minimum-Distance-Problem.pdf> | `PUBLIC_SOURCES.md`, `VARDY_MINIMUM_DISTANCE_SCOPE.md` |
+| <https://www.researchgate.net/publication/237654012_Playing_with_Boolean_Blocks_Part_II_Constraint_Satisfaction_Problems1> | `CITATIONS.md`, `affine_projection_recognition_lab/COMPLEXITY_THEOREM.md` |
 | <https://www.sciencedirect.com/science/article/pii/002001909290234M> | `PUBLIC_SOURCES.md`, `graph_order_hardness_lab/THEOREM.md` |
 | <https://www.sciencedirect.com/science/article/pii/0304397585901446> | `CITATIONS.md`, `PUBLIC_SOURCES.md` |
+| <https://www.sciencedirect.com/science/article/pii/S002001909800163X> | `CITATIONS.md`, `affine_projection_recognition_lab/COMPLEXITY_THEOREM.md` |
 | <https://www.sciencedirect.com/science/article/pii/S0022000010000899> | `NEXT_HOLOGRAPHIC_BRIEF.md`, `PUBLIC_SOURCES.md` |
 | <https://www2.seas.gwu.edu/~simhaweb/champalg/tsp/papers/KarpOriginal.pdf> | `INDEPENDENT_AUDIT.md`, `PUBLIC_SOURCES.md`, `packed_cost_exact_matching/REVIEW.md` |

@@ -925,8 +925,5 @@
       ],
       "projection_class": "AFFINE"
     }
-  },
-  "adversarial": {
-    "forged_projection_rejected": true
   }
 }

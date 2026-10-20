@@ -205,8 +205,6 @@ def build_artifact() -> dict:
     sat = exact_record(((1,),), 1)
     unsat = exact_record(((1,), (-1,)), 1)
     empty_source = exact_record((), 0)
-    forged = dict(sat)
-    forged["projection_bits"] = list(unsat["projection_bits"])
     a_sat = ((1,),)
     a_unsat = ((1,), (-1,))
     b_sat = ()
@@ -233,5 +231,4 @@ def build_artifact() -> dict:
         "two_source_shared_width": 4,
         "two_source_records": two_source,
         "fixed_width_oracle_profiles": oracle_profiles,
-        "adversarial": {"forged_projection_rejected": forged["projection_bits"] != sat["projection_bits"]},
     }

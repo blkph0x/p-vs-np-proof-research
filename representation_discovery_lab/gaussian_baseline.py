@@ -1,13 +1,10 @@
-"""A structural GF(2) baseline for the hidden-XOR experiment.
+"""Fail-closed structural XOR-chain recovery without projected truth tables.
 
-This is deliberately separate from ``engine.py``.  It recognises the four
-clauses of each XOR gadget, performs affine substitution over GF(2), and
-never constructs the projected truth table.  The operation counter is a
-transparent implementation charge, not a machine-independent lower bound.
+The work field counts named loop visits and substitutions, including failed
+scans. It excludes sorting, hashing, allocation and integer bit costs; it is
+an auditable logical-operation proxy, not measured CPU or a lower bound.
 """
-
 from __future__ import annotations
-
 from dataclasses import dataclass
 
 
@@ -20,87 +17,121 @@ class BaselineResult:
     gadget_count: int = 0
 
 
-def _normalise(clause: tuple[int, ...]) -> tuple[int, ...]:
-    return tuple(sorted(set(int(literal) for literal in clause), key=lambda value: (abs(value), value)))
+def _validated_input(clauses, shared):
+    if not isinstance(clauses, (tuple, list)) or not isinstance(shared, (tuple, list)):
+        raise ValueError('clauses and shared must be finite lists or tuples')
+    seen=set();work=0
+    for variable in shared:
+        work+=1
+        if type(variable) is not int or variable<0 or variable in seen:
+            raise ValueError('shared IDs must be distinct nonnegative exact integers')
+        seen.add(variable)
+    normalised=set()
+    for clause in clauses:
+        work+=1
+        if not isinstance(clause,(tuple,list)):
+            raise ValueError('each clause must be a list or tuple')
+        literals=set()
+        for literal in clause:
+            work+=1
+            if type(literal) is not int or literal==0:
+                raise ValueError('literals must be nonzero exact integers')
+            literals.add(literal)
+        tautological=False
+        for literal in literals:
+            work+=1
+            if -literal in literals:tautological=True
+        if not tautological:
+            normalised.add(tuple(sorted(literals,key=lambda x:(abs(x),x))))
+    return normalised,work
 
 
-def _satisfies(clause_set: set[tuple[int, ...]], assignment: dict[int, bool]) -> bool:
-    return all(any((assignment[abs(literal) - 1] if literal > 0 else not assignment[abs(literal) - 1])
-                   for literal in clause) for clause in clause_set)
-
-
-def _is_xor_orientation(clauses: set[tuple[int, ...]], left: int, right: int, out: int) -> bool:
-    """Check ``out = left XOR right`` on all eight assignments."""
+def _xor_truth_check(clauses, support):
+    """Full eight-word check, with no short-circuit literal scans."""
+    valid=True;work=0
     for mask in range(8):
-        assignment = {variable: bool(mask & (1 << offset))
-                      for offset, variable in enumerate((left, right, out))}
-        expected = assignment[out] == (assignment[left] ^ assignment[right])
-        if _satisfies(clauses, assignment) != expected:
-            return False
-    return True
+        work+=1+len(support)
+        assignment={variable:bool(mask & (1<<i)) for i,variable in enumerate(support)}
+        satisfied=True
+        for clause in clauses:
+            work+=1;clause_satisfied=False
+            for literal in clause:
+                work+=1
+                value=assignment[abs(literal)-1]
+                clause_satisfied |= value if literal>0 else not value
+            satisfied &= clause_satisfied
+        expected=(mask.bit_count()%2==0)
+        valid &= satisfied==expected
+    return valid,work
 
 
 def recover_xor_relation(clauses: tuple[tuple[int, ...], ...],
                          shared: tuple[int, ...]) -> BaselineResult:
-    """Recover the affine relation forced on ``shared`` by XOR gadgets.
+    """Return one exact projected equation, or UNKNOWN for unsupported CNF.
 
-    Candidate triples are formed from the distinct three-variable clause
-    supports.  Each orientation is checked by its constant-size truth table;
-    the resulting equations are then solved by affine substitution, equivalent
-    to Gaussian elimination for this acyclic chain family.
+    Invalid literal/shared-ID encodings raise ValueError. Every nontrivial
+    original clause must belong to a complete verified even-XOR triple or to
+    the single distinct unit. Repetition and tautologies are harmless. Each
+    gadget must introduce a previously unknown helper from two known affine
+    expressions; otherwise this deliberately narrow recognizer returns UNKNOWN.
+    support indexes positions in the supplied ordered shared list. The legacy
+    EXACT_AFFINE status means an exact XOR equation, not a nonempty affine
+    coset: empty support with rhs=0 is universal; with rhs=1 it is empty.
     """
-    normalised = {_normalise(clause) for clause in clauses}
-    work = len(clauses)
-    groups: dict[tuple[int, ...], set[tuple[int, ...]]] = {}
-    for clause in normalised:
-        if len(clause) == 3:
-            support = tuple(sorted({abs(literal) - 1 for literal in clause}))
-            if len(support) == 3:
-                groups.setdefault(support, set()).add(clause)
-    equations: list[tuple[int, int, int]] = []
-    for support, group in sorted(groups.items()):
-        # A three-variable parity gadget is symmetric: every orientation is
-        # equivalent to the equation a XOR b XOR c = 0.  Keep the support as
-        # an unordered equation and choose the unknown variable during
-        # elimination, rather than guessing which local helper is the output.
-        work += 8
-        if len(group) == 4 and _is_xor_orientation(group, support[0], support[1], support[2]):
-            equations.append(support)
-    units = [(-clause[0] - 1, 0) if clause[0] < 0 else (-clause[0] - 1, 1)
-             for clause in normalised if len(clause) == 1]
-    if len(units) != 1:
-        return BaselineResult("UNKNOWN", work=work, gadget_count=len(equations))
-    target, target_value = units[0]
-    expressions: dict[int, tuple[int, int]] = {
-        variable: (1 << index, 0) for index, variable in enumerate(shared)
-    }
-    remaining = list(equations)
-    progress = True
-    while remaining and progress:
-        progress = False
-        next_remaining: list[tuple[int, int, int]] = []
+    normalised,work=_validated_input(clauses,shared)
+    groups={};units=[];unsupported=False
+    for clause in sorted(normalised):
+        work+=1+len(clause)
+        if len(clause)==1:
+            literal=clause[0]
+            units.append((abs(literal)-1,int(literal>0)))
+        elif len(clause)==3:
+            support=tuple(sorted(abs(literal)-1 for literal in clause))
+            groups.setdefault(support,set()).add(clause)
+        else:
+            unsupported=True
+    equations=[]
+    for support,group in sorted(groups.items()):
+        work+=1
+        if len(group)!=4:
+            unsupported=True
+            continue
+        valid,checked_work=_xor_truth_check(sorted(group),support)
+        work+=checked_work
+        if valid:equations.append(support)
+        else:unsupported=True
+    def unknown():
+        return BaselineResult('UNKNOWN',work=work,gadget_count=len(equations))
+    if unsupported or len(units)!=1:return unknown()
+    target,target_value=units[0]
+    expressions={}
+    for index,variable in enumerate(shared):
+        work+=1
+        expressions[variable]=(1<<index,0)
+    remaining=list(equations)
+    while remaining:
+        work+=1;next_remaining=[];progress=False
         for equation in remaining:
-            known = [variable for variable in equation if variable in expressions]
-            unknown = [variable for variable in equation if variable not in expressions]
-            if len(known) == 2 and len(unknown) == 1:
-                first_mask, first_rhs = expressions[known[0]]
-                second_mask, second_rhs = expressions[known[1]]
-                expressions[unknown[0]] = (first_mask ^ second_mask,
-                                            first_rhs ^ second_rhs)
-                work += 1
-                progress = True
-            else:
-                next_remaining.append(equation)
-        remaining = next_remaining
-    if target not in expressions or remaining:
-        return BaselineResult("UNKNOWN", work=work, gadget_count=len(equations))
-    mask, offset = expressions[target]
-    support = tuple(index for index, variable in enumerate(shared) if mask & (1 << index))
-    # The unit target=target_value gives XOR(support) = target_value XOR offset.
-    rhs = target_value ^ offset
-    return BaselineResult("EXACT_AFFINE", support=support, rhs=rhs, work=work,
-                          gadget_count=len(equations))
+            work+=1;known=[];unknown_variables=[]
+            for variable in equation:
+                work+=1
+                (known if variable in expressions else unknown_variables).append(variable)
+            if len(known)==2 and len(unknown_variables)==1:
+                left,lo=expressions[known[0]];right,ro=expressions[known[1]]
+                expressions[unknown_variables[0]]=(left^right,lo^ro)
+                work+=1;progress=True
+            else:next_remaining.append(equation)
+        remaining=next_remaining
+        if not progress:return unknown()
+    if target not in expressions:return unknown()
+    mask,offset=expressions[target]
+    support=[]
+    for index in range(len(shared)):
+        work+=1
+        if mask & (1<<index):support.append(index)
+    return BaselineResult('EXACT_AFFINE',tuple(support),target_value^offset,work,len(equations))
 
 
 def expected_even_parity(shared: tuple[int, ...]) -> BaselineResult:
-    return BaselineResult("EXACT_AFFINE", support=tuple(range(len(shared))), rhs=0)
+    _validated_input((),shared)
+    return BaselineResult('EXACT_AFFINE',support=tuple(range(len(shared))),rhs=0)

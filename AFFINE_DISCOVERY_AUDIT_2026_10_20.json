@@ -1,0 +1,95 @@
+{
+  "base_commit": "5916e61784b4da053f6c10834fd4965683bf34d9",
+  "platform": "Windows",
+  "python_version": "3.10.10",
+  "recorded_at_utc": "2026-10-20T05:41:14.897181+00:00",
+  "runs": [
+    {
+      "command": [
+        "python",
+        "independent_review.py"
+      ],
+      "directory": "representation_discovery_lab",
+      "elapsed_seconds": 0.346927,
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "{\"independent_checks_passed\": true, \"records\": 10, \"controls\": 7, \"nonlinear_originals\": 1, \"full_original_assignments\": 25416, \"exact_equations_checked\": 15, \"unknown_no_claim_checked\": 3, \"baseline_scan_charges_recomputed\": 18, \"source_hashes_current\": true}\n"
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-v"
+      ],
+      "directory": "representation_discovery_lab",
+      "elapsed_seconds": 3.230668,
+      "exit_code": 0,
+      "stderr": "test_added_binary_and_empty_clause_are_not_ignored (test_baseline.BaselineRepairTests) ... ok\ntest_all_three_variable_clause_subsets_with_both_units (test_baseline.BaselineRepairTests) ... ok\ntest_duplicate_clauses_literals_units_and_tautologies_are_safe (test_baseline.BaselineRepairTests) ... ok\ntest_every_clause_and_unresolved_equation_must_be_covered (test_baseline.BaselineRepairTests) ... ok\ntest_failed_substitution_scans_are_charged (test_baseline.BaselineRepairTests) ... ok\ntest_malformed_literals_and_shared_ids_raise_value_error (test_baseline.BaselineRepairTests) ... ok\ntest_positive_unit_and_sparse_ordered_shared_ids (test_baseline.BaselineRepairTests) ... ok\ntest_project_rejects_shared_local_overlap_and_invalid_inputs (test_baseline.BaselineRepairTests) ... ok\ntest_seeded_original_networks_against_independent_assignment_oracle (test_baseline.BaselineRepairTests) ... ok\ntest_unit_only_constants_and_empty_input_scope (test_baseline.BaselineRepairTests) ... ok\ntest_chain_projects_to_even_parity (test_engine.RepresentationDiscoveryTests) ... ok\ntest_discovery_work_grows_while_representation_stays_linear (test_engine.RepresentationDiscoveryTests) ... ok\ntest_gaussian_baseline_fails_closed_on_mutated_gadget (test_engine.RepresentationDiscoveryTests) ... ok\ntest_gaussian_baseline_recovers_the_hidden_relation (test_engine.RepresentationDiscoveryTests) ... ok\ntest_gaussian_baseline_survives_syntactic_controls (test_engine.RepresentationDiscoveryTests) ... ok\ntest_invalid_permutation_is_rejected (test_engine.RepresentationDiscoveryTests) ... ok\ntest_saved_record_replays_exactly (test_engine.RepresentationDiscoveryTests) ... ok\ntest_semantics_survive_variable_renaming (test_engine.RepresentationDiscoveryTests) ... ok\ntest_changed_control_inputs_outputs_and_work_are_rejected (test_independent_review.IndependentReviewTests) ... ok\ntest_lf_crlf_source_snapshots_replay_but_changed_source_is_rejected (test_independent_review.IndependentReviewTests) ... ok\ntest_saved_original_inputs_and_outputs_replay (test_independent_review.IndependentReviewTests) ... ok\ntest_text_hash_preserves_content_bom_and_utf8_validation (test_independent_review.IndependentReviewTests) ... ok\ntest_control_is_not_affine (test_nonlinear_control.NonlinearControlTests) ... ok\n\n----------------------------------------------------------------------\nRan 23 tests in 2.988s\n\nOK\n",
+      "stdout": ""
+    },
+    {
+      "command": [
+        "python",
+        "review_quantified_boundary.py"
+      ],
+      "directory": "affine_projection_recognition_lab",
+      "elapsed_seconds": 2.088503,
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "{\"campaign\": {\"cases\": 1536, \"false\": 1423, \"formula_evaluations\": 30720, \"records_sha256\": \"f282425e67603513dd400619f9932314cbaa863d85029ddc599343cf6f976dd6\", \"true\": 113}, \"examples\": 8, \"rejected_controls\": [{\"control\": \"guard sign\", \"failure\": \"complete artifact mismatch\"}, {\"control\": \"omitted clause\", \"failure\": \"complete artifact mismatch\"}, {\"control\": \"projection bit\", \"failure\": \"complete artifact mismatch\"}, {\"control\": \"quantifier result\", \"failure\": \"complete artifact mismatch\"}, {\"control\": \"source substitution\", \"failure\": \"complete artifact mismatch\"}, {\"control\": \"counterexample\", \"failure\": \"complete artifact mismatch\"}, {\"control\": \"campaign digest\", \"failure\": \"complete artifact mismatch\"}, {\"control\": \"work count\", \"failure\": \"complete artifact mismatch\"}], \"status\": \"VERIFIED\"}\n"
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "-v",
+        "test_lab.py",
+        "test_quantified_boundary.py"
+      ],
+      "directory": "affine_projection_recognition_lab",
+      "elapsed_seconds": 3.128486,
+      "exit_code": 0,
+      "stderr": "test_exhaustive_two_variable_source_controls (test_lab.AffineProjectionRecognitionTests) ... ok\ntest_fixed_width_oracle_accounting (test_lab.AffineProjectionRecognitionTests) ... ok\ntest_independent_replay (test_lab.AffineProjectionRecognitionTests) ... ok\ntest_mutation_is_rejected (test_lab.AffineProjectionRecognitionTests) ... ok\ntest_saved_artifact_replays (test_lab.AffineProjectionRecognitionTests) ... ok\ntest_selector_reduction (test_lab.AffineProjectionRecognitionTests) ... ok\ntest_shared_width_is_constant (test_lab.AffineProjectionRecognitionTests) ... ok\ntest_two_source_sat_unsat_reduction (test_lab.AffineProjectionRecognitionTests) ... ok\ntest_all_1536_source_formulas_and_quantifier_splits (test_quantified_boundary.QuantifiedBoundaryTests) ... ok\ntest_caps_never_become_mathematical_answers (test_quantified_boundary.QuantifiedBoundaryTests) ... ok\ntest_committed_artifact_before_regeneration (test_quantified_boundary.QuantifiedBoundaryTests) ... ok\ntest_complete_replay_rejects_all_adversarial_controls (test_quantified_boundary.QuantifiedBoundaryTests) ... ok\ntest_malformed_partitions_and_literals_are_rejected (test_quantified_boundary.QuantifiedBoundaryTests) ... ok\ntest_quantifiers_are_not_replaced_by_sat (test_quantified_boundary.QuantifiedBoundaryTests) ... ok\ntest_rank_affinity_matches_ternary_closure_including_empty (test_quantified_boundary.QuantifiedBoundaryTests) ... ok\ntest_specific_failures_bind_certificate_to_source (test_quantified_boundary.QuantifiedBoundaryTests) ... ok\ntest_zero_width_empty_clause_tautology_duplicates (test_quantified_boundary.QuantifiedBoundaryTests) ... ok\n\n----------------------------------------------------------------------\nRan 17 tests in 2.955s\n\nOK\n",
+      "stdout": ""
+    }
+  ],
+  "schema": "affine-discovery-audit-validation-v1",
+  "scope": "Two affected labs only; this is neither a full-repository run nor CI evidence.",
+  "source_hash_scheme": "sha256-utf8-lf-v1",
+  "source_sha256": {
+    ".github/workflows/research-checks.yml": "103d717356d0bcc251912920666cf3cfb2dda3e19d7f241196e66189402d8479",
+    "CITATIONS.md": "37e693af8622184ad1a5cd5c9115f7664eaaa92d81c94bfa96f7bbb2c6a4be81",
+    "METHOD_INDEX.md": "f267107c87aa8132014628291442425dee62a6c450c188a372fc6994acc13998",
+    "README.md": "ee6063902596b646b6065574b3606c35d79444b3269402041cc2580a9d524865",
+    "REFEREE_RESPONSE_2026_10_20.md": "36ff512dcf51e0f639dddfa66ce32e5a3f2473c42c11cd80fde2fc66c5f1ce67",
+    "affine_projection_recognition_lab/COMPLEXITY_THEOREM.md": "95a513f7283f613798f553b35a3eed78605c3c443c7aed326d6e4cfc6a6b6bfb",
+    "affine_projection_recognition_lab/QUANTIFIED_RESULTS.json": "4125edb69fd0aef101cd01e57b587d812a846daa8b4645879bb96b82fc9586e5",
+    "affine_projection_recognition_lab/REPORT.md": "145ecbd0b50f54930eb01eae16fb290d84fb0d296d866f501e1db126b9ef78fc",
+    "affine_projection_recognition_lab/RESULTS.json": "d24e65cde2dd2b02a2c873544f98d9d063f6213f49377f327d2875c4eb6a6811",
+    "affine_projection_recognition_lab/engine.py": "e5dad5e61a8ca8dd7ff1d7e6e142eb16ba48006408b08ffed19e2336965ca051",
+    "affine_projection_recognition_lab/quantified_boundary.py": "90e4b21aec67f14b3844e830bb8e1371bc71673fe62b4e14c42841d27a01f058",
+    "affine_projection_recognition_lab/review_quantified_boundary.py": "a2422894f01058154ab7c0cbcdbe90d46032a20c68ac6a22475d5ee727dea529",
+    "affine_projection_recognition_lab/run_experiment.py": "506afcf84dc61fc3ffd6c890b74057510b0412fdfe7aae8a9eea6d01b05e4ee8",
+    "affine_projection_recognition_lab/test_lab.py": "79b0078bfccbe639a6a7c8c45bbaedfa02ad0c799cbf518702ff3989b2bbb179",
+    "affine_projection_recognition_lab/test_quantified_boundary.py": "97546d30d596424142c57e9ef36ae87454996d2eb9be4edb175ff2d569dda843",
+    "affine_projection_recognition_lab/verify.py": "57ba4093570c12bea87e5cfe86d6b7646bf0b735c5a82c8cbe77d13ebefea875",
+    "index.md": "96d7722c1bf4debea59431061d601a99fa4b12712d886da27bb85ac59887810a",
+    "representation_discovery_lab/REPORT.md": "03e3bbcdc1310200b0f066d2be65d14023d8b2e78580084a312f546a90fa28bb",
+    "representation_discovery_lab/RESULTS.json": "7e9d9a0978043326e73e1494ce62f1a25b87f53282892863048d43a58059d637",
+    "representation_discovery_lab/engine.py": "babe1ffd0c1312e3af04e6cf6e89bcd524dd6bda8222beab93447697ffde4c15",
+    "representation_discovery_lab/gaussian_baseline.py": "51b8b10de005816b7c6ded419a346db8531f795046f7f448065b7facaaf46c71",
+    "representation_discovery_lab/independent_review.py": "d9fd1cc7b87e9b59e4a2d6ba65bc2d5818fca518048d8b15acc16d948a42d5d0",
+    "representation_discovery_lab/nonlinear_control.py": "4b18d1b19ebf2011004315ebcdea8d0c4ce8114e2c8d45aa324643ad4c0a1563",
+    "representation_discovery_lab/run_experiment.py": "6ff9af7570e9b8f80bdd8b557801d21eaf8d98d5776096493756f5f3a2254a1f",
+    "representation_discovery_lab/test_baseline.py": "8a3de1b281a4b3706f38c12b75a89635a7ed8887cf4431272de33e61d31c5922",
+    "representation_discovery_lab/test_engine.py": "17e0ea6545824f27479c28a7eb51f20d0657d2125f267e039248ae5595374433",
+    "representation_discovery_lab/test_independent_review.py": "662b8d3ec43ef22f05f8190373e75cc3feb270892e9884c9fd556c360d57bcad",
+    "representation_discovery_lab/test_nonlinear_control.py": "8c2a5128c242c3a475d2779b5845b199832654898efe1cec9adcfb811cefbf55",
+    "run_research_checks.py": "3449f510cf4123c152307a219ed22457abe9d3698af0919c70322fec959897ed"
+  },
+  "source_unchanged_during_run": true,
+  "status": "PASS"
+}

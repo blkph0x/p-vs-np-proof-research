@@ -100,14 +100,37 @@ audit. Its former `D/S/V` labels are now
 claim minima over representations or algorithms. A separate GF(2) structural
 baseline recognises the XOR gadgets and recovers the projected parity without
 building the truth table. Reordered-gadget, redundant-gadget, and bijective
-variable-renaming controls pass the baseline, while a nonlinear projection is
-classified `NOT_AFFINE`.
+variable-renaming controls pass the baseline. Exhaustive replay classifies the
+nonlinear control `NOT_AFFINE`; the structural baseline returns `UNKNOWN`.
 
-This resolves the methodological ambiguity but confirms the audit's main
-conclusion: the exponential count belongs to the declared exhaustive
-synthesizer, not to representation discovery in general. A hardness result
-would require a reduction covering a broader algorithm class and a transfer
-argument ruling out methods that bypass the chosen representation.
+The further implementation audit found that the baseline could ignore
+unrecognized clauses and misread positive units. It now requires complete
+clause coverage by recognized gadgets and the unit, and returns `UNKNOWN`
+when its substitution proof cannot account for the whole input. Independent
+original-formula projection and adversarial tests cover these failures.
+The reported enumeration schedules are symbolic charges: the old producer
+did not execute a general search through its candidate vocabulary.
+
+These corrections confirm the audit's main conclusion: the exponential
+schedule is algorithm-specific, not a discovery lower bound. The new
+[complexity note](affine_projection_recognition_lab/COMPLEXITY_THEOREM.md)
+instead proves that nonempty affinity recognition for an existential CNF
+projection of variable width is `Pi_2^P`-complete. It provides both the
+quantified membership argument and an explicit guarded-CNF reduction.
+Semantic equality to a supplied XOR system has the same classification.
+The theorem uses standard mathematical ingredients; novelty is unestablished.
+
+The classification concerns all algorithms deciding the specified problem,
+but establishes no unconditional superpolynomial lower bound. In particular,
+a promise-only discovery procedure and replay of an independently supplied
+proof are different tasks. No transfer theorem to unrestricted SAT lower
+bounds has been proved.
+
+The [local validation record](AFFINE_DISCOVERY_AUDIT_2026_10_20.json) binds the
+affected sources to the actual command outputs and Python version. It covers
+the two affected labs, not the entire repository. Current-commit GitHub
+research checks and Pages deployment have separate status; a successful
+website build is not mathematical verification.
 
 ## Current scope statement
 

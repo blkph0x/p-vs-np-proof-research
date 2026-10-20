@@ -4,10 +4,11 @@
   "model": {
     "representation": "one even-parity XOR equation on the shared variables",
     "encoding": "existential XOR chain in 3-CNF with one helper per prefix",
-    "discovery": "exhaustive projection followed by all nonempty XOR supports and both RHS values",
+    "discovery": "exact short-circuit projection plus symbolic full-schedule candidate and replay charges",
     "verification": "independent exhaustive projection replay",
     "representation_size_note": "encoded_representation_bits is the size of this label encoding, not a minimum over representations",
-    "discovery_cost_note": "enumeration_discovery_work and exhaustive_replay_work are exact charges for the declared procedures, not lower bounds for other algorithms",
+    "discovery_cost_note": "The work formulas charge a declared full, non-short-circuit schedule; candidate search is calculated symbolically, not executed. They do not measure actual Python work or lower-bound other algorithms.",
+    "baseline_work_note": "Counts raw/shared/literal/unique-literal visits, normalized clause/support visits, all eight local truth-check visits, all elimination passes/equation/variable visits (including failures), substitutions, expression setup and output scans. Sorting, hashing, allocation and integer bit costs are excluded.",
     "shared_range": [
       3,
       7
@@ -22,12 +23,77 @@
     }
   },
   "source_sha256": {
-    "engine.py": "65bc58e585e30cc6d2fb3edc0d9527b3469577d3d7720f9f7937cbbbae8e17e5",
-    "run_experiment.py": "b113836d2beb9af76f4fe9faed8c1ab250617faf24c3eaca46c3fc8b439c90f2",
-    "gaussian_baseline.py": "f43468bbc17a0b929dad23c969bd35e75c4bac172f9fbd7006af2e7b3d16493e"
+    "engine.py": "babe1ffd0c1312e3af04e6cf6e89bcd524dd6bda8222beab93447697ffde4c15",
+    "run_experiment.py": "6ff9af7570e9b8f80bdd8b557801d21eaf8d98d5776096493756f5f3a2254a1f",
+    "gaussian_baseline.py": "51b8b10de005816b7c6ded419a346db8531f795046f7f448065b7facaaf46c71",
+    "nonlinear_control.py": "4b18d1b19ebf2011004315ebcdea8d0c4ce8114e2c8d45aa324643ad4c0a1563",
+    "independent_review.py": "d9fd1cc7b87e9b59e4a2d6ba65bc2d5818fca518048d8b15acc16d948a42d5d0",
+    "test_engine.py": "17e0ea6545824f27479c28a7eb51f20d0657d2125f267e039248ae5595374433",
+    "test_baseline.py": "8a3de1b281a4b3706f38c12b75a89635a7ed8887cf4431272de33e61d31c5922",
+    "test_nonlinear_control.py": "8c2a5128c242c3a475d2779b5845b199832654898efe1cec9adcfb811cefbf55",
+    "test_independent_review.py": "662b8d3ec43ef22f05f8190373e75cc3feb270892e9884c9fd556c360d57bcad",
+    "REPORT.md": "03e3bbcdc1310200b0f066d2be65d14023d8b2e78580084a312f546a90fa28bb"
   },
+  "source_hash_scheme": "sha256-utf8-lf-v1",
+  "source_unchanged_during_run": true,
   "records": [
     {
+      "original_input": {
+        "clauses": [
+          [
+            -1,
+            -2,
+            -4
+          ],
+          [
+            1,
+            2,
+            -4
+          ],
+          [
+            1,
+            -2,
+            4
+          ],
+          [
+            -1,
+            2,
+            4
+          ],
+          [
+            -4,
+            -3,
+            -5
+          ],
+          [
+            4,
+            3,
+            -5
+          ],
+          [
+            4,
+            -3,
+            5
+          ],
+          [
+            -4,
+            3,
+            5
+          ],
+          [
+            -5
+          ]
+        ],
+        "shared": [
+          0,
+          1,
+          2
+        ],
+        "local": [
+          3,
+          4
+        ]
+      },
       "shared_count": 3,
       "permutation": [
         0,
@@ -57,11 +123,67 @@
           2
         ],
         "rhs": 0,
-        "work": 27,
+        "work": 435,
         "gadget_count": 2
       }
     },
     {
+      "original_input": {
+        "clauses": [
+          [
+            -3,
+            -2,
+            -4
+          ],
+          [
+            3,
+            2,
+            -4
+          ],
+          [
+            3,
+            -2,
+            4
+          ],
+          [
+            -3,
+            2,
+            4
+          ],
+          [
+            -4,
+            -1,
+            -5
+          ],
+          [
+            4,
+            1,
+            -5
+          ],
+          [
+            4,
+            -1,
+            5
+          ],
+          [
+            -4,
+            1,
+            5
+          ],
+          [
+            -5
+          ]
+        ],
+        "shared": [
+          0,
+          1,
+          2
+        ],
+        "local": [
+          3,
+          4
+        ]
+      },
       "shared_count": 3,
       "permutation": [
         2,
@@ -91,11 +213,89 @@
           2
         ],
         "rhs": 0,
-        "work": 27,
+        "work": 440,
         "gadget_count": 2
       }
     },
     {
+      "original_input": {
+        "clauses": [
+          [
+            -1,
+            -2,
+            -5
+          ],
+          [
+            1,
+            2,
+            -5
+          ],
+          [
+            1,
+            -2,
+            5
+          ],
+          [
+            -1,
+            2,
+            5
+          ],
+          [
+            -5,
+            -3,
+            -6
+          ],
+          [
+            5,
+            3,
+            -6
+          ],
+          [
+            5,
+            -3,
+            6
+          ],
+          [
+            -5,
+            3,
+            6
+          ],
+          [
+            -6,
+            -4,
+            -7
+          ],
+          [
+            6,
+            4,
+            -7
+          ],
+          [
+            6,
+            -4,
+            7
+          ],
+          [
+            -6,
+            4,
+            7
+          ],
+          [
+            -7
+          ]
+        ],
+        "shared": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "local": [
+          4,
+          5,
+          6
+        ]
+      },
       "shared_count": 4,
       "permutation": [
         0,
@@ -135,11 +335,89 @@
           3
         ],
         "rhs": 0,
-        "work": 40,
+        "work": 648,
         "gadget_count": 3
       }
     },
     {
+      "original_input": {
+        "clauses": [
+          [
+            -4,
+            -3,
+            -5
+          ],
+          [
+            4,
+            3,
+            -5
+          ],
+          [
+            4,
+            -3,
+            5
+          ],
+          [
+            -4,
+            3,
+            5
+          ],
+          [
+            -5,
+            -2,
+            -6
+          ],
+          [
+            5,
+            2,
+            -6
+          ],
+          [
+            5,
+            -2,
+            6
+          ],
+          [
+            -5,
+            2,
+            6
+          ],
+          [
+            -6,
+            -1,
+            -7
+          ],
+          [
+            6,
+            1,
+            -7
+          ],
+          [
+            6,
+            -1,
+            7
+          ],
+          [
+            -6,
+            1,
+            7
+          ],
+          [
+            -7
+          ]
+        ],
+        "shared": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "local": [
+          4,
+          5,
+          6
+        ]
+      },
       "shared_count": 4,
       "permutation": [
         3,
@@ -179,11 +457,111 @@
           3
         ],
         "rhs": 0,
-        "work": 40,
+        "work": 662,
         "gadget_count": 3
       }
     },
     {
+      "original_input": {
+        "clauses": [
+          [
+            -1,
+            -2,
+            -6
+          ],
+          [
+            1,
+            2,
+            -6
+          ],
+          [
+            1,
+            -2,
+            6
+          ],
+          [
+            -1,
+            2,
+            6
+          ],
+          [
+            -6,
+            -3,
+            -7
+          ],
+          [
+            6,
+            3,
+            -7
+          ],
+          [
+            6,
+            -3,
+            7
+          ],
+          [
+            -6,
+            3,
+            7
+          ],
+          [
+            -7,
+            -4,
+            -8
+          ],
+          [
+            7,
+            4,
+            -8
+          ],
+          [
+            7,
+            -4,
+            8
+          ],
+          [
+            -7,
+            4,
+            8
+          ],
+          [
+            -8,
+            -5,
+            -9
+          ],
+          [
+            8,
+            5,
+            -9
+          ],
+          [
+            8,
+            -5,
+            9
+          ],
+          [
+            -8,
+            5,
+            9
+          ],
+          [
+            -9
+          ]
+        ],
+        "shared": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "local": [
+          5,
+          6,
+          7,
+          8
+        ]
+      },
       "shared_count": 5,
       "permutation": [
         0,
@@ -241,11 +619,111 @@
           4
         ],
         "rhs": 0,
-        "work": 53,
+        "work": 861,
         "gadget_count": 4
       }
     },
     {
+      "original_input": {
+        "clauses": [
+          [
+            -5,
+            -4,
+            -6
+          ],
+          [
+            5,
+            4,
+            -6
+          ],
+          [
+            5,
+            -4,
+            6
+          ],
+          [
+            -5,
+            4,
+            6
+          ],
+          [
+            -6,
+            -3,
+            -7
+          ],
+          [
+            6,
+            3,
+            -7
+          ],
+          [
+            6,
+            -3,
+            7
+          ],
+          [
+            -6,
+            3,
+            7
+          ],
+          [
+            -7,
+            -2,
+            -8
+          ],
+          [
+            7,
+            2,
+            -8
+          ],
+          [
+            7,
+            -2,
+            8
+          ],
+          [
+            -7,
+            2,
+            8
+          ],
+          [
+            -8,
+            -1,
+            -9
+          ],
+          [
+            8,
+            1,
+            -9
+          ],
+          [
+            8,
+            -1,
+            9
+          ],
+          [
+            -8,
+            1,
+            9
+          ],
+          [
+            -9
+          ]
+        ],
+        "shared": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "local": [
+          5,
+          6,
+          7,
+          8
+        ]
+      },
       "shared_count": 5,
       "permutation": [
         4,
@@ -303,11 +781,133 @@
           4
         ],
         "rhs": 0,
-        "work": 53,
+        "work": 888,
         "gadget_count": 4
       }
     },
     {
+      "original_input": {
+        "clauses": [
+          [
+            -1,
+            -2,
+            -7
+          ],
+          [
+            1,
+            2,
+            -7
+          ],
+          [
+            1,
+            -2,
+            7
+          ],
+          [
+            -1,
+            2,
+            7
+          ],
+          [
+            -7,
+            -3,
+            -8
+          ],
+          [
+            7,
+            3,
+            -8
+          ],
+          [
+            7,
+            -3,
+            8
+          ],
+          [
+            -7,
+            3,
+            8
+          ],
+          [
+            -8,
+            -4,
+            -9
+          ],
+          [
+            8,
+            4,
+            -9
+          ],
+          [
+            8,
+            -4,
+            9
+          ],
+          [
+            -8,
+            4,
+            9
+          ],
+          [
+            -9,
+            -5,
+            -10
+          ],
+          [
+            9,
+            5,
+            -10
+          ],
+          [
+            9,
+            -5,
+            10
+          ],
+          [
+            -9,
+            5,
+            10
+          ],
+          [
+            -10,
+            -6,
+            -11
+          ],
+          [
+            10,
+            6,
+            -11
+          ],
+          [
+            10,
+            -6,
+            11
+          ],
+          [
+            -10,
+            6,
+            11
+          ],
+          [
+            -11
+          ]
+        ],
+        "shared": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "local": [
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
       "shared_count": 6,
       "permutation": [
         0,
@@ -399,11 +999,133 @@
           5
         ],
         "rhs": 0,
-        "work": 66,
+        "work": 1074,
         "gadget_count": 5
       }
     },
     {
+      "original_input": {
+        "clauses": [
+          [
+            -6,
+            -5,
+            -7
+          ],
+          [
+            6,
+            5,
+            -7
+          ],
+          [
+            6,
+            -5,
+            7
+          ],
+          [
+            -6,
+            5,
+            7
+          ],
+          [
+            -7,
+            -4,
+            -8
+          ],
+          [
+            7,
+            4,
+            -8
+          ],
+          [
+            7,
+            -4,
+            8
+          ],
+          [
+            -7,
+            4,
+            8
+          ],
+          [
+            -8,
+            -3,
+            -9
+          ],
+          [
+            8,
+            3,
+            -9
+          ],
+          [
+            8,
+            -3,
+            9
+          ],
+          [
+            -8,
+            3,
+            9
+          ],
+          [
+            -9,
+            -2,
+            -10
+          ],
+          [
+            9,
+            2,
+            -10
+          ],
+          [
+            9,
+            -2,
+            10
+          ],
+          [
+            -9,
+            2,
+            10
+          ],
+          [
+            -10,
+            -1,
+            -11
+          ],
+          [
+            10,
+            1,
+            -11
+          ],
+          [
+            10,
+            -1,
+            11
+          ],
+          [
+            -10,
+            1,
+            11
+          ],
+          [
+            -11
+          ]
+        ],
+        "shared": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "local": [
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
       "shared_count": 6,
       "permutation": [
         5,
@@ -495,11 +1217,155 @@
           5
         ],
         "rhs": 0,
-        "work": 66,
+        "work": 1118,
         "gadget_count": 5
       }
     },
     {
+      "original_input": {
+        "clauses": [
+          [
+            -1,
+            -2,
+            -8
+          ],
+          [
+            1,
+            2,
+            -8
+          ],
+          [
+            1,
+            -2,
+            8
+          ],
+          [
+            -1,
+            2,
+            8
+          ],
+          [
+            -8,
+            -3,
+            -9
+          ],
+          [
+            8,
+            3,
+            -9
+          ],
+          [
+            8,
+            -3,
+            9
+          ],
+          [
+            -8,
+            3,
+            9
+          ],
+          [
+            -9,
+            -4,
+            -10
+          ],
+          [
+            9,
+            4,
+            -10
+          ],
+          [
+            9,
+            -4,
+            10
+          ],
+          [
+            -9,
+            4,
+            10
+          ],
+          [
+            -10,
+            -5,
+            -11
+          ],
+          [
+            10,
+            5,
+            -11
+          ],
+          [
+            10,
+            -5,
+            11
+          ],
+          [
+            -10,
+            5,
+            11
+          ],
+          [
+            -11,
+            -6,
+            -12
+          ],
+          [
+            11,
+            6,
+            -12
+          ],
+          [
+            11,
+            -6,
+            12
+          ],
+          [
+            -11,
+            6,
+            12
+          ],
+          [
+            -12,
+            -7,
+            -13
+          ],
+          [
+            12,
+            7,
+            -13
+          ],
+          [
+            12,
+            -7,
+            13
+          ],
+          [
+            -12,
+            7,
+            13
+          ],
+          [
+            -13
+          ]
+        ],
+        "shared": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "local": [
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
       "shared_count": 7,
       "permutation": [
         0,
@@ -657,11 +1523,155 @@
           6
         ],
         "rhs": 0,
-        "work": 79,
+        "work": 1287,
         "gadget_count": 6
       }
     },
     {
+      "original_input": {
+        "clauses": [
+          [
+            -7,
+            -6,
+            -8
+          ],
+          [
+            7,
+            6,
+            -8
+          ],
+          [
+            7,
+            -6,
+            8
+          ],
+          [
+            -7,
+            6,
+            8
+          ],
+          [
+            -8,
+            -5,
+            -9
+          ],
+          [
+            8,
+            5,
+            -9
+          ],
+          [
+            8,
+            -5,
+            9
+          ],
+          [
+            -8,
+            5,
+            9
+          ],
+          [
+            -9,
+            -4,
+            -10
+          ],
+          [
+            9,
+            4,
+            -10
+          ],
+          [
+            9,
+            -4,
+            10
+          ],
+          [
+            -9,
+            4,
+            10
+          ],
+          [
+            -10,
+            -3,
+            -11
+          ],
+          [
+            10,
+            3,
+            -11
+          ],
+          [
+            10,
+            -3,
+            11
+          ],
+          [
+            -10,
+            3,
+            11
+          ],
+          [
+            -11,
+            -2,
+            -12
+          ],
+          [
+            11,
+            2,
+            -12
+          ],
+          [
+            11,
+            -2,
+            12
+          ],
+          [
+            -11,
+            2,
+            12
+          ],
+          [
+            -12,
+            -1,
+            -13
+          ],
+          [
+            12,
+            1,
+            -13
+          ],
+          [
+            12,
+            -1,
+            13
+          ],
+          [
+            -12,
+            1,
+            13
+          ],
+          [
+            -13
+          ]
+        ],
+        "shared": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "local": [
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
       "shared_count": 7,
       "permutation": [
         6,
@@ -819,13 +1829,147 @@
           6
         ],
         "rhs": 0,
-        "work": 79,
+        "work": 1352,
         "gadget_count": 6
       }
     }
   ],
   "controls": {
     "reordered_gadgets": {
+      "original_input": {
+        "clauses": [
+          [
+            -8,
+            -5,
+            -9
+          ],
+          [
+            8,
+            5,
+            -9
+          ],
+          [
+            8,
+            -5,
+            9
+          ],
+          [
+            -8,
+            5,
+            9
+          ],
+          [
+            -7,
+            -4,
+            -8
+          ],
+          [
+            7,
+            4,
+            -8
+          ],
+          [
+            7,
+            -4,
+            8
+          ],
+          [
+            -7,
+            4,
+            8
+          ],
+          [
+            -6,
+            -3,
+            -7
+          ],
+          [
+            6,
+            3,
+            -7
+          ],
+          [
+            6,
+            -3,
+            7
+          ],
+          [
+            -6,
+            3,
+            7
+          ],
+          [
+            -1,
+            -2,
+            -6
+          ],
+          [
+            1,
+            2,
+            -6
+          ],
+          [
+            1,
+            -2,
+            6
+          ],
+          [
+            -1,
+            2,
+            6
+          ],
+          [
+            -9
+          ]
+        ],
+        "shared": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "local": [
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "projected_bits": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
       "clause_count": 17,
       "shared": [
         0,
@@ -843,9 +1987,164 @@
         4
       ],
       "rhs": 0,
-      "work": 53
+      "work": 861,
+      "gadget_count": 4
     },
     "duplicated_gadget": {
+      "original_input": {
+        "clauses": [
+          [
+            -8,
+            -5,
+            -9
+          ],
+          [
+            8,
+            5,
+            -9
+          ],
+          [
+            8,
+            -5,
+            9
+          ],
+          [
+            -8,
+            5,
+            9
+          ],
+          [
+            -1,
+            -2,
+            -6
+          ],
+          [
+            1,
+            2,
+            -6
+          ],
+          [
+            1,
+            -2,
+            6
+          ],
+          [
+            -1,
+            2,
+            6
+          ],
+          [
+            -7,
+            -4,
+            -8
+          ],
+          [
+            7,
+            4,
+            -8
+          ],
+          [
+            7,
+            -4,
+            8
+          ],
+          [
+            -7,
+            4,
+            8
+          ],
+          [
+            -6,
+            -3,
+            -7
+          ],
+          [
+            6,
+            3,
+            -7
+          ],
+          [
+            6,
+            -3,
+            7
+          ],
+          [
+            -6,
+            3,
+            7
+          ],
+          [
+            -1,
+            -2,
+            -6
+          ],
+          [
+            1,
+            2,
+            -6
+          ],
+          [
+            1,
+            -2,
+            6
+          ],
+          [
+            -1,
+            2,
+            6
+          ],
+          [
+            -9
+          ]
+        ],
+        "shared": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "local": [
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "projected_bits": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
       "clause_count": 21,
       "shared": [
         0,
@@ -863,9 +2162,144 @@
         4
       ],
       "rhs": 0,
-      "work": 57
+      "work": 889,
+      "gadget_count": 4
     },
     "renamed_all_variables": {
+      "original_input": {
+        "clauses": [
+          [
+            -9,
+            -8,
+            -4
+          ],
+          [
+            9,
+            8,
+            -4
+          ],
+          [
+            9,
+            -8,
+            4
+          ],
+          [
+            -9,
+            8,
+            4
+          ],
+          [
+            -4,
+            -7,
+            -3
+          ],
+          [
+            4,
+            7,
+            -3
+          ],
+          [
+            4,
+            -7,
+            3
+          ],
+          [
+            -4,
+            7,
+            3
+          ],
+          [
+            -3,
+            -6,
+            -2
+          ],
+          [
+            3,
+            6,
+            -2
+          ],
+          [
+            3,
+            -6,
+            2
+          ],
+          [
+            -3,
+            6,
+            2
+          ],
+          [
+            -2,
+            -5,
+            -1
+          ],
+          [
+            2,
+            5,
+            -1
+          ],
+          [
+            2,
+            -5,
+            1
+          ],
+          [
+            -2,
+            5,
+            1
+          ],
+          [
+            -1
+          ]
+        ],
+        "shared": [
+          8,
+          7,
+          6,
+          5,
+          4
+        ],
+        "local": [
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      "projected_bits": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
       "clause_count": 17,
       "shared": [
         8,
@@ -883,7 +2317,629 @@
         4
       ],
       "rhs": 0,
-      "work": 53
+      "work": 888,
+      "gadget_count": 4
+    },
+    "positive_unit": {
+      "original_input": {
+        "clauses": [
+          [
+            -1,
+            -2,
+            -6
+          ],
+          [
+            1,
+            2,
+            -6
+          ],
+          [
+            1,
+            -2,
+            6
+          ],
+          [
+            -1,
+            2,
+            6
+          ],
+          [
+            -6,
+            -3,
+            -7
+          ],
+          [
+            6,
+            3,
+            -7
+          ],
+          [
+            6,
+            -3,
+            7
+          ],
+          [
+            -6,
+            3,
+            7
+          ],
+          [
+            -7,
+            -4,
+            -8
+          ],
+          [
+            7,
+            4,
+            -8
+          ],
+          [
+            7,
+            -4,
+            8
+          ],
+          [
+            -7,
+            4,
+            8
+          ],
+          [
+            -8,
+            -5,
+            -9
+          ],
+          [
+            8,
+            5,
+            -9
+          ],
+          [
+            8,
+            -5,
+            9
+          ],
+          [
+            -8,
+            5,
+            9
+          ],
+          [
+            9
+          ]
+        ],
+        "shared": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "local": [
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "projected_bits": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "clause_count": 17,
+      "shared": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "status": "EXACT_AFFINE",
+      "support": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "rhs": 1,
+      "work": 861,
+      "gadget_count": 4
+    },
+    "added_binary_clause": {
+      "original_input": {
+        "clauses": [
+          [
+            -1,
+            -2,
+            -6
+          ],
+          [
+            1,
+            2,
+            -6
+          ],
+          [
+            1,
+            -2,
+            6
+          ],
+          [
+            -1,
+            2,
+            6
+          ],
+          [
+            -6,
+            -3,
+            -7
+          ],
+          [
+            6,
+            3,
+            -7
+          ],
+          [
+            6,
+            -3,
+            7
+          ],
+          [
+            -6,
+            3,
+            7
+          ],
+          [
+            -7,
+            -4,
+            -8
+          ],
+          [
+            7,
+            4,
+            -8
+          ],
+          [
+            7,
+            -4,
+            8
+          ],
+          [
+            -7,
+            4,
+            8
+          ],
+          [
+            -8,
+            -5,
+            -9
+          ],
+          [
+            8,
+            5,
+            -9
+          ],
+          [
+            8,
+            -5,
+            9
+          ],
+          [
+            -8,
+            5,
+            9
+          ],
+          [
+            -9
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "shared": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "local": [
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "projected_bits": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "clause_count": 18,
+      "shared": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "status": "UNKNOWN",
+      "support": [],
+      "rhs": 0,
+      "work": 838,
+      "gadget_count": 4
+    },
+    "added_empty_clause": {
+      "original_input": {
+        "clauses": [
+          [
+            -1,
+            -2,
+            -6
+          ],
+          [
+            1,
+            2,
+            -6
+          ],
+          [
+            1,
+            -2,
+            6
+          ],
+          [
+            -1,
+            2,
+            6
+          ],
+          [
+            -6,
+            -3,
+            -7
+          ],
+          [
+            6,
+            3,
+            -7
+          ],
+          [
+            6,
+            -3,
+            7
+          ],
+          [
+            -6,
+            3,
+            7
+          ],
+          [
+            -7,
+            -4,
+            -8
+          ],
+          [
+            7,
+            4,
+            -8
+          ],
+          [
+            7,
+            -4,
+            8
+          ],
+          [
+            -7,
+            4,
+            8
+          ],
+          [
+            -8,
+            -5,
+            -9
+          ],
+          [
+            8,
+            5,
+            -9
+          ],
+          [
+            8,
+            -5,
+            9
+          ],
+          [
+            -8,
+            5,
+            9
+          ],
+          [
+            -9
+          ],
+          []
+        ],
+        "shared": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "local": [
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "projected_bits": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "clause_count": 18,
+      "shared": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "status": "UNKNOWN",
+      "support": [],
+      "rhs": 0,
+      "work": 832,
+      "gadget_count": 4
+    },
+    "duplicate_unit_and_tautology": {
+      "original_input": {
+        "clauses": [
+          [
+            -1,
+            -2,
+            -6
+          ],
+          [
+            1,
+            2,
+            -6
+          ],
+          [
+            1,
+            -2,
+            6
+          ],
+          [
+            -1,
+            2,
+            6
+          ],
+          [
+            -6,
+            -3,
+            -7
+          ],
+          [
+            6,
+            3,
+            -7
+          ],
+          [
+            6,
+            -3,
+            7
+          ],
+          [
+            -6,
+            3,
+            7
+          ],
+          [
+            -7,
+            -4,
+            -8
+          ],
+          [
+            7,
+            4,
+            -8
+          ],
+          [
+            7,
+            -4,
+            8
+          ],
+          [
+            -7,
+            4,
+            8
+          ],
+          [
+            -8,
+            -5,
+            -9
+          ],
+          [
+            8,
+            5,
+            -9
+          ],
+          [
+            8,
+            -5,
+            9
+          ],
+          [
+            -8,
+            5,
+            9
+          ],
+          [
+            -9
+          ],
+          [
+            -9
+          ],
+          [
+            1,
+            -1,
+            2
+          ]
+        ],
+        "shared": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "local": [
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "projected_bits": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "clause_count": 19,
+      "shared": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "status": "EXACT_AFFINE",
+      "support": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "rhs": 0,
+      "work": 871,
+      "gadget_count": 4
     }
   },
   "nonlinear_control": {
@@ -907,7 +2963,14 @@
       1,
       1,
       1
-    ]
+    ],
+    "linear_algebra_baseline": {
+      "status": "UNKNOWN",
+      "support": [],
+      "rhs": 0,
+      "work": 19,
+      "gadget_count": 0
+    }
   },
   "interpretation": "The projected representation remains one XOR equation while the bounded projection-based enumeration work grows with the hidden helper variables. A separate GF(2) baseline recovers the same relation without projection, so the enumeration cost is algorithm-specific evidence rather than an intrinsic discovery lower bound."
 }

@@ -1,7 +1,11 @@
 # Affine representation recognition under existential projection
 
-This lab records a precise hardness barrier for the next proposed discovery
-problem. The input is a CNF `F(x,y)`; its visible relation is
+This lab records scoped hardness results for affine discovery. The complete
+variable-width classification and proof are in
+[`COMPLEXITY_THEOREM.md`](COMPLEXITY_THEOREM.md): the nonempty-affinity
+decision problem is `Pi_2^P`-complete under polynomial many-one reductions.
+This is an elementary derivation from standard facts; novelty is not
+established. The input is a CNF `F(x,y)`; its visible relation is
 
 ```text
 R_F(x) = { x : exists y, F(x,y) }.
@@ -60,20 +64,21 @@ or the base relation from being affine. This is a direct reduction from the
 standard SAT--UNSAT pair language, recorded as hardness evidence rather than
 as a complete complexity classification.
 
-## The strongest general upper bound recorded here
+## The fixed-width oracle upper bound
 
 For visible width `k`, an exact recognizer can query an existential-CNF SAT
 oracle once for each visible assignment, collect the `2^k` membership bits, and
-test affine closure on that table. The oracle count is exactly `2^k`; the
+test affine closure on that table. This procedure's oracle count is `2^k`; the
 post-processing is polynomial in the table size. The saved width-three and
 width-four profiles contain 8 and 16 oracle queries respectively. This is an
-upper bound in `P^NP` for fixed-width input, not a polynomial-time algorithm
+upper bound using nonadaptive NP queries for fixed-width input, not a polynomial-time algorithm
 when `k` is part of the input.
 
 The selector reductions show why this accounting matters: even a constant
 visible width can encode SAT or SAT--UNSAT through the existential query, while
 the query count only becomes an ordinary polynomial bound after the width
-promise is fixed.
+promise is fixed. It is not a minimum query count. The variable-width
+classification uses a different quantified argument in the theorem note.
 
 For the finite witness, `B0` has masks `{1,3,5,6,7}` with `x3=0`; the three
 points `1,3,6` have XOR `4`, which is absent, so `B0` is not affine. The
@@ -101,3 +106,11 @@ verify the fixed non-affine truth table `[0,1,0,1,0,1,1,1]`.
 The result is a rigorous barrier for general recognition, not a lower bound on
 all SAT algorithms and not a P-versus-NP proof. Restricted promised families
 such as the XOR chain remain efficiently recognisable by GF(2) elimination.
+
+The producer no longer saves a `forged_projection_rejected` flag based only
+on comparing two arrays. Actual rejection is exercised by the independent
+checker in `test_lab.py`. The quantified extension additionally invokes
+complete replay for eight adversarial controls, binds results to independently
+regenerated source formulas, and reconstructs all 1,536 cases behind its
+campaign digest. Its exhaustive replay is not a polynomial verification
+algorithm for arbitrary projections.

@@ -1,44 +1,154 @@
 # Hidden-affine representation discovery experiment
 
-This bounded experiment asks whether a short projected representation can coexist with high work for one explicitly declared discovery procedure. It is an experiment about algorithms and accounting, not a lower bound for SAT, representation discovery in general, or P versus NP.
+The repaired structural baseline returns an exact projected equation only when
+it has accounted for the complete original CNF. It recognizes complete even-XOR
+triples plus one distinct unit, and proves every helper expression by acyclic
+substitution. Unsupported structure returns `UNKNOWN`, with no equation claim.
+This is a bounded representation experiment, not a SAT or P-versus-NP result.
 
-The family encodes one even-parity equation on `m` shared variables as a chain of 3-CNF XOR gadgets. The chain has `m-1` existential helper variables. Its projection therefore has a one-equation XOR description. The original procedure enumerates all shared/helper assignments and then tests every nonempty XOR support and both right-hand sides.
+The original family is one even-parity equation on `m` shared variables encoded
+by a chain of 3-CNF XOR gadgets and `m-1` existential helpers. It has a short
+one-equation projection. The saved instances have `m=3..7`, with identity and
+reversed input orders. All saved original clauses, ordered shared/local IDs and
+projected truth values are included in `RESULTS.json`.
 
-## Two discovery procedures
+## Correctness repair
 
-`enumeration_discovery_work` is the exact charged work of that fixed projection-and-candidate procedure. `exhaustive_replay_work` is the exact charged work of its exhaustive replay. They are procedure costs, not minima over algorithms and not lower bounds.
+The previous baseline silently skipped unrecognized clauses. For example, adding
+`(x0 OR x1)` to the three-variable chain removes the all-zero projected solution,
+but the old baseline still returned its original even-parity equation. The
+repair requires every nontrivial clause to be a unit or part of a fully checked
+four-clause XOR group. An empty clause, binary clause, incomplete/changed gadget,
+or unresolved equation causes `UNKNOWN`. The recognizer deliberately remains
+incomplete: `UNKNOWN` does not mean non-affine, unsatisfiable or hard.
 
-The separate `gaussian_baseline.py` recognises the constant-size XOR gadgets, then propagates affine expressions over GF(2) by substitution (the chain-specialised form of Gaussian elimination). It recovers the same parity support without constructing the projected truth table. Its `work` field is an explicit implementation charge for this baseline, included to make the comparison auditable rather than to claim a universal complexity measure.
+The positive-unit index was also incorrect: it used `-literal-1` rather than
+`abs(literal)-1`. Positive units now recover odd parity correctly. Shared IDs
+must be distinct nonnegative exact integers, and literals must be nonzero exact
+integers; booleans, floats, strings and malformed clause containers raise
+`ValueError`. Equation support indexes the supplied shared order, rather than
+raw variable IDs. Shared variables absent from the CNF remain free.
 
-The encoded representation size is named `encoded_representation_bits`: it is the bit count for this repository's support-label encoding. It is not a proof of minimum representation length.
+Repeated literals, duplicate clauses and repeated copies of the same unit are
+normalized safely. Tautologies are checked and discarded as true clauses; they
+cannot conceal another uncovered clause. All remaining units must be the same
+unit. Empty formulas, contradictory units and other unsupported structures
+return `UNKNOWN` rather than inventing a single equation.
 
-| shared variables | helpers | clauses | encoded bits | enumeration work | exhaustive replay | GF(2) baseline |
-| ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 3 | 2 | 9 | 15 | 408 | 288 | recorded in `RESULTS.json` |
-| 4 | 3 | 13 | 17 | 2,160 | 1,664 | recorded in `RESULTS.json` |
-| 5 | 4 | 17 | 24 | 10,720 | 8,704 | recorded in `RESULTS.json` |
-| 6 | 5 | 21 | 27 | 51,136 | 43,008 | recorded in `RESULTS.json` |
-| 7 | 6 | 25 | 30 | 237,440 | 204,800 | recorded in `RESULTS.json` |
+The exhaustive `project` API also validates literal coverage and requires the
+shared/local ID lists to be unique and disjoint, preventing local assignments
+from overwriting a shared coordinate. Constructor permutations and renamings
+no longer silently coerce noninteger IDs.
 
-For `m` shared variables:
+Why an exact structural answer is sound: initialize the ordered shared bits as
+independent affine expressions. Every eliminated gadget defines exactly one
+fresh helper from two already known expressions. Thus every shared assignment
+extends uniquely to all variables of every recognized gadget, with no hidden
+additional equation. Complete clause coverage and no remaining gadgets leave
+only the checked unit constraint. Substituting its target expression gives the
+returned equation. If any step cannot establish this argument, the baseline
+returns `UNKNOWN`.
+
+The legacy status name `EXACT_AFFINE` means an exact XOR equation, and does
+not assert a nonempty affine coset. The XOR of an empty support is zero:
+empty support with `rhs=0` describes every shared assignment, while empty
+support with `rhs=1` describes no assignments. A regression constructs
+`h=x0 XOR x1`, `g=x0 XOR h`, `t=x1 XOR g=0` and checks both unit polarities
+against the complete original projection. This is distinct from recognition
+APIs elsewhere that reserve affine-coset output for nonempty relations.
+
+## Two different cost proxies
+
+`enumeration_discovery_work` and `exhaustive_replay_work` are symbolic charges
+for a declared fully exhaustive, non-short-circuit schedule. They are not
+instrumentation counts of the Python implementation. Actual projection uses
+short-circuit satisfaction and existential search; `discover` checks that its
+projection equals the family's expected parity. It calculates the complete
+candidate-vocabulary schedule algebraically; it does not execute that candidate
+search or discover an arbitrary unknown representation.
+
+| shared variables | helpers | clauses | encoded bits | symbolic discovery schedule | symbolic replay schedule |
+| ---: | ---: | ---: | ---: | ---: | ---: |
+| 3 | 2 | 9 | 15 | 408 | 288 |
+| 4 | 3 | 13 | 17 | 2,160 | 1,664 |
+| 5 | 4 | 17 | 24 | 10,720 | 8,704 |
+| 6 | 5 | 21 | 27 | 51,136 | 43,008 |
+| 7 | 6 | 25 | 30 | 237,440 | 204,800 |
+
+For this declared schedule:
 
 ```text
 local variables            = m - 1
 CNF clauses                = 4m - 3
 encoded bits               = 9 + m ceil(log2 m)
-exhaustive replay work     = (4m - 3) 2^(2m - 1)
-candidate-search work      = (2^(m + 1) - 1) 2^m
-enumeration discovery work = (4m - 3) 2^(2m - 1) + (2^(m + 1) - 1) 2^m
+full replay charge         = (4m - 3) 2^(2m - 1)
+candidate-vocabulary charge = (2^(m + 1) - 1) 2^m
+full discovery charge      = full replay charge + candidate-vocabulary charge
 ```
 
-The projection count follows from `2^(m+(m-1))` assignments. The candidate vocabulary has `2(2^m-1)+1` entries. Thus the declared enumeration procedure has Θ(m4^m) charged work while its particular encoded support has Θ(m log m) bits. The GF(2) baseline gives a polynomial structural control for the same family, so the exponential separation is algorithm-specific evidence.
+The representation bit count is this repository's support-label encoding,
+not a proof of minimum encoding length. The symbolic schedule has
+Theta(m 4^m) charged units while that particular encoding has Theta(m log m)
+bits; neither statement lower-bounds a different discovery algorithm.
 
-## Controls and nonlinear boundary
+The baseline `work` counter now includes all of these loop visits:
 
-`RESULTS.json` includes three syntactic controls at `m=5`: reversed gadget order, a duplicated redundant gadget, and a bijective renaming of all variables. The baseline recovers the same affine relation in each case. These controls test robustness to superficial hiding; they do not make discovery hard.
+- one per shared ID during validation;
+- one per raw clause, raw literal and distinct-literal tautology check;
+- one per normalized clause and each of its literals during classification;
+- one per candidate triple group;
+- for a four-clause group, all eight truth assignments, three assignment stores,
+  four clause visits and twelve literal visits per assignment (160 units);
+- expression initialization, every substitution pass, every pending equation
+  and each of its three variable visits, including failed scans;
+- one per successful substitution and each final shared-position output scan.
 
-The companion nonlinear control tests a Boolean relation that is not affine. The baseline must return `NOT_AFFINE`/`UNKNOWN` rather than silently treating a nonlinear projection as an XOR equation. This keeps affine recovery and nonlinear representation questions separate.
+Sorting, hashing, allocation, interpreter overhead and arbitrary-length integer
+operations are not fully charged. This is an auditable logical-operation proxy,
+not CPU time, memory use or a universal complexity measure. The independent
+review recomputes it, including failed scans. Its units differ from the symbolic
+enumeration schedule; comparing their numeric values is not a speed claim.
+Each successful pass removes a gadget, so the number of substitution scans is
+polynomial, even when input renaming forces repeated passes. The structural
+baseline is consequently a polynomial control for the supported family.
 
-`independent_review.py` rebuilds the chain and projection without importing the producer, checks every saved formula, and checks the baseline outputs and controls. The tests also exercise reordered, duplicated, renamed, and malformed inputs.
+## Saved controls and independent verification
 
-The supported conclusion is narrow: a compact projected representation can coexist with high work for one explicit exhaustive synthesizer. A meaningful discovery barrier would require a reduction or theorem covering a broad, well-defined class of algorithms, including methods that bypass this representation.
+Seven original-input controls cover reversed gadget blocks, a duplicated gadget,
+bijective renaming, a positive unit, an added restricting binary clause, an
+added empty clause, and a duplicated unit plus tautology. The two added-clause
+controls must return `UNKNOWN`; the others produce independently checked exact
+projections. The nonlinear CNF `(x0 OR x1) AND (x0 OR x2)` is evaluated from its
+actual clauses; translated support closure proves its projection non-affine,
+and the structural baseline returns `UNKNOWN`.
+
+`independent_review.py` imports no producer module. It constructs XOR clauses
+by excluding odd assignments, reconstructs every saved original/control, and
+enumerates complete original assignments before comparing any exact equation.
+It independently checks the nonlinear projection/closure and computes gadget
+validity from forbidden assignment masks. It separately reconstructs the
+published baseline scan schedule. Malformed or changed originals, claimed
+relations, coverage, metadata and charges are tested by saved-payload mutations.
+
+The regression suite also checks all 512 subsets of the eight three-variable
+clauses with both target units, plus 180 seeded small acyclic originals with
+variable renaming and restricting-clause controls. Every exact answer is compared
+with an independent full-assignment projection oracle. These finite checks
+support the coverage/substitution argument; they do not make this recognizer
+complete for general affine projections.
+
+Reproduce with `python run_experiment.py`, `python -m unittest discover -v`, and
+`python independent_review.py` in this directory. The saved source map binds all
+implementation, test, review and report files and confirms source stability.
+No archive manifest, old lab, commit or remote is changed by these commands.
+
+Source hashing uses the explicit scheme `sha256-utf8-lf-v1`: decode strict
+UTF-8, replace CRLF and lone CR line endings with LF, re-encode UTF-8, then
+hash with SHA-256. No trimming, Unicode normalization or BOM removal occurs;
+all other content changes alter the hash. This makes evidence portable across
+Git's text line-ending conversion. `source_unchanged_during_run` means equality
+of this normalized text, rather than byte-for-byte equality of newline styles.
+Producer and independent replay implement the same documented scheme separately.
+Regression tests replay complete LF and CRLF source snapshots against the saved
+hashes and reject an actual source edit; they also check significant whitespace,
+BOM and UTF-8 validation behavior.
