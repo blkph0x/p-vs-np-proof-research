@@ -78,6 +78,54 @@ def witness_masks(m, degree, pin):
                  if mask & required == required)
 
 
+def affine_minimum_support(m, codimension, pin):
+    fixed = (1 << codimension) - 1
+    return sum(1 << point for point in range(1 << m)
+               if (point & fixed) == (pin & fixed))
+
+
+def verify_boundary_and_scaling():
+    boundary_cases = 0
+    scaling_cases = []
+    for s in range(1, 7):
+        m, r, n = 2 * s + 1, s, 1 << (2 * s + 1)
+        distance = 1 << (s + 1)
+        rows = tuple(row(m, mask) for mask in masks(m, r))
+        row_by_mask = dict(zip(masks(m, r), rows))
+        for pin in (0, 1, n - 1):
+            support = affine_minimum_support(m, r, pin)
+            witness = 0
+            for mask in witness_masks(m, r, pin):
+                witness ^= row_by_mask[mask]
+            assert support == witness
+            assert support.bit_count() == distance
+            assert support >> pin & 1
+            assert all((support & value).bit_count() % 2 == 0 for value in rows)
+            assert (support ^ (1 << pin)).bit_count() == distance - 1
+            boundary_cases += 1
+        level = distance - 2
+        top_scope = comb(n, level)
+        scopes = sum(comb(n, size) for size in range(level + 1))
+        atoms = sum(comb(n, size) * (1 << size)
+                    for size in range(level + 1))
+        top_atoms = (1 << level) * top_scope
+        supported_atoms = sum(
+            comb(n - 1, size) * (1 << size)
+            + (comb(n - 1, size - 1) * (1 << (size - 1)) if size else 0)
+            for size in range(level + 1)
+        )
+        top_supported = (1 << level) * comb(n - 1, level)
+        assert top_scope <= scopes <= (level + 1) * top_scope
+        assert top_atoms <= atoms <= (level + 1) * top_atoms
+        assert top_supported <= supported_atoms
+        assert supported_atoms <= (level + 1) * (1 << (level + 1)) * comb(n - 1, level)
+        scaling_cases.append({"s": s, "n": n, "level": level,
+                              "scope_count": scopes,
+                              "atom_slot_envelope": atoms,
+                              "supported_atom_count": supported_atoms})
+    return boundary_cases, scaling_cases
+
+
 def verify_case(saved):
     cert = saved["certificate"]
     s = cert["s"]
@@ -178,6 +226,7 @@ def verify_case(saved):
 def main():
     saved = json.loads(Path("REED_MULLER_RESULTS.json").read_text(encoding="utf-8"))
     rows = [verify_case(case) for case in saved["cases"]]
+    boundary_cases, scaling_cases = verify_boundary_and_scaling()
     assert saved["all_valid"] is True
     assert rows == [
         {"name": "RM(1,3)_level_2", "s": 1, "n": 8, "dimension": 4,
@@ -200,6 +249,8 @@ def main():
         "self_dual_family": True,
         "scope_replay_cases": [row["name"] for row in rows if row["support_replay"]],
         "theorem_only_larger_case": "RM(3,7)",
+        "boundary_obstruction_cases": boundary_cases,
+        "scaling_bound_cases": scaling_cases,
     }
     Path("REED_MULLER_INDEPENDENT_REVIEW.json").write_text(
         json.dumps(output, indent=2) + "\n", encoding="utf-8")
@@ -209,10 +260,15 @@ def main():
         "dual basis, affine minimum-weight witness, exact small word spans, and "
         "the level-two local support replay for RM(1,3). RM(2,5) is exactly "
         "enumerated over its 65,536 codewords; RM(3,7) uses the stated distance "
-        "theorem because its 64-dimensional span is intentionally not expanded.\n"
+        "theorem because its 64-dimensional span is intentionally not expanded. "
+        "The replay also reconstructs minimum dual supports through three pins "
+        "for s=1..5 and checks the exact all-scope size inequalities through "
+        "s=6.\n"
     , encoding="utf-8")
     print(json.dumps({"status": output["status"], "case_count": len(rows),
-                      "levels": [row["level"] for row in rows]}))
+                      "levels": [row["level"] for row in rows],
+                      "boundary_obstruction_cases": boundary_cases,
+                      "scaling_bound_cases": len(scaling_cases)}))
 
 
 if __name__ == "__main__":

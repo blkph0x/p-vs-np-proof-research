@@ -1,16 +1,20 @@
 import copy
 import json
+from math import comb
 from pathlib import Path
 import unittest
 
 from reed_muller import (
+    affine_minimum_support,
+    affine_minimum_witness_masks,
     generator_rows,
     make_certificate,
     monomial_masks,
     parameters,
     verify_certificate,
 )
-from local_marginal import make_certificate as make_local_certificate
+from local_marginal import atom_slot_count, make_certificate as make_local_certificate
+from local_marginal import scope_count
 from local_marginal import verify_certificate as verify_local_certificate
 
 
@@ -66,6 +70,53 @@ class ReedMullerTests(unittest.TestCase):
         self.assertTrue(checked["valid"])
         self.assertFalse(checked["theorem_level_valid"])
         self.assertFalse(checked["support_replay"])
+
+    def test_symmetric_family_has_exact_boundary_obstruction(self):
+        """A minimum dual word through the pin rejects the unit atom at d-1."""
+        for s in range(1, 6):
+            info = parameters(s)
+            for pin in (0, 1, info["n"] - 1):
+                support = affine_minimum_support(info["m"], info["r"], pin)
+                self.assertEqual(support.bit_count(), info["dual_distance"])
+                self.assertTrue(support >> pin & 1)
+                row_by_mask = dict(zip(monomial_masks(info["m"], info["r"]),
+                                       generator_rows(s)))
+                witness = 0
+                for mask in affine_minimum_witness_masks(info["m"], info["r"], pin):
+                    witness ^= row_by_mask[mask]
+                self.assertEqual(witness, support)
+                self.assertTrue(all(
+                    (support & row).bit_count() % 2 == 0
+                    for row in generator_rows(s)
+                ))
+                boundary_scope = support ^ (1 << pin)
+                self.assertEqual(boundary_scope.bit_count(), info["dual_distance"] - 1)
+
+    def test_explicit_all_scope_representation_has_exact_scaling_bounds(self):
+        """The unquotiented max-level model is superpolynomial in n."""
+        for s in range(1, 7):
+            info = parameters(s)
+            n = info["n"]
+            k = info["dual_distance"] - 2
+            top_scope = comb(n, k)
+            scopes = scope_count(n, k)
+            atoms = atom_slot_count(n, k)
+            self.assertLessEqual(top_scope, scopes)
+            self.assertLessEqual(scopes, (k + 1) * top_scope)
+            top_atoms = (1 << k) * top_scope
+            self.assertLessEqual(top_atoms, atoms)
+            self.assertLessEqual(atoms, (k + 1) * top_atoms)
+            supported_atoms = sum(
+                comb(n - 1, size) * (1 << size)
+                + (comb(n - 1, size - 1) * (1 << (size - 1)) if size else 0)
+                for size in range(k + 1)
+            )
+            top_supported = (1 << k) * comb(n - 1, k)
+            self.assertLessEqual(top_supported, supported_atoms)
+            self.assertLessEqual(
+                supported_atoms,
+                (k + 1) * (1 << (k + 1)) * comb(n - 1, k),
+            )
 
     def test_mutated_rows_are_rejected(self):
         certificate = make_certificate(1)["certificate"]

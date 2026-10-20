@@ -83,6 +83,24 @@ def affine_minimum_witness_masks(m: int, degree: int, pin: int) -> tuple[int, ..
     return tuple(mask for mask in range(1 << degree) if mask & required == required)
 
 
+def affine_minimum_support(m: int, codimension: int, pin: int) -> int:
+    """Return an affine minimum-weight support through ``pin``.
+
+    The first ``codimension`` coordinate bits are fixed to the corresponding
+    bits of ``pin``. For the symmetric RM family this is the support of a
+    minimum-weight dual word, so removing ``pin`` gives the first boundary
+    scope on which the unit local witness is forbidden.
+    """
+    if (type(m) is not int or m < 0 or type(codimension) is not int
+            or not 0 <= codimension <= m):
+        raise ValueError("invalid affine dimensions")
+    if type(pin) is not int or not 0 <= pin < (1 << m):
+        raise ValueError("pin out of range")
+    fixed = (1 << codimension) - 1
+    return sum(1 << point for point in range(1 << m)
+               if (point & fixed) == (pin & fixed))
+
+
 def xor_rows(rows: tuple[int, ...], masks: tuple[int, ...]) -> int:
     result = 0
     for mask in masks:

@@ -70,7 +70,10 @@ additional certificates it can produce:
    and remains explicitly `UNRECORDED`.
 4. Collect nearby exact instances only when they test a stated scaling
    conjecture. A fitted curve is not a theorem, and a failed conjecture is a
-   valid recorded outcome.
+   valid recorded outcome. **A finite scaling theorem is now recorded:** the
+   explicit unquotiented all-scope `RM(s,2s+1)` representation has
+   `exp(Theta(sqrt(n) log n))` scopes and supported atom slots at the maximum
+   unit-witness level. Quotient and implicit-separation scaling remain open.
 
 The short-term success criterion is a publishable theorem with a precise
 new-versus-known comparison. Producing more cuts without such a criterion is

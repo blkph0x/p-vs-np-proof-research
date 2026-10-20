@@ -661,9 +661,10 @@ gate-variable gap is retained as a separate cost.
 The [local-marginal code barrier](local_marginal_code_lab/THEOREM.md) adds a
 lifted consistency control with exact scope marginals. The dual-distance
 argument leaves the unit-vector witness feasible through level `delta-2`; the
-even-parity case rejects the boundary level, and the Golay case has level 6
-versus pinned optimum 8. This is scoped to the explicit relaxation rather than
-being presented as a universal hierarchy or P-versus-NP result.
+deterministic Reed--Muller family now has an exact `d-1` obstruction for that
+witness, while the Golay case has level 6 versus pinned optimum 8. This is
+scoped to the explicit relaxation rather than being presented as a universal
+hierarchy or P-versus-NP result.
 Its asymptotic probabilistic extension uses exact union bounds to obtain
 half-rate random codes with both distances at least `n/16`, leaving a local
 witness through level `n/16-2`; lengths 32 through 1024 are replayed. This

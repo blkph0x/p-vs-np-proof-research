@@ -97,6 +97,81 @@ certificate proves the family formula and the affine witness; only `RM(1,3)`
 has a complete scope-by-scope support replay because the number of scopes grows
 as `sum_{i<=k} binom(n,i)`.
 
+## The unit witness stops at the exact boundary
+
+The level `d-2` in the theorem is sharp for this family. Fix a pin `j` and
+let `H_j` be the affine subspace obtained by fixing the first `s` coordinate
+bits to the corresponding bits of `j`. Its indicator is the Reed--Muller
+polynomial
+
+```text
+h_j(x) = product_{i=0}^{s-1} (1 + j_i + x_i),
+```
+
+so `h_j` is a codeword of weight `d`. Self-duality makes it a dual word as
+well. Put `S = H_j \ {j}`, which has size `d-1`. Every codeword `c` with
+`c_j=1` obeys
+
+```text
+0 = <h_j,c> = c_j + sum_{x in S} c_x  (mod 2),
+```
+
+and therefore its projection onto `S` has odd parity. In particular the
+all-zero assignment on `S` is absent from the pinned-code projection. The
+unit local witness would require exactly that atom on the scope `S`, so it is
+infeasible at level `d-1`. Combined with the dual-distance construction, the
+maximum level supporting the unit witness is exactly `d-2` for every member of
+`RM(s,2s+1)`.
+
+The repository's boundary test reconstructs `h_j` from the generator rows for
+several family members and pins, checks its exact dual orthogonality, and
+checks the `d-1` scope size. This is a structural boundary theorem for the
+declared local-marginal model, not a lower bound for arbitrary algorithms.
+
+## Exact size law for the explicit all-scope model
+
+The same family gives a precise representation-size warning. Write
+`q = 2^s`, so `n = 2q^2` and the maximum unit-witness level is `k = 2q-2`.
+Let
+
+```text
+M_s = sum_{i=0}^k binom(n,i)
+```
+
+be the number of coordinate scopes. The unrestricted atom-slot envelope is
+`A_s = sum_{i=0}^k 2^i binom(n,i)`. Because every scope below `d-1` projects
+to the full cube when the pin is omitted and to the pin-one half-cube when the
+pin is included, the actual supported atom count is
+
+```text
+B_s = sum_{i=0}^k [2^i binom(n-1,i) + 2^(i-1) binom(n-1,i-1)],
+```
+
+where the second term is zero at `i=0`. Since `k <= n/2`, binomial
+coefficients increase through `k`, and therefore
+
+```text
+binom(n,k) <= M_s <= (k+1) binom(n,k),
+2^k binom(n-1,k) <= B_s <= (k+1) 2^(k+1) binom(n-1,k),
+2^k binom(n,k) <= A_s <= (k+1) 2^k binom(n,k).
+```
+
+The standard elementary bounds
+`(n/k)^k <= binom(n,k) <= (e n/k)^k` then give
+
+```text
+log M_s = Theta(k log(n/k)) = Theta(2^s s),
+log B_s = Theta(k log(n/k)) = Theta(2^s s).
+```
+
+Equivalently, the scope count and the actual supported atom count are
+`exp(Theta(sqrt(n) log n))`; `A_s` is a matching unrestricted envelope. This
+is an exact scaling law for the unquotiented all-scope representation.
+Symmetry quotients or implicit separation may be much smaller; this
+calculation does not rule out them, and it is not a lower bound for arbitrary
+SAT algorithms. The test suite and independent replay check the displayed
+inequalities with exact integers for the first six family members.
+
 This is a barrier for this exact local projection-marginal architecture. A
 stronger hierarchy, global valid inequalities, a different representation, or
 an efficient separation algorithm could evade it. The input itself has `n`
