@@ -12,6 +12,7 @@ from itertools import product
 SHARED = (0, 1, 2)
 SELECTOR = 3
 Y_OFFSET = 4
+TWO_SOURCE_SHARED = (0, 1, 2, 3)
 
 
 def nonlinear_relation_clauses() -> tuple[tuple[int, ...], ...]:
@@ -92,6 +93,79 @@ def relation_class(bits: tuple[int, ...]) -> str:
     return "AFFINE" if is_affine_relation(bits) else "NON_AFFINE_OR_EMPTY"
 
 
+def _point_clauses(selector: int, point: int) -> tuple[tuple[int, ...], ...]:
+    """Gate a visible assignment point by one selector variable."""
+    return tuple((-selector - 1, (index + 1) if point & (1 << index)
+                  else -(index + 1)) for index in range(4))
+
+
+def _shift_clause(clause: tuple[int, ...], offset: int) -> tuple[int, ...]:
+    return tuple((literal + offset if literal > 0 else literal - offset)
+                 for literal in clause)
+
+
+def two_source_selector_lift(a_clauses: tuple[tuple[int, ...], ...], a_nvars: int,
+                             b_clauses: tuple[tuple[int, ...], ...], b_nvars: int) -> dict:
+    """Build the four-visible-bit SAT--UNSAT selector construction.
+
+    The always-available branch is a non-affine subset B0 of the plane x3=0.
+    Three branches add the missing points of that plane when A is satisfiable;
+    a fifth branch adds one point outside the plane when B is satisfiable.
+    """
+    if a_nvars < 0 or b_nvars < 0:
+        raise ValueError("source variable counts must be nonnegative")
+    selectors = tuple(range(4, 9))
+    a_offset = 9
+    b_offset = a_offset + a_nvars
+    clauses: list[tuple[int, ...]] = [tuple(index + 1 for index in selectors)]
+    clauses.extend((-(selectors[left] + 1), -(selectors[right] + 1))
+                   for left in range(5) for right in range(left + 1, 5))
+    # B0 = (x0 OR x1) AND (x0 OR x2) AND (NOT x3), gated by selector 0.
+    base = ((1, 2), (1, 3), (-4,))
+    clauses.extend((-(selectors[0] + 1),) + clause for clause in base)
+    # Points 0, 2, 4 complete the x3=0 affine plane.
+    for branch, point in zip((1, 2, 3), (0, 2, 4)):
+        clauses.extend(_point_clauses(selectors[branch], point))
+        clauses.extend((-(selectors[branch] + 1),) + _shift_clause(clause, a_offset)
+                        for clause in a_clauses)
+    # Point 8 lies outside the plane and is available iff B is satisfiable.
+    clauses.extend(_point_clauses(selectors[4], 8))
+    clauses.extend((-(selectors[4] + 1),) + _shift_clause(clause, b_offset)
+                    for clause in b_clauses)
+    return {
+        "shared": TWO_SOURCE_SHARED,
+        "local": tuple(selectors) + tuple(range(a_offset, a_offset + a_nvars)) +
+                 tuple(range(b_offset, b_offset + b_nvars)),
+        "clauses": tuple(clauses),
+        "a_clauses": tuple(tuple(int(literal) for literal in clause) for clause in a_clauses),
+        "b_clauses": tuple(tuple(int(literal) for literal in clause) for clause in b_clauses),
+        "a_nvars": a_nvars,
+        "b_nvars": b_nvars,
+    }
+
+
+def two_source_record(a_clauses: tuple[tuple[int, ...], ...], a_nvars: int,
+                      b_clauses: tuple[tuple[int, ...], ...], b_nvars: int) -> dict:
+    lifted = two_source_selector_lift(a_clauses, a_nvars, b_clauses, b_nvars)
+    bits = project(lifted)
+    a_models = source_models(a_clauses, a_nvars)
+    b_models = source_models(b_clauses, b_nvars)
+    return {
+        "a_nvars": a_nvars,
+        "a_clauses": [list(clause) for clause in a_clauses],
+        "a_satisfiable": bool(a_models),
+        "a_model_count": len(a_models),
+        "b_nvars": b_nvars,
+        "b_clauses": [list(clause) for clause in b_clauses],
+        "b_satisfiable": bool(b_models),
+        "b_model_count": len(b_models),
+        "shared_width": 4,
+        "projection_bits": list(bits),
+        "projection_class": relation_class(bits),
+        "lifted_clauses": [list(clause) for clause in lifted["clauses"]],
+    }
+
+
 def exact_record(g_clauses: tuple[tuple[int, ...], ...], nvars: int) -> dict:
     normalized = tuple(tuple(int(literal) for literal in clause) for clause in g_clauses)
     lifted = selector_lift(normalized, nvars)
@@ -115,6 +189,16 @@ def build_artifact() -> dict:
     empty_source = exact_record((), 0)
     forged = dict(sat)
     forged["projection_bits"] = list(unsat["projection_bits"])
+    a_sat = ((1,),)
+    a_unsat = ((1,), (-1,))
+    b_sat = ()
+    b_unsat = ((1,), (-1,))
+    two_source = [
+        two_source_record(a_sat, 1, b_sat, 0),
+        two_source_record(a_sat, 1, b_unsat, 1),
+        two_source_record(a_unsat, 1, b_sat, 0),
+        two_source_record(a_unsat, 1, b_unsat, 1),
+    ]
     return {
         "status": "EXACT_FINITE_REDUCTION",
         "theorem": "G satisfiable iff selector-lift projection is AFFINE",
@@ -122,6 +206,8 @@ def build_artifact() -> dict:
         "shared_width": len(SHARED),
         "fixed_non_affine_relation": [list(clause) for clause in nonlinear_relation_clauses()],
         "records": [sat, unsat, empty_source],
+        "two_source_theorem": "projection is AFFINE iff A is satisfiable and B is unsatisfiable",
+        "two_source_shared_width": 4,
+        "two_source_records": two_source,
         "adversarial": {"forged_projection_rejected": forged["projection_bits"] != sat["projection_bits"]},
     }
-

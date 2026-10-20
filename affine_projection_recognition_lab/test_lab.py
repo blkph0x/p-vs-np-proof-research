@@ -24,9 +24,24 @@ class AffineProjectionRecognitionTests(unittest.TestCase):
     def test_shared_width_is_constant(self):
         self.assertEqual(self.artifact["shared_width"], 3)
         self.assertTrue(all(row["shared_width"] == 3 for row in self.artifact["records"]))
+        self.assertEqual(self.artifact["two_source_shared_width"], 4)
+
+    def test_two_source_sat_unsat_reduction(self):
+        rows = self.artifact["two_source_records"]
+        self.assertEqual(len(rows), 4)
+        classes = {(row["a_satisfiable"], row["b_satisfiable"]): row["projection_class"]
+                   for row in rows}
+        self.assertEqual(classes, {
+            (True, True): "NON_AFFINE_OR_EMPTY",
+            (True, False): "AFFINE",
+            (False, True): "NON_AFFINE_OR_EMPTY",
+            (False, False): "NON_AFFINE_OR_EMPTY",
+        })
 
     def test_independent_replay(self):
         self.assertTrue(all(verify.verify(row) for row in self.artifact["records"]))
+        self.assertTrue(all(verify.verify_two_source(row)
+                            for row in self.artifact["two_source_records"]))
 
     def test_exhaustive_two_variable_source_controls(self):
         pool = tuple(tuple((index + 1) * choice for index, choice in enumerate(choices) if choice)
@@ -47,6 +62,9 @@ class AffineProjectionRecognitionTests(unittest.TestCase):
         forged = copy.deepcopy(self.artifact["records"][1])
         forged["source_model_count"] += 1
         self.assertFalse(verify.verify(forged))
+        forged = copy.deepcopy(self.artifact["two_source_records"][1])
+        forged["projection_bits"][0] ^= 1
+        self.assertFalse(verify.verify_two_source(forged))
 
     def test_saved_artifact_replays(self):
         path = Path(__file__).with_name("RESULTS.json")

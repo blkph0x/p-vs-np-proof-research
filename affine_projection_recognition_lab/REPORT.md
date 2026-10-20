@@ -43,6 +43,31 @@ would decide UNSAT under the same mapping. This is a polynomial many-one
 reduction statement; it is not a claim that the recognition problem has been
 classified completely or that P versus NP has been resolved.
 
+## Two-source strengthening
+
+The same lab also records a four-visible-variable reduction from the
+SAT--UNSAT pair problem. Start with the non-affine subset `B0` of the affine
+plane `x3=0` given by the three clauses used above. Three selector branches add
+the missing points of that plane when source `A` is satisfiable. A fifth branch
+adds the point `(x0,x1,x2,x3)=(0,0,0,1)` when source `B` is satisfiable. A
+one-hot selector makes the projected relation the union of all available
+branches.
+
+Consequently, the projection is affine exactly when `A` is satisfiable and
+`B` is unsatisfiable. The other three cases are non-affine: the base relation
+is non-affine, and an outside-plane point prevents either the completed plane
+or the base relation from being affine. This is a direct reduction from the
+standard SAT--UNSAT pair language, recorded as hardness evidence rather than
+as a complete complexity classification.
+
+For the finite witness, `B0` has masks `{1,3,5,6,7}` with `x3=0`; the three
+points `1,3,6` have XOR `4`, which is absent, so `B0` is not affine. The
+differences of `1` to `3`, `5`, and `6` span all three coordinates, so the
+affine hull of `B0` is exactly the plane `x3=0`. Adding masks `0,2,4` completes
+that plane. Adding mask `8` instead forces the affine hull to be the full
+four-dimensional cube; the resulting six- or nine-point sets are therefore
+not affine.
+
 The construction also explains the methodological limit of a hidden-structure
 experiment. A compact affine representation can be found on one promised
 family, while unrestricted affine recognition under existential projection is
@@ -54,10 +79,10 @@ state its promise, its input encoding, and how it avoids this selector barrier.
 `RESULTS.json` contains satisfiable, unsatisfiable, and empty-source controls.
 The independent `verify.py` rebuilds the selector lift, enumerates the exact
 projection, checks affine closure, and rejects mutations to the projected bits
-and source model count. The tests keep the visible width at three and verify
-the fixed non-affine truth table `[0,1,0,1,0,1,1,1]`.
+and source model count. The tests keep the one-source visible width at three,
+the two-source width at four, exhaust all 256 two-variable source CNFs, and
+verify the fixed non-affine truth table `[0,1,0,1,0,1,1,1]`.
 
 The result is a rigorous barrier for general recognition, not a lower bound on
 all SAT algorithms and not a P-versus-NP proof. Restricted promised families
 such as the XOR chain remain efficiently recognisable by GF(2) elimination.
-
