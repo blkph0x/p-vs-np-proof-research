@@ -13,6 +13,7 @@ for P versus NP.
 | --- | --- |
 | The `RM(s,2s+1)` family theorem is a credible dual-distance/local-projection theorem. | Retain it as a scoped theorem. The next manuscript must state exactly what is inherited from Reed–Muller dual distance and what, if anything, is new about this local-marginal formulation. No novelty claim is made until that comparison is complete. |
 | The exact `31/5` value is a strong finite certificate if the quotient equivalence is established. | Retain the certificate. Add a standalone quotient-equivalence theorem and proof sketch, with the producer/reviewer correspondence and the remaining formalisation boundary recorded in [`REED_MULLER_QUOTIENT_EQUIVALENCE.md`](local_marginal_code_lab/REED_MULLER_QUOTIENT_EQUIVALENCE.md). |
+| The certificate's objective convention must be audited independently. | **Addressed.** The producer and reviewer both use the reduced non-pin objective: the exact value is `31/5`, the pinned integer benchmark is `7`, and the equivalent total-weight values are `36/5` and `8`. The independent [normalization audit](local_marginal_code_lab/REED_MULLER_OBJECTIVE_NORMALIZATION_AUDIT.md) enumerates all 32,768 pinned codewords and retires the earlier mixed-convention ratio `40/31`. |
 | The seven-cut sequence should not be called a standard SOS hierarchy without degree-bounded SOS proofs. | Adopted. The cuts are now described as **valid integer-domain polynomial cuts** or **integer-cut strengthening**. The degree-two Boolean square is the only item currently described as an SOS/moment constraint. Existing `SOS` filenames are retained as stable artifact paths and are explicitly historical names. |
 | The seven-cut value is fractional and the candidate scan is separation only. | Retain the exact primal/dual value `35873801083/5129253893` as a finite integer-cut LP optimum. Retain the 39-candidate scan only as separation evidence; no post-candidate optimum is claimed. |
 | The all-redundant-parity LP is a promising focused theorem but overlaps pseudocodeword and fundamental-polytope literature. | Retain the theorem and open a theorem-by-theorem novelty comparison before presenting it as new. |
@@ -51,10 +52,11 @@ additional certificates it can produce:
    records the six-term positive objective-gap identity and an exact replay
    test. A separate exact boundary-level theorem is now recorded in
    [`REED_MULLER_THEOREM.md`](local_marginal_code_lab/REED_MULLER_THEOREM.md):
-   plain `L_{d-1}` has value `1+(2^(2s+1)-1)/(2^(s+1)-1)` for the whole
+   plain `L_{d-1}` has reduced value
+   `(2^(2s+1)-1)/(2^(s+1)-1)` and total value one larger for the whole
    self-dual family, with an explicit sparse witness and an affine-incidence
    lower bound. This does not provide a parameterised analogue of the compact
-   six-term `31/5` identity, which remains open.
+   six-term reduced `31/5` identity, which remains open.
 2. Compare the local-marginal model and integer-cut sequence with standard
    Sherali–Adams, Lasserre/SOS, pseudocodeword, and orthogonal-array results.
    **Terminology gate partially addressed:**
