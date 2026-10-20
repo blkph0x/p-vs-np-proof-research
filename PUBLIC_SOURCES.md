@@ -5,7 +5,7 @@ public URL found in the repository's source, reports, and saved metadata,
 along with the local files that cite or preserve it. The curated primary
 sources and citation rules are in [`CITATIONS.md`](CITATIONS.md).
 
-Indexed URLs: **74**.
+Indexed URLs: **75**.
 
 | URL | Local provenance |
 | --- | --- |
@@ -44,6 +44,7 @@ Indexed URLs: **74**.
 | <https://doi.org/10.1109/assic70037.2026.11717448> | `PUBLIC_SOURCES.md`, `VOHRA_CROSSREF_METADATA.json` |
 | <https://doi.org/10.1145/258533.258559> | `PUBLIC_SOURCES.md`, `VARDY_MINIMUM_DISTANCE_SCOPE.md`, `labelled_join_certified/COVERAGE_AUDIT.md` |
 | <https://doi.org/10.1287/moor.7.1.67> | `PUBLIC_SOURCES.md`, `THEORY_REVIEW.md` |
+| <https://eccc.weizmann.ac.il/report/2011/142/> | `CITATIONS.md`, `PUBLIC_SOURCES.md`, `local_marginal_code_lab/LOCAL_MARGINAL_NOVELTY_LEDGER.md` |
 | <https://ece.iisc.ac.in/~nkashyap/Papers/code_decomp_final.pdf> | `ALL_DUAL_LP_THEOREM.md`, `PUBLIC_SOURCES.md`, `local_marginal_code_lab/LOCAL_MARGINAL_NOVELTY_LEDGER.md` |
 | <https://epubs.siam.org/doi/10.1137/070691152> | `PUBLIC_SOURCES.md`, `high_width_core_stress_lab/REPORT.md` |
 | <https://github.com/blkph0x/p-vs-np-proof-research> | `CITATION.cff`, `PUBLIC_SOURCES.md`, `index.md` |

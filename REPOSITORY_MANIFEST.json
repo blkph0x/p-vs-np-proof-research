@@ -198,8 +198,8 @@
       "sha256": "9a923c2f142e3abaa70d7b560ec402e65b208290c319a9f4e49b73fadf0f8d0c"
     },
     "CITATIONS.md": {
-      "bytes": 5246,
-      "sha256": "abae89ab05a303fe152a1e249c426af279ffbf5e6b774001f32f6e23232c8807"
+      "bytes": 5618,
+      "sha256": "f86b6d57b3bd5a0433e35e4af564af0e466ee8316bba3228c4078969e489c281"
     },
     "COEFFICIENT_COMPLEXITY_REPORT.md": {
       "bytes": 1113,
@@ -362,8 +362,8 @@
       "sha256": "a2ad1d52ccdcaa0ba34e59070c8a709aa5f89135f554c5b1cb61d5be0bec15e0"
     },
     "PUBLIC_SOURCES.md": {
-      "bytes": 11150,
-      "sha256": "b68050570b0e6ccf2a620ca99ea5de1d43ad7987d83eaf3ab3ef40e190587432"
+      "bytes": 11300,
+      "sha256": "a44dc791cddb79cbcf19ecc699b346a4fb7b516ef5a70039d06cccffbbe04195"
     },
     "RANDOMIZED_ISOLATION_REPORT.md": {
       "bytes": 915,
@@ -2394,8 +2394,8 @@
       "sha256": "bf3414ea50700d8eaca9552fdbd4ff431311ea8ac5cfcb2f7236e9b01bb15882"
     },
     "local_marginal_code_lab/LOCAL_MARGINAL_NOVELTY_LEDGER.md": {
-      "bytes": 3977,
-      "sha256": "06e5eb43e069709c87ca7aef6ece29efb35ce441122b269137bbd37dc6c4a75e"
+      "bytes": 6512,
+      "sha256": "b2a4cab66791a15e43ebe00efea682de76947235dc49e4f895720a7cba055116"
     },
     "local_marginal_code_lab/README.md": {
       "bytes": 9609,
@@ -5166,6 +5166,6 @@
       "sha256": "957bd3b51cbf2cd06ee00f1ef47ab5c6fa8bbf1a4c281c0e67b129b027785a18"
     }
   },
-  "generated_at_utc": "2026-10-20T00:20:20.542653+00:00",
-  "source_commit": "bc1154010d030f5a3c59c28d4c1d7ce2f03994cd"
+  "generated_at_utc": "2026-10-20T00:21:30.214376+00:00",
+  "source_commit": "8b1fc96f71e21c1516f0d4ce92fdf63d52cc268c"
 }

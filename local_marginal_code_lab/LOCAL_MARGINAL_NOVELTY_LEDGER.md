@@ -28,3 +28,21 @@ The acceptance rule is simple: a future manuscript may label a statement
 “new” only after it gives the prior theorem, the exact difference in model or
 assumptions, and a citation. Until then, the repository uses “exact,”
 “finite,” “formulation-specific,” or “related” instead.
+
+## Direct theorem comparison at this checkpoint
+
+The comparisons below are deliberately about hypotheses and conclusions, not
+about whether the cited work is stronger in an informal sense.
+
+| Source | Object and conclusion | Difference from the repository's RM results |
+| --- | --- | --- |
+| [Reed (1954)](https://doi.org/10.1109/TIT.1954.1057465) | Reed--Muller construction, parameters, distance, and decoding context. | Supplies the code family identities used here. The local-marginal boundary theorem adds a finite optimization statement for a pinned projection model; it does not claim a new code parameter theorem. |
+| [Sherali--Adams (1992)](https://doi.org/10.1016/0166-218X(92)00190-W) | A hierarchy for a specified linear or polynomial formulation. | The exact equality `L_k(C)=SA_k(I_k(C))` in the hierarchy note uses an extensional CSP whose relations are already the exact global projections `R_S(C)`. The repository has not proved an equality or separation for a sparse parity-check encoding. |
+| [Schoenebeck (2008)](https://schoeneb.people.si.umich.edu/papers/LasserreNew.pdf) | Linear-level Lasserre gaps for random `k`-CSPs, including XOR-implied predicates. | This uses a semidefinite moment hierarchy and random CSP instances. The RM result uses rational local tables supported on exact code projections and does not import a Lasserre lower-bound theorem. |
+| [Barak et al. (2011)](https://eccc.weizmann.ac.il/report/2011/142/) | Reed--Muller and local-testability machinery in long-code compression and very high-round SDP plus Sherali--Adams gaps for Unique Games. | The construction, objective, and conclusion are different: the repository studies a pinned codeword weight in `L_k(C)`, not a Unique Games gap or a local tester. This source is a stronger neighboring hierarchy result, not a direct proof or disproof of the finite `31/5` value. |
+| [Puchert--Tillmann (2020)](https://arxiv.org/abs/2004.03387) | Exact separation for forbidden-set cuts from redundant parity checks. | The all-dual experiment is positioned against this parity-polytope literature. The RM local tables add exact projection support and overlap equations; no novelty claim is made for the redundant-check mechanism. |
+
+The repository has not found a cited theorem in this ledger that states the
+exact value `31/5` for the same pinned `RM(2,5)` level-eight projection-marginal
+polytope. That is a bounded search status, not a novelty proof: a publication
+claim still requires a systematic literature search and an expert comparison.
