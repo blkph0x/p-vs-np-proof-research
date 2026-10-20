@@ -6,6 +6,7 @@ and small support replay without importing reed_muller.py.
 
 import json
 from itertools import combinations
+from fractions import Fraction
 from math import comb
 from pathlib import Path
 
@@ -82,6 +83,37 @@ def affine_minimum_support(m, codimension, pin):
     fixed = (1 << codimension) - 1
     return sum(1 << point for point in range(1 << m)
                if (point & fixed) == (pin & fixed))
+
+
+def gaussian_binomial_2(n, k):
+    row = [0] * (k + 1)
+    row[0] = 1
+    for size in range(1, n + 1):
+        next_row = row[:]
+        for width in range(1, min(size, k) + 1):
+            previous = row[width] if width < size else 0
+            next_row[width] = row[width - 1] + (1 << width) * previous
+        row = next_row
+    return row[k]
+
+
+def verify_boundary_lower_bounds():
+    cases = []
+    for s in range(1, 9):
+        m, r = 2 * s + 1, s
+        total = gaussian_binomial_2(m, r + 1)
+        through_other = gaussian_binomial_2(m - 1, r)
+        ratio = Fraction(total, through_other)
+        expected_ratio = Fraction((1 << m) - 1, (1 << (r + 1)) - 1)
+        assert ratio == expected_ratio
+        bound = Fraction(1) + ratio
+        cases.append({"s": s, "n": 1 << m, "distance": 1 << (r + 1),
+                      "level": (1 << (r + 1)) - 1,
+                      "minimum_check_count": total,
+                      "checks_through_nonpin": through_other,
+                      "boundary_local_optimum": str(bound),
+                      "zero_mass_at_boundary": "0"})
+    return cases
 
 
 def verify_boundary_and_scaling():
@@ -227,6 +259,7 @@ def main():
     saved = json.loads(Path("REED_MULLER_RESULTS.json").read_text(encoding="utf-8"))
     rows = [verify_case(case) for case in saved["cases"]]
     boundary_cases, scaling_cases = verify_boundary_and_scaling()
+    boundary_lower_bound_cases = verify_boundary_lower_bounds()
     assert saved["all_valid"] is True
     assert rows == [
         {"name": "RM(1,3)_level_2", "s": 1, "n": 8, "dimension": 4,
@@ -250,6 +283,7 @@ def main():
         "scope_replay_cases": [row["name"] for row in rows if row["support_replay"]],
         "theorem_only_larger_case": "RM(3,7)",
         "boundary_obstruction_cases": boundary_cases,
+        "boundary_lower_bound_cases": boundary_lower_bound_cases,
         "scaling_bound_cases": scaling_cases,
     }
     Path("REED_MULLER_INDEPENDENT_REVIEW.json").write_text(
@@ -262,12 +296,13 @@ def main():
         "enumerated over its 65,536 codewords; RM(3,7) uses the stated distance "
         "theorem because its 64-dimensional span is intentionally not expanded. "
         "The replay also reconstructs minimum dual supports through three pins "
-        "for s=1..5 and checks the exact all-scope size inequalities through "
-        "s=6.\n"
+        "for s=1..5, checks the exact boundary incidence values through s=8, "
+        "and checks the exact all-scope size inequalities through s=6.\n"
     , encoding="utf-8")
     print(json.dumps({"status": output["status"], "case_count": len(rows),
                       "levels": [row["level"] for row in rows],
                       "boundary_obstruction_cases": boundary_cases,
+                      "boundary_lower_bound_cases": len(boundary_lower_bound_cases),
                       "scaling_bound_cases": len(scaling_cases)}))
 
 

@@ -9,6 +9,7 @@ Reed--Muller distance and duality identities recorded in REED_MULLER.md.
 
 from __future__ import annotations
 
+from fractions import Fraction
 from itertools import combinations
 
 from local_marginal import (
@@ -47,6 +48,47 @@ def _binomial(n: int, k: int) -> int:
     for index in range(1, k + 1):
         value = value * (n - index + 1) // index
     return value
+
+
+def gaussian_binomial_2(n: int, k: int) -> int:
+    """Return the Gaussian binomial ``[n choose k]_2`` exactly."""
+    if type(n) is not int or type(k) is not int or n < 0 or not 0 <= k <= n:
+        raise ValueError("invalid Gaussian-binomial parameters")
+    row = [0] * (k + 1)
+    row[0] = 1
+    for size in range(1, n + 1):
+        next_row = row[:]
+        for width in range(1, min(size, k) + 1):
+            previous = row[width] if width < size else 0
+            next_row[width] = row[width - 1] + (1 << width) * previous
+        row = next_row
+    return row[k]
+
+
+def boundary_objective_lower_bound(s: int) -> Fraction:
+    """Count minimum affine dual checks to lower-bound ``L_{d-1}``.
+
+    For RM(s, 2s+1), every affine (s+1)-flat through the pin is a dual
+    minimum-weight check. On its d-1 non-pin coordinates the pinned
+    projection has odd parity, so its expected local weight is at least one.
+    Double-counting flat incidences gives the stated rational lower bound.
+    """
+    info = parameters(s)
+    m = info["m"]
+    codimension = info["r"]
+    total_checks = gaussian_binomial_2(m, codimension + 1)
+    checks_through_other_point = gaussian_binomial_2(m - 1, codimension)
+    return Fraction(1) + Fraction(total_checks, checks_through_other_point)
+
+
+def boundary_local_optimum(s: int) -> Fraction:
+    """Return the exact theorem value for the plain level ``d-1`` model.
+
+    The matching upper witness uses one-hot mass ``1/(d-1)`` on every
+    non-pin singleton and the zero atom on each scope, with zero mass at the
+    boundary scopes whose pinned projection has odd parity.
+    """
+    return boundary_objective_lower_bound(s)
 
 
 def monomial_masks(m: int, degree: int) -> tuple[int, ...]:

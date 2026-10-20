@@ -1,5 +1,6 @@
 import copy
 import json
+from fractions import Fraction
 from math import comb
 from pathlib import Path
 import unittest
@@ -7,7 +8,10 @@ import unittest
 from reed_muller import (
     affine_minimum_support,
     affine_minimum_witness_masks,
+    boundary_objective_lower_bound,
+    boundary_local_optimum,
     generator_rows,
+    gaussian_binomial_2,
     make_certificate,
     monomial_masks,
     parameters,
@@ -117,6 +121,25 @@ class ReedMullerTests(unittest.TestCase):
                 supported_atoms,
                 (k + 1) * (1 << (k + 1)) * comb(n - 1, k),
             )
+
+    def test_boundary_level_has_a_general_incidence_lower_bound(self):
+        """Minimum affine checks improve the level-d-1 objective bound."""
+        for s in range(1, 9):
+            info = parameters(s)
+            m, r = info["m"], info["r"]
+            total = gaussian_binomial_2(m, r + 1)
+            through_other = gaussian_binomial_2(m - 1, r)
+            self.assertEqual(
+                Fraction(total, through_other),
+                Fraction((1 << m) - 1, (1 << (r + 1)) - 1),
+            )
+            expected = Fraction(1) + Fraction((1 << m) - 1,
+                                               (1 << (r + 1)) - 1)
+            self.assertEqual(boundary_objective_lower_bound(s), expected)
+            self.assertEqual(boundary_local_optimum(s), expected)
+            self.assertEqual(Fraction(1) - (info["dual_distance"] - 1)
+                             * Fraction(1, info["dual_distance"] - 1), 0)
+        self.assertEqual(boundary_objective_lower_bound(2), Fraction(38, 7))
 
     def test_mutated_rows_are_rejected(self):
         certificate = make_certificate(1)["certificate"]

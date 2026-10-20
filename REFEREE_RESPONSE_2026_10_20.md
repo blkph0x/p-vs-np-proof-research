@@ -49,8 +49,12 @@ additional certificates it can produce:
    **Finite-instance gate completed:**
    [`REED_MULLER_AFFINE_OVERLAP_DUAL_NOTE.md`](local_marginal_code_lab/REED_MULLER_AFFINE_OVERLAP_DUAL_NOTE.md)
    records the six-term positive objective-gap identity and an exact replay
-   test. A parameterised analogue remains open and is not inferred from the
-   `RM(2,5)` certificate.
+   test. A separate exact boundary-level theorem is now recorded in
+   [`REED_MULLER_THEOREM.md`](local_marginal_code_lab/REED_MULLER_THEOREM.md):
+   plain `L_{d-1}` has value `1+(2^(2s+1)-1)/(2^(s+1)-1)` for the whole
+   self-dual family, with an explicit sparse witness and an affine-incidence
+   lower bound. This does not provide a parameterised analogue of the compact
+   six-term `31/5` identity, which remains open.
 2. Compare the local-marginal model and integer-cut sequence with standard
    Sherali–Adams, Lasserre/SOS, pseudocodeword, and orthogonal-array results.
    **Terminology gate partially addressed:**

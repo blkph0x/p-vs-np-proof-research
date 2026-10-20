@@ -63,6 +63,12 @@ measurements of one fixed deterministic CDCL policy. They are not an all-size
 recurrence, a uniform-expander theorem, or a lower bound on arbitrary SAT
 algorithms.
 
+The Reed--Muller note now also records an exact boundary-level value for the
+plain projection-marginal model across `RM(s,2s+1)`. Its proof is the same
+dual-distance/affine-incidence mechanism already tracked in the all-dual report,
+paired with an explicit sparse witness, so the ledger treats it as a scoped
+formulation theorem rather than an unclaimed novelty result.
+
 Failure is stored data. The capped XOR-chain and role-search branches remain
 `UNKNOWN_CAP`; a negative pseudo-expectation remains a violated valid cut; and
 a dual-distance or width observation remains scoped to its stated model. The

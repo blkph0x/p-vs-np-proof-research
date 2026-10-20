@@ -48,6 +48,88 @@
   ],
   "theorem_only_larger_case": "RM(3,7)",
   "boundary_obstruction_cases": 18,
+  "boundary_lower_bound_cases": [
+    {
+      "s": 1,
+      "n": 8,
+      "distance": 4,
+      "level": 3,
+      "minimum_check_count": 7,
+      "checks_through_nonpin": 3,
+      "boundary_local_optimum": "10/3",
+      "zero_mass_at_boundary": "0"
+    },
+    {
+      "s": 2,
+      "n": 32,
+      "distance": 8,
+      "level": 7,
+      "minimum_check_count": 155,
+      "checks_through_nonpin": 35,
+      "boundary_local_optimum": "38/7",
+      "zero_mass_at_boundary": "0"
+    },
+    {
+      "s": 3,
+      "n": 128,
+      "distance": 16,
+      "level": 15,
+      "minimum_check_count": 11811,
+      "checks_through_nonpin": 1395,
+      "boundary_local_optimum": "142/15",
+      "zero_mass_at_boundary": "0"
+    },
+    {
+      "s": 4,
+      "n": 512,
+      "distance": 32,
+      "level": 31,
+      "minimum_check_count": 3309747,
+      "checks_through_nonpin": 200787,
+      "boundary_local_optimum": "542/31",
+      "zero_mass_at_boundary": "0"
+    },
+    {
+      "s": 5,
+      "n": 2048,
+      "distance": 64,
+      "level": 63,
+      "minimum_check_count": 3548836819,
+      "checks_through_nonpin": 109221651,
+      "boundary_local_optimum": "2110/63",
+      "zero_mass_at_boundary": "0"
+    },
+    {
+      "s": 6,
+      "n": 8192,
+      "distance": 128,
+      "level": 127,
+      "minimum_check_count": 14877590196755,
+      "checks_through_nonpin": 230674393235,
+      "boundary_local_optimum": "8318/127",
+      "zero_mass_at_boundary": "0"
+    },
+    {
+      "s": 7,
+      "n": 32768,
+      "distance": 256,
+      "level": 255,
+      "minimum_check_count": 246614610741341843,
+      "checks_through_nonpin": 1919209135381395,
+      "boundary_local_optimum": "33022/255",
+      "zero_mass_at_boundary": "0"
+    },
+    {
+      "s": 8,
+      "n": 131072,
+      "distance": 512,
+      "level": 511,
+      "minimum_check_count": 16256896431763117598611,
+      "checks_through_nonpin": 63379954960524853651,
+      "boundary_local_optimum": "131582/511",
+      "zero_mass_at_boundary": "0"
+    }
+  ],
   "scaling_bound_cases": [
     {
       "s": 1,

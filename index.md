@@ -109,7 +109,9 @@ The [deterministic Reed--Muller local-marginal audit](local_marginal_code_lab/RE
 adds an explicit self-dual binary-code family to the relaxation barrier. Its
 proved distance `2^(s+1)` leaves a unit-vector local witness through level
 `2^(s+1)-2`, and a minimum dual word proves that this is the exact boundary for
-that unit witness, while the pinned integer optimum is `2^(s+1)`. The saved controls
+that unit witness. The same theorem gives the exact plain-model value
+`1+(2^(2s+1)-1)/(2^(s+1)-1)` at level `d-1` by an affine-incidence lower bound
+and sparse one-hot witness, while the pinned integer optimum is `2^(s+1)`. The saved controls
 include exact RM(1,3) scope replay, full RM(2,5) word enumeration, and an
 independently checked theorem-backed RM(3,7) certificate. This remains a
 limitation of the stated relaxation, not a general SAT lower bound.

@@ -179,6 +179,60 @@ coordinates, and constructing the saved generator matrix is polynomial in `n`;
 the result therefore gives an explicit, reproducible family rather than a
 random-existence argument. It still says nothing about arbitrary SAT solving.
 
+## An exact boundary-level value for the plain local model
+
+The first level after the unit witness fails has an exact value for the plain
+projection-marginal model. Let `k = d-1`, and let `H` range over all affine
+`(s+1)`-flats through the pinned point `j`. Each `H` is the support of a
+minimum-weight codeword of `RM(s,2s+1)`, hence a dual check by self-duality. On
+the scope `S = H \ {j}`, every allowed pinned projection has odd parity. Its
+local table therefore has expected Hamming weight at least one:
+
+```text
+sum_{i in S} x_i >= 1.
+```
+
+There are the Gaussian-binomial number
+`P = [2s+1 choose s+1]_2` of such flats. Every non-pin coordinate belongs to
+`Q = [2s choose s]_2` of them. Summing the inequalities and using the shared
+singleton marginals gives
+
+```text
+objective = 1 + sum_{i != j} x_i
+          >= 1 + P/Q
+          = 1 + (2^(2s+1)-1)/(2^(s+1)-1).
+```
+
+For the matching upper bound, put `p = 1/(d-1)`. On every scope below the
+boundary, assign mass `p` to each one-hot non-pin atom and mass
+`1-|T|p` to the all-zero atom, where `T` is the set of non-pin coordinates in
+the scope. At a boundary scope of size `d-1` omitting the pin, use the same
+one-hot masses and zero mass on the all-zero atom. Every one-hot assignment is
+allowed: a forbidden relation on at most `d-1` coordinates would be a nonzero
+dual word below distance `d`. The boundary tables marginalize to the smaller
+tables because `(d-1-|T|)p = 1-|T|p`; scopes containing the pin have at most
+`d-2` free coordinates and obey the same identity. Thus these tables are
+feasible and have objective `1+(n-1)p`.
+
+Consequently, for the plain model,
+
+```text
+OPT(L_{d-1}(RM(s,2s+1), j))
+  = 1 + (2^(2s+1)-1)/(2^(s+1)-1).
+```
+
+Restriction gives the same lower bound for every level `k >= d-1`. For `s=2`
+the exact boundary value is `38/7`, the affine-flat star optimum recorded in
+the finite RM(2,5) campaign, while the exact level-eight value is `31/5`.
+This is an analytical theorem for the declared projection-marginal model; it
+does not imply a bound for arbitrary SAT algorithms or for P versus NP. The
+incidence identity is also the elementary mechanism already used in the
+repository's all-dual report, so no novelty claim is made for that counting
+argument itself.
+
+The independent replay recomputes both Gaussian-binomial incidence counts and
+the rational bound for `s=1,...,8`.
+
 ## Public sources and replay commands
 
 The family is the standard Reed--Muller construction introduced in Reed's

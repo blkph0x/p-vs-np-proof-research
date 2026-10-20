@@ -674,7 +674,10 @@ The deterministic follow-up in
 [`local_marginal_code_lab/REED_MULLER_THEOREM.md`](local_marginal_code_lab/REED_MULLER_THEOREM.md)
 reconstructs the self-dual family `RM(s,2s+1)`. Its proved primal and dual
 distance is `2^(s+1)`, so the unit-vector local witness survives through level
-`2^(s+1)-2` while the pinned integer optimum is `2^(s+1)`. RM(1,3) replays
+`2^(s+1)-2` while the pinned integer optimum is `2^(s+1)`. At the next level,
+the plain projection-marginal model has the exact value
+`1+(2^(2s+1)-1)/(2^(s+1)-1)`, proved by affine-check incidence counting and a
+sparse one-hot witness. RM(1,3) replays
 every level-two scope, RM(2,5) enumerates all 65,536 codewords, and RM(3,7)
 uses the elementary distance/duality proof rather than expanding `2^64`
 words. This makes the barrier deterministic and explicit, but it remains
