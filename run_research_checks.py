@@ -62,8 +62,10 @@ def main():
                ["-v", "test_reed_muller_sos_seven_cut"]),
               ("local_marginal_sos_candidate_scan", ROOT / "local_marginal_code_lab",
                ["-v", "test_reed_muller_sos_candidate_scan"]),
-                ("representation_discovery", ROOT / "representation_discovery_lab",
+              ("representation_discovery", ROOT / "representation_discovery_lab",
                  ["-v", "test_engine", "test_nonlinear_control"]),
+              ("affine_projection_recognition", ROOT / "affine_projection_recognition_lab",
+                 ["-v", "test_lab"]),
               ("labelled_join_certified", ROOT / "labelled_join_certified", ["discover", "-v"])]
     def hashes():
         paths = sorted({p for _, directory, _ in suites for p in directory.glob("*.py")})

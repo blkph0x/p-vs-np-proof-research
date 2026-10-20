@@ -1,0 +1,134 @@
+{
+  "status": "EXACT_FINITE_REDUCTION",
+  "theorem": "G satisfiable iff selector-lift projection is AFFINE",
+  "construction": "(-s OR C) for source clauses and (s OR D) for fixed non-affine D",
+  "shared_width": 3,
+  "fixed_non_affine_relation": [
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ]
+  ],
+  "records": [
+    {
+      "source_nvars": 1,
+      "source_clauses": [
+        [
+          1
+        ]
+      ],
+      "source_satisfiable": true,
+      "source_model_count": 1,
+      "shared_width": 3,
+      "projection_bits": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "projection_class": "AFFINE",
+      "lifted_clauses": [
+        [
+          -4,
+          5
+        ],
+        [
+          4,
+          1,
+          2
+        ],
+        [
+          4,
+          1,
+          3
+        ]
+      ]
+    },
+    {
+      "source_nvars": 1,
+      "source_clauses": [
+        [
+          1
+        ],
+        [
+          -1
+        ]
+      ],
+      "source_satisfiable": false,
+      "source_model_count": 0,
+      "shared_width": 3,
+      "projection_bits": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "projection_class": "NON_AFFINE_OR_EMPTY",
+      "lifted_clauses": [
+        [
+          -4,
+          5
+        ],
+        [
+          -4,
+          -5
+        ],
+        [
+          4,
+          1,
+          2
+        ],
+        [
+          4,
+          1,
+          3
+        ]
+      ]
+    },
+    {
+      "source_nvars": 0,
+      "source_clauses": [],
+      "source_satisfiable": true,
+      "source_model_count": 1,
+      "shared_width": 3,
+      "projection_bits": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "projection_class": "AFFINE",
+      "lifted_clauses": [
+        [
+          4,
+          1,
+          2
+        ],
+        [
+          4,
+          1,
+          3
+        ]
+      ]
+    }
+  ],
+  "adversarial": {
+    "forged_projection_rejected": true
+  }
+}

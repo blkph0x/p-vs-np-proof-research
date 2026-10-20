@@ -272,6 +272,10 @@ actual resolution. Historical matrices and earlier labs are in the parent tree.
   probabilistic existence proof of linear integrality gaps.
 - [BOUNDED_PROJECTION_BARRIER.md](BOUNDED_PROJECTION_BARRIER.md): limits of exact
   local coordinate projections, including their combination with all dual checks.
+- [affine_projection_recognition_lab/REPORT.md](affine_projection_recognition_lab/REPORT.md):
+  a fixed-three-variable selector reduction showing that unrestricted affine
+  recognition under existential CNF projection is SAT-hard, with independent
+  finite replay and mutation controls.
 - [local_marginal_code_lab/REED_MULLER_THEOREM.md](local_marginal_code_lab/REED_MULLER_THEOREM.md):
   an explicit self-dual Reed--Muller family with a proved local-marginal gap,
   exact small replays, and an independent checker.

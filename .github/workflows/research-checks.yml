@@ -65,9 +65,14 @@ jobs:
       - name: Replay hidden-affine representation discovery experiment
         working-directory: representation_discovery_lab
         run: |
-            python run_experiment.py
-            python independent_review.py
-            python -m unittest -v test_engine.py test_nonlinear_control.py
+          python run_experiment.py
+          python independent_review.py
+          python -m unittest -v test_engine.py test_nonlinear_control.py
+      - name: Replay affine-projection recognition reduction
+        working-directory: affine_projection_recognition_lab
+        run: |
+          python run_experiment.py
+          python -m unittest -v test_lab.py
       - name: Replay sparse parity clause hierarchy comparison
         working-directory: local_marginal_code_lab
         run: |
