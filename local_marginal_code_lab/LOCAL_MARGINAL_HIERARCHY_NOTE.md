@@ -124,6 +124,40 @@ control above is a concrete separation between the two support constructions.
 The repository now reports both facts: exact configuration-SA equivalence for
 `I_k(C)`, and an open formulation-specific comparison for parity encodings.
 
+## A one-sided theorem for check-local parity configurations
+
+Fix a parity-check matrix `H` for `C`, with check scopes `E_a`. Define the
+check-local support on a queried scope `S` by
+
+```text
+Q_S(H) = { u in {0,1}^S : every check E_a subseteq S
+                         has even parity under u }.
+```
+
+Let `SA_k^check(H)` be the configuration LP whose table on `S` is supported on
+`Q_S(H)` and whose tables agree on all containments, for `|S| <= k`. This is a
+fully specified finite-domain parity formulation; it is not being identified
+with every polynomial Sherali--Adams encoding of the same equations.
+
+For every scope, `R_S(C) subseteq Q_S(H)`, because a global codeword satisfies
+every check, including checks contained in `S`. Extending an `L_k(C)` table by
+zero on `Q_S(H) setminus R_S(C)` preserves normalization and every overlap
+equation. Hence there is a coordinatewise inclusion
+
+```text
+L_k(C) subseteq SA_k^check(H),
+opt(SA_k^check(H)) <= opt(L_k(C))
+```
+
+for minimization objectives read from the same singleton tables. The inclusion
+can be strict at the same locality: in the four-variable control, the scope
+`{2,3}` contains no whole parity check, so `Q_{2,3}(H)` is all four pair
+assignments, while `R_{2,3}(C) = {00,11}`. This proves a one-sided hierarchy
+relationship and a finite strict-support separation for the declared
+check-local formulation. It does not compare either configuration LP with a
+canonical sparse-CNF Sherali--Adams or Lasserre level without an additional
+variable map.
+
 ## Exact check
 
 ```text

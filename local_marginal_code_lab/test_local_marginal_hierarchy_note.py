@@ -15,6 +15,24 @@ def _codewords():
 
 
 class LocalMarginalHierarchyNoteTests(unittest.TestCase):
+    def test_global_projection_is_contained_in_check_local_support(self):
+        checks = ((0, 1, 2), (0, 1, 3))
+        for scope in ({0, 1, 2, 3}, {2, 3}):
+            ordered = sorted(scope)
+            global_projection = {
+                tuple(word[index] for index in ordered) for word in _codewords()
+            }
+            check_local = {
+                assignment
+                for assignment in itertools.product((0, 1), repeat=len(scope))
+                if all(
+                    not set(check).issubset(scope)
+                    or sum(assignment[ordered.index(index)] for index in check) % 2 == 0
+                    for check in checks
+                )
+            }
+            self.assertTrue(global_projection.issubset(check_local))
+
     def test_global_projection_contains_only_equal_pair_bits(self):
         projected = {(word[2], word[3]) for word in _codewords()}
         self.assertEqual(projected, {(0, 0), (1, 1)})

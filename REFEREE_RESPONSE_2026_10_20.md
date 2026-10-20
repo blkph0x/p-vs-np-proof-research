@@ -64,8 +64,11 @@ additional certificates it can produce:
    defines the exact relation-family local polytope, proves its level-by-level
    equality with configuration Sherali–Adams for the explicitly declared
    finite-domain projection CSP, and gives a four-variable control showing why
-   no equivalence to a sparse Boolean parity encoding should be claimed. The
-   parity-encoding and Lasserre comparisons remain open.
+   no equivalence to a sparse Boolean parity encoding should be claimed. It
+   now also proves the one-sided inclusion `L_k(C) subseteq SA_k^check(H)` for
+   an explicitly defined check-local parity configuration LP, with a strict
+   four-variable support separation. The relationship to canonical sparse-CNF
+   Sherali–Adams and Lasserre levels remains open.
 3. Separate construction, discovery, and verification costs for the finite
    `RM(2,5)` certificate, including bit lengths, certificate size, memory, and
    replay time. **Measured for the retained construction and replay paths:**
