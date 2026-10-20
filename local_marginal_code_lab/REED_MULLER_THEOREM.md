@@ -208,8 +208,11 @@ boundary, assign mass `p` to each one-hot non-pin atom and mass
 `1-|T|p` to the all-zero atom, where `T` is the set of non-pin coordinates in
 the scope. At a boundary scope of size `d-1` omitting the pin, use the same
 one-hot masses and zero mass on the all-zero atom. Every one-hot assignment is
-allowed: a forbidden relation on at most `d-1` coordinates would be a nonzero
-dual word below distance `d`. The boundary tables marginalize to the smaller
+allowed. Below the boundary, a relation on the prescribed coordinates would be
+a nonzero dual word below distance `d`. At a boundary scope, any relation on
+the scope together with the pin has support exactly `d` and is unique if it
+exists; a one-hot non-pin assignment has total parity `1+1=0` on that support,
+so it satisfies the relation. The boundary tables marginalize to the smaller
 tables because `(d-1-|T|)p = 1-|T|p`; scopes containing the pin have at most
 `d-2` free coordinates and obey the same identity. Thus these tables are
 feasible and have objective `1+(n-1)p`.
