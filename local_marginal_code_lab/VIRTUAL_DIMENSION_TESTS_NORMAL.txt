@@ -1,0 +1,14 @@
+test_actual_six_dimensional_subspace_distribution (test_rm2_virtual_dimension.VirtualDimensionTests) ... ok
+test_base_empty_formulas (test_rm2_virtual_dimension.VirtualDimensionTests) ... ok
+test_binomial_expansion_and_closed_coefficients (test_rm2_virtual_dimension.VirtualDimensionTests) ... ok
+test_conditional_moment_identity (test_rm2_virtual_dimension.VirtualDimensionTests) ... ok
+test_dimension_three_base_distribution (test_rm2_virtual_dimension.VirtualDimensionTests) ... ok
+test_first_failure_and_manual_mutation (test_rm2_virtual_dimension.VirtualDimensionTests) ... ok
+test_induction_polynomials_as_coefficient_identities (test_rm2_virtual_dimension.VirtualDimensionTests) ... ok
+test_input_and_locality_guards (test_rm2_virtual_dimension.VirtualDimensionTests) ... ok
+test_lower_bound_recurrences_and_coefficient_minima (test_rm2_virtual_dimension.VirtualDimensionTests) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.727s
+
+OK

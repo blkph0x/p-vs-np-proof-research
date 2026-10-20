@@ -3,6 +3,24 @@
 The finite results are modular. A later checker may reuse an earlier artifact,
 but that dependency is recorded explicitly here.
 
+**Virtual-dimension follow-up.** The
+[all-D theorem](REED_MULLER_VIRTUAL_DIMENSION_THEOREM.md) proves positivity,
+consistency, support, and the sharp failure boundary for its own explicit
+moments. Its induction now starts at D=3 and does not import a finite LP dual
+or the earlier D4/D5 positivity proofs. It uses classical RM dual distance,
+subspace counting, and a fully written relation-space calculation. The
+separate [D6 exhaustive replay](level10_scope_exploration/THEOREM.md) reconstructs
+all high-rank types and their moments without importing the producer. Neither
+the finite replay nor the written proof is proof-assistant verification.
+
+**Stronger level-ten lower bound.** The [selected-model replay](level10_exploration/REPORT.md)
+uses the earlier independent base-geometry reconstruction, then independently
+enumerates pinned quadratic restrictions and counts the new orbit incidences.
+It compares the full matrix and objective before checking the exact certificate
+and 14-term identity for singleton lower bound `3843/16627`. Its selected-model
+primal is not a full-level-ten witness. The separate D6 virtual construction
+gives the full-model singleton upper bound `5/21`.
+
 1. **Mathematical definition.** The pinned code, exact supports, local tables,
    containment equations, and objective are specified in
    [`REED_MULLER_FORMAL_MODEL.md`](REED_MULLER_FORMAL_MODEL.md). This is the

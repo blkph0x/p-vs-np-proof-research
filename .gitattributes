@@ -13,6 +13,11 @@ local_marginal_code_lab/RM2_NINE_SCOPE_DISCOVERY/** text eol=lf
 local_marginal_code_lab/RM2_NINE_POINT_CUT_CONTROL/** text eol=lf
 local_marginal_code_lab/RM2_NINE_SCOPE_DISCOVERY/*.stdout.txt whitespace=-blank-at-eol
 local_marginal_code_lab/RM2_NINE_POINT_CUT_CONTROL/stdout.txt whitespace=-blank-at-eol
+local_marginal_code_lab/level10_exploration/** text eol=lf
+local_marginal_code_lab/level10_scope_exploration/** text eol=lf
+local_marginal_code_lab/level10_scope_exploration/*.gz binary
+local_marginal_code_lab/VIRTUAL_DIMENSION_TESTS_*.txt text eol=lf
+local_marginal_code_lab/level10_exploration/**/solver.stdout.txt whitespace=-blank-at-eol
 proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/** text eol=lf
 proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/** text eol=lf
 proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/** text eol=lf

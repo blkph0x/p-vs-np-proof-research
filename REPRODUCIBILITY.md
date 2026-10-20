@@ -244,6 +244,40 @@ The companion Pages workflow (`.github/workflows/pages.yml`) builds the Jekyll
 site before deploying it. A deployment therefore cannot publish an artifact
 that the site build itself rejected.
 
+## Virtual-dimension theorem and complete scope replay
+
+The virtual-dimension theorem has a solver-free replay from
+`local_marginal_code_lab`:
+
+```text
+python -m unittest -v test_rm2_virtual_dimension
+python -O -m unittest -v test_rm2_virtual_dimension
+python level10_scope_exploration/verify.py
+python -m unittest discover -s level10_scope_exploration -p test_exploration.py -v
+```
+
+The complete high-rank D6 certificate is stored compressed; its checker
+independently enumerates coverage and reconstructs every moment. The all-size
+claim rests on the written induction in `REED_MULLER_VIRTUAL_DIMENSION_THEOREM.md`,
+not an extrapolation from the finite tests. Its model is compared directly
+with the prior non-signaling-code formulation in the novelty ledger.
+
+The stronger locality-ten lower certificate also replays without an optimizer,
+from `local_marginal_code_lab/level10_exploration`:
+
+```text
+python review_level10.py
+python -m unittest -v test_exploration
+python -O -m unittest -v test_exploration
+```
+
+This checker reconstructs the 79-variable, 104-row selected model and its
+14-term nonnegative identity. Its matching primal and dual prove the selected
+model's optimum only. The full-relaxation upper bound is established separately
+by the virtual-dimension theorem. `REPORT.md` preserves all six discovery
+models, solver settings, failed controls and source/artifact bindings;
+`TEST_SUMMARY.json` binds the passing normal and optimized test transcripts.
+
 ## Updating a result
 
 1. Change the experiment and its theorem/report together.

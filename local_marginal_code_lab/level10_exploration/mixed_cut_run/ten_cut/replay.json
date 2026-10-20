@@ -1,0 +1,13 @@
+{
+  "errors": [],
+  "minimum_reduced_cost": "0",
+  "model_sha256": "5ac8928eb260ce2d7e6d05b0a202c66b9ce70ff7e0a08c45e72f30f7f2c89213",
+  "objective_offset": "0",
+  "reduced_objective": "92/407",
+  "rows": 65,
+  "scope": "exact optimum of the supplied equality LP",
+  "status": "EXACT_OPTIMUM",
+  "total_objective": "92/407",
+  "valid": true,
+  "variables": 41
+}

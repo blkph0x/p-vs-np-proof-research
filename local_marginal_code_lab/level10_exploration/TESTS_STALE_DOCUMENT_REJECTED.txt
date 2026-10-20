@@ -1,0 +1,26 @@
+test_actual_d6_distribution_controls (test_exploration.ExplorationTests) ... ok
+test_all_six_models_source_bind_and_exact_replay (test_exploration.ExplorationTests) ... ok
+test_complete_quadratic_projection_by_all_polynomial_coefficients (test_exploration.ExplorationTests) ... ok
+test_independent_original_scope_rebuild_and_source_rebound_mutations (test_exploration.ExplorationTests) ... ok
+test_integer_dual_identities_are_exact_columnwise (test_exploration.ExplorationTests) ... ok
+test_linear_coordinate_maps_preserve_every_relation (test_exploration.ExplorationTests) ... ok
+test_model_and_certificate_mutations_are_not_silently_accepted (test_exploration.ExplorationTests) ... ok
+test_short_identity_from_elementary_incidence_equations (test_exploration.ExplorationTests) ... ok
+test_source_hashes_are_current (test_exploration.ExplorationTests) ... FAIL
+test_twenty_atom_orbits_and_raw_expansion (test_exploration.ExplorationTests) ... ok
+
+======================================================================
+FAIL: test_source_hashes_are_current (test_exploration.ExplorationTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Blkph0x\Desktop\p eq np\research_checkpoint_2026_10_17_v17\research_checkpoint_2026_10_17_v17\overnight_research_2026_10_18\local_marginal_code_lab\level10_exploration\test_exploration.py", line 61, in test_source_hashes_are_current
+    self.assertEqual(actual, expected, relative)
+AssertionError: '59c5a6084cac607379cee47e745b91c999a079ef5ead353a4d7c75013e128e71' != 'd457ffc72d9f496eaa476556275efbc1ba0fc1e28ae19300b3f92b8f5b8e86c0'
+- 59c5a6084cac607379cee47e745b91c999a079ef5ead353a4d7c75013e128e71
++ d457ffc72d9f496eaa476556275efbc1ba0fc1e28ae19300b3f92b8f5b8e86c0
+ : RM2_LEVEL10_CONTROL.md
+
+----------------------------------------------------------------------
+Ran 10 tests in 50.293s
+
+FAILED (failures=1)

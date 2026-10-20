@@ -1,0 +1,32 @@
+{
+  "final_review_sha256": "0935ea9379116f3b1dcfae92e30ba9ed88a5f6c82d7f7793d9890110a3757137",
+  "packaging_scope": "Newlines only; all model and candidate bytes unchanged.",
+  "reviewer_source_sha256": "02a2c7af57aa5300922027e400b7d4c710c8f0f6605f354b392fd986fa78572a",
+  "schema": "rm2-level10-exploration-tests-v1",
+  "stale_document_control": {
+    "explanation": "An external edit changed a recorded dependency; it was restored before final passing runs.",
+    "sha256": "f83a6011db79b63cf8744de190507594c998179743c239d80dcf6244a073038d",
+    "status": "REJECTED_AS_EXPECTED",
+    "transcript": "TESTS_STALE_DOCUMENT_REJECTED.txt"
+  },
+  "status": "PASS",
+  "test_source_sha256": "d321b1046510973b69e9f94b7f00f4a3a3edb3ae92fed32d2e5e0b0ab36549fd",
+  "tests": [
+    {
+      "command": "python -B -m unittest test_exploration -v",
+      "exit_code": 0,
+      "seconds": "50.991",
+      "sha256": "881f54319d2874af70674f3ad4424563864d099e0d080974fbfd52c12effe2ea",
+      "tests": 10,
+      "transcript": "TESTS_NORMAL.txt"
+    },
+    {
+      "command": "python -B -O -m unittest test_exploration -v",
+      "exit_code": 0,
+      "seconds": "57.715",
+      "sha256": "9a73cbfdfdfe013f5219f99e56537329a91073b78fa1466fe228034b0af9fe97",
+      "tests": 10,
+      "transcript": "TESTS_OPTIMIZED.txt"
+    }
+  ]
+}

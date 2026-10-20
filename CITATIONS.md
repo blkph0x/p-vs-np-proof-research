@@ -65,6 +65,15 @@ specializes Reps--Sagiv--Yorsh's best-abstraction algorithm and cites Boolean
 affine-envelope work. Its algorithmic provenance is explicit; no novelty is
 claimed for the model-outside-current-hull loop.
 
+The [virtual-dimension theorem](local_marginal_code_lab/REED_MULLER_VIRTUAL_DIMENSION_THEOREM.md)
+uses standard Reed--Muller parameters from
+[Santi--Hager--Pfister, Section II](https://arxiv.org/pdf/1804.10319),
+classical Gaussian subspace counting and finite-lattice inversion. The
+[novelty ledger](local_marginal_code_lab/LOCAL_MARGINAL_NOVELTY_LEDGER.md)
+now compares the model exactly with Chiesa--Manohar--Shinkar's previously
+defined locally explainable non-signaling functions. No priority claim is
+made for the new written parameterized witness theorem.
+
 1. Name the original or primary public source near the first use of an idea.
 2. State whether the source is a theorem, a preprint, an abstract, or an
    unverified public claim.

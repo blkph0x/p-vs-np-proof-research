@@ -16,6 +16,15 @@ description: A public, reproducible research notebook for exact algorithms, cert
 
 ## Current result
 
+The [virtual-dimension theorem](local_marginal_code_lab/REED_MULLER_VIRTUAL_DIMENSION_THEOREM.md)
+gives a proved scaling law for one family of local witnesses: virtual dimension
+`D>=3` works through `D+4` coordinates and fails at `D+5` in higher ambient
+dimension. In particular, `L_(m+3)(RM(2,m))` remains nonintegral for every
+`m>=4`. The proof is analytical; a separate complete ten-point classification
+checks all **121** high-rank types and rejects deliberately corrupted tables.
+These are bounds for the declared relaxation, with novelty and later-level
+exact optima still open.
+
 The [feature-by-feature public-method review](PUBLIC_METHOD_REVIEW.md) compares
 the project's capabilities with established SAT, certified compilation,
 matching, exact optimisation and decomposition methods. It identifies
@@ -27,10 +36,11 @@ faster on the harder examples and produces smaller proofs, but the simple
 Python proof checker is slower. The report includes both costs and the
 failed pilot; there is no general speedup claim.
 
-A [new level-ten inequality](local_marginal_code_lab/RM2_LEVEL10_CONTROL.md)
-gives reduced weight at least `644(2^m-1)/2849` for `RM(2,m)`, `m>=6`.
-It strictly improves the level-nine bound, while leaving the exact
-level-ten optimum and novelty open.
+The [strengthened level-ten certificate](local_marginal_code_lab/level10_exploration/REPORT.md)
+now bounds reduced weight between `3843(2^m-1)/16627` and `5(2^m-1)/21`
+for `RM(2,m)`, `m>=6`. The lower bound has a compact 14-term nonnegative
+identity; the upper bound has an all-scope witness. The exact full level-ten
+optimum and novelty remain open.
 
 The first external discovery integration is now [SoPlex with exact independent checking](local_marginal_code_lab/EXACT_LP_DISCOVERY.md).
 It reproduces the affine-overlap value `31/5` from the model alone, while a

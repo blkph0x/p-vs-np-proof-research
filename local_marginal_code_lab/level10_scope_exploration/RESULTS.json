@@ -1,0 +1,173 @@
+{
+  "schema": "d6-ten-point-exhaustive-result-v1",
+  "status": "PASS",
+  "source_sha256_lf": {
+    "explore.py": "4e9d66f29b12071518fb207edbb54762c28f1a5c4311062f7575074df3249968",
+    "verify.py": "64de90e2d6f7d7337b8c53b26954918ed45d1ad3ca709b08d03b8e3669afdb3b",
+    "test_exploration.py": "f58c191e60ce24c2d49e573e0dbf3ba3e517eb3f56ecc8348e88782ecdae9c48",
+    "THEOREM.md": "5cf3f2656f8538f7abb028d1af9287799b0019892a879546b56d9a6c808073c8"
+  },
+  "source_unchanged": true,
+  "certificate_sha256": "a25176b687a0ebf221596248d0f3ee0a8e9db997d06f78b3b3947a738704f844",
+  "coverage": [
+    {
+      "corank": 0,
+      "raw_histograms": 1,
+      "admissible_histograms": 1,
+      "gl_order": 1,
+      "orbits": 1
+    },
+    {
+      "corank": 1,
+      "raw_histograms": 11,
+      "admissible_histograms": 8,
+      "gl_order": 1,
+      "orbits": 8
+    },
+    {
+      "corank": 2,
+      "raw_histograms": 286,
+      "admissible_histograms": 143,
+      "gl_order": 6,
+      "orbits": 32
+    },
+    {
+      "corank": 3,
+      "raw_histograms": 19448,
+      "admissible_histograms": 6413,
+      "gl_order": 168,
+      "orbits": 80
+    }
+  ],
+  "independent_replay": {
+    "valid": true,
+    "status": "PASS",
+    "coverage": [
+      {
+        "corank": 0,
+        "raw_histograms": 1,
+        "admissible_histograms": 1,
+        "gl_order": 1,
+        "orbits": 1
+      },
+      {
+        "corank": 1,
+        "raw_histograms": 11,
+        "admissible_histograms": 8,
+        "gl_order": 1,
+        "orbits": 8
+      },
+      {
+        "corank": 2,
+        "raw_histograms": 286,
+        "admissible_histograms": 143,
+        "gl_order": 6,
+        "orbits": 32
+      },
+      {
+        "corank": 3,
+        "raw_histograms": 19448,
+        "admissible_histograms": 6413,
+        "gl_order": 168,
+        "orbits": 80
+      }
+    ],
+    "labelled_simple_relation_subspaces": {
+      "0": 1,
+      "1": 968,
+      "2": 147466,
+      "3": 4277240
+    },
+    "tables": 121,
+    "atom_moment_comparisons": 123904,
+    "positive_atoms": 33138,
+    "projection_full_rank_controls": 121,
+    "analytic_formula_checks": 121,
+    "empty_numerator_histogram": {
+      "21": 1,
+      "28": 4,
+      "31": 1,
+      "32": 5,
+      "33": 13,
+      "35": 1,
+      "36": 1,
+      "37": 6,
+      "38": 9,
+      "39": 16,
+      "40": 2,
+      "42": 5,
+      "43": 5,
+      "44": 9,
+      "45": 8,
+      "46": 25,
+      "47": 7,
+      "48": 1,
+      "50": 1,
+      "52": 1
+    },
+    "relation_lattice_coefficients": {
+      "0": {
+        "0": 46
+      },
+      "1": {
+        "3": -7,
+        "5": -1
+      },
+      "2": {
+        "5": 1,
+        "6": 1
+      },
+      "3": {
+        "6": -4,
+        "7": -1
+      }
+    },
+    "negative_controls": {
+      "D5_ten_points": {
+        "points": [
+          1,
+          2,
+          4,
+          8,
+          12,
+          16,
+          20,
+          24,
+          28,
+          32
+        ],
+        "atom": [
+          1,
+          2
+        ],
+        "numerator": -1,
+        "denominator": 155
+      },
+      "D6_eleven_points": {
+        "points": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          24,
+          32,
+          40,
+          48,
+          56,
+          64
+        ],
+        "atom": [
+          1,
+          2,
+          4
+        ],
+        "numerator": -1,
+        "denominator": 651
+      }
+    }
+  },
+  "elapsed_seconds": 3.2012524004094303,
+  "minimum_empty_numerator": 21,
+  "minimum_atom_numerator": 0
+}

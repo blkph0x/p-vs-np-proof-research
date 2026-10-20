@@ -5,7 +5,7 @@ public URL found in the repository's source, reports, and saved metadata,
 along with the local files that cite or preserve it. The curated primary
 sources and citation rules are in [`CITATIONS.md`](CITATIONS.md).
 
-Indexed URLs: **150**.
+Indexed URLs: **152**.
 
 | URL | Local provenance |
 | --- | --- |
@@ -39,6 +39,7 @@ Indexed URLs: **150**.
 | <https://arxiv.org/pdf/1504.07647> | `PERTURBATION_ROUTE_REVIEW.md`, `labelled_join_certified/COVERAGE_AUDIT.md` |
 | <https://arxiv.org/pdf/1510.01509> | `local_marginal_code_lab/LOCAL_MARGINAL_NOVELTY_LEDGER.md` |
 | <https://arxiv.org/pdf/1602.03124> | `matching_gadget_limits/THEOREM.md` |
+| <https://arxiv.org/pdf/1804.10319> | `CITATIONS.md`, `local_marginal_code_lab/REED_MULLER_VIRTUAL_DIMENSION_THEOREM.md` |
 | <https://arxiv.org/pdf/1808.00128> | `PUBLIC_METHOD_REVIEW.md` |
 | <https://arxiv.org/pdf/2106.03214> | `AFFINE_REPRESENTATION_LITERATURE_SCOPE.md` |
 | <https://arxiv.org/pdf/2110.07781> | `AFFINE_REPRESENTATION_LITERATURE_SCOPE.md` |
@@ -72,6 +73,7 @@ Indexed URLs: **150**.
 | <https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.SAT.2023.6> | `PUBLIC_METHOD_REVIEW.md` |
 | <https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.SAT.2025.8> | `PUBLIC_METHOD_REVIEW.md` |
 | <https://eccc.weizmann.ac.il/report/2011/142/> | `CITATIONS.md`, `local_marginal_code_lab/LOCAL_MARGINAL_NOVELTY_LEDGER.md` |
+| <https://eccc.weizmann.ac.il/report/2019/070/download/> | `local_marginal_code_lab/LOCAL_MARGINAL_NOVELTY_LEDGER.md` |
 | <https://ece.iisc.ac.in/~nkashyap/Papers/code_decomp_final.pdf> | `ALL_DUAL_LP_THEOREM.md`, `local_marginal_code_lab/LOCAL_MARGINAL_NOVELTY_LEDGER.md` |
 | <https://epubs.siam.org/doi/10.1137/070691152> | `high_width_core_stress_lab/REPORT.md` |
 | <https://files.pythonhosted.org/packages/bb/af/d25753f1ed0e2e9e440a0b4e025fdde1a493dde65c1cad6bd7071e7395fa/python_sat-1.9.dev16.tar.gz> | `proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/pysat-crash/SOURCE.json` |

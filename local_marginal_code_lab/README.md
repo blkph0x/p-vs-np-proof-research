@@ -224,6 +224,22 @@ nonnegative identity excludes the entire level-nine optimal face.
 audit check the derivation. This is a lower bound; the full level-ten
 optimum remains open.
 
+The 20 October follow-up now supplies a full-model upper witness and a
+stronger lower certificate. The
+[virtual-dimension theorem](REED_MULLER_VIRTUAL_DIMENSION_THEOREM.md)
+proves feasibility through locality `D+4` for every `m>=D>=3`, with explicit
+failure of the same construction at `D+5` when `m>D`. Taking `D=m-1`
+proves nonintegrality of `L_(m+3)(RM(2,m))` for every `m>=4`.
+The [complete D6 replay](level10_scope_exploration/THEOREM.md) covers
+all 121 high-rank ten-point configurations.
+
+The [stronger level-ten certificate](level10_exploration/REPORT.md) gives
+`3843(2^m-1)/16627 <= min F <= 5(2^m-1)/21` for every `m>=6`.
+Its independently reconstructed 79-variable, 104-row selected model has
+an exact primal/dual certificate and a 14-term nonnegative lower identity.
+The full-model upper bound comes separately from the D6 construction;
+the full level-ten optimum and novelty remain unknown.
+
 The expanded [novelty ledger](LOCAL_MARGINAL_NOVELTY_LEDGER.md) connects
 the rank moments to classical subspace inclusion and matroid Möbius
 inversion, and compares LP decoding, orthogonal arrays, and coding

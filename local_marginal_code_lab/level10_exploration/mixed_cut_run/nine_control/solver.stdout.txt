@@ -1,0 +1,156 @@
+SoPlex version 8.1.0 [mode: optimized] [precision: 8 byte] [rational: GMP 6.3.0] [PaPILO 3.0.2] [GitHash: a0061053]
+Copyright (c) 1996-2026 Zuse Institute Berlin (ZIB)
+
+External libraries:
+  PaPILO 3.0.2         Parallel Presolve for Integer and Linear Optimization [GitHash: 3f1ba692]
+  Boost 1.92.0         Boost C++ Libraries (boost.org)
+  GMP 6.3.0            GNU Multiple Precision Arithmetic Library developed by T. Granlund (gmplib.org)
+  MPFR 4.2.2           GNU Multiple Precision Floating-Point Reliable Library (mpfr.org)
+  ZLIB 1.3.2           General Purpose Compression Library by J. Gailly and M. Adler (zlib.net)
+
+int:syncmode = 1
+int:readmode = 1
+int:solvemode = 2
+int:checkmode = 2
+real:feastol = 0.00000000e+00
+real:opttol = 0.00000000e+00
+real:timelimit = 1.20000000e+02
+
+Reading (rational) LP file <model.lp> . . .
+Reading took 0.01 seconds.
+
+LP has 64 rows 40 columns and 265 nonzeros.
+
+Initial floating-point solve . . .
+Simplifier removed 6 rows, 10 columns, 18 nonzeros, 3 col bounds, 50 row bounds
+Reduced LP has 58 rows 30 columns 245 nonzeros
+Equilibrium scaling LP
+
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |0.0     |0        | 1     | 1.00e+00 | 3.62e+00 | 15       | 0.00000000e+00
+  E  |0.0     |12       | 2     | 0.00e+00 | 1.00e+00 | 1        | 0.00000000e+00
+  E  |0.0     |43       | 3     | 0.00e+00 | 0.00e+00 | 0        | -7.74193548e-01
+
+ --- unsimplifying solution and basis
+Store basis as old basis (from solver)
+Floating-point optimal.
+Max. bound violation = 0, ofm = 1e0
+Max. row violation = 63/576460752303423488, ofm = 1e-16
+Max. reduced cost violation = 17/2251799813685248, ofm = 1e-14
+Max. dual violation = 0, ofm = 1e0
+Performing rational reconstruction . . .
+Tolerances reached.
+Solved to optimality.
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.00
+Iterations          : 43
+Objective value     : 2.25806452e-01
+
+Primal solution feasible in original problem (max. violation = 0).
+Dual solution feasible in original problem (max. violation = 0).
+
+Statistics
+==========
+
+SoPlex status       : problem is solved [optimal]
+Original problem    : 
+  Columns           : 40
+              boxed : 0
+        lower bound : 40
+        upper bound : 0
+               free : 0
+  Rows              : 64
+              equal : 64
+             ranged : 0
+                lhs : 0
+                rhs : 0
+               free : 0
+  Nonzeros          : 265
+         per column : 53/8
+            per row : 265/64
+           sparsity : 53/512
+    min. abs. value : 1
+    max. abs. value : 56
+Objective sense     : minimize
+Solution (rational) : 
+  Objective value   : 7/31
+Size (base 2/10)    : 
+  Total primal      : 323 / 153
+  Total dual        : 412 / 234
+  DLCM primal       : 10 / 5
+  DLCM dual         : 50 / 17
+  DMAX primal       : 10 / 5
+  DMAX dual         : 44 / 15
+Violation (rational): 
+  Max/sum bound     : 0 / 0
+  Max/sum row       : 0 / 0
+  Max/sum redcost   : 0 / 0
+  Max/sum dual      : 0 / 0
+Total time          : 0.01
+  Reading           : 0.01
+  Solving           : 0.00
+  Preprocessing     : 0.00 (0.00% of solving time)
+  Simplex           : 0.00 (50.00% of solving time)
+  Synchronization   : 0.00 (0.00% of solving time)
+  Transformation    : 0.00 (0.00% of solving time)
+  Rational          : 0.00 (50.00% of solving time)
+  InitialPrecision  : 0.00 (100.00% of solving time)
+  ExtendedPrecision : 0.00 (0.00% of solving time)
+  BoostingStep      : 0.00 (0.00% of solving time)
+  FpTime            : 0.00 (50.00% of solving time)
+  Other             : 0.00 (0.00% of solving time)
+Refinements         : 0
+  Stalling          : 0
+  Pivoting          : 0
+  Feasibility       : 0
+  Unboundedness     : 0
+Precision boosts    : 0
+  Stalling          : 0
+  Pivoting          : 0
+  Feasibility       : 0
+  Unboundedness     : 0
+Iterations          : 43
+  From scratch      : 43 (100.00%)
+  From basis        : 0 (0.00%)
+  Primal            : 31 (72.09%)
+  Dual              : 12 (27.91%)
+  Bound flips       : 0
+  Sol. polishing    : 0
+  First FP solve    : 43
+IterationsBoosted   : 0
+  From scratch      : 0
+  From basis        : 0
+  Primal            : 0
+  Dual              : 0
+  Bound flips       : 0
+  Sol. polishing    : 0
+LU factorizations   : 3
+  Factor. frequency : 14.33 iterations per factorization
+  Factor. time      : 0.00
+LU solves           : 95
+  Solve frequency   : 2.21 solves per iteration
+  Solve time        : 0.00
+Matrix-Vector ops   : 
+  Sparse    time    : 0.00 (0.00% of solving time)
+            calls   : 9 (20.93% of iterations)
+  Full      time    : 0.00 (0.00% of solving time)
+            calls   : 34 (79.05% of iterations)
+  Colwise   time    : 0.00 (0.00% of solving time)
+            calls   : 0 (0.00% of iterations)
+  Unsetup   time    : 0.00 (0.00% of solving time)
+            calls   : 0 (0.00% of iterations)
+Rat. factorizations : 0
+  Rat. factor. time : 0.00
+  Rat. solve time   : 0.00
+Rat. reconstructions: 1
+  Rat. rec. time    : 0.00
+Degeneracy          : 
+  Primal Pivots     : 10
+  Dual Pivots       : 0
+  Primal Candidates : 0
+  Dual Candidates   : 0
+  Average Primal    : 0.00
+  Average Dual      : 0.00
+Numerics            :
+  Condition Number  : 0.00000000e+00

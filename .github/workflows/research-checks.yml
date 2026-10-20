@@ -122,6 +122,23 @@ jobs:
         run: |
           python -m unittest -v test_rm2_level10_control
           python -O -m unittest -v test_rm2_level10_control
+      - name: Check the virtual-dimension family and its sharp witness boundary
+        working-directory: local_marginal_code_lab
+        run: |
+          python -m unittest -v test_rm2_virtual_dimension
+          python -O -m unittest -v test_rm2_virtual_dimension
+      - name: Independently replay every high-rank ten-point configuration
+        working-directory: local_marginal_code_lab/level10_scope_exploration
+        run: |
+          python verify.py
+          python -m unittest -v test_exploration
+          python -O -m unittest -v test_exploration
+      - name: Reconstruct the compact locality-ten lower certificate
+        working-directory: local_marginal_code_lab/level10_exploration
+        run: |
+          python review_level10.py
+          python -m unittest -v test_exploration
+          python -O -m unittest -v test_exploration
       - name: Replay prefix-threshold sequential-counter audit
         working-directory: proof_motif_candidate_lab
         run: |

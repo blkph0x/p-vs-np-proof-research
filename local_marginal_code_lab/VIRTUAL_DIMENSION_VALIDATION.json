@@ -1,0 +1,49 @@
+{
+  "schema": "rm2-virtual-dimension-validation-v1",
+  "recorded_at_utc": "2026-10-20T08:04:42.331009+00:00",
+  "source_commit_before_changes": "3060d16dd46e3c0be8c4ba238274bf64bfd85d96",
+  "python": "3.10.10",
+  "platform": "Windows-10-10.0.22631-SP0",
+  "source_sha256_lf": {
+    "rm2_virtual_dimension.py": "863612a0a183efc3b24c6dbef4e9a2203a8cfbde92851f3ccb08e9aff87aeb39",
+    "test_rm2_virtual_dimension.py": "aceb0268f268ad1922a172eea70d5ae80479c37f89a3d95561afdce2f19b2557",
+    "REED_MULLER_VIRTUAL_DIMENSION_THEOREM.md": "cce5ee92ce0e8e844fb07e9a99683d161600c3258815b3bd3c2aed2fb2f1e299"
+  },
+  "source_after_sha256_lf": {
+    "rm2_virtual_dimension.py": "863612a0a183efc3b24c6dbef4e9a2203a8cfbde92851f3ccb08e9aff87aeb39",
+    "test_rm2_virtual_dimension.py": "aceb0268f268ad1922a172eea70d5ae80479c37f89a3d95561afdce2f19b2557",
+    "REED_MULLER_VIRTUAL_DIMENSION_THEOREM.md": "cce5ee92ce0e8e844fb07e9a99683d161600c3258815b3bd3c2aed2fb2f1e299"
+  },
+  "sources_unchanged": true,
+  "runs": [
+    {
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-m",
+        "unittest",
+        "-v",
+        "test_rm2_virtual_dimension"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.857347299810499,
+      "output": "VIRTUAL_DIMENSION_TESTS_NORMAL.txt",
+      "output_sha256": "0c899cfd1aac9bb336e4e984c5c33a0f360c503c68ff030d8f62e2610d4d9118"
+    },
+    {
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-O",
+        "-m",
+        "unittest",
+        "-v",
+        "test_rm2_virtual_dimension"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 1.067642799578607,
+      "output": "VIRTUAL_DIMENSION_TESTS_OPTIMIZED.txt",
+      "output_sha256": "2d9e968fab507b7c7c01b2252670930b1dbc7e350ab8dc2f21bec2405a7a9461"
+    }
+  ],
+  "status": "PASS",
+  "scope": "Finite arithmetic controls and source-bound written proof; no formal verification or novelty claim. Complete independent D6 scope replay is recorded separately in level10_scope_exploration/RESULTS.json."
+}

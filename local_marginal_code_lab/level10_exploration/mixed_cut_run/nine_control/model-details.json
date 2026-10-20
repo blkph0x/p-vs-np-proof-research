@@ -1,0 +1,149 @@
+{
+  "base_rows": 53,
+  "base_variables": 28,
+  "cut": null,
+  "mixed_rows": [
+    {
+      "base_moment": {
+        "closure": [
+          24
+        ],
+        "coefficients": {
+          "27": 1
+        }
+      },
+      "incidences": [
+        1,
+        28,
+        14,
+        56,
+        28,
+        1
+      ],
+      "outside": 24,
+      "row_index": 59,
+      "subset": []
+    },
+    {
+      "base_moment": {
+        "closure": [
+          16,
+          24
+        ],
+        "coefficients": {
+          "24": 1
+        }
+      },
+      "incidences": [
+        0,
+        7,
+        7,
+        28,
+        21,
+        1
+      ],
+      "outside": 24,
+      "row_index": 60,
+      "subset": [
+        16
+      ]
+    },
+    {
+      "base_moment": {
+        "closure": [
+          16,
+          17,
+          24,
+          25
+        ],
+        "coefficients": {
+          "18": 1,
+          "19": 1
+        }
+      },
+      "incidences": [
+        0,
+        1,
+        3,
+        12,
+        15,
+        1
+      ],
+      "outside": 24,
+      "row_index": 61,
+      "subset": [
+        16,
+        17
+      ]
+    },
+    {
+      "base_moment": {
+        "closure": [
+          16,
+          17,
+          18,
+          19,
+          24,
+          25,
+          26,
+          27
+        ],
+        "coefficients": {
+          "8": 1,
+          "9": 6,
+          "10": 1
+        }
+      },
+      "incidences": [
+        0,
+        0,
+        1,
+        4,
+        10,
+        1
+      ],
+      "outside": 24,
+      "row_index": 62,
+      "subset": [
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "base_moment": {
+        "closure": [
+          16,
+          17,
+          18,
+          19,
+          24,
+          25,
+          26,
+          27
+        ],
+        "coefficients": {
+          "9": 3,
+          "10": 1
+        }
+      },
+      "incidences": [
+        0,
+        0,
+        1,
+        0,
+        6,
+        1
+      ],
+      "outside": 24,
+      "row_index": 63,
+      "subset": [
+        16,
+        17,
+        18,
+        19
+      ]
+    }
+  ],
+  "objective": "singleton probability p"
+}

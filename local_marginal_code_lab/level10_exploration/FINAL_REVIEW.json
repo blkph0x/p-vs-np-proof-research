@@ -1,0 +1,47 @@
+{
+  "artifact_sha256": {
+    "candidate.json": "c727b2f63b039d9a06e557745f50c2fc0bb58ba15a195181565da9a4a5e2930a",
+    "integer-identity.json": "1ca28be22a69f03d5314681f8eef9e92e96ea76a788a3cad0b16c50beea44122",
+    "model.json": "ce76899d33311cb6a161b4070da4e8d5daf58fb7c85ff136e960ef23720e5d0c"
+  },
+  "artifacts_unchanged": true,
+  "errors": [],
+  "minimum_reduced_cost": "0",
+  "model_sha256": "def573eaa74a2d7aa68e5c3e6a917f735bc2045d599900c3ca1924414805f57c",
+  "objective_offset": "0",
+  "reduced_objective": "3843/16627",
+  "rows": 104,
+  "scope": "Exact optimum of the selected necessary model; all-m>=6 lower consequence, not a full-L10 upper certificate.",
+  "short_identity": {
+    "nonnegative_terms": 14,
+    "singleton_lower_bound": "3843/16627",
+    "status": "EXACT_IDENTITY",
+    "valid": true
+  },
+  "source_after_sha256_lf": {
+    "REED_MULLER_LEVEL_D_AFFINE_OVERLAP_INDEPENDENT_REVIEW.py": "76efdc7778a493f8cd1bb4ae1cd8b87fbafa3a62855342b0165d18107f99a6cb",
+    "exact_lp_verify.py": "e04b0ebaecbb6cd232cd623c8d5bbeeb596d2a779fb3529c294dbcb6db04c5f5",
+    "level10_exploration/review_level10.py": "02a2c7af57aa5300922027e400b7d4c710c8f0f6605f354b392fd986fa78572a",
+    "reed_muller_affine_overlap.py": "936827495ee549d48e5c6e7a5e2f7d902ebc40c4d464054c65b407ecc47cb763",
+    "review_rm2_nine_scope.py": "6b011e9d05c4316c0d322dca5e1d101cc549db2e8445c33f1e2589fafc9bb578"
+  },
+  "source_reconstruction": {
+    "atom_orbits": 20,
+    "distinct_new_moment_rows": 19,
+    "original_moment_subsets": 435,
+    "polynomials_enumerated": 2097152,
+    "projection_atoms": 512
+  },
+  "source_sha256_lf": {
+    "REED_MULLER_LEVEL_D_AFFINE_OVERLAP_INDEPENDENT_REVIEW.py": "76efdc7778a493f8cd1bb4ae1cd8b87fbafa3a62855342b0165d18107f99a6cb",
+    "exact_lp_verify.py": "e04b0ebaecbb6cd232cd623c8d5bbeeb596d2a779fb3529c294dbcb6db04c5f5",
+    "level10_exploration/review_level10.py": "02a2c7af57aa5300922027e400b7d4c710c8f0f6605f354b392fd986fa78572a",
+    "reed_muller_affine_overlap.py": "936827495ee549d48e5c6e7a5e2f7d902ebc40c4d464054c65b407ecc47cb763",
+    "review_rm2_nine_scope.py": "6b011e9d05c4316c0d322dca5e1d101cc549db2e8445c33f1e2589fafc9bb578"
+  },
+  "sources_unchanged": true,
+  "status": "EXACT_OPTIMUM",
+  "total_objective": "3843/16627",
+  "valid": true,
+  "variables": 79
+}

@@ -125,9 +125,46 @@ obstruction, and exact row implication from independently rebuilt atom
 incidences are checked by [seven tests](test_rm2_level10_control.py).
 The independent mathematical audit found no correction. These are
 written mathematics and finite exact controls, not formal verification.
-No matching full-level-ten upper witness or optimum is claimed.
+The subsequent [virtual-dimension theorem](REED_MULLER_VIRTUAL_DIMENSION_THEOREM.md)
+proves the D6 witness feasible, with singleton `5/21`, and generalizes it
+to every `D>=3`. The proof is self-contained after the standard RM parameters:
+conditioning handles nonempty atoms, a relation-space expansion handles the
+empty atom, and self-orthogonality establishes pinned projection support.
+The same moments fail explicitly at `D+5` while working through `D+4`.
+This is a proved boundary for that construction, not an exact LP-optimum law.
+The full level-ten optimum remains open.
 
-The proposed next Gaussian family with virtual dimension six is explicitly
-a candidate in the control note. Testing that candidate's positivity and
-support would be a further mathematical task, not an application of the
-Critical Theorem without checking its hypotheses.
+The [subsequent selected-scope certificate](level10_exploration/REPORT.md)
+strengthens the lower bound to `p>=3843/16627` for all `m>=6`.
+Its 79-variable, 104-row model has matching exact primal/dual witnesses,
+but only the dual lower bound transports to the full relaxation. The
+independent D6 construction supplies `p<=5/21`. The original single
+Bonferroni-row model is retained at exact optimum `92/407`; obtaining a
+larger lower bound required actual additional marginal constraints.
+
+Taking `D=m-1` proves nonintegrality at locality `m+3` for `RM(2,m)`, `m>=4`.
+The exhibited multiplicative gap tends to one in this growing-locality
+regime. The bounded literature comparison has not established priority for
+this parameterized construction or its exact first-failure boundary.
+
+## Exact comparison with locally explainable non-signaling code functions
+
+[Chiesa, Manohar and Shinkar, *On Local Testability in the Non-Signaling
+Setting*](https://eccc.weizmann.ac.il/report/2019/070/download/) (May 2019),
+Definition 1.1 and Definition 5.5, already define consistent local
+distributions supported on code projections. Lemma 5.6 identifies projection
+support with satisfaction of every dual constraint supported inside the scope.
+Thus this model architecture is inherited, not a new relaxation concept.
+
+Here is the exact change of coordinates for this repository's pin. Write
+`K={c restricted to nonpin coordinates: c in RM(2,m), c_0=0}`.
+The constant-one codeword shows that the pinned relation is `1+K`.
+Replacing every local bit `x_a` by `y_a=1+x_a` over GF(2) is a bijection
+between `L_k` and their `(K,k)`-explainable `k`-non-signaling functions.
+Pin-containing tables are determined by the nonpin tables because the pin
+is deterministic. The objective becomes `(2^m-1)-sum_a E[y_a]`.
+
+The comparison identifies definitions exactly. It does not attribute the
+specific rank-moment construction, its sharp locality boundary, or the
+finite optimal fractions to that paper. Whether those statements follow
+from existing results remains a separate novelty question.

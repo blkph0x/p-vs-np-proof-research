@@ -8,15 +8,23 @@
 
 ## Start here
 
+- The [virtual-dimension theorem](local_marginal_code_lab/REED_MULLER_VIRTUAL_DIMENSION_THEOREM.md)
+  now proves a whole family of consistent local witnesses: for every `D>=3`,
+  they work through locality `D+4` and fail explicitly at `D+5` when `m>D`.
+  It implies nonintegrality of `L_(m+3)(RM(2,m))` for every `m>=4`.
+  This is a written all-size proof with independent mathematical review,
+  [121 exhaustive ten-point controls](local_marginal_code_lab/level10_scope_exploration/THEOREM.md),
+  and negative tests. It does not determine the later-level exact optima;
+  novelty remains unknown.
 - The [public SAT comparison](proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE.md)
   now has 114 independently verified runs, pinned Glucose3/DRAT-trim
   provenance, full costs and a retained failed pilot. Public search is faster
   on the harder examples, but Python proof checking prevents an overall win.
-- The [level-ten lower bound](local_marginal_code_lab/RM2_LEVEL10_CONTROL.md)
-  improves the level-nine optimum for `RM(2,m)`, `m>=6`, to at least
-  `644(2^m-1)/2849` in reduced weight. This is a strict bound, not an exact
-  optimum. The [literature comparison](local_marginal_code_lab/LOCAL_MARGINAL_NOVELTY_LEDGER.md)
-  keeps its inherited methods and unresolved novelty explicit.
+- The [strengthened level-ten certificate](local_marginal_code_lab/level10_exploration/REPORT.md)
+  gives `3843(2^m-1)/16627 <= min F <= 5(2^m-1)/21` for `RM(2,m)`, `m>=6`.
+  Its independently reconstructed 79-variable model supplies a 14-term lower
+  identity; the virtual-dimension theorem supplies the full-model upper witness.
+  The exact full level-ten optimum and mathematical novelty remain unknown.
 - The [nine-scope discovery](local_marginal_code_lab/RM2_NINE_SCOPE_DISCOVERY.md)
   uses SoPlex to find, and a separate source reconstruction to verify, reduced
   optimum `7` / total `8` for an explicit selected model. A genuine codeword
