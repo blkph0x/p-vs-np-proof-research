@@ -8,6 +8,15 @@
 
 ## Start here
 
+- The [public SAT comparison](proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE.md)
+  now has 114 independently verified runs, pinned Glucose3/DRAT-trim
+  provenance, full costs and a retained failed pilot. Public search is faster
+  on the harder examples, but Python proof checking prevents an overall win.
+- The [level-ten lower bound](local_marginal_code_lab/RM2_LEVEL10_CONTROL.md)
+  improves the level-nine optimum for `RM(2,m)`, `m>=6`, to at least
+  `644(2^m-1)/2849` in reduced weight. This is a strict bound, not an exact
+  optimum. The [literature comparison](local_marginal_code_lab/LOCAL_MARGINAL_NOVELTY_LEDGER.md)
+  keeps its inherited methods and unresolved novelty explicit.
 - The [nine-scope discovery](local_marginal_code_lab/RM2_NINE_SCOPE_DISCOVERY.md)
   uses SoPlex to find, and a separate source reconstruction to verify, reduced
   optimum `7` / total `8` for an explicit selected model. A genuine codeword

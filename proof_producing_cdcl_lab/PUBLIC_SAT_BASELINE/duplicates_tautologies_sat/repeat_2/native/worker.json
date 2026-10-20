@@ -1,0 +1,17 @@
+{
+  "certificate_export_seconds": 0.0010266001336276531,
+  "construction_seconds": 0.0014039003290235996,
+  "decision_limit": 5000,
+  "engine": "native-reference",
+  "solve_seconds": 2.2099819034337997e-05,
+  "solver_status": "SAT",
+  "stats": {
+    "backjumps": 0,
+    "boolean_props": 2,
+    "conflicts": 0,
+    "decisions": 1,
+    "learned_clauses": 0,
+    "learned_literals": 0,
+    "resolution_steps": 0
+  }
+}

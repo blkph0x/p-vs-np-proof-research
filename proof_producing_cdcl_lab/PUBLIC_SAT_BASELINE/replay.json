@@ -1,0 +1,9 @@
+{
+  "runs": 114,
+  "scope": "original CNF witnesses/restricted-RUP or native-resolution proofs; historical timing and external checker execution are not rerun",
+  "status": "PASS",
+  "statuses": {
+    "VERIFIED_SAT": 54,
+    "VERIFIED_UNSAT": 60
+  }
+}

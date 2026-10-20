@@ -1,0 +1,12 @@
+{
+  "clauses": [
+    [
+      1
+    ],
+    [
+      -1
+    ]
+  ],
+  "nvars": 1,
+  "schema": "original-cnf-v1"
+}

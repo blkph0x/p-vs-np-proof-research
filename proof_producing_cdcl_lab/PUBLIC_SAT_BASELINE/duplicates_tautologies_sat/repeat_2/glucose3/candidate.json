@@ -1,0 +1,10 @@
+{
+  "model": [
+    true,
+    false,
+    true
+  ],
+  "request_sha256": "cdbc47ecde605560b3f450f55eabc77b07606448f7a14675b99cd40ce8e971bf",
+  "schema": "public-sat-candidate-v1",
+  "status": "SAT"
+}

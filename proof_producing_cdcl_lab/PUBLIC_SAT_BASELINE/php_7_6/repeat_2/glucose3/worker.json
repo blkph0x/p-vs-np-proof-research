@@ -1,0 +1,23 @@
+{
+  "appended_terminal_rup_proposal": false,
+  "certificate_export_seconds": 0.008885699789971113,
+  "construction_seconds": 0.037877799943089485,
+  "engine": "Glucose3 via PySAT",
+  "extension_sha256": "362886a7692328019f74d94454224907257875d2122ba348c756f8463ceb2a67",
+  "proof_proposal": "drop deletion lines; propose terminal empty clause if absent",
+  "proof_stream_drained_before_close": true,
+  "pysat_version": "1.9.dev16",
+  "raw_proof_lines": 912,
+  "raw_proof_sha256": "542ff0150cd6eea9eb07530cf55fb0b8f7442f1ac1fe60eb3a2efcbb5dc13bc0",
+  "removed_deletion_lines": 70,
+  "six_version": "1.16.0",
+  "solve_seconds": 0.004157100338488817,
+  "solver_status": "UNSAT",
+  "stats": {
+    "conflicts": 842,
+    "decisions": 982,
+    "propagations": 6085,
+    "restarts": 3
+  },
+  "wrapper_sha256_lf": "b84f0790c70b5af2f85ab82d0e1441aea874c2ae6483d90da40286a01397e065"
+}

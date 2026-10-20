@@ -5,7 +5,7 @@ public URL found in the repository's source, reports, and saved metadata,
 along with the local files that cite or preserve it. The curated primary
 sources and citation rules are in [`CITATIONS.md`](CITATIONS.md).
 
-Indexed URLs: **136**.
+Indexed URLs: **150**.
 
 | URL | Local provenance |
 | --- | --- |
@@ -19,6 +19,7 @@ Indexed URLs: **136**.
 | <https://arxiv.org/abs/1912.12820> | `CITATIONS.md`, `local_marginal_code_lab/EXACT_LP_DISCOVERY.md` |
 | <https://arxiv.org/abs/2004.03387> | `ALL_DUAL_LP_THEOREM.md`, `PUBLIC_METHOD_REVIEW.md`, `local_marginal_code_lab/LOCAL_MARGINAL_NOVELTY_LEDGER.md` |
 | <https://arxiv.org/abs/2109.08629> | `PUBLIC_METHOD_REVIEW.md` |
+| <https://arxiv.org/abs/2112.09221> | `local_marginal_code_lab/LOCAL_MARGINAL_NOVELTY_LEDGER.md` |
 | <https://arxiv.org/abs/2211.12862> | `PERTURBATION_ROUTE_REVIEW.md` |
 | <https://arxiv.org/abs/2406.11414> | `PUBLIC_METHOD_REVIEW.md` |
 | <https://arxiv.org/abs/2508.04726> | `ALGEBRAIC_LITERATURE_CHECK.md` |
@@ -28,12 +29,15 @@ Indexed URLs: **136**.
 | <https://arxiv.org/html/1303.6729> | `HOLOGRAPHIC_LITERATURE_CHECK.md`, `crossing_sign_lab/THEOREM.md` |
 | <https://arxiv.org/html/1303.6729#S2> | `crossing_sign_lab/INDEPENDENT_REVIEW.md`, `simultaneous_basis_lab/THEOREM.md` |
 | <https://arxiv.org/html/1307.7430#S2> | `simultaneous_basis_lab/THEOREM.md` |
+| <https://arxiv.org/html/1410.4241> | `local_marginal_code_lab/LOCAL_MARGINAL_NOVELTY_LEDGER.md` |
+| <https://arxiv.org/html/2412.06595v3> | `local_marginal_code_lab/LOCAL_MARGINAL_NOVELTY_LEDGER.md`, `local_marginal_code_lab/RM2_LEVEL10_CONTROL.md` |
 | <https://arxiv.org/html/2503.04101v3#S3> | `AFFINE_CANCELLATION_LITERATURE_SCOPE.md` |
 | <https://arxiv.org/html/2601.01390v1> | `ALGEBRAIC_LITERATURE_CHECK.md` |
 | <https://arxiv.org/html/2610.06819v1> | `AFFINE_REPRESENTATION_LITERATURE_SCOPE.md` |
 | <https://arxiv.org/pdf/0804.0066> | `PUBLIC_METHOD_REVIEW.md`, `affine_projection_recognition_lab/AFFINE_HULL_METHOD.md` |
 | <https://arxiv.org/pdf/1307.7430> | `HOLOGRAPHIC_LITERATURE_CHECK.md`, `PUBLIC_METHOD_REVIEW.md`, `affine_boundary_lab/THEOREM.md`, `holographic_tractability_lab/INDEPENDENT_REVIEW.md`, `tensor_basis_lab/THEOREM.md` |
 | <https://arxiv.org/pdf/1504.07647> | `PERTURBATION_ROUTE_REVIEW.md`, `labelled_join_certified/COVERAGE_AUDIT.md` |
+| <https://arxiv.org/pdf/1510.01509> | `local_marginal_code_lab/LOCAL_MARGINAL_NOVELTY_LEDGER.md` |
 | <https://arxiv.org/pdf/1602.03124> | `matching_gadget_limits/THEOREM.md` |
 | <https://arxiv.org/pdf/1808.00128> | `PUBLIC_METHOD_REVIEW.md` |
 | <https://arxiv.org/pdf/2106.03214> | `AFFINE_REPRESENTATION_LITERATURE_SCOPE.md` |
@@ -61,6 +65,7 @@ Indexed URLs: **136**.
 | <https://doi.org/10.1109/ASSIC70037.2026.11717448> | `CITATIONS.md` |
 | <https://doi.org/10.1109/ISIT.2018.8437637> | `CITATIONS.md`, `local_marginal_code_lab/REED_MULLER_QUADRATIC_LEVEL8_THEOREM.md`, `local_marginal_code_lab/REED_MULLER_QUADRATIC_LEVEL9_THEOREM.md` |
 | <https://doi.org/10.1109/TIT.1954.1057465> | `CITATIONS.md`, `PEER_AUDIT_RESPONSE_2026_10_19.md`, `PEER_AUDIT_RESPONSE_2026_10_20.md`, `local_marginal_code_lab/LOCAL_MARGINAL_NOVELTY_LEDGER.md`, `local_marginal_code_lab/REED_MULLER_ALL_DUAL_REPORT.md`, `local_marginal_code_lab/REED_MULLER_FORMAL_MODEL.md`, `local_marginal_code_lab/REED_MULLER_RESULTS.json`, `local_marginal_code_lab/REED_MULLER_THEOREM.md`, `local_marginal_code_lab/run_reed_muller.py` |
+| <https://doi.org/10.1109/TIT.2004.842696> | `local_marginal_code_lab/LOCAL_MARGINAL_NOVELTY_LEDGER.md` |
 | <https://doi.org/10.1109/assic70037.2026.11717448> | `VOHRA_CROSSREF_METADATA.json` |
 | <https://doi.org/10.1145/258533.258559> | `VARDY_MINIMUM_DISTANCE_SCOPE.md`, `labelled_join_certified/COVERAGE_AUDIT.md` |
 | <https://doi.org/10.1287/moor.7.1.67> | `THEORY_REVIEW.md` |
@@ -69,6 +74,7 @@ Indexed URLs: **136**.
 | <https://eccc.weizmann.ac.il/report/2011/142/> | `CITATIONS.md`, `local_marginal_code_lab/LOCAL_MARGINAL_NOVELTY_LEDGER.md` |
 | <https://ece.iisc.ac.in/~nkashyap/Papers/code_decomp_final.pdf> | `ALL_DUAL_LP_THEOREM.md`, `local_marginal_code_lab/LOCAL_MARGINAL_NOVELTY_LEDGER.md` |
 | <https://epubs.siam.org/doi/10.1137/070691152> | `high_width_core_stress_lab/REPORT.md` |
+| <https://files.pythonhosted.org/packages/bb/af/d25753f1ed0e2e9e440a0b4e025fdde1a493dde65c1cad6bd7071e7395fa/python_sat-1.9.dev16.tar.gz> | `proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/pysat-crash/SOURCE.json` |
 | <https://flintlib.org/doc/fmpz_poly.html> | `PUBLIC_METHOD_REVIEW.md` |
 | <https://flintlib.org/doc/nmod_poly.html> | `PUBLIC_METHOD_REVIEW.md` |
 | <https://gap-system.github.io/gap/doc/ref/chap41.html> | `PUBLIC_METHOD_REVIEW.md` |
@@ -82,8 +88,12 @@ Indexed URLs: **136**.
 | <https://github.com/jump-dev/SumOfSquares.jl> | `PUBLIC_METHOD_REVIEW.md` |
 | <https://github.com/mabseher/htd> | `PUBLIC_METHOD_REVIEW.md` |
 | <https://github.com/malb/m4ri> | `PUBLIC_METHOD_REVIEW.md` |
-| <https://github.com/marijnheule/cake_lpr> | `CITATIONS.md`, `PEER_AUDIT_RESPONSE_2026_10_19.md`, `PEER_AUDIT_RESPONSE_2026_10_20.md`, `PUBLIC_METHOD_REVIEW.md` |
-| <https://github.com/marijnheule/drat-trim> | `CITATIONS.md`, `PEER_AUDIT_RESPONSE_2026_10_19.md`, `PEER_AUDIT_RESPONSE_2026_10_20.md`, `PUBLIC_METHOD_REVIEW.md` |
+| <https://github.com/marijnheule/cake_lpr> | `CITATIONS.md`, `PEER_AUDIT_RESPONSE_2026_10_19.md`, `PEER_AUDIT_RESPONSE_2026_10_20.md`, `PUBLIC_METHOD_REVIEW.md`, `proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE.md` |
+| <https://github.com/marijnheule/drat-trim> | `CITATIONS.md`, `PEER_AUDIT_RESPONSE_2026_10_19.md`, `PEER_AUDIT_RESPONSE_2026_10_20.md`, `PUBLIC_METHOD_REVIEW.md`, `proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/drat-trim/BUILD.md`, `proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/drat-trim/BUILD_AND_TEST.json`, `proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/drat-trim/build_and_test.py.txt`, `proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE.md` |
+| <https://github.com/marijnheule/drat-trim.git> | `proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/drat-trim/BUILD.md`, `proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE.md` |
+| <https://github.com/marijnheule/drat-trim/blob/master/README.md> | `proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/sources/proof_producing_cdcl_lab/rup_verify.py.txt`, `proof_producing_cdcl_lab/rup_verify.py` |
+| <https://github.com/marijnheule/drat-trim/tree/> | `proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/drat-trim/build_and_test.py.txt` |
+| <https://github.com/marijnheule/drat-trim/tree/2e3b2dc0ecf938addbd779d42877b6ed69d9a985> | `proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/drat-trim/BUILD.md`, `proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/drat-trim/BUILD_AND_TEST.json`, `proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE.md` |
 | <https://github.com/meelgroup/approxmc> | `PUBLIC_METHOD_REVIEW.md` |
 | <https://github.com/meelgroup/frat-xor> | `PUBLIC_METHOD_REVIEW.md` |
 | <https://github.com/msoos/cryptominisat> | `PUBLIC_METHOD_REVIEW.md` |
@@ -112,10 +122,13 @@ Indexed URLs: **136**.
 | <https://pmc.ncbi.nlm.nih.gov/articles/PMC7326555/> | `PUBLIC_METHOD_REVIEW.md` |
 | <https://proofcomplexityzoo.gitlab.io/zoo/> | `CITATIONS.md`, `PEER_AUDIT_RESPONSE_2026_10_19.md`, `PEER_AUDIT_RESPONSE_2026_10_20.md`, `local_marginal_code_lab/LOCAL_MARGINAL_NOVELTY_LEDGER.md` |
 | <https://pub.ista.ac.at/~vnk/software.html> | `PUBLIC_METHOD_REVIEW.md` |
+| <https://pypi.org/project/python-sat/1.9.dev16/> | `proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/pysat-crash/DIAGNOSIS.md`, `proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE.md` |
+| <https://pysathq.github.io/docs/html/api/solvers.html> | `proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE.md` |
 | <https://quantum-journal.org/papers/q-2022-04-20-692/> | `AFFINE_REPRESENTATION_LITERATURE_SCOPE.md` |
 | <https://quantum-journal.org/papers/q-2026-07-29-2179/> | `AFFINE_CANCELLATION_LITERATURE_SCOPE.md` |
 | <https://research.chalmers.se/publication/507229/file/507229_Fulltext.pdf> | `local_marginal_code_lab/REED_MULLER_QUADRATIC_LEVEL8_THEOREM.md`, `local_marginal_code_lab/REED_MULLER_QUADRATIC_LEVEL9_THEOREM.md` |
 | <https://research.cs.wisc.edu/wpis/papers/vmcai04.BT.pdf> | `PUBLIC_METHOD_REVIEW.md`, `affine_projection_recognition_lab/AFFINE_HULL_METHOD.md` |
+| <https://research.google/pubs/using-linear-programming-to-decode-binary-linear-codes/> | `local_marginal_code_lab/LOCAL_MARGINAL_NOVELTY_LEDGER.md` |
 | <https://satcompetition.github.io/> | `CITATIONS.md`, `PEER_AUDIT_RESPONSE_2026_10_19.md`, `PEER_AUDIT_RESPONSE_2026_10_20.md` |
 | <https://schoeneb.people.si.umich.edu/papers/LasserreNew.pdf> | `CITATIONS.md`, `PEER_AUDIT_RESPONSE_2026_10_19.md`, `PEER_AUDIT_RESPONSE_2026_10_20.md`, `local_marginal_code_lab/LOCAL_MARGINAL_NOVELTY_LEDGER.md` |
 | <https://soplex.zib.de/doc/html/EXACT.php> | `CITATIONS.md`, `PUBLIC_METHOD_REVIEW.md`, `local_marginal_code_lab/EXACT_LP_DISCOVERY.md`, `local_marginal_code_lab/RM2_NINE_SCOPE_DISCOVERY.md` |
@@ -130,6 +143,7 @@ Indexed URLs: **136**.
 | <https://www.cs.cornell.edu/~rdz/Papers/KZ-PAMI04.pdf> | `gadget_limits/THEOREM.md` |
 | <https://www.cs.toronto.edu/~sacook/homepage/cook_reckhow.pdf> | `INDEPENDENT_AUDIT.md` |
 | <https://www.cs.upc.edu/~atserias/papers/width/ccc03.pdf> | `CITATIONS.md`, `PUBLIC_METHOD_REVIEW.md`, `resolution_width_lab/PEBBLE_REPORT.md`, `resolution_width_lab/THEOREM.md` |
+| <https://www.cs.utexas.edu/~marijn/publications/drat-trim.pdf> | `proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/sources/proof_producing_cdcl_lab/rup_verify.py.txt`, `proof_producing_cdcl_lab/rup_verify.py` |
 | <https://www.ee.iitm.ac.in/~andrew/ee512/projects/LinearProgrammingDecoding.pdf> | `THEORY_REVIEW.md` |
 | <https://www.ijcai.org/Proceedings/03/Papers/168.pdf> | `AFFINE_DECOMPOSITION_NEXT_REVIEW.md` |
 | <https://www.khoury.northeastern.edu/home/lieber/courses/csg260/f06/materials/papers/max-sat/p216-schaefer.pdf> | `CITATIONS.md`, `INDEPENDENT_AUDIT.md`, `affine_projection_recognition_lab/COMPLEXITY_THEOREM.md`, `typed_merge_planner_lab/THEOREMS.md` |

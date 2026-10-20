@@ -11,8 +11,10 @@ and scoped certificates. It has not demonstrated a general speed advantage
 over modern SAT, knowledge-compilation, matching or optimisation software.
 
 This is a capability-level source and literature review, **not a line-by-line
-audit of every function**, an exhaustive novelty search, or an external solver
-benchmark. The [machine-readable inventory](PUBLIC_METHOD_INVENTORY.json)
+audit of every function** or an exhaustive novelty search. The later
+[paired public SAT campaign](proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE.md)
+is a separately measured, small external-solver benchmark; it does not turn
+the whole review into a performance ranking. The [machine-readable inventory](PUBLIC_METHOD_INVENTORY.json)
 maps every Python module in all 65 research directories to a comparison area
 and lists its classes/functions and source hashes. Selected implementations,
 reports and checker paths were inspected. Function listing is coverage metadata,
@@ -28,7 +30,7 @@ python build_public_method_inventory.py --check
 
 | Priority | Change | Why it is preferable | Acceptance evidence |
 | --- | --- | --- | --- |
-| P0 | Harden proof acceptance; benchmark an external proof-producing SAT backend | Older acceptance assertions could disappear under Python optimisation; mature engines have substantially more search machinery | Reject forged proofs under normal Python and `-O`; validate original SAT models and complete UNSAT proofs |
+| P0 | Harden acceptance and improve checked public SAT integration | Assertion repair and pinned Glucose3 campaign implemented; reference RUP checking is now the measured bottleneck | 114 original-bound verified runs; retained failed pilot; next compare faster independent proof checking including conversion cost |
 | P1 | Canonical rational LP export and SoPlex discovery adapter | Implemented for affine-overlap and nine-scope discovery; full level-eight/cut regeneration remains | Independently replay the same original model and exact optimal objectives |
 | P1 | D4/CPOG certified compilation baseline | Public certification already covers CNF equivalence and projected compilation | Check original CNF/projection semantics, counts, construction and proof costs |
 | P1 | CMR pure-graphic recognition and LEMON dual exporter | Complete recognition for a declared class; documented matching dual API | Check row-space/target transformations and every dual inequality |
@@ -57,6 +59,23 @@ The accompanying repair uses explicit checks, validates original models and
 resolution parents, and removes exhaustive SAT enumeration from proof
 acceptance. Exhaustive controls remain in tests. This improves the verification
 architecture; it is not a faster SAT search result.
+
+The optional [pinned Glucose3 adapter and DRAT-trim comparison](proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE.md)
+now provide actual evidence on 19 identical original CNFs, three repetitions
+per engine. All 114 final runs verify. Public search is faster on the harder
+examples and proof files are smaller, but the independent full-scan Python
+RUP checker costs 8.87 seconds on PHP(7,6), versus 0.086 seconds for the native
+resolution replay. The combined measured stages therefore lose on that
+instance (9.26 versus 0.59 seconds). This is an optional discovery integration,
+not an overall performance promotion.
+
+The first run exposed a pinned Windows proof-stream exit failure and a
+deletion-convention mismatch. Both are retained with original inputs,
+raw logs, source snapshots and diagnoses. Draining the public stream before
+close and proposing an addition-only proof fixed the tested cases; the
+independent proof rules and nonzero-exit rejection remain unchanged.
+The next engineering comparison is watched-literal or hinted proof checking,
+with the existing checker kept as a differential reference.
 
 A separate open resource-contract issue remains: the native terminal
 `derive_empty` path can exceed `max_resolution_steps` (contradictory units
@@ -319,8 +338,18 @@ and validates SoPlex as the first optional external discovery backend. Its
 nine-coordinate follow-up has now produced a source-bound exact certificate
 and a separately reviewed mathematical extension.
 
+The public SAT adapter is also implemented and measured, including two
+real rejected pilot controls and independent normal/optimized-mode replay.
+The [matroid/subspace literature comparison](local_marginal_code_lab/LOCAL_MARGINAL_NOVELTY_LEDGER.md#the-precise-subspace-counting-bridge)
+identifies which counting mechanisms are inherited and why higher-rank
+virtual local tables need a separate argument. A
+[ten-coordinate inequality](local_marginal_code_lab/RM2_LEVEL10_CONTROL.md)
+now gives a strict all-family lower-bound improvement for `m>=6`; it does
+not determine the level-ten optimum or establish novelty.
+
 Next extend **exact LP discovery** to the larger certificates and build
-a **certified SAT/compilation benchmark**. These address remaining
+a **certified compilation benchmark**, while improving the SAT proof-checking
+bottleneck before promoting it as faster overall. These address remaining
 discovery reproducibility and missing external baselines. CMR and LEMON then
 target well-defined recognition/export weaknesses. Broader SOS and hierarchy
 work remains research requiring its own mathematical specification.

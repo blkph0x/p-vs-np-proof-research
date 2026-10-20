@@ -20,8 +20,17 @@ The [feature-by-feature public-method review](PUBLIC_METHOD_REVIEW.md) compares
 the project's capabilities with established SAT, certified compilation,
 matching, exact optimisation and decomposition methods. It identifies
 concrete upgrades and the evidence required before calling them improvements.
-The source inventory covers all 65 research directories; comparative speed
-claims still require matching benchmarks.
+The source inventory covers all 65 research directories. The first
+[paired public SAT benchmark](proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE.md)
+now verifies all 114 runs on identical original formulas. Public search is
+faster on the harder examples and produces smaller proofs, but the simple
+Python proof checker is slower. The report includes both costs and the
+failed pilot; there is no general speedup claim.
+
+A [new level-ten inequality](local_marginal_code_lab/RM2_LEVEL10_CONTROL.md)
+gives reduced weight at least `644(2^m-1)/2849` for `RM(2,m)`, `m>=6`.
+It strictly improves the level-nine bound, while leaving the exact
+level-ten optimum and novelty open.
 
 The first external discovery integration is now [SoPlex with exact independent checking](local_marginal_code_lab/EXACT_LP_DISCOVERY.md).
 It reproduces the affine-overlap value `31/5` from the model alone, while a

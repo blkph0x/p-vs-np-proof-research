@@ -453,3 +453,24 @@ python -O -m unittest -v test_rm2_nine_scope test_rm2_level9_family
 
 The discovery report records machine and source provenance and distinguishes
 the retained one-row preliminary experiment from the full nine-scope model.
+
+## Subsequent level-ten control
+
+The separate [ten-coordinate control](RM2_LEVEL10_CONTROL.md) proves, for
+every \(m\ge6\),
+\[
+ \min_{L_{10}}F\ge\frac{644(2^m-1)}{2849}
+                  >\frac{7(2^m-1)}{31}.
+\]
+It uses a scope of ten nonpin coordinates, the Boolean-valid row
+\(q-8r+28v\ge0\), and a nonnegative combination of the incidence identities
+already proved above. It excludes the entire symmetrized level-nine
+optimal face, not only this theorem's displayed upper witness.
+The lower bound has seven exact tests and an independent mathematical
+audit; it does not determine the full level-ten optimum.
+
+The [novelty ledger](LOCAL_MARGINAL_NOVELTY_LEDGER.md) now gives the precise
+Gaussian-subspace/Möbius bridge to the classical Crapo--Rota counting
+method and compares coding LP and hierarchy results by their hypotheses.
+Neither that comparison nor the level-ten follow-up changes the level-nine
+proof or establishes novelty, which remains **UNKNOWN**.

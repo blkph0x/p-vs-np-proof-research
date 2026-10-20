@@ -1,0 +1,151 @@
+"""Reproduce this local Windows build and bounded CLI controls; no repo edits."""
+from __future__ import annotations
+
+import hashlib
+import json
+from pathlib import Path
+import platform
+import shutil
+import subprocess
+import sys
+import time
+
+
+HERE = Path(__file__).resolve().parent
+SOURCE = HERE / "source"
+REVISION = "2e3b2dc0ecf938addbd779d42877b6ed69d9a985"
+COMPILER = Path(r"C:\Users\Blkph0x\gcc\bin\gcc.exe")
+
+
+def digest(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def run(arguments, *, cwd=HERE, timeout=30):
+    started = time.perf_counter()
+    try:
+        result = subprocess.run(list(map(str, arguments)), cwd=cwd, capture_output=True,
+                                timeout=timeout, text=True, encoding="utf-8", errors="replace")
+        return {
+            "arguments": list(map(str, arguments)), "returncode": result.returncode,
+            "stdout": result.stdout, "stderr": result.stderr, "timed_out": False,
+            "wall_seconds": round(time.perf_counter() - started, 6),
+        }
+    except subprocess.TimeoutExpired:
+        return {
+            "arguments": list(map(str, arguments)), "returncode": None,
+            "timed_out": True, "wall_seconds": round(time.perf_counter() - started, 6),
+        }
+
+
+def main():
+    revision = run(["git", "rev-parse", "HEAD"], cwd=SOURCE)
+    if revision["returncode"] != 0 or revision["stdout"].strip() != REVISION:
+        raise RuntimeError("checkout does not match the pinned official source")
+    before = run(["git", "status", "--porcelain"], cwd=SOURCE)
+    if before["returncode"] != 0 or before["stdout"]:
+        raise RuntimeError("source checkout is not clean")
+    paths = ["drat-trim.c", "LICENSE", "Makefile", "README.md"]
+    hashes = {name: digest(SOURCE / name) for name in paths}
+    blob = subprocess.run(["git", "show", "HEAD:drat-trim.c"], cwd=SOURCE,
+                          capture_output=True, check=True).stdout
+    if blob != (SOURCE / "drat-trim.c").read_bytes():
+        raise RuntimeError("compiled source differs from its pinned Git blob")
+    shutil.copyfile(SOURCE / "LICENSE", HERE / "LICENSE")
+    compiler = run([COMPILER, "--version"])
+    target = run([COMPILER, "-dumpmachine"])
+    original_build = run([COMPILER, "source/drat-trim.c", "-std=c99", "-O2",
+                          "-o", "drat-trim-original.exe"])
+    # getc is the standard, locking equivalent of the unavailable POSIX call.
+    build = run([COMPILER, "source/drat-trim.c", "-std=c99", "-O2",
+                 "-Dgetc_unlocked=getc", "-o", "drat-trim.exe"])
+    for name, result in (("original-build", original_build), ("windows-build", build)):
+        (HERE / (name + ".stdout.txt")).write_text(result.get("stdout", ""), encoding="utf-8")
+        (HERE / (name + ".stderr.txt")).write_text(result.get("stderr", ""), encoding="utf-8")
+    report = {
+        "schema": "local-drat-trim-build-v1", "official_repository": "https://github.com/marijnheule/drat-trim",
+        "source_revision": REVISION,
+        "source_commit_url": "https://github.com/marijnheule/drat-trim/tree/" + REVISION,
+        "official_tag_observed": "v05.22.2023",
+        "selected_revision_is_tag": False, "license": "MIT", "source_sha256": hashes,
+        "compiled_source_matches_git_blob": True,
+        "compiler_version": compiler, "compiler_target": target,
+        "compiler_sha256": digest(COMPILER),
+        "original_makefile_equivalent_build": original_build, "windows_build": build,
+        "portability_change": "compiler macro getc_unlocked=getc; no source modification",
+        "platform": platform.platform(), "python": sys.version,
+    }
+    if build["returncode"] != 0:
+        report["status"] = "BUILD_FAILED"
+        (HERE / "BUILD_AND_TEST.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
+        raise SystemExit(1)
+    binary = HERE / "drat-trim.exe"
+    report["binary_sha256"] = digest(binary)
+    controls = HERE / "controls"
+    controls.mkdir(exist_ok=True)
+    xor_unsat = "p cnf 2 4\n1 2 0\n1 -2 0\n-1 2 0\n-1 -2 0\n"
+    cases = [
+        ("contradictory_units", "p cnf 1 2\n1 0\n-1 0\n", "0\n"),
+        ("valid_nontrivial_rup", xor_unsat, "1 0\n0\n"),
+        ("forged_empty_clause", xor_unsat, "0\n"),
+        ("forged_incomplete_proof", xor_unsat, ""),
+        ("mutated_unit_formula", "p cnf 1 2\n1 0\n1 0\n", "0\n"),
+        ("mutated_binary_formula", "p cnf 2 3\n1 2 0\n1 -2 0\n-1 2 0\n", "1 0\n0\n"),
+        ("malformed_header", "c no DIMACS header\n", "0\n"),
+        ("original_empty_clause", "p cnf 1 1\n0\n", "0\n"),
+    ]
+    observations = []
+    for name, formula, proof in cases:
+        cnf = controls / (name + ".cnf")
+        drat = controls / (name + ".drat")
+        cnf.write_bytes(formula.encode("ascii"))
+        drat.write_bytes(proof.encode("ascii"))
+        result = run([binary, cnf, drat, "-I", "-t", "10"], timeout=15)
+        stdout = result.get("stdout", "")
+        statuses = [line.strip() for line in stdout.splitlines() if line.strip().startswith("s ")]
+        result.update({
+            "name": name, "formula_sha256": digest(cnf), "proof_sha256": digest(drat),
+            "status_lines": statuses,
+            "exit_zero_and_verified_only": result["returncode"] == 0 and statuses == ["s VERIFIED"],
+        })
+        observations.append(result)
+        (controls / (name + ".stdout.txt")).write_text(stdout, encoding="utf-8")
+        (controls / (name + ".stderr.txt")).write_text(result.get("stderr", ""), encoding="utf-8")
+    expected = {
+        "contradictory_units": True, "valid_nontrivial_rup": True,
+        "forged_empty_clause": False, "forged_incomplete_proof": False,
+        "mutated_unit_formula": False, "mutated_binary_formula": False,
+        "malformed_header": False,
+    }
+    report["controls"] = observations
+    report["checked_expected_acceptance"] = {
+        item["name"]: item["exit_zero_and_verified_only"] == expected[item["name"]]
+        for item in observations if item["name"] in expected
+    }
+    report["source_unchanged_during_run"] = (
+        hashes == {name: digest(SOURCE / name) for name in paths}
+        and not run(["git", "status", "--porcelain"], cwd=SOURCE)["stdout"]
+    )
+    report["status"] = ("PASS" if all(report["checked_expected_acceptance"].values())
+                        and report["source_unchanged_during_run"] else "CONTROL_FAILURE")
+    report["important_semantics"] = [
+        "Exit0 alone does not mean verified: malformed header and source TIMEOUT paths can exit0.",
+        "Require exactly the standalone status s VERIFIED and an allowed returncode; reject other statuses.",
+        "The contradictory-unit case can be checked from the original formula itself.",
+        "An original empty clause may print VERIFIED with a nonzero exit; inspect its recorded observation.",
+        "Native -t is not an encompassing subprocess wall-clock deadline; use an external timeout.",
+        "These are bounded controls of the compiled public checker, not formal verification of its implementation.",
+    ]
+    (HERE / "BUILD_AND_TEST.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
+    print(json.dumps({
+        "status": report["status"], "source_revision": REVISION,
+        "binary_sha256": report["binary_sha256"],
+        "controls": [{"name": item["name"], "returncode": item["returncode"],
+                      "status_lines": item["status_lines"]} for item in observations],
+    }, indent=2))
+    if report["status"] != "PASS":
+        raise SystemExit(1)
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,52 @@
+test_all_original_clauses_are_validated (test_rup_verify.RUPTests) ... ok
+test_caps_are_strict_and_comments_are_metered (test_rup_verify.RUPTests) ... ok
+test_deleted_reason_for_previously_propagated_unit (test_rup_verify.RUPTests) ... ok
+test_deletion_canonicalization_and_added_copies (test_rup_verify.RUPTests) ... ok
+test_deletion_removes_one_multiset_occurrence (test_rup_verify.RUPTests) ... ok
+test_duplicate_literals_and_tautologies (test_rup_verify.RUPTests) ... ok
+test_exhaustive_all_two_variable_cnfs (test_rup_verify.RUPTests) ... ok
+test_exhaustive_short_one_variable_traces_are_sound (test_rup_verify.RUPTests) ... ok
+test_explicit_completion_and_zero_variables (test_rup_verify.RUPTests) ... ok
+test_input_binding_and_no_rat_fallback (test_rup_verify.RUPTests) ... ok
+test_no_early_return_after_empty_clause (test_rup_verify.RUPTests) ... ok
+test_no_input_mutation_or_variable_universe_allocation (test_rup_verify.RUPTests) ... ok
+test_nontrivial_refutation_requires_derived_units (test_rup_verify.RUPTests) ... ok
+test_step_byte_literal_and_work_caps (test_rup_verify.RUPTests) ... ok
+test_strict_original_types_and_bounds (test_rup_verify.RUPTests) ... ok
+test_strict_proof_encoding_and_termination (test_rup_verify.RUPTests) ... ok
+test_strict_proof_literal_syntax (test_rup_verify.RUPTests) ... ok
+test_all_two_variable_formulas_and_models (test_public_sat_certificate.PublicSatCertificateTests) ... ok
+test_bare_module_names_cannot_replace_the_checkers (test_public_sat_certificate.PublicSatCertificateTests) ... ok
+test_candidate_fields_are_strict (test_public_sat_certificate.PublicSatCertificateTests) ... ok
+test_case_generators_match_independent_small_truth_tables (test_public_sat_certificate.PublicSatCertificateTests) ... ok
+test_complete_strict_boolean_models_and_unused_variables (test_public_sat_certificate.PublicSatCertificateTests) ... ok
+test_dimacs_exact_original_and_input_not_mutated (test_public_sat_certificate.PublicSatCertificateTests) ... ok
+test_external_checker_status_contract (test_public_sat_certificate.PublicSatCertificateTests) ... ok
+test_native_envelopes_all_two_variable_originals (test_public_sat_certificate.PublicSatCertificateTests) ... ok
+test_native_original_binding_even_with_rebound_hash (test_public_sat_certificate.PublicSatCertificateTests) ... ok
+test_native_tampered_proof_model_and_envelope (test_public_sat_certificate.PublicSatCertificateTests) ... ok
+test_native_unknown_and_no_enumeration_dependency (test_public_sat_certificate.PublicSatCertificateTests) ... ok
+test_native_worker_subprocess_preserves_original (test_public_sat_certificate.PublicSatCertificateTests) ... ok
+test_original_hash_binding_does_not_replace_mathematics (test_public_sat_certificate.PublicSatCertificateTests) ... ok
+test_original_request_strict_fields_and_literals (test_public_sat_certificate.PublicSatCertificateTests) ... ok
+test_public_worker_drains_proof_before_close_for_every_status (test_public_sat_certificate.PublicSatCertificateTests) ... ok
+test_rebound_adversaries_survive_python_optimization (test_public_sat_certificate.PublicSatCertificateTests) ... ok
+test_replay_artifact_and_source_declarations_are_complete (test_public_sat_certificate.PublicSatCertificateTests) ... ok
+test_replay_complete_original_proofs_and_pair_coverage (test_public_sat_certificate.PublicSatCertificateTests) ... ok
+test_replay_rejects_changed_evidence_and_rebound_false_proof (test_public_sat_certificate.PublicSatCertificateTests) ... ok
+test_reported_unknown_is_strict_and_has_no_decision (test_public_sat_certificate.PublicSatCertificateTests) ... ok
+test_resource_unknown_is_not_a_decision (test_public_sat_certificate.PublicSatCertificateTests) ... ok
+test_rup_proposal_bad_shapes_and_forged_additions (test_public_sat_certificate.PublicSatCertificateTests) ... ok
+test_rup_proposal_preserves_raw_and_requires_original_replay (test_public_sat_certificate.PublicSatCertificateTests) ... ok
+test_saved_case_family_requests_and_planted_witnesses (test_public_sat_certificate.PublicSatCertificateTests) ... ok
+test_text_and_bytes_proof_binding_and_complete_replay (test_public_sat_certificate.PublicSatCertificateTests) ... ok
+test_units_original_empty_clause_and_tautologies (test_public_sat_certificate.PublicSatCertificateTests) ... ok
+test_complete_paired_campaign (test_public_sat_evidence.PublicSatEvidenceTests) ... ok
+test_failed_raw_trace_and_checked_separate_proposal (test_public_sat_evidence.PublicSatEvidenceTests) ... ok
+test_nonzero_children_are_not_promoted_from_partial_output (test_public_sat_evidence.PublicSatEvidenceTests) ... ok
+test_rejected_pilot_is_retained_as_failed_evidence (test_public_sat_evidence.PublicSatEvidenceTests) ... ok
+
+----------------------------------------------------------------------
+Ran 47 tests in 32.335s
+
+OK

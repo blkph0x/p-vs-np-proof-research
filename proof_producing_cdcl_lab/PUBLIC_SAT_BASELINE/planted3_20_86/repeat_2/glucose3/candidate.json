@@ -1,0 +1,27 @@
+{
+  "model": [
+    true,
+    true,
+    true,
+    true,
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    true,
+    true,
+    true,
+    true,
+    false,
+    false,
+    true
+  ],
+  "request_sha256": "072a1045d2271733885038c2d1d392211b0a2293717c2de14d64d6d4f9c17437",
+  "schema": "public-sat-candidate-v1",
+  "status": "SAT"
+}

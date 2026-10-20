@@ -1,0 +1,2 @@
+
+c ERROR: did not find p cnf line in input file

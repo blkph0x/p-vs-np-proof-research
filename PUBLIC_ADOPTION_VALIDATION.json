@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "scope": "focused new SAT and locality-ten tests; not a whole-repository audit or performance benchmark",
+  "python": "3.10.10 | packaged by conda-forge | (main, Mar 24 2023, 20:00:38) [MSC v.1934 64 bit (AMD64)]",
+  "source_unchanged": true,
+  "source_sha256_lf": {
+    "proof_producing_cdcl_lab/test_public_sat_certificate.py": "cba52644a55d2d6acce368a22ad1d34ac7a21b665eadf757dd77acc27ea6780f",
+    "proof_producing_cdcl_lab/test_public_sat_evidence.py": "e1fadbf6063589fb2933a28e6193d9fb343110edc83290112740f200933224c3",
+    "proof_producing_cdcl_lab/test_rup_verify.py": "741a817e15f5f8fb0217491d358ca7afedbe14dbf91d5c15ddca3302bf0b830d",
+    "proof_producing_cdcl_lab/run_public_sat.py": "a888aeed23e7e2e0baaac4a9acd22f3ebca9a6917b17197ae30ba55a39e567a0",
+    "proof_producing_cdcl_lab/rup_verify.py": "d6aee0e014262d0d731f4adeb91d50c52992d51fe6ce7c560e479344563471eb",
+    "proof_producing_cdcl_lab/sat_backend_certificate.py": "ee9d802251324bf3c03eea4acdaa2b00376cff0d87b7e0b0f45826be44fa564d",
+    "proof_producing_cdcl_lab/public_sat_cases.py": "113f7693f1ea55064a8fd2ef375b35cd2e023806cf02370e6a09fbe2f267351a",
+    "local_marginal_code_lab/test_rm2_level10_control.py": "487f3fada45f15dd6cdc362f8995ae30c439807f561f1b9f38f75713feb70729",
+    "local_marginal_code_lab/RM2_LEVEL10_CONTROL.md": "d457ffc72d9f496eaa476556275efbc1ba0fc1e28ae19300b3f92b8f5b8e86c0"
+  },
+  "suites": [
+    {
+      "suite": "public_sat",
+      "mode": "normal",
+      "returncode": 0,
+      "test_methods": 47,
+      "wall_seconds": 32.59926769975573,
+      "transcript": "proof_producing_cdcl_lab/PUBLIC_SAT_TESTS.txt"
+    },
+    {
+      "suite": "locality_ten",
+      "mode": "normal",
+      "returncode": 0,
+      "test_methods": 7,
+      "wall_seconds": 47.28835879964754,
+      "transcript": "local_marginal_code_lab/RM2_LEVEL10_TESTS.txt"
+    },
+    {
+      "suite": "public_sat",
+      "mode": "optimized",
+      "returncode": 0,
+      "test_methods": 47,
+      "wall_seconds": 32.02256000041962,
+      "transcript": "proof_producing_cdcl_lab/PUBLIC_SAT_TESTS_OPTIMIZED.txt"
+    },
+    {
+      "suite": "locality_ten",
+      "mode": "optimized",
+      "returncode": 0,
+      "test_methods": 7,
+      "wall_seconds": 47.08248730003834,
+      "transcript": "local_marginal_code_lab/RM2_LEVEL10_TESTS_OPTIMIZED.txt"
+    }
+  ]
+}

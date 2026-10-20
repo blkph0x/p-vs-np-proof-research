@@ -1,17 +1,17 @@
 {
-  "file_count": 1416,
+  "file_count": 2172,
   "files": {
     ".gitattributes": {
-      "bytes": 1325,
-      "sha256": "92e8c9b32faaaecae6bd34cc4cdb44d65410bbede889215baca7fbba67bbd4cf"
+      "bytes": 1812,
+      "sha256": "e4d2f51998f5149350edad2422c61ce8d04c7be01a3e10811770fcc37a62f814"
     },
     ".github/workflows/pages.yml": {
       "bytes": 826,
       "sha256": "8fdbe59654d74f073e56039d336fe737646ff55d3f938d184f64fa5f401a62ce"
     },
     ".github/workflows/research-checks.yml": {
-      "bytes": 10045,
-      "sha256": "59f97c875764a5ceb220c369ac490443bf672ebceb567668f406bbe75787864a"
+      "bytes": 10697,
+      "sha256": "6a322e4aeafe8fac0a67487a74d54d4bf298a5db9f01bdbb1fada357c4a63ea3"
     },
     ".gitignore": {
       "bytes": 415,
@@ -251,7 +251,7 @@
     },
     "FOLLOWUP_ARTIFACT_AUDIT.json": {
       "bytes": 31381,
-      "sha256": "afe59594cc1da12284dbdfabdd21dacdeed52d8342838bd4c3dd9127ac328e27"
+      "sha256": "613ce00043a22b39b0c9d4089d74f996086f3b8e73152afe4f25abf66af74015"
     },
     "FOLLOWUP_TEST_OUTPUT.txt": {
       "bytes": 4601,
@@ -310,8 +310,8 @@
       "sha256": "7401f5cf6b946a82cec459cbaf5a62cb4b5237b8f96501e7f0496a3efc662683"
     },
     "METHOD_INDEX.md": {
-      "bytes": 29516,
-      "sha256": "a04bd91d49bdc2d2e80dcb9a060a48ca8802cd0b3a6e0b46aa5a6dfa337efb87"
+      "bytes": 30221,
+      "sha256": "d0d3157b42dc2be631598545d6ba0f5473f4b0aecae5e20aa433e63e9e4d04cb"
     },
     "NATIVE_RESULTS.csv": {
       "bytes": 11436,
@@ -365,21 +365,25 @@
       "bytes": 3134,
       "sha256": "a2ad1d52ccdcaa0ba34e59070c8a709aa5f89135f554c5b1cb61d5be0bec15e0"
     },
+    "PUBLIC_ADOPTION_VALIDATION.json": {
+      "bytes": 2344,
+      "sha256": "047c937b9cff03b9715e4d69d9c7acdf412a2b48b3dc95d43db0aec27503294c"
+    },
     "PUBLIC_METHOD_INVENTORY.json": {
-      "bytes": 795609,
-      "sha256": "6331f756c9f7dd2ffb7017bc23fe827227dd3a71b1ad07d8b9f1bc58b0ab4661"
+      "bytes": 815412,
+      "sha256": "3022b51040bc16e076152dbfaabb03d626766f0c6b8361e923db84e7bc7dc7b0"
     },
     "PUBLIC_METHOD_REVIEW.md": {
-      "bytes": 34231,
-      "sha256": "7d2db08729cd2c8cf20ccc691096aea5f70f6fb370c46c79c21f474f39e540dd"
+      "bytes": 36212,
+      "sha256": "7d11602caaf20e96ad5e0b1563cec2c1f78161402d9187824ceb9ff34a74b499"
     },
     "PUBLIC_METHOD_VALIDATION.json": {
       "bytes": 10301,
       "sha256": "b7ba4c87fb645c9b3bc62ba57d32ffc1e27128b5c6164238d83ae3228f1eacfd"
     },
     "PUBLIC_SOURCES.md": {
-      "bytes": 16338,
-      "sha256": "5cc9fbeee3ce7fe1eb5e6d3a1878bdb7397ad4391f8f3a37e8e2c537749d53da"
+      "bytes": 18965,
+      "sha256": "4ad2dbc4e940d0e0ed71b321a1edd36b87cb7f8099181f31859c703e9fcd6d0a"
     },
     "RANDOMIZED_ISOLATION_REPORT.md": {
       "bytes": 915,
@@ -402,8 +406,8 @@
       "sha256": "631ec13d33a0045e6421133fee346759f9186117b909bdd327a954ddac826356"
     },
     "README.md": {
-      "bytes": 61159,
-      "sha256": "ba0f1c740d18bfd16daae5812f4f71524f0261b692cded5db5b45c4f3c75e23f"
+      "bytes": 61845,
+      "sha256": "d8ad9eff5b412f9c2610e6827238375472912fec36bf8587b8f6b4d7ee7b20cb"
     },
     "REFEREE_RESPONSE_2026_10_20.md": {
       "bytes": 10976,
@@ -446,8 +450,8 @@
       "sha256": "e2613751a02ed13945172439c64bf9dbd13201e9102592f1e3485f25d89a6dad"
     },
     "REPRODUCIBILITY.md": {
-      "bytes": 11191,
-      "sha256": "c1fb35da1cc13edbca6cad5ebffb2f162bf72c046d06e47f1a038c9de1cdb783"
+      "bytes": 12011,
+      "sha256": "2f1f682b1aad66cf36b4312c8a55ad5b69342bc53a8283ef8a32ca153e8e56ee"
     },
     "RESIDUAL_EQUIVALENCE_BARRIER.json": {
       "bytes": 106347,
@@ -466,8 +470,8 @@
       "sha256": "d7d103f37e85cce87a5e236fbe90116277e0d0e76196239d73fa76b9e782fab1"
     },
     "ROADMAP.md": {
-      "bytes": 44184,
-      "sha256": "ad4aa4ba249d541bdf7c5f45cea8733eeffca78e018d6d1ea4f28ccf10b0de8d"
+      "bytes": 44718,
+      "sha256": "395ba293d7dbb1c1f2dcb28d3df23b952c1287370e4bbf57d79e7267c89207c0"
     },
     "ROW_BASIS_ESCAPE_RESULTS.json": {
       "bytes": 9367083,
@@ -2266,8 +2270,8 @@
       "sha256": "ce86680f49890fe07bdb95febd996ac2fdf8b2d45cd25b7e5b8863026581c070"
     },
     "index.md": {
-      "bytes": 18612,
-      "sha256": "9f550e8f5cb9d754ebf0bbd65121b7d5f022c53844832734396e777151f044e4"
+      "bytes": 19162,
+      "sha256": "82fd7ac4cd58ab060f3b67777004421e432bcb52573a2798789d9670dc4eae41"
     },
     "interval_coefficient_lab/INDEPENDENT_REVIEW.md": {
       "bytes": 7681,
@@ -2630,12 +2634,12 @@
       "sha256": "4799b862dacdcdde16a12de66050ad2daf6cfbeaeee2d266681e4053042529ac"
     },
     "local_marginal_code_lab/LOCAL_MARGINAL_NOVELTY_LEDGER.md": {
-      "bytes": 9231,
-      "sha256": "42035a5fdbe4f3ad9ecadb13faede59e2a31dfc924e802543248890acd48ff3b"
+      "bytes": 16683,
+      "sha256": "fa7250c841b5ccef449963ff23b131573bb7efa82d7a53bf4456f2090f9166e0"
     },
     "local_marginal_code_lab/README.md": {
-      "bytes": 12336,
-      "sha256": "9faa4f99d06b3e4a7f98a103cdb9ff61c3525d245091473ada98f32633fe4058"
+      "bytes": 13202,
+      "sha256": "0bc9ab876da61221993d509aef48929816eb4fdc5147382593de416f3d7dad3a"
     },
     "local_marginal_code_lab/REED_MULLER_AFFINE_OVERLAP_DUAL_NOTE.md": {
       "bytes": 5408,
@@ -2810,8 +2814,8 @@
       "sha256": "13b915965a993926631763e0b648c991df4d72fd4093c8c59562b4e3e98792c1"
     },
     "local_marginal_code_lab/REED_MULLER_QUADRATIC_LEVEL9_THEOREM.md": {
-      "bytes": 20102,
-      "sha256": "f14bebb4f1b61d26607108fae50ed2be101bfb9b0b484b0ad598457ccb9e5fee"
+      "bytes": 21068,
+      "sha256": "379f28edaf1df4226c0a12deaa210e8b05ff9570c302a215a10d0a9ce19b4a70"
     },
     "local_marginal_code_lab/REED_MULLER_QUOTIENT_EQUIVALENCE.md": {
       "bytes": 2790,
@@ -3009,13 +3013,25 @@
       "bytes": 7326,
       "sha256": "82f27544ec48e9207d6152b642e8d8bd7b8c8e453922a567bdf403cac327078b"
     },
+    "local_marginal_code_lab/RM2_LEVEL10_CONTROL.md": {
+      "bytes": 7172,
+      "sha256": "d457ffc72d9f496eaa476556275efbc1ba0fc1e28ae19300b3f92b8f5b8e86c0"
+    },
+    "local_marginal_code_lab/RM2_LEVEL10_TESTS.txt": {
+      "bytes": 825,
+      "sha256": "d2d7937fa2934a9ea8b4975e4bb69128a21b0ce2e1cb5ba86760370bf3904082"
+    },
+    "local_marginal_code_lab/RM2_LEVEL10_TESTS_OPTIMIZED.txt": {
+      "bytes": 825,
+      "sha256": "8a199c9cead1b9438cd4b7a3304856c3ec20f244e4e649a7e8c7b57f06f39541"
+    },
     "local_marginal_code_lab/RM2_LEVEL8_FAMILY_REVIEW.json": {
       "bytes": 5106,
       "sha256": "c4a191ab8f48995f0c7cea478f59582db2fb6bae7374c4ea60548604eebba154"
     },
     "local_marginal_code_lab/RM2_LEVEL9_FAMILY_REVIEW.json": {
-      "bytes": 3456,
-      "sha256": "455453e0e2dc9f612730a63af7728ad18fb1c4da13b267516badd1806ffbe471"
+      "bytes": 3330,
+      "sha256": "c499be62949fac621f4ae05e2de89022d9e3e91153f5ccdbb2b3e1eb08dc39d6"
     },
     "local_marginal_code_lab/RM2_LEVEL9_FAMILY_TESTS.txt": {
       "bytes": 905,
@@ -3142,8 +3158,8 @@
       "sha256": "0d601944f997ab56ff7ffef70de8c9e79b70128dd1eb2b301fa208524d1d1771"
     },
     "local_marginal_code_lab/TRUST_CHAIN.md": {
-      "bytes": 6594,
-      "sha256": "6aba80c87de6f8c9ed9e2233573c7220ba6588fe7a33e45c6b43ca5c797643d6"
+      "bytes": 7258,
+      "sha256": "94da1d36558c774ea06c9d0fd3bc17318fcc772a7fc9565ec561cdbf52bf5748"
     },
     "local_marginal_code_lab/all_dual_local_reed_muller.py": {
       "bytes": 9757,
@@ -3364,6 +3380,10 @@
     "local_marginal_code_lab/test_reed_muller_sos_two_cut.py": {
       "bytes": 3943,
       "sha256": "2730646d71878e4c119b187d8dcae1fc38d2beb089bc258ea11ad0db0b5a011e"
+    },
+    "local_marginal_code_lab/test_rm2_level10_control.py": {
+      "bytes": 9282,
+      "sha256": "487f3fada45f15dd6cdc362f8995ae30c439807f561f1b9f38f75713feb70729"
     },
     "local_marginal_code_lab/test_rm2_level8_family.py": {
       "bytes": 7168,
@@ -4089,9 +4109,2981 @@
       "bytes": 15081,
       "sha256": "450e42495f7f901fdee539ee315ae35fd3b58dbb94a85b1ce343036bc4176994"
     },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/ARCHIVE_MANIFEST.json": {
+      "bytes": 8228,
+      "sha256": "2454e102afe3731f8960ac903769155888a9d824f2cf5a7580cb91049c0bd589"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/README.md": {
+      "bytes": 832,
+      "sha256": "77b0b529c12918ba717a43aa7db865769dc5e279fccb1bd66f9255d0ed60f3df"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/drat-trim/BUILD.md": {
+      "bytes": 4378,
+      "sha256": "176646cb1d120233f4ab810d1bd5a830f8ed50f7eea14b12ba8d0c289c95ef21"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/drat-trim/BUILD_AND_TEST.json": {
+      "bytes": 13090,
+      "sha256": "06c00c13712160ed028f2ec24c35b56d3cfa6884737bb3aac1457996f3934c6c"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/drat-trim/LICENSE": {
+      "bytes": 1184,
+      "sha256": "71ab2a9dc5a294ad8fba4ccb8c45aaa8a439596d314a2a046ac9b62266872a18"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/drat-trim/build_and_test.py.txt": {
+      "bytes": 7569,
+      "sha256": "11e798702c8ec344e61aecae4984a741680f6400cc1f7688cb48dbb16bfc13f5"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/drat-trim/controls/contradictory_units.cnf": {
+      "bytes": 19,
+      "sha256": "ac42a371b5a124286c410ed5dfa2e3be7ee7d5b1feac6f08e7e1715f0c3669a8"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/drat-trim/controls/contradictory_units.drat": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/drat-trim/controls/contradictory_units.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/drat-trim/controls/contradictory_units.stdout.txt": {
+      "bytes": 164,
+      "sha256": "e51847ceb933905edecc4e6cfc0da03f5988476329a1b466fab417ed5725c350"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/drat-trim/controls/forged_empty_clause.cnf": {
+      "bytes": 38,
+      "sha256": "bdcfed14408fb3f368fe82437336d283a9dedc953677460e9c7317724c5e1e58"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/drat-trim/controls/forged_empty_clause.drat": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/drat-trim/controls/forged_empty_clause.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/drat-trim/controls/forged_empty_clause.stdout.txt": {
+      "bytes": 150,
+      "sha256": "c858d089860574f70e3a7e08dc01e519beb7095560cdd5bc1a70cb1077dc3807"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/drat-trim/controls/forged_incomplete_proof.cnf": {
+      "bytes": 38,
+      "sha256": "bdcfed14408fb3f368fe82437336d283a9dedc953677460e9c7317724c5e1e58"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/drat-trim/controls/forged_incomplete_proof.drat": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/drat-trim/controls/forged_incomplete_proof.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/drat-trim/controls/forged_incomplete_proof.stdout.txt": {
+      "bytes": 150,
+      "sha256": "252f2e65a67b7665783c0bc926f2801c8f799222dab7ecaac1c3ee174a9fd617"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/drat-trim/controls/malformed_header.cnf": {
+      "bytes": 19,
+      "sha256": "31b9283ec574ac747ee9e3bc2a641b04655f8732147f3a07092b1d2037dd57b6"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/drat-trim/controls/malformed_header.drat": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/drat-trim/controls/malformed_header.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/drat-trim/controls/malformed_header.stdout.txt": {
+      "bytes": 48,
+      "sha256": "68d5f027015586e9c81068c2ccca6d9fbfc266cfaeb79e5e83ee5b0e40155880"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/drat-trim/controls/mutated_binary_formula.cnf": {
+      "bytes": 30,
+      "sha256": "cbff19c5ea74c8fc8e307afe9fe1ce08682bb98ec3b10983068b10376f847534"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/drat-trim/controls/mutated_binary_formula.drat": {
+      "bytes": 6,
+      "sha256": "ed124fbf8ffd811c88b3cc955212778eacce7a20b83ad9c8e79a9729cfb9b0b9"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/drat-trim/controls/mutated_binary_formula.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/drat-trim/controls/mutated_binary_formula.stdout.txt": {
+      "bytes": 150,
+      "sha256": "d7fc50cb5cc2335d51cd2831e1d4d1e8ed203064953d32386e5fc15e07d43f70"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/drat-trim/controls/mutated_unit_formula.cnf": {
+      "bytes": 18,
+      "sha256": "139098746dcb0c2fbf2ca679aa3685151ae36a54f2e527a67cb0cbac1606bed4"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/drat-trim/controls/mutated_unit_formula.drat": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/drat-trim/controls/mutated_unit_formula.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/drat-trim/controls/mutated_unit_formula.stdout.txt": {
+      "bytes": 150,
+      "sha256": "cf9597c2511aca45fe4e08f9234469104a688d3a3a91bf9c86c4497411d49d74"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/drat-trim/controls/original_empty_clause.cnf": {
+      "bytes": 12,
+      "sha256": "f364ffcd5393d01f269f71f59f1015a0238ca88f3a9b6ae3483961cf0451880b"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/drat-trim/controls/original_empty_clause.drat": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/drat-trim/controls/original_empty_clause.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/drat-trim/controls/original_empty_clause.stdout.txt": {
+      "bytes": 140,
+      "sha256": "3aeb093a2f7e118cc732f537119b55e0a0506dfac820c8870d1fcf8c38572397"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/drat-trim/controls/valid_nontrivial_rup.cnf": {
+      "bytes": 38,
+      "sha256": "bdcfed14408fb3f368fe82437336d283a9dedc953677460e9c7317724c5e1e58"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/drat-trim/controls/valid_nontrivial_rup.drat": {
+      "bytes": 6,
+      "sha256": "ed124fbf8ffd811c88b3cc955212778eacce7a20b83ad9c8e79a9729cfb9b0b9"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/drat-trim/controls/valid_nontrivial_rup.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/drat-trim/controls/valid_nontrivial_rup.stdout.txt": {
+      "bytes": 356,
+      "sha256": "5a2958c10ca80700a11f0c353622c6f5db9f38a4cada526a7dd9834fa4ee9e0f"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/pysat-crash/DIAGNOSIS.md": {
+      "bytes": 4378,
+      "sha256": "13e712ac39fb8d4e56373e20f2d598c57ca794b4a912d6a11207d88c5f7df61d"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/pysat-crash/RESULTS.json": {
+      "bytes": 108288,
+      "sha256": "daa82028825b2d0578511c95c7f015ea4172cab6e4f60f88f9d77c20cec8e15d"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/pysat-crash/SOURCE.json": {
+      "bytes": 893,
+      "sha256": "12f55a2709bc99364cc4fd8445124f17c16b5dd0208bddd97c70429f1c167a80"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/pysat-crash/planted3_20_86.json": {
+      "bytes": 1253,
+      "sha256": "57dc02988d8b3b57691f31993434d469dd2f2407c6874364dfef0849554cce08"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/pysat-crash/planted3_40_172.json": {
+      "bytes": 2577,
+      "sha256": "0198fb90782b1340efaeb8c2d2b0217ba90cbc3b30c4807f00a2b84dd9fdec13"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/pysat-crash/probe.py.txt": {
+      "bytes": 2140,
+      "sha256": "9b3679a8f32fbc4439906944039af6b37bbad22ab2acb831803a9a4ea87e5ef8"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/pysat-crash/random3_20_86.json": {
+      "bytes": 1258,
+      "sha256": "f80897f88f82cc86e246e64f276bf24dd4bb5b3d294df45c2a4e85d9d36ae96c"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/pysat-crash/random3_40_172.json": {
+      "bytes": 2600,
+      "sha256": "159e021b456f6ae94c0ec95467a1ddf19c696f7c506fecb0dbdd03bb7ab85958"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/pysat-crash/run_diagnosis.py.txt": {
+      "bytes": 3680,
+      "sha256": "d8fce29404b0e75987b127579364b2220d990244ccf33fc976a49262eb366260"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/pysat-crash/simple_unit_sat.json": {
+      "bytes": 60,
+      "sha256": "d639faad5b40e8b642e5626f5bda77d774824fcd30f446d6081e26ecee6bca52"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/pysat-crash/units_unsat.json": {
+      "bytes": 66,
+      "sha256": "7ba8624884b091344611bcfc96a0e0849f1cd79a4093442839982e47902a82e3"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/pysat-crash/unused_variables_sat.json": {
+      "bytes": 72,
+      "sha256": "78bfde4991f8f23cc09642391c2143ec1113674e866bd4f4ab5f15046f39e343"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE.md": {
+      "bytes": 12157,
+      "sha256": "535bf8c84c77a43bd19670dbb5a0f52a30b06b53d70b14bc637e199ff8c81396"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/benchmark.json": {
+      "bytes": 299237,
+      "sha256": "660ae9568799fa5d3ada667410eff7edb2d4d65ee8422386a47caf11987d0170"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/duplicates_tautologies_sat/input.cnf": {
+      "bytes": 34,
+      "sha256": "f1bf8b7b54a7c9aa3f39777093a58f05c8f893bbad4f46f49cf4f1f74b6dad7b"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/duplicates_tautologies_sat/repeat_0/glucose3/candidate.json": {
+      "bytes": 197,
+      "sha256": "87f0a9710e31e339a1fc9e2a2c1a04b3fd2e6b36b7471fbe30bcaf0246a57117"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/duplicates_tautologies_sat/repeat_0/glucose3/raw-proof.drup": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/duplicates_tautologies_sat/repeat_0/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/duplicates_tautologies_sat/repeat_0/glucose3/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "0e0909ee693dcdc472995da33db3dc0d7d665531f1b63c0b53e8813699f99ea9"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/duplicates_tautologies_sat/repeat_0/glucose3/worker.json": {
+      "bytes": 616,
+      "sha256": "4961c8493228bee923c0c9d6ac55c6f790bfd89642f4b6dae21d77a34d591833"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/duplicates_tautologies_sat/repeat_0/native/candidate.json": {
+      "bytes": 575,
+      "sha256": "51385fa0314e9887045d9b7a36a6f237d581305d611dce9d660111bbb06d2d0e"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/duplicates_tautologies_sat/repeat_0/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/duplicates_tautologies_sat/repeat_0/native/search.stdout.txt": {
+      "bytes": 39,
+      "sha256": "68cbf5a646aadfe87f4857baa5377b133740428c65bc913a3419caafc2709ffa"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/duplicates_tautologies_sat/repeat_0/native/worker.json": {
+      "bytes": 415,
+      "sha256": "d8915d1621d77879e4d99f67f0529f4e8845dbc6a75cb28129528ee1ea8ae02f"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/duplicates_tautologies_sat/repeat_1/glucose3/candidate.json": {
+      "bytes": 197,
+      "sha256": "87f0a9710e31e339a1fc9e2a2c1a04b3fd2e6b36b7471fbe30bcaf0246a57117"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/duplicates_tautologies_sat/repeat_1/glucose3/raw-proof.drup": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/duplicates_tautologies_sat/repeat_1/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/duplicates_tautologies_sat/repeat_1/glucose3/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "0e0909ee693dcdc472995da33db3dc0d7d665531f1b63c0b53e8813699f99ea9"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/duplicates_tautologies_sat/repeat_1/glucose3/worker.json": {
+      "bytes": 614,
+      "sha256": "42dbba0211ff2d6423cc7a694f3b2b69a3d621501fb81669efef079696490edd"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/duplicates_tautologies_sat/repeat_1/native/candidate.json": {
+      "bytes": 575,
+      "sha256": "51385fa0314e9887045d9b7a36a6f237d581305d611dce9d660111bbb06d2d0e"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/duplicates_tautologies_sat/repeat_1/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/duplicates_tautologies_sat/repeat_1/native/search.stdout.txt": {
+      "bytes": 39,
+      "sha256": "68cbf5a646aadfe87f4857baa5377b133740428c65bc913a3419caafc2709ffa"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/duplicates_tautologies_sat/repeat_1/native/worker.json": {
+      "bytes": 414,
+      "sha256": "0c7a49f3827a3fc0bf1ef76b7333951b394632b21f357d7c51b0b02aa36db90c"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/duplicates_tautologies_sat/repeat_2/glucose3/candidate.json": {
+      "bytes": 197,
+      "sha256": "87f0a9710e31e339a1fc9e2a2c1a04b3fd2e6b36b7471fbe30bcaf0246a57117"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/duplicates_tautologies_sat/repeat_2/glucose3/raw-proof.drup": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/duplicates_tautologies_sat/repeat_2/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/duplicates_tautologies_sat/repeat_2/glucose3/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "0e0909ee693dcdc472995da33db3dc0d7d665531f1b63c0b53e8813699f99ea9"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/duplicates_tautologies_sat/repeat_2/glucose3/worker.json": {
+      "bytes": 615,
+      "sha256": "97f9de75a74916d8d4501adde543168f7659fa83085786145199d8f60e2ee137"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/duplicates_tautologies_sat/repeat_2/native/candidate.json": {
+      "bytes": 575,
+      "sha256": "51385fa0314e9887045d9b7a36a6f237d581305d611dce9d660111bbb06d2d0e"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/duplicates_tautologies_sat/repeat_2/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/duplicates_tautologies_sat/repeat_2/native/search.stdout.txt": {
+      "bytes": 39,
+      "sha256": "68cbf5a646aadfe87f4857baa5377b133740428c65bc913a3419caafc2709ffa"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/duplicates_tautologies_sat/repeat_2/native/worker.json": {
+      "bytes": 415,
+      "sha256": "d6b9ba873946b54acf5c16e7734c0702a3257e3222479072b3fcc0f491d47469"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/duplicates_tautologies_sat/request.json": {
+      "bytes": 180,
+      "sha256": "97acabce7cb8dcc4235e5bc87f928c6ce4ae77c2f6c5d8a198290509751080e2"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/empty_sat/input.cnf": {
+      "bytes": 10,
+      "sha256": "e160232d0ce8816f12ecdcdc7bb0e939b55fb5ca43414ae6077dfa3989655732"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/empty_sat/repeat_0/glucose3/candidate.json": {
+      "bytes": 164,
+      "sha256": "e6a682ab86ec31410cac5e4955d68417a6fbb060f27dfc29d1b44729a825e2a1"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/empty_sat/repeat_0/glucose3/raw-proof.drup": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/empty_sat/repeat_0/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/empty_sat/repeat_0/glucose3/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "0e0909ee693dcdc472995da33db3dc0d7d665531f1b63c0b53e8813699f99ea9"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/empty_sat/repeat_0/glucose3/worker.json": {
+      "bytes": 615,
+      "sha256": "ef71bbabebededa10f4380425a0d1e4d03d32226327d6dab8651f26fe049fc2c"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/empty_sat/repeat_0/native/candidate.json": {
+      "bytes": 422,
+      "sha256": "556a2a707f44021488c218c325ab6b00ba607853de0c83d1b2d180842fb5b45e"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/empty_sat/repeat_0/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/empty_sat/repeat_0/native/search.stdout.txt": {
+      "bytes": 39,
+      "sha256": "68cbf5a646aadfe87f4857baa5377b133740428c65bc913a3419caafc2709ffa"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/empty_sat/repeat_0/native/worker.json": {
+      "bytes": 413,
+      "sha256": "2f8e3e46160f7f80de6aca9b7e6f18c2c30749ff2b500153b95219531d4fee96"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/empty_sat/repeat_1/glucose3/candidate.json": {
+      "bytes": 164,
+      "sha256": "e6a682ab86ec31410cac5e4955d68417a6fbb060f27dfc29d1b44729a825e2a1"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/empty_sat/repeat_1/glucose3/raw-proof.drup": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/empty_sat/repeat_1/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/empty_sat/repeat_1/glucose3/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "0e0909ee693dcdc472995da33db3dc0d7d665531f1b63c0b53e8813699f99ea9"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/empty_sat/repeat_1/glucose3/worker.json": {
+      "bytes": 616,
+      "sha256": "40ac1cb9ca76f52898de996fb40ed7b9a7ffbf217b5966331aeb9ddabbcb23b3"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/empty_sat/repeat_1/native/candidate.json": {
+      "bytes": 422,
+      "sha256": "556a2a707f44021488c218c325ab6b00ba607853de0c83d1b2d180842fb5b45e"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/empty_sat/repeat_1/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/empty_sat/repeat_1/native/search.stdout.txt": {
+      "bytes": 39,
+      "sha256": "68cbf5a646aadfe87f4857baa5377b133740428c65bc913a3419caafc2709ffa"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/empty_sat/repeat_1/native/worker.json": {
+      "bytes": 415,
+      "sha256": "19cdc2872f594881f33bf183c75c0227b556e03e2a96679d253ad79f177ec3fc"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/empty_sat/repeat_2/glucose3/candidate.json": {
+      "bytes": 164,
+      "sha256": "e6a682ab86ec31410cac5e4955d68417a6fbb060f27dfc29d1b44729a825e2a1"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/empty_sat/repeat_2/glucose3/raw-proof.drup": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/empty_sat/repeat_2/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/empty_sat/repeat_2/glucose3/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "0e0909ee693dcdc472995da33db3dc0d7d665531f1b63c0b53e8813699f99ea9"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/empty_sat/repeat_2/glucose3/worker.json": {
+      "bytes": 615,
+      "sha256": "7611caade78cf1a806cb458384ddf5d50315f9b7a5c92871d2597574f27bdaab"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/empty_sat/repeat_2/native/candidate.json": {
+      "bytes": 422,
+      "sha256": "556a2a707f44021488c218c325ab6b00ba607853de0c83d1b2d180842fb5b45e"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/empty_sat/repeat_2/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/empty_sat/repeat_2/native/search.stdout.txt": {
+      "bytes": 39,
+      "sha256": "68cbf5a646aadfe87f4857baa5377b133740428c65bc913a3419caafc2709ffa"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/empty_sat/repeat_2/native/worker.json": {
+      "bytes": 414,
+      "sha256": "16a1e39907120c483e80bcede9b0fd72f85bde5ee585057fd1bfa1e4addcb205"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/empty_sat/request.json": {
+      "bytes": 65,
+      "sha256": "933bb648767e3dc41f0e579dd7fa4f9774d3366c14214a17d76eaef00697ffef"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/explicit_empty_unsat/input.cnf": {
+      "bytes": 12,
+      "sha256": "69ee12c3118a428a28f674ec24e362b721e0611c800f65afbcb8a48e778c1394"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/explicit_empty_unsat/repeat_0/glucose3/candidate.json": {
+      "bytes": 237,
+      "sha256": "1a9caf513f2bfd01e84e18adea379e90d606b64e9da6fc1c4ed0f46bac9bf65e"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/explicit_empty_unsat/repeat_0/glucose3/proof.drup": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/explicit_empty_unsat/repeat_0/glucose3/raw-proof.drup": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/explicit_empty_unsat/repeat_0/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/explicit_empty_unsat/repeat_0/glucose3/search.stdout.txt": {
+      "bytes": 43,
+      "sha256": "032fdc8240cad3e4f3510c9dec52fbbcd47228009c8827bdabe49637eb13b00a"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/explicit_empty_unsat/repeat_0/glucose3/worker.json": {
+      "bytes": 864,
+      "sha256": "88aa777e757e118c4e192947e80ccdf5551bfa4143d2c09ea38f3535e1f2befb"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/explicit_empty_unsat/repeat_0/native/candidate.json": {
+      "bytes": 549,
+      "sha256": "3c1a5a4ea49a38789a06fd85fcccad7ef50cb14d63d81281f056784f91e9f85b"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/explicit_empty_unsat/repeat_0/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/explicit_empty_unsat/repeat_0/native/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "1207d28e0d817368743a8d6666a2936cda6eded53b4d35277d1227b22007f2c4"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/explicit_empty_unsat/repeat_0/native/worker.json": {
+      "bytes": 417,
+      "sha256": "f5e2c84746e11ce122be88f0726f4afdba0efe3474ec9b3706a4f296669c6df0"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/explicit_empty_unsat/repeat_1/glucose3/candidate.json": {
+      "bytes": 237,
+      "sha256": "1a9caf513f2bfd01e84e18adea379e90d606b64e9da6fc1c4ed0f46bac9bf65e"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/explicit_empty_unsat/repeat_1/glucose3/proof.drup": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/explicit_empty_unsat/repeat_1/glucose3/raw-proof.drup": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/explicit_empty_unsat/repeat_1/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/explicit_empty_unsat/repeat_1/glucose3/search.stdout.txt": {
+      "bytes": 43,
+      "sha256": "032fdc8240cad3e4f3510c9dec52fbbcd47228009c8827bdabe49637eb13b00a"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/explicit_empty_unsat/repeat_1/glucose3/worker.json": {
+      "bytes": 864,
+      "sha256": "301186ec3a7e7209555bf0e80cd5920a5e2eca0c65708fbde0181b5d2c2531d8"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/explicit_empty_unsat/repeat_1/native/candidate.json": {
+      "bytes": 549,
+      "sha256": "3c1a5a4ea49a38789a06fd85fcccad7ef50cb14d63d81281f056784f91e9f85b"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/explicit_empty_unsat/repeat_1/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/explicit_empty_unsat/repeat_1/native/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "1207d28e0d817368743a8d6666a2936cda6eded53b4d35277d1227b22007f2c4"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/explicit_empty_unsat/repeat_1/native/worker.json": {
+      "bytes": 416,
+      "sha256": "64dffc076ebf558c520e280d5dadbfe3087dd2a51ef028d0da35f930470d764c"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/explicit_empty_unsat/repeat_2/glucose3/candidate.json": {
+      "bytes": 237,
+      "sha256": "1a9caf513f2bfd01e84e18adea379e90d606b64e9da6fc1c4ed0f46bac9bf65e"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/explicit_empty_unsat/repeat_2/glucose3/proof.drup": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/explicit_empty_unsat/repeat_2/glucose3/raw-proof.drup": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/explicit_empty_unsat/repeat_2/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/explicit_empty_unsat/repeat_2/glucose3/search.stdout.txt": {
+      "bytes": 43,
+      "sha256": "032fdc8240cad3e4f3510c9dec52fbbcd47228009c8827bdabe49637eb13b00a"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/explicit_empty_unsat/repeat_2/glucose3/worker.json": {
+      "bytes": 862,
+      "sha256": "43f2526b7be6dfa9960a2450550e35e6b0d4d51d8a1941608e216ab2e120f527"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/explicit_empty_unsat/repeat_2/native/candidate.json": {
+      "bytes": 549,
+      "sha256": "3c1a5a4ea49a38789a06fd85fcccad7ef50cb14d63d81281f056784f91e9f85b"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/explicit_empty_unsat/repeat_2/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/explicit_empty_unsat/repeat_2/native/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "1207d28e0d817368743a8d6666a2936cda6eded53b4d35277d1227b22007f2c4"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/explicit_empty_unsat/repeat_2/native/worker.json": {
+      "bytes": 415,
+      "sha256": "fd9b2bc02f62ec539d833e8f4344a0afe72a5c89e25278c512c6685ab08a818f"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/explicit_empty_unsat/request.json": {
+      "bytes": 75,
+      "sha256": "455e7f2a6f8f21878f4cd4c110dcbe403870240257dfddfaeb262b335ee3dc36"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_3_2/input.cnf": {
+      "bytes": 101,
+      "sha256": "4ed7d56302033721a5bce8cc561b105ed3100bf86d17a72dab2e428b3b2532a6"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_3_2/repeat_0/glucose3/candidate.json": {
+      "bytes": 237,
+      "sha256": "e158fd18c0cb60fc6505e45e535aded64cc82fc61c59cd2058ba92fd2433aad3"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_3_2/repeat_0/glucose3/drat-trim.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_3_2/repeat_0/glucose3/drat-trim.stdout.txt": {
+      "bytes": 359,
+      "sha256": "90e3ee93c391471f1d0e1187397a7db3d280a55bd36052a62f6ccb840691d885"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_3_2/repeat_0/glucose3/proof.drup": {
+      "bytes": 7,
+      "sha256": "a0e036b0e074b2d7311a152823766b9b82753e1914d9a0a350d381ca72bab649"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_3_2/repeat_0/glucose3/raw-proof.drup": {
+      "bytes": 7,
+      "sha256": "a0e036b0e074b2d7311a152823766b9b82753e1914d9a0a350d381ca72bab649"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_3_2/repeat_0/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_3_2/repeat_0/glucose3/search.stdout.txt": {
+      "bytes": 43,
+      "sha256": "032fdc8240cad3e4f3510c9dec52fbbcd47228009c8827bdabe49637eb13b00a"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_3_2/repeat_0/glucose3/worker.json": {
+      "bytes": 866,
+      "sha256": "9fdebea3bc58bb5f2f9bc5759f0f82ed3ea11e64d0c971925fbf5f700e41c36a"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_3_2/repeat_0/native/candidate.json": {
+      "bytes": 3759,
+      "sha256": "3c3210db3408df88cc0bf98348bec34db876f4ec95a4711a4252974dd4ac20c3"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_3_2/repeat_0/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_3_2/repeat_0/native/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "1207d28e0d817368743a8d6666a2936cda6eded53b4d35277d1227b22007f2c4"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_3_2/repeat_0/native/worker.json": {
+      "bytes": 418,
+      "sha256": "23b1d6a33982cbfa7c34d450d312ee98d35b020dcc24a06ad1db881b55f9eae4"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_3_2/repeat_1/glucose3/candidate.json": {
+      "bytes": 237,
+      "sha256": "e158fd18c0cb60fc6505e45e535aded64cc82fc61c59cd2058ba92fd2433aad3"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_3_2/repeat_1/glucose3/drat-trim.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_3_2/repeat_1/glucose3/drat-trim.stdout.txt": {
+      "bytes": 359,
+      "sha256": "90e3ee93c391471f1d0e1187397a7db3d280a55bd36052a62f6ccb840691d885"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_3_2/repeat_1/glucose3/proof.drup": {
+      "bytes": 7,
+      "sha256": "a0e036b0e074b2d7311a152823766b9b82753e1914d9a0a350d381ca72bab649"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_3_2/repeat_1/glucose3/raw-proof.drup": {
+      "bytes": 7,
+      "sha256": "a0e036b0e074b2d7311a152823766b9b82753e1914d9a0a350d381ca72bab649"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_3_2/repeat_1/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_3_2/repeat_1/glucose3/search.stdout.txt": {
+      "bytes": 43,
+      "sha256": "032fdc8240cad3e4f3510c9dec52fbbcd47228009c8827bdabe49637eb13b00a"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_3_2/repeat_1/glucose3/worker.json": {
+      "bytes": 865,
+      "sha256": "9eed60211bffbbe986c0904403ec502c1217a74cd0098974791942b9ae0dcc76"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_3_2/repeat_1/native/candidate.json": {
+      "bytes": 3759,
+      "sha256": "3c3210db3408df88cc0bf98348bec34db876f4ec95a4711a4252974dd4ac20c3"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_3_2/repeat_1/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_3_2/repeat_1/native/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "1207d28e0d817368743a8d6666a2936cda6eded53b4d35277d1227b22007f2c4"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_3_2/repeat_1/native/worker.json": {
+      "bytes": 419,
+      "sha256": "564219122c1e31c7e5d339b413dff07994b3d8e29ab3acbf9ee66d1ccb8295c1"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_3_2/repeat_2/glucose3/candidate.json": {
+      "bytes": 237,
+      "sha256": "e158fd18c0cb60fc6505e45e535aded64cc82fc61c59cd2058ba92fd2433aad3"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_3_2/repeat_2/glucose3/drat-trim.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_3_2/repeat_2/glucose3/drat-trim.stdout.txt": {
+      "bytes": 359,
+      "sha256": "a54bd40fc070ebf16309adf1f675b43154b7b6de58ce409a2ef4672eb8603be9"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_3_2/repeat_2/glucose3/proof.drup": {
+      "bytes": 7,
+      "sha256": "a0e036b0e074b2d7311a152823766b9b82753e1914d9a0a350d381ca72bab649"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_3_2/repeat_2/glucose3/raw-proof.drup": {
+      "bytes": 7,
+      "sha256": "a0e036b0e074b2d7311a152823766b9b82753e1914d9a0a350d381ca72bab649"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_3_2/repeat_2/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_3_2/repeat_2/glucose3/search.stdout.txt": {
+      "bytes": 43,
+      "sha256": "032fdc8240cad3e4f3510c9dec52fbbcd47228009c8827bdabe49637eb13b00a"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_3_2/repeat_2/glucose3/worker.json": {
+      "bytes": 865,
+      "sha256": "111c6ac7278775b4ca5176445b5fbb7292a5a219cb6cb83414c5d58178808fc2"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_3_2/repeat_2/native/candidate.json": {
+      "bytes": 3759,
+      "sha256": "3c3210db3408df88cc0bf98348bec34db876f4ec95a4711a4252974dd4ac20c3"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_3_2/repeat_2/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_3_2/repeat_2/native/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "1207d28e0d817368743a8d6666a2936cda6eded53b4d35277d1227b22007f2c4"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_3_2/repeat_2/native/worker.json": {
+      "bytes": 419,
+      "sha256": "0c69ed256cb53fe84c7e8cfc1bedccb5e6a93221d6327c40310a74f7ecea645d"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_3_2/request.json": {
+      "bytes": 445,
+      "sha256": "68bbfbff242f78d08f4d07168f02e9e9559d2140d74d170d9aa09645742b881a"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_4_3/input.cnf": {
+      "bytes": 302,
+      "sha256": "e8b730ea6ad348d60f304a4f0228fa97470a3d770b8e869c7beaae8b6cc79802"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_4_3/repeat_0/glucose3/candidate.json": {
+      "bytes": 237,
+      "sha256": "a0346bbe61662056c724dabc7a473522565ba5b3f7c647af227cfa20862c6ef2"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_4_3/repeat_0/glucose3/drat-trim.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_4_3/repeat_0/glucose3/drat-trim.stdout.txt": {
+      "bytes": 361,
+      "sha256": "453320be4041dc7c8cd024a6454a482e0d154e8380fd96b65e538a35f9d17430"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_4_3/repeat_0/glucose3/proof.drup": {
+      "bytes": 37,
+      "sha256": "1afe748c369959e9fe77f413039b551ff4a72828bea2d4f4ade58bdf8dc0c41d"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_4_3/repeat_0/glucose3/raw-proof.drup": {
+      "bytes": 37,
+      "sha256": "1afe748c369959e9fe77f413039b551ff4a72828bea2d4f4ade58bdf8dc0c41d"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_4_3/repeat_0/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_4_3/repeat_0/glucose3/search.stdout.txt": {
+      "bytes": 43,
+      "sha256": "032fdc8240cad3e4f3510c9dec52fbbcd47228009c8827bdabe49637eb13b00a"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_4_3/repeat_0/glucose3/worker.json": {
+      "bytes": 865,
+      "sha256": "304ca20070c311688ef529983276a7a343b6535bf16eebbf9fd38306c3142ebb"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_4_3/repeat_0/native/candidate.json": {
+      "bytes": 16145,
+      "sha256": "2f2b828be11c0b0a28ac95db1b392f2fe74b08d21208ef91c3340306e312e1cc"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_4_3/repeat_0/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_4_3/repeat_0/native/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "1207d28e0d817368743a8d6666a2936cda6eded53b4d35277d1227b22007f2c4"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_4_3/repeat_0/native/worker.json": {
+      "bytes": 416,
+      "sha256": "6a33819d10fc876e5c1cfeaa9da592ed2d47dbe1c2be7f2310282eb7b2f8a785"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_4_3/repeat_1/glucose3/candidate.json": {
+      "bytes": 237,
+      "sha256": "a0346bbe61662056c724dabc7a473522565ba5b3f7c647af227cfa20862c6ef2"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_4_3/repeat_1/glucose3/drat-trim.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_4_3/repeat_1/glucose3/drat-trim.stdout.txt": {
+      "bytes": 361,
+      "sha256": "3c91aa6b81fe16621807519a64d0986fed4942f222a6b7130302e7f1843173f9"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_4_3/repeat_1/glucose3/proof.drup": {
+      "bytes": 37,
+      "sha256": "1afe748c369959e9fe77f413039b551ff4a72828bea2d4f4ade58bdf8dc0c41d"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_4_3/repeat_1/glucose3/raw-proof.drup": {
+      "bytes": 37,
+      "sha256": "1afe748c369959e9fe77f413039b551ff4a72828bea2d4f4ade58bdf8dc0c41d"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_4_3/repeat_1/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_4_3/repeat_1/glucose3/search.stdout.txt": {
+      "bytes": 43,
+      "sha256": "032fdc8240cad3e4f3510c9dec52fbbcd47228009c8827bdabe49637eb13b00a"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_4_3/repeat_1/glucose3/worker.json": {
+      "bytes": 866,
+      "sha256": "b98859f29d654db63e60caabe1d822c7967f4a8a03ed3fb8712f1ff5131017f3"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_4_3/repeat_1/native/candidate.json": {
+      "bytes": 16145,
+      "sha256": "2f2b828be11c0b0a28ac95db1b392f2fe74b08d21208ef91c3340306e312e1cc"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_4_3/repeat_1/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_4_3/repeat_1/native/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "1207d28e0d817368743a8d6666a2936cda6eded53b4d35277d1227b22007f2c4"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_4_3/repeat_1/native/worker.json": {
+      "bytes": 417,
+      "sha256": "297fef93cdfed39e8773bbad591bc6817bdea49309ab22016360b12b8b0b8d11"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_4_3/repeat_2/glucose3/candidate.json": {
+      "bytes": 237,
+      "sha256": "a0346bbe61662056c724dabc7a473522565ba5b3f7c647af227cfa20862c6ef2"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_4_3/repeat_2/glucose3/drat-trim.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_4_3/repeat_2/glucose3/drat-trim.stdout.txt": {
+      "bytes": 361,
+      "sha256": "453320be4041dc7c8cd024a6454a482e0d154e8380fd96b65e538a35f9d17430"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_4_3/repeat_2/glucose3/proof.drup": {
+      "bytes": 37,
+      "sha256": "1afe748c369959e9fe77f413039b551ff4a72828bea2d4f4ade58bdf8dc0c41d"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_4_3/repeat_2/glucose3/raw-proof.drup": {
+      "bytes": 37,
+      "sha256": "1afe748c369959e9fe77f413039b551ff4a72828bea2d4f4ade58bdf8dc0c41d"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_4_3/repeat_2/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_4_3/repeat_2/glucose3/search.stdout.txt": {
+      "bytes": 43,
+      "sha256": "032fdc8240cad3e4f3510c9dec52fbbcd47228009c8827bdabe49637eb13b00a"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_4_3/repeat_2/glucose3/worker.json": {
+      "bytes": 864,
+      "sha256": "58879b1361831fda3980cd371b57b4da82d3305b6fbc12c51736df52b1d94215"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_4_3/repeat_2/native/candidate.json": {
+      "bytes": 16145,
+      "sha256": "2f2b828be11c0b0a28ac95db1b392f2fe74b08d21208ef91c3340306e312e1cc"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_4_3/repeat_2/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_4_3/repeat_2/native/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "1207d28e0d817368743a8d6666a2936cda6eded53b4d35277d1227b22007f2c4"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_4_3/repeat_2/native/worker.json": {
+      "bytes": 417,
+      "sha256": "ee7f7400076c357f6c56270a729f0e59035f1e787bfad78781b1c5c0bdd7db3a"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_4_3/request.json": {
+      "bytes": 1202,
+      "sha256": "de14a04ddab999a95bddbd20186843260204156b6c289921b7cfe2de98f46081"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_5_4/input.cnf": {
+      "bytes": 710,
+      "sha256": "4fa2e5d8b36454ba6b01e1a92161e90e46cd16b0f19b41cdf148e49a87c741a1"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_5_4/repeat_0/glucose3/candidate.json": {
+      "bytes": 237,
+      "sha256": "9f093b752d14758895719c5041155e83e3820ffffad3b6c2ebc096220c45d59a"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_5_4/repeat_0/glucose3/drat-trim.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_5_4/repeat_0/glucose3/drat-trim.stdout.txt": {
+      "bytes": 364,
+      "sha256": "7a0ba2726b000a1315e03fff3ad7fae49f6ffe96058c41640904503043d603a8"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_5_4/repeat_0/glucose3/proof.drup": {
+      "bytes": 311,
+      "sha256": "142fce7a2a39f84a051a69f410a22362516f664f30cfea8a6c9563f10e706631"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_5_4/repeat_0/glucose3/raw-proof.drup": {
+      "bytes": 311,
+      "sha256": "142fce7a2a39f84a051a69f410a22362516f664f30cfea8a6c9563f10e706631"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_5_4/repeat_0/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_5_4/repeat_0/glucose3/search.stdout.txt": {
+      "bytes": 43,
+      "sha256": "032fdc8240cad3e4f3510c9dec52fbbcd47228009c8827bdabe49637eb13b00a"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_5_4/repeat_0/glucose3/worker.json": {
+      "bytes": 868,
+      "sha256": "0d0b82a7f46d6eea02db8704e0a316c1c970ef7638ca80f6d1e21c58b778297d"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_5_4/repeat_0/native/candidate.json": {
+      "bytes": 72640,
+      "sha256": "9e1d7dded3e1e562136035bc8ed74c15d2655a46645ab9ea19aac9d9654b7831"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_5_4/repeat_0/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_5_4/repeat_0/native/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "1207d28e0d817368743a8d6666a2936cda6eded53b4d35277d1227b22007f2c4"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_5_4/repeat_0/native/worker.json": {
+      "bytes": 424,
+      "sha256": "ac9ca52070ba1ec2d0844e98e1bbb3a45a842e29c891b052e0c99245e7cd3181"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_5_4/repeat_1/glucose3/candidate.json": {
+      "bytes": 237,
+      "sha256": "9f093b752d14758895719c5041155e83e3820ffffad3b6c2ebc096220c45d59a"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_5_4/repeat_1/glucose3/drat-trim.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_5_4/repeat_1/glucose3/drat-trim.stdout.txt": {
+      "bytes": 364,
+      "sha256": "30a6bbfa882aababe57ba2c147f984a475c1c2ba24134ffcee3da1ba3220099b"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_5_4/repeat_1/glucose3/proof.drup": {
+      "bytes": 311,
+      "sha256": "142fce7a2a39f84a051a69f410a22362516f664f30cfea8a6c9563f10e706631"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_5_4/repeat_1/glucose3/raw-proof.drup": {
+      "bytes": 311,
+      "sha256": "142fce7a2a39f84a051a69f410a22362516f664f30cfea8a6c9563f10e706631"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_5_4/repeat_1/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_5_4/repeat_1/glucose3/search.stdout.txt": {
+      "bytes": 43,
+      "sha256": "032fdc8240cad3e4f3510c9dec52fbbcd47228009c8827bdabe49637eb13b00a"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_5_4/repeat_1/glucose3/worker.json": {
+      "bytes": 870,
+      "sha256": "b8016e1f12bc57f1dcc8af95d7d6a8f4dd5613240cbfc2f1987c871d3f5bdf1e"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_5_4/repeat_1/native/candidate.json": {
+      "bytes": 72640,
+      "sha256": "9e1d7dded3e1e562136035bc8ed74c15d2655a46645ab9ea19aac9d9654b7831"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_5_4/repeat_1/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_5_4/repeat_1/native/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "1207d28e0d817368743a8d6666a2936cda6eded53b4d35277d1227b22007f2c4"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_5_4/repeat_1/native/worker.json": {
+      "bytes": 423,
+      "sha256": "22b6c9d2bd0efb704b90281f6f6008146b3c80c98bb850465c33a863ab3d1d93"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_5_4/repeat_2/glucose3/candidate.json": {
+      "bytes": 237,
+      "sha256": "9f093b752d14758895719c5041155e83e3820ffffad3b6c2ebc096220c45d59a"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_5_4/repeat_2/glucose3/drat-trim.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_5_4/repeat_2/glucose3/drat-trim.stdout.txt": {
+      "bytes": 364,
+      "sha256": "bebb0f4e5f3543ee8774f9c5cef520e450078295b3d945ee4d3e417e7c61b717"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_5_4/repeat_2/glucose3/proof.drup": {
+      "bytes": 311,
+      "sha256": "142fce7a2a39f84a051a69f410a22362516f664f30cfea8a6c9563f10e706631"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_5_4/repeat_2/glucose3/raw-proof.drup": {
+      "bytes": 311,
+      "sha256": "142fce7a2a39f84a051a69f410a22362516f664f30cfea8a6c9563f10e706631"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_5_4/repeat_2/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_5_4/repeat_2/glucose3/search.stdout.txt": {
+      "bytes": 43,
+      "sha256": "032fdc8240cad3e4f3510c9dec52fbbcd47228009c8827bdabe49637eb13b00a"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_5_4/repeat_2/glucose3/worker.json": {
+      "bytes": 869,
+      "sha256": "06334778587d192442e483bba36d851f2b7272b32419faac6120860e0465bace"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_5_4/repeat_2/native/candidate.json": {
+      "bytes": 72640,
+      "sha256": "9e1d7dded3e1e562136035bc8ed74c15d2655a46645ab9ea19aac9d9654b7831"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_5_4/repeat_2/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_5_4/repeat_2/native/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "1207d28e0d817368743a8d6666a2936cda6eded53b4d35277d1227b22007f2c4"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_5_4/repeat_2/native/worker.json": {
+      "bytes": 422,
+      "sha256": "714aaba240684887edc1769a870e0ec43d710c45da4cf064806524bd63ccd64b"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_5_4/request.json": {
+      "bytes": 2636,
+      "sha256": "91758bb1410175b3f02cb6d40576130c210953d85edf7a4187cd666d28c43c25"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5/input.cnf": {
+      "bytes": 1375,
+      "sha256": "338701de004669e4b032c9e718aab9ea2e24a8a440d4e7ce2dfbe42a5a8695fc"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5/repeat_0/glucose3/candidate.json": {
+      "bytes": 237,
+      "sha256": "84b6f2e95e062a131c22daf1bb3d043fe5467414a8f6c0ab50cffaf334529222"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5/repeat_0/glucose3/drat-trim.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5/repeat_0/glucose3/drat-trim.stdout.txt": {
+      "bytes": 371,
+      "sha256": "bb5ba3b93b23e330f1a1b5a59a430c50ce7170af30ec9a0937446b52c7dadb49"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5/repeat_0/glucose3/proof.drup": {
+      "bytes": 2568,
+      "sha256": "7d738889a8651c687be2b9d21329255288aa49f36381113fc510561bc6fb9c33"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5/repeat_0/glucose3/raw-proof.drup": {
+      "bytes": 3151,
+      "sha256": "0bad87e27a35bfa1629bd6f3d00d85baf14da9c1c816968cab11d8abaeb22908"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5/repeat_0/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5/repeat_0/glucose3/search.stdout.txt": {
+      "bytes": 43,
+      "sha256": "032fdc8240cad3e4f3510c9dec52fbbcd47228009c8827bdabe49637eb13b00a"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5/repeat_0/glucose3/worker.json": {
+      "bytes": 874,
+      "sha256": "b0f3063fbc6bf856c4e713c51417c9159c8125f31bd63d16a23782488a4b7b7d"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5/repeat_0/native/candidate.json": {
+      "bytes": 311975,
+      "sha256": "d8a89014a667bf30d197cecceae3f4cdf6d552d13b7265749b134d323b786c77"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5/repeat_0/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5/repeat_0/native/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "1207d28e0d817368743a8d6666a2936cda6eded53b4d35277d1227b22007f2c4"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5/repeat_0/native/worker.json": {
+      "bytes": 422,
+      "sha256": "1f4bacc094b16829147522334bcb660ec30c81d9db334ecb7aeea8b3ac47bd1d"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5/repeat_1/glucose3/candidate.json": {
+      "bytes": 237,
+      "sha256": "84b6f2e95e062a131c22daf1bb3d043fe5467414a8f6c0ab50cffaf334529222"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5/repeat_1/glucose3/drat-trim.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5/repeat_1/glucose3/drat-trim.stdout.txt": {
+      "bytes": 371,
+      "sha256": "bb5ba3b93b23e330f1a1b5a59a430c50ce7170af30ec9a0937446b52c7dadb49"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5/repeat_1/glucose3/proof.drup": {
+      "bytes": 2568,
+      "sha256": "7d738889a8651c687be2b9d21329255288aa49f36381113fc510561bc6fb9c33"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5/repeat_1/glucose3/raw-proof.drup": {
+      "bytes": 3151,
+      "sha256": "0bad87e27a35bfa1629bd6f3d00d85baf14da9c1c816968cab11d8abaeb22908"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5/repeat_1/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5/repeat_1/glucose3/search.stdout.txt": {
+      "bytes": 43,
+      "sha256": "032fdc8240cad3e4f3510c9dec52fbbcd47228009c8827bdabe49637eb13b00a"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5/repeat_1/glucose3/worker.json": {
+      "bytes": 872,
+      "sha256": "06fcc23c32c379eb38049ee9cecd4471299b9cd13de64a9494f2a59a1c57fd16"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5/repeat_1/native/candidate.json": {
+      "bytes": 311975,
+      "sha256": "d8a89014a667bf30d197cecceae3f4cdf6d552d13b7265749b134d323b786c77"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5/repeat_1/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5/repeat_1/native/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "1207d28e0d817368743a8d6666a2936cda6eded53b4d35277d1227b22007f2c4"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5/repeat_1/native/worker.json": {
+      "bytes": 423,
+      "sha256": "e2fdfa07d0157cf8bb5ba19c85049325ed84ad618c57d34fb67b5effab17a158"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5/repeat_2/glucose3/candidate.json": {
+      "bytes": 237,
+      "sha256": "84b6f2e95e062a131c22daf1bb3d043fe5467414a8f6c0ab50cffaf334529222"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5/repeat_2/glucose3/drat-trim.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5/repeat_2/glucose3/drat-trim.stdout.txt": {
+      "bytes": 371,
+      "sha256": "bb79e14614dd5e9d14092145e869c3a80d2fb3e187e45fe31be4e7ebce4003be"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5/repeat_2/glucose3/proof.drup": {
+      "bytes": 2568,
+      "sha256": "7d738889a8651c687be2b9d21329255288aa49f36381113fc510561bc6fb9c33"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5/repeat_2/glucose3/raw-proof.drup": {
+      "bytes": 3151,
+      "sha256": "0bad87e27a35bfa1629bd6f3d00d85baf14da9c1c816968cab11d8abaeb22908"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5/repeat_2/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5/repeat_2/glucose3/search.stdout.txt": {
+      "bytes": 43,
+      "sha256": "032fdc8240cad3e4f3510c9dec52fbbcd47228009c8827bdabe49637eb13b00a"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5/repeat_2/glucose3/worker.json": {
+      "bytes": 875,
+      "sha256": "02c72e8cd5c65557c61d68d492d9607f2736814959a272d4d334989b9f1825af"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5/repeat_2/native/candidate.json": {
+      "bytes": 311975,
+      "sha256": "d8a89014a667bf30d197cecceae3f4cdf6d552d13b7265749b134d323b786c77"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5/repeat_2/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5/repeat_2/native/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "1207d28e0d817368743a8d6666a2936cda6eded53b4d35277d1227b22007f2c4"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5/repeat_2/native/worker.json": {
+      "bytes": 422,
+      "sha256": "17c7bb4e4c256d829162fa39ad7692c60e257201b8ee4009a7931e3e5d14a2c4"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5/request.json": {
+      "bytes": 4940,
+      "sha256": "8e8b70377f039fc1227e60f4b58c9aa20ffa8ea9a448af251d1117f40fd088da"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5_shuffled/input.cnf": {
+      "bytes": 1375,
+      "sha256": "1682ea719c431b1551fecdc323fc9804971ba661c0482e59077156109289f1da"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5_shuffled/repeat_0/glucose3/candidate.json": {
+      "bytes": 237,
+      "sha256": "d36934ecd4f3c272a2908695c306f1213493270f0e5a85a6875bedb59bd8f1c7"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5_shuffled/repeat_0/glucose3/drat-trim.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5_shuffled/repeat_0/glucose3/drat-trim.stdout.txt": {
+      "bytes": 369,
+      "sha256": "7185b1ada4179cf99ed44fb5ac8e274d6b7f5cbf77a3556c4939f567f3983c4d"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5_shuffled/repeat_0/glucose3/proof.drup": {
+      "bytes": 3220,
+      "sha256": "b4f2b0ae8aeb11eb8dbfe791cef4ed20be877e82137310cf667b264fb9fb577b"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5_shuffled/repeat_0/glucose3/raw-proof.drup": {
+      "bytes": 5847,
+      "sha256": "1d7c375dc046042a6b3f17936ba91b96381b3cc926b5b595a1c54fbda1cae180"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5_shuffled/repeat_0/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5_shuffled/repeat_0/glucose3/search.stdout.txt": {
+      "bytes": 43,
+      "sha256": "032fdc8240cad3e4f3510c9dec52fbbcd47228009c8827bdabe49637eb13b00a"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5_shuffled/repeat_0/glucose3/worker.json": {
+      "bytes": 874,
+      "sha256": "407aaf311ae2d07bc6d353b0b455bf2e8b4af7adb4037fefb6003636cad6f5f7"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5_shuffled/repeat_0/native/candidate.json": {
+      "bytes": 718190,
+      "sha256": "e2ebdeccf3dc4a369974657418fe2f9526a269d67891e1ebccd458120df045c8"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5_shuffled/repeat_0/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5_shuffled/repeat_0/native/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "1207d28e0d817368743a8d6666a2936cda6eded53b4d35277d1227b22007f2c4"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5_shuffled/repeat_0/native/worker.json": {
+      "bytes": 427,
+      "sha256": "837192e68bdda857708fd9c6ced7639073cf846ed65d8d161b4a0f149140f02e"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5_shuffled/repeat_1/glucose3/candidate.json": {
+      "bytes": 237,
+      "sha256": "d36934ecd4f3c272a2908695c306f1213493270f0e5a85a6875bedb59bd8f1c7"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5_shuffled/repeat_1/glucose3/drat-trim.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5_shuffled/repeat_1/glucose3/drat-trim.stdout.txt": {
+      "bytes": 369,
+      "sha256": "333db665ac2968ab4e6be77d855a6bca1b79bdab36371bdafd88ef5cdc537c4a"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5_shuffled/repeat_1/glucose3/proof.drup": {
+      "bytes": 3220,
+      "sha256": "b4f2b0ae8aeb11eb8dbfe791cef4ed20be877e82137310cf667b264fb9fb577b"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5_shuffled/repeat_1/glucose3/raw-proof.drup": {
+      "bytes": 5847,
+      "sha256": "1d7c375dc046042a6b3f17936ba91b96381b3cc926b5b595a1c54fbda1cae180"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5_shuffled/repeat_1/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5_shuffled/repeat_1/glucose3/search.stdout.txt": {
+      "bytes": 43,
+      "sha256": "032fdc8240cad3e4f3510c9dec52fbbcd47228009c8827bdabe49637eb13b00a"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5_shuffled/repeat_1/glucose3/worker.json": {
+      "bytes": 876,
+      "sha256": "5b27c69481fffd2cf023c7694ce48f01c10a0b54ed598acf7050e0f290a3c66b"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5_shuffled/repeat_1/native/candidate.json": {
+      "bytes": 718190,
+      "sha256": "e2ebdeccf3dc4a369974657418fe2f9526a269d67891e1ebccd458120df045c8"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5_shuffled/repeat_1/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5_shuffled/repeat_1/native/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "1207d28e0d817368743a8d6666a2936cda6eded53b4d35277d1227b22007f2c4"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5_shuffled/repeat_1/native/worker.json": {
+      "bytes": 429,
+      "sha256": "0f92e1cd328ae4c6faa4be473aa827c11c49aa621edb80869d3ccf598c06a490"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5_shuffled/repeat_2/glucose3/candidate.json": {
+      "bytes": 237,
+      "sha256": "d36934ecd4f3c272a2908695c306f1213493270f0e5a85a6875bedb59bd8f1c7"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5_shuffled/repeat_2/glucose3/drat-trim.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5_shuffled/repeat_2/glucose3/drat-trim.stdout.txt": {
+      "bytes": 369,
+      "sha256": "c4657129b8b4b2537dfd04ec3417e8400705992d6109415cac377c631a62daf8"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5_shuffled/repeat_2/glucose3/proof.drup": {
+      "bytes": 3220,
+      "sha256": "b4f2b0ae8aeb11eb8dbfe791cef4ed20be877e82137310cf667b264fb9fb577b"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5_shuffled/repeat_2/glucose3/raw-proof.drup": {
+      "bytes": 5847,
+      "sha256": "1d7c375dc046042a6b3f17936ba91b96381b3cc926b5b595a1c54fbda1cae180"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5_shuffled/repeat_2/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5_shuffled/repeat_2/glucose3/search.stdout.txt": {
+      "bytes": 43,
+      "sha256": "032fdc8240cad3e4f3510c9dec52fbbcd47228009c8827bdabe49637eb13b00a"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5_shuffled/repeat_2/glucose3/worker.json": {
+      "bytes": 876,
+      "sha256": "ae1d157700c42ab5efe50a959ce0694abf4f2534e57a72197e9df1eaeda7030c"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5_shuffled/repeat_2/native/candidate.json": {
+      "bytes": 718190,
+      "sha256": "e2ebdeccf3dc4a369974657418fe2f9526a269d67891e1ebccd458120df045c8"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5_shuffled/repeat_2/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5_shuffled/repeat_2/native/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "1207d28e0d817368743a8d6666a2936cda6eded53b4d35277d1227b22007f2c4"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5_shuffled/repeat_2/native/worker.json": {
+      "bytes": 430,
+      "sha256": "aef6e7c95998ab4eb34f5ced40274f708ae243ebfccf0560931c77e95b711681"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_6_5_shuffled/request.json": {
+      "bytes": 4940,
+      "sha256": "7eb0e3d377c52b9a2aa7c9809e08abd7cb8e714407a5658cc6712e5a04f298ca"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_7_6/input.cnf": {
+      "bytes": 2355,
+      "sha256": "7dfd257e82b31cd6ef36635ce025351663a74ed2dcacbde816ebde7ed4059ba7"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_7_6/repeat_0/glucose3/candidate.json": {
+      "bytes": 237,
+      "sha256": "26f476e02d7b1bb266ac4cc82de956fdd4e351887be85e6d3a4016ae11b4a5d9"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_7_6/repeat_0/glucose3/drat-trim.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_7_6/repeat_0/glucose3/drat-trim.stdout.txt": {
+      "bytes": 373,
+      "sha256": "b78af0a73c8fe50c804c573694d8b067318409ae2d46439972720fe1af56c365"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_7_6/repeat_0/glucose3/proof.drup": {
+      "bytes": 25274,
+      "sha256": "4f7287f51b16dbdb1178763093ad4134c3e28d546f9a1571cc2caa339eb3c1f0"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_7_6/repeat_0/glucose3/raw-proof.drup": {
+      "bytes": 26783,
+      "sha256": "542ff0150cd6eea9eb07530cf55fb0b8f7442f1ac1fe60eb3a2efcbb5dc13bc0"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_7_6/repeat_0/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_7_6/repeat_0/glucose3/search.stdout.txt": {
+      "bytes": 43,
+      "sha256": "032fdc8240cad3e4f3510c9dec52fbbcd47228009c8827bdabe49637eb13b00a"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_7_6/repeat_0/glucose3/worker.json": {
+      "bytes": 873,
+      "sha256": "b995e886cf4a88e445b6b341dc7da881f04efc85c402fdc49fc4a9cf761b5a53"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_7_6/repeat_0/native/candidate.json": {
+      "bytes": 1251467,
+      "sha256": "5f851dc51db74e56a048e572d41baf6483a706337941ec9290ba886936938b5a"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_7_6/repeat_0/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_7_6/repeat_0/native/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "1207d28e0d817368743a8d6666a2936cda6eded53b4d35277d1227b22007f2c4"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_7_6/repeat_0/native/worker.json": {
+      "bytes": 427,
+      "sha256": "f9e1eeba318455c416d30b76342af91dd29175ba32c655176ec5a9cefc3a6e1b"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_7_6/repeat_1/glucose3/candidate.json": {
+      "bytes": 237,
+      "sha256": "26f476e02d7b1bb266ac4cc82de956fdd4e351887be85e6d3a4016ae11b4a5d9"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_7_6/repeat_1/glucose3/drat-trim.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_7_6/repeat_1/glucose3/drat-trim.stdout.txt": {
+      "bytes": 373,
+      "sha256": "38b38e5e38fe6be6d7686aeb3e9806dac82193556cb1f2116680fb546cba6c86"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_7_6/repeat_1/glucose3/proof.drup": {
+      "bytes": 25274,
+      "sha256": "4f7287f51b16dbdb1178763093ad4134c3e28d546f9a1571cc2caa339eb3c1f0"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_7_6/repeat_1/glucose3/raw-proof.drup": {
+      "bytes": 26783,
+      "sha256": "542ff0150cd6eea9eb07530cf55fb0b8f7442f1ac1fe60eb3a2efcbb5dc13bc0"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_7_6/repeat_1/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_7_6/repeat_1/glucose3/search.stdout.txt": {
+      "bytes": 43,
+      "sha256": "032fdc8240cad3e4f3510c9dec52fbbcd47228009c8827bdabe49637eb13b00a"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_7_6/repeat_1/glucose3/worker.json": {
+      "bytes": 874,
+      "sha256": "042717fac492c9f0cc74899b8dcf95f93ac8cedf907296a8bc3db5c4b7a75e4b"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_7_6/repeat_1/native/candidate.json": {
+      "bytes": 1251467,
+      "sha256": "5f851dc51db74e56a048e572d41baf6483a706337941ec9290ba886936938b5a"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_7_6/repeat_1/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_7_6/repeat_1/native/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "1207d28e0d817368743a8d6666a2936cda6eded53b4d35277d1227b22007f2c4"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_7_6/repeat_1/native/worker.json": {
+      "bytes": 428,
+      "sha256": "0de1e7c3a1002bb69320d8811caff0ac502e931812ade51580d766c02f2437b3"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_7_6/repeat_2/glucose3/candidate.json": {
+      "bytes": 237,
+      "sha256": "26f476e02d7b1bb266ac4cc82de956fdd4e351887be85e6d3a4016ae11b4a5d9"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_7_6/repeat_2/glucose3/drat-trim.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_7_6/repeat_2/glucose3/drat-trim.stdout.txt": {
+      "bytes": 373,
+      "sha256": "b78af0a73c8fe50c804c573694d8b067318409ae2d46439972720fe1af56c365"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_7_6/repeat_2/glucose3/proof.drup": {
+      "bytes": 25274,
+      "sha256": "4f7287f51b16dbdb1178763093ad4134c3e28d546f9a1571cc2caa339eb3c1f0"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_7_6/repeat_2/glucose3/raw-proof.drup": {
+      "bytes": 26783,
+      "sha256": "542ff0150cd6eea9eb07530cf55fb0b8f7442f1ac1fe60eb3a2efcbb5dc13bc0"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_7_6/repeat_2/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_7_6/repeat_2/glucose3/search.stdout.txt": {
+      "bytes": 43,
+      "sha256": "032fdc8240cad3e4f3510c9dec52fbbcd47228009c8827bdabe49637eb13b00a"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_7_6/repeat_2/glucose3/worker.json": {
+      "bytes": 874,
+      "sha256": "a8d20987469015598d25dad6784d18e8458a983c883b9cb9305e728c8becde5e"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_7_6/repeat_2/native/candidate.json": {
+      "bytes": 1251467,
+      "sha256": "5f851dc51db74e56a048e572d41baf6483a706337941ec9290ba886936938b5a"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_7_6/repeat_2/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_7_6/repeat_2/native/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "1207d28e0d817368743a8d6666a2936cda6eded53b4d35277d1227b22007f2c4"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_7_6/repeat_2/native/worker.json": {
+      "bytes": 429,
+      "sha256": "e90d633b3b3044420d5fae10880cd0a72306cc18294d58cda53d9553eb2308ef"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/php_7_6/request.json": {
+      "bytes": 8318,
+      "sha256": "ba6d21714506177f160091d385cca43472f348ad8e30886e021492a93f739dbc"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_20_86/input.cnf": {
+      "bytes": 951,
+      "sha256": "9b8bf2df857b89580a1c41f5e468032621854b44189e23da9b3b92b6a14709bf"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_20_86/repeat_0/glucose3/candidate.json": {
+      "bytes": 370,
+      "sha256": "c765408d7ac85a26f6c321eaa84bc7f6e848d852f331e7eb7a9f0297e58b956a"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_20_86/repeat_0/glucose3/raw-proof.drup": {
+      "bytes": 88,
+      "sha256": "b2dd3ac37787a8b0f8c34c080d4b83d3811211a598041f78ff0b361f774efce4"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_20_86/repeat_0/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_20_86/repeat_0/glucose3/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "0e0909ee693dcdc472995da33db3dc0d7d665531f1b63c0b53e8813699f99ea9"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_20_86/repeat_0/glucose3/worker.json": {
+      "bytes": 618,
+      "sha256": "fa26611347489294d159fbd4d05790018df4e1342198e50839fec8fe59311129"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_20_86/repeat_0/native/candidate.json": {
+      "bytes": 42261,
+      "sha256": "a67591eefc0b416e21d9cabcdbe9168c4ca452b6c8997577f0c49f813852f3e4"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_20_86/repeat_0/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_20_86/repeat_0/native/search.stdout.txt": {
+      "bytes": 39,
+      "sha256": "68cbf5a646aadfe87f4857baa5377b133740428c65bc913a3419caafc2709ffa"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_20_86/repeat_0/native/worker.json": {
+      "bytes": 419,
+      "sha256": "a8e0f6c73eb4e053acfd23fb49dc27e779360a085b8c3b381a343db94ae17ea5"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_20_86/repeat_1/glucose3/candidate.json": {
+      "bytes": 370,
+      "sha256": "c765408d7ac85a26f6c321eaa84bc7f6e848d852f331e7eb7a9f0297e58b956a"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_20_86/repeat_1/glucose3/raw-proof.drup": {
+      "bytes": 88,
+      "sha256": "b2dd3ac37787a8b0f8c34c080d4b83d3811211a598041f78ff0b361f774efce4"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_20_86/repeat_1/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_20_86/repeat_1/glucose3/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "0e0909ee693dcdc472995da33db3dc0d7d665531f1b63c0b53e8813699f99ea9"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_20_86/repeat_1/glucose3/worker.json": {
+      "bytes": 618,
+      "sha256": "ca80e04ad063b5183b97f0b9aafa63931b9d8e964a0c9e2688d897205c30eae9"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_20_86/repeat_1/native/candidate.json": {
+      "bytes": 42261,
+      "sha256": "a67591eefc0b416e21d9cabcdbe9168c4ca452b6c8997577f0c49f813852f3e4"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_20_86/repeat_1/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_20_86/repeat_1/native/search.stdout.txt": {
+      "bytes": 39,
+      "sha256": "68cbf5a646aadfe87f4857baa5377b133740428c65bc913a3419caafc2709ffa"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_20_86/repeat_1/native/worker.json": {
+      "bytes": 421,
+      "sha256": "c5f62c271ddbc31336f92ea5f19ce1f52d6c63d228ed88c69dc6ef287b3c7e41"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_20_86/repeat_2/glucose3/candidate.json": {
+      "bytes": 370,
+      "sha256": "c765408d7ac85a26f6c321eaa84bc7f6e848d852f331e7eb7a9f0297e58b956a"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_20_86/repeat_2/glucose3/raw-proof.drup": {
+      "bytes": 88,
+      "sha256": "b2dd3ac37787a8b0f8c34c080d4b83d3811211a598041f78ff0b361f774efce4"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_20_86/repeat_2/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_20_86/repeat_2/glucose3/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "0e0909ee693dcdc472995da33db3dc0d7d665531f1b63c0b53e8813699f99ea9"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_20_86/repeat_2/glucose3/worker.json": {
+      "bytes": 618,
+      "sha256": "697afefd835425607a6b2cb8b2c5807a43f694a319393749595a9181c7df566a"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_20_86/repeat_2/native/candidate.json": {
+      "bytes": 42261,
+      "sha256": "a67591eefc0b416e21d9cabcdbe9168c4ca452b6c8997577f0c49f813852f3e4"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_20_86/repeat_2/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_20_86/repeat_2/native/search.stdout.txt": {
+      "bytes": 39,
+      "sha256": "68cbf5a646aadfe87f4857baa5377b133740428c65bc913a3419caafc2709ffa"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_20_86/repeat_2/native/worker.json": {
+      "bytes": 421,
+      "sha256": "148cb0c143a04a9fa0fba375e59f808b2c50d1e8f88cdc6cdcb36b3268d58d3b"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_20_86/request.json": {
+      "bytes": 3673,
+      "sha256": "ded6d08ae39a6ae903c950348dd24abf2645b82f52ebedfe8771856fac7df570"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_40_172/input.cnf": {
+      "bytes": 2018,
+      "sha256": "dc21c3d364753a07cd05be47706cd3f5a3667cd2a4e16c39722bb0acae9403fe"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_40_172/repeat_0/glucose3/candidate.json": {
+      "bytes": 589,
+      "sha256": "622357a20b2744cde7fe3b251bdfcf0ada76e208b400525c7105055eec9c45fb"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_40_172/repeat_0/glucose3/raw-proof.drup": {
+      "bytes": 150,
+      "sha256": "af18a47d7c6cf400a9cb9fa554502301322c8cb3280e11b92bb558bdcf543a0a"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_40_172/repeat_0/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_40_172/repeat_0/glucose3/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "0e0909ee693dcdc472995da33db3dc0d7d665531f1b63c0b53e8813699f99ea9"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_40_172/repeat_0/glucose3/worker.json": {
+      "bytes": 620,
+      "sha256": "4a442d5fd1df49d60da9e61f6d7cd00af9246b01079dc8197eb789445f79c441"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_40_172/repeat_0/native/candidate.json": {
+      "bytes": 13585,
+      "sha256": "8364cfedf49c282c31215b54594b43f0a300052fed83232e12d4e9845689a383"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_40_172/repeat_0/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_40_172/repeat_0/native/search.stdout.txt": {
+      "bytes": 39,
+      "sha256": "68cbf5a646aadfe87f4857baa5377b133740428c65bc913a3419caafc2709ffa"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_40_172/repeat_0/native/worker.json": {
+      "bytes": 416,
+      "sha256": "3a15a10a9c7b27078d882adb57e42e13d25d4b228219966630eccad5a747b333"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_40_172/repeat_1/glucose3/candidate.json": {
+      "bytes": 589,
+      "sha256": "622357a20b2744cde7fe3b251bdfcf0ada76e208b400525c7105055eec9c45fb"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_40_172/repeat_1/glucose3/raw-proof.drup": {
+      "bytes": 150,
+      "sha256": "af18a47d7c6cf400a9cb9fa554502301322c8cb3280e11b92bb558bdcf543a0a"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_40_172/repeat_1/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_40_172/repeat_1/glucose3/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "0e0909ee693dcdc472995da33db3dc0d7d665531f1b63c0b53e8813699f99ea9"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_40_172/repeat_1/glucose3/worker.json": {
+      "bytes": 621,
+      "sha256": "148ea9e5fd997032237d5192b6cb4ab8764aed5d81abb57c956bb53b717377cb"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_40_172/repeat_1/native/candidate.json": {
+      "bytes": 13585,
+      "sha256": "8364cfedf49c282c31215b54594b43f0a300052fed83232e12d4e9845689a383"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_40_172/repeat_1/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_40_172/repeat_1/native/search.stdout.txt": {
+      "bytes": 39,
+      "sha256": "68cbf5a646aadfe87f4857baa5377b133740428c65bc913a3419caafc2709ffa"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_40_172/repeat_1/native/worker.json": {
+      "bytes": 416,
+      "sha256": "26134f55b58437677320786059bda7153bc259e2be6b2f3b4259a71aed371999"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_40_172/repeat_2/glucose3/candidate.json": {
+      "bytes": 589,
+      "sha256": "622357a20b2744cde7fe3b251bdfcf0ada76e208b400525c7105055eec9c45fb"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_40_172/repeat_2/glucose3/raw-proof.drup": {
+      "bytes": 150,
+      "sha256": "af18a47d7c6cf400a9cb9fa554502301322c8cb3280e11b92bb558bdcf543a0a"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_40_172/repeat_2/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_40_172/repeat_2/glucose3/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "0e0909ee693dcdc472995da33db3dc0d7d665531f1b63c0b53e8813699f99ea9"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_40_172/repeat_2/glucose3/worker.json": {
+      "bytes": 620,
+      "sha256": "e091542ac1ec25647ff956810fd600e344afa105fab4f69aa236bca58243dd52"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_40_172/repeat_2/native/candidate.json": {
+      "bytes": 13585,
+      "sha256": "8364cfedf49c282c31215b54594b43f0a300052fed83232e12d4e9845689a383"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_40_172/repeat_2/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_40_172/repeat_2/native/search.stdout.txt": {
+      "bytes": 39,
+      "sha256": "68cbf5a646aadfe87f4857baa5377b133740428c65bc913a3419caafc2709ffa"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_40_172/repeat_2/native/worker.json": {
+      "bytes": 415,
+      "sha256": "00992e8d5060835aa90fae07154595ac0cae160dfbb9f9e43097f16be4f948c3"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/planted3_40_172/request.json": {
+      "bytes": 7405,
+      "sha256": "a1a7133166f7797b133f5570c5857d5559b26cc606fff991ea96f7157931f61c"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_20_86/input.cnf": {
+      "bytes": 956,
+      "sha256": "60e18409494886027fe5deb06c2cd0b2da0d0c1c0c69befc800c6fbdad2e0573"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_20_86/repeat_0/glucose3/candidate.json": {
+      "bytes": 374,
+      "sha256": "f1a503d5ca7764d1b9c3f83448ff1904f629871f0d3b53a55879984aac6197b2"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_20_86/repeat_0/glucose3/raw-proof.drup": {
+      "bytes": 63,
+      "sha256": "a3f576ff905a733ea941ee7678c5f415a1532c4b54fbf2e495014012b7a87e22"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_20_86/repeat_0/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_20_86/repeat_0/glucose3/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "0e0909ee693dcdc472995da33db3dc0d7d665531f1b63c0b53e8813699f99ea9"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_20_86/repeat_0/glucose3/worker.json": {
+      "bytes": 617,
+      "sha256": "526636126b78d329757115f823333fe4d3cce484a5fe2e9e67617e0bd8fac1c6"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_20_86/repeat_0/native/candidate.json": {
+      "bytes": 29493,
+      "sha256": "bd08fd2b05f6a8cf4576e05ec1c758695036c85b91a0628a1e0321beb69a6135"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_20_86/repeat_0/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_20_86/repeat_0/native/search.stdout.txt": {
+      "bytes": 39,
+      "sha256": "68cbf5a646aadfe87f4857baa5377b133740428c65bc913a3419caafc2709ffa"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_20_86/repeat_0/native/worker.json": {
+      "bytes": 417,
+      "sha256": "560de804118d5c52d23cb640fce89c3c251e0bcb24519718cc32dabfe484e446"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_20_86/repeat_1/glucose3/candidate.json": {
+      "bytes": 374,
+      "sha256": "f1a503d5ca7764d1b9c3f83448ff1904f629871f0d3b53a55879984aac6197b2"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_20_86/repeat_1/glucose3/raw-proof.drup": {
+      "bytes": 63,
+      "sha256": "a3f576ff905a733ea941ee7678c5f415a1532c4b54fbf2e495014012b7a87e22"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_20_86/repeat_1/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_20_86/repeat_1/glucose3/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "0e0909ee693dcdc472995da33db3dc0d7d665531f1b63c0b53e8813699f99ea9"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_20_86/repeat_1/glucose3/worker.json": {
+      "bytes": 618,
+      "sha256": "68c247b51aca18586c8b6a4440737426b0293621270f3857a8ce9c5173aedf2e"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_20_86/repeat_1/native/candidate.json": {
+      "bytes": 29493,
+      "sha256": "bd08fd2b05f6a8cf4576e05ec1c758695036c85b91a0628a1e0321beb69a6135"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_20_86/repeat_1/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_20_86/repeat_1/native/search.stdout.txt": {
+      "bytes": 39,
+      "sha256": "68cbf5a646aadfe87f4857baa5377b133740428c65bc913a3419caafc2709ffa"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_20_86/repeat_1/native/worker.json": {
+      "bytes": 417,
+      "sha256": "34af0e83f903ae27ebcdfd34d9681be70b1ccb828058fcdd9c6db9ba1bf5ff0b"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_20_86/repeat_2/glucose3/candidate.json": {
+      "bytes": 374,
+      "sha256": "f1a503d5ca7764d1b9c3f83448ff1904f629871f0d3b53a55879984aac6197b2"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_20_86/repeat_2/glucose3/raw-proof.drup": {
+      "bytes": 63,
+      "sha256": "a3f576ff905a733ea941ee7678c5f415a1532c4b54fbf2e495014012b7a87e22"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_20_86/repeat_2/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_20_86/repeat_2/glucose3/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "0e0909ee693dcdc472995da33db3dc0d7d665531f1b63c0b53e8813699f99ea9"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_20_86/repeat_2/glucose3/worker.json": {
+      "bytes": 616,
+      "sha256": "1d98c09968296b6f245281a267184c77de6f3818559f493fdb817172959bbcfd"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_20_86/repeat_2/native/candidate.json": {
+      "bytes": 29493,
+      "sha256": "bd08fd2b05f6a8cf4576e05ec1c758695036c85b91a0628a1e0321beb69a6135"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_20_86/repeat_2/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_20_86/repeat_2/native/search.stdout.txt": {
+      "bytes": 39,
+      "sha256": "68cbf5a646aadfe87f4857baa5377b133740428c65bc913a3419caafc2709ffa"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_20_86/repeat_2/native/worker.json": {
+      "bytes": 416,
+      "sha256": "d11948a19e6c72f3413493efc4dcc08c39c200091f9b8cfed20855c24d032957"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_20_86/request.json": {
+      "bytes": 3678,
+      "sha256": "1c163ac2415ac08f13963f5a48fc67736f8550eec7634630f3a14153bc1548e8"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_40_172/input.cnf": {
+      "bytes": 2041,
+      "sha256": "a185f86f6eaf87bd63e6b77b00fb7859589601132cacdf2779e463921c559c94"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_40_172/repeat_0/glucose3/candidate.json": {
+      "bytes": 586,
+      "sha256": "0f0a1e8c99033208a558263e4c0990e2bbc95692f425283c44aae08a56be9c75"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_40_172/repeat_0/glucose3/raw-proof.drup": {
+      "bytes": 207,
+      "sha256": "e14a3e66a758a53cb69b8301919afe5a0e68d07e2d19bb7e9432b0b453478a16"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_40_172/repeat_0/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_40_172/repeat_0/glucose3/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "0e0909ee693dcdc472995da33db3dc0d7d665531f1b63c0b53e8813699f99ea9"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_40_172/repeat_0/glucose3/worker.json": {
+      "bytes": 618,
+      "sha256": "4b1e2b8402a42f394df0f6eb58857a0fe07132b7ce9b15f4432aee78376fc618"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_40_172/repeat_0/native/candidate.json": {
+      "bytes": 51453,
+      "sha256": "405168c3f1fb252368ff54664b0c405b1164064b7857cb39e1c197442e272d10"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_40_172/repeat_0/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_40_172/repeat_0/native/search.stdout.txt": {
+      "bytes": 39,
+      "sha256": "68cbf5a646aadfe87f4857baa5377b133740428c65bc913a3419caafc2709ffa"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_40_172/repeat_0/native/worker.json": {
+      "bytes": 420,
+      "sha256": "75420e73978fa31eb8e41206cb26badb2917777f62a9f5e6375663ffdd43e735"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_40_172/repeat_1/glucose3/candidate.json": {
+      "bytes": 586,
+      "sha256": "0f0a1e8c99033208a558263e4c0990e2bbc95692f425283c44aae08a56be9c75"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_40_172/repeat_1/glucose3/raw-proof.drup": {
+      "bytes": 207,
+      "sha256": "e14a3e66a758a53cb69b8301919afe5a0e68d07e2d19bb7e9432b0b453478a16"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_40_172/repeat_1/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_40_172/repeat_1/glucose3/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "0e0909ee693dcdc472995da33db3dc0d7d665531f1b63c0b53e8813699f99ea9"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_40_172/repeat_1/glucose3/worker.json": {
+      "bytes": 617,
+      "sha256": "a75ff5ec6533a24f9ab6dbb4dc67903d9c8566b6722552c402ef0d3401a46a91"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_40_172/repeat_1/native/candidate.json": {
+      "bytes": 51453,
+      "sha256": "405168c3f1fb252368ff54664b0c405b1164064b7857cb39e1c197442e272d10"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_40_172/repeat_1/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_40_172/repeat_1/native/search.stdout.txt": {
+      "bytes": 39,
+      "sha256": "68cbf5a646aadfe87f4857baa5377b133740428c65bc913a3419caafc2709ffa"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_40_172/repeat_1/native/worker.json": {
+      "bytes": 419,
+      "sha256": "da76986095b41077cf4af9a3c514494b169ef0ef504667b982c9af01062f6de1"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_40_172/repeat_2/glucose3/candidate.json": {
+      "bytes": 586,
+      "sha256": "0f0a1e8c99033208a558263e4c0990e2bbc95692f425283c44aae08a56be9c75"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_40_172/repeat_2/glucose3/raw-proof.drup": {
+      "bytes": 207,
+      "sha256": "e14a3e66a758a53cb69b8301919afe5a0e68d07e2d19bb7e9432b0b453478a16"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_40_172/repeat_2/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_40_172/repeat_2/glucose3/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "0e0909ee693dcdc472995da33db3dc0d7d665531f1b63c0b53e8813699f99ea9"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_40_172/repeat_2/glucose3/worker.json": {
+      "bytes": 620,
+      "sha256": "305ea85ae5d56f4426de3d4cdaf13f28f9c3f0c55e81035ba4d87cc2cdbeed04"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_40_172/repeat_2/native/candidate.json": {
+      "bytes": 51453,
+      "sha256": "405168c3f1fb252368ff54664b0c405b1164064b7857cb39e1c197442e272d10"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_40_172/repeat_2/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_40_172/repeat_2/native/search.stdout.txt": {
+      "bytes": 39,
+      "sha256": "68cbf5a646aadfe87f4857baa5377b133740428c65bc913a3419caafc2709ffa"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_40_172/repeat_2/native/worker.json": {
+      "bytes": 420,
+      "sha256": "9d68c9d87a3a8d051ebad412d5542160a0ba6f53f6d2033b2e53f6180738fa93"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/random3_40_172/request.json": {
+      "bytes": 7428,
+      "sha256": "90fff5700d65f40ae9acffc028009f6d602d5ec7bf412c4a694b3351cd1cefcf"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/replay.json": {
+      "bytes": 252,
+      "sha256": "78ee1d3873185187d98c901a7f383969810d9ba2257d0981b8642733da629a4d"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/requests.json": {
+      "bytes": 110547,
+      "sha256": "2bb8f666ecc5185a68da783b551b00b9a787bdd9b8e23e4bd4072e0748882a41"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/units_unsat/input.cnf": {
+      "bytes": 19,
+      "sha256": "ac42a371b5a124286c410ed5dfa2e3be7ee7d5b1feac6f08e7e1715f0c3669a8"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/units_unsat/repeat_0/glucose3/candidate.json": {
+      "bytes": 237,
+      "sha256": "c11cae39489a098205ae43fd4cc6f43f5eecc9ca2e719fa4fdbd90120ff6540b"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/units_unsat/repeat_0/glucose3/drat-trim.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/units_unsat/repeat_0/glucose3/drat-trim.stdout.txt": {
+      "bytes": 164,
+      "sha256": "e51847ceb933905edecc4e6cfc0da03f5988476329a1b466fab417ed5725c350"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/units_unsat/repeat_0/glucose3/proof.drup": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/units_unsat/repeat_0/glucose3/raw-proof.drup": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/units_unsat/repeat_0/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/units_unsat/repeat_0/glucose3/search.stdout.txt": {
+      "bytes": 43,
+      "sha256": "032fdc8240cad3e4f3510c9dec52fbbcd47228009c8827bdabe49637eb13b00a"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/units_unsat/repeat_0/glucose3/worker.json": {
+      "bytes": 864,
+      "sha256": "4ec208ddfa46136953134b7cc14e413dab41d20ea7be9a16b67591e3695ecd71"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/units_unsat/repeat_0/native/candidate.json": {
+      "bytes": 806,
+      "sha256": "adc00db04c872872653d618f516dbc0e793ea7828f2b45d1c0962976e9a5e4b8"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/units_unsat/repeat_0/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/units_unsat/repeat_0/native/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "1207d28e0d817368743a8d6666a2936cda6eded53b4d35277d1227b22007f2c4"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/units_unsat/repeat_0/native/worker.json": {
+      "bytes": 417,
+      "sha256": "3535c4708333a9a08fa01c0dc4c8976a49d2a55c4b3368dbd985ae606aa8f27a"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/units_unsat/repeat_1/glucose3/candidate.json": {
+      "bytes": 237,
+      "sha256": "c11cae39489a098205ae43fd4cc6f43f5eecc9ca2e719fa4fdbd90120ff6540b"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/units_unsat/repeat_1/glucose3/drat-trim.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/units_unsat/repeat_1/glucose3/drat-trim.stdout.txt": {
+      "bytes": 164,
+      "sha256": "20b5877c00728481797598b48d49d900b5b0d248240561876f93e0d137328be9"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/units_unsat/repeat_1/glucose3/proof.drup": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/units_unsat/repeat_1/glucose3/raw-proof.drup": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/units_unsat/repeat_1/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/units_unsat/repeat_1/glucose3/search.stdout.txt": {
+      "bytes": 43,
+      "sha256": "032fdc8240cad3e4f3510c9dec52fbbcd47228009c8827bdabe49637eb13b00a"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/units_unsat/repeat_1/glucose3/worker.json": {
+      "bytes": 864,
+      "sha256": "b78e9451c73fc969b57e853a3ef81ac0de4db04a22c85383e4f9dceb4364c3aa"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/units_unsat/repeat_1/native/candidate.json": {
+      "bytes": 806,
+      "sha256": "adc00db04c872872653d618f516dbc0e793ea7828f2b45d1c0962976e9a5e4b8"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/units_unsat/repeat_1/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/units_unsat/repeat_1/native/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "1207d28e0d817368743a8d6666a2936cda6eded53b4d35277d1227b22007f2c4"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/units_unsat/repeat_1/native/worker.json": {
+      "bytes": 417,
+      "sha256": "f0b67b669eb63710b87896bc32ff2249f536e80f22a54d22eb811c85aaa157fc"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/units_unsat/repeat_2/glucose3/candidate.json": {
+      "bytes": 237,
+      "sha256": "c11cae39489a098205ae43fd4cc6f43f5eecc9ca2e719fa4fdbd90120ff6540b"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/units_unsat/repeat_2/glucose3/drat-trim.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/units_unsat/repeat_2/glucose3/drat-trim.stdout.txt": {
+      "bytes": 164,
+      "sha256": "57c23861de9d989d99b1a391e076066e511ce1d53fd8f8c467acc5d8951a408c"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/units_unsat/repeat_2/glucose3/proof.drup": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/units_unsat/repeat_2/glucose3/raw-proof.drup": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/units_unsat/repeat_2/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/units_unsat/repeat_2/glucose3/search.stdout.txt": {
+      "bytes": 43,
+      "sha256": "032fdc8240cad3e4f3510c9dec52fbbcd47228009c8827bdabe49637eb13b00a"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/units_unsat/repeat_2/glucose3/worker.json": {
+      "bytes": 864,
+      "sha256": "b17516e6cb1ba4e377a161ffd44e704c046e0dd3fa4ea09dba4efc6a2672bdbb"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/units_unsat/repeat_2/native/candidate.json": {
+      "bytes": 806,
+      "sha256": "adc00db04c872872653d618f516dbc0e793ea7828f2b45d1c0962976e9a5e4b8"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/units_unsat/repeat_2/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/units_unsat/repeat_2/native/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "1207d28e0d817368743a8d6666a2936cda6eded53b4d35277d1227b22007f2c4"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/units_unsat/repeat_2/native/worker.json": {
+      "bytes": 417,
+      "sha256": "99572250141f2dc0b105ab63a642d64e9139042b4e86817899141ecadc9b5ffc"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/units_unsat/request.json": {
+      "bytes": 110,
+      "sha256": "240559b91f1fe8d7729e6114ad3b3621514b056d7ce2178aece87724d3237843"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/unused_variables_sat/input.cnf": {
+      "bytes": 23,
+      "sha256": "8357c54b8f38d940cae9e24f1cc06ce032f40d7d44019e2c04b5e0da6a846aaf"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/unused_variables_sat/repeat_0/glucose3/candidate.json": {
+      "bytes": 241,
+      "sha256": "1d1489a099b3d52da6e8796d1b7ff618cbadb360a17af4589ff5ca8e1af87437"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/unused_variables_sat/repeat_0/glucose3/raw-proof.drup": {
+      "bytes": 4,
+      "sha256": "4516f6eaaa675488778d6ca333df14bc68c27fb7d7b8015073220d4571aa9c51"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/unused_variables_sat/repeat_0/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/unused_variables_sat/repeat_0/glucose3/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "0e0909ee693dcdc472995da33db3dc0d7d665531f1b63c0b53e8813699f99ea9"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/unused_variables_sat/repeat_0/glucose3/worker.json": {
+      "bytes": 615,
+      "sha256": "261ebd199756bd971308c2f4981ced809f42d08d0cacb1e685bd89136b052ff4"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/unused_variables_sat/repeat_0/native/candidate.json": {
+      "bytes": 632,
+      "sha256": "75d7d9b74757774e416cb68724ea0ea9d58b5227263f0adefb63c44c4a90f7f2"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/unused_variables_sat/repeat_0/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/unused_variables_sat/repeat_0/native/search.stdout.txt": {
+      "bytes": 39,
+      "sha256": "68cbf5a646aadfe87f4857baa5377b133740428c65bc913a3419caafc2709ffa"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/unused_variables_sat/repeat_0/native/worker.json": {
+      "bytes": 413,
+      "sha256": "bbb84e1a5a4c9555898d53cc5aa04ef6c53bcf7dd13f685111753f1e3216ba62"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/unused_variables_sat/repeat_1/glucose3/candidate.json": {
+      "bytes": 241,
+      "sha256": "1d1489a099b3d52da6e8796d1b7ff618cbadb360a17af4589ff5ca8e1af87437"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/unused_variables_sat/repeat_1/glucose3/raw-proof.drup": {
+      "bytes": 4,
+      "sha256": "4516f6eaaa675488778d6ca333df14bc68c27fb7d7b8015073220d4571aa9c51"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/unused_variables_sat/repeat_1/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/unused_variables_sat/repeat_1/glucose3/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "0e0909ee693dcdc472995da33db3dc0d7d665531f1b63c0b53e8813699f99ea9"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/unused_variables_sat/repeat_1/glucose3/worker.json": {
+      "bytes": 614,
+      "sha256": "0f2029c4a7932f8c2bd943962d9ecdc57aa2040ac70c775d82b9a3996b6e788b"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/unused_variables_sat/repeat_1/native/candidate.json": {
+      "bytes": 632,
+      "sha256": "75d7d9b74757774e416cb68724ea0ea9d58b5227263f0adefb63c44c4a90f7f2"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/unused_variables_sat/repeat_1/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/unused_variables_sat/repeat_1/native/search.stdout.txt": {
+      "bytes": 39,
+      "sha256": "68cbf5a646aadfe87f4857baa5377b133740428c65bc913a3419caafc2709ffa"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/unused_variables_sat/repeat_1/native/worker.json": {
+      "bytes": 415,
+      "sha256": "1d6a5fc1f6dc3b1c6d065a5c1a93b95f11f5c634cf116de435db6ff8f649b9da"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/unused_variables_sat/repeat_2/glucose3/candidate.json": {
+      "bytes": 241,
+      "sha256": "1d1489a099b3d52da6e8796d1b7ff618cbadb360a17af4589ff5ca8e1af87437"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/unused_variables_sat/repeat_2/glucose3/raw-proof.drup": {
+      "bytes": 4,
+      "sha256": "4516f6eaaa675488778d6ca333df14bc68c27fb7d7b8015073220d4571aa9c51"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/unused_variables_sat/repeat_2/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/unused_variables_sat/repeat_2/glucose3/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "0e0909ee693dcdc472995da33db3dc0d7d665531f1b63c0b53e8813699f99ea9"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/unused_variables_sat/repeat_2/glucose3/worker.json": {
+      "bytes": 615,
+      "sha256": "7d5ae5113ed62af500c72caee5eaeed742c89daae89f74876de306f2670081a4"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/unused_variables_sat/repeat_2/native/candidate.json": {
+      "bytes": 632,
+      "sha256": "75d7d9b74757774e416cb68724ea0ea9d58b5227263f0adefb63c44c4a90f7f2"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/unused_variables_sat/repeat_2/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/unused_variables_sat/repeat_2/native/search.stdout.txt": {
+      "bytes": 39,
+      "sha256": "68cbf5a646aadfe87f4857baa5377b133740428c65bc913a3419caafc2709ffa"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/unused_variables_sat/repeat_2/native/worker.json": {
+      "bytes": 411,
+      "sha256": "b6aa800754187d0ec9f7b7e87c84a5bcf54e1aa31c5806b63d4c0caf5208b7fb"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/unused_variables_sat/request.json": {
+      "bytes": 128,
+      "sha256": "6fda694fca61049e3d52564ddf6c94b6f6ac783112cbbb2189390a36ef5d0444"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_sat/input.cnf": {
+      "bytes": 720,
+      "sha256": "9a4b7eeed4d8f2297f15a459d3e3153eddaa3b77c2df86e1654584edc19f5a81"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_sat/repeat_0/glucose3/candidate.json": {
+      "bytes": 507,
+      "sha256": "5de006edce975d13b889300b58327341145593c52f608278ea2d5fb0340dd231"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_sat/repeat_0/glucose3/raw-proof.drup": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_sat/repeat_0/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_sat/repeat_0/glucose3/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "0e0909ee693dcdc472995da33db3dc0d7d665531f1b63c0b53e8813699f99ea9"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_sat/repeat_0/glucose3/worker.json": {
+      "bytes": 618,
+      "sha256": "93f9678fa5971155a6394c3d7f4b6d66352e68af5b59f94668d1d619c015e547"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_sat/repeat_0/native/candidate.json": {
+      "bytes": 4202,
+      "sha256": "cb046b7738442a46fa3e8959c0f9e524bb037926e2e9ff73fa7a3e49d79c0be8"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_sat/repeat_0/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_sat/repeat_0/native/search.stdout.txt": {
+      "bytes": 39,
+      "sha256": "68cbf5a646aadfe87f4857baa5377b133740428c65bc913a3419caafc2709ffa"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_sat/repeat_0/native/worker.json": {
+      "bytes": 415,
+      "sha256": "d7f4c45337e0d1027277952cc9137bae2cdfdbf725c8a58a3021e750a72ff01c"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_sat/repeat_1/glucose3/candidate.json": {
+      "bytes": 507,
+      "sha256": "5de006edce975d13b889300b58327341145593c52f608278ea2d5fb0340dd231"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_sat/repeat_1/glucose3/raw-proof.drup": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_sat/repeat_1/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_sat/repeat_1/glucose3/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "0e0909ee693dcdc472995da33db3dc0d7d665531f1b63c0b53e8813699f99ea9"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_sat/repeat_1/glucose3/worker.json": {
+      "bytes": 615,
+      "sha256": "7aebe1ed07b73bd89922761521dda3f32cc9596ee3d9a3b874c044ad263968b1"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_sat/repeat_1/native/candidate.json": {
+      "bytes": 4202,
+      "sha256": "cb046b7738442a46fa3e8959c0f9e524bb037926e2e9ff73fa7a3e49d79c0be8"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_sat/repeat_1/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_sat/repeat_1/native/search.stdout.txt": {
+      "bytes": 39,
+      "sha256": "68cbf5a646aadfe87f4857baa5377b133740428c65bc913a3419caafc2709ffa"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_sat/repeat_1/native/worker.json": {
+      "bytes": 416,
+      "sha256": "d5316b9d7a00cce78e0cfb4442f97f35c45d88548c380e6989004988becd6a9e"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_sat/repeat_2/glucose3/candidate.json": {
+      "bytes": 507,
+      "sha256": "5de006edce975d13b889300b58327341145593c52f608278ea2d5fb0340dd231"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_sat/repeat_2/glucose3/raw-proof.drup": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_sat/repeat_2/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_sat/repeat_2/glucose3/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "0e0909ee693dcdc472995da33db3dc0d7d665531f1b63c0b53e8813699f99ea9"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_sat/repeat_2/glucose3/worker.json": {
+      "bytes": 616,
+      "sha256": "dfe2bceb27bc119430ac35416c2b67ed26d7692b440b33ebbc5f3aebd609a5ae"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_sat/repeat_2/native/candidate.json": {
+      "bytes": 4202,
+      "sha256": "cb046b7738442a46fa3e8959c0f9e524bb037926e2e9ff73fa7a3e49d79c0be8"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_sat/repeat_2/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_sat/repeat_2/native/search.stdout.txt": {
+      "bytes": 39,
+      "sha256": "68cbf5a646aadfe87f4857baa5377b133740428c65bc913a3419caafc2709ffa"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_sat/repeat_2/native/worker.json": {
+      "bytes": 414,
+      "sha256": "171d8fcce2bc3a8907b855804c78323179e1ce100a72c02a92c6cf9b2d7dba7e"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_sat/request.json": {
+      "bytes": 2653,
+      "sha256": "dc99f6ac8e947220818c7729365f3b723e3ce2f758f244c7ee529f3b98941b3b"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_unsat/input.cnf": {
+      "bytes": 809,
+      "sha256": "85906027bfaf41bf78bbc42bff9bbac1beb9d1129d62e45b28df06138a0bce54"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_unsat/repeat_0/glucose3/candidate.json": {
+      "bytes": 237,
+      "sha256": "702f0036899868013c63b078b3c73066495f337b26dc18345a3b1fdfd9bf8656"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_unsat/repeat_0/glucose3/drat-trim.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_unsat/repeat_0/glucose3/drat-trim.stdout.txt": {
+      "bytes": 346,
+      "sha256": "d13c97250397b8889580876cea6a6a9d402be34765519cea6522b4de4ed2b5d5"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_unsat/repeat_0/glucose3/proof.drup": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_unsat/repeat_0/glucose3/raw-proof.drup": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_unsat/repeat_0/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_unsat/repeat_0/glucose3/search.stdout.txt": {
+      "bytes": 43,
+      "sha256": "032fdc8240cad3e4f3510c9dec52fbbcd47228009c8827bdabe49637eb13b00a"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_unsat/repeat_0/glucose3/worker.json": {
+      "bytes": 865,
+      "sha256": "3778ac7b5542fd7e7e6cbbd4a044c09a1ad81733e50629c49b5dcf2c15549022"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_unsat/repeat_0/native/candidate.json": {
+      "bytes": 20280,
+      "sha256": "d3de92f8fa6c283bd7d23725328cc3a807db75c2b0b6efcdbba7b300666bbe78"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_unsat/repeat_0/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_unsat/repeat_0/native/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "1207d28e0d817368743a8d6666a2936cda6eded53b4d35277d1227b22007f2c4"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_unsat/repeat_0/native/worker.json": {
+      "bytes": 417,
+      "sha256": "e4c43a834f380aee4fb37552aa1e738e1ae53f16553e76a0b5f0864467d81b7d"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_unsat/repeat_1/glucose3/candidate.json": {
+      "bytes": 237,
+      "sha256": "702f0036899868013c63b078b3c73066495f337b26dc18345a3b1fdfd9bf8656"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_unsat/repeat_1/glucose3/drat-trim.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_unsat/repeat_1/glucose3/drat-trim.stdout.txt": {
+      "bytes": 346,
+      "sha256": "591f0527e706755a1df83e7ab364f4d4f23aa7980cb8b3f6eb35027aea2b74a7"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_unsat/repeat_1/glucose3/proof.drup": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_unsat/repeat_1/glucose3/raw-proof.drup": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_unsat/repeat_1/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_unsat/repeat_1/glucose3/search.stdout.txt": {
+      "bytes": 43,
+      "sha256": "032fdc8240cad3e4f3510c9dec52fbbcd47228009c8827bdabe49637eb13b00a"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_unsat/repeat_1/glucose3/worker.json": {
+      "bytes": 864,
+      "sha256": "9357aa3ed985ada361e7e12ea686114c7c967aca20c598ac7a49c1eb811906ea"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_unsat/repeat_1/native/candidate.json": {
+      "bytes": 20280,
+      "sha256": "d3de92f8fa6c283bd7d23725328cc3a807db75c2b0b6efcdbba7b300666bbe78"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_unsat/repeat_1/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_unsat/repeat_1/native/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "1207d28e0d817368743a8d6666a2936cda6eded53b4d35277d1227b22007f2c4"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_unsat/repeat_1/native/worker.json": {
+      "bytes": 418,
+      "sha256": "946836d8d92b32812c144c2b78f72c950766ee294cf354591ad5b007122ba67b"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_unsat/repeat_2/glucose3/candidate.json": {
+      "bytes": 237,
+      "sha256": "702f0036899868013c63b078b3c73066495f337b26dc18345a3b1fdfd9bf8656"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_unsat/repeat_2/glucose3/drat-trim.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_unsat/repeat_2/glucose3/drat-trim.stdout.txt": {
+      "bytes": 346,
+      "sha256": "eb009fccc13a46dbddb6d3bc60280ce82e041f0553bb88aa6bc14bcf01e4f302"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_unsat/repeat_2/glucose3/proof.drup": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_unsat/repeat_2/glucose3/raw-proof.drup": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_unsat/repeat_2/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_unsat/repeat_2/glucose3/search.stdout.txt": {
+      "bytes": 43,
+      "sha256": "032fdc8240cad3e4f3510c9dec52fbbcd47228009c8827bdabe49637eb13b00a"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_unsat/repeat_2/glucose3/worker.json": {
+      "bytes": 861,
+      "sha256": "505b085214925c28d353a15ab6c925bc430f14328dd3605c246f827f335d57b1"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_unsat/repeat_2/native/candidate.json": {
+      "bytes": 20280,
+      "sha256": "d3de92f8fa6c283bd7d23725328cc3a807db75c2b0b6efcdbba7b300666bbe78"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_unsat/repeat_2/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_unsat/repeat_2/native/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "1207d28e0d817368743a8d6666a2936cda6eded53b4d35277d1227b22007f2c4"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_unsat/repeat_2/native/worker.json": {
+      "bytes": 417,
+      "sha256": "f2a783e5830b4ba7201151f3550720bc2652869398aa372fd599a5e0d4972004"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_16_unsat/request.json": {
+      "bytes": 3014,
+      "sha256": "3a035e7bbbfa00bf585f74c60e439b129a910afab5f30697a6e3375ca515a31c"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_sat/input.cnf": {
+      "bytes": 3266,
+      "sha256": "6c7320293c9e76743511dbc03459a3389b4cda892d6ec7ce388da4d851930e06"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_sat/repeat_0/glucose3/candidate.json": {
+      "bytes": 1563,
+      "sha256": "afa404a389cc0eda0dc1a31d8580375e73a2314f99e4db41b1e23d9ef0c89ddc"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_sat/repeat_0/glucose3/raw-proof.drup": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_sat/repeat_0/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_sat/repeat_0/glucose3/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "0e0909ee693dcdc472995da33db3dc0d7d665531f1b63c0b53e8813699f99ea9"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_sat/repeat_0/glucose3/worker.json": {
+      "bytes": 618,
+      "sha256": "4ac2bc50773e7e797269811ea6a096803a69e0f1a30e046bbf50a3394689064c"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_sat/repeat_0/native/candidate.json": {
+      "bytes": 16469,
+      "sha256": "4a70ba9fd44a6ae351432c47af4b1ab798f8bf2b1d861770e37d0c3cc245f3b0"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_sat/repeat_0/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_sat/repeat_0/native/search.stdout.txt": {
+      "bytes": 39,
+      "sha256": "68cbf5a646aadfe87f4857baa5377b133740428c65bc913a3419caafc2709ffa"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_sat/repeat_0/native/worker.json": {
+      "bytes": 412,
+      "sha256": "38de5c7703221bdadc967806fe3174958f56d97b1cbfdadb01a220501d89a62b"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_sat/repeat_1/glucose3/candidate.json": {
+      "bytes": 1563,
+      "sha256": "afa404a389cc0eda0dc1a31d8580375e73a2314f99e4db41b1e23d9ef0c89ddc"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_sat/repeat_1/glucose3/raw-proof.drup": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_sat/repeat_1/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_sat/repeat_1/glucose3/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "0e0909ee693dcdc472995da33db3dc0d7d665531f1b63c0b53e8813699f99ea9"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_sat/repeat_1/glucose3/worker.json": {
+      "bytes": 619,
+      "sha256": "fb9ef15932868510c967d3049458812728fe8bcaeda5deced7304bced2e1677a"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_sat/repeat_1/native/candidate.json": {
+      "bytes": 16469,
+      "sha256": "4a70ba9fd44a6ae351432c47af4b1ab798f8bf2b1d861770e37d0c3cc245f3b0"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_sat/repeat_1/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_sat/repeat_1/native/search.stdout.txt": {
+      "bytes": 39,
+      "sha256": "68cbf5a646aadfe87f4857baa5377b133740428c65bc913a3419caafc2709ffa"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_sat/repeat_1/native/worker.json": {
+      "bytes": 415,
+      "sha256": "042be8c0535bba90fd6f5c2fa486342abf39d42ba56adb9e9c440e5dceef7ca6"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_sat/repeat_2/glucose3/candidate.json": {
+      "bytes": 1563,
+      "sha256": "afa404a389cc0eda0dc1a31d8580375e73a2314f99e4db41b1e23d9ef0c89ddc"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_sat/repeat_2/glucose3/raw-proof.drup": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_sat/repeat_2/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_sat/repeat_2/glucose3/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "0e0909ee693dcdc472995da33db3dc0d7d665531f1b63c0b53e8813699f99ea9"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_sat/repeat_2/glucose3/worker.json": {
+      "bytes": 618,
+      "sha256": "7d04179afb3f164633642916b9641a5639e8a7067865ef4e59fbee607a610cc8"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_sat/repeat_2/native/candidate.json": {
+      "bytes": 16469,
+      "sha256": "4a70ba9fd44a6ae351432c47af4b1ab798f8bf2b1d861770e37d0c3cc245f3b0"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_sat/repeat_2/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_sat/repeat_2/native/search.stdout.txt": {
+      "bytes": 39,
+      "sha256": "68cbf5a646aadfe87f4857baa5377b133740428c65bc913a3419caafc2709ffa"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_sat/repeat_2/native/worker.json": {
+      "bytes": 413,
+      "sha256": "8c4385d797d32741d6bb9d307506ba2cb625fc464b9000b61819642b2218ce5c"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_sat/request.json": {
+      "bytes": 11150,
+      "sha256": "b875c81be27d3cfac720a36db9a8ed020d1bb86f9980ca21aeb82a0de71678cf"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_unsat/input.cnf": {
+      "bytes": 3663,
+      "sha256": "409893e1a4c6289333ee2b476b485f9541e97bab62488864b099c692a27ee7b4"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_unsat/repeat_0/glucose3/candidate.json": {
+      "bytes": 237,
+      "sha256": "e243d5ef453e654eded316bb33e470ea7595ced269a1df4cc0ffa82720967f2b"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_unsat/repeat_0/glucose3/drat-trim.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_unsat/repeat_0/glucose3/drat-trim.stdout.txt": {
+      "bytes": 351,
+      "sha256": "8db87cc4c795565e66186786d0aba03550f885042cbf92e83363c9f279c9d1ff"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_unsat/repeat_0/glucose3/proof.drup": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_unsat/repeat_0/glucose3/raw-proof.drup": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_unsat/repeat_0/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_unsat/repeat_0/glucose3/search.stdout.txt": {
+      "bytes": 43,
+      "sha256": "032fdc8240cad3e4f3510c9dec52fbbcd47228009c8827bdabe49637eb13b00a"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_unsat/repeat_0/glucose3/worker.json": {
+      "bytes": 866,
+      "sha256": "abdb6d835d4ece5caffee84f912e065272fec743f2a4235e66eb33f6b1e514ca"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_unsat/repeat_0/native/candidate.json": {
+      "bytes": 194919,
+      "sha256": "cb92a80d52d4464cd873f2f86d17dc4ebca0b6cfedbd41daa888c470fbda154d"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_unsat/repeat_0/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_unsat/repeat_0/native/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "1207d28e0d817368743a8d6666a2936cda6eded53b4d35277d1227b22007f2c4"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_unsat/repeat_0/native/worker.json": {
+      "bytes": 418,
+      "sha256": "0d5771ea55829b440d3e654b54d8b9c8116ebdbcbe2f81aa8fb194aaf0587de1"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_unsat/repeat_1/glucose3/candidate.json": {
+      "bytes": 237,
+      "sha256": "e243d5ef453e654eded316bb33e470ea7595ced269a1df4cc0ffa82720967f2b"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_unsat/repeat_1/glucose3/drat-trim.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_unsat/repeat_1/glucose3/drat-trim.stdout.txt": {
+      "bytes": 351,
+      "sha256": "d74bc5081cba043d2fa9ae906a26c5a228f6fd05e46f8c4a9863f64158a4a8b9"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_unsat/repeat_1/glucose3/proof.drup": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_unsat/repeat_1/glucose3/raw-proof.drup": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_unsat/repeat_1/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_unsat/repeat_1/glucose3/search.stdout.txt": {
+      "bytes": 43,
+      "sha256": "032fdc8240cad3e4f3510c9dec52fbbcd47228009c8827bdabe49637eb13b00a"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_unsat/repeat_1/glucose3/worker.json": {
+      "bytes": 867,
+      "sha256": "82d41ef777664c67ef48475ef2e16aab140c05a28ecfe62a63db97367fb1995b"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_unsat/repeat_1/native/candidate.json": {
+      "bytes": 194919,
+      "sha256": "cb92a80d52d4464cd873f2f86d17dc4ebca0b6cfedbd41daa888c470fbda154d"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_unsat/repeat_1/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_unsat/repeat_1/native/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "1207d28e0d817368743a8d6666a2936cda6eded53b4d35277d1227b22007f2c4"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_unsat/repeat_1/native/worker.json": {
+      "bytes": 417,
+      "sha256": "d4620247e588540db2c72c33daeb92391766ed1b08d784b0c4dfa926e95d1df5"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_unsat/repeat_2/glucose3/candidate.json": {
+      "bytes": 237,
+      "sha256": "e243d5ef453e654eded316bb33e470ea7595ced269a1df4cc0ffa82720967f2b"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_unsat/repeat_2/glucose3/drat-trim.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_unsat/repeat_2/glucose3/drat-trim.stdout.txt": {
+      "bytes": 351,
+      "sha256": "e2d60c753b18ad87bf47799b958f30bbb7c65a5cfd83e9fa7e627ecc698d68a6"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_unsat/repeat_2/glucose3/proof.drup": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_unsat/repeat_2/glucose3/raw-proof.drup": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_unsat/repeat_2/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_unsat/repeat_2/glucose3/search.stdout.txt": {
+      "bytes": 43,
+      "sha256": "032fdc8240cad3e4f3510c9dec52fbbcd47228009c8827bdabe49637eb13b00a"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_unsat/repeat_2/glucose3/worker.json": {
+      "bytes": 867,
+      "sha256": "9ff9759a59711c198d8729c5aa8b16481324bfbb20cdcad8b33bb76c546d49e8"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_unsat/repeat_2/native/candidate.json": {
+      "bytes": 194919,
+      "sha256": "cb92a80d52d4464cd873f2f86d17dc4ebca0b6cfedbd41daa888c470fbda154d"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_unsat/repeat_2/native/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_unsat/repeat_2/native/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "1207d28e0d817368743a8d6666a2936cda6eded53b4d35277d1227b22007f2c4"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_unsat/repeat_2/native/worker.json": {
+      "bytes": 418,
+      "sha256": "433b780f7f524a2115b2129ca811f24a534943d23ccfe235a0e6e769fb4254e8"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/xor_64_unsat/request.json": {
+      "bytes": 12635,
+      "sha256": "5ff83fc0061a587507d0670f374721b07a32efc34771cfd6c625b8a7443a067f"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/benchmark.json": {
+      "bytes": 269795,
+      "sha256": "2afb6cb56f2ac2bb45e80e37542a49783ffca8a260934427e522d992e49e582b"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/php_6_5_shuffled/input.cnf": {
+      "bytes": 1375,
+      "sha256": "1682ea719c431b1551fecdc323fc9804971ba661c0482e59077156109289f1da"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/php_6_5_shuffled/repeat_0/glucose3/candidate.json": {
+      "bytes": 237,
+      "sha256": "018371d677400e623333a8879b0d91ee0a399648f04cdc8462a7d4d4d2c52ca9"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/php_6_5_shuffled/repeat_0/glucose3/diagnosis.additions-only.drup": {
+      "bytes": 3220,
+      "sha256": "b4f2b0ae8aeb11eb8dbfe791cef4ed20be877e82137310cf667b264fb9fb577b"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/php_6_5_shuffled/repeat_0/glucose3/diagnosis.drat-trim.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/php_6_5_shuffled/repeat_0/glucose3/diagnosis.drat-trim.stdout.txt": {
+      "bytes": 26581,
+      "sha256": "53f206984ab8904850e734e8df5711aade5c6ee66ed3ec7b8f75099abe7291a3"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/php_6_5_shuffled/repeat_0/glucose3/diagnosis.json": {
+      "bytes": 10464,
+      "sha256": "607fe8c57417334c27051f5c7bbe32db5398cd1d5e619b4d833ad4b3df5c4c92"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/php_6_5_shuffled/repeat_0/glucose3/proof.drup": {
+      "bytes": 5847,
+      "sha256": "1d7c375dc046042a6b3f17936ba91b96381b3cc926b5b595a1c54fbda1cae180"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/php_6_5_shuffled/repeat_0/glucose3/raw-proof.drup": {
+      "bytes": 5847,
+      "sha256": "1d7c375dc046042a6b3f17936ba91b96381b3cc926b5b595a1c54fbda1cae180"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/php_6_5_shuffled/repeat_0/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/php_6_5_shuffled/repeat_0/glucose3/search.stdout.txt": {
+      "bytes": 43,
+      "sha256": "032fdc8240cad3e4f3510c9dec52fbbcd47228009c8827bdabe49637eb13b00a"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/php_6_5_shuffled/repeat_0/glucose3/worker.json": {
+      "bytes": 623,
+      "sha256": "83b58d20e2063f0e19be126ee4b1eafcf62a526bba73fbd05d3d45cbd9b1f62c"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/php_6_5_shuffled/request.json": {
+      "bytes": 4940,
+      "sha256": "7eb0e3d377c52b9a2aa7c9809e08abd7cb8e714407a5658cc6712e5a04f298ca"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/planted3_20_86/input.cnf": {
+      "bytes": 951,
+      "sha256": "9b8bf2df857b89580a1c41f5e468032621854b44189e23da9b3b92b6a14709bf"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/planted3_20_86/repeat_0/glucose3/candidate.json": {
+      "bytes": 370,
+      "sha256": "c765408d7ac85a26f6c321eaa84bc7f6e848d852f331e7eb7a9f0297e58b956a"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/planted3_20_86/repeat_0/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/planted3_20_86/repeat_0/glucose3/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "0e0909ee693dcdc472995da33db3dc0d7d665531f1b63c0b53e8813699f99ea9"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/planted3_20_86/repeat_0/glucose3/worker.json": {
+      "bytes": 550,
+      "sha256": "5e307f914ac6a6aba7993cb95c477d5391c8dcadd499458aa618c2d57cdcb279"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/planted3_20_86/request.json": {
+      "bytes": 3673,
+      "sha256": "ded6d08ae39a6ae903c950348dd24abf2645b82f52ebedfe8771856fac7df570"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/planted3_40_172/input.cnf": {
+      "bytes": 2018,
+      "sha256": "dc21c3d364753a07cd05be47706cd3f5a3667cd2a4e16c39722bb0acae9403fe"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/planted3_40_172/repeat_0/glucose3/candidate.json": {
+      "bytes": 589,
+      "sha256": "622357a20b2744cde7fe3b251bdfcf0ada76e208b400525c7105055eec9c45fb"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/planted3_40_172/repeat_0/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/planted3_40_172/repeat_0/glucose3/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "0e0909ee693dcdc472995da33db3dc0d7d665531f1b63c0b53e8813699f99ea9"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/planted3_40_172/repeat_0/glucose3/worker.json": {
+      "bytes": 548,
+      "sha256": "bcc555ffe7f30372b066ecdc5c6065c3773dd751d42f43a196dd5d87b8808206"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/planted3_40_172/request.json": {
+      "bytes": 7405,
+      "sha256": "a1a7133166f7797b133f5570c5857d5559b26cc606fff991ea96f7157931f61c"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/random3_20_86/input.cnf": {
+      "bytes": 956,
+      "sha256": "60e18409494886027fe5deb06c2cd0b2da0d0c1c0c69befc800c6fbdad2e0573"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/random3_20_86/repeat_0/glucose3/candidate.json": {
+      "bytes": 374,
+      "sha256": "f1a503d5ca7764d1b9c3f83448ff1904f629871f0d3b53a55879984aac6197b2"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/random3_20_86/repeat_0/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/random3_20_86/repeat_0/glucose3/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "0e0909ee693dcdc472995da33db3dc0d7d665531f1b63c0b53e8813699f99ea9"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/random3_20_86/repeat_0/glucose3/worker.json": {
+      "bytes": 548,
+      "sha256": "8d7c96440e742349cc8d7062ee25ba18b6c8598ffce140fe8200031d82104b05"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/random3_20_86/request.json": {
+      "bytes": 3678,
+      "sha256": "1c163ac2415ac08f13963f5a48fc67736f8550eec7634630f3a14153bc1548e8"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/random3_40_172/input.cnf": {
+      "bytes": 2041,
+      "sha256": "a185f86f6eaf87bd63e6b77b00fb7859589601132cacdf2779e463921c559c94"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/random3_40_172/repeat_0/glucose3/candidate.json": {
+      "bytes": 586,
+      "sha256": "0f0a1e8c99033208a558263e4c0990e2bbc95692f425283c44aae08a56be9c75"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/random3_40_172/repeat_0/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/random3_40_172/repeat_0/glucose3/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "0e0909ee693dcdc472995da33db3dc0d7d665531f1b63c0b53e8813699f99ea9"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/random3_40_172/repeat_0/glucose3/worker.json": {
+      "bytes": 549,
+      "sha256": "5e4125f73488fb3c4fa78be412d84176e54e661f86dd09d47d284555ca8ce9f7"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/random3_40_172/request.json": {
+      "bytes": 7428,
+      "sha256": "90fff5700d65f40ae9acffc028009f6d602d5ec7bf412c4a694b3351cd1cefcf"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/replay.json": {
+      "bytes": 31,
+      "sha256": "7e529391334e6b4df22fc536767a233f6cc38c96558747546ea45519f8ba564b"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/requests.json": {
+      "bytes": 110547,
+      "sha256": "2bb8f666ecc5185a68da783b551b00b9a787bdd9b8e23e4bd4072e0748882a41"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/sources/local_marginal_code_lab/run_exact_lp_discovery.py.txt": {
+      "bytes": 11876,
+      "sha256": "901ab90a51e60532968d7ab3ee842296b0baba6776825165c9e42a7fb08ea636"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/sources/proof_producing_cdcl_lab/cdcl.py.txt": {
+      "bytes": 10628,
+      "sha256": "4740cc51c6ea0f13f777351ab7fdb19ae3e5eb4ae099274868e18c84846ad57f"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/sources/proof_producing_cdcl_lab/public_sat_cases.py.txt": {
+      "bytes": 3338,
+      "sha256": "113f7693f1ea55064a8fd2ef375b35cd2e023806cf02370e6a09fbe2f267351a"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/sources/proof_producing_cdcl_lab/review.py.txt": {
+      "bytes": 7254,
+      "sha256": "6e12af8fbf8c3ebc33c38b6134db57c5bea94c32b1d7a69b8f06ebf1f9f354b3"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/sources/proof_producing_cdcl_lab/run_public_sat.py.txt": {
+      "bytes": 18120,
+      "sha256": "f6edb07558214f6e0746a24fa8b261d79996bbcf7debc5142da7f736867f1b5f"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/sources/proof_producing_cdcl_lab/rup_verify.py.txt": {
+      "bytes": 11025,
+      "sha256": "d6aee0e014262d0d731f4adeb91d50c52992d51fe6ce7c560e479344563471eb"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/sources/proof_producing_cdcl_lab/sat_backend_certificate.py.txt": {
+      "bytes": 5803,
+      "sha256": "ee9d802251324bf3c03eea4acdaa2b00376cff0d87b7e0b0f45826be44fa564d"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/unused_variables_sat/input.cnf": {
+      "bytes": 23,
+      "sha256": "8357c54b8f38d940cae9e24f1cc06ce032f40d7d44019e2c04b5e0da6a846aaf"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/unused_variables_sat/repeat_0/glucose3/candidate.json": {
+      "bytes": 241,
+      "sha256": "1d1489a099b3d52da6e8796d1b7ff618cbadb360a17af4589ff5ca8e1af87437"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/unused_variables_sat/repeat_0/glucose3/search.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/unused_variables_sat/repeat_0/glucose3/search.stdout.txt": {
+      "bytes": 41,
+      "sha256": "0e0909ee693dcdc472995da33db3dc0d7d665531f1b63c0b53e8813699f99ea9"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/unused_variables_sat/repeat_0/glucose3/worker.json": {
+      "bytes": 546,
+      "sha256": "db56368b39c653abddc4e450b10c83e58d0d1f8c70cbb81064ee85cef403d3fd"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/unused_variables_sat/request.json": {
+      "bytes": 128,
+      "sha256": "6fda694fca61049e3d52564ddf6c94b6f6ac783112cbbb2189390a36ef5d0444"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_TESTS.txt": {
+      "bytes": 4804,
+      "sha256": "a706b42cf030c9df39d3b09d31c0c217778ca4a0114e4efc9ee0f388c7b95944"
+    },
+    "proof_producing_cdcl_lab/PUBLIC_SAT_TESTS_OPTIMIZED.txt": {
+      "bytes": 4804,
+      "sha256": "ef937903a4d4f306a1f8152894361fe9770e37eb8951a9731cbf773230d3ce8a"
+    },
     "proof_producing_cdcl_lab/README.md": {
-      "bytes": 1264,
-      "sha256": "9cb3c3ce23b87cbb588e784387c912ee88dd8dd1c552ce80d94f3571eafb2c43"
+      "bytes": 1897,
+      "sha256": "32334a7d1bd4614e74dc2916cae48491b663dc3bfab488bb79af2524e3c01c44"
     },
     "proof_producing_cdcl_lab/RESULTS.json": {
       "bytes": 2570,
@@ -4109,6 +7101,14 @@
       "bytes": 10628,
       "sha256": "4740cc51c6ea0f13f777351ab7fdb19ae3e5eb4ae099274868e18c84846ad57f"
     },
+    "proof_producing_cdcl_lab/public_sat_cases.py": {
+      "bytes": 3338,
+      "sha256": "113f7693f1ea55064a8fd2ef375b35cd2e023806cf02370e6a09fbe2f267351a"
+    },
+    "proof_producing_cdcl_lab/requirements-public-sat.txt": {
+      "bytes": 112,
+      "sha256": "d28a8f14e5d97046bc26e95009e00267cd50eae1b0ee4e77479e2503f6a0358a"
+    },
     "proof_producing_cdcl_lab/review.py": {
       "bytes": 7254,
       "sha256": "6e12af8fbf8c3ebc33c38b6134db57c5bea94c32b1d7a69b8f06ebf1f9f354b3"
@@ -4117,13 +7117,37 @@
       "bytes": 3196,
       "sha256": "b96e1d4bad34d17b0a2bf48f66b27c403ee7751bc4af87256ec1c027a1065518"
     },
+    "proof_producing_cdcl_lab/run_public_sat.py": {
+      "bytes": 20579,
+      "sha256": "a888aeed23e7e2e0baaac4a9acd22f3ebca9a6917b17197ae30ba55a39e567a0"
+    },
+    "proof_producing_cdcl_lab/rup_verify.py": {
+      "bytes": 11025,
+      "sha256": "d6aee0e014262d0d731f4adeb91d50c52992d51fe6ce7c560e479344563471eb"
+    },
+    "proof_producing_cdcl_lab/sat_backend_certificate.py": {
+      "bytes": 5803,
+      "sha256": "ee9d802251324bf3c03eea4acdaa2b00376cff0d87b7e0b0f45826be44fa564d"
+    },
     "proof_producing_cdcl_lab/test_cdcl.py": {
       "bytes": 4281,
       "sha256": "bdda9b370920b74a9732976a5484435712d515ce5bb6231eba787486a05fdfbc"
     },
+    "proof_producing_cdcl_lab/test_public_sat_certificate.py": {
+      "bytes": 32036,
+      "sha256": "cba52644a55d2d6acce368a22ad1d34ac7a21b665eadf757dd77acc27ea6780f"
+    },
+    "proof_producing_cdcl_lab/test_public_sat_evidence.py": {
+      "bytes": 3542,
+      "sha256": "e1fadbf6063589fb2933a28e6193d9fb343110edc83290112740f200933224c3"
+    },
     "proof_producing_cdcl_lab/test_review_validation.py": {
       "bytes": 4687,
       "sha256": "f853579506585ce340bce02b6747c2ae93b9608517e3e6884873ae2444516e12"
+    },
+    "proof_producing_cdcl_lab/test_rup_verify.py": {
+      "bytes": 11906,
+      "sha256": "741a817e15f5f8fb0217491d358ca7afedbe14dbf91d5c15ddca3302bf0b830d"
     },
     "randomized_isolation.py": {
       "bytes": 3980,
@@ -4778,8 +7802,8 @@
       "sha256": "f11e49f6b30f074519eb181976e555332093b8f1003858e09c9535c440a1a4e4"
     },
     "run_research_checks.py": {
-      "bytes": 7265,
-      "sha256": "aa4188e272e82aedf85cbaa53d72a6c2947be8f2044b11d0cfd756a607f65203"
+      "bytes": 7577,
+      "sha256": "433fbccc2841b8be43f79cd5e059aca8150af79c86cfe4cd6d4d502022c4eb9e"
     },
     "run_threshold_phase_checks.py": {
       "bytes": 2230,
@@ -5666,6 +8690,6 @@
       "sha256": "957bd3b51cbf2cd06ee00f1ef47ab5c6fa8bbf1a4c281c0e67b129b027785a18"
     }
   },
-  "generated_at_utc": "2026-10-20T07:00:46.684243+00:00",
-  "source_commit": "6e25fa660951b1226bce78ec45003d9a55112a34"
+  "generated_at_utc": "2026-10-20T07:31:08.536024+00:00",
+  "source_commit": "07bc9c3303d501b56da612eb8bf27a6aa28f7fdb"
 }

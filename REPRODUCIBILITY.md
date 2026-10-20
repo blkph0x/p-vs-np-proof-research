@@ -46,6 +46,8 @@ python review_rm2_level8_family.py
 python run_rm2_nine_scope.py --replay RM2_NINE_SCOPE_DISCOVERY
 python -m unittest -v test_rm2_nine_scope test_rm2_level9_family
 python -O -m unittest -v test_rm2_nine_scope test_rm2_level9_family
+python -m unittest -v test_rm2_level10_control
+python -O -m unittest -v test_rm2_level10_control
 Pop-Location
 ```
 
@@ -66,6 +68,9 @@ python build_public_method_inventory.py --check
 Push-Location proof_producing_cdcl_lab
 python -m unittest -v test_cdcl.py test_review_validation.py
 python -O -m unittest -v test_review_validation.py
+python run_public_sat.py --replay PUBLIC_SAT_BASELINE
+python -m unittest -v test_rup_verify test_public_sat_certificate test_public_sat_evidence
+python -O -m unittest -v test_rup_verify test_public_sat_certificate test_public_sat_evidence
 Pop-Location
 Push-Location affine_projection_recognition_lab
 python review_affine_hull.py
@@ -79,6 +84,14 @@ queries, models, resolution proofs, source bindings and capped statuses. It
 does not verify that the projected relation equals its hull. The older general
 CDCL checker now uses explicit acceptance checks even under optimized Python.
 Other historical checkers have not all been audited for `-O` safety.
+
+The [public SAT campaign](proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE.md)
+has a standard-library stored replay. Optional fresh search requires its
+separate pinned PySAT requirements; the public second checker has its own
+pinned build instructions. CI does not install either search backend.
+The historical measurement environment was CPython 3.10.10 on Windows;
+the main CI uses Python 3.12. Replay verifies certificates and source binding,
+not the portability of measured timings.
 
 Active research CI runs are now allowed to finish; a new push does not cancel
 one halfway through. GitHub's default pending queue can still replace an older

@@ -1,0 +1,17 @@
+{
+  "certificate_export_seconds": 0.01002869987860322,
+  "construction_seconds": 0.0025726999156177044,
+  "decision_limit": 5000,
+  "engine": "native-reference",
+  "solve_seconds": 0.0073865000158548355,
+  "solver_status": "UNSAT",
+  "stats": {
+    "backjumps": 0,
+    "boolean_props": 127,
+    "conflicts": 1,
+    "decisions": 0,
+    "learned_clauses": 0,
+    "learned_literals": 0,
+    "resolution_steps": 127
+  }
+}

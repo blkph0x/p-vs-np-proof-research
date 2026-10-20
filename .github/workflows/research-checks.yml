@@ -32,6 +32,12 @@ jobs:
           cd proof_producing_cdcl_lab
           python -m unittest -v test_cdcl.py test_review_validation.py
           python -O -m unittest -v test_review_validation.py
+      - name: Replay public SAT evidence without installing a search backend
+        working-directory: proof_producing_cdcl_lab
+        run: |
+          python run_public_sat.py --replay PUBLIC_SAT_BASELINE
+          python -m unittest -v test_rup_verify test_public_sat_certificate test_public_sat_evidence
+          python -O -m unittest -v test_rup_verify test_public_sat_certificate test_public_sat_evidence
       - name: Check exact local Fourier precomputation
         working-directory: affine_character_factor_lab
         run: |
@@ -111,6 +117,11 @@ jobs:
           python run_rm2_nine_scope.py --replay RM2_NINE_SCOPE_DISCOVERY
           python -m unittest -v test_rm2_nine_scope test_rm2_level9_family
           python -O -m unittest -v test_rm2_nine_scope test_rm2_level9_family
+      - name: Check the strict locality-ten lower bound
+        working-directory: local_marginal_code_lab
+        run: |
+          python -m unittest -v test_rm2_level10_control
+          python -O -m unittest -v test_rm2_level10_control
       - name: Replay prefix-threshold sequential-counter audit
         working-directory: proof_motif_candidate_lab
         run: |

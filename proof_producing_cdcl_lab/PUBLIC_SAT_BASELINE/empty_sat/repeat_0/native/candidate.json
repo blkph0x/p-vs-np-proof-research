@@ -1,0 +1,19 @@
+{
+  "request_sha256": "e8f4be2414b9f7f29ad6f78794d558cfc9455f5533c86d385f431ca420e149eb",
+  "result": {
+    "clauses": [],
+    "model": {},
+    "proof": [],
+    "stats": {
+      "backjumps": 0,
+      "boolean_props": 0,
+      "conflicts": 0,
+      "decisions": 0,
+      "learned_clauses": 0,
+      "learned_literals": 0,
+      "resolution_steps": 0
+    },
+    "status": "SAT"
+  },
+  "schema": "native-cdcl-candidate-v1"
+}

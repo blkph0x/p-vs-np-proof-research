@@ -215,3 +215,19 @@ RM(2,5) locality-nine upper bound. The
 [family proof](REED_MULLER_QUADRATIC_LEVEL9_THEOREM.md) gives reduced
 `7(2^m-1)/31` for every `m>=5`, with novelty unestablished. Earlier reports
 remain historical evidence at their declared locality levels.
+
+The [ten-coordinate control](RM2_LEVEL10_CONTROL.md) then proves the
+strictly stronger full-locality-ten lower bound
+`644(2^m-1)/2849` on reduced weight for every `m>=6`. Its explicit
+nonnegative identity excludes the entire level-nine optimal face.
+[Seven tests](test_rm2_level10_control.py) and a separate mathematical
+audit check the derivation. This is a lower bound; the full level-ten
+optimum remains open.
+
+The expanded [novelty ledger](LOCAL_MARGINAL_NOVELTY_LEDGER.md) connects
+the rank moments to classical subspace inclusion and matroid Möbius
+inversion, and compares LP decoding, orthogonal arrays, and coding
+hierarchies with explicit formulation boundaries. The established
+counting methods do not automatically prove positivity above the
+construction's virtual ambient rank. Novelty of the exact scoped RM
+optimization statements remains `UNKNOWN`.

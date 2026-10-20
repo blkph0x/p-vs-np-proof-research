@@ -7,12 +7,16 @@ and acceptance test for each capability. A canonical rational export and
 [SoPlex adapter](local_marginal_code_lab/EXACT_LP_DISCOVERY.md) now reproduce
 the affine-overlap optimum, with independent model reconstruction. Extend
 this to full-model/cut discovery only with the same source-bound acceptance.
-Then benchmark certified
-SAT/XOR and D4/CPOG compilation on the same original requests. Next evaluate
+The [public Glucose3 campaign](proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE.md)
+now verifies 114 paired runs. Its search improvement is outweighed on the
+larger PHP cases by the reference Python RUP checker. Improve or replace that
+checking path only with independently validated proof conversion and the same
+original-formula controls. Then benchmark native XOR and D4/CPOG compilation
+on the same original requests. Next evaluate
 CMR graphic recognition, a public LEMON matching-dual exporter, and independently
 checked join/contraction plans. Keep exact reference implementations and all
-negative/UNKNOWN controls. The SAT/compilation, CMR and LEMON adapters remain
-proposed; SoPlex is the first implemented external discovery backend.
+negative/UNKNOWN controls. Certified compilation, CMR and LEMON adapters remain
+proposed; SoPlex and Glucose3 are implemented optional discovery backends.
 
 The [quadratic RM family theorem](local_marginal_code_lab/REED_MULLER_QUADRATIC_LEVEL8_THEOREM.md)
 now proves the exact fixed-level value `(2^m-1)/5` for every `m>=4`.
@@ -22,8 +26,11 @@ An actual codeword closes full RM(2,5) locality nine, and the
 [family proof](local_marginal_code_lab/REED_MULLER_QUADRATIC_LEVEL9_THEOREM.md)
 gives `7(2^m-1)/31` for every `m>=5`. The weaker single-cut primal is retained
 with its nonextendability argument. Next compare the two fixed-level family
-formulas with the code/hierarchy literature and test a precise further-locality
-conjecture. Do not infer convergence or novelty from these two levels.
+formulas with the code/hierarchy literature. The
+[level-ten control](local_marginal_code_lab/RM2_LEVEL10_CONTROL.md) now proves
+the strict lower bound `644(2^m-1)/2849` for `m>=6`. A matching upper bound,
+the exact optimum and novelty remain open. The ledger records the precise
+matroid/subspace counting connection; it does not infer convergence.
 
 Immediate verifier hardening, source-coverage checks and local Fourier
 precomputation are recorded separately from those future integrations. None

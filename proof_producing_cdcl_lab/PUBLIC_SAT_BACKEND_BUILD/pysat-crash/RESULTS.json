@@ -1,0 +1,2032 @@
+{
+  "schema": "pysat-sat-lifecycle-probe-v1",
+  "purpose": "diagnose failed process exits; no failed exit is accepted",
+  "source_sha256": {
+    "public_sat_cases.py": "113f7693f1ea55064a8fd2ef375b35cd2e023806cf02370e6a09fbe2f267351a",
+    "installed_solvers.py": "b84f0790c70b5af2f85ab82d0e1441aea874c2ae6483d90da40286a01397e065",
+    "installed_pysolvers.pyd": "362886a7692328019f74d94454224907257875d2122ba348c756f8463ceb2a67",
+    "probe.py": "9b3679a8f32fbc4439906944039af6b37bbad22ab2acb831803a9a4ea87e5ef8",
+    "run_diagnosis.py": "d8fce29404b0e75987b127579364b2220d990244ccf33fc976a49262eb366260"
+  },
+  "runs": [
+    {
+      "case": "units_unsat",
+      "mode": "no_proof",
+      "repetition": 0,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"no_proof\"}\n{\"stage\": \"solved\", \"result\": false, \"stats\": {\"restarts\": 0, \"conflicts\": 0, \"decisions\": 0, \"propagations\": 1}}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.1680231001228094,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\units_unsat.json",
+        "no_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "b838416f52b7bd872d0b5b4215b72c810407addcedafa17ccab0bdee5a0cb24e"
+    },
+    {
+      "case": "units_unsat",
+      "mode": "no_proof",
+      "repetition": 1,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"no_proof\"}\n{\"stage\": \"solved\", \"result\": false, \"stats\": {\"restarts\": 0, \"conflicts\": 0, \"decisions\": 0, \"propagations\": 1}}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.14212960004806519,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\units_unsat.json",
+        "no_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "b838416f52b7bd872d0b5b4215b72c810407addcedafa17ccab0bdee5a0cb24e"
+    },
+    {
+      "case": "units_unsat",
+      "mode": "no_proof",
+      "repetition": 2,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"no_proof\"}\n{\"stage\": \"solved\", \"result\": false, \"stats\": {\"restarts\": 0, \"conflicts\": 0, \"decisions\": 0, \"propagations\": 1}}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.13581519993022084,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\units_unsat.json",
+        "no_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "b838416f52b7bd872d0b5b4215b72c810407addcedafa17ccab0bdee5a0cb24e"
+    },
+    {
+      "case": "units_unsat",
+      "mode": "unread_proof",
+      "repetition": 0,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"unread_proof\"}\n{\"stage\": \"solved\", \"result\": false, \"stats\": {\"restarts\": 0, \"conflicts\": 0, \"decisions\": 0, \"propagations\": 1}}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.15260269958525896,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\units_unsat.json",
+        "unread_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "b838416f52b7bd872d0b5b4215b72c810407addcedafa17ccab0bdee5a0cb24e"
+    },
+    {
+      "case": "units_unsat",
+      "mode": "unread_proof",
+      "repetition": 1,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"unread_proof\"}\n{\"stage\": \"solved\", \"result\": false, \"stats\": {\"restarts\": 0, \"conflicts\": 0, \"decisions\": 0, \"propagations\": 1}}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.16257760021835566,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\units_unsat.json",
+        "unread_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "b838416f52b7bd872d0b5b4215b72c810407addcedafa17ccab0bdee5a0cb24e"
+    },
+    {
+      "case": "units_unsat",
+      "mode": "unread_proof",
+      "repetition": 2,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"unread_proof\"}\n{\"stage\": \"solved\", \"result\": false, \"stats\": {\"restarts\": 0, \"conflicts\": 0, \"decisions\": 0, \"propagations\": 1}}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.14653660031035542,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\units_unsat.json",
+        "unread_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "b838416f52b7bd872d0b5b4215b72c810407addcedafa17ccab0bdee5a0cb24e"
+    },
+    {
+      "case": "units_unsat",
+      "mode": "read_proof",
+      "repetition": 0,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"read_proof\"}\n{\"stage\": \"solved\", \"result\": false, \"stats\": {\"restarts\": 0, \"conflicts\": 0, \"decisions\": 0, \"propagations\": 1}}\n{\"stage\": \"proof_read\", \"lines\": 0, \"bytes\": 0}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.1532646999694407,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\units_unsat.json",
+        "read_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "b838416f52b7bd872d0b5b4215b72c810407addcedafa17ccab0bdee5a0cb24e"
+    },
+    {
+      "case": "units_unsat",
+      "mode": "read_proof",
+      "repetition": 1,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"read_proof\"}\n{\"stage\": \"solved\", \"result\": false, \"stats\": {\"restarts\": 0, \"conflicts\": 0, \"decisions\": 0, \"propagations\": 1}}\n{\"stage\": \"proof_read\", \"lines\": 0, \"bytes\": 0}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.14413259970024228,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\units_unsat.json",
+        "read_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "b838416f52b7bd872d0b5b4215b72c810407addcedafa17ccab0bdee5a0cb24e"
+    },
+    {
+      "case": "units_unsat",
+      "mode": "read_proof",
+      "repetition": 2,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"read_proof\"}\n{\"stage\": \"solved\", \"result\": false, \"stats\": {\"restarts\": 0, \"conflicts\": 0, \"decisions\": 0, \"propagations\": 1}}\n{\"stage\": \"proof_read\", \"lines\": 0, \"bytes\": 0}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.1573996003717184,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\units_unsat.json",
+        "read_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "b838416f52b7bd872d0b5b4215b72c810407addcedafa17ccab0bdee5a0cb24e"
+    },
+    {
+      "case": "units_unsat",
+      "mode": "flush_proof",
+      "repetition": 0,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"flush_proof\"}\n{\"stage\": \"solved\", \"result\": false, \"stats\": {\"restarts\": 0, \"conflicts\": 0, \"decisions\": 0, \"propagations\": 1}}\n{\"stage\": \"proof_flushed\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.16211389983072877,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\units_unsat.json",
+        "flush_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "b838416f52b7bd872d0b5b4215b72c810407addcedafa17ccab0bdee5a0cb24e"
+    },
+    {
+      "case": "units_unsat",
+      "mode": "flush_proof",
+      "repetition": 1,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"flush_proof\"}\n{\"stage\": \"solved\", \"result\": false, \"stats\": {\"restarts\": 0, \"conflicts\": 0, \"decisions\": 0, \"propagations\": 1}}\n{\"stage\": \"proof_flushed\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.15593210002407432,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\units_unsat.json",
+        "flush_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "b838416f52b7bd872d0b5b4215b72c810407addcedafa17ccab0bdee5a0cb24e"
+    },
+    {
+      "case": "units_unsat",
+      "mode": "flush_proof",
+      "repetition": 2,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"flush_proof\"}\n{\"stage\": \"solved\", \"result\": false, \"stats\": {\"restarts\": 0, \"conflicts\": 0, \"decisions\": 0, \"propagations\": 1}}\n{\"stage\": \"proof_flushed\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.1525650997646153,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\units_unsat.json",
+        "flush_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "b838416f52b7bd872d0b5b4215b72c810407addcedafa17ccab0bdee5a0cb24e"
+    },
+    {
+      "case": "unused_variables_sat",
+      "mode": "no_proof",
+      "repetition": 0,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"no_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 1, \"decisions\": 5, \"propagations\": 4}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.15196439996361732,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\unused_variables_sat.json",
+        "no_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "1b2cad3c1436376909cf3ebbd26d13eeaf34ce363e72e3cd9e1532b5c917773b"
+    },
+    {
+      "case": "unused_variables_sat",
+      "mode": "no_proof",
+      "repetition": 1,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"no_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 1, \"decisions\": 5, \"propagations\": 4}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.13628089986741543,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\unused_variables_sat.json",
+        "no_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "1b2cad3c1436376909cf3ebbd26d13eeaf34ce363e72e3cd9e1532b5c917773b"
+    },
+    {
+      "case": "unused_variables_sat",
+      "mode": "no_proof",
+      "repetition": 2,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"no_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 1, \"decisions\": 5, \"propagations\": 4}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.138950000051409,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\unused_variables_sat.json",
+        "no_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "1b2cad3c1436376909cf3ebbd26d13eeaf34ce363e72e3cd9e1532b5c917773b"
+    },
+    {
+      "case": "unused_variables_sat",
+      "mode": "unread_proof",
+      "repetition": 0,
+      "returncode": 3221226505,
+      "returncode_hex_u32": "0xc0000409",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"unread_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 1, \"decisions\": 5, \"propagations\": 4}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.6486938996240497,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\unused_variables_sat.json",
+        "unread_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "1b2cad3c1436376909cf3ebbd26d13eeaf34ce363e72e3cd9e1532b5c917773b"
+    },
+    {
+      "case": "unused_variables_sat",
+      "mode": "unread_proof",
+      "repetition": 1,
+      "returncode": 3221226505,
+      "returncode_hex_u32": "0xc0000409",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"unread_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 1, \"decisions\": 5, \"propagations\": 4}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.5840402999892831,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\unused_variables_sat.json",
+        "unread_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "1b2cad3c1436376909cf3ebbd26d13eeaf34ce363e72e3cd9e1532b5c917773b"
+    },
+    {
+      "case": "unused_variables_sat",
+      "mode": "unread_proof",
+      "repetition": 2,
+      "returncode": 3221226505,
+      "returncode_hex_u32": "0xc0000409",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"unread_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 1, \"decisions\": 5, \"propagations\": 4}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.585366599727422,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\unused_variables_sat.json",
+        "unread_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "1b2cad3c1436376909cf3ebbd26d13eeaf34ce363e72e3cd9e1532b5c917773b"
+    },
+    {
+      "case": "unused_variables_sat",
+      "mode": "read_proof",
+      "repetition": 0,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"read_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 1, \"decisions\": 5, \"propagations\": 4}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"proof_read\", \"lines\": 1, \"bytes\": 4}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.14795689983293414,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\unused_variables_sat.json",
+        "read_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "1b2cad3c1436376909cf3ebbd26d13eeaf34ce363e72e3cd9e1532b5c917773b"
+    },
+    {
+      "case": "unused_variables_sat",
+      "mode": "read_proof",
+      "repetition": 1,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"read_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 1, \"decisions\": 5, \"propagations\": 4}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"proof_read\", \"lines\": 1, \"bytes\": 4}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.14801859995350242,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\unused_variables_sat.json",
+        "read_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "1b2cad3c1436376909cf3ebbd26d13eeaf34ce363e72e3cd9e1532b5c917773b"
+    },
+    {
+      "case": "unused_variables_sat",
+      "mode": "read_proof",
+      "repetition": 2,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"read_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 1, \"decisions\": 5, \"propagations\": 4}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"proof_read\", \"lines\": 1, \"bytes\": 4}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.15002950001507998,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\unused_variables_sat.json",
+        "read_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "1b2cad3c1436376909cf3ebbd26d13eeaf34ce363e72e3cd9e1532b5c917773b"
+    },
+    {
+      "case": "unused_variables_sat",
+      "mode": "flush_proof",
+      "repetition": 0,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"flush_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 1, \"decisions\": 5, \"propagations\": 4}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"proof_flushed\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.15055890008807182,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\unused_variables_sat.json",
+        "flush_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "1b2cad3c1436376909cf3ebbd26d13eeaf34ce363e72e3cd9e1532b5c917773b"
+    },
+    {
+      "case": "unused_variables_sat",
+      "mode": "flush_proof",
+      "repetition": 1,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"flush_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 1, \"decisions\": 5, \"propagations\": 4}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"proof_flushed\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.1502903001382947,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\unused_variables_sat.json",
+        "flush_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "1b2cad3c1436376909cf3ebbd26d13eeaf34ce363e72e3cd9e1532b5c917773b"
+    },
+    {
+      "case": "unused_variables_sat",
+      "mode": "flush_proof",
+      "repetition": 2,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"flush_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 1, \"decisions\": 5, \"propagations\": 4}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"proof_flushed\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.14488269994035363,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\unused_variables_sat.json",
+        "flush_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "1b2cad3c1436376909cf3ebbd26d13eeaf34ce363e72e3cd9e1532b5c917773b"
+    },
+    {
+      "case": "random3_20_86",
+      "mode": "no_proof",
+      "repetition": 0,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"no_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 8, \"decisions\": 14, \"propagations\": 68}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.15269890008494258,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\random3_20_86.json",
+        "no_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "cf3102730c111cac4c3404954b41dec4ac453d97d6ddcef31e3cae2e14d0d80f"
+    },
+    {
+      "case": "random3_20_86",
+      "mode": "no_proof",
+      "repetition": 1,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"no_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 8, \"decisions\": 14, \"propagations\": 68}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.14134560013189912,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\random3_20_86.json",
+        "no_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "cf3102730c111cac4c3404954b41dec4ac453d97d6ddcef31e3cae2e14d0d80f"
+    },
+    {
+      "case": "random3_20_86",
+      "mode": "no_proof",
+      "repetition": 2,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"no_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 8, \"decisions\": 14, \"propagations\": 68}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.14419860020279884,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\random3_20_86.json",
+        "no_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "cf3102730c111cac4c3404954b41dec4ac453d97d6ddcef31e3cae2e14d0d80f"
+    },
+    {
+      "case": "random3_20_86",
+      "mode": "unread_proof",
+      "repetition": 0,
+      "returncode": 3221226505,
+      "returncode_hex_u32": "0xc0000409",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"unread_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 8, \"decisions\": 14, \"propagations\": 68}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.6346971997991204,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\random3_20_86.json",
+        "unread_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "cf3102730c111cac4c3404954b41dec4ac453d97d6ddcef31e3cae2e14d0d80f"
+    },
+    {
+      "case": "random3_20_86",
+      "mode": "unread_proof",
+      "repetition": 1,
+      "returncode": 3221226505,
+      "returncode_hex_u32": "0xc0000409",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"unread_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 8, \"decisions\": 14, \"propagations\": 68}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.5957618001848459,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\random3_20_86.json",
+        "unread_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "cf3102730c111cac4c3404954b41dec4ac453d97d6ddcef31e3cae2e14d0d80f"
+    },
+    {
+      "case": "random3_20_86",
+      "mode": "unread_proof",
+      "repetition": 2,
+      "returncode": 3221226505,
+      "returncode_hex_u32": "0xc0000409",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"unread_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 8, \"decisions\": 14, \"propagations\": 68}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.584296100307256,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\random3_20_86.json",
+        "unread_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "cf3102730c111cac4c3404954b41dec4ac453d97d6ddcef31e3cae2e14d0d80f"
+    },
+    {
+      "case": "random3_20_86",
+      "mode": "read_proof",
+      "repetition": 0,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"read_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 8, \"decisions\": 14, \"propagations\": 68}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"proof_read\", \"lines\": 8, \"bytes\": 63}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.15750580001622438,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\random3_20_86.json",
+        "read_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "cf3102730c111cac4c3404954b41dec4ac453d97d6ddcef31e3cae2e14d0d80f"
+    },
+    {
+      "case": "random3_20_86",
+      "mode": "read_proof",
+      "repetition": 1,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"read_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 8, \"decisions\": 14, \"propagations\": 68}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"proof_read\", \"lines\": 8, \"bytes\": 63}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.1522621000185609,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\random3_20_86.json",
+        "read_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "cf3102730c111cac4c3404954b41dec4ac453d97d6ddcef31e3cae2e14d0d80f"
+    },
+    {
+      "case": "random3_20_86",
+      "mode": "read_proof",
+      "repetition": 2,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"read_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 8, \"decisions\": 14, \"propagations\": 68}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"proof_read\", \"lines\": 8, \"bytes\": 63}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.14497540006414056,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\random3_20_86.json",
+        "read_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "cf3102730c111cac4c3404954b41dec4ac453d97d6ddcef31e3cae2e14d0d80f"
+    },
+    {
+      "case": "random3_20_86",
+      "mode": "flush_proof",
+      "repetition": 0,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"flush_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 8, \"decisions\": 14, \"propagations\": 68}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"proof_flushed\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.1572261997498572,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\random3_20_86.json",
+        "flush_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "cf3102730c111cac4c3404954b41dec4ac453d97d6ddcef31e3cae2e14d0d80f"
+    },
+    {
+      "case": "random3_20_86",
+      "mode": "flush_proof",
+      "repetition": 1,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"flush_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 8, \"decisions\": 14, \"propagations\": 68}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"proof_flushed\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.15625090012326837,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\random3_20_86.json",
+        "flush_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "cf3102730c111cac4c3404954b41dec4ac453d97d6ddcef31e3cae2e14d0d80f"
+    },
+    {
+      "case": "random3_20_86",
+      "mode": "flush_proof",
+      "repetition": 2,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"flush_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 8, \"decisions\": 14, \"propagations\": 68}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"proof_flushed\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.14721400011330843,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\random3_20_86.json",
+        "flush_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "cf3102730c111cac4c3404954b41dec4ac453d97d6ddcef31e3cae2e14d0d80f"
+    },
+    {
+      "case": "planted3_20_86",
+      "mode": "no_proof",
+      "repetition": 0,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"no_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 11, \"decisions\": 22, \"propagations\": 92}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.15334299998357892,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\planted3_20_86.json",
+        "no_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "43f12ce285145e83806bb36a6205fe99456bdb54726ecc49dcd26bd7e2bf0641"
+    },
+    {
+      "case": "planted3_20_86",
+      "mode": "no_proof",
+      "repetition": 1,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"no_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 11, \"decisions\": 22, \"propagations\": 92}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.14010189985856414,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\planted3_20_86.json",
+        "no_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "43f12ce285145e83806bb36a6205fe99456bdb54726ecc49dcd26bd7e2bf0641"
+    },
+    {
+      "case": "planted3_20_86",
+      "mode": "no_proof",
+      "repetition": 2,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"no_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 11, \"decisions\": 22, \"propagations\": 92}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.14281839970499277,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\planted3_20_86.json",
+        "no_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "43f12ce285145e83806bb36a6205fe99456bdb54726ecc49dcd26bd7e2bf0641"
+    },
+    {
+      "case": "planted3_20_86",
+      "mode": "unread_proof",
+      "repetition": 0,
+      "returncode": 3221226505,
+      "returncode_hex_u32": "0xc0000409",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"unread_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 11, \"decisions\": 22, \"propagations\": 92}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.5794743001461029,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\planted3_20_86.json",
+        "unread_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "43f12ce285145e83806bb36a6205fe99456bdb54726ecc49dcd26bd7e2bf0641"
+    },
+    {
+      "case": "planted3_20_86",
+      "mode": "unread_proof",
+      "repetition": 1,
+      "returncode": 3221226505,
+      "returncode_hex_u32": "0xc0000409",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"unread_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 11, \"decisions\": 22, \"propagations\": 92}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.5775141003541648,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\planted3_20_86.json",
+        "unread_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "43f12ce285145e83806bb36a6205fe99456bdb54726ecc49dcd26bd7e2bf0641"
+    },
+    {
+      "case": "planted3_20_86",
+      "mode": "unread_proof",
+      "repetition": 2,
+      "returncode": 3221226505,
+      "returncode_hex_u32": "0xc0000409",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"unread_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 11, \"decisions\": 22, \"propagations\": 92}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.6019930001348257,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\planted3_20_86.json",
+        "unread_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "43f12ce285145e83806bb36a6205fe99456bdb54726ecc49dcd26bd7e2bf0641"
+    },
+    {
+      "case": "planted3_20_86",
+      "mode": "read_proof",
+      "repetition": 0,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"read_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 11, \"decisions\": 22, \"propagations\": 92}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"proof_read\", \"lines\": 11, \"bytes\": 88}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.15855760034173727,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\planted3_20_86.json",
+        "read_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "43f12ce285145e83806bb36a6205fe99456bdb54726ecc49dcd26bd7e2bf0641"
+    },
+    {
+      "case": "planted3_20_86",
+      "mode": "read_proof",
+      "repetition": 1,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"read_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 11, \"decisions\": 22, \"propagations\": 92}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"proof_read\", \"lines\": 11, \"bytes\": 88}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.14545439975336194,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\planted3_20_86.json",
+        "read_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "43f12ce285145e83806bb36a6205fe99456bdb54726ecc49dcd26bd7e2bf0641"
+    },
+    {
+      "case": "planted3_20_86",
+      "mode": "read_proof",
+      "repetition": 2,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"read_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 11, \"decisions\": 22, \"propagations\": 92}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"proof_read\", \"lines\": 11, \"bytes\": 88}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.15218070009723306,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\planted3_20_86.json",
+        "read_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "43f12ce285145e83806bb36a6205fe99456bdb54726ecc49dcd26bd7e2bf0641"
+    },
+    {
+      "case": "planted3_20_86",
+      "mode": "flush_proof",
+      "repetition": 0,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"flush_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 11, \"decisions\": 22, \"propagations\": 92}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"proof_flushed\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.15231189969927073,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\planted3_20_86.json",
+        "flush_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "43f12ce285145e83806bb36a6205fe99456bdb54726ecc49dcd26bd7e2bf0641"
+    },
+    {
+      "case": "planted3_20_86",
+      "mode": "flush_proof",
+      "repetition": 1,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"flush_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 11, \"decisions\": 22, \"propagations\": 92}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"proof_flushed\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.1469025001861155,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\planted3_20_86.json",
+        "flush_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "43f12ce285145e83806bb36a6205fe99456bdb54726ecc49dcd26bd7e2bf0641"
+    },
+    {
+      "case": "planted3_20_86",
+      "mode": "flush_proof",
+      "repetition": 2,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"flush_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 11, \"decisions\": 22, \"propagations\": 92}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"proof_flushed\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.14536859979853034,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\planted3_20_86.json",
+        "flush_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "43f12ce285145e83806bb36a6205fe99456bdb54726ecc49dcd26bd7e2bf0641"
+    },
+    {
+      "case": "random3_40_172",
+      "mode": "no_proof",
+      "repetition": 0,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"no_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 14, \"decisions\": 22, \"propagations\": 200}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.15278720017522573,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\random3_40_172.json",
+        "no_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "424e04a624719df3a42c03d1033ce61e5f628223e000ae869314b6da4d81869e"
+    },
+    {
+      "case": "random3_40_172",
+      "mode": "no_proof",
+      "repetition": 1,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"no_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 14, \"decisions\": 22, \"propagations\": 200}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.140344999730587,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\random3_40_172.json",
+        "no_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "424e04a624719df3a42c03d1033ce61e5f628223e000ae869314b6da4d81869e"
+    },
+    {
+      "case": "random3_40_172",
+      "mode": "no_proof",
+      "repetition": 2,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"no_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 14, \"decisions\": 22, \"propagations\": 200}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.1441122000105679,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\random3_40_172.json",
+        "no_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "424e04a624719df3a42c03d1033ce61e5f628223e000ae869314b6da4d81869e"
+    },
+    {
+      "case": "random3_40_172",
+      "mode": "unread_proof",
+      "repetition": 0,
+      "returncode": 3221226505,
+      "returncode_hex_u32": "0xc0000409",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"unread_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 14, \"decisions\": 22, \"propagations\": 200}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.5932196998037398,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\random3_40_172.json",
+        "unread_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "424e04a624719df3a42c03d1033ce61e5f628223e000ae869314b6da4d81869e"
+    },
+    {
+      "case": "random3_40_172",
+      "mode": "unread_proof",
+      "repetition": 1,
+      "returncode": 3221226505,
+      "returncode_hex_u32": "0xc0000409",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"unread_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 14, \"decisions\": 22, \"propagations\": 200}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.5804169001057744,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\random3_40_172.json",
+        "unread_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "424e04a624719df3a42c03d1033ce61e5f628223e000ae869314b6da4d81869e"
+    },
+    {
+      "case": "random3_40_172",
+      "mode": "unread_proof",
+      "repetition": 2,
+      "returncode": 3221226505,
+      "returncode_hex_u32": "0xc0000409",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"unread_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 14, \"decisions\": 22, \"propagations\": 200}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.5814351001754403,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\random3_40_172.json",
+        "unread_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "424e04a624719df3a42c03d1033ce61e5f628223e000ae869314b6da4d81869e"
+    },
+    {
+      "case": "random3_40_172",
+      "mode": "read_proof",
+      "repetition": 0,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"read_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 14, \"decisions\": 22, \"propagations\": 200}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"proof_read\", \"lines\": 14, \"bytes\": 207}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.14503500005230308,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\random3_40_172.json",
+        "read_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "424e04a624719df3a42c03d1033ce61e5f628223e000ae869314b6da4d81869e"
+    },
+    {
+      "case": "random3_40_172",
+      "mode": "read_proof",
+      "repetition": 1,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"read_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 14, \"decisions\": 22, \"propagations\": 200}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"proof_read\", \"lines\": 14, \"bytes\": 207}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.14653840009123087,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\random3_40_172.json",
+        "read_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "424e04a624719df3a42c03d1033ce61e5f628223e000ae869314b6da4d81869e"
+    },
+    {
+      "case": "random3_40_172",
+      "mode": "read_proof",
+      "repetition": 2,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"read_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 14, \"decisions\": 22, \"propagations\": 200}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"proof_read\", \"lines\": 14, \"bytes\": 207}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.1439274000003934,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\random3_40_172.json",
+        "read_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "424e04a624719df3a42c03d1033ce61e5f628223e000ae869314b6da4d81869e"
+    },
+    {
+      "case": "random3_40_172",
+      "mode": "flush_proof",
+      "repetition": 0,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"flush_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 14, \"decisions\": 22, \"propagations\": 200}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"proof_flushed\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.14799129962921143,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\random3_40_172.json",
+        "flush_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "424e04a624719df3a42c03d1033ce61e5f628223e000ae869314b6da4d81869e"
+    },
+    {
+      "case": "random3_40_172",
+      "mode": "flush_proof",
+      "repetition": 1,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"flush_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 14, \"decisions\": 22, \"propagations\": 200}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"proof_flushed\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.145301999989897,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\random3_40_172.json",
+        "flush_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "424e04a624719df3a42c03d1033ce61e5f628223e000ae869314b6da4d81869e"
+    },
+    {
+      "case": "random3_40_172",
+      "mode": "flush_proof",
+      "repetition": 2,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"flush_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 14, \"decisions\": 22, \"propagations\": 200}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"proof_flushed\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.1505391001701355,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\random3_40_172.json",
+        "flush_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "424e04a624719df3a42c03d1033ce61e5f628223e000ae869314b6da4d81869e"
+    },
+    {
+      "case": "planted3_40_172",
+      "mode": "no_proof",
+      "repetition": 0,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"no_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 10, \"decisions\": 21, \"propagations\": 157}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.15444489987567067,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\planted3_40_172.json",
+        "no_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "73cda193271e5788d4269332caa850d627418654d496ddb094c6e4a273c7fa67"
+    },
+    {
+      "case": "planted3_40_172",
+      "mode": "no_proof",
+      "repetition": 1,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"no_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 10, \"decisions\": 21, \"propagations\": 157}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.14339380012825131,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\planted3_40_172.json",
+        "no_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "73cda193271e5788d4269332caa850d627418654d496ddb094c6e4a273c7fa67"
+    },
+    {
+      "case": "planted3_40_172",
+      "mode": "no_proof",
+      "repetition": 2,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"no_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 10, \"decisions\": 21, \"propagations\": 157}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.14371889969334006,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\planted3_40_172.json",
+        "no_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "73cda193271e5788d4269332caa850d627418654d496ddb094c6e4a273c7fa67"
+    },
+    {
+      "case": "planted3_40_172",
+      "mode": "unread_proof",
+      "repetition": 0,
+      "returncode": 3221226505,
+      "returncode_hex_u32": "0xc0000409",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"unread_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 10, \"decisions\": 21, \"propagations\": 157}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.5890081003308296,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\planted3_40_172.json",
+        "unread_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "73cda193271e5788d4269332caa850d627418654d496ddb094c6e4a273c7fa67"
+    },
+    {
+      "case": "planted3_40_172",
+      "mode": "unread_proof",
+      "repetition": 1,
+      "returncode": 3221226505,
+      "returncode_hex_u32": "0xc0000409",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"unread_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 10, \"decisions\": 21, \"propagations\": 157}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.5798653997480869,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\planted3_40_172.json",
+        "unread_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "73cda193271e5788d4269332caa850d627418654d496ddb094c6e4a273c7fa67"
+    },
+    {
+      "case": "planted3_40_172",
+      "mode": "unread_proof",
+      "repetition": 2,
+      "returncode": 3221226505,
+      "returncode_hex_u32": "0xc0000409",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"unread_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 10, \"decisions\": 21, \"propagations\": 157}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.5911958999931812,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\planted3_40_172.json",
+        "unread_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "73cda193271e5788d4269332caa850d627418654d496ddb094c6e4a273c7fa67"
+    },
+    {
+      "case": "planted3_40_172",
+      "mode": "read_proof",
+      "repetition": 0,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"read_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 10, \"decisions\": 21, \"propagations\": 157}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"proof_read\", \"lines\": 10, \"bytes\": 150}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.14615829987451434,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\planted3_40_172.json",
+        "read_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "73cda193271e5788d4269332caa850d627418654d496ddb094c6e4a273c7fa67"
+    },
+    {
+      "case": "planted3_40_172",
+      "mode": "read_proof",
+      "repetition": 1,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"read_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 10, \"decisions\": 21, \"propagations\": 157}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"proof_read\", \"lines\": 10, \"bytes\": 150}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.1533782002516091,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\planted3_40_172.json",
+        "read_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "73cda193271e5788d4269332caa850d627418654d496ddb094c6e4a273c7fa67"
+    },
+    {
+      "case": "planted3_40_172",
+      "mode": "read_proof",
+      "repetition": 2,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"read_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 10, \"decisions\": 21, \"propagations\": 157}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"proof_read\", \"lines\": 10, \"bytes\": 150}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.1738646999001503,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\planted3_40_172.json",
+        "read_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "73cda193271e5788d4269332caa850d627418654d496ddb094c6e4a273c7fa67"
+    },
+    {
+      "case": "planted3_40_172",
+      "mode": "flush_proof",
+      "repetition": 0,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"flush_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 10, \"decisions\": 21, \"propagations\": 157}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"proof_flushed\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.16332199983298779,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\planted3_40_172.json",
+        "flush_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "73cda193271e5788d4269332caa850d627418654d496ddb094c6e4a273c7fa67"
+    },
+    {
+      "case": "planted3_40_172",
+      "mode": "flush_proof",
+      "repetition": 1,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"flush_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 10, \"decisions\": 21, \"propagations\": 157}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"proof_flushed\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.18725299974903464,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\planted3_40_172.json",
+        "flush_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "73cda193271e5788d4269332caa850d627418654d496ddb094c6e4a273c7fa67"
+    },
+    {
+      "case": "planted3_40_172",
+      "mode": "flush_proof",
+      "repetition": 2,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"flush_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 10, \"decisions\": 21, \"propagations\": 157}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"proof_flushed\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.14689069986343384,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\planted3_40_172.json",
+        "flush_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "73cda193271e5788d4269332caa850d627418654d496ddb094c6e4a273c7fa67"
+    },
+    {
+      "case": "simple_unit_sat",
+      "mode": "no_proof",
+      "repetition": 0,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"no_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 0, \"decisions\": 2, \"propagations\": 2}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.15262169996276498,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\simple_unit_sat.json",
+        "no_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "bfe03e4264b1d7132f1a61bc43ef103a789378a3b819ccc333583d8f3ee0b5d3"
+    },
+    {
+      "case": "simple_unit_sat",
+      "mode": "no_proof",
+      "repetition": 1,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"no_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 0, \"decisions\": 2, \"propagations\": 2}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.1462012999691069,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\simple_unit_sat.json",
+        "no_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "bfe03e4264b1d7132f1a61bc43ef103a789378a3b819ccc333583d8f3ee0b5d3"
+    },
+    {
+      "case": "simple_unit_sat",
+      "mode": "no_proof",
+      "repetition": 2,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"no_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 0, \"decisions\": 2, \"propagations\": 2}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.1403625002130866,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\simple_unit_sat.json",
+        "no_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "bfe03e4264b1d7132f1a61bc43ef103a789378a3b819ccc333583d8f3ee0b5d3"
+    },
+    {
+      "case": "simple_unit_sat",
+      "mode": "unread_proof",
+      "repetition": 0,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"unread_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 0, \"decisions\": 2, \"propagations\": 2}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.14942289981991053,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\simple_unit_sat.json",
+        "unread_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "bfe03e4264b1d7132f1a61bc43ef103a789378a3b819ccc333583d8f3ee0b5d3"
+    },
+    {
+      "case": "simple_unit_sat",
+      "mode": "unread_proof",
+      "repetition": 1,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"unread_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 0, \"decisions\": 2, \"propagations\": 2}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.14364900020882487,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\simple_unit_sat.json",
+        "unread_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "bfe03e4264b1d7132f1a61bc43ef103a789378a3b819ccc333583d8f3ee0b5d3"
+    },
+    {
+      "case": "simple_unit_sat",
+      "mode": "unread_proof",
+      "repetition": 2,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"unread_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 0, \"decisions\": 2, \"propagations\": 2}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.14230960002169013,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\simple_unit_sat.json",
+        "unread_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "bfe03e4264b1d7132f1a61bc43ef103a789378a3b819ccc333583d8f3ee0b5d3"
+    },
+    {
+      "case": "simple_unit_sat",
+      "mode": "read_proof",
+      "repetition": 0,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"read_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 0, \"decisions\": 2, \"propagations\": 2}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"proof_read\", \"lines\": 0, \"bytes\": 0}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.1477141003124416,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\simple_unit_sat.json",
+        "read_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "bfe03e4264b1d7132f1a61bc43ef103a789378a3b819ccc333583d8f3ee0b5d3"
+    },
+    {
+      "case": "simple_unit_sat",
+      "mode": "read_proof",
+      "repetition": 1,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"read_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 0, \"decisions\": 2, \"propagations\": 2}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"proof_read\", \"lines\": 0, \"bytes\": 0}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.14313879981637,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\simple_unit_sat.json",
+        "read_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "bfe03e4264b1d7132f1a61bc43ef103a789378a3b819ccc333583d8f3ee0b5d3"
+    },
+    {
+      "case": "simple_unit_sat",
+      "mode": "read_proof",
+      "repetition": 2,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"read_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 0, \"decisions\": 2, \"propagations\": 2}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"proof_read\", \"lines\": 0, \"bytes\": 0}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.14354659989476204,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\simple_unit_sat.json",
+        "read_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "bfe03e4264b1d7132f1a61bc43ef103a789378a3b819ccc333583d8f3ee0b5d3"
+    },
+    {
+      "case": "simple_unit_sat",
+      "mode": "flush_proof",
+      "repetition": 0,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"flush_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 0, \"decisions\": 2, \"propagations\": 2}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"proof_flushed\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.14599769981577992,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\simple_unit_sat.json",
+        "flush_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "bfe03e4264b1d7132f1a61bc43ef103a789378a3b819ccc333583d8f3ee0b5d3"
+    },
+    {
+      "case": "simple_unit_sat",
+      "mode": "flush_proof",
+      "repetition": 1,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"flush_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 0, \"decisions\": 2, \"propagations\": 2}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"proof_flushed\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.1459603998810053,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\simple_unit_sat.json",
+        "flush_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "bfe03e4264b1d7132f1a61bc43ef103a789378a3b819ccc333583d8f3ee0b5d3"
+    },
+    {
+      "case": "simple_unit_sat",
+      "mode": "flush_proof",
+      "repetition": 2,
+      "returncode": 0,
+      "returncode_hex_u32": "0x0",
+      "stdout": "{\"stage\": \"start\", \"version\": \"1.9.dev16\", \"extension\": \"C:\\\\Users\\\\Blkph0x\\\\Desktop\\\\p eq np\\\\.research-tools\\\\pysat-1.9.dev16\\\\pysolvers.cp310-win_amd64.pyd\", \"mode\": \"flush_proof\"}\n{\"stage\": \"solved\", \"result\": true, \"stats\": {\"restarts\": 1, \"conflicts\": 0, \"decisions\": 2, \"propagations\": 2}}\n{\"stage\": \"model_checked\"}\n{\"stage\": \"proof_flushed\"}\n{\"stage\": \"solver_deleted\"}\n{\"stage\": \"normal_main_return\"}\n",
+      "stderr": "",
+      "timed_out": false,
+      "wall_seconds": 0.1407294999808073,
+      "command": [
+        "C:\\ProgramData\\radioconda\\python.exe",
+        "-B",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\probe.py",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-sat-crash\\simple_unit_sat.json",
+        "flush_proof",
+        "--pysat",
+        "C:\\Users\\Blkph0x\\Desktop\\p eq np\\.research-tools\\pysat-1.9.dev16"
+      ],
+      "request_sha256": "bfe03e4264b1d7132f1a61bc43ef103a789378a3b819ccc333583d8f3ee0b5d3"
+    }
+  ],
+  "source_unchanged": true,
+  "summary": [
+    {
+      "case": "units_unsat",
+      "mode": "no_proof",
+      "exit_codes": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "units_unsat",
+      "mode": "unread_proof",
+      "exit_codes": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "units_unsat",
+      "mode": "read_proof",
+      "exit_codes": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "units_unsat",
+      "mode": "flush_proof",
+      "exit_codes": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "unused_variables_sat",
+      "mode": "no_proof",
+      "exit_codes": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "unused_variables_sat",
+      "mode": "unread_proof",
+      "exit_codes": [
+        3221226505,
+        3221226505,
+        3221226505
+      ]
+    },
+    {
+      "case": "unused_variables_sat",
+      "mode": "read_proof",
+      "exit_codes": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "unused_variables_sat",
+      "mode": "flush_proof",
+      "exit_codes": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "random3_20_86",
+      "mode": "no_proof",
+      "exit_codes": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "random3_20_86",
+      "mode": "unread_proof",
+      "exit_codes": [
+        3221226505,
+        3221226505,
+        3221226505
+      ]
+    },
+    {
+      "case": "random3_20_86",
+      "mode": "read_proof",
+      "exit_codes": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "random3_20_86",
+      "mode": "flush_proof",
+      "exit_codes": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "planted3_20_86",
+      "mode": "no_proof",
+      "exit_codes": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "planted3_20_86",
+      "mode": "unread_proof",
+      "exit_codes": [
+        3221226505,
+        3221226505,
+        3221226505
+      ]
+    },
+    {
+      "case": "planted3_20_86",
+      "mode": "read_proof",
+      "exit_codes": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "planted3_20_86",
+      "mode": "flush_proof",
+      "exit_codes": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "random3_40_172",
+      "mode": "no_proof",
+      "exit_codes": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "random3_40_172",
+      "mode": "unread_proof",
+      "exit_codes": [
+        3221226505,
+        3221226505,
+        3221226505
+      ]
+    },
+    {
+      "case": "random3_40_172",
+      "mode": "read_proof",
+      "exit_codes": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "random3_40_172",
+      "mode": "flush_proof",
+      "exit_codes": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "planted3_40_172",
+      "mode": "no_proof",
+      "exit_codes": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "planted3_40_172",
+      "mode": "unread_proof",
+      "exit_codes": [
+        3221226505,
+        3221226505,
+        3221226505
+      ]
+    },
+    {
+      "case": "planted3_40_172",
+      "mode": "read_proof",
+      "exit_codes": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "planted3_40_172",
+      "mode": "flush_proof",
+      "exit_codes": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "simple_unit_sat",
+      "mode": "no_proof",
+      "exit_codes": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "simple_unit_sat",
+      "mode": "unread_proof",
+      "exit_codes": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "simple_unit_sat",
+      "mode": "read_proof",
+      "exit_codes": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "simple_unit_sat",
+      "mode": "flush_proof",
+      "exit_codes": [
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

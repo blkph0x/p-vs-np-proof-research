@@ -7,7 +7,9 @@ open novelty question.
 
 | Repository component | Closest established result or tool | Status of the claim here |
 | --- | --- | --- |
+| Strict full locality-ten lower bound for `RM(2,m)`, every `m>=6` | Boolean Bonferroni inequalities and nonnegative combinations of existing local-marginal identities | **Scoped lower bound; novelty `UNKNOWN`.** The [control](RM2_LEVEL10_CONTROL.md) proves reduced weight at least `644(2^m-1)/2849`, strictly above the level-nine value. It excludes the entire symmetrized level-nine optimal face using an actual ten-nonpin-coordinate table. It does **not** determine the full level-ten optimum. Seven exact tests and a separate mathematical audit check the derivation; no optimizer or general complexity conclusion is needed. |
 | Exact full locality-nine value for `RM(2,m)`, every `m>=5` | Fixed-level local-marginal relaxations, finite-geometry moments and LP duality | **Formulation-specific follow-up; novelty `UNKNOWN`.** The [proof](REED_MULLER_QUADRATIC_LEVEL9_THEOREM.md) gives reduced `7(2^m-1)/31` with a seven-term nonnegative identity and common rank moments. The [284-variable selected-model search](RM2_NINE_SCOPE_DISCOVERY.md) is freshly reproduced and independently reconstructed. RM(2,5) reaches integer total eight; the all-size gap ratio tends to `31/28`. No new general hierarchy or algorithmic lower bound is claimed. |
+| Gaussian rank moments and local atom inversion | Uniform subspace inclusion probabilities, matroid-flat Möbius inversion, and the Crapo--Rota Critical Theorem | **Inherited counting mechanism, with an additional scoped positivity obligation.** The low-rank cases are genuine codimension-two subspace distributions. The classical count does not automatically prove nonnegativity when the scope rank exceeds the construction's virtual ambient dimension. The level-eight and level-nine proofs separately discharge that obligation; their exact optimization formulas retain novelty `UNKNOWN`. |
 | `RM(s,2s+1)` self-duality, distance, and short-support projections | Reed--Muller parameter identities and the standard dual-distance projection/orthogonal-array observation | **Inherited mechanism.** The repository proves and replays the stated finite family, including an exact `d-1` boundary obstruction for the unit witness, the exact plain-model boundary value `1+(2^(2s+1)-1)/(2^(s+1)-1)`, and an explicit all-scope size law. The incidence count and sparse witness are recorded as a scoped formulation theorem; no novelty claim is made for the dual-distance or counting mechanisms themselves. |
 | Projection-marginal LP `L_k(C)` | Local consistency and marginal relaxations; named Sherali--Adams/Lasserre systems | **Two boundaries are now explicit.** `L_k(C)` is proved identical, level by level, to configuration Sherali--Adams for the declared finite-domain CSP whose relations are the exact projections `R_S(C)`. No equivalence is claimed for a sparse Boolean parity-check encoding, and the Lasserre relationship remains formulation-specific. |
 | Sparse parity check-local configuration versus clause LP | Configuration SA for local CSP relations and the ordinary 0/1 clause relaxation | **Exact finite positioning control.** On the pinned four-variable ternary-parity encoding, the check-local level-two value is `0`, while the simplified sparse 3-CNF clause LP has exact value `1`. This is an encoding-specific comparison, not a new all-size hierarchy theorem. |
@@ -45,6 +47,11 @@ about whether the cited work is stronger in an informal sense.
 | [Schoenebeck (2008)](https://schoeneb.people.si.umich.edu/papers/LasserreNew.pdf) | Linear-level Lasserre gaps for random `k`-CSPs, including XOR-implied predicates. | This uses a semidefinite moment hierarchy and random CSP instances. The RM result uses rational local tables supported on exact code projections and does not import a Lasserre lower-bound theorem. |
 | [Barak et al. (2011)](https://eccc.weizmann.ac.il/report/2011/142/) | Reed--Muller and local-testability machinery in long-code compression and very high-round SDP plus Sherali--Adams gaps for Unique Games. | The construction, objective, and conclusion are different: the repository studies a pinned codeword weight in `L_k(C)`, not a Unique Games gap or a local tester. This source is a stronger neighboring hierarchy result, not a direct proof or disproof of the finite `31/5` value. |
 | [Puchert--Tillmann (2020)](https://arxiv.org/abs/2004.03387) | Exact separation for forbidden-set cuts from redundant parity checks. | The all-dual experiment is positioned against this parity-polytope literature. The RM local tables add exact projection support and overlap equations; no novelty claim is made for the redundant-check mechanism. |
+| [Feldman--Wainwright--Karger (2005)](https://research.google/pubs/using-linear-programming-to-decode-binary-linear-codes/), [published paper](https://doi.org/10.1109/TIT.2004.842696) | LP decoding of binary linear codes, using parity-check relaxations and pseudocodewords. | This is an established comparison for parity-only relaxations. The repository's pinned objective and mutually consistent tables supported on exact global projections require their own model comparison; a shared use of the term fractional distance does not identify the polytopes or normalizations. |
+| [Ghazi--Lee, Theorem 1](https://arxiv.org/html/1410.4241) | For a random `(d_v,d_c)`-LDPC code with `d_c>=5`, some linear number `eta n` of SA rounds admits, with high probability, fractional value `1/(d_c-3)` for odd `d_c` or `1/(d_c-4)` for even `d_c`, under their decoding normalization. | This is a growing-round result for a random ensemble and its decoding formulation. It does not supply the deterministic RM2 fixed-locality formulas. The repository's configuration-SA identification is for its declared exact-projection CSP, not an automatic identification with this sparse parity-check presentation. |
+| [Cameron--Kusuma--Solé, introduction and Theorem 3.1](https://arxiv.org/pdf/1510.01509) | Restates Delsarte's field result and extends it to finite commutative rings: orthogonal-array strength of a linear code is dual minimum Hamming weight minus one. | For RM2's dual distance eight, uniformly sampling the code gives uniform projections through seven coordinates; conditioning one coordinate leaves uniformity on six others. This explains a projection mechanism, but not the biased rank moments with singleton `1/5` or `7/31`, nor their optimality. |
+| [Brändén--Leite, Section 7.1, Theorem 7.7](https://arxiv.org/html/2412.06595v3) | Restates Crapo--Rota, Chapter 16, Theorem 1: characteristic-polynomial evaluations count linear maps whose kernels avoid a represented matroid; contraction gives prescribed flat intersections. Their Theorems 7.5 and 7.8 concern nonnegative characteristic-polynomial decompositions. | This is the closest method-level bridge to the rank moments and Möbius atom formulas. It is not a cited theorem asserting positivity of these virtual moments above the virtual ambient rank, or asserting the pinned RM2 local-LP optimum. |
+| [Coregliano--Jeronimo--Jones](https://arxiv.org/abs/2112.09221) | A higher-order Krawtchouk/MacWilliams LP hierarchy retrieves the largest possible linear-code size at given blocklength and distance by level `O(n^2)`; its levels incorporate interactions among codewords. | The optimized object is code size over a class of codes, not the minimum pinned weight in one specified RM code. Codeword-tuple level and coordinate locality are different parameters. Completeness of that hierarchy supplies neither a decoder nor the present fixed-code optimum. |
 
 The repository has not found a cited theorem in this ledger that states the
 exact reduced value `31/5` (total pinned weight `36/5`) for the same pinned `RM(2,5)` level-eight projection-marginal
@@ -57,3 +64,70 @@ formula remains `UNKNOWN`. The standard dual-code and affine-flat facts are
 inherited; the cited finite identity is an explicit dependency. Reproducing
 the affine LP search establishes provenance for a new run, not priority for
 the finite optimum or the family theorem.
+
+## The precise subspace-counting bridge
+
+Write \({D\brack2}_2=(2^D-1)(2^D-2)/6\). For a uniform
+codimension-two subspace \(U\) of \(\mathbb F_2^D\) and a specified
+rank-\(r\) subspace \(A\), ordinary subspace counting gives
+\[
+ \Pr[A\subseteq U]=\frac{{D-r\brack2}_2}{{D\brack2}_2},
+\]
+where the numerator is zero when \(D-r<2\). The repository's level-eight
+numerators are \((35,7,1,0,\ldots)\) at \(D=4\), and its level-nine
+numerators are \((155,35,7,1,0,\ldots)\) at \(D=5\).
+For any scope with span dimension at most \(D\), this is an actual
+probability distribution. The codimension-two indicator is a degree-at-most-two
+Boolean polynomial with value one at zero, supplying the required pinned
+RM2 projection support.
+
+If \(B\) is closed in the binary matroid on a scope \(S\), grouping
+inclusion-exclusion by closed sets expresses its atom as
+\[
+ \mu_S(B)=
+ \frac{1}{{D\brack2}_2}
+ \sum_{\substack{F\text{ closed in }S\\B\subseteq F}}
+ \mu_{\mathrm{flats}}(B,F)\,{D-\operatorname{rank}(F)\brack2}_2 .
+\]
+A nonclosed atom is zero by pairing terms whose added point is already
+in the span. This is the standard connection between subspace avoidance
+and matroid Möbius inversion. The source statement most directly verified
+in this comparison is the [Crapo--Rota theorem reproduced as Theorem 7.7
+by Brändén--Leite](https://arxiv.org/html/2412.06595v3); the Gaussian
+conditioning formula above explicitly spells out the connection used here.
+
+The essential limitation is the rank hypothesis. When
+\(\operatorname{rank}(S)>D\), the repository defines formal moments by
+the same rank rule, but there is no embedding of the scope span into
+\(\mathbb F_2^D\). The classical counting interpretation alone therefore
+does not prove positivity. The separate eight- and nine-scope arguments
+are necessary. Indeed, the [ten-coordinate control](RM2_LEVEL10_CONTROL.md)
+has a formal level-nine atom of mass \(-1/155\), disproving unrestricted
+extension of those moments.
+
+The focused primary-source comparison establishes that the counting,
+orthogonal-array, LP, and hierarchy mechanisms are inherited. It has not
+established a direct prior theorem with the same model and exact family
+values. This is a bounded search outcome, not evidence of priority;
+novelty of the scoped optimization statements remains **UNKNOWN**.
+
+## Level-ten follow-up: exact lower bound, open optimum
+
+The new control uses ten nonpin coordinates in a six-dimensional span.
+Its assignment-wise Boolean inequality gives
+\(C=q-8r+28v\ge0\). A nonnegative combination with the existing level-nine
+identity proves
+\[
+ p\ge\frac{644}{2849}>\frac7{31}\qquad(m\ge6).
+\]
+The row coefficients, all 1,024 Boolean assignments, the equality-face
+obstruction, and exact row implication from independently rebuilt atom
+incidences are checked by [seven tests](test_rm2_level10_control.py).
+The independent mathematical audit found no correction. These are
+written mathematics and finite exact controls, not formal verification.
+No matching full-level-ten upper witness or optimum is claimed.
+
+The proposed next Gaussian family with virtual dimension six is explicitly
+a candidate in the control note. Testing that candidate's positivity and
+support would be a further mathematical task, not an application of the
+Critical Theorem without checking its hypotheses.

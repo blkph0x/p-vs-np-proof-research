@@ -1,0 +1,9 @@
+
+c parsing input formula with 1 variables and 1 clauses
+
+c finished parsing
+
+c trivial UNSAT
+s VERIFIED
+
+c verification time: 0.074 seconds

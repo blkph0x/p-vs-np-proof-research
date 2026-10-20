@@ -1,0 +1,45 @@
+{
+  "request_sha256": "6bb1dfc8be7a87903576e0171c1ad386a298ec970511408581d53ecb4d08bd3d",
+  "result": {
+    "clauses": [
+      [
+        1
+      ],
+      [
+        -1
+      ]
+    ],
+    "model": null,
+    "proof": [
+      {
+        "derivation": [
+          {
+            "left": [
+              -1
+            ],
+            "pivot": 0,
+            "result": [],
+            "right": [
+              1
+            ]
+          }
+        ],
+        "from_conflict": [
+          -1
+        ],
+        "kind": "terminal-empty"
+      }
+    ],
+    "stats": {
+      "backjumps": 0,
+      "boolean_props": 1,
+      "conflicts": 1,
+      "decisions": 0,
+      "learned_clauses": 0,
+      "learned_literals": 0,
+      "resolution_steps": 1
+    },
+    "status": "UNSAT"
+  },
+  "schema": "native-cdcl-candidate-v1"
+}

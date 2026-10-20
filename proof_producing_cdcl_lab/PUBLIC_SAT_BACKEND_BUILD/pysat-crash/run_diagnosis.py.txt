@@ -1,0 +1,77 @@
+"""Reproduce bounded child-process lifecycle observations outside the repository."""
+import hashlib
+import importlib.util
+import json
+from pathlib import Path
+import subprocess
+import sys
+import time
+
+
+HERE = Path(__file__).resolve().parent
+WORKSPACE = HERE.parent.parent
+INSTALL = HERE.parent / "pysat-1.9.dev16"
+LAB = (WORKSPACE / "research_checkpoint_2026_10_17_v17" /
+       "research_checkpoint_2026_10_17_v17" / "overnight_research_2026_10_18" /
+       "proof_producing_cdcl_lab")
+
+
+def digest(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def main():
+    source = LAB / "public_sat_cases.py"
+    spec = importlib.util.spec_from_file_location("diagnostic_original_cases", source)
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    wanted = {"units_unsat", "unused_variables_sat", "random3_20_86",
+              "planted3_20_86", "random3_40_172", "planted3_40_172"}
+    originals = [case for case in module.cases() if case["name"] in wanted]
+    originals.append({"name": "simple_unit_sat", "request": module.request(1, [[1]])})
+    dependencies = {
+        "public_sat_cases.py": source,
+        "installed_solvers.py": INSTALL / "pysat/solvers.py",
+        "installed_pysolvers.pyd": INSTALL / "pysolvers.cp310-win_amd64.pyd",
+        "probe.py": HERE / "probe.py",
+        "run_diagnosis.py": HERE / "run_diagnosis.py",
+    }
+    before = {name: digest(path) for name, path in dependencies.items()}
+    result = {"schema": "pysat-sat-lifecycle-probe-v1",
+              "purpose": "diagnose failed process exits; no failed exit is accepted",
+              "source_sha256": before, "runs": []}
+    for case in originals:
+        path = HERE / (case["name"] + ".json")
+        path.write_text(json.dumps(case["request"]) + "\n", encoding="utf-8")
+        for mode in ("no_proof", "unread_proof", "read_proof", "flush_proof"):
+            for repetition in range(3):
+                command = [sys.executable, "-B", str(HERE / "probe.py"), str(path),
+                           mode, "--pysat", str(INSTALL)]
+                start = time.perf_counter()
+                try:
+                    child = subprocess.run(command, capture_output=True, text=True, timeout=5)
+                    row = {"case": case["name"], "mode": mode, "repetition": repetition,
+                           "returncode": child.returncode,
+                           "returncode_hex_u32": hex(child.returncode & 0xffffffff),
+                           "stdout": child.stdout, "stderr": child.stderr, "timed_out": False}
+                except subprocess.TimeoutExpired:
+                    row = {"case": case["name"], "mode": mode, "repetition": repetition,
+                           "returncode": None, "timed_out": True}
+                row["wall_seconds"] = time.perf_counter() - start
+                row["command"] = command
+                row["request_sha256"] = digest(path)
+                result["runs"].append(row)
+        print(json.dumps({"case": case["name"], "completed": len(result["runs"])}), flush=True)
+    result["source_unchanged"] = before == {
+        name: digest(path) for name, path in dependencies.items()}
+    result["summary"] = [{
+        "case": case["name"], "mode": mode,
+        "exit_codes": [row["returncode"] for row in result["runs"]
+                       if row["case"] == case["name"] and row["mode"] == mode],
+    } for case in originals for mode in ("no_proof", "unread_proof", "read_proof", "flush_proof")]
+    (HERE / "RESULTS.json").write_text(json.dumps(result, indent=2) + "\n", encoding="utf-8")
+    print(json.dumps(result["summary"], indent=2))
+
+
+if __name__ == "__main__":
+    main()

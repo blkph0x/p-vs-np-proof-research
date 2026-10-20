@@ -1,0 +1,394 @@
+"""Optional pinned Glucose3 discovery versus the native reference solver.
+
+Each invocation is a separate bounded process. Both engines receive identical
+original CNFs. Stored replay uses neither PySAT nor the external DRAT checker.
+"""
+from __future__ import annotations
+
+import argparse
+from collections import Counter
+import hashlib
+import importlib.util
+import json
+import math
+import os
+from pathlib import Path
+import platform
+import re
+import statistics
+import sys
+import time
+
+from sat_backend_certificate import (
+    dimacs, proof_digest, request_digest, validate_request,
+    verify_candidate, verify_native_candidate,
+)
+
+HERE = Path(__file__).resolve().parent
+ROOT = HERE.parent
+RUP_LIMITS = {"max_steps": 100000, "max_literal_inspections": 10000000,
+              "max_work": 10000000, "max_proof_bytes": 10000000}
+SOURCES = (
+    "proof_producing_cdcl_lab/run_public_sat.py",
+    "proof_producing_cdcl_lab/public_sat_cases.py",
+    "proof_producing_cdcl_lab/sat_backend_certificate.py",
+    "proof_producing_cdcl_lab/rup_verify.py",
+    "proof_producing_cdcl_lab/cdcl.py",
+    "proof_producing_cdcl_lab/review.py",
+    "local_marginal_code_lab/run_exact_lp_discovery.py",
+)
+
+
+def write_json(path, value):
+    path.write_text(json.dumps(value, indent=2, sort_keys=True) + "\n",
+                    encoding="utf-8", newline="\n")
+
+
+def read_json(path):
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def sha256(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def source_hashes():
+    return {name: hashlib.sha256((ROOT / name).read_text(encoding="utf-8")
+                                .encode()).hexdigest() for name in SOURCES}
+
+
+def stage(label, command, directory, timeout):
+    # Reuse the already-tested subprocess monitor; no LP model is imported.
+    path = ROOT / "local_marginal_code_lab/run_exact_lp_discovery.py"
+    spec = importlib.util.spec_from_file_location("_sat_process_monitor", path)
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module.run_stage(label, command, directory, timeout)
+
+
+def propose_rup(raw):
+    """Propose an addition-only trace; this transformation proves nothing.
+
+    Every retained addition, including a proposed terminal empty clause, still
+    has to pass the independent fresh-database RUP checker on the original CNF.
+    Retaining clauses avoids relying on a backend's persistent unit facts after
+    deletion. Raw output is preserved separately and is never called verified
+    by this adapter.
+    """
+    if type(raw) is not list or not all(type(line) is str for line in raw):
+        raise ValueError("backend did not supply a proof sequence")
+    additions = [line for line in raw if not line.lstrip().startswith("d ")]
+    raw_text = "".join(line + "\n" for line in raw)
+    text = "".join(line + "\n" for line in additions)
+    appended = not any(line.strip() == "0" for line in additions)
+    if appended:
+        text += "0\n"
+    return raw_text, text, {
+        "proof_proposal": "drop deletion lines; propose terminal empty clause if absent",
+        "removed_deletion_lines": len(raw) - len(additions),
+        "appended_terminal_rup_proposal": appended,
+        "raw_proof_lines": len(raw),
+        "raw_proof_sha256": proof_digest(raw_text),
+    }
+
+
+def worker(args):
+    request = validate_request(read_json(args.request))
+    digest = request_digest(request)
+    started = time.perf_counter()
+    if args.backend == "native":
+        from cdcl import CDCL
+        solver = CDCL(request["nvars"], request["clauses"],
+                      max_decisions=args.native_decisions)
+        constructed = time.perf_counter()
+        result = solver.solve()
+        solved = time.perf_counter()
+        candidate = {"schema": "native-cdcl-candidate-v1",
+                     "request_sha256": digest, "result": result}
+        metadata = {"engine": "native-reference", "solver_status": result["status"],
+                    "stats": result["stats"], "decision_limit": args.native_decisions}
+    else:
+        if args.pysat_dir:
+            sys.path.insert(0, str(args.pysat_dir.resolve()))
+        import pysat
+        import pysolvers
+        import six
+        from pysat.solvers import Glucose3
+        if pysat.__version__ != "1.9.dev16" or six.__version__ != "1.16.0":
+            raise ValueError("this benchmark requires python-sat 1.9.dev16 and six 1.16.0")
+        with Glucose3(bootstrap_with=request["clauses"], with_proof=True) as solver:
+            constructed = time.perf_counter()
+            result = solver.solve()
+            solved = time.perf_counter()
+            metadata = {
+                "engine": "Glucose3 via PySAT", "pysat_version": pysat.__version__,
+                "six_version": six.__version__,
+                "extension_sha256": sha256(Path(pysolvers.__file__)),
+                "wrapper_sha256_lf": hashlib.sha256(
+                    Path(sys.modules["pysat.solvers"].__file__).read_text(encoding="utf-8").encode()
+                ).hexdigest(), "stats": solver.accum_stats(),
+            }
+            # Drain the public proof stream before closing on SAT as well.
+            # The pinned Windows wheel otherwise exits abnormally for several
+            # saved SAT controls. This is an observed lifecycle workaround, not
+            # a reason to accept a nonzero child exit. A SAT log is not a proof.
+            raw = solver.get_proof()
+            if type(raw) is not list or not all(type(line) is str for line in raw):
+                raise ValueError("backend did not supply a proof sequence")
+            (args.output_dir / "raw-proof.drup").write_text(
+                "".join(line + "\n" for line in raw), encoding="utf-8", newline="\n")
+            metadata["proof_stream_drained_before_close"] = True
+            metadata["raw_proof_lines"] = len(raw)
+            candidate = {"schema": "public-sat-candidate-v1", "request_sha256": digest}
+            if result is True:
+                model = [False] * request["nvars"]
+                for literal in solver.get_model():
+                    if type(literal) is not int or not 0 < abs(literal) <= len(model):
+                        raise ValueError("backend returned an invalid model literal")
+                    model[abs(literal) - 1] = literal > 0
+                candidate.update(status="SAT", model=model)
+            elif result is False:
+                raw_text, text, proposal = propose_rup(raw)
+                (args.output_dir / "proof.drup").write_text(text, encoding="utf-8", newline="\n")
+                candidate.update(status="UNSAT", proof_sha256=proof_digest(text))
+                metadata.update(proposal)
+            else:
+                candidate.update(status="UNKNOWN", reason="backend returned no decision")
+            metadata["solver_status"] = candidate["status"]
+    metadata["construction_seconds"] = constructed - started
+    metadata["solve_seconds"] = solved - constructed
+    write_json(args.output_dir / "candidate.json", candidate)
+    metadata["certificate_export_seconds"] = time.perf_counter() - solved
+    write_json(args.output_dir / "worker.json", metadata)
+    print(json.dumps({"status": metadata["solver_status"], "backend": args.backend}))
+    return 0
+
+
+def check_candidate(request, directory, backend):
+    candidate = read_json(directory / "candidate.json")
+    if backend == "native":
+        return verify_native_candidate(request, candidate)
+    proof = (directory / "proof.drup").read_bytes() if candidate.get("status") == "UNSAT" else None
+    return verify_candidate(request, candidate, proof, **RUP_LIMITS)
+
+
+def check_external_output(returncode, text):
+    """Exit zero alone is insufficient: DRAT-trim also uses it for some errors."""
+    statuses = [line.strip() for line in text.splitlines() if line.strip().startswith("s ")]
+    return (returncode == 0 and statuses == ["s VERIFIED"] and
+            not re.search(r"\b(?:TIMEOUT|ERROR|NOT VERIFIED)\b", text, re.IGNORECASE))
+
+
+def replay(directory):
+    manifest = read_json(directory / "benchmark.json")
+    if manifest.get("schema") != "public-sat-benchmark-v1":
+        raise ValueError("unsupported campaign schema")
+    if manifest.get("status") != "PASS" or manifest.get("sources_unchanged") is not True:
+        raise ValueError("campaign did not finish with unchanged sources")
+    if (type(manifest.get("repetitions")) is not int or manifest["repetitions"] < 1 or
+            manifest.get("rup_limits") != RUP_LIMITS):
+        raise ValueError("campaign repetition/checking contract")
+    current_sources = source_hashes()
+    if (manifest.get("source_sha256_lf") != current_sources or
+            manifest.get("source_after_sha256_lf") != current_sources):
+        raise ValueError("campaign source declarations do not match the complete current sources")
+    expected_artifacts = {
+        path.relative_to(directory).as_posix()
+        for path in directory.rglob("*") if path.is_file() and
+        path not in (directory / "benchmark.json", directory / "replay.json")}
+    artifact_hashes = manifest.get("artifact_sha256")
+    if type(artifact_hashes) is not dict or set(artifact_hashes) != expected_artifacts:
+        raise ValueError("campaign artifact declaration is incomplete or has extra paths")
+    for name, digest in artifact_hashes.items():
+        relative = Path(name)
+        if (relative.is_absolute() or ".." in relative.parts or
+                not re.fullmatch(r"[0-9a-f]{64}", digest)):
+            raise ValueError("invalid artifact path")
+        if sha256(directory / relative) != digest:
+            raise ValueError("changed stored artifact: " + name)
+    originals = read_json(directory / "requests.json")
+    requests = {}
+    for item in originals:
+        name = item["name"]
+        if type(name) is not str or not re.fullmatch(r"[a-z0-9_]+", name) or name in requests:
+            raise ValueError("invalid/duplicate original case name")
+        requests[name] = validate_request(item["request"])
+        if (read_json(directory / name / "request.json") != requests[name] or
+                (directory / name / "input.cnf").read_text(encoding="ascii") != dimacs(requests[name])):
+            raise ValueError("case files differ from the declared original CNF")
+    statuses, seen = Counter(), set()
+    for row in manifest["runs"]:
+        name, backend, repetition = row["case"], row["backend"], row["repetition"]
+        if backend not in ("native", "glucose3") or type(repetition) is not int or repetition < 0:
+            raise ValueError("invalid run identity")
+        key = (name, backend, repetition)
+        if key in seen or name not in requests:
+            raise ValueError("duplicate or unknown run")
+        seen.add(key)
+        if row["request_sha256"] != request_digest(requests[name]):
+            raise ValueError("run original-request binding")
+        path = directory / name / f"repeat_{repetition}" / backend
+        if row["status"] == "UNKNOWN_PROCESS":
+            statuses["UNKNOWN_PROCESS"] += 1
+            continue
+        checked = check_candidate(requests[name], path, backend)
+        if checked["status"] != row["status"] or checked["status"] == "INVALID":
+            raise ValueError("stored run fails current original-formula replay: " + str(key))
+        statuses[checked["status"]] += 1
+    expected = {(name, backend, rep) for name in requests for backend in ("native", "glucose3")
+                for rep in range(manifest["repetitions"])}
+    if seen != expected:
+        raise ValueError("campaign is missing declared paired runs")
+    if dict(statuses) != manifest.get("status_counts") or manifest.get("disagreements") != []:
+        raise ValueError("campaign summary differs from verified runs")
+    # The certificate replay authenticates decisions; historical timings and
+    # external checker execution are only preserved run records, not rerun here.
+    return {"status": "PASS", "runs": len(seen), "statuses": dict(statuses),
+            "scope": "original CNF witnesses/restricted-RUP or native-resolution proofs; "
+                     "historical timing and external checker execution are not rerun"}
+
+
+def campaign(args):
+    from public_sat_cases import cases
+    directory = args.output_dir.resolve()
+    if directory.exists() and any(directory.iterdir()):
+        raise ValueError("output directory must be new or empty")
+    directory.mkdir(parents=True, exist_ok=True)
+    before = source_hashes()
+    originals = cases()
+    write_json(directory / "requests.json", originals)
+    manifest = {
+        "schema": "public-sat-benchmark-v1", "status": "RUNNING",
+        "repetitions": args.repetitions, "wall_limit_seconds_per_search": args.timeout,
+        "native_decision_limit": args.native_decisions,
+        "rup_limits": RUP_LIMITS,
+        "environment": {"python": sys.version, "platform": platform.platform(),
+                        "logical_cpus": os.cpu_count()},
+        "source_sha256_lf": before, "runs": [],
+        "external_checker_sha256": sha256(args.drat_trim) if args.drat_trim else None,
+        "memory_method": "20ms child RSS samples; lower bounds on true peak; parent excluded",
+    }
+    for item in originals:
+        name, request = item["name"], item["request"]
+        case_dir = directory / name
+        case_dir.mkdir()
+        write_json(case_dir / "request.json", request)
+        (case_dir / "input.cnf").write_text(dimacs(request), encoding="ascii", newline="\n")
+        for rep in range(args.repetitions):
+            # Alternate launch order to reduce fixed engine-order bias.
+            order = ("native", "glucose3") if rep % 2 == 0 else ("glucose3", "native")
+            for backend in order:
+                out = case_dir / f"repeat_{rep}" / backend
+                out.mkdir(parents=True)
+                command = [sys.executable, str(Path(__file__).resolve()), "--worker",
+                           "--backend", backend, "--request", str(case_dir / "request.json"),
+                           "--output-dir", str(out), "--native-decisions", str(args.native_decisions)]
+                if args.pysat_dir:
+                    command += ["--pysat-dir", str(args.pysat_dir.resolve())]
+                measured = stage("search", command, out, args.timeout)
+                row = {"case": name, "backend": backend, "repetition": rep,
+                       "request_sha256": request_digest(request), "process": measured}
+                if measured["returncode"] != 0 or measured["timed_out"]:
+                    row.update(status="UNKNOWN_PROCESS", reason="worker failed or exceeded wall limit")
+                else:
+                    started = time.perf_counter()
+                    checked = check_candidate(request, out, backend)
+                    row.update(status=checked["status"], verification=checked,
+                               verification_seconds=time.perf_counter() - started,
+                               worker=read_json(out / "worker.json"))
+                    if args.drat_trim and backend == "glucose3" and checked["status"] == "VERIFIED_UNSAT":
+                        if [] in request["clauses"]:
+                            row["external_check"] = {"status": "NOT_REQUIRED_ORIGINAL_EMPTY_CLAUSE"}
+                        else:
+                            external = stage(
+                                "drat-trim", [str(args.drat_trim.resolve()),
+                                              str(case_dir / "input.cnf"), str(out / "proof.drup")],
+                                out, args.timeout)
+                            text = ((out / "drat-trim.stdout.txt").read_text(encoding="utf-8") +
+                                    "\n" + (out / "drat-trim.stderr.txt").read_text(encoding="utf-8"))
+                            external["accepted"] = (not external["timed_out"] and
+                                check_external_output(external["returncode"], text))
+                            row["external_check"] = external
+                row["certificate_bytes"] = sum(
+                    path.stat().st_size for path in (out / "candidate.json", out / "proof.drup")
+                    if path.exists())
+                manifest["runs"].append(row)
+                write_json(directory / "benchmark.json", manifest)
+        print(json.dumps({"case": name, "completed_runs": len(manifest["runs"])}), flush=True)
+    manifest["source_after_sha256_lf"] = source_hashes()
+    manifest["sources_unchanged"] = before == manifest["source_after_sha256_lf"]
+    failures = [row for row in manifest["runs"] if row["status"] == "INVALID" or
+                row.get("external_check", {}).get("accepted") is False]
+    disagreement = []
+    for item in originals:
+        decisions = {row["status"] for row in manifest["runs"] if row["case"] == item["name"]
+                     and row["status"].startswith("VERIFIED_")}
+        if len(decisions) > 1:
+            disagreement.append(item["name"])
+    manifest["disagreements"] = disagreement
+    manifest["status"] = ("PASS" if manifest["sources_unchanged"] and not failures and
+                          not disagreement else "FAILED")
+    manifest["status_counts"] = dict(Counter(row["status"] for row in manifest["runs"]))
+    summaries = []
+    for item in originals:
+        for backend in ("native", "glucose3"):
+            rows = [row for row in manifest["runs"] if row["case"] == item["name"]
+                    and row["backend"] == backend]
+            complete = [row for row in rows if row["status"].startswith("VERIFIED_")]
+            summaries.append({
+                "case": item["name"], "backend": backend, "completed": len(complete),
+                "attempts": len(rows),
+                "median_search_process_seconds": statistics.median(
+                    row["process"]["wall_seconds"] for row in complete) if complete else None,
+                "median_solve_seconds": statistics.median(
+                    row["worker"]["solve_seconds"] for row in complete) if complete else None,
+                "median_verification_seconds": statistics.median(
+                    row["verification_seconds"] for row in complete) if complete else None,
+                "certificate_bytes": [row["certificate_bytes"] for row in rows],
+            })
+    manifest["summaries"] = summaries
+    # Normalize evidence before byte hashes so committed replays are portable.
+    for path in directory.rglob("*"):
+        if path.is_file() and path.name != "benchmark.json":
+            path.write_text(path.read_text(encoding="utf-8"), encoding="utf-8", newline="\n")
+    manifest["artifact_sha256"] = {
+        path.relative_to(directory).as_posix(): sha256(path)
+        for path in sorted(directory.rglob("*")) if path.is_file() and path.name != "benchmark.json"}
+    write_json(directory / "benchmark.json", manifest)
+    checked = replay(directory) if manifest["status"] == "PASS" else {"status": "NOT_ACCEPTED"}
+    write_json(directory / "replay.json", checked)
+    print(json.dumps({"status": manifest["status"], "counts": manifest["status_counts"],
+                      "replay": checked}, indent=2))
+    return 0 if manifest["status"] == "PASS" else 2
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--output-dir", type=Path)
+    parser.add_argument("--pysat-dir", type=Path)
+    parser.add_argument("--drat-trim", type=Path)
+    parser.add_argument("--replay", type=Path)
+    parser.add_argument("--timeout", type=float, default=5)
+    parser.add_argument("--repetitions", type=int, default=3)
+    parser.add_argument("--native-decisions", type=int, default=5000)
+    parser.add_argument("--worker", action="store_true", help=argparse.SUPPRESS)
+    parser.add_argument("--backend", choices=("native", "glucose3"), help=argparse.SUPPRESS)
+    parser.add_argument("--request", type=Path, help=argparse.SUPPRESS)
+    args = parser.parse_args()
+    if args.replay:
+        print(json.dumps(replay(args.replay.resolve()), indent=2))
+        return 0
+    if args.output_dir is None:
+        parser.error("--output-dir is required")
+    if args.worker:
+        if args.request is None or args.backend is None:
+            parser.error("worker requires request and backend")
+        return worker(args)
+    if (not math.isfinite(args.timeout) or not args.timeout > 0 or
+            args.repetitions < 1 or args.native_decisions < 0):
+        parser.error("positive time/repetitions and a nonnegative native decision cap are required")
+    return campaign(args)
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

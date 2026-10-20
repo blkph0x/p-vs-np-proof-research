@@ -1,0 +1,22 @@
+{
+  "release": "1.9.dev16",
+  "url": "https://files.pythonhosted.org/packages/bb/af/d25753f1ed0e2e9e440a0b4e025fdde1a493dde65c1cad6bd7071e7395fa/python_sat-1.9.dev16.tar.gz",
+  "archive_sha256": "438798197dbaebfc7ccd729bd6df02addf892c4bd6df5e3919863f56f195c7c1",
+  "extracted": [
+    {
+      "path_in_archive": "python_sat-1.9.dev16/pysat/solvers.py",
+      "saved_as": "solvers.py",
+      "sha256": "b84f0790c70b5af2f85ab82d0e1441aea874c2ae6483d90da40286a01397e065"
+    },
+    {
+      "path_in_archive": "python_sat-1.9.dev16/solvers/patches/glucose30.patch",
+      "saved_as": "glucose30.patch",
+      "sha256": "dbd3ee9081199ca2a0d810dee4ff1375e6ed771f754bede29165e63f4a66da7f"
+    },
+    {
+      "path_in_archive": "python_sat-1.9.dev16/solvers/pysolvers.cc",
+      "saved_as": "pysolvers.cc",
+      "sha256": "308f59d6e086d9095ec5ba300d8e02907ca4f0b40b4f58d6f15349508de86dc3"
+    }
+  ]
+}

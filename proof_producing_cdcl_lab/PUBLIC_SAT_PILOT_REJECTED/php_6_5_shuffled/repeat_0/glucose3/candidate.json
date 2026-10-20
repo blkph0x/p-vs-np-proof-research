@@ -1,0 +1,6 @@
+{
+  "proof_sha256": "1d7c375dc046042a6b3f17936ba91b96381b3cc926b5b595a1c54fbda1cae180",
+  "request_sha256": "1b7de67a36168890d2c0b6fb871a85c0b01148147872aa1b3ffe7b2f5f3ebb6c",
+  "schema": "public-sat-candidate-v1",
+  "status": "UNSAT"
+}

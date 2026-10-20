@@ -1,0 +1,36 @@
+{
+  "request_sha256": "66a07914a070f9276d8491fc442c0df099491f15f9e19d886b092d43ad8d6f38",
+  "result": {
+    "clauses": [
+      [
+        1,
+        2
+      ],
+      [
+        -1,
+        2
+      ]
+    ],
+    "model": {
+      "0": false,
+      "1": true,
+      "2": false,
+      "3": false,
+      "4": false,
+      "5": false,
+      "6": false
+    },
+    "proof": [],
+    "stats": {
+      "backjumps": 0,
+      "boolean_props": 1,
+      "conflicts": 0,
+      "decisions": 6,
+      "learned_clauses": 0,
+      "learned_literals": 0,
+      "resolution_steps": 0
+    },
+    "status": "SAT"
+  },
+  "schema": "native-cdcl-candidate-v1"
+}

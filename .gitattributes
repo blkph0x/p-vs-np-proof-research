@@ -13,6 +13,12 @@ local_marginal_code_lab/RM2_NINE_SCOPE_DISCOVERY/** text eol=lf
 local_marginal_code_lab/RM2_NINE_POINT_CUT_CONTROL/** text eol=lf
 local_marginal_code_lab/RM2_NINE_SCOPE_DISCOVERY/*.stdout.txt whitespace=-blank-at-eol
 local_marginal_code_lab/RM2_NINE_POINT_CUT_CONTROL/stdout.txt whitespace=-blank-at-eol
+proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/** text eol=lf
+proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/** text eol=lf
+proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/** text eol=lf
+proof_producing_cdcl_lab/PUBLIC_SAT_BASELINE/**/drat-trim.stdout.txt whitespace=-blank-at-eol
+proof_producing_cdcl_lab/PUBLIC_SAT_PILOT_REJECTED/**/diagnosis.*.txt whitespace=-blank-at-eol
+proof_producing_cdcl_lab/PUBLIC_SAT_BACKEND_BUILD/drat-trim/controls/*.stdout.txt whitespace=-blank-at-eol
 simultaneous_basis_lab/basis.py -text
 simultaneous_basis_lab/test_basis.py -text
 simultaneous_basis_lab/run_experiments.py -text

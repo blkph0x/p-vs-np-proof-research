@@ -1,0 +1,12 @@
+test_bonferroni_on_all_original_assignments (test_rm2_level10_control.LevelTenControlTests) ... ok
+test_equality_face_forces_the_obstruction (test_rm2_level10_control.LevelTenControlTests) ... ok
+test_genuine_six_dimensional_subspace_control (test_rm2_level10_control.LevelTenControlTests) ... ok
+test_missing_pair_and_wrong_linear_coefficient_fail (test_rm2_level10_control.LevelTenControlTests) ... ok
+test_new_identity_from_rebuilt_original_geometry (test_rm2_level10_control.LevelTenControlTests) ... ok
+test_old_witness_atom_and_moment_row_are_both_negative (test_rm2_level10_control.LevelTenControlTests) ... ok
+test_scope_rank_and_all_distinct_quotient_directions (test_rm2_level10_control.LevelTenControlTests) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 46.690s
+
+OK

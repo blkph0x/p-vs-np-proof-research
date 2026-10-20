@@ -14,6 +14,18 @@ Run:
 
 See [`THEOREM.md`](THEOREM.md) for the correctness and complexity scope.
 
+The optional [public SAT adapter](PUBLIC_SAT_BASELINE.md) compares pinned
+Glucose3 with this reference on identical originals. Its 114 final runs
+verify; the real failed pilot remains available. Search, proof size and
+checking costs are separate: faster public search is not an overall win
+with the simple Python RUP checker.
+
+Stored evidence needs no public solver installation:
+
+    python run_public_sat.py --replay PUBLIC_SAT_BASELINE
+    python -m unittest -v test_rup_verify test_public_sat_certificate test_public_sat_evidence
+    python -O -m unittest -v test_rup_verify test_public_sat_certificate test_public_sat_evidence
+
 The 20 October reviewer repair replaces acceptance assertions with explicit
 checks. It checks models against original clauses and replays all resolution
 parents, pivots and conclusions without exhaustively solving the formula.

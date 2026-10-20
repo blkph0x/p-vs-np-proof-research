@@ -1,0 +1,3 @@
+# Optional discovery only; stored certificate replay has no PySAT dependency.
+python-sat==1.9.dev16
+six==1.16.0
